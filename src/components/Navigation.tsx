@@ -24,12 +24,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/src/assets/charter-transparenz-logo.png" 
+              src="/lovable-uploads/e18eda5c-c95b-4e20-9faa-8ddecba95a5d.png" 
               alt="CharterTransparenz Logo" 
               className="h-12 w-auto"
-              style={{
-                filter: 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)'
-              }}
             />
           </div>
 
