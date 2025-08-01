@@ -72,7 +72,7 @@ const Hero = () => {
               className="text-lg"
               onClick={() => document.getElementById('fleet')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Flotte entdecken
+              Yachten entdecken
             </Button>
             <CharterRequestForm>
               <Button variant="transparent" size="xl" className="text-lg">

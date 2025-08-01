@@ -63,8 +63,8 @@ const FAQ = () => {
           answer: "Ja, wir bieten verschiedene Extras wie SUP-Boards, Schnorchelausrüstung, Grill, zusätzliche Fender und vieles mehr. Diese können Sie bei der Buchung oder vor Ort dazu buchen."
         },
         {
-          question: "Wie alt sind die Boote in Ihrer Flotte?",
-          answer: "Unsere Flotte wird kontinuierlich erneuert. Die meisten Boote sind nicht älter als 8 Jahre und befinden sich in einwandfreiem, gewarteten Zustand. Jedes Boot wird vor jeder Charter gründlich überprüft."
+          question: "Wie alt sind die Boote in unserer Yacht-Sammlung?",
+          answer: "Unsere Yacht-Sammlung wird kontinuierlich erneuert. Die meisten Boote sind nicht älter als 8 Jahre und befinden sich in einwandfreiem, gewarteten Zustand. Jedes Boot wird vor jeder Charter gründlich überprüft."
         },
         {
           question: "Was ist bei einem technischen Defekt?",

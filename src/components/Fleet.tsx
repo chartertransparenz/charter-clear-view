@@ -51,10 +51,10 @@ const Fleet = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-            Unsere Flotte
+            Unsere Yachten
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Entdecken Sie unsere sorgfältig ausgewählte Flotte moderner Yachten 
+            Entdecken Sie unsere sorgfältig ausgewählte Yacht-Sammlung moderner Yachten 
             und Boote für jeden Anspruch
           </p>
         </div>
@@ -63,7 +63,7 @@ const Fleet = () => {
         <div className="mb-12 rounded-2xl overflow-hidden shadow-elegant">
           <img
             src={fleetMarina}
-            alt="Unsere Flotte im Hafen"
+            alt="Unsere Yachten im Hafen"
             className="w-full h-64 md:h-96 object-cover"
           />
         </div>

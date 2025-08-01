@@ -47,7 +47,7 @@ const Partners = () => {
           name: "Bavaria Yachts",
           location: "Deutschland",
           type: "Hauptpartner",
-          features: ["Moderne Flotte", "Zuverlässige Technik", "Komfortable Ausstattung", "Weltweiter Service"]
+          features: ["Moderne Yachten", "Zuverlässige Technik", "Komfortable Ausstattung", "Weltweiter Service"]
         },
         {
           name: "Jeanneau",

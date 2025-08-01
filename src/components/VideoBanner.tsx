@@ -54,7 +54,7 @@ const VideoBanner = () => {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
             Erleben Sie unvergessliche Momente auf dem Wasser mit unserer 
-            Premium-Flotte und erstklassigem Service
+            Premium-Yachten und erstklassigem Service
           </p>
 
           {/* Highlights */}
