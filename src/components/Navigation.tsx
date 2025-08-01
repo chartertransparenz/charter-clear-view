@@ -1,7 +1,7 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logoImage from "@/assets/charter-transparenz-logo-transparent.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,9 +24,13 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={logoImage} 
+              src="/lovable-uploads/af94fe93-6540-4d36-9242-7c1b391dab53.png" 
               alt="CharterTransparenz Logo" 
-              className="h-12 w-auto"
+              className="h-12 w-auto bg-blend-multiply"
+              style={{
+                filter: 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)',
+                mixBlendMode: 'multiply'
+              }}
             />
           </div>
 
