@@ -126,8 +126,7 @@ const CharterRequestForm = ({ isOpen, onOpenChange, children }: CharterRequestFo
       
       <CardContent className="p-6">
         <p className="text-center text-muted-foreground mb-6">
-          Stellen Sie jetzt Ihre unverbindliche Charteranfrage und starten Sie in Ihr unbeschwertes 
-          Segel- oder Motorboot-Abenteuer!
+          Jetzt Ihre Traum-Charter starten! Profitieren Sie von unserer fast 30-jährigen Erfahrung auf dem internationalen Chartermarkt. Wir bieten Ihnen kompetente Beratung, individuelle & unabhängige Angebote und begleiten Sie mit persönlichem Service – selbstverständlich zu besten Preisen. Stellen Sie jetzt Ihre unverbindliche Charteranfrage und starten Sie in Ihr unbeschwertes Segel- oder Motorboot-Abenteuer!
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
