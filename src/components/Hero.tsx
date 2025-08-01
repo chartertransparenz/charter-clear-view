@@ -16,7 +16,11 @@ const Hero = () => {
       {/* Floating elements */}
       <div className="absolute top-20 right-10 animate-float">
         <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-          <Anchor className="w-8 h-8 text-white" />
+          <img 
+            src="/lovable-uploads/322fb30e-004f-44b0-a51b-aed662239ae7.png" 
+            alt="Charter Icon" 
+            className="w-8 h-8"
+          />
         </div>
       </div>
 
