@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Anchor } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logoImage from "@/assets/charter-transparenz-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,11 +22,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Anchor className="w-8 h-8 text-ocean-blue" />
-            <span className="text-xl font-bold text-ocean-dark">
-              Charter<span className="text-ocean-blue">transparenz</span>
-            </span>
+          <div className="flex items-center">
+            <img 
+              src={logoImage} 
+              alt="CharterTransparenz Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
