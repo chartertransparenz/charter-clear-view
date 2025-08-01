@@ -10,6 +10,8 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
+import charterHeroWater from "@/assets/charter-hero-water.jpg";
+
 interface CharterRequestFormProps {
   isOpen?: boolean;
   onOpenChange?: (open: boolean) => void;
@@ -108,20 +110,27 @@ const CharterRequestForm = ({ isOpen, onOpenChange, children }: CharterRequestFo
 
   const FormContent = () => (
     <Card className="shadow-elegant border-ocean-light/50 max-w-4xl mx-auto">
-      <CardHeader className="text-center bg-gradient-ocean text-white rounded-t-lg">
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <Anchor className="w-6 h-6" />
-          <CardTitle className="text-2xl">Jetzt Ihre Traum-Charter starten!</CardTitle>
+      <CardHeader className="text-center bg-gradient-ocean text-white rounded-t-lg relative overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url(${charterHeroWater})` }}
+        />
+        <div className="relative z-10">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Anchor className="w-6 h-6" />
+            <CardTitle className="text-2xl">Jetzt Ihre Traum-Charter starten!</CardTitle>
+          </div>
+          <CardDescription className="text-white/90 text-base">
+            Profitieren Sie von unserer fast 30-jährigen Erfahrung auf dem internationalen Chartermarkt. 
+            Wir bieten Ihnen kompetente Beratung, individuelle & unabhängige Angebote und begleiten Sie 
+            mit persönlichem Service – selbstverständlich zu besten Preisen.
+          </CardDescription>
+          <Badge variant="secondary" className="w-fit mx-auto mt-3 bg-white/20 text-white border-white/30">
+            <CheckCircle className="w-4 h-4 mr-2" />
+            Unverbindlich & kostenlos
+          </Badge>
         </div>
-        <CardDescription className="text-white/90 text-base">
-          Profitieren Sie von unserer fast 30-jährigen Erfahrung auf dem internationalen Chartermarkt. 
-          Wir bieten Ihnen kompetente Beratung, individuelle & unabhängige Angebote und begleiten Sie 
-          mit persönlichem Service – selbstverständlich zu besten Preisen.
-        </CardDescription>
-        <Badge variant="secondary" className="w-fit mx-auto mt-3 bg-white/20 text-white border-white/30">
-          <CheckCircle className="w-4 h-4 mr-2" />
-          Unverbindlich & kostenlos
-        </Badge>
       </CardHeader>
       
       <CardContent className="p-6">
