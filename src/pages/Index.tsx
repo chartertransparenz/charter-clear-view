@@ -2,6 +2,9 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Fleet from "@/components/Fleet";
+import Territories from "@/components/Territories";
+import Partners from "@/components/Partners";
+import FAQ from "@/components/FAQ";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -13,6 +16,9 @@ const Index = () => {
       <Hero />
       <Services />
       <Fleet />
+      <Territories />
+      <Partners />
+      <FAQ />
       <About />
       <Contact />
       <Footer />
