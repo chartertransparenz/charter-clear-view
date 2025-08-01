@@ -108,7 +108,7 @@ const FAQ = () => {
       icon: Mail,
       title: "E-Mail Support",
       description: "Antwort binnen 24h",
-      action: "info@charter-transparenz.de",
+      action: "info@chartertransparenz.de",
       color: "bg-blue-500"
     },
     {
