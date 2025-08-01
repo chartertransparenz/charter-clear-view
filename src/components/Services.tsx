@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield } from "lucide-react";
 import servicesHero from "@/assets/services-hero.jpg";
 import yachtInterior from "@/assets/yacht-interior.jpg";
-import sailingSchool from "@/assets/sailing-school.jpg";
 import groupEvent from "@/assets/group-event.jpg";
+import sailingSchool from "@/assets/sailing-school.jpg";
+import transparentPricing from "@/assets/transparent-pricing.jpg";
+import flexibleBooking from "@/assets/flexible-booking.jpg";
+import premiumLocations from "@/assets/premium-locations.jpg";
 
 const Services = () => {
   const services = [
@@ -35,17 +38,20 @@ const Services = () => {
     {
       icon: Shield,
       title: "Transparente Preise",
-      description: "Alle Kosten auf einen Blick - keine versteckten Gebühren"
+      description: "Alle Kosten auf einen Blick - keine versteckten Gebühren",
+      image: transparentPricing
     },
     {
       icon: Clock,
       title: "Flexible Buchung",
-      description: "Einfache Online-Buchung mit flexiblen Stornobedingungen"
+      description: "Einfache Online-Buchung mit flexiblen Stornobedingungen",
+      image: flexibleBooking
     },
     {
       icon: MapPin,
       title: "Beste Lagen",
-      description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen"
+      description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen",
+      image: premiumLocations
     },
   ];
 
@@ -135,8 +141,18 @@ const Services = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <advantage.icon className="w-6 h-6 text-white" />
+                <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src={advantage.image}
+                    alt={advantage.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                    <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center">
+                      <advantage.icon className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
                 </div>
                 <h4 className="font-semibold mb-2 text-ocean-dark">{advantage.title}</h4>
                 <p className="text-sm text-muted-foreground">{advantage.description}</p>
