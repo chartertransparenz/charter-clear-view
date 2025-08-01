@@ -108,7 +108,7 @@ const About = () => {
               alt="Transparenz im Charter"
               className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-elegant"
             />
-            <div className="absolute -bottom-6 -right-6 bg-gradient-sunset p-4 rounded-xl text-white shadow-elegant">
+            <div className="absolute bottom-4 right-4 bg-gradient-sunset p-4 rounded-xl text-white shadow-elegant">
               <Award className="w-8 h-8 mb-2" />
               <div className="text-sm font-semibold">Zertifizierter</div>
               <div className="text-xs">Charter-Partner</div>
