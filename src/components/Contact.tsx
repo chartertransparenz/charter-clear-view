@@ -100,18 +100,18 @@ const Contact = () => {
             </Card>
 
             {/* Quick Contact */}
-            <Card className="shadow-elegant border-ocean-light/50 bg-gradient-ocean text-white">
+            <Card className="shadow-elegant border-ocean-light/50 bg-ocean-dark text-white">
               <CardContent className="pt-6">
-                <h3 className="font-semibold mb-2">Sofortige Beratung gewünscht?</h3>
+                <h3 className="font-semibold mb-2 text-white">Sofortige Beratung gewünscht?</h3>
                 <p className="text-sm text-white/90 mb-4">
                   Rufen Sie uns direkt an oder schreiben Sie uns eine WhatsApp-Nachricht.
                 </p>
                 <div className="space-y-2">
-                  <Button variant="transparent" size="sm" className="w-full justify-start">
+                  <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
                     <Phone className="w-4 h-4 mr-2" />
                     Jetzt anrufen
                   </Button>
-                  <Button variant="transparent" size="sm" className="w-full justify-start">
+                  <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
                     <Send className="w-4 h-4 mr-2" />
                     WhatsApp senden
                   </Button>
