@@ -19,15 +19,15 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-ocean-light">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-ocean-dark/95 backdrop-blur-sm border-b border-ocean-light">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/e18eda5c-c95b-4e20-9faa-8ddecba95a5d.png" 
               alt="CharterTransparenz Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
@@ -37,13 +37,13 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-ocean-blue transition-smooth"
+                className="text-white hover:text-ocean-light transition-smooth"
               >
                 {item.label}
               </a>
             ))}
             <CharterRequestForm>
-              <Button variant="ocean" size="sm">
+              <Button variant="white-blue" size="sm">
                 Jetzt Anfrage stellen
               </Button>
             </CharterRequestForm>
@@ -51,7 +51,7 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -64,13 +64,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-ocean-light">
+          <div className="md:hidden py-4 border-t border-white/20">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-foreground hover:text-ocean-blue transition-smooth px-4 py-2"
+                  className="text-white hover:text-ocean-light transition-smooth px-4 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -78,7 +78,7 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <CharterRequestForm>
-                  <Button variant="ocean" size="sm" className="w-full">
+                  <Button variant="white-blue" size="sm" className="w-full">
                     Jetzt Anfrage stellen
                   </Button>
                 </CharterRequestForm>
