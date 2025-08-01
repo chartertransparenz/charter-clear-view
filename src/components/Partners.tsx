@@ -4,6 +4,10 @@ import { Award, Users, MapPin, Shield, Anchor, Star } from "lucide-react";
 import partnerMarina from "@/assets/partner-marina.jpg";
 import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
 import partnerCertifications from "@/assets/partner-certifications.jpg";
+import partnersTrust from "@/assets/partners-trust.jpg";
+import partnersGlobal from "@/assets/partners-global.jpg";
+import partnersYears from "@/assets/partners-years.jpg";
+import partnersQuality from "@/assets/partners-quality.jpg";
 
 const Partners = () => {
   const partnerCategories = [
@@ -88,10 +92,10 @@ const Partners = () => {
   ];
 
   const statistics = [
-    { number: "25+", label: "Vertrauensvolle Partner", icon: Users },
-    { number: "10+", label: "Länder weltweit", icon: MapPin },
-    { number: "15+", label: "Jahre Partnerschaft", icon: Award },
-    { number: "100%", label: "Qualitätsgarantie", icon: Shield }
+    { number: "25+", label: "Vertrauensvolle Partner", icon: Users, image: partnersTrust },
+    { number: "10+", label: "Länder weltweit", icon: MapPin, image: partnersGlobal },
+    { number: "15+", label: "Jahre Partnerschaft", icon: Award, image: partnersYears },
+    { number: "100%", label: "Qualitätsgarantie", icon: Shield, image: partnersQuality }
   ];
 
   return (
@@ -114,11 +118,21 @@ const Partners = () => {
         {/* Statistics */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {statistics.map((stat, index) => (
-            <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-gradient-ocean rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-6 h-6 text-white" />
+            <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
+              <div className="relative h-32 overflow-hidden">
+                <img
+                  src={stat.image}
+                  alt={stat.label}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-ocean-dark/40"></div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
+                  <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center">
+                    <stat.icon className="w-5 h-5 text-white" />
+                  </div>
                 </div>
+              </div>
+              <CardContent className="pt-4 pb-6">
                 <div className="text-2xl font-bold text-ocean-blue mb-1">{stat.number}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </CardContent>
