@@ -1,10 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-const logoImage = "/lovable-uploads/af94fe93-6540-4d36-9242-7c1b391dab53.png";
+import { removeBackground, loadImageFromUrl } from "@/utils/backgroundRemoval";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [logoSrc, setLogoSrc] = useState("/lovable-uploads/af94fe93-6540-4d36-9242-7c1b391dab53.png");
+
+  useEffect(() => {
+    const processLogo = async () => {
+      try {
+        const img = await loadImageFromUrl("/lovable-uploads/af94fe93-6540-4d36-9242-7c1b391dab53.png");
+        const transparentBlob = await removeBackground(img);
+        const transparentUrl = URL.createObjectURL(transparentBlob);
+        setLogoSrc(transparentUrl);
+      } catch (error) {
+        console.error('Failed to remove background from logo:', error);
+        // Keep original logo if processing fails
+      }
+    };
+
+    processLogo();
+  }, []);
 
   const navItems = [
     { href: "#home", label: "Home" },
@@ -24,7 +41,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={logoImage} 
+              src={logoSrc} 
               alt="CharterTransparenz Logo" 
               className="h-12 w-auto"
             />
