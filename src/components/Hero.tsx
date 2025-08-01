@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="absolute top-20 right-10 animate-float">
         <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
           <img 
-            src="/lovable-uploads/322fb30e-004f-44b0-a51b-aed662239ae7.png" 
+            src="/lovable-uploads/7800ce91-211c-4ccb-b034-a6ce0187f339.png" 
             alt="Charter Icon" 
             className="w-8 h-8"
           />
