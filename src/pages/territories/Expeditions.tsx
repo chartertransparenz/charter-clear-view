@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, MapPin, Mountain, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
+import expedition from "@/assets/expedition.jpg";
 
 const Expeditions = () => {
   const expeditions = [
@@ -38,7 +39,12 @@ const Expeditions = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
       {/* Header */}
-      <div className="relative h-64 md:h-96 bg-gradient-to-r from-ocean-dark via-ocean-blue to-ocean-dark overflow-hidden">
+      <div className="relative h-64 md:h-96 overflow-hidden">
+        <img
+          src={expedition}
+          alt="Expedition"
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

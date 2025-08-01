@@ -7,6 +7,10 @@ import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
 import mediterranean from "@/assets/mediterranean.jpg";
 import balticSea from "@/assets/baltic-sea.jpg";
 import atlantic from "@/assets/atlantic.jpg";
+import caribbean from "@/assets/caribbean.jpg";
+import pacific from "@/assets/pacific.jpg";
+import indianOcean from "@/assets/indian-ocean.jpg";
+import expedition from "@/assets/expedition.jpg";
 
 const Territories = () => {
   const territories = [
@@ -123,7 +127,12 @@ const Territories = () => {
 
             <Link to="/territories/caribbean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
-                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-blue to-ocean-dark">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={caribbean}
+                    alt="Karibik"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
@@ -140,7 +149,12 @@ const Territories = () => {
 
             <Link to="/territories/pacific" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
-                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-blue to-ocean-dark">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={pacific}
+                    alt="Pazifik"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌴 Südsee</Badge>
@@ -179,7 +193,12 @@ const Territories = () => {
 
             <Link to="/territories/indian-ocean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
-                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-blue to-ocean-dark">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={indianOcean}
+                    alt="Indischer Ozean"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🐧 Indischer Ozean</Badge>
@@ -218,7 +237,12 @@ const Territories = () => {
 
             <Link to="/territories/expeditions" className="group md:col-span-2 lg:col-span-3">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
-                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-dark via-ocean-blue to-ocean-dark">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={expedition}
+                    alt="Expeditionen"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🔥 Expeditionen</Badge>
