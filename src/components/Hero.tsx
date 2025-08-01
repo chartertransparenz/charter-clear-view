@@ -66,7 +66,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="white-blue" size="xl" className="text-lg">
+            <Button 
+              variant="white-blue" 
+              size="xl" 
+              className="text-lg"
+              onClick={() => document.getElementById('fleet')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Flotte entdecken
             </Button>
             <CharterRequestForm>
