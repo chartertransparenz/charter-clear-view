@@ -117,7 +117,7 @@ const Fleet = () => {
                   className="w-full" 
                   disabled={!boat.available}
                 >
-                  {boat.available ? "Jetzt buchen" : "Nicht verfügbar"}
+                  {boat.available ? "Jetzt Anfrage stellen" : "Nicht verfügbar"}
                 </Button>
               </CardContent>
             </Card>

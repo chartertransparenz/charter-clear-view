@@ -42,7 +42,7 @@ const Navigation = () => {
               </a>
             ))}
             <Button variant="ocean" size="sm">
-              Jetzt buchen
+              Jetzt Anfrage stellen
             </Button>
           </div>
 
@@ -75,7 +75,7 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <Button variant="ocean" size="sm" className="w-full">
-                  Jetzt buchen
+                  Jetzt Anfrage stellen
                 </Button>
               </div>
             </div>

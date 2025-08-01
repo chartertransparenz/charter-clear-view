@@ -69,7 +69,7 @@ const Hero = () => {
               Flotte entdecken
             </Button>
             <Button variant="transparent" size="xl" className="text-lg">
-              Beratung anfragen
+              Jetzt Anfrage stellen
             </Button>
           </div>
         </div>
