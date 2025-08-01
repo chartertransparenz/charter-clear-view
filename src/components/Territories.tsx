@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Anchor, Waves, Mountain } from "lucide-react";
+import { Link } from "react-router-dom";
 import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
 import mediterranean from "@/assets/mediterranean.jpg";
 import balticSea from "@/assets/baltic-sea.jpg";
@@ -94,71 +95,144 @@ const Territories = () => {
           </div>
         </div>
 
-        {/* Territory Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {territories.map((territory, index) => (
-            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden">
-              {/* Territory Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={territory.image}
-                  alt={territory.name}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
-                
-                {/* Badges */}
-                <div className="absolute top-3 left-3 flex flex-col gap-2">
-                  {territory.popular && (
-                    <Badge className="bg-sunset text-white text-xs">Beliebt</Badge>
-                  )}
-                  <Badge variant="outline" className="bg-white/90 text-ocean-dark text-xs border-white">
-                    {territory.difficulty}
-                  </Badge>
-                </div>
-
-                {/* Icon */}
-                <div className="absolute top-3 right-3">
-                  <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center">
-                    <territory.icon className="w-5 h-5 text-white" />
+        {/* Navigation Menu */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Weltweite Segelreviere</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/territories/mediterranean" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={mediterranean}
+                    alt="Mittelmeer"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🌍 Europa</Badge>
+                    <h3 className="font-bold">Mittelmeer</h3>
                   </div>
                 </div>
-              </div>
-              
-              <CardHeader className="pb-2">
-                <CardTitle className="text-lg text-ocean-dark">{territory.name}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground">
-                  {territory.region}
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {territory.description}
-                </p>
-                
-                {/* Season */}
-                <div className="flex items-center gap-2 mb-4 text-sm">
-                  <span className="font-medium text-ocean-dark">Saison:</span>
-                  <span className="text-muted-foreground">{territory.season}</span>
-                </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Das beliebteste Segelrevier weltweit - stabile Wetterbedingungen und reiche Geschichte.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                {/* Highlights */}
-                <div className="space-y-1 mb-4">
-                  {territory.highlights.slice(0, 2).map((highlight, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs">
-                      <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
-                      <span className="text-muted-foreground">{highlight}</span>
-                    </div>
-                  ))}
+            <Link to="/territories/caribbean" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-blue to-ocean-dark">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
+                    <h3 className="font-bold">Karibik</h3>
+                  </div>
                 </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Tropischer Klassiker mit warmem Wasser, Passatwinden und Insel-Hopping.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
 
-                <Button variant="outline" className="w-full border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white text-sm">
-                  Mehr erfahren
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+            <Link to="/territories/pacific" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-blue to-ocean-dark">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🌴 Südsee</Badge>
+                    <h3 className="font-bold">Pazifik & Südsee</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Traumhafte Lagunen, Korallenriffe und exotische Segelabenteuer.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/territories/atlantic" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={atlantic}
+                    alt="Atlantik"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🌬️ Atlantik</Badge>
+                    <h3 className="font-bold">Atlantik & Kanaren</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Kräftige Winde, sportliche Törns und ganzjähriges Segeln.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/territories/indian-ocean" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-blue to-ocean-dark">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🐧 Indischer Ozean</Badge>
+                    <h3 className="font-bold">Indischer Ozean</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Exotische Lagunen, tropisches Klima und unberührte Natur.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/territories/north-europe" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={balticSea}
+                    alt="Nord- und Ostsee"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🧭 Nordeuropa</Badge>
+                    <h3 className="font-bold">Nord- & Ostsee</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Beeindruckende Landschaften, Schärengärten und sichere Navigation.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/territories/expeditions" className="group md:col-span-2 lg:col-span-3">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden bg-gradient-to-r from-ocean-dark via-ocean-blue to-ocean-dark">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🔥 Expeditionen</Badge>
+                    <h3 className="font-bold">Exoten & Expeditionen</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4 text-center">
+                  <p className="text-sm text-muted-foreground">
+                    Für Abenteuerlustige: Patagonien, Alaska, Island, Grönland - wilde und anspruchsvolle Reviere für Extremsegler.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
         </div>
 
         {/* CTA Section */}
