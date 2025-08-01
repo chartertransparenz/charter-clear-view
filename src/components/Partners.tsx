@@ -1,6 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Users, MapPin, Shield, Anchor, Star } from "lucide-react";
+import partnerMarina from "@/assets/partner-marina.jpg";
+import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
+import partnerCertifications from "@/assets/partner-certifications.jpg";
 
 const Partners = () => {
   const partnerCategories = [
@@ -8,6 +11,7 @@ const Partners = () => {
       title: "Charterbasen & Marinas",
       icon: Anchor,
       description: "Unsere vertrauenswürdigen Partner vor Ort",
+      image: partnerMarina,
       partners: [
         {
           name: "Marina Kressbronn",
@@ -33,6 +37,7 @@ const Partners = () => {
       title: "Bootshersteller",
       icon: Star,
       description: "Premium-Yachten von führenden Herstellern",
+      image: partnerManufacturers,
       partners: [
         {
           name: "Bavaria Yachts",
@@ -58,6 +63,7 @@ const Partners = () => {
       title: "Zertifizierungen & Verbände",
       icon: Shield,
       description: "Qualität und Sicherheit durch Zertifizierungen",
+      image: partnerCertifications,
       partners: [
         {
           name: "Deutscher Segler-Verband",
@@ -124,14 +130,26 @@ const Partners = () => {
         <div className="space-y-12">
           {partnerCategories.map((category, categoryIndex) => (
             <div key={categoryIndex}>
-              {/* Category Header */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 bg-gradient-ocean rounded-xl flex items-center justify-center">
-                  <category.icon className="w-8 h-8 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-ocean-dark">{category.title}</h3>
-                  <p className="text-muted-foreground">{category.description}</p>
+              {/* Category Image */}
+              <div className="relative mb-8 rounded-2xl overflow-hidden shadow-elegant">
+                <img
+                  src={category.image}
+                  alt={category.title}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/90 to-ocean-dark/60"></div>
+                <div className="absolute inset-0 flex items-center">
+                  <div className="container mx-auto px-8">
+                    <div className="flex items-center gap-4">
+                      <div className="w-16 h-16 bg-gradient-ocean rounded-xl flex items-center justify-center">
+                        <category.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-bold text-white">{category.title}</h3>
+                        <p className="text-white/90 text-lg">{category.description}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
