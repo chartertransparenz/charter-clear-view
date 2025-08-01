@@ -2,6 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, MapPin, Users, Heart } from "lucide-react";
 import transparencyImg from "@/assets/transparency.jpg";
+import transparencyValue from "@/assets/transparency-value.jpg";
+import qualityValue from "@/assets/quality-value.jpg";
+import trustValue from "@/assets/trust-value.jpg";
+import experienceValue from "@/assets/experience-value.jpg";
 
 const About = () => {
   const stats = [
@@ -15,22 +19,26 @@ const About = () => {
     {
       icon: Heart,
       title: "Transparenz",
-      description: "Ehrliche Beratung und faire Preise ohne versteckte Kosten"
+      description: "Ehrliche Beratung und faire Preise ohne versteckte Kosten",
+      image: transparencyValue
     },
     {
       icon: Award,
       title: "Qualität",
-      description: "Nur geprüfte und versicherte Boote in erstklassigem Zustand"
+      description: "Nur geprüfte und versicherte Boote in erstklassigem Zustand",
+      image: qualityValue
     },
     {
       icon: Users,
       title: "Vertrauen",
-      description: "Langjährige Partnerschaften mit renommierten Charterunternehmen"
+      description: "Langjährige Partnerschaften mit renommierten Charterunternehmen",
+      image: trustValue
     },
     {
       icon: MapPin,
       title: "Erfahrung",
-      description: "Tiefe Ortskenntnisse und persönliche Empfehlungen"
+      description: "Tiefe Ortskenntnisse und persönliche Empfehlungen",
+      image: experienceValue
     }
   ];
 
@@ -104,13 +112,28 @@ const About = () => {
         {/* Values */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
-            <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-gradient-ocean rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-8 h-8 text-white" />
+            <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden group">
+              <CardContent className="p-0">
+                {/* Value Image */}
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={value.image}
+                    alt={value.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute top-3 left-3">
+                    <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center">
+                      <value.icon className="w-5 h-5 text-white" />
+                    </div>
+                  </div>
                 </div>
-                <h4 className="font-semibold mb-2 text-ocean-dark">{value.title}</h4>
-                <p className="text-sm text-muted-foreground">{value.description}</p>
+                
+                {/* Content */}
+                <div className="p-4">
+                  <h4 className="font-semibold mb-2 text-ocean-dark">{value.title}</h4>
+                  <p className="text-sm text-muted-foreground">{value.description}</p>
+                </div>
               </CardContent>
             </Card>
           ))}
