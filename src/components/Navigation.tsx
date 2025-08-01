@@ -9,6 +9,9 @@ const Navigation = () => {
     { href: "#home", label: "Home" },
     { href: "#fleet", label: "Flotte" },
     { href: "#services", label: "Services" },
+    { href: "#territories", label: "Reviere" },
+    { href: "#partners", label: "Partner" },
+    { href: "#faq", label: "FAQ" },
     { href: "#about", label: "Über uns" },
     { href: "#contact", label: "Kontakt" },
   ];
