@@ -14,16 +14,7 @@ const Hero = () => {
         <div className="absolute inset-0 gradient-hero opacity-80"></div>
       </div>
 
-      {/* Floating elements */}
-      <div className="absolute top-20 right-10 animate-float">
-        <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-          <img 
-            src="/lovable-uploads/7800ce91-211c-4ccb-b034-a6ce0187f339.png" 
-            alt="Charter Icon" 
-            className="w-8 h-8"
-          />
-        </div>
-      </div>
+      {/* Floating elements removed - now in FloatingCTA component */}
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">

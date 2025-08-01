@@ -9,11 +9,13 @@ import FAQ from "@/components/FAQ";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingCTA from "@/components/FloatingCTA";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <FloatingCTA />
       <Hero />
       <Services />
       <Fleet />
