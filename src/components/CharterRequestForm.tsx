@@ -111,14 +111,14 @@ const CharterRequestForm = ({ isOpen, onOpenChange, children }: CharterRequestFo
   const FormContent = () => (
     <Card className="shadow-elegant border-ocean-light/50 max-w-4xl mx-auto">
       <CardHeader className="text-center bg-gradient-ocean text-white rounded-t-lg relative overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image with dark overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${charterHeroWater})` }}
         />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Anchor className="w-6 h-6" />
             <CardTitle className="text-2xl">Jetzt Ihre Traum-Charter starten!</CardTitle>
           </div>
           <CardDescription className="text-white/90 text-base">
