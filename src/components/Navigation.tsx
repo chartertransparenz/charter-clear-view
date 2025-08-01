@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import CharterRequestForm from "./CharterRequestForm";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +42,11 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="ocean" size="sm">
-              Jetzt Anfrage stellen
-            </Button>
+            <CharterRequestForm>
+              <Button variant="ocean" size="sm">
+                Jetzt Anfrage stellen
+              </Button>
+            </CharterRequestForm>
           </div>
 
           {/* Mobile menu button */}
@@ -74,9 +77,11 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="px-4">
-                <Button variant="ocean" size="sm" className="w-full">
-                  Jetzt Anfrage stellen
-                </Button>
+                <CharterRequestForm>
+                  <Button variant="ocean" size="sm" className="w-full">
+                    Jetzt Anfrage stellen
+                  </Button>
+                </CharterRequestForm>
               </div>
             </div>
           </div>

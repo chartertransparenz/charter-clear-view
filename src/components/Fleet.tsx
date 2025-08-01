@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Users, Ruler, Fuel } from "lucide-react";
 import fleetMarina from "@/assets/fleet-marina.jpg";
+import CharterRequestForm from "./CharterRequestForm";
 
 const Fleet = () => {
   const boats = [
@@ -112,13 +113,17 @@ const Fleet = () => {
                   ))}
                 </ul>
 
-                <Button 
-                  variant={boat.available ? "ocean" : "secondary"} 
-                  className="w-full" 
-                  disabled={!boat.available}
-                >
-                  {boat.available ? "Jetzt Anfrage stellen" : "Nicht verfügbar"}
-                </Button>
+                {boat.available ? (
+                  <CharterRequestForm>
+                    <Button variant="ocean" className="w-full">
+                      Jetzt Anfrage stellen
+                    </Button>
+                  </CharterRequestForm>
+                ) : (
+                  <Button variant="secondary" className="w-full" disabled>
+                    Nicht verfügbar
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}

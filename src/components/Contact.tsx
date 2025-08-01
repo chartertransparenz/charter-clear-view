@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import CharterRequestForm from "./CharterRequestForm";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -115,6 +116,12 @@ const Contact = () => {
                     <Send className="w-4 h-4 mr-2" />
                     WhatsApp senden
                   </Button>
+                  <CharterRequestForm>
+                    <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
+                      <Send className="w-4 h-4 mr-2" />
+                      Jetzt Anfrage stellen
+                    </Button>
+                  </CharterRequestForm>
                 </div>
               </CardContent>
             </Card>

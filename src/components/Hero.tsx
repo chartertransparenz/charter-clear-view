@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Anchor, Award, Shield } from "lucide-react";
 import heroYacht from "@/assets/hero-yacht.jpg";
+import CharterRequestForm from "./CharterRequestForm";
 
 const Hero = () => {
   return (
@@ -68,9 +69,11 @@ const Hero = () => {
             <Button variant="white-blue" size="xl" className="text-lg">
               Flotte entdecken
             </Button>
-            <Button variant="transparent" size="xl" className="text-lg">
-              Jetzt Anfrage stellen
-            </Button>
+            <CharterRequestForm>
+              <Button variant="transparent" size="xl" className="text-lg">
+                Jetzt Anfrage stellen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>
