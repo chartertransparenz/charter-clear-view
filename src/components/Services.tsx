@@ -122,9 +122,16 @@ const Services = () => {
 
         {/* Advantages */}
         <div className="bg-white rounded-2xl p-8 shadow-elegant">
-          <h3 className="text-2xl font-bold text-center mb-8 text-ocean-dark">
-            Warum CharterTransparenz?
-          </h3>
+          <div className="flex items-center justify-center mb-8">
+            <img 
+              src="/lovable-uploads/659b769a-8043-415e-8200-0c56b66bcc47.png" 
+              alt="CharterTransparenz" 
+              className="h-12 w-auto mr-4"
+            />
+            <h3 className="text-2xl font-bold text-ocean-dark">
+              Warum CharterTransparenz?
+            </h3>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
@@ -135,6 +142,35 @@ const Services = () => {
                 <p className="text-sm text-muted-foreground">{advantage.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-20">
+          <div className="bg-gradient-ocean rounded-2xl p-12 text-white relative overflow-hidden">
+            <div className="absolute top-4 right-4 opacity-20">
+              <img 
+                src="/lovable-uploads/c1b9b340-d2ee-4fa1-907f-0c1403219be9.png" 
+                alt="CharterTransparenz" 
+                className="h-20 w-auto"
+              />
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-bold mb-4">
+                Bereit für Ihr Charter-Abenteuer?
+              </h3>
+              <p className="text-xl mb-8 text-white/90">
+                Lassen Sie uns gemeinsam Ihren perfekten Törn planen
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="white-blue" size="lg">
+                  Kostenlose Beratung
+                </Button>
+                <Button variant="transparent" size="lg">
+                  Angebot anfordern
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

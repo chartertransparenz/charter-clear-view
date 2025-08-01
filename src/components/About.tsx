@@ -50,9 +50,16 @@ const About = () => {
           <Badge variant="outline" className="mb-4 border-ocean-blue text-ocean-blue">
             Über uns
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-            CharterTransparenz
-          </h2>
+          <div className="flex items-center justify-center mb-6">
+            <img 
+              src="/lovable-uploads/659b769a-8043-415e-8200-0c56b66bcc47.png" 
+              alt="CharterTransparenz" 
+              className="h-16 w-auto mr-4"
+            />
+            <h2 className="text-4xl md:text-5xl font-bold text-ocean-dark">
+              CharterTransparenz
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Seit über 30 Jahren vermitteln wir erfolgreich Chartererlebnisse 
             und stehen für Transparenz, Qualität und Vertrauen

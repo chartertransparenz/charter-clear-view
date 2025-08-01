@@ -31,11 +31,12 @@ const Footer = () => {
         <div className="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <Anchor className="w-8 h-8 text-sunset" />
-              <span className="text-xl font-bold">
-                Charter<span className="text-sunset">transparenz</span>
-              </span>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/c1b9b340-d2ee-4fa1-907f-0c1403219be9.png" 
+                alt="CharterTransparenz Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-white/80 mb-6 text-sm">
               Ihr vertrauensvoller Partner für unvergessliche Chartererlebnisse. 
