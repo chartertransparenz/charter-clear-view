@@ -9,7 +9,7 @@ import experienceValue from "@/assets/experience-value.jpg";
 
 const About = () => {
   const stats = [
-    { number: "15+", label: "Jahre Erfahrung" },
+    { number: "30+", label: "Jahre Erfahrung" },
     { number: "500+", label: "Zufriedene Kunden" },
     { number: "50+", label: "Charter Destinationen" },
     { number: "24/7", label: "Service Support" },
@@ -54,7 +54,7 @@ const About = () => {
             CharterTransparenz
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Seit über 15 Jahren vermitteln wir erfolgreich Chartererlebnisse 
+            Seit über 30 Jahren vermitteln wir erfolgreich Chartererlebnisse 
             und stehen für Transparenz, Qualität und Vertrauen
           </p>
         </div>

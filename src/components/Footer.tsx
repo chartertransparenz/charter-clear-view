@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <p className="text-white/80 mb-6 text-sm">
               Ihr vertrauensvoller Partner für unvergessliche Chartererlebnisse. 
-              Seit über 15 Jahren stehen wir für Transparenz, Qualität und erstklassigen Service.
+              Seit über 30 Jahren stehen wir für Transparenz, Qualität und erstklassigen Service.
             </p>
             
             {/* Contact Info */}
