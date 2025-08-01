@@ -1,0 +1,157 @@
+import { Anchor, MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const footerLinks = {
+    services: [
+      { name: "Yacht Charter", href: "#fleet" },
+      { name: "Segelschule", href: "#services" },
+      { name: "Gruppenevents", href: "#services" },
+      { name: "Beratung", href: "#contact" }
+    ],
+    destinations: [
+      { name: "Bodensee", href: "#" },
+      { name: "Mittelmeer", href: "#" },
+      { name: "Adria", href: "#" },
+      { name: "Ostsee", href: "#" }
+    ],
+    company: [
+      { name: "Über uns", href: "#about" },
+      { name: "Kontakt", href: "#contact" },
+      { name: "Impressum", href: "#" },
+      { name: "Datenschutz", href: "#" }
+    ]
+  };
+
+  return (
+    <footer className="bg-ocean-dark text-white">
+      <div className="container mx-auto px-4">
+        {/* Main Footer Content */}
+        <div className="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2 mb-4">
+              <Anchor className="w-8 h-8 text-sunset" />
+              <span className="text-xl font-bold">
+                Charter<span className="text-sunset">transparenz</span>
+              </span>
+            </div>
+            <p className="text-white/80 mb-6 text-sm">
+              Ihr vertrauensvoller Partner für unvergessliche Chartererlebnisse. 
+              Seit über 15 Jahren stehen wir für Transparenz, Qualität und erstklassigen Service.
+            </p>
+            
+            {/* Contact Info */}
+            <div className="space-y-3 text-sm">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-sunset" />
+                <span className="text-white/80">Goethestraße 24, 88079 Kressbronn</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-sunset" />
+                <span className="text-white/80">+49 (0) 7543 123456</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-sunset" />
+                <span className="text-white/80">info@chartertransparenz.de</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="font-semibold mb-4 text-sunset">Services</h3>
+            <ul className="space-y-2">
+              {footerLinks.services.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="text-white/80 hover:text-sunset transition-smooth text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Destinations */}
+          <div>
+            <h3 className="font-semibold mb-4 text-sunset">Destinationen</h3>
+            <ul className="space-y-2">
+              {footerLinks.destinations.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="text-white/80 hover:text-sunset transition-smooth text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="font-semibold mb-4 text-sunset">Unternehmen</h3>
+            <ul className="space-y-2 mb-6">
+              {footerLinks.company.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="text-white/80 hover:text-sunset transition-smooth text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Social Media */}
+            <div>
+              <h4 className="font-semibold mb-3 text-sunset text-sm">Folgen Sie uns</h4>
+              <div className="flex gap-3">
+                <a
+                  href="#"
+                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-sunset/20 transition-smooth"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a
+                  href="#"
+                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-sunset/20 transition-smooth"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Footer */}
+        <div className="border-t border-white/20 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
+            <div>
+              © {currentYear} CharterTransparenz. Alle Rechte vorbehalten.
+            </div>
+            <div className="flex gap-6">
+              <a href="#" className="hover:text-sunset transition-smooth">
+                AGB
+              </a>
+              <a href="#" className="hover:text-sunset transition-smooth">
+                Impressum
+              </a>
+              <a href="#" className="hover:text-sunset transition-smooth">
+                Datenschutz
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
