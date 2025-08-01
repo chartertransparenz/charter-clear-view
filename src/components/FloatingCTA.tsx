@@ -19,7 +19,7 @@ const FloatingCTA = () => {
   }, []);
 
   return (
-    <div className={`fixed top-20 right-4 md:right-8 z-40 transition-all duration-300 ${
+    <div className={`fixed top-28 right-4 md:right-8 z-40 transition-all duration-300 ${
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
     }`}>
       <CharterRequestForm>
