@@ -33,7 +33,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Transparent.
             <br />
-            <span className="text-transparent bg-clip-text gradient-sunset">
+            <span className="text-white">
               Vertrauenswürdig.
             </span>
             <br />
