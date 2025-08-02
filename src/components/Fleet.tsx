@@ -53,7 +53,7 @@ const Fleet = () => {
     features: ["3 Kabinen", "1-2 Nasszellen", "Einfach zu handhaben", "Ideal für kleine Crews"],
     price: "ab €1.900/Woche",
     attributes: ["sportlich"],
-    image: bavariaCruiser37
+    image: "/lovable-uploads/05c9defc-3ded-4df8-a513-4e3f4c8fb7ae.png"
   }, {
     name: "Sun Odyssey 440",
     type: "Monohull Cruiser",
