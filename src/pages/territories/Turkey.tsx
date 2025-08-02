@@ -4,6 +4,7 @@ import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import Navigation from "@/components/Navigation";
 import destinationTurkey from "@/assets/destination-turkey.jpg";
 
 const Turkey = () => {
@@ -60,8 +61,9 @@ const Turkey = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Navigation />
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden">
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
           src={destinationTurkey}
           alt="Türkei Segelrevier"
