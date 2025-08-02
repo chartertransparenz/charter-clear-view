@@ -110,7 +110,7 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm">
                       <div className="w-2 h-2 bg-ocean-blue rounded-full"></div>
@@ -118,9 +118,6 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white">
-                  Mehr erfahren
-                </Button>
               </CardContent>
             </Card>
           ))}
