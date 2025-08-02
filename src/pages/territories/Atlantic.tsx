@@ -38,7 +38,15 @@ const Atlantic = () => {
             </p>
           </div>
         </div>
-        <Link to="/#territories" className="absolute top-6 left-6">
+        <Link 
+          to="/" 
+          className="absolute top-6 left-6"
+          onClick={() => {
+            setTimeout(() => {
+              document.getElementById('territories')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+          }}
+        >
           <Button variant="outline" className="bg-white/90 text-ocean-dark border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück

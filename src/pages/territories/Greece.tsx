@@ -57,7 +57,15 @@ const Greece = () => {
             Kykladen, Saronischer Golf & Ionische Inseln - Inselhopping-Paradies
           </p>
         </div>
-        <Link to="/#territories" className="absolute top-6 left-6">
+        <Link 
+          to="/" 
+          className="absolute top-6 left-6"
+          onClick={() => {
+            setTimeout(() => {
+              document.getElementById('territories')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+          }}
+        >
           <Button variant="secondary" size="sm">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
