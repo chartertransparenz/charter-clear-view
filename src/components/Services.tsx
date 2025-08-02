@@ -138,6 +138,59 @@ const Services = () => {
               Warum Charter Transparenz?
             </h3>
           </div>
+          
+          {/* Description Text */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <div className="text-center mb-6">
+              <h4 className="text-xl font-semibold text-ocean-dark mb-4">
+                Deine Yacht. Dein Törn. Unser Versprechen.
+              </h4>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Wenn du eine Charteryacht suchst und dabei auf Qualität, persönliche Betreuung und langjährige Erfahrung setzen willst, bist du bei uns genau richtig. Seit über 30 Jahren begleiten wir Seglerinnen und Segler auf ihrem Weg zum perfekten Segelurlaub – ehrlich, erfahren und engagiert.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-semibold text-ocean-dark mb-2">🔍 Transparente Preise</h5>
+                  <p className="text-sm text-muted-foreground">
+                    Bei uns weißt du von Anfang an, woran du bist. Keine versteckten Gebühren, keine Überraschungen. Alle Kosten werden dir klar und vollständig angezeigt – vom Basispreis bis zu optionalen Extras. So kannst du dein Budget sicher planen und dich ganz aufs Segeln freuen.
+                  </p>
+                </div>
+                
+                <div>
+                  <h5 className="font-semibold text-ocean-dark mb-2">📅 Flexible Buchung</h5>
+                  <p className="text-sm text-muted-foreground">
+                    Pläne ändern sich – kein Problem. Dank flexibler Stornobedingungen und einfacher Online-Abwicklung kannst du deine Buchung jederzeit anpassen. Und wenn du Fragen hast, sind wir persönlich für dich da – vor, während und nach deinem Törn.
+                  </p>
+                </div>
+                
+                <div>
+                  <h5 className="font-semibold text-ocean-dark mb-2">📍 Beste Lagen</h5>
+                  <p className="text-sm text-muted-foreground">
+                    Wir bieten dir Zugang zu Premium-Liegeplätzen an den schönsten Revieren Europas – vom Bodensee bis zur Adria. Unsere Partner vor Ort sind handverlesen, unsere Yachten sorgfältig geprüft. Egal ob Segelyacht, Katamaran oder Motoryacht: Du startest immer aus besten Lagen – für maximale Urlaubsqualität.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-semibold text-ocean-dark mb-2">🤝 Mehr als ein Buchungsportal</h5>
+                  <p className="text-sm text-muted-foreground">
+                    Wir sind ein familiengeführtes Unternehmen mit Herz und Verstand – keine Plattform, kein Callcenter. Bei uns sprichst du mit echten Menschen, die selbst segeln und wissen, was zählt. Individuelle Beratung, persönlicher Service und ehrliche Empfehlungen sind unser Anspruch – seit mehr als drei Jahrzehnten.
+                  </p>
+                </div>
+                
+                <div>
+                  <h5 className="font-semibold text-ocean-dark mb-2">🚤 Jetzt deine Charteryacht buchen</h5>
+                  <p className="text-sm text-muted-foreground">
+                    Mit einem Partner, dem du vertrauen kannst. Klick dich rein, lass dich beraten und finde die Yacht, die zu dir, deinem Törn und deinem Traumurlaub passt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
