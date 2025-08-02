@@ -8,14 +8,14 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#fleet", label: "Yachten" },
-    { href: "#services", label: "Services" },
-    { href: "#territories", label: "Reviere" },
-    { href: "#partners", label: "Partner" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#about", label: "Über uns" },
-    { href: "#contact", label: "Kontakt" },
+    { href: "#start", label: "Home" },
+    { href: "#flotte", label: "Yachten" },
+    { href: "#leistungen", label: "Services" },
+    { href: "#reviere", label: "Reviere" },
+    { href: "#partner", label: "Partner" },
+    { href: "#haeufige-fragen", label: "FAQ" },
+    { href: "#ueber-uns", label: "Über uns" },
+    { href: "#kontakt", label: "Kontakt" },
   ];
 
   return (

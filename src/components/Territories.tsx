@@ -120,7 +120,7 @@ const Territories = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return <section id="territories" className="py-20 bg-gradient-to-b from-ocean-light/20 to-white">
+  return <section id="reviere" className="py-20 bg-gradient-to-b from-ocean-light/20 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">

@@ -5,10 +5,10 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: "Yacht Charter", href: "#fleet" },
-      { name: "Segelschule", href: "#services" },
-      { name: "Gruppenevents", href: "#services" },
-      { name: "Beratung", href: "#contact" }
+      { name: "Yacht Charter", href: "#flotte" },
+      { name: "Segelschule", href: "#leistungen" },
+      { name: "Gruppenevents", href: "#leistungen" },
+      { name: "Beratung", href: "#kontakt" }
     ],
     destinations: [
       { name: "Bodensee", href: "#" },
@@ -17,10 +17,10 @@ const Footer = () => {
       { name: "Ostsee", href: "#" }
     ],
     company: [
-      { name: "Über uns", href: "#about" },
-      { name: "Kontakt", href: "#contact" },
-      { name: "Impressum", href: "#" },
-      { name: "Datenschutz", href: "#" }
+      { name: "Über uns", href: "#ueber-uns" },
+      { name: "Kontakt", href: "#kontakt" },
+      { name: "Impressum", href: "#impressum" },
+      { name: "Datenschutz", href: "#datenschutz" }
     ]
   };
 

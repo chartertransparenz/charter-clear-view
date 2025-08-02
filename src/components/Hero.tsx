@@ -38,7 +38,7 @@ const Hero = () => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [nextSlide]);
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Images Carousel */}
       {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
       backgroundImage: `url(${slide.image})`

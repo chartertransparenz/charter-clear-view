@@ -57,7 +57,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-ocean-light/30">
+    <section id="leistungen" className="py-20 bg-ocean-light/30">
       <div className="container mx-auto px-4">
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
