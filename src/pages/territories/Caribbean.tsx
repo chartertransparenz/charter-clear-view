@@ -110,9 +110,9 @@ const Caribbean = () => {
         {/* Advantages */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {advantages.map((advantage, index) => (
-              <Card key={index} className="text-center shadow-ocean">
+              <Card key={index} className="text-center shadow-ocean w-full sm:w-64">
                 <CardContent className="pt-6">
                   <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
                   <p className="font-medium text-ocean-dark">{advantage}</p>
@@ -122,14 +122,14 @@ const Caribbean = () => {
           </div>
         </div>
 
-        {/* CTA */}
+        {/* CTA - Neu geschrieben */}
         <div className="text-center">
-          <Card className="bg-gradient-ocean text-white shadow-elegant">
+          <Card className="bg-gradient-ocean text-white shadow-elegant max-w-4xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-4">
                 Ab in die Karibik?
               </h3>
-              <p className="mb-6 text-white/90 max-w-2xl mx-auto">
+              <p className="mb-6 text-white/90">
                 Erleben Sie das ultimative Segelerlebnis zwischen Trauminseln und 
                 kristallklarem Wasser mit perfekten Windbedingungen.
               </p>
@@ -138,11 +138,6 @@ const Caribbean = () => {
               </Button>
             </CardContent>
           </Card>
-        </div>
-
-        <div className="text-center mt-8">
-          <h2 className="text-2xl font-bold mb-4">DEBUG: CTA-Sektion hinzugefügt</h2>
-          <p>Ist der leere Kasten JETZT wieder da?</p>
         </div>
       </div>
     </div>
