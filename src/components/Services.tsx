@@ -24,7 +24,7 @@ const Services = () => {
       title: "Yacht Charter mit Skipper",
       description: "Entspannter Segeltörn mit professionellem Skipper für alle Erfahrungsstufen",
       features: ["Erfahrener Skipper inklusive", "Für Anfänger & Profis", "Bis zu 12 Personen", "Keine Segelschein erforderlich"],
-      image: skipperCharterPremium,
+      image: "/lovable-uploads/b8357492-3fda-42a7-8fcc-bd564c0db1d7.png",
     },
     {
       icon: GraduationCap,
