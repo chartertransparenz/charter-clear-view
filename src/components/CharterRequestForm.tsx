@@ -149,7 +149,7 @@ const CharterRequestForm = ({
   const FormContent = () => <Card className="shadow-elegant border-ocean-light/50 max-w-4xl mx-auto">
       <CardHeader className="text-center bg-gradient-ocean text-white rounded-t-lg relative overflow-hidden h-64 md:h-80 flex flex-col justify-center">
         {/* Background Image with dark overlay */}
-        <div className="absolute inset-0 bg-cover bg-center" style={{
+        <div className="absolute inset-0 bg-cover bg-center rounded-t-lg" style={{
         backgroundImage: `url(/lovable-uploads/425e8e7c-d82f-4959-a47c-f3ce2d8d8cff.png)`
       }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50 rounded-t-lg" />
