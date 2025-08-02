@@ -15,6 +15,13 @@ import Expeditions from "./pages/territories/Expeditions";
 import Croatia from "./pages/territories/Croatia";
 import Greece from "./pages/territories/Greece";
 import Italy from "./pages/territories/Italy";
+import Spain from "./pages/territories/Spain";
+import Turkey from "./pages/territories/Turkey";
+import France from "./pages/territories/France";
+import BVI from "./pages/territories/BVI";
+import Thailand from "./pages/territories/Thailand";
+import Seychelles from "./pages/territories/Seychelles";
+import Australia from "./pages/territories/Australia";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +43,13 @@ const App = () => (
           <Route path="/territories/croatia" element={<Croatia />} />
           <Route path="/territories/greece" element={<Greece />} />
           <Route path="/territories/italy" element={<Italy />} />
+          <Route path="/territories/spain" element={<Spain />} />
+          <Route path="/territories/turkey" element={<Turkey />} />
+          <Route path="/territories/france" element={<France />} />
+          <Route path="/territories/bvi" element={<BVI />} />
+          <Route path="/territories/thailand" element={<Thailand />} />
+          <Route path="/territories/seychelles" element={<Seychelles />} />
+          <Route path="/territories/australia" element={<Australia />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
