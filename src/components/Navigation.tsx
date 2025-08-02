@@ -19,7 +19,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-ocean-dark/95 backdrop-blur-sm border-b border-ocean-light">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -37,13 +37,13 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-white hover:text-ocean-light transition-smooth"
+                className="text-gray-900 hover:text-ocean-dark transition-smooth"
               >
                 {item.label}
               </a>
             ))}
             <CharterRequestForm>
-              <Button variant="white-blue" size="sm">
+              <Button variant="default" size="sm">
                 Jetzt Anfrage stellen
               </Button>
             </CharterRequestForm>
@@ -51,7 +51,7 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-white"
+            className="md:hidden p-2 text-gray-900"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -64,13 +64,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/20">
+          <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-white hover:text-ocean-light transition-smooth px-4 py-2"
+                  className="text-gray-900 hover:text-ocean-dark transition-smooth px-4 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -78,7 +78,7 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <CharterRequestForm>
-                  <Button variant="white-blue" size="sm" className="w-full">
+                  <Button variant="default" size="sm" className="w-full">
                     Jetzt Anfrage stellen
                   </Button>
                 </CharterRequestForm>
