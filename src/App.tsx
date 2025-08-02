@@ -33,23 +33,23 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/territories/mediterranean" element={<Mediterranean />} />
-          <Route path="/territories/caribbean" element={<Caribbean />} />
-          <Route path="/territories/pacific" element={<Pacific />} />
-          <Route path="/territories/atlantic" element={<Atlantic />} />
-          <Route path="/territories/indian-ocean" element={<IndianOcean />} />
-          <Route path="/territories/north-europe" element={<NorthEurope />} />
-          <Route path="/territories/expeditions" element={<Expeditions />} />
-          <Route path="/territories/croatia" element={<Croatia />} />
-          <Route path="/territories/greece" element={<Greece />} />
-          <Route path="/territories/italy" element={<Italy />} />
-          <Route path="/territories/spain" element={<Spain />} />
-          <Route path="/territories/turkey" element={<Turkey />} />
-          <Route path="/territories/france" element={<France />} />
-          <Route path="/territories/bvi" element={<BVI />} />
-          <Route path="/territories/thailand" element={<Thailand />} />
-          <Route path="/territories/seychelles" element={<Seychelles />} />
-          <Route path="/territories/australia" element={<Australia />} />
+          <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
+          <Route path="/reviere/karibik" element={<Caribbean />} />
+          <Route path="/reviere/pazifik" element={<Pacific />} />
+          <Route path="/reviere/atlantik" element={<Atlantic />} />
+          <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
+          <Route path="/reviere/nord-europa" element={<NorthEurope />} />
+          <Route path="/reviere/expeditionen" element={<Expeditions />} />
+          <Route path="/reviere/kroatien" element={<Croatia />} />
+          <Route path="/reviere/griechenland" element={<Greece />} />
+          <Route path="/reviere/italien" element={<Italy />} />
+          <Route path="/reviere/spanien" element={<Spain />} />
+          <Route path="/reviere/tuerkei" element={<Turkey />} />
+          <Route path="/reviere/frankreich" element={<France />} />
+          <Route path="/reviere/britische-jungferninseln" element={<BVI />} />
+          <Route path="/reviere/thailand" element={<Thailand />} />
+          <Route path="/reviere/seychellen" element={<Seychelles />} />
+          <Route path="/reviere/australien" element={<Australia />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
