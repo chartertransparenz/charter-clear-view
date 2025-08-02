@@ -22,6 +22,9 @@ const Mediterranean = () => {
     "Gute Charterinfrastruktur"
   ];
 
+  console.log("Mediterranean advantages:", advantages);
+  console.log("Mediterranean regions:", regions);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
       {/* Header */}
