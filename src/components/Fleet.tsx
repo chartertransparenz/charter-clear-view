@@ -125,7 +125,7 @@ const Fleet = () => {
         {/* Boat Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {boats.map((boat, index) => (
-            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50">
+            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full">
               <CardHeader>
                 <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
                   {/* Attribute Icons */}
@@ -148,7 +148,7 @@ const Fleet = () => {
                   {boat.price}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col flex-grow">
                 {/* Boat specs */}
                 <div className="grid grid-cols-3 gap-2 mb-4 text-sm">
                   <div className="flex items-center gap-1">
@@ -166,7 +166,7 @@ const Fleet = () => {
                 </div>
 
                 {/* Features */}
-                <ul className="space-y-1 mb-6">
+                <ul className="space-y-1 mb-6 flex-grow">
                   {boat.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm">
                       <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
@@ -175,11 +175,14 @@ const Fleet = () => {
                   ))}
                 </ul>
 
-                <CharterRequestForm>
-                  <Button variant="ocean" className="w-full">
-                    Jetzt Anfrage stellen
-                  </Button>
-                </CharterRequestForm>
+                {/* Button at bottom */}
+                <div className="mt-auto">
+                  <CharterRequestForm>
+                    <Button variant="ocean" className="w-full">
+                      Jetzt Anfrage stellen
+                    </Button>
+                  </CharterRequestForm>
+                </div>
               </CardContent>
             </Card>
           ))}
