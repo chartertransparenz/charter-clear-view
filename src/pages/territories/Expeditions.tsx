@@ -123,7 +123,7 @@ const Expeditions = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Was Sie erwartet</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {features.map((feature, index) => (
+            {features.filter(feature => feature && feature.trim()).map((feature, index) => (
               <Card key={index} className="text-center shadow-ocean">
                 <CardContent className="pt-6">
                   <Mountain className="w-8 h-8 text-sunset mx-auto mb-3" />

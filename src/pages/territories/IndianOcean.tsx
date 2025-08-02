@@ -97,7 +97,7 @@ const IndianOcean = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {advantages.map((advantage, index) => (
+            {advantages.filter(advantage => advantage && advantage.trim()).map((advantage, index) => (
               <Card key={index} className="text-center shadow-ocean">
                 <CardContent className="pt-6">
                   <Palmtree className="w-8 h-8 text-sunset mx-auto mb-3" />
