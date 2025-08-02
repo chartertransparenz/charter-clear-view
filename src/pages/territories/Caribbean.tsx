@@ -78,9 +78,9 @@ const Caribbean = () => {
         {/* Top Regions */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Top-Regionen</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="flex flex-wrap gap-6 justify-center">{/* Changed from grid to flex */}
             {regions.map((region, index) => (
-              <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
+              <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 w-full sm:w-80">{/* Fixed width */}
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-ocean-dark">
                     <MapPin className="w-4 h-4 text-sunset" />
@@ -110,9 +110,9 @@ const Caribbean = () => {
         {/* Advantages */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-wrap gap-4 justify-center">{/* Changed from grid to flex */}
             {advantages.map((advantage, index) => (
-              <Card key={index} className="text-center shadow-ocean">
+              <Card key={index} className="text-center shadow-ocean w-64">{/* Fixed width */}
                 <CardContent className="pt-6">
                   <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
                   <p className="font-medium text-ocean-dark">{advantage}</p>
