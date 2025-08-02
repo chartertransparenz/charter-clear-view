@@ -3,6 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Users, Ruler, Fuel, Zap, Maximize, Star } from "lucide-react";
 import fleetMarina from "@/assets/fleet-marina.jpg";
+import bavariaCruiser46 from "@/assets/bavaria-cruiser-46.jpg";
+import lagoon42 from "@/assets/lagoon-42.jpg";
+import oceanis461 from "@/assets/oceanis-46-1.jpg";
+import bavariaCruiser37 from "@/assets/bavaria-cruiser-37.jpg";
+import sunOdyssey440 from "@/assets/sun-odyssey-440.jpg";
+import sunOdyssey410 from "@/assets/sun-odyssey-410.jpg";
+import baliCatspace from "@/assets/bali-catspace.jpg";
+import dufour460 from "@/assets/dufour-460.jpg";
+import oceanis381 from "@/assets/oceanis-38-1.jpg";
+import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 
 const Fleet = () => {
@@ -15,6 +25,7 @@ const Fleet = () => {
       features: ["3-4 Kabinen flexibel", "XXL Badeplattform", "Twin-Ruder", "European Yacht of the Year 2015"],
       price: "ab €3.150/Woche",
       attributes: ["sportlich", "beliebt"],
+      image: bavariaCruiser46,
     },
     {
       name: "Lagoon 42",
@@ -24,6 +35,7 @@ const Fleet = () => {
       features: ["4 Hauptkabinen + Crew", "4 Ensuite-Bäder", "Generator & A/C", "Ideal für Familien"],
       price: "ab €3.200/Woche",
       attributes: ["voluminös"],
+      image: lagoon42,
     },
     {
       name: "Oceanis 46.1",
@@ -33,6 +45,7 @@ const Fleet = () => {
       features: ["3-4 Kabinen", "2-3 Nasszellen", "Moderne Linien", "Familienfreundlich"],
       price: "ab €3.500/Woche",
       attributes: ["voluminös", "beliebt"],
+      image: oceanis461,
     },
     {
       name: "Bavaria Cruiser 37",
@@ -42,6 +55,7 @@ const Fleet = () => {
       features: ["3 Kabinen", "1-2 Nasszellen", "Einfach zu handhaben", "Ideal für kleine Crews"],
       price: "ab €1.900/Woche",
       attributes: ["sportlich"],
+      image: bavariaCruiser37,
     },
     {
       name: "Sun Odyssey 440",
@@ -51,6 +65,7 @@ const Fleet = () => {
       features: ["3-4 Kabinen", "Dualruder", "Cruiser of the Year 2018", "Besonderer Wohnkomfort"],
       price: "ab €2.950/Woche",
       attributes: ["voluminös"],
+      image: sunOdyssey440,
     },
     {
       name: "Sun Odyssey 410",
@@ -60,6 +75,7 @@ const Fleet = () => {
       features: ["2-3 Layouts möglich", "1-2 Nasszellen", "Boot des Jahres 2019/2020", "Hohe Variabilität"],
       price: "ab €2.800/Woche",
       attributes: ["sportlich"],
+      image: sunOdyssey410,
     },
     {
       name: "Bali Catspace",
@@ -69,6 +85,7 @@ const Fleet = () => {
       features: ["4 Hauptkabinen + Crew", "4 Ensuite-WCs", "Innovative offene Deckstruktur", "Lounge-artiges Design"],
       price: "ab €4.500/Woche",
       attributes: ["voluminös"],
+      image: baliCatspace,
     },
     {
       name: "Dufour 460 Grand Large",
@@ -78,6 +95,7 @@ const Fleet = () => {
       features: ["4 Kabinen", "2-3 Nasszellen", "Moderne Ausstattung", "Viel Volumen & Luxusgefühl"],
       price: "ab €3.650/Woche",
       attributes: ["beliebt"],
+      image: dufour460,
     },
     {
       name: "Oceanis 38.1",
@@ -87,6 +105,7 @@ const Fleet = () => {
       features: ["2-3 Kabinen", "1-2 Nasszellen", "Wandelbares Raumkonzept", "Geräumig trotz kompakter Größe"],
       price: "ab €2.100/Woche",
       attributes: ["beliebt"],
+      image: oceanis381,
     },
     {
       name: "Bavaria Cruiser 41",
@@ -96,6 +115,7 @@ const Fleet = () => {
       features: ["3 Kabinen", "2 WC/Dusche", "Gute Segeleigenschaften", "Sehr beliebt in Charterflotten"],
       price: "ab €2.650/Woche",
       attributes: ["sportlich", "beliebt"],
+      image: bavariaCruiser41,
     },
   ];
 
@@ -125,24 +145,34 @@ const Fleet = () => {
         {/* Boat Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {boats.map((boat, index) => (
-            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full">
-              <CardHeader>
-                <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
-                  {/* Attribute Icons */}
-                  <div className="flex gap-1">
-                    {boat.attributes.map((attribute, idx) => (
-                      <Badge key={idx} variant="outline" className="flex items-center gap-1 text-xs">
-                        {attribute === "sportlich" && <Zap className="w-3 h-3" />}
-                        {attribute === "voluminös" && <Maximize className="w-3 h-3" />}
-                        {attribute === "beliebt" && <Star className="w-3 h-3" />}
-                        {attribute}
-                      </Badge>
-                    ))}
-                  </div>
-                  <Badge variant="outline" className="border-ocean-blue text-ocean-blue text-xs">
+            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full overflow-hidden">
+              {/* Boat Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={boat.image}
+                  alt={boat.name}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/30 to-transparent"></div>
+                {/* Attribute Icons overlaid on image */}
+                <div className="absolute top-4 left-4 flex flex-wrap gap-1">
+                  {boat.attributes.map((attribute, idx) => (
+                    <Badge key={idx} variant="outline" className="flex items-center gap-1 text-xs bg-white/90 backdrop-blur-sm">
+                      {attribute === "sportlich" && <Zap className="w-3 h-3" />}
+                      {attribute === "voluminös" && <Maximize className="w-3 h-3" />}
+                      {attribute === "beliebt" && <Star className="w-3 h-3" />}
+                      {attribute}
+                    </Badge>
+                  ))}
+                </div>
+                <div className="absolute top-4 right-4">
+                  <Badge variant="outline" className="border-white text-white bg-white/20 backdrop-blur-sm text-xs">
                     {boat.type}
                   </Badge>
                 </div>
+              </div>
+              
+              <CardHeader>
                 <CardTitle className="text-lg text-ocean-dark">{boat.name}</CardTitle>
                 <CardDescription className="text-2xl font-bold text-ocean-blue">
                   {boat.price}
