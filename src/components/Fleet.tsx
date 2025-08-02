@@ -138,7 +138,7 @@ const Fleet = () => {
 
         {/* Fleet Image */}
         <div className="mb-12 rounded-2xl overflow-hidden shadow-elegant">
-          <img src={fleetMarina} alt="Unsere Yachten im Hafen" className="w-full h-64 md:h-96 object-cover" />
+          <img src="/lovable-uploads/f75a2961-5386-48a3-9aae-e12df9b325f6.png" alt="Unsere Yachten im Hafen" className="w-full h-64 md:h-96 object-cover" />
         </div>
 
         {/* Boat Carousel */}
