@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield, Search, Calendar, Navigation, Handshake, Anchor } from "lucide-react";
 import CharterRequestForm from "./CharterRequestForm";
-import servicesHeroConsultation from "@/assets/services-hero-consultation.jpg";
+import servicesHeroConsultationV2 from "@/assets/services-hero-consultation-v2.jpg";
 import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
 import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
 import luxuryYacht from "@/assets/luxury-yacht.jpg";
@@ -63,7 +63,7 @@ const Services = () => {
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
           <div className="relative">
             <img
-              src={servicesHeroConsultation}
+              src={servicesHeroConsultationV2}
               alt="Luxusyacht bei Sonnenuntergang"
               className="w-full h-64 md:h-80 object-cover"
             />
