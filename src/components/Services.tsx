@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield } from "lucide-react";
 import servicesHero from "@/assets/services-hero.jpg";
-import yachtInterior from "@/assets/yacht-interior.jpg";
+import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
 import yachtWithSkipper from "@/assets/yacht-with-skipper.jpg";
 import luxuryYacht from "@/assets/luxury-yacht.jpg";
 import transparentPricing from "@/assets/transparent-pricing.jpg";
@@ -16,7 +16,7 @@ const Services = () => {
       title: "Yacht Charter für Selbstsegler",
       description: "Premium Segelyachten für erfahrene Segler mit gültigem Segelschein",
       features: ["Verschiedene Bootsgrößen", "Bareboat Charter", "Vollständige Ausstattung", "Gültiger Segelschein erforderlich"],
-      image: yachtInterior,
+      image: selfSailingYacht,
     },
     {
       icon: Users,
