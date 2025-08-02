@@ -12,6 +12,9 @@ import Atlantic from "./pages/territories/Atlantic";
 import IndianOcean from "./pages/territories/IndianOcean";
 import NorthEurope from "./pages/territories/NorthEurope";
 import Expeditions from "./pages/territories/Expeditions";
+import Croatia from "./pages/territories/Croatia";
+import Greece from "./pages/territories/Greece";
+import Italy from "./pages/territories/Italy";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +33,9 @@ const App = () => (
           <Route path="/territories/indian-ocean" element={<IndianOcean />} />
           <Route path="/territories/north-europe" element={<NorthEurope />} />
           <Route path="/territories/expeditions" element={<Expeditions />} />
+          <Route path="/territories/croatia" element={<Croatia />} />
+          <Route path="/territories/greece" element={<Greece />} />
+          <Route path="/territories/italy" element={<Italy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

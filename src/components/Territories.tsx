@@ -1,7 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Anchor, Waves, Mountain } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { MapPin, Anchor, Waves, Mountain, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
 import mediterranean from "@/assets/mediterranean.jpg";
@@ -11,52 +12,155 @@ import caribbean from "@/assets/caribbean.jpg";
 import pacific from "@/assets/pacific.jpg";
 import indianOcean from "@/assets/indian-ocean.jpg";
 import expedition from "@/assets/expedition.jpg";
+import destinationCroatia from "@/assets/destination-croatia.jpg";
+import destinationGreece from "@/assets/destination-greece.jpg";
+import destinationItaly from "@/assets/destination-italy.jpg";
+import destinationSpain from "@/assets/destination-spain.jpg";
+import destinationTurkey from "@/assets/destination-turkey.jpg";
+import destinationFrance from "@/assets/destination-france.jpg";
+import destinationBvi from "@/assets/destination-bvi.jpg";
+import destinationThailand from "@/assets/destination-thailand.jpg";
+import destinationSeychelles from "@/assets/destination-seychelles.jpg";
+import destinationAustralia from "@/assets/destination-australia.jpg";
 
 const Territories = () => {
-  const territories = [
+  const topDestinations = [
     {
-      name: "Bodensee",
-      region: "Deutschland/Österreich/Schweiz",
-      description: "Unser Heimatrevier - kristallklares Wasser umgeben von den Alpen",
-      highlights: ["Ganzjährig segelbar", "Traumhaftes Alpenpanorama", "Sichere Gewässer", "Erstklassige Marinas"],
-      image: bodenseeAerial,
-      icon: Mountain,
-      difficulty: "Anfänger",
-      season: "März - November",
-      popular: true
+      rank: 1,
+      flag: "🇭🇷",
+      name: "Kroatien",
+      regions: "Dalmatien (Split, Šibenik, Dubrovnik), Kornaten, Istrien, Kvarner",
+      highlights: [
+        "Hunderte Inseln & Buchten",
+        "Hervorragende Infrastruktur", 
+        "Klare Regeln & guter Service",
+        "Ideales Klima (Mai–Oktober)"
+      ],
+      image: destinationCroatia,
+      link: "/territories/croatia"
     },
     {
-      name: "Mittelmeer",
-      region: "Kroatien, Italien, Griechenland",
-      description: "Traumhafte Buchten, türkisblaues Wasser und historische Häfen",
-      highlights: ["1000+ Inseln", "Warmes Klima", "Kulturelle Vielfalt", "Kulinarische Höhepunkte"],
-      image: mediterranean,
-      icon: Waves,
-      difficulty: "Fortgeschritten",
-      season: "April - Oktober",
-      popular: true
+      rank: 2,
+      flag: "🇬🇷",
+      name: "Griechenland",
+      regions: "Kykladen, Saronischer Golf, Ionische Inseln, Dodekanes, Sporaden",
+      highlights: [
+        "Inselhopping mit Tavernen-Charme",
+        "Konstante Meltemi-Winde (Sommer)",
+        "Kultur & Natur vereint",
+        "Ideal für Bareboat- oder Skippercharter"
+      ],
+      image: destinationGreece,
+      link: "/territories/greece"
     },
     {
-      name: "Ostsee",
-      region: "Deutschland, Dänemark, Schweden",
-      description: "Abwechslungsreiche Küstenlandschaften und charmante Hafenstädte",
-      highlights: ["Schären-Landschaft", "Historische Hansestädte", "Milde Winde", "Familienfreundlich"],
-      image: balticSea,
-      icon: Anchor,
-      difficulty: "Anfänger",
-      season: "Mai - September",
-      popular: false
+      rank: 3,
+      flag: "🇮🇹",
+      name: "Italien",
+      regions: "Sardinien, Elba/Toskana, Sizilien, Amalfiküste, Aeolische Inseln",
+      highlights: [
+        "Vielfalt an Revierarten: ruhig bis anspruchsvoll",
+        "Gutes Essen, Kultur & spektakuläre Küsten",
+        "Auch für Wochenend-Törns beliebt"
+      ],
+      image: destinationItaly,
+      link: "/territories/italy"
     },
     {
-      name: "Atlantik",
-      region: "Portugal, Spanien, Frankreich",
-      description: "Herausfordernde Gewässer für erfahrene Segler",
-      highlights: ["Atlantik-Feeling", "Lange Schläge", "Professionelle Herausforderung", "Spektakuläre Küsten"],
-      image: atlantic,
-      icon: MapPin,
-      difficulty: "Experte",
-      season: "Juni - September",
-      popular: false
+      rank: 4,
+      flag: "🇪🇸",
+      name: "Spanien",
+      regions: "Balearen (Mallorca, Menorca, Ibiza, Formentera), Kanaren",
+      highlights: [
+        "Mediterrane Atmosphäre mit Top-Infrastruktur",
+        "Ganzjahresziel (v.a. Kanaren)",
+        "Große Auswahl an Charterbasen"
+      ],
+      image: destinationSpain,
+      link: "/territories/spain"
+    },
+    {
+      rank: 5,
+      flag: "🇹🇷",
+      name: "Türkei",
+      regions: "Türkische Ägäis (Bodrum, Marmaris, Göcek, Fethiye)",
+      highlights: [
+        "Blue Cruise-Tradition",
+        "Gület-Charter beliebt",
+        "Warmes Wasser, geschützte Buchten",
+        "Gastfreundschaft & gutes Preis-Leistungs-Verhältnis"
+      ],
+      image: destinationTurkey,
+      link: "/territories/turkey"
+    },
+    {
+      rank: 6,
+      flag: "🇫🇷",
+      name: "Frankreich",
+      regions: "Côte d'Azur, Korsika, Bretagne",
+      highlights: [
+        "Segeln mit Stil (Cannes, St. Tropez)",
+        "Anspruchsvolles Tidenrevier (Bretagne)",
+        "Sehr gute Yachtausstattung & Infrastruktur"
+      ],
+      image: destinationFrance,
+      link: "/territories/france"
+    },
+    {
+      rank: 7,
+      flag: "🇻🇬",
+      name: "Britische Jungferninseln (BVI)",
+      regions: "Inselgruppe der Kleinen Antillen, Karibik",
+      highlights: [
+        "Traumhafte, kurze Tagesetappen",
+        "Karibik-Feeling pur",
+        "Perfekt für Einsteiger & Familien",
+        "Line-of-sight sailing mit Top-Logistik"
+      ],
+      image: destinationBvi,
+      link: "/territories/bvi"
+    },
+    {
+      rank: 8,
+      flag: "🇹🇭",
+      name: "Thailand",
+      regions: "Phuket & Andamanensee",
+      highlights: [
+        "Exotische Kulisse mit Felseninseln & Lagunen",
+        "Günstige Charterpreise",
+        "Kultur & Küche an Land",
+        "Beste Reisezeit: Nov–Apr"
+      ],
+      image: destinationThailand,
+      link: "/territories/thailand"
+    },
+    {
+      rank: 9,
+      flag: "🇸🇨",
+      name: "Seychellen",
+      regions: "Mahé, Praslin, La Digue, Amiranten",
+      highlights: [
+        "Tropisches Inselparadies",
+        "Katamaran bevorzugt",
+        "Glasklares Wasser, Schnorcheln",
+        "Ankern vor Traumstränden"
+      ],
+      image: destinationSeychelles,
+      link: "/territories/seychelles"
+    },
+    {
+      rank: 10,
+      flag: "🇦🇺",
+      name: "Australien",
+      regions: "Whitsunday Islands (Great Barrier Reef)",
+      highlights: [
+        "Unberührte Inselwelt",
+        "Traumhafte Ankerbuchten",
+        "Tropisches Klima, bestes Segelrevier der Südhalbkugel",
+        "Meist mit Skipper empfohlen"
+      ],
+      image: destinationAustralia,
+      link: "/territories/australia"
     }
   ];
 
@@ -77,26 +181,58 @@ const Territories = () => {
           </p>
         </div>
 
-        {/* Featured Territory */}
-        <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
-          <div className="relative">
-            <img
-              src={bodenseeAerial}
-              alt="Bodensee aus der Vogelperspektive"
-              className="w-full h-64 md:h-96 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <div className="flex items-center gap-2 mb-2">
-                <Badge className="bg-sunset text-white">Unser Heimatrevier</Badge>
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-2">Bodensee</h3>
-              <p className="text-lg text-white/90 max-w-md">
-                Das perfekte Segelrevier für Einsteiger und Familien - 
-                sicher, schön und nur einen Steinwurf von unserer Basis entfernt.
-              </p>
-            </div>
-          </div>
+        {/* Top 10 Destinations Carousel */}
+        <div className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-ocean-dark">
+            Unsere Top 10 Revier-Empfehlungen für dich
+          </h2>
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {topDestinations.map((destination) => (
+                <CarouselItem key={destination.rank} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Link to={destination.link} className="group">
+                    <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer h-full">
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={destination.image}
+                          alt={destination.name}
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
+                        <div className="absolute top-4 left-4">
+                          <Badge className="bg-gradient-sunset text-white font-bold">
+                            <Star className="w-3 h-3 mr-1" />
+                            #{destination.rank}
+                          </Badge>
+                        </div>
+                        <div className="absolute bottom-4 left-4 text-white">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-2xl">{destination.flag}</span>
+                            <h3 className="text-xl font-bold">{destination.name}</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <CardContent className="p-4">
+                        <p className="text-sm text-muted-foreground mb-3 font-medium">
+                          {destination.regions}
+                        </p>
+                        <ul className="space-y-1">
+                          {destination.highlights.map((highlight, idx) => (
+                            <li key={idx} className="flex items-center gap-2 text-xs">
+                              <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full flex-shrink-0"></div>
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
         </div>
 
         {/* Navigation Menu */}
