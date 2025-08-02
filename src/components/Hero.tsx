@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             Bereit für Dein
             <br />
             <span className="text-white">
@@ -83,15 +83,15 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
 
           {/* CTA Button */}
-          <div className="flex justify-center">
+          <div className="flex justify-center px-4">
             <CharterRequestForm>
               <Button 
                 variant="default" 
                 size="xl" 
-                className="text-2xl px-16 py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
+                className="text-base sm:text-lg md:text-2xl px-6 sm:px-8 md:px-16 py-3 sm:py-4 md:py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
               >
                 Jetzt Anfrage stellen
               </Button>
