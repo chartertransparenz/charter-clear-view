@@ -1,15 +1,14 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, MapPin, Wind, Anchor } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, MapPin, Anchor, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import atlantic from "@/assets/atlantic.jpg";
 
 const Atlantic = () => {
   const regions = [
-    { name: "Kanaren", areas: ["Teneriffa", "Lanzarote", "La Gomera"] },
-    { name: "Kapverden", areas: ["Sal", "Boa Vista"] },
-    { name: "Azoren", description: "Portugals Perlen im Atlantik" }
+    { name: "Kanaren", areas: ["Gran Canaria", "Teneriffa", "Lanzarote"] },
+    { name: "Kapverden", areas: ["Mindelo", "Praia"] },
+    { name: "Azoren", areas: ["Angra do Heroísmo", "Horta"] }
   ];
 
   const advantages = [
@@ -20,7 +19,7 @@ const Atlantic = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden">
         <img
@@ -28,13 +27,13 @@ const Atlantic = () => {
           alt="Atlantik"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <Badge className="mb-4 bg-sunset text-white">🌬️ Atlantik</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Atlantik & Kanaren</h1>
+            <Badge className="mb-4 bg-orange-500 text-white">🌊 Atlantik</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Atlantik</h1>
             <p className="text-xl max-w-2xl">
-              Kräftige Winde und sportliches Segeln
+              Kanaren, Kapverden & Azoren
             </p>
           </div>
         </div>
@@ -47,7 +46,7 @@ const Atlantic = () => {
             }, 100);
           }}
         >
-          <Button variant="outline" className="bg-white/90 text-ocean-dark border-white">
+          <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
           </Button>
@@ -57,85 +56,68 @@ const Atlantic = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
-          <Card className="shadow-elegant">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-ocean-dark">
-                <Wind className="w-5 h-5 text-sunset" />
-                Atlantik-Feeling
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-lg text-muted-foreground">
-                Ideale Reviere für sportlichere Törns mit kräftigeren Winden. 
-                Perfekt für erfahrene Segler und als Vorbereitung für Atlantiküberquerungen.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="flex items-center gap-2 mb-4">
+              <Star className="w-5 h-5 text-orange-500" />
+              <h2 className="text-2xl font-bold text-gray-800">Atlantik-Feeling</h2>
+            </div>
+            <p className="text-lg text-gray-600">
+              Perfekte Bedingungen für sportliches Segeln mit konstanten Passatwinden 
+              und ganzjährig milden Temperaturen.
+            </p>
+          </div>
         </div>
 
         {/* Top Regions */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Top-Regionen</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {regions.map((region, index) => (
-              <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-ocean-dark">
-                    <MapPin className="w-4 h-4 text-sunset" />
-                    {region.name}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {region.description && (
-                    <p className="text-sm text-muted-foreground mb-3">{region.description}</p>
-                  )}
-                  {region.areas && (
-                    <div className="space-y-2">
-                      {region.areas.map((area, idx) => (
-                        <div key={idx} className="flex items-center gap-2 text-sm">
-                          <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
-                          <span className="text-muted-foreground">{area}</span>
-                        </div>
-                      ))}
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-orange-500" />
+                  <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
+                </div>
+                <div className="space-y-2">
+                  {region.areas.map((area, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-sm">
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                      <span className="text-gray-600">{area}</span>
                     </div>
-                  )}
-                </CardContent>
-              </Card>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Advantages */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
-          <div className="flex flex-wrap gap-4 justify-center">
-            {advantages.filter(advantage => advantage && advantage.trim()).map((advantage, index) => (
-              <Card key={index} className="text-center shadow-ocean w-64">
-                <CardContent className="pt-6">
-                  <Anchor className="w-8 h-8 text-sunset mx-auto mb-3" />
-                  <p className="font-medium text-ocean-dark">{advantage}</p>
-                </CardContent>
-              </Card>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Vorteile</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {advantages.map((advantage, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+                <Anchor className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <p className="font-medium text-gray-800">{advantage}</p>
+              </div>
             ))}
           </div>
         </div>
 
         {/* CTA */}
-        <div className="text-center">
-          <Card className="bg-gradient-ocean text-white shadow-elegant">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">
-                Atlantik erobern?
-              </h3>
-              <p className="mb-6 text-white/90 max-w-2xl mx-auto">
-                Erleben Sie sportliches Segeln mit kräftigen Winden und bereiten Sie sich 
-                optimal auf große Abenteuer vor.
-              </p>
-              <Button variant="transparent" size="lg">
-                Atlantik-Charter anfragen
-              </Button>
-            </CardContent>
-          </Card>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Lust auf Atlantik?
+            </h3>
+            <p className="mb-6 text-blue-100">
+              Erleben Sie echtes Segeln mit kräftigen Winden und endlosen 
+              Horizonten in den schönsten Atlantik-Destinationen.
+            </p>
+            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              Atlantik-Charter anfragen
+            </Button>
+          </div>
         </div>
       </div>
     </div>

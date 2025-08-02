@@ -1,6 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Mountain, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import expedition from "@/assets/expedition.jpg";
@@ -8,50 +7,58 @@ import expedition from "@/assets/expedition.jpg";
 const Expeditions = () => {
   const expeditions = [
     { 
-      name: "Patagonien & Kap Hoorn", 
-      description: "Wild & anspruchsvoll",
+      name: "Nordwestpassage", 
+      description: "Durch die arktischen Gewässer Kanadas",
       difficulty: "Extrem"
     },
     { 
-      name: "Alaska & British Columbia", 
-      description: "Gletscher, Tierwelt, Einsamkeit",
-      difficulty: "Sehr hoch"
-    },
-    { 
-      name: "Island & Grönland", 
-      description: "Extremes Expeditionssegeln",
+      name: "Antarktis", 
+      description: "Das ultimative Abenteuer am Ende der Welt",
       difficulty: "Extrem"
     },
     { 
-      name: "Madagaskar, Oman, Thailand", 
-      description: "Selten, aber wunderschön",
+      name: "Spitzbergen", 
+      description: "Eisbären und Mitternachtssonne",
+      difficulty: "Hoch"
+    },
+    { 
+      name: "Grönland", 
+      description: "Eisberge und ursprüngliche Natur",
       difficulty: "Hoch"
     }
   ];
 
   const features = [
-    "Einzigartige Naturerlebnisse",
-    "Maximale Herausforderung", 
-    "Unberührte Wildnis",
-    "Expeditionscharakter"
+    "Erfahrene Expedition-Crews",
+    "Speziell ausgerüstete Yachten", 
+    "Extreme Wetterbedingungen",
+    "Einmalige Naturerlebnisse"
   ];
 
+  const getDifficultyColor = (difficulty: string) => {
+    switch (difficulty) {
+      case "Extrem": return "bg-red-500";
+      case "Hoch": return "bg-orange-500";
+      default: return "bg-yellow-500";
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden">
         <img
           src={expedition}
-          alt="Expedition"
+          alt="Expeditionen"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <Badge className="mb-4 bg-sunset text-white">🔥 Expeditionen</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Exoten & Expeditionen</h1>
+            <Badge className="mb-4 bg-orange-500 text-white">🗻 Extreme Expeditionen</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Expeditionen</h1>
             <p className="text-xl max-w-2xl">
-              Für Abenteuerlustige und Extremsegler
+              Für erfahrene Segler mit Abenteuergeist
             </p>
           </div>
         </div>
@@ -64,7 +71,7 @@ const Expeditions = () => {
             }, 100);
           }}
         >
-          <Button variant="outline" className="bg-white/90 text-ocean-dark border-white">
+          <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
           </Button>
@@ -74,82 +81,66 @@ const Expeditions = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Warning */}
         <div className="max-w-4xl mx-auto mb-12">
-          <Card className="shadow-elegant border-sunset/50">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-sunset">
-                <AlertTriangle className="w-5 h-5" />
-                Nur für erfahrene Expeditionssegler
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-lg text-muted-foreground">
-                Diese Reviere erfordern maximale Segelerfahrung, spezielle Ausrüstung und 
-                professionelle Vorbereitung. Nur für Crews mit Expeditions-Erfahrung geeignet.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="bg-red-50 border border-red-200 p-6 rounded-lg">
+            <div className="flex items-center gap-2 mb-4">
+              <AlertTriangle className="w-5 h-5 text-red-600" />
+              <h2 className="text-xl font-bold text-red-800">Nur für erfahrene Segler</h2>
+            </div>
+            <p className="text-red-700">
+              Expeditions-Charter erfordert umfangreiche Segelerfahrung und entsprechende Qualifikationen. 
+              Extreme Wetterbedingungen und abgelegene Gebiete stellen höchste Anforderungen an Crew und Material.
+            </p>
+          </div>
         </div>
 
-        {/* Expedition Destinations */}
+        {/* Expeditions */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Expeditionsziele</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Expedition-Destinationen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
             {expeditions.map((expedition, index) => (
-              <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <CardTitle className="flex items-center gap-2 text-ocean-dark">
-                      <MapPin className="w-4 h-4 text-sunset" />
-                      {expedition.name}
-                    </CardTitle>
-                    <Badge variant="outline" className={`text-xs ${
-                      expedition.difficulty === 'Extrem' ? 'border-red-500 text-red-500' :
-                      expedition.difficulty === 'Sehr hoch' ? 'border-orange-500 text-orange-500' :
-                      'border-yellow-500 text-yellow-500'
-                    }`}>
-                      {expedition.difficulty}
-                    </Badge>
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-orange-500" />
+                    <h3 className="text-xl font-semibold text-gray-800">{expedition.name}</h3>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{expedition.description}</p>
-                </CardContent>
-              </Card>
+                  <span className={`${getDifficultyColor(expedition.difficulty)} text-white px-2 py-1 rounded text-xs font-bold`}>
+                    {expedition.difficulty}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600">{expedition.description}</p>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Features */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Was Sie erwartet</h2>
-          <div className="flex flex-wrap gap-4 justify-center">
-            {features.filter(feature => feature && feature.trim()).map((feature, index) => (
-              <Card key={index} className="text-center shadow-ocean w-64">
-                <CardContent className="pt-6">
-                  <Mountain className="w-8 h-8 text-sunset mx-auto mb-3" />
-                  <p className="font-medium text-ocean-dark">{feature}</p>
-                </CardContent>
-              </Card>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Was Sie erwartet</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+                <Mountain className="w-8 h-8 text-gray-600 mx-auto mb-3" />
+                <p className="font-medium text-gray-800">{feature}</p>
+              </div>
             ))}
           </div>
         </div>
 
         {/* CTA */}
-        <div className="text-center">
-          <Card className="bg-gradient-ocean text-white shadow-elegant">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">
-                Bereit für das Abenteuer?
-              </h3>
-              <p className="mb-6 text-white/90 max-w-2xl mx-auto">
-                Unsere Expeditions-Experten beraten Sie gerne über die Möglichkeiten 
-                und Voraussetzungen für diese außergewöhnlichen Segelabenteuer.
-              </p>
-              <Button variant="transparent" size="lg">
-                Expeditions-Beratung anfragen
-              </Button>
-            </CardContent>
-          </Card>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-gray-700 to-gray-600 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Bereit für das ultimative Abenteuer?
+            </h3>
+            <p className="mb-6 text-gray-200">
+              Kontaktieren Sie uns für eine persönliche Beratung zu Expeditions-Charter. 
+              Wir prüfen Ihre Qualifikationen und planen Ihr Abenteuer.
+            </p>
+            <Button className="bg-white text-gray-700 hover:bg-gray-50" size="lg">
+              Expedition-Beratung anfragen
+            </Button>
+          </div>
         </div>
       </div>
     </div>
