@@ -38,7 +38,7 @@ const Hero = () => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [nextSlide]);
-  return <section id="start" className="relative h-screen flex items-center justify-center overflow-hidden" style={{marginTop: '80px'}} onLoad={() => console.log('Hero section with 80px margin, total height: calc(100vh + 80px)')}>
+  return <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-28 md:pt-24 lg:pt-20">
       {/* Background Images Carousel */}
       {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
       backgroundImage: `url(${slide.image})`
