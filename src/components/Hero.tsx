@@ -42,7 +42,7 @@ const Hero = () => {
       {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
       backgroundImage: `url(${slide.image})`
     }}>
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>)}
 
       {/* Navigation Arrows */}
