@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield } from "lucide-react";
 import servicesHero from "@/assets/services-hero.jpg";
 import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
-import yachtWithSkipper from "@/assets/yacht-with-skipper.jpg";
+import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
 import luxuryYacht from "@/assets/luxury-yacht.jpg";
 import transparentPricing from "@/assets/transparent-pricing.jpg";
 import flexibleBooking from "@/assets/flexible-booking.jpg";
@@ -23,7 +23,7 @@ const Services = () => {
       title: "Yacht Charter mit Skipper",
       description: "Entspannter Segeltörn mit professionellem Skipper für alle Erfahrungsstufen",
       features: ["Erfahrener Skipper inklusive", "Für Anfänger & Profis", "Bis zu 12 Personen", "Keine Segelschein erforderlich"],
-      image: yachtWithSkipper,
+      image: skipperCharterPremium,
     },
     {
       icon: GraduationCap,
