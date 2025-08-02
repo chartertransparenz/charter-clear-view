@@ -71,7 +71,7 @@ const Services = () => {
             <div className="absolute bottom-6 left-6 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
               <p className="text-lg text-white/90">
-                Von der Yacht-Charter bis zur Segelausbildung
+                Von Yacht Charter bis Luxus Charter
               </p>
             </div>
           </div>
