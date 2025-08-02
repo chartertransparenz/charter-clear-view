@@ -2,10 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationSpain from "@/assets/destination-spain.jpg";
 
 const Spain = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const quickFacts = [
     { label: "Lage", value: "Mittelmeer & Atlantik" },
     { label: "Beste Zeit", value: "Ganzjährig (Kanaren)" },

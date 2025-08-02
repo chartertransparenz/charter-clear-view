@@ -2,10 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationTurkey from "@/assets/destination-turkey.jpg";
 
 const Turkey = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const quickFacts = [
     { label: "Lage", value: "Türkische Ägäis" },
     { label: "Beste Zeit", value: "Mai - Oktober" },
