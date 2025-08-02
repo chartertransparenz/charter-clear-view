@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 import heroYacht from "@/assets/hero-yacht.jpg";
 import charterHeroWater from "@/assets/charter-hero-water.jpg";
-import mediterraneanImage from "/lovable-uploads/58d61b25-e0c3-44d0-9e60-202f1de6c843.png";
+import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
 import caribbeanImage from "@/assets/caribbean.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
