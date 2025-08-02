@@ -54,8 +54,20 @@ const Caribbean = () => {
           </Card>
         </div>
 
+        {/* Test: Grid mit 4 Cards */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-center mb-4">TEST: 4 Cards in Grid</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Card><CardContent className="pt-6"><p>Card 1</p></CardContent></Card>
+            <Card><CardContent className="pt-6"><p>Card 2</p></CardContent></Card>
+            <Card><CardContent className="pt-6"><p>Card 3</p></CardContent></Card>
+            <Card><CardContent className="pt-6"><p>Card 4</p></CardContent></Card>
+          </div>
+        </div>
+
         <div className="text-center text-2xl">
-          <p>TEST: Eine einzige Card-Komponente hinzugefügt</p>
+          <p>Falls der leere Kasten JETZT da ist:</p>
+          <p>Das Problem liegt bei 4 Cards in 3-Spalten-Grid!</p>
         </div>
 
         <div className="mt-12 text-center">
