@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield } from "lucide-react";
+import CharterRequestForm from "./CharterRequestForm";
 import servicesHero from "@/assets/services-hero.jpg";
 import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
 import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
@@ -239,6 +240,11 @@ const Services = () => {
                 <Button variant="transparent" size="lg">
                   Angebot anfordern
                 </Button>
+                <CharterRequestForm>
+                  <Button variant="default" size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                    Jetzt Anfrage stellen
+                  </Button>
+                </CharterRequestForm>
               </div>
             </div>
           </div>
