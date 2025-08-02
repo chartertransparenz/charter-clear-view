@@ -152,7 +152,7 @@ const CharterRequestForm = ({
         <div className="absolute inset-0 bg-cover bg-center" style={{
         backgroundImage: `url(/lovable-uploads/425e8e7c-d82f-4959-a47c-f3ce2d8d8cff.png)`
       }} />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
         <div className="relative z-10">
           <div className="flex items-center justify-center gap-2 mb-2">
             <CardTitle className="text-2xl">Jetzt deinen Traum-Törn starten!</CardTitle>
