@@ -222,7 +222,7 @@ const Services = () => {
                 <img 
                   src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" 
                   alt="CharterTransparenz" 
-                  className="h-12 w-auto opacity-80"
+                  className="h-16 w-auto"
                 />
               </div>
               <h3 className="text-3xl font-bold mb-4">
