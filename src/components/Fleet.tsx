@@ -62,7 +62,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen", "Dualruder", "Cruiser of the Year 2018", "Besonderer Wohnkomfort"],
     price: "ab €2.950/Woche",
     attributes: ["voluminös"],
-    image: sunOdyssey440
+    image: "/lovable-uploads/fb1a8403-78ac-459d-9e98-87667420bcb2.png"
   }, {
     name: "Sun Odyssey 410",
     type: "Monohull Cruiser",
