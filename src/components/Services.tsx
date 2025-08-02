@@ -151,65 +151,40 @@ const Services = () => {
               </p>
             </div>
           </div>
-            <div className="space-y-6 max-w-4xl mx-auto">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Search className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-ocean-dark mb-2">Transparente Preise</h5>
-                  <p className="text-sm text-muted-foreground">
-                    Bei uns weißt du von Anfang an, woran du bist. Keine versteckten Gebühren, keine Überraschungen. Alle Kosten werden dir klar und vollständig angezeigt – vom Basispreis bis zu optionalen Extras. So kannst du dein Budget sicher planen und dich ganz aufs Segeln freuen.
-                  </p>
-                </div>
+            <div className="space-y-6 max-w-4xl">
+              <div>
+                <h5 className="font-semibold text-ocean-dark mb-2">Transparente Preise</h5>
+                <p className="text-sm text-muted-foreground">
+                  Bei uns weißt du von Anfang an, woran du bist. Keine versteckten Gebühren, keine Überraschungen. Alle Kosten werden dir klar und vollständig angezeigt – vom Basispreis bis zu optionalen Extras. So kannst du dein Budget sicher planen und dich ganz aufs Segeln freuen.
+                </p>
               </div>
               
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Calendar className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-ocean-dark mb-2">Flexible Buchung</h5>
-                  <p className="text-sm text-muted-foreground">
-                    Pläne ändern sich – kein Problem. Dank flexibler Stornobedingungen und einfacher Online-Abwicklung kannst du deine Buchung jederzeit anpassen. Und wenn du Fragen hast, sind wir persönlich für dich da – vor, während und nach deinem Törn.
-                  </p>
-                </div>
+              <div>
+                <h5 className="font-semibold text-ocean-dark mb-2">Flexible Buchung</h5>
+                <p className="text-sm text-muted-foreground">
+                  Pläne ändern sich – kein Problem. Dank flexibler Stornobedingungen und einfacher Online-Abwicklung kannst du deine Buchung jederzeit anpassen. Und wenn du Fragen hast, sind wir persönlich für dich da – vor, während und nach deinem Törn.
+                </p>
               </div>
               
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Navigation className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-ocean-dark mb-2">Beste Lagen</h5>
-                  <p className="text-sm text-muted-foreground">
-                    Wir bieten dir Zugang zu Premium-Liegeplätzen an den schönsten Revieren Europas – vom Bodensee bis zur Adria. Unsere Partner vor Ort sind handverlesen, unsere Yachten sorgfältig geprüft. Egal ob Segelyacht, Katamaran oder Motoryacht: Du startest immer aus besten Lagen – für maximale Urlaubsqualität.
-                  </p>
-                </div>
+              <div>
+                <h5 className="font-semibold text-ocean-dark mb-2">Beste Lagen</h5>
+                <p className="text-sm text-muted-foreground">
+                  Wir bieten dir Zugang zu Premium-Liegeplätzen an den schönsten Revieren Europas – vom Bodensee bis zur Adria. Unsere Partner vor Ort sind handverlesen, unsere Yachten sorgfältig geprüft. Egal ob Segelyacht, Katamaran oder Motoryacht: Du startest immer aus besten Lagen – für maximale Urlaubsqualität.
+                </p>
               </div>
               
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Handshake className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-ocean-dark mb-2">Mehr als ein Buchungsportal</h5>
-                  <p className="text-sm text-muted-foreground">
-                    Wir sind ein familiengeführtes Unternehmen mit Herz und Verstand – keine Plattform, kein Callcenter. Bei uns sprichst du mit echten Menschen, die selbst segeln und wissen, was zählt. Individuelle Beratung, persönlicher Service und ehrliche Empfehlungen sind unser Anspruch – seit mehr als drei Jahrzehnten.
-                  </p>
-                </div>
+              <div>
+                <h5 className="font-semibold text-ocean-dark mb-2">Mehr als ein Buchungsportal</h5>
+                <p className="text-sm text-muted-foreground">
+                  Wir sind ein familiengeführtes Unternehmen mit Herz und Verstand – keine Plattform, kein Callcenter. Bei uns sprichst du mit echten Menschen, die selbst segeln und wissen, was zählt. Individuelle Beratung, persönlicher Service und ehrliche Empfehlungen sind unser Anspruch – seit mehr als drei Jahrzehnten.
+                </p>
               </div>
               
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Anchor className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-ocean-dark mb-2">Jetzt deine Charteryacht buchen</h5>
-                  <p className="text-sm text-muted-foreground">
-                    Mit einem Partner, dem du vertrauen kannst. Klick dich rein, lass dich beraten und finde die Yacht, die zu dir, deinem Törn und deinem Traumurlaub passt.
-                  </p>
-                </div>
+              <div>
+                <h5 className="font-semibold text-ocean-dark mb-2">Jetzt deine Charteryacht buchen</h5>
+                <p className="text-sm text-muted-foreground">
+                  Mit einem Partner, dem du vertrauen kannst. Klick dich rein, lass dich beraten und finde die Yacht, die zu dir, deinem Törn und deinem Traumurlaub passt.
+                </p>
               </div>
             </div>
           
