@@ -1,7 +1,8 @@
+import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Users, Ruler, Fuel, Zap, Maximize, Star } from "lucide-react";
+import { Users, Ruler, Fuel, Zap, Maximize, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import fleetMarina from "@/assets/fleet-marina.jpg";
 import bavariaCruiser46 from "@/assets/bavaria-cruiser-46.jpg";
 import lagoon42 from "@/assets/lagoon-42.jpg";
@@ -16,6 +17,9 @@ import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 
 const Fleet = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  
   const boats = [
     {
       name: "Bavaria Cruiser 46",
@@ -119,6 +123,41 @@ const Fleet = () => {
     },
   ];
 
+  // Automatisches Karussell
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex + 1 >= boats.length ? 0 : prevIndex + 1
+      );
+    }, 4000); // Alle 4 Sekunden
+
+    return () => clearInterval(interval);
+  }, [boats.length]);
+
+  // Karussell-Navigation
+  const scrollToPrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? boats.length - 1 : prevIndex - 1
+    );
+  };
+
+  const scrollToNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex + 1 >= boats.length ? 0 : prevIndex + 1
+    );
+  };
+
+  // Automatisch zum aktuellen Index scrollen
+  useEffect(() => {
+    if (carouselRef.current) {
+      const cardWidth = 320; // Breite einer Karte + Margin
+      carouselRef.current.scrollTo({
+        left: currentIndex * cardWidth,
+        behavior: 'smooth'
+      });
+    }
+  }, [currentIndex]);
+
   return (
     <section id="fleet" className="py-20">
       <div className="container mx-auto px-4">
@@ -142,80 +181,130 @@ const Fleet = () => {
           />
         </div>
 
-        {/* Boat Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {boats.map((boat, index) => (
-            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full overflow-hidden">
-              {/* Boat Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={boat.image}
-                  alt={boat.name}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/30 to-transparent"></div>
-                {/* Attribute Icons overlaid on image */}
-                <div className="absolute top-4 left-4 flex flex-wrap gap-1">
-                  {boat.attributes.map((attribute, idx) => (
-                    <Badge key={idx} variant="outline" className="flex items-center gap-1 text-xs bg-white/90 backdrop-blur-sm">
-                      {attribute === "sportlich" && <Zap className="w-3 h-3" />}
-                      {attribute === "voluminös" && <Maximize className="w-3 h-3" />}
-                      {attribute === "beliebt" && <Star className="w-3 h-3" />}
-                      {attribute}
-                    </Badge>
-                  ))}
-                </div>
-                <div className="absolute top-4 right-4">
-                  <Badge variant="outline" className="border-white text-white bg-white/20 backdrop-blur-sm text-xs">
-                    {boat.type}
-                  </Badge>
-                </div>
+        {/* Boat Carousel */}
+        <div className="relative">
+          {/* Navigation Arrows */}
+          <button
+            onClick={scrollToPrevious}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-elegant hover:bg-white transition-colors duration-300"
+            aria-label="Vorheriges Boot"
+          >
+            <ChevronLeft className="w-6 h-6 text-ocean-dark" />
+          </button>
+          
+          <button
+            onClick={scrollToNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-elegant hover:bg-white transition-colors duration-300"
+            aria-label="Nächstes Boot"
+          >
+            <ChevronRight className="w-6 h-6 text-ocean-dark" />
+          </button>
+
+          {/* Carousel Container */}
+          <div 
+            ref={carouselRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+            style={{
+              scrollSnapType: 'x mandatory',
+              scrollBehavior: 'smooth'
+            }}
+          >
+            {boats.map((boat, index) => (
+              <div 
+                key={index} 
+                className="flex-none w-80"
+                style={{ scrollSnapAlign: 'start' }}
+              >
+                <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full overflow-hidden">
+                  {/* Boat Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={boat.image}
+                      alt={boat.name}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/30 to-transparent"></div>
+                    {/* Attribute Icons overlaid on image */}
+                    <div className="absolute top-4 left-4 flex flex-wrap gap-1">
+                      {boat.attributes.map((attribute, idx) => (
+                        <Badge key={idx} variant="outline" className="flex items-center gap-1 text-xs bg-white/90 backdrop-blur-sm">
+                          {attribute === "sportlich" && <Zap className="w-3 h-3" />}
+                          {attribute === "voluminös" && <Maximize className="w-3 h-3" />}
+                          {attribute === "beliebt" && <Star className="w-3 h-3" />}
+                          {attribute}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="absolute top-4 right-4">
+                      <Badge variant="outline" className="border-white text-white bg-white/20 backdrop-blur-sm text-xs">
+                        {boat.type}
+                      </Badge>
+                    </div>
+                  </div>
+                  
+                  <CardHeader>
+                    <CardTitle className="text-lg text-ocean-dark">{boat.name}</CardTitle>
+                    <CardDescription className="text-2xl font-bold text-ocean-blue">
+                      {boat.price}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent className="flex flex-col flex-grow">
+                    {/* Boat specs */}
+                    <div className="grid grid-cols-3 gap-2 mb-4 text-sm">
+                      <div className="flex items-center gap-1">
+                        <Users className="w-4 h-4 text-muted-foreground" />
+                        <span className="text-xs">{boat.capacity.match(/\d+[-–]\d+|\d+/)?.[0] || boat.capacity.split(' ')[0]}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Ruler className="w-4 h-4 text-muted-foreground" />
+                        <span className="text-xs">{boat.length}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Fuel className="w-4 h-4 text-muted-foreground" />
+                        <span className="text-xs">Diesel</span>
+                      </div>
+                    </div>
+
+                    {/* Features */}
+                    <ul className="space-y-1 mb-6 flex-grow">
+                      {boat.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-center gap-2 text-sm">
+                          <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Button at bottom */}
+                    <div className="mt-auto">
+                      <CharterRequestForm>
+                        <Button variant="ocean" className="w-full">
+                          Jetzt Anfrage stellen
+                        </Button>
+                      </CharterRequestForm>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
-              
-              <CardHeader>
-                <CardTitle className="text-lg text-ocean-dark">{boat.name}</CardTitle>
-                <CardDescription className="text-2xl font-bold text-ocean-blue">
-                  {boat.price}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex flex-col flex-grow">
-                {/* Boat specs */}
-                <div className="grid grid-cols-3 gap-2 mb-4 text-sm">
-                  <div className="flex items-center gap-1">
-                    <Users className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-xs">{boat.capacity.match(/\d+[-–]\d+|\d+/)?.[0] || boat.capacity.split(' ')[0]}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Ruler className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-xs">{boat.length}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Fuel className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-xs">Diesel</span>
-                  </div>
-                </div>
-
-                {/* Features */}
-                <ul className="space-y-1 mb-6 flex-grow">
-                  {boat.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm">
-                      <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Button at bottom */}
-                <div className="mt-auto">
-                  <CharterRequestForm>
-                    <Button variant="ocean" className="w-full">
-                      Jetzt Anfrage stellen
-                    </Button>
-                  </CharterRequestForm>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+            ))}
+          </div>
+          
+          {/* Carousel Indicators */}
+          <div className="flex justify-center mt-6 gap-2">
+            {boats.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                  index === currentIndex 
+                    ? 'bg-ocean-blue' 
+                    : 'bg-ocean-blue/30 hover:bg-ocean-blue/60'
+                }`}
+                aria-label={`Gehe zu Boot ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}
