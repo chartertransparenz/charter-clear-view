@@ -43,7 +43,11 @@ const Navigation = () => {
               </a>
             ))}
             <CharterRequestForm>
-              <Button variant="default" size="sm" className="bg-gradient-to-r from-blue-600 to-blue-800 text-white hover:from-blue-700 hover:to-blue-900 shadow-lg border border-blue-700">
+              <Button 
+                variant="default" 
+                size="sm" 
+                className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+              >
                 Jetzt Anfrage stellen
               </Button>
             </CharterRequestForm>
@@ -78,7 +82,11 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <CharterRequestForm>
-                  <Button variant="default" size="sm" className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white hover:from-blue-700 hover:to-blue-900 shadow-lg border border-blue-700">
+                  <Button 
+                    variant="default" 
+                    size="sm" 
+                    className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                  >
                     Jetzt Anfrage stellen
                   </Button>
                 </CharterRequestForm>
