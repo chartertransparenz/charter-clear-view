@@ -188,6 +188,7 @@ const Services = () => {
               </div>
             </div>
           
+          <div className="mt-12">
           <div className="grid md:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
@@ -208,6 +209,7 @@ const Services = () => {
                 <p className="text-sm text-muted-foreground">{advantage.description}</p>
               </div>
             ))}
+           </div>
           </div>
         </div>
 
