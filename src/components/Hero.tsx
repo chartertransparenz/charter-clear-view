@@ -1,3 +1,4 @@
+// Hero component with image carousel
 import { Button } from "@/components/ui/button";
 import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 import heroYacht from "@/assets/hero-yacht.jpg";
