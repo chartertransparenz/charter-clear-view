@@ -6,23 +6,30 @@ import mediterraneanImage from "@/assets/mediterranean.jpg";
 import caribbeanImage from "@/assets/caribbean.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
-
 const Hero = () => {
-  const slides = [
-    { image: heroYacht, title: "Luxuriöse Yachten", subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse" },
-    { image: charterHeroWater, title: "Kristallklares Wasser", subtitle: "Die schönsten Gewässer der Welt entdecken" },
-    { image: mediterraneanImage, title: "Mittelmeer Abenteuer", subtitle: "Träumen Sie von perfekten Segeltörns" },
-    { image: caribbeanImage, title: "Karibische Träume", subtitle: "Paradiesische Destinationen erleben" }
-  ];
-
+  const slides = [{
+    image: heroYacht,
+    title: "Luxuriöse Yachten",
+    subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse"
+  }, {
+    image: charterHeroWater,
+    title: "Kristallklares Wasser",
+    subtitle: "Die schönsten Gewässer der Welt entdecken"
+  }, {
+    image: mediterraneanImage,
+    title: "Mittelmeer Abenteuer",
+    subtitle: "Träumen Sie von perfekten Segeltörns"
+  }, {
+    image: caribbeanImage,
+    title: "Karibische Träume",
+    subtitle: "Paradiesische Destinationen erleben"
+  }];
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide(prev => (prev + 1) % slides.length);
   }, [slides.length]);
-
   const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentSlide(prev => (prev - 1 + slides.length) % slides.length);
   }, [slides.length]);
 
   // Auto-slide functionality
@@ -30,50 +37,26 @@ const Hero = () => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [nextSlide]);
-
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Images Carousel */}
-      {slides.map((slide, index) => (
-        <div 
-          key={index}
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-          style={{ backgroundImage: `url(${slide.image})` }}
-        >
+      {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
+      backgroundImage: `url(${slide.image})`
+    }}>
           <div className="absolute inset-0 bg-black/20"></div>
-        </div>
-      ))}
+        </div>)}
 
       {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group"
-      >
+      <button onClick={prevSlide} className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group">
         <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
       </button>
 
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group"
-      >
+      <button onClick={nextSlide} className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group">
         <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
       </button>
 
       {/* Slide Indicators */}
       <div className="absolute bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-white scale-125' 
-                : 'bg-white/50 hover:bg-white/75'
-            }`}
-          />
-        ))}
+        {slides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/75'}`} />)}
       </div>
 
       {/* Floating elements removed - now in FloatingCTA component */}
@@ -99,11 +82,7 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Entdecken Sie die Freiheit des Segelns mit CharterTransparenz - 
-            Ihrem vertrauenswürdigen Partner für unvergessliche Chartererlebnisse 
-            am Bodensee und darüber hinaus.
-          </p>
+          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
 
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-4 mb-10">
@@ -119,12 +98,9 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="white-blue" 
-              size="xl" 
-              className="text-lg"
-              onClick={() => document.getElementById('fleet')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button variant="white-blue" size="xl" className="text-lg" onClick={() => document.getElementById('fleet')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Yachten entdecken
             </Button>
             <CharterRequestForm>
@@ -138,19 +114,10 @@ const Hero = () => {
 
       {/* Wave animation at bottom */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg
-          className="w-full h-20 animate-wave text-background"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,60 C150,100 350,0 600,60 C850,120 1050,20 1200,60 L1200,120 L0,120 Z"
-            fill="currentColor"
-          />
+        <svg className="w-full h-20 animate-wave text-background" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,60 C150,100 350,0 600,60 C850,120 1050,20 1200,60 L1200,120 L0,120 Z" fill="currentColor" />
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
