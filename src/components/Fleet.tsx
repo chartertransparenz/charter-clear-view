@@ -44,7 +44,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen", "3-4 Nasszellen", "Breite: 7,70m", "Panorama-Salon & komfort-orientiert"],
     price: "ab €1.800/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
+    image: "/lovable-uploads/1ea68c6f-87dc-44e1-9f11-6805e2ddf28f.png"
   }, {
     name: "Oceanis 46.1",
     type: "Monohull Cruising Yacht",
