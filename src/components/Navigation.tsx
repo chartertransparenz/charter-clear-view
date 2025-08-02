@@ -43,7 +43,7 @@ const Navigation = () => {
               </a>
             ))}
             <CharterRequestForm>
-              <Button variant="default" size="sm">
+              <Button variant="default" size="sm" className="bg-gradient-ocean text-white hover:opacity-90">
                 Jetzt Anfrage stellen
               </Button>
             </CharterRequestForm>
@@ -78,7 +78,7 @@ const Navigation = () => {
               ))}
               <div className="px-4">
                 <CharterRequestForm>
-                  <Button variant="default" size="sm" className="w-full">
+                  <Button variant="default" size="sm" className="w-full bg-gradient-ocean text-white hover:opacity-90">
                     Jetzt Anfrage stellen
                   </Button>
                 </CharterRequestForm>
