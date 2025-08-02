@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import caribbean from "@/assets/caribbean.jpg";
@@ -15,7 +16,7 @@ const Caribbean = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <div className="mb-4 bg-sunset text-white px-3 py-1 rounded">🏝️ Karibik & Atlantik</div>
+            <Badge className="mb-4 bg-sunset text-white">🏝️ Karibik & Atlantik</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Karibik</h1>
             <p className="text-xl max-w-2xl">
               Traumhafte Inseln mit perfekten Segelbedingungen
