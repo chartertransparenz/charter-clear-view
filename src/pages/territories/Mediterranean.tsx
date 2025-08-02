@@ -2,9 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Sun, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import mediterranean from "@/assets/mediterranean.jpg";
 
 const Mediterranean = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const regions = [
     { name: "Kroatien", areas: ["Dalmatien", "Istrien"] },
     { name: "Griechenland", areas: ["Kykladen", "Ionische Inseln", "Dodekanes"] },
@@ -117,9 +122,11 @@ const Mediterranean = () => {
               Entdecken Sie die schönsten Destinationen des Mittelmeers mit unserer 
               professionellen Beratung und erstklassigen Yachten.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Mittelmeer-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Mittelmeer-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

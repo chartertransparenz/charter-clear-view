@@ -2,10 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Palmtree, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import pacific from "@/assets/pacific.jpg";
 
 const Pacific = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const regions = [
     { name: "Französisch-Polynesien", areas: ["Tahiti", "Bora Bora", "Marquesas"] },
     { name: "Fidschi", areas: ["Viti Levu", "Vanua Levu"] },

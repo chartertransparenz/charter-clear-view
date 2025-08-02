@@ -2,10 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Waves, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import caribbean from "@/assets/caribbean.jpg";
 
 const Caribbean = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const regions = [
     { name: "Britische Jungferninseln (BVI)", description: "Das weltweit beliebteste Charterrevier" },
     { name: "St. Martin, Antigua, Guadeloupe", description: "Klassische Karibik-Destinationen" },

@@ -2,10 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Palmtree, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import indianOcean from "@/assets/indian-ocean.jpg";
 
 const IndianOcean = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const regions = [
     { name: "Seychellen", description: "Ideal für Lagunen, Natur und entspannte Charter" },
     { name: "Malediven", description: "Exotisch, eher Motoryacht-Charter" },

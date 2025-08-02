@@ -2,9 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Anchor, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import atlantic from "@/assets/atlantic.jpg";
 
 const Atlantic = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const regions = [
     { name: "Kanaren", areas: ["Gran Canaria", "Teneriffa", "Lanzarote"] },
     { name: "Kapverden", areas: ["Mindelo", "Praia"] },
@@ -114,9 +119,11 @@ const Atlantic = () => {
               Erleben Sie echtes Segeln mit kräftigen Winden und endlosen 
               Horizonten in den schönsten Atlantik-Destinationen.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Atlantik-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Atlantik-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

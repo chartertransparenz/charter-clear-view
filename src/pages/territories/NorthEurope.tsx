@@ -2,10 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Anchor, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import balticSea from "@/assets/baltic-sea.jpg";
 
 const NorthEurope = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const regions = [
     { name: "Ostsee", areas: ["Mecklenburgische Seenplatte", "Rügen", "Usedom"] },
     { name: "Nordsee", areas: ["Nordseeküste", "Ostfriesische Inseln"] },

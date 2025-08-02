@@ -2,9 +2,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Mountain, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import expedition from "@/assets/expedition.jpg";
 
 const Expeditions = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const expeditions = [
     { 
       name: "Nordwestpassage", 
@@ -137,9 +142,11 @@ const Expeditions = () => {
               Kontaktieren Sie uns für eine persönliche Beratung zu Expeditions-Charter. 
               Wir prüfen Ihre Qualifikationen und planen Ihr Abenteuer.
             </p>
-            <Button className="bg-white text-gray-700 hover:bg-gray-50" size="lg">
-              Expedition-Beratung anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-gray-700 hover:bg-gray-50" size="lg">
+                Expedition-Beratung anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>
