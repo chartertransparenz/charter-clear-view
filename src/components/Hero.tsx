@@ -82,12 +82,16 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
+          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
 
           {/* CTA Button */}
           <div className="flex justify-center">
             <CharterRequestForm>
-              <Button variant="white-blue" size="xl" className="text-xl px-12 py-4">
+              <Button 
+                variant="default" 
+                size="xl" 
+                className="text-2xl px-16 py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
+              >
                 Jetzt Anfrage stellen
               </Button>
             </CharterRequestForm>
