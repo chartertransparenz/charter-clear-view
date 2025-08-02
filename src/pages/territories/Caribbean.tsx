@@ -1,11 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Waves } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowLeft, MapPin, Waves, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import caribbean from "@/assets/caribbean.jpg";
 
 const Caribbean = () => {
+  const regions = [
+    { name: "Britische Jungferninseln (BVI)", description: "Das weltweit beliebteste Charterrevier" },
+    { name: "St. Martin, Antigua, Guadeloupe", description: "Klassische Karibik-Destinationen" },
+    { name: "Grenadinen", areas: ["St. Vincent", "Bequia", "Tobago Cays"] },
+    { name: "Bahamas", areas: ["Exumas", "Abacos"] },
+    { name: "Kuba", description: "Zunehmend beliebter, ursprünglicher" }
+  ];
+
+  const advantages = [
+    "Warmes Wasser",
+    "Stabile Passatwinde", 
+    "Unzählige Inseln",
+    "Line of Sight Sailing"
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
       {/* Header */}
@@ -42,73 +57,87 @@ const Caribbean = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        {/* Test: Nur eine einzige Card */}
+        {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <Card className="shadow-elegant">
             <CardHeader>
-              <CardTitle>Test Card</CardTitle>
+              <CardTitle className="flex items-center gap-2 text-ocean-dark">
+                <Star className="w-5 h-5 text-sunset" />
+                Karibik-Feeling
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Falls der leere Kasten jetzt wieder da ist, liegt das Problem bei den Card-Komponenten!</p>
+              <p className="text-lg text-muted-foreground">
+                Türkisfarbenes Wasser, perfekte Temperaturen und zuverlässige Passatwinde machen 
+                die Karibik zum Segelparadies schlechthin.
+              </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Test: EXAKTE ursprüngliche Vorteile-Sektion */}
+        {/* Top Regions */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Top-Regionen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {regions.map((region, index) => (
+              <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-ocean-dark">
+                    <MapPin className="w-4 h-4 text-sunset" />
+                    {region.name}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {region.description && (
+                    <p className="text-sm text-muted-foreground mb-3">{region.description}</p>
+                  )}
+                  {region.areas && (
+                    <div className="space-y-2">
+                      {region.areas.map((area, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-sm">
+                          <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
+                          <span className="text-muted-foreground">{area}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Advantages */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card className="text-center shadow-ocean">
-              <CardContent className="pt-6">
-                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
-                <p className="font-medium text-ocean-dark">Warmes Wasser</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center shadow-ocean">
-              <CardContent className="pt-6">
-                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
-                <p className="font-medium text-ocean-dark">Stabile Passatwinde</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center shadow-ocean">
-              <CardContent className="pt-6">
-                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
-                <p className="font-medium text-ocean-dark">Unzählige Inseln</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center shadow-ocean">
-              <CardContent className="pt-6">
-                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
-                <p className="font-medium text-ocean-dark">Line of Sight Sailing</p>
-              </CardContent>
-            </Card>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {advantages.map((advantage, index) => (
+              <Card key={index} className="text-center shadow-ocean">
+                <CardContent className="pt-6">
+                  <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
+                  <p className="font-medium text-ocean-dark">{advantage}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
 
-        <div className="text-center text-2xl">
-          <p>EXAKTE ursprüngliche Vorteile-Sektion mit lg:grid-cols-4</p>
-          <p>Falls JETZT der leere Kasten da ist: PROBLEM GEFUNDEN!</p>
-        </div>
-
-        <div className="mt-12 text-center">
-          <h2 className="text-2xl font-bold mb-4">Regionen (als reiner Text):</h2>
-          <div className="space-y-2">
-            <p>• Britische Jungferninseln (BVI)</p>
-            <p>• St. Martin, Antigua, Guadeloupe</p>
-            <p>• Grenadinen</p>
-            <p>• Bahamas</p>
-            <p>• Kuba</p>
-          </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <h2 className="text-2xl font-bold mb-4">Vorteile (als reiner Text):</h2>
-          <div className="space-y-2">
-            <p>• Warmes Wasser</p>
-            <p>• Stabile Passatwinde</p>
-            <p>• Unzählige Inseln</p>
-            <p>• Line of Sight Sailing</p>
-          </div>
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto">
+          <Card className="bg-gradient-ocean text-white shadow-elegant">
+            <CardContent className="p-8 text-center">
+              <h3 className="text-2xl font-bold mb-4">
+                Ab in die Karibik?
+              </h3>
+              <p className="mb-6 text-white/90">
+                Erleben Sie das ultimative Segelerlebnis zwischen Trauminseln und 
+                kristallklarem Wasser mit perfekten Windbedingungen.
+              </p>
+              <Button variant="transparent" size="lg">
+                Karibik-Charter anfragen
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
