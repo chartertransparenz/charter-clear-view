@@ -153,7 +153,7 @@ const Fleet = () => {
                 <div className="grid grid-cols-3 gap-2 mb-4 text-sm">
                   <div className="flex items-center gap-1">
                     <Users className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-xs">{boat.capacity.split(' ')[0]}</span>
+                    <span className="text-xs">{boat.capacity.match(/\d+[-–]\d+|\d+/)?.[0] || boat.capacity.split(' ')[0]}</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Ruler className="w-4 h-4 text-muted-foreground" />
