@@ -57,10 +57,27 @@ const Caribbean = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12">
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="shadow-elegant">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-ocean-dark">
+                <Star className="w-5 h-5 text-sunset" />
+                Karibik-Feeling
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-lg text-muted-foreground">
+                Türkisfarbenes Wasser, perfekte Temperaturen und zuverlässige Passatwinde machen 
+                die Karibik zum Segelparadies schlechthin.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">DEBUG: Seite komplett vereinfacht</h2>
-          <p>Wenn der leere Kasten immer noch da ist, liegt das Problem außerhalb dieser Seite!</p>
-          <p>Möglicherweise in einem globalen Layout-Element oder CSS-Problem.</p>
+          <h2 className="text-2xl font-bold mb-4">DEBUG: Description-Sektion hinzugefügt</h2>
+          <p>Ist der leere Kasten wieder da?</p>
         </div>
       </div>
     </div>
