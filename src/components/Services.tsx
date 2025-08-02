@@ -233,13 +233,7 @@ const Services = () => {
               <p className="text-xl mb-8 text-white/90">
                 Lass uns gemeinsam deinen perfekten Törn planen
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="white-blue" size="lg">
-                  Kostenlose Beratung
-                </Button>
-                <Button variant="transparent" size="lg">
-                  Angebot anfordern
-                </Button>
+              <div className="flex justify-center">
                 <CharterRequestForm>
                   <Button variant="default" size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
                     Jetzt Anfrage stellen
