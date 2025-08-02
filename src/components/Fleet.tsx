@@ -80,7 +80,7 @@ const Fleet = () => {
     features: ["4 Hauptkabinen + Crew", "4 Ensuite-WCs", "Innovative offene Deckstruktur", "Lounge-artiges Design"],
     price: "ab €4.500/Woche",
     attributes: ["voluminös"],
-    image: baliCatspace
+    image: "/lovable-uploads/b2bcf86f-90d1-45cf-8f0c-73739b25f26c.png"
   }, {
     name: "Dufour 460 Grand Large",
     type: "Monohull Cruising Yacht",
