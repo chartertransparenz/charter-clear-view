@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, MapPin, Waves, Star } from "lucide-react";
@@ -78,7 +78,7 @@ const Caribbean = () => {
         {/* Top Regions */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Top-Regionen</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-6 md:grid-cols-2">
             {regions.map((region, index) => (
               <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
                 <CardHeader>
@@ -110,9 +110,9 @@ const Caribbean = () => {
         {/* Advantages */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((advantage, index) => (
-              <Card key={index} className="text-center shadow-ocean w-full sm:w-64">
+              <Card key={index} className="text-center shadow-ocean">
                 <CardContent className="pt-6">
                   <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
                   <p className="font-medium text-ocean-dark">{advantage}</p>
@@ -122,10 +122,10 @@ const Caribbean = () => {
           </div>
         </div>
 
-        {/* CTA - Neu geschrieben */}
-        <div className="text-center">
-          <Card className="bg-gradient-ocean text-white shadow-elegant max-w-4xl mx-auto">
-            <CardContent className="p-8">
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto">
+          <Card className="bg-gradient-ocean text-white shadow-elegant">
+            <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold mb-4">
                 Ab in die Karibik?
               </h3>
