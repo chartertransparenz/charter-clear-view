@@ -38,7 +38,7 @@ const Atlantic = () => {
             </p>
           </div>
         </div>
-        <Link to="/" className="absolute top-6 left-6">
+        <Link to="/#territories" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-ocean-dark border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
