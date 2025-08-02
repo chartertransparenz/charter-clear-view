@@ -13,23 +13,23 @@ const Services = () => {
   const services = [
     {
       icon: Sailboat,
-      title: "Yacht Charter",
-      description: "Premium Segelyachten und Motorboote für Ihre perfekte Auszeit auf dem Wasser",
-      features: ["Verschiedene Bootsgrößen", "Mit oder ohne Skipper", "Vollständige Ausstattung"],
+      title: "Yacht Charter für Selbstsegler",
+      description: "Premium Segelyachten für erfahrene Segler mit gültigem Segelschein",
+      features: ["Verschiedene Bootsgrößen", "Bareboat Charter", "Vollständige Ausstattung", "Gültiger Segelschein erforderlich"],
       image: yachtInterior,
     },
     {
       icon: Users,
-      title: "Gruppenevents",
-      description: "Unvergessliche Erlebnisse für Firmenevents, Geburtstage und besondere Anlässe",
-      features: ["Maßgeschneiderte Events", "Catering möglich", "Bis zu 12 Personen"],
+      title: "Yacht Charter mit Skipper",
+      description: "Entspannter Segeltörn mit professionellem Skipper für alle Erfahrungsstufen",
+      features: ["Erfahrener Skipper inklusive", "Für Anfänger & Profis", "Bis zu 12 Personen", "Keine Segelschein erforderlich"],
       image: groupEvent,
     },
     {
       icon: GraduationCap,
-      title: "Segelschule",
-      description: "Professionelle Segelausbildung vom Anfänger bis zum Fortgeschrittenen",
-      features: ["Lizenzierte Segellehrer", "Alle Scheine möglich", "Theorie & Praxis"],
+      title: "Luxus Charter",
+      description: "Exklusive Luxusyachten mit erstklassiger Ausstattung und Premium-Service",
+      features: ["Luxusyachten", "Premium Ausstattung", "VIP Service", "Gourmet Catering"],
       image: sailingSchool,
     },
   ];
