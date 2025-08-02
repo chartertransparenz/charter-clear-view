@@ -17,8 +17,7 @@ import oceanis381 from "@/assets/oceanis-38-1.jpg";
 import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 const Fleet = () => {
-  const [api, setApi] = React.useState<CarouselApi>()
-
+  const [api, setApi] = React.useState<CarouselApi>();
   const boats = [{
     name: "Bavaria Cruiser 46",
     type: "Monohull Einrumpf-Segelyacht",
@@ -113,19 +112,17 @@ const Fleet = () => {
 
   // Automatisches Karussell für Yachten
   useEffect(() => {
-    if (!api) return
-
+    if (!api) return;
     const interval = setInterval(() => {
       if (api.canScrollNext()) {
-        api.scrollNext()
+        api.scrollNext();
       } else {
-        api.scrollTo(0)
+        api.scrollTo(0);
       }
-    }, 4000) // Alle 4 Sekunden
+    }, 4000); // Alle 4 Sekunden
 
-    return () => clearInterval(interval)
-  }, [api])
-
+    return () => clearInterval(interval);
+  }, [api]);
   return <section id="fleet" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -147,8 +144,7 @@ const Fleet = () => {
         {/* Boat Carousel */}
         <Carousel className="w-full" setApi={setApi}>
           <CarouselContent className="-ml-2 md:-ml-4">
-            {boats.map((boat, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+            {boats.map((boat, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                 <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full overflow-hidden">
                   {/* Boat Image */}
                   <div className="relative h-48 overflow-hidden">
@@ -156,14 +152,12 @@ const Fleet = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/30 to-transparent"></div>
                     {/* Attribute Icons overlaid on image */}
                     <div className="absolute top-4 left-4 flex flex-wrap gap-1">
-                      {boat.attributes.map((attribute, idx) => (
-                        <Badge key={idx} variant="outline" className="flex items-center gap-1 text-xs bg-white/90 backdrop-blur-sm">
+                      {boat.attributes.map((attribute, idx) => <Badge key={idx} variant="outline" className="flex items-center gap-1 text-xs bg-white/90 backdrop-blur-sm">
                           {attribute === "sportlich"}
                           {attribute === "voluminös" && <Maximize className="w-3 h-3" />}
                           {attribute === "beliebt" && <Star className="w-3 h-3" />}
                           {attribute}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                     <div className="absolute top-4 right-4">
                       <Badge variant="outline" className="border-white text-white bg-white/20 backdrop-blur-sm text-xs">
@@ -198,12 +192,10 @@ const Fleet = () => {
 
                     {/* Features */}
                     <ul className="space-y-1 mb-6 flex-grow">
-                      {boat.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-sm">
+                      {boat.features.map((feature, idx) => <li key={idx} className="flex items-center gap-2 text-sm">
                           <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
                           {feature}
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
 
                     {/* Button at bottom */}
@@ -216,8 +208,7 @@ const Fleet = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </CarouselItem>
-            ))}
+              </CarouselItem>)}
           </CarouselContent>
           <CarouselPrevious className="hidden md:flex" />
           <CarouselNext className="hidden md:flex" />
@@ -225,18 +216,7 @@ const Fleet = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-ocean rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              Nicht das Richtige gefunden?
-            </h3>
-            <p className="mb-6 text-white/90">
-              Wir haben weitere Boote in unserem Partnernetzwerk. 
-              Lass uns gemeinsam das perfekte Boot für dich finden.
-            </p>
-            <Button variant="transparent" size="lg">
-              Persönliche Beratung
-            </Button>
-          </div>
+          
         </div>
       </div>
     </section>;
