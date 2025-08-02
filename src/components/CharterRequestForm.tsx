@@ -149,10 +149,18 @@ const CharterRequestForm = ({
   const FormContent = () => <Card className="shadow-elegant border-ocean-light/50 max-w-4xl mx-auto">
       <CardHeader className="text-center bg-gradient-ocean text-white rounded-t-lg relative overflow-hidden h-64 md:h-80 flex flex-col justify-center">
         {/* Background Image with dark overlay */}
-        <div className="absolute inset-0 bg-cover bg-center rounded-t-lg" style={{
-        backgroundImage: `url(/lovable-uploads/425e8e7c-d82f-4959-a47c-f3ce2d8d8cff.png)`
-      }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50 rounded-t-lg" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center" 
+          style={{
+            backgroundImage: `url(/lovable-uploads/425e8e7c-d82f-4959-a47c-f3ce2d8d8cff.png)`,
+            borderTopLeftRadius: 'inherit',
+            borderTopRightRadius: 'inherit'
+          }} 
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" style={{
+          borderTopLeftRadius: 'inherit',
+          borderTopRightRadius: 'inherit'
+        }} />
         <div className="relative z-10">
           <div className="flex items-center justify-center gap-2 mb-2">
             <CardTitle className="text-2xl">Jetzt deinen Traum-Törn starten!</CardTitle>
