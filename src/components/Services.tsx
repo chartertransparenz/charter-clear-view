@@ -220,9 +220,9 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="absolute top-4 right-4 opacity-30">
               <img 
-                src="/lovable-uploads/c1b9b340-d2ee-4fa1-907f-0c1403219be9.png" 
+                src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" 
                 alt="CharterTransparenz" 
-                className="h-20 w-auto filter brightness-200"
+                className="h-20 w-auto"
               />
             </div>
             <div className="relative z-10">
