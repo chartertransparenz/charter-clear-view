@@ -42,7 +42,7 @@ const Hero = () => {
           }`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          <div className="absolute inset-0 gradient-hero opacity-80"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
       ))}
 
