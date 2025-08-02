@@ -112,10 +112,10 @@ const Caribbean = () => {
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
           <div className="flex flex-wrap gap-4 justify-center">{/* Changed from grid to flex */}
             {advantages.map((advantage, index) => (
-              <Card key={index} className="text-center shadow-ocean w-64">{/* Fixed width */}
+              <Card key={index} className="text-center w-64 border">{/* Removed shadow-ocean */}
                 <CardContent className="pt-6">
-                  <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
-                  <p className="font-medium text-ocean-dark">{advantage}</p>
+                  <Waves className="w-8 h-8 mx-auto mb-3 text-blue-500" />
+                  <p className="font-medium">{advantage}</p>
                 </CardContent>
               </Card>
             ))}
