@@ -1,44 +1,60 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MapPin, Calendar, Users, Anchor } from "lucide-react";
+import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
 import destinationGreece from "@/assets/destination-greece.jpg";
-import CharterRequestForm from "@/components/CharterRequestForm";
 
 const Greece = () => {
-  const highlights = [
-    "Inselhopping mit Tavernen-Charme",
-    "Konstante Meltemi-Winde (Sommer)",
-    "Kultur & Natur vereint",
-    "Ideal für Bareboat- oder Skippercharter"
+  const quickFacts = [
+    { label: "Lage", value: "Ägäisches & Ionisches Meer" },
+    { label: "Beste Zeit", value: "April - Oktober" },
+    { label: "Geeignet für", value: "Alle Erfahrungsstufen" },
+    { label: "Inseln", value: "6000+ Inseln & Inselchen" }
   ];
 
   const regions = [
     {
       name: "Kykladen",
-      bases: "Athen (Lavrion), Mykonos, Paros",
-      description: "Die klassischen weißen Dörfer mit blauen Kuppeln und konstante Winde."
+      bases: ["Athen (Lavrion)", "Paros", "Mykonos"],
+      description: "Berühmte Inseln mit weißen Häusern, blauen Kuppeln und legendärem Nachtleben"
     },
     {
-      name: "Saronischer Golf",
-      bases: "Athen (Alimos), Aegina",
-      description: "Perfekt für Wochenendtörns - nah zu Athen mit ruhigen Gewässern."
+      name: "Saronischer Golf", 
+      bases: ["Athen (Alimos)", "Aegina"],
+      description: "Ideales Einsteiger-Revier nahe Athen mit geschützten Gewässern"
     },
     {
       name: "Ionische Inseln",
-      bases: "Korfu, Lefkas, Kefalonia",
-      description: "Grüne Inseln mit milderen Winden und venezianischer Architektur."
+      bases: ["Korfu", "Lefkas", "Zakynthos"],
+      description: "Grünste Region Griechenlands mit venezianischem Einfluss"
     },
     {
       name: "Dodekanes",
-      bases: "Rhodos, Kos",
-      description: "Östliche Inselgruppe mit türkischem Einfluss und antiken Stätten."
+      bases: ["Rhodos", "Kos"],
+      description: "Südöstliche Inselgruppe mit türkischer Riviera-Nähe"
     }
   ];
 
+  const highlights = [
+    "6000+ Inseln und Inselchen",
+    "Über 3000 Jahre Seefahrtsgeschichte",
+    "Antike Stätten direkt am Meer",
+    "Traditionelle Tavernen in Fischerdörfern", 
+    "Meltemi-Winde für sportliches Segeln",
+    "Günstige Preise für Liegeplätze",
+    "Authentische griechische Gastfreundschaft",
+    "Kristallklares, warmes Wasser"
+  ];
+
+  const routes = [
+    "Athen - Mykonos - Santorini",
+    "Paros - Naxos - Ios - Santorini", 
+    "Korfu - Paxos - Lefkas",
+    "Rhodos - Symi - Kos"
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden">
         <img
@@ -46,15 +62,15 @@ const Greece = () => {
           alt="Griechenland Segelrevier"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-3xl">🇬🇷</span>
-            <Badge className="bg-gradient-sunset text-white">Top #2 Destination</Badge>
+            <Badge className="bg-blue-500 text-white">Top #2 Destination</Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Griechenland</h1>
           <p className="text-lg text-white/90 max-w-md">
-            Kykladen, Saronischer Golf & Ionische Inseln - Inselhopping-Paradies
+            Wiege der Seefahrt mit über 6000 Inseln und antiker Geschichte
           </p>
         </div>
         <Link 
@@ -66,7 +82,7 @@ const Greece = () => {
             }, 100);
           }}
         >
-          <Button variant="secondary" size="sm">
+          <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
           </Button>
@@ -76,109 +92,102 @@ const Greece = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
-          <Card className="text-center p-6">
-            <MapPin className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Lage</h3>
-            <p className="text-sm text-muted-foreground">Ägäis & Ionisches Meer</p>
-          </Card>
-          <Card className="text-center p-6">
-            <Calendar className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Beste Zeit</h3>
-            <p className="text-sm text-muted-foreground">April - Oktober</p>
-          </Card>
-          <Card className="text-center p-6">
-            <Users className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Geeignet für</h3>
-            <p className="text-sm text-muted-foreground">Fortgeschrittene</p>
-          </Card>
-          <Card className="text-center p-6">
-            <Anchor className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Inselanzahl</h3>
-            <p className="text-sm text-muted-foreground">6000+ Inseln</p>
-          </Card>
+          {quickFacts.map((fact, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div className="text-orange-500 mb-2">
+                {index === 0 && <MapPin className="w-6 h-6 mx-auto" />}
+                {index === 1 && <Sun className="w-6 h-6 mx-auto" />}
+                {index === 2 && <Anchor className="w-6 h-6 mx-auto" />}
+                {index === 3 && <Star className="w-6 h-6 mx-auto" />}
+              </div>
+              <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
+              <p className="text-gray-600 text-sm">{fact.value}</p>
+            </div>
+          ))}
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Main Content */}
-          <div className="lg:col-span-2">
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold text-ocean-dark mb-6">
-                Das klassische Inselhopping-Paradies
-              </h2>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p className="mb-4">
-                  Griechenland ist die Wiege des Segelsports und bietet über 6.000 Inseln und Inselchen, 
-                  von denen etwa 200 bewohnt sind. Die Kombination aus antiker Geschichte, 
-                  kristallklarem Wasser und authentischer Tavernes-Kultur macht jeden Törn zu einem 
-                  unvergesslichen Erlebnis.
-                </p>
-                <p className="mb-4">
-                  Die berühmten Meltemi-Winde sorgen in den Sommermonaten für perfekte Segelbedingungen, 
-                  während die kurzen Distanzen zwischen den Inseln ideal für entspanntes Inselhopping sind.
-                </p>
-                <p>
-                  Von den weißen Dörfern der Kykladen über die grünen Ionischen Inseln bis hin zu den 
-                  antiken Stätten der Dodekanes - Griechenland bietet für jeden Segler das richtige Revier.
-                </p>
-              </div>
-            </div>
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Warum Griechenland?</h2>
+            <p className="text-lg text-gray-600 mb-4">
+              Griechenland ist die Wiege der Seefahrt und bietet mit über 6000 Inseln 
+              das wohl vielfältigste Segelrevier der Welt. Von den weltberühmten 
+              Kykladen mit ihren weißen Häusern bis zu den grünen Ionischen Inseln 
+              erwartet Sie eine einzigartige Mischung aus Geschichte, Kultur und Natur.
+            </p>
+            <p className="text-lg text-gray-600">
+              Die griechischen Gewässer bieten für jeden Geschmack das Richtige: 
+              Vom entspannten Inselhüpfen bis zum sportlichen Segeln mit den 
+              berühmten Meltemi-Winden.
+            </p>
+          </div>
+        </div>
 
-            {/* Highlights */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-ocean-dark mb-4">Besonderheiten</h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-center gap-3 p-4 bg-ocean-light/10 rounded-lg">
-                    <div className="w-3 h-3 bg-gradient-sunset rounded-full flex-shrink-0"></div>
-                    <span className="font-medium">{highlight}</span>
+        {/* Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {highlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-800 text-sm">{highlight}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Regions */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {regions.map((region, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">{region.name}</h3>
+                <p className="text-gray-600 mb-4">{region.description}</p>
+                <div className="space-y-2">
+                  <h4 className="font-medium text-gray-800">Stützpunkte:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {region.bases.map((base, idx) => (
+                      <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
+                        {base}
+                      </span>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
 
-            {/* Regions */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-ocean-dark mb-6">Segelreviere in Griechenland</h3>
-              <div className="space-y-6">
-                {regions.map((region, index) => (
-                  <Card key={index} className="p-6">
-                    <h4 className="text-xl font-bold text-ocean-dark mb-2">{region.name}</h4>
-                    <p className="text-sm text-ocean-blue mb-3">
-                      <strong>Charterbasen:</strong> {region.bases}
-                    </p>
-                    <p className="text-muted-foreground">{region.description}</p>
-                  </Card>
-                ))}
-              </div>
+        {/* Popular Routes */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="grid gap-3 md:grid-cols-2">
+              {routes.map((route, index) => (
+                <div key={index} className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                  <span className="text-gray-700">{route}</span>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
 
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <Card className="p-6 sticky top-6">
-              <h3 className="text-xl font-bold text-ocean-dark mb-4">
-                Griechenland-Charter anfragen
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Erleben Sie das authentische Griechenland vom Wasser aus. 
-                Wir helfen Ihnen bei der Routenplanung für Ihr Inselhopping-Abenteuer.
-              </p>
-              <CharterRequestForm>
-                <Button className="w-full" size="lg">
-                  Jetzt Griechenland-Charter anfragen
-                </Button>
-              </CharterRequestForm>
-              
-              <div className="mt-6 pt-6 border-t">
-                <h4 className="font-bold text-ocean-dark mb-3">Beliebte Routen</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Athen - Mykonos - Santorini</li>
-                  <li>• Paros - Naxos - Ios - Santorini</li>
-                  <li>• Korfu - Paxos - Lefkas</li>
-                  <li>• Rhodos - Symi - Kos</li>
-                </ul>
-              </div>
-            </Card>
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Bereit für das griechische Inselhüpfen?
+            </h3>
+            <p className="mb-6 text-blue-100">
+              Erleben Sie die Wiege der Seefahrt mit über 6000 Inseln, 
+              antiker Geschichte und authentischer griechischer Gastfreundschaft.
+            </p>
+            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              Griechenland-Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

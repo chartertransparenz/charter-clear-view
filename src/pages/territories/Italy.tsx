@@ -1,43 +1,51 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MapPin, Calendar, Users, Anchor } from "lucide-react";
+import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
 import destinationItaly from "@/assets/destination-italy.jpg";
-import CharterRequestForm from "@/components/CharterRequestForm";
 
 const Italy = () => {
-  const highlights = [
-    "Vielfalt an Revierarten: ruhig bis anspruchsvoll",
-    "Gutes Essen, Kultur & spektakuläre Küsten",
-    "Auch für Wochenend-Törns beliebt"
+  const quickFacts = [
+    { label: "Lage", value: "Mittelmeer" },
+    { label: "Beste Zeit", value: "April - Oktober" },
+    { label: "Geeignet für", value: "Alle Segelerfahrungen" },
+    { label: "Besonderheit", value: "Dolce Vita & Kultur" }
   ];
 
   const regions = [
     {
-      name: "Sardinien",
-      bases: "Olbia, Portisco, Cagliari",
-      description: "Karibik-ähnliche Strände, kristallklares Wasser und wilde Küstenlandschaften."
+      name: "Sardinien & Costa Smeralda",
+      bases: ["Olbia", "Portisco", "Cannigione"],
+      description: "Exklusive Buchten, kristallklares Wasser und mondäne Häfen"
     },
     {
-      name: "Elba & Toskana",
-      bases: "Piombino, Porto Santo Stefano",
-      description: "Toskanischer Archipel mit Weinkultur und malerischen Buchten."
+      name: "Elba & Toskanischer Archipel", 
+      bases: ["Portoferraio", "Marina di Campo"],
+      description: "Napoleons Exil-Insel mit charmanten Küstenstädten"
     },
     {
-      name: "Sizilien",
-      bases: "Palermo, Catania, Trapani",
-      description: "Größte Mittelmeerinsel mit Vulkanen, Geschichte und authentischer Küche."
+      name: "Sizilien & Liparische Inseln",
+      bases: ["Palermo", "Catania", "Lipari"],
+      description: "Vulkanische Landschaften und authentische italienische Kultur"
     },
     {
-      name: "Amalfiküste",
-      bases: "Salerno, Neapel",
-      description: "Spektakuläre Steilküste mit glamourösen Häfen wie Capri und Positano."
+      name: "Amalfiküste & Golf von Neapel",
+      bases: ["Salerno", "Castellammare"],
+      description: "Spektakuläre Küstenlandschaft und romantische Atmosphäre"
     }
   ];
 
+  const highlights = [
+    "Exzellente italienische Küche",
+    "Wunderschöne Küstenlandschaften", 
+    "Reiche Geschichte und Kultur",
+    "Kristallklares Wasser",
+    "Abwechslungsreiche Routen",
+    "Gastfreundliche Marinas"
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ocean-light/20 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden">
         <img
@@ -45,11 +53,11 @@ const Italy = () => {
           alt="Italien Segelrevier"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-3xl">🇮🇹</span>
-            <Badge className="bg-gradient-sunset text-white">Top #3 Destination</Badge>
+            <Badge className="bg-orange-500 text-white">Top #3 Destination</Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Italien</h1>
           <p className="text-lg text-white/90 max-w-md">
@@ -65,7 +73,7 @@ const Italy = () => {
             }, 100);
           }}
         >
-          <Button variant="secondary" size="sm">
+          <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
           </Button>
@@ -75,109 +83,86 @@ const Italy = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
-          <Card className="text-center p-6">
-            <MapPin className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Lage</h3>
-            <p className="text-sm text-muted-foreground">Mittelmeer</p>
-          </Card>
-          <Card className="text-center p-6">
-            <Calendar className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Beste Zeit</h3>
-            <p className="text-sm text-muted-foreground">April - Oktober</p>
-          </Card>
-          <Card className="text-center p-6">
-            <Users className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Geeignet für</h3>
-            <p className="text-sm text-muted-foreground">Alle Levels</p>
-          </Card>
-          <Card className="text-center p-6">
-            <Anchor className="w-8 h-8 mx-auto mb-3 text-ocean-blue" />
-            <h3 className="font-bold text-ocean-dark">Besonderheit</h3>
-            <p className="text-sm text-muted-foreground">Kulinarik & Kultur</p>
-          </Card>
+          {quickFacts.map((fact, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div className="text-orange-500 mb-2">
+                {index === 0 && <MapPin className="w-6 h-6 mx-auto" />}
+                {index === 1 && <Sun className="w-6 h-6 mx-auto" />}
+                {index === 2 && <Anchor className="w-6 h-6 mx-auto" />}
+                {index === 3 && <Star className="w-6 h-6 mx-auto" />}
+              </div>
+              <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
+              <p className="text-gray-600 text-sm">{fact.value}</p>
+            </div>
+          ))}
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Main Content */}
-          <div className="lg:col-span-2">
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold text-ocean-dark mb-6">
-                Dolce Vita auf dem Wasser
-              </h2>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p className="mb-4">
-                  Italien bietet eine unvergleichliche Vielfalt an Segelrevieren: Von den karibik-ähnlichen 
-                  Stränden Sardiniens über die kulturreichen toskanischen Inseln bis hin zur spektakulären 
-                  Amalfiküste - jedes Revier hat seinen eigenen Charakter.
-                </p>
-                <p className="mb-4">
-                  Die italienische Küche, erstklassige Weine und die herzliche Gastfreundschaft machen 
-                  jeden Hafenstopp zu einem kulinarischen Erlebnis. Gleichzeitig sorgen die gut 
-                  ausgestatteten Marinas für höchsten Komfort.
-                </p>
-                <p>
-                  Ob entspannter Wochenendtörn entlang der Riviera oder anspruchsvolle Überfahrten 
-                  zwischen den großen Inseln - Italien bietet für jeden Segler das passende Abenteuer.
-                </p>
-              </div>
-            </div>
-
-            {/* Highlights */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-ocean-dark mb-4">Besonderheiten</h3>
-              <div className="grid gap-4">
-                {highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-center gap-3 p-4 bg-ocean-light/10 rounded-lg">
-                    <div className="w-3 h-3 bg-gradient-sunset rounded-full flex-shrink-0"></div>
-                    <span className="font-medium">{highlight}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Regions */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-ocean-dark mb-6">Segelreviere in Italien</h3>
-              <div className="space-y-6">
-                {regions.map((region, index) => (
-                  <Card key={index} className="p-6">
-                    <h4 className="text-xl font-bold text-ocean-dark mb-2">{region.name}</h4>
-                    <p className="text-sm text-ocean-blue mb-3">
-                      <strong>Charterbasen:</strong> {region.bases}
-                    </p>
-                    <p className="text-muted-foreground">{region.description}</p>
-                  </Card>
-                ))}
-              </div>
-            </div>
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Warum Italien?</h2>
+            <p className="text-lg text-gray-600 mb-4">
+              Italien bietet eine einzigartige Kombination aus spektakulären Küstenlandschaften, 
+              kristallklarem Wasser und der berühmten italienischen Lebensart. Von den exklusiven 
+              Buchten der Costa Smeralda bis zu den vulkanischen Liparischen Inseln erleben Sie 
+              "Dolce Vita" auf dem Wasser.
+            </p>
+            <p className="text-lg text-gray-600">
+              Die italienischen Segelreviere überzeugen mit hervorragender Infrastruktur, 
+              exzellenter Küche und einer perfekten Mischung aus Entspannung und Kultur.
+            </p>
           </div>
+        </div>
 
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <Card className="p-6 sticky top-6">
-              <h3 className="text-xl font-bold text-ocean-dark mb-4">
-                Italien-Charter anfragen
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Erleben Sie italienisches Dolce Vita auf dem Wasser. 
-                Unsere Italien-Experten planen Ihren perfekten Segeltörn.
-              </p>
-              <CharterRequestForm>
-                <Button className="w-full" size="lg">
-                  Jetzt Italien-Charter anfragen
-                </Button>
-              </CharterRequestForm>
-              
-              <div className="mt-6 pt-6 border-t">
-                <h4 className="font-bold text-ocean-dark mb-3">Beliebte Routen</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Olbia - Costa Smeralda - Korsika</li>
-                  <li>• Elba - Giglio - Argentario</li>
-                  <li>• Amalfi - Capri - Ischia</li>
-                  <li>• Sizilien Rundtörn</li>
-                </ul>
+        {/* Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {highlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
+                <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-800">{highlight}</span>
               </div>
-            </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Regions */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {regions.map((region, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">{region.name}</h3>
+                <p className="text-gray-600 mb-4">{region.description}</p>
+                <div className="space-y-2">
+                  <h4 className="font-medium text-gray-800">Stützpunkte:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {region.bases.map((base, idx) => (
+                      <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
+                        {base}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Bereit für "Dolce Vita" auf dem Wasser?
+            </h3>
+            <p className="mb-6 text-blue-100">
+              Entdecken Sie Italiens schönste Küsten und erleben Sie unvergessliche 
+              Momente zwischen Kultur, Kulinarik und kristallklarem Wasser.
+            </p>
+            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              Italien-Charter anfragen
+            </Button>
           </div>
         </div>
       </div>
