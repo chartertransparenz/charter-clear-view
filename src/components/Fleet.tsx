@@ -1,7 +1,8 @@
+import React, { useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { Users, Ruler, Fuel, Zap, Maximize, Star } from "lucide-react";
 import fleetMarina from "@/assets/fleet-marina.jpg";
 import bavariaCruiser46 from "@/assets/bavaria-cruiser-46.jpg";
@@ -16,6 +17,8 @@ import oceanis381 from "@/assets/oceanis-38-1.jpg";
 import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 const Fleet = () => {
+  const [api, setApi] = React.useState<CarouselApi>()
+
   const boats = [{
     name: "Bavaria Cruiser 46",
     type: "Monohull Einrumpf-Segelyacht",
@@ -107,6 +110,22 @@ const Fleet = () => {
     attributes: ["sportlich", "beliebt"],
     image: bavariaCruiser41
   }];
+
+  // Automatisches Karussell für Yachten
+  useEffect(() => {
+    if (!api) return
+
+    const interval = setInterval(() => {
+      if (api.canScrollNext()) {
+        api.scrollNext()
+      } else {
+        api.scrollTo(0)
+      }
+    }, 4000) // Alle 4 Sekunden
+
+    return () => clearInterval(interval)
+  }, [api])
+
   return <section id="fleet" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -126,7 +145,7 @@ const Fleet = () => {
         </div>
 
         {/* Boat Carousel */}
-        <Carousel className="w-full">
+        <Carousel className="w-full" setApi={setApi}>
           <CarouselContent className="-ml-2 md:-ml-4">
             {boats.map((boat, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
