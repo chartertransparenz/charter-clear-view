@@ -294,23 +294,6 @@ const Territories = () => {
               </Card>
             </Link>
 
-            <Link to="/territories/expeditions" className="group md:col-span-2 lg:col-span-3">
-              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
-                <div className="relative h-96 overflow-hidden">
-                  <img src={expedition} alt="Expeditionen" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
-                  <div className="absolute bottom-2 left-3 text-white">
-                    <Badge className="mb-1 bg-sunset text-white text-xs">🔥 Expeditionen</Badge>
-                    <h3 className="font-bold">Exoten & Expeditionen</h3>
-                  </div>
-                </div>
-                <CardContent className="p-4 text-center">
-                  <p className="text-sm text-muted-foreground">
-                    Für Abenteuerlustige: Patagonien, Alaska, Island, Grönland - wilde und anspruchsvolle Reviere für Extremsegler.
-                  </p>
-                </CardContent>
-              </Card>
-            </Link>
           </div>
         </div>
 
