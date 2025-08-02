@@ -25,7 +25,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/14215b70-fd89-4842-b84c-58268b2a0c56.png" 
+              src="/lovable-uploads/91b8d598-4457-4e8d-abcf-abab6ff6b7fa.png" 
               alt="CharterTransparenz Logo" 
               className="h-16 w-auto"
             />
