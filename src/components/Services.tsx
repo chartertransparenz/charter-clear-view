@@ -79,8 +79,11 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Wir bieten Ihnen den kompletten Service rund ums Segeln mit 
-            höchster Qualität und Transparenz
+            Yachtcharter nach Maß – Finde die perfekte Yacht für deinen Traumurlaub. 
+            Egal, ob du erfahrener Segler bist, entspannt Urlaub machen möchtest oder das gewisse Etwas suchst – 
+            bei uns findest du genau das Chartermodell, das zu dir passt. Unsere Services bieten dir die Freiheit 
+            und Flexibilität, deinen Törn ganz nach deinen Wünschen zu gestalten – transparent, komfortabel und professionell. 
+            Wähle zwischen drei Charter-Modellen – jedes mit eigenen Vorteilen.
           </p>
         </div>
 
