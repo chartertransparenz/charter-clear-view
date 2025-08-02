@@ -75,11 +75,19 @@ const Caribbean = () => {
           </Card>
         </div>
 
-        {/* Top Regions */}
+        {/* Top Regions - DEBUG */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Top-Regionen</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="text-center mb-4">
+            <p>Debugging Regionen: {regions.length} Elemente</p>
             {regions.map((region, index) => (
+              <div key={index} className="text-sm">
+                {index}: {region.name} - desc: {region.description ? 'ja' : 'nein'} - areas: {region.areas ? region.areas.length : 'nein'}
+              </div>
+            ))}
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {regions.filter(region => region && region.name).map((region, index) => (
               <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-ocean-dark">
@@ -91,7 +99,7 @@ const Caribbean = () => {
                   {region.description && (
                     <p className="text-sm text-muted-foreground mb-3">{region.description}</p>
                   )}
-                  {region.areas && (
+                  {region.areas && region.areas.length > 0 && (
                     <div className="space-y-2">
                       {region.areas.map((area, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-sm">
@@ -100,6 +108,9 @@ const Caribbean = () => {
                         </div>
                       ))}
                     </div>
+                  )}
+                  {!region.description && (!region.areas || region.areas.length === 0) && (
+                    <p className="text-sm text-red-500">EMPTY REGION - Problem gefunden!</p>
                   )}
                 </CardContent>
               </Card>
