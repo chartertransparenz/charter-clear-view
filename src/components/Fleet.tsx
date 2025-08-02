@@ -79,6 +79,24 @@ const Fleet = () => {
       price: "ab €3.650/Woche",
       attributes: ["beliebt"],
     },
+    {
+      name: "Oceanis 38.1",
+      type: "Monohull Segelyacht",
+      capacity: "bis 6-8 Personen",
+      length: "11,50m",
+      features: ["2-3 Kabinen", "1-2 Nasszellen", "Wandelbares Raumkonzept", "Geräumig trotz kompakter Größe"],
+      price: "ab €2.100/Woche",
+      attributes: ["beliebt"],
+    },
+    {
+      name: "Bavaria Cruiser 41",
+      type: "Monohull Segelyacht",
+      capacity: "bis 6-8 Personen",
+      length: "12,35m",
+      features: ["3 Kabinen", "2 WC/Dusche", "Gute Segeleigenschaften", "Sehr beliebt in Charterflotten"],
+      price: "ab €2.650/Woche",
+      attributes: ["sportlich", "beliebt"],
+    },
   ];
 
   return (
