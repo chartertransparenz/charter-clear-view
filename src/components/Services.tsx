@@ -5,7 +5,7 @@ import CharterRequestForm from "./CharterRequestForm";
 import servicesHeroConsultationV2 from "@/assets/services-hero-consultation-v2.jpg";
 import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
 import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
-import luxuryYacht from "@/assets/luxury-yacht.jpg";
+import luxuryYacht from "@/assets/luxury-catamaran-charter.jpg";
 import transparentPricing from "@/assets/transparent-pricing.jpg";
 import flexibleBooking from "@/assets/flexible-booking.jpg";
 import premiumLocations from "@/assets/premium-locations.jpg";
