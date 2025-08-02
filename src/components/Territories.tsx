@@ -1,7 +1,8 @@
+import React, { useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { MapPin, Anchor, Waves, Mountain, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
@@ -24,6 +25,8 @@ import destinationSeychelles from "@/assets/destination-seychelles.jpg";
 import destinationAustralia from "@/assets/destination-australia.jpg";
 
 const Territories = () => {
+  const [api, setApi] = React.useState<CarouselApi>()
+
   const topDestinations = [
     {
       rank: 1,
@@ -164,6 +167,21 @@ const Territories = () => {
     }
   ];
 
+  // Automatisches Karussell für Top 10 Destinationen
+  useEffect(() => {
+    if (!api) return
+
+    const interval = setInterval(() => {
+      if (api.canScrollNext()) {
+        api.scrollNext()
+      } else {
+        api.scrollTo(0)
+      }
+    }, 4000) // Alle 4 Sekunden
+
+    return () => clearInterval(interval)
+  }, [api])
+
   return (
     <section id="territories" className="py-20 bg-gradient-to-b from-ocean-light/20 to-white">
       <div className="container mx-auto px-4">
@@ -186,7 +204,7 @@ const Territories = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-ocean-dark">
             Unsere Top 10 Revier-Empfehlungen für dich
           </h2>
-          <Carousel className="w-full">
+          <Carousel className="w-full" setApi={setApi}>
             <CarouselContent className="-ml-2 md:-ml-4">
               {topDestinations.map((destination) => (
                 <CarouselItem key={destination.rank} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
