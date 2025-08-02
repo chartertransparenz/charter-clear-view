@@ -56,8 +56,13 @@ const Mediterranean = () => {
           </div>
         </div>
         <Link 
-          to="/#reviere" 
+          to="/" 
           className="absolute top-6 left-6"
+          onClick={() => {
+            setTimeout(() => {
+              document.getElementById('reviere')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+          }}
         >
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
