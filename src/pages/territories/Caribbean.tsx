@@ -122,8 +122,26 @@ const Caribbean = () => {
           </div>
         </div>
 
+        {/* CTA */}
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">DEBUG: Vorteile-Sektion hinzugefügt</h2>
+          <Card className="bg-gradient-ocean text-white shadow-elegant">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-4">
+                Ab in die Karibik?
+              </h3>
+              <p className="mb-6 text-white/90 max-w-2xl mx-auto">
+                Erleben Sie das ultimative Segelerlebnis zwischen Trauminseln und 
+                kristallklarem Wasser mit perfekten Windbedingungen.
+              </p>
+              <Button variant="transparent" size="lg">
+                Karibik-Charter anfragen
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="text-center mt-8">
+          <h2 className="text-2xl font-bold mb-4">DEBUG: CTA-Sektion hinzugefügt</h2>
           <p>Ist der leere Kasten JETZT wieder da?</p>
         </div>
       </div>
