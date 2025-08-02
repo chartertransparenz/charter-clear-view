@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Award, Users, MapPin, Shield, Anchor, Star } from "lucide-react";
 import partnerMarina from "@/assets/partner-marina.jpg";
 import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
@@ -211,7 +212,7 @@ const Partners = () => {
                 Wir sind immer auf der Suche nach zuverlässigen Partnern, 
                 die unsere Werte von Qualität und Transparenz teilen.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <Badge variant="outline" className="border-ocean-blue text-ocean-blue px-4 py-2">
                   Marinabetreiber
                 </Badge>
@@ -222,6 +223,14 @@ const Partners = () => {
                   Serviceanbieter
                 </Badge>
               </div>
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Jetzt Kontakt aufnehmen
+              </Button>
             </div>
           </div>
         </div>
