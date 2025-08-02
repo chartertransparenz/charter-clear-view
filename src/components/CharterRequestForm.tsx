@@ -271,10 +271,10 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
         </DialogTrigger>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
           <div className="relative">
-            {/* Mobile-friendly close button */}
+            {/* Close button - visible on all screen sizes */}
             <button
               onClick={() => onOpenChange?.(false)}
-              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-gray-600 hover:text-gray-800 hover:bg-white transition-all duration-200 shadow-lg md:hidden"
+              className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200"
               aria-label="Formular schließen"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
