@@ -150,7 +150,7 @@ const Services = () => {
                 Wenn du eine Charteryacht suchst und dabei auf Qualität, persönliche Betreuung und langjährige Erfahrung setzen willst, bist du bei uns genau richtig. Seit über 30 Jahren begleiten wir Seglerinnen und Segler auf ihrem Weg zum perfekten Segelurlaub – ehrlich, erfahren und engagiert.
               </p>
             </div>
-            
+          </div>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
@@ -212,7 +212,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
+          
           <div className="grid md:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
