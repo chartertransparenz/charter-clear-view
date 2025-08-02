@@ -75,9 +75,41 @@ const Caribbean = () => {
           </Card>
         </div>
 
+        {/* Top Regions */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Top-Regionen</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {regions.map((region, index) => (
+              <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-ocean-dark">
+                    <MapPin className="w-4 h-4 text-sunset" />
+                    {region.name}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {region.description && (
+                    <p className="text-sm text-muted-foreground mb-3">{region.description}</p>
+                  )}
+                  {region.areas && (
+                    <div className="space-y-2">
+                      {region.areas.map((area, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-sm">
+                          <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full"></div>
+                          <span className="text-muted-foreground">{area}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">DEBUG: Description-Sektion hinzugefügt</h2>
-          <p>Ist der leere Kasten wieder da?</p>
+          <h2 className="text-2xl font-bold mb-4">DEBUG: Top-Regionen hinzugefügt</h2>
+          <p>Ist der leere Kasten jetzt wieder da?</p>
         </div>
       </div>
     </div>
