@@ -84,27 +84,10 @@ const Hero = () => {
           {/* Description */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
 
-          {/* Trust indicators */}
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <Shield className="w-5 h-5" />
-              <span>Versichert & Lizenziert</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-              <Award className="w-5 h-5" />
-              <span>Keine versteckten Kosten</span>
-            </div>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="white-blue" size="xl" className="text-lg" onClick={() => document.getElementById('fleet')?.scrollIntoView({
-            behavior: 'smooth'
-          })}>
-              Yachten entdecken
-            </Button>
+          {/* CTA Button */}
+          <div className="flex justify-center">
             <CharterRequestForm>
-              <Button variant="transparent" size="xl" className="text-lg">
+              <Button variant="white-blue" size="xl" className="text-xl px-12 py-4">
                 Jetzt Anfrage stellen
               </Button>
             </CharterRequestForm>
