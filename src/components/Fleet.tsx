@@ -26,7 +26,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen flexibel", "XXL Badeplattform", "Twin-Ruder", "European Yacht of the Year 2015"],
     price: "ab €3.150/Woche",
     attributes: ["sportlich", "beliebt"],
-    image: bavariaCruiser46
+    image: "/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.png"
   }, {
     name: "Lagoon 42",
     type: "Segelkatamaran",
