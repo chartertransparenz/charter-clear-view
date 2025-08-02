@@ -21,93 +21,102 @@ const Fleet = () => {
   const boats = [{
     name: "Bavaria Cruiser 46",
     type: "Monohull Einrumpf-Segelyacht",
-    capacity: "bis 9-10 Personen",
+    capacity: "bis 8-10 Personen",
     length: "14,27m",
-    features: ["3-4 Kabinen flexibel", "XXL Badeplattform", "Twin-Ruder", "European Yacht of the Year 2015"],
-    price: "ab €3.150/Woche",
-    attributes: ["sportlich", "beliebt"],
+    features: ["4 Kabinen", "3 Nasszellen", "Breite: 4,35m", "Geräumig & komfortabel"],
+    price: "ab €1.300/Woche",
+    attributes: ["voluminös"],
     image: "/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.png"
   }, {
     name: "Lagoon 42",
     type: "Segelkatamaran",
-    capacity: "bis 10-12 Personen",
-    length: "13,22m",
-    features: ["4 Hauptkabinen + Crew", "4 Ensuite-Bäder", "Generator & A/C", "Ideal für Familien"],
-    price: "ab €3.200/Woche",
+    capacity: "bis 8-12 Personen",
+    length: "13,2m",
+    features: ["3-4 Kabinen", "3-4 Nasszellen", "Breite: 7,68m", "Weitläufiges Deck & viel Platz"],
+    price: "ab €1.680/Woche",
+    attributes: ["voluminös"],
+    image: "/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
+  }, {
+    name: "Lagoon 440",
+    type: "Segelkatamaran",
+    capacity: "bis 8-12 Personen",
+    length: "13,61m",
+    features: ["3-4 Kabinen", "3-4 Nasszellen", "Breite: 7,70m", "Panorama-Salon & komfort-orientiert"],
+    price: "ab €1.800/Woche",
     attributes: ["voluminös"],
     image: "/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
   }, {
     name: "Oceanis 46.1",
     type: "Monohull Cruising Yacht",
-    capacity: "6-10 Personen",
-    length: "14,15m",
-    features: ["3-4 Kabinen", "2-3 Nasszellen", "Moderne Linien", "Familienfreundlich"],
-    price: "ab €3.500/Woche",
-    attributes: ["voluminös", "beliebt"],
+    capacity: "bis 8-10 Personen",
+    length: "14,60m",
+    features: ["3-5 Kabinen", "2-4 Nasszellen", "Breite: 4,50m", "Elegant & modernes Layout"],
+    price: "ab €1.260/Woche",
+    attributes: ["beliebt"],
     image: "/lovable-uploads/725dc9eb-cef9-47b0-9eb3-1097bd7e3324.png"
   }, {
     name: "Bavaria Cruiser 37",
     type: "Monohull Segelyacht",
-    capacity: "bis 6-8 Personen",
+    capacity: "bis 6-7 Personen",
     length: "11,30m",
-    features: ["3 Kabinen", "1-2 Nasszellen", "Einfach zu handhaben", "Ideal für kleine Crews"],
-    price: "ab €1.900/Woche",
+    features: ["2-3 Kabinen", "1-2 Nasszellen", "Breite: 3,67m", "Agil & platzoptimiert"],
+    price: "ab €990/Woche",
     attributes: ["sportlich"],
     image: "/lovable-uploads/05c9defc-3ded-4df8-a513-4e3f4c8fb7ae.png"
   }, {
     name: "Sun Odyssey 440",
     type: "Monohull Cruiser",
-    capacity: "ca. 6 Personen",
+    capacity: "bis 8 Personen",
     length: "13,39m",
-    features: ["3-4 Kabinen", "Dualruder", "Cruiser of the Year 2018", "Besonderer Wohnkomfort"],
-    price: "ab €2.950/Woche",
+    features: ["2-4 Kabinen", "2-3 Nasszellen", "Breite: 4,29m", "Modern & komfortabel"],
+    price: "ab €1.440/Woche",
     attributes: ["voluminös"],
     image: "/lovable-uploads/fb1a8403-78ac-459d-9e98-87667420bcb2.png"
   }, {
+    name: "Bavaria C 42",
+    type: "Monohull Segelyacht",
+    capacity: "bis 6-7 Personen",
+    length: "12,90m",
+    features: ["2-3 Kabinen", "1-2 Nasszellen", "Breite: 4,30m", "Hell, geräumig & komfortabel"],
+    price: "ab €1.200/Woche",
+    attributes: ["voluminös"],
+    image: "/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.png"
+  }, {
     name: "Sun Odyssey 410",
     type: "Monohull Cruiser",
-    capacity: "4-6 Personen",
+    capacity: "bis 6-7 Personen",
     length: "12,95m",
-    features: ["2-3 Layouts möglich", "1-2 Nasszellen", "Boot des Jahres 2019/2020", "Hohe Variabilität"],
-    price: "ab €2.800/Woche",
+    features: ["2-3 Kabinen", "2 Nasszellen", "Breite: 3,99m", "Kompakt & familienfreundlich"],
+    price: "ab €1.200/Woche",
     attributes: ["sportlich"],
     image: "/lovable-uploads/626a5986-a8dd-495e-97d7-9c028042f1a4.png"
   }, {
+    name: "Oceanis 38.1",
+    type: "Monohull Segelyacht",
+    capacity: "bis 6 Personen",
+    length: "11,50m",
+    features: ["2-3 Kabinen", "1-2 Nasszellen", "Breite: 3,99m", "Vielseitig & modernes Interieur"],
+    price: "ab €1.050/Woche",
+    attributes: ["beliebt"],
+    image: "/lovable-uploads/f0ed71e0-7256-499f-82d0-aca518c443ef.png"
+  }, {
     name: "Bali Catspace",
     type: "Katamaran",
-    capacity: "bis 8-10 Personen",
-    length: "12,00m",
-    features: ["4 Hauptkabinen + Crew", "4 Ensuite-WCs", "Innovative offene Deckstruktur", "Lounge-artiges Design"],
-    price: "ab €4.500/Woche",
+    capacity: "bis 10 Personen",
+    length: "12,31m",
+    features: ["4 Kabinen", "3-4 Nasszellen", "Breite: 6,59m", "Viel Raum, Panoramablick & großzügiges Cockpit"],
+    price: "ab €1.700/Woche",
     attributes: ["voluminös"],
     image: "/lovable-uploads/b2bcf86f-90d1-45cf-8f0c-73739b25f26c.png"
   }, {
     name: "Dufour 460 Grand Large",
     type: "Monohull Cruising Yacht",
-    capacity: "bis 8 Personen",
+    capacity: "bis 8-10 Personen",
     length: "14,15m",
-    features: ["4 Kabinen", "2-3 Nasszellen", "Moderne Ausstattung", "Viel Volumen & Luxusgefühl"],
-    price: "ab €3.650/Woche",
+    features: ["3-4 Kabinen", "2-4 Nasszellen", "Breite: 4,50m", "Komfortabel & leistungsstark"],
+    price: "ab €1.600/Woche",
     attributes: ["beliebt"],
     image: "/lovable-uploads/68a41bf5-1573-472d-8722-34cdca418a0e.png"
-  }, {
-    name: "Oceanis 38.1",
-    type: "Monohull Segelyacht",
-    capacity: "bis 6-8 Personen",
-    length: "11,50m",
-    features: ["2-3 Kabinen", "1-2 Nasszellen", "Wandelbares Raumkonzept", "Geräumig trotz kompakter Größe"],
-    price: "ab €2.100/Woche",
-    attributes: ["beliebt"],
-    image: "/lovable-uploads/f0ed71e0-7256-499f-82d0-aca518c443ef.png"
-  }, {
-    name: "Bavaria Cruiser 42",
-    type: "Monohull Segelyacht",
-    capacity: "bis 6-8 Personen",
-    length: "12,35m",
-    features: ["3 Kabinen", "2 WC/Dusche", "Gute Segeleigenschaften", "Sehr beliebt in Charterflotten"],
-    price: "ab €2.650/Woche",
-    attributes: ["sportlich", "beliebt"],
-    image: "/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.png"
   }];
 
   // Automatisches Karussell für Yachten
