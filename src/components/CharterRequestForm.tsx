@@ -123,7 +123,8 @@ const CharterRequestForm = ({
       </CardHeader>
       
       <CardContent className="p-6">
-        <p className="text-center text-muted-foreground mb-6">Jetzt Ihre Traum-Charter starten! Profitieren Sie von unserer 30-jährigen Erfahrung auf dem internationalen Chartermarkt. Wir bieten Ihnen kompetente Beratung, individuelle &amp; unabhängige Angebote und begleiten Sie mit persönlichem Service – selbstverständlich zu besten Preisen. Stellen Sie jetzt Ihre unverbindliche Charteranfrage und starten Sie in Ihr unbeschwertes Segel- oder Motorboot-Abenteuer!</p>
+        <p className="text-center text-muted-foreground mb-6">Profitiere von unserer 30-jährigen Erfahrung auf dem internationalen Chartermarkt.
+Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und begleiten dich mit persönlichem Service – selbstverständlich zu den besten Preisen. Profitiere von unserer Erfahrung und erlebe unbeschwert dein Segel- oder Motorboot-Abenteuer.</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Personal Information */}
