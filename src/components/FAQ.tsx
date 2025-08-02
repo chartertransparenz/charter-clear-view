@@ -101,7 +101,7 @@ const FAQ = () => {
       icon: Phone,
       title: "Telefon-Hotline",
       description: "Mo-Fr 8:00-18:00 Uhr",
-      action: "+49 (0) 7543 123456",
+      action: "+49 7543 499 080",
       color: "bg-green-500"
     },
     {
