@@ -65,7 +65,7 @@ const Services = () => {
             <img
               src={servicesHeroConsultationV2}
               alt="Luxusyacht bei Sonnenuntergang"
-              className="w-full h-64 md:h-80 object-cover"
+              className="w-full h-80 md:h-96 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
