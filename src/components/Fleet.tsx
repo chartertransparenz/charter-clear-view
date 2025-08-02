@@ -107,7 +107,7 @@ const Fleet = () => {
     features: ["3 Kabinen", "2 WC/Dusche", "Gute Segeleigenschaften", "Sehr beliebt in Charterflotten"],
     price: "ab €2.650/Woche",
     attributes: ["sportlich", "beliebt"],
-    image: bavariaCruiser41
+    image: "/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.png"
   }];
 
   // Automatisches Karussell für Yachten
