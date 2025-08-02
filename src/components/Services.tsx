@@ -217,13 +217,6 @@ const Services = () => {
         <div className="text-center mt-20">
           <div className="bg-ocean-dark rounded-2xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-black/20"></div>
-            <div className="absolute top-4 right-4">
-              <img 
-                src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" 
-                alt="CharterTransparenz" 
-                className="h-20 w-auto"
-              />
-            </div>
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-4">
                 Bereit für dein Charter-Abenteuer?
