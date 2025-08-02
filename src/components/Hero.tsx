@@ -38,7 +38,7 @@ const Hero = () => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [nextSlide]);
-  return <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden mt-20">
       {/* Background Images Carousel */}
       {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
       backgroundImage: `url(${slide.image})`
@@ -63,8 +63,8 @@ const Hero = () => {
       {/* Floating elements removed - now in FloatingCTA component */}
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-32 sm:pt-28 md:pt-20 lg:pt-16">
-        <div className="max-w-4xl mx-auto mt-12 sm:mt-8 md:mt-4 lg:mt-0">
+      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <Award className="w-4 h-4" />
