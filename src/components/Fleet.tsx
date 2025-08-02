@@ -98,7 +98,7 @@ const Fleet = () => {
     features: ["2-3 Kabinen", "1-2 Nasszellen", "Wandelbares Raumkonzept", "Geräumig trotz kompakter Größe"],
     price: "ab €2.100/Woche",
     attributes: ["beliebt"],
-    image: oceanis381
+    image: "/lovable-uploads/f0ed71e0-7256-499f-82d0-aca518c443ef.png"
   }, {
     name: "Bavaria Cruiser 41",
     type: "Monohull Segelyacht",
