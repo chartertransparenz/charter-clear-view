@@ -89,7 +89,7 @@ const Fleet = () => {
     features: ["4 Kabinen", "2-3 Nasszellen", "Moderne Ausstattung", "Viel Volumen & Luxusgefühl"],
     price: "ab €3.650/Woche",
     attributes: ["beliebt"],
-    image: dufour460
+    image: "/lovable-uploads/68a41bf5-1573-472d-8722-34cdca418a0e.png"
   }, {
     name: "Oceanis 38.1",
     type: "Monohull Segelyacht",
