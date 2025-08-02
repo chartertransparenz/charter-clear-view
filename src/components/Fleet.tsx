@@ -35,7 +35,7 @@ const Fleet = () => {
     features: ["4 Hauptkabinen + Crew", "4 Ensuite-Bäder", "Generator & A/C", "Ideal für Familien"],
     price: "ab €3.200/Woche",
     attributes: ["voluminös"],
-    image: lagoon42
+    image: "/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
   }, {
     name: "Oceanis 46.1",
     type: "Monohull Cruising Yacht",
