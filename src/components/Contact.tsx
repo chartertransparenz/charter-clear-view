@@ -117,7 +117,7 @@ const Contact = () => {
                     WhatsApp senden
                   </Button>
                   <CharterRequestForm>
-                    <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
+                    <Button variant="default" size="sm" className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
                       <Send className="w-4 h-4 mr-2" />
                       Jetzt Anfrage stellen
                     </Button>

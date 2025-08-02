@@ -279,7 +279,7 @@ const Fleet = () => {
                     {/* Button at bottom */}
                     <div className="mt-auto">
                       <CharterRequestForm>
-                        <Button variant="ocean" className="w-full">
+                        <Button variant="default" className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
                           Jetzt Anfrage stellen
                         </Button>
                       </CharterRequestForm>
