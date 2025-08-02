@@ -71,7 +71,7 @@ const Fleet = () => {
     features: ["2-3 Layouts möglich", "1-2 Nasszellen", "Boot des Jahres 2019/2020", "Hohe Variabilität"],
     price: "ab €2.800/Woche",
     attributes: ["sportlich"],
-    image: sunOdyssey410
+    image: "/lovable-uploads/626a5986-a8dd-495e-97d7-9c028042f1a4.png"
   }, {
     name: "Bali Catspace",
     type: "Katamaran",
