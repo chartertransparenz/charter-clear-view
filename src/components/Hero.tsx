@@ -1,17 +1,79 @@
 import { Button } from "@/components/ui/button";
-import { Anchor, Award, Shield } from "lucide-react";
+import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 import heroYacht from "@/assets/hero-yacht.jpg";
+import charterHeroWater from "@/assets/charter-hero-water.jpg";
+import mediterraneanImage from "@/assets/mediterranean.jpg";
+import caribbeanImage from "@/assets/caribbean.jpg";
 import CharterRequestForm from "./CharterRequestForm";
+import { useState, useEffect, useCallback } from "react";
 
 const Hero = () => {
+  const slides = [
+    { image: heroYacht, title: "Luxuriöse Yachten", subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse" },
+    { image: charterHeroWater, title: "Kristallklares Wasser", subtitle: "Die schönsten Gewässer der Welt entdecken" },
+    { image: mediterraneanImage, title: "Mittelmeer Abenteuer", subtitle: "Träumen Sie von perfekten Segeltörns" },
+    { image: caribbeanImage, title: "Karibische Träume", subtitle: "Paradiesische Destinationen erleben" }
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, [slides.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  }, [slides.length]);
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, [nextSlide]);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroYacht})` }}
+      {/* Background Images Carousel */}
+      {slides.map((slide, index) => (
+        <div 
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ backgroundImage: `url(${slide.image})` }}
+        >
+          <div className="absolute inset-0 gradient-hero opacity-80"></div>
+        </div>
+      ))}
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group"
       >
-        <div className="absolute inset-0 gradient-hero opacity-80"></div>
+        <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group"
+      >
+        <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
+      </button>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide 
+                ? 'bg-white scale-125' 
+                : 'bg-white/50 hover:bg-white/75'
+            }`}
+          />
+        ))}
       </div>
 
       {/* Floating elements removed - now in FloatingCTA component */}
