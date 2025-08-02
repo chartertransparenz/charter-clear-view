@@ -1,10 +1,27 @@
-import { ArrowLeft } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, MapPin, Waves, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import caribbean from "@/assets/caribbean.jpg";
 
 const Caribbean = () => {
+  const regions = [
+    { name: "Britische Jungferninseln (BVI)", description: "Das weltweit beliebteste Charterrevier" },
+    { name: "St. Martin, Antigua, Guadeloupe", description: "Klassische Karibik-Destinationen" },
+    { name: "Grenadinen", areas: ["St. Vincent", "Bequia", "Tobago Cays"] },
+    { name: "Bahamas", areas: ["Exumas", "Abacos"] },
+    { name: "Kuba", description: "Zunehmend beliebter, ursprünglicher" }
+  ];
+
+  const advantages = [
+    "Warmes Wasser",
+    "Stabile Passatwinde", 
+    "Unzählige Inseln",
+    "Line of Sight Sailing"
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden">
         <img
@@ -12,10 +29,10 @@ const Caribbean = () => {
           alt="Karibik"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <div className="mb-4 bg-orange-500 text-white px-3 py-1 rounded">🏝️ Karibik & Atlantik</div>
+            <Badge className="mb-4 bg-orange-500 text-white">🏝️ Karibik & Atlantik</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Karibik</h1>
             <p className="text-xl max-w-2xl">
               Traumhafte Inseln mit perfekten Segelbedingungen
@@ -31,60 +48,83 @@ const Caribbean = () => {
             }, 100);
           }}
         >
-          <div className="bg-white text-black px-4 py-2 rounded flex items-center">
+          <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
-          </div>
+          </Button>
         </Link>
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-center mb-8">ULTRA-MINIMALE VERSION</h1>
-        
-        <div className="bg-gray-100 p-6 rounded mb-8">
-          <h2 className="text-2xl font-bold mb-4">Karibik-Feeling</h2>
-          <p className="text-lg">
-            Türkisfarbenes Wasser, perfekte Temperaturen und zuverlässige Passatwinde machen 
-            die Karibik zum Segelparadies schlechthin.
-          </p>
-        </div>
-
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Top-Regionen</h2>
-          <div className="space-y-4">
-            <div className="bg-white border p-4 rounded">Britische Jungferninseln (BVI)</div>
-            <div className="bg-white border p-4 rounded">St. Martin, Antigua, Guadeloupe</div>
-            <div className="bg-white border p-4 rounded">Grenadinen</div>
-            <div className="bg-white border p-4 rounded">Bahamas</div>
-            <div className="bg-white border p-4 rounded">Kuba</div>
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="flex items-center gap-2 mb-4">
+              <Star className="w-5 h-5 text-orange-500" />
+              <h2 className="text-2xl font-bold text-gray-800">Karibik-Feeling</h2>
+            </div>
+            <p className="text-lg text-gray-600">
+              Türkisfarbenes Wasser, perfekte Temperaturen und zuverlässige Passatwinde machen 
+              die Karibik zum Segelparadies schlechthin.
+            </p>
           </div>
         </div>
 
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Vorteile</h2>
-          <div className="space-y-4">
-            <div className="bg-blue-50 border p-4 rounded text-center">Warmes Wasser</div>
-            <div className="bg-blue-50 border p-4 rounded text-center">Stabile Passatwinde</div>
-            <div className="bg-blue-50 border p-4 rounded text-center">Unzählige Inseln</div>
-            <div className="bg-blue-50 border p-4 rounded text-center">Line of Sight Sailing</div>
+        {/* Top Regions */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {regions.map((region, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-orange-500" />
+                  <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
+                </div>
+                {region.description && (
+                  <p className="text-sm text-gray-600 mb-3">{region.description}</p>
+                )}
+                {region.areas && (
+                  <div className="space-y-2">
+                    {region.areas.map((area, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                        <span className="text-gray-600">{area}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="bg-blue-600 text-white p-8 rounded text-center">
-          <h3 className="text-2xl font-bold mb-4">Ab in die Karibik?</h3>
-          <p className="mb-6">
-            Erleben Sie das ultimative Segelerlebnis zwischen Trauminseln und 
-            kristallklarem Wasser mit perfekten Windbedingungen.
-          </p>
-          <button className="bg-white text-blue-600 px-6 py-2 rounded font-bold">
-            Karibik-Charter anfragen
-          </button>
+        {/* Advantages */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Vorteile</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {advantages.map((advantage, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+                <Waves className="w-8 h-8 text-blue-500 mx-auto mb-3" />
+                <p className="font-medium text-gray-800">{advantage}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-8 text-center text-red-600 font-bold">
-          WENN DER LEERE KASTEN IMMER NOCH DA IST:<br/>
-          DAS PROBLEM KOMMT VON AUSSERHALB DIESER SEITE!<br/>
-          (Navigation, Footer, FloatingCTA oder Browser-Bug)
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Ab in die Karibik?
+            </h3>
+            <p className="mb-6 text-blue-100">
+              Erleben Sie das ultimative Segelerlebnis zwischen Trauminseln und 
+              kristallklarem Wasser mit perfekten Windbedingungen.
+            </p>
+            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              Karibik-Charter anfragen
+            </Button>
+          </div>
         </div>
       </div>
     </div>
