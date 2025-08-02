@@ -135,7 +135,7 @@ const Services = () => {
               className="h-12 w-auto mr-4"
             />
             <h3 className="text-2xl font-bold text-ocean-dark">
-              Warum CharterTransparenz?
+              Warum Charter Transparenz?
             </h3>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
