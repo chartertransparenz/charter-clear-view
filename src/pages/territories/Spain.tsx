@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationSpain from "@/assets/destination-spain.jpg";
 
 const Spain = () => {
@@ -182,9 +183,11 @@ const Spain = () => {
               Entdecken Sie Spaniens vielfältige Segelreviere von den mediterranen 
               Balearen bis zu den ganzjährig warmen Kanaren.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Spanien-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Spanien-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

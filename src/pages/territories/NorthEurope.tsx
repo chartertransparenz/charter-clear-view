@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Anchor, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import balticSea from "@/assets/baltic-sea.jpg";
 
 const NorthEurope = () => {
@@ -111,12 +112,14 @@ const NorthEurope = () => {
               Heimische Gewässer erkunden?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie die Schönheit der deutschen Küsten und Skandinaviens 
-              mit kurzen Anreisewegen und erstklassiger Infrastruktur.
+              Entdecken Sie die raue Schönheit der Nord- und Ostsee mit 
+              einzigartigen Küstenlandschaften und maritimer Tradition.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Nord- & Ostsee Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Nordeuropa-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Waves, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import caribbean from "@/assets/caribbean.jpg";
 
 const Caribbean = () => {
@@ -118,12 +119,14 @@ const Caribbean = () => {
               Ab in die Karibik?
             </h3>
             <p className="mb-6 text-blue-100">
-              Erleben Sie das ultimative Segelerlebnis zwischen Trauminseln und 
-              kristallklarem Wasser mit perfekten Windbedingungen.
+              Erleben Sie das Karibik-Feeling mit türkisem Wasser, weißen Stränden 
+              und entspannter Inselatmosphäre.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Karibik-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Karibik-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

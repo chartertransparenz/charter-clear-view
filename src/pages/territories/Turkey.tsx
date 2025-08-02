@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationTurkey from "@/assets/destination-turkey.jpg";
 
 const Turkey = () => {
@@ -185,9 +186,11 @@ const Turkey = () => {
               Erleben Sie die türkische Gastfreundschaft und entdecken Sie 
               kristallklare Buchten entlang der antiken Lykischen Küste.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Türkei-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Türkei-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

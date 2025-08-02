@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationCroatia from "@/assets/destination-croatia.jpg";
 
 const Croatia = () => {
@@ -185,9 +186,11 @@ const Croatia = () => {
               Entdecken Sie das #1 Segelrevier der Welt mit über 1200 Inseln, 
               kristallklarem Wasser und perfekter Infrastruktur.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Kroatien-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Kroatien-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

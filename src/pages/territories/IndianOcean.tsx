@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Palmtree, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import indianOcean from "@/assets/indian-ocean.jpg";
 
 const IndianOcean = () => {
@@ -107,9 +108,11 @@ const IndianOcean = () => {
               Entdecken Sie die exotischsten Segelreviere der Welt mit kristallklaren 
               Lagunen und unberührter tropischer Natur.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Indischer Ozean Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Indischer Ozean Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationSeychelles from "@/assets/destination-seychelles.jpg";
 
 const Seychelles = () => {
@@ -184,9 +185,11 @@ const Seychelles = () => {
               Entdecken Sie mit einem Katamaran die Trauminseln der Seychellen 
               und erleben Sie unberührte Natur im Indischen Ozean.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Seychellen-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Seychellen-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

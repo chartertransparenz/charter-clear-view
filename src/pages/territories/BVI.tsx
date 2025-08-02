@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import destinationBvi from "@/assets/destination-bvi.jpg";
 
 const BVI = () => {
@@ -185,9 +186,11 @@ const BVI = () => {
               Erleben Sie entspanntes Segeln in türkisen Gewässern zwischen 
               traumhaften Inseln mit weißen Sandstränden.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              BVI-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                BVI-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

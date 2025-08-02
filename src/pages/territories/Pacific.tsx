@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Palmtree, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import pacific from "@/assets/pacific.jpg";
 
 const Pacific = () => {
@@ -112,12 +113,14 @@ const Pacific = () => {
               Bereit für die Südsee?
             </h3>
             <p className="mb-6 text-blue-100">
-              Erfüllen Sie sich den Traum vom ultimativen Segelerlebnis in den 
-              schönsten Lagunen der Welt.
+              Erleben Sie die Südsee-Romantik in den traumhaften Gewässern 
+              zwischen unberührten Korallenriffen und exotischen Kulturen.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              Pazifik-Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Pazifik-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>
