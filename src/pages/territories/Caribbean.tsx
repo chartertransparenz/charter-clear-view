@@ -1,3 +1,4 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -41,12 +42,20 @@ const Caribbean = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-center mb-8">MINIMALE VERSION - KEINE UI KOMPONENTEN</h1>
-        
+        {/* Test: Nur eine einzige Card */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="shadow-elegant">
+            <CardHeader>
+              <CardTitle>Test Card</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Falls der leere Kasten jetzt wieder da ist, liegt das Problem bei den Card-Komponenten!</p>
+            </CardContent>
+          </Card>
+        </div>
+
         <div className="text-center text-2xl">
-          <p>Falls der leere Kasten immer noch da ist,</p>
-          <p>kommt er definitiv von außerhalb dieser Seite!</p>
-          <p>Möglicherweise Navigation, Footer oder globales CSS.</p>
+          <p>TEST: Eine einzige Card-Komponente hinzugefügt</p>
         </div>
 
         <div className="mt-12 text-center">
