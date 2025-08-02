@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import charterHeroWater from "@/assets/charter-hero-water.jpg";
@@ -20,9 +20,52 @@ const CharterRequestForm = ({
   onOpenChange,
   children
 }: CharterRequestFormProps) => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  const [dialogOpen, setDialogOpen] = useState(isOpen || false);
+
+  // Handle browser back button and ESC key
+  useEffect(() => {
+    const handlePopState = () => {
+      if (dialogOpen) {
+        handleClose();
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && dialogOpen) {
+        handleClose();
+      }
+    };
+
+    if (dialogOpen) {
+      window.addEventListener('popstate', handlePopState);
+      document.addEventListener('keydown', handleKeyDown);
+      // Add a history entry when dialog opens
+      window.history.pushState({ dialogOpen: true }, '');
+    }
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [dialogOpen]);
+
+  // Sync with external isOpen prop
+  useEffect(() => {
+    if (isOpen !== undefined) {
+      setDialogOpen(isOpen);
+    }
+  }, [isOpen]);
+
+  const handleClose = () => {
+    setDialogOpen(false);
+    onOpenChange?.(false);
+  };
+
+  const handleOpenChange = (open: boolean) => {
+    setDialogOpen(open);
+    onOpenChange?.(open);
+  };
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -79,7 +122,7 @@ const CharterRequestForm = ({
           message: "",
           privacyAccepted: false
         });
-        if (onOpenChange) onOpenChange(false);
+        handleClose();
       } else {
         throw new Error('Failed to send request');
       }
@@ -265,7 +308,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
       </CardContent>
     </Card>;
   if (children) {
-    return <Dialog open={isOpen} onOpenChange={onOpenChange}>
+    return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>
           {children}
         </DialogTrigger>
@@ -273,7 +316,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
           <div className="relative">
             {/* Close button - visible on all screen sizes */}
             <button
-              onClick={() => onOpenChange?.(false)}
+              onClick={handleClose}
               className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200"
               aria-label="Formular schließen"
             >
