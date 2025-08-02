@@ -89,13 +89,13 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transparent.
+            Bereit für Dein
             <br />
             <span className="text-white">
-              Vertrauenswürdig.
+              nächstes
             </span>
             <br />
-            Unvergesslich.
+            Segelabenteuer?
           </h1>
 
           {/* Description */}
