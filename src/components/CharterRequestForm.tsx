@@ -150,7 +150,7 @@ const CharterRequestForm = ({
       <CardHeader className="text-center bg-gradient-ocean text-white rounded-t-lg relative overflow-hidden">
         {/* Background Image with dark overlay */}
         <div className="absolute inset-0 bg-cover bg-center" style={{
-        backgroundImage: `url(${charterHeroWater})`
+        backgroundImage: `url(/lovable-uploads/425e8e7c-d82f-4959-a47c-f3ce2d8d8cff.png)`
       }} />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10">
