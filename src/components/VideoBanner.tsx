@@ -45,7 +45,7 @@ const VideoBanner = () => {
 
           {/* Headline */}
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Entdecken Sie Ihre
+            Entdecke deine
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-sunset to-wave">
               Charter-Träume
             </span>
@@ -53,7 +53,7 @@ const VideoBanner = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
-            Erleben Sie unvergessliche Momente auf dem Wasser mit unserer 
+            Erlebe unvergessliche Momente auf dem Wasser mit unseren 
             Premium-Yachten und erstklassigem Service
           </p>
 

@@ -18,7 +18,7 @@ const Hero = () => {
   }, {
     image: mediterraneanImage,
     title: "Mittelmeer Abenteuer",
-    subtitle: "Träumen Sie von perfekten Segeltörns"
+    subtitle: "Träume von perfekten Segeltörns"
   }, {
     image: caribbeanImage,
     title: "Karibische Träume",

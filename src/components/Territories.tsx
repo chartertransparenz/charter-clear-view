@@ -73,7 +73,7 @@ const Territories = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Von heimischen Gewässern bis zu exotischen Destinationen - 
-            entdecken Sie die schönsten Segelreviere Europas
+            entdecke die schönsten Segelreviere Europas
           </p>
         </div>
 
@@ -263,11 +263,11 @@ const Territories = () => {
         <div className="text-center">
           <div className="bg-gradient-ocean rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Lassen Sie sich beraten
+              Lass dich beraten
             </h3>
             <p className="mb-6 text-white/90 max-w-2xl mx-auto">
-              Unsere Experten kennen jedes Revier persönlich und helfen Ihnen bei der 
-              Auswahl des perfekten Segelgebiets für Ihre Bedürfnisse und Erfahrung.
+              Unsere Experten kennen jedes Revier persönlich und helfen dir bei der 
+              Auswahl des perfekten Segelgebiets für deine Bedürfnisse und Erfahrung.
             </p>
             <Button variant="transparent" size="lg">
               Persönliche Revierberatung

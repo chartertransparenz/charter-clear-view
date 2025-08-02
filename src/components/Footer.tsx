@@ -39,7 +39,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-white/80 mb-6 text-sm">
-              Ihr vertrauensvoller Partner für unvergessliche Chartererlebnisse. 
+              Dein vertrauensvoller Partner für unvergessliche Chartererlebnisse. 
               Seit über 30 Jahren stehen wir für Transparenz, Qualität und erstklassigen Service.
             </p>
             
@@ -112,7 +112,7 @@ const Footer = () => {
 
             {/* Social Media */}
             <div>
-              <h4 className="font-semibold mb-3 text-sunset text-sm">Folgen Sie uns</h4>
+              <h4 className="font-semibold mb-3 text-sunset text-sm">Folge uns</h4>
               <div className="flex gap-3">
                 <a
                   href="#"

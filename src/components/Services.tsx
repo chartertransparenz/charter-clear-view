@@ -174,10 +174,10 @@ const Services = () => {
             </div>
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-4">
-                Bereit für Ihr Charter-Abenteuer?
+                Bereit für dein Charter-Abenteuer?
               </h3>
               <p className="text-xl mb-8 text-white/90">
-                Lassen Sie uns gemeinsam Ihren perfekten Törn planen
+                Lass uns gemeinsam deinen perfekten Törn planen
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="white-blue" size="lg">

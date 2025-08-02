@@ -86,7 +86,7 @@ const CharterRequestForm = ({
     if (!formData.privacyAccepted) {
       toast({
         title: "Datenschutzerklärung erforderlich",
-        description: "Bitte akzeptieren Sie die Datenschutzerklärung.",
+        description: "Bitte akzeptiere die Datenschutzerklärung.",
         variant: "destructive"
       });
       return;
@@ -103,7 +103,7 @@ const CharterRequestForm = ({
       if (response.ok) {
         toast({
           title: "Anfrage erfolgreich gesendet!",
-          description: "Wir melden uns innerhalb von 24 Stunden mit Ihrem persönlichen Angebot zurück."
+          description: "Wir melden uns innerhalb von 24 Stunden mit deinem persönlichen Angebot zurück."
         });
 
         // Reset form
@@ -129,7 +129,7 @@ const CharterRequestForm = ({
     } catch (error) {
       toast({
         title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+        description: "Bitte versuche es erneut oder kontaktiere uns direkt.",
         variant: "destructive"
       });
     }
@@ -173,13 +173,13 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               <label htmlFor="firstName" className="text-sm font-medium mb-2 block">
                 Vorname *
               </label>
-              <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Ihr Vorname" required />
+              <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Dein Vorname" required />
             </div>
             <div>
               <label htmlFor="lastName" className="text-sm font-medium mb-2 block">
                 Nachname *
               </label>
-              <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Ihr Nachname" required />
+              <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Dein Nachname" required />
             </div>
           </div>
 
@@ -188,7 +188,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               <label htmlFor="email" className="text-sm font-medium mb-2 block">
                 E-Mail *
               </label>
-              <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="ihre@email.de" required />
+              <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="deine@email.de" required />
             </div>
             <div>
               <label htmlFor="phone" className="text-sm font-medium mb-2 block">
@@ -206,7 +206,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               </label>
               <Select value={formData.charterType} onValueChange={value => handleSelectChange('charterType', value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Wählen Sie den Chartertyp" />
+                  <SelectValue placeholder="Wähle den Chartertyp" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="bareboat">Selbstsegler (Bareboat)</SelectItem>
@@ -221,7 +221,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               </label>
               <Select value={formData.boatType} onValueChange={value => handleSelectChange('boatType', value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Wählen Sie den Bootstyp" />
+                  <SelectValue placeholder="Wähle den Bootstyp" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="monohull">Segelboot (Einrumpf)</SelectItem>
@@ -272,9 +272,9 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
 
           <div>
             <label htmlFor="message" className="text-sm font-medium mb-2 block">
-              Ihre Nachricht an uns
+              Deine Nachricht an uns
             </label>
-            <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Nennen Sie uns z.B. bestimmte Ausrüstungsmerkmale wie Rollgroß oder Bugstrahlruder und weitere zu berücksichtigende Details Ihrer Planung..." className="min-h-[100px]" />
+            <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Nenne uns z.B. bestimmte Ausrüstungsmerkmale wie Rollgroß oder Bugstrahlruder und weitere zu berücksichtigende Details deiner Planung..." className="min-h-[100px]" />
           </div>
 
           {/* Privacy Consent */}

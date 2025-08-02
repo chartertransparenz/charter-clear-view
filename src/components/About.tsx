@@ -70,22 +70,22 @@ const About = () => {
           {/* Text Content */}
           <div>
             <h3 className="text-2xl font-bold mb-6 text-ocean-dark">
-              Ihre Experten für unvergessliche Chartererlebnisse
+              Deine Experten für unvergessliche Chartererlebnisse
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Mit Sitz in Kressbronn am Bodensee sind wir Ihr lokaler Partner für 
+                Mit Sitz in Kressbronn am Bodensee sind wir dein lokaler Partner für 
                 Yacht-Charter und maritime Erlebnisse. Unser Name ist Programm: 
                 Transparenz steht bei uns an erster Stelle.
               </p>
               <p>
                 Wir glauben, dass jeder das Recht auf ehrliche Beratung und faire 
                 Preise hat. Deshalb arbeiten wir ausschließlich mit seriösen 
-                Partnern zusammen und garantieren Ihnen vollständige Kostentransparenz.
+                Partnern zusammen und garantieren dir vollständige Kostentransparenz.
               </p>
               <p>
                 Ob Anfänger oder erfahrener Segler - wir finden das perfekte Boot 
-                für Ihre Bedürfnisse und unterstützen Sie bei der Planung Ihres 
+                für deine Bedürfnisse und unterstützen dich bei der Planung deines 
                 Traumtörns.
               </p>
             </div>

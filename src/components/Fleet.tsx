@@ -167,7 +167,7 @@ const Fleet = () => {
             Unsere Yachten
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Entdecken Sie unsere sorgfältig ausgewählte Yacht-Sammlung moderner Yachten 
+            Entdecke unsere sorgfältig ausgewählte Yacht-Sammlung moderner Yachten 
             und Boote für jeden Anspruch
           </p>
         </div>
@@ -315,7 +315,7 @@ const Fleet = () => {
             </h3>
             <p className="mb-6 text-white/90">
               Wir haben weitere Boote in unserem Partnernetzwerk. 
-              Lassen Sie uns gemeinsam das perfekte Boot für Sie finden.
+              Lass uns gemeinsam das perfekte Boot für dich finden.
             </p>
             <Button variant="transparent" size="lg">
               Persönliche Beratung

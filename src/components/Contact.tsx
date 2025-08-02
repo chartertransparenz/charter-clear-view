@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Nachricht gesendet!",
-      description: "Wir melden uns schnellstmöglich bei Ihnen zurück.",
+      description: "Wir melden uns schnellstmöglich bei dir zurück.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -65,11 +65,11 @@ const Contact = () => {
             Kontakt
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-            Lassen Sie uns sprechen
+            Lass uns sprechen
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Bereit für Ihr nächstes Abenteuer? Wir beraten Sie gerne und 
-            finden gemeinsam das perfekte Charter-Erlebnis für Sie.
+            Bereit für dein nächstes Abenteuer? Wir beraten dich gerne und 
+            finden gemeinsam das perfekte Charter-Erlebnis für dich.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-ocean-dark">Kontaktinformationen</CardTitle>
                 <CardDescription>
-                  Erreichen Sie uns auf verschiedenen Wegen
+                  Erreiche uns auf verschiedenen Wegen
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -105,7 +105,7 @@ const Contact = () => {
               <CardContent className="pt-6">
                 <h3 className="font-semibold mb-2 text-white">Sofortige Beratung gewünscht?</h3>
                 <p className="text-sm text-white/90 mb-4">
-                  Rufen Sie uns direkt an oder schreiben Sie uns eine WhatsApp-Nachricht.
+                  Ruf uns direkt an oder schreib uns eine WhatsApp-Nachricht.
                 </p>
                 <div className="space-y-2">
                   <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
@@ -133,7 +133,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-ocean-dark">Nachricht senden</CardTitle>
                 <CardDescription>
-                  Beschreiben Sie uns Ihre Wünsche und wir erstellen Ihnen ein 
+                  Beschreibe uns deine Wünsche und wir erstellen dir ein 
                   individuelles Angebot
                 </CardDescription>
               </CardHeader>
@@ -149,7 +149,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        placeholder="Ihr vollständiger Name"
+                        placeholder="Dein vollständiger Name"
                         required
                       />
                     </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                         type="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        placeholder="ihre@email.de"
+                        placeholder="deine@email.de"
                         required
                       />
                     </div>
@@ -192,7 +192,7 @@ const Contact = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Beschreiben Sie uns Ihre Wünsche: Reisezeitraum, gewünschte Destination, Anzahl Personen, besondere Anforderungen..."
+                      placeholder="Beschreibe uns deine Wünsche: Reisezeitraum, gewünschte Destination, Anzahl Personen, besondere Anforderungen..."
                       className="min-h-[120px]"
                       required
                     />
@@ -204,7 +204,7 @@ const Contact = () => {
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center">
-                    Mit dem Absenden akzeptieren Sie unsere Datenschutzerklärung. 
+                    Mit dem Absenden akzeptierst du unsere Datenschutzerklärung. 
                     Wir antworten in der Regel innerhalb von 24 Stunden.
                   </p>
                 </form>

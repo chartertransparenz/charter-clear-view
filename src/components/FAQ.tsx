@@ -12,7 +12,7 @@ const FAQ = () => {
       questions: [
         {
           question: "Wie erfolgt die Buchung und Bezahlung?",
-          answer: "Die Buchung erfolgt ganz einfach über unser Online-System oder telefonisch. Nach der Buchungsbestätigung erhalten Sie eine Rechnung mit verschiedenen Zahlungsmöglichkeiten. Eine Anzahlung von 30% sichert Ihre Reservierung, der Restbetrag ist 4 Wochen vor Törn-Beginn fällig."
+          answer: "Die Buchung erfolgt ganz einfach über unser Online-System oder telefonisch. Nach der Buchungsbestätigung erhältst du eine Rechnung mit verschiedenen Zahlungsmöglichkeiten. Eine Anzahlung von 30% sichert deine Reservierung, der Restbetrag ist 4 Wochen vor Törn-Beginn fällig."
         },
         {
           question: "Welche Kosten sind im Charterpreis enthalten?",
@@ -20,7 +20,7 @@ const FAQ = () => {
         },
         {
           question: "Kann ich kurzfristig stornieren?",
-          answer: "Bis 8 Wochen vor Törn-Beginn können Sie kostenfrei stornieren. Bei späteren Stornierungen staffeln sich die Gebühren je nach Zeitpunkt. Wir empfehlen den Abschluss einer Reiserücktrittsversicherung für maximale Flexibilität."
+          answer: "Bis 8 Wochen vor Törn-Beginn kannst du kostenfrei stornieren. Bei späteren Stornierungen staffeln sich die Gebühren je nach Zeitpunkt. Wir empfehlen den Abschluss einer Reiserücktrittsversicherung für maximale Flexibilität."
         },
         {
           question: "Gibt es Rabatte für Stammkunden?",
@@ -34,19 +34,19 @@ const FAQ = () => {
       questions: [
         {
           question: "Welchen Führerschein benötige ich?",
-          answer: "Für den Bodensee benötigen Sie mindestens den Sportbootführerschein Binnen (SBF-Binnen). Für Seereisen ist der Sportküstenschifferschein (SKS) oder vergleichbare internationale Scheine erforderlich. Gerne beraten wir Sie zu den Anforderungen."
+          answer: "Für den Bodensee benötigst du mindestens den Sportbootführerschein Binnen (SBF-Binnen). Für Seereisen ist der Sportküstenschifferschein (SKS) oder vergleichbare internationale Scheine erforderlich. Gerne beraten wir dich zu den Anforderungen."
         },
         {
           question: "Können Anfänger auch ein Boot chartern?",
           answer: "Auf dem Bodensee können auch Segelanfänger mit entsprechender Einweisung ein Boot chartern. Für andere Reviere empfehlen wir eine Skipperausbildung oder einen erfahrenen Skipper an Bord."
         },
         {
-          question: "Bieten Sie Segelkurse an?",
+          question: "Bietet ihr Segelkurse an?",
           answer: "Ja, wir bieten komplette Segelausbildungen vom Grundkurs bis zum Hochseeschein an. Unsere lizenzierten Segellehrer vermitteln Theorie und Praxis auf modernen Schulungsyachten."
         },
         {
           question: "Was passiert bei schlechtem Wetter?",
-          answer: "Sicherheit geht vor! Bei zu starkem Wind oder Unwetter bleiben wir im Hafen. Unser erfahrenes Team gibt Ihnen jederzeit Wetterberatung und alternative Empfehlungen für Ihren Törn."
+          answer: "Sicherheit geht vor! Bei zu starkem Wind oder Unwetter bleiben wir im Hafen. Unser erfahrenes Team gibt dir jederzeit Wetterberatung und alternative Empfehlungen für deinen Törn."
         }
       ]
     },
@@ -56,11 +56,11 @@ const FAQ = () => {
       questions: [
         {
           question: "Wie ist die Bootsausstattung?",
-          answer: "Alle unsere Boote sind komplett ausgestattet mit Navigation, Sicherheitsausrüstung, Küchenausstattung, Bettwäsche und Handtüchern. Eine detaillierte Ausstattungsliste erhalten Sie bei der Buchung."
+          answer: "Alle unsere Boote sind komplett ausgestattet mit Navigation, Sicherheitsausrüstung, Küchenausstattung, Bettwäsche und Handtüchern. Eine detaillierte Ausstattungsliste erhältst du bei der Buchung."
         },
         {
           question: "Kann ich zusätzliche Ausrüstung mieten?",
-          answer: "Ja, wir bieten verschiedene Extras wie SUP-Boards, Schnorchelausrüstung, Grill, zusätzliche Fender und vieles mehr. Diese können Sie bei der Buchung oder vor Ort dazu buchen."
+          answer: "Ja, wir bieten verschiedene Extras wie SUP-Boards, Schnorchelausrüstung, Grill, zusätzliche Fender und vieles mehr. Diese kannst du bei der Buchung oder vor Ort dazu buchen."
         },
         {
           question: "Wie alt sind die Boote in unserer Yacht-Sammlung?",
@@ -78,19 +78,19 @@ const FAQ = () => {
       questions: [
         {
           question: "Erhalte ich eine Einweisung ins Boot?",
-          answer: "Selbstverständlich! Vor jeder Charter erhalten Sie eine ausführliche Einweisung in die Technik, Navigation und Sicherheitsausrüstung. Diese dauert je nach Bootstyp 1-2 Stunden."
+          answer: "Selbstverständlich! Vor jeder Charter erhältst du eine ausführliche Einweisung in die Technik, Navigation und Sicherheitsausrüstung. Diese dauert je nach Bootstyp 1-2 Stunden."
         },
         {
           question: "Gibt es Support während des Törns?",
-          answer: "Ja, unser Support-Team ist 24/7 telefonisch erreichbar. Bei technischen Problemen oder Fragen zur Navigation helfen wir Ihnen jederzeit weiter."
+          answer: "Ja, unser Support-Team ist 24/7 telefonisch erreichbar. Bei technischen Problemen oder Fragen zur Navigation helfen wir dir jederzeit weiter."
         },
         {
-          question: "Können Sie bei der Törnplanung helfen?",
-          answer: "Gerne! Unsere Revierexperten kennen die schönsten Routen und besten Ankerplätze. Wir erstellen Ihnen kostenlose Törnvorschläge passend zu Ihrer Erfahrung und Ihren Wünschen."
+          question: "Könnt ihr bei der Törnplanung helfen?",
+          answer: "Gerne! Unsere Revierexperten kennen die schönsten Routen und besten Ankerplätze. Wir erstellen dir kostenlose Törnvorschläge passend zu deiner Erfahrung und deinen Wünschen."
         },
         {
           question: "Was ist mit Provisioning/Verpflegung?",
-          answer: "Auf Wunsch organisieren wir Ihr Provisioning. Sie erhalten eine gut gefüllte Küche bei Ihrer Ankunft. Auch spezielle Wünsche oder Diäten berücksichtigen wir gerne."
+          answer: "Auf Wunsch organisieren wir dein Provisioning. Du erhältst eine gut gefüllte Küche bei deiner Ankunft. Auch spezielle Wünsche oder Diäten berücksichtigen wir gerne."
         }
       ]
     }
@@ -132,7 +132,7 @@ const FAQ = () => {
             FAQ
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Hier finden Sie Antworten auf die häufigsten Fragen rund um 
+            Hier findest du Antworten auf die häufigsten Fragen rund um 
             Yacht-Charter, Buchung und unsere Services
           </p>
         </div>
@@ -181,11 +181,11 @@ const FAQ = () => {
               <HelpCircle className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-ocean-dark mb-4">
-              Ihre Frage war nicht dabei?
+              Deine Frage war nicht dabei?
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Kein Problem! Unser Kundenservice-Team hilft Ihnen gerne weiter. 
-              Kontaktieren Sie uns über einen der folgenden Kanäle:
+              Kein Problem! Unser Kundenservice-Team hilft dir gerne weiter. 
+              Kontaktiere uns über einen der folgenden Kanäle:
             </p>
           </div>
 
