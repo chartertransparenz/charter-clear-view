@@ -23,167 +23,104 @@ import destinationBvi from "@/assets/destination-bvi.jpg";
 import destinationThailand from "@/assets/destination-thailand.jpg";
 import destinationSeychelles from "@/assets/destination-seychelles.jpg";
 import destinationAustralia from "@/assets/destination-australia.jpg";
-
 const Territories = () => {
-  const [api, setApi] = React.useState<CarouselApi>()
-
-  const topDestinations = [
-    {
-      rank: 1,
-      flag: "🇭🇷",
-      name: "Kroatien",
-      regions: "Dalmatien (Split, Šibenik, Dubrovnik), Kornaten, Istrien, Kvarner",
-      highlights: [
-        "Hunderte Inseln & Buchten",
-        "Hervorragende Infrastruktur", 
-        "Klare Regeln & guter Service",
-        "Ideales Klima (Mai–Oktober)"
-      ],
-      image: destinationCroatia,
-      link: "/territories/croatia"
-    },
-    {
-      rank: 2,
-      flag: "🇬🇷",
-      name: "Griechenland",
-      regions: "Kykladen, Saronischer Golf, Ionische Inseln, Dodekanes, Sporaden",
-      highlights: [
-        "Inselhopping mit Tavernen-Charme",
-        "Konstante Meltemi-Winde (Sommer)",
-        "Kultur & Natur vereint",
-        "Ideal für Bareboat- oder Skippercharter"
-      ],
-      image: destinationGreece,
-      link: "/territories/greece"
-    },
-    {
-      rank: 3,
-      flag: "🇮🇹",
-      name: "Italien",
-      regions: "Sardinien, Elba/Toskana, Sizilien, Amalfiküste, Aeolische Inseln",
-      highlights: [
-        "Vielfalt an Revierarten: ruhig bis anspruchsvoll",
-        "Gutes Essen, Kultur & spektakuläre Küsten",
-        "Auch für Wochenend-Törns beliebt"
-      ],
-      image: destinationItaly,
-      link: "/territories/italy"
-    },
-    {
-      rank: 4,
-      flag: "🇪🇸",
-      name: "Spanien",
-      regions: "Balearen (Mallorca, Menorca, Ibiza, Formentera), Kanaren",
-      highlights: [
-        "Mediterrane Atmosphäre mit Top-Infrastruktur",
-        "Ganzjahresziel (v.a. Kanaren)",
-        "Große Auswahl an Charterbasen"
-      ],
-      image: destinationSpain,
-      link: "/territories/spain"
-    },
-    {
-      rank: 5,
-      flag: "🇹🇷",
-      name: "Türkei",
-      regions: "Türkische Ägäis (Bodrum, Marmaris, Göcek, Fethiye)",
-      highlights: [
-        "Blue Cruise-Tradition",
-        "Gület-Charter beliebt",
-        "Warmes Wasser, geschützte Buchten",
-        "Gastfreundschaft & gutes Preis-Leistungs-Verhältnis"
-      ],
-      image: destinationTurkey,
-      link: "/territories/turkey"
-    },
-    {
-      rank: 6,
-      flag: "🇫🇷",
-      name: "Frankreich",
-      regions: "Côte d'Azur, Korsika, Bretagne",
-      highlights: [
-        "Segeln mit Stil (Cannes, St. Tropez)",
-        "Anspruchsvolles Tidenrevier (Bretagne)",
-        "Sehr gute Yachtausstattung & Infrastruktur"
-      ],
-      image: destinationFrance,
-      link: "/territories/france"
-    },
-    {
-      rank: 7,
-      flag: "🇻🇬",
-      name: "Britische Jungferninseln (BVI)",
-      regions: "Inselgruppe der Kleinen Antillen, Karibik",
-      highlights: [
-        "Traumhafte, kurze Tagesetappen",
-        "Karibik-Feeling pur",
-        "Perfekt für Einsteiger & Familien",
-        "Line-of-sight sailing mit Top-Logistik"
-      ],
-      image: destinationBvi,
-      link: "/territories/bvi"
-    },
-    {
-      rank: 8,
-      flag: "🇹🇭",
-      name: "Thailand",
-      regions: "Phuket & Andamanensee",
-      highlights: [
-        "Exotische Kulisse mit Felseninseln & Lagunen",
-        "Günstige Charterpreise",
-        "Kultur & Küche an Land",
-        "Beste Reisezeit: Nov–Apr"
-      ],
-      image: destinationThailand,
-      link: "/territories/thailand"
-    },
-    {
-      rank: 9,
-      flag: "🇸🇨",
-      name: "Seychellen",
-      regions: "Mahé, Praslin, La Digue, Amiranten",
-      highlights: [
-        "Tropisches Inselparadies",
-        "Katamaran bevorzugt",
-        "Glasklares Wasser, Schnorcheln",
-        "Ankern vor Traumstränden"
-      ],
-      image: destinationSeychelles,
-      link: "/territories/seychelles"
-    },
-    {
-      rank: 10,
-      flag: "🇦🇺",
-      name: "Australien",
-      regions: "Whitsunday Islands (Great Barrier Reef)",
-      highlights: [
-        "Unberührte Inselwelt",
-        "Traumhafte Ankerbuchten",
-        "Tropisches Klima, bestes Segelrevier der Südhalbkugel",
-        "Meist mit Skipper empfohlen"
-      ],
-      image: destinationAustralia,
-      link: "/territories/australia"
-    }
-  ];
+  const [api, setApi] = React.useState<CarouselApi>();
+  const topDestinations = [{
+    rank: 1,
+    flag: "🇭🇷",
+    name: "Kroatien",
+    regions: "Dalmatien (Split, Šibenik, Dubrovnik), Kornaten, Istrien, Kvarner",
+    highlights: ["Hunderte Inseln & Buchten", "Hervorragende Infrastruktur", "Klare Regeln & guter Service", "Ideales Klima (Mai–Oktober)"],
+    image: destinationCroatia,
+    link: "/territories/croatia"
+  }, {
+    rank: 2,
+    flag: "🇬🇷",
+    name: "Griechenland",
+    regions: "Kykladen, Saronischer Golf, Ionische Inseln, Dodekanes, Sporaden",
+    highlights: ["Inselhopping mit Tavernen-Charme", "Konstante Meltemi-Winde (Sommer)", "Kultur & Natur vereint", "Ideal für Bareboat- oder Skippercharter"],
+    image: destinationGreece,
+    link: "/territories/greece"
+  }, {
+    rank: 3,
+    flag: "🇮🇹",
+    name: "Italien",
+    regions: "Sardinien, Elba/Toskana, Sizilien, Amalfiküste, Aeolische Inseln",
+    highlights: ["Vielfalt an Revierarten: ruhig bis anspruchsvoll", "Gutes Essen, Kultur & spektakuläre Küsten", "Auch für Wochenend-Törns beliebt"],
+    image: destinationItaly,
+    link: "/territories/italy"
+  }, {
+    rank: 4,
+    flag: "🇪🇸",
+    name: "Spanien",
+    regions: "Balearen (Mallorca, Menorca, Ibiza, Formentera), Kanaren",
+    highlights: ["Mediterrane Atmosphäre mit Top-Infrastruktur", "Ganzjahresziel (v.a. Kanaren)", "Große Auswahl an Charterbasen"],
+    image: destinationSpain,
+    link: "/territories/spain"
+  }, {
+    rank: 5,
+    flag: "🇹🇷",
+    name: "Türkei",
+    regions: "Türkische Ägäis (Bodrum, Marmaris, Göcek, Fethiye)",
+    highlights: ["Blue Cruise-Tradition", "Gület-Charter beliebt", "Warmes Wasser, geschützte Buchten", "Gastfreundschaft & gutes Preis-Leistungs-Verhältnis"],
+    image: destinationTurkey,
+    link: "/territories/turkey"
+  }, {
+    rank: 6,
+    flag: "🇫🇷",
+    name: "Frankreich",
+    regions: "Côte d'Azur, Korsika, Bretagne",
+    highlights: ["Segeln mit Stil (Cannes, St. Tropez)", "Anspruchsvolles Tidenrevier (Bretagne)", "Sehr gute Yachtausstattung & Infrastruktur"],
+    image: destinationFrance,
+    link: "/territories/france"
+  }, {
+    rank: 7,
+    flag: "🇻🇬",
+    name: "Britische Jungferninseln (BVI)",
+    regions: "Inselgruppe der Kleinen Antillen, Karibik",
+    highlights: ["Traumhafte, kurze Tagesetappen", "Karibik-Feeling pur", "Perfekt für Einsteiger & Familien", "Line-of-sight sailing mit Top-Logistik"],
+    image: destinationBvi,
+    link: "/territories/bvi"
+  }, {
+    rank: 8,
+    flag: "🇹🇭",
+    name: "Thailand",
+    regions: "Phuket & Andamanensee",
+    highlights: ["Exotische Kulisse mit Felseninseln & Lagunen", "Günstige Charterpreise", "Kultur & Küche an Land", "Beste Reisezeit: Nov–Apr"],
+    image: destinationThailand,
+    link: "/territories/thailand"
+  }, {
+    rank: 9,
+    flag: "🇸🇨",
+    name: "Seychellen",
+    regions: "Mahé, Praslin, La Digue, Amiranten",
+    highlights: ["Tropisches Inselparadies", "Katamaran bevorzugt", "Glasklares Wasser, Schnorcheln", "Ankern vor Traumstränden"],
+    image: destinationSeychelles,
+    link: "/territories/seychelles"
+  }, {
+    rank: 10,
+    flag: "🇦🇺",
+    name: "Australien",
+    regions: "Whitsunday Islands (Great Barrier Reef)",
+    highlights: ["Unberührte Inselwelt", "Traumhafte Ankerbuchten", "Tropisches Klima, bestes Segelrevier der Südhalbkugel", "Meist mit Skipper empfohlen"],
+    image: destinationAustralia,
+    link: "/territories/australia"
+  }];
 
   // Automatisches Karussell für Top 10 Destinationen
   useEffect(() => {
-    if (!api) return
-
+    if (!api) return;
     const interval = setInterval(() => {
       if (api.canScrollNext()) {
-        api.scrollNext()
+        api.scrollNext();
       } else {
-        api.scrollTo(0)
+        api.scrollTo(0);
       }
-    }, 4000) // Alle 4 Sekunden
+    }, 4000); // Alle 4 Sekunden
 
-    return () => clearInterval(interval)
-  }, [api])
-
-  return (
-    <section id="territories" className="py-20 bg-gradient-to-b from-ocean-light/20 to-white">
+    return () => clearInterval(interval);
+  }, [api]);
+  return <section id="territories" className="py-20 bg-gradient-to-b from-ocean-light/20 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -206,16 +143,11 @@ const Territories = () => {
           </h2>
           <Carousel className="w-full" setApi={setApi}>
             <CarouselContent className="-ml-2 md:-ml-4">
-              {topDestinations.map((destination) => (
-                <CarouselItem key={destination.rank} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+              {topDestinations.map(destination => <CarouselItem key={destination.rank} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <Link to={destination.link} className="group">
                     <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer h-full">
                       <div className="relative h-48 overflow-hidden">
-                        <img
-                          src={destination.image}
-                          alt={destination.name}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                        />
+                        <img src={destination.image} alt={destination.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
                         <div className="absolute top-4 left-4">
                           <Badge className="bg-gradient-sunset text-white font-bold">
@@ -235,18 +167,15 @@ const Territories = () => {
                           {destination.regions}
                         </p>
                         <ul className="space-y-1">
-                          {destination.highlights.map((highlight, idx) => (
-                            <li key={idx} className="flex items-center gap-2 text-xs">
+                          {destination.highlights.map((highlight, idx) => <li key={idx} className="flex items-center gap-2 text-xs">
                               <div className="w-1.5 h-1.5 bg-ocean-blue rounded-full flex-shrink-0"></div>
                               {highlight}
-                            </li>
-                          ))}
+                            </li>)}
                         </ul>
                       </CardContent>
                     </Card>
                   </Link>
-                </CarouselItem>
-              ))}
+                </CarouselItem>)}
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex" />
             <CarouselNext className="hidden md:flex" />
@@ -260,11 +189,7 @@ const Territories = () => {
             <Link to="/territories/mediterranean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={mediterranean}
-                    alt="Mittelmeer"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={mediterranean} alt="Mittelmeer" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌍 Europa</Badge>
@@ -282,11 +207,7 @@ const Territories = () => {
             <Link to="/territories/caribbean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={caribbean}
-                    alt="Karibik"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={caribbean} alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
@@ -304,11 +225,7 @@ const Territories = () => {
             <Link to="/territories/pacific" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={pacific}
-                    alt="Pazifik"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={pacific} alt="Pazifik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌴 Südsee</Badge>
@@ -326,11 +243,7 @@ const Territories = () => {
             <Link to="/territories/atlantic" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={atlantic}
-                    alt="Atlantik"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={atlantic} alt="Atlantik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌬️ Atlantik</Badge>
@@ -348,11 +261,7 @@ const Territories = () => {
             <Link to="/territories/indian-ocean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={indianOcean}
-                    alt="Indischer Ozean"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={indianOcean} alt="Indischer Ozean" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🐧 Indischer Ozean</Badge>
@@ -370,11 +279,7 @@ const Territories = () => {
             <Link to="/territories/north-europe" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={balticSea}
-                    alt="Nord- und Ostsee"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={balticSea} alt="Nord- und Ostsee" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🧭 Nordeuropa</Badge>
@@ -392,11 +297,7 @@ const Territories = () => {
             <Link to="/territories/expeditions" className="group md:col-span-2 lg:col-span-3">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-96 overflow-hidden">
-                  <img
-                    src={expedition}
-                    alt="Expeditionen"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                  <img src={expedition} alt="Expeditionen" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🔥 Expeditionen</Badge>
@@ -415,22 +316,9 @@ const Territories = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <div className="bg-gradient-ocean rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              Lass dich beraten
-            </h3>
-            <p className="mb-6 text-white/90 max-w-2xl mx-auto">
-              Unsere Experten kennen jedes Revier persönlich und helfen dir bei der 
-              Auswahl des perfekten Segelgebiets für deine Bedürfnisse und Erfahrung.
-            </p>
-            <Button variant="transparent" size="lg">
-              Persönliche Revierberatung
-            </Button>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Territories;
