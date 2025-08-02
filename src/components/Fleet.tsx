@@ -100,7 +100,7 @@ const Fleet = () => {
     attributes: ["beliebt"],
     image: "/lovable-uploads/f0ed71e0-7256-499f-82d0-aca518c443ef.png"
   }, {
-    name: "Bavaria Cruiser 41",
+    name: "Bavaria Cruiser 42",
     type: "Monohull Segelyacht",
     capacity: "bis 6-8 Personen",
     length: "12,35m",
