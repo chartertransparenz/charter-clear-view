@@ -107,9 +107,24 @@ const Caribbean = () => {
           </div>
         </div>
 
+        {/* Advantages */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {advantages.map((advantage, index) => (
+              <Card key={index} className="text-center shadow-ocean">
+                <CardContent className="pt-6">
+                  <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
+                  <p className="font-medium text-ocean-dark">{advantage}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">DEBUG: Top-Regionen hinzugefügt</h2>
-          <p>Ist der leere Kasten jetzt wieder da?</p>
+          <h2 className="text-2xl font-bold mb-4">DEBUG: Vorteile-Sektion hinzugefügt</h2>
+          <p>Ist der leere Kasten JETZT wieder da?</p>
         </div>
       </div>
     </div>
