@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import caribbean from "@/assets/caribbean.jpg";
@@ -32,10 +33,10 @@ const Caribbean = () => {
             }, 100);
           }}
         >
-          <div className="bg-white/90 text-ocean-dark border border-white px-4 py-2 rounded flex items-center">
+          <Button variant="outline" className="bg-white/90 text-ocean-dark border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
-          </div>
+          </Button>
         </Link>
       </div>
 
