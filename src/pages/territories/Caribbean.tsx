@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Waves } from "lucide-react";
 import { Link } from "react-router-dom";
 import caribbean from "@/assets/caribbean.jpg";
 
@@ -54,20 +54,40 @@ const Caribbean = () => {
           </Card>
         </div>
 
-        {/* Test: Grid mit 4 Cards */}
+        {/* Test: EXAKTE ursprüngliche Vorteile-Sektion */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-center mb-4">TEST: 4 Cards in Grid</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Card><CardContent className="pt-6"><p>Card 1</p></CardContent></Card>
-            <Card><CardContent className="pt-6"><p>Card 2</p></CardContent></Card>
-            <Card><CardContent className="pt-6"><p>Card 3</p></CardContent></Card>
-            <Card><CardContent className="pt-6"><p>Card 4</p></CardContent></Card>
+          <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Vorteile</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Card className="text-center shadow-ocean">
+              <CardContent className="pt-6">
+                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
+                <p className="font-medium text-ocean-dark">Warmes Wasser</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center shadow-ocean">
+              <CardContent className="pt-6">
+                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
+                <p className="font-medium text-ocean-dark">Stabile Passatwinde</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center shadow-ocean">
+              <CardContent className="pt-6">
+                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
+                <p className="font-medium text-ocean-dark">Unzählige Inseln</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center shadow-ocean">
+              <CardContent className="pt-6">
+                <Waves className="w-8 h-8 text-sunset mx-auto mb-3" />
+                <p className="font-medium text-ocean-dark">Line of Sight Sailing</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
         <div className="text-center text-2xl">
-          <p>Falls der leere Kasten JETZT da ist:</p>
-          <p>Das Problem liegt bei 4 Cards in 3-Spalten-Grid!</p>
+          <p>EXAKTE ursprüngliche Vorteile-Sektion mit lg:grid-cols-4</p>
+          <p>Falls JETZT der leere Kasten da ist: PROBLEM GEFUNDEN!</p>
         </div>
 
         <div className="mt-12 text-center">
