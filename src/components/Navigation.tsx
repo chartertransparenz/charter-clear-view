@@ -24,11 +24,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/91b8d598-4457-4e8d-abcf-abab6ff6b7fa.png" 
-              alt="CharterTransparenz Logo" 
-              className="h-16 w-auto"
-            />
+            <a href="/" className="block">
+              <img 
+                src="/lovable-uploads/91b8d598-4457-4e8d-abcf-abab6ff6b7fa.png" 
+                alt="CharterTransparenz Logo" 
+                className="h-16 w-auto hover:opacity-90 transition-smooth cursor-pointer"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
