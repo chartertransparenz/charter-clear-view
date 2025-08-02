@@ -44,7 +44,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen", "2-3 Nasszellen", "Moderne Linien", "Familienfreundlich"],
     price: "ab €3.500/Woche",
     attributes: ["voluminös", "beliebt"],
-    image: oceanis461
+    image: "/lovable-uploads/725dc9eb-cef9-47b0-9eb3-1097bd7e3324.png"
   }, {
     name: "Bavaria Cruiser 37",
     type: "Monohull Segelyacht",
