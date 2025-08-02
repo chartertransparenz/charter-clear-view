@@ -218,11 +218,11 @@ const Services = () => {
           <div className="bg-ocean-dark rounded-2xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10">
-              <div className="flex justify-center mb-4">
+              <div className="flex justify-center mb-8">
                 <img 
                   src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" 
                   alt="CharterTransparenz" 
-                  className="h-16 w-auto"
+                  className="h-20 w-auto"
                 />
               </div>
               <h3 className="text-3xl font-bold mb-4">
