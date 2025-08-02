@@ -391,7 +391,7 @@ const Territories = () => {
 
             <Link to="/territories/expeditions" className="group md:col-span-2 lg:col-span-3">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
-                <div className="relative h-32 overflow-hidden">
+                <div className="relative h-96 overflow-hidden">
                   <img
                     src={expedition}
                     alt="Expeditionen"
