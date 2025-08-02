@@ -17,7 +17,7 @@ const Services = () => {
       title: "Yacht Charter für Selbstsegler",
       description: "Premium Segelyachten für erfahrene Segler mit gültigem Segelschein",
       features: ["Verschiedene Bootsgrößen", "Bareboat Charter", "Vollständige Ausstattung", "Gültiger Segelschein erforderlich"],
-      image: selfSailingYacht,
+      image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.png",
     },
     {
       icon: Users,
