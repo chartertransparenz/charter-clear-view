@@ -151,7 +151,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-            <div className="space-y-6 max-w-4xl">
+            <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h5 className="font-semibold text-ocean-dark mb-2">Transparente Preise</h5>
                 <p className="text-sm text-muted-foreground">
