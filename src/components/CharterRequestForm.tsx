@@ -112,7 +112,7 @@ const CharterRequestForm = ({
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <CardTitle className="text-2xl">Jetzt Ihre Traum-Charter starten!</CardTitle>
+            <CardTitle className="text-2xl">Jetzt deinen Traum-Törn starten!</CardTitle>
           </div>
           
           <Badge variant="secondary" className="w-fit mx-auto mt-3 bg-white/20 text-white border-white/30">
