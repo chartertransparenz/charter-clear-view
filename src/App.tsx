@@ -70,6 +70,11 @@ import Mexico from "./pages/territories/americas/Mexico";
 
 // Mediterranean Subregions
 import CoteAzur from "./pages/territories/mediterranean/france/CoteAzur";
+import CroatiaIstria from "./pages/territories/mediterranean/croatia/Istria";
+import CroatiaKvarnerBay from "./pages/territories/mediterranean/croatia/KvarnerBay";
+import CroatiaNorthernDalmatia from "./pages/territories/mediterranean/croatia/NorthernDalmatia";
+import CroatiaCentralDalmatia from "./pages/territories/mediterranean/croatia/CentralDalmatia";
+import CroatiaSouthernDalmatia from "./pages/territories/mediterranean/croatia/SouthernDalmatia";
 
 const queryClient = new QueryClient();
 
@@ -146,6 +151,12 @@ const App = () => (
           
           {/* Mediterranean Subregions */}
           <Route path="/reviere/mittelmeer/frankreich/cote-azur" element={<CoteAzur />} />
+          {/* Croatian Subregions */}
+          <Route path="/reviere/mittelmeer/kroatien/istrien" element={<CroatiaIstria />} />
+          <Route path="/reviere/mittelmeer/kroatien/kvarner-bucht" element={<CroatiaKvarnerBay />} />
+          <Route path="/reviere/mittelmeer/kroatien/norddalmatien" element={<CroatiaNorthernDalmatia />} />
+          <Route path="/reviere/mittelmeer/kroatien/mitteldalmatien" element={<CroatiaCentralDalmatia />} />
+          <Route path="/reviere/mittelmeer/kroatien/sueddalmatien" element={<CroatiaSouthernDalmatia />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
