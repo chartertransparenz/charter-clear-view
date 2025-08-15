@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import destinationBvi from "@/assets/destination-bvi.jpg";
+import caribbean from "@/assets/caribbean.jpg";
 
 const BritishVirginIslands = () => {
   // Component for British Virgin Islands sailing territory
@@ -47,7 +47,7 @@ const BritishVirginIslands = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationBvi}
+          src={caribbean}
           alt="British Virgin Islands"
           className="w-full h-full object-cover"
         />
