@@ -23,9 +23,9 @@ const Cuba = () => {
   const regions = [
     {
       name: "Kuba",
-      link: "/reviere/karibik/kuba/kuba",
+      link: "#",
       description: "Die größte Karibikinsel mit authentischer Kultur",
-      cities: ["Cienfuegos"]
+      cities: ["Havanna", "Cienfuegos", "Trinidad", "Cayo Largo"]
     }
   ];
 
