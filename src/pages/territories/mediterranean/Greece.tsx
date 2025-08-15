@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,7 +15,7 @@ const Greece = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Östliches Mittelmeer" },
+    { icon: MapPin, label: "Lage", value: "Ägäis & Ionisches Meer" },
     { icon: Calendar, label: "Beste Zeit", value: "April-Oktober" },
     { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
     { icon: Anchor, label: "Inseln", value: "Über 6.000 Inseln" }
@@ -22,56 +23,39 @@ const Greece = () => {
 
   const regions = [
     {
-      name: "Athen/Saronischer Golf",
-      link: "/reviere/mittelmeer/griechenland/athen-saronischer-golf",
-      description: "Idealer Ausgangspunkt für Inselhopping mit geschützten Gewässern"
-    },
-    {
-      name: "Dodekanes",
-      link: "/reviere/mittelmeer/griechenland/dodekanes",
-      description: "Südöstliche Inselgruppe mit Rhodos und Kos",
-      cities: ["Kos", "Rhodos"]
+      name: "Kykladen",
+      link: "/reviere/mittelmeer/griechenland/kykladen",
+      description: "Die berühmtesten Inseln Griechenlands mit Mykonos und Santorini",
+      cities: ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Syros"]
     },
     {
       name: "Ionische Inseln",
       link: "/reviere/mittelmeer/griechenland/ionische-inseln",
-      description: "Grüne Inseln im Westen mit türkisfarbenem Wasser",
-      cities: ["Korfu", "Lefkas", "Preveza", "Zakynthos"]
+      description: "Grüne Inseln mit venezianischem Flair und sanfteren Winden",
+      cities: ["Korfu", "Kefalonia", "Zakynthos", "Lefkada", "Ithaka", "Paxi"]
     },
     {
-      name: "Kykladen",
-      link: "/reviere/mittelmeer/griechenland/kykladen",
-      description: "Klassisches Griechenland mit weißen Häusern und blauen Kuppeln",
-      cities: ["Mykonos", "Paros"]
-    },
-    {
-      name: "Nordgriechenland",
-      link: "/reviere/mittelmeer/griechenland/nordgriechenland",
-      description: "Weniger touristisch mit authentischem griechischen Charme",
-      cities: ["Avdira", "Kavala", "Nikiti"]
-    },
-    {
-      name: "Peloponnes",
-      link: "/reviere/mittelmeer/griechenland/peloponnes",
-      description: "Historische Halbinsel mit geschützten Buchten",
-      cities: ["Kalamata"]
+      name: "Dodekanes",
+      link: "/reviere/mittelmeer/griechenland/dodekanes",
+      description: "Authentische griechische Inseln im Südosten der Ägäis",
+      cities: ["Rhodos", "Kos", "Patmos", "Leros", "Kalymnos", "Symi"]
     },
     {
       name: "Sporaden",
       link: "/reviere/mittelmeer/griechenland/sporaden",
-      description: "Grüne Inseln im Nordwesten der Ägäis",
-      cities: ["Skiathos", "Skopelos", "Volos"]
+      description: "Grüne Inseln der Nordägäis mit unberührter Natur",
+      cities: ["Skiathos", "Skopelos", "Alonissos", "Skyros"]
     }
   ];
 
   const highlights = [
-    "Über 6.000 Inseln zum Entdecken",
+    "Über 6.000 Inseln und Inselchen",
     "Konstante Meltemi-Winde im Sommer",
-    "Authentische Tavernen und Gastfreundschaft",
-    "Kristallklares, türkisfarbenes Wasser",
-    "Reiche Geschichte und Mythologie",
-    "Kurze Distanzen zwischen den Inseln",
-    "Perfekt für Bareboat-Charter"
+    "Authentische griechische Tavernen",
+    "Kristallklares, türkises Wasser",
+    "Reiche antike Geschichte",
+    "UNESCO-Weltkulturerbe Stätten",
+    "Perfekte Segelbedingungen"
   ];
 
   return (
@@ -91,7 +75,7 @@ const Greece = () => {
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Griechenland</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Griechenland</h1>
             <p className="text-xl max-w-2xl">
-              Das ultimative Inselhopping-Paradies
+              Die Wiege des Segelns
             </p>
           </div>
         </div>
@@ -123,13 +107,15 @@ const Greece = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in Griechenland</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Griechenland ist das Segelparadies schlechthin! Mit über 6.000 Inseln, 
-              konstanten Winden und kristallklarem Wasser bietet das Land unendliche 
-              Möglichkeiten für unvergessliche Segeltörns.
+              Griechenland ist die Wiege des Segelns und bietet mit über 6.000 Inseln 
+              und Inselchen die perfekte Kulisse für unvergessliche Segeltörns. 
+              Von den weltberühmten Kykladen bis zu den grünen Ionischen Inseln - 
+              hier findet jeder Segler sein Paradies.
             </p>
             <p className="text-lg text-gray-600">
-              Von den party-lebendigen Kykladen über die grünen Ionischen Inseln bis 
-              zu den geschichtsträchtigen Dodekanes - jede Region hat ihren eigenen Charme.
+              Die konstanten Meltemi-Winde, das kristallklare Wasser und die 
+              authentische griechische Gastfreundschaft in traditionellen Tavernen 
+              machen jeden Segeltörn zu einem unvergesslichen Erlebnis.
             </p>
           </div>
         </div>
@@ -151,11 +137,16 @@ const Greece = () => {
                     <p className="text-gray-600 mb-4">{region.description}</p>
                     {region.cities && (
                       <div className="grid grid-cols-2 gap-2">
-                        {region.cities.map((city, idx) => (
+                        {region.cities.slice(0, 6).map((city, idx) => (
                           <div key={idx} className="text-sm text-blue-600 font-medium">
                             • {city}
                           </div>
                         ))}
+                        {region.cities.length > 6 && (
+                          <div className="text-sm text-gray-500 italic">
+                            +{region.cities.length - 6} weitere
+                          </div>
+                        )}
                       </div>
                     )}
                   </CardContent>
@@ -187,8 +178,8 @@ const Greece = () => {
               Bereit für griechisches Inselhopping?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie die Schönheit der griechischen Inseln mit ihren 
-              traumhaften Buchten, authentischen Tavernen und legendären Sonnenuntergängen.
+              Entdecken Sie die Wiege des Segelns mit ihren traumhaften Inseln, 
+              konstanten Winden und der legendären griechischen Gastfreundschaft.
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">

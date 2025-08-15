@@ -9,34 +9,29 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import destinationSpain from "@/assets/destination-spain.jpg";
 
-const Spain = () => {
+const Balearics = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Westliches Mittelmeer" },
-    { icon: Calendar, label: "Beste Zeit", value: "Ganzjährig" },
+    { icon: Calendar, label: "Beste Zeit", value: "April-Oktober" },
     { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Vielfältige Reviere" }
+    { icon: Anchor, label: "Inseln", value: "4 Hauptinseln" }
   ];
 
-  const regions = [
-    {
-      name: "Balearen",
-      link: "/reviere/mittelmeer/spanien/balearen",
-      description: "Mallorca, Menorca, Ibiza und Formentera - Spaniens Segelparadies",
-      cities: ["Palma de Mallorca", "Ibiza", "Mahón", "Sant Antoni"]
-    }
+  const cities = [
+    "Palma de Mallorca", "Ibiza", "Mahón (Menorca)", "Sant Antoni"
   ];
 
   const highlights = [
-    "Ganzjähriges Segelklima",
     "Weltklasse Marina-Infrastruktur",
     "Kurze Distanzen zwischen Inseln",
-    "Lebendige Kultur und Nachtleben",
-    "Exzellente spanische Küche",
-    "Familienfreundliche Reviere",
+    "Lebendiges Nachtleben (Ibiza)",
+    "Familienfreundliche Strände",
+    "Ausgezeichnete Restaurants",
+    "Ganzjährig milde Temperaturen",
     "Perfekte Segelbedingungen"
   ];
 
@@ -48,26 +43,26 @@ const Spain = () => {
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
           src={destinationSpain}
-          alt="Spanien Mittelmeer"
+          alt="Balearen Spanien"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <Badge className="mb-4 bg-blue-500 text-white">🇪🇸 Spanien</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Spanien</h1>
+            <Badge className="mb-4 bg-blue-500 text-white">🇪🇸 Balearen</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Balearen</h1>
             <p className="text-xl max-w-2xl">
-              Mediterrane Leidenschaft und perfekte Segelbedingungen
+              Mediterrane Perlen vor Spaniens Küste
             </p>
           </div>
         </div>
         <Link 
-          to="/reviere/mittelmeer" 
+          to="/reviere/mittelmeer/spanien" 
           className="absolute top-6 left-6"
         >
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zum Mittelmeer
+            Zurück zu Spanien
           </Button>
         </Link>
       </div>
@@ -87,48 +82,30 @@ const Spain = () => {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in Spanien</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln auf den Balearen</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Spanien bietet einige der besten Segelreviere Europas mit ganzjährig 
-              mildem Klima und hervorragender Infrastruktur. Die Balearen sind 
-              dabei das Herzstück des spanischen Segelns und bieten perfekte 
-              Bedingungen für jeden Segelgeschmack.
+              Die Balearen sind Spaniens Segelparadies im westlichen Mittelmeer. 
+              Mit Mallorca, Menorca, Ibiza und Formentera bieten sie perfekte 
+              Bedingungen für jeden Segelgeschmack - von entspannten Familiensegeltörns 
+              bis hin zu lebendigen Party-Destinesn.
             </p>
             <p className="text-lg text-gray-600">
-              Von den weltberühmten Partyszenen Ibizas über die ruhigen Buchten 
-              Menorcas bis hin zur kosmopolitischen Atmosphäre Palmas - 
-              Spanien vereint mediterrane Leidenschaft mit erstklassigen Segelbedingungen.
+              Die hervorragende Marina-Infrastruktur, kurze Distanzen zwischen 
+              den Inseln und das ganzjährig milde Klima machen die Balearen 
+              zu einem der beliebtesten Segelreviere Europas.
             </p>
           </div>
         </div>
 
-        {/* Regions */}
+        {/* Cities */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
-          <div className="grid gap-6">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full max-w-2xl mx-auto">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                        {region.name}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
-                            • {city}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </Link>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {cities.map((city, index) => (
+              <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
+                <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
+                <p className="font-medium text-gray-800">{city}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -152,15 +129,15 @@ const Spain = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
             <h3 className="text-2xl font-bold mb-4">
-              Bereit für Spanien?
+              Bereit für die Balearen?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie Spaniens mediterrane Segelparadiese mit perfekter 
-              Infrastruktur und ganzjährig mildem Klima.
+              Entdecken Sie Spaniens beliebteste Segelinseln mit perfekter 
+              Infrastruktur und mediterranem Flair.
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Spanien Charter anfragen
+                Balearen Charter anfragen
               </Button>
             </CharterRequestForm>
           </div>
@@ -170,4 +147,4 @@ const Spain = () => {
   );
 };
 
-export default Spain;
+export default Balearics;
