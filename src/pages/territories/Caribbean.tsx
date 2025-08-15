@@ -12,11 +12,36 @@ const Caribbean = () => {
     window.scrollTo(0, 0);
   }, []);
   const regions = [
-    { name: "Britische Jungferninseln (BVI)", description: "Das weltweit beliebteste Charterrevier" },
-    { name: "St. Martin, Antigua, Guadeloupe", description: "Klassische Karibik-Destinationen" },
-    { name: "Grenadinen", areas: ["St. Vincent", "Bequia", "Tobago Cays"] },
-    { name: "Bahamas", areas: ["Exumas", "Abacos"] },
-    { name: "Kuba", description: "Zunehmend beliebter, ursprünglicher" }
+    { 
+      name: "Britische Jungferninseln (BVI)", 
+      description: "Das weltweit beliebteste Charterrevier",
+      link: "/reviere/karibik/britische-jungferninseln",
+      areas: ["Tortola", "Virgin Gorda", "Jost Van Dyke", "Anegada"]
+    },
+    { 
+      name: "US Virgin Islands", 
+      description: "Amerikaniches Karibik-Territorium",
+      link: "/reviere/karibik/us-virgin-islands",
+      areas: ["St. Thomas", "St. John", "St. Croix"]
+    },
+    { 
+      name: "Leeward Inseln", 
+      description: "Antigua, St. Martin, Guadeloupe",
+      link: "/reviere/karibik/leeward-inseln",
+      areas: ["Antigua", "St. Martin", "Guadeloupe", "St. Kitts"]
+    },
+    { 
+      name: "Windward Inseln", 
+      description: "Grenadinen, St. Vincent, Martinique",
+      link: "/reviere/karibik/windward-inseln", 
+      areas: ["St. Vincent", "Bequia", "Tobago Cays", "Martinique"]
+    },
+    { 
+      name: "Kuba", 
+      description: "Zunehmend beliebter, ursprünglicher",
+      link: "/reviere/karibik/kuba",
+      areas: ["Havanna", "Cienfuegos", "Trinidad", "Cayo Largo"]
+    }
   ];
 
   const advantages = [
@@ -82,25 +107,27 @@ const Caribbean = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {regions.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-orange-500" />
-                  <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
-                </div>
-                {region.description && (
-                  <p className="text-sm text-gray-600 mb-3">{region.description}</p>
-                )}
-                {region.areas && (
-                  <div className="space-y-2">
-                    {region.areas.map((area, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm">
-                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                        <span className="text-gray-600">{area}</span>
-                      </div>
-                    ))}
+              <Link key={index} to={region.link} className="block hover:no-underline">
+                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                  <div className="flex items-center gap-2 mb-4">
+                    <MapPin className="w-4 h-4 text-orange-500" />
+                    <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
                   </div>
-                )}
-              </div>
+                  {region.description && (
+                    <p className="text-sm text-gray-600 mb-3">{region.description}</p>
+                  )}
+                  {region.areas && (
+                    <div className="space-y-2">
+                      {region.areas.map((area, idx) => (
+                        <div key={idx} className="flex items-center gap-2 text-sm">
+                          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                          <span className="text-gray-600">{area}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </Link>
             ))}
           </div>
         </div>

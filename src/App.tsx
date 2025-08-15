@@ -41,6 +41,10 @@ import Atlantic from "./pages/territories/Atlantic";
 // Caribbean territories
 import Caribbean from "./pages/territories/Caribbean";
 import BritishVirginIslands from "./pages/territories/caribbean/BritishVirginIslands";
+import USVirginIslands from "./pages/territories/caribbean/USVirginIslands";
+import LeewardIslands from "./pages/territories/caribbean/LeewardIslands";
+import WindwardIslands from "./pages/territories/caribbean/WindwardIslands";
+import Cuba from "./pages/territories/caribbean/Cuba";
 
 // Indian Ocean territories
 import IndianOcean from "./pages/territories/IndianOcean";
@@ -114,7 +118,11 @@ function App() {
 
             {/* Caribbean routes */}
             <Route path="/reviere/karibik" element={<Caribbean />} />
-            <Route path="/reviere/britische-jungferninseln" element={<BritishVirginIslands />} />
+            <Route path="/reviere/karibik/britische-jungferninseln" element={<BritishVirginIslands />} />
+            <Route path="/reviere/karibik/us-virgin-islands" element={<USVirginIslands />} />
+            <Route path="/reviere/karibik/leeward-inseln" element={<LeewardIslands />} />
+            <Route path="/reviere/karibik/windward-inseln" element={<WindwardIslands />} />
+            <Route path="/reviere/karibik/kuba" element={<Cuba />} />
 
             {/* Indian Ocean routes */}
             <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
