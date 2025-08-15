@@ -22,40 +22,34 @@ const Croatia = () => {
 
   const regions = [
     {
-      name: "Dubrovnik",
-      link: "/reviere/mittelmeer/kroatien/dubrovnik",
-      description: "Die Perle der Adria mit UNESCO-Weltkulturerbe Altstadt",
-      cities: ["Dubrovnik", "Komolac", "Slano"]
-    },
-    {
       name: "Istrien",
       link: "/reviere/mittelmeer/kroatien/istrien",
-      description: "Die grüne Halbinsel mit italienischem Flair",
-      cities: ["Funtana", "Pula"]
+      description: "Die grüne Halbinsel mit venezianischem Flair und perfekter Marina-Infrastruktur",
+      cities: ["Pula", "Rovinj", "Poreč", "Umag"]
     },
     {
-      name: "Kvarner",
-      link: "/reviere/mittelmeer/kroatien/kvarner",
-      description: "Nördlichstes Segelrevier mit geschützten Buchten",
-      cities: ["Krk", "Mali Lošinj", "Novi Vinodolski", "Rijeka"]
+      name: "Kvarner Bucht",
+      link: "/reviere/mittelmeer/kroatien/kvarner-bucht",
+      description: "Geschützte Inselwelt mit authentischem Charme und kurzen Distanzen",
+      cities: ["Rijeka", "Krk", "Rab", "Cres", "Mali Lošinj"]
     },
     {
-      name: "Šibenik",
-      link: "/reviere/mittelmeer/kroatien/sibenik",
-      description: "Kornaten-Nationalpark und kristallklares Wasser",
-      cities: ["Murter", "Pirovac", "Primošten", "Rogoznica", "Šibenik", "Skradin", "Tribunj", "Vodice", "Zaton"]
+      name: "Norddalmatien",
+      link: "/reviere/mittelmeer/kroatien/norddalmatien",
+      description: "Kornati Nationalpark und unberührte Naturschönheiten",
+      cities: ["Zadar", "Šibenik", "Biograd", "Murter"]
     },
     {
-      name: "Split",
-      link: "/reviere/mittelmeer/kroatien/split",
-      description: "Dalmatiens Herz mit römischem Diokletianpalast",
-      cities: ["Kaštela", "Marina", "Podstrana", "Šolta", "Split", "Trogir"]
+      name: "Mitteldalmatien",
+      link: "/reviere/mittelmeer/kroatien/mitteldalmatien",
+      description: "Das Herzstück Kroatiens mit Split, Hvar und den schönsten Inseln",
+      cities: ["Split", "Hvar", "Brač", "Vis", "Trogir"]
     },
     {
-      name: "Zadar",
-      link: "/reviere/mittelmeer/kroatien/zadar",
-      description: "Historische Stadt mit spektakulären Sonnenuntergängen",
-      cities: ["Biograd", "Drage", "Sukošan", "Zadar"]
+      name: "Süddalmatien",
+      link: "/reviere/mittelmeer/kroatien/sueddalmatien",
+      description: "Dubrovnik und die südlichsten Perlen der kroatischen Adria",
+      cities: ["Dubrovnik", "Korčula", "Mljet", "Lastovo"]
     }
   ];
 
