@@ -22,6 +22,7 @@ import BVI from "./pages/territories/BVI";
 import Thailand from "./pages/territories/Thailand";
 import Seychelles from "./pages/territories/Seychelles";
 import Australia from "./pages/territories/Australia";
+import Americas from "./pages/territories/Americas";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/reviere/thailand" element={<Thailand />} />
           <Route path="/reviere/seychellen" element={<Seychelles />} />
           <Route path="/reviere/australien" element={<Australia />} />
+          <Route path="/reviere/amerika-bahamas" element={<Americas />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

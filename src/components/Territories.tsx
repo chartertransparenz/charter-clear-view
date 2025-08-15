@@ -294,6 +294,24 @@ const Territories = () => {
               </Card>
             </Link>
 
+            <Link to="/reviere/amerika-bahamas" className="group">
+              <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
+                <div className="relative h-32 overflow-hidden">
+                  <img src={caribbean} alt="Amerika & Bahamas" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+                  <div className="absolute bottom-2 left-3 text-white">
+                    <Badge className="mb-1 bg-sunset text-white text-xs">🇺🇸 Amerika</Badge>
+                    <h3 className="font-bold">Amerika & Bahamas</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <p className="text-sm text-muted-foreground">
+                    Kristallklare Lagunen, amerikanische Gastfreundschaft und erstklassige Marina-Infrastruktur.
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
           </div>
         </div>
 
