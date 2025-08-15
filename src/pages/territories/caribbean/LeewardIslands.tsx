@@ -101,17 +101,17 @@ const LeewardIslands = () => {
           </div>
         </div>
 
-        {/* Regions */}
+        {/* Charter Locations */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6">
             {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full max-w-2xl mx-auto">
+              <div key={index} className="max-w-2xl mx-auto">
+                <Card className="shadow-lg h-full">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-xl font-semibold text-gray-800">
                         {region.name}
                       </h3>
                     </div>
@@ -127,7 +127,7 @@ const LeewardIslands = () => {
                     )}
                   </CardContent>
                 </Card>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
