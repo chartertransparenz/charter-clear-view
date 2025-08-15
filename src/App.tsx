@@ -44,8 +44,8 @@ import BritishVirginIslands from "./pages/territories/caribbean/BritishVirginIsl
 
 // Indian Ocean territories
 import IndianOcean from "./pages/territories/IndianOcean";
-import Thailand from "./pages/territories/indian-ocean/Thailand";
-import Seychelles from "./pages/territories/indian-ocean/Seychelles";
+import Thailand from "./pages/territories/Thailand";
+import Seychelles from "./pages/territories/Seychelles";
 
 // North Europe territories
 import NorthEurope from "./pages/territories/NorthEurope";
@@ -54,13 +54,10 @@ import NorthEurope from "./pages/territories/NorthEurope";
 import Pacific from "./pages/territories/Pacific";
 
 // America territories
-import AmericaBahamas from "./pages/territories/AmericaBahamas";
+import Americas from "./pages/territories/Americas";
 
 // Expedition territories
-import Expedition from "./pages/territories/Expedition";
-
-// Bodensee
-import Bodensee from "./pages/territories/Bodensee";
+import Expeditions from "./pages/territories/Expeditions";
 
 // Australia
 import Australia from "./pages/territories/Australia";
@@ -131,13 +128,10 @@ function App() {
             <Route path="/reviere/suedpazifik" element={<Pacific />} />
 
              {/* America & Bahamas routes */}
-             <Route path="/reviere/amerika-bahamas" element={<AmericaBahamas />} />
+             <Route path="/reviere/amerika-bahamas" element={<Americas />} />
 
             {/* Expedition routes */}
-            <Route path="/reviere/expedition" element={<Expedition />} />
-
-            {/* Bodensee route */}
-            <Route path="/reviere/bodensee" element={<Bodensee />} />
+            <Route path="/reviere/expedition" element={<Expeditions />} />
 
             {/* Australia route */}
             <Route path="/reviere/australien" element={<Australia />} />
