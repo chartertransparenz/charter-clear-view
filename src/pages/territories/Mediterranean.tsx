@@ -20,12 +20,15 @@ const Mediterranean = () => {
     window.scrollTo(0, 0);
   }, []);
   const regions = [
-    { name: "Kroatien", areas: ["Dalmatien", "Istrien"] },
-    { name: "Griechenland", areas: ["Kykladen", "Ionische Inseln", "Dodekanes"] },
-    { name: "Italien", areas: ["Amalfiküste", "Elba", "Sardinien", "Sizilien"] },
-    { name: "Spanien", areas: ["Balearen: Mallorca", "Ibiza", "Menorca"] },
-    { name: "Türkei", areas: ["Türkische Ägäis: Bodrum", "Göcek", "Marmaris"] },
-    { name: "Frankreich", areas: ["Côte d'Azur", "Korsika"] }
+    { name: "Kroatien", link: "/reviere/mittelmeer/kroatien", areas: ["Istrien", "Kvarner Bucht", "Norddalmatien", "Mitteldalmatien", "Süddalmatien"] },
+    { name: "Griechenland", link: "/reviere/mittelmeer/griechenland", areas: ["Kykladen", "Ionische Inseln", "Dodekanes", "Sporaden"] },
+    { name: "Italien", link: "/reviere/mittelmeer/italien", areas: ["Amalfiküste", "Toskana", "Sardinien", "Sizilien"] },
+    { name: "Spanien", link: "/reviere/mittelmeer/spanien", areas: ["Balearen", "Costa Brava", "Valencia"] },
+    { name: "Türkei", link: "/reviere/mittelmeer/tuerkei", areas: ["Türkische Riviera", "Bodrum", "Göcek", "Marmaris"] },
+    { name: "Frankreich", link: "/reviere/mittelmeer/frankreich", areas: ["Côte d'Azur", "Korsika"] },
+    { name: "Malta", link: "/reviere/mittelmeer/malta", areas: ["Valletta", "Gozo", "Comino"] },
+    { name: "Montenegro", link: "/reviere/mittelmeer/montenegro", areas: ["Budva", "Kotor", "Bar"] },
+    { name: "Slowenien", link: "/reviere/mittelmeer/slowenien", areas: ["Izola", "Piran", "Portorož"] }
   ];
 
   const advantages = [
@@ -110,20 +113,22 @@ const Mediterranean = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {regions.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="w-4 h-4 text-orange-500" />
-                  <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
+              <Link key={index} to={region.link} className="group">
+                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-4">
+                    <MapPin className="w-4 h-4 text-orange-500" />
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-orange-600 transition-colors">{region.name}</h3>
+                  </div>
+                  <div className="space-y-2">
+                    {region.areas.map((area, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm">
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                        <span className="text-gray-600">{area}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  {region.areas.map((area, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-sm">
-                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                      <span className="text-gray-600">{area}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
