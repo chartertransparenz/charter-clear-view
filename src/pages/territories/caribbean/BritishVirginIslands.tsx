@@ -9,6 +9,7 @@ import Navigation from "@/components/Navigation";
 import destinationBvi from "@/assets/destination-bvi.jpg";
 
 const BritishVirginIslands = () => {
+  // Component for British Virgin Islands sailing territory
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
