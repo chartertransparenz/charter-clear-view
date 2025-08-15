@@ -247,7 +247,7 @@ const Territories = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌬️ Atlantik</Badge>
-                    <h3 className="font-bold">Atlantik & Kanaren</h3>
+                    <h3 className="font-bold">Atlantik</h3>
                   </div>
                 </div>
                 <CardContent className="p-4">
