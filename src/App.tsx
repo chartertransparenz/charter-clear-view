@@ -36,7 +36,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
           <Route path="/reviere/karibik" element={<Caribbean />} />
-          <Route path="/reviere/pazifik" element={<Pacific />} />
+          <Route path="/reviere/suedpazifik" element={<Pacific />} />
           <Route path="/reviere/atlantik" element={<Atlantic />} />
           <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
           <Route path="/reviere/nord-europa" element={<NorthEurope />} />

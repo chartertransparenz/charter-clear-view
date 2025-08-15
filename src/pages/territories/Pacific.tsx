@@ -32,14 +32,14 @@ const Pacific = () => {
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
           src={pacific}
-          alt="Pazifik & Südsee"
+          alt="Südpazifik"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <Badge className="mb-4 bg-orange-500 text-white">🏖️ Pazifik & Südsee</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Pazifik & Südsee</h1>
+            <Badge className="mb-4 bg-orange-500 text-white">🏖️ Südpazifik</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Südpazifik</h1>
             <p className="text-xl max-w-2xl">
               Das ultimative Südsee-Paradies
             </p>
@@ -124,7 +124,7 @@ const Pacific = () => {
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Pazifik-Charter anfragen
+                Südpazifik-Charter anfragen
               </Button>
             </CharterRequestForm>
           </div>
