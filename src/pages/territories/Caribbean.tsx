@@ -107,21 +107,21 @@ const Caribbean = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="block hover:no-underline">
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+              <Link key={index} to={region.link} className="block hover:no-underline group">
+                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full group-hover:scale-105 cursor-pointer border border-transparent hover:border-blue-200">
                   <div className="flex items-center gap-2 mb-4">
-                    <MapPin className="w-4 h-4 text-orange-500" />
-                    <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
+                    <MapPin className="w-4 h-4 text-orange-500 group-hover:text-orange-600" />
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600">{region.name}</h3>
                   </div>
                   {region.description && (
-                    <p className="text-sm text-gray-600 mb-3">{region.description}</p>
+                    <p className="text-sm text-gray-600 mb-3 group-hover:text-gray-700">{region.description}</p>
                   )}
                   {region.areas && (
                     <div className="space-y-2">
                       {region.areas.map((area, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-sm">
-                          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                          <span className="text-gray-600">{area}</span>
+                          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:bg-blue-600"></div>
+                          <span className="text-gray-600 group-hover:text-gray-700">{area}</span>
                         </div>
                       ))}
                     </div>
