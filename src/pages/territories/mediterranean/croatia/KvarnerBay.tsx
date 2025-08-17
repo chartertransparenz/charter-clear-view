@@ -206,7 +206,11 @@ export default function KvarnerBay() {
             Entdecken Sie die vielfältige Inselwelt mit authentischem kroatischen Charme
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <CharterRequestForm />
+            <CharterRequestForm>
+              <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                Charter anfragen
+              </Button>
+            </CharterRequestForm>
             <Button size="lg" variant="outline">
               Kostenlose Beratung
             </Button>
