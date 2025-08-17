@@ -14,7 +14,7 @@ const Belize = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Charter-Basen", value: "Belize City, Placencia" },
+    { icon: MapPin, label: "Charter-Standorte", value: "Belize City, Placencia" },
     { icon: Calendar, label: "Beste Zeit", value: "November-April" },
     { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
     { icon: Anchor, label: "Besonderheit", value: "Belize Barrier Reef" }
@@ -134,7 +134,7 @@ const Belize = () => {
 
         {/* Charter Bases */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Basen</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {charterBases.map((base, index) => (
               <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">

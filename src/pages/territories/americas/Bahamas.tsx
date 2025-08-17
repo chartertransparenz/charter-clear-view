@@ -14,7 +14,7 @@ const Bahamas = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Charter-Basen", value: "Nassau, Georgetown" },
+    { icon: MapPin, label: "Charter-Standorte", value: "Nassau, Georgetown" },
     { icon: Calendar, label: "Beste Zeit", value: "November-April" },
     { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
     { icon: Anchor, label: "Besonderheit", value: "Kristallklares Wasser" }
@@ -114,7 +114,7 @@ const Bahamas = () => {
 
         {/* Charter Bases */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Basen</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {charterBases.map((base, index) => (
               <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
