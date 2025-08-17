@@ -64,6 +64,10 @@ import SeychellesIndianOcean from "./pages/territories/indian-ocean/Seychelles";
 import Mahe from "./pages/territories/indian-ocean/seychelles/Mahe";
 import Maldives from "./pages/territories/indian-ocean/Maldives";
 import Male from "./pages/territories/indian-ocean/maldives/Male";
+import AriAtoll from "./pages/territories/indian-ocean/maldives/AriAtoll";
+import BaaAtoll from "./pages/territories/indian-ocean/maldives/BaaAtoll";
+import Praslin from "./pages/territories/indian-ocean/seychelles/Praslin";
+import LaDigue from "./pages/territories/indian-ocean/seychelles/LaDigue";
 import Seychelles from "./pages/territories/Seychelles";
 
 // North Europe territories
@@ -200,8 +204,12 @@ function App() {
             <Route path="/reviere/indischer-ozean/asien/thailand/phuket" element={<Phuket />} />
             <Route path="/reviere/indischer-ozean/seychellen" element={<SeychellesIndianOcean />} />
             <Route path="/reviere/indischer-ozean/seychellen/mahe" element={<Mahe />} />
+            <Route path="/reviere/indischer-ozean/seychellen/praslin" element={<Praslin />} />
+            <Route path="/reviere/indischer-ozean/seychellen/la-digue" element={<LaDigue />} />
             <Route path="/reviere/indischer-ozean/malediven" element={<Maldives />} />
             <Route path="/reviere/indischer-ozean/malediven/male" element={<Male />} />
+            <Route path="/reviere/indischer-ozean/malediven/ari-atoll" element={<AriAtoll />} />
+            <Route path="/reviere/indischer-ozean/malediven/baa-atoll" element={<BaaAtoll />} />
 
             {/* North Europe routes */}
             <Route path="/reviere/nord-europa" element={<NorthEurope />} />

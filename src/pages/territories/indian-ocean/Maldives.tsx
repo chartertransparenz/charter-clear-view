@@ -29,13 +29,13 @@ const Maldives = () => {
     },
     {
       name: "Ari Atoll",
-      link: "#",
+      link: "/reviere/indischer-ozean/malediven/ari-atoll",
       description: "Berühmt für Walhai-Begegnungen",
       cities: ["Ari Sud", "Ari Nord"]
     },
     {
       name: "Baa Atoll",
-      link: "#",
+      link: "/reviere/indischer-ozean/malediven/baa-atoll",
       description: "UNESCO Biosphärenreservat",
       cities: ["Hanifaru Bay", "Dharavandhoo"]
     }

@@ -29,13 +29,13 @@ const Seychelles = () => {
     },
     {
       name: "Praslin",
-      link: "#",
+      link: "/reviere/indischer-ozean/seychellen/praslin",
       description: "UNESCO Vallée de Mai mit Coco de Mer",
       cities: ["Baie Sainte Anne", "Anse Volbert"]
     },
     {
       name: "La Digue",
-      link: "#",
+      link: "/reviere/indischer-ozean/seychellen/la-digue",
       description: "Berühmte Granitfelsen-Strände",
       cities: ["La Passe", "Anse Source d'Argent"]
     }
