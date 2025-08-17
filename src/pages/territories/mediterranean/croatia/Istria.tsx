@@ -71,7 +71,7 @@ export default function Istria() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/626a5986-8add-495e-97d7-9c028042f1a4.png)' }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/58d61b25-e0c3-44d0-9e60-202f1de6c843.png)' }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">

@@ -77,7 +77,7 @@ export default function CentralDalmatia() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/91b8d598-4457-4e8d-abcf-abab6ff6b7fa.png)' }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/f75a2961-5386-48a3-9aae-e12df9b325f6.png)' }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
