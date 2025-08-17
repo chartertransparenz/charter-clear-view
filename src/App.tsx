@@ -37,6 +37,10 @@ import Balearics from "./pages/territories/mediterranean/spain/Balearics";
 
 // Atlantic territories
 import Atlantic from "./pages/territories/Atlantic";
+import Azores from "./pages/territories/atlantic/Azores";
+import SaoMiguel from "./pages/territories/atlantic/azores/SaoMiguel";
+import FrenchAtlanticCoast from "./pages/territories/atlantic/FrenchAtlanticCoast";
+import CanaryIslands from "./pages/territories/atlantic/CanaryIslands";
 
 // Caribbean territories
 import Caribbean from "./pages/territories/Caribbean";
@@ -134,6 +138,10 @@ function App() {
             
             {/* Atlantic routes */}
             <Route path="/reviere/atlantik" element={<Atlantic />} />
+            <Route path="/reviere/atlantik/azoren" element={<Azores />} />
+            <Route path="/reviere/atlantik/azoren/sao-miguel" element={<SaoMiguel />} />
+            <Route path="/reviere/atlantik/franzoesische-atlantikkueste" element={<FrenchAtlanticCoast />} />
+            <Route path="/reviere/atlantik/kanaren" element={<CanaryIslands />} />
 
             {/* Caribbean routes */}
             <Route path="/reviere/karibik" element={<Caribbean />} />
