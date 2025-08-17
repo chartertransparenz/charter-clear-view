@@ -92,6 +92,10 @@ import Belize from "./pages/territories/americas/Belize";
 import FloridaKeys from "./pages/territories/americas/FloridaKeys";
 import USAEastCoast from "./pages/territories/americas/USAEastCoast";
 
+// Americas Charter Locations
+import Cancun from "./pages/territories/americas/charter-locations/Cancun";
+import Cozumel from "./pages/territories/americas/charter-locations/Cozumel";
+
 // Expedition territories
 import Expeditions from "./pages/territories/Expeditions";
 
@@ -242,6 +246,8 @@ function App() {
              <Route path="/reviere/amerika-bahamas" element={<Americas />} />
              <Route path="/reviere/amerika-bahamas/bahamas" element={<Bahamas />} />
              <Route path="/reviere/amerika-bahamas/mexiko" element={<Mexico />} />
+             <Route path="/reviere/amerika-bahamas/mexiko/cancun" element={<Cancun />} />
+             <Route path="/reviere/amerika-bahamas/mexiko/cozumel" element={<Cozumel />} />
              <Route path="/reviere/amerika-bahamas/belize" element={<Belize />} />
              <Route path="/reviere/amerika-bahamas/florida-keys" element={<FloridaKeys />} />
              <Route path="/reviere/amerika-bahamas/usa-ostkueste" element={<USAEastCoast />} />
