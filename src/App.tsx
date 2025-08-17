@@ -101,6 +101,9 @@ import KeyWest from "./pages/territories/americas/charter-locations/KeyWest";
 import KeyLargo from "./pages/territories/americas/charter-locations/KeyLargo";
 import Nassau from "./pages/territories/americas/charter-locations/Nassau";
 import Georgetown from "./pages/territories/americas/charter-locations/Georgetown";
+import Newport from "./pages/territories/americas/charter-locations/Newport";
+import Boston from "./pages/territories/americas/charter-locations/Boston";
+import Annapolis from "./pages/territories/americas/charter-locations/Annapolis";
 
 // Expedition territories
 import Expeditions from "./pages/territories/Expeditions";
@@ -263,6 +266,9 @@ function App() {
              <Route path="/reviere/amerika-bahamas/florida-keys/key-west" element={<KeyWest />} />
              <Route path="/reviere/amerika-bahamas/florida-keys/key-largo" element={<KeyLargo />} />
              <Route path="/reviere/amerika-bahamas/usa-ostkueste" element={<USAEastCoast />} />
+             <Route path="/reviere/amerika-bahamas/usa-ostkueste/newport" element={<Newport />} />
+             <Route path="/reviere/amerika-bahamas/usa-ostkueste/boston" element={<Boston />} />
+             <Route path="/reviere/amerika-bahamas/usa-ostkueste/annapolis" element={<Annapolis />} />
 
             {/* Expedition routes */}
             <Route path="/reviere/expedition" element={<Expeditions />} />

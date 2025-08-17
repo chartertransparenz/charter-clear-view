@@ -23,16 +23,19 @@ const USAEastCoast = () => {
   const charterBases = [
     {
       name: "Newport",
+      link: "/reviere/amerika-bahamas/usa-ostkueste/newport",
       description: "Segelhauptstadt Amerikas mit legendären Regatten und historischen Villen",
       highlights: ["Newport Mansions", "America's Cup", "International Tennis Hall of Fame", "Cliff Walk"]
     },
     {
       name: "Boston",
+      link: "/reviere/amerika-bahamas/usa-ostkueste/boston", 
       description: "Historische Stadt mit maritimer Tradition und exzellenten Häfen",
       highlights: ["Boston Harbor", "Freedom Trail", "USS Constitution", "Cape Cod Bay"]
     },
     {
       name: "Annapolis",
+      link: "/reviere/amerika-bahamas/usa-ostkueste/annapolis",
       description: "Segelzentrum mit der renommierten Naval Academy",
       highlights: ["US Naval Academy", "Chesapeake Bay", "Historic District", "Sailing Capital"]
     }
@@ -141,11 +144,12 @@ const USAEastCoast = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {charterBases.map((base, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
+              <Link key={index} to={base.link} className="group">
+                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <MapPin className="w-5 h-5 text-blue-600" />
-                    <h3 className="text-xl font-semibold text-gray-800">
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
                       {base.name}
                     </h3>
                   </div>
@@ -160,6 +164,7 @@ const USAEastCoast = () => {
                   </div>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
         </div>
