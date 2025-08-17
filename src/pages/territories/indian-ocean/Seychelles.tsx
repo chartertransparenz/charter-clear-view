@@ -22,10 +22,22 @@ const Seychelles = () => {
 
   const regions = [
     {
-      name: "Seychellen",
-      link: "/reviere/indischer-ozean/seychellen/seychellen",
-      description: "Tropisches Inselparadies mit Granit-Felsen und Palmen",
-      cities: ["Mahé"]
+      name: "Mahé",
+      link: "/reviere/indischer-ozean/seychellen/mahe",
+      description: "Hauptinsel mit internationaler Infrastruktur",
+      cities: ["Victoria", "Eden Bleu Marina"]
+    },
+    {
+      name: "Praslin",
+      link: "#",
+      description: "UNESCO Vallée de Mai mit Coco de Mer",
+      cities: ["Baie Sainte Anne", "Anse Volbert"]
+    },
+    {
+      name: "La Digue",
+      link: "#",
+      description: "Berühmte Granitfelsen-Strände",
+      cities: ["La Passe", "Anse Source d'Argent"]
     }
   ];
 

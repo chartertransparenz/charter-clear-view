@@ -22,10 +22,22 @@ const Maldives = () => {
 
   const regions = [
     {
-      name: "Malediven",
-      link: "/reviere/indischer-ozean/malediven/malediven",
-      description: "Das ultimative Luxus-Segelparadies mit Overwater-Bungalows",
-      cities: ["Malé"]
+      name: "Malé",
+      link: "/reviere/indischer-ozean/malediven/male",
+      description: "Hauptstadt und Tor zu 1200 Koralleninseln",
+      cities: ["Malé", "Hulhumalé"]
+    },
+    {
+      name: "Ari Atoll",
+      link: "#",
+      description: "Berühmt für Walhai-Begegnungen",
+      cities: ["Ari Sud", "Ari Nord"]
+    },
+    {
+      name: "Baa Atoll",
+      link: "#",
+      description: "UNESCO Biosphärenreservat",
+      cities: ["Hanifaru Bay", "Dharavandhoo"]
     }
   ];
 
