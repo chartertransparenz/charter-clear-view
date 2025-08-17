@@ -64,7 +64,7 @@ const IndianOcean = () => {
           className="absolute top-6 left-6"
           onClick={() => {
             setTimeout(() => {
-              document.getElementById('territories')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('reviere')?.scrollIntoView({ behavior: 'smooth' });
             }, 100);
           }}
         >
