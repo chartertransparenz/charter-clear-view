@@ -84,7 +84,7 @@ const Mediterranean = () => {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink asChild><Link to="/#reviere">Reviere</Link></BreadcrumbLink>
+                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
