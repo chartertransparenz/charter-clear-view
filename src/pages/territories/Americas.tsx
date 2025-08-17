@@ -114,9 +114,9 @@ const Americas = () => {
         </Link>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
-        {/* Breadcrumb */}
-        <div className="mb-8">
+      {/* Breadcrumb Navigation - Fixed at top */}
+      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
+        <div className="container mx-auto px-4 py-4">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -133,7 +133,9 @@ const Americas = () => {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => (

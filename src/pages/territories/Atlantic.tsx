@@ -80,9 +80,9 @@ const Atlantic = () => {
         </Link>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
-        {/* Breadcrumb */}
-        <div className="mb-8">
+      {/* Breadcrumb Navigation - Fixed at top */}
+      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
+        <div className="container mx-auto px-4 py-4">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -99,7 +99,9 @@ const Atlantic = () => {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-12">
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
