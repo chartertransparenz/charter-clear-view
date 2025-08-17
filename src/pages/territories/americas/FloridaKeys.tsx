@@ -141,7 +141,7 @@ const FloridaKeys = () => {
                   <div className="flex items-center gap-2 mb-3">
                     <MapPin className="w-5 h-5 text-blue-600" />
                     <Link 
-                      to={`/reviere/amerika-bahamas/florida-keys/${base.name.toLowerCase().replace(' ', '-')}`}
+                      to={base.name === "Key West" ? "/reviere/amerika-bahamas/florida-keys/key-west" : "/reviere/amerika-bahamas/florida-keys/key-largo"}
                       className="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors"
                     >
                       {base.name}
@@ -157,7 +157,7 @@ const FloridaKeys = () => {
                     ))}
                   </div>
                   <Link 
-                    to={`/reviere/amerika-bahamas/florida-keys/${base.name.toLowerCase().replace(' ', '-')}`}
+                    to={base.name === "Key West" ? "/reviere/amerika-bahamas/florida-keys/key-west" : "/reviere/amerika-bahamas/florida-keys/key-largo"}
                     className="inline-flex items-center mt-4 text-blue-600 hover:text-blue-800 font-medium"
                   >
                     Mehr erfahren →
