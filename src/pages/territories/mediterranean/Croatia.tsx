@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
@@ -17,9 +17,22 @@ import {
 import destinationCroatia from "@/assets/destination-croatia.jpg";
 
 const Croatia = () => {
+  const navigate = useNavigate();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleReverieClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/', { replace: true });
+    setTimeout(() => {
+      const element = document.getElementById('reviere');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Nordöstliches Mittelmeer" },
@@ -118,10 +131,7 @@ const Croatia = () => {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/#reviere';
-                  }}
+                  onClick={handleReverieClick}
                   href="/#reviere"
                   className="cursor-pointer"
                 >
