@@ -119,7 +119,7 @@ function App() {
             {/* Caribbean routes */}
             <Route path="/reviere/karibik" element={<Caribbean />} />
             <Route path="/reviere/karibik/britische-jungferninseln" element={<BritishVirginIslands />} />
-            <Route path="/reviere/karibik/us-virgin-islands" element={<USVirginIslands />} />
+            <Route path="/reviere/karibik/us-jungferninseln" element={<USVirginIslands />} />
             <Route path="/reviere/karibik/leeward-inseln" element={<LeewardIslands />} />
             <Route path="/reviere/karibik/windward-inseln" element={<WindwardIslands />} />
             <Route path="/reviere/karibik/kuba" element={<Cuba />} />
