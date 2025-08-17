@@ -97,6 +97,10 @@ import Cancun from "./pages/territories/americas/charter-locations/Cancun";
 import Cozumel from "./pages/territories/americas/charter-locations/Cozumel";
 import BelizeCity from "./pages/territories/americas/charter-locations/BelizeCity";
 import Placencia from "./pages/territories/americas/charter-locations/Placencia";
+import KeyWest from "./pages/territories/americas/charter-locations/KeyWest";
+import KeyLargo from "./pages/territories/americas/charter-locations/KeyLargo";
+import Nassau from "./pages/territories/americas/charter-locations/Nassau";
+import Georgetown from "./pages/territories/americas/charter-locations/Georgetown";
 
 // Expedition territories
 import Expeditions from "./pages/territories/Expeditions";
@@ -247,6 +251,8 @@ function App() {
              {/* America & Bahamas routes */}
              <Route path="/reviere/amerika-bahamas" element={<Americas />} />
              <Route path="/reviere/amerika-bahamas/bahamas" element={<Bahamas />} />
+             <Route path="/reviere/amerika-bahamas/bahamas/nassau" element={<Nassau />} />
+             <Route path="/reviere/amerika-bahamas/bahamas/georgetown-exumas" element={<Georgetown />} />
              <Route path="/reviere/amerika-bahamas/mexiko" element={<Mexico />} />
              <Route path="/reviere/amerika-bahamas/mexiko/cancun" element={<Cancun />} />
              <Route path="/reviere/amerika-bahamas/mexiko/cozumel" element={<Cozumel />} />
@@ -254,6 +260,8 @@ function App() {
              <Route path="/reviere/amerika-bahamas/belize/belize-city" element={<BelizeCity />} />
              <Route path="/reviere/amerika-bahamas/belize/placencia" element={<Placencia />} />
              <Route path="/reviere/amerika-bahamas/florida-keys" element={<FloridaKeys />} />
+             <Route path="/reviere/amerika-bahamas/florida-keys/key-west" element={<KeyWest />} />
+             <Route path="/reviere/amerika-bahamas/florida-keys/key-largo" element={<KeyLargo />} />
              <Route path="/reviere/amerika-bahamas/usa-ostkueste" element={<USAEastCoast />} />
 
             {/* Expedition routes */}

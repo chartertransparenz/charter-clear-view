@@ -121,9 +121,12 @@ const Bahamas = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <MapPin className="w-5 h-5 text-blue-600" />
-                    <h3 className="text-xl font-semibold text-gray-800">
+                    <Link 
+                      to={`/reviere/amerika-bahamas/bahamas/${base.name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}`}
+                      className="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors"
+                    >
                       {base.name}
-                    </h3>
+                    </Link>
                   </div>
                   <p className="text-gray-600 mb-4">{base.description}</p>
                   <div className="space-y-1">
@@ -134,6 +137,12 @@ const Bahamas = () => {
                       </div>
                     ))}
                   </div>
+                  <Link 
+                    to={`/reviere/amerika-bahamas/bahamas/${base.name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}`}
+                    className="inline-flex items-center mt-4 text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Mehr erfahren →
+                  </Link>
                 </CardContent>
               </Card>
             ))}
