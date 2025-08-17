@@ -23,11 +23,13 @@ const Belize = () => {
   const charterBases = [
     {
       name: "Belize City",
+      link: "/reviere/amerika-bahamas/belize/belize-city",
       description: "Hauptstadt und wichtigster Charter-Standort mit guter Infrastruktur",
       highlights: ["Belize Barrier Reef", "Lighthouse Reef", "Blue Hole", "St. George's Caye"]
     },
     {
       name: "Placencia",
+      link: "/reviere/amerika-bahamas/belize/placencia",
       description: "Entspanntes Fischerdorf mit authentischem karibischen Flair",
       highlights: ["Placencia Peninsula", "Silk Cayes", "Laughing Bird Caye", "Seine Bight"]
     }
@@ -137,25 +139,27 @@ const Belize = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {charterBases.map((base, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <MapPin className="w-5 h-5 text-blue-600" />
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      {base.name}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 mb-4">{base.description}</p>
-                  <div className="space-y-1">
-                    {base.highlights.map((highlight, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                        <p className="text-sm text-gray-700">{highlight}</p>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <Link key={index} to={base.link} className="group">
+                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <MapPin className="w-5 h-5 text-blue-600" />
+                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                        {base.name}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 mb-4">{base.description}</p>
+                    <div className="space-y-1">
+                      {base.highlights.map((highlight, idx) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                          <p className="text-sm text-gray-700">{highlight}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
