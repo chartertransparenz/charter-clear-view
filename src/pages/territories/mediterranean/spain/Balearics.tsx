@@ -76,16 +76,6 @@ const Balearics = () => {
         </Link>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
-        {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
-              <p className="text-sm text-gray-600">{fact.value}</p>
-      </div>
-
       {/* Breadcrumb Navigation */}
       <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div className="container mx-auto px-4 py-3">
@@ -130,6 +120,16 @@ const Balearics = () => {
           </Breadcrumb>
         </div>
       </div>
+
+      <div className="container mx-auto px-4 py-12">
+        {/* Quick Facts */}
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+          {quickFacts.map((fact, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+              <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
+              <p className="text-sm text-gray-600">{fact.value}</p>
+            </div>
           ))}
         </div>
 
