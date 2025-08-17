@@ -92,9 +92,7 @@ const Sardinien = () => {
                 <ChevronRight className="h-4 w-4" />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/#reviere">Reviere</Link>
-                </BreadcrumbLink>
+                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
                 <ChevronRight className="h-4 w-4" />
