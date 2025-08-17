@@ -23,7 +23,7 @@ const NewCaledonia = () => {
   const regions = [
     {
       name: "Neukaledonien",
-      link: "/reviere/suedpazifik/neukaledonien/neukaledonien",
+      link: "/reviere/suedpazifik/charter-standorte/noumea",
       description: "Französisches Territorium mit der weltweit größten Lagune",
       cities: ["Nouméa"]
     }
@@ -106,25 +106,31 @@ const NewCaledonia = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6">
             {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full max-w-2xl mx-auto">
+              <Link key={index} to={region.link} className="block hover:no-underline group max-w-2xl mx-auto">
+                <Card className="shadow-lg h-full group-hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-green-200 group-hover:scale-105">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                      <MapPin className="w-5 h-5 text-green-600 group-hover:text-green-700" />
+                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-green-600">
                         {region.name}
                       </h3>
                     </div>
-                    <p className="text-gray-600 mb-4">{region.description}</p>
+                    <p className="text-gray-600 mb-4 group-hover:text-gray-700">{region.description}</p>
                     {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
-                            • {city}
-                          </div>
-                        ))}
+                      <div className="mb-4">
+                        <div className="text-sm font-medium text-gray-700 mb-2">Verfügbare Charter-Standorte:</div>
+                        <div className="grid grid-cols-2 gap-2">
+                          {region.cities.map((city, idx) => (
+                            <div key={idx} className="text-sm text-green-600 font-medium group-hover:text-green-700">
+                              • {city}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
+                    <div className="text-sm text-green-600 font-medium group-hover:text-green-700 flex items-center gap-1">
+                      → Charter-Informationen & Marinas
+                    </div>
                   </CardContent>
                 </Card>
               </Link>

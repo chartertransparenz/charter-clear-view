@@ -81,6 +81,7 @@ import Raiatea from "./pages/territories/pacific/charter-locations/Raiatea";
 import BoraBora from "./pages/territories/pacific/charter-locations/BoraBora";
 import Rangiroa from "./pages/territories/pacific/charter-locations/Rangiroa";
 import WhitsundayIslands from "./pages/territories/pacific/charter-locations/WhitsundayIslands";
+import Noumea from "./pages/territories/pacific/charter-locations/Noumea";
 
 const queryClient = new QueryClient();
 
@@ -152,6 +153,7 @@ function App() {
             <Route path="/reviere/suedpazifik/charter-standorte/bora-bora" element={<BoraBora />} />
             <Route path="/reviere/suedpazifik/charter-standorte/rangiroa" element={<Rangiroa />} />
             <Route path="/reviere/suedpazifik/charter-standorte/whitsundays" element={<WhitsundayIslands />} />
+            <Route path="/reviere/suedpazifik/charter-standorte/noumea" element={<Noumea />} />
 
             {/* Indian Ocean routes */}
             <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
