@@ -76,6 +76,12 @@ import Antigua from "./pages/territories/caribbean/charter-locations/Antigua";
 import Martinique from "./pages/territories/caribbean/charter-locations/Martinique";
 import Havanna from "./pages/territories/caribbean/charter-locations/Havanna";
 
+// Pacific Charter Locations
+import Raiatea from "./pages/territories/pacific/charter-locations/Raiatea";
+import BoraBora from "./pages/territories/pacific/charter-locations/BoraBora";
+import Rangiroa from "./pages/territories/pacific/charter-locations/Rangiroa";
+import WhitsundayIslands from "./pages/territories/pacific/charter-locations/WhitsundayIslands";
+
 const queryClient = new QueryClient();
 
 function App() {
@@ -140,6 +146,12 @@ function App() {
             <Route path="/reviere/karibik/charter-standorte/antigua" element={<Antigua />} />
             <Route path="/reviere/karibik/charter-standorte/martinique" element={<Martinique />} />
             <Route path="/reviere/karibik/charter-standorte/havanna" element={<Havanna />} />
+
+            {/* Pacific Charter Location routes */}
+            <Route path="/reviere/suedpazifik/charter-standorte/raiatea" element={<Raiatea />} />
+            <Route path="/reviere/suedpazifik/charter-standorte/bora-bora" element={<BoraBora />} />
+            <Route path="/reviere/suedpazifik/charter-standorte/rangiroa" element={<Rangiroa />} />
+            <Route path="/reviere/suedpazifik/charter-standorte/whitsundays" element={<WhitsundayIslands />} />
 
             {/* Indian Ocean routes */}
             <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />

@@ -22,10 +22,16 @@ const FrenchPolynesia = () => {
 
   const regions = [
     {
-      name: "Französisch Polynesien",
-      link: "/reviere/suedpazifik/franzoesisch-polynesien/franzoesisch-polynesien",
-      description: "Das ultimative Südsee-Paradies mit Tahiti und Bora Bora",
-      cities: ["Raiatea", "Rangiroa"]
+      name: "Leeward Islands (Gesellschaftsinseln)",
+      link: "/reviere/suedpazifik/charter-standorte/raiatea",
+      description: "Raiatea - Das Charter-Zentrum mit Tahaa, Bora Bora und Huahine",
+      cities: ["Raiatea", "Bora Bora", "Tahaa", "Huahine"]
+    },
+    {
+      name: "Tuamotu Archipel",
+      link: "/reviere/suedpazifik/charter-standorte/rangiroa",
+      description: "Rangiroa - Größtes Atoll der Welt und Taucher-Paradies",
+      cities: ["Rangiroa", "Tikehau", "Fakarava", "Manihi"]
     }
   ];
 

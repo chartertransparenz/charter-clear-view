@@ -12,10 +12,18 @@ const Pacific = () => {
     window.scrollTo(0, 0);
   }, []);
   const regions = [
-    { name: "Französisch-Polynesien", areas: ["Tahiti", "Bora Bora", "Marquesas"] },
-    { name: "Fidschi", areas: ["Viti Levu", "Vanua Levu"] },
-    { name: "Neuseeland", areas: ["Bay of Islands", "Hauraki Gulf"] },
-    { name: "Australien", areas: ["Whitsunday Islands", "Great Barrier Reef"] }
+    { 
+      name: "Französisch-Polynesien", 
+      link: "/reviere/suedpazifik/charter-standorte/raiatea",
+      areas: ["Raiatea", "Bora Bora", "Rangiroa"] 
+    },
+    { 
+      name: "Australien", 
+      link: "/reviere/suedpazifik/charter-standorte/whitsundays",
+      areas: ["Whitsunday Islands", "Great Barrier Reef"] 
+    },
+    { name: "Fidschi", link: "#", areas: ["Viti Levu", "Vanua Levu"] },
+    { name: "Neuseeland", link: "#", areas: ["Bay of Islands", "Hauraki Gulf"] }
   ];
 
   const advantages = [
