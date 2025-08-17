@@ -55,7 +55,15 @@ import Caribbean from "./pages/territories/Caribbean";
 
 // Indian Ocean territories
 import IndianOcean from "./pages/territories/IndianOcean";
+import Asia from "./pages/territories/indian-ocean/Asia";
+import Malaysia from "./pages/territories/indian-ocean/asia/Malaysia";
 import Thailand from "./pages/territories/Thailand";
+import LangkawiTioman from "./pages/territories/indian-ocean/asia/thailand/LangkawiTioman";
+import Phuket from "./pages/territories/indian-ocean/asia/thailand/Phuket";
+import SeychellesIndianOcean from "./pages/territories/indian-ocean/Seychelles";
+import Mahe from "./pages/territories/indian-ocean/seychelles/Mahe";
+import Maldives from "./pages/territories/indian-ocean/Maldives";
+import Male from "./pages/territories/indian-ocean/maldives/Male";
 import Seychelles from "./pages/territories/Seychelles";
 
 // North Europe territories
@@ -185,8 +193,15 @@ function App() {
 
             {/* Indian Ocean routes */}
             <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
-            <Route path="/reviere/thailand" element={<Thailand />} />
-            <Route path="/reviere/seychellen" element={<Seychelles />} />
+            <Route path="/reviere/indischer-ozean/asien" element={<Asia />} />
+            <Route path="/reviere/indischer-ozean/asien/malaysia" element={<Malaysia />} />
+            <Route path="/reviere/indischer-ozean/asien/thailand" element={<Thailand />} />
+            <Route path="/reviere/indischer-ozean/asien/thailand/langkawi-tioman" element={<LangkawiTioman />} />
+            <Route path="/reviere/indischer-ozean/asien/thailand/phuket" element={<Phuket />} />
+            <Route path="/reviere/indischer-ozean/seychellen" element={<SeychellesIndianOcean />} />
+            <Route path="/reviere/indischer-ozean/seychellen/mahe" element={<Mahe />} />
+            <Route path="/reviere/indischer-ozean/malediven" element={<Maldives />} />
+            <Route path="/reviere/indischer-ozean/malediven/male" element={<Male />} />
 
             {/* North Europe routes */}
             <Route path="/reviere/nord-europa" element={<NorthEurope />} />
