@@ -14,6 +14,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
+import newzealandSailing from "@/assets/newzealand-sailing.jpg";
 
 const NewZealand = () => {
   useEffect(() => {
@@ -84,7 +85,7 @@ const NewZealand = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/af94fe93-6540-4d36-9242-7c1b391dab53.png"
+          src={newzealandSailing}
           alt="Neuseeland"
           className="w-full h-full object-cover"
         />
