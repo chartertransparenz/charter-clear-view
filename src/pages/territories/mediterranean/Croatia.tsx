@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
+import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -103,23 +103,35 @@ const Croatia = () => {
         </Link>
       </div>
 
-      {/* Breadcrumb Navigation - Fixed at top */}
-      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
-        <div className="container mx-auto px-4 py-4">
+      {/* Breadcrumb Navigation */}
+      <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div className="container mx-auto px-4 py-3">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">Start</BreadcrumbLink>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Start</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/mittelmeer">Reviere</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/reviere/mittelmeer">Mittelmeer</BreadcrumbLink>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/mittelmeer">Mittelmeer</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage>Kroatien</BreadcrumbPage>
               </BreadcrumbItem>
