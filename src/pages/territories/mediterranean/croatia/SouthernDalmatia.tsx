@@ -14,6 +14,7 @@ import {
   BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
+import destinationCroatia from '@/assets/destination-croatia.jpg';
 
 export default function SouthernDalmatia() {
   useEffect(() => {
@@ -71,7 +72,7 @@ export default function SouthernDalmatia() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/68a41bf5-1573-472d-8722-34cdca418a0e.png)' }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(${destinationCroatia})` }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
