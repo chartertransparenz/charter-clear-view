@@ -24,7 +24,7 @@ const USVirginIslands = () => {
   const regions = [
     {
       name: "US Virgin Islands",
-      link: "#",
+      link: "/reviere/karibik/charter-standorte/st-thomas",
       description: "Amerikanisches Territorium mit duty-free Shopping",
       cities: ["St. Thomas", "St. John", "St. Croix"]
     }

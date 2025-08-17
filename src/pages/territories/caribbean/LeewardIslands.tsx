@@ -24,7 +24,7 @@ const LeewardIslands = () => {
   const regions = [
     {
       name: "Leeward Inseln",
-      link: "#",
+      link: "/reviere/karibik/charter-standorte/antigua",
       description: "Vielfältige Inselgruppe mit französischem und niederländischem Flair",
       cities: ["Antigua", "St. Martin", "Guadeloupe", "St. Kitts"]
     }

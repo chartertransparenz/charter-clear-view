@@ -24,7 +24,7 @@ const BritishVirginIslands = () => {
   const regions = [
     {
       name: "British Virgin Islands",
-      link: "#",
+      link: "/reviere/karibik/charter-standorte/tortola",
       description: "Line-of-sight Segeln zwischen traumhaften Inseln",
       cities: ["Tortola", "Virgin Gorda", "Jost Van Dyke", "Anegada"]
     }

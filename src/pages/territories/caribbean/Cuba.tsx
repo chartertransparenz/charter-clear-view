@@ -24,7 +24,7 @@ const Cuba = () => {
   const regions = [
     {
       name: "Kuba",
-      link: "#",
+      link: "/reviere/karibik/charter-standorte/havanna",
       description: "Die größte Karibikinsel mit authentischer Kultur",
       cities: ["Havanna", "Cienfuegos", "Trinidad", "Cayo Largo"]
     }

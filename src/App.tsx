@@ -40,11 +40,6 @@ import Atlantic from "./pages/territories/Atlantic";
 
 // Caribbean territories
 import Caribbean from "./pages/territories/Caribbean";
-import BritishVirginIslands from "./pages/territories/caribbean/BritishVirginIslands";
-import USVirginIslands from "./pages/territories/caribbean/USVirginIslands";
-import LeewardIslands from "./pages/territories/caribbean/LeewardIslands";
-import WindwardIslands from "./pages/territories/caribbean/WindwardIslands";
-import Cuba from "./pages/territories/caribbean/Cuba";
 
 // Indian Ocean territories
 import IndianOcean from "./pages/territories/IndianOcean";
@@ -65,6 +60,20 @@ import Expeditions from "./pages/territories/Expeditions";
 
 // Australia
 import Australia from "./pages/territories/Australia";
+
+// Caribbean territories
+import BritishVirginIslands from "./pages/territories/caribbean/BritishVirginIslands";
+import USVirginIslands from "./pages/territories/caribbean/USVirginIslands";
+import LeewardIslands from "./pages/territories/caribbean/LeewardIslands";
+import WindwardIslands from "./pages/territories/caribbean/WindwardIslands";
+import Cuba from "./pages/territories/caribbean/Cuba";
+
+// Caribbean Charter Locations
+import Tortola from "./pages/territories/caribbean/charter-locations/Tortola";
+import StThomas from "./pages/territories/caribbean/charter-locations/StThomas";
+import Antigua from "./pages/territories/caribbean/charter-locations/Antigua";
+import Martinique from "./pages/territories/caribbean/charter-locations/Martinique";
+import Havanna from "./pages/territories/caribbean/charter-locations/Havanna";
 
 const queryClient = new QueryClient();
 

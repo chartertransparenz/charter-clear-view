@@ -24,7 +24,7 @@ const WindwardIslands = () => {
   const regions = [
     {
       name: "Windward Inseln",
-      link: "#",
+      link: "/reviere/karibik/charter-standorte/martinique",
       description: "Die windreichen südlichen Kleinen Antillen",
       cities: ["St. Vincent", "Grenada", "Martinique", "St. Lucia", "Bequia", "Tobago Cays"]
     }
