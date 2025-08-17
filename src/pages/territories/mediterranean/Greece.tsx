@@ -113,7 +113,9 @@ const Greece = () => {
                 <ChevronRight className="h-4 w-4" />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+                <BreadcrumbLink asChild>
+                  <Link to="/#reviere">Reviere</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
                 <ChevronRight className="h-4 w-4" />

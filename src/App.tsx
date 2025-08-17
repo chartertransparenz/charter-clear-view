@@ -297,7 +297,7 @@ function App() {
              <Route path="/reviere/amerika-bahamas/usa-ostkueste/annapolis" element={<Annapolis />} />
 
             {/* Expedition routes */}
-            <Route path="/reviere/expedition" element={<Expeditions />} />
+            <Route path="/reviere/expeditionen" element={<Expeditions />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
