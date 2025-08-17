@@ -125,7 +125,7 @@ const Antigua = () => {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/reviere/karibik/lee-inseln">Lee-Inseln</BreadcrumbLink>
+                <BreadcrumbLink href="/reviere/karibik/leeward-inseln">Leeward-Inseln</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

@@ -30,10 +30,10 @@ const Australia = () => {
 
   const regions = [
     {
-      name: "Australien",
-      link: "/reviere/suedpazifik/australien/australien",
-      description: "Great Barrier Reef und Whitsunday Islands",
-      cities: ["Whitsundays"]
+      name: "Whitsunday Islands",
+      link: "/reviere/suedpazifik/charter-standorte/whitsundays",
+      description: "Great Barrier Reef und 74 tropische Inseln",
+      cities: ["Airlie Beach", "Hamilton Island", "Hayman Island"]
     }
   ];
 

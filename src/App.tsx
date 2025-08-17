@@ -274,6 +274,7 @@ function App() {
 
             {/* Pacific routes */}
             <Route path="/reviere/suedpazifik" element={<Pacific />} />
+            <Route path="/reviere/suedpazifik/australien" element={<Australia />} />
 
              {/* America & Bahamas routes */}
              <Route path="/reviere/amerika-bahamas" element={<Americas />} />
@@ -296,9 +297,6 @@ function App() {
 
             {/* Expedition routes */}
             <Route path="/reviere/expedition" element={<Expeditions />} />
-
-            {/* Australia route */}
-            <Route path="/reviere/australien" element={<Australia />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>

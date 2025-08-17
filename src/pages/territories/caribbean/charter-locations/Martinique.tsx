@@ -134,7 +134,7 @@ const Martinique = () => {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/reviere/karibik/luv-inseln">Luv-Inseln</BreadcrumbLink>
+                <BreadcrumbLink href="/reviere/karibik/windward-inseln">Windward-Inseln</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

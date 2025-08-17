@@ -29,7 +29,7 @@ const Caribbean = () => {
     { 
       name: "US Virgin Islands", 
       description: "Amerikaniches Karibik-Territorium",
-      link: "/reviere/karibik/us-virgin-islands",
+      link: "/reviere/karibik/us-jungferninseln",
       areas: ["St. Thomas", "St. John", "St. Croix"]
     },
     { 
