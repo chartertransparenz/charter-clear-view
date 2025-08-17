@@ -40,13 +40,13 @@ const Americas = () => {
     },
     {
       name: "Florida Keys",
-      link: "#",
+      link: "/reviere/amerika-bahamas/florida-keys",
       bases: "Key West, Key Largo",
       description: "Einzigartige Inselkette mit tropischem Flair und entspanntem Segeln."
     },
     {
       name: "USA Ostküste",
-      link: "#",
+      link: "/reviere/amerika-bahamas/usa-ostkueste",
       bases: "Newport, Boston, Annapolis",
       description: "Klassisches amerikanisches Segeln mit historischen Häfen und maritimer Tradition."
     }
@@ -153,16 +153,16 @@ const Americas = () => {
 
         {/* Sailing Regions */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {regions.map((region, index) => (
-              <Link key={index} to={region.link} className={region.link === "#" ? "pointer-events-none" : "group"}>
-                <div className={`bg-white p-6 rounded-lg shadow-lg ${region.link !== "#" ? "hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer" : "opacity-60"}`}>
+              <Link key={index} to={region.link} className="group">
+                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
                   <div className="flex items-center gap-2 mb-3">
                     <MapPin className="w-5 h-5 text-blue-600" />
-                    <h3 className={`text-xl font-semibold text-gray-800 ${region.link !== "#" ? "group-hover:text-blue-600 transition-colors" : ""}`}>{region.name}</h3>
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">{region.name}</h3>
                   </div>
-                  <p className="text-sm text-blue-600 mb-3 font-medium">Basen: {region.bases}</p>
+                  <p className="text-sm text-blue-600 mb-3 font-medium">Charter-Standorte: {region.bases}</p>
                   <p className="text-gray-600">{region.description}</p>
                 </div>
               </Link>

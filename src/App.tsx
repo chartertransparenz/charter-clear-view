@@ -89,6 +89,8 @@ import Americas from "./pages/territories/Americas";
 import Bahamas from "./pages/territories/americas/Bahamas";
 import Mexico from "./pages/territories/americas/Mexico";
 import Belize from "./pages/territories/americas/Belize";
+import FloridaKeys from "./pages/territories/americas/FloridaKeys";
+import USAEastCoast from "./pages/territories/americas/USAEastCoast";
 
 // Expedition territories
 import Expeditions from "./pages/territories/Expeditions";
@@ -241,6 +243,8 @@ function App() {
              <Route path="/reviere/amerika-bahamas/bahamas" element={<Bahamas />} />
              <Route path="/reviere/amerika-bahamas/mexiko" element={<Mexico />} />
              <Route path="/reviere/amerika-bahamas/belize" element={<Belize />} />
+             <Route path="/reviere/amerika-bahamas/florida-keys" element={<FloridaKeys />} />
+             <Route path="/reviere/amerika-bahamas/usa-ostkueste" element={<USAEastCoast />} />
 
             {/* Expedition routes */}
             <Route path="/reviere/expedition" element={<Expeditions />} />
