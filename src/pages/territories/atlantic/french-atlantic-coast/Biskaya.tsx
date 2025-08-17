@@ -69,7 +69,13 @@ const Biskaya = () => {
       <Navigation />
       
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20 bg-gradient-to-r from-red-600 to-purple-600">
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img
+          src="/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
+          alt="Biskaya Frankreich"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

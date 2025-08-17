@@ -87,7 +87,13 @@ const Lanzarote = () => {
       <Navigation />
       
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20 bg-gradient-to-r from-gray-800 to-red-600">
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img
+          src="/lovable-uploads/58d61b25-e0c3-44d0-9e60-202f1de6c843.png"
+          alt="Lanzarote"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

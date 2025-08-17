@@ -82,7 +82,13 @@ const Mahe = () => {
       <Navigation />
       
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20 bg-gradient-to-r from-pink-600 to-purple-600">
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img
+          src="/lovable-uploads/e18eda5c-c95b-4e20-9faa-8ddecba95a5d.png"
+          alt="Mahé Seychellen"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

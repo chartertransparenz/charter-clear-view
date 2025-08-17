@@ -87,7 +87,13 @@ const Tenerife = () => {
       <Navigation />
       
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20 bg-gradient-to-r from-red-600 to-orange-600">
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img
+          src="/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.png"
+          alt="Teneriffa"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

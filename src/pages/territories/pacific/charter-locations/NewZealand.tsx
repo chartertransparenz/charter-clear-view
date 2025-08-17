@@ -82,7 +82,13 @@ const NewZealand = () => {
       <Navigation />
       
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20 bg-gradient-to-r from-green-600 to-blue-600">
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img
+          src="/lovable-uploads/af94fe93-6540-4d36-9242-7c1b391dab53.png"
+          alt="Neuseeland"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
