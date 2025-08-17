@@ -90,12 +90,12 @@ const StThomas = () => {
           </div>
         </div>
         <Link 
-          to="/reviere/karibik/us-jungferninseln" 
+          to="/reviere/karibik" 
           className="absolute top-6 left-6"
         >
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu USVI
+            Zurück zur Karibik
           </Button>
         </Link>
       </div>

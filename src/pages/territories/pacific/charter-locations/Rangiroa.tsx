@@ -117,12 +117,12 @@ const Rangiroa = () => {
           </div>
         </div>
         <Link 
-          to="/reviere/suedpazifik/franzoesisch-polynesien" 
+          to="/reviere/suedpazifik" 
           className="absolute top-6 left-6"
         >
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu Französisch-Polynesien
+            Zurück zum Südpazifik
           </Button>
         </Link>
       </div>
