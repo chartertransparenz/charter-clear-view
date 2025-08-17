@@ -22,10 +22,16 @@ const FrenchAtlanticCoast = () => {
 
   const regions = [
     {
-      name: "Französische Atlantikküste",
-      link: "/reviere/atlantik/franzoesische-atlantikkueste/franzoesische-atlantikkueste",
-      description: "Anspruchsvolle Tidenreviere der französischen Westküste",
-      cities: ["Biskaya", "Bretagne/Normandie"]
+      name: "Biskaya",
+      link: "/reviere/atlantik/franzoesische-atlantikkueste/biskaya",
+      description: "Von Bordeaux bis zur spanischen Grenze",
+      cities: ["Bordeaux", "Arcachon", "Biarritz"]
+    },
+    {
+      name: "Bretagne & Normandie",
+      link: "/reviere/atlantik/franzoesische-atlantikkueste/bretagne-normandie",
+      description: "Raue Küsten und maritime Tradition",
+      cities: ["Saint-Malo", "Brest", "La Rochelle"]
     }
   ];
 

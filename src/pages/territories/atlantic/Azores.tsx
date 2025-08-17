@@ -22,10 +22,22 @@ const Azores = () => {
 
   const regions = [
     {
-      name: "Azoren",
-      link: "/reviere/atlantik/azoren/azoren",
-      description: "Neun vulkanische Inseln im Herzen des Atlantiks",
-      cities: ["São Miguel"]
+      name: "São Miguel",
+      link: "/reviere/atlantik/azoren/sao-miguel",
+      description: "Hauptinsel mit Ponta Delgada",
+      cities: ["Ponta Delgada", "Vila Franca do Campo"]
+    },
+    {
+      name: "Terceira",
+      link: "#",
+      description: "UNESCO-Weltkulturerbe Angra do Heroísmo",
+      cities: ["Angra do Heroísmo", "Praia da Vitória"]
+    },
+    {
+      name: "Faial",
+      link: "#",
+      description: "Blaue Insel mit dem berühmten Peter Café Sport",
+      cities: ["Horta", "Castelo Branco"]
     }
   ];
 

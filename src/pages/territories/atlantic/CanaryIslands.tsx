@@ -22,10 +22,28 @@ const CanaryIslands = () => {
 
   const regions = [
     {
-      name: "Kanaren",
-      link: "/reviere/atlantik/kanaren/kanaren",
-      description: "Die Inseln des ewigen Frühlings mit ganzjährigem Segelwetter",
-      cities: ["Gran Canaria", "Lanzarote", "Teneriffa"]
+      name: "Gran Canaria",
+      link: "/reviere/atlantik/kanaren/gran-canaria",
+      description: "Miniaturkontinent mit Las Palmas",
+      cities: ["Las Palmas", "Puerto Rico", "Maspalomas"]
+    },
+    {
+      name: "Teneriffa",
+      link: "/reviere/atlantik/kanaren/teneriffa",
+      description: "Größte Insel mit dem Teide",
+      cities: ["Santa Cruz", "Los Cristianos", "Puerto Colón"]
+    },
+    {
+      name: "Lanzarote",
+      link: "/reviere/atlantik/kanaren/lanzarote",
+      description: "Vulkaninsel mit einzigartiger Landschaft",
+      cities: ["Arrecife", "Puerto Calero", "Marina Rubicón"]
+    },
+    {
+      name: "Fuerteventura",
+      link: "#",
+      description: "Windige Insel für Wassersportler",
+      cities: ["Puerto del Rosario", "Corralejo"]
     }
   ];
 
