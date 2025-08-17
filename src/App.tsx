@@ -60,6 +60,7 @@ import Expeditions from "./pages/territories/Expeditions";
 
 // Australia
 import Australia from "./pages/territories/Australia";
+import BVI from "./pages/territories/BVI";
 
 // Caribbean territories
 import BritishVirginIslands from "./pages/territories/caribbean/BritishVirginIslands";
