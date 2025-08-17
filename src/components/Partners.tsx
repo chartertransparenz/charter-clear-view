@@ -227,7 +227,7 @@ const Partners = () => {
                 variant="default" 
                 size="lg" 
                 className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Jetzt Kontakt aufnehmen
               </Button>
