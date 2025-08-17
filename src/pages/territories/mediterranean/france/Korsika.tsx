@@ -192,7 +192,7 @@ const Korsika = () => {
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Kostenlose Beratung
+                Charter anfragen
               </Button>
             </CharterRequestForm>
           </div>
