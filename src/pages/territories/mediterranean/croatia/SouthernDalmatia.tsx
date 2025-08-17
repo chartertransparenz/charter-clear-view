@@ -5,6 +5,14 @@ import CharterRequestForm from '@/components/CharterRequestForm';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 
 export default function SouthernDalmatia() {
@@ -74,6 +82,35 @@ export default function SouthernDalmatia() {
             <h1 className="text-5xl font-bold mb-4">Süddalmatien</h1>
             <p className="text-xl text-white/90">Dubrovnik und die südlichsten Perlen Kroatiens - Geschichte und unberührte Natur</p>
           </div>
+        </div>
+      </div>
+
+      {/* Breadcrumb Navigation - Fixed at top */}
+      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Start</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/reviere/mittelmeer">Mittelmeer</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/reviere/mittelmeer/kroatien">Kroatien</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Süddalmatien</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
         </div>
       </div>
 
