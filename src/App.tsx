@@ -82,6 +82,8 @@ import BoraBora from "./pages/territories/pacific/charter-locations/BoraBora";
 import Rangiroa from "./pages/territories/pacific/charter-locations/Rangiroa";
 import WhitsundayIslands from "./pages/territories/pacific/charter-locations/WhitsundayIslands";
 import Noumea from "./pages/territories/pacific/charter-locations/Noumea";
+import Fiji from "./pages/territories/pacific/charter-locations/Fiji";
+import NewZealand from "./pages/territories/pacific/charter-locations/NewZealand";
 
 const queryClient = new QueryClient();
 
@@ -152,8 +154,10 @@ function App() {
             <Route path="/reviere/suedpazifik/charter-standorte/raiatea" element={<Raiatea />} />
             <Route path="/reviere/suedpazifik/charter-standorte/bora-bora" element={<BoraBora />} />
             <Route path="/reviere/suedpazifik/charter-standorte/rangiroa" element={<Rangiroa />} />
-            <Route path="/reviere/suedpazifik/charter-standorte/whitsundays" element={<WhitsundayIslands />} />
-            <Route path="/reviere/suedpazifik/charter-standorte/noumea" element={<Noumea />} />
+        <Route path="/reviere/suedpazifik/charter-standorte/whitsundays" element={<WhitsundayIslands />} />
+        <Route path="/reviere/suedpazifik/charter-standorte/noumea" element={<Noumea />} />
+        <Route path="/reviere/suedpazifik/charter-standorte/fidschi" element={<Fiji />} />
+        <Route path="/reviere/suedpazifik/charter-standorte/neuseeland" element={<NewZealand />} />
 
             {/* Indian Ocean routes */}
             <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />

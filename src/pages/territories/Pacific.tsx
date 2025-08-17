@@ -22,13 +22,13 @@ const Pacific = () => {
       link: "/reviere/suedpazifik/charter-standorte/whitsundays",
       areas: ["Whitsunday Islands", "Great Barrier Reef"] 
     },
-    { name: "Fidschi", link: "#", areas: ["Viti Levu", "Vanua Levu"] },
+    { name: "Fidschi", link: "/reviere/suedpazifik/charter-standorte/fidschi", areas: ["Viti Levu", "Vanua Levu"] },
     { 
       name: "Neukaledonien", 
       link: "/reviere/suedpazifik/charter-standorte/noumea",
       areas: ["Nouméa", "Ile des Pins"] 
     },
-    { name: "Neuseeland", link: "#", areas: ["Bay of Islands", "Hauraki Gulf"] }
+    { name: "Neuseeland", link: "/reviere/suedpazifik/charter-standorte/neuseeland", areas: ["Bay of Islands", "Hauraki Gulf"] }
   ];
 
   const advantages = [
