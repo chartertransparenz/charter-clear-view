@@ -86,10 +86,21 @@ const Greece = () => {
             <p className="text-xl max-w-2xl">
               Die Wiege des Segelns
             </p>
+          </div>
+        </div>
+        <Link 
+          to="/reviere/mittelmeer" 
+          className="absolute top-6 left-6"
+        >
+          <Button variant="outline" className="bg-white/90 text-black border-white">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Zurück zum Mittelmeer
+          </Button>
+        </Link>
       </div>
 
       {/* Breadcrumb Navigation */}
-      <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+      <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-3">
           <Breadcrumb>
             <BreadcrumbList>
@@ -123,17 +134,6 @@ const Greece = () => {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-      </div>
-        </div>
-        <Link 
-          to="/reviere/mittelmeer" 
-          className="absolute top-6 left-6"
-        >
-          <Button variant="outline" className="bg-white/90 text-black border-white">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zum Mittelmeer
-          </Button>
-        </Link>
       </div>
 
       <div className="container mx-auto px-4 py-12">
