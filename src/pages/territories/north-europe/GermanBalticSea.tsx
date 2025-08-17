@@ -23,7 +23,7 @@ const GermanBalticSea = () => {
   const regions = [
     {
       name: "Deutsche Ostsee",
-      link: "/reviere/nord-ostsee/deutsche-ostsee/deutsche-ostsee",
+      link: "/reviere/nord-europa/deutsche-ostsee/charter-standorte",
       description: "Tidenfrei segeln vor Deutschlands Ostseeküste",
       cities: ["Breege (Rügen)", "Flensburg", "Großenbrode", "Heiligenhafen", "Rostock/Warnemünde"]
     }
