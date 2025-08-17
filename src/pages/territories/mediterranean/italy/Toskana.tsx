@@ -87,7 +87,7 @@ const Toskana = () => {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link to="/reviere/mittelmeer">Reviere</Link>
+                  <Link to="/#reviere">Reviere</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
