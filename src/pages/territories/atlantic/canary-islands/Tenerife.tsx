@@ -1,0 +1,235 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Mountain } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
+import Navigation from "@/components/Navigation";
+
+const Tenerife = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const quickFacts = [
+    {
+      icon: <MapPin className="w-5 h-5" />,
+      label: "Lage",
+      value: "Größte Kanareninsel"
+    },
+    {
+      icon: <Calendar className="w-5 h-5" />,
+      label: "Beste Reisezeit",
+      value: "Ganzjährig"
+    },
+    {
+      icon: <Waves className="w-5 h-5" />,
+      label: "Segelwetter",
+      value: "NE Passat 18-28 kn"
+    },
+    {
+      icon: <Users className="w-5 h-5" />,
+      label: "Chartertyp",
+      value: "Katamaran bevorzugt"
+    }
+  ];
+
+  const marinas = [
+    {
+      name: "Marina Santa Cruz",
+      description: "Hauptstadthafen mit vollständiger Infrastruktur",
+      facilities: ["Zentrale Lage", "Shopping", "Kultur", "Restaurants"]
+    },
+    {
+      name: "Puerto Colón (Adeje)",
+      description: "Moderner Tourismushafen im Süden",
+      facilities: ["Luxus-Yachten", "Costa Adeje", "Strände", "Nightlife"]
+    },
+    {
+      name: "Los Cristianos",
+      description: "Traditioneller Fischerhafen mit Charme",
+      facilities: ["Authentisch", "Familiär", "Lokale Küche", "Fähren"]
+    }
+  ];
+
+  const highlights = [
+    "Pico del Teide - höchster Berg Spaniens",
+    "Vielfältige Landschaften",
+    "Whalewatching ganzjährig",
+    "Kanarische Tradition",
+    "Anaga-Gebirge Lorbeerwald",
+    "Garachico historische Stadt",
+    "Konstante Passatwinde",
+    "Mildes Klima das ganze Jahr"
+  ];
+
+  const attractions = [
+    {
+      name: "Teide Nationalpark",
+      description: "UNESCO Weltnaturerbe mit dem höchsten Berg Spaniens",
+      type: "Natur"
+    },
+    {
+      name: "Anaga-Gebirge",
+      description: "Prähistorischer Lorbeerwald",
+      type: "Wandern"
+    },
+    {
+      name: "Los Gigantes Klippen",
+      description: "Bis zu 800m hohe Steilklippen",
+      type: "Spektakulär"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
+      <Navigation />
+      
+      {/* Header */}
+      <div className="relative h-64 md:h-96 overflow-hidden mt-20 bg-gradient-to-r from-red-600 to-orange-600">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white">
+            <Badge className="mb-4 bg-red-500 text-white">🌋 Teneriffa</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Teneriffa</h1>
+            <p className="text-xl max-w-2xl">
+              Insel der Vielfalt mit dem Teide
+            </p>
+          </div>
+        </div>
+        <Link 
+          to="/reviere/atlantik/kanaren" 
+          className="absolute top-6 left-6"
+        >
+          <Button variant="outline" className="bg-white/90 text-black border-white">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Zurück zu den Kanaren
+          </Button>
+        </Link>
+      </div>
+
+      <div className="container mx-auto px-4 py-12">
+        {/* Quick Facts */}
+        <div className="grid gap-4 md:grid-cols-4 mb-12">
+          {quickFacts.map((fact, index) => (
+            <Card key={index} className="text-center">
+              <CardContent className="p-4">
+                <div className="flex justify-center text-red-600 mb-2">
+                  {fact.icon}
+                </div>
+                <div className="font-semibold text-sm text-gray-600 mb-1">
+                  {fact.label}
+                </div>
+                <div className="text-sm font-medium">
+                  {fact.value}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <Mountain className="w-6 h-6 text-red-600" />
+              Charter-Standort Teneriffa
+            </h2>
+            <p className="text-lg text-gray-600 mb-4">
+              Teneriffa ist die größte und vielfältigste der Kanarischen Inseln. 
+              Dominiert vom majestätischen Pico del Teide bietet sie von 
+              subtropischen Küsten bis zu alpinen Höhen alle Klimazonen. 
+              Die Insel ist perfekt für Segler, die Abwechslung und starke 
+              Passatwinde schätzen.
+            </p>
+            <p className="text-lg text-gray-600">
+              Mit mehreren modernen Marinas, konstanten Winden und der Möglichkeit 
+              zu ganzjährigem Whalewatching ist Teneriffa ein Segelparadies. 
+              Von hier aus sind alle westlichen Kanarischen Inseln bequem erreichbar.
+            </p>
+          </div>
+        </div>
+
+        {/* Marinas */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Häfen</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {marinas.map((marina, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Anchor className="w-5 h-5 text-red-600" />
+                    <h3 className="text-lg font-semibold text-gray-800">{marina.name}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">{marina.description}</p>
+                  <div className="space-y-2">
+                    <div className="text-sm font-medium text-gray-700">Besonderheiten:</div>
+                    <div className="flex flex-wrap gap-2">
+                      {marina.facilities.map((facility, idx) => (
+                        <Badge key={idx} variant="secondary" className="text-xs">
+                          {facility}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Attractions */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Sehenswürdigkeiten</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {attractions.map((attraction, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="mb-3">
+                    <Badge className="mb-2">{attraction.type}</Badge>
+                    <h3 className="text-lg font-semibold text-gray-800">{attraction.name}</h3>
+                  </div>
+                  <p className="text-gray-600">{attraction.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {highlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
+                <Mountain className="w-6 h-6 text-red-600 mx-auto mb-2" />
+                <p className="text-sm font-medium text-gray-700">{highlight}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Charter ab Teneriffa
+            </h3>
+            <p className="mb-6 text-red-100">
+              Erleben Sie die vielfältigste Kanareninsel mit dem höchsten Berg Spaniens 
+              und perfekten Segelbedingungen das ganze Jahr über.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-white text-red-600 hover:bg-red-50" size="lg">
+                Teneriffa Charter anfragen
+              </Button>
+            </CharterRequestForm>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Tenerife;
