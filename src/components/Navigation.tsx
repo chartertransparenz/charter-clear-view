@@ -2,10 +2,40 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import CharterRequestForm from "./CharterRequestForm";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (href: string) => {
+    setIsMenuOpen(false);
+    
+    if (href.startsWith('#')) {
+      const sectionId = href.substring(1);
+      
+      if (location.pathname === '/') {
+        // Already on homepage, just scroll to section
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        // Navigate to homepage then scroll to section
+        navigate('/');
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    } else {
+      navigate(href);
+    }
+  };
 
   const navItems = [
     { href: "#start", label: "Home" },
@@ -36,13 +66,13 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.href}
-                href={item.href}
-                className="text-gray-900 hover:text-ocean-dark transition-smooth"
+                onClick={() => handleNavClick(item.href)}
+                className="text-gray-900 hover:text-ocean-dark transition-smooth bg-transparent border-0 cursor-pointer"
               >
                 {item.label}
-              </a>
+              </button>
             ))}
             <CharterRequestForm>
               <Button 
@@ -73,14 +103,13 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.href}
-                  href={item.href}
-                  className="text-gray-900 hover:text-ocean-dark transition-smooth px-4 py-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleNavClick(item.href)}
+                  className="text-gray-900 hover:text-ocean-dark transition-smooth px-4 py-2 text-left bg-transparent border-0 cursor-pointer"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
               <div className="px-4">
                 <CharterRequestForm>
