@@ -32,7 +32,7 @@ const Territories = () => {
     regions: "Dalmatien (Split, Šibenik, Dubrovnik), Kornaten, Istrien, Kvarner",
     highlights: ["Hunderte Inseln & Buchten", "Hervorragende Infrastruktur", "Klare Regeln & guter Service", "Ideales Klima (Mai–Oktober)"],
     image: destinationCroatia,
-    link: "/reviere/kroatien"
+    link: "/reviere/mittelmeer/kroatien"
   }, {
     rank: 2,
     flag: "🇬🇷",
@@ -40,7 +40,7 @@ const Territories = () => {
     regions: "Kykladen, Saronischer Golf, Ionische Inseln, Dodekanes, Sporaden",
     highlights: ["Inselhopping mit Tavernen-Charme", "Konstante Meltemi-Winde (Sommer)", "Kultur & Natur vereint", "Ideal für Bareboat- oder Skippercharter"],
     image: destinationGreece,
-    link: "/reviere/griechenland"
+    link: "/reviere/mittelmeer/griechenland"
   }, {
     rank: 3,
     flag: "🇮🇹",
@@ -48,7 +48,7 @@ const Territories = () => {
     regions: "Sardinien, Elba/Toskana, Sizilien, Amalfiküste, Aeolische Inseln",
     highlights: ["Vielfalt an Revierarten: ruhig bis anspruchsvoll", "Gutes Essen, Kultur & spektakuläre Küsten", "Auch für Wochenend-Törns beliebt"],
     image: destinationItaly,
-    link: "/reviere/italien"
+    link: "/reviere/mittelmeer/italien"
   }, {
     rank: 4,
     flag: "🇪🇸",
@@ -56,7 +56,7 @@ const Territories = () => {
     regions: "Balearen (Mallorca, Menorca, Ibiza, Formentera), Kanaren",
     highlights: ["Mediterrane Atmosphäre mit Top-Infrastruktur", "Ganzjahresziel (v.a. Kanaren)", "Große Auswahl an Charterbasen"],
     image: destinationSpain,
-    link: "/reviere/spanien"
+    link: "/reviere/mittelmeer/spanien"
   }, {
     rank: 5,
     flag: "🇹🇷",
@@ -64,7 +64,7 @@ const Territories = () => {
     regions: "Türkische Ägäis (Bodrum, Marmaris, Göcek, Fethiye)",
     highlights: ["Blue Cruise-Tradition", "Gület-Charter beliebt", "Warmes Wasser, geschützte Buchten", "Gastfreundschaft & gutes Preis-Leistungs-Verhältnis"],
     image: destinationTurkey,
-    link: "/reviere/tuerkei"
+    link: "/reviere/mittelmeer/tuerkei"
   }, {
     rank: 6,
     flag: "🇫🇷",
@@ -72,7 +72,7 @@ const Territories = () => {
     regions: "Côte d'Azur, Korsika, Bretagne",
     highlights: ["Segeln mit Stil (Cannes, St. Tropez)", "Anspruchsvolles Tidenrevier (Bretagne)", "Sehr gute Yachtausstattung & Infrastruktur"],
     image: destinationFrance,
-    link: "/reviere/frankreich"
+    link: "/reviere/mittelmeer/frankreich"
   }, {
     rank: 7,
     flag: "🇻🇬",
@@ -80,7 +80,7 @@ const Territories = () => {
     regions: "Inselgruppe der Kleinen Antillen, Karibik",
     highlights: ["Traumhafte, kurze Tagesetappen", "Karibik-Feeling pur", "Perfekt für Einsteiger & Familien", "Line-of-sight sailing mit Top-Logistik"],
     image: destinationBvi,
-    link: "/reviere/britische-jungferninseln"
+    link: "/reviere/karibik/britische-jungferninseln"
   }, {
     rank: 8,
     flag: "🇹🇭",
@@ -88,7 +88,7 @@ const Territories = () => {
     regions: "Phuket & Andamanensee",
     highlights: ["Exotische Kulisse mit Felseninseln & Lagunen", "Günstige Charterpreise", "Kultur & Küche an Land", "Beste Reisezeit: Nov–Apr"],
     image: destinationThailand,
-    link: "/reviere/thailand"
+    link: "/reviere/indischer-ozean/asien/thailand"
   }, {
     rank: 9,
     flag: "🇸🇨",
@@ -96,7 +96,7 @@ const Territories = () => {
     regions: "Mahé, Praslin, La Digue, Amiranten",
     highlights: ["Tropisches Inselparadies", "Katamaran bevorzugt", "Glasklares Wasser, Schnorcheln", "Ankern vor Traumstränden"],
     image: destinationSeychelles,
-    link: "/reviere/seychellen"
+    link: "/reviere/indischer-ozean/seychellen"
   }, {
     rank: 10,
     flag: "🇦🇺",
@@ -104,7 +104,7 @@ const Territories = () => {
     regions: "Whitsunday Islands (Great Barrier Reef)",
     highlights: ["Unberührte Inselwelt", "Traumhafte Ankerbuchten", "Tropisches Klima, bestes Segelrevier der Südhalbkugel", "Meist mit Skipper empfohlen"],
     image: destinationAustralia,
-    link: "/reviere/australien"
+    link: "/reviere/suedpazifik/australien"
   }];
 
   // Automatisches Karussell für Top 10 Destinationen
