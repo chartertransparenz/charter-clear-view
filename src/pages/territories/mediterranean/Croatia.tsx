@@ -117,7 +117,16 @@ const Croatia = () => {
                 <ChevronRight className="h-4 w-4" />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+                <BreadcrumbLink 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#reviere';
+                  }}
+                  href="/#reviere"
+                  className="cursor-pointer"
+                >
+                  Reviere
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
                 <ChevronRight className="h-4 w-4" />
