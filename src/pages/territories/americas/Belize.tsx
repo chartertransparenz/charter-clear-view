@@ -14,29 +14,59 @@ const Belize = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Zentralamerika, Karibik" },
+    { icon: MapPin, label: "Charter-Basen", value: "Belize City, Placencia" },
     { icon: Calendar, label: "Beste Zeit", value: "November-April" },
-    { icon: Users, label: "Geeignet für", value: "Abenteuerlustige Segler" },
-    { icon: Anchor, label: "Highlight", value: "Zweitgrößtes Barrier Reef" }
+    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
+    { icon: Anchor, label: "Besonderheit", value: "Belize Barrier Reef" }
   ];
 
-  const regions = [
+  const charterBases = [
     {
-      name: "Belize",
-      link: "/reviere/amerika-bahamas/belize/belize",
-      description: "Barrier Reef und authentische Maya-Kultur",
-      cities: ["Placencia"]
+      name: "Belize City",
+      description: "Hauptstadt und wichtigster Charter-Standort mit guter Infrastruktur",
+      highlights: ["Belize Barrier Reef", "Lighthouse Reef", "Blue Hole", "St. George's Caye"]
+    },
+    {
+      name: "Placencia",
+      description: "Entspanntes Fischerdorf mit authentischem karibischen Flair",
+      highlights: ["Placencia Peninsula", "Silk Cayes", "Laughing Bird Caye", "Seine Bight"]
     }
   ];
 
-  const highlights = [
-    "Zweitgrößtes Barrier Reef der Welt",
-    "Unberührte Cays und Atolls",
-    "Authentische Maya-Kultur",
-    "Exzellente Tauch- und Schnorchelgebiete",
+  const sailingHighlights = [
+    "Größtes Korallenriff der westlichen Hemisphäre",
+    "Weltberühmtes Great Blue Hole",
+    "Unberührte Atolle und Cays",
+    "Reiche Unterwasserwelt",
     "Englischsprachiges Land",
-    "Wenig befahrene Gewässer",
-    "Tropischer Regenwald"
+    "Authentische karibische Kultur",
+    "Geschützte Lagunen und Buchten"
+  ];
+
+  const popularRoutes = [
+    "Belize City - St. George's Caye - Caye Caulker",
+    "Placencia - Silk Cayes - Ranguana Caye",
+    "Belize City - Turneffe Atoll - Lighthouse Reef",
+    "Placencia - Gladden Spit - Whale Shark Area"
+  ];
+
+  const marineHighlights = [
+    {
+      name: "Great Blue Hole",
+      description: "Weltberühmte kreisrunde Unterwasserhöhle mit 124m Tiefe"
+    },
+    {
+      name: "Belize Barrier Reef",
+      description: "Zweitgrößtes Korallenriff der Welt mit UNESCO-Welterbe Status"
+    },
+    {
+      name: "Turneffe Atoll",
+      description: "Größtes Atoll in der westlichen Hemisphäre mit spektakulären Tauchplätzen"
+    },
+    {
+      name: "Hol Chan Marine Reserve",
+      description: "Erstes Meeresschutzgebiet von Belize mit unglaublicher Artenvielfalt"
+    }
   ];
 
   return (
@@ -47,7 +77,7 @@ const Belize = () => {
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
           src={caribbean}
-          alt="Belize"
+          alt="Belize Yacht Charter"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -56,7 +86,7 @@ const Belize = () => {
             <Badge className="mb-4 bg-blue-500 text-white">🇧🇿 Belize</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Belize</h1>
             <p className="text-xl max-w-2xl">
-              Barrier Reef und Maya-Kultur
+              Unberührtes Segelparadies am größten Korallenriff der westlichen Hemisphäre
             </p>
           </div>
         </div>
@@ -88,16 +118,92 @@ const Belize = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in Belize</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Belize bietet ein einzigartiges Segelerlebnis am zweitgrößten 
-              Barrier Reef der Welt. Diese englischsprachige Nation in 
-              Zentralamerika kombiniert spektakuläre Unterwasserwelten mit 
-              authentischer Maya-Kultur und unberührten Cays.
+              Belize ist ein verstecktes Juwel in der Karibik und bietet einige der 
+              spektakulärsten Segel- und Taucherlebnisse der Welt. Das Belize Barrier Reef, 
+              das größte Korallenriff der westlichen Hemisphäre, erstreckt sich über 300 
+              Kilometer entlang der Küste und beherbergt das weltberühmte Great Blue Hole.
             </p>
             <p className="text-lg text-gray-600">
-              Von Placencia aus erkunden abenteuerlustige Segler wenig 
-              befahrene Gewässer, exzellente Tauchgebiete und die faszinierende 
-              Mischung aus karibischem Flair und tropischem Regenwald.
+              Als englischsprachiges Land mit authentischer karibischer Kultur bietet 
+              Belize eine entspannte Atmosphäre, unberührte Cays und Atolle sowie eine 
+              unglaublich vielfältige Unterwasserwelt - perfekt für Segler, die das 
+              Außergewöhnliche suchen.
             </p>
+          </div>
+        </div>
+
+        {/* Charter Bases */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Basen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {charterBases.map((base, index) => (
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      {base.name}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">{base.description}</p>
+                  <div className="space-y-1">
+                    {base.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        <p className="text-sm text-gray-700">{highlight}</p>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Marine Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Unterwasser-Highlights</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {marineHighlights.map((highlight, index) => (
+              <Card key={index} className="shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    {highlight.name}
+                  </h3>
+                  <p className="text-gray-600">{highlight.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Sailing Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {sailingHighlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <p className="font-medium text-gray-800">{highlight}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Popular Routes */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {popularRoutes.map((route, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-3">
+                  <Anchor className="w-5 h-5 text-blue-600" />
+                  <p className="font-medium text-gray-800">{route}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -108,8 +214,8 @@ const Belize = () => {
               Bereit für Belize?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie das zweitgrößte Barrier Reef der Welt und die 
-              authentische Maya-Kultur in diesem einzigartigen Segelrevier.
+              Entdecken Sie das unberührte Segelparadies Belize mit dem Great Blue Hole, 
+              spektakulären Korallenriffen und authentischer karibischer Kultur.
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">

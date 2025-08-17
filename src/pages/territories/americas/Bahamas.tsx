@@ -14,29 +14,40 @@ const Bahamas = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Westatlantik, Karibik" },
+    { icon: MapPin, label: "Charter-Basen", value: "Nassau, Georgetown" },
     { icon: Calendar, label: "Beste Zeit", value: "November-April" },
     { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Inseln", value: "Über 700 Inseln und Cays" }
+    { icon: Anchor, label: "Besonderheit", value: "Kristallklares Wasser" }
   ];
 
-  const regions = [
+  const charterBases = [
     {
-      name: "Bahamas",
-      link: "/reviere/amerika-bahamas/bahamas/bahamas",
-      description: "Traumhafte Sandbänke und kristallklares Wasser",
-      cities: ["Abacos", "Exuma"]
+      name: "Nassau",
+      description: "Hauptstadt der Bahamas mit exzellenter Charter-Infrastruktur",
+      highlights: ["Paradise Island", "Cable Beach", "Straw Market", "Atlantis Resort"]
+    },
+    {
+      name: "Georgetown (Exumas)",
+      description: "Tor zu den spektakulären Exuma Cays",
+      highlights: ["Swimming Pigs", "Iguana Beach", "Thunderball Grotto", "Staniel Cay"]
     }
   ];
 
-  const highlights = [
-    "Kristallklares, türkisfarbenes Wasser",
-    "Spektakuläre Sandbänke",
-    "Swimming Pigs und Nurse Sharks",
-    "Traumhafte, unberührte Buchten",
-    "Perfekt für Bareboat-Charter",
-    "Kurze Distanzen zwischen Inseln",
-    "Karibisches Flair mit US-Standard"
+  const sailingHighlights = [
+    "Türkisfarbenes, kristallklares Wasser",
+    "Unberührte Sandbänke und Cays",
+    "Line-of-sight Navigation",
+    "Schwimmende Schweine auf Big Major Cay",
+    "Perfekte Ankerplätze und Buchten",
+    "Warmes, tropisches Klima",
+    "Exzellente Schnorchel- und Tauchgebiete"
+  ];
+
+  const popularRoutes = [
+    "Nassau - Rose Island - Green Cay",
+    "Exumas: Georgetown - Staniel Cay - Compass Cay",
+    "Nassau - Highbourne Cay - Normans Cay",
+    "Eleuthera: Governor's Harbor - Spanish Wells"
   ];
 
   return (
@@ -47,7 +58,7 @@ const Bahamas = () => {
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
           src={caribbean}
-          alt="Bahamas"
+          alt="Bahamas Yacht Charter"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -56,7 +67,7 @@ const Bahamas = () => {
             <Badge className="mb-4 bg-blue-500 text-white">🇧🇸 Bahamas</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Bahamas</h1>
             <p className="text-xl max-w-2xl">
-              Sandbänke und türkisfarbene Lagunen
+              Paradiesisches Segeln im kristallklaren Wasser der Karibik
             </p>
           </div>
         </div>
@@ -88,59 +99,71 @@ const Bahamas = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in den Bahamas</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Die Bahamas sind das ultimative Paradies für Segelbegeisterte mit 
-              über 700 Inseln und Cays, spektakulären Sandbänken und dem 
-              kristallklarsten Wasser der Welt. Von den berühmten Swimming Pigs 
-              der Exumas bis zu den unberührten Abacos.
+              Die Bahamas gelten als eines der schönsten Segelreviere der Welt. Mit über 700 
+              Inseln und Cays bieten sie unendliche Möglichkeiten für unvergessliche Segeltörns. 
+              Das kristallklare, türkisfarbene Wasser, die weißen Sandstrände und die entspannte 
+              Atmosphäre machen jeden Charter zu einem Traumurlaub.
             </p>
             <p className="text-lg text-gray-600">
-              Mit perfekten Bedingungen für Bareboat-Charter, kurzen Distanzen 
-              zwischen traumhaften Ankerplätzen und einer einzigartigen Tierwelt 
-              bieten die Bahamas karibisches Flair mit amerikanischem Standard.
+              Besonders die Exuma Cays sind weltberühmt für ihre schwimmenden Schweine, 
+              Meerechsen und spektakulären Unterwasserhöhlen. Das warme, tropische Klima 
+              und die moderaten Winde schaffen perfekte Bedingungen für Segler aller Erfahrungsstufen.
             </p>
           </div>
         </div>
 
-        {/* Regions */}
+        {/* Charter Bases */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
-          <div className="grid gap-6">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full max-w-2xl mx-auto">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                        {region.name}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
-                            • {city}
-                          </div>
-                        ))}
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Basen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {charterBases.map((base, index) => (
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      {base.name}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">{base.description}</p>
+                  <div className="space-y-1">
+                    {base.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        <p className="text-sm text-gray-700">{highlight}</p>
                       </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </Link>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
 
-        {/* Highlights */}
+        {/* Sailing Highlights */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
+            {sailingHighlights.map((highlight, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                   <p className="font-medium text-gray-800">{highlight}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Popular Routes */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {popularRoutes.map((route, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-3">
+                  <Anchor className="w-5 h-5 text-blue-600" />
+                  <p className="font-medium text-gray-800">{route}</p>
                 </div>
               </div>
             ))}
@@ -154,8 +177,8 @@ const Bahamas = () => {
               Bereit für die Bahamas?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie das Paradies mit kristallklarem Wasser, 
-              spektakulären Sandbänken und der einzigartigen Tierwelt der Bahamas.
+              Erleben Sie paradiesisches Segeln im kristallklaren Wasser der Bahamas 
+              mit schwimmenden Schweinen und unberührten Traumstränden.
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">

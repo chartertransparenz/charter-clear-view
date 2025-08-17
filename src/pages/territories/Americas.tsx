@@ -22,23 +22,33 @@ const Americas = () => {
   const regions = [
     {
       name: "Bahamas",
+      link: "/reviere/amerika-bahamas/bahamas",
       bases: "Nassau, Georgetown",
       description: "Kristallklares Wasser, unberührte Sandbänke und traumhafte Ankerplätze in den Exumas."
     },
     {
+      name: "Mexiko (Karibik)",
+      link: "/reviere/amerika-bahamas/mexiko",
+      bases: "Cancún, Cozumel",
+      description: "Tropisches Paradies mit Maya-Kultur, Cenoten und bunten Korallenriffen."
+    },
+    {
+      name: "Belize",
+      link: "/reviere/amerika-bahamas/belize",
+      bases: "Belize City, Placencia",
+      description: "Unberührtes Segelparadies am größten Korallenriff der westlichen Hemisphäre."
+    },
+    {
       name: "Florida Keys",
+      link: "#",
       bases: "Key West, Key Largo",
       description: "Einzigartige Inselkette mit tropischem Flair und entspanntem Segeln."
     },
     {
       name: "USA Ostküste",
+      link: "#",
       bases: "Newport, Boston, Annapolis",
       description: "Klassisches amerikanisches Segeln mit historischen Häfen und maritimer Tradition."
-    },
-    {
-      name: "Mexiko (Karibik)",
-      bases: "Cancún, Cozumel",
-      description: "Tropisches Paradies mit Maya-Kultur, Cenoten und bunten Korallenriffen."
     }
   ];
 
@@ -146,14 +156,16 @@ const Americas = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {regions.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-2 mb-3">
-                  <MapPin className="w-5 h-5 text-blue-600" />
-                  <h3 className="text-xl font-semibold text-gray-800">{region.name}</h3>
+              <Link key={index} to={region.link} className={region.link === "#" ? "pointer-events-none" : "group"}>
+                <div className={`bg-white p-6 rounded-lg shadow-lg ${region.link !== "#" ? "hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer" : "opacity-60"}`}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                    <h3 className={`text-xl font-semibold text-gray-800 ${region.link !== "#" ? "group-hover:text-blue-600 transition-colors" : ""}`}>{region.name}</h3>
+                  </div>
+                  <p className="text-sm text-blue-600 mb-3 font-medium">Basen: {region.bases}</p>
+                  <p className="text-gray-600">{region.description}</p>
                 </div>
-                <p className="text-sm text-blue-600 mb-3 font-medium">Basen: {region.bases}</p>
-                <p className="text-gray-600">{region.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

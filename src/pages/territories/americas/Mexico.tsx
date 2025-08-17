@@ -14,29 +14,59 @@ const Mexico = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Golf von Mexiko, Karibik" },
+    { icon: MapPin, label: "Charter-Basen", value: "Cancún, Cozumel" },
     { icon: Calendar, label: "Beste Zeit", value: "November-April" },
     { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Highlight", value: "Baja California und Karibikküste" }
+    { icon: Anchor, label: "Besonderheit", value: "Maya-Kultur & Cenoten" }
   ];
 
-  const regions = [
+  const charterBases = [
     {
-      name: "Mexiko",
-      link: "/reviere/amerika-bahamas/mexiko/mexiko",
-      description: "Vielfältige Küsten von Baja California bis zur Karibik",
-      cities: ["Baja California"]
+      name: "Cancún",
+      description: "Moderne Touristenmetropole mit erstklassiger Charter-Infrastruktur",
+      highlights: ["Marina V&V", "Isla Mujeres", "Mesoamerikanisches Riff", "Maya-Ruinen"]
+    },
+    {
+      name: "Cozumel",
+      description: "Taucherparadies mit spektakulären Korallenriffen",
+      highlights: ["Palancar Riff", "Santa Rosa Wall", "Chankanaab Park", "San Gervasio Ruinen"]
     }
   ];
 
-  const highlights = [
-    "Vielfältige Küstenregionen",
-    "Baja California - Pazifikküste",
-    "Karibikküste mit Maya-Ruinen",
-    "Exzellente mexikanische Küche",
-    "Günstige Charterpreise",
-    "Warmes, tropisches Klima",
-    "Reiche Kultur und Geschichte"
+  const sailingHighlights = [
+    "Zweitgrößtes Korallenriff der Welt",
+    "Kristallklare Cenoten zum Schwimmen",
+    "Maya-Kulturstätten und Pyramiden",
+    "Tropisches Klima ganzjährig",
+    "Bunte Unterwasserwelt",
+    "Entspannte karibische Atmosphäre",
+    "Exzellente mexikanische Küche"
+  ];
+
+  const popularRoutes = [
+    "Cancún - Isla Mujeres - Isla Contoy",
+    "Cozumel - Playa del Carmen - Tulum",
+    "Cancún - Holbox - Rio Lagartos",
+    "Cozumel - Banco Chinchorro - Xcalak"
+  ];
+
+  const culturalHighlights = [
+    {
+      name: "Chichen Itzá",
+      description: "Eine der bekanntesten Maya-Stätten mit der berühmten Kukulcán-Pyramide"
+    },
+    {
+      name: "Tulum",
+      description: "Spektakuläre Maya-Ruinen direkt am karibischen Meer"
+    },
+    {
+      name: "Cenoten",
+      description: "Kristallklare Süßwasserhöhlen, heilige Stätten der Maya"
+    },
+    {
+      name: "Isla Mujeres",
+      description: "Charmante Insel mit entspannter Atmosphäre und bunten Häusern"
+    }
   ];
 
   return (
@@ -47,16 +77,16 @@ const Mexico = () => {
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
           src={caribbean}
-          alt="Mexiko"
+          alt="Mexiko Yacht Charter"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇲🇽 Mexiko</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Mexiko</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Mexiko (Karibik)</h1>
             <p className="text-xl max-w-2xl">
-              Pazifik bis Karibik - Vielfalt pur
+              Tropisches Paradies mit Maya-Kultur und spektakulären Korallenriffen
             </p>
           </div>
         </div>
@@ -86,17 +116,93 @@ const Mexico = () => {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in Mexiko</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in der mexikanischen Karibik</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Mexiko bietet eine unglaubliche Vielfalt an Segelrevieren - von 
-              der rauen Pazifikküste Baja Californias bis zur tropischen 
-              Karibikküste mit ihren Maya-Ruinen und türkisfarbenem Wasser.
+              Die mexikanische Karibikküste vereint traumhaftes Segeln mit faszinierender 
+              Maya-Kultur. Das zweitgrößte Korallenriff der Welt, kristallklare Cenoten 
+              und spektakuläre Unterwasserhöhlen machen diese Region zu einem einzigartigen 
+              Segelrevier mit unvergleichlichen Tauchmöglichkeiten.
             </p>
             <p className="text-lg text-gray-600">
-              Mit günstigen Charterpreisen, exzellenter mexikanischer Küche und 
-              einer reichen Kultur bietet Mexiko authentische Segelerlebnisse 
-              für alle Geschmäcker und Erfahrungsstufen.
+              Von den modernen Marinas in Cancún bis zu den authentischen Fischerorten 
+              an der Costa Maya bietet Mexiko eine perfekte Mischung aus Komfort, 
+              Abenteuer und kulturellen Erlebnissen inmitten tropischer Schönheit.
             </p>
+          </div>
+        </div>
+
+        {/* Charter Bases */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Basen</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {charterBases.map((base, index) => (
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MapPin className="w-5 h-5 text-blue-600" />
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      {base.name}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">{base.description}</p>
+                  <div className="space-y-1">
+                    {base.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        <p className="text-sm text-gray-700">{highlight}</p>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Cultural Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Kulturelle Highlights</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {culturalHighlights.map((highlight, index) => (
+              <Card key={index} className="shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    {highlight.name}
+                  </h3>
+                  <p className="text-gray-600">{highlight.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Sailing Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {sailingHighlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <p className="font-medium text-gray-800">{highlight}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Popular Routes */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {popularRoutes.map((route, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-3">
+                  <Anchor className="w-5 h-5 text-blue-600" />
+                  <p className="font-medium text-gray-800">{route}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -107,8 +213,8 @@ const Mexico = () => {
               Bereit für Mexiko?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie die Vielfalt mexikanischer Gewässer von 
-              Baja California bis zur Maya-Küste der Karibik.
+              Entdecken Sie die Geheimnisse der Maya-Kultur, tauchen Sie in kristallklaren 
+              Cenoten und segeln Sie entlang des zweitgrößten Korallenriffs der Welt.
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">

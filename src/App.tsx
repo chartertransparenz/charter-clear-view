@@ -86,6 +86,9 @@ import Pacific from "./pages/territories/Pacific";
 
 // America territories
 import Americas from "./pages/territories/Americas";
+import Bahamas from "./pages/territories/americas/Bahamas";
+import Mexico from "./pages/territories/americas/Mexico";
+import Belize from "./pages/territories/americas/Belize";
 
 // Expedition territories
 import Expeditions from "./pages/territories/Expeditions";
@@ -235,6 +238,9 @@ function App() {
 
              {/* America & Bahamas routes */}
              <Route path="/reviere/amerika-bahamas" element={<Americas />} />
+             <Route path="/reviere/amerika-bahamas/bahamas" element={<Bahamas />} />
+             <Route path="/reviere/amerika-bahamas/mexiko" element={<Mexico />} />
+             <Route path="/reviere/amerika-bahamas/belize" element={<Belize />} />
 
             {/* Expedition routes */}
             <Route path="/reviere/expedition" element={<Expeditions />} />
