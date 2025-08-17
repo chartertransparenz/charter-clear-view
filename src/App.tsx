@@ -123,6 +123,13 @@ function App() {
             <Route path="/reviere/karibik/leeward-inseln" element={<LeewardIslands />} />
             <Route path="/reviere/karibik/windward-inseln" element={<WindwardIslands />} />
             <Route path="/reviere/karibik/kuba" element={<Cuba />} />
+            
+            {/* Caribbean Charter Location routes */}
+            <Route path="/reviere/karibik/charter-standorte/tortola" element={<Tortola />} />
+            <Route path="/reviere/karibik/charter-standorte/st-thomas" element={<StThomas />} />
+            <Route path="/reviere/karibik/charter-standorte/antigua" element={<Antigua />} />
+            <Route path="/reviere/karibik/charter-standorte/martinique" element={<Martinique />} />
+            <Route path="/reviere/karibik/charter-standorte/havanna" element={<Havanna />} />
 
             {/* Indian Ocean routes */}
             <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
