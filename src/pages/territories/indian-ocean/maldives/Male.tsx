@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import maldivesSailing from "@/assets/maldives-sailing.jpg";
 
 const Male = () => {
   useEffect(() => {
@@ -84,7 +85,7 @@ const Male = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/b8357492-3fda-42a7-8fcc-bd564c0db1d7.png"
+          src={maldivesSailing}
           alt="Malé Malediven"
           className="w-full h-full object-cover"
         />

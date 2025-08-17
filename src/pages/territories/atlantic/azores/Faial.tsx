@@ -14,6 +14,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
+import azoresSailing from "@/assets/azores-sailing.jpg";
 
 const Faial = () => {
   useEffect(() => {
@@ -92,7 +93,7 @@ const Faial = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/f75a2961-5386-48a3-9aae-e12df9b325f6.png"
+          src={azoresSailing}
           alt="Faial Azoren"
           className="w-full h-full object-cover"
         />

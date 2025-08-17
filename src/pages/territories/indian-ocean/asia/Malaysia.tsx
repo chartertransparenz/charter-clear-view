@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import malaysiaSailing from "@/assets/malaysia-sailing.jpg";
 
 const Malaysia = () => {
   useEffect(() => {
@@ -71,7 +72,7 @@ const Malaysia = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/68a41bf5-1573-472d-8722-34cdca418a0e.png"
+          src={malaysiaSailing}
           alt="Malaysia"
           className="w-full h-full object-cover"
         />
