@@ -41,7 +41,7 @@ const CanaryIslands = () => {
     },
     {
       name: "Fuerteventura",
-      link: "#",
+      link: "/reviere/atlantik/kanaren/fuerteventura",
       description: "Windige Insel für Wassersportler",
       cities: ["Puerto del Rosario", "Corralejo"]
     }

@@ -29,13 +29,13 @@ const Azores = () => {
     },
     {
       name: "Terceira",
-      link: "#",
+      link: "/reviere/atlantik/azoren/terceira",
       description: "UNESCO-Weltkulturerbe Angra do Heroísmo",
       cities: ["Angra do Heroísmo", "Praia da Vitória"]
     },
     {
       name: "Faial",
-      link: "#",
+      link: "/reviere/atlantik/azoren/faial",
       description: "Blaue Insel mit dem berühmten Peter Café Sport",
       cities: ["Horta", "Castelo Branco"]
     }

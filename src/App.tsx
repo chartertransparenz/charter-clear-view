@@ -39,6 +39,8 @@ import Balearics from "./pages/territories/mediterranean/spain/Balearics";
 import Atlantic from "./pages/territories/Atlantic";
 import Azores from "./pages/territories/atlantic/Azores";
 import SaoMiguel from "./pages/territories/atlantic/azores/SaoMiguel";
+import Terceira from "./pages/territories/atlantic/azores/Terceira";
+import Faial from "./pages/territories/atlantic/azores/Faial";
 import FrenchAtlanticCoast from "./pages/territories/atlantic/FrenchAtlanticCoast";
 import Biskaya from "./pages/territories/atlantic/french-atlantic-coast/Biskaya";
 import BrittanyNormandy from "./pages/territories/atlantic/french-atlantic-coast/BrittanyNormandy";
@@ -46,6 +48,7 @@ import CanaryIslands from "./pages/territories/atlantic/CanaryIslands";
 import GranCanaria from "./pages/territories/atlantic/canary-islands/GranCanaria";
 import Tenerife from "./pages/territories/atlantic/canary-islands/Tenerife";
 import Lanzarote from "./pages/territories/atlantic/canary-islands/Lanzarote";
+import Fuerteventura from "./pages/territories/atlantic/canary-islands/Fuerteventura";
 
 // Caribbean territories
 import Caribbean from "./pages/territories/Caribbean";
@@ -145,6 +148,8 @@ function App() {
             <Route path="/reviere/atlantik" element={<Atlantic />} />
             <Route path="/reviere/atlantik/azoren" element={<Azores />} />
             <Route path="/reviere/atlantik/azoren/sao-miguel" element={<SaoMiguel />} />
+            <Route path="/reviere/atlantik/azoren/terceira" element={<Terceira />} />
+            <Route path="/reviere/atlantik/azoren/faial" element={<Faial />} />
             <Route path="/reviere/atlantik/franzoesische-atlantikkueste" element={<FrenchAtlanticCoast />} />
             <Route path="/reviere/atlantik/franzoesische-atlantikkueste/biskaya" element={<Biskaya />} />
             <Route path="/reviere/atlantik/franzoesische-atlantikkueste/bretagne-normandie" element={<BrittanyNormandy />} />
@@ -152,6 +157,7 @@ function App() {
             <Route path="/reviere/atlantik/kanaren/gran-canaria" element={<GranCanaria />} />
             <Route path="/reviere/atlantik/kanaren/teneriffa" element={<Tenerife />} />
             <Route path="/reviere/atlantik/kanaren/lanzarote" element={<Lanzarote />} />
+            <Route path="/reviere/atlantik/kanaren/fuerteventura" element={<Fuerteventura />} />
 
             {/* Caribbean routes */}
             <Route path="/reviere/karibik" element={<Caribbean />} />
