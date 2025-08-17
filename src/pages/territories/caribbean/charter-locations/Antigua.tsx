@@ -6,6 +6,14 @@ import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane, Crown } from "lucide-react
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
 import caribbean from "@/assets/caribbean.jpg";
 
 const Antigua = () => {
@@ -97,6 +105,35 @@ const Antigua = () => {
             Zurück zur Karibik
           </Button>
         </Link>
+      </div>
+
+      {/* Breadcrumb Navigation - Fixed at top */}
+      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Start</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/reviere/karibik">Karibik</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/reviere/karibik/lee-inseln">Lee-Inseln</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Antigua</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 py-12">

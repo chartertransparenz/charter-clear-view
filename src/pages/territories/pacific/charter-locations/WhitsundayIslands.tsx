@@ -6,6 +6,14 @@ import { ArrowLeft, MapPin, Anchor, Plane, Heart, Fish } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
 import pacific from "@/assets/pacific.jpg";
 
 const WhitsundayIslands = () => {
@@ -125,6 +133,35 @@ const WhitsundayIslands = () => {
             Zurück zum Südpazifik
           </Button>
         </Link>
+      </div>
+
+      {/* Breadcrumb Navigation - Fixed at top */}
+      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Start</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/reviere/suedpazifik">Südpazifik</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/reviere/suedpazifik/australien">Australien</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Whitsunday Islands</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 py-12">
