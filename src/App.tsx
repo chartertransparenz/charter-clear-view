@@ -35,6 +35,18 @@ import Sporades from "./pages/territories/mediterranean/greece/Sporades";
 // Spanish regions
 import Balearics from "./pages/territories/mediterranean/spain/Balearics";
 
+// French regions
+import CoteAzur from "./pages/territories/mediterranean/france/CoteAzur";
+import Korsika from "./pages/territories/mediterranean/france/Korsika";
+
+// Turkish regions
+import TuerkischeAegaeis from "./pages/territories/mediterranean/turkey/TuerkischeAegaeis";
+
+// Italian regions
+import Sardinien from "./pages/territories/mediterranean/italy/Sardinien";
+import Sizilien from "./pages/territories/mediterranean/italy/Sizilien";
+import Toskana from "./pages/territories/mediterranean/italy/Toskana";
+
 // Atlantic territories
 import Atlantic from "./pages/territories/Atlantic";
 import Azores from "./pages/territories/atlantic/Azores";
@@ -181,6 +193,18 @@ function App() {
             
             {/* Spanish region routes */}
             <Route path="/reviere/mittelmeer/spanien/balearen" element={<Balearics />} />
+            
+            {/* French region routes */}
+            <Route path="/reviere/mittelmeer/frankreich/cote-azur" element={<CoteAzur />} />
+            <Route path="/reviere/mittelmeer/frankreich/korsika" element={<Korsika />} />
+            
+            {/* Turkish region routes */}
+            <Route path="/reviere/mittelmeer/tuerkei/tuerkische-aegaeis" element={<TuerkischeAegaeis />} />
+            
+            {/* Italian region routes */}
+            <Route path="/reviere/mittelmeer/italien/sardinien" element={<Sardinien />} />
+            <Route path="/reviere/mittelmeer/italien/sizilien" element={<Sizilien />} />
+            <Route path="/reviere/mittelmeer/italien/toskana" element={<Toskana />} />
             
             {/* Atlantic routes */}
             <Route path="/reviere/atlantik" element={<Atlantic />} />
