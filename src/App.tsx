@@ -72,6 +72,13 @@ import Seychelles from "./pages/territories/Seychelles";
 
 // North Europe territories
 import NorthEurope from "./pages/territories/NorthEurope";
+import GermanBalticSea from "./pages/territories/north-europe/GermanBalticSea";
+import NorthSea from "./pages/territories/north-europe/NorthSea";
+import Scandinavia from "./pages/territories/north-europe/Scandinavia";
+import Belgium from "./pages/territories/north-europe/nordsee/Belgium";
+import Holland from "./pages/territories/north-europe/nordsee/Holland";
+import Denmark from "./pages/territories/north-europe/skandinavien/Denmark";
+import Sweden from "./pages/territories/north-europe/skandinavien/Sweden";
 
 // Pacific territories
 import Pacific from "./pages/territories/Pacific";
@@ -212,7 +219,15 @@ function App() {
             <Route path="/reviere/indischer-ozean/malediven/baa-atoll" element={<BaaAtoll />} />
 
             {/* North Europe routes */}
+            {/* North Europe routes */}
             <Route path="/reviere/nord-europa" element={<NorthEurope />} />
+            <Route path="/reviere/nord-europa/deutsche-ostsee" element={<GermanBalticSea />} />
+            <Route path="/reviere/nord-europa/nordsee" element={<NorthSea />} />
+            <Route path="/reviere/nord-europa/skandinavien" element={<Scandinavia />} />
+            <Route path="/reviere/nord-europa/nordsee/belgien" element={<Belgium />} />
+            <Route path="/reviere/nord-europa/nordsee/holland" element={<Holland />} />
+            <Route path="/reviere/nord-europa/skandinavien/daenemark" element={<Denmark />} />
+            <Route path="/reviere/nord-europa/skandinavien/schweden" element={<Sweden />} />
 
             {/* Pacific routes */}
             <Route path="/reviere/suedpazifik" element={<Pacific />} />

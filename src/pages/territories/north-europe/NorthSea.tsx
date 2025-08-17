@@ -23,13 +23,13 @@ const NorthSea = () => {
   const regions = [
     {
       name: "Belgien",
-      link: "/reviere/nord-ostsee/nordsee/belgien",
+      link: "/reviere/nord-europa/nordsee/belgien",
       description: "Kurze belgische Küste mit modernen Marinas",
       cities: ["Nieuwpoort"]
     },
     {
       name: "Holland",
-      link: "/reviere/nord-ostsee/nordsee/holland",
+      link: "/reviere/nord-europa/nordsee/holland",
       description: "IJsselmeer und Nordsee mit extremen Gezeiten",
       cities: ["IJsselmeer"]
     }
