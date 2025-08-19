@@ -25,7 +25,7 @@ export default function KvarnerBay() {
     { icon: MapPin, label: 'Region', value: 'Kvarner Bucht' },
     { icon: Clock, label: 'Beste Zeit', value: 'Mai - Oktober' },
     { icon: Users, label: 'Geeignet für', value: 'Alle Levels' },
-    { icon: Anchor, label: 'Marinas', value: '20+ Marinas' },
+    { icon: Anchor, label: 'Marinas', value: '8+ Häfen' },
     { icon: Wind, label: 'Windverhältnisse', value: 'Bora & Schirokko' },
     { icon: Sun, label: 'Sonnentage', value: '260+ pro Jahr' }
   ];
