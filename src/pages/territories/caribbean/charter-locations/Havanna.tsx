@@ -142,7 +142,7 @@ const Havanna = () => {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-4">
               <p className="text-orange-800 font-semibold">
-                ⚠️ Wichtiger Hinweis: Aktuell gibt es keinen Yachtcharter-Service direkt ab Havanna. 
+                ⚠️ Wichtiger Hinweis: Aktuell gibt es keinen Yachtcharter direkt ab Havanna. 
                 Charter-Yachten starten ab <strong>Cienfuegos</strong> (ca. 3,5 Stunden Fahrt von Havanna).
               </p>
             </div>
