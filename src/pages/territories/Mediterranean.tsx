@@ -20,7 +20,17 @@ const Mediterranean = () => {
     window.scrollTo(0, 0);
   }, []);
   const regions = [
-    { name: "Kroatien", link: "/reviere/mittelmeer/kroatien", areas: ["Istrien", "Kvarner Bucht", "Norddalmatien", "Mitteldalmatien", "Süddalmatien"] },
+    { 
+      name: "Kroatien", 
+      link: "/reviere/mittelmeer/kroatien", 
+      areas: [
+        { name: "Istrien", link: "/reviere/mittelmeer/kroatien/istrien" },
+        { name: "Kvarner Bucht", link: "/reviere/mittelmeer/kroatien/kvarner-bucht" },
+        { name: "Norddalmatien", link: "/reviere/mittelmeer/kroatien/norddalmatien" },
+        { name: "Mitteldalmatien", link: "/reviere/mittelmeer/kroatien/mitteldalmatien" },
+        { name: "Süddalmatien", link: "/reviere/mittelmeer/kroatien/sueddalmatien" }
+      ]
+    },
     { name: "Griechenland", link: "/reviere/mittelmeer/griechenland", areas: ["Kykladen", "Ionische Inseln", "Dodekanes", "Sporaden"] },
     { name: "Italien", link: "/reviere/mittelmeer/italien", areas: ["Amalfiküste", "Toskana", "Sardinien", "Sizilien"] },
     { name: "Spanien", link: "/reviere/mittelmeer/spanien", areas: ["Balearen", "Costa Brava", "Valencia"] },
@@ -123,13 +133,19 @@ const Mediterranean = () => {
                     <MapPin className="w-4 h-4 text-orange-500" />
                     <h3 className="text-xl font-semibold text-gray-800 group-hover:text-orange-600 transition-colors">{region.name}</h3>
                   </div>
-                  <div className="space-y-2">
-                    {region.areas.map((area, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm">
-                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                        <span className="text-gray-600">{area}</span>
-                      </div>
-                    ))}
+                   <div className="space-y-2">
+                     {region.areas.map((area, idx) => (
+                       <div key={idx} className="flex items-center gap-2 text-sm">
+                         <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                         {typeof area === 'object' && area.link ? (
+                           <Link to={area.link} className="text-gray-600 hover:text-orange-600 transition-colors" onClick={(e) => e.stopPropagation()}>
+                             {area.name}
+                           </Link>
+                         ) : (
+                           <span className="text-gray-600">{typeof area === 'string' ? area : area.name}</span>
+                         )}
+                       </div>
+                     ))}
                   </div>
                 </div>
               </Link>
