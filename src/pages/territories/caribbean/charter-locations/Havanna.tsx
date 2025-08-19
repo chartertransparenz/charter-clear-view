@@ -6,114 +6,85 @@ import { ArrowLeft, MapPin, Anchor, Music, Building, Plane } from "lucide-react"
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import caribbean from "@/assets/caribbean.jpg";
-
 const Havanna = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const marinas = [
-    {
-      name: "Marina Hemingway",
-      description: "Hauptcharter-Marina westlich von Havanna",
-      amenities: ["400+ Liegeplätze", "Fuel Station", "Restaurants", "Immigration", "Reparaturen", "Sicherheitsdienst"]
-    },
-    {
-      name: "Puerto de La Habana",
-      description: "Historischer Hafen im Zentrum der Altstadt",
-      amenities: ["Zentrale Lage", "Altstadt-Zugang", "Restaurants", "Museen", "Zoll", "Begrenzte Liegeplätze"]
-    },
-    {
-      name: "Marina Tarará",
-      description: "Kleinere Marina östlich von Havanna",
-      amenities: ["80 Liegeplätze", "Geschützt", "Restaurant", "Strand", "Ruhe", "Naturschutz"]
-    }
-  ];
-
-  const highlights = [
-    "UNESCO-Weltkulturerbe Altstadt",
-    "Authentische Karibikkultur",
-    "Lebendige Musik- und Tanzszene",
-    "Weltberühmte Zigarren und Rum",
-    "Wenig befahrene Gewässer",
-    "Gastfreundliche Bevölkerung",
-    "Revolutionsgeschichte hautnah"
-  ];
-
-  const distances = [
-    { destination: "Cayo Largo", distance: "90 sm", time: "12-15 Std." },
-    { destination: "Isla de la Juventud", distance: "85 sm", time: "12-14 Std." },
-    { destination: "Varadero", distance: "80 sm", time: "10-12 Std." },
-    { destination: "Jardines del Rey", distance: "200 sm", time: "28-30 Std." },
-    { destination: "Key West (USA)", distance: "90 sm", time: "12-15 Std." }
-  ];
-
-  const attractions = [
-    {
-      name: "Habana Vieja",
-      description: "UNESCO-Weltkulturerbe mit kolonialer Architektur"
-    },
-    {
-      name: "Malecón",
-      description: "Berühmte Uferpromenade mit Blick auf das Meer"
-    },
-    {
-      name: "Kapitol",
-      description: "Imposantes Regierungsgebäude nach Vorbild von Washington"
-    },
-    {
-      name: "Plaza de Armas",
-      description: "Ältester Platz Havannas mit Antiquitätenmärkten"
-    },
-    {
-      name: "Hemingway Museum",
-      description: "Finca Vigía - Wohnhaus des berühmten Schriftstellers"
-    },
-    {
-      name: "Tropicana Club",
-      description: "Legendärer Nachtclub mit spektakulären Shows"
-    }
-  ];
-
-  const practical = [
-    {
-      title: "Einreise",
-      info: "Touristenkarte erforderlich, gültig 30 Tage"
-    },
-    {
-      title: "Währung",
-      info: "Kubanischer Peso (CUP), Euro und USD akzeptiert"
-    },
-    {
-      title: "Sprache",
-      info: "Spanisch, etwas Englisch in Tourismusbereich"
-    },
-    {
-      title: "Klima",
-      info: "Tropisch, beste Zeit November-April"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const marinas = [{
+    name: "Marina Hemingway",
+    description: "Hauptcharter-Marina westlich von Havanna",
+    amenities: ["400+ Liegeplätze", "Fuel Station", "Restaurants", "Immigration", "Reparaturen", "Sicherheitsdienst"]
+  }, {
+    name: "Puerto de La Habana",
+    description: "Historischer Hafen im Zentrum der Altstadt",
+    amenities: ["Zentrale Lage", "Altstadt-Zugang", "Restaurants", "Museen", "Zoll", "Begrenzte Liegeplätze"]
+  }, {
+    name: "Marina Tarará",
+    description: "Kleinere Marina östlich von Havanna",
+    amenities: ["80 Liegeplätze", "Geschützt", "Restaurant", "Strand", "Ruhe", "Naturschutz"]
+  }];
+  const highlights = ["UNESCO-Weltkulturerbe Altstadt", "Authentische Karibikkultur", "Lebendige Musik- und Tanzszene", "Weltberühmte Zigarren und Rum", "Wenig befahrene Gewässer", "Gastfreundliche Bevölkerung", "Revolutionsgeschichte hautnah"];
+  const distances = [{
+    destination: "Cayo Largo",
+    distance: "90 sm",
+    time: "12-15 Std."
+  }, {
+    destination: "Isla de la Juventud",
+    distance: "85 sm",
+    time: "12-14 Std."
+  }, {
+    destination: "Varadero",
+    distance: "80 sm",
+    time: "10-12 Std."
+  }, {
+    destination: "Jardines del Rey",
+    distance: "200 sm",
+    time: "28-30 Std."
+  }, {
+    destination: "Key West (USA)",
+    distance: "90 sm",
+    time: "12-15 Std."
+  }];
+  const attractions = [{
+    name: "Habana Vieja",
+    description: "UNESCO-Weltkulturerbe mit kolonialer Architektur"
+  }, {
+    name: "Malecón",
+    description: "Berühmte Uferpromenade mit Blick auf das Meer"
+  }, {
+    name: "Kapitol",
+    description: "Imposantes Regierungsgebäude nach Vorbild von Washington"
+  }, {
+    name: "Plaza de Armas",
+    description: "Ältester Platz Havannas mit Antiquitätenmärkten"
+  }, {
+    name: "Hemingway Museum",
+    description: "Finca Vigía - Wohnhaus des berühmten Schriftstellers"
+  }, {
+    name: "Tropicana Club",
+    description: "Legendärer Nachtclub mit spektakulären Shows"
+  }];
+  const practical = [{
+    title: "Einreise",
+    info: "Touristenkarte erforderlich, gültig 30 Tage"
+  }, {
+    title: "Währung",
+    info: "Kubanischer Peso (CUP), Euro und USD akzeptiert"
+  }, {
+    title: "Sprache",
+    info: "Spanisch, etwas Englisch in Tourismusbereich"
+  }, {
+    title: "Klima",
+    info: "Tropisch, beste Zeit November-April"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src={caribbean}
-          alt="Havanna, Kuba"
-          className="w-full h-full object-cover"
-        />
+        <img src={caribbean} alt="Havanna, Kuba" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -124,10 +95,7 @@ const Havanna = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/karibik" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/karibik" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zur Karibik
@@ -216,30 +184,21 @@ const Havanna = () => {
 
         {/* Marinas */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Häfen & Marinas in Havanna</h2>
-          <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
-            <p className="text-yellow-800 text-center">
-              <strong>Hinweis:</strong> Diese Marinas sind nur für Besichtigungen interessant. 
-              Charter-Yachten starten ab Cienfuegos.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Häfen &amp; Marinas in Havanna </h2>
+          
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {marinas.map((marina, index) => (
-              <Card key={index} className="h-full opacity-75">
+            {marinas.map((marina, index) => <Card key={index} className="h-full opacity-75">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">{marina.name}</h3>
                   <p className="text-gray-600 mb-4">{marina.description}</p>
                   <div className="space-y-2">
-                    {marina.amenities.map((amenity, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
+                    {marina.amenities.map((amenity, idx) => <div key={idx} className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                         <span className="text-sm text-gray-700">{amenity}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -247,12 +206,10 @@ const Havanna = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Praktische Informationen</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {practical.map((item, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
+            {practical.map((item, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
                 <h3 className="font-semibold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.info}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -260,8 +217,7 @@ const Havanna = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Distanzen & Fahrtzeiten</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {distances.map((item, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
+            {distances.map((item, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
                 <div className="flex justify-between items-center">
                   <span className="font-semibold text-gray-800">{item.destination}</span>
                   <div className="text-right">
@@ -269,8 +225,7 @@ const Havanna = () => {
                     <div className="text-sm text-gray-600">{item.time}</div>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -278,14 +233,12 @@ const Havanna = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Sehenswürdigkeiten</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {attractions.map((attraction, index) => (
-              <Card key={index}>
+            {attractions.map((attraction, index) => <Card key={index}>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{attraction.name}</h3>
                   <p className="text-gray-600">{attraction.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -293,14 +246,12 @@ const Havanna = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Havanna besuchen?</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+            {highlights.map((highlight, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                   <p className="font-medium text-gray-800">{highlight}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -322,8 +273,6 @@ const Havanna = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Havanna;
