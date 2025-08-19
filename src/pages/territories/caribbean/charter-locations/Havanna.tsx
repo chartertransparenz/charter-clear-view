@@ -117,10 +117,10 @@ const Havanna = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <Badge className="mb-4 bg-green-700 text-white">🇨🇺 Charter-Standort</Badge>
+            <Badge className="mb-4 bg-orange-600 text-white">🇨🇺 Reiseziel</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Havanna</h1>
             <p className="text-xl max-w-2xl">
-              Die lebendige Hauptstadt mit revolutionärem Charme
+              Die lebendige Hauptstadt - ideal vor oder nach dem Charter
             </p>
           </div>
         </div>
@@ -169,52 +169,70 @@ const Havanna = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <div className="flex items-center gap-2 mb-4">
-              <Music className="w-5 h-5 text-green-700" />
-              <h2 className="text-2xl font-bold text-gray-800">Charter-Standort Havanna</h2>
+              <Music className="w-5 h-5 text-orange-600" />
+              <h2 className="text-2xl font-bold text-gray-800">Havanna - Ein Muss vor oder nach dem Charter</h2>
+            </div>
+            <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-4">
+              <p className="text-orange-800 font-semibold">
+                ⚠️ Wichtiger Hinweis: Aktuell gibt es keinen Yachtcharter-Service direkt ab Havanna. 
+                Charter-Yachten starten ab <strong>Cienfuegos</strong> (ca. 3,5 Stunden Fahrt von Havanna).
+              </p>
             </div>
             <p className="text-lg text-gray-600 mb-4">
-              Havanna ist der einzigartige Charter-Standort für authentische Karibik-Erlebnisse. 
-              Die kubanische Hauptstadt bietet eine faszinierende Mischung aus Geschichte, 
-              Kultur und unberührten Segelrevieren abseits der touristischen Pfade.
+              Havanna ist dennoch eine Reise wert! Die kubanische Hauptstadt eignet sich perfekt für 
+              einen Aufenthalt vor oder nach Ihrem Segeltörn ab Cienfuegos. Erleben Sie die 
+              faszinierende Mischung aus Geschichte, Kultur und authentischem kubanischen Lebensgefühl.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div className="p-3 bg-green-50 rounded-lg">
-                <MapPin className="w-6 h-6 text-green-700 mx-auto mb-2" />
+              <div className="p-3 bg-orange-50 rounded-lg">
+                <MapPin className="w-6 h-6 text-orange-600 mx-auto mb-2" />
                 <div className="font-semibold">Position</div>
                 <div className="text-sm text-gray-600">23°08'N 82°23'W</div>
               </div>
-              <div className="p-3 bg-green-50 rounded-lg">
-                <Plane className="w-6 h-6 text-green-700 mx-auto mb-2" />
+              <div className="p-3 bg-orange-50 rounded-lg">
+                <Plane className="w-6 h-6 text-orange-600 mx-auto mb-2" />
                 <div className="font-semibold">Anreise</div>
                 <div className="text-sm text-gray-600">HAV Airport</div>
               </div>
-              <div className="p-3 bg-green-50 rounded-lg">
-                <Anchor className="w-6 h-6 text-green-700 mx-auto mb-2" />
-                <div className="font-semibold">Marinas</div>
-                <div className="text-sm text-gray-600">3 Hauptmarinas</div>
+              <div className="p-3 bg-orange-50 rounded-lg">
+                <Anchor className="w-6 h-6 text-orange-600 mx-auto mb-2" />
+                <div className="font-semibold">Charter ab</div>
+                <div className="text-sm text-gray-600">Cienfuegos</div>
               </div>
-              <div className="p-3 bg-green-50 rounded-lg">
-                <Building className="w-6 h-6 text-green-700 mx-auto mb-2" />
+              <div className="p-3 bg-orange-50 rounded-lg">
+                <Building className="w-6 h-6 text-orange-600 mx-auto mb-2" />
                 <div className="font-semibold">UNESCO</div>
                 <div className="text-sm text-gray-600">Weltkulturerbe</div>
               </div>
+            </div>
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <p className="text-blue-800 text-center">
+                <strong>Transfer nach Cienfuegos:</strong> Ca. 3,5 Stunden Fahrt oder 45 Minuten Flug 
+                zur Charter-Basis. Wir organisieren gerne Ihren Transfer!
+              </p>
             </div>
           </div>
         </div>
 
         {/* Marinas */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Charter-Basen</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Häfen & Marinas in Havanna</h2>
+          <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
+            <p className="text-yellow-800 text-center">
+              <strong>Hinweis:</strong> Diese Marinas sind nur für Besichtigungen interessant. 
+              Charter-Yachten starten ab Cienfuegos.
+            </p>
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {marinas.map((marina, index) => (
-              <Card key={index} className="h-full">
+              <Card key={index} className="h-full opacity-75">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">{marina.name}</h3>
                   <p className="text-gray-600 mb-4">{marina.description}</p>
                   <div className="space-y-2">
                     {marina.amenities.map((amenity, idx) => (
                       <div key={idx} className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-green-700 rounded-full"></div>
+                        <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                         <span className="text-sm text-gray-700">{amenity}</span>
                       </div>
                     ))}
@@ -247,7 +265,7 @@ const Havanna = () => {
                 <div className="flex justify-between items-center">
                   <span className="font-semibold text-gray-800">{item.destination}</span>
                   <div className="text-right">
-                    <div className="text-green-700 font-bold">{item.distance}</div>
+                    <div className="text-orange-600 font-bold">{item.distance}</div>
                     <div className="text-sm text-gray-600">{item.time}</div>
                   </div>
                 </div>
@@ -273,12 +291,12 @@ const Havanna = () => {
 
         {/* Highlights */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Vorteile von Havanna</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Havanna besuchen?</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {highlights.map((highlight, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-700 rounded-full"></div>
+                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                   <p className="font-medium text-gray-800">{highlight}</p>
                 </div>
               </div>
@@ -288,14 +306,17 @@ const Havanna = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-green-700 to-green-900 text-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold mb-4">Starten Sie Ihren Segeltörn ab Havanna</h2>
-            <p className="text-xl mb-6">
-              Entdecken Sie das authentische Kuba vom Wasser aus
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold mb-4">Kombinieren Sie Havanna mit Ihrem Charter</h2>
+            <p className="text-xl mb-4">
+              Erleben Sie das authentische Kuba vor oder nach Ihrem Segeltörn
+            </p>
+            <p className="text-blue-100 mb-6">
+              Charter ab Cienfuegos • Besichtigung von Havanna • Komplette Kuba-Erfahrung
             </p>
             <CharterRequestForm>
-              <Button size="lg" variant="secondary" className="bg-white text-green-700 hover:bg-gray-100">
-                Charter anfragen
+              <Button size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
+                Charter ab Cienfuegos anfragen
               </Button>
             </CharterRequestForm>
           </div>
