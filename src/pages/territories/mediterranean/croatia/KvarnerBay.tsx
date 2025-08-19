@@ -67,7 +67,7 @@ export default function KvarnerBay() {
     'Vielfältige Inselwelt mit kurzen Distanzen',
     'Geschützte Gewässer ideal für Familien',
     'Authentische kroatische Kultur',
-    'Kristallklares Wasser und einsame Buchten',
+    'Viele geschützte Ankerplätze',
     'Bora-Wind für sportliches Segeln',
     'Reiche Geschichte von Römern bis Venezianern',
     'Ausgezeichnete Marina-Infrastruktur',
