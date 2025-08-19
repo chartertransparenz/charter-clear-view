@@ -137,7 +137,7 @@ const Caribbean = () => {
                 Stellen Sie sich vor, Sie werden die Leinen in einer modernen Marina los, die Segel füllen sich mit den beständigen Passatwinden, und vor Ihnen liegt das endlose Blau des Atlantiks oder des Karibischen Meeres. Jeder Tag bringt neue Horizonte: bezaubernde Fischerdörfer, deren bunte Häuser sich an grüne Hügel schmiegen, einsame Ankerbuchten mit puderzuckerfeinem Sand, der zum Entspannen einlädt, und pulsierende Städte, in denen die Rhythmen von Reggae und Salsa die Luft erfüllen.
               </p>
               <p>
-                Ob Sie die geschützten Gewässer der British Virgin Islands erkunden, die anspruchsvolleren Passagen der Windward Islands meistern oder die einzigartige Kultur Kubas vom Wasser aus erleben möchten – die Karibik bietet für jeden Geschmack und jede Erfahrungsstufe das passende Segelabenteuer. Die Top-Charterreviere wie die British Virgin Islands (BVI), die US Virgin Islands, die Windward Inseln (z. B. Martinique, St. Lucia, St. Vincent & die Grenadinen), die Leeward Inseln (z. B. Antigua, St. Martin) und das einzigartige Kuba warten darauf, von Ihnen entdeckt zu werden. Tauchen Sie ein in das karibische Lebensgefühl und lassen Sie sich von der Freiheit des Meeres verzaubern.
+                Ob Sie die geschützten Gewässer der <Link to="/reviere/karibik/britische-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">British Virgin Islands</Link> erkunden, die anspruchsvolleren Passagen der <Link to="/reviere/karibik/windward-inseln" className="text-blue-600 hover:text-blue-800 underline">Windward Islands</Link> meistern oder die einzigartige Kultur <Link to="/reviere/karibik/kuba" className="text-blue-600 hover:text-blue-800 underline">Kubas</Link> vom Wasser aus erleben möchten – die Karibik bietet für jeden Geschmack und jede Erfahrungsstufe das passende Segelabenteuer. Die Top-Charterreviere wie die <Link to="/reviere/karibik/britische-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">British Virgin Islands (BVI)</Link>, die <Link to="/reviere/karibik/us-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">US Virgin Islands</Link>, die <Link to="/reviere/karibik/windward-inseln" className="text-blue-600 hover:text-blue-800 underline">Windward Inseln</Link> (z. B. Martinique, St. Lucia, St. Vincent & die Grenadinen), die <Link to="/reviere/karibik/leeward-inseln" className="text-blue-600 hover:text-blue-800 underline">Leeward Inseln</Link> (z. B. Antigua, St. Martin) und das einzigartige <Link to="/reviere/karibik/kuba" className="text-blue-600 hover:text-blue-800 underline">Kuba</Link> warten darauf, von Ihnen entdeckt zu werden. Tauchen Sie ein in das karibische Lebensgefühl und lassen Sie sich von der Freiheit des Meeres verzaubern.
               </p>
               
               <h3 className="text-2xl font-bold text-gray-800 mt-8">Die Regionen der Karibik: Ein Segelparadies in vielen Facetten</h3>
@@ -145,7 +145,7 @@ const Caribbean = () => {
                 Die Karibik ist kein homogenes Segelrevier, sondern ein Mosaik aus Inselgruppen, die sich in ihrer Topografie, Kultur und den nautischen Herausforderungen unterscheiden. Jede Region bietet einzigartige Erlebnisse und ist auf ihre Weise ein Traumziel für Segler.
               </p>
 
-              <h4 className="text-xl font-semibold text-gray-800 mt-6">1. British Virgin Islands (BVI): Das Segelparadies für Einsteiger und Genießer</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6">1. <Link to="/reviere/karibik/britische-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">British Virgin Islands (BVI)</Link>: Das Segelparadies für Einsteiger und Genießer</h4>
               <p>
                 Die BVI sind zweifellos das bekannteste und beliebteste Yachtcharter-Revier der Karibik. Sie bestehen aus über 60 Inseln und Cays, von denen viele unbewohnt sind.
               </p>
@@ -165,7 +165,7 @@ const Caribbean = () => {
                 <li><strong>Routenvorschläge:</strong> Ein typischer 7-Tages-Törn führt von Tortola über Norman Island, Virgin Gorda, Anegada, Jost Van Dyke und wieder zurück.</li>
               </ul>
 
-              <h4 className="text-xl font-semibold text-gray-800 mt-6">2. US Virgin Islands (USVI): Amerikanischer Komfort im Karibik-Setting</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6">2. <Link to="/reviere/karibik/us-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">US Virgin Islands (USVI)</Link>: Amerikanischer Komfort im Karibik-Setting</h4>
               <p>
                 Die USVI – St. Thomas, St. John und St. Croix – bieten eine ähnliche Segelerfahrung wie die BVI, jedoch unter amerikanischer Flagge.
               </p>
@@ -183,7 +183,7 @@ const Caribbean = () => {
                 <li><strong>Routenvorschläge:</strong> Von St. Thomas aus lassen sich St. John und St. Croix gut erkunden, oft mit Abstechern zu den nahegelegenen BVI (hierfür sind jedoch Einreiseformalitäten zu beachten).</li>
               </ul>
 
-              <h4 className="text-xl font-semibold text-gray-800 mt-6">3. Windward Islands: Das Abenteuer ruft – von Martinique bis zu den Grenadinen</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6">3. <Link to="/reviere/karibik/windward-inseln" className="text-blue-600 hover:text-blue-800 underline">Windward Islands</Link>: Das Abenteuer ruft – von Martinique bis zu den Grenadinen</h4>
               <p>
                 Die Windward Islands (Inseln über dem Wind) erstrecken sich von Martinique im Norden bis zu den Grenadinen im Süden und bieten anspruchsvolleres, aber unglaublich lohnendes Segeln.
               </p>
@@ -219,7 +219,7 @@ const Caribbean = () => {
                 <li><strong>Routenvorschläge:</strong> Ein klassischer Törn führt von Martinique oder St. Lucia südwärts durch die Grenadinen bis Union Island und zurück.</li>
               </ul>
 
-              <h4 className="text-xl font-semibold text-gray-800 mt-6">4. Leeward Islands: Vielfalt und Geschichte im Nordosten</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6">4. <Link to="/reviere/karibik/leeward-inseln" className="text-blue-600 hover:text-blue-800 underline">Leeward Islands</Link>: Vielfalt und Geschichte im Nordosten</h4>
               <p>
                 Die Leeward Islands (Inseln unter dem Wind) liegen im nordöstlichen Teil der Karibik und bieten eine Mischung aus historischen Stätten, lebhaften Häfen und unberührten Buchten.
               </p>
@@ -247,7 +247,7 @@ const Caribbean = () => {
                 <li><strong>Routenvorschläge:</strong> Von Antigua aus lassen sich St. Martin, St. Barth und Anguilla gut erreichen. Von Guadeloupe aus sind Les Saintes und Dominica beliebte Ziele.</li>
               </ul>
 
-              <h4 className="text-xl font-semibold text-gray-800 mt-6">5. Kuba: Einzigartige Kultur und unberührte Reviere</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6">5. <Link to="/reviere/karibik/kuba" className="text-blue-600 hover:text-blue-800 underline">Kuba</Link>: Einzigartige Kultur und unberührte Reviere</h4>
               <p>
                 Kuba bietet ein völlig anderes Karibik-Erlebnis – eine Zeitreise in eine einzigartige Kultur mit noch weitgehend unberührten Segelrevieren.
               </p>
@@ -310,9 +310,9 @@ const Caribbean = () => {
 
               <h3 className="text-2xl font-bold text-gray-800 mt-8">Revier-Eignung je nach Erfahrungslevel:</h3>
               <ul>
-                <li><strong>Einsteiger & Familien:</strong> Die British Virgin Islands (BVI) und die US Virgin Islands sind aufgrund ihrer geschützten Gewässer, kurzen Schläge und hohen Dichte an Bojenfeldern ideal für Segelneulinge und Familien.</li>
-                <li><strong>Fortgeschrittene Segler:</strong> Die Windward Islands (St. Lucia, St. Vincent & die Grenadinen) und die Leeward Islands (Antigua, St. Martin) bieten anspruchsvollere Segelbedingungen mit längeren Schlägen auf offener See und sind perfekt für Segler, die ihre Fähigkeiten erweitern möchten.</li>
-                <li><strong>Erfahrene Skipper & Abenteurer:</strong> Kuba bietet ein einzigartiges kulturelles Erlebnis und weniger entwickelte, aber faszinierende Reviere für diejenigen, die das Besondere suchen.</li>
+                <li><strong>Einsteiger & Familien:</strong> Die <Link to="/reviere/karibik/britische-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">British Virgin Islands (BVI)</Link> und die <Link to="/reviere/karibik/us-jungferninseln" className="text-blue-600 hover:text-blue-800 underline">US Virgin Islands</Link> sind aufgrund ihrer geschützten Gewässer, kurzen Schläge und hohen Dichte an Bojenfeldern ideal für Segelneulinge und Familien.</li>
+                <li><strong>Fortgeschrittene Segler:</strong> Die <Link to="/reviere/karibik/windward-inseln" className="text-blue-600 hover:text-blue-800 underline">Windward Islands</Link> (St. Lucia, St. Vincent & die Grenadinen) und die <Link to="/reviere/karibik/leeward-inseln" className="text-blue-600 hover:text-blue-800 underline">Leeward Islands</Link> (Antigua, St. Martin) bieten anspruchsvollere Segelbedingungen mit längeren Schlägen auf offener See und sind perfekt für Segler, die ihre Fähigkeiten erweitern möchten.</li>
+                <li><strong>Erfahrene Skipper & Abenteurer:</strong> <Link to="/reviere/karibik/kuba" className="text-blue-600 hover:text-blue-800 underline">Kuba</Link> bietet ein einzigartiges kulturelles Erlebnis und weniger entwickelte, aber faszinierende Reviere für diejenigen, die das Besondere suchen.</li>
               </ul>
 
               <h3 className="text-2xl font-bold text-gray-800 mt-8">Beste Reisezeit: Wann Ihr Karibik-Traum wahr wird</h3>
