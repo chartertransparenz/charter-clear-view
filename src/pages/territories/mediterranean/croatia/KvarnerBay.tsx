@@ -69,7 +69,7 @@ export default function KvarnerBay() {
     'Geschützte Gewässer ideal für Familien',
     'Authentische kroatische Kultur',
     'Viele geschützte Ankerplätze',
-    'Bora-Wind für sportliches Segeln',
+    'Viele gute Anker- und Bojenplätze',
     'Reiche Geschichte von Römern bis Venezianern',
     'Ausgezeichnete Marina-Infrastruktur',
     'Naturparks und Schutzgebiete'
