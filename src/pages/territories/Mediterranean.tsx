@@ -31,11 +31,53 @@ const Mediterranean = () => {
         { name: "Süddalmatien", link: "/reviere/mittelmeer/kroatien/sueddalmatien" }
       ]
     },
-    { name: "Griechenland", link: "/reviere/mittelmeer/griechenland", areas: ["Kykladen", "Ionische Inseln", "Dodekanes", "Sporaden"] },
-    { name: "Italien", link: "/reviere/mittelmeer/italien", areas: ["Amalfiküste", "Toskana", "Sardinien", "Sizilien"] },
-    { name: "Spanien", link: "/reviere/mittelmeer/spanien", areas: ["Balearen", "Costa Brava", "Valencia"] },
-    { name: "Türkei", link: "/reviere/mittelmeer/tuerkei", areas: ["Türkische Riviera", "Bodrum", "Göcek", "Marmaris"] },
-    { name: "Frankreich", link: "/reviere/mittelmeer/frankreich", areas: ["Côte d'Azur", "Korsika"] },
+    { 
+      name: "Griechenland", 
+      link: "/reviere/mittelmeer/griechenland", 
+      areas: [
+        { name: "Kykladen", link: "/reviere/mittelmeer/griechenland/kykladen" },
+        { name: "Ionische Inseln", link: "/reviere/mittelmeer/griechenland/ionische-inseln" },
+        { name: "Dodekanes", link: "/reviere/mittelmeer/griechenland/dodekanes" },
+        { name: "Sporaden", link: "/reviere/mittelmeer/griechenland/sporaden" }
+      ]
+    },
+    { 
+      name: "Italien", 
+      link: "/reviere/mittelmeer/italien", 
+      areas: [
+        { name: "Amalfiküste", link: "/reviere/mittelmeer/italien/amalfikuste" },
+        { name: "Toskana", link: "/reviere/mittelmeer/italien/toskana" },
+        { name: "Sardinien", link: "/reviere/mittelmeer/italien/sardinien" },
+        { name: "Sizilien", link: "/reviere/mittelmeer/italien/sizilien" }
+      ]
+    },
+    { 
+      name: "Spanien", 
+      link: "/reviere/mittelmeer/spanien", 
+      areas: [
+        { name: "Balearen", link: "/reviere/mittelmeer/spanien/balearen" },
+        { name: "Costa Brava", link: "/reviere/mittelmeer/spanien/costa-brava" },
+        { name: "Valencia", link: "/reviere/mittelmeer/spanien/valencia" }
+      ]
+    },
+    { 
+      name: "Türkei", 
+      link: "/reviere/mittelmeer/tuerkei", 
+      areas: [
+        { name: "Türkische Riviera", link: "/reviere/mittelmeer/tuerkei/tuerkische-riviera" },
+        { name: "Bodrum", link: "/reviere/mittelmeer/tuerkei/bodrum" },
+        { name: "Göcek", link: "/reviere/mittelmeer/tuerkei/goecek" },
+        { name: "Marmaris", link: "/reviere/mittelmeer/tuerkei/marmaris" }
+      ]
+    },
+    { 
+      name: "Frankreich", 
+      link: "/reviere/mittelmeer/frankreich", 
+      areas: [
+        { name: "Côte d'Azur", link: "/reviere/mittelmeer/frankreich/cote-azur" },
+        { name: "Korsika", link: "/reviere/mittelmeer/frankreich/korsika" }
+      ]
+    },
     { name: "Malta", link: "/reviere/mittelmeer/malta", areas: ["Valletta", "Gozo", "Comino"] },
     { name: "Montenegro", link: "/reviere/mittelmeer/montenegro", areas: ["Budva", "Kotor", "Bar"] },
     { name: "Slowenien", link: "/reviere/mittelmeer/slowenien", areas: ["Izola", "Piran", "Portorož"] }
