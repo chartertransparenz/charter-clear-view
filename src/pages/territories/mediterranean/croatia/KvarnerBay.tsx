@@ -18,6 +18,7 @@ import destinationCroatia from '@/assets/destination-croatia.jpg';
 
 export default function KvarnerBay() {
   useEffect(() => {
+    console.log('KvarnerBay component rendered with highlights:', highlights);
     window.scrollTo(0, 0);
   }, []);
 
