@@ -111,7 +111,7 @@ const Services = () => {
                 Deine Yacht. Dein Törn. Unser Versprechen.
               </h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Wenn du eine Charteryacht suchst und dabei auf Qualität, persönliche Betreuung und langjährige Erfahrung setzen willst, bist du bei uns genau richtig. Seit über 30 Jahren begleiten wir Seglerinnen und Segler auf ihrem Weg zum perfekten Segelurlaub – ehrlich, erfahren und engagiert.
+                Wenn Sie eine Charteryacht suchen und dabei Wert auf Qualität, persönliche Betreuung und langjährige Erfahrung legen, sind Sie bei uns genau richtig. Seit über 30 Jahren begleiten wir Segler bei der Planung ihres perfekten Segelurlaubs – ob mit Segelyacht, Katamaran oder Motoryacht, bareboat oder mit Skipper. Unsere Erfahrung, Transparenz und Leidenschaft für den Yachtsport garantieren Ihnen unvergessliche Momente auf dem Wasser.
               </p>
             </div>
           </div>
