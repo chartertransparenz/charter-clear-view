@@ -9,96 +9,67 @@ import luxuryYacht from "@/assets/luxury-catamaran-charter.jpg";
 import transparentPricing from "@/assets/transparent-pricing.jpg";
 import flexibleBooking from "@/assets/flexible-booking.jpg";
 import premiumLocations from "@/assets/premium-locations.jpg";
-
 const Services = () => {
-  const services = [
-    {
-      icon: Sailboat,
-      title: "Yacht Charter für Selbstsegler",
-      description: "Premium Segelyachten für erfahrene Segler mit gültigem Segelschein",
-      features: ["Verschiedene Bootsgrößen", "Bareboat Charter", "Vollständige Ausstattung", "Gültiger Segelschein erforderlich"],
-      image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.png",
-    },
-    {
-      icon: Users,
-      title: "Yacht Charter mit Skipper",
-      description: "Entspannter Segeltörn mit professionellem Skipper für alle Erfahrungsstufen",
-      features: ["Erfahrener Skipper inklusive", "Für Anfänger & Profis", "Bis zu 12 Personen", "Keine Segelschein erforderlich"],
-      image: "/lovable-uploads/b8357492-3fda-42a7-8fcc-bd564c0db1d7.png",
-    },
-    {
-      icon: GraduationCap,
-      title: "Luxus Charter",
-      description: "Exklusive Luxusyachten mit erstklassiger Ausstattung und Premium-Service",
-      features: ["Luxusyachten", "Premium Ausstattung", "VIP Service", "Gourmet Catering"],
-      image: luxuryYacht,
-    },
-  ];
-
-  const advantages = [
-    {
-      icon: Shield,
-      title: "Transparente Preise",
-      description: "Alle Kosten auf einen Blick - keine versteckten Gebühren",
-      image: transparentPricing
-    },
-    {
-      icon: Clock,
-      title: "Flexible Buchung",
-      description: "Einfache Online-Buchung mit flexiblen Stornobedingungen",
-      image: flexibleBooking
-    },
-    {
-      icon: MapPin,
-      title: "Beste Lagen",
-      description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen",
-      image: premiumLocations
-    },
-  ];
-
-  return (
-    <section id="leistungen" className="py-20 bg-ocean-light/30">
+  const services = [{
+    icon: Sailboat,
+    title: "Yacht Charter für Selbstsegler",
+    description: "Premium Segelyachten für erfahrene Segler mit gültigem Segelschein",
+    features: ["Verschiedene Bootsgrößen", "Bareboat Charter", "Vollständige Ausstattung", "Gültiger Segelschein erforderlich"],
+    image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.png"
+  }, {
+    icon: Users,
+    title: "Yacht Charter mit Skipper",
+    description: "Entspannter Segeltörn mit professionellem Skipper für alle Erfahrungsstufen",
+    features: ["Erfahrener Skipper inklusive", "Für Anfänger & Profis", "Bis zu 12 Personen", "Keine Segelschein erforderlich"],
+    image: "/lovable-uploads/b8357492-3fda-42a7-8fcc-bd564c0db1d7.png"
+  }, {
+    icon: GraduationCap,
+    title: "Luxus Charter",
+    description: "Exklusive Luxusyachten mit erstklassiger Ausstattung und Premium-Service",
+    features: ["Luxusyachten", "Premium Ausstattung", "VIP Service", "Gourmet Catering"],
+    image: luxuryYacht
+  }];
+  const advantages = [{
+    icon: Shield,
+    title: "Transparente Preise",
+    description: "Alle Kosten auf einen Blick - keine versteckten Gebühren",
+    image: transparentPricing
+  }, {
+    icon: Clock,
+    title: "Flexible Buchung",
+    description: "Einfache Online-Buchung mit flexiblen Stornobedingungen",
+    image: flexibleBooking
+  }, {
+    icon: MapPin,
+    title: "Beste Lagen",
+    description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen",
+    image: premiumLocations
+  }];
+  return <section id="leistungen" className="py-20 bg-ocean-light/30">
       <div className="container mx-auto px-4">
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
           <div className="relative">
-            <img
-              src={servicesHeroConsultationV2}
-              alt="Luxusyacht bei Sonnenuntergang"
-              className="w-full h-96 md:h-[28rem] object-cover"
-            />
+            <img src={servicesHeroConsultationV2} alt="Luxusyacht bei Sonnenuntergang" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
-              <p className="text-lg text-white/90">
-                Von Yacht Charter bis Luxus Charter
-              </p>
+              <p className="text-lg text-white/90">Beratung nach Maß – Angebote, die passen.</p>
             </div>
           </div>
         </div>
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Yachtcharter nach Maß – Finde die perfekte Yacht für deinen Traumurlaub. 
-            Egal, ob du erfahrener Segler bist, entspannt Urlaub machen möchtest oder das gewisse Etwas suchst – 
-            bei uns findest du genau das Chartermodell, das zu dir passt. Unsere Services bieten dir die Freiheit 
-            und Flexibilität, deinen Törn ganz nach deinen Wünschen zu gestalten – transparent, komfortabel und professionell. 
-            Wähle zwischen drei Charter-Modellen – jedes mit eigenen Vorteilen.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto"></p>
         </div>
 
         {/* Main Services */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {services.map((service, index) => (
-            <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden">
+          {services.map((service, index) => <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden">
               {/* Service Image */}
               <div className="relative h-48 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/50 to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <div className="w-12 h-12 bg-gradient-ocean rounded-xl flex items-center justify-center">
@@ -115,26 +86,19 @@ const Services = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm">
+                  {service.features.map((feature, idx) => <li key={idx} className="flex items-center gap-2 text-sm">
                       <div className="w-2 h-2 bg-ocean-blue rounded-full"></div>
                       {feature}
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Advantages */}
         <div className="bg-white rounded-2xl p-8 shadow-elegant">
           <div className="flex items-center justify-center mb-8">
-            <img 
-              src="/lovable-uploads/659b769a-8043-415e-8200-0c56b66bcc47.png" 
-              alt="CharterTransparenz" 
-              className="h-12 w-auto mr-4"
-            />
+            <img src="/lovable-uploads/659b769a-8043-415e-8200-0c56b66bcc47.png" alt="CharterTransparenz" className="h-12 w-auto mr-4" />
             <h3 className="text-2xl font-bold text-ocean-dark">
               Warum Charter Transparenz?
             </h3>
@@ -166,12 +130,7 @@ const Services = () => {
                 </p>
               </div>
               
-              <div>
-                <h5 className="font-semibold text-ocean-dark mb-2">Beste Lagen</h5>
-                <p className="text-sm text-muted-foreground">
-                  Wir bieten dir Zugang zu Premium-Liegeplätzen an den schönsten Revieren Europas – vom Bodensee bis zur Adria. Unsere Partner vor Ort sind handverlesen, unsere Yachten sorgfältig geprüft. Egal ob Segelyacht, Katamaran oder Motoryacht: Du startest immer aus besten Lagen – für maximale Urlaubsqualität.
-                </p>
-              </div>
+              
               
               <div>
                 <h5 className="font-semibold text-ocean-dark mb-2">Mehr als ein Buchungsportal</h5>
@@ -190,14 +149,9 @@ const Services = () => {
           
           <div className="mt-12">
           <div className="grid md:grid-cols-3 gap-8">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="text-center">
+            {advantages.map((advantage, index) => <div key={index} className="text-center">
                 <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg">
-                  <img
-                    src={advantage.image}
-                    alt={advantage.title}
-                    className="w-full h-48 object-cover"
-                  />
+                  <img src={advantage.image} alt={advantage.title} className="w-full h-48 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
                     <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center">
@@ -207,8 +161,7 @@ const Services = () => {
                 </div>
                 <h4 className="font-semibold mb-2 text-ocean-dark">{advantage.title}</h4>
                 <p className="text-sm text-muted-foreground">{advantage.description}</p>
-              </div>
-            ))}
+              </div>)}
            </div>
           </div>
         </div>
@@ -219,11 +172,7 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10">
               <div className="flex justify-center mb-8">
-                <img 
-                  src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" 
-                  alt="CharterTransparenz" 
-                  className="h-20 w-auto"
-                />
+                <img src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" alt="CharterTransparenz" className="h-20 w-auto" />
               </div>
               <h3 className="text-3xl font-bold mb-4">
                 Bereit für dein Charter-Abenteuer?
@@ -242,8 +191,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
