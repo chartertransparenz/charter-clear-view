@@ -9,7 +9,10 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import caribbean from "@/assets/caribbean.jpg";
 const Havanna = () => {
+  console.log("Havanna component is rendering");
+  
   useEffect(() => {
+    console.log("Havanna useEffect running");
     window.scrollTo(0, 0);
   }, []);
   const marinas = [{
