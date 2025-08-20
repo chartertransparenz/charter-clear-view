@@ -31,8 +31,8 @@ const Index = () => {
       <Navigation />
       <FloatingCTA />
       <Hero />
-      <Services />
       <Territories />
+      <Services />
       <Fleet />
       <VideoBanner />
       <Partners />
