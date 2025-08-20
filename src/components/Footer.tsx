@@ -10,10 +10,13 @@ const Footer = () => {
       { name: "Beratung", href: "#kontakt" }
     ],
     destinations: [
-      { name: "Bodensee", href: "#" },
-      { name: "Mittelmeer", href: "#" },
-      { name: "Adria", href: "#" },
-      { name: "Ostsee", href: "#" }
+      { name: "Mittelmeer", href: "/reviere/mittelmeer" },
+      { name: "Karibik", href: "/reviere/karibik" },
+      { name: "Südpazifik", href: "/reviere/suedpazifik" },
+      { name: "Atlantik", href: "/reviere/atlantik" },
+      { name: "Indischer Ozean", href: "/reviere/indischer-ozean" },
+      { name: "Nord- & Ostsee", href: "/reviere/nord-europa" },
+      { name: "Amerika & Bahamas", href: "/reviere/amerika-bahamas" }
     ],
     company: [
       { name: "Über uns", href: "#ueber-uns" },
@@ -50,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-sunset" />
-                <span className="text-white/80">+49 (0) 7543 123456</span>
+                <span className="text-white/80">+49 7543 499 080</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-sunset" />
