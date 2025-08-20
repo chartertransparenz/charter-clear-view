@@ -2,95 +2,141 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { HelpCircle, MessageCircle, Phone, Mail } from "lucide-react";
+import { HelpCircle, MessageCircle, Phone, Mail, FileText, Anchor, CreditCard, Ship, Headphones } from "lucide-react";
 
 const FAQ = () => {
   const faqCategories = [
     {
-      title: "Buchung & Preise",
-      icon: "💰",
+      title: "Buchung & Vertrag",
+      icon: FileText,
       questions: [
         {
-          question: "Wie erfolgt die Buchung und Bezahlung?",
-          answer: "Die Buchung erfolgt ganz einfach über unser Online-System oder telefonisch. Nach der Buchungsbestätigung erhältst du eine Rechnung mit verschiedenen Zahlungsmöglichkeiten. Eine Anzahlung von 30% sichert deine Reservierung, der Restbetrag ist 4 Wochen vor Törn-Beginn fällig."
+          question: "Wie funktioniert der Buchungsprozess für eine Yacht?",
+          answer: "Der Buchungsprozess beginnt mit Ihrer Anfrage (online, telefonisch oder per E-Mail). Nach Auswahl der gewünschten Yacht erhalten Sie ein detailliertes Angebot und einen Chartervertrag zur Ansicht. Die Buchung wird verbindlich, sobald der Vertrag von allen Parteien unterzeichnet und die vereinbarte Anzahlung geleistet wurde. Im Vertrag sind alle Details zu Yacht, Reise, Kosten und Vertragsparteien transparent festgehalten."
         },
         {
-          question: "Welche Kosten sind im Charterpreis enthalten?",
-          answer: "Der Charterpreis beinhaltet das Boot mit kompletter Ausstattung, Bettwäsche, Handtücher, Endreinigung und die gesetzlich vorgeschriebene Haftpflichtversicherung. Zusätzliche Kosten können für Kraftstoff, Kaution, optionale Extras und Hafengebühren anfallen."
+          question: "Wer ist mein Vertragspartner beim Chartern einer Yacht?",
+          answer: "Ihr direkter Vertragspartner ist in der Regel der Vercharterer, also der Eigner der Yacht oder die Charterfirma, die die Yacht betreibt. Wir als Agentur agieren als Ihr Vermittler und Berater. Wir unterstützen Sie bei der Auswahl, der Abwicklung und stehen Ihnen bei Fragen oder im unwahrscheinlichen Fall von Problemen als Ansprechpartner zur Seite."
         },
         {
-          question: "Kann ich kurzfristig stornieren?",
-          answer: "Bis 8 Wochen vor Törn-Beginn kannst du kostenfrei stornieren. Bei späteren Stornierungen staffeln sich die Gebühren je nach Zeitpunkt. Wir empfehlen den Abschluss einer Reiserücktrittsversicherung für maximale Flexibilität."
+          question: "Was kostet mich der Service der Agentur?",
+          answer: "Unsere Vermittlungsleistungen sind für Sie als Charterkunden kostenlos. Das bedeutet für Sie: volle Unterstützung und Expertise ohne zusätzliche Kosten."
         },
         {
-          question: "Gibt es Rabatte für Stammkunden?",
-          answer: "Ja! Stammkunden erhalten ab der zweiten Buchung 5% Rabatt, ab der fünften Buchung 10%. Zusätzlich bieten wir Frühbucherrabatte und Saisonspecials an."
+          question: "Wie laufen die Zahlungsmodalitäten ab und sind Rabatte möglich?",
+          answer: "Die Charterpreise und Zahlungsmodalitäten (Anzahlung, Restzahlung) werden vom jeweiligen Vercharterer festgelegt und sind im Chartervertrag detailliert aufgeführt. In der Regel ist eine Anzahlung bei Vertragsabschluss und die Restzahlung einige Wochen vor Charterbeginn fällig. Wir können Ihnen gegebenenfalls zusätzliche Rabatte gewähren, die unsere Provision mindern, nicht aber den offiziellen Charterpreis des Vercharterers."
+        },
+        {
+          question: "Was passiert bei Stornierung oder Umbuchung?",
+          answer: "Die Stornierungsbedingungen sind in den Allgemeinen Geschäftsbedingungen (AGB) des jeweiligen Vercharterers geregelt und im Chartervertrag festgehalten. In der Regel fallen bei einer Stornierung Gebühren an, die sich nach dem Zeitpunkt der Absage richten. Umbuchungen oder Verschiebungen sind oft nach individueller Absprache und Verfügbarkeit möglich. Wir empfehlen dringend den Abschluss einer Reiserücktrittsversicherung, um sich gegen unvorhergesehene Ereignisse abzusichern."
         }
       ]
     },
     {
-      title: "Segelscheine & Erfahrung",
-      icon: "⚓",
+      title: "Vorbereitung & Dokumente",
+      icon: Anchor,
       questions: [
         {
-          question: "Welchen Führerschein benötige ich?",
-          answer: "Für den Bodensee benötigst du mindestens den Sportbootführerschein Binnen (SBF-Binnen). Für Seereisen ist der Sportküstenschifferschein (SKS) oder vergleichbare internationale Scheine erforderlich. Gerne beraten wir dich zu den Anforderungen."
+          question: "Welche Dokumente und Nachweise benötige ich für den Charter?",
+          answer: "Für Bareboat-Charter (ohne Skipper) ist in den meisten Revieren ein gültiger Sportbootführerschein (z.B. SBF See, SKS) sowie ein Funkzeugnis (z.B. SRC) für Yachten mit Funkgerät erforderlich. Eine vollständige Crewliste sowie gültige Ausweisdokumente aller Personen an Bord müssen ebenfalls vorgelegt werden. Die genauen Anforderungen variieren je nach Charterrevier. In Griechenland ist der SKS Vorschrift. Ferner benötigt ein Crewmitglied nachweislich Segelerfahrung."
         },
         {
-          question: "Können Anfänger auch ein Boot chartern?",
-          answer: "Auf dem Bodensee können auch Segelanfänger mit entsprechender Einweisung ein Boot chartern. Für andere Reviere empfehlen wir eine Skipperausbildung oder einen erfahrenen Skipper an Bord."
+          question: "Kann ich auch ohne eigenen Führerschein chartern?",
+          answer: "Ja, das ist problemlos möglich! Sie können einen erfahrenen Skipper zu Ihrer Yacht hinzubuchen. In einigen Revieren und für kleinere Boote ist auch ein Chartern ohne Führerschein nach einer Einweisung durch den Vercharterer möglich."
         },
         {
-          question: "Bietet ihr Segelkurse an?",
-          answer: "Ja, wir bieten komplette Segelausbildungen vom Grundkurs bis zum Hochseeschein an. Unsere lizenzierten Segellehrer vermitteln Theorie und Praxis auf modernen Schulungsyachten."
+          question: "Welche Versicherungen sind für meinen Charter wichtig oder empfehlenswert?",
+          answer: "Alle Charteryachten sind kasko- und haftpflichtversichert. Die Selbstbeteiligung entspricht dabei meist der Höhe der Kaution. Wir empfehlen Ihnen dringend, zusätzlich folgende Versicherungen abzuschließen: • Skipperhaftpflichtversicherung: Deckt Schäden ab, die Sie als Skipper Dritten zufügen. • Kautionsversicherung: Reduziert Ihr finanzielles Risiko im Schadensfall, indem sie die Kaution oder einen Teil davon abdeckt. • Reiserücktrittsversicherung: Schützt Sie vor Stornokosten bei unvorhergesehenen Ereignissen. • Reisekrankenversicherung: Für medizinische Notfälle im Ausland. Für persönliche Gegenstände an Bord empfiehlt sich eine private Reisegepäckversicherung."
+        }
+      ]
+    },
+    {
+      title: "Kosten & Kaution",
+      icon: CreditCard,
+      questions: [
+        {
+          question: "Was ist im Charterpreis enthalten und was nicht?",
+          answer: "Im Charterpreis sind in der Regel die Nutzung der Yacht, die Standardausstattung und die Versicherung der Yacht enthalten. Nicht enthalten sind meist: • Treibstoff • Hafengebühren und Liegeplatzkosten • Verpflegung und Getränke • Optionale Extras (z.B. Außenborder, Bettwäsche, Handtücher, WLAN, SUPs, spezielle Wassersportausrüstung) • Endreinigung (oft obligatorisch und vor Ort zu zahlen) • Transitlog (obligatorische Gebühr für Formalitäten im Revier) • Trinkgelder für die Crew (bei Crewed Chartern). Alle zusätzlichen Kosten werden Ihnen im Angebot transparent ausgewiesen."
+        },
+        {
+          question: "Gibt es zusätzliche Kosten, die nicht im Charterpreis enthalten sind?",
+          answer: "Ja, neben den oben genannten Punkten können weitere Kosten anfallen, z.B. für Yachtüberführungen (wenn Start- und Zielhafen unterschiedlich sind), die Buchung eines Skippers oder einer Hostess, oder spezielle Wünsche. Bei Luxuschartern wird oft eine APA (Advance Provisioning Allowance) erhoben, eine Vorauszahlung für variable Kosten wie Treibstoff, Verpflegung, Hafengebühren und andere Ausgaben während des Charters."
+        },
+        {
+          question: "Wie hoch ist die Kaution und gibt es Alternativen?",
+          answer: "Eine Kaution ist bei Bareboat-Chartern üblich und dient als Sicherheit für Schäden an der Yacht oder fehlende Ausrüstung. Die Höhe wird vom Vercharterer festgelegt und vor Ort in bar oder per Kreditkarte hinterlegt. Viele Anbieter bieten die Möglichkeit einer Kautionsversicherung (Kautionsabgeltung) an, die das Risiko für Sie als Charterer erheblich reduziert und im Schadensfall die Selbstbeteiligung abdeckt."
+        },
+        {
+          question: "Was ist eine Bordkasse?",
+          answer: "Die Bordkasse ist ein gemeinsamer Topf der Crew oder der Gäste, aus dem die laufenden Kosten während des Charters bestritten werden. Dazu gehören Treibstoff, Hafengebühren, Proviant, Getränke und ggf. Trinkgelder für die Crew. Die Verwaltung der Bordkasse liegt meist in der Hand eines benannten Crewmitglieds."
+        }
+      ]
+    },
+    {
+      title: "An Bord & Während des Charters",
+      icon: Ship,
+      questions: [
+        {
+          question: "Welche Arten von Yachten kann ich chartern?",
+          answer: "Wir bieten eine breite Palette an Yachten an: • Segelyachten: Ideal für Segelbegeisterte. • Motoryachten: Für schnelle Reisen und Komfort. • Katamarane: Bieten viel Platz, Stabilität und geringen Tiefgang. • Superyachten: Für luxuriöse und exklusive Erlebnisse mit voller Crew. Wir unterscheiden zudem zwischen Bareboat-Charter (ohne Crew) und Crewed-Charter (mit professioneller Crew)."
+        },
+        {
+          question: "Wie lange dauert ein Charter in der Regel und welche Starttage sind üblich?",
+          answer: "Die Standard-Charterdauer für die meisten Yachten ist eine Woche (Wochencharter). Im Mittelmeer ist der Charterrhythmus dabei meist Samstag zu Samstag. Es gibt jedoch Ausnahmen davon wie z.B. außerhalb der Hochsaison. In Überseedestinationen wie der Karibik oder dem Pazifik sind häufig auch andere Starttage und flexiblere Charterdauern (z.B. 10 Tage oder längere Zeiträume) nach Absprache möglich, um Ihren individuellen Reiseplänen entgegenzukommen."
+        },
+        {
+          question: "Wie läuft die Übergabe (Check-in) und Rückgabe (Check-out) der Yacht ab?",
+          answer: "Bei der Übergabe (Check-in) wird die Yacht gemeinsam mit einem Mitarbeiter des Vercharterers inspiziert. Dabei werden der Zustand der Yacht, die Funktionsfähigkeit der Ausrüstung und die Vollständigkeit des Inventars geprüft und in einem Protokoll festgehalten. Bei der Rückgabe (Check-out) erfolgt eine erneute gemeinsame Prüfung. Sofern keine Schäden vorliegen und die Yacht ordnungsgemäß zurückgegeben wird, wird die Kaution erstattet."
+        },
+        {
+          question: "Was muss ich zur Verpflegung und Bordausstattung wissen?",
+          answer: "Alle Charteryachten verfügen über eine voll ausgestattete Pantry (Küche) mit Kochfeld, Kühlschrank und Essgeschirr. Proviant kann selbst mitgebracht, in lokalen Supermärkten eingekauft oder über einen Lieferservice direkt zur Yacht bestellt werden. Bettwäsche und Handtücher sind je nach Yacht und Vercharterer entweder inklusive oder als zubuchbares Extra erhältlich."
+        },
+        {
+          question: "Kann ich einen Skipper oder eine Crew buchen?",
+          answer: "Ja, Sie können zu fast allen Yachten einen erfahrenen Skipper hinzubuchen. Für zusätzlichen Komfort sind auch Hostessen (für Service und leichte Mahlzeiten) oder Köche (für Gourmet-Erlebnisse) verfügbar. Unsere Crewmitglieder sprechen in der Regel Englisch und/oder Deutsch."
+        },
+        {
+          question: "Dürfen Haustiere mit an Bord?",
+          answer: "Haustiere sind auf Anfrage bei vielen Yachten erlaubt. Bitte informieren Sie uns unbedingt vorab, da eine zusätzliche Reinigungsgebühr anfallen kann und nicht alle Yachten für Haustiere geeignet sind."
+        },
+        {
+          question: "Sind Kinder an Bord erlaubt?",
+          answer: "Familien mit Kindern sind herzlich willkommen! Bitte informieren Sie uns bei der Buchung über die Anzahl und das Alter der Kinder, damit wir sicherstellen können, dass passende Schwimmwesten und gegebenenfalls weitere Sicherheitsmaßnahmen (z.B. Netze) vorbereitet werden können."
+        },
+        {
+          question: "Gibt es eine Mindest- oder Maximalbelegung für die Yacht?",
+          answer: "Die maximale Personenzahl pro Yacht ist aus Sicherheitsgründen und gemäß den Zulassungsvorschriften begrenzt und im Angebot sowie im Chartervertrag klar angegeben. Die Maximalbelegung im Bareboatcharter beträgt auch bei größeren Yachten in der Regel maximal 12 Personen."
         },
         {
           question: "Was passiert bei schlechtem Wetter?",
-          answer: "Sicherheit geht vor! Bei zu starkem Wind oder Unwetter bleiben wir im Hafen. Unser erfahrenes Team gibt dir jederzeit Wetterberatung und alternative Empfehlungen für deinen Törn."
+          answer: "Die Sicherheit an Bord hat oberste Priorität. Bei schlechtem Wetter (z.B. starker Wind, hohe Wellen, Gewitter) wird in Absprache mit dem Skipper (falls gebucht) entschieden, ob die Route angepasst werden muss."
+        },
+        {
+          question: "Was passiert bei technischen Problemen unterwegs?",
+          answer: "Im unwahrscheinlichen Fall eines technischen Problems steht Ihnen ein Notdienst des Vercharterers zur Verfügung. Die Kontaktdaten erhalten Sie bei der Übergabe. Kleinere Probleme können oft mit telefonischer Unterstützung selbst behoben werden, größere Schäden werden vom Stützpunkt aus organisiert und behoben."
+        },
+        {
+          question: "Wie läuft die Routenplanung ab?",
+          answer: "Wir stellen Ihnen gerne Routenvorschläge und Revierinformationen zur Verfügung. Die endgültige Route kann individuell an Ihre Wünsche angepasst werden. Bei Crewed Chartern wird die Route gemeinsam mit dem Skipper abgestimmt und kann je nach Wetterlage und Ihren Vorlieben flexibel angepasst werden."
+        },
+        {
+          question: "Welche Aktivitäten und Extras sind an Bord möglich?",
+          answer: "Je nach Yacht und Reiseziel stehen verschiedene Wassersportgeräte wie Stand-Up-Paddles (SUPs), Kajaks, Schnorchelausrüstung oder Angelzubehör zur Verfügung. Viele Extras können im Voraus gebucht werden, um Ihr Chartererlebnis zu perfektionieren."
         }
       ]
     },
     {
-      title: "Boot & Ausstattung",
-      icon: "🛥️",
+      title: "Support & Sonstiges",
+      icon: Headphones,
       questions: [
         {
-          question: "Wie ist die Bootsausstattung?",
-          answer: "Alle unsere Boote sind komplett ausgestattet mit Navigation, Sicherheitsausrüstung, Küchenausstattung, Bettwäsche und Handtüchern. Eine detaillierte Ausstattungsliste erhältst du bei der Buchung."
+          question: "Was passiert bei Streitfällen oder Problemen während des Charters?",
+          answer: "Sollten während Ihres Charters Probleme oder Unstimmigkeiten auftreten, stehen wir Ihnen als Agentur jederzeit als Ansprechpartner zur Verfügung. Wir vermitteln zwischen Ihnen und dem Vercharterer, um eine schnelle und zufriedenstellende Lösung zu finden."
         },
         {
-          question: "Kann ich zusätzliche Ausrüstung mieten?",
-          answer: "Ja, wir bieten verschiedene Extras wie SUP-Boards, Schnorchelausrüstung, Grill, zusätzliche Fender und vieles mehr. Diese kannst du bei der Buchung oder vor Ort dazu buchen."
-        },
-        {
-          question: "Wie alt sind die Boote in unserer Yacht-Sammlung?",
-          answer: "Unsere Yacht-Sammlung wird kontinuierlich erneuert. Die meisten Boote sind nicht älter als 8 Jahre und befinden sich in einwandfreiem, gewarteten Zustand. Jedes Boot wird vor jeder Charter gründlich überprüft."
-        },
-        {
-          question: "Was ist bei einem technischen Defekt?",
-          answer: "Wir haben ein 24h-Notfallsystem und Partnerwerkstätten in allen Revieren. Bei größeren Defekten organisieren wir kostenfrei ein Ersatzboot oder erstatten anteilig die Charterkosten."
-        }
-      ]
-    },
-    {
-      title: "Service & Support",
-      icon: "🛠️",
-      questions: [
-        {
-          question: "Erhalte ich eine Einweisung ins Boot?",
-          answer: "Selbstverständlich! Vor jeder Charter erhältst du eine ausführliche Einweisung in die Technik, Navigation und Sicherheitsausrüstung. Diese dauert je nach Bootstyp 1-2 Stunden."
-        },
-        {
-          question: "Gibt es Support während des Törns?",
-          answer: "Ja, unser Support-Team ist 24/7 telefonisch erreichbar. Bei technischen Problemen oder Fragen zur Navigation helfen wir dir jederzeit weiter."
-        },
-        {
-          question: "Könnt ihr bei der Törnplanung helfen?",
-          answer: "Gerne! Unsere Revierexperten kennen die schönsten Routen und besten Ankerplätze. Wir erstellen dir kostenlose Törnvorschläge passend zu deiner Erfahrung und deinen Wünschen."
-        },
-        {
-          question: "Was ist mit Provisioning/Verpflegung?",
-          answer: "Auf Wunsch organisieren wir dein Provisioning. Du erhältst eine gut gefüllte Küche bei deiner Ankunft. Auch spezielle Wünsche oder Diäten berücksichtigen wir gerne."
+          question: "Was ist Tipping/Trinkgeld für die Crew?",
+          answer: "Bei Crewed Chartern ist es in vielen Ländern üblich, der Crew am Ende des Charters ein Trinkgeld zu geben. Die Höhe liegt meist zwischen 5 % und 15 % des Charterpreises und hängt von Ihrer Zufriedenheit mit dem Service ab."
         }
       ]
     }
@@ -129,11 +175,11 @@ const FAQ = () => {
             Häufige Fragen
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-            FAQ
+            FAQ – Ihre Fragen, unsere Antworten zum Yachtcharter
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Hier findest du Antworten auf die häufigsten Fragen rund um 
-            Yacht-Charter, Buchung und unsere Services
+            Wir haben die häufigsten Fragen unserer Kunden gesammelt und beantwortet, 
+            um Ihnen die Planung Ihres Yachtcharters so einfach wie möglich zu machen.
           </p>
         </div>
 
@@ -143,7 +189,9 @@ const FAQ = () => {
             <Card key={categoryIndex} className="shadow-ocean border-ocean-light/50">
               <CardHeader>
                 <div className="flex items-center gap-4">
-                  <div className="text-3xl">{category.icon}</div>
+                  <div className="w-12 h-12 bg-ocean-blue/10 rounded-lg flex items-center justify-center">
+                    <category.icon className="w-6 h-6 text-ocean-blue" />
+                  </div>
                   <div>
                     <CardTitle className="text-xl text-ocean-dark">{category.title}</CardTitle>
                     <CardDescription>
