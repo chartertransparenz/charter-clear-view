@@ -22,6 +22,7 @@ const Footer = () => {
       { name: "Über uns", href: "#ueber-uns" },
       { name: "Kontakt", href: "#kontakt" },
       { name: "Impressum", href: "#impressum" },
+      { name: "FAQ", href: "/faq" },
       { name: "Datenschutz", href: "#datenschutz" }
     ]
   };

@@ -6,7 +6,6 @@ import Fleet from "@/components/Fleet";
 import Territories from "@/components/Territories";
 import VideoBanner from "@/components/VideoBanner";
 import Partners from "@/components/Partners";
-import FAQ from "@/components/FAQ";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -36,7 +35,6 @@ const Index = () => {
       <Fleet />
       <VideoBanner />
       <Partners />
-      <FAQ />
       <About />
       <Contact />
       <Footer />

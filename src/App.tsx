@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
+import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 
 // Territory pages
@@ -163,6 +164,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/faq" element={<FAQ />} />
             
             {/* Mediterranean routes */}
             <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
