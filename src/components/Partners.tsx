@@ -2,6 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Award, Users, MapPin, Shield, Anchor, Star } from "lucide-react";
+import { useAnimatedCounter } from "@/hooks/use-animated-counter";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import partnerMarina from "@/assets/partner-marina.jpg";
 import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
 import partnerCertifications from "@/assets/partner-certifications.jpg";
@@ -92,11 +94,21 @@ const Partners = () => {
     }
   ];
 
+  const { ref: statisticsRef, isIntersecting } = useIntersectionObserver({
+    threshold: 0.3,
+    triggerOnce: true
+  });
+
+  const count1 = useAnimatedCounter({ end: 250, trigger: isIntersecting, duration: 2500 });
+  const count2 = useAnimatedCounter({ end: 30, trigger: isIntersecting, duration: 2000 });
+  const count3 = useAnimatedCounter({ end: 30, trigger: isIntersecting, duration: 2200 });
+  const count4 = useAnimatedCounter({ end: 100, trigger: isIntersecting, duration: 2800 });
+
   const statistics = [
-    { number: "250+", label: "Vertrauensvolle Partner", icon: Users, image: partnersTrust },
-    { number: "30+", label: "Länder weltweit", icon: MapPin, image: partnersGlobal },
-    { number: "30+", label: "Jahre Partnerschaft", icon: Award, image: partnersYears },
-    { number: "100%", label: "Qualitätsgarantie", icon: Shield, image: partnersQuality }
+    { number: count1, suffix: "+", label: "Vertrauensvolle Partner", icon: Users, image: partnersTrust },
+    { number: count2, suffix: "+", label: "Länder weltweit", icon: MapPin, image: partnersGlobal },
+    { number: count3, suffix: "+", label: "Jahre Partnerschaft", icon: Award, image: partnersYears },
+    { number: count4, suffix: "%", label: "Qualitätsgarantie", icon: Shield, image: partnersQuality }
   ];
 
   return (
@@ -117,7 +129,7 @@ const Partners = () => {
         </div>
 
         {/* Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div ref={statisticsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {statistics.map((stat, index) => (
             <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
               <div className="relative h-32 overflow-hidden">
@@ -134,7 +146,9 @@ const Partners = () => {
                 </div>
               </div>
               <CardContent className="pt-4 pb-6">
-                <div className="text-2xl font-bold text-ocean-blue mb-1">{stat.number}</div>
+                <div className="text-2xl font-bold text-ocean-blue mb-1">
+                  {stat.number}{stat.suffix}
+                </div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </CardContent>
             </Card>
