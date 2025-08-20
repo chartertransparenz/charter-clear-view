@@ -93,7 +93,7 @@ const Partners = () => {
   ];
 
   const statistics = [
-    { number: "25+", label: "Vertrauensvolle Partner", icon: Users, image: partnersTrust },
+    { number: "250+", label: "Vertrauensvolle Partner", icon: Users, image: partnersTrust },
     { number: "10+", label: "Länder weltweit", icon: MapPin, image: partnersGlobal },
     { number: "15+", label: "Jahre Partnerschaft", icon: Award, image: partnersYears },
     { number: "100%", label: "Qualitätsgarantie", icon: Shield, image: partnersQuality }
