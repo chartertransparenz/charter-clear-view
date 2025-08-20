@@ -6,7 +6,6 @@ const Footer = () => {
   const footerLinks = {
     services: [
       { name: "Yacht Charter", href: "#flotte" },
-      { name: "Segelschule", href: "#leistungen" },
       { name: "Gruppenevents", href: "#leistungen" },
       { name: "Beratung", href: "#kontakt" }
     ],
