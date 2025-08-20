@@ -52,7 +52,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Öffnungszeiten",
-      content: "Mo-Fr 9:00 - 18:00\nSa: 10 - 14"
+      content: "Mo-Fr 9:00 - 18:00\nSa: 10:00 - 14:00"
     }
   ];
 
