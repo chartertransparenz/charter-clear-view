@@ -42,7 +42,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefon",
-      content: "+49 (0) 7543 123456"
+      content: "+49 7543 499 080"
     },
     {
       icon: Mail,
