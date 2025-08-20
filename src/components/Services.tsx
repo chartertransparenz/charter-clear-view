@@ -116,24 +116,6 @@ const Services = () => {
             </div>
           </div>
             
-          
-          <div className="mt-12">
-          <div className="grid md:grid-cols-3 gap-8">
-            {advantages.map((advantage, index) => <div key={index} className="text-center">
-                <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg">
-                  <img src={advantage.image} alt={advantage.title} className="w-full h-48 object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                    <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center">
-                      <advantage.icon className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                </div>
-                <h4 className="font-semibold mb-2 text-ocean-dark">{advantage.title}</h4>
-                <p className="text-sm text-muted-foreground">{advantage.description}</p>
-              </div>)}
-           </div>
-          </div>
         </div>
 
         {/* Call to Action */}
