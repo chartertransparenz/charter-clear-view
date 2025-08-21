@@ -16,8 +16,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import yachtcharterImage from "@/assets/yachtcharter-costa-smeralda.jpg";
-import bootMietenImage from "@/assets/boot-mieten-costa-smeralda.jpg";
 
 const CostaSmeralda = () => {
   useEffect(() => {
@@ -168,7 +166,7 @@ const CostaSmeralda = () => {
               {/* Yachtcharter Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={`${yachtcharterImage}?v=${Date.now()}`} 
+                  src="/lovable-uploads/2112d3b6-fd2a-4cce-ab71-7c25452c2d4a.png" 
                   alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" 
                   title="Yachtcharter Costa Smeralda"
                   className="w-full h-auto object-cover"
@@ -207,7 +205,7 @@ const CostaSmeralda = () => {
               {/* Boot mieten Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={`${bootMietenImage}?v=${Date.now()}`} 
+                  src="/lovable-uploads/150dda6b-099a-40d6-a3d4-4c716d4be464.png" 
                   alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" 
                   title="Boot mieten Costa Smeralda"
                   className="w-full h-auto object-cover"
