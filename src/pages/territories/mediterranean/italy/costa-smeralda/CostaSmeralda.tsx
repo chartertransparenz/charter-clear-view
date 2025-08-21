@@ -59,7 +59,7 @@ const CostaSmeralda = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png')",
+            backgroundImage: "url('/lovable-uploads/7e28b3da-6c6c-40f2-be08-669607511594.png')",
             filter: "brightness(0.7)"
           }}
         ></div>
