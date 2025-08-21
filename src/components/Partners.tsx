@@ -105,7 +105,7 @@ const Partners = () => {
   const count4 = useAnimatedCounter({ end: 100, trigger: isIntersecting, duration: 2800 });
 
   const statistics = [
-    { number: count1, suffix: "+", label: "Vertrauensvolle Partner", icon: Users, image: partnersTrust },
+    { number: count1, suffix: "+", label: "Vertrauensvolle Partner", icon: Users, image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png" },
     { number: count2, suffix: "+", label: "Länder weltweit", icon: MapPin, image: partnersGlobal },
     { number: count3, suffix: "+", label: "Jahre Partnerschaft", icon: Award, image: partnersYears },
     { number: count4, suffix: "%", label: "Qualitätsgarantie", icon: Shield, image: partnersQuality }
