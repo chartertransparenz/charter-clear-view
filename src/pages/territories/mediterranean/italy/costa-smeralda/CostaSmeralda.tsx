@@ -25,8 +25,8 @@ const CostaSmeralda = () => {
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Nordost-Sardinien" },
     { icon: Calendar, label: "Beste Zeit", value: "Mai-Oktober" },
-    { icon: Users, label: "Geeignet für", value: "Luxus-Segler" },
-    { icon: Anchor, label: "Besonderheit", value: "Porto Cervo" }
+    { icon: Users, label: "Geeignet für", value: "Naturliebhaber" },
+    { icon: Anchor, label: "Besonderheit", value: "Unzählige Buchten" }
   ];
 
   const marinas = [
