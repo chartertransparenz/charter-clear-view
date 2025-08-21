@@ -8,8 +8,8 @@ import caribbeanImage from "@/assets/caribbean.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
 const Hero = () => {
-  const slides = [{
-    image: heroYacht,
+const slides = [{
+    image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
     title: "Luxuriöse Yachten",
     subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse"
   }, {
