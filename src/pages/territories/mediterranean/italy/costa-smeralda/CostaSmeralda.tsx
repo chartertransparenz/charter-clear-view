@@ -168,7 +168,7 @@ const CostaSmeralda = () => {
               {/* Yachtcharter Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={yachtcharterImage} 
+                  src={`${yachtcharterImage}?v=${Date.now()}`} 
                   alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" 
                   title="Yachtcharter Costa Smeralda"
                   className="w-full h-auto object-cover"
@@ -207,7 +207,7 @@ const CostaSmeralda = () => {
               {/* Boot mieten Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={bootMietenImage} 
+                  src={`${bootMietenImage}?v=${Date.now()}`} 
                   alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" 
                   title="Boot mieten Costa Smeralda"
                   className="w-full h-auto object-cover"
