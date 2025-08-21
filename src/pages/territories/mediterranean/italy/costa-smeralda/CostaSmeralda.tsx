@@ -56,7 +56,14 @@ const CostaSmeralda = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png')",
+            filter: "brightness(0.7)"
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-emerald-500 text-white">🇮🇹 Costa Smeralda</Badge>
