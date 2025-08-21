@@ -155,24 +155,24 @@ const Sardinien = () => {
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Der glamouröse Norden: Costa Smeralda und das La Maddalena Archipel</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Der Nordosten Sardiniens ist das pulsierende Herz des Yachtsports im Mittelmeer. Von unseren bestens gelegenen Charterbasen in Olbia, Portisco oder Cannigione starten Sie direkt in dieses Segelparadies, das für jeden Anspruch das Richtige bietet.
+                Der Nordosten Sardiniens ist das pulsierende Herz des Yachtsports im Mittelmeer. Von unseren bestens gelegenen Charterbasen in Olbia, Portisco oder Cannigione starten Sie direkt in dieses Segelparadies, das für jeden Anspruch das Richtige bietet. <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline font-medium">Erfahren Sie mehr über das exklusive Segelrevier Costa Smeralda.</Link>
               </p>
 
               <h4 className="text-lg font-semibold text-gray-800 mb-3">Die Costa Smeralda – Wo Luxus auf Natur trifft</h4>
               <p className="text-base text-gray-600 mb-4">
-                Die „Smaragdküste" macht ihrem Namen alle Ehre. In den 1960er Jahren von Prinz Karim Aga Khan als exklusives Refugium entwickelt, ist sie heute ein Synonym für Luxus, Stil und unvergleichliche Naturschönheit. Ein Törn entlang dieses Küstenabschnitts ist ein Erlebnis für sich.
+                Die „Smaragdküste" macht ihrem Namen alle Ehre. In den 1960er Jahren von Prinz Karim Aga Khan als exklusives Refugium entwickelt, ist sie heute ein Synonym für Luxus, Stil und unvergleichliche Naturschönheit. Ein Törn entlang dieses Küstenabschnitts ist ein Erlebnis für sich. <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline font-medium">Entdecken Sie alle Details zur Costa Smeralda.</Link>
               </p>
               
               <p className="text-base text-gray-600 mb-4">Die Marinas hier gehören zu den berühmtesten der Welt:</p>
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
-                <li><strong>Porto Cervo:</strong> Das unbestrittene Zentrum der Costa Smeralda. Die von Stararchitekt Luigi Vietti entworfene Marina ist ein Meisterwerk, das sich harmonisch in die Landschaft einfügt. Hier liegen die Superyachten der Welt vor Anker, und in den Gassen des Ortes finden sich die Boutiquen aller großen Designer.</li>
+                <li><strong>Porto Cervo:</strong> Das unbestrittene Zentrum der Costa Smeralda. Die von Stararchitekt Luigi Vietti entworfene Marina ist ein Meisterwerk, das sich harmonisch in die Landschaft einfügt. Hier liegen die Superyachten der Welt vor Anker, und in den Gassen des Ortes finden sich die Boutiquen aller großen Designer. <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline text-sm">Mehr zur Costa Smeralda →</Link></li>
                 <li><strong>Porto Rotondo:</strong> Nicht weniger elegant, besticht dieser Hafen durch seine kreisrunde Anlage und die lebhafte Piazzetta. Auch hier trifft sich die Welt, um das einzigartige Flair zu genießen.</li>
                 <li><strong>Poltu Quatu:</strong> Der „versteckte Hafen" liegt in einem fjordähnlichen Einschnitt und bietet eine intimere, aber ebenso luxuriöse Atmosphäre.</li>
               </ul>
 
               <h4 className="text-lg font-semibold text-gray-800 mb-3">Das La Maddalena Archipel – Ein Nationalpark von Weltrang</h4>
               <p className="text-base text-gray-600 mb-4">
-                Nur wenige Seemeilen nördlich der Costa Smeralda beginnt das nautische Herzstück des Reviers: das La Maddalena Archipel. Dieser Nationalpark besteht aus über 60 Inseln und Felsen und ist ein wahres Paradies für Segler. Hier finden Sie unzählige, perfekt geschützte Ankerplätze.
+                Nur wenige Seemeilen nördlich der Costa Smeralda beginnt das nautische Herzstück des Reviers: das La Maddalena Archipel. Dieser Nationalpark besteht aus über 60 Inseln und Felsen und ist ein wahres Paradies für Segler. Hier finden Sie unzählige, perfekt geschützte Ankerplätze. <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline font-medium">Lesen Sie mehr über das La Maddalena Archipel und die Costa Smeralda.</Link>
               </p>
               
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
