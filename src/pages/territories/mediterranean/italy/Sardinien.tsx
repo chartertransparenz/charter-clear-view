@@ -214,6 +214,28 @@ const Sardinien = () => {
           </Card>
         </div>
 
+        {/* Costa Smeralda Link */}
+        <div className="mb-12">
+          <Card className="shadow-lg border-blue-200">
+            <CardContent className="p-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Costa Smeralda</h3>
+                  <p className="text-gray-600 mb-4">
+                    Entdecken Sie das exklusivste Segelrevier Sardiniens mit seinen weltberühmten Marinas und dem La Maddalena Archipel.
+                  </p>
+                </div>
+                <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Mehr erfahren
+                    <ChevronRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Important Harbors & Ports */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Marinas</h2>
