@@ -154,6 +154,15 @@ const Sardinien = () => {
                 Stellen Sie sich vor, Sie navigieren Ihre Yacht durch ein Meer, dessen Farben von tiefem Smaragdgrün bis zu leuchtendem Türkisblau changieren. Sie passieren bizarre, von Wind und Wetter geformte Granitfelsen, die wie Skulpturen aus dem Wasser ragen, und werfen Anker in Buchten mit Puderzuckerstränden, die Sie sonst nur aus Hochglanzmagazinen kennen.
               </p>
               
+              {/* Stranderlebnis Bild */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/57b6c045-a49a-4111-9dbe-7cab4456fec9.png" 
+                  alt="Paar entspannt am türkisfarbenen Strand von Sardinien mit kristallklarem Wasser und Segelbooten im Hintergrund" 
+                  className="w-full h-auto object-cover max-h-96 md:max-h-[500px]"
+                />
+              </div>
+              
               <p className="text-lg text-gray-600 mb-8">
                 Sardinien ist ein Revier der Kontraste: Es bietet die glamouröse Welt des internationalen Jet-Sets in Porto Cervo, die raue, seemännische Herausforderung in der Straße von Bonifacio und die unberührte, authentische Schönheit im Süden der Insel. Ob Sie mit einer eleganten Segelyacht die Küste erkunden oder auf einem geräumigen Katamaran von Bucht zu Bucht hüpfen – Sardinien wird Sie mit seiner unvergleichlichen Schönheit in den Bann ziehen.
               </p>
@@ -180,6 +189,15 @@ const Sardinien = () => {
                 Nur wenige Seemeilen nördlich der Costa Smeralda beginnt das nautische Herzstück des Reviers: das La Maddalena Archipel. Dieser Nationalpark besteht aus über 60 Inseln und Felsen und ist ein wahres Paradies für Segler. Hier finden Sie unzählige, perfekt geschützte Ankerplätze. <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline font-medium">Lesen Sie mehr über das La Maddalena Archipel und die Costa Smeralda.</Link>
               </p>
               
+              {/* Küstenlandschaft mit Turm */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/dec3e030-3572-47d6-8aec-cb5e616c181e.png" 
+                  alt="Luftaufnahme der sardischen Küste mit historischem Wachturm auf Klippe und türkisfarbenem Meer, typisch für das La Maddalena Archipel" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
                 <li><strong>Spargi:</strong> Berühmt für ihre Buchten an der Ostküste wie die Cala Corsara, umgeben von beeindruckenden Granitformationen.</li>
                 <li><strong>Budelli:</strong> Bekannt für den legendären „Spiaggia Rosa", den rosa Strand, dessen Betreten heute zum Schutz streng reglementiert ist. Doch auch die umliegenden Ankerplätze sind von atemberaubender Schönheit.</li>
@@ -191,6 +209,15 @@ const Sardinien = () => {
               <p className="text-base text-gray-600 mb-6">
                 Für erfahrene Skipper ist die Überquerung der Straße von Bonifacio ein absolutes Highlight. Diese etwa 12 Kilometer breite Meerenge zwischen Sardinien (Italien) und Korsika (Frankreich) ist für ihre anspruchsvollen Windbedingungen bekannt. Der hier durch den Düseneffekt oft verstärkte Maestrale (Mistral) sorgt für packendes Segeln. Der Lohn ist die Ankunft in Bonifacio, einem der spektakulärsten Naturhäfen des Mittelmeers.
               </p>
+              
+              {/* Granitfelsen bei Sonnenuntergang */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/f90003bc-6e22-4a6e-a0d9-02d53b9b730c.png" 
+                  alt="Blick durch beeindruckende Granitfelsen auf die sardische Küstenlandschaft bei goldenem Sonnenlicht, charakteristisch für die Region" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Der ursprüngliche Süden: Von Cagliari nach Carloforte</h3>
               <p className="text-base text-gray-600 mb-4">
