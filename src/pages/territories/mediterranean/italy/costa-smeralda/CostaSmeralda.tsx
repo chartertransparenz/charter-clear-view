@@ -16,6 +16,8 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import yachtcharterImage from "@/assets/yachtcharter-costa-smeralda.jpg";
+import bootMietenImage from "@/assets/boot-mieten-costa-smeralda.jpg";
 
 const CostaSmeralda = () => {
   useEffect(() => {
@@ -163,6 +165,17 @@ const CostaSmeralda = () => {
                 Stellen Sie sich vor, Sie navigieren Ihre Yacht durch ein Meer, dessen Farben von tiefem Smaragdgrün bis zu leuchtendem Türkisblau changieren. Sie passieren bizarre, von Wind und Wetter geformte Granitfelsen, die wie Skulpturen aus dem Wasser ragen, und werfen Anker in Buchten mit Puderzuckerstränden, die Sie sonst nur aus Hochglanzmagazinen kennen.
               </p>
 
+              {/* Yachtcharter Costa Smeralda Image */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={yachtcharterImage} 
+                  alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" 
+                  title="Yachtcharter Costa Smeralda"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+
               <h3 className="text-xl font-bold text-gray-800 mb-4">Die Costa Smeralda: Wo Luxus auf Natur trifft</h3>
               <p className="text-lg text-gray-600 mb-6">
                 Die „Smaragdküste" macht ihrem Namen alle Ehre. In den 1960er Jahren von Prinz Karim Aga Khan als exklusives Refugium entwickelt, ist sie heute ein Synonym für Luxus, Stil und unvergleichliche Naturschönheit. Ein Törn entlang dieses Küstenabschnitts ist ein Erlebnis für sich.
@@ -190,6 +203,17 @@ const CostaSmeralda = () => {
               <p className="text-base text-gray-600 mb-4">
                 Die Schönheit der Natur ist hier überwältigend. Wind und Wetter haben über Jahrtausende bizarre Granitformationen geschaffen, die wie von Künstlerhand geformt aussehen. Dazwischen liegen unzählige Buchten mit feinstem weißen Sand und Wasser, das so klar ist, dass die Yachten über dem Meeresgrund zu schweben scheinen.
               </p>
+
+              {/* Boot mieten Costa Smeralda Image */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={bootMietenImage} 
+                  alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" 
+                  title="Boot mieten Costa Smeralda"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
 
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
                 <li><strong>Spargi:</strong> Berühmt für ihre Buchten an der Ostküste wie die Cala Corsara, umgeben von beeindruckenden Granitformationen.</li>
