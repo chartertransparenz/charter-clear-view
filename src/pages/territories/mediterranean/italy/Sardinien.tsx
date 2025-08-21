@@ -139,17 +139,76 @@ const Sardinien = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <Card className="shadow-lg">
             <CardContent className="p-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln rund um Sardinien</h2>
-              <p className="text-lg text-gray-600 mb-4">
-                Sardinien bietet mit seinem smaragdgrünen Wasser und der legendären Costa Smeralda 
-                eine der exklusivsten Segelregionen des Mittelmeers. Die zweitgrößte Insel des 
-                Mittelmeers vereint unberührte Natur mit luxuriösen Yachthäfen und bietet 
-                perfekte Bedingungen für jeden Segeltyp.
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Yachtcharter Sardinien: Segeln an der Costa Smeralda & im La Maddalena Archipel</h2>
+              
+              <p className="text-lg text-gray-600 mb-6">
+                Willkommen in einem der berühmtesten und atemberaubendsten Segelreviere der Welt. Ein Yachtcharter auf Sardinien ist nicht einfach nur ein Urlaub – es ist der Inbegriff des mediterranen Traums. Hier trifft karibisches Flair auf europäische Eleganz, unberührte Natur auf luxuriöse Marinas und sportliches Segeln auf entspanntes Dolce Vita. Vor allem der Norden der Insel mit der legendären Costa Smeralda und dem La Maddalena Archipel ist ein Magnet für Segler aus aller Welt.
               </p>
-              <p className="text-lg text-gray-600">
-                Von den mondänen Häfen der Costa Smeralda bis zu den authentischen Fischerdörfern 
-                im Süden - Sardinien bietet eine faszinierende Vielfalt auf relativ kleinem Raum 
-                mit kurzen Segeldistanzen zwischen den Häfen.
+              
+              <p className="text-lg text-gray-600 mb-6">
+                Stellen Sie sich vor, Sie navigieren Ihre Yacht durch ein Meer, dessen Farben von tiefem Smaragdgrün bis zu leuchtendem Türkisblau changieren. Sie passieren bizarre, von Wind und Wetter geformte Granitfelsen, die wie Skulpturen aus dem Wasser ragen, und werfen Anker in Buchten mit Puderzuckerstränden, die Sie sonst nur aus Hochglanzmagazinen kennen.
+              </p>
+              
+              <p className="text-lg text-gray-600 mb-8">
+                Sardinien ist ein Revier der Kontraste: Es bietet die glamouröse Welt des internationalen Jet-Sets in Porto Cervo, die raue, seemännische Herausforderung in der Straße von Bonifacio und die unberührte, authentische Schönheit im Süden der Insel. Ob Sie mit einer eleganten Segelyacht die Küste erkunden oder auf einem geräumigen Katamaran von Bucht zu Bucht hüpfen – Sardinien wird Sie mit seiner unvergleichlichen Schönheit in den Bann ziehen.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Der glamouröse Norden: Costa Smeralda und das La Maddalena Archipel</h3>
+              <p className="text-lg text-gray-600 mb-6">
+                Der Nordosten Sardiniens ist das pulsierende Herz des Yachtsports im Mittelmeer. Von unseren bestens gelegenen Charterbasen in Olbia, Portisco oder Cannigione starten Sie direkt in dieses Segelparadies, das für jeden Anspruch das Richtige bietet.
+              </p>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Die Costa Smeralda – Wo Luxus auf Natur trifft</h4>
+              <p className="text-base text-gray-600 mb-4">
+                Die „Smaragdküste" macht ihrem Namen alle Ehre. In den 1960er Jahren von Prinz Karim Aga Khan als exklusives Refugium entwickelt, ist sie heute ein Synonym für Luxus, Stil und unvergleichliche Naturschönheit. Ein Törn entlang dieses Küstenabschnitts ist ein Erlebnis für sich.
+              </p>
+              
+              <p className="text-base text-gray-600 mb-4">Die Marinas hier gehören zu den berühmtesten der Welt:</p>
+              <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
+                <li><strong>Porto Cervo:</strong> Das unbestrittene Zentrum der Costa Smeralda. Die von Stararchitekt Luigi Vietti entworfene Marina ist ein Meisterwerk, das sich harmonisch in die Landschaft einfügt. Hier liegen die Superyachten der Welt vor Anker, und in den Gassen des Ortes finden sich die Boutiquen aller großen Designer.</li>
+                <li><strong>Porto Rotondo:</strong> Nicht weniger elegant, besticht dieser Hafen durch seine kreisrunde Anlage und die lebhafte Piazzetta. Auch hier trifft sich die Welt, um das einzigartige Flair zu genießen.</li>
+                <li><strong>Poltu Quatu:</strong> Der „versteckte Hafen" liegt in einem fjordähnlichen Einschnitt und bietet eine intimere, aber ebenso luxuriöse Atmosphäre.</li>
+              </ul>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Das La Maddalena Archipel – Ein Nationalpark von Weltrang</h4>
+              <p className="text-base text-gray-600 mb-4">
+                Nur wenige Seemeilen nördlich der Costa Smeralda beginnt das nautische Herzstück des Reviers: das La Maddalena Archipel. Dieser Nationalpark besteht aus über 60 Inseln und Felsen und ist ein wahres Paradies für Segler. Hier finden Sie unzählige, perfekt geschützte Ankerplätze.
+              </p>
+              
+              <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
+                <li><strong>Spargi:</strong> Berühmt für ihre Buchten an der Ostküste wie die Cala Corsara, umgeben von beeindruckenden Granitformationen.</li>
+                <li><strong>Budelli:</strong> Bekannt für den legendären „Spiaggia Rosa", den rosa Strand, dessen Betreten heute zum Schutz streng reglementiert ist. Doch auch die umliegenden Ankerplätze sind von atemberaubender Schönheit.</li>
+                <li><strong>Caprera:</strong> Die Insel von Nationalheld Giuseppe Garibaldi ist grüner und bewaldeter. Sie bietet nicht nur fantastische Buchten, sondern auch die Möglichkeit, Garibaldis ehemaliges Wohnhaus zu besichtigen.</li>
+                <li><strong>La Maddalena:</strong> Die gleichnamige Hauptinsel beherbergt das einzige Städtchen des Archipels mit einem charmanten Hafen und lebhaften Gassen.</li>
+              </ul>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Ein Abstecher ins Abenteuer: Die Straße von Bonifacio</h4>
+              <p className="text-base text-gray-600 mb-6">
+                Für erfahrene Skipper ist die Überquerung der Straße von Bonifacio ein absolutes Highlight. Diese etwa 12 Kilometer breite Meerenge zwischen Sardinien (Italien) und Korsika (Frankreich) ist für ihre anspruchsvollen Windbedingungen bekannt. Der hier durch den Düseneffekt oft verstärkte Maestrale (Mistral) sorgt für packendes Segeln. Der Lohn ist die Ankunft in Bonifacio, einem der spektakulärsten Naturhäfen des Mittelmeers.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Der ursprüngliche Süden: Von Cagliari nach Carloforte</h3>
+              <p className="text-base text-gray-600 mb-4">
+                Während der Norden für seinen Glamour bekannt ist, bietet der Süden Sardiniens ein authentischeres und oft ruhigeres Segelerlebnis. Die Küsten sind hier weitläufiger, geprägt von langen Sandstränden und einer entspannten Atmosphäre.
+              </p>
+              
+              <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
+                <li><strong>Cagliari:</strong> Die pulsierende Hauptstadt Sardiniens ist ein idealer Ausgangspunkt für Törns entlang der Südküste. Die moderne Marina liegt direkt vor der historischen Altstadt „Castello".</li>
+                <li><strong>Carloforte:</strong> Diese Charterbasis hat einen ganz besonderen Reiz. Sie liegt auf der Insel San Pietro im Südwesten. Der Ort wurde von ligurischen Fischern gegründet, und bis heute wird hier ein alter genuesischer Dialekt gesprochen.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Wind, Wetter und navigatorische Hinweise</h3>
+              <p className="text-base text-gray-600 mb-4">
+                Sardinien ist ein Revier, das seemännisches Verständnis belohnt. Der vorherrschende Wind ist der Maestrale (Mistral) aus Nordwest. Er bringt klaren Himmel und fantastische Segelbedingungen, kann aber besonders in der Straße von Bonifacio schnell an Stärke zunehmen.
+              </p>
+              
+              <p className="text-base text-gray-600 mb-6">
+                <strong>Beste Reisezeit:</strong> Wie in vielen Mittelmeerrevieren sind Mai, Juni und September die idealen Monate. Das Wetter ist warm und stabil, die Winde sind zuverlässig, und die Hauptsaison-Massen sind noch nicht oder nicht mehr da.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit: Sardinien – Ein Segelrevier der Superlative</h3>
+              <p className="text-base text-gray-600 mb-6">
+                Ein Yachtcharter auf Sardinien bietet eine Vielfalt, die ihresgleichen sucht. Es ist die Freiheit, zwischen einem glamourösen Abend in Porto Cervo und einer stillen Nacht unter dem Sternenhimmel in einer einsamen Bucht zu wählen. Es ist die Kombination aus anspruchsvollem Segeln und entspanntem Badeurlaub. Es ist die Begegnung mit einer der spektakulärsten Küstenlandschaften Europas.
               </p>
             </CardContent>
           </Card>
