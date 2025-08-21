@@ -13,7 +13,7 @@ const slides = [{
     title: "Luxuriöse Yachten",
     subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse"
   }, {
-    image: charterHeroWater,
+    image: "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png",
     title: "Kristallklares Wasser",
     subtitle: "Die schönsten Gewässer der Welt entdecken"
   }, {
