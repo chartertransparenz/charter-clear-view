@@ -207,7 +207,7 @@ const Territories = () => {
             <Link to="/reviere/karibik" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src={caribbean} alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png" alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
