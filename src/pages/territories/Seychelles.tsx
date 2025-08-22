@@ -74,7 +74,7 @@ const Seychelles = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationSeychelles}
+          src="/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.png"
           alt="Seychellen Segelrevier"
           className="w-full h-full object-cover"
         />

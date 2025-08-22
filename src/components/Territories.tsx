@@ -95,7 +95,7 @@ const Territories = () => {
     name: "Seychellen",
     regions: "Mahé, Praslin, La Digue, Amiranten",
     highlights: ["Tropisches Inselparadies", "Katamaran bevorzugt", "Glasklares Wasser, Schnorcheln", "Ankern vor Traumstränden"],
-    image: destinationSeychelles,
+    image: "/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.png",
     link: "/reviere/indischer-ozean/seychellen"
   }, {
     rank: 10,
