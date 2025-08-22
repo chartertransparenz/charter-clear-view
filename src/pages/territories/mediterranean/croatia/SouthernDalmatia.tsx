@@ -155,6 +155,14 @@ export default function SouthernDalmatia() {
               gilt dabei als ein Revier von unvergleichlicher Schönheit und historischer Tiefe. Hier erwartet Sie eine 
               einzigartige Mischung aus unberührter Natur, antiker Geschichte, pulsierendem Leben und herzlicher Gastfreundschaft.
             </p>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/b4cd3f2d-847c-48ad-8345-04bb08f3e7dd.png" 
+                alt="Traumhafte Bucht in Süddalmatien mit Segelyachten vor malerischen Inseln"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
             
             <p className="text-lg leading-relaxed mb-6">
               Stellen Sie sich vor, Sie lichten den Anker in einer modernen Marina in Dubrovnik, lassen die beeindruckende 
@@ -179,6 +187,14 @@ export default function SouthernDalmatia() {
               von der Halbinsel Pelješac bis zur montenegrinischen Grenze erstreckt. Diese Region ist geprägt von der 
               majestätischen Stadt Dubrovnik und einer Kette von grünen Inseln, die zum Entdecken einladen.
             </p>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/ac6086b1-9d18-42fd-ae7d-2b4879b3bfe2.png" 
+                alt="Spektakulärer Blick über die grünen Hügel und türkisblauen Buchten Süddalmatiens"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
             
             <ul className="list-disc pl-6 space-y-4 mb-6">
               <li>
@@ -216,6 +232,17 @@ export default function SouthernDalmatia() {
                 Unterwasserwelt suchen. Die Insel ist bekannt für ihre traditionelle Architektur und die vielen kleinen 
                 Buchten, die zum Ankern einladen.
               </li>
+            </ul>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/55105c0d-79f3-4a8c-be4f-6635eddae340.png" 
+                alt="Luftaufnahme der malerischen Inselwelt Süddalmatiens mit kristallklaren Gewässern"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+
+            <ul className="list-disc pl-6 space-y-4 mb-6">
               
               <li>
                 <strong>Korčula:</strong> Obwohl technisch zu Mitteldalmatien gehörend, ist die Insel Korčula oft Teil 
@@ -318,6 +345,17 @@ export default function SouthernDalmatia() {
 
             <ul className="list-disc pl-6 space-y-3 mb-6">
               <li><strong>Dubrovnik:</strong> Erkunden Sie die UNESCO-geschützte Altstadt, schlendern Sie über den Stradun, besuchen Sie die Stadtmauern und genießen Sie den Panoramablick vom Berg Srđ.</li>
+            </ul>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/a2fa853d-8a65-48d9-b50e-201e57486739.png" 
+                alt="Dubrovnik - Die Perle der Adria mit ihrer beeindruckenden Altstadt und den historischen Stadtmauern"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+
+            <ul className="list-disc pl-6 space-y-3 mb-6">
               <li><strong>Elaphiten Inseln:</strong>
                 <ul className="list-disc pl-6 mt-2 space-y-1">
                   <li><strong>Lopud:</strong> Besuchen Sie den Sandstrand Šunj Beach und das historische Franziskanerkloster.</li>
