@@ -96,19 +96,63 @@ const About = () => {
           </p>
         </div>
 
-        {/* Team Image */}
-        <div className="relative mb-16 rounded-2xl overflow-hidden shadow-elegant max-w-4xl mx-auto">
-          <img
-            src="/lovable-uploads/e253a0a1-b4f4-4620-882e-92707c56a9f6.png"
-            alt="Team Charter Transparenz"
-            className="w-full h-64 md:h-80 object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-ocean-dark/40"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Unser Team</h3>
-              <p className="text-white/90 text-lg">Leidenschaft für das Segeln seit drei Jahrzehnten</p>
+        {/* Team Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-12 text-ocean-dark">Unser Team</h3>
+          
+          {/* Team Group Photo */}
+          <div className="relative mb-12 rounded-2xl overflow-hidden shadow-elegant max-w-4xl mx-auto">
+            <img
+              src="/lovable-uploads/e253a0a1-b4f4-4620-882e-92707c56a9f6.png"
+              alt="Team Charter Transparenz"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-ocean-dark/40"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-white">
+                <h4 className="text-2xl md:text-3xl font-bold mb-2">Gemeinsam stark</h4>
+                <p className="text-white/90 text-lg">Leidenschaft für das Segeln seit drei Jahrzehnten</p>
+              </div>
             </div>
+          </div>
+
+          {/* Individual Team Members */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="/lovable-uploads/1c1a939c-69d4-4725-97f0-6b97c1d90e5d.png"
+                  alt="Geschäftsführerin"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+              </div>
+              <CardContent className="pt-6 pb-6">
+                <h4 className="text-lg font-semibold text-ocean-dark mb-2">Geschäftsführung</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Mit über 25 Jahren Erfahrung in der Charter-Branche und unzähligen Segelmeilen 
+                  sorgt sie für höchste Qualitätsstandards und Kundenzufriedenheit.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="/lovable-uploads/6c0dd6c0-3e84-4a08-bd14-ef5dc5120e4c.png"
+                  alt="Charter-Experte"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
+              </div>
+              <CardContent className="pt-6 pb-6">
+                <h4 className="text-lg font-semibold text-ocean-dark mb-2">Charter-Experte</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Skipper und Charter-Spezialist mit fundierter Expertise in allen Revieren. 
+                  Seine Leidenschaft gilt perfekten Charter-Erlebnissen für unsere Kunden.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
