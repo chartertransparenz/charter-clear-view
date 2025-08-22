@@ -57,7 +57,7 @@ const Italy = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationItaly}
+          src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png"
           alt="Italien Segelrevier"
           className="w-full h-full object-cover"
         />

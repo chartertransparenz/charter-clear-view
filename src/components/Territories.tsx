@@ -47,7 +47,7 @@ const Territories = () => {
     name: "Italien",
     regions: "Sardinien, Elba/Toskana, Sizilien, Amalfiküste, Aeolische Inseln",
     highlights: ["Vielfalt an Revierarten: ruhig bis anspruchsvoll", "Gutes Essen, Kultur & spektakuläre Küsten", "Auch für Wochenend-Törns beliebt"],
-    image: destinationItaly,
+    image: "/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png",
     link: "/reviere/mittelmeer/italien"
   }, {
     rank: 4,
