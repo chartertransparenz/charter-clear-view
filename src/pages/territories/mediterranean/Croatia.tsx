@@ -159,6 +159,14 @@ const Croatia = () => {
             <p className="text-lg leading-relaxed mb-6">
               Ob Sie als erfahrener Skipper, Einsteiger, Familie, Genießer oder sportliche Crew unterwegs sind – Kroatien hält für jeden das passende Segelabenteuer bereit. Die kroatische Küste erstreckt sich über 1.700 Kilometer und wird von über 1.200 Inseln gesäumt, von denen jede ihren eigenen Charme und ihre spezifischen Segelbedingungen bietet. Von den venezianisch geprägten Städten Istriens über die unberührten Nationalparks Dalmatiens bis hin zur weltberühmten "Perle der Adria", Dubrovnik, bietet Kroatien eine unvergleichliche Palette an Erlebnissen.
             </p>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/a4bf08e3-d913-4d08-8011-51e59286bd87.png" 
+                alt="Traumhafter kroatischer Strand mit türkisblauem Wasser und weißem Sand" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+            </div>
             
             <p className="text-lg leading-relaxed mb-8">
               Die Vielfalt der Regionen reicht von geschützten Buchten und Inselgruppen, die sich ideal für entspanntes Inselhopping eignen, bis hin zu offeneren Seegebieten, die auch sportlich ambitionierte Segler begeistern. Die kurzen Distanzen zwischen den Inseln, die zahlreichen geschützten Ankerplätze und die hervorragende maritime Infrastruktur machen Kroatien zu einem der Top-Ziele für Yachtcharter weltweit. Doch gerade in diesem Revier sind die Kenntnis der lokalen Besonderheiten und die Einhaltung der Vorschriften von entscheidender Bedeutung für einen reibungslosen und unvergesslichen Törn.
@@ -236,6 +244,14 @@ const Croatia = () => {
               <p><strong>Für wen geeignet?</strong> Alle Erfahrungsstufen, Familien, Natur- und Tierliebhaber, Crews, die Abwechslung zwischen Inseln und Festland suchen.</p>
             </div>
 
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/67300c66-3444-42ca-8bfd-f30e4922efc7.png" 
+                alt="Segeltörn in Kroatien - Segelboote in einer malerischen kroatischen Bucht" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
             <h4 className="text-xl font-semibold mt-6 mb-4">3. Norddalmatien: Insel-Labyrinth, Kornaten und Nationalparks</h4>
             
             <div className="mb-6">
@@ -298,6 +314,14 @@ const Croatia = () => {
                 <li><strong>Šolta:</strong> Die dem Festland am nächsten gelegene Insel, bekannt für ihre Olivenhaine, Honigproduktion und ruhige, charmante Dörfer wie Maslinica und Stomorska.</li>
                 <li><strong>Drvenik Veli & Mali:</strong> Kleinere, ruhige Inseln mit wunderschönen Buchten, darunter die berühmte Blaue Lagune auf Drvenik Veli – ein Paradies zum Schwimmen und Schnorcheln.</li>
               </ul>
+            </div>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/f4a11792-1e6d-41dd-b71b-c006fc8b4457.png" 
+                alt="Spektakuläre kroatische Bucht mit kleinen Inseln und Ankerbuchten" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
             </div>
 
             <div className="mb-6">
@@ -519,6 +543,15 @@ const Croatia = () => {
               <p className="mb-4">Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.</p>
             </div>
           </div>
+        </div>
+
+        
+        <div className="my-8">
+          <img 
+            src="/lovable-uploads/ff80d3b1-62a9-4ae4-b318-65ad5c345279.png" 
+            alt="Luftaufnahme einer grünen kroatischen Insel umgeben von tiefblauem Wasser" 
+            className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+          />
         </div>
 
         {/* Regions */}
