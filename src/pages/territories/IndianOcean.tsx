@@ -53,7 +53,7 @@ const IndianOcean = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={indianOcean}
+          src="/lovable-uploads/d596d2c8-b553-4506-8bc2-950556c81b06.png"
           alt="Indischer Ozean"
           className="w-full h-full object-cover"
         />

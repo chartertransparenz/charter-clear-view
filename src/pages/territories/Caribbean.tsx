@@ -70,7 +70,7 @@ const Caribbean = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={caribbean}
+          src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png"
           alt="Karibik"
           className="w-full h-full object-cover"
         />

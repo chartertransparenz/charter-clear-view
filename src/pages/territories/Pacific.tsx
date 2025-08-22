@@ -52,7 +52,7 @@ const Pacific = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={pacific}
+          src="/lovable-uploads/2e92d7f8-6a8d-4d0f-b002-c953b144e652.png"
           alt="Südpazifik"
           className="w-full h-full object-cover"
         />

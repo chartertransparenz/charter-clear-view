@@ -50,7 +50,7 @@ const Atlantic = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={atlantic}
+          src="/lovable-uploads/ff7dc4cb-f11b-4982-bae9-e7ac8218165e.png"
           alt="Atlantik"
           className="w-full h-full object-cover"
         />

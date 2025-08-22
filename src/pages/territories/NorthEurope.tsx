@@ -53,7 +53,7 @@ const NorthEurope = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={balticSea}
+          src="/lovable-uploads/73d0c104-bfb5-478f-978a-cd437816aa77.png"
           alt="Nord- & Ostsee"
           className="w-full h-full object-cover"
         />

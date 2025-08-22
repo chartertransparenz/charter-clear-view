@@ -84,9 +84,9 @@ const Americas = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={caribbean}
+          src="/lovable-uploads/c34ad746-b92d-4e55-a09d-c0a32d23dc4d.png"
           alt="Amerika & Bahamas"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
