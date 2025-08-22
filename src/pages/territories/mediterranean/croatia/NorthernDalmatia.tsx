@@ -167,6 +167,14 @@ export default function NorthernDalmatia() {
               Norddalmatien, die Region zwischen Zadar und Rogoznica, gilt dabei als das Kronjuwel für Segler. Hier erwartet 
               Sie eine unvergleichliche Mischung aus unberührter Natur, antiker Geschichte und herzlicher Gastfreundschaft.
             </p>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/e80a0056-47b4-42b2-b2b4-05141058b00f.png" 
+                alt="Luftaufnahme der kroatischen Inselwelt in Norddalmatien" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+              />
+            </div>
             
             <p className="text-lg leading-relaxed mb-6">
               Stellen Sie sich vor, Sie lichten den Anker in einer modernen Marina in Zadar, Biograd oder Šibenik, lassen die 
@@ -175,6 +183,14 @@ export default function NorthernDalmatia() {
               versteckte Grotten, die nur vom Meer aus zugänglich sind, und historische Städte, deren Gassen von Jahrtausenden 
               europäischer Geschichte erzählen.
             </p>
+
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/453b22cb-8862-431e-af5b-cae084d68d17.png" 
+                alt="Segelboote vor der kroatischen Küste in kristallklarem Wasser" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+              />
+            </div>
 
             <p className="text-lg leading-relaxed mb-8">
               Norddalmatien bietet eine unvergleichliche Vielfalt an Segelrevieren, die für jeden Geschmack und jede 
@@ -221,6 +237,14 @@ export default function NorthernDalmatia() {
               dem Meer ragen. Die Kornaten sind ein Paradies für Segler, die Abgeschiedenheit, unberührte Natur und 
               kristallklares Wasser suchen. Es gibt zahlreiche Ankerbuchten und traditionelle Konobas (Restaurants), die 
               frischen Fisch und lokale Spezialitäten anbieten.</li>
+
+              <div className="my-8">
+                <img 
+                  src="/lovable-uploads/d783d11a-5e6e-4572-8f9d-02bd02bf36d1.png" 
+                  alt="Herzförmige Insel in den Kornaten - ein romantisches Naturwunder" 
+                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+                />
+              </div>
               
               <li><strong>Murter:</strong> Die Insel Murter, über eine Brücke mit dem Festland verbunden, gilt als das Tor 
               zu den Kornaten. Hier befinden sich lebhafte Marinas wie Marina Hramina und Marina Betina, die ideale 
@@ -244,6 +268,14 @@ export default function NorthernDalmatia() {
               <li><strong>Šibenik:</strong> Eine der ältesten kroatischen Städte an der Adria, die sich malerisch an einen 
               Hügel schmiegt. Ihr Wahrzeichen ist die Kathedrale des Heiligen Jakob, ein UNESCO-Welterbe, die vollständig 
               aus Stein erbaut wurde. Šibenik ist auch das Tor zum Nationalpark Krka.</li>
+
+              <div className="my-8">
+                <img 
+                  src="/lovable-uploads/d5b9c634-09a0-4d6d-b970-43007a40bf95.png" 
+                  alt="Luftaufnahme der historischen Altstadt Šibenik mit ihrem malerischen Hafen" 
+                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+                />
+              </div>
               
               <li><strong>Nationalpark Krka:</strong> Ein weiteres Naturwunder Kroatiens. Über den Fluss Krka können Sie 
               mit dem Boot bis Skradin fahren und von dort aus die berühmten Wasserfälle und Seen des Nationalparks erkunden. 
@@ -563,6 +595,14 @@ export default function NorthernDalmatia() {
                 <ul className="list-disc pl-6 space-y-1 text-blue-700">
                   <li><strong>Konobas:</strong> Nutzen Sie die kleinen Inselrestaurants für frischen Fisch</li>
                   <li><strong>Bargeld:</strong> In kleineren Konobas oder auf Inseln ratsam</li>
+
+                  <div className="my-8 col-span-2">
+                    <img 
+                      src="/lovable-uploads/75055849-81d8-4d85-9318-6d8010d57e1f.png" 
+                      alt="Frische Meeresfrüchte in einer dalmatinischen Konoba - ein kulinarisches Erlebnis" 
+                      className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+                    />
+                  </div>
                 </ul>
               </div>
             </div>
