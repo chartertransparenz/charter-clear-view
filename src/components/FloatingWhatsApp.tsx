@@ -19,7 +19,7 @@ const FloatingWhatsApp = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "4975434990800"; // Remove spaces and country code format
+    const phoneNumber = "49754349908"; // Remove spaces and country code format
     const message = encodeURIComponent("Hallo! Ich interessiere mich für Ihre Yacht Charter Services.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
