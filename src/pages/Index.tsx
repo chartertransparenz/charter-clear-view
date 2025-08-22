@@ -10,6 +10,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <FloatingCTA />
+      <FloatingWhatsApp />
       <Hero />
       <Territories />
       <Services />

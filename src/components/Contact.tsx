@@ -108,11 +108,26 @@ const Contact = () => {
                   Ruf uns direkt an oder schreib uns eine WhatsApp-Nachricht.
                 </p>
                 <div className="space-y-2">
-                  <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20"
+                    onClick={() => window.open('tel:+4975434990800', '_self')}
+                  >
                     <Phone className="w-4 h-4 mr-2" />
                     Jetzt anrufen
                   </Button>
-                  <Button variant="outline" size="sm" className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20"
+                    onClick={() => {
+                      const phoneNumber = "4975434990800";
+                      const message = encodeURIComponent("Hallo! Ich interessiere mich für Ihre Yacht Charter Services.");
+                      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+                      window.open(whatsappUrl, '_blank');
+                    }}
+                  >
                     <Send className="w-4 h-4 mr-2" />
                     WhatsApp senden
                   </Button>
