@@ -278,23 +278,23 @@ export default function NorthernDalmatia() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-lg font-semibold mb-3">Per Flugzeug</h4>
-                <p className="mb-4">Zahlreiche internationale Flughäfen entlang der Küste werden von Deutschland, Österreich 
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="text-lg font-semibold mb-3 text-blue-800">Per Flugzeug</h4>
+                <p className="mb-4 text-blue-700">Zahlreiche internationale Flughäfen entlang der Küste werden von Deutschland, Österreich 
                 und der Schweiz aus direkt angeflogen. Die wichtigsten Zielflughäfen für unsere Chartergäste in Norddalmatien sind:</p>
-                <ul className="list-disc pl-6 space-y-1">
+                <ul className="list-disc pl-6 space-y-1 text-blue-700">
                   <li><strong>Zadar (ZAD):</strong> Ideal für die Region Zadar und die nördlichen Kornaten.</li>
                   <li><strong>Split (SPU):</strong> Für die Region Šibenik und die südlichen Kornaten.</li>
                 </ul>
-                <p className="mt-3 text-sm text-muted-foreground">Vom Flughafen zur Marina organisieren wir gerne einen 
+                <p className="mt-3 text-sm text-blue-600">Vom Flughafen zur Marina organisieren wir gerne einen 
                 zuverlässigen Transfer für Sie und Ihre Crew.</p>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-lg font-semibold mb-3">Per PKW</h4>
-                <p className="mb-3">Kroatien ist aus Süddeutschland, Österreich und der Schweiz bequem mit dem Auto erreichbar. 
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="text-lg font-semibold mb-3 text-blue-800">Per PKW</h4>
+                <p className="mb-3 text-blue-700">Kroatien ist aus Süddeutschland, Österreich und der Schweiz bequem mit dem Auto erreichbar. 
                 Dies bietet den Vorteil, mehr Gepäck und persönlichen Proviant mitnehmen zu können.</p>
-                <p className="text-sm text-muted-foreground">Die meisten Marinas bieten sichere Parkmöglichkeiten für die 
+                <p className="text-sm text-blue-600">Die meisten Marinas bieten sichere Parkmöglichkeiten für die 
                 Dauer Ihres Törns.</p>
               </div>
             </div>
@@ -365,19 +365,19 @@ export default function NorthernDalmatia() {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+            <div className="bg-blue-50 p-6 rounded-lg mb-8">
               <div className="grid md:grid-cols-3 gap-4">
                 <div>
-                  <h5 className="font-semibold mb-2">Ankerplätze & Buchten</h5>
-                  <p className="text-sm">Unzählige geschützte Ankerbuchten mit kristallklarem Wasser. Viele bieten Mooringbojen.</p>
+                  <h5 className="font-semibold mb-2 text-blue-800">Ankerplätze & Buchten</h5>
+                  <p className="text-sm text-blue-700">Unzählige geschützte Ankerbuchten mit kristallklarem Wasser. Viele bieten Mooringbojen.</p>
                 </div>
                 <div>
-                  <h5 className="font-semibold mb-2">Nautische Highlights</h5>
-                  <p className="text-sm">Segeln durch Kornati-Passagen, Krka-Flussfahrt, Schnorcheln, Delfin-Beobachtung.</p>
+                  <h5 className="font-semibold mb-2 text-blue-800">Nautische Highlights</h5>
+                  <p className="text-sm text-blue-700">Segeln durch Kornati-Passagen, Krka-Flussfahrt, Schnorcheln, Delfin-Beobachtung.</p>
                 </div>
                 <div>
-                  <h5 className="font-semibold mb-2">Landaktivitäten</h5>
-                  <p className="text-sm">Historische Altstädte, Nationalpark-Wanderungen, Weinproben, lokale Küche.</p>
+                  <h5 className="font-semibold mb-2 text-blue-800">Landaktivitäten</h5>
+                  <p className="text-sm text-blue-700">Historische Altstädte, Nationalpark-Wanderungen, Weinproben, lokale Küche.</p>
                 </div>
               </div>
             </div>
@@ -460,21 +460,21 @@ export default function NorthernDalmatia() {
                 <p className="text-green-700 text-sm">Eine wunderbare Zeit zum Segeln. Die Natur blüht, angenehme Temperaturen, 
                 weniger überfüllte Häfen. Die Winde können noch etwas kräftiger sein – ideal für ambitionierte Segler.</p>
               </div>
-              <div className="bg-orange-50 p-4 rounded-lg">
-                <h5 className="font-semibold text-orange-800 mb-2">Sommer (Juli - August)</h5>
-                <p className="text-orange-700 text-sm">Hochsaison in Kroatien. Heiß, sonnig, der Maestral sorgt für angenehme 
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h5 className="font-semibold text-blue-800 mb-2">Sommer (Juli - August)</h5>
+                <p className="text-blue-700 text-sm">Hochsaison in Kroatien. Heiß, sonnig, der Maestral sorgt für angenehme 
                 Segelbedingungen. Perfekt für Badeurlaub und Familien. Marinas sehr voll, höchste Preise.</p>
               </div>
-              <div className="bg-purple-50 p-4 rounded-lg">
-                <h5 className="font-semibold text-purple-800 mb-2">Herbst (September - Oktober)</h5>
-                <p className="text-purple-700 text-sm">Für viele Kenner die beste Reisezeit. Aufgeheiztes Wasser, weniger 
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h5 className="font-semibold text-green-800 mb-2">Herbst (September - Oktober)</h5>
+                <p className="text-green-700 text-sm">Für viele Kenner die beste Reisezeit. Aufgeheiztes Wasser, weniger 
                 Touristen, sinkende Preise. Stabiles und warmes Wetter, leerere Häfen.</p>
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-2">Revier-Eignung für Erfahrungsstufen</h4>
-              <p>Norddalmatien ist ein sehr vielseitiges Revier. Die geschützten Inselgruppen wie die Kornaten oder die 
+            <div className="bg-green-50 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-2 text-green-800">Revier-Eignung für Erfahrungsstufen</h4>
+              <p className="text-green-700">Norddalmatien ist ein sehr vielseitiges Revier. Die geschützten Inselgruppen wie die Kornaten oder die 
               Kanäle Dalmatiens sind auch für weniger erfahrene Segler und Familien gut geeignet. Die kurzen Distanzen und 
               die vielen Ausweichmöglichkeiten bieten viel Sicherheit. Für ambitionierte Segler bieten die offeneren 
               Seegebiete und die Möglichkeit von stärkeren Winden (Bora, Jugo) auch Herausforderungen.</p>
@@ -543,9 +543,9 @@ export default function NorthernDalmatia() {
                 </ul>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-lg">
-                <h4 className="font-semibold mb-3 text-orange-800">Herausforderungen</h4>
-                <ul className="list-disc pl-6 space-y-1 text-orange-700">
+              <div className="bg-red-50 p-6 rounded-lg">
+                <h4 className="font-semibold mb-3 text-red-800">Herausforderungen</h4>
+                <ul className="list-disc pl-6 space-y-1 text-red-700">
                   <li><strong>Wetterwechsel:</strong> Schnelle Umschläge mit plötzlichen Starkwinden (Bora, Jugo)</li>
                   <li><strong>Volle Marinas:</strong> Hochsaison kann beliebte Marinas sehr voll machen</li>
                   <li><strong>Untiefen:</strong> Außerhalb der Fahrwasser präzise Navigation erforderlich</li>
