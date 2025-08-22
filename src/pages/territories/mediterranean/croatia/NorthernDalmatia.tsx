@@ -504,7 +504,7 @@ export default function NorthernDalmatia() {
               </div>
             </div>
 
-            <div className="border border-green-500 p-6 rounded-lg mb-8">
+            <div className="border border-blue-500 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-2 text-black">Revier-Eignung für Erfahrungsstufen</h4>
               <p className="text-black">Norddalmatien ist ein sehr vielseitiges Revier. Die geschützten Inselgruppen wie die Kornaten oder die 
               Kanäle Dalmatiens sind auch für weniger erfahrene Segler und Familien gut geeignet. Die kurzen Distanzen und 
