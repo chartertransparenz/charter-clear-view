@@ -43,7 +43,7 @@ const Navigation = () => {
     { href: "#flotte", label: "Yachten" },
     { href: "#partner", label: "Partner" },
     { href: "/faq", label: "FAQ" },
-    { href: "#ueber-uns", label: "Über uns" },
+    { href: "/ueber-uns", label: "Über uns" },
     { href: "#kontakt", label: "Kontakt" },
   ];
 

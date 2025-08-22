@@ -19,7 +19,7 @@ const Footer = () => {
       { name: "Amerika & Bahamas", href: "/reviere/amerika-bahamas" }
     ],
     company: [
-      { name: "Über uns", href: "#ueber-uns" },
+      { name: "Über uns", href: "/ueber-uns" },
       { name: "Kontakt", href: "#kontakt" },
       { name: "Impressum", href: "#impressum" },
       { name: "FAQ", href: "/faq" },
