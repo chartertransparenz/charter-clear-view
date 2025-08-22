@@ -21,7 +21,7 @@ const Footer = () => {
     company: [
       { name: "Über uns", href: "/ueber-uns" },
       { name: "Kontakt", href: "#kontakt" },
-      { name: "Impressum", href: "#impressum" },
+      { name: "Impressum", href: "/impressum" },
       { name: "FAQ", href: "/faq" },
       { name: "Datenschutz", href: "#datenschutz" }
     ]
@@ -144,7 +144,7 @@ const Footer = () => {
               <a href="#" className="hover:text-sunset transition-smooth">
                 AGB
               </a>
-              <a href="#" className="hover:text-sunset transition-smooth">
+              <a href="/impressum" className="hover:text-sunset transition-smooth">
                 Impressum
               </a>
               <a href="#" className="hover:text-sunset transition-smooth">
