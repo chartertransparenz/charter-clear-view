@@ -587,7 +587,7 @@ export default function NorthernDalmatia() {
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Praktische Tipps aus der Seglergemeinschaft</h4>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <ul className="list-disc pl-6 space-y-1 text-black">
                   <li><strong>Wetter-App:</strong> Gute Wetter-App oder Wetterdienst sind unverzichtbar</li>
                   <li><strong>Hafenhandbuch:</strong> Aktuelles Handbuch für Navigation und Ankerplätze</li>
@@ -595,15 +595,14 @@ export default function NorthernDalmatia() {
                 <ul className="list-disc pl-6 space-y-1 text-black">
                   <li><strong>Konobas:</strong> Nutzen Sie die kleinen Inselrestaurants für frischen Fisch</li>
                   <li><strong>Bargeld:</strong> In kleineren Konobas oder auf Inseln ratsam</li>
-
-                  <div className="my-8 col-span-2">
-                    <img 
-                      src="/lovable-uploads/75055849-81d8-4d85-9318-6d8010d57e1f.png" 
-                      alt="Frische Meeresfrüchte in einer dalmatinischen Konoba - ein kulinarisches Erlebnis" 
-                      className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
-                    />
-                  </div>
                 </ul>
+              </div>
+              <div className="w-full">
+                <img 
+                  src="/lovable-uploads/75055849-81d8-4d85-9318-6d8010d57e1f.png" 
+                  alt="Frische Meeresfrüchte in einer dalmatinischen Konoba - ein kulinarisches Erlebnis" 
+                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+                />
               </div>
             </div>
 
