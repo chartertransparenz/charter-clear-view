@@ -132,8 +132,8 @@ const Croatia = () => {
         <div className="mb-16">
           <TerritoryMap 
             region="Kroatien" 
-            center={{ lat: 44.5, lng: 16.0 }} 
-            zoom={7} 
+            center={{ lat: 44.0, lng: 15.5 }} 
+            zoom={5.5}
             markers={[
               { lat: 45.2, lng: 13.9, name: 'Pula', description: 'Istrien - Hauptstadt mit römischem Amphitheater' },
               { lat: 45.3, lng: 14.3, name: 'Rijeka', description: 'Kvarner Bucht - Größte Stadt der Region' },
