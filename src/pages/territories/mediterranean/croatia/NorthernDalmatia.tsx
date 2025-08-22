@@ -594,7 +594,7 @@ export default function NorthernDalmatia() {
               </div>
             </div>
 
-            <div className="bg-primary/5 p-8 rounded-lg text-center mb-8">
+            <div className="text-center mb-8">
               <p className="text-lg font-medium mb-4">
                 Kroatien bleibt ein spektakuläres Yachtcharter-Revier für alle, die das Abenteuer suchen und die Schönheit 
                 der Adria vom Wasser aus erleben möchten. Wer die Regeln beachtet und sich gut vorbereitet, wird mit 
