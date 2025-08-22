@@ -123,11 +123,7 @@ export default function NorthernDalmatia() {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-16 text-center">
           
-          <p className="text-lg text-muted-foreground mb-6">
-            Norddalmatien ist das Paradies für Naturliebhaber und erfahrene Segler. Die Region bietet mit dem Kornati 
-            Nationalpark eine der schönsten und wildesten Insellandschaften der Adria. Hier finden Sie unberührte Natur, 
-            kristallklares Wasser und die berühmten Maestral-Winde.
-          </p>
+          
           <p className="text-lg text-muted-foreground">
             Von den historischen Städten Zadar und Šibenik bis zu den einsamen Kornati-Inseln - Norddalmatien 
             vereint Kultur, Geschichte und unberührte Natur auf einzigartige Weise.
@@ -136,18 +132,30 @@ export default function NorthernDalmatia() {
 
         {/* Territory Map */}
         <div className="mb-16">
-          <TerritoryMap 
-            region="Norddalmatien"
-            center={{ lat: 43.9335, lng: 15.5049 }}
-            zoom={10}
-            markers={[
-              { lat: 44.1194, lng: 15.2314, name: 'Zadar', description: 'Historische Stadt mit Marina' },
-              { lat: 43.7350, lng: 15.8952, name: 'Šibenik', description: 'UNESCO-Weltkulturerbe' },
-              { lat: 43.9434, lng: 15.4506, name: 'Biograd', description: 'Tor zu den Kornati-Inseln' },
-              { lat: 43.8394, lng: 15.5897, name: 'Murter', description: 'Traditioneller Segelort' }
-            ]}
-            className="max-w-4xl mx-auto"
-          />
+          <TerritoryMap region="Norddalmatien" center={{
+          lat: 43.9335,
+          lng: 15.5049
+        }} zoom={10} markers={[{
+          lat: 44.1194,
+          lng: 15.2314,
+          name: 'Zadar',
+          description: 'Historische Stadt mit Marina'
+        }, {
+          lat: 43.7350,
+          lng: 15.8952,
+          name: 'Šibenik',
+          description: 'UNESCO-Weltkulturerbe'
+        }, {
+          lat: 43.9434,
+          lng: 15.4506,
+          name: 'Biograd',
+          description: 'Tor zu den Kornati-Inseln'
+        }, {
+          lat: 43.8394,
+          lng: 15.5897,
+          name: 'Murter',
+          description: 'Traditioneller Segelort'
+        }]} className="max-w-4xl mx-auto" />
         </div>
 
         {/* Detailed Region Description */}
@@ -169,11 +177,7 @@ export default function NorthernDalmatia() {
             </p>
 
             <div className="my-8">
-              <img 
-                src="/lovable-uploads/e80a0056-47b4-42b2-b2b4-05141058b00f.png" 
-                alt="Luftaufnahme der kroatischen Inselwelt in Norddalmatien" 
-                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
-              />
+              <img src="/lovable-uploads/e80a0056-47b4-42b2-b2b4-05141058b00f.png" alt="Luftaufnahme der kroatischen Inselwelt in Norddalmatien" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md" />
             </div>
             
             <p className="text-lg leading-relaxed mb-6">
@@ -185,11 +189,7 @@ export default function NorthernDalmatia() {
             </p>
 
             <div className="my-8">
-              <img 
-                src="/lovable-uploads/453b22cb-8862-431e-af5b-cae084d68d17.png" 
-                alt="Segelboote vor der kroatischen Küste in kristallklarem Wasser" 
-                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
-              />
+              <img src="/lovable-uploads/453b22cb-8862-431e-af5b-cae084d68d17.png" alt="Segelboote vor der kroatischen Küste in kristallklarem Wasser" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md" />
             </div>
 
             <p className="text-lg leading-relaxed mb-8">
@@ -239,11 +239,7 @@ export default function NorthernDalmatia() {
               frischen Fisch und lokale Spezialitäten anbieten.</li>
 
               <div className="my-8">
-                <img 
-                  src="/lovable-uploads/d783d11a-5e6e-4572-8f9d-02bd02bf36d1.png" 
-                  alt="Herzförmige Insel in den Kornaten - ein romantisches Naturwunder" 
-                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
-                />
+                <img src="/lovable-uploads/d783d11a-5e6e-4572-8f9d-02bd02bf36d1.png" alt="Herzförmige Insel in den Kornaten - ein romantisches Naturwunder" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md" />
               </div>
               
               <li><strong>Murter:</strong> Die Insel Murter, über eine Brücke mit dem Festland verbunden, gilt als das Tor 
@@ -270,11 +266,7 @@ export default function NorthernDalmatia() {
               aus Stein erbaut wurde. Šibenik ist auch das Tor zum Nationalpark Krka.</li>
 
               <div className="my-8">
-                <img 
-                  src="/lovable-uploads/d5b9c634-09a0-4d6d-b970-43007a40bf95.png" 
-                  alt="Luftaufnahme der historischen Altstadt Šibenik mit ihrem malerischen Hafen" 
-                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
-                />
+                <img src="/lovable-uploads/d5b9c634-09a0-4d6d-b970-43007a40bf95.png" alt="Luftaufnahme der historischen Altstadt Šibenik mit ihrem malerischen Hafen" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md" />
               </div>
               
               <li><strong>Nationalpark Krka:</strong> Ein weiteres Naturwunder Kroatiens. Über den Fluss Krka können Sie 
@@ -598,11 +590,7 @@ export default function NorthernDalmatia() {
                 </ul>
               </div>
               <div className="w-full">
-                <img 
-                  src="/lovable-uploads/75055849-81d8-4d85-9318-6d8010d57e1f.png" 
-                  alt="Frische Meeresfrüchte in einer dalmatinischen Konoba - ein kulinarisches Erlebnis" 
-                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
-                />
+                <img src="/lovable-uploads/75055849-81d8-4d85-9318-6d8010d57e1f.png" alt="Frische Meeresfrüchte in einer dalmatinischen Konoba - ein kulinarisches Erlebnis" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md" />
               </div>
             </div>
 
