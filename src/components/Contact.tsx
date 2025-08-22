@@ -112,7 +112,7 @@ const Contact = () => {
                     variant="outline" 
                     size="sm" 
                     className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20"
-                    onClick={() => window.open('tel:+494543499080', '_self')}
+                    onClick={() => window.open('tel:+497543499080', '_self')}
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     Jetzt anrufen
@@ -122,7 +122,7 @@ const Contact = () => {
                     size="sm" 
                     className="w-full justify-start bg-white/10 text-white border-white/30 hover:bg-white/20"
                     onClick={() => {
-                      const phoneNumber = "494543499080";
+                      const phoneNumber = "497543499080";
                       const message = encodeURIComponent("Hallo! Ich interessiere mich für Ihre Yacht Charter Services.");
                       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
                       window.open(whatsappUrl, '_blank');
