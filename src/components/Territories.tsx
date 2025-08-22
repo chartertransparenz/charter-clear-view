@@ -71,7 +71,7 @@ const Territories = () => {
     name: "Frankreich",
     regions: "Côte d'Azur, Korsika, Bretagne",
     highlights: ["Segeln mit Stil (Cannes, St. Tropez)", "Anspruchsvolles Tidenrevier (Bretagne)", "Sehr gute Yachtausstattung & Infrastruktur"],
-    image: destinationFrance,
+    image: "/lovable-uploads/ff15c825-2f79-4d1a-accd-732ed85772b1.png",
     link: "/reviere/mittelmeer/frankreich"
   }, {
     rank: 7,

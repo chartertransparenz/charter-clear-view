@@ -61,7 +61,7 @@ const France = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationFrance}
+          src="/lovable-uploads/ff15c825-2f79-4d1a-accd-732ed85772b1.png"
           alt="Frankreich Mittelmeer"
           className="w-full h-full object-cover"
         />
