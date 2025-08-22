@@ -136,39 +136,6 @@ const Partners = () => {
           ))}
         </div>
 
-        {/* Partnership CTA */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-ocean-light/30 to-ocean-blue/10 rounded-2xl p-8">
-            <div className="max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-ocean-dark">
-                Interessiert an einer Partnerschaft?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Wir sind immer auf der Suche nach zuverlässigen Partnern, 
-                die unsere Werte von Qualität und Transparenz teilen.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-                <Badge variant="outline" className="border-ocean-blue text-ocean-blue px-4 py-2">
-                  Marinabetreiber
-                </Badge>
-                <Badge variant="outline" className="border-ocean-blue text-ocean-blue px-4 py-2">
-                  Charterbasen
-                </Badge>
-                <Badge variant="outline" className="border-ocean-blue text-ocean-blue px-4 py-2">
-                  Serviceanbieter
-                </Badge>
-              </div>
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-                onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Jetzt Kontakt aufnehmen
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
