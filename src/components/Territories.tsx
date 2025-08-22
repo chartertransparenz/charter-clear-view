@@ -87,7 +87,7 @@ const Territories = () => {
     name: "Thailand",
     regions: "Phuket & Andamanensee",
     highlights: ["Exotische Kulisse mit Felseninseln & Lagunen", "Günstige Charterpreise", "Kultur & Küche an Land", "Beste Reisezeit: Nov–Apr"],
-    image: destinationThailand,
+    image: "/lovable-uploads/b8d7c49e-e173-4854-b08c-755db093505f.png",
     link: "/reviere/indischer-ozean/asien/thailand"
   }, {
     rank: 9,
