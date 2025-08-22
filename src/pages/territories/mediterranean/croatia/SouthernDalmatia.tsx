@@ -446,7 +446,7 @@ export default function SouthernDalmatia() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="border border-green-300 bg-green-50 p-6 rounded-lg">
+              <div className="border border-gray-300 p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-black">Positives</h4>
                 <ul className="list-disc pl-6 space-y-1 text-black">
                   <li><strong>Historische Schätze:</strong> Die Kombination aus Segeln und dem Besuch von UNESCO-Welterbestätten wie Dubrovnik ist einzigartig.</li>
@@ -457,7 +457,7 @@ export default function SouthernDalmatia() {
                 </ul>
               </div>
 
-              <div className="border border-yellow-300 bg-yellow-50 p-6 rounded-lg">
+              <div className="border border-gray-300 p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-black">Herausforderungen</h4>
                 <ul className="list-disc pl-6 space-y-1 text-black">
                   <li><strong>Wetterwechsel:</strong> Das Wetter kann schnell umschlagen, mit plötzlichen Starkwinden (Bora, Jugo). Eine gute Wetterbeobachtung ist unerlässlich.</li>
@@ -467,7 +467,7 @@ export default function SouthernDalmatia() {
               </div>
             </div>
 
-            <div className="border border-blue-300 bg-blue-50 p-6 rounded-lg mb-8">
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="text-lg font-semibold mb-3 text-black">Praktische Tipps aus der Seglergemeinschaft</h4>
               <ul className="list-disc pl-6 space-y-1 text-black">
                 <li><strong>Wetter-App:</strong> Eine gute Wetter-App oder ein Wetterdienst sind unverzichtbar.</li>
