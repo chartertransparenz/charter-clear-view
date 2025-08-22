@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
+import TerritoryMap from '@/components/TerritoryMap';
 export default function NorthernDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -131,6 +132,22 @@ export default function NorthernDalmatia() {
             Von den historischen Städten Zadar und Šibenik bis zu den einsamen Kornati-Inseln - Norddalmatien 
             vereint Kultur, Geschichte und unberührte Natur auf einzigartige Weise.
           </p>
+        </div>
+
+        {/* Territory Map */}
+        <div className="mb-16">
+          <TerritoryMap 
+            region="Norddalmatien"
+            center={{ lat: 43.9335, lng: 15.5049 }}
+            zoom={10}
+            markers={[
+              { lat: 44.1194, lng: 15.2314, name: 'Zadar', description: 'Historische Stadt mit Marina' },
+              { lat: 43.7350, lng: 15.8952, name: 'Šibenik', description: 'UNESCO-Weltkulturerbe' },
+              { lat: 43.9434, lng: 15.4506, name: 'Biograd', description: 'Tor zu den Kornati-Inseln' },
+              { lat: 43.8394, lng: 15.5897, name: 'Murter', description: 'Traditioneller Segelort' }
+            ]}
+            className="max-w-4xl mx-auto"
+          />
         </div>
 
         {/* Cities */}
