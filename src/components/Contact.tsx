@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import CharterRequestForm from "./CharterRequestForm";
@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Nachricht gesendet!",
-      description: "Wir melden uns schnellstmöglich bei dir zurück.",
+      description: "Wir melden uns schnellstmöglich bei Ihnen zurück.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -57,20 +57,93 @@ const Contact = () => {
   ];
 
   return (
-    <section id="kontakt" className="py-20 bg-ocean-light/30">
-      <div className="container mx-auto px-4">
-        {/* Header */}
+    <section id="kontakt" className="py-20 bg-ocean-light/30 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-ocean-blue/20 to-transparent"></div>
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-sunset/20 to-transparent"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header with Hero CTA */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-ocean-blue text-ocean-blue">
             Kontakt
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-            Lass uns sprechen
+            Sprechen Sie mit uns
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Bereit für dein nächstes Abenteuer? Wir beraten dich gerne und 
-            finden gemeinsam das perfekte Charter-Erlebnis für dich.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            Bereit für Ihr nächstes Abenteuer? Wir beraten Sie gerne und 
+            finden gemeinsam das perfekte Charter-Erlebnis für Sie.
           </p>
+          
+          {/* Hero CTA Section */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-elegant max-w-4xl mx-auto mb-8 border border-ocean-light/50">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+              <div className="text-left flex-1">
+                <h3 className="text-2xl lg:text-3xl font-bold text-ocean-dark mb-2">
+                  Ihr Traumtörn in 24 Stunden
+                </h3>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Kostenlos • Unverbindlich • Persönlich
+                </p>
+                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <span>30+ Jahre Erfahrung</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock3 className="w-4 h-4 text-ocean-blue" />
+                    <span>24h Antwort-Garantie</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Shield className="w-4 h-4 text-green-600" />
+                    <span>Transparente Preise</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <CharterRequestForm>
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-ocean text-white hover:shadow-elegant transition-smooth px-8 py-6 text-lg font-semibold animate-pulse hover:animate-none"
+                  >
+                    <Send className="w-5 h-5 mr-2" />
+                    Traumtörn in 24h - Jetzt anfragen
+                  </Button>
+                </CharterRequestForm>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground justify-center">
+                  <Star className="w-4 h-4 text-yellow-500 fill-current" />
+                  <span>500+ zufriedene Segler</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Trust Elements */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
+              <Users className="w-6 h-6 text-ocean-blue mx-auto mb-2" />
+              <div className="text-2xl font-bold text-ocean-dark">500+</div>
+              <div className="text-sm text-muted-foreground">Zufriedene Kunden</div>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
+              <Award className="w-6 h-6 text-sunset mx-auto mb-2" />
+              <div className="text-2xl font-bold text-ocean-dark">30+</div>
+              <div className="text-sm text-muted-foreground">Jahre Erfahrung</div>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
+              <Shield className="w-6 h-6 text-green-600 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-ocean-dark">100%</div>
+              <div className="text-sm text-muted-foreground">Transparenz</div>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
+              <Clock3 className="w-6 h-6 text-ocean-blue mx-auto mb-2" />
+              <div className="text-2xl font-bold text-ocean-dark">24h</div>
+              <div className="text-sm text-muted-foreground">Antwort-Zeit</div>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -80,7 +153,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-ocean-dark">Kontaktinformationen</CardTitle>
                 <CardDescription>
-                  Erreiche uns auf verschiedenen Wegen
+                  Erreichen Sie uns auf verschiedenen Wegen
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -105,7 +178,7 @@ const Contact = () => {
               <CardContent className="pt-6">
                 <h3 className="font-semibold mb-2 text-white">Sofortige Beratung gewünscht?</h3>
                 <p className="text-sm text-white/90 mb-4">
-                  Ruf uns direkt an oder schreib uns eine WhatsApp-Nachricht.
+                  Rufen Sie uns direkt an oder schreiben Sie uns eine WhatsApp-Nachricht.
                 </p>
                 <div className="space-y-2">
                   <Button 
@@ -148,7 +221,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-ocean-dark">Nachricht senden</CardTitle>
                 <CardDescription>
-                  Beschreibe uns deine Wünsche und wir erstellen dir ein 
+                  Beschreiben Sie uns Ihre Wünsche und wir erstellen Ihnen ein 
                   individuelles Angebot
                 </CardDescription>
               </CardHeader>
@@ -164,7 +237,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        placeholder="Dein vollständiger Name"
+                        placeholder="Ihr vollständiger Name"
                         required
                       />
                     </div>
@@ -178,7 +251,7 @@ const Contact = () => {
                         type="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        placeholder="deine@email.de"
+                        placeholder="ihre@email.de"
                         required
                       />
                     </div>
@@ -207,19 +280,31 @@ const Contact = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Beschreibe uns deine Wünsche: Reisezeitraum, gewünschte Destination, Anzahl Personen, besondere Anforderungen..."
+                      placeholder="Beschreiben Sie uns Ihre Wünsche: Reisezeitraum, gewünschte Destination, Anzahl Personen, besondere Anforderungen..."
                       className="min-h-[120px]"
                       required
                     />
                   </div>
 
-                  <Button type="submit" variant="ocean" size="lg" className="w-full">
+                  <Button type="submit" className="w-full bg-gradient-ocean text-white hover:shadow-elegant transition-smooth py-6 text-lg font-semibold" size="lg">
                     <Send className="w-4 h-4 mr-2" />
                     Nachricht senden
                   </Button>
 
-                  <p className="text-xs text-muted-foreground text-center">
-                    Mit dem Absenden akzeptierst du unsere Datenschutzerklärung. 
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span className="font-semibold text-green-800">Ihre Vorteile</span>
+                    </div>
+                    <ul className="text-sm text-green-700 space-y-1">
+                      <li>• 24h Antwort-Garantie</li>
+                      <li>• Kostenlose & unverbindliche Beratung</li>
+                      <li>• Transparente Preise ohne versteckte Kosten</li>
+                    </ul>
+                  </div>
+
+                  <p className="text-xs text-muted-foreground text-center mt-4">
+                    Mit dem Absenden akzeptieren Sie unsere Datenschutzerklärung. 
                     Wir antworten in der Regel innerhalb von 24 Stunden.
                   </p>
                 </form>
