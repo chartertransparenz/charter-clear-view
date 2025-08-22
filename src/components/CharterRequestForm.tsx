@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import charterHeroWater from "@/assets/charter-hero-water.jpg";
 interface CharterRequestFormProps {
   isOpen?: boolean;
@@ -86,7 +86,7 @@ const CharterRequestForm = ({
     if (!formData.privacyAccepted) {
       toast({
         title: "Datenschutzerklärung erforderlich",
-        description: "Bitte akzeptiere die Datenschutzerklärung.",
+        description: "Bitte akzeptieren Sie die Datenschutzerklärung.",
         variant: "destructive"
       });
       return;
@@ -103,7 +103,7 @@ const CharterRequestForm = ({
       if (response.ok) {
         toast({
           title: "Anfrage erfolgreich gesendet!",
-          description: "Wir melden uns innerhalb von 24 Stunden mit deinem persönlichen Angebot zurück."
+          description: "Wir melden uns innerhalb von 24 Stunden mit Ihrem persönlichen Angebot zurück."
         });
 
         // Reset form
@@ -129,7 +129,7 @@ const CharterRequestForm = ({
     } catch (error) {
       toast({
         title: "Fehler beim Senden",
-        description: "Bitte versuche es erneut oder kontaktiere uns direkt.",
+        description: "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
         variant: "destructive"
       });
     }
@@ -152,7 +152,7 @@ const CharterRequestForm = ({
       }}>
         <div className="relative z-10">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <CardTitle className="text-2xl">Jetzt deinen Traum-Törn starten!</CardTitle>
+            <CardTitle className="text-2xl">Jetzt Ihren Traum-Törn starten!</CardTitle>
           </div>
           
           <Badge variant="secondary" className="w-fit mx-auto mt-3 bg-white/20 text-white border-white/30">
@@ -163,23 +163,23 @@ const CharterRequestForm = ({
       </CardHeader>
       
       <CardContent className="p-6">
-        <p className="text-center text-muted-foreground mb-6">Profitiere von unserer 30-jährigen Erfahrung auf dem internationalen Chartermarkt.
-Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und begleiten dich mit persönlichem Service – selbstverständlich zu den besten Preisen. Profitiere von unserer Erfahrung und erlebe unbeschwert dein Segel- oder Motorboot-Abenteuer.</p>
+        <p className="text-center text-muted-foreground mb-6">Profitieren Sie von unserer 30-jährigen Erfahrung auf dem internationalen Chartermarkt.
+Wir bieten Ihnen kompetente Beratung, individuelle und unabhängige Angebote und begleiten Sie mit persönlichem Service – selbstverständlich zu den besten Preisen. Profitieren Sie von unserer Erfahrung und erleben Sie unbeschwert Ihr Segel- oder Motorboot-Abenteuer.</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Personal Information */}
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="firstName" className="text-sm font-medium mb-2 block">
-                Vorname *
+                Ihr Vorname *
               </label>
-              <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Dein Vorname" required />
+              <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Ihr Vorname" required />
             </div>
             <div>
               <label htmlFor="lastName" className="text-sm font-medium mb-2 block">
-                Nachname *
+                Ihr Nachname *
               </label>
-              <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Dein Nachname" required />
+              <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Ihr Nachname" required />
             </div>
           </div>
 
@@ -188,7 +188,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               <label htmlFor="email" className="text-sm font-medium mb-2 block">
                 E-Mail *
               </label>
-              <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="deine@email.de" required />
+              <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="ihre@email.de" required />
             </div>
             <div>
               <label htmlFor="phone" className="text-sm font-medium mb-2 block">
@@ -206,7 +206,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               </label>
               <Select value={formData.charterType} onValueChange={value => handleSelectChange('charterType', value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Wähle den Chartertyp" />
+                  <SelectValue placeholder="Wählen Sie den Chartertyp" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="bareboat">Selbstsegler (Bareboat)</SelectItem>
@@ -221,7 +221,7 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
               </label>
               <Select value={formData.boatType} onValueChange={value => handleSelectChange('boatType', value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Wähle den Bootstyp" />
+                  <SelectValue placeholder="Wählen Sie den Bootstyp" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="monohull">Segelboot (Einrumpf)</SelectItem>
@@ -272,9 +272,9 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
 
           <div>
             <label htmlFor="message" className="text-sm font-medium mb-2 block">
-              Deine Nachricht an uns
+              Ihre Nachricht an uns
             </label>
-            <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Nenne uns z.B. bestimmte Ausrüstungsmerkmale wie Rollgroß oder Bugstrahlruder und weitere zu berücksichtigende Details deiner Planung..." className="min-h-[100px]" />
+            <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Nennen Sie uns z.B. bestimmte Ausrüstungsmerkmale wie Rollgroß oder Bugstrahlruder und weitere zu berücksichtigende Details Ihrer Planung..." className="min-h-[100px]" />
           </div>
 
           {/* Privacy Consent */}
@@ -310,6 +310,10 @@ Wir bieten dir kompetente Beratung, individuelle und unabhängige Angebote und b
           {children}
         </DialogTrigger>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
+          <DialogTitle className="sr-only">Charter-Anfrage Formular</DialogTitle>
+          <DialogDescription className="sr-only">
+            Füllen Sie das Formular aus, um eine unverbindliche Charter-Anfrage zu stellen. Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+          </DialogDescription>
           <div className="relative">
             {/* Close button - visible on all screen sizes */}
             <button
