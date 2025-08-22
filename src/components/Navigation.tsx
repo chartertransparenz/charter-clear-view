@@ -38,12 +38,11 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { href: "#start", label: "Home" },
-    { href: "#flotte", label: "Yachten" },
-    { href: "#leistungen", label: "Services" },
     { href: "#reviere", label: "Reviere" },
+    { href: "#leistungen", label: "Services" },
+    { href: "#flotte", label: "Yachten" },
     { href: "#partner", label: "Partner" },
-    { href: "#haeufige-fragen", label: "FAQ" },
+    { href: "/faq", label: "FAQ" },
     { href: "#ueber-uns", label: "Über uns" },
     { href: "#kontakt", label: "Kontakt" },
   ];
