@@ -15,32 +15,6 @@ import partnersQuality from "@/assets/partners-quality.jpg";
 const Partners = () => {
   const partnerCategories = [
     {
-      title: "Charterbasen & Marinas",
-      icon: Anchor,
-      description: "Unsere vertrauenswürdigen Partner vor Ort",
-      image: partnerMarina,
-      partners: [
-        {
-          name: "Marina Kressbronn",
-          location: "Bodensee, Deutschland",
-          type: "Hauptbasis",
-          features: ["50+ Liegeplätze", "Vollservice", "Tankstelle", "Restaurant"]
-        },
-        {
-          name: "ACI Marina Split",
-          location: "Kroatien",
-          type: "Partnermarina",
-          features: ["Luxusausstattung", "24h Service", "Reparaturservice", "Provisioning"]
-        },
-        {
-          name: "Marina Kornati",
-          location: "Kroatien",
-          type: "Partnermarina", 
-          features: ["Nationalpark-Nähe", "Restauration", "Charterbase", "Wassertaxi"]
-        }
-      ]
-    },
-    {
       title: "Bootshersteller",
       icon: Star,
       description: "Premium-Yachten von führenden Herstellern",
