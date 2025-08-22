@@ -137,6 +137,35 @@ export default function CentralDalmatia() {
           ))}
         </div>
 
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-16 text-center">
+          <p className="text-lg text-muted-foreground mb-6">
+            Mitteldalmatien ist das pulsierende Herz des kroatischen Yachtcharters. Die Region um Split, Hvar und 
+            Trogir bietet die perfekte Mischung aus antiker Geschichte, pulsierendem Leben und herzlicher 
+            Gastfreundschaft. Hier finden Sie die berühmtesten Inseln Kroatiens.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Von der UNESCO-Welterbestadt Trogir bis zur glamourösen Insel Hvar - Mitteldalmatien 
+            vereint Kultur, Geschichte und Inselparadies auf einzigartige Weise.
+          </p>
+        </div>
+
+        {/* Territory Map */}
+        <div className="mb-16">
+          <TerritoryMap 
+            region="Mitteldalmatien"
+            center={{ lat: 43.5081, lng: 16.4402 }}
+            zoom={10}
+            markers={[
+              { lat: 43.5081, lng: 16.4402, name: 'Split', description: 'Größte Stadt mit Diokletianpalast' },
+              { lat: 43.5154, lng: 16.2517, name: 'Trogir', description: 'UNESCO-Welterbe Altstadt' },
+              { lat: 43.4725, lng: 16.3249, name: 'Kaštela', description: 'Moderne Marina-Infrastruktur' },
+              { lat: 43.1729, lng: 16.4420, name: 'Hvar', description: 'Glamouröse Lavendelinsel' }
+            ]}
+            className="max-w-4xl mx-auto"
+          />
+        </div>
+
         {/* Detailed Region Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center mb-8">
