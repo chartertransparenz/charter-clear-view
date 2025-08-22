@@ -99,22 +99,6 @@ const About = () => {
         {/* Team Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-12 text-ocean-dark">Unser Team</h3>
-          
-          {/* Team Group Photo */}
-          <div className="relative mb-12 rounded-2xl overflow-hidden shadow-elegant max-w-4xl mx-auto">
-            <img
-              src="/lovable-uploads/e253a0a1-b4f4-4620-882e-92707c56a9f6.png"
-              alt="Team Charter Transparenz"
-              className="w-full h-64 md:h-80 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-ocean-dark/40"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white">
-                <h4 className="text-2xl md:text-3xl font-bold mb-2">Gemeinsam stark</h4>
-                <p className="text-white/90 text-lg">Leidenschaft für das Segeln seit drei Jahrzehnten</p>
-              </div>
-            </div>
-          </div>
 
           {/* Individual Team Members */}
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
