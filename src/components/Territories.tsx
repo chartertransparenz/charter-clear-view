@@ -31,7 +31,7 @@ const Territories = () => {
     name: "Kroatien",
     regions: "Dalmatien (Split, Šibenik, Dubrovnik), Kornaten, Istrien, Kvarner",
     highlights: ["Hunderte Inseln & Buchten", "Hervorragende Infrastruktur", "Klare Regeln & guter Service", "Ideales Klima (Mai–Oktober)"],
-    image: destinationCroatia,
+    image: "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png",
     link: "/reviere/mittelmeer/kroatien"
   }, {
     rank: 2,

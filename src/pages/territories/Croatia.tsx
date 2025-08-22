@@ -65,7 +65,7 @@ const Croatia = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationCroatia}
+          src="/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png"
           alt="Kroatien Segelrevier"
           className="w-full h-full object-cover"
         />
