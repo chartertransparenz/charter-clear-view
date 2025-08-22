@@ -15,32 +15,6 @@ import partnersQuality from "@/assets/partners-quality.jpg";
 const Partners = () => {
   const partnerCategories = [
     {
-      title: "Bootshersteller",
-      icon: Star,
-      description: "Premium-Yachten von führenden Herstellern",
-      image: partnerManufacturers,
-      partners: [
-        {
-          name: "Bavaria Yachts",
-          location: "Deutschland",
-          type: "Hauptpartner",
-          features: ["Moderne Yachten", "Zuverlässige Technik", "Komfortable Ausstattung", "Weltweiter Service"]
-        },
-        {
-          name: "Jeanneau",
-          location: "Frankreich",
-          type: "Premium Partner",
-          features: ["Innovative Designs", "Leistungsstarke Yachten", "Luxus-Interieur", "Racing-Genetik"]
-        },
-        {
-          name: "Lagoon Catamarans",
-          location: "Frankreich",
-          type: "Spezialist",
-          features: ["Katamaran-Experte", "Familienfreundlich", "Stabilität", "Komfort"]
-        }
-      ]
-    },
-    {
       title: "Zertifizierungen & Verbände",
       icon: Shield,
       description: "Qualität und Sicherheit durch Zertifizierungen",
