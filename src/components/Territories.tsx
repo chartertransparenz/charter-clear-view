@@ -103,7 +103,7 @@ const Territories = () => {
     name: "Australien",
     regions: "Whitsunday Islands (Great Barrier Reef)",
     highlights: ["Unberührte Inselwelt", "Traumhafte Ankerbuchten", "Tropisches Klima, bestes Segelrevier der Südhalbkugel", "Meist mit Skipper empfohlen"],
-    image: destinationAustralia,
+    image: "/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.png",
     link: "/reviere/suedpazifik/australien"
   }];
 
