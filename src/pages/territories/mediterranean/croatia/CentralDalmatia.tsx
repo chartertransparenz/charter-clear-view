@@ -342,15 +342,110 @@ export default function CentralDalmatia() {
               Die beste Reisezeit für einen Yachtcharter in Kroatien sind die Monate Mai, Juni und September. In dieser Zeit sind die Temperaturen angenehm warm, das Wasser hat Badetemperatur, die Häfen sind nicht überfüllt und die Preise sind moderater als in der Hochsaison (Juli/August).
             </p>
 
-            <h3 className="text-xl font-semibold mb-4 mt-8">Fazit: Ihr Traumtörn in Kroatien</h3>
+            <p className="text-muted-foreground mb-6">
+              <strong>Revier-Eignung für Erfahrungsstufen:</strong> Dalmatien ist ein sehr vielseitiges Revier. Die geschützten Inselgruppen und Kanäle sind auch für weniger erfahrene Segler und Familien gut geeignet. Die kurzen Distanzen und die vielen Ausweichmöglichkeiten bieten viel Sicherheit. Für ambitionierte Segler bieten die offeneren Seegebiete und die Möglichkeit von stärkeren Winden (Bora, Jugo) auch Herausforderungen.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4 mt-8">Vorschriften & Regeln: Wichtige Hinweise für einen reibungslosen Törn</h3>
             
+            <p className="text-lg text-muted-foreground mb-4">
+              Kroatien hat klare und umfassende Vorschriften für den Yachtsport, die der Sicherheit und dem Umweltschutz dienen.
+            </p>
+
+            <div className="space-y-4 mb-6">
+              <div>
+                <h4 className="font-semibold mb-2">• Führerscheinpflicht:</h4>
+                <p className="text-muted-foreground">Für das Führen von Sportbooten auf der Adria ist der Sportbootführerschein See (SBF See) obligatorisch. Für Yachten mit einer Länge über 15 Meter oder zur gewerblichen Nutzung können weitergehende Scheine (z.B. Sportküstenschifferschein SKS) erforderlich sein.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">• Funkzeugnis (SRC):</h4>
+                <p className="text-muted-foreground">Für UKW-Funkgeräte an Bord ist das Short Range Certificate (SRC) erforderlich.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">• Kroatisches Permit/Vignette:</h4>
+                <p className="text-muted-foreground">Für ausländische Yachten ist eine sogenannte "Vignette" oder "Permit" erforderlich, die die Befugnis zum Befahren kroatischer Gewässer und zur Nutzung von Marinas regelt. Ihr Charterunternehmen kümmert sich in der Regel um diese Formalität und die damit verbundenen Gebühren.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">• Naturschutzgebiete:</h4>
+                <p className="text-muted-foreground">In Nationalparks (z.B. Kornaten, Krka) und Naturparks (z.B. Telašćica) gelten besondere Regeln für das Befahren, Ankern und Angeln. Für den Eintritt fallen Gebühren an. Diese Gebiete liegen jedoch in Norddalmatien.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">• Umweltauflagen:</h4>
+                <p className="text-muted-foreground">Strikte Regeln zur Müllentsorgung (kein Müll über Bord), Abwasserentsorgung (keine Einleitung von Fäkalien in Küstennähe oder in Naturschutzgebieten) und zum Schutz mariner Lebensräume.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">• Hafenformalitäten:</h4>
+                <p className="text-muted-foreground">Bei der Ankunft in einer Marina melden Sie sich beim Hafenmeister an und entrichten die Liegegebühren.</p>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mb-4 mt-8">Erfahrungen von Seglern: Eine Mischung aus Sport, Komfort und mediterranem Flair</h3>
+            
+            <p className="text-lg text-muted-foreground mb-4">
+              Segler, die Dalmatien besucht haben, berichten von einem Revier, das sowohl sportliche Herausforderungen als auch entspannte Naturerlebnisse bietet.
+            </p>
+
+            <div className="space-y-4 mb-6">
+              <div>
+                <h4 className="font-semibold mb-2">Positives:</h4>
+                <div className="pl-4 space-y-1">
+                  <p className="text-muted-foreground text-sm">• <strong>Inselvielfalt:</strong> Die unzähligen Inseln und Inselchen bieten eine enorme Vielfalt an Ankerplätzen und Zielen.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Klares Wasser:</strong> Die Adria ist bekannt für ihr kristallklares, türkisblaues Wasser, ideal zum Schwimmen und Schnorcheln.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Hafeninfrastruktur:</strong> Die Marinas sind modern, sauber und bieten umfassenden Service.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Kurze Distanzen:</strong> Die Inseln und Häfen liegen nah beieinander, was flexible Routenplanung ermöglicht.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Gastfreundschaft:</strong> Die Kroaten sind bekannt für ihre Herzlichkeit und Gastfreundschaft, besonders in den Konobas.</p>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">Herausforderungen:</h4>
+                <div className="pl-4 space-y-1">
+                  <p className="text-muted-foreground text-sm">• <strong>Wetterwechsel:</strong> Das Wetter kann schnell umschlagen, mit plötzlichen Starkwinden (Bora, Jugo). Eine gute Wetterbeobachtung ist unerlässlich.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Volle Marinas:</strong> In der Hochsaison können beliebte Marinas sehr voll sein, eine frühzeitige Ankunft oder Reservierung ist ratsam.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Untiefen:</strong> Außerhalb der Fahrwasser gibt es einige Untiefen, die präzise Navigation erfordern.</p>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold mb-2">Praktische Tipps aus der Seglergemeinschaft:</h4>
+                <div className="pl-4 space-y-1">
+                  <p className="text-muted-foreground text-sm">• <strong>Wetter-App:</strong> Eine gute Wetter-App oder ein Wetterdienst sind unverzichtbar.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Hafenhandbuch:</strong> Ein aktuelles Hafenhandbuch ist für die Navigation und die Wahl der Ankerplätze unerlässlich.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Konobas:</strong> Nutzen Sie die Gelegenheit, in den kleinen Inselrestaurants (Konobas) frischen Fisch und lokale Spezialitäten zu genießen.</p>
+                  <p className="text-muted-foreground text-sm">• <strong>Bargeld:</strong> In kleineren Konobas oder auf Inseln ist es ratsam, etwas Bargeld dabei zu haben.</p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-muted-foreground mb-6">
+              <strong>Ankerplätze & Buchten:</strong> Dalmatien ist berühmt für seine unzähligen, oft geschützten Ankerbuchten mit kristallklarem Wasser. Viele bieten Mooringbojen, andere erlauben das freie Ankern. <strong>Nautische Highlights:</strong> Das Segeln durch die Kanäle zwischen den Inseln, die Erkundung von Höhlen, das Schnorcheln und Tauchen in der klaren Adria, das Entdecken von versunkenen Schiffen oder das Beobachten von Delfinen. <strong>Landaktivitäten:</strong> Besuche von historischen Altstädten, Wanderungen in Nationalparks (z.B. Krka, Kornaten), Weinproben auf den Inseln, das Genießen der lokalen Küche in Konobas und das Erleben von traditionellen Festen.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4 mt-8">Fazit: Ihr Traumtörn in Kroatien – Ein Segelparadies an der Adria</h3>
+            
+            <p className="text-lg text-muted-foreground mb-4">
+              Ein Yachtcharter in Kroatien ist ein Versprechen für einen unvergesslichen Urlaub. Es ist die Freiheit, jeden Tag aufs Neue zu entscheiden, ob Sie eine versteckte Bucht ansteuern, in einem lebhaften Hafenstädtchen anlegen oder einfach auf dem offenen Meer die Sonne genießen. Es ist die Kombination aus:
+            </p>
+
+            <div className="space-y-2 mb-6">
+              <p className="text-muted-foreground">• <strong>Abwechslungsreichen Segelbedingungen:</strong> Von geschützten Inselgruppen bis zu offeneren Seegebieten ist für jede Erfahrungsstufe etwas dabei.</p>
+              <p className="text-muted-foreground">• <strong>Atemberaubenden Küstenlandschaften:</strong> Dramatische Klippen, unzählige Inseln, grüne Nationalparks und malerische Buchten.</p>
+              <p className="text-muted-foreground">• <strong>Kultureller Vielfalt:</strong> Segeln Sie auf den Spuren der Römer, Venezianer und Slawen und entdecken Sie ein UNESCO-Welterbe nach dem anderen.</p>
+              <p className="text-muted-foreground">• <strong>Mediterranem Flair & Kulinarik:</strong> Genießen Sie frischen Fisch, lokale Weine und die köstliche kroatische Küche in jeder Region neu.</p>
+            </div>
+
             <p className="text-lg text-muted-foreground mb-6">
-              Ein Yachtcharter in Kroatien ist ein Versprechen für einen unvergesslichen Urlaub. Es ist die Freiheit, jeden Tag aufs Neue zu entscheiden, ob Sie eine versteckte Bucht ansteuern, in einem lebhaften Hafenstädtchen anlegen oder einfach auf dem offenen Meer die Sonne genießen. Kroatien bleibt ein spektakuläres Yachtcharter-Revier für alle, die das Abenteuer suchen und die Schönheit der Adria vom Wasser aus erleben möchten.
+              Kroatien bleibt ein spektakuläres Yachtcharter-Revier für alle, die das Abenteuer suchen und die Schönheit der Adria vom Wasser aus erleben möchten. Wer die Regeln beachtet und sich gut vorbereitet, wird mit einzigartigen Segelerlebnissen und einem tiefen Gefühl der Verbundenheit mit der Natur belohnt.
             </p>
 
             <p className="text-lg text-muted-foreground mb-8">
               <strong>Sind Sie bereit, die Segel zu setzen und Kroatien zu entdecken?</strong><br/>
-              Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt.
+              Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
             </p>
           </div>
         </div>
