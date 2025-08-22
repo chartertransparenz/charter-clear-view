@@ -2,78 +2,69 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
-import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from '@/components/ui/breadcrumb';
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
-
 export default function NorthernDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: 'Region', value: 'Norddalmatien' },
-    { icon: Clock, label: 'Beste Zeit', value: 'April - Oktober' },
-    { icon: Users, label: 'Geeignet für', value: 'Fortgeschrittene' },
-    { icon: Anchor, label: 'Marinas', value: '25+ Marinas' },
-    { icon: Wind, label: 'Windverhältnisse', value: 'Maestral & Bora' },
-    { icon: Sun, label: 'Sonnentage', value: '300+ pro Jahr' }
-  ];
-
-  const cities = [
-    {
-      name: 'Zadar',
-      description: 'Historische Stadt mit Meeresorgel und Sonnengruß',
-      marinas: 4,
-      highlights: ['Marina Zadar', 'Meeresorgel', 'Forum Romanum']
-    },
-    {
-      name: 'Šibenik',
-      description: 'UNESCO-Weltkulturerbe mit beeindruckender Kathedrale',
-      marinas: 3,
-      highlights: ['Marina Šibenik', 'Kathedrale St. Jakob', 'Krka Nationalpark']
-    },
-    {
-      name: 'Biograd',
-      description: 'Familienfreundlicher Ort vor den Kornaten',
-      marinas: 2,
-      highlights: ['Marina Kornati', 'Kornati Nationalpark', 'Pašman Insel']
-    },
-    {
-      name: 'Murter',
-      description: 'Tor zu den Kornaten mit traditioneller Atmosphäre',
-      marinas: 2,
-      highlights: ['Marina Hramina', 'Kornati Tor', 'Slanica Strand']
-    }
-  ];
-
-  const highlights = [
-    'Kornati Nationalpark - 89 Inseln',
-    'Krka Nationalpark mit Wasserfällen',
-    'Unberührte Natur und einsame Buchten',
-    'Starke Maestral-Winde für sportliches Segeln',
-    'Reiche Geschichte und Kultur',
-    'Authentische dalmatinische Küche',
-    'Weniger Massentourismus',
-    'Perfekt für Naturliebhaber'
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const quickFacts = [{
+    icon: MapPin,
+    label: 'Region',
+    value: 'Norddalmatien'
+  }, {
+    icon: Clock,
+    label: 'Beste Zeit',
+    value: 'April - Oktober'
+  }, {
+    icon: Users,
+    label: 'Geeignet für',
+    value: 'Fortgeschrittene'
+  }, {
+    icon: Anchor,
+    label: 'Marinas',
+    value: '25+ Marinas'
+  }, {
+    icon: Wind,
+    label: 'Windverhältnisse',
+    value: 'Maestral & Bora'
+  }, {
+    icon: Sun,
+    label: 'Sonnentage',
+    value: '300+ pro Jahr'
+  }];
+  const cities = [{
+    name: 'Zadar',
+    description: 'Historische Stadt mit Meeresorgel und Sonnengruß',
+    marinas: 4,
+    highlights: ['Marina Zadar', 'Meeresorgel', 'Forum Romanum']
+  }, {
+    name: 'Šibenik',
+    description: 'UNESCO-Weltkulturerbe mit beeindruckender Kathedrale',
+    marinas: 3,
+    highlights: ['Marina Šibenik', 'Kathedrale St. Jakob', 'Krka Nationalpark']
+  }, {
+    name: 'Biograd',
+    description: 'Familienfreundlicher Ort vor den Kornaten',
+    marinas: 2,
+    highlights: ['Marina Kornati', 'Kornati Nationalpark', 'Pašman Insel']
+  }, {
+    name: 'Murter',
+    description: 'Tor zu den Kornaten mit traditioneller Atmosphäre',
+    marinas: 2,
+    highlights: ['Marina Hramina', 'Kornati Tor', 'Slanica Strand']
+  }];
+  const highlights = ['Kornati Nationalpark - 89 Inseln', 'Krka Nationalpark mit Wasserfällen', 'Unberührte Natur und einsame Buchten', 'Starke Maestral-Winde für sportliches Segeln', 'Reiche Geschichte und Kultur', 'Authentische dalmatinische Küche', 'Weniger Massentourismus', 'Perfekt für Naturliebhaber'];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(${destinationCroatia})` }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{
+      backgroundImage: `url(${destinationCroatia})`
+    }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
@@ -119,20 +110,18 @@ export default function NorthernDalmatia() {
       <div className="container mx-auto px-4 py-16">
         {/* Quick Facts */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
-          {quickFacts.map((fact, index) => (
-            <Card key={index} className="text-center">
+          {quickFacts.map((fact, index) => <Card key={index} className="text-center">
               <CardContent className="p-4">
                 <fact.icon className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">{fact.label}</p>
                 <p className="font-semibold">{fact.value}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-16 text-center">
-          <h2 className="text-3xl font-bold mb-6">Segeln in Norddalmatien</h2>
+          
           <p className="text-lg text-muted-foreground mb-6">
             Norddalmatien ist das Paradies für Naturliebhaber und erfahrene Segler. Die Region bietet mit dem Kornati 
             Nationalpark eine der schönsten und wildesten Insellandschaften der Adria. Hier finden Sie unberührte Natur, 
@@ -144,28 +133,11 @@ export default function NorthernDalmatia() {
           </p>
         </div>
 
-        {/* Territory Map */}
-        <div className="mb-16">
-          <TerritoryMap
-            region="Norddalmatien"
-            center={{ lat: 44.0, lng: 15.5 }}
-            zoom={9}
-            markers={[
-              { lat: 44.1194, lng: 15.2314, name: "Zadar", description: "Marina Zadar, Meeresorgel" },
-              { lat: 43.7350, lng: 15.8952, name: "Šibenik", description: "Marina Šibenik, Kathedrale St. Jakob" },
-              { lat: 44.0067, lng: 15.4478, name: "Biograd", description: "Marina Kornati" },
-              { lat: 43.8264, lng: 15.5928, name: "Murter", description: "Marina Hramina, Kornati Tor" }
-            ]}
-            className="max-w-5xl mx-auto"
-          />
-        </div>
-
         {/* Cities */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelbasen</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {cities.map((city, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {cities.map((city, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -182,17 +154,14 @@ export default function NorthernDalmatia() {
                       Highlights
                     </h4>
                     <ul className="space-y-1">
-                      {city.highlights.map((highlight, idx) => (
-                        <li key={idx} className="text-sm text-muted-foreground flex items-center">
+                      {city.highlights.map((highlight, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-center">
                           <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
                           {highlight}
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -200,14 +169,12 @@ export default function NorthernDalmatia() {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Warum Norddalmatien?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="text-center hover:shadow-md transition-shadow">
+            {highlights.map((highlight, index) => <Card key={index} className="text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
                   <Star className="w-6 h-6 mx-auto mb-3 text-primary" />
                   <p className="text-sm">{highlight}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -226,6 +193,5 @@ export default function NorthernDalmatia() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
