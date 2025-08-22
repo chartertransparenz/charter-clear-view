@@ -64,7 +64,7 @@ export default function NorthernDalmatia() {
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{
-      backgroundImage: `url(${destinationCroatia})`
+      backgroundImage: `url(/lovable-uploads/cba38d3c-2eaa-4174-949f-997ceffda0ee.png)`
     }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
