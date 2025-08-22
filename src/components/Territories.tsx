@@ -55,7 +55,7 @@ const Territories = () => {
     name: "Spanien",
     regions: "Balearen (Mallorca, Menorca, Ibiza, Formentera), Kanaren",
     highlights: ["Mediterrane Atmosphäre mit Top-Infrastruktur", "Ganzjahresziel (v.a. Kanaren)", "Große Auswahl an Charterbasen"],
-    image: destinationSpain,
+    image: "/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.png",
     link: "/reviere/mittelmeer/spanien"
   }, {
     rank: 5,
