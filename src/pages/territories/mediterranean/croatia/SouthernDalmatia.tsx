@@ -122,6 +122,12 @@ export default function SouthernDalmatia() {
 
         {/* Map */}
         <div className="mb-16">
+          <div className="max-w-4xl mx-auto mb-8 text-center">
+            <p className="text-lg text-muted-foreground">
+              Von der majestätischen Stadt Dubrovnik bis zu den unberührten Inseln Mljet und Lastovo - Süddalmatien 
+              vereint UNESCO-Welterbestätten mit ursprünglicher Natur auf einzigartige Weise.
+            </p>
+          </div>
           <h2 className="text-3xl font-bold text-center mb-8">Karte von Süddalmatien</h2>
           <TerritoryMap
             region="Süddalmatien, Kroatien"
@@ -129,14 +135,6 @@ export default function SouthernDalmatia() {
             zoom={10}
             className="max-w-4xl mx-auto"
           />
-        </div>
-
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-16 text-center">
-          <p className="text-lg text-muted-foreground">
-            Von der majestätischen Stadt Dubrovnik bis zu den unberührten Inseln Mljet und Lastovo - Süddalmatien 
-            vereint UNESCO-Welterbestätten mit ursprünglicher Natur auf einzigartige Weise.
-          </p>
         </div>
 
         {/* Detailed Region Description */}
