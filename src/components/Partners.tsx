@@ -13,34 +13,7 @@ import partnersYears from "@/assets/partners-years.jpg";
 import partnersQuality from "@/assets/partners-quality.jpg";
 
 const Partners = () => {
-  const partnerCategories = [
-    {
-      title: "Zertifizierungen & Verbände",
-      icon: Shield,
-      description: "Qualität und Sicherheit durch Zertifizierungen",
-      image: partnerCertifications,
-      partners: [
-        {
-          name: "Deutscher Segler-Verband",
-          location: "Deutschland",
-          type: "Mitgliedschaft",
-          features: ["Lizenzierte Ausbildung", "Qualitätsstandards", "Sicherheitsrichtlinien", "Weiterbildung"]
-        },
-        {
-          name: "ADAC Skipper-Portal",
-          location: "Deutschland", 
-          type: "Qualitätspartner",
-          features: ["Geprüfte Qualität", "Kundenservice", "Pannenhilfe", "Reiseversicherung"]
-        },
-        {
-          name: "Charter Excellence",
-          location: "International",
-          type: "Zertifizierung",
-          features: ["Höchste Standards", "Regelmäßige Kontrollen", "Kundenzufriedenheit", "Transparenz"]
-        }
-      ]
-    }
-  ];
+  const partnerCategories = [];
 
   const { ref: statisticsRef, isIntersecting } = useIntersectionObserver({
     threshold: 0.3,
