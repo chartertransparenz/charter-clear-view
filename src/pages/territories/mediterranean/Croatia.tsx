@@ -157,7 +157,7 @@ const Croatia = () => {
             </p>
             
             <p className="text-lg leading-relaxed mb-6">
-              Ob Sie als erfahrener Skipper, Einsteiger, Familie, Genießer oder sportliche Crew unterwegs sind – Kroatien hält für jeden das passende Segelabenteuer bereit. Die kroatische Küste erstreckt sich über 1.700 Kilometer und wird von über 1.200 Inseln gesäumt, von denen jede ihren eigenen Charme und ihre spezifischen Segelbedingungen bietet. Von den venezianisch geprägten Städten Istriens über die unberührten Nationalparks Dalmatiens bis hin zur weltberühmten "Perle der Adria", Dubrovnik, bietet Kroatien eine unvergleichliche Palette an Erlebnissen.
+              Ob Sie als erfahrener Skipper, Einsteiger, Familie, Genießer oder sportliche Crew unterwegs sind – Kroatien hält für jeden das passende Segelabenteuer bereit. Die kroatische Küste erstreckt sich über 1.700 Kilometer und wird von über 1.200 Inseln gesäumt, von denen jede ihren eigenen Charme und ihre spezifischen Segelbedingungen bietet. Von den venezianisch geprägten Städten <Link to="/reviere/mittelmeer/kroatien/istrien" className="text-blue-600 hover:text-blue-800 hover:underline">Istriens</Link> über die unberührten Nationalparks <Link to="/reviere/mittelmeer/kroatien/norddalmatien" className="text-blue-600 hover:text-blue-800 hover:underline">Dalmatiens</Link> bis hin zur weltberühmten "Perle der Adria", Dubrovnik, bietet Kroatien eine unvergleichliche Palette an Erlebnissen.
             </p>
 
             <div className="my-8">
@@ -177,7 +177,7 @@ const Croatia = () => {
               Die kroatische Adriaküste gliedert sich in verschiedene Regionen, die jeweils ihren eigenen, unverwechselbaren Charme und spezifische Segelbedingungen bieten.
             </p>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">1. Istrien: Mediterranes Flair, venezianische Städte und kulinarische Genüsse</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">1. <Link to="/reviere/mittelmeer/kroatien/istrien" className="text-blue-600 hover:text-blue-800 hover:underline">Istrien</Link>: Mediterranes Flair, venezianische Städte und kulinarische Genüsse</h4>
             
             <div className="mb-6">
               <h5 className="text-lg font-semibold mb-3">Reviercharakter & Besonderheiten:</h5>
@@ -210,7 +210,7 @@ const Croatia = () => {
               <p><strong>Für wen geeignet?</strong> Einsteiger, Familien, Genießer, Kulturinteressierte, Crews mit Lust auf kurze Schläge und viele Landgänge.</p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">2. Kvarner Bucht: Inselvielfalt, Delfine und kontrastreiche Küsten</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">2. <Link to="/reviere/mittelmeer/kroatien/kvarner-bucht" className="text-blue-600 hover:text-blue-800 hover:underline">Kvarner Bucht</Link>: Inselvielfalt, Delfine und kontrastreiche Küsten</h4>
             
             <div className="mb-6">
               <h5 className="text-lg font-semibold mb-3">Reviercharakter & Besonderheiten:</h5>
@@ -252,7 +252,7 @@ const Croatia = () => {
               />
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">3. Norddalmatien: Insel-Labyrinth, Kornaten und Nationalparks</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">3. <Link to="/reviere/mittelmeer/kroatien/norddalmatien" className="text-blue-600 hover:text-blue-800 hover:underline">Norddalmatien</Link>: Insel-Labyrinth, Kornaten und Nationalparks</h4>
             
             <div className="mb-6">
               <h5 className="text-lg font-semibold mb-3">Reviercharakter & Besonderheiten:</h5>
@@ -286,7 +286,7 @@ const Croatia = () => {
               <p><strong>Für wen geeignet?</strong> Einsteiger, Familien, Genießer, Naturfreunde, Crews mit Lust auf Inselhopping, Nationalparks und Kultur.</p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">4. Mitteldalmatien: Split, Trogir, Kaštela und die berühmten Inseln</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">4. <Link to="/reviere/mittelmeer/kroatien/mitteldalmatien" className="text-blue-600 hover:text-blue-800 hover:underline">Mitteldalmatien</Link>: Split, Trogir, Kaštela und die berühmten Inseln</h4>
             
             <div className="mb-6">
               <h5 className="text-lg font-semibold mb-3">Reviercharakter & Besonderheiten:</h5>
@@ -328,7 +328,7 @@ const Croatia = () => {
               <p><strong>Für wen geeignet?</strong> Alle Erfahrungsstufen, Familien, Genießer, sportliche Crews, Nachtschwärmer, Kulturinteressierte.</p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">5. Süddalmatien: Dubrovnik, Elaphiten, Mljet und Lastovo</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">5. <Link to="/reviere/mittelmeer/kroatien/sueddalmatien" className="text-blue-600 hover:text-blue-800 hover:underline">Süddalmatien</Link>: Dubrovnik, Elaphiten, Mljet und Lastovo</h4>
             
             <div className="mb-6">
               <h5 className="text-lg font-semibold mb-3">Reviercharakter & Besonderheiten:</h5>
@@ -427,7 +427,7 @@ const Croatia = () => {
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Istrien:</strong> Rovinj, Pula (Amphitheater), Nationalpark Brijuni.</li>
                 <li><strong>Kvarner Bucht:</strong> Inseln Cres, Lošinj (Delfine), Krk, Rab (Sandstrände), Pag (mondähnlich).</li>
-                <li><strong>Norddalmatien:</strong> Zadar (Meeresorgel), Nationalpark Kornaten (Insel-Labyrinth), Dugi Otok (Telašćica, Sakarun Beach), Nationalpark Krka (Wasserfälle).</li>
+                <li><strong><Link to="/reviere/mittelmeer/kroatien/norddalmatien" className="text-blue-600 hover:text-blue-800 hover:underline">Norddalmatien</Link>:</strong> Zadar (Meeresorgel), Nationalpark Kornaten (Insel-Labyrinth), Dugi Otok (Telašćica, Sakarun Beach), Nationalpark Krka (Wasserfälle).</li>
                 <li><strong>Mitteldalmatien:</strong> Split (Diokletianpalast), Trogir (UNESCO-Altstadt), Kaštela, Inseln Hvar (Nightlife, Lavendel), Brač (Zlatni Rat), Vis (Blaue Grotte), Šolta, Drvenik Veli (Blaue Lagune).</li>
                 <li><strong>Süddalmatien:</strong> Dubrovnik (Stadtmauern), Elaphiten-Inseln (Lopud, Šipan), Mljet (Nationalpark, Seen), Lastovo (Naturpark), Korčula (mittelalterliche Stadt).</li>
               </ul>
