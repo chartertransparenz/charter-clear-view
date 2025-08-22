@@ -132,7 +132,7 @@ const Croatia = () => {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="h-96 w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468820.8234567!2d14.5!3d44.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d694c49c3b5b%3A0x3ccb7be2e1b1c36c!2sKroatien!5e0!3m2!1sde!2sde!4v1641234567890!5m2!1sde!2sde&z=6"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468820.8234567!2d14.5!3d44.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d694c49c3b5b%3A0x3ccb7be2e1b1c36c!2sKroatien!5e1!3m2!1sde!2sde!4v1641234567890!5m2!1sde!2sde&z=6"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
