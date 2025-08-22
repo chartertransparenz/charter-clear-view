@@ -63,7 +63,7 @@ const Territories = () => {
     name: "Türkei",
     regions: "Türkische Ägäis (Bodrum, Marmaris, Göcek, Fethiye)",
     highlights: ["Blue Cruise-Tradition", "Gület-Charter beliebt", "Warmes Wasser, geschützte Buchten", "Gastfreundschaft & gutes Preis-Leistungs-Verhältnis"],
-    image: destinationTurkey,
+    image: "/lovable-uploads/b0c596f4-551d-4816-958d-570974af6c8d.png",
     link: "/reviere/mittelmeer/tuerkei"
   }, {
     rank: 6,
