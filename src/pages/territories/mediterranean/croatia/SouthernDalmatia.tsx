@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
+import TerritoryMap from '@/components/TerritoryMap';
 export default function SouthernDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -117,6 +118,17 @@ export default function SouthernDalmatia() {
                 <p className="font-semibold">{fact.value}</p>
               </CardContent>
             </Card>)}
+        </div>
+
+        {/* Map */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Karte von Süddalmatien</h2>
+          <TerritoryMap
+            region="Süddalmatien, Kroatien"
+            center={{ lat: 42.6507, lng: 18.0944 }}
+            zoom={10}
+            className="max-w-4xl mx-auto"
+          />
         </div>
 
         {/* Description */}
