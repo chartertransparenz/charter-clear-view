@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import TerritoryMap from "@/components/TerritoryMap";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
@@ -126,25 +125,6 @@ const Croatia = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
-        </div>
-
-        {/* Territory Map */}
-        <div className="mb-16">
-          <TerritoryMap 
-            region="Kroatien" 
-            center={{ lat: 44.0, lng: 15.5 }} 
-            zoom={5.5}
-            markers={[
-              { lat: 45.2, lng: 13.9, name: 'Pula', description: 'Istrien - Hauptstadt mit römischem Amphitheater' },
-              { lat: 45.3, lng: 14.3, name: 'Rijeka', description: 'Kvarner Bucht - Größte Stadt der Region' },
-              { lat: 44.1, lng: 15.2, name: 'Zadar', description: 'Norddalmatien - Meeresorgel und Sonnengruß' },
-              { lat: 43.7, lng: 15.9, name: 'Šibenik', description: 'Norddalmatien - UNESCO-Weltkulturerbe' },
-              { lat: 43.5, lng: 16.4, name: 'Split', description: 'Mitteldalmatien - Diokletianpalast' },
-              { lat: 43.3, lng: 16.9, name: 'Hvar', description: 'Mitteldalmatien - Lavendelinsel' },
-              { lat: 42.6, lng: 18.1, name: 'Dubrovnik', description: 'Süddalmatien - Perle der Adria' }
-            ]} 
-            className="max-w-4xl mx-auto" 
-          />
         </div>
 
         {/* Main Content */}
