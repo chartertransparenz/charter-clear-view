@@ -174,138 +174,261 @@ const About = () => {
               ))}
             </div>
 
-            {/* Adventure Timeline - Nautical Journey */}
+            {/* Nautical Treasure Map Timeline */}
             <div className="mb-16 relative">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-ocean-dark mb-4">Unsere Abenteuer-Reise</h2>
-                <p className="text-lg text-muted-foreground">Eine nautische Chronik von 30 Jahren Charter-Erfahrung</p>
+                <h2 className="text-3xl font-bold text-ocean-dark mb-4">Unsere Schatz-Route</h2>
+                <p className="text-lg text-muted-foreground">30 Jahre Charter-Abenteuer auf den Weltmeeren</p>
               </div>
               
-              {/* Adventure Map Background */}
-              <div className="relative bg-gradient-to-b from-amber-50 to-blue-50 rounded-3xl p-8 shadow-2xl overflow-hidden">
-                {/* Decorative Map Elements */}
-                <div className="absolute top-4 left-4 opacity-20">
-                  <Compass className="w-16 h-16 text-amber-600 animate-pulse" />
+              {/* Treasure Map Container */}
+              <div className="relative bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100 rounded-3xl p-12 shadow-2xl overflow-hidden border-4 border-blue-200">
+                {/* Map Decorations */}
+                <div className="absolute top-6 left-6 opacity-30">
+                  <Compass className="w-20 h-20 text-ocean-blue animate-spin" style={{ animationDuration: '20s' }} />
                 </div>
-                <div className="absolute top-4 right-4 opacity-20">
-                  <Ship className="w-12 h-12 text-blue-600" />
+                <div className="absolute top-6 right-6 opacity-20">
+                  <Ship className="w-16 h-16 text-blue-600 animate-bounce" style={{ animationDelay: '1s' }} />
                 </div>
-                <div className="absolute bottom-4 left-4 opacity-20">
-                  <Anchor className="w-10 h-10 text-ocean-dark" />
+                <div className="absolute bottom-6 left-6 opacity-25">
+                  <Anchor className="w-12 h-12 text-ocean-dark animate-pulse" />
+                </div>
+                <div className="absolute bottom-6 right-6 opacity-20">
+                  <Star className="w-10 h-10 text-blue-500 animate-pulse" style={{ animationDelay: '2s' }} />
                 </div>
                 
-                {/* Nautical Route SVG */}
+                {/* Animated Treasure Route SVG */}
                 <svg 
-                  className="absolute inset-0 w-full h-full pointer-events-none" 
-                  viewBox="0 0 100 100" 
-                  preserveAspectRatio="none"
+                  className="absolute inset-0 w-full h-full pointer-events-none z-0" 
+                  viewBox="0 0 1000 800"
+                  preserveAspectRatio="xMidYMid meet"
                 >
                   <defs>
-                    <pattern id="waves" patternUnits="userSpaceOnUse" width="20" height="4">
-                      <path d="M0,2 Q5,0 10,2 T20,2" stroke="#0369a1" strokeWidth="0.5" fill="none" opacity="0.6"/>
-                    </pattern>
+                    <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#1e40af" />
+                      <stop offset="50%" stopColor="#3b82f6" />
+                      <stop offset="100%" stopColor="#60a5fa" />
+                    </linearGradient>
+                    <filter id="glow">
+                      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                      <feMerge> 
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
                   </defs>
+                  
+                  {/* Main Route Path */}
                   <path
-                    d="M 10,15 Q 25,10 40,20 T 70,25 Q 85,30 95,40"
-                    stroke="url(#waves)"
-                    strokeWidth="2"
+                    d="M 100,150 Q 200,100 300,140 Q 400,180 500,120 Q 600,80 700,130 Q 800,180 900,120"
+                    stroke="url(#routeGradient)"
+                    strokeWidth="6"
                     fill="none"
-                    strokeDasharray="5,3"
+                    strokeDasharray="15,10"
+                    filter="url(#glow)"
                     className="animate-pulse"
                   />
+                  
+                  {/* Route Points */}
+                  {milestones.map((_, index) => {
+                    const positions = [
+                      { x: 100, y: 150 },
+                      { x: 250, y: 120 },
+                      { x: 380, y: 160 },
+                      { x: 520, y: 100 },
+                      { x: 650, y: 155 },
+                      { x: 780, y: 105 },
+                      { x: 900, y: 120 }
+                    ];
+                    return (
+                      <g key={index}>
+                        {/* Treasure Point */}
+                        <circle
+                          cx={positions[index]?.x}
+                          cy={positions[index]?.y}
+                          r="8"
+                          fill="#1e40af"
+                          className="animate-pulse"
+                          style={{ animationDelay: `${index * 0.5}s` }}
+                        />
+                        <circle
+                          cx={positions[index]?.x}
+                          cy={positions[index]?.y}
+                          r="15"
+                          fill="none"
+                          stroke="#3b82f6"
+                          strokeWidth="2"
+                          opacity="0.6"
+                          className="animate-ping"
+                          style={{ animationDelay: `${index * 0.5}s` }}
+                        />
+                        
+                        {/* Connecting Dots between points */}
+                        {index < milestones.length - 1 && (
+                          <>
+                            {[1, 2, 3, 4, 5].map((dotIndex) => {
+                              const startPos = positions[index];
+                              const endPos = positions[index + 1];
+                              const progress = dotIndex / 6;
+                              const x = startPos.x + (endPos.x - startPos.x) * progress;
+                              const y = startPos.y + (endPos.y - startPos.y) * progress + 
+                                       Math.sin(progress * Math.PI) * 20; // Add curve
+                              
+                              return (
+                                <circle
+                                  key={`${index}-${dotIndex}`}
+                                  cx={x}
+                                  cy={y}
+                                  r="3"
+                                  fill="#60a5fa"
+                                  opacity="0.8"
+                                  className="animate-pulse"
+                                  style={{ 
+                                    animationDelay: `${index * 0.5 + dotIndex * 0.1}s`,
+                                    animationDuration: '2s'
+                                  }}
+                                />
+                              );
+                            })}
+                          </>
+                        )}
+                      </g>
+                    );
+                  })}
+                  
+                  {/* Treasure Chest at the end */}
+                  <g transform="translate(885, 105)">
+                    <rect x="0" y="0" width="30" height="20" fill="#1e40af" rx="3" />
+                    <rect x="5" y="-5" width="20" height="10" fill="#3b82f6" rx="2" />
+                    <circle cx="15" cy="5" r="2" fill="#fbbf24" className="animate-pulse" />
+                  </g>
                 </svg>
 
                 {/* Timeline Events */}
-                <div className="relative z-10">
-                  {milestones.map((milestone, index) => (
-                    <div 
-                      key={index} 
-                      className={`relative mb-16 last:mb-0 ${
-                        index % 2 === 0 ? 'md:ml-0' : 'md:ml-auto md:text-right'
-                      } md:w-1/2 group`}
-                      style={{ 
-                        animationDelay: `${index * 200}ms`,
-                      }}
-                    >
-                      {/* Adventure Card */}
-                      <div className={`relative transform transition-all duration-700 hover:scale-105 hover:rotate-1 ${
-                        index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'
-                      }`}>
-                        {/* Parchment-style Card */}
-                        <div className="bg-gradient-to-br from-amber-100 via-yellow-50 to-amber-200 rounded-2xl shadow-xl border-2 border-amber-300 p-6 relative overflow-hidden">
-                          {/* Vintage paper texture overlay */}
-                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,69,19,0.1),transparent)] pointer-events-none"></div>
+                <div className="relative z-10 grid gap-16">
+                  {milestones.map((milestone, index) => {
+                    const positions = ['left-0', 'right-0', 'left-0', 'right-0', 'left-0', 'right-0', 'left-0'];
+                    const isLeft = index % 2 === 0;
+                    
+                    return (
+                      <div 
+                        key={index} 
+                        className={`relative ${
+                          isLeft ? 'justify-start' : 'justify-end'
+                        } flex`}
+                        style={{ 
+                          marginTop: index === 0 ? '0' : '60px',
+                          animationDelay: `${index * 300}ms`,
+                        }}
+                      >
+                        {/* Treasure Card */}
+                        <div className={`relative transform transition-all duration-700 hover:scale-105 ${
+                          isLeft ? 'animate-slide-in-left' : 'animate-slide-in-right'
+                        } w-80 group`}>
                           
-                          {/* Nautical Icon Badge */}
-                          <div className={`absolute -top-4 ${index % 2 === 0 ? '-right-4' : '-left-4'} w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center shadow-xl border-4 border-white transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12`}>
-                            <milestone.icon className="w-8 h-8 text-white" />
-                          </div>
+                          {/* Ocean-themed Card */}
+                          <div className="bg-gradient-to-br from-blue-50 via-sky-100 to-blue-200 rounded-2xl shadow-xl border-3 border-blue-300 p-6 relative overflow-hidden">
+                            {/* Wave pattern overlay */}
+                            <div className="absolute inset-0 opacity-10">
+                              <svg className="w-full h-full" viewBox="0 0 100 20">
+                                <defs>
+                                  <pattern id={`waves-${index}`} patternUnits="userSpaceOnUse" width="40" height="8">
+                                    <path d="M0,4 Q10,0 20,4 T40,4" stroke="#1e40af" strokeWidth="1" fill="none"/>
+                                  </pattern>
+                                </defs>
+                                <rect width="100%" height="100%" fill={`url(#waves-${index})`} />
+                              </svg>
+                            </div>
+                            
+                            {/* Maritime Icon Badge */}
+                            <div className={`absolute -top-6 ${isLeft ? '-right-6' : '-left-6'} w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center shadow-2xl border-4 border-white transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-12`}>
+                              <milestone.icon className="w-10 h-10 text-white drop-shadow-lg" />
+                              
+                              {/* Glowing ring */}
+                              <div className="absolute inset-0 rounded-full border-2 border-blue-300 animate-ping opacity-30"></div>
+                            </div>
 
-                          {/* Content */}
-                          <div className="relative z-10">
-                            {/* Year Badge */}
-                            <div className="inline-flex items-center gap-2 mb-4">
-                              <Badge className="bg-red-600 text-white border-red-700 px-4 py-1 text-lg font-bold shadow-lg">
-                                {milestone.year}
-                              </Badge>
-                              <div className="flex items-center gap-1 text-sm text-amber-700 font-semibold">
-                                <MapPin className="w-3 h-3" />
-                                {milestone.location}
+                            {/* Content */}
+                            <div className="relative z-10 pt-4">
+                              {/* Year Badge with nautical styling */}
+                              <div className="inline-flex items-center gap-3 mb-4">
+                                <Badge className="bg-gradient-to-r from-blue-600 to-blue-800 text-white border-blue-700 px-6 py-2 text-xl font-bold shadow-lg transform hover:scale-105 transition-transform">
+                                  {milestone.year}
+                                </Badge>
+                                <div className="flex items-center gap-2 text-sm text-blue-700 font-semibold bg-blue-100 px-3 py-1 rounded-full">
+                                  <MapPin className="w-4 h-4" />
+                                  {milestone.location}
+                                </div>
+                              </div>
+
+                              {/* Title with ocean styling */}
+                              <h3 className="text-2xl font-bold text-blue-900 mb-4 border-b-2 border-dotted border-blue-400 pb-3">
+                                {milestone.title}
+                              </h3>
+
+                              {/* Description */}
+                              <p className="text-blue-800 leading-relaxed font-medium mb-4">
+                                {milestone.description}
+                              </p>
+
+                              {/* Maritime decorative elements */}
+                              <div className="flex justify-between items-center pt-4 border-t border-blue-300">
+                                <div className="flex gap-3">
+                                  <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                                  <div className="w-3 h-3 bg-sky-500 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                                  <div className="w-3 h-3 bg-blue-600 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                                </div>
+                                <Anchor className="w-5 h-5 text-blue-600" />
                               </div>
                             </div>
 
-                            {/* Title with vintage styling */}
-                            <h3 className="text-2xl font-bold text-amber-900 mb-3 border-b-2 border-dotted border-amber-400 pb-2">
-                              {milestone.title}
-                            </h3>
-
-                            {/* Description */}
-                            <p className="text-amber-800 leading-relaxed font-medium">
-                              {milestone.description}
-                            </p>
-
-                            {/* Decorative elements */}
-                            <div className="flex justify-between items-center mt-4 pt-4 border-t border-amber-300">
-                              <div className="flex gap-2">
-                                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                              </div>
-                              <Star className="w-4 h-4 text-amber-600" />
-                            </div>
+                            {/* Nautical corner decorations */}
+                            <div className="absolute top-3 left-3 w-6 h-6 border-l-3 border-t-3 border-blue-600 opacity-40"></div>
+                            <div className="absolute top-3 right-3 w-6 h-6 border-r-3 border-t-3 border-blue-600 opacity-40"></div>
+                            <div className="absolute bottom-3 left-3 w-6 h-6 border-l-3 border-b-3 border-blue-600 opacity-40"></div>
+                            <div className="absolute bottom-3 right-3 w-6 h-6 border-r-3 border-b-3 border-blue-600 opacity-40"></div>
                           </div>
 
-                          {/* Vintage corner decorations */}
-                          <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-amber-600 opacity-60"></div>
-                          <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-amber-600 opacity-60"></div>
-                          <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-amber-600 opacity-60"></div>
-                          <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-amber-600 opacity-60"></div>
-                        </div>
-
-                        {/* Connecting Line to Timeline */}
-                        <div className={`absolute top-1/2 ${
-                          index % 2 === 0 ? '-right-8' : '-left-8'
-                        } w-8 h-0.5 bg-gradient-to-r from-amber-400 to-blue-400 transform -translate-y-1/2`}>
-                          <div className={`absolute ${
-                            index % 2 === 0 ? 'right-0' : 'left-0'
-                          } top-1/2 transform -translate-y-1/2 w-2 h-2 bg-blue-600 rounded-full shadow-lg`}></div>
+                          {/* Connection Line to Main Route */}
+                          <div className={`absolute top-1/2 ${
+                            isLeft ? '-right-12' : '-left-12'
+                          } w-12 h-1 bg-gradient-to-r from-blue-400 to-blue-600 transform -translate-y-1/2`}>
+                            {/* Animated dots on connection line */}
+                            <div className={`absolute ${
+                              isLeft ? 'right-1' : 'left-1'
+                            } top-1/2 transform -translate-y-1/2 w-3 h-3 bg-blue-600 rounded-full shadow-lg animate-pulse`}></div>
+                            <div className={`absolute ${
+                              isLeft ? 'right-4' : 'left-4'
+                            } top-1/2 transform -translate-y-1/2 w-2 h-2 bg-blue-500 rounded-full animate-pulse`} style={{ animationDelay: '0.5s' }}></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
-                {/* Adventure Map Legend */}
-                <div className="absolute bottom-8 right-8 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-amber-200">
-                  <h4 className="text-sm font-bold text-amber-900 mb-2">Legende</h4>
-                  <div className="space-y-1 text-xs text-amber-800">
+                {/* Treasure Map Legend */}
+                <div className="absolute bottom-8 right-8 bg-blue-50/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-blue-200">
+                  <h4 className="text-sm font-bold text-blue-900 mb-3 flex items-center gap-2">
+                    <Compass className="w-4 h-4" />
+                    Schatzkarte
+                  </h4>
+                  <div className="space-y-2 text-xs text-blue-800">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-0.5 bg-gradient-to-r from-amber-400 to-blue-400"></div>
-                      <span>Unsere Route</span>
+                      <div className="w-4 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded"></div>
+                      <span>Abenteuer-Route</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Anchor className="w-3 h-3" />
+                      <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
                       <span>Meilensteine</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="flex gap-1">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      </div>
+                      <span>Reiseverlauf</span>
                     </div>
                   </div>
                 </div>
