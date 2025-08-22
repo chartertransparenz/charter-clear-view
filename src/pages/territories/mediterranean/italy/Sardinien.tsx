@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -138,6 +139,25 @@ const Sardinien = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Territory Map */}
+        <div className="mb-12">
+          <TerritoryMap
+            region="Sardinien"
+            center={{ lat: 40.8518, lng: 9.6116 }}
+            zoom={8}
+            markers={[
+              { lat: 40.9216, lng: 9.5034, name: "Olbia" },
+              { lat: 41.1325, lng: 9.5142, name: "Porto Cervo" },
+              { lat: 41.1074, lng: 9.4902, name: "Portisco" },
+              { lat: 41.0567, lng: 9.5019, name: "Cannigione" },
+              { lat: 41.2144, lng: 9.4068, name: "La Maddalena" },
+              { lat: 39.2238, lng: 9.1217, name: "Cagliari" },
+              { lat: 39.1433, lng: 8.3099, name: "Carloforte" },
+              { lat: 40.5645, lng: 8.3206, name: "Alghero" }
+            ]}
+          />
         </div>
 
         {/* Description */}
