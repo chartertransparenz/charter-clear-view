@@ -363,6 +363,14 @@ const Croatia = () => {
               <p><strong>Für wen geeignet?</strong> Erfahrene Skipper, Crews mit Lust auf längere Schläge, Kultur- und Naturfans, Nachtschwärmer.</p>
             </div>
 
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/ff80d3b1-62a9-4ae4-b318-65ad5c345279.png" 
+                alt="Luftaufnahme einer grünen kroatischen Insel umgeben von tiefblauem Wasser" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Erreichbarkeit: Ihr schneller Weg an Bord</h3>
             <p className="text-lg leading-relaxed mb-6">
               Kroatien ist dank seiner hervorragenden Infrastruktur und seiner geografischen Nähe zu Mitteleuropa sehr gut erreichbar.
@@ -543,15 +551,6 @@ const Croatia = () => {
               <p className="mb-4">Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.</p>
             </div>
           </div>
-        </div>
-
-        
-        <div className="my-8">
-          <img 
-            src="/lovable-uploads/ff80d3b1-62a9-4ae4-b318-65ad5c345279.png" 
-            alt="Luftaufnahme einer grünen kroatischen Insel umgeben von tiefblauem Wasser" 
-            className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
-          />
         </div>
 
         {/* Regions */}
