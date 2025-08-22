@@ -129,7 +129,7 @@ const Sardinien = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="hidden md:grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => (
             <Card key={index} className="shadow-lg">
               <CardContent className="p-6 text-center">
