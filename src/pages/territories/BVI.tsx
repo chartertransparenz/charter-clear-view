@@ -74,7 +74,7 @@ const BVI = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationBvi}
+          src="/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png"
           alt="BVI Segelrevier"
           className="w-full h-full object-cover"
         />

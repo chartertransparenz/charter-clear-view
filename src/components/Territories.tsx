@@ -79,7 +79,7 @@ const Territories = () => {
     name: "Britische Jungferninseln (BVI)",
     regions: "Inselgruppe der Kleinen Antillen, Karibik",
     highlights: ["Traumhafte, kurze Tagesetappen", "Karibik-Feeling pur", "Perfekt für Einsteiger & Familien", "Line-of-sight sailing mit Top-Logistik"],
-    image: destinationBvi,
+    image: "/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png",
     link: "/reviere/karibik/britische-jungferninseln"
   }, {
     rank: 8,
