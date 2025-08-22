@@ -261,7 +261,7 @@ const Territories = () => {
             <Link to="/reviere/indischer-ozean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src={indianOcean} alt="Indischer Ozean" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/d596d2c8-b553-4506-8bc2-950556c81b06.png" alt="Indischer Ozean" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🐧 Indischer Ozean</Badge>
