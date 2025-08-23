@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
+import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -126,6 +127,60 @@ export default function Istria() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Map */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <TerritoryMap
+            region="Istrien Yachtcharter"
+            center={{ lat: 45.1, lng: 13.9 }}
+            zoom={10}
+            markers={[
+              {
+                lat: 44.8664,
+                lng: 13.8496,
+                name: 'ACI Marina Pula',
+                description: 'Hauptmarina im Zentrum von Pula'
+              },
+              {
+                lat: 44.8234,
+                lng: 13.8387,
+                name: 'Marina Veruda',
+                description: 'Große, geschützte Marina südlich von Pula'
+              },
+              {
+                lat: 45.0816,
+                lng: 13.6387,
+                name: 'Rovinj',
+                description: 'Malerische Küstenstadt mit Marina'
+              },
+              {
+                lat: 45.2259,
+                lng: 13.5966,
+                name: 'Poreč',
+                description: 'UNESCO-Weltkulturerbe mit Marina'
+              },
+              {
+                lat: 45.4311,
+                lng: 13.5289,
+                name: 'Umag',
+                description: 'ACI Marina Umag'
+              },
+              {
+                lat: 45.1513,
+                lng: 13.6053,
+                name: 'Vrsar',
+                description: 'Charmanter Fischerort mit Marina'
+              },
+              {
+                lat: 44.9167,
+                lng: 13.7667,
+                name: 'Brijuni Nationalpark',
+                description: 'Inselparadies und ehemaliger Präsidentensitz'
+              }
+            ]}
+            className="shadow-lg"
+          />
         </div>
 
         {/* Main Content */}
