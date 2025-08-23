@@ -79,7 +79,7 @@ export default function KvarnerBay() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(${destinationCroatia})` }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(/lovable-uploads/e84a0e28-efd8-48a7-a441-191cf3510c86.png)` }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
