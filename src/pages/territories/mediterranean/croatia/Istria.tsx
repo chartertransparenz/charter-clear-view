@@ -235,12 +235,12 @@ export default function Istria() {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/ad1642d7-59dd-4b21-b0ab-8a735ce51538.png" 
-                alt="Luftaufnahme von Pula mit dem römischen Amphitheater und Hafen" 
+                src="/lovable-uploads/7b74e2cd-6b59-409b-956f-21a342c849ee.png" 
+                alt="Luftaufnahme von Pula mit dem römischen Amphitheater und Marina" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                Pula - Wo römische Geschichte auf moderne Marinas trifft
+                Pula - Das römische Amphitheater und die moderne Marina in perfekter Harmonie
               </p>
             </div>
 
@@ -257,12 +257,12 @@ export default function Istria() {
             
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/2075d4e6-9f82-4df0-998a-b3b06ef2ad21.png" 
-                alt="Malerische Küstenstadt mit Marina und traditioneller Architektur" 
+                src="/lovable-uploads/54f48215-4790-47b9-a175-73813b6f57c1.png" 
+                alt="Luftaufnahme von Rovinj mit dem charakteristischen Kirchturm und der Altstadt auf der Halbinsel" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                Eine typische istrische Küstenstadt mit ihrer charakteristischen roten Dachlandschaft und Marina
+                Rovinj - Die auf einer Halbinsel erbaute Altstadt mit dem markanten Campanile der Heiligen Euphemia
               </p>
             </div>
 
