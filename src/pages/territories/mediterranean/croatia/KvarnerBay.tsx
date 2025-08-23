@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
+import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -134,6 +135,42 @@ export default function KvarnerBay() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Map */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <TerritoryMap
+            region="Kvarner Bucht"
+            center={{ lat: 44.8, lng: 14.5 }}
+            zoom={9}
+            markers={[
+              {
+                lat: 45.0175,
+                lng: 14.6203,
+                name: 'Marina Punat',
+                description: 'Größte Marina der Kvarner Bucht'
+              },
+              {
+                lat: 44.9614,
+                lng: 14.4086,
+                name: 'ACI Marina Cres',
+                description: 'Marina in der Stadt Cres'
+              },
+              {
+                lat: 44.5311,
+                lng: 14.4686,
+                name: 'Marina Mali Lošinj',
+                description: 'Marina auf der Duftinsel Lošinj'
+              },
+              {
+                lat: 44.7583,
+                lng: 14.7619,
+                name: 'Marina Rab',
+                description: 'Marina auf der Insel der Sandstrände'
+              }
+            ]}
+            className="max-w-4xl mx-auto"
+          />
         </div>
 
         {/* Description */}
