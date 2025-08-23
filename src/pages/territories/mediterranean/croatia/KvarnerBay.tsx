@@ -296,6 +296,30 @@ export default function KvarnerBay() {
             September mit angenehmen Temperaturen, stabilen Winden und weniger touristischem Trubel. Juli und 
             August sind die heißesten Monate mit dem größten Aufkommen.</p>
 
+            {/* Image Gallery Section */}
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/06f3d73a-3877-4382-8762-04ba81bb5bf7.png" 
+                  alt="Panoramablick auf die Kvarner Bucht mit goldener Abendsonne über den Inseln und der Küstenlandschaft"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-muted-foreground">Atemberaubender Blick über die Inselwelt der Kvarner Bucht</p>
+                </div>
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/a6bdb74b-7918-4d3e-928d-d16a1cc0a2e7.png" 
+                  alt="Malerischer Hafen in der Kvarner Bucht mit Segelyachten und bunten kroatischen Häusern am Wasser"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-4 bg-white">
+                  <p className="text-sm text-muted-foreground">Authentischer kroatischer Charme in den Marinas der Kvarner Bucht</p>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">Warum die Kvarner Bucht?</h3>
               <p className="text-lg mb-4">Ein Yachtcharter in der Kvarner Bucht ist die perfekte Symbiose aus 
