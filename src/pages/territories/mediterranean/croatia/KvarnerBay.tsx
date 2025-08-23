@@ -252,6 +252,17 @@ export default function KvarnerBay() {
               bieten zahlreiche geschützte Ankerbuchten, ideal für entspannte Stopps.</p>
             </div>
 
+            {/* Additional Landscape Image */}
+            <div className="mb-8">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/ad8e5768-a953-492f-9be5-ecbb1ad9e047.png" 
+                  alt="Kristallklares blaues Wasser und grüne Inseln der Kvarner Bucht unter blauem Himmel"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Erreichbarkeit: Ihr schneller Weg zur Kvarner Bucht</h3>
             <p className="mb-4">
               Die Kvarner Bucht ist dank ihrer geografischen Lage besonders gut aus Mitteleuropa erreichbar.
