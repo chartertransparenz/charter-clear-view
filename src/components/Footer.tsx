@@ -1,4 +1,4 @@
-import { Anchor, MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
+import { Anchor, MapPin, Phone, Mail, Facebook, Instagram, Send } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -59,6 +59,19 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-sunset" />
                 <span className="text-white/80">info@chartertransparenz.de</span>
+              </div>
+              
+              {/* WhatsApp Button */}
+              <div className="mt-4">
+                <a
+                  href="https://wa.me/4975434990080"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  <Send className="w-4 h-4" />
+                  WhatsApp senden
+                </a>
               </div>
             </div>
           </div>
