@@ -173,79 +173,139 @@ export default function KvarnerBay() {
           />
         </div>
 
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold mb-6">Yachtcharter Kvarner Bucht: Ein Segelparadies der Kontraste</h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-            <p>
-              Willkommen in der Kvarner Bucht, einem Segelrevier, das mit seiner Vielfalt und Schönheit begeistert. Hier, wo das Festland auf ein Archipel aus großen und kleinen Inseln trifft, erwartet Sie eine Welt aus tiefgrün bewaldeten Küsten, kargen Mondlandschaften und kristallklarem Wasser. Ein Yachtcharter in der Kvarner Bucht ist eine Reise für alle Sinne, ideal für Naturliebhaber, Entdecker und alle, die das authentische kroatische Inselleben suchen.
+        {/* Detailed Region Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Kvarner Bucht</h2>
+            <p className="text-xl text-muted-foreground">
+              Ein Segelparadies der Kontraste – Geschützte Inselwelt mit authentischem Charme
             </p>
-            <p>
-              Die Kvarner Bucht ist ein Revier der Kontraste: Von den üppig grünen Inseln Cres und Lošinj im Westen bis zu den kargeren, aber faszinierenden Landschaften von Krk und Rab im Osten. Von malerischen Fischerdörfern bis zu mondänen Küstenorten wie Opatija – dieses Revier bietet eine perfekte Mischung aus aktivem Segeln in Kroatien, entspannten Ankerstopps und spannenden Landgängen. Die gute Erreichbarkeit und die erstklassige maritime Infrastruktur machen die Kvarner Bucht zu einer Top-Wahl für Ihren nächsten Charterurlaub.
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg leading-relaxed mb-6">
+              Willkommen in der Kvarner Bucht, einem Segelrevier, das mit seiner Vielfalt und Schönheit begeistert. 
+              Hier, wo das Festland auf ein Archipel aus großen und kleinen Inseln trifft, erwartet Sie eine Welt aus 
+              tiefgrün bewaldeten Küsten, kargen Mondlandschaften und kristallklarem Wasser. Ein Yachtcharter in der 
+              Kvarner Bucht ist eine Reise für alle Sinne, ideal für Naturliebhaber, Entdecker und alle, die das 
+              authentische kroatische Inselleben suchen.
+            </p>
+            
+            <p className="text-lg leading-relaxed mb-6">
+              Die Kvarner Bucht ist ein Revier der Kontraste: Von den üppig grünen Inseln Cres und Lošinj im Westen 
+              bis zu den kargeren, aber faszinierenden Landschaften von Krk und Rab im Osten. Von malerischen 
+              Fischerdörfern bis zu mondänen Küstenorten wie Opatija – dieses Revier bietet eine perfekte Mischung 
+              aus aktivem Segeln in Kroatien, entspannten Ankerstopps und spannenden Landgängen. Die gute 
+              Erreichbarkeit und die erstklassige maritime Infrastruktur machen die Kvarner Bucht zu einer Top-Wahl 
+              für Ihren nächsten Charterurlaub.
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground">Ihre Ausgangshäfen in der Kvarner Bucht: Tor zu den Inseln</h3>
-            <p>Die Kvarner Bucht bietet mehrere hervorragend ausgestattete Marinas, die als ideale Basis für Ihren Yachtcharter Kvarner Bucht dienen.</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Marina Punat (Insel Krk):</strong> Eine der größten und ältesten Marinas an der Adria, bekannt für ihren hohen Standard und umfassenden Service. Punat ist dank der Brückenverbindung zum Festland bequem mit dem Auto erreichbar und ein idealer Ausgangspunkt für Törns in die gesamte Kvarner Bucht.</li>
-              <li><strong>ACI Marina Cres:</strong> Direkt in der charmanten Stadt Cres gelegen, bietet diese ACI Marina alle Annehmlichkeiten und ist ein perfekter Startpunkt, um die grüne Insel Cres zu erkunden.</li>
-              <li><strong>Marina Mali Lošinj:</strong> Im Herzen der "Insel der Vitalität" gelegen, ist diese Marina ein idealer Ausgangspunkt, um die duftenden Pinienwälder und das heilsame Klima von Lošinj zu erleben.</li>
-              <li><strong>Andere Basen:</strong> Auch von Rijeka, Opatija oder Pula (Istrien) aus sind Törns in die Kvarner Bucht gut möglich.</li>
+            <p className="text-lg leading-relaxed mb-8">
+              Die Kvarner Bucht bietet eine unvergleichliche Vielfalt an Segelrevieren, die für jeden Geschmack und 
+              jede Erfahrungsstufe das Richtige bereithalten. Die kurzen Distanzen zwischen den Inseln, die zahlreichen 
+              geschützten Ankerplätze und die hervorragende maritime Infrastruktur machen diese Region zum idealen 
+              Ziel für Familien, Genuss-Segler und alle, die das Inselhopping in vollen Zügen genießen möchten.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Die Perlen der Kvarner Bucht: Authentische Inselwelt</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Kvarner Bucht ist ein Paradies für Inselhopping in Kroatien und bietet eine unvergleichliche 
+              Vielfalt an Zielen, die alle ihre eigenen Besonderheiten und Reize haben.
+            </p>
+            
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Cres - Die grüne Oase:</strong> Die zweitgrößte Insel Kroatiens besticht durch ihre 
+              unberührte Natur, dichte Wälder und versteckte Buchten. Die charmante Stadt Cres mit ihrer 
+              venezianischen Architektur und der Süßwassersee Vrana sind absolute Highlights.</li>
+              
+              <li><strong>Lošinj - Die Insel der Vitalität:</strong> Bekannt für sein mildes Klima, die duftenden 
+              Pinienwälder und die hohe Anzahl an Sonnentagen. Die Insel ist Heimat einer Delfinpopulation und 
+              das malerische Mali Lošinj lädt mit seinem lebhaften Hafen zum Verweilen ein.</li>
+              
+              <li><strong>Krk - Die vielfältige Insel:</strong> Die größte Insel Kroatiens bietet eine beeindruckende 
+              landschaftliche Vielfalt – von kargen Karstlandschaften bis zu fruchtbaren Weinbergen. Das charmante 
+              Vrbnik ist bekannt für seinen berühmten Wein Žlahtina.</li>
+              
+              <li><strong>Rab - Die Insel der Sandstrände:</strong> Berühmt für ihre einzigartigen Sandstrände, 
+              die in Kroatien selten sind. Die Stadt Rab beeindruckt mit ihren vier Glockentürmen und der 
+              Paradiesbucht (Rajska plaža) in Lopar.</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-foreground">Die Erreichbarkeit der Kvarner Bucht</h3>
-            <p>Die Kvarner Bucht ist dank ihrer geografischen Lage besonders gut aus Mitteleuropa erreichbar.</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Mit dem PKW:</strong> Über gut ausgebaute Autobahnen ist die Region aus Deutschland, Österreich und der Schweiz bequem zu erreichen. Die Insel Krk ist über eine Brücke mit dem Festland verbunden, was die Anreise nach Punat besonders einfach macht. Die Marinas bieten sichere Parkmöglichkeiten.</li>
-              <li><strong>Per Flugzeug:</strong> Der Flughafen Rijeka (RJK) auf der Insel Krk wird von verschiedenen europäischen Städten direkt angeflogen. Alternativ ist auch der Flughafen Pula (PUY) in Istrien eine Option, von wo aus die südliche Kvarner Bucht gut erreichbar ist.</li>
+            <h4 className="text-xl font-semibold mt-6 mb-4">Ausgangshäfen in der Kvarner Bucht:</h4>
+            <p className="mb-4">Die Kvarner Bucht bietet mehrere hervorragend ausgestattete Marinas als ideale Basis für Ihren Törn.</p>
+            
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Marina Punat (Insel Krk):</strong> Eine der größten und ältesten Marinas an der Adria, 
+              bekannt für ihren hohen Standard und umfassenden Service. Dank der Brückenverbindung zum Festland 
+              bequem mit dem Auto erreichbar.</li>
+              
+              <li><strong>ACI Marina Cres:</strong> Direkt in der charmanten Stadt Cres gelegen, bietet diese 
+              Marina alle Annehmlichkeiten und ist ein perfekter Startpunkt für die Erkundung der grünen Insel.</li>
+              
+              <li><strong>Marina Mali Lošinj:</strong> Im Herzen der "Insel der Vitalität" gelegen, ideal um die 
+              duftenden Pinienwälder und das heilsame Klima von Lošinj zu erleben.</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-foreground">Beliebte Törnziele: Die Vielfalt der Kvarner Inseln</h3>
-            <p>Die Kvarner Bucht ist ein Paradies für Inselhopping in Kroatien, mit einer unglaublichen Vielfalt an Zielen.</p>
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Nautische Besonderheiten:</strong> Die Meerenge von Osor zwischen 
+              Cres und Lošinj ist eine wichtige Passage mit Brückenöffnung (feste Zeiten beachten). Die Gewässer 
+              bieten zahlreiche geschützte Ankerbuchten, ideal für entspannte Stopps.</p>
+            </div>
 
-            <h4 className="text-xl font-semibold text-foreground">Cres: Die grüne Oase</h4>
-            <p>Die Insel Cres ist die zweitgrößte Insel Kroatiens und besticht durch ihre unberührte Natur, dichte Wälder und versteckte Buchten.</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Highlights:</strong> Die charmante Stadt Cres mit ihrer venezianischen Architektur, der Süßwassersee Vrana im Inselinneren und die Möglichkeit, Gänsegeier zu beobachten.</li>
-              <li><strong>Nautische Besonderheiten:</strong> Zahlreiche geschützte Ankerbuchten entlang der Küste, ideal zum Entspannen.</li>
-            </ul>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Erreichbarkeit: Ihr schneller Weg zur Kvarner Bucht</h3>
+            <p className="mb-4">
+              Die Kvarner Bucht ist dank ihrer geografischen Lage besonders gut aus Mitteleuropa erreichbar.
+            </p>
 
-            <h4 className="text-xl font-semibold text-foreground">Lošinj: Die Insel der Vitalität und Delfine</h4>
-            <p>Lošinj ist bekannt für sein mildes Klima, die duftenden Pinienwälder und die hohe Anzahl an Sonnentagen. Die Insel ist Heimat einer Delfinpopulation.</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Highlights:</strong> Die malerische Stadt Mali Lošinj mit ihrem lebhaften Hafen, die Čikat-Bucht mit ihren luxuriösen Hotels und Spazierwegen, und das Meeresduft-Garten.</li>
-              <li><strong>Nautische Besonderheiten:</strong> Die Meerenge von Osor zwischen Cres und Lošinj ist eine wichtige Passage mit Brückenöffnung (feste Zeiten beachten).</li>
-            </ul>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="border border-gray-300 p-6 rounded-lg">
+                <h4 className="text-lg font-semibold mb-3 text-black">Per Flugzeug</h4>
+                <p className="mb-4 text-black">Der Flughafen Rijeka (RJK) auf der Insel Krk wird von verschiedenen 
+                europäischen Städten direkt angeflogen. Alternativ ist auch der Flughafen Pula (PUY) in Istrien 
+                eine Option für die südliche Kvarner Bucht.</p>
+              </div>
 
-            <h4 className="text-xl font-semibold text-foreground">Krk: Die vielfältige Insel</h4>
-            <p>Krk ist die größte Insel Kroatiens und bietet eine beeindruckende landschaftliche Vielfalt – von kargen Karstlandschaften im Osten bis zu fruchtbaren Tälern und Weinbergen im Westen.</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Highlights:</strong> Die historische Stadt Krk mit ihrer Kathedrale, das charmante Vrbnik auf einem Felsen über dem Meer (bekannt für seinen Wein Žlahtina) und die Bucht von Baška mit ihrem langen Kiesstrand.</li>
-            </ul>
+              <div className="border border-gray-300 p-6 rounded-lg">
+                <h4 className="text-lg font-semibold mb-3 text-black">Per PKW</h4>
+                <p className="mb-3 text-black">Über gut ausgebaute Autobahnen aus Deutschland, Österreich und der 
+                Schweiz erreichbar. Die Insel Krk ist über eine Brücke mit dem Festland verbunden.</p>
+                <p className="text-sm text-black">Die Marinas bieten sichere Parkmöglichkeiten für die 
+                Dauer Ihres Törns.</p>
+              </div>
+            </div>
 
-            <h4 className="text-xl font-semibold text-foreground">Rab: Die Insel der Sandstrände</h4>
-            <p>Rab ist berühmt für seine einzigartigen Sandstrände, die in Kroatien selten sind. Die Stadt Rab selbst beeindruckt mit ihren vier Glockentürmen und einer wunderschönen Altstadt.</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li><strong>Highlights:</strong> Die Paradiesbucht (Rajska plaža) in Lopar, die vielen kleinen Sandbuchten entlang der Küste und die lebhafte Atmosphäre der Stadt Rab.</li>
-            </ul>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Wetter und Windbedingungen</h3>
+            <p className="mb-4">
+              Die Kvarner Bucht bietet vielfältige und interessante Segelbedingungen für alle Erfahrungsstufen.
+            </p>
 
-            <h3 className="text-2xl font-bold text-foreground">Wetter und Windbedingungen in der Kvarner Bucht</h3>
-            <p>Die Kvarner Bucht bietet vielfältige Segelbedingungen.</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Maestral (NW):</strong> Der dominierende Sommerwind, der am Nachmittag für zuverlässigen Segelwind (3-5 Bft) sorgt. Er ist ideal für entspanntes Segeln.</li>
-              <li><strong>Bora (NO):</strong> Dieser trockene, böige Fallwind kann in der Kvarner Bucht, insbesondere im Velebit-Kanal, kräftig wehen. Im Sommer ist sie meist kurz und sorgt für klare Luft. Erfahrene Skipper wissen die Bora zu respektieren und nutzen die zahlreichen geschützten Buchten und Häfen als Schutz.</li>
-              <li><strong>Jugo (SO):</strong> Ein warmer, feuchter Wind, der sich über mehrere Tage aufbaut und eine moderate Welle mit sich bringen kann.</li>
-            </ul>
-            <p>Das Revier ist im Sommer für alle Erfahrungsstufen geeignet, wobei ein grundlegendes Verständnis der Bora von Vorteil ist. In der Vor- und Nachsaison bietet es auch für erfahrene Skipper reizvolle Bedingungen mit weniger Trubel.</p>
+            <div className="border border-gray-300 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold mb-3 text-black">Wichtige Winde</h4>
+              <ul className="list-disc pl-6 space-y-2 text-black">
+                <li><strong>Maestral (NW):</strong> Der dominierende Sommerwind, der am Nachmittag für zuverlässigen 
+                Segelwind (3-5 Bft) sorgt. Ideal für entspanntes Segeln.</li>
+                <li><strong>Bora (NO):</strong> Trockener, böiger Fallwind, der insbesondere im Velebit-Kanal 
+                kräftig wehen kann. Erfahrene Skipper nutzen die geschützten Buchten als Schutz.</li>
+                <li><strong>Jugo (SO):</strong> Warmer, feuchter Wind, der sich über mehrere Tage aufbaut und 
+                moderate Wellen mit sich bringen kann.</li>
+              </ul>
+            </div>
 
-            <h3 className="text-2xl font-bold text-foreground">Beste Reisezeit für Ihren Kvarner-Törn</h3>
-            <p>Die Segelsaison in der Kvarner Bucht dauert von Mai bis Oktober. Die besten Monate sind Mai, Juni und September. In dieser Zeit genießen Sie angenehme Temperaturen, stabile Winde und ein noch nicht überlaufenes Revier. Das Meer ist bereits oder noch warm genug zum Baden. Juli und August sind die heißesten Monate mit dem größten touristischen Aufkommen.</p>
+            <h4 className="text-lg font-semibold mb-3">Beste Reisezeit</h4>
+            <p className="mb-6">Die Segelsaison dauert von Mai bis Oktober. Die besten Monate sind Mai, Juni und 
+            September mit angenehmen Temperaturen, stabilen Winden und weniger touristischem Trubel. Juli und 
+            August sind die heißesten Monate mit dem größten Aufkommen.</p>
 
-            <h3 className="text-2xl font-bold text-foreground">Fazit: Kvarner Bucht – Ihr Segelabenteuer der Gegensätze</h3>
-            <p>Ein Yachtcharter in der Kvarner Bucht ist die perfekte Symbiose aus aktivem Segeln, kultureller Entdeckung und dem Eintauchen in eine einzigartige Natur. Die beeindruckenden Küstenlandschaften, die Vielfalt der Inseln und das unvergleichliche mediterrane Flair machen diese Region zu einem unvergesslichen Ziel. Ob Sie eine moderne Segelyacht, einen geräumigen Katamaran oder eine Charter mit erfahrenem Skipper suchen – die Kvarner Bucht wird Sie mit ihrer Schönheit und ihren Kontrasten begeistern.</p>
-
-            <h3 className="text-2xl font-bold text-foreground">Bereit für Ihr Segelabenteuer in der Kvarner Bucht?</h3>
-            <p>Fordern Sie jetzt Ihr unverbindliches Angebot für einen Bareboat-Charter oder eine Yacht mit Skipper an. Unser erfahrenes Team ist auf die Kvarner Bucht spezialisiert und berät Sie gerne bei der Planung Ihres Traumtörns.</p>
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4">Warum die Kvarner Bucht?</h3>
+              <p className="text-lg mb-4">Ein Yachtcharter in der Kvarner Bucht ist die perfekte Symbiose aus 
+              aktivem Segeln, kultureller Entdeckung und dem Eintauchen in eine einzigartige Natur. Die 
+              beeindruckenden Küstenlandschaften, die Vielfalt der Inseln und das unvergleichliche mediterrane 
+              Flair machen diese Region zu einem unvergesslichen Ziel.</p>
+              <p className="text-lg">Ob Sie eine moderne Segelyacht, einen geräumigen Katamaran oder eine Charter 
+              mit erfahrenem Skipper suchen – die Kvarner Bucht wird Sie mit ihrer Schönheit und ihren Kontrasten 
+              begeistern.</p>
+            </div>
           </div>
         </div>
 
