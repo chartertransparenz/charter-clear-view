@@ -233,6 +233,17 @@ export default function Istria() {
               Ihre Reise beginnt in Pula, einer Stadt, die von der römischen Geschichte geprägt ist. Ankern Sie nicht nur in der Marina, sondern planen Sie Zeit für die Erkundung ein. Das sechstgrößte römische Amphitheater der Welt ist atemberaubend und wird heute für Konzerte und Festivals genutzt. Besuchen Sie auch den Augustus-Tempel und den Sergierbogen.
             </p>
 
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/ad1642d7-59dd-4b21-b0ab-8a735ce51538.png" 
+                alt="Luftaufnahme von Pula mit dem römischen Amphitheater und Hafen" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 text-center italic">
+                Pula - Wo römische Geschichte auf moderne Marinas trifft
+              </p>
+            </div>
+
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Nationalpark Brijuni: Titos Inselparadies</h3>
             <p className="text-lg text-gray-700 mb-3">
               Nur einen kurzen Schlag von Pula entfernt liegt der Brijuni-Archipel, ein Nationalpark von einzigartiger Schönheit. Die 14 Inseln waren einst die Sommerresidenz des jugoslawischen Präsidenten Tito, der hier Staatsgäste aus aller Welt empfing.
@@ -243,6 +254,18 @@ export default function Istria() {
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Rovinj: Die romantische Künstlerstadt</h3>
+            
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/2075d4e6-9f82-4df0-998a-b3b06ef2ad21.png" 
+                alt="Malerische Küstenstadt mit Marina und traditioneller Architektur" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 text-center italic">
+                Eine typische istrische Küstenstadt mit ihrer charakteristischen roten Dachlandschaft und Marina
+              </p>
+            </div>
+
             <p className="text-lg text-gray-700 mb-4">
               Rovinj ist für viele das absolute Juwel Istriens. Die auf einer Halbinsel erbaute Altstadt drängt sich mit pastellfarbenen Häusern dicht aneinander und wird von der majestätischen Kirche der Heiligen Euphemia gekrönt. Schlendern Sie durch die verwinkelten, kopfsteingepflasterten Gassen, entdecken Sie die unzähligen Kunstgalerien und genießen Sie einen Sundowner in einer der Bars, die direkt an den Felsen am Wasser liegen.
             </p>
