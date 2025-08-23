@@ -305,7 +305,7 @@ export default function KvarnerBay() {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4 bg-white">
-                  <p className="text-sm text-muted-foreground">Atemberaubender Blick über die Inselwelt der Kvarner Bucht</p>
+                  <p className="text-sm text-muted-foreground">Blick über die Bucht zur "Goldenen Stunde"</p>
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
