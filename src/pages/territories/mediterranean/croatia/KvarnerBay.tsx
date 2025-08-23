@@ -315,7 +315,7 @@ export default function KvarnerBay() {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4 bg-white">
-                  <p className="text-sm text-muted-foreground">Authentischer kroatischer Charme in den Marinas der Kvarner Bucht</p>
+                  <p className="text-sm text-muted-foreground">Hafen Von Mali Losinj</p>
                 </div>
               </div>
             </div>
