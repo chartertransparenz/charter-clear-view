@@ -8,7 +8,6 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import destinationGreece from "@/assets/destination-greece.jpg";
 const IonicIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,7 +36,7 @@ const IonicIslands = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={destinationGreece} alt="Ionische Inseln Griechenland" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png" alt="Ionische Inseln Griechenland" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
