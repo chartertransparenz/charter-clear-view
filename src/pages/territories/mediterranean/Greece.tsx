@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
@@ -509,6 +510,70 @@ export default function Greece() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Häufig gestellte Fragen (FAQ) zum Yachtcharter in Griechenland</h2>
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="windverhaeltnisse">
+                <AccordionTrigger>Wie sind die Windverhältnisse in Griechenland?</AccordionTrigger>
+                <AccordionContent>
+                  Im Sommer weht in der Ägäis der Meltemi (N-NW) mit 4-7 Bft, oft konstant und sportlich, besonders in den Kykladen und Dodekanes. Im Ionischen Meer und Saronischen Golf dominiert der thermische Maestral (NW, 3-5 Bft) – angenehm und familienfreundlich.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="segelscheine">
+                <AccordionTrigger>Welche Segelscheine brauche ich für eine Bareboat-Charter?</AccordionTrigger>
+                <AccordionContent>
+                  Für eine Yachtcharter ohne Skipper in Griechenland ist ein amtlicher, international anerkannter Segelschein zwingend erforderlich, wobei der deutsche Sportküstenschifferschein (SKS) oder das International Certificate of Competence (ICC) akzeptiert werden. Der Sportbootführerschein See reicht häufig nicht aus. Neben dem Skipper muss zudem ein zweites erwachsenes Crewmitglied mit grundlegenden Segelkenntnissen an Bord sein, dessen Erfahrung schriftlich bestätigt wird. Des Weiteren ist ein SRC-Funkschein für die Bedienung der UKW-Anlage auf der Charteryacht vorgeschrieben. Auch andere international anerkannte Scheine wie der britische RYA Day Skipper werden von den griechischen Behörden anerkannt.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="segelerfahrung">
+                <AccordionTrigger>Wie viel Segelerfahrung ist für Griechenland nötig?</AccordionTrigger>
+                <AccordionContent>
+                  Für den Saronischen Golf, Ionische Inseln und Sporaden reicht eine solide Basis-Erfahrung. Für die Kykladen, Dodekanes und offene Ägäis mit häufigem Starkwind und längeren Schlägen ist mehr Segelerfahrung nötig.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="reisezeit">
+                <AccordionTrigger>Wann ist die beste Reisezeit für Yachtcharter in Griechenland?</AccordionTrigger>
+                <AccordionContent>
+                  Die beste Reisezeit ist von Mai bis Oktober. Im Juli/August ist Hochsaison mit viel Wind (Meltemi), Mai/Juni und September/Oktober bieten angenehmere Temperaturen und weniger Trubel.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="haefen-marinas">
+                <AccordionTrigger>Wie gut sind die Häfen und Marinas ausgebaut?</AccordionTrigger>
+                <AccordionContent>
+                  Die Infrastruktur ist gut: In den größeren Städten und auf den Hauptinseln gibt es moderne Marinas mit Wasser, Strom, Sanitäranlagen und Werften. In kleinen Häfen und Buchten ist die Ausstattung einfacher, aber die Gastfreundschaft oft umso herzlicher.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="proviantierung">
+                <AccordionTrigger>Gibt es gute Proviantierungsmöglichkeiten unterwegs?</AccordionTrigger>
+                <AccordionContent>
+                  In allen größeren Orten und auf den meisten Inseln gibt es Supermärkte, Märkte, Bäckereien und Fischläden. In abgelegenen Buchten empfiehlt es sich, ausreichend Proviant und Wasser an Bord zu haben.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="nautische-besonderheiten">
+                <AccordionTrigger>Welche nautischen Besonderheiten gibt es im Revier?</AccordionTrigger>
+                <AccordionContent>
+                  Viele Inseln, wechselnde Windverhältnisse, Meltemi in der Ägäis, Maestral im Ionischen Meer, gute Sichtnavigation, aber auch Felsen und Untiefen. In Nationalparks gelten besondere Regeln zum Ankern und Umweltschutz.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="liegeplaetze">
+                <AccordionTrigger>Wie sicher sind die Liegeplätze in Griechenland?</AccordionTrigger>
+                <AccordionContent>
+                  Die meisten Häfen und Marinas bieten guten Schutz. In Buchten und auf Inseln ist das Ankern meist sicher, aber der Schutz vor Meltemi und Schwell sollte beachtet werden. Mooringbojen sind weniger verbreitet als in Kroatien, aber das Ankern auf Sandgrund ist oft problemlos möglich.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
 
