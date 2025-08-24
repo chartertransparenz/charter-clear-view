@@ -108,9 +108,9 @@ const Cyclades = () => {
           {quickFacts.map((fact, index) => {
             const getAnchorLink = (label) => {
               switch(label) {
-                case "Lage": return "#marinas-ausgangshaefen";
+                case "Lage": return "#karte";
                 case "Beste Zeit": return "#beste-reisezeit";
-                case "Geeignet für": return "#einleitung";
+                case "Geeignet für": return "#fazit";
                 case "Besonderheit": return "#wetter-windbedingungen";
                 default: return "#";
               }
@@ -132,7 +132,7 @@ const Cyclades = () => {
         </div>
 
         {/* Map */}
-        <div className="mb-12">
+        <div id="karte" className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte der Kykladen</h2>
           <TerritoryMap
             region="Kykladen Griechenland"
