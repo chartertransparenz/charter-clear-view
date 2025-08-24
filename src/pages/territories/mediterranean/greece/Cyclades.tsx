@@ -122,8 +122,8 @@ const Cyclades = () => {
           <TerritoryMap
             region="Kykladen Griechenland"
             center={{ lat: 37.1, lng: 25.2 }}
-            zoom={8}
-            maptype="hybrid"
+            zoom={6}
+            maptype="satellite"
             className="max-w-4xl mx-auto"
           />
         </div>
