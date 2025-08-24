@@ -203,6 +203,17 @@ const IonicIslands = () => {
               Wer den Kurs nach Norden verlängern möchte, plant Paxos und Antipaxos ein. Lakka ist berühmt für sein leuchtend türkisfarbenes Wasser und sandigen Grund, der Anker hält hier meist auf Anhieb.
             </p>
 
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/31f5fef2-6b0a-471a-9822-2e65dbf4639d.png" 
+                alt="Lust zu schnorcheln?" 
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-gray-600 mt-2 text-center italic">
+                Lust zu schnorcheln?
+              </p>
+            </div>
+
             <div className="border border-gray-300 p-4 rounded-lg mb-6">
               <p className="text-black"><strong>Nautische Hinweise:</strong> Das Revier ist von verlässlichen thermischen Winden geprägt. Das Ankermanöver mit Buganker und Heckleinen ist Standard; der Grund besteht häufig aus Sand oder Sand-Schlick mit sehr gutem Halt.</p>
             </div>
