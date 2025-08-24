@@ -16,19 +16,23 @@ const Dodecanese = () => {
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
-    value: "Südostägäis"
+    value: "Südostägäis",
+    link: "#erreichbarkeit"
   }, {
     icon: Calendar,
     label: "Beste Zeit",
-    value: "April-November"
+    value: "April-November",
+    link: "#beste-reisezeit"
   }, {
     icon: Users,
     label: "Geeignet für",
-    value: "Erfahrene Segler"
+    value: "Erfahrene Segler",
+    link: "#eignung-nach-erfahrungsstufe"
   }, {
     icon: Anchor,
     label: "Besonderheit",
-    value: "Längere Distanzen"
+    value: "Längere Distanzen",
+    link: "#wetter-windbedingungen"
   }];
   const cities = ["Rhodos", "Kos", "Patmos", "Leros", "Kalymnos", "Symi", "Tilos", "Karpathos"];
   const highlights = ["UNESCO-Weltkulturerbe Rhodos", "Klöster und Pilgerorte", "Authentische griechische Kultur", "Längere Segeletappen", "Kristallklares Wasser", "Weniger Tourismus als Kykladen", "Abwechslungsreiche Landschaften"];
@@ -102,11 +106,12 @@ const Dodecanese = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+          {quickFacts.map((fact, index) => 
+            <a key={index} href={fact.link} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer group">
+              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3 group-hover:text-blue-700 transition-colors" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>)}
+            </a>)}
         </div>
 
         {/* Map */}
@@ -143,7 +148,7 @@ const Dodecanese = () => {
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
+              <h4 id="erreichbarkeit" className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
               <p className="text-black mb-3">So kommen Chartergäste an Bord:</p>
               <ul className="list-disc pl-6 space-y-1 text-black">
                 <li><strong>Kos (KGS):</strong> Saisonale Direktflüge aus vielen europäischen Städten; kurze Anfahrt zur Kos Marina. Ideal für Crews, die schnell ins Revier wollen – Yachtübernahme, Proviant und am selben Tag noch der erste Badestopp.</li>
@@ -298,7 +303,7 @@ const Dodecanese = () => {
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
+            <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
             <p className="mb-4">
               Überblick: Im Sommer dominiert der Meltemi – eine trockene, nördliche Ägäis-Brise. Sie baut sich tagsüber auf und flaut abends häufig ab. Im Dodekanes ist er verlässlich, kann in Düsen (z. B. zwischen Paros–Naxos in der Zentralägäis – außerhalb des Dodekanes – oder an markanten Kaps) deutlich zulegen. Gute Törnplanung nutzt Lee-Seiten und große Naturhäfen als sichere „Häfen der Ruhe".
             </p>
@@ -340,7 +345,7 @@ const Dodecanese = () => {
             </div>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Eignung nach Erfahrungsstufe</h4>
+              <h4 id="eignung-nach-erfahrungsstufe" className="font-semibold mb-3 text-black">Eignung nach Erfahrungsstufe</h4>
               <ul className="space-y-2 text-black">
                 <li><strong>Einsteiger & Familien:</strong> Optimal in Mai/Juni und September/Oktober mit konservativer Routenwahl (Nord-Dodekanes).</li>
                 <li><strong>Genusssegler:</strong> Planbar-kräftige Brise für entspanntes Cruising mit viel Segelzeit; Kulturstopps in Rhodos, Symi, Patmos.</li>
@@ -348,7 +353,7 @@ const Dodecanese = () => {
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+            <h3 id="beste-reisezeit" className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
             <p className="mb-6">
               Die beste Reisezeit für Yachtcharter Dodekanes liegt in Mai/Juni und September/Oktober: verlässliche Brise, angenehme Temperaturen, freie Liegeplätze. In Juli/August ist Hochsaison – die Winde sind frischer, die Häfen lebhafter. Wer dann segelt, plant konsequent Lee-Routen, läuft Häfen früh an oder wählt Ankerbuchten mit Sandgrund und Landleinen.
             </p>
