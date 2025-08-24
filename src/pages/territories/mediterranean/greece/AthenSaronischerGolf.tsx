@@ -205,6 +205,23 @@ const AthenSaronischerGolf = () => {
               </div>
             </div>
 
+            {/* Scenic Image Section */}
+            <div className="my-12">
+              <div className="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+                <img 
+                  src="/lovable-uploads/5c4d5c49-2d62-4b5b-8c3a-e39beb428dfc.png" 
+                  alt="Traumhafte Ankerbucht im Saronischen Golf mit türkisfarbenem Wasser und Yachten" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
+                    Im windgeschützten Saronischen Golf erwarten Sie unzählige traumhafte Ankerbuchten, perfekt für entspannte Tage und ruhige Nächte.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Inseln, Buchten, nautische Highlights</h3>
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Aegina & Angistri – der sanfte Einstieg</h4>
