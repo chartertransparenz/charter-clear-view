@@ -169,6 +169,25 @@ const AthenSaronischerGolf = () => {
           </div>
         </div>
 
+        {/* Google Maps - Satellite View */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Kartenansicht Saronischer Golf</h2>
+          <TerritoryMap
+            region="Athen & Saronischer Golf"
+            center={{ lat: 37.6, lng: 23.5 }}
+            zoom={10}
+            maptype="satellite"
+            markers={[
+              { lat: 37.9755, lng: 23.7348, name: "Athen", description: "Hauptstadt und wichtigster Ausgangspunkt" },
+              { lat: 37.7469, lng: 23.4318, name: "Aegina", description: "Größte Insel des Saronischen Golfs" },
+              { lat: 37.5167, lng: 23.4667, name: "Poros", description: "Grüne Insel mit natürlichem Hafen" },
+              { lat: 37.3564, lng: 23.4641, name: "Hydra", description: "Autofreie Künstlerinsel" },
+              { lat: 37.2667, lng: 23.15, name: "Spetses", description: "Elegante Insel mit Geschichte" },
+              { lat: 37.7167, lng: 24.0167, name: "Lavrion", description: "Moderne Marina südöstlich von Athen" }
+            ]}
+          />
+        </div>
+
         {/* Highlights */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
