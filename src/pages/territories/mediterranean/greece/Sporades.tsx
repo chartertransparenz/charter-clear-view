@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import TerritoryMap from "@/components/TerritoryMap";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const Sporades = () => {
   useEffect(() => {
@@ -101,16 +102,218 @@ const Sporades = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
-              <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>)}
+          {quickFacts.map((fact, index) => {
+            const getAnchorLink = (label) => {
+              switch(label) {
+                case "Lage": return "#marinas-ausgangshaefen";
+                case "Beste Zeit": return "#beste-reisezeit";
+                case "Geeignet für": return "#eignung-erfahrungsstufe";
+                case "Besonderheit": return "#wetter-windbedingungen";
+                default: return "#";
+              }
+            };
+            
+            return (
+              <a key={index} href={getAnchorLink(fact.label)} className="block bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer">
+                <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
+                <p className="text-sm text-gray-600">{fact.value}</p>
+              </a>
+            );
+          })}
         </div>
 
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-12">
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Sporaden</h2>
+          <TerritoryMap
+            region="Sporaden"
+            center={{ lat: 39.2, lng: 23.7 }}
+            zoom={8}
+            maptype="satellite"
+            className="h-96"
+          />
+        </div>
+
+        {/* Detailed Territory Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Sporaden – Ihr Törn ab Volos, Skiathos oder Skopelos</h2>
+            <p className="text-xl text-muted-foreground">
+              Grüne Juwelen der Nordägäis
+            </p>
+          </div>
           
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg leading-relaxed mb-6">
+              Die Nördlichen Sporaden sind das grüne Herz der Ägäis: pinienbewachsene Hänge bis ans Wasser, kristallklare Buchten mit sandigem Ankergrund, lebendige Hafenorte – und Winde, die seltener rau als in den Kykladen wehen. Wer hier Yachtcharter plant, findet ein Revier zwischen Komfort und Charakter: überschaubare Distanzen, viele Lee-Buchten, dazu ausreichend Brise für genussvolles Cruising. Von Volos am Festland sowie den Inseln Skiathos und Skopelos erreichen Sie in kurzer Zeit die gesamte Inselgruppe – einschließlich Alonissos und des Meeresnationalparks der Nördlichen Sporaden.
+            </p>
+            
+            <p className="text-lg leading-relaxed mb-6">
+              Gegenüber anderen griechischen Revieren punkten die Sporaden mit viel Grün, ruhigerem Seegang im Inselschutz, zahlreichen All-Weather-Anchorages und einer bemerkenswerten Naturvielfalt. Gleichzeitig gibt es genug seglerische Substanz: Düseneffekte zwischen den Inseln, tageszeitliche Thermik, gelegentliche Fallböen in steilen Buchten und ein Sommerwind mit Nordkomponente, der verlässlich für Fahrt im Schiff sorgt. Das Ergebnis ist ein Revier, das Einsteiger, Familien und Genusssegler ebenso anspricht wie ambitionierte Crews, die ihre Manöver verfeinern wollen.
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
+              <p className="text-black mb-3">So kommen Sie bequem an Bord:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Volos (Flughafen Nea Anchialos / VOLOS-Region):</strong> Gute Anbindung per Flug (saisonal) und über Athen/Thessaloniki; kurze Wege zum Hafen. Volos ist ideal, wenn Sie auf dem Festland starten möchten – mit umfassenden Einkaufsmöglichkeiten und zügigem Transfer zur Yacht.</li>
+                <li><strong>Skiathos (JSI):</strong> Saisonale Direktflüge aus mehreren europäischen Städten; der New Port liegt nahe dem Flughafen. Perfekt für Crews, die unmittelbar im Inselrevier ablegen wollen.</li>
+                <li><strong>Skopelos:</strong> Kein Flughafen, aber per Fähre von Volos/Skiathos aus erreichbar. Skopelos-Stadt (Chora) und Loutraki/Glossa dienen als Einstiegspunkte, wenn Sie bereits im Revier sind oder eine One-Way-Charter planen.</li>
+                <li><strong>Transfers & Services:</strong> Wir organisieren Door-to-Dock-Transfers, Proviantlieferungen an Bord sowie frühe/late Check-ins nach Verfügbarkeit.</li>
+              </ul>
+            </div>
+
+            <div id="marinas-ausgangshaefen" className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
+              
+              <div className="mb-4">
+                <h5 className="font-semibold text-black mb-2">Volos – Marina & Stadthafen</h5>
+                <p className="text-black">Volos ist eine vollwertige Basis mit Wasser/Power am Steg, Tankservice, Chandlery, Werkstätten, Wäscherei sowie Supermärkten und Bäckern in Laufweite. Der Schutz ist gut, die Wege sind kurz – ideal für reibungslosen Check-in, Riggsichtung und Sicherheitsbriefing vor dem Ablegen Richtung Skiathos/Skopelos.</p>
+              </div>
+              
+              <div className="mb-4">
+                <h5 className="font-semibold text-black mb-2">Skiathos – New Port / Marina-Areal</h5>
+                <p className="text-black">Der Hafen von Skiathos ist die Insel-Drehscheibe: Liegeplätze im New-Port-Bereich, Wasser/Power (teils via Karten), kraftstoffseitige Versorgung über Tankwagen/Station. Ums Eck: Proviantmärkte, Bäcker, Cafés – und die Startlinie zu zahlreichen Süd- und Westbuchten mit sandigem Grund.</p>
+              </div>
+              
+              <div>
+                <h5 className="font-semibold text-black mb-2">Skopelos – Chora & Loutraki (Glossa)</h5>
+                <p className="text-black">Skopelos-Stadt bietet einen gut geschützten Stadthafen mit Buganker/Heckleinen, Wasser/Power und Gastronomie direkt am Kai. Loutraki/Glossa ist das Tor zur Westküste und ein praktischer Zwischenstopp auf dem Weg nach Alonissos. Im Ort Neo Klima/Elios gibt es zusätzlich Liegeplätze und Versorgungsmöglichkeiten.</p>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Inseln, Buchten, nautische Highlights</h3>
+            
+            <h4 className="text-xl font-semibold mt-6 mb-4">Skiathos – Pinien & Sandbuchten</h4>
+            <p className="mb-6">
+              Die Südküste von Skiathos ist ein Ankerparadies: Koukounaries und benachbarte Buchten bieten sandigen Grund mit gutem Halt, kurze Dinghy-Wege zum Strand und glasklares Wasser. An der Nordküste warten spektakuläre Kulissen – bei Brise jedoch exponierter. Tipp für den Ankunftstag: ein kurzer Daysail zu einer windgeschützten Süd-Bucht, Anker setzen, Landleine anbringen – und ankommen.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Skopelos – Panormos, Neo Klima & Chora</h4>
+            <p className="mb-6">
+              Panormos ist eine der beliebtesten Buchten der Sporaden: weit, grün umrahmt, mit sandigem Grund und Landleinen-Option. In Neo Klima/Elios finden Sie Stege mit Versorgungsanschlüssen; die Chora (Skopelos-Stadt) bietet das Bilderbuch-Griechenland aus weißen Häusern und Tavernen am Wasser. Südlich locken Buchten wie Stafylos für Bade- und Ankernächte.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Alonissos – Patitiri & Steni Vala</h4>
+            <p className="mb-6">
+              Patitiri ist der Haupthafen, Steni Vala der bevorzugte Yacht-Stopp mit Tavernen direkt am Wasser. Rund um Alonissos finden sich ruhige Lee-Buchten; bei der Törnplanung bitte die Regelungen des Meeresnationalparks beachten (Schutzzonen, Anker- und Zugangsregeln, teilweise nur tagsüber, teils Moorings).
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Peristera, Kyra Panagia & Skantzoura – Nationalpark & Natur pur</h4>
+            <p className="mb-6">
+              Vor Alonissos liegen die Nationalpark-Inseln mit glasklaren Gewässern, stillen Buchten und Mittelmeer-Mönchsrobben-Habitat. Hier segeln Sie achtsam: Zonen beachten, Ankerdisziplin wahren, Müllvermeidung ernst nehmen. Der Lohn sind unvergessliche Momente in nahezu unberührter Natur.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Skyros – für längere Törns</h4>
+            <p className="mb-6">
+              Wer Zeit hat, erweitert nach Skyros: weniger frequentiert, rauher und mit langen, offenen Schlägen – ein Ziel für ambitionierte Crews in stabilen Wetterfenstern.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Törnvorschlag – eine Woche ab Skiathos (familien- & genussorientiert)</h3>
+            <p className="mb-4 font-medium">Ziel: Maximale Badezeit, sichere Lee-Liegeplätze, kurze Verlegeetappen und dennoch genügend Segelstunden in der Tagesbrise.</p>
+            
+            <div className="space-y-3 mb-8">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1 – Skiathos → Süd-Bucht (z. B. Koukounaries-Region)</h5>
+                <p className="text-sm text-muted-foreground">Ankommen, Check-in, Sicherheitsbriefing. Kurzer Schlag an die Südküste, Anker auf Sand, Landleinen anland. Abend im Cockpit, der Pinienduft weht über die Bucht.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2 – Skiathos → Skopelos (Panormos/Neo Klima)</h5>
+                <p className="text-sm text-muted-foreground">Badepause unterwegs, dann Panormos zum Freischwimmen: großzügig Kette stecken, Halt mit Rückwärtsfahrt prüfen. Alternativ Neo Klima für Stegkontakt und Landgang.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3 – Skopelos (Chora) & Südostbuchten</h5>
+                <p className="text-sm text-muted-foreground">Vormittags kurzer Hüpfer in die Stadt – Proviant, Bäcker, ein Eis an der Promenade. Nachmittags in eine Südostbucht verholen (z. B. Stafylos), Heckleinen an Land, Sundowner.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4 – Skopelos → Alonissos (Steni Vala/Patitiri)</h5>
+                <p className="text-sm text-muted-foreground">Gemütlicher Kurs ostwärts. Steni Vala bietet Tavernen und Minimärkte direkt am Wasser; Patitiri mehr urbane Vielfalt. Ankerdisziplin: Kette großzügig, Schwojkreis prüfen.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5 – Nationalpark-Tag (Peristera/Kyra Panagia – Regeln beachten)</h5>
+                <p className="text-sm text-muted-foreground">Früh los, Natur genießen. Schutzzonen respektieren, ggf. auf Moorings ausweichen, nur tagsüber ankern wo vorgeschrieben. Taucherbrille nicht vergessen – Sichtweiten sind großartig.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6 – Alonissos → Skopelos (Loutraki/Neo Klima)</h5>
+                <p className="text-sm text-muted-foreground">Zurück Richtung Westen. In Loutraki (Glossa) oder Neo Klima am Steg liegen, Dusche, Wasser auffüllen. Wer mag, macht einen Abendspaziergang nach Glossa.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7 – Skopelos → Skiathos</h5>
+                <p className="text-sm text-muted-foreground">Letzter Schlag mit Badepause. Fuel-Dock, Check-out – und die nächste Sporaden-Route schon im Kopf.</p>
+              </div>
+            </div>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <h5 className="font-semibold text-black mb-2">Varianten:</h5>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Start ab Volos:</strong> Erster Stopp an der Halbinsel Trikeri oder im Pagasitischen Golf, dann Kurs über Skiathos nach Skopelos/Alonissos.</li>
+                <li><strong>Start ab Skopelos:</strong> Direkt ins Zentrum – ideal für Crews, die weniger Transfer wünschen und die Süd- und Westbuchten intensiv nutzen möchten.</li>
+                <li><strong>Katamaran-Charter:</strong> Flache Buchten und breite Liegemöglichkeiten; Schwojkreis und Nachbaryachten im Blick behalten.</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-8">
+              <p className="text-black"><strong>Seemannschaft – Kurzcheck:</strong> Wetterfenster täglich prüfen; in Gewitterlagen frühzeitig Schutz suchen. Anker auf Sand, Kettenlänge großzügig bemessen, Halt per Rückwärtsfahrt testen, Ankeralarm aktivieren. Hafenmanöver: Buganker präzise fallen lassen, Heckleinen rechtzeitig, Fender auf Arbeits- und Ruhehöhe. Crewbriefing: Rollen an Deck, Dinghy-Regeln, Sonnenschutz & Hydration.</p>
+            </div>
+
+            <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
+            <p className="text-lg leading-relaxed mb-4">
+              <strong>Überblick:</strong> Die Sporaden liegen abseits der stärksten Meltemi-Achse der Zentralägäis. Im Sommer setzt tagsüber eine Nord- bis Nordwestbrise ein, die abends häufig abflaut. Das sorgt für planbares Cruising mit viel Badezeit und moderaten Seegangsverhältnissen im Inselschutz. Frühling und Herbst bringen mildere, variablere Winde – ideal für Einsteiger und Familien.
+            </p>
+
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold mb-3">Tagesgang (Sommer):</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>Morgen:</strong> Oft ruhig – perfekt für Verlegemanöver, Proviant und Badestopp.</li>
+                <li><strong>Mittag/Nachmittag:</strong> Aufbau der Brise mit Nordkomponente; zwischen Inseln und an Kaps kann es kurzzeitig zulegen (Düseneffekt).</li>
+                <li><strong>Abend/Nacht:</strong> Abflauen – in Lee-Buchten sehr ruhige Nächte.</li>
+              </ul>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold mb-3">Lokale Effekte:</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Fallböen in steil eingeschnittenen Buchten – Heckleinen sauber fahren, Fender passend ausbringen.</li>
+                <li>Thermik bei Hitzeperioden – gute Gelegenheit, den Trimm feinzujustieren.</li>
+                <li>Gewitterfenster in Randzeiten – Wetterbericht und Barometer im Blick behalten.</li>
+              </ul>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold mb-3">Vergleich zu anderen Revieren:</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li><strong>Ionisches Meer:</strong> Ähnlich gutmütig, jedoch dichter besiedelt und stärker frequentiert; die Sporaden sind grüner als viele Ägäisinseln, aber mit klarerer, trockenerer Luft als das Ionische.</li>
+                <li><strong>Kykladen:</strong> Deutlich meltemistärker und exponierter; die Sporaden bieten mehr Lee-Optionen und häufig ruhigere Nächte.</li>
+                <li><strong>Dodekanes:</strong> Sportliches Langstreckenrevier; die Sporaden punkten mit kürzeren Etappen und viel Inselschutz – ideal für Crews, die Komfort und Natur priorisieren.</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 id="eignung-erfahrungsstufe" className="font-semibold mb-3 text-black">Eignung nach Erfahrungsstufe</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Einsteiger & Familien:</strong> Hervorragend geeignet in Mai/Juni und September/Oktober; viele sichere All-Weather-Anchorages.</li>
+                <li><strong>Genusssegler:</strong> Viel Cruising mit Badepausen, mediterranes Flair in Hafenorten wie Skopelos-Chora oder Skiathos-Stadt.</li>
+                <li><strong>Ambitionierte Crews:</strong> Längere Schläge zu den Außeninseln (z. B. Kyra Panagia, Skantzoura, ggf. Skyros) und Manövertraining in der verlässlichen Tagesbrise.</li>
+              </ul>
+            </div>
+
+            <h3 id="beste-reisezeit" className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Die beste Reisezeit für Yachtcharter Sporaden liegt in Mai/Juni sowie September/Oktober: angenehme Temperaturen, planbare Brisen, entspannte Häfen. In Juli/August ist Hochsaison – die Winde sind frischer, die Orte lebhafter. Wer dann segelt, nutzt konsequent Lee-Routen, läuft beliebte Häfen früh an oder wählt Ankerbuchten mit Sandgrund und Landleinen.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
+            <p className="text-lg leading-relaxed mb-8">
+              Yachtcharter auf den Sporaden verbindet entspannte Segelbedingungen mit reiche Natur und einer maritimen Infrastruktur, die genau das bietet, was Cruising angenehm macht: sichere Ankerplätze, kurze Wege, gute Versorgung – und dazwischen türkisfarbene Stopps in Pinienstille. Volos liefert das Festlands-Setup mit großer Versorgerdichte, Skiathos und Skopelos legen Sie direkt ins Inselgefühl. Wer Seemannschaft schätzt und Urlaubstage mit viel Wasserzeit füllen möchte, setzt hier den richtigen Kurs.
+            </p>
+          </div>
         </div>
 
         {/* Cities */}
