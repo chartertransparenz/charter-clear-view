@@ -183,6 +183,19 @@ const Sporades = () => {
               </div>
             </div>
 
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/cf2311b1-fbc6-4174-910a-a5d89e0d8191.png" 
+                alt="Blick auf Skiathos mit dem Hafen im Hintergrund" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-4"
+              />
+              <div className="bg-muted/30 p-4 rounded-lg border border-border/40">
+                <p className="text-muted-foreground italic text-sm leading-relaxed">
+                  Blick auf Skiathos mit dem Hafen im Hintergrund.
+                </p>
+              </div>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Inseln, Buchten, nautische Highlights</h3>
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Skiathos – Pinien & Sandbuchten</h4>
