@@ -186,6 +186,17 @@ const Cyclades = () => {
 
             <div id="marinas-ausgangshaefen" className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
+              
+              <div className="my-6">
+                <img 
+                  src="/lovable-uploads/963358b3-7cad-4b57-aadf-4cea2f3470ef.png" 
+                  alt="Hafen mit Muringleinen auf Milos" 
+                  className="w-full rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-muted-foreground mt-3 italic text-center">
+                  Hafen mit Muringleinen auf der Insel Milos.
+                </p>
+              </div>
               <div className="space-y-4 text-black">
                 <div>
                   <h5 className="font-semibold mb-2">Alimos Marina (Athen)</h5>
