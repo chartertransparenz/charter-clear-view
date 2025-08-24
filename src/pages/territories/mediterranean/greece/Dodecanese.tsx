@@ -217,9 +217,11 @@ const Dodecanese = () => {
                 alt="Symi Hafen mit pastellfarbenen neoklassischen Häusern" 
                 className="w-full h-48 object-cover rounded-lg mb-3"
               />
-              <p className="mb-3">
-                Symi im Dodekanes verführt mit pastellfarbenen neoklassischen Häuschen und glasklaren Buchten – ein Traumziel, um festzumachen, erkunden und relaxen.
-              </p>
+              <div className="bg-muted/30 p-4 rounded-lg border border-border/40">
+                <p className="text-muted-foreground italic text-sm leading-relaxed">
+                  Symi im Dodekanes verführt mit pastellfarbenen neoklassischen Häuschen und glasklaren Buchten – ein Traumziel, um festzumachen, erkunden und relaxen.
+                </p>
+              </div>
               <p>
                 Der Hafen Gialos ist eine steile Theaterkulisse aus pastellfarbenen Häusern. Bei Nordwind empfiehlt sich die große Panormitis-Bucht an der Südseite – ruhiger, mit dem berühmten Kloster direkt am Wasser.
               </p>
