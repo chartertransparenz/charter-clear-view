@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationGreece from "@/assets/destination-greece.jpg";
@@ -104,11 +105,25 @@ const Cyclades = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
-              <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>)}
+          {quickFacts.map((fact, index) => {
+            const getAnchorLink = (label) => {
+              switch(label) {
+                case "Lage": return "#marinas-ausgangshaefen";
+                case "Beste Zeit": return "#beste-reisezeit";
+                case "Geeignet für": return "#einleitung";
+                case "Besonderheit": return "#wetter-windbedingungen";
+                default: return "#";
+              }
+            };
+            
+            return (
+              <a key={index} href={getAnchorLink(fact.label)} className="block bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer">
+                <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
+                <p className="text-sm text-gray-600">{fact.value}</p>
+              </a>
+            );
+          })}
         </div>
 
         {/* Description */}
@@ -126,6 +141,179 @@ const Cyclades = () => {
             maptype="satellite"
             className="max-w-4xl mx-auto"
           />
+        </div>
+
+        {/* Detailed Territory Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Kykladen – Ihr Törn ab Athen, Lavrion, Mykonos, Paros oder Syros</h2>
+            <p className="text-xl text-muted-foreground">
+              Das Herz der Ägäis
+            </p>
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <h3 id="einleitung" className="text-2xl font-bold mt-8 mb-4">Einleitung</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Kykladen sind das Sinnbild griechischen Segelns: weiß getünchte Dörfer auf kargen Felsen, tiefblaues Wasser, weite Horizonte – und der berühmte Meltemi, der im Sommer zuverlässig für Fahrt im Schiff sorgt. Wer hier Yachtcharter plant, sucht das Zusammenspiel aus sportlichem Cruising, kristallklaren Ankerbuchten und maritimem Kulturerlebnis. Im Gegensatz zu den geschützteren Ionischen Inseln verlangt das Kykladen-Revier dem Skipper etwas mehr Seemannschaft ab: längere Schläge, offeneres Wasser, Düseneffekte zwischen den Inseln und Böen an steilen Hängen. Der Lohn sind Tage voller Segelzeit, spektakuläre Ansteuerungen – von Kea und Kythnos über Serifos, Sifnos und Paros bis Naxos, Mykonos und Syros – und Abende, die nach Salz, gegrilltem Fisch und Ankerlicht riechen.
+            </p>
+            
+            <p className="text-lg leading-relaxed mb-6">
+              Als Ausgangsbasis bieten sich vor allem die Region Athen mit der Alimos Marina (Kalamaki) und der Raum Lavrion an – mit dem Hafen Lavrion und der modernen Olympic Marine. Wer direkt „mittendrin" starten will, findet weitere Charteroptionen (weniger Auswahl, dafür kürzere Schläge in die Inselwelt) auf Mykonos, Paros und Syros. Egal von wo Sie ablegen: Die Kykladen sind ein Performance-Revier – ideal für Crews, die Segeln lieben und den Tag bewusst nach Windfenstern planen.
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 id="erreichbarkeit" className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
+              <p className="text-black mb-3">So kommen Chartergäste bequem zu ihrer Yacht:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Athen (ATH) → Alimos Marina:</strong> Internationale Flüge nach Athen; Transfer per Taxi, Minivan oder Shuttle in die Alimos Marina. Unterwegs sind große Supermärkte und nautische Fachgeschäfte – perfekt für die Proviantierung.</li>
+                <li><strong>Athen (ATH) → Lavrion / Olympic Marine:</strong> Vom Flughafen kurze Anfahrt nach Lavrion. Je nach Verkehr steht die Crew in weniger als einer Stunde am Steg – ideal für eine zügige Yachtübernahme und das frühe Ablegen Richtung Kea/Kythnos.</li>
+                <li><strong>Direkt auf die Inseln:</strong> Mykonos (JMK), Paros (PAS), Syros (JSY) mit saisonalen Direktflügen oder Fährverbindungen ab Piräus/Rafina</li>
+                <li><strong>Transfers & Services:</strong> Wir organisieren Door-to-Dock-Transfers, vorbestellte Proviantlieferungen an Bord sowie frühe/late Check-ins nach Verfügbarkeit.</li>
+              </ul>
+            </div>
+
+            <div id="marinas-ausgangshaefen" className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
+              <div className="space-y-4 text-black">
+                <div>
+                  <h5 className="font-semibold mb-2">Alimos Marina (Athen)</h5>
+                  <p className="mb-2">Die größte Charterdrehscheibe Griechenlands punktet mit umfassender Infrastruktur: viele Charterflotten, Technikbetriebe, Winterlager, Chandlery, Wasser & Strom am Steg, Tankservice im Hafenbereich.</p>
+                </div>
+                <div>
+                  <h5 className="font-semibold mb-2">Lavrion Hafen (Main Port)</h5>
+                  <p className="mb-2">Der kommunale Hafen von Lavrion ist die „südliche Rampe" zu den Kykladen. Der Vorteil: Sie sparen Ansteuerungszeit, denn die Westkykladen beginnen praktisch vor der Hafenausfahrt.</p>
+                </div>
+                <div>
+                  <h5 className="font-semibold mb-2">Olympic Marine (Lavrion)</h5>
+                  <p className="mb-2">Eine der modernsten Marinas im Ägäisraum – mit Muring-Plätzen, 24/7-Security, Travel-Lifts, Werftservice, Hard-Standing, Fuel Dock, Parkflächen und hervorragender Logistik.</p>
+                </div>
+                <div>
+                  <h5 className="font-semibold mb-2">Inselstarts: Mykonos, Paros, Syros</h5>
+                  <p>Charteroptionen direkt auf den Inseln – weniger Auswahl, dafür kürzere Schläge in die Inselwelt.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – West- und Zentral-Kykladen</h3>
+            
+            <h4 className="text-xl font-semibold mt-6 mb-4">Kea – die Torinsel</h4>
+            <p className="mb-6">
+              Guter erster Stopp nach dem Ablegen in Lavrion: Vourkari bietet Liegeplätze an der Kaimauer, Tavernen, kleine Märkte. In den Buchten an der Nordwestküste genügt meist Sandgrund für sicheren Halt. Der Ort ist lebendig, ohne touristisch zu überdrehen – ein idealer Einstieg.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Kythnos – Thermen & Traumbuchten</h4>
+            <p className="mb-6">
+              Loutra an der Ostküste ist bekannt für seine warmen Quellen direkt am Strand. Kolona – die berühmte Doppelsandbucht – ist ein Ankertraum, bei Meltemi jedoch offen für Schwell; bei viel Wind besser an die Südküste ausweichen. Heckleinen an Land machen die Nacht ruhig.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Serifos – Felsen und Chora</h4>
+            <p className="mb-6">
+              Im Hafen Livadi liegt man geschützt und fußläufig zur Chora, die spektakulär über dem Tal thront. Der Ankergrund hält meist hervorragend. Wer wandern mag, steigt zum Kastell hinauf – der Blick über die Ägäis lohnt jeden Schritt.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Sifnos – Kulinarik & Kykladenstil</h4>
+            <p className="mb-6">
+              Kamares (Hafen) ist gut organisiert, mit Wasser/Power, Bäckern und Läden für frische Vorräte. Rund um die Insel locken stille Ankerplätze; an windreichen Tagen bieten die Süd- und Westbuchten besseren Schutz. Sifnos gilt als Gourmetinsel – perfekte Gelegenheit für ein ausgedehntes Abendessen an Land.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Paros – Parikia & Naoussa</h4>
+            <p className="mb-6">
+              Parikia bietet eine Mischung aus Geschichte und maritimem Treiben. Naoussa ist pittoresk, aber in Meltemi-Phasen anspruchsvoll. Zwischen Paros und Naxos kann der Wind düsen; Trimm anpassen, ggf. Reff setzen, damit das Boot ruhig läuft.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Naxos – groß & vielfältig</h4>
+            <p className="mb-6">
+              Als größte Kykladeninsel bietet Naxos zahlreiche Optionen: städtisches Flair, Strände, Täler. Der Hauptort hat Liegeplätze und Versorger; in Buchten im Süden findet man oft besseren Lee-Schutz.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Mykonos – Postkartenmotiv mit Pfeffer</h4>
+            <p className="mb-6">
+              Mykonos-Stadt ist ein Erlebnis – maritim, mondän, lebhaft. Segler sollten die Böenlinien ernst nehmen: Reffbereitschaft und vorausschauende Ankerdisziplin sind die halbe Miete.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Syros – Zentrum mit Stil</h4>
+            <p className="mb-6">
+              Ermoupolis bringt städtische Eleganz in den Törn; Finikas ist die ruhige Alternative im Süden mit viel Lee bei Nordwind. Zudem gute Servicepunkte für Technik und Bordlogistik.
+            </p>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Nautische Hinweise:</strong> Das Revier wird vom Meltemi geprägt – reffbereit segeln, Sandgrund für Anker bevorzugen, Lee-Seiten der Inseln bei starkem Wind nutzen.</p>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Törnvorschlag – eine Woche West-/Zentral-Kykladen ab Lavrion</h3>
+            <p className="mb-4 font-medium">Ein balancierter Plan mit seglerischem Anspruch, verlässlichen Lee-Ankerplätzen und genügend Zeit für Landgänge:</p>
+            
+            <div className="space-y-3 mb-8">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1: Lavrion → Kea (Vourkari)</h5>
+                <p className="text-sm text-muted-foreground">Ruhiger Einstieg, Riggsichtung, erste Manöver. In Vourkari liegen Sie an der Kaimauer; Tavernen direkt am Wasser.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2: Kea → Kythnos (Loutra/Alternative Süd)</h5>
+                <p className="text-sm text-muted-foreground">Entspanntes Cruising entlang der Küste, Badepause in einer Bucht. Loutra bietet Wasser/Power und Bäckereien.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3: Kythnos → Serifos (Livadi)</h5>
+                <p className="text-sm text-muted-foreground">Weiter in die Westkykladen. Livadi ist gut geschützt; die Chora über dem Hafen ist lohnendes Ziel für den Abend.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4: Serifos → Sifnos (Kamares/Ankerbucht)</h5>
+                <p className="text-sm text-muted-foreground">Genusssegeln mit Kulinarik-Finale. Kamares mit Versorgung am Kai oder ruhige Bucht an der Süd- oder Westküste.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5: Sifnos → Paros (Parikia oder Naoussa)</h5>
+                <p className="text-sm text-muted-foreground">Zentral-Kykladen im Blick. Parikia bietet Stadthafen und gute Logistik, Naoussa ist landschaftlich reizvoll.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6: Paros → Syros (Finikas)</h5>
+                <p className="text-sm text-muted-foreground">Kurs Nordwest in Richtung Syros. Finikas ist bei Nordwind ein klassischer Lee-Hafen mit Wasser/Power am Steg.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7: Syros → Lavrion</h5>
+                <p className="text-sm text-muted-foreground">Längerer Schlag zurück in Richtung Festland. In Lavrion rechtzeitig zum Fuel Dock, dann Check-out.</p>
+              </div>
+            </div>
+
+            <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
+            <p className="mb-4">
+              Die Kykladen werden im Sommer vom Meltemi geprägt – einem nördlichen, trockenen Wind, der tagsüber auffrischt und abends oft abflaut. Er sorgt für zügiges Segeln und frische Luft, kann aber Seegang aufbauen und erfordert durchdachte Törnplanung.
+            </p>
+            
+            <div className="border border-gray-300 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold mb-3 text-black">Tagesgang & Charakter</h4>
+              <ul className="space-y-2 text-black">
+                <li><strong>Morgen:</strong> Häufig moderat mit ruhiger See – ideal für Abfahrten, Badepausen und Manövertraining.</li>
+                <li><strong>Mittag/Nachmittag:</strong> Aufbau der Brise aus nördlichen Richtungen (NW–N–NE); in Düsen zwischen Inseln sowie an Kaps kann es deutlich zulegen.</li>
+                <li><strong>Abend/Nacht:</strong> Abflauende Winde, in Lee-Buchten ruhige Nächte; in exponierten Ankerplätzen kann Schwell stehen.</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold mb-3 text-black">Saisonale Differenzierung</h4>
+              <ul className="space-y-2 text-black">
+                <li><strong>Frühling (April–Mai):</strong> Milder, variabler, gelegentlich Gradientwind. Perfekt für Einsteiger.</li>
+                <li><strong>Sommer (Juni–September):</strong> Meltemi-Saison mit teils kräftigen Brisen; Reffbereitschaft ist angesagt.</li>
+                <li><strong>Herbst (Oktober):</strong> Warmes Wasser, stabile Brisen, mögliche Gewitterlagen; Wetterfenster beobachten.</li>
+              </ul>
+            </div>
+
+            <h3 id="beste-reisezeit" className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+            <p className="mb-6">
+              Die beste Reisezeit für Yachtcharter Kykladen liegt in Mai/Juni sowie September/Oktober: verlässliche Brise, angenehme Temperaturen, entspannte Häfen. In Juli/August herrscht Hochsaison – die Winde sind frischer, die Etappen sportlicher, die Häfen voller: Für erfahrene Skipper ein Traum, für Familien mit kleinen Kindern mitunter fordernd.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
+            <p className="mb-6">
+              Segeln auf den Kykladen ist pures Griechenland – intensiv, klar, reduziert auf das Wesentliche: Wind, Wasser, Fels, Licht. Die Kombination aus sportlichen Schlägen, charaktervollen Inselorten und verlässlicher Marina-Infrastruktur macht das Revier zum Favoriten anspruchsvoller Crews. Athen/Alimos bietet die große Auswahl und die gelernte Charterlogistik, Lavrion und die Olympic Marine den schnellsten Zugang in die Inselwelt.
+            </p>
+          </div>
         </div>
 
         {/* Cities */}
@@ -170,6 +358,8 @@ const Cyclades = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>;
 };
 export default Cyclades;
