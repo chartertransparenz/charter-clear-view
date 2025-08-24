@@ -263,6 +263,19 @@ const Sporades = () => {
               <p className="text-black"><strong>Seemannschaft – Kurzcheck:</strong> Wetterfenster täglich prüfen; in Gewitterlagen frühzeitig Schutz suchen. Anker auf Sand, Kettenlänge großzügig bemessen, Halt per Rückwärtsfahrt testen, Ankeralarm aktivieren. Hafenmanöver: Buganker präzise fallen lassen, Heckleinen rechtzeitig, Fender auf Arbeits- und Ruhehöhe. Crewbriefing: Rollen an Deck, Dinghy-Regeln, Sonnenschutz & Hydration.</p>
             </div>
 
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/5d3cff17-20d4-4be9-a618-be5438ccdb0e.png" 
+                alt="Kristallklares Wasser in den Sporaden mit Yachten vor anker in einer türkisblauen Bucht" 
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-4"
+              />
+              <div className="bg-muted/30 p-4 rounded-lg border border-border/40">
+                <p className="text-muted-foreground italic text-sm leading-relaxed">
+                  Tauchen Sie ein in die Inselwelt der Sporaden und entdecken Sie Ihren Ankerplatz, um im kristallklaren Wasser zu schwimmen und die Seele baumeln zu lassen.
+                </p>
+              </div>
+            </div>
+
             <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
             <p className="text-lg leading-relaxed mb-4">
               <strong>Überblick:</strong> Die Sporaden liegen abseits der stärksten Meltemi-Achse der Zentralägäis. Im Sommer setzt tagsüber eine Nord- bis Nordwestbrise ein, die abends häufig abflaut. Das sorgt für planbares Cruising mit viel Badezeit und moderaten Seegangsverhältnissen im Inselschutz. Frühling und Herbst bringen mildere, variablere Winde – ideal für Einsteiger und Familien.
