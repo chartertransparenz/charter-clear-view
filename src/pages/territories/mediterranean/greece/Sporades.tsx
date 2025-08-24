@@ -37,7 +37,7 @@ const Sporades = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={destinationGreece} alt="Sporaden Griechenland" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/2fa92b23-1064-4b8e-b8aa-53f7c85fdfdf.png" alt="Sporaden Griechenland - Kristallklares Wasser und Segelyacht" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
