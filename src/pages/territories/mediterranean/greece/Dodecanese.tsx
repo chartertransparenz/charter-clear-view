@@ -277,6 +277,18 @@ const Dodecanese = () => {
               </ul>
             </div>
 
+            {/* Ankerbuchten Bild */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/b7c37930-7412-4d3f-a6d6-7ee4ee320a82.png" 
+                alt="Unzählige Ankerbuchten zwischen Leros, Lipsi und Arki" 
+                className="w-full h-64 object-cover rounded-lg mb-3"
+              />
+              <p className="text-center text-muted-foreground font-medium">
+                Unzählige Ankerbuchten zwischen Leros, Lipsi und Arki
+              </p>
+            </div>
+
             <div className="border border-gray-300 p-4 rounded-lg mb-8">
               <p className="text-black mb-3"><strong>Seemannschaft – Kurzcheck:</strong></p>
               <ul className="list-disc pl-6 space-y-1 text-black">
