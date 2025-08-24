@@ -147,6 +147,18 @@ const Dodecanese = () => {
               Ausgangsbasen: In erster Linie Kos – mit der größten Charterauswahl und einer hervorragend organisierten Marina – sowie Rhodos. Ergänzend sind Mykonos/Paros/Syros keine Dodekanes-Basen; im Dodekanes selbst starten daneben gelegentlich Crews ab Leros oder Patmos, doch die Hauptdrehscheiben bleiben Kos und Rhodos.
             </p>
 
+            {/* Entdeckung Bild */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/53d8675d-f0c1-4508-8572-cf7aa48f1d93.png" 
+                alt="Es gibt viel zu entdecken im Revier der Dodekanes wie z.B. die kleine Kirche auf einer Insel vor Agios Stefanos Beach, Kos" 
+                className="w-full h-64 object-cover rounded-lg mb-3"
+              />
+              <p className="text-center text-muted-foreground font-medium">
+                Es gibt viel zu entdecken im Revier der Dodekanes wie z.B. die kleine Kirche auf einer Insel vor Agios Stefanos Beach, Kos
+              </p>
+            </div>
+
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 id="erreichbarkeit" className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
               <p className="text-black mb-3">So kommen Chartergäste an Bord:</p>
