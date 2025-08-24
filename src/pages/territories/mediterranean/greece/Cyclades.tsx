@@ -231,6 +231,17 @@ const Cyclades = () => {
             <p className="mb-6">
               Mykonos-Stadt ist ein Erlebnis – maritim, mondän, lebhaft. Segler sollten die Böenlinien ernst nehmen: Reffbereitschaft und vorausschauende Ankerdisziplin sind die halbe Miete.
             </p>
+            
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/72d6a75d-c97b-4b2e-b4e6-d0f739d31830.png" 
+                alt="Sonnenuntergang über Mykonos mit Windmühlen" 
+                className="w-full rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-3 italic text-center">
+                Lust auf einen atemberaubenden Sonnenuntergang über den sanften Hügeln des griechischen Dorfes Mykonos, wo die farbenfrohe Altstadt und die ikonischen historischen Windmühlen in goldenes Licht getaucht werden?
+              </p>
+            </div>
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Syros – Zentrum mit Stil</h4>
             <p className="mb-6">
