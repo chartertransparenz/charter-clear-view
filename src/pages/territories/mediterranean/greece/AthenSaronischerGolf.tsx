@@ -175,7 +175,7 @@ const AthenSaronischerGolf = () => {
           <TerritoryMap
             region="Athen & Saronischer Golf"
             center={{ lat: 37.6, lng: 23.5 }}
-            zoom={10}
+            zoom={7}
             maptype="satellite"
             markers={[
               { lat: 37.9755, lng: 23.7348, name: "Athen", description: "Hauptstadt und wichtigster Ausgangspunkt" },
