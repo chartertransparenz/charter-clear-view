@@ -35,6 +35,7 @@ import Cyclades from "./pages/territories/mediterranean/greece/Cyclades";
 import IonicIslands from "./pages/territories/mediterranean/greece/IonicIslands";
 import Dodecanese from "./pages/territories/mediterranean/greece/Dodecanese";
 import Sporades from "./pages/territories/mediterranean/greece/Sporades";
+import AthenSaronischerGolf from "./pages/territories/mediterranean/greece/AthenSaronischerGolf";
 
 // Spanish regions
 import Balearics from "./pages/territories/mediterranean/spain/Balearics";
@@ -198,6 +199,7 @@ function App() {
             <Route path="/reviere/mittelmeer/griechenland/ionische-inseln" element={<IonicIslands />} />
             <Route path="/reviere/mittelmeer/griechenland/dodekanes" element={<Dodecanese />} />
             <Route path="/reviere/mittelmeer/griechenland/sporaden" element={<Sporades />} />
+            <Route path="/reviere/mittelmeer/griechenland/athen-saronischer-golf" element={<AthenSaronischerGolf />} />
             
             {/* Spanish region routes */}
             <Route path="/reviere/mittelmeer/spanien/balearen" element={<Balearics />} />
