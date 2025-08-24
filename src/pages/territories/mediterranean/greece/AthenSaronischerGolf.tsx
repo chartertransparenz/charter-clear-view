@@ -136,6 +136,54 @@ const AthenSaronischerGolf = () => {
           })}
         </div>
 
+        {/* Important Islands & Harbors */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Inseln & Häfen</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {cities.map((city, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                <div className="w-8 h-8 text-blue-600 mx-auto mb-3">
+                  <MapPin className="w-full h-full" />
+                </div>
+                <p className="font-semibold text-gray-800">{city}</p>
+              </div>
+            ))}
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-8 h-8 text-blue-600 mx-auto mb-3">
+                <MapPin className="w-full h-full" />
+              </div>
+              <p className="font-semibold text-gray-800">Lavrion</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-8 h-8 text-blue-600 mx-auto mb-3">
+                <MapPin className="w-full h-full" />
+              </div>
+              <p className="font-semibold text-gray-800">Angistri</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-8 h-8 text-blue-600 mx-auto mb-3">
+                <MapPin className="w-full h-full" />
+              </div>
+              <p className="font-semibold text-gray-800">Methana</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Highlights */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {highlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+                <div className="w-6 h-6 text-blue-600 mx-auto mb-2">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mx-auto mt-2"></div>
+                </div>
+                <p className="text-gray-700 text-sm">{highlight}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Content */}
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mt-8 mb-4">Yachtcharter Athen & Saronischer Golf – Ihr Törn ab Athen, Lavrion oder Aegina</h3>
@@ -306,12 +354,15 @@ const AthenSaronischerGolf = () => {
             Der Saronische Golf ist das ideale Einsteigerrevier Griechenlands und bietet gleichzeitig erfahrenen Seglern entspannte Törns mit kulturellen Höhepunkten. Die Kombination aus geschützten Gewässern, historischen Inseln und der Nähe zu Athen macht dieses Revier zu einem perfekten Ziel für unvergessliche Segelurlaube.
           </p>
 
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">Jetzt Yachtcharter Athen & Saronischer Golf anfragen</h3>
-            <p className="mb-6">
-              Bereit für Ihren entspannten Törn im Saronischen Golf? Nennen Sie uns Ihre Crewgröße, Ihren Wunschtermin und Ihre bevorzugte Yachtklasse. Wir erstellen ein individuelles Angebot und organisieren Transfer, Proviant und alle weiteren Services für Ihren perfekten Griechenland-Urlaub.
+          {/* Blue CTA Section */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 rounded-lg text-center mt-12">
+            <h3 className="text-3xl font-bold mb-4">Bereit für den Saronischen Golf?</h3>
+            <p className="text-lg mb-6 max-w-3xl mx-auto">
+              Entdecken Sie die historischen Inseln Griechenlands mit geschützten Gewässern und authentischer griechischer Kultur.
             </p>
-            <CharterRequestForm />
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-3">
+              Saronischer Golf Charter anfragen
+            </Button>
           </div>
         </div>
       </div>
