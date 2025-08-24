@@ -109,6 +109,17 @@ const Dodecanese = () => {
             </div>)}
         </div>
 
+        {/* Map */}
+        <div className="mb-12">
+          <TerritoryMap
+            region="Dodekanes"
+            center={{ lat: 36.6, lng: 28.0 }}
+            zoom={8}
+            maptype="satellite"
+            className="mb-8"
+          />
+        </div>
+
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center mb-8">
@@ -333,17 +344,6 @@ const Dodecanese = () => {
               Jetzt unverbindlich anfragen – und die Leinen im Dodekanes lösen!
             </p>
           </div>
-        </div>
-
-        {/* Map */}
-        <div className="mb-12">
-          <TerritoryMap
-            region="Dodekanes"
-            center={{ lat: 36.6, lng: 28.0 }}
-            zoom={8}
-            maptype="satellite"
-            className="mb-8"
-          />
         </div>
 
         {/* Cities */}
