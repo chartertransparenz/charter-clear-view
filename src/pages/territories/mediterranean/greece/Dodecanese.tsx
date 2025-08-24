@@ -196,7 +196,7 @@ const Dodecanese = () => {
             <h4 className="text-xl font-semibold mt-6 mb-4">Symi – neoklassische Postkarte</h4>
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/937d47eb-4c4f-422f-a083-8b6cee99f919.png" 
+                src="/symi-harbor.png" 
                 alt="Symi Hafen mit pastellfarbenen neoklassischen Häusern" 
                 className="w-full h-48 object-cover rounded-lg mb-3"
               />
