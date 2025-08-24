@@ -143,6 +143,17 @@ const IonicIslands = () => {
               Lefkada überzeugt zusätzlich mit einem reibungslosen Start in den Törn: moderne Marina, professionelle Charterbasen, eingespielte Check-in-Prozesse und Services von der Proviantlieferung bis zum Technik-Support. Nach dem Ablegen führt Sie der Weg durch den Lefkas-Kanal hinaus in ein Revier, das in alle Himmelsrichtungen Optionen bereithält – von den nahen Inseln Meganisi, Kalamos und Kastos über Ithaka und Kefalonia bis hinauf nach Paxos und Korfu.
             </p>
 
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/d746b3cd-24fc-4942-9308-28b2f14b45c6.png" 
+                alt="Blick auf den Strand von Voutoumi auf der schönen Insel Antipaxos" 
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-gray-600 mt-2 text-center italic">
+                Blick auf den Strand von Voutoumi auf der schönen Insel Antipaxos.
+              </p>
+            </div>
+
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
               <p className="text-black mb-3">So reisen Chartergäste bequem nach Lefkada:</p>
