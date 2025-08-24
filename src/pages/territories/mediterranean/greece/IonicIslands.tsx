@@ -32,7 +32,7 @@ const IonicIslands = () => {
   }];
   const cities = ["Korfu", "Kefalonia", "Zakynthos", "Lefkada", "Ithaka", "Paxi", "Antipaxi"];
   const highlights = ["Venezianische Architektur auf Korfu", "Sanftere Winde als in der Ägäis", "Grüne, bergige Landschaften", "Kristallklare Buchten", "Familienfreundliche Reviere", "Reiche Geschichte und Kultur", "Ausgezeichnete Marinas"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return ( <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
