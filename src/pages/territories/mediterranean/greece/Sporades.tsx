@@ -105,7 +105,7 @@ const Sporades = () => {
           {quickFacts.map((fact, index) => {
             const getAnchorLink = (label) => {
               switch(label) {
-                case "Lage": return "#marinas-ausgangshaefen";
+                case "Lage": return "#erreichbarkeit";
                 case "Beste Zeit": return "#beste-reisezeit";
                 case "Geeignet für": return "#eignung-erfahrungsstufe";
                 case "Besonderheit": return "#wetter-windbedingungen";
