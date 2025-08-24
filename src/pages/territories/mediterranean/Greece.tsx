@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,77 +6,57 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationGreece from "@/assets/destination-greece.jpg";
-
 const Greece = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Ägäis & Ionisches Meer" },
-    { icon: Calendar, label: "Beste Zeit", value: "April-Oktober" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Inseln", value: "Über 6.000 Inseln" }
-  ];
-
-  const regions = [
-    {
-      name: "Kykladen",
-      link: "/reviere/mittelmeer/griechenland/kykladen",
-      description: "Die berühmtesten Inseln Griechenlands mit Mykonos und Santorini",
-      cities: ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Syros"]
-    },
-    {
-      name: "Ionische Inseln",
-      link: "/reviere/mittelmeer/griechenland/ionische-inseln",
-      description: "Grüne Inseln mit venezianischem Flair und sanfteren Winden",
-      cities: ["Korfu", "Kefalonia", "Zakynthos", "Lefkada", "Ithaka", "Paxi"]
-    },
-    {
-      name: "Dodekanes",
-      link: "/reviere/mittelmeer/griechenland/dodekanes",
-      description: "Authentische griechische Inseln im Südosten der Ägäis",
-      cities: ["Rhodos", "Kos", "Patmos", "Leros", "Kalymnos", "Symi"]
-    },
-    {
-      name: "Sporaden",
-      link: "/reviere/mittelmeer/griechenland/sporaden",
-      description: "Grüne Inseln der Nordägäis mit unberührter Natur",
-      cities: ["Skiathos", "Skopelos", "Alonissos", "Skyros"]
-    }
-  ];
-
-  const highlights = [
-    "Über 6.000 Inseln und Inselchen",
-    "Konstante Meltemi-Winde im Sommer",
-    "Authentische griechische Tavernen",
-    "Kristallklares, türkises Wasser",
-    "Reiche antike Geschichte",
-    "UNESCO-Weltkulturerbe Stätten",
-    "Perfekte Segelbedingungen"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Ägäis & Ionisches Meer"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "April-Oktober"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Inseln",
+    value: "Über 6.000 Inseln"
+  }];
+  const regions = [{
+    name: "Kykladen",
+    link: "/reviere/mittelmeer/griechenland/kykladen",
+    description: "Die berühmtesten Inseln Griechenlands mit Mykonos und Santorini",
+    cities: ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Syros"]
+  }, {
+    name: "Ionische Inseln",
+    link: "/reviere/mittelmeer/griechenland/ionische-inseln",
+    description: "Grüne Inseln mit venezianischem Flair und sanfteren Winden",
+    cities: ["Korfu", "Kefalonia", "Zakynthos", "Lefkada", "Ithaka", "Paxi"]
+  }, {
+    name: "Dodekanes",
+    link: "/reviere/mittelmeer/griechenland/dodekanes",
+    description: "Authentische griechische Inseln im Südosten der Ägäis",
+    cities: ["Rhodos", "Kos", "Patmos", "Leros", "Kalymnos", "Symi"]
+  }, {
+    name: "Sporaden",
+    link: "/reviere/mittelmeer/griechenland/sporaden",
+    description: "Grüne Inseln der Nordägäis mit unberührter Natur",
+    cities: ["Skiathos", "Skopelos", "Alonissos", "Skyros"]
+  }];
+  const highlights = ["Über 6.000 Inseln und Inselchen", "Konstante Meltemi-Winde im Sommer", "Authentische griechische Tavernen", "Kristallklares, türkises Wasser", "Reiche antike Geschichte", "UNESCO-Weltkulturerbe Stätten", "Perfekte Segelbedingungen"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png"
-          alt="Griechenland Mittelmeer"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png" alt="Griechenland Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -88,10 +67,7 @@ const Greece = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/mittelmeer" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/mittelmeer" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zum Mittelmeer
@@ -139,39 +115,23 @@ const Greece = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in Griechenland</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Griechenland ist die Wiege des Segelns und bietet mit über 6.000 Inseln 
-              und Inselchen die perfekte Kulisse für unvergessliche Segeltörns. 
-              Von den weltberühmten Kykladen bis zu den grünen Ionischen Inseln - 
-              hier findet jeder Segler sein Paradies.
-            </p>
-            <p className="text-lg text-gray-600">
-              Die konstanten Meltemi-Winde, das kristallklare Wasser und die 
-              authentische griechische Gastfreundschaft in traditionellen Tavernen 
-              machen jeden Segeltörn zu einem unvergesslichen Erlebnis.
-            </p>
-          </div>
+          
         </div>
 
         {/* Regions */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
+            {regions.map((region, index) => <Link key={index} to={region.link} className="group">
                 <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
@@ -181,24 +141,17 @@ const Greece = () => {
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.slice(0, 6).map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
+                    {region.cities && <div className="grid grid-cols-2 gap-2">
+                        {region.cities.slice(0, 6).map((city, idx) => <div key={idx} className="text-sm text-blue-600 font-medium">
                             • {city}
-                          </div>
-                        ))}
-                        {region.cities.length > 6 && (
-                          <div className="text-sm text-gray-500 italic">
+                          </div>)}
+                        {region.cities.length > 6 && <div className="text-sm text-gray-500 italic">
                             +{region.cities.length - 6} weitere
-                          </div>
-                        )}
-                      </div>
-                    )}
+                          </div>}
+                      </div>}
                   </CardContent>
                 </Card>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
 
@@ -206,14 +159,12 @@ const Greece = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+            {highlights.map((highlight, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                   <p className="font-medium text-gray-800">{highlight}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -235,8 +186,6 @@ const Greece = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Greece;
