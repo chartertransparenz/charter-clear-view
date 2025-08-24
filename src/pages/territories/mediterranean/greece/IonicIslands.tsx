@@ -116,6 +116,7 @@ const IonicIslands = () => {
             region="Ionisches Meer"
             center={{ lat: 38.5, lng: 20.5 }}
             zoom={7}
+            maptype="satellite"
             className="h-96"
           />
         </div>
