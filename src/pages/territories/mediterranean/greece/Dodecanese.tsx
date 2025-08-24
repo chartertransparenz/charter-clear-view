@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const Dodecanese = () => {
@@ -111,6 +112,17 @@ const Dodecanese = () => {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <TerritoryMap
+            region="Dodekanes"
+            center={{ lat: 36.6, lng: 28.0 }}
+            zoom={8}
+            maptype="satellite"
+            className="mb-8"
+          />
         </div>
 
         {/* Cities */}
