@@ -102,11 +102,25 @@ const IonicIslands = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
-              <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>)}
+          {quickFacts.map((fact, index) => {
+            const getAnchorLink = (label) => {
+              switch(label) {
+                case "Lage": return "#marinas-ausgangshaefen";
+                case "Beste Zeit": return "#beste-reisezeit";
+                case "Geeignet für": return "#warum-toern-klassiker";
+                case "Besonderheit": return "#wetter-windbedingungen";
+                default: return "#";
+              }
+            };
+            
+            return (
+              <a key={index} href={getAnchorLink(fact.label)} className="block bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer">
+                <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
+                <p className="text-sm text-gray-600">{fact.value}</p>
+              </a>
+            );
+          })}
         </div>
 
         {/* Map */}
@@ -131,7 +145,7 @@ const IonicIslands = () => {
           </div>
           
           <div className="prose prose-lg max-w-none">
-            <h3 className="text-2xl font-bold mt-8 mb-4">Warum ein Törn im Ionischen Meer ein Klassiker ist</h3>
+            <h3 id="warum-toern-klassiker" className="text-2xl font-bold mt-8 mb-4">Warum ein Törn im Ionischen Meer ein Klassiker ist</h3>
             <p className="text-lg leading-relaxed mb-6">
               Die Ionischen Inseln stehen seit Jahrzehnten für entspanntes, zugleich vielfältiges Segeln. Der Segler findet hier eine Kombination, die selten so stimmig ist: ruhige See mit verlässlichen thermischen Winden, zahllose, gut geschützte Ankerbuchten mit sicherem Ankergrund, grüne, duftende Hänge aus Pinien und Zypressen sowie lebendige Hafenorte, in denen Tavernen, Cafés und kleine Läden direkt an der Kaimauer liegen. Im Zentrum dieser Inselwelt liegt Lefkada (Lefkas) – Ihr idealer Ausgangspunkt für Yachtcharter im Ionischen Meer entlang der westgriechischen Küste.
             </p>
@@ -166,7 +180,7 @@ const IonicIslands = () => {
               </ul>
             </div>
 
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+            <div id="marinas-ausgangshaefen" className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
               <p className="text-black mb-3">Die Ionischen Inseln verfügen über hervorragende maritime Infrastruktur:</p>
               <ul className="list-disc pl-6 space-y-1 text-black">
@@ -259,7 +273,7 @@ const IonicIslands = () => {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen: Segeln im Ionischen Meer</h3>
+            <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen: Segeln im Ionischen Meer</h3>
             <p className="mb-4">
               Das Revier rund um Lefkada ist bekannt für ruhige See, eine verlässliche thermische Brise und gutmütige Verhältnisse – ideale Voraussetzungen für Segeln mit Einsteigern, Familien und Genussseglern.
             </p>
@@ -310,7 +324,7 @@ const IonicIslands = () => {
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+            <h3 id="beste-reisezeit" className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
             <p className="text-lg leading-relaxed mb-6">
               Die angenehmsten Monate für Yachtcharter auf den Ionischen Inseln sind im Allgemeinen Mai, Juni, September und Oktober. In diesen Zeiträumen treffen verlässliche Winde auf moderate Temperaturen und ein überschaubares touristisches Aufkommen.
             </p>
