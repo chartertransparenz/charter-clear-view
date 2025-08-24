@@ -37,6 +37,7 @@ const Mediterranean = () => {
       areas: [
         { name: "Kykladen", link: "/reviere/mittelmeer/griechenland/kykladen" },
         { name: "Ionische Inseln", link: "/reviere/mittelmeer/griechenland/ionische-inseln" },
+        { name: "Athen/Saronischer Golf", link: "/reviere/mittelmeer/griechenland/athen-saronischer-golf" },
         { name: "Dodekanes", link: "/reviere/mittelmeer/griechenland/dodekanes" },
         { name: "Sporaden", link: "/reviere/mittelmeer/griechenland/sporaden" }
       ]
