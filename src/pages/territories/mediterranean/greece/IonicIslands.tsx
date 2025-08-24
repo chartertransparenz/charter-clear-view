@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import Footer from "@/components/Footer";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const IonicIslands = () => {
   useEffect(() => {
@@ -386,6 +387,9 @@ const IonicIslands = () => {
           </div>
         </div>
       </div>
-    </div>;
+      <Footer />
+    </div>
+  );
 };
+
 export default IonicIslands;
