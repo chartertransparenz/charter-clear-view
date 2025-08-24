@@ -25,10 +25,24 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   // Create Google Maps Embed URL (no API key required for basic embed)
   const createMapUrl = () => {
     const query = encodeURIComponent(`${region} sailing marinas harbors`);
-    const coordinates = `${center.lat},${center.lng}`;
-
-    // Using Google Maps embed without API key
-    return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200000!2d${center.lng}!3d${center.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDA1MCcxOC4wIk4gOTMwJzM5LjAiRQ!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde`;
+    
+    // Calculate distance for zoom level (higher zoom = less distance)
+    const zoomToDistance = {
+      4: 500000,
+      5: 250000, 
+      6: 125000,
+      7: 62500,
+      8: 31250,
+      9: 15625,
+      10: 7812,
+      12: 3906,
+      15: 1953
+    };
+    
+    const distance = zoomToDistance[zoom as keyof typeof zoomToDistance] || 125000;
+    
+    // Using Google Maps embed with proper coordinates and zoom
+    return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d${distance}!2d${center.lng}!3d${center.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s${encodeURIComponent(region)}!5e0!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde`;
   };
   return <Card className={`shadow-lg ${className}`}>
       

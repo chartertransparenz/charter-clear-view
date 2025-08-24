@@ -138,8 +138,8 @@ export default function Greece() {
         <div className="mb-16">
         <TerritoryMap 
           region="Griechenland" 
-          center={{ lat: 38.5, lng: 23.0 }} 
-          zoom={5}
+          center={{ lat: 39.0, lng: 22.0 }} 
+          zoom={6}
             markers={[
               { lat: 37.9755, lng: 23.7348, name: 'Athen', description: 'Hauptstadt und Ausgangspunkt Saronischer Golf' },
               { lat: 39.6243, lng: 19.9217, name: 'Korfu', description: 'Tor zu den Ionischen Inseln' },
