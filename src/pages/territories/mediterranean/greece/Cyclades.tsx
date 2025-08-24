@@ -153,7 +153,6 @@ const Cyclades = () => {
           </div>
           
           <div className="prose prose-lg max-w-none">
-            <h3 id="einleitung" className="text-2xl font-bold mt-8 mb-4">Einleitung</h3>
             <p className="text-lg leading-relaxed mb-6">
               Die Kykladen sind das Sinnbild griechischen Segelns: weiß getünchte Dörfer auf kargen Felsen, tiefblaues Wasser, weite Horizonte – und der berühmte Meltemi, der im Sommer zuverlässig für Fahrt im Schiff sorgt. Wer hier Yachtcharter plant, sucht das Zusammenspiel aus sportlichem Cruising, kristallklaren Ankerbuchten und maritimem Kulturerlebnis. Im Gegensatz zu den geschützteren Ionischen Inseln verlangt das Kykladen-Revier dem Skipper etwas mehr Seemannschaft ab: längere Schläge, offeneres Wasser, Düseneffekte zwischen den Inseln und Böen an steilen Hängen. Der Lohn sind Tage voller Segelzeit, spektakuläre Ansteuerungen – von Kea und Kythnos über Serifos, Sifnos und Paros bis Naxos, Mykonos und Syros – und Abende, die nach Salz, gegrilltem Fisch und Ankerlicht riechen.
             </p>
