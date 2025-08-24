@@ -136,6 +136,209 @@ const AthenSaronischerGolf = () => {
           })}
         </div>
 
+        {/* Detailed Territory Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Athen / Saronischer Golf – Ihr Törn ab Alimos, Zea, Flisvos</h2>
+            <p className="text-xl text-muted-foreground">
+              Ihr Törn ab Athen in den Saronischen Golf
+            </p>
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg leading-relaxed mb-6">
+              Der Saronische Golf ist die vielleicht vielseitigste Spielwiese für Yachtcharter in Griechenland: kurze Etappen, hoher Wetterschutz, charismatische Inseln und antike Stätten, die per Dinghy- oder Taxifahrt erreichbar sind. Zwischen Athen und der Ostküste des Peloponnes warten Aegina, Angistri, Poros, Hydra, Spetses, Methana, Ermioni und Epidavros – ein Revier, das Einsteiger, Familien und Genusssegler begeistert, aber auch ambitionierten Crews solide Segeltage bietet.
+            </p>
+            
+            <p className="text-lg leading-relaxed mb-6">
+              Im Unterschied zu den Kykladen wächst die Tagesbrise hier meist moderater an; die Inseln und die Attika-Küste schaffen Lee-Routen mit ruhiger See. Gleichzeitig sorgen Düseneffekte in Engstellen, Fallböen an steilen Küsten und gelegentliche Scirocco-Lagen für genügend nautische Substanz. Wer Yachtcharter Athen wählt, genießt die perfekte Kombination: große Charterflotten, Top-Infrastruktur und eine Route, die sich tagesaktuell an Wind, Crewprofil und Lust auf Landgänge anpassen lässt.
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
+              <p className="text-black mb-3">So kommen Chartergäste stressfrei an Bord:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Athen (ATH):</strong> Zahlreiche internationale Verbindungen – schnelle Transfers per Taxi/Minivan zur Basis</li>
+                <li><strong>Kurze Wege zur Marina:</strong> Von ATH zur Alimos Marina (Kalamaki) benötigen Sie je nach Verkehr rund 45–60 Minuten; Zea Marina (Piräus) und Flisvos (Palaio Faliro) liegen ebenfalls an der Athenischen Riviera</li>
+                <li><strong>Proviant & Service:</strong> Große Supermärkte, Chandlers, Bäckereien und Lieferdienste nahe der Basen; auf Wunsch Door to Dock Proviant und koordinierte Check in Zeiten</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-semibold text-black mb-2">Alimos Marina (Kalamaki) – Hauptausgangsbasis</h5>
+                  <p className="text-black">Die Alimos Marina ist die größte Marina Griechenlands und zentrale Charterdrehscheibe von Athen: Muring-Plätze, Wasser/Power am Steg, Tankservice, Technikbetriebe (Rigg/Elektrik/Motor), Chandlery, Sanitär, Wäscherei und kurze Wege zur Proviantierung. Reibungslose Abläufe beim Check in, Riggsichtung und Sicherheitsbriefing sind hier Standard – ideal, um noch am Ankunftstag die Leinen loszuwerfen.</p>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-black mb-2">Zea Marina (Piräus)</h5>
+                  <p className="text-black">Renoviert und umfangreich ausgestattet – Wasser/Power, Werft/Servicekette, Shops und Gastronomie an der Promenade. Auch für größere Yachten ausgelegt, gleichzeitig beliebt bei Chartercrews, die den urbanen Anschluss schätzen und schnell Richtung Aegina/Poros aufbrechen möchten.</p>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-black mb-2">Flisvos Marina (Palaio Faliro)</h5>
+                  <p className="text-black">Die Flisvos Marina ist die Premium Adresse der Athenischen Riviera – Superyacht tauglich, mit elegantem Umfeld, Gastronomie und Einkaufsmöglichkeiten am Steg. Einige Charterflotten operieren hier oder in unmittelbarer Nähe; wer Wert auf kurzen Transfer und gehobenes Umfeld legt, ist bestens aufgehoben.</p>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-black mb-2">Weitere Startoptionen</h5>
+                  <p className="text-black">Kleinere Marinas/Häfen rund um Athen (z. B. Glyfada/Agios Kosmas, Kallithea) können je nach Anbieter als Alternativ Base dienen. Bitte Verfügbarkeit frühzeitig klären – die größte Auswahl an Yachten bleibt Alimos.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Inseln, Buchten, nautische Highlights</h3>
+            
+            <h4 className="text-xl font-semibold mt-6 mb-4">Aegina & Angistri – der sanfte Einstieg</h4>
+            <p className="mb-6">
+              Aegina lockt mit dem Tempel der Aphaia, Pistazienmärkten und Häfen wie Aegina Stadt oder Perdika. Im Inselschatten finden sich Sandböden mit gutem Ankerhalt; die Buchten an der Südwestküste eignen sich ideal für die erste Nacht. Angistri gegenüber bietet türkisfarbene Buchten und kurze Dinghy Wege zum Strand – perfekt für Familien.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Poros – Kanal, Russian Bay & Lemonenwald</h4>
+            <p className="mb-6">
+              Der Poros Kanal ist ein maritimes Postkartenmotiv: Querpülende Brisen, Fährverkehr und enger Raum verlangen aufmerksames Manövrieren – dafür belohnen Stadtkai und die nahe Russian Bay mit Sandgrund und klarstem Wasser. An Land lockt der Lemonenwald; am Abend liegt man vor Tavernenfassaden, die sich im Hafenwasser spiegeln.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Hydra – autofreies Hafenjuwel</h4>
+            <p className="mb-6">
+              Hydra Stadt ist autofrei und eine Kulisse aus steilen, steingepflasterten Gassen. Das Hafenbecken ist klein und schnell gefüllt; Buganker und Heckleinen müssen sitzen, Cross Anchoring vermeiden. Als Plan B bietet sich die Mandraki Bucht östlich an – ruhiger, mit Wasseraktivitäten und kurzer Wassertaxi Distanz zur Stadt.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Spetses – Dapia & Baltiza</h4>
+            <p className="mb-6">
+              Spetses verbindet mondänes Flair mit seglerischer Substanz. Für Yachten empfiehlt sich oft das Baltiza/Alter Hafen im Süden der Stadt; Dapia ist lebhaft und teils exponiert. Lange Promenaden, gepflegte Villen – und abends ein stimmungsvoller Blick über die Bucht.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Methana & Epidavros – Vulkan & Theater</h4>
+            <p className="mb-6">
+              Die Halbinsel Methana punktet mit heißen Quellen und zwei Häfen (alt/neu). Von Palaia Epidavros erreichen Sie das Kleine Theater und, als Tagesausflug, das berühmte große Theater von Epidauros. In der Bucht vor Palaia Epidavros locken Schnorchelspots (u. a. versunkene Ruinen in Ufernähe).
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Ermioni, Porto Heli & Dokos – ruhige Liegeplätze</h4>
+            <p className="mb-6">
+              Ermioni liegt strategisch günstig zwischen Hydra und Porto Heli (geschütztes Binnenbecken). Dokos, die unbewohnte Nachbarin von Hydra, bietet klassischen Ankergrund für sternklare Nächte – Landleinen empfohlen.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Törnvorschlag – eine Woche ab Alimos (familien- & genussorientiert)</h3>
+            <p className="mb-4 font-medium">Ziel: Viel Badezeit, sichere Lee Liegeplätze, kurze Verlegeetappen – und dennoch ausreichend Segelstunden in der Tagesbrise.</p>
+            
+            <div className="space-y-3 mb-8">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1 – Athen/Alimos → Aegina (Perdika oder Aegina Stadt)</h5>
+                <p className="text-sm text-muted-foreground">Ankommen, Check in, Sicherheitsbriefing. Kurzer Schlag ins Inselschutz Revier; Anker auf Sand, Landleinen nach Bedarf. Abendspaziergang und erste Pistazien Kostprobe.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2 – Aegina → Poros (Russian Bay/Stadtkai)</h5>
+                <p className="text-sm text-muted-foreground">Badepause in der Russian Bay, danach Stadtkai Poros. Beim Durchfahren des Kanals Manöver vorbereiten, Fährverkehr beachten. Sundowner mit Blick auf die Uhrturm Silhouette.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3 – Poros → Hydra (Hafen oder Mandraki)</h5>
+                <p className="text-sm text-muted-foreground">Frühes Einlaufen erhöht die Liegeplatz Chance. Alternativ Ankern in Mandraki und per Wassertaxi in die Stadt. Buganker sauber setzen, Heckleinen zügig fahren.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4 – Hydra → Spetses (Baltiza/Alter Hafen)</h5>
+                <p className="text-sm text-muted-foreground">Genusssegeln mit Kulturstopp an Land. Im Baltiza Becken liegt man windarm; Dinghy parken, Altstadt bummeln.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5 – Spetses → Ermioni oder Porto Heli</h5>
+                <p className="text-sm text-muted-foreground">Kurze Verlegung zu gut geschützten Liegeplätzen. Ermioni bietet Promenade & Tavernen, Porto Heli viel Raum und ruhiges Wasser – ideal für Wassersport.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6 – Porto Heli/Ermioni → Palaia Epidavros (über Dokos optional)</h5>
+                <p className="text-sm text-muted-foreground">Wer mag, setzt einen Zwischenstopp auf Dokos zum Baden. Abends in Palaia Epidavros – Besuch des Kleinen Theaters und Spaziergang durch Orangenhaine.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7 – Palaia Epidavros → Athen/Alimos</h5>
+                <p className="text-sm text-muted-foreground">Rückschlag entlang der Küste. Rechtzeitig zum Fuel Dock, Check out – und der nächste Saronik Plan reift bereits.</p>
+              </div>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Varianten</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li>Argolischer Golf mit Nafplio (historische Altstadt, Festung Palamidi) bei stabilem Wetterfenster</li>
+                <li>Kurzrunden Aegina–Angistri–Poros für Crews mit Fokus auf Baden und Häfen</li>
+                <li>Katamaran Charter: Flache Buchten gewinnen; Schwojkreis und Nachbaryachten beachten</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Seemannschaft – Kurzcheck</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li>Wetterfenster täglich prüfen; Reffpunkte markieren, konservatives Trimm Setup bei Brise</li>
+                <li>Ankerdisziplin: Sandgrund wählen, Kette großzügig stecken, Halt per Rückwärtsfahrt testen, Ankeralarm setzen</li>
+                <li>Hafenmanöver: Buganker präzise fallen lassen, Heckleinen früh, Fender auf Arbeits- und Ruhehöhe; im Poros Kanal Fährverkehr & Sog beachten</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
+            <p className="text-lg leading-relaxed mb-4">
+              <strong>Überblick:</strong> Der Saronische Golf ist windmäßig gutmütiger als Kykladen und Dodekanes. Im Sommer setzt eine Nord- bis Nordostbrise ein, die über Mittag auffrischt und abends häufig abflaut. Früh- und Spätsaison bringen variable, meist schwächere Winde; gelegentlich weht eine leichte SE Thermik (Scirocco).
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Tagesgang (Sommer)</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Morgen:</strong> Häufig ruhig – ideal für Verlegemanöver, Proviant, Badestopp</li>
+                <li><strong>Mittag/Nachmittag:</strong> Aufbau der Brise; in Düsen (z. B. an Kaps/Engstellen) kurzzeitig kräftiger</li>
+                <li><strong>Abend/Nacht:</strong> Abflauen; in Lee Buchten sehr ruhige Nächte</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Lokale Effekte</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li>Fallböen an steilen Küsten (Hydra/Spetses) – Heckleinen straff, Fender korrekt</li>
+                <li>Strömungen & Sog im Poros Kanal durch Fährverkehr – Manöver vorher briefen</li>
+                <li>Gewitterfenster in Randzeiten – Radar/Barometer und Wetterbericht im Blick</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Vergleich zu anderen Revieren</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Ionisches Meer:</strong> ähnlich gutmütig, jedoch weiter westlich und im Hochsommer stark frequentiert; der Saronische Golf punktet mit Athen Nähe und mehr Kulturstopps</li>
+                <li><strong>Kykladen:</strong> frischer, exponierter; der Saronik ist die komfortorientierte Alternative mit moderater Brise und vielen All Weather Anchorages</li>
+                <li><strong>Dodekanes:</strong> sportlichere, längere Schläge; im Saronik überwiegen kürzere Etappen und dichter Inselschutz – ideal für Familien und Einsteiger</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Eignung nach Erfahrungsstufe</h4>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Einsteiger & Familien:</strong> Hervorragend geeignet in Mai/Juni und September/Oktober; viele sichere Häfen/Buchten, kurze Etappen</li>
+                <li><strong>Genusssegler:</strong> Planbare Brise, Kulinarik & Kultur (Hydra/Spetses/Epidavros), entspannte Häfen</li>
+                <li><strong>Ambitionierte Crews:</strong> Längere Schläge in den Argolischen Golf, Trimm-/Manövertraining in der Tagesbrise</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+            <p className="text-lg leading-relaxed mb-8">
+              Die beste Reisezeit für Yachtcharter Athen / Saronischer Golf liegt in Mai/Juni sowie September/Oktober: angenehme Temperaturen, verlässliche Tagesbrisen, entspannte Häfen. In Juli/August ist Hochsaison – Häfen wie Hydra werden früh voll; wer dann segelt, läuft rechtzeitig ein oder wählt Ankerbuchten mit Sandgrund und Landleinen.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
+            <p className="text-lg leading-relaxed mb-8">
+              Segeln im Saronischen Golf bedeutet mediterranes Cruising mit Komfortgarantie: kurze Schläge, geschützte Buchten, historische Highlights und lebendige Hafenpromenaden. Alimos bietet die größte Yachtauswahl und eingespielte Abläufe; Zea und Flisvos setzen auf urbanen Komfort direkt an der Athenischen Riviera. Wer Seemannschaft schätzt und Urlaubszeit mit viel Wasser, Kultur und Kulinarik füllen möchte, setzt hier den richtigen Kurs.
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Jetzt Yachtcharter Athen / Saronischer Golf anfragen</h4>
+              <p className="text-black">
+                Bereit für Ihren Törn ab Athen in den Saronischen Golf? Nennen Sie uns Crewgröße, Reisetermin und Wunsch Yachtklasse (Monohull oder Katamaran, Bareboat oder mit Skipper). Wir erstellen ein individuelles Angebot, organisieren Transfer und Proviantservice, reservieren Liegeplätze und liefern Routenempfehlungen passend zu Wind und Crewprofil – inklusive praxiserprobter Anlege- & Ankerei Tipps.
+              </p>
+              <p className="text-black font-semibold mt-3">
+                Jetzt unverbindlich anfragen – und die Leinen im Saronischen Golf lösen!
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Important Islands & Harbors */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Inseln & Häfen</h2>
