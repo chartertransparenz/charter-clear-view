@@ -162,6 +162,17 @@ const Cyclades = () => {
               Als Ausgangsbasis bieten sich vor allem die Region Athen mit der Alimos Marina (Kalamaki) und der Raum Lavrion an – mit dem Hafen Lavrion und der modernen Olympic Marine. Wer direkt „mittendrin" starten will, findet weitere Charteroptionen (weniger Auswahl, dafür kürzere Schläge in die Inselwelt) auf Mykonos, Paros und Syros. Egal von wo Sie ablegen: Die Kykladen sind ein Performance-Revier – ideal für Crews, die Segeln lieben und den Tag bewusst nach Windfenstern planen.
             </p>
 
+            <div className="my-8">
+              <img 
+                src="/lovable-uploads/83530afe-f741-44d5-b98c-ebd1c9aad6df.png" 
+                alt="Griechische Taverne am Meer" 
+                className="w-full rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-3 italic text-center">
+                Stellen Sie sich vor: Nach einem perfekten Segeltag den Abend in einer griechischen Taverne ausklingen lassen, die Stühle direkt am Meer, und das sanfte Plätschern der Wellen lauschen.
+              </p>
+            </div>
+
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 id="erreichbarkeit" className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
               <p className="text-black mb-3">So kommen Chartergäste bequem zu ihrer Yacht:</p>
