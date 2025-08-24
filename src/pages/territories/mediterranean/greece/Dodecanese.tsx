@@ -194,9 +194,19 @@ const Dodecanese = () => {
             </p>
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Symi – neoklassische Postkarte</h4>
-            <p className="mb-6">
-              Der Hafen Gialos ist eine steile Theaterkulisse aus pastellfarbenen Häusern. Bei Nordwind empfiehlt sich die große Panormitis-Bucht an der Südseite – ruhiger, mit dem berühmten Kloster direkt am Wasser.
-            </p>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/937d47eb-4c4f-422f-a083-8b6cee99f919.png" 
+                alt="Symi Hafen mit pastellfarbenen neoklassischen Häusern" 
+                className="w-full h-48 object-cover rounded-lg mb-3"
+              />
+              <p className="mb-3">
+                Symi im Dodekanes verführt mit pastellfarbenen neoklassischen Häuschen und glasklaren Buchten – ein Traumziel, um festzumachen, erkunden und relaxen.
+              </p>
+              <p>
+                Der Hafen Gialos ist eine steile Theaterkulisse aus pastellfarbenen Häusern. Bei Nordwind empfiehlt sich die große Panormitis-Bucht an der Südseite – ruhiger, mit dem berühmten Kloster direkt am Wasser.
+              </p>
+            </div>
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Nisyros – Vulkan & Fischercharme</h4>
             <p className="mb-6">
