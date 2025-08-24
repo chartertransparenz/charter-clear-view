@@ -298,6 +298,17 @@ const IonicIslands = () => {
               </div>
             </div>
 
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/c8c65ed0-67d5-4426-956e-aa67126c946f.png" 
+                alt="Der Navagio-Strand (Schiffbruchbucht) auf Zakynthos ist seit 2023 wegen bestätigter Erdrutschgefahr durch die umliegenden Klippen bis auf Weiteres gesperrt" 
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-gray-600 mt-2 text-center italic">
+                Der Navagio-Strand (Schiffbruchbucht) auf Zakynthos ist seit 2023 wegen bestätigter Erdrutschgefahr durch die umliegenden Klippen bis auf Weiteres gesperrt
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
             <p className="text-lg leading-relaxed mb-6">
               Die angenehmsten Monate für Yachtcharter auf den Ionischen Inseln sind im Allgemeinen Mai, Juni, September und Oktober. In diesen Zeiträumen treffen verlässliche Winde auf moderate Temperaturen und ein überschaubares touristisches Aufkommen.
