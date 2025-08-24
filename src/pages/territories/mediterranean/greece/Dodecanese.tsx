@@ -280,7 +280,7 @@ const Dodecanese = () => {
             {/* Ankerbuchten Bild */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/b7c37930-7412-4d3f-a6d6-7ee4ee320a82.png" 
+                src="/ankerbuchten-dodekanes.png" 
                 alt="Unzählige Ankerbuchten zwischen Leros, Lipsi und Arki" 
                 className="w-full h-64 object-cover rounded-lg mb-3"
               />
