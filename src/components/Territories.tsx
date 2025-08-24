@@ -37,7 +37,7 @@ const Territories = () => {
     rank: 2,
     flag: "🇬🇷",
     name: "Griechenland",
-    regions: "Kykladen, Saronischer Golf, Ionische Inseln, Dodekanes, Sporaden",
+    regions: "Kykladen, Ionische Inseln, Athen/Saronischer Golf, Dodekanes, Sporaden",
     highlights: ["Inselhopping mit Tavernen-Charme", "Konstante Meltemi-Winde (Sommer)", "Kultur & Natur vereint", "Ideal für Bareboat- oder Skippercharter"],
     image: "/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png",
     link: "/reviere/mittelmeer/griechenland"
