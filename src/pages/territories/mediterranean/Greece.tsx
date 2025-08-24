@@ -354,8 +354,7 @@ export default function Greece() {
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               <div className="border border-gray-200 p-4 rounded-lg">
                 <h5 className="font-semibold mb-2">Führerscheinpflicht</h5>
-                <p className="text-sm">Für eine Bareboat-Charter ist mindestens der Sportbootführerschein See (SBF See) 
-                oder ein international anerkanntes Äquivalent (z.B. ICC, RYA Day Skipper) erforderlich.</p>
+                <p className="text-sm">Für eine Yachtcharter ohne Skipper in Griechenland sind ein amtlicher, international anerkannter Segelschein (wie SKS oder ICC) für den Skipper, ein zweites erwachsenes Crewmitglied mit Segelerfahrung und ein SRC-Funkschein zwingend erforderlich.</p>
               </div>
               <div className="border border-gray-200 p-4 rounded-lg">
                 <h5 className="font-semibold mb-2">Funkzeugnis (SRC)</h5>
