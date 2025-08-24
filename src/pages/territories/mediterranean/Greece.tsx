@@ -139,7 +139,7 @@ export default function Greece() {
         <TerritoryMap 
           region="Griechenland" 
           center={{ lat: 38.5, lng: 22.5 }} 
-          zoom={4}
+          zoom={2}
           maptype="satellite"
             markers={[
               { lat: 37.9755, lng: 23.7348, name: 'Athen', description: 'Hauptstadt und Ausgangspunkt Saronischer Golf' },
