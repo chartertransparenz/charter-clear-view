@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const IonicIslands = () => {
@@ -108,9 +109,15 @@ const IonicIslands = () => {
             </div>)}
         </div>
 
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-12">
-          
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Ionisches Meer</h2>
+          <TerritoryMap
+            region="Ionisches Meer"
+            center={{ lat: 38.5, lng: 20.5 }}
+            zoom={7}
+            className="h-96"
+          />
         </div>
 
         {/* Cities */}
