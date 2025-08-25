@@ -134,11 +134,6 @@ const Cyclades = () => {
 
         {/* Map */}
         <div id="karte" className="mb-12">
-          
-          <TerritoryMap region="Kykladen Griechenland" center={{
-          lat: 37.1,
-          lng: 25.2
-        }} zoom={6} maptype="satellite" className="max-w-4xl mx-auto" />
         </div>
 
         {/* Google Maps */}
