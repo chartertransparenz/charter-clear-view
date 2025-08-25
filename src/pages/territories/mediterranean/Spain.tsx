@@ -141,7 +141,7 @@ const Spain = () => {
           <TerritoryMap
             region="Spanien Mittelmeer"
             center={{ lat: 39.5, lng: 3.0 }}
-            zoom={6}
+            zoom={7}
             maptype="satellite"
             className="h-96"
           />
