@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -284,8 +284,6 @@ const CostaSmeralda = () => {
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 };

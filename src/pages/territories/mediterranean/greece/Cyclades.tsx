@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationGreece from "@/assets/destination-greece.jpg";
@@ -390,8 +390,6 @@ const Cyclades = () => {
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>;
 };
 export default Cyclades;

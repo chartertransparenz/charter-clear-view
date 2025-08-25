@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
+
 
 const FAQPage = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const FAQPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <FAQ />
-      <Footer />
+      
     </div>
   );
 };

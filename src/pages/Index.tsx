@@ -6,7 +6,7 @@ import Fleet from "@/components/Fleet";
 import Territories from "@/components/Territories";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+
 import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
@@ -35,7 +35,7 @@ const Index = () => {
       <Fleet />
       <Partners />
       <Contact />
-      <Footer />
+      
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+
 
 export default function Impressum() {
   return (
@@ -84,7 +84,7 @@ export default function Impressum() {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

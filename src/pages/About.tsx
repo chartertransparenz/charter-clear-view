@@ -6,7 +6,7 @@ import qualityValue from "@/assets/quality-value.jpg";
 import trustValue from "@/assets/trust-value.jpg";
 import experienceValue from "@/assets/experience-value.jpg";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+
 
 const About = () => {
   const milestones = [
@@ -466,7 +466,7 @@ const About = () => {
         </section>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };
