@@ -153,8 +153,8 @@ const Spain = () => {
           <div className="max-w-4xl mx-auto">
             <TerritoryMap
               region="Spain"
-              center={{ lat: 39.5, lng: 1.5 }}
-              zoom={6}
+              center={{ lat: 40.26656693829653, lng: 2.4728794991747054 }}
+              zoom={5}
               maptype="satellite"
               className="h-96 rounded-lg shadow-lg"
             />
