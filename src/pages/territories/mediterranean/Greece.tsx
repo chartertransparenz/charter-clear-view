@@ -498,6 +498,140 @@ export default function Greece() {
           </div>
         </div>
 
+        {/* Greece Regions Navigation */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-8 text-center">Griechische Segelreviere entdecken</h3>
+          <p className="text-center text-muted-foreground mb-8">
+            Entdecken Sie die schönsten Segelreviere Griechenlands im Detail
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="group">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">
+                    Athen & Saronischer Golf
+                  </CardTitle>
+                  <CardDescription>
+                    Das entspannte Einstiegsrevier für Familien und Genießer
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between mb-3">
+                    <Badge variant="secondary">8 Marinas</Badge>
+                    <Badge variant="outline">Alle Levels</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Kurze Schläge zwischen charmanten Inseln wie Ägina, Poros, Hydra und Spetses.
+                  </p>
+                  <div className="text-xs text-muted-foreground">
+                    Highlights: Ägina • Poros • Hydra • Spetses • Methana
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/reviere/mittelmeer/griechenland/kykladen" className="group">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">
+                    Kykladen
+                  </CardTitle>
+                  <CardDescription>
+                    Sportliches Revier für erfahrene Segler und Abenteurer
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between mb-3">
+                    <Badge variant="secondary">15 Marinas</Badge>
+                    <Badge variant="outline">Fortgeschritten</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Klassische Ägäis mit Meltemi-Winden, weißen Häusern und türkisfarbenem Wasser.
+                  </p>
+                  <div className="text-xs text-muted-foreground">
+                    Highlights: Mykonos • Santorini • Paros • Naxos • Syros • Milos
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="group">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">
+                    Ionische Inseln
+                  </CardTitle>
+                  <CardDescription>
+                    Grünes Inselparadies für Familien und Genießer
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between mb-3">
+                    <Badge variant="secondary">12 Marinas</Badge>
+                    <Badge variant="outline">Alle Levels</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Entspanntes Segeln zwischen grünen Inseln mit venezianischem Charme.
+                  </p>
+                  <div className="text-xs text-muted-foreground">
+                    Highlights: Korfu • Lefkas • Kefalonia • Zakynthos • Ithaka • Paxi
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/reviere/mittelmeer/griechenland/dodekanes" className="group">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">
+                    Dodekanes
+                  </CardTitle>
+                  <CardDescription>
+                    Geschichtsträchtige Inseln zwischen Kreta und der Türkei
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between mb-3">
+                    <Badge variant="secondary">10 Marinas</Badge>
+                    <Badge variant="outline">Mittelstufe</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Reiche Geschichte, mittelalterliche Städte und kristallklares Wasser.
+                  </p>
+                  <div className="text-xs text-muted-foreground">
+                    Highlights: Rhodos • Kos • Symi • Patmos • Leros • Kalymnos
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/reviere/mittelmeer/griechenland/sporaden" className="group">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">
+                    Sporaden
+                  </CardTitle>
+                  <CardDescription>
+                    Ursprüngliches Naturrevier für Ruhesuchende
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center justify-between mb-3">
+                    <Badge variant="secondary">6 Marinas</Badge>
+                    <Badge variant="outline">Alle Levels</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Unberührte Natur, Pinienwälder und ruhige Buchten abseits der Touristenströme.
+                  </p>
+                  <div className="text-xs text-muted-foreground">
+                    Highlights: Skiathos • Skopelos • Alonnisos • Skyros
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+
         {/* Highlights */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Warum Griechenland?</h2>
