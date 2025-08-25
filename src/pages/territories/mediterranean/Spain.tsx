@@ -200,19 +200,19 @@ const Spain = () => {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Westküste (Serra de Tramuntana)</h5>
                 <p className="text-sm text-gray-600">Cala Deià, Cala Tuent – spektakuläre Felskulissen, nur vom Meer erreichbar</p>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-green-500">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Südküste</h5>
                 <p className="text-sm text-gray-600">Es Trenc, Cala Pi – endlose Sandstrände mit karibischem Flair</p>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-purple-500">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Ostküste</h5>
                 <p className="text-sm text-gray-600">Cala Varques, Cala Mitjana – türkisfarbene Buchten, perfekt zum Ankern</p>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-orange-500">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Südwesten</h5>
                 <p className="text-sm text-gray-600">Cala Llamp, Port d'Andratx – exklusive Atmosphäre und Gourmet-Restaurants</p>
               </div>
