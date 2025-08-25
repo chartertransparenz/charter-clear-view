@@ -22,7 +22,7 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   region,
   center,
   zoom = 10,
-  maptype = 'roadmap',
+  maptype = 'satellite',
   markers = [],
   className = ""
 }) => {
