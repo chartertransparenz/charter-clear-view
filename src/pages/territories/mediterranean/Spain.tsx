@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -126,6 +127,16 @@ const Spain = () => {
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <TerritoryMap
+            region="Spanische Mittelmeerküste"
+            center={{ lat: 40.9103314, lng: 5.896745 }}
+            zoom={5}
+            maptype="satellite"
+          />
         </div>
 
         {/* Description */}
