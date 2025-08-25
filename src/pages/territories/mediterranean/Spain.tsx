@@ -129,6 +129,24 @@ const Spain = () => {
           ))}
         </div>
 
+        {/* Google Maps */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Spanische Mittelmeerküste</h2>
+          <div className="max-w-4xl mx-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1574403.4089999856!2d5.896745!3d40.9103314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sde!4v1703123456789!5m2!1sen!2sde&z=5"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-lg shadow-lg"
+              title="Spanische Mittelmeerküste"
+            ></iframe>
+          </div>
+        </div>
+
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
