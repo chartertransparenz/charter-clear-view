@@ -144,7 +144,7 @@ const Cyclades = () => {
         {/* Google Maps */}
         <div className="max-w-4xl mx-auto mb-12">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498536.8825978616!2d24.5346699!3d37.6101426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a77b07688bd3c1%3A0x44e4f32503f9dc99!2sCyclades%2C%20Greece!5e1!3m2!1sen!2s!4v1635780000000!5m2!1sen!2s&z=9"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498536.8825978616!2d24.5346699!3d37.6101426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a77b07688bd3c1%3A0x44e4f32503f9dc99!2sCyclades%2C%20Greece!5e1!3m2!1sen!2s!4v1635780000000!5m2!1sen!2s&z=9&iwloc=&output=embed"
             width="100%" 
             height="400" 
             style={{ border: 0 }} 
