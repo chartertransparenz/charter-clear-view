@@ -190,7 +190,7 @@ const Italy = () => {
               Die Toskana verbindet seglerischen Komfort mit Kultur und dem Toskanischen Archipel: Elba, Giglio, Giannutri, Capraia, Montecristo, Pianosa, Gorgona. Nördlich schließt die italienische Riviera (Ligurien) an – mit den Ikonen Portofino und Cinque Terre.
             </p>
             <p className="mb-6">
-              <strong>Warum hier chartern?</strong> Überschaubare Etappen, viele Lee Buchten, sandiger Grund (Elba/„Golfi"), solide Marinas und Sightseeing vom Feinsten – Pisa, Lucca, Florenz an Land; auf dem Wasser die grün granitenen Inseln mit kristallklaren Ankerplätzen.
+              Warum hier chartern? Überschaubare Etappen, viele Lee Buchten, sandiger Grund (Elba/„Golfi"), solide Marinas und Sightseeing vom Feinsten – Pisa, Lucca, Florenz an Land; auf dem Wasser die grün granitenen Inseln mit kristallklaren Ankerplätzen.
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -203,8 +203,8 @@ const Italy = () => {
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Inseln des Toskanischen Archipels</h4>
             <ul className="list-disc pl-6 space-y-3 mb-6">
-              <li><strong>Elba:</strong> Die „Miniatur Sardinien" der Toskana: Portoferraio (Naturhafen), Marciana Marina, Marina di Campo, Porto Azzurro. Süd/Westküste mit vielen Sandbuchten (guter Halt), Nordküste klar und felsiger.</li>
-              <li><strong>Giglio:</strong> Malerisch, mit Giglio Porto und Buchten an der West/Südseite; bei Schwell aus W/SW ausweichen.</li>
+              <li><strong>Elba:</strong> Die „Miniatur Sardinien" der Toskana: Portoferraio (Naturhafen), Marciana Marina, Marina di Campo, Porto Azzurro. Süd /Westküste mit vielen Sandbuchten (guter Halt), Nordküste klar und felsiger.</li>
+              <li><strong>Giglio:</strong> Malerisch, mit Giglio Porto und Buchten an der West /Südseite; bei Schwell aus W/SW ausweichen.</li>
               <li><strong>Giannutri:</strong> Klein, fast karibisch klar; teils Schutzbestimmungen – Moorings nutzen, Ankern limitiert.</li>
               <li><strong>Capraia:</strong> Vulkanische Insel nördlich von Elba; Porto im Osten, wilde Buchten im Westen – bei Ponente exponiert.</li>
               <li><strong>Montecristo/Pianosa/Gorgona:</strong> Streng geschützte Inseln – teils nur mit Genehmigung/organisiertem Besuch, für Charter i. d. R. Transit aus Distanz.</li>
@@ -261,7 +261,7 @@ const Italy = () => {
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Tropea (Kalabrien)</h4>
             <p className="mb-6">
-              Südlich der Amalfiküste an der Stiefelspitze: weiße Strände, türkisfarbene Buchten, Marina di Tropea als Ausgangspunkt Richtung Stromboli/Aeolische – ideal für Motor/Katamaran Hopper, die „viel Baden, wenig Transfer" schätzen.
+              Südlich der Amalfiküste an der Stiefelspitze: weiße Strände, türkisfarbene Buchten, Marina di Tropea als Ausgangspukt Richtung Stromboli/Aeolische – ideal für Motor/Katamaran Hopper, die „viel Baden, wenig Transfer" schätzen.
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -269,7 +269,7 @@ const Italy = () => {
               <ul className="list-disc pl-6 space-y-1 text-black">
                 <li><strong>Einsteiger & Genießer:</strong> Ja – bei guter Planung/Reservierung und Fokus auf Lee Buchten.</li>
                 <li><strong>Ambitionierte:</strong> Kombinationen Neapel → Ponza/Ventotene; Tropea → Stromboli.</li>
-                <li><strong>Motor & Daycruiser:</strong> Paradies für Scenic Cruising mit vielen Foto/Bade Stops.</li>
+                <li><strong>Motor & Daycruiser:</strong> Paradies für Scenic Cruising mit vielen Foto /Bade Stops.</li>
               </ul>
             </div>
 
@@ -321,7 +321,7 @@ const Italy = () => {
               <p className="text-sm text-muted-foreground">Caprera → La Maddalena (Moorings) → Spargi/Budelli (Regeln beachten) → Santa Teresa/Bonifacio Bucht (Wetterfenster) → Tavolara/Marine Protected Area → Golfo Aranci → Cala di Volpe/Costa Smeralda → Rückkehr.</p>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Yachtcharter Sizilien & Äolische/Liparische Inseln</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Yachtcharter Sizilien &  Äolische/Liparische Inseln</h3>
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Profil & Besonderheiten</h4>
             <p className="mb-6">
@@ -375,21 +375,18 @@ const Italy = () => {
               <li><strong>Gebühren & Bojen:</strong> Städtische Kais sind oft günstiger, private Marinas teurer (Hochsaison beachten). In Schutzgebieten (z. B. Maddalena, Egadi, Aeolische Spots) gibt es Mooringfelder/Bojenpflicht und teils Parkgebühren.</li>
               <li><strong>Proviant/Diesel/Wasser:</strong> Dichte Versorgung in allen Regionen; Fuel Docks in größeren Häfen, Tankwagen in Inselorten. Wasser oft inklusive, in der Hochsaison kontingentiert – Tanks rechtzeitig füllen.</li>
               <li><strong>Ankern & Schutzgebiete:</strong> Küstenschutz beachten, AMP (Area Marina Protetta) studieren. In manchen Zonen ist Ankern untersagt, Moorings nutzen.</li>
-              <li><strong>Navigation:</strong> Gute Leuchtfeuerdichte; aufmerksam bei Fähr/Hydrofoil Routen (z. B. Neapel, Capri, Lipari), Fischfarmen (Tyrrhenisches Meer) und lokalen Düseneffekten.</li>
+              <li><strong>Navigation:</strong> Gute Leuchtfeuerdichte; aufmerksam bei Fähr /Hydrofoil Routen (z. B. Neapel, Capri, Lipari), Fischfarmen (Tyrrhenisches Meer) und lokalen Düseneffekten.</li>
               <li><strong>Motor & Katamaran:</strong> Katamarane profitieren in Flachwasserbuchten, sind bei Mistral/Libeccio exponierter – früh Reffs ziehen und Lee Ankerplätze planen. Motoryachten lieben die kurzen Hop On Hop Off Distanzen und die Dichte an Day Use Buchten.</li>
             </ul>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Wind (Tyrrhenisches & Ionisches Italien)</h3>
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Windverhältnisse</h4>
-              <ul className="list-disc pl-6 space-y-2 text-black">
-                <li><strong>Sommer:</strong> Dominanz von Thermik/Seewind am Nachmittag (W–NW/„Ponente"), morgens oft ruhig – ideal für Bade und Verlegestunden. Lokale Starkwindlagen durch Mistral (NW, v. a. Sardinien/NW Korsika), Libeccio (SW), Grecale (NE) und Scirocco (SE).</li>
-                <li><strong>Frühjahr/Herbst:</strong> Variabler, gelegentlich Frontdurchgänge – dafür leere Häfen und milde Temperaturen.</li>
-                <li><strong>Seegang:</strong> Im Inselschutz meist moderat; an offenen Leeküsten (Sardinien West, Sizilien Süd/West) kann kurzer, steiler Schwell stehen.</li>
-                <li><strong>Gewitterfenster:</strong> V. a. spätsommerlich; Radar/Nowcast checken, All Weather Anchorages bereithalten.</li>
-                <li><strong>Spezial:</strong> Straße von Messina (Sizilien) mit Strömungen; lokale Katabatik an Steilhängen (Amalfi, Portofino, Lipari Inseln).</li>
-              </ul>
-            </div>
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Sommer:</strong> Dominanz von Thermik/Seewind am Nachmittag (W–NW/„Ponente"), morgens oft ruhig – ideal für Bade  und Verlegestunden. Lokale Starkwindlagen durch Mistral (NW, v. a. Sardinien/NW Korsika), Libeccio (SW), Grecale (NE) und Scirocco (SE).</li>
+              <li><strong>Frühjahr/Herbst:</strong> Variabler, gelegentlich Frontdurchgänge – dafür leere Häfen und milde Temperaturen.</li>
+              <li><strong>Seegang:</strong> Im Inselschutz meist moderat; an offenen Leeküsten (Sardinien West, Sizilien Süd/West) kann kurzer, steiler Schwell stehen.</li>
+              <li><strong>Gewitterfenster:</strong> V. a. spätsommerlich; Radar/Nowcast checken, All Weather Anchorages bereithalten.</li>
+              <li><strong>Spezial:</strong> Straße von Messina (Sizilien) mit Strömungen; lokale Katabatik an Steilhängen (Amalfi, Portofino, Lipari Inseln).</li>
+            </ul>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Vergleich der Regionen (auf einen Blick)</h3>
             <ul className="list-disc pl-6 space-y-3 mb-6">
@@ -399,106 +396,82 @@ const Italy = () => {
               <li><strong>Sizilien:</strong> Vulkan Abenteuer & Inselketten; je nach Sektor von gemütlich (Egadi/Lee) bis anspruchsvoll (Stromboli/Offenwasser).</li>
             </ul>
 
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Beste Reisezeit</h4>
-              <ul className="list-disc pl-6 space-y-1 text-black">
-                <li><strong>Mai–Juni & September–Oktober:</strong> Ideale Monate: verlässliche Brisen, angenehme Temperaturen, moderate Belegung.</li>
-                <li><strong>Juli–August:</strong> Hochsaison – Häfen früh voll, Preise hoch; Ankerbuchten wählen, Moorings vorbuchen, frühe Abfahrten planen.</li>
-                <li><strong>Frühjahr/Spätherbst:</strong> Ruhiger, variabler Wind – perfekte Zeit für Genießer und Fotografen.</li>
-              </ul>
-            </div>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Mai–Juni & September–Oktober:</strong> Ideale Monate: verlässliche Brisen, angenehme Temperaturen, moderate Belegung.</li>
+              <li><strong>Juli–August:</strong> Hochsaison – Häfen früh voll, Preise hoch; Ankerbuchten wählen, Moorings vorbuchen, frühe Abfahrten planen.</li>
+              <li><strong>Frühjahr/Spätherbst:</strong> Ruhiger, variabler Wind – perfekte Zeit für Genießer und Fotografen.</li>
+            </ul>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Sicherheit & Seemannschaft (Checkliste)</h3>
             <ul className="list-disc pl-6 space-y-3 mb-6">
               <li><strong>Wetter & Routenplanung:</strong> Täglicher Forecast (inkl. Starkwindwarnungen), Plan B Häfen je Schlag, Zeitpuffer.</li>
               <li><strong>Ankerdisziplin:</strong> Sand bevorzugen, Kettenlänge großzügig, Halt per Rückwärtsfahrt prüfen, Ankeralarm.</li>
               <li><strong>Hafenmanöver:</strong> Muringleinen, Spring setzen, Fenderhöhen variieren (Stege/Molen).</li>
-              <li><strong>Crewbriefing:</strong> Rollen, Handzeichen, Sonnen/Hitzemanagement, Dinghy Regeln, Nachtmanöver nur mit eingespielter Crew.</li>
-              <li><strong>Schutzgebiete:</strong> AMP Karten studieren, Bojenpflicht/„No Anchor" respektieren, Müll/Abwasserdisziplin leben.</li>
+              <li><strong>Crewbriefing:</strong> Rollen, Handzeichen, Sonnen /Hitzemanagement, Dinghy Regeln, Nachtmanöver nur mit eingespielter Crew.</li>
+              <li><strong>Schutzgebiete:</strong> AMP Karten studieren, Bojenpflicht/„No Anchor" respektieren, Müll /Abwasserdisziplin leben.</li>
             </ul>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
-            <p className="text-lg leading-relaxed mb-6">
+            <p className="mb-6">
               Eine Yachtcharter in Italien bedeutet Vielfalt auf engem Raum: von den Sandbuchten Elbas über die Filmkulissen der Amalfiküste, die Smaragdbecken Sardiniens bis zu den Vulkaninseln Siziliens. Jede Region hat ihre eigene Dramaturgie – von komfortablem Inselhüpfen bis zu ambitionierten Schlägen über offenes Wasser. Ob Segelyacht, Katamaran oder Motoryacht: Wer Genuss, Natur und Seemannschaft verbinden will, setzt Kurs auf Italien.
             </p>
-            <p className="text-lg leading-relaxed mb-6">
-              <strong>Jetzt anfragen:</strong> Teilen Sie uns Crewgröße, Reisezeit und gewünschte Yachtklasse mit – wir erstellen ein maßgeschneidertes Angebot, organisieren Transfer, Proviantservice, empfehlen Lee Routen je Wetterlage und reservieren Marinas oder Moorings.
+            <p className="mb-6">
+              Jetzt anfragen: Teilen Sie uns Crewgröße, Reisezeit und gewünschte Yachtklasse mit – wir erstellen ein maßgeschneidertes Angebot, organisieren Transfer, Proviantservice, empfehlen Lee Routen je Wetterlage und reservieren Marinas oder Moorings.
             </p>
-            <p className="text-lg leading-relaxed font-medium">
+            <p className="mb-6 font-medium">
               Dolce vita trifft blaues Wasser – der Rest ist Ihr Logbucheintrag :)
             </p>
           </div>
         </div>
 
-        {/* Regions */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                        {region.name}
-                      </h3>
+        {/* Regions Cards */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
+          {regions.map((region, index) => (
+            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">{region.name}</h3>
+                <p className="text-muted-foreground mb-4">{region.description}</p>
+                {region.cities && (
+                  <div className="mb-4">
+                    <div className="flex flex-wrap gap-2">
+                      {region.cities.map((city, cityIndex) => (
+                        <Badge key={cityIndex} variant="secondary" className="text-xs">
+                          {city}
+                        </Badge>
+                      ))}
                     </div>
-                    <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.slice(0, 6).map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
-                            • {city}
-                          </div>
-                        ))}
-                        {region.cities.length > 6 && (
-                          <div className="text-sm text-gray-500 italic">
-                            +{region.cities.length - 6} weitere
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
+                  </div>
+                )}
+                <Link to={region.link}>
+                  <Button variant="outline" className="w-full">
+                    Mehr erfahren
+                    <ChevronRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Warum Italien chartern?
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2">
             {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
+              <div key={index} className="flex items-center p-4 bg-white rounded-lg shadow">
+                <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                <span>{highlight}</span>
               </div>
             ))}
           </div>
         </div>
-
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Bereit für italienisches Dolce Vita?
-            </h3>
-            <p className="mb-6 text-blue-100">
-              Entdecken Sie die vielfältigen Segelreviere Italiens mit ihrer 
-              einzigartigen Mischung aus Kultur, Küche und traumhaften Küsten.
-            </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Italien Charter anfragen
-              </Button>
-            </CharterRequestForm>
-          </div>
-        </div>
       </div>
+      
+      {/* Charter Request Form */}
+      <CharterRequestForm />
     </div>
   );
 };
