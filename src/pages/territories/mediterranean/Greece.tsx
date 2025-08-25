@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
@@ -10,79 +9,74 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
-
 export default function Greece() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: 'Region', value: 'Ägäis & Ionisches Meer' },
-    { icon: Clock, label: 'Beste Zeit', value: 'April - Oktober' },
-    { icon: Users, label: 'Geeignet für', value: 'Alle Levels' },
-    { icon: Anchor, label: 'Inseln', value: '6.000+ Inseln' },
-    { icon: Wind, label: 'Windverhältnisse', value: 'Meltemi ideal' },
-    { icon: Sun, label: 'Sonnentage', value: '300+ pro Jahr' }
-  ];
-
-  const regions = [
-    {
-      name: 'Saronischer Golf',
-      description: 'Entspanntes Einstiegsrevier für Genießer und Familien',
-      marinas: 8,
-      highlights: ['Ägina', 'Poros', 'Hydra', 'Spetses', 'Methana']
-    },
-    {
-      name: 'Kykladen',
-      description: 'Sportliches Revier für erfahrene Segler und Abenteurer',
-      marinas: 15,
-      highlights: ['Mykonos', 'Santorini', 'Paros', 'Naxos', 'Syros', 'Milos']
-    },
-    {
-      name: 'Ionische Inseln',
-      description: 'Grünes Inselparadies für Familien und Genießer',
-      marinas: 12,
-      highlights: ['Korfu', 'Lefkas', 'Kefalonia', 'Zakynthos', 'Ithaka', 'Paxi']
-    },
-    {
-      name: 'Dodekanes',
-      description: 'Geschichtsträchtige Inseln zwischen Kreta und Türkei',
-      marinas: 10,
-      highlights: ['Rhodos', 'Kos', 'Symi', 'Patmos', 'Leros', 'Kalymnos']
-    },
-    {
-      name: 'Sporaden',
-      description: 'Ursprüngliches Naturrevier für Ruhesuchende',
-      marinas: 6,
-      highlights: ['Skiathos', 'Skopelos', 'Alonnisos', 'Skyros']
-    },
-    {
-      name: 'Nordgriechenland',
-      description: 'Geheimtipp für Individualisten und Entdecker',
-      marinas: 5,
-      highlights: ['Thessaloniki', 'Chalkidiki', 'Kavala', 'Alexandroupoli']
-    }
-  ];
-
-  const highlights = [
-    'Über 6.000 Inseln und Inselchen',
-    'Konstante Meltemi-Winde',
-    'Authentische griechische Tavernen',
-    'Kristallklares türkises Wasser',
-    'Reiche antike Geschichte',
-    'UNESCO-Weltkulturerbe Stätten',
-    'Perfekte Segelbedingungen',
-    'Mediterrane Gastfreundschaft'
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const quickFacts = [{
+    icon: MapPin,
+    label: 'Region',
+    value: 'Ägäis & Ionisches Meer'
+  }, {
+    icon: Clock,
+    label: 'Beste Zeit',
+    value: 'April - Oktober'
+  }, {
+    icon: Users,
+    label: 'Geeignet für',
+    value: 'Alle Levels'
+  }, {
+    icon: Anchor,
+    label: 'Inseln',
+    value: '6.000+ Inseln'
+  }, {
+    icon: Wind,
+    label: 'Windverhältnisse',
+    value: 'Meltemi ideal'
+  }, {
+    icon: Sun,
+    label: 'Sonnentage',
+    value: '300+ pro Jahr'
+  }];
+  const regions = [{
+    name: 'Saronischer Golf',
+    description: 'Entspanntes Einstiegsrevier für Genießer und Familien',
+    marinas: 8,
+    highlights: ['Ägina', 'Poros', 'Hydra', 'Spetses', 'Methana']
+  }, {
+    name: 'Kykladen',
+    description: 'Sportliches Revier für erfahrene Segler und Abenteurer',
+    marinas: 15,
+    highlights: ['Mykonos', 'Santorini', 'Paros', 'Naxos', 'Syros', 'Milos']
+  }, {
+    name: 'Ionische Inseln',
+    description: 'Grünes Inselparadies für Familien und Genießer',
+    marinas: 12,
+    highlights: ['Korfu', 'Lefkas', 'Kefalonia', 'Zakynthos', 'Ithaka', 'Paxi']
+  }, {
+    name: 'Dodekanes',
+    description: 'Geschichtsträchtige Inseln zwischen Kreta und Türkei',
+    marinas: 10,
+    highlights: ['Rhodos', 'Kos', 'Symi', 'Patmos', 'Leros', 'Kalymnos']
+  }, {
+    name: 'Sporaden',
+    description: 'Ursprüngliches Naturrevier für Ruhesuchende',
+    marinas: 6,
+    highlights: ['Skiathos', 'Skopelos', 'Alonnisos', 'Skyros']
+  }, {
+    name: 'Nordgriechenland',
+    description: 'Geheimtipp für Individualisten und Entdecker',
+    marinas: 5,
+    highlights: ['Thessaloniki', 'Chalkidiki', 'Kavala', 'Alexandroupoli']
+  }];
+  const highlights = ['Über 6.000 Inseln und Inselchen', 'Konstante Meltemi-Winde', 'Authentische griechische Tavernen', 'Kristallklares türkises Wasser', 'Reiche antike Geschichte', 'UNESCO-Weltkulturerbe Stätten', 'Perfekte Segelbedingungen', 'Mediterrane Gastfreundschaft'];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-cover bg-top" style={{
-        backgroundImage: 'url(/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png)'
-      }}>
+      backgroundImage: 'url(/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png)'
+    }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
@@ -124,33 +118,46 @@ export default function Greece() {
       <div className="container mx-auto px-4 py-16">
         {/* Quick Facts */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
-          {quickFacts.map((fact, index) => (
-            <Card key={index} className="text-center">
+          {quickFacts.map((fact, index) => <Card key={index} className="text-center">
               <CardContent className="p-4">
                 <fact.icon className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">{fact.label}</p>
                 <p className="font-semibold">{fact.value}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Territory Map */}
         <div className="mb-16">
-        <TerritoryMap 
-          region="Griechenland" 
-          center={{ lat: 38.5, lng: 22.5 }} 
-          zoom={2}
-          maptype="satellite"
-            markers={[
-              { lat: 37.9755, lng: 23.7348, name: 'Athen', description: 'Hauptstadt und Ausgangspunkt Saronischer Golf' },
-              { lat: 39.6243, lng: 19.9217, name: 'Korfu', description: 'Tor zu den Ionischen Inseln' },
-              { lat: 37.4467, lng: 25.3289, name: 'Mykonos', description: 'Herz der Kykladen' },
-              { lat: 36.3932, lng: 25.4615, name: 'Santorini', description: 'Spektakuläre Caldera' },
-              { lat: 36.4411, lng: 28.2220, name: 'Rhodos', description: 'Hauptinsel der Dodekanes' }
-            ]} 
-            className="max-w-4xl mx-auto" 
-          />
+        <TerritoryMap region="Griechenland" center={{
+          lat: 38.5,
+          lng: 22.5
+        }} zoom={2} maptype="satellite" markers={[{
+          lat: 37.9755,
+          lng: 23.7348,
+          name: 'Athen',
+          description: 'Hauptstadt und Ausgangspunkt Saronischer Golf'
+        }, {
+          lat: 39.6243,
+          lng: 19.9217,
+          name: 'Korfu',
+          description: 'Tor zu den Ionischen Inseln'
+        }, {
+          lat: 37.4467,
+          lng: 25.3289,
+          name: 'Mykonos',
+          description: 'Herz der Kykladen'
+        }, {
+          lat: 36.3932,
+          lng: 25.4615,
+          name: 'Santorini',
+          description: 'Spektakuläre Caldera'
+        }, {
+          lat: 36.4411,
+          lng: 28.2220,
+          name: 'Rhodos',
+          description: 'Hauptinsel der Dodekanes'
+        }]} className="max-w-4xl mx-auto" />
         </div>
 
         {/* Detailed Region Description */}
@@ -466,8 +473,7 @@ export default function Greece() {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelreviere</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {regions.map((region, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {regions.map((region, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -484,17 +490,14 @@ export default function Greece() {
                       Highlights
                     </h4>
                     <ul className="space-y-1">
-                      {region.highlights.map((highlight, idx) => (
-                        <li key={idx} className="text-sm text-muted-foreground flex items-center">
+                      {region.highlights.map((highlight, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-center">
                           <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
                           {highlight}
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -504,146 +507,19 @@ export default function Greece() {
           <p className="text-center text-muted-foreground mb-8">
             Entdecken Sie die schönsten Segelreviere Griechenlands im Detail
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="group">
-              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    Athen & Saronischer Golf
-                  </CardTitle>
-                  <CardDescription>
-                    Das entspannte Einstiegsrevier für Familien und Genießer
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary">8 Marinas</Badge>
-                    <Badge variant="outline">Alle Levels</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Kurze Schläge zwischen charmanten Inseln wie Ägina, Poros, Hydra und Spetses.
-                  </p>
-                  <div className="text-xs text-muted-foreground">
-                    Highlights: Ägina • Poros • Hydra • Spetses • Methana
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-
-            <Link to="/reviere/mittelmeer/griechenland/kykladen" className="group">
-              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    Kykladen
-                  </CardTitle>
-                  <CardDescription>
-                    Sportliches Revier für erfahrene Segler und Abenteurer
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary">15 Marinas</Badge>
-                    <Badge variant="outline">Fortgeschritten</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Klassische Ägäis mit Meltemi-Winden, weißen Häusern und türkisfarbenem Wasser.
-                  </p>
-                  <div className="text-xs text-muted-foreground">
-                    Highlights: Mykonos • Santorini • Paros • Naxos • Syros • Milos
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-
-            <Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="group">
-              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    Ionische Inseln
-                  </CardTitle>
-                  <CardDescription>
-                    Grünes Inselparadies für Familien und Genießer
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary">12 Marinas</Badge>
-                    <Badge variant="outline">Alle Levels</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Entspanntes Segeln zwischen grünen Inseln mit venezianischem Charme.
-                  </p>
-                  <div className="text-xs text-muted-foreground">
-                    Highlights: Korfu • Lefkas • Kefalonia • Zakynthos • Ithaka • Paxi
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-
-            <Link to="/reviere/mittelmeer/griechenland/dodekanes" className="group">
-              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    Dodekanes
-                  </CardTitle>
-                  <CardDescription>
-                    Geschichtsträchtige Inseln zwischen Kreta und der Türkei
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary">10 Marinas</Badge>
-                    <Badge variant="outline">Mittelstufe</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Reiche Geschichte, mittelalterliche Städte und kristallklares Wasser.
-                  </p>
-                  <div className="text-xs text-muted-foreground">
-                    Highlights: Rhodos • Kos • Symi • Patmos • Leros • Kalymnos
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-
-            <Link to="/reviere/mittelmeer/griechenland/sporaden" className="group">
-              <Card className="h-full hover:shadow-lg transition-all duration-300 group-hover:scale-105">
-                <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    Sporaden
-                  </CardTitle>
-                  <CardDescription>
-                    Ursprüngliches Naturrevier für Ruhesuchende
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary">6 Marinas</Badge>
-                    <Badge variant="outline">Alle Levels</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Unberührte Natur, Pinienwälder und ruhige Buchten abseits der Touristenströme.
-                  </p>
-                  <div className="text-xs text-muted-foreground">
-                    Highlights: Skiathos • Skopelos • Alonnisos • Skyros
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          </div>
+          
         </div>
 
         {/* Highlights */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Warum Griechenland?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="text-center hover:shadow-md transition-shadow">
+            {highlights.map((highlight, index) => <Card key={index} className="text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
                   <Star className="w-6 h-6 mx-auto mb-3 text-primary" />
                   <p className="text-sm">{highlight}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -726,6 +602,5 @@ export default function Greece() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
