@@ -25,10 +25,14 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   className = ""
 }) => {
   console.log('TerritoryMap rendering with:', { region, center, zoom, maptype, className });
-  // Create simple Google Maps Embed URL
+  // Create Google Maps Embed URL with proper parameters
   const createMapUrl = () => {
-    const url = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8!2d${center.lng}!3d${center.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDMwJzAwLjAiTiAxMsKwMzAnMDAuMCJF!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde&z=${zoom}`;
+    // Convert maptype to Google Maps format
+    const mapTypeParam = maptype === 'satellite' ? '1' : '0';
+    
+    const url = `https://www.google.com/maps/embed/v1/view?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&center=${center.lat},${center.lng}&zoom=${zoom}&maptype=${maptype}`;
     console.log('Generated map URL:', url);
+    console.log('Using coordinates:', center, 'zoom:', zoom, 'maptype:', maptype);
     return url;
   };
   console.log('About to render TerritoryMap component');
