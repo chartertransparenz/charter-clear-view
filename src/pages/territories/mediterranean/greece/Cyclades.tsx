@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationGreece from "@/assets/destination-greece.jpg";
@@ -106,24 +105,26 @@ const Cyclades = () => {
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => {
-            const getAnchorLink = (label) => {
-              switch(label) {
-                case "Lage": return "#karte";
-                case "Beste Zeit": return "#beste-reisezeit";
-                case "Geeignet für": return "#fazit";
-                case "Besonderheit": return "#wetter-windbedingungen";
-                default: return "#";
-              }
-            };
-            
-            return (
-              <a key={index} href={getAnchorLink(fact.label)} className="block bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer">
+          const getAnchorLink = label => {
+            switch (label) {
+              case "Lage":
+                return "#karte";
+              case "Beste Zeit":
+                return "#beste-reisezeit";
+              case "Geeignet für":
+                return "#fazit";
+              case "Besonderheit":
+                return "#wetter-windbedingungen";
+              default:
+                return "#";
+            }
+          };
+          return <a key={index} href={getAnchorLink(fact.label)} className="block bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer">
                 <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
                 <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
                 <p className="text-sm text-gray-600">{fact.value}</p>
-              </a>
-            );
-          })}
+              </a>;
+        })}
         </div>
 
         {/* Description */}
@@ -133,14 +134,11 @@ const Cyclades = () => {
 
         {/* Map */}
         <div id="karte" className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte der Kykladen</h2>
-          <TerritoryMap
-            region="Kykladen Griechenland"
-            center={{ lat: 37.1, lng: 25.2 }}
-            zoom={6}
-            maptype="satellite"
-            className="max-w-4xl mx-auto"
-          />
+          
+          <TerritoryMap region="Kykladen Griechenland" center={{
+          lat: 37.1,
+          lng: 25.2
+        }} zoom={6} maptype="satellite" className="max-w-4xl mx-auto" />
         </div>
 
         {/* Detailed Territory Description */}
@@ -162,11 +160,7 @@ const Cyclades = () => {
             </p>
 
             <div className="my-8">
-              <img 
-                src="/lovable-uploads/83530afe-f741-44d5-b98c-ebd1c9aad6df.png" 
-                alt="Griechische Taverne am Meer" 
-                className="w-full rounded-lg shadow-lg"
-              />
+              <img src="/lovable-uploads/83530afe-f741-44d5-b98c-ebd1c9aad6df.png" alt="Griechische Taverne am Meer" className="w-full rounded-lg shadow-lg" />
               <p className="text-sm text-muted-foreground mt-3 italic text-center">
                 Stellen Sie sich vor: Nach einem perfekten Segeltag den Abend in einer griechischen Taverne ausklingen lassen, die Stühle direkt am Meer, und das sanfte Plätschern der Wellen lauschen.
               </p>
@@ -187,11 +181,7 @@ const Cyclades = () => {
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
               
               <div className="my-6">
-                <img 
-                  src="/lovable-uploads/963358b3-7cad-4b57-aadf-4cea2f3470ef.png" 
-                  alt="Hafen mit Muringleinen auf Milos" 
-                  className="w-full rounded-lg shadow-lg"
-                />
+                <img src="/lovable-uploads/963358b3-7cad-4b57-aadf-4cea2f3470ef.png" alt="Hafen mit Muringleinen auf Milos" className="w-full rounded-lg shadow-lg" />
                 <p className="text-sm text-muted-foreground mt-3 italic text-center">
                   Hafen mit Muringleinen auf der Insel Milos.
                 </p>
@@ -254,11 +244,7 @@ const Cyclades = () => {
             </p>
             
             <div className="my-8">
-              <img 
-                src="/lovable-uploads/72d6a75d-c97b-4b2e-b4e6-d0f739d31830.png" 
-                alt="Sonnenuntergang über Mykonos mit Windmühlen" 
-                className="w-full rounded-lg shadow-lg"
-              />
+              <img src="/lovable-uploads/72d6a75d-c97b-4b2e-b4e6-d0f739d31830.png" alt="Sonnenuntergang über Mykonos mit Windmühlen" className="w-full rounded-lg shadow-lg" />
               <p className="text-sm text-muted-foreground mt-3 italic text-center">
                 Lust auf einen atemberaubenden Sonnenuntergang über den sanften Hügeln des griechischen Dorfes Mykonos, wo die farbenfrohe Altstadt und die ikonischen historischen Windmühlen in goldenes Licht getaucht werden?
               </p>
