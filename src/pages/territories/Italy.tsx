@@ -75,12 +75,7 @@ const Italy = () => {
         {/* Quick Facts */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <div className="text-orange-500 mb-2">
-                {index === 0 && <MapPin className="w-6 h-6 mx-auto" />}
-                {index === 1 && <Sun className="w-6 h-6 mx-auto" />}
-                {index === 2 && <Anchor className="w-6 h-6 mx-auto" />}
-                {index === 3 && <Star className="w-6 h-6 mx-auto" />}
-              </div>
+              
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
             </div>)}
@@ -156,7 +151,7 @@ const Italy = () => {
                 </p>
                 <div className="ml-4 space-y-4">
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800 mb-2">Die Nordküste & die Liparischen (Äolischen) Inseln</h4>
+                    
                     <p className="text-gray-600">
                       Von Portorosa oder Milazzo aus ist es nur ein kurzer Schlag zu den sieben vulkanischen Perlen des Archipels. 
                       Jede Insel hat ihren eigenen Charakter: das grüne Salina, das mondäne Panarea, das schwefelig duftende Vulcano 
