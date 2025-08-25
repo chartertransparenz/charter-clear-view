@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -143,6 +144,20 @@ const Spain = () => {
               Menorcas bis hin zur kosmopolitischen Atmosphäre Palmas - 
               Spanien vereint mediterrane Leidenschaft mit erstklassigen Segelbedingungen.
             </p>
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte der Region</h2>
+          <div className="max-w-4xl mx-auto">
+            <TerritoryMap
+              region="Spain"
+              center={{ lat: 39.5, lng: 1.5 }}
+              zoom={6}
+              maptype="satellite"
+              className="h-96 rounded-lg shadow-lg"
+            />
           </div>
         </div>
 
