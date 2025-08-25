@@ -6,61 +6,46 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import destinationItaly from "@/assets/destination-italy.jpg";
-
 const Italy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { label: "Lage", value: "Mittelmeer" },
-    { label: "Beste Zeit", value: "April - Oktober" },
-    { label: "Geeignet für", value: "Alle Segelerfahrungen" },
-    { label: "Besonderheit", value: "Dolce Vita & Kultur" }
-  ];
-
-  const regions = [
-    {
-      name: "Sardinien & Costa Smeralda",
-      bases: ["Olbia", "Portisco", "Cannigione"],
-      description: "Exklusive Buchten, kristallklares Wasser und mondäne Häfen"
-    },
-    {
-      name: "Elba & Toskanischer Archipel", 
-      bases: ["Portoferraio", "Marina di Campo"],
-      description: "Napoleons Exil-Insel mit charmanten Küstenstädten"
-    },
-    {
-      name: "Sizilien & Liparische Inseln",
-      bases: ["Palermo", "Catania", "Lipari"],
-      description: "Vulkanische Landschaften und authentische italienische Kultur"
-    },
-    {
-      name: "Amalfiküste & Golf von Neapel",
-      bases: ["Salerno", "Castellammare"],
-      description: "Spektakuläre Küstenlandschaft und romantische Atmosphäre"
-    }
-  ];
-
-  const highlights = [
-    "Exzellente italienische Küche",
-    "Wunderschöne Küstenlandschaften", 
-    "Reiche Geschichte und Kultur",
-    "Kristallklares Wasser",
-    "Abwechslungsreiche Routen",
-    "Gastfreundliche Marinas"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    label: "Lage",
+    value: "Mittelmeer"
+  }, {
+    label: "Beste Zeit",
+    value: "April - Oktober"
+  }, {
+    label: "Geeignet für",
+    value: "Alle Segelerfahrungen"
+  }, {
+    label: "Besonderheit",
+    value: "Dolce Vita & Kultur"
+  }];
+  const regions = [{
+    name: "Sardinien & Costa Smeralda",
+    bases: ["Olbia", "Portisco", "Cannigione"],
+    description: "Exklusive Buchten, kristallklares Wasser und mondäne Häfen"
+  }, {
+    name: "Elba & Toskanischer Archipel",
+    bases: ["Portoferraio", "Marina di Campo"],
+    description: "Napoleons Exil-Insel mit charmanten Küstenstädten"
+  }, {
+    name: "Sizilien & Liparische Inseln",
+    bases: ["Palermo", "Catania", "Lipari"],
+    description: "Vulkanische Landschaften und authentische italienische Kultur"
+  }, {
+    name: "Amalfiküste & Golf von Neapel",
+    bases: ["Salerno", "Castellammare"],
+    description: "Spektakuläre Küstenlandschaft und romantische Atmosphäre"
+  }];
+  const highlights = ["Exzellente italienische Küche", "Wunderschöne Küstenlandschaften", "Reiche Geschichte und Kultur", "Kristallklares Wasser", "Abwechslungsreiche Routen", "Gastfreundliche Marinas"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png"
-          alt="Italien Segelrevier"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png" alt="Italien Segelrevier" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">
@@ -72,15 +57,13 @@ const Italy = () => {
             Sardinien, Elba, Sizilien & Amalfiküste - Dolce Vita auf dem Wasser
           </p>
         </div>
-        <Link 
-          to="/" 
-          className="absolute top-6 left-6"
-          onClick={() => {
-            setTimeout(() => {
-              document.getElementById('reviere')?.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-          }}
-        >
+        <Link to="/" className="absolute top-6 left-6" onClick={() => {
+        setTimeout(() => {
+          document.getElementById('reviere')?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }, 100);
+      }}>
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
@@ -91,8 +74,7 @@ const Italy = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="text-orange-500 mb-2">
                 {index === 0 && <MapPin className="w-6 h-6 mx-auto" />}
                 {index === 1 && <Sun className="w-6 h-6 mx-auto" />}
@@ -101,47 +83,12 @@ const Italy = () => {
               </div>
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Main Introduction */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Yachtcharter Italien: Ihr Traumtörn an den schönsten Küsten des Mittelmeers</h2>
-            
-            <div className="space-y-4 text-lg text-gray-600">
-              <p>
-                Segeln Sie mit uns ins Herz des Mittelmeers und erleben Sie „La Dolce Vita" an Bord einer modernen Yacht. 
-                Italien, das Land der antiken Mythen, der pulsierenden Kultur und der unvergleichlichen Kulinarik, 
-                entfaltet vom Wasser aus seinen ganzen Zauber. Ein Yachtcharter in Italien ist mehr als nur ein Urlaub – 
-                es ist eine Entdeckungsreise für die Seele, ein Abenteuer für den erfahrenen Skipper und ein 
-                unvergessliches Erlebnis für die ganze Familie.
-              </p>
-              
-              <p>
-                Stellen Sie sich vor: Sie lichten den Anker in einer sonnenverwöhnten Marina, die Segel füllen sich 
-                mit einer sanften Brise und vor Ihnen liegt das endlose Blau des Tyrrhenischen oder Ionischen Meeres. 
-                Jeder Tag bringt neue Horizonte: malerische Fischerdörfer, deren pastellfarbene Häuser sich an steile 
-                Klippen schmiegen, einsame Ankerbuchten mit kristallklarem Wasser, das zum Schnorcheln einlädt, und 
-                historische Hafenstädte, in denen die Spuren der Römer, Griechen und Normannen noch heute lebendig sind.
-              </p>
-              
-              <p>
-                Von der rauen Schönheit der Toskana mit der geschichtsträchtigen Insel Elba, über die glamouröse 
-                Amalfiküste und die vulkanischen Wunder der Liparischen Inseln bis hin zum karibisch anmutenden 
-                Archipel von La Maddalena vor der Küste Sardiniens – Italien bietet eine nautische Vielfalt, 
-                die ihresgleichen sucht. Ob Sie einen sportlichen Segeltörn auf einer modernen Monohull-Yacht planen, 
-                entspanntes Inselhopping mit einem geräumigen Katamaran bevorzugen oder die Küste mit einer schnellen 
-                Motoryacht erkunden möchten – bei uns finden Sie das perfekte Schiff für Ihren Törn.
-              </p>
-              
-              <p className="font-semibold text-gray-800">
-                Entdecken Sie mit uns die faszinierendsten Segelreviere Italiens und lassen Sie sich von der Magie 
-                dieses Landes verzaubern. Benvenuti a bordo!
-              </p>
-            </div>
-          </div>
+          
         </div>
 
         {/* Segelreviere Detail */}
@@ -424,12 +371,10 @@ const Italy = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
+            {highlights.map((highlight, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
                 <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
                 <span className="text-gray-800">{highlight}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -437,22 +382,18 @@ const Italy = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+            {regions.map((region, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">{region.name}</h3>
                 <p className="text-gray-600 mb-4">{region.description}</p>
                 <div className="space-y-2">
                   <h4 className="font-medium text-gray-800">Stützpunkte:</h4>
                   <div className="flex flex-wrap gap-2">
-                    {region.bases.map((base, idx) => (
-                      <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
+                    {region.bases.map((base, idx) => <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
                         {base}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -474,8 +415,6 @@ const Italy = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Italy;
