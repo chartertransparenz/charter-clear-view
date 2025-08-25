@@ -129,16 +129,6 @@ const Spain = () => {
           ))}
         </div>
 
-        {/* Map */}
-        <div className="mb-12">
-          <TerritoryMap
-            region="Spanische Mittelmeerküste"
-            center={{ lat: 40.9103314, lng: 5.896745 }}
-            zoom={5}
-            maptype="satellite"
-          />
-        </div>
-
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -154,6 +144,20 @@ const Spain = () => {
               Menorcas bis hin zur kosmopolitischen Atmosphäre Palmas - 
               Spanien vereint mediterrane Leidenschaft mit erstklassigen Segelbedingungen.
             </p>
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte der Region</h2>
+          <div className="max-w-4xl mx-auto">
+            <TerritoryMap
+              region="Spain"
+              center={{ lat: 39.5, lng: 1.5 }}
+              zoom={6}
+              maptype="satellite"
+              className="h-96 rounded-lg shadow-lg"
+            />
           </div>
         </div>
 
