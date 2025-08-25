@@ -158,12 +158,14 @@ const Italy = () => {
         </div>
 
         {/* Territory Map */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-4xl mx-auto mb-12 border-2 border-red-500">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Karte von Italien</h2>
           <TerritoryMap 
             region="Italien"
             center={{ lat: 42.5, lng: 12.5 }}
             zoom={5}
             maptype="satellite"
+            className="min-h-[400px]"
           />
         </div>
 
