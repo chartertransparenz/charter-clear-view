@@ -31,10 +31,10 @@ const Spain = () => {
   }, []);
 
   const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Westliches Mittelmeer" },
-    { icon: Calendar, label: "Beste Zeit", value: "Ganzjährig" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Vielfältige Reviere" }
+    { icon: MapPin, label: "Lage", value: "Westliches Mittelmeer", link: "#marinas-ausgangshaefen" },
+    { icon: Calendar, label: "Beste Zeit", value: "Ganzjährig", link: "#beste-reisezeit" },
+    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen", link: "#warum-spanien-klassiker" },
+    { icon: Anchor, label: "Besonderheit", value: "Vielfältige Reviere", link: "#wetter-windbedingungen" }
   ];
 
   const regions = [
@@ -127,209 +127,220 @@ const Spain = () => {
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <a key={index} href={fact.link} className="block bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow cursor-pointer">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
+            </a>
           ))}
         </div>
 
-        {/* Google Maps */}
+        {/* Territory Map */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Spanische Mittelmeerküste</h2>
-          <div className="max-w-4xl mx-auto">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1574403.4089999856!2d5.896745!3d40.9103314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sde!4v1703123456789!5m2!1sen!2sde&z=5"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-lg shadow-lg"
-              title="Spanische Mittelmeerküste"
-            ></iframe>
-          </div>
+          <TerritoryMap
+            region="Spanien Mittelmeer"
+            center={{ lat: 39.5, lng: 3.0 }}
+            zoom={6}
+            maptype="satellite"
+            className="h-96"
+          />
         </div>
 
-        {/* Main Content */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h1 className="text-4xl font-bold text-gray-800 mb-6">Yachtcharter Spanien: Ihr Traumtörn zwischen Balearen-Glamour, Atlantik-Abenteuer und Costa Brava-Charme</h1>
-            
-            <p className="text-lg text-gray-600 mb-6">
-              Spanien – ein Land, das mit seiner unvergleichlichen Lebensfreude, seiner reichen Kultur und seiner atemberaubenden Vielfalt begeistert. Doch Spanien ist auch ein Seglerparadies par excellence, das mit Tausenden von Kilometern Küstenlinie und einem beeindruckenden Spektrum an Revieren lockt. Ein Yachtcharter in Spanien ist eine Einladung, dieses facettenreiche Land von seiner schönsten Seite zu entdecken: vom Wasser aus.
+        {/* Detailed Territory Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Spanien: Balearen & Mittelmeerküste</h2>
+            <p className="text-xl text-muted-foreground">
+              Ihr Segeltörn im westlichen Mittelmeer
+            </p>
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <h3 id="warum-spanien-klassiker" className="text-2xl font-bold mt-8 mb-4">Warum Spanien ein Segelklassiker ist</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Spanien vereint wie kein anderes Land die perfekte Balance zwischen mediterranem Lifestyle, erstklassiger nautischer Infrastruktur und endloser Vielfalt. Die Balearen bilden das Herzstück des spanischen Chartererlebnisses – mit Mallorca als zentralem Dreh- und Angelpunkt für unvergessliche Segeltörns. Hier finden Sie alles, was das Seglerherz begehrt: beständige Winde, kristallklare Buchten, weltklasse Marinas und das unvergleichliche spanische Lebensgefühl.
             </p>
             
-            <p className="text-lg text-gray-600 mb-6">
-              Von den sonnenverwöhnten Buchten der Balearen über die wilden Küsten der Costa Brava bis hin zu den passatwindverwöhnten Inseln der Kanaren im Atlantik – Spanien bietet für jeden Geschmack und jede Erfahrungsstufe das passende Segelabenteuer. Kristallklares Wasser, berühmte Strände, exzellente Marinas, charmante Altstädte und eine einzigartige Mischung aus Glamour und entspanntem Lebensgefühl erwarten Sie. Tauchen Sie ein in die spanische Lebensart und lassen Sie sich von der Freiheit des Meeres verzaubern.
-            </p>
-            
-            <p className="text-lg text-gray-600 mb-8">
-              Unser Hauptfokus liegt auf den Balearen, die mit ihrer mediterranen Schönheit und ihrer hervorragenden Infrastruktur das Herzstück des spanischen Yachtcharters bilden. Insbesondere Mallorca, die größte der Inseln, ist ein zentraler Dreh- und Angelpunkt für unvergessliche Segeltörns.
+            <p className="text-lg leading-relaxed mb-6">
+              Von Palma de Mallorca aus erschließt sich Ihnen ein Archipel aus vier Hauptinseln – Mallorca, Ibiza, Menorca und Formentera – jede mit eigenem Charakter. Kurze Distanzen zwischen den Inseln, perfekte Ankerbuchten und eine Infrastruktur, die keine Wünsche offen lässt, machen die Balearen zum idealen Revier für Einsteiger wie Profis. Das ganzjährig milde Klima ermöglicht Segelsaison von März bis November.
             </p>
 
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Die Balearen: Das Herzstück des mediterranen Segelns</h2>
-            
-            <p className="text-lg text-gray-600 mb-6">
-              Die Balearen – Mallorca, Ibiza, Menorca und Formentera – sind der Inbegriff des mediterranen Segeltraums. Sie bieten eine perfekte Kombination aus beständigen Sommerwinden, einer hervorragenden Infrastruktur und unzähligen Möglichkeiten für unvergessliche Landgänge. Jede Insel hat ihren eigenen, unverwechselbaren Charakter und lädt dazu ein, entdeckt zu werden.
+            <p className="text-lg leading-relaxed mb-8">
+              Mallorcas Hauptstadt Palma überzeugt mit modernen Charterbasen, professionellem Service und einem reibungslosen Check-in. Nach dem Ablegen erwarten Sie über 200 Buchten und Strände, von den dramatischen Klippen der Serra de Tramuntana bis zu den türkisfarbenen Lagunen von Formentera. Spanien ist mehr als nur Segeln – es ist Lifestyle, Kultur und pure Lebensfreude auf höchstem Niveau.
             </p>
 
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Mallorca: Die Königin der Balearen – Ihr zentraler Dreh- und Angelpunkt</h3>
-            
-            <p className="text-lg text-gray-600 mb-4">
-              Mallorca, die größte der Baleareninseln, ist das wichtigste Charterziel in Spanien und das aus gutem Grund. Die Insel bietet eine schier unglaubliche Vielfalt an Landschaften, von den majestätischen Bergen der Serra de Tramuntana im Westen bis zu den weiten Sandstränden im Osten und Süden.
-            </p>
-
-            <h4 className="text-xl font-semibold text-gray-800 mb-3">Ihre Ausgangsbasen auf Mallorca:</h4>
-            <p className="text-lg text-gray-600 mb-4">
-              Die meisten Yachtcharter auf Mallorca beginnen in der Inselhauptstadt Palma. Die Stadt verfügt über mehrere erstklassige Marinas, darunter die Marina Palma, Real Club Náutico de Palma und Port de Mallorca, die eine ausgezeichnete Infrastruktur und eine breite Auswahl an Charteryachten bieten. Palma selbst ist eine pulsierende Metropole mit einer beeindruckenden Kathedrale, charmanten Gassen, exquisiten Restaurants und einem lebhaften Nachtleben.
-            </p>
-
-            <div className="bg-blue-50 p-6 rounded-lg mb-6">
-              <h5 className="font-semibold text-gray-800 mb-3">Weitere beliebte Ausgangshäfen sind:</h5>
-              <ul className="space-y-2 text-gray-700">
-                <li><strong>Port d'Andratx:</strong> Ein malerischer Naturhafen im Südwesten, bekannt für sein exklusives Flair und seine hervorragenden Fischrestaurants.</li>
-                <li><strong>Portocolom:</strong> Ein idyllischer Naturhafen an der Ostküste, der eine entspannte Atmosphäre bietet und ein guter Ausgangspunkt für die Erkundung der südöstlichen Buchten ist.</li>
-                <li><strong>Alcúdia:</strong> Im Norden der Insel gelegen, ist Alcúdia ein idealer Startpunkt, um die nördliche Küste und das Cap Formentor zu erkunden.</li>
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Erreichbarkeit</h4>
+              <p className="text-black mb-3">So reisen Chartergäste bequem nach Mallorca:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Flughafen Palma (PMI):</strong> Direktflüge aus Deutschland, Österreich und der Schweiz</li>
+                <li><strong>Transfer zur Marina:</strong> 15-30 Minuten vom Flughafen zu den Charterbasen</li>
+                <li><strong>Mietwagen & Taxi:</strong> Flughafentransfer problemlos verfügbar</li>
+                <li><strong>Perfekte Infrastruktur:</strong> Supermärkte, Restaurants und Services in Hafennähe</li>
               </ul>
             </div>
 
-            <h4 className="text-xl font-semibold text-gray-800 mb-3">Chartermöglichkeiten auf Mallorca:</h4>
-            <p className="text-lg text-gray-600 mb-4">Die Auswahl an Charteryachten auf Mallorca ist riesig und deckt jeden Bedarf ab:</p>
-            
-            <ul className="space-y-3 text-gray-700 mb-6">
-              <li><strong>Segelyachten (Monohulls):</strong> Von sportlichen Performance-Yachten bis zu komfortablen Fahrtenyachten, ideal für klassisches Segelvergnügen.</li>
-              <li><strong>Katamarane:</strong> Perfekt für Familien und Gruppen, die Wert auf viel Platz, Stabilität und Komfort legen. Katamarane eignen sich hervorragend für das Ankern in flachen Buchten.</li>
-              <li><strong>Motoryachten:</strong> Für alle, die schnell von Bucht zu Bucht wechseln und in kurzer Zeit viele Highlights sehen möchten.</li>
-            </ul>
+            <div id="marinas-ausgangshaefen" className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
+              <p className="text-black mb-3">Die Balearen verfügen über erstklassige maritime Infrastruktur:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Marina Palma:</strong> Modernste Charter-Homebase mit breiten Boxen und Full-Service</li>
+                <li><strong>Real Club Náutico Palma:</strong> Traditionsreiche Marina im Herzen der Altstadt</li>
+                <li><strong>Port d'Andratx:</strong> Exklusiver Naturhafen im Südwesten Mallorcas</li>
+                <li><strong>Marina Ibiza:</strong> Glamouröse Basis für One-Way-Törns zwischen den Inseln</li>
+              </ul>
+            </div>
 
-            <h4 className="text-xl font-semibold text-gray-800 mb-3">Die Vielfalt der Buchten und Strände:</h4>
-            <p className="text-lg text-gray-600 mb-4">
-              Mallorca ist berühmt für seine über 200 Buchten und Strände, die von feinen Sandstränden bis zu felsigen Calas reichen.
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Die Vielfalt der Balearen</h3>
+            
+            <h4 className="text-xl font-semibold mt-6 mb-4">Mallorca – Buchten für jeden Geschmack</h4>
+            <p className="mb-4">
+              Mallorca bietet über 200 Buchten und Strände – von dramatischen Felsenküsten bis zu karibisch anmutenden Sandbuchten:
             </p>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Südwesten</h5>
-                <p className="text-sm text-gray-600">Exklusive Buchten wie die Cala Llamp oder die Cala Marmassen.</p>
-              </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500">
                 <h5 className="font-semibold mb-2">Westküste (Serra de Tramuntana)</h5>
-                <p className="text-sm text-gray-600">Dramatische Felsformationen und kleine, oft nur vom Meer aus zugängliche Buchten wie die Cala Deià oder die Cala Tuent.</p>
+                <p className="text-sm text-gray-600">Cala Deià, Cala Tuent – spektakuläre Felskulissen, nur vom Meer erreichbar</p>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-green-500">
                 <h5 className="font-semibold mb-2">Südküste</h5>
-                <p className="text-sm text-gray-600">Weite Sandstrände wie Es Trenc mit karibischem Flair und geschützte Buchten wie die Cala Pi.</p>
+                <p className="text-sm text-gray-600">Es Trenc, Cala Pi – endlose Sandstrände mit karibischem Flair</p>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h5 className="font-semibold mb-2">Osten</h5>
-                <p className="text-sm text-gray-600">Zahlreiche Calas mit türkisfarbenem Wasser, ideal zum Ankern und Schwimmen, z.B. Cala Varques, Cala Mitjana oder die Cala d'Or.</p>
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-purple-500">
+                <h5 className="font-semibold mb-2">Ostküste</h5>
+                <p className="text-sm text-gray-600">Cala Varques, Cala Mitjana – türkisfarbene Buchten, perfekt zum Ankern</p>
               </div>
-            </div>
-
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Die anderen Balearen: Ibiza, Menorca und Formentera</h3>
-            
-            <p className="text-lg text-gray-600 mb-6">
-              Jede der anderen Baleareninseln hat ihren eigenen Reiz und ist ein lohnendes Ziel für einen Yachtcharter.
-            </p>
-
-            <div className="space-y-6 mb-8">
-              <div className="border-l-4 border-blue-500 pl-6">
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">Ibiza: Die weiße Insel mit vielen Facetten</h4>
-                <p className="text-gray-600 mb-3">
-                  Ibiza ist weltberühmt für sein pulsierendes Nachtleben, aber die Insel hat auch eine überraschend ruhige und natürliche Seite.
-                </p>
-                <ul className="text-gray-600 space-y-1">
-                  <li><strong>Besonderheiten:</strong> Neben den berühmten Beach Clubs und Diskotheken bietet Ibiza unzählige wunderschöne Buchten mit türkisblauem Wasser, Pinienwäldern und charmanten Dörfern. Die Altstadt von Ibiza-Stadt (Dalt Vila) ist UNESCO-Weltkulturerbe.</li>
-                  <li><strong>Ankerplätze:</strong> Beliebte Ankerplätze sind die Cala Salada, Cala Conta für spektakuläre Sonnenuntergänge, oder die ruhigere Cala Jondal.</li>
-                </ul>
-              </div>
-
-              <div className="border-l-4 border-green-500 pl-6">
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">Formentera: Die Karibik des Mittelmeers</h4>
-                <p className="text-gray-600 mb-3">
-                  Formentera ist die kleinste bewohnte Baleareninsel und ein wahres Naturparadies.
-                </p>
-                <ul className="text-gray-600 space-y-1">
-                  <li><strong>Besonderheiten:</strong> Bekannt für ihre puderzuckerweißen Strände und das unglaublich klare, türkisfarbene Wasser, das an die Karibik erinnert. Die Insel ist flach und ideal zum Radfahren.</li>
-                  <li><strong>Ankerplätze:</strong> Die Playa de Ses Illetes ist ein ikonischer Ankerplatz, aber auch die Cala Saona oder die Bucht von Es Pujols sind sehr beliebt.</li>
-                </ul>
-              </div>
-
-              <div className="border-l-4 border-purple-500 pl-6">
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">Menorca: Die ruhige Schönheit</h4>
-                <p className="text-gray-600 mb-3">
-                  Menorca ist die östlichste und zweitgrößte Baleareninsel, bekannt für ihre unberührte Natur und ihre entspannte Atmosphäre.
-                </p>
-                <ul className="text-gray-600 space-y-1">
-                  <li><strong>Besonderheiten:</strong> Menorca wurde von der UNESCO zum Biosphärenreservat erklärt und bietet eine Fülle von unberührten Stränden (Calas) und eine reiche Flora und Fauna.</li>
-                  <li><strong>Ankerplätze:</strong> Die Südküste Menorcas ist gesäumt von atemberaubenden Calas wie Cala Macarella, Cala Mitjana oder Cala Turqueta.</li>
-                </ul>
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-orange-500">
+                <h5 className="font-semibold mb-2">Südwesten</h5>
+                <p className="text-sm text-gray-600">Cala Llamp, Port d'Andratx – exklusive Atmosphäre und Gourmet-Restaurants</p>
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Wind- und Wetterbedingungen auf den Balearen</h3>
-            
-            <p className="text-lg text-gray-600 mb-4">
-              Das Klima auf den Balearen ist typisch mediterran mit heißen, trockenen Sommern und milden Wintern. Die Segelsaison erstreckt sich von April bis in den späten Oktober.
+            <h4 className="text-xl font-semibold mt-6 mb-4">Ibiza – Zwischen Party und Natur</h4>
+            <p className="mb-6">
+              Ibiza vereint pulsierendes Nachtleben mit ursprünglicher Natur. Die UNESCO-Weltkulturerbe-Altstadt Dalt Vila steht im Kontrast zu weltberühmten Beach Clubs. Cala Salada und Cala Conta bieten spektakuläre Sonnenuntergänge, während Cala Jondal für entspannte Momente sorgt.
             </p>
 
-            <div className="bg-yellow-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-gray-800 mb-3">Wind- und Wetterbedingungen:</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li><strong>Sommerwinde:</strong> Im Sommer dominieren thermische Winde (Land- und Seebrisen), die tagsüber für moderate und zuverlässige Segelbedingungen (3-4 Bft) sorgen und nachts oft einschlafen.</li>
-                <li><strong>Tramontana:</strong> Ein Nordwind, der vor allem in den Übergangszeiten (Frühling, Herbst) kräftiger auftreten kann, besonders an der Nordküste Mallorcas und Menorcas.</li>
-                <li><strong>Beste Reisezeit:</strong> Die idealen Monate für einen Yachtcharter auf den Balearen sind Mai, Juni und September. Im Juli und August ist Hochsaison mit sehr hohen Temperaturen und maximalem Andrang.</li>
+            <h4 className="text-xl font-semibold mt-6 mb-4">Formentera – Karibik des Mittelmeers</h4>
+            <p className="mb-6">
+              Die kleinste bewohnte Baleareninsel bezaubert mit puderzuckerweißen Stränden und türkisfarbenem Wasser. Playa de Ses Illetes gilt als einer der schönsten Strände Europas, während Cala Saona und Es Pujols perfekte Ankerplätze bieten.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Menorca – UNESCO-Biosphärenreservat</h4>
+            <p className="mb-6">
+              Menorca überrascht mit unberührter Natur und entspannter Atmosphäre. Die Südküste ist gesäumt von Traumstränden wie Cala Macarella, Cala Mitjana und Cala Turqueta – allesamt perfekt zum Ankern und Schwimmen.
+            </p>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Nautische Hinweise:</strong> Die Balearen bieten verlässliche thermische Winde (3-4 Bft) und kurze Distanzen zwischen den Inseln. Ankern mit Buganker in Sand- oder Sandbuchten ist Standard.</p>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Ihr 7-Tage-Traumtörn ab Marina Palma</h3>
+            <p className="mb-4 font-medium">Ein perfekter Mix aus Segelspaß, Buchten-Hopping und spanischem Lifestyle:</p>
+            
+            <div className="space-y-3 mb-8">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1: Palma → Port d'Andratx</h5>
+                <p className="text-sm text-muted-foreground">Sanfter Einstieg entlang der Südwestküste. Ankunft im eleganten Naturhafen, Dinner in einem der berühmten Fischrestaurants.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2: Andratx → Cala Llamp → Dragonera</h5>
+                <p className="text-sm text-muted-foreground">Morgens in der exklusiven Cala Llamp ankern, nachmittags zur Dragonera-Insel mit spektakulären Schnorchelplätzen.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3: Dragonera → Cala Deià</h5>
+                <p className="text-sm text-muted-foreground">Entlang der dramatischen Tramuntana-Küste zur malerischen Cala Deià. Besuch des Künstlerdorfs Deià optional.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4: Cala Deià → Formentera (Ses Illetes)</h5>
+                <p className="text-sm text-muted-foreground">Längerer Schlag zur "Karibik des Mittelmeers". Ankern vor dem traumhaften Strand von Ses Illetes.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5: Formentera → Ibiza (Cala Conta)</h5>
+                <p className="text-sm text-muted-foreground">Kurzer Übergang nach Ibiza. Nachmittag in der Cala Conta mit berühmten Sonnenuntergang, abends Dalt Vila erkunden.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6: Ibiza → Es Trenc (Mallorca)</h5>
+                <p className="text-sm text-muted-foreground">Rückkehr nach Mallorca zum legendären Es Trenc Strand. Entspannter Badetag in karibischer Atmosphäre.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7: Es Trenc → Palma</h5>
+                <p className="text-sm text-muted-foreground">Gemütliche Rückreise nach Palma. Check-out und letzter Stadtbummel durch die historische Altstadt.</p>
+              </div>
+            </div>
+
+            <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen: Perfekte Segelbedingungen</h3>
+            <p className="mb-4">
+              Die Balearen bieten typisch mediterranes Klima mit verlässlichen thermischen Winden und ganzjährig milden Temperaturen – ideal für entspanntes Segeln in allen Erfahrungsstufen.
+            </p>
+            
+            <div className="border border-gray-300 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold mb-3 text-black">Typische Winde</h4>
+              <p className="text-black mb-3">Die lokalen Windsysteme der Balearen:</p>
+              <ul className="space-y-2 text-black">
+                <li><strong>Thermische Winde:</strong> Verlässliche Land- und Seebrisen (3-4 Bft), 
+                ideal für entspanntes Segeln mit der ganzen Familie.</li>
+                <li><strong>Tramontana:</strong> Nordwind in den Übergangszeiten, besonders an den 
+                Nordküsten von Mallorca und Menorca.</li>
+                <li><strong>Maestral:</strong> Angenehmer Nordwestwind an den Sommerabenden, 
+                perfekt für entspannte Ankerplätze.</li>
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Costa Brava: Wilde Küste im Nordosten Spaniens</h3>
-            
-            <p className="text-lg text-gray-600 mb-4">
-              Die Costa Brava, die „wilde Küste", erstreckt sich im Nordosten Spaniens von Blanes bis zur französischen Grenze. Sie ist ein abwechslungsreiches, wenn auch kleineres Charterrevier, das sich durch seine felsige Küste, tief eingeschnittene Buchten und die Nähe zu Barcelona auszeichnet.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Die Kanaren: Segelabenteuer im ewigen Frühling</h3>
-            
-            <p className="text-lg text-gray-600 mb-4">
-              Die Kanarischen Inseln, im Atlantik vor der Küste Afrikas gelegen, bieten ein ganzjährig mildes Klima und sind ein Paradies für Segler, die das sportliche Segeln lieben und das Spiel mit den Elementen suchen.
-            </p>
-
-            <div className="bg-red-50 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold text-gray-800 mb-3">Besonderheiten des Segelns auf den Kanaren:</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li><strong>Passatwinde:</strong> Die Kanaren sind berühmt für ihre beständigen Nordost-Passatwinde, die für hervorragende Segelbedingungen sorgen.</li>
-                <li><strong>Tidenhub:</strong> Im Gegensatz zum Mittelmeer gibt es hier einen spürbaren Tidenhub, der bei der Törnplanung berücksichtigt werden muss.</li>
-                <li><strong>Anspruchsvollere See:</strong> Der Atlantik kann rauer sein als das Mittelmeer, was das Revier für erfahrene Skipper besonders reizvoll macht.</li>
-                <li><strong>Vulkanische Landschaften:</strong> Die Inseln sind vulkanischen Ursprungs und bieten spektakuläre, oft mondähnliche Landschaften.</li>
+            <div id="beste-reisezeit" className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Beste Reisezeit</h4>
+              <p className="text-black mb-3">Wann ist die optimale Zeit für Ihren Spanien-Charter:</p>
+              <ul className="space-y-2 text-black">
+                <li><strong>Mai & Juni:</strong> Perfekte Temperaturen, weniger überfüllt, 
+                zuverlässige Winde für ideales Segeln.</li>
+                <li><strong>September & Oktober:</strong> Angenehme Wassertemperaturen, 
+                entspannte Atmosphäre nach der Hochsaison.</li>
+                <li><strong>Juli & August:</strong> Hochsaison mit viel Leben, aber auch 
+                höchsten Preisen und Temperaturen um 30°C.</li>
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Fazit: Spanien – Ein Segeltraum für jeden Anspruch</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Weitere spanische Segelreviere</h3>
             
-            <p className="text-lg text-gray-600 mb-6">
-              Ein Yachtcharter in Spanien ist ein Versprechen für einen unvergesslichen Urlaub. Ob Sie das glamouröse Flair der Balearen suchen, die unberührte Natur der Costa Brava erleben möchten oder das Abenteuer der Kanarischen Inseln bevorzugen – Spanien bietet eine unvergleichliche Vielfalt an Segelrevieren. Die Kombination aus vielseitigen Segelbedingungen, traumhaften Landschaften, spanischer Gastfreundschaft und einer modernen maritimen Infrastruktur macht jeden Törn zu einem Fest für die Sinne.
+            <h4 className="text-xl font-semibold mt-6 mb-4">Costa Brava – Wilde Küste im Nordosten</h4>
+            <p className="mb-6">
+              Die "wilde Küste" von Blanes bis zur französischen Grenze bietet felsige Steilküsten, versteckte Buchten und die Nähe zu Barcelona. Ein kompakteres, aber nicht weniger reizvolles Charterrevier.
             </p>
 
-            <p className="text-lg text-gray-600 font-semibold">
-              Sind Sie bereit, die Segel zu setzen und Spanien vom Wasser aus zu entdecken?
+            <h4 className="text-xl font-semibold mt-6 mb-4">Kanarische Inseln – Segelabenteuer im ewigen Frühling</h4>
+            <p className="mb-6">
+              Die Kanaren im Atlantik bieten ganzjährig mildes Klima und sportlicheres Segeln mit verlässlichen Passatwinden. Teneriffa und Gran Canaria sind die Hauptausgangspunkte für Atlantik-Charter.
             </p>
-          </div>
-        </div>
 
-        {/* Map */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte der Region</h2>
-          <div className="max-w-4xl mx-auto">
-            <TerritoryMap
-              region="Spain"
-              center={{ lat: 39.5, lng: 1.5 }}
-              zoom={6}
-              maptype="satellite"
-              className="h-96 rounded-lg shadow-lg"
-            />
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Praktische Charter-Informationen</h4>
+              <div className="grid md:grid-cols-2 gap-4 text-black">
+                <div>
+                  <p className="font-medium mb-2">Anreise & Transfer:</p>
+                  <ul className="text-sm space-y-1">
+                    <li>• Flughafen Palma (PMI): 15-30 Min. zu Marinas</li>
+                    <li>• Direktflüge aus D-A-CH verfügbar</li>
+                    <li>• Mietwagen & Taxi am Flughafen</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-medium mb-2">Charteroptionen:</p>
+                  <ul className="text-sm space-y-1">
+                    <li>• Bareboat für erfahrene Skipper</li>
+                    <li>• Skippercharter für Entspannung</li>
+                    <li>• Monohull oder Katamaran</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
