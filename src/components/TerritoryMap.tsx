@@ -35,7 +35,7 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   return (
     <Card className={`shadow-lg ${className}`}>
       <CardHeader>
-        <CardTitle className="text-center">Karte von {region}</CardTitle>
+        <CardTitle className="text-center">{region.startsWith('Karte') ? region : `Karte von ${region}`}</CardTitle>
       </CardHeader>
       <CardContent className="p-0">
         <div className="relative w-full h-96 rounded-b-lg overflow-hidden bg-gray-200">
