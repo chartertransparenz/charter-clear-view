@@ -471,34 +471,8 @@ export default function Greece() {
 
         {/* Regions */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelreviere</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {regions.map((region, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-xl">{region.name}</CardTitle>
-                      <CardDescription className="mt-2">{region.description}</CardDescription>
-                    </div>
-                    <Badge variant="secondary">{region.marinas} Marina{region.marinas > 1 ? 's' : ''}</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold flex items-center">
-                      <Star className="w-4 h-4 mr-2 text-primary" />
-                      Highlights
-                    </h4>
-                    <ul className="space-y-1">
-                      {region.highlights.map((highlight, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-center">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
-                          {highlight}
-                        </li>)}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
+          
+          
         </div>
 
         {/* Greece Regions Navigation */}
