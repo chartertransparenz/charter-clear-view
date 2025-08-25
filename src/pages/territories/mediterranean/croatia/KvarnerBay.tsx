@@ -141,7 +141,7 @@ export default function KvarnerBay() {
         {/* Map */}
         <div className="max-w-4xl mx-auto mb-16">
           <TerritoryMap
-            region="Kvarner Bucht"
+            region="Karte der Kvarner Bucht"
             center={{ lat: 44.8, lng: 14.5 }}
             zoom={9}
             markers={[
