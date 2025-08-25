@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -154,6 +155,16 @@ const Italy = () => {
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <TerritoryMap 
+            region="Italien"
+            center={{ lat: 42.5, lng: 12.5 }}
+            zoom={5}
+            maptype="satellite"
+          />
         </div>
 
         {/* Description */}
