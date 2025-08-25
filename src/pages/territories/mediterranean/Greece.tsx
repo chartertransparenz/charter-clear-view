@@ -174,8 +174,8 @@ export default function Greece() {
             <p className="text-lg leading-relaxed mb-6">
               Ob Sie als Familie, Paar, Gruppe oder ambitionierter Skipper unterwegs sind – Griechenland bietet für 
               jeden Anspruch das passende Segelrevier. Die Vielfalt der Regionen reicht von geschützten Buchten im 
-              Saronischen Golf über die sportlichen Kykladen bis zu den grünen Ionischen Inseln, den kulturell 
-              reichen Dodekanes, den ursprünglichen Sporaden und den Geheimtipps Nordgriechenlands.
+              <Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-primary hover:underline">Saronischen Golf</Link> über die sportlichen <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link> bis zu den grünen <Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="text-primary hover:underline">Ionischen Inseln</Link>, den kulturell 
+              reichen <Link to="/reviere/mittelmeer/griechenland/dodekanes" className="text-primary hover:underline">Dodekanes</Link>, den ursprünglichen <Link to="/reviere/mittelmeer/griechenland/sporaden" className="text-primary hover:underline">Sporaden</Link> und den Geheimtipps Nordgriechenlands.
             </p>
 
             <p className="text-lg leading-relaxed mb-8">
@@ -189,9 +189,9 @@ export default function Greece() {
               jede Erfahrungsstufe das Richtige bereithalten.
             </p>
             
-            <h4 className="text-xl font-semibold mt-6 mb-4">1. Athen & Saronischer Golf: Das entspannte Einstiegsrevier</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">1. <Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-primary hover:underline">Athen & Saronischer Golf</Link>: Das entspannte Einstiegsrevier</h4>
             <p className="mb-4">
-              Der Saronische Golf südwestlich von Athen ist das perfekte Revier für Segelneulinge, Familien und alle, 
+              Der <Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-primary hover:underline">Saronische Golf</Link> südwestlich von Athen ist das perfekte Revier für Segelneulinge, Familien und alle, 
               die entspanntes Inselhüpfen mit kurzen Schlägen suchen.
             </p>
             
@@ -209,9 +209,9 @@ export default function Greece() {
               selten Starkwind oder hohe Welle.</p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">2. Kykladen: Das sportliche Revier für Abenteurer</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">2. <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link>: Das sportliche Revier für Abenteurer</h4>
             <p className="mb-4">
-              Die Kykladen sind das klassische Bild der Ägäis: blendend weiße Häuser, blaue Kuppeln, 
+              Die <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link> sind das klassische Bild der Ägäis: blendend weiße Häuser, blaue Kuppeln, 
               karge Felsen, Windmühlen und türkisfarbenes Wasser.
             </p>
             
@@ -230,9 +230,9 @@ export default function Greece() {
               Für erfahrene Skipper und sportliche Crews geeignet.</p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">3. Ionische Inseln: Das grüne Inselparadies</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">3. <Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="text-primary hover:underline">Ionische Inseln</Link>: Das grüne Inselparadies</h4>
             <p className="mb-4">
-              Das Ionische Meer westlich des griechischen Festlands ist ein Traumrevier für entspanntes Segeln, 
+              Das <Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="text-primary hover:underline">Ionische Meer</Link> westlich des griechischen Festlands ist ein Traumrevier für entspanntes Segeln, 
               Familien und Genießer.
             </p>
             
@@ -248,15 +248,15 @@ export default function Greece() {
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
               <p className="text-black mb-3">Griechenland verfügt über eine hervorragende maritime Infrastruktur:</p>
               <ul className="list-disc pl-6 space-y-1 text-black">
-                <li><strong>Athen (Alimos, Kalamaki, Lavrion):</strong> Perfekt für Saronischer Golf und Kykladen</li>
-                <li><strong>Korfu, Lefkas, Preveza:</strong> Für Ionische Inseln</li>
-                <li><strong>Kos, Rhodos:</strong> Für Dodekanes</li>
-                <li><strong>Skiathos, Volos:</strong> Für Sporaden</li>
+                <li><strong>Athen (Alimos, Kalamaki, Lavrion):</strong> Perfekt für <Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-primary hover:underline">Saronischer Golf</Link> und <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link></li>
+                <li><strong>Korfu, Lefkas, Preveza:</strong> Für <Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="text-primary hover:underline">Ionische Inseln</Link></li>
+                <li><strong>Kos, Rhodos:</strong> Für <Link to="/reviere/mittelmeer/griechenland/dodekanes" className="text-primary hover:underline">Dodekanes</Link></li>
+                <li><strong>Skiathos, Volos:</strong> Für <Link to="/reviere/mittelmeer/griechenland/sporaden" className="text-primary hover:underline">Sporaden</Link></li>
                 <li><strong>Thessaloniki, Chalkidiki:</strong> Für Nordgriechenland</li>
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Ihr 7-Tage-Traumtörn in den Kykladen</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Ihr 7-Tage-Traumtörn in den <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link></h3>
             <p className="mb-4 font-medium">Ab Marina Lavrion (Athen):</p>
             
             <div className="space-y-3 mb-8">
