@@ -218,6 +218,18 @@ const Spain = () => {
               </div>
             </div>
 
+            {/* Cala Pi Image with Description */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/e4c1ff7b-f972-4af5-b734-1ab72d4f905c.png" 
+                alt="Cala Pi Mallorca - türkisfarbenes Wasser mit Segelbooten" 
+                className="w-full rounded-lg shadow-lg mb-4"
+              />
+              <p className="text-sm text-gray-600 italic text-center">
+                In der Cala Pi ankert man mit Buganker und Heckleine an der unbebauten Felsseite, wo etwa sechs Yachten Platz finden und Leinen zur Befestigung vorhanden sind; der Schwojraum ist begrenzt und bei südlichen Winden ist die Bucht ungeschützt
+              </p>
+            </div>
+
             <h4 className="text-xl font-semibold mt-6 mb-4">Ibiza – Zwischen Party und Natur</h4>
             <p className="mb-6">
               Ibiza vereint pulsierendes Nachtleben mit ursprünglicher Natur. Die UNESCO-Weltkulturerbe-Altstadt Dalt Vila steht im Kontrast zu weltberühmten Beach Clubs. Cala Salada und Cala Conta bieten spektakuläre Sonnenuntergänge, während Cala Jondal für entspannte Momente sorgt.
