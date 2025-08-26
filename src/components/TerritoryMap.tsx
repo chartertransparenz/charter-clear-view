@@ -27,18 +27,15 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   markers = [],
   className = ""
 }) => {
-  // Create proper Google Maps Embed URL with correct format
+  // Create clean Google Maps embed URL without controls
   const createMapUrl = () => {
-    const baseUrl = 'https://www.google.com/maps/embed/v1/view';
-    const apiKey = 'AIzaSyBFw0Qbyq9zTFTd-tUY6dOWTgaN-dwdgbM'; // You'll need to replace with actual API key
-    
-    // For now, use a simpler approach without API key
     const lat = center.lat;
     const lng = center.lng;
     const z = zoom;
+    const satellite = maptype === 'satellite' ? '1' : '0';
     
-    // Use the standard Google Maps embed format
-    return `https://maps.google.com/maps?width=100%25&height=400&hl=en&q=${lat},${lng}&t=${maptype === 'satellite' ? 'k' : 'm'}&z=${z}&ie=UTF8&iwloc=&output=embed`;
+    // Use Google Maps embed format that minimizes UI controls
+    return `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25000!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f${z}!5e${satellite}!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde`;
   };
 
   return (
