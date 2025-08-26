@@ -327,6 +327,18 @@ const Spain = () => {
               Die "wilde Küste" von Blanes bis zur französischen Grenze bietet felsige Steilküsten, versteckte Buchten und die Nähe zu Barcelona. Ein kompakteres, aber nicht weniger reizvolles Charterrevier.
             </p>
 
+            {/* Costa Brava Image with Description */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/11945d8a-63c7-46f0-abff-8edc0e2be073.png" 
+                alt="Sa Tuna Costa Brava - bunte Häuser an ruhiger Meeresbucht" 
+                className="w-full rounded-lg shadow-lg mb-4"
+              />
+              <p className="text-sm text-gray-600 italic text-center">
+                Bunte Häuser säumen eine ruhige Meeresbucht mit Strand in Sa Tuna, Costa Brava, Spanien
+              </p>
+            </div>
+
             <h4 className="text-xl font-semibold mt-6 mb-4">Kanarische Inseln – Segelabenteuer im ewigen Frühling</h4>
             <p className="mb-6">
               Die Kanaren im Atlantik bieten ganzjährig mildes Klima und sportlicheres Segeln mit verlässlichen Passatwinden. Teneriffa und Gran Canaria sind die Hauptausgangspunkte für Atlantik-Charter.
