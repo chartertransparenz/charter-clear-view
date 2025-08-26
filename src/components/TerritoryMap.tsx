@@ -27,18 +27,15 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   markers = [],
   className = ""
 }) => {
-  // Create clean Google Maps embed URL without controls
+  // Create clean Google Maps embed URL with correct zoom
   const createMapUrl = () => {
     const lat = center.lat;
     const lng = center.lng;
     const z = zoom;
-    const satellite = maptype === 'satellite' ? '1' : '0';
+    const mapTypeParam = maptype === 'satellite' ? '&maptype=satellite' : '';
     
-    // Calculate distance for zoom level (higher zoom = smaller distance)
-    const distance = Math.pow(2, 21 - z) * 156543.03392 * Math.cos(lat * Math.PI / 180) / 111319.9;
-    
-    // Use Google Maps embed format with correct distance calculation
-    return `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d${distance}!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e${satellite}!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde`;
+    // Use simpler Google Maps embed format that properly respects zoom
+    return `https://www.google.com/maps/embed/v1/view?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dQWTcRzdHgT0HUt&center=${lat},${lng}&zoom=${z}${mapTypeParam}`;
   };
 
   return (
