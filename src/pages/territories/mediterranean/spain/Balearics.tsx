@@ -319,6 +319,18 @@ const Balearics = () => {
               Menorca ist die östlichste und zweitgrößte Baleareninsel, bekannt für ihre unberührte Natur und ihre entspannte Atmosphäre. Menorca wurde von der UNESCO zum Biosphärenreservat erklärt und bietet eine Fülle von unberührten Stränden (Calas) und eine reiche Flora und Fauna. Die Insel ist ruhiger und weniger touristisch als Mallorca oder Ibiza. Die Südküste Menorcas ist gesäumt von atemberaubenden Calas wie Cala Macarella, Cala Mitjana oder Cala Turqueta, die zum Ankern und Schwimmen einladen. Die beiden Hauptstädte Mahón (im Osten) und Ciutadella (im Westen) verfügen über wunderschöne Naturhäfen, die einen Besuch wert sind.
             </p>
 
+            {/* Cala Macarella Image */}
+            <div className="my-8">
+              <img
+                src="/lovable-uploads/16f1d4fc-5a9e-4edc-b6bd-cfd79999a60c.png"
+                alt="Cala Macarella - malerische Bucht an Menorcas Südküste"
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-sm text-gray-600 mt-2 italic">
+                Die Cala Macarella ist eine malerische Bucht an Menorcas Südküste, in der Segler tagsüber über feinem Sand in türkisfarbenem Wasser ankern können. In der Nach kann in der nach Süden hin völlig offenen Bucht Schwell stehen.
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Wind- und Wetterbedingungen auf den Balearen</h3>
             <p className="mb-4">
               Das Klima auf den Balearen ist typisch mediterran mit heißen, trockenen Sommern und milden Wintern. Die Segelsaison erstreckt sich von April bis in den späten Oktober.
