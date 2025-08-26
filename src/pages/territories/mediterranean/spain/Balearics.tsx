@@ -277,6 +277,18 @@ const Balearics = () => {
               </ul>
             </div>
 
+            {/* Cala Llombards Image */}
+            <div className="my-8">
+              <img
+                src="/lovable-uploads/cc180839-2a23-40be-b2bd-45eedcf7e909.png"
+                alt="Cala Llombards - windgeschützte Bucht auf Mallorca"
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-sm text-gray-600 mt-2 italic">
+                Die windgeschützte Bucht Cala Llombards mit sandigem Grund und 3–6 m Wassertiefe ist nahezu wellenfrei und ein ruhiger, sicherer Ankerplatz.
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Die anderen Balearen: Ibiza, Menorca und Formentera</h3>
             <p className="mb-4">Jede der anderen Baleareninseln hat ihren eigenen Reiz und ist ein lohnendes Ziel für einen Yachtcharter.</p>
 
