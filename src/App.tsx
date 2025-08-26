@@ -40,6 +40,7 @@ import AthenSaronischerGolf from "./pages/territories/mediterranean/greece/Athen
 // Spanish regions
 import Balearics from "./pages/territories/mediterranean/spain/Balearics";
 import CostaBrava from "./pages/territories/mediterranean/spain/CostaBrava";
+import Valencia from "./pages/territories/mediterranean/spain/Valencia";
 
 // French regions
 import CoteAzur from "./pages/territories/mediterranean/france/CoteAzur";
@@ -205,6 +206,7 @@ function App() {
             {/* Spanish region routes */}
             <Route path="/reviere/mittelmeer/spanien/balearen" element={<Balearics />} />
             <Route path="/reviere/mittelmeer/spanien/costa-brava" element={<CostaBrava />} />
+            <Route path="/reviere/mittelmeer/spanien/valencia" element={<Valencia />} />
             
             {/* French region routes */}
             <Route path="/reviere/mittelmeer/frankreich/cote-azur" element={<CoteAzur />} />
