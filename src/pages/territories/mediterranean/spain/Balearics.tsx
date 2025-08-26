@@ -210,6 +210,18 @@ const Balearics = () => {
               </div>
             </div>
 
+            {/* Cap de ses Salines Lighthouse Image */}
+            <div className="my-8">
+              <img
+                src="/lovable-uploads/a3c45dc2-70f0-4ef8-965b-c96e9db59319.png"
+                alt="Leuchtturm am Cap de ses Salines - südlichster Punkt Mallorcas"
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-sm text-gray-600 mt-2 italic">
+                Der Leuchtturm am Cap de ses Salines (südlichster Punkt Mallorcas) ist für Sportboote ein markanter Tag- und Nacht-Peilpunkt: Er dient als sicherer Wegweiser beim Rund-Mallorca-Törn und auf dem Kurs durchs Cabrera‑Seegebiet
+              </p>
+            </div>
+
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Nautische Highlights rund um Mallorca</h4>
               <ul className="list-disc pl-6 space-y-1 text-black">
