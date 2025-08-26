@@ -35,7 +35,7 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
     const satellite = maptype === 'satellite' ? '1' : '0';
     
     // Use Google Maps embed format that minimizes UI controls
-    return `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25000!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f${z}!5e${satellite}!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde`;
+    return `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25000!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e${satellite}!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde&z=${z}`;
   };
 
   return (
