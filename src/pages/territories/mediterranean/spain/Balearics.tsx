@@ -16,7 +16,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import destinationSpain from "@/assets/destination-spain.jpg";
+const balearicsHeader = "/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.png";
 
 const Balearics = () => {
   useEffect(() => {
@@ -51,8 +51,8 @@ const Balearics = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationSpain}
-          alt="Balearen Spanien"
+          src={balearicsHeader}
+          alt="Balearen Spanien - traumhafte Bucht mit türkisblauem Wasser"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
