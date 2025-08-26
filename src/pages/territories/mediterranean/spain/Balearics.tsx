@@ -142,21 +142,166 @@ const Balearics = () => {
           />
         </div>
 
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln auf den Balearen</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Die Balearen sind Spaniens Segelparadies im westlichen Mittelmeer. 
-              Mit Mallorca, Menorca, Ibiza und Formentera bieten sie perfekte 
-              Bedingungen für jeden Segelgeschmack - von entspannten Familiensegeltörns 
-              bis hin zu lebendigen Party-Destinesn.
+        {/* Detailed Territory Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Balearen: Mallorca, Ibiza, Menorca & Formentera</h2>
+            <p className="text-xl text-muted-foreground">
+              Spaniens Segelparadies im westlichen Mittelmeer
             </p>
-            <p className="text-lg text-gray-600">
-              Die hervorragende Marina-Infrastruktur, kurze Distanzen zwischen 
-              den Inseln und das ganzjährig milde Klima machen die Balearen 
-              zu einem der beliebtesten Segelreviere Europas.
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <h3 className="text-2xl font-bold mt-8 mb-4">Warum die Balearen das perfekte Segelrevier sind</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Balearen sind Spaniens unangefochtenes Segelparadies und vereinen alles, was einen unvergesslichen Yachtcharter ausmacht: kristallklare Buchten, kurze Distanzen zwischen traumhaften Inseln, verlässliche Segelbedingungen und eine erstklassige maritime Infrastruktur. Von der weltbekannten Marina Palma aus erschließt sich Ihnen ein Archipel aus vier einzigartigen Inseln – Mallorca, Ibiza, Menorca und Formentera – jede mit ihrem eigenen unverwechselbaren Charakter.
             </p>
+            
+            <p className="text-lg leading-relaxed mb-6">
+              Mit über 200 Buchten allein auf Mallorca, den berühmten Traumstränden von Formentera, der UNESCO-Biosphäre Menorca und dem kosmopolitischen Flair Ibizas bieten die Balearen eine einzigartige Vielfalt auf kompaktem Raum. Das ganzjährig milde Mittelmeerklima, thermische Winde von 3-4 Beaufort und professionelle Charterbasen machen dieses Revier zur ersten Wahl für Segler aller Erfahrungsstufen.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-8">
+              Die kurzen Distanzen zwischen den Inseln – maximal 3-4 Stunden Segeln – ermöglichen entspannte Tagestouren mit ausreichend Zeit zum Ankern, Schwimmen und Entdecken. Mallorca dient dabei als perfekte Homebase mit direkten Flugverbindungen aus dem deutschsprachigen Raum und nur 20 Minuten Transfer vom Flughafen zu den Charterbasen.
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Anreise & Transfer</h4>
+              <p className="text-black mb-3">So erreichen Sie Ihre Charteryacht auf den Balearen:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Flughafen Palma (PMI):</strong> Direktflüge ab allen großen deutschen Flughäfen</li>
+                <li><strong>Transfer zur Marina:</strong> 15-20 Minuten zu allen Charterbasen</li>
+                <li><strong>Taxi & Mietwagen:</strong> Direkt am Flughafen verfügbar</li>
+                <li><strong>Check-in Service:</strong> Professionelle Einweisung in deutscher Sprache</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Premium Marinas & Ausgangshäfen</h4>
+              <p className="text-black mb-3">Erstklassige Charterbasen auf den Balearen:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li><strong>Marina Palma:</strong> Modernste Charter-Homebase mit 750 Liegeplätzen</li>
+                <li><strong>Club Náutico Palma:</strong> Traditionsreiche Marina im Stadtzentrum</li>
+                <li><strong>Port d'Andratx:</strong> Exklusiver Naturhafen im Südwesten Mallorcas</li>
+                <li><strong>Marina Ibiza:</strong> Glamouröse Basis für Insel-Hopping-Törns</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Die vier Perlen der Balearen</h3>
+            
+            <h4 className="text-xl font-semibold mt-6 mb-4">Mallorca – Das Herz des Archipels</h4>
+            <p className="mb-4">
+              Mallorca begeistert mit der größten Buchtvielfalt des Mittelmeers. Von der dramatischen Serra de Tramuntana im Norden bis zu den karibischen Sandstränden der Südküste:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
+                <h5 className="font-semibold mb-2">Westküste (Tramuntana)</h5>
+                <p className="text-sm text-gray-600">Cala Deià, Port de Sóller – spektakuläre Felskulissen und versteckte Buchten</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
+                <h5 className="font-semibold mb-2">Südküste</h5>
+                <p className="text-sm text-gray-600">Es Trenc, Cala Pi – endlose Sandstrände mit türkisfarbenem Wasser</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
+                <h5 className="font-semibold mb-2">Ostküste</h5>
+                <p className="text-sm text-gray-600">Cala Varques, Cala Mondragó – unberührte Naturstrände und Meeresschutzgebiete</p>
+              </div>
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
+                <h5 className="font-semibold mb-2">Südwesten</h5>
+                <p className="text-sm text-gray-600">Cala Llamp, Dragonera – exklusive Ankerbuchten mit Gourmet-Restaurants</p>
+              </div>
+            </div>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Ibiza – Weltberühmtes Flair</h4>
+            <p className="mb-6">
+              Ibiza vereint pulsierendes Nachtleben mit ursprünglicher Natur. Die UNESCO-Weltkulturerbe-Altstadt Dalt Vila, weltberühmte Beach Clubs und versteckte Buchten wie Cala Salada schaffen einzigartige Kontraste. Die Westküste bietet spektakuläre Sonnenuntergänge, während die Ostküste mit ruhigen Familienbuchten punktet.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Formentera – Karibik des Mittelmeers</h4>
+            <p className="mb-6">
+              Formentera verzaubert mit den schönsten Stränden des Mittelmeers. Playa de Ses Illetes gilt als einer der Top 10 Strände weltweit, Cala Saona bietet perfekte Ankermöglichkeiten und die Insel Es Vedranell vor der Westküste ist ein Paradies für Schnorchler und Naturliebhaber.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">Menorca – UNESCO-Biosphärenreservat</h4>
+            <p className="mb-6">
+              Menorca überrascht mit unberührter Natur und entspannter Atmosphäre. Die Südküste ist gesäumt von Traumstränden wie Cala Macarella und Cala Turqueta, während der Naturhafen Mahón einer der größten Naturhäfen der Welt ist und perfekte Infrastruktur bietet.
+            </p>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Nautische Hinweise:</strong> Verlässliche thermische Winde (3-4 Bft), hervorragende Ankergründe in Sandbuchten, kurze Distanzen zwischen den Inseln (1-4 Stunden), ganzjährig segelbar von März bis November.</p>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Ihr perfekter 7-Tage-Balearen-Törn ab Palma</h3>
+            <p className="mb-4 font-medium">Eine traumhafte Rundreise durch alle vier Baleareninseln:</p>
+            
+            <div className="space-y-3 mb-8">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1: Palma → Port d'Andratx</h5>
+                <p className="text-sm text-muted-foreground">Entspannter Start entlang der Südwestküste Mallorcas zum eleganten Naturhafen mit erstklassigen Restaurants.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2: Andratx → Dragonera → Cala Conta (Ibiza)</h5>
+                <p className="text-sm text-muted-foreground">Stopp an der Dragonera-Insel, dann Überfahrt nach Ibiza zur berühmten Sonnenuntergangsbucht Cala Conta.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3: Ibiza → Formentera (Ses Illetes)</h5>
+                <p className="text-sm text-muted-foreground">Kurzer Schlag zur "Karibik des Mittelmeers" mit den traumhaften Stränden von Ses Illetes und Playa Levante.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4: Formentera → Cala Saona → Es Vedranell</h5>
+                <p className="text-sm text-muted-foreground">Erkundung der Westküste Formenteras mit Schnorcheln vor der mystischen Felseninsel Es Vedranell.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5: Formentera → Menorca (Cala Macarella)</h5>
+                <p className="text-sm text-muted-foreground">Längerer Schlag nach Menorca zu einer der schönsten Buchten des Mittelmeers mit türkisfarbenem Wasser.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6: Menorca → Cala Varques (Mallorca)</h5>
+                <p className="text-sm text-muted-foreground">Rückkehr nach Mallorca zur versteckten Ostküsten-Perle Cala Varques, nur vom Meer aus erreichbar.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7: Cala Varques → Palma</h5>
+                <p className="text-sm text-muted-foreground">Entspannte Rückreise nach Palma mit Zeit für einen letzten Stadtbummel und Tapas in der Altstadt.</p>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Klima & Segelbedingungen: Mediterraner Traum</h3>
+            <p className="mb-4">
+              Die Balearen bieten das perfekte mediterrane Klima mit verlässlichen Segelbedingungen für entspannte Familien- bis sportliche Segeltörns.
+            </p>
+            
+            <div className="border border-gray-300 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold mb-3 text-black">Windverhältnisse</h4>
+              <p className="text-black mb-3">Verlässliche Windsysteme rund um die Balearen:</p>
+              <ul className="space-y-2 text-black">
+                <li><strong>Thermische Winde:</strong> Verlässliche Land- und Seebrisen (3-4 Bft), 
+                perfekt für entspanntes Segeln mit der Familie.</li>
+                <li><strong>Maestral:</strong> Angenehmer Nordwestwind im Sommer, 
+                ideal für längere Schläge zwischen den Inseln.</li>
+                <li><strong>Tramontana:</strong> Frischer Nordwind in den Übergangszeiten, 
+                bringt Klarheit und optimale Sichtweiten.</li>
+              </ul>
+            </div>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Optimale Reisezeit</h4>
+              <p className="text-black mb-3">Die beste Zeit für Ihren Balearen-Charter:</p>
+              <ul className="space-y-2 text-black">
+                <li><strong>Mai & Juni:</strong> Perfekte Segelbedingungen, angenehme Temperaturen, 
+                weniger überfüllt – ideal für Genießer.</li>
+                <li><strong>September & Oktober:</strong> Warme Wassertemperaturen, 
+                entspannte Atmosphäre nach der Hochsaison.</li>
+                <li><strong>Juli & August:</strong> Hochsaison mit perfektem Wetter, 
+                aber auch höchste Preise und mehr Trubel.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
