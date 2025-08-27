@@ -58,7 +58,7 @@ const Marmaris = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: "url('/yachtcharter-marmaris.png')",
+            backgroundImage: "url('/boot-mieten-costa-smeralda.jpg')",
             filter: "brightness(0.7)"
           }} 
         />
