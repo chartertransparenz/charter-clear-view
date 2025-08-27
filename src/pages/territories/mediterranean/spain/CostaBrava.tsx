@@ -100,7 +100,7 @@ const CostaBrava = () => {
 
         {/* Quick Facts */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-center">Quick Facts</h2>
+          
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {quickFacts.map((fact, index) => {
               const IconComponent = fact.icon;
