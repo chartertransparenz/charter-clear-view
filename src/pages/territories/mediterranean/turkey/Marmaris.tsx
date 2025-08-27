@@ -52,6 +52,13 @@ const Marmaris = () => {
       
       {/* Header */}
       <div className="relative h-[60vh] bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+          style={{
+            backgroundImage: "url('/yachtcharter-marmaris.png')",
+            filter: "brightness(0.7)"
+          }} 
+        />
         <div className="relative z-10 text-center text-white px-4">
           <div className="mb-6">
             <Link 
