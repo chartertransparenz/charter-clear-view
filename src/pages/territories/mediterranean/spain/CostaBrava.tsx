@@ -138,6 +138,85 @@ const CostaBrava = () => {
           </Card>
         </div>
 
+        {/* Detailed Territory Description */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Costa Brava: Segeln an Spaniens wilder Küste</h2>
+            <p className="text-xl text-muted-foreground">
+              Entdecken Sie ein Segelrevier von unvergleichlicher Schönheit und Ursprünglichkeit
+            </p>
+          </div>
+          
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg leading-relaxed mb-6">
+              Entdecken Sie ein Segelrevier von unvergleichlicher Schönheit und Ursprünglichkeit: die Costa Brava. Zwischen den Pyrenäen und dem Mittelmeer erstreckt sich dieser Küstenabschnitt im Nordosten Spaniens, der seinem Namen – „wilde Küste" – alle Ehre macht. Ein Yachtcharter an der Costa Brava ist eine Einladung, eine Landschaft zu erkunden, die von schroffen Klippen, tief eingeschnittenen Buchten und dem azurblauen Wasser des Mittelmeers geprägt ist. Hier trifft katalanische Kultur auf mediterranes Flair, und die Freiheit des Segelns verbindet sich mit dem Charme malerischer Fischerdörfer.
+            </p>
+            
+            <p className="text-lg leading-relaxed mb-8">
+              Die Costa Brava ist ein Geheimtipp für Segler, die das authentische Spanien abseits des Massentourismus suchen. Sie bietet eine einzigartige Mischung aus Naturerlebnissen, kulturellen Entdeckungen und entspanntem Küstensegeln. Dank ihrer überschaubaren Größe ist sie ideal für einwöchige Törns, die sowohl Familien als auch Genusssegler begeistern werden.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Die wilde Schönheit der Costa Brava</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Charakteristisch für die Costa Brava sind die steilen, oft bewaldeten Klippen, die dramatisch ins Meer abfallen. Dazwischen verstecken sich unzählige kleine, oft nur vom Meer aus zugängliche Calas (Buchten) mit kristallklarem Wasser, die zum Ankern, Schwimmen und Schnorcheln einladen. Die Region ist bekannt für ihre malerischen Fischerdörfer, die sich an die Küste schmiegen, und die Spuren berühmter Künstler wie Salvador Dalí, dessen Museen und Häuser hier zu finden sind.
+            </p>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Ihre Ausgangspunkte und Marinas</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Costa Brava verfügt über eine gute Infrastruktur mit modernen Marinas, die alle notwendigen Einrichtungen für einen entspannten Charter bieten. Beliebte Ausgangshäfen sind:
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <ul className="list-disc pl-6 space-y-3 text-black">
+                <li><strong>Roses:</strong> Am nördlichen Ende der Costa Brava gelegen, bietet Roses eine große, geschützte Bucht und ist ein idealer Startpunkt, um den Naturpark Cap de Creus zu erkunden.</li>
+                <li><strong>L'Escala:</strong> Ein charmantes Fischerdorf mit einer modernen Marina, das direkten Zugang zu den Ruinen von Empúries bietet – einer beeindruckenden römischen und griechischen Ausgrabungsstätte.</li>
+                <li><strong>Palamós:</strong> Ein lebhafter Fischereihafen mit einer schönen Promenade und exzellenten Fischrestaurants. Die Marina ist gut ausgestattet und ein guter Ausgangspunkt für Törns entlang der zentralen Costa Brava.</li>
+                <li><strong>Blanes:</strong> Am südlichen Ende der Küste gelegen, ist Blanes bekannt für seine botanischen Gärten und den jährlichen Feuerwerkswettbewerb. Die Marina bietet eine gute Anbindung an die südlichen Buchten.</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Törnziele und Highlights</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Von Ihrer Charterbasis aus können Sie die vielfältige Küste erkunden:
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <ul className="list-disc pl-6 space-y-3 text-black">
+                <li><strong>Cap de Creus:</strong> Der östlichste Punkt der Iberischen Halbinsel ist ein windgepeitschter Naturpark mit bizarren Felsformationen und einer einzigartigen Landschaft, die Dalí inspirierte.</li>
+                <li><strong>Illes Medes:</strong> Vor der Küste von L'Estartit gelegen, sind die Medes-Inseln ein streng geschütztes Meeresschutzgebiet und ein Paradies für Taucher und Schnorchler.</li>
+                <li><strong>Cala Fornells, Cala Pola, Cala Futadera:</strong> Nur einige Beispiele der unzähligen, oft nur vom Meer aus erreichbaren Traumbuchten, die zum Verweilen einladen.</li>
+                <li><strong>Cadaqués:</strong> Ein malerisches Dorf mit weißen Häusern, das sich perfekt in die Landschaft einfügt und als Heimat von Salvador Dalí bekannt ist.</li>
+                <li><strong>Tossa de Mar:</strong> Eine charmante Küstenstadt mit einer beeindruckenden mittelalterlichen Festung, die direkt am Meer liegt.</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Wind & Wetter: Segeln an der Costa Brava</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Das Klima an der Costa Brava ist mediterran.
+            </p>
+
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <ul className="list-disc pl-6 space-y-3 text-black">
+                <li><strong>Windbedingungen:</strong> Im Sommer dominieren meist ruhige, thermische Winde (Garbí aus Südwest), die entspanntes Segeln ermöglichen. Der Tramontana, ein starker Nordwind, kann besonders in der Vor- und Nachsaison auftreten und erfordert Aufmerksamkeit, bietet aber auch sportliche Segelbedingungen.</li>
+                <li><strong>Beste Reisezeit:</strong> Die idealen Monate für einen Yachtcharter sind Mai, Juni und September. Das Wetter ist angenehm warm, die Wassertemperaturen sind ideal zum Baden, und die Häfen sind belebt, aber nicht überfüllt. Der Juli und August sind ebenfalls beliebt, aber dann ist es am vollsten und heißesten.</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">Fazit: Ihr entspanntes Segelabenteuer in Katalonien</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Ein Yachtcharter an der Costa Brava ist die perfekte Wahl für alle, die eine unkomplizierte Anreise, authentisches spanisches Flair und maximale Flexibilität bei der Törnplanung schätzen. Sie erleben eine Küste voller Charakter, genießen die katalanische Küche und tauchen ein in eine Region, die ihre Besucher mit ihrer wilden Schönheit und ihrem entspannten Lebensrhythmus verzaubert. Die Nähe zu Barcelona bietet zudem die Möglichkeit, einen Städtetrip mit dem Segelurlaub zu verbinden.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Sind Sie bereit, die Segel an der Costa Brava zu setzen und Spaniens wilde Küste zu entdecken?
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Kontaktieren Sie uns für Ihr persönliches Angebot. Wir helfen Ihnen, die perfekte Yacht und Route für Ihren unvergesslichen Törn an der Costa Brava zu finden.
+            </p>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Jetzt Charter-Anfrage stellen</h2>
