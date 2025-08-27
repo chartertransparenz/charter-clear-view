@@ -56,7 +56,7 @@ const GoecekFethiye = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: "url('/public/lovable-uploads/7b74e2cd-6b59-409b-956f-21a342c849ee.png')",
+            backgroundImage: "url('/lovable-uploads/4a973c7a-e4d0-4205-97dd-43c3454a16c6.png')",
             filter: "brightness(0.7)"
           }} 
         />
