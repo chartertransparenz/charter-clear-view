@@ -294,34 +294,43 @@ const GoecekFethiye = () => {
               <h3 className="text-2xl font-semibold mt-8 mb-4">Routenvorschläge – mit Blick auf Brise & Komfort</h3>
               
               <h4 className="text-xl font-semibold mt-6 mb-3">1 Woche – Göcek-Buchten-Rundkurs (familien- & genussorientiert)</h4>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 1 – Göcek → Yassıca</strong><br />
-                Ankommen, Check-in, Briefer. Erster Hüpfer, Baden, ruhige Nacht an Mooring oder auf Sand.
-              </p>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 2 – Yassıca → Hamam Koyu → Kapi Creek</strong><br />
-                Vormittags Schnorcheln bei den Ruinen, abends Restaurantsteg; Lazy Lines nutzen, Landleinen sauber führen.
-              </p>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 3 – Kapi Creek → Tersane Adası</strong><br />
-                Weite Reede, Landgang auf die Werftinsel, gelassene Nacht im Inselschutz.
-              </p>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 4 – Tersane → Bedri Rahmi → Boynuzbükü</strong><br />
-                Kunst, Kiefern, kleine Wanderung; später in die große, ruhige Bucht – perfekt für SUP bei Abendflaute.
-              </p>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 5 – Boynuzbükü → Fethiye</strong><br />
-                Vorräte ergänzen, Basar & Promenade, optional Ece Marina oder Yacht Classic für Landstrom/Pool.
-              </p>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 6 – Fethiye → Gemiler/Ölüdeniz (reguliert) → Sarsala</strong><br />
-                Fotostopp in der Lagune (Regeln beachten), zur Nacht nach Sarsala – breiter Buchtfächer, Sandgrund.
-              </p>
-              <p className="text-lg leading-relaxed mb-4">
-                <strong>Tag 7 – Sarsala → Göcek</strong><br />
-                Gemütlicher Rückweg, Fuel-Dock, Pump-Out, Check-out.
-              </p>
+              
+              <div className="space-y-3 mb-8">
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 1: Ankunft & Einstieg (Göcek → Yassıca)</h5>
+                  <p className="text-sm text-muted-foreground">Ankommen, Check-in, Briefer. Erster Hüpfer, Baden, ruhige Nacht an Mooring oder auf Sand.</p>
+                </div>
+                
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 2: Zu den Ruinen (Yassıca → Hamam Koyu → Kapi Creek)</h5>
+                  <p className="text-sm text-muted-foreground">Vormittags Schnorcheln bei den Ruinen, abends Restaurantsteg; Lazy Lines nutzen, Landleinen sauber führen.</p>
+                </div>
+                
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 3: Werftinsel erleben (Kapi Creek → Tersane Adası)</h5>
+                  <p className="text-sm text-muted-foreground">Weite Reede, Landgang auf die Werftinsel, gelassene Nacht im Inselschutz.</p>
+                </div>
+                
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 4: Kunst & Natur (Tersane → Bedri Rahmi → Boynuzbükü)</h5>
+                  <p className="text-sm text-muted-foreground">Kunst, Kiefern, kleine Wanderung; später in die große, ruhige Bucht – perfekt für SUP bei Abendflaute.</p>
+                </div>
+                
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 5: Stadtbummel & Versorgung (Boynuzbükü → Fethiye)</h5>
+                  <p className="text-sm text-muted-foreground">Vorräte ergänzen, Basar & Promenade, optional Ece Marina oder Yacht Classic für Landstrom/Pool.</p>
+                </div>
+                
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 6: Blaue Lagune & Ruhe (Fethiye → Gemiler/Ölüdeniz → Sarsala)</h5>
+                  <p className="text-sm text-muted-foreground">Fotostopp in der Lagune (Regeln beachten), zur Nacht nach Sarsala – breiter Buchtfächer, Sandgrund.</p>
+                </div>
+                
+                <div className="border-l-4 border-primary pl-4">
+                  <h5 className="font-semibold">Tag 7: Rückkehr zum Ausgangspunkt (Sarsala → Göcek)</h5>
+                  <p className="text-sm text-muted-foreground">Gemütlicher Rückweg, Fuel-Dock, Pump-Out, Check-out.</p>
+                </div>
+              </div>
               <p className="text-lg leading-relaxed mb-6">
                 <strong>Windsignatur:</strong> Sommerlich thermisch, am Nachmittag segeln – morgens/abends ruhig. In Randzeiten variable Brisen; stets Lee-Optionen parat.
               </p>
