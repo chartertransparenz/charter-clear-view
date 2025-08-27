@@ -156,17 +156,6 @@ const GoecekFethiye = () => {
                 Die Topografie schützt vor Dünung, die Brise baut sich zuverlässig auf, und die Distanzen zwischen den Buchten sind so kurz, dass der Skipper jeden Tag flexibel planen kann. Ob Badestopp in kristallklarem Wasser, Landgang zu lykischen Stätten oder Dinner am Kai – Yachtcharter Göcek steht für maximalen Urlaubsertrag pro Segelmeile. Für Segeln Türkei, Bareboat Türkei oder Skipper Göcek ist dies das Revier, in dem selbst Einsteiger souverän wirken – und erfahrene Skipper das Feinhandwerk des Ankerns mit Landleinen zelebrieren.
               </p>
 
-            {/* Erreichbarkeit Box */}
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Erreichbarkeit & Anreise</h4>
-              <p className="text-black mb-3">Dalaman Flughafen (DLM) ist die komfortabelste Anlaufstelle:</p>
-              <ul className="list-disc pl-6 space-y-1 text-black">
-                <li>Kurze Transferzeiten direkt zu den Marinas von Göcek oder Fethiye</li>
-                <li>Alternative Anreise über Antalya (AYT) oder Bodrum (BJV)</li>
-                <li>PKW-Anreise über Balkan oder Fähren Italien/Griechenland</li>
-                <li>Parkplätze in Marinas, Shuttle-Services und Proviant-Lieferdienste verfügbar</li>
-              </ul>
-            </div>
 
             {/* Besonderheiten des Reviers */}
             <h3 className="text-2xl font-semibold mt-8 mb-4">Besonderheiten des Reviers</h3>
