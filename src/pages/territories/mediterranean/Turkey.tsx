@@ -360,7 +360,7 @@ const Turkey = () => {
               </p>
 
               <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mb-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Häufige Fragen (praktisch & kompakt)</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Noch ein paar Tipps</h3>
                 <div className="space-y-3">
                   <p className="text-gray-700"><strong>Welche Yacht?</strong> Segelyacht (Monohull) für klassisches Segeln und einfache Platzsuche; Katamaran für Familien/Komfort (ein Auge auf den Schwojkreis!); Motoryacht für kurze Wege und spontane Restaurantstopps.</p>
                   <p className="text-gray-700"><strong>Wie lange?</strong> Eine Woche reicht für Göcek oder den Marmaris-Golf; zwei Wochen eröffnen Bodrum ↔ Datça/Bozburun oder Kaş/Kalkan ↔ Kekova.</p>
