@@ -263,7 +263,7 @@ const GoecekFethiye = () => {
                 <strong>Hamam Koyu (Cleopatra's Bath)</strong> – Byzantinische Ruinen im Wasser, top zum Schnorcheln; Longline oder Mooring je nach Spot.
               </p>
               <p className="text-lg leading-relaxed mb-4">
-                <strong>Tersane Adası</strong> – Die „Werftinsel" bietet weiträumige Reeden, mehrere Buchten, guten Halt und Ruinen an Land.
+                <strong>Tersane Adası</strong> – Die „Werftinsel" bietet weiträumige Ankerplätze, mehrere Buchten, guten Halt und Ruinen an Land.
               </p>
               <p className="text-lg leading-relaxed mb-4">
                 <strong>Boynuzbükü</strong> – Guter Versorger-Stopp mit Steg und großer, ruhiger Bucht.
@@ -281,7 +281,7 @@ const GoecekFethiye = () => {
                 <strong>Gemiler Adası</strong> – Historische Insel, Abendlicht deluxe mit Blick auf Ölüdeniz.
               </p>
               <p className="text-lg leading-relaxed mb-6">
-                <strong>Weiterführende Ziele:</strong> Kaş/Kalkan (amphitheatralische Küstenstädte, Tauchzentren), Kekova-Reede (versunkene Stadt; streng zoniert), Ekincik (Ausflug Dalyan/Kaunos), Marmaris/Hisarönü (mehr Vielfalt und Kapstrecken).
+                <strong>Weiterführende Ziele:</strong> Kaş/Kalkan (amphitheatralische Küstenstädte, Tauchzentren), Kekova-Ankerplatz (versunkene Stadt; streng zoniert), Ekincik (Ausflug Dalyan/Kaunos), Marmaris/Hisarönü (mehr Vielfalt und Kapstrecken).
               </p>
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">Routenvorschläge – mit Blick auf Brise & Komfort</h3>
@@ -301,7 +301,7 @@ const GoecekFethiye = () => {
                 
                 <div className="border-l-4 border-primary pl-4">
                   <h5 className="font-semibold">Tag 3: Werftinsel erleben (Kapi Creek → Tersane Adası)</h5>
-                  <p className="text-sm text-muted-foreground">Weite Reede, Landgang auf die Werftinsel, gelassene Nacht im Inselschutz.</p>
+                  <p className="text-sm text-muted-foreground">Weiter Ankerplatz, Landgang auf die Werftinsel, gelassene Nacht im Inselschutz.</p>
                 </div>
                 
                 <div className="border-l-4 border-primary pl-4">
@@ -331,7 +331,7 @@ const GoecekFethiye = () => {
               <h4 className="text-xl font-semibold mt-6 mb-3">2 Wochen – zwei Varianten für mehr Reichweite</h4>
               <p className="text-lg leading-relaxed mb-4">
                 <strong>Variante Ost – bis Kaş/Kalkan/Kekova</strong><br />
-                Göcek-Buchten → Fethiye → Gemiler → Kalkan → Kaş → Kekova-Reede (Zonen, Moorings, Tauch-/Ankerregeln) → Kaş → Rückweg via Gemiler/Fethiye → Göcek.<br />
+                Göcek-Buchten → Fethiye → Gemiler → Kalkan → Kaş → Kekova-Ankerplatz (Zonen, Moorings, Tauch-/Ankerregeln) → Kaş → Rückweg via Gemiler/Fethiye → Göcek.<br />
                 <em>Charakter:</em> Dramatische Küsten, klarstes Wasser, punktuell katabatische Effekte; kulturhistorisch ein Höhepunkt der Lykischen Küste.
               </p>
               <p className="text-lg leading-relaxed mb-6">
