@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 
 const Marmaris = () => {
   useEffect(() => {
@@ -119,6 +120,21 @@ const Marmaris = () => {
               );
             })}
           </div>
+        </div>
+
+        {/* Map Section */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold mb-8 text-center">Karte der Region Marmaris</h3>
+          <TerritoryMap
+            region="Marmaris"
+            center={{
+              lat: 36.8359908,
+              lng: 28.2162717
+            }}
+            zoom={11}
+            maptype="satellite"
+            className="max-w-4xl mx-auto"
+          />
         </div>
 
         {/* Description */}
