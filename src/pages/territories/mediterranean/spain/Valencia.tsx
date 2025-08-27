@@ -246,7 +246,7 @@ const Valencia = () => {
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Einsteiger & Familien</h5>
-                <p className="text-sm text-gray-600">Viele Sand-Ankerplätze, kurze Etappen, dichte Versorgung – maximaler Bade- und Genussfaktor.</p>
+                <p className="text-sm text-gray-600">Viele Sand-Ankerplätze, kurze Etappen, dichte Versorgung maximaler Bade- und Genussfaktor.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Genusssegler</h5>
@@ -254,15 +254,15 @@ const Valencia = () => {
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Ambitionierte Crews</h5>
-                <p className="text-sm text-gray-600">Längere Schläge zu Kaps und – mit Fenster – Offshore zu den Columbretes; Trimm- und Manövertraining in der Thermik.</p>
+                <p className="text-sm text-gray-600">Längere Schläge zu Kaps und mit Fenster Offshore zu den Columbretes; Trimm- und Manövertraining in der Thermik.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Katamarane</h5>
-                <p className="text-sm text-gray-600">Profitieren von flachen Buchten bei Jávea/Altea und langen Strandreeden – Schwojkreis beachten und früh an Moorings.</p>
+                <p className="text-sm text-gray-600">Profitieren von flachen Buchten bei Jávea/Altea und langen Strandreeden Schwojkreis beachten und früh an Moorings.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Motoryachten/Daycruiser</h5>
-                <p className="text-sm text-gray-600">Viele Day-Use-Spots, kurze Wege und verlässliche Service-Dichte – ideal für Foto-, Lunch- und Sundowner-Stopps.</p>
+                <p className="text-sm text-gray-600">Viele Day-Use-Spots, kurze Wege und verlässliche Service-Dichte ideal für Foto-, Lunch- und Sundowner-Stopps.</p>
               </div>
             </div>
 
