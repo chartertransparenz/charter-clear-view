@@ -4,64 +4,42 @@ import { ArrowLeft, MapPin, Calendar, Users, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-
 const Valencia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    {
-      icon: MapPin,
-      label: "Lage",
-      value: "Ostspanische Küste"
-    },
-    {
-      icon: Calendar,
-      label: "Beste Zeit",
-      value: "April-November"
-    },
-    {
-      icon: Users,
-      label: "Geeignet für",
-      value: "Alle Erfahrungsstufen"
-    },
-    {
-      icon: Star,
-      label: "Besonderheit",
-      value: "Moderne Stadt & Tradition"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Ostspanische Küste"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "April-November"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Star,
+    label: "Besonderheit",
+    value: "Moderne Stadt & Tradition"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-[60vh] bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/boot-mieten-costa-smeralda.jpg')",
-            filter: "brightness(0.7)"
-          }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/boot-mieten-costa-smeralda.jpg')",
+        filter: "brightness(0.7)"
+      }} />
         <div className="relative z-10 text-center text-white px-4">
           <div className="mb-6">
-            <Link
-              to="/reviere/mittelmeer/spanien"
-              className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
-            >
+            <Link to="/reviere/mittelmeer/spanien" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors">
               <ArrowLeft className="h-4 w-4" />
               Zurück zu Spanien
             </Link>
@@ -100,12 +78,11 @@ const Valencia = () => {
 
         {/* Quick Facts */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-center">Quick Facts</h2>
+          
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {quickFacts.map((fact, index) => {
-              const IconComponent = fact.icon;
-              return (
-                <Card key={index} className="text-center">
+            const IconComponent = fact.icon;
+            return <Card key={index} className="text-center">
                   <CardContent className="p-6">
                     <IconComponent className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <p className="font-semibold text-sm text-muted-foreground mb-1">
@@ -113,9 +90,8 @@ const Valencia = () => {
                     </p>
                     <p className="font-bold">{fact.value}</p>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
 
@@ -132,8 +108,6 @@ const Valencia = () => {
           </CharterRequestForm>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Valencia;
