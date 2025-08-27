@@ -55,7 +55,7 @@ const Marmaris = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: "url('/public/lovable-uploads/5c4d5c49-2d62-4b5b-8c3a-e39beb428dfc.png')",
+            backgroundImage: "url('/lovable-uploads/5b600e89-c143-44e0-a7c7-073d82f522df.png')",
             filter: "brightness(0.7)"
           }} 
         />
