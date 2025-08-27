@@ -250,7 +250,7 @@ const Valencia = () => {
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Genusssegler</h5>
-                <p className="text-sm text-gray-600">Küsten- und Cala-Hopping mit Tapas-Stopps, Altstadtbummeln in Valencia, Dénia, Peñíscola, abends ruhige Reeden.</p>
+                <p className="text-sm text-gray-600">Küsten- und Cala-Hopping mit Tapas-Stopps, Altstadtbummeln Valencia, Dénia, Peñíscola, abends ruhige Reeden.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Ambitionierte Crews</h5>
