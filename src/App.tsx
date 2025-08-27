@@ -49,6 +49,12 @@ import Korsika from "./pages/territories/mediterranean/france/Korsika";
 // Turkish regions
 import TuerkischeAegaeis from "./pages/territories/mediterranean/turkey/TuerkischeAegaeis";
 
+// Turkey territory sub-pages
+import Bodrum from "./pages/territories/mediterranean/turkey/Bodrum";
+import Marmaris from "./pages/territories/mediterranean/turkey/Marmaris";
+import GoecekFethiye from "./pages/territories/mediterranean/turkey/GoecekFethiye";
+import KasKalkan from "./pages/territories/mediterranean/turkey/KasKalkan";
+
 // Italian regions
 import Sardinien from "./pages/territories/mediterranean/italy/Sardinien";
 import Sizilien from "./pages/territories/mediterranean/italy/Sizilien";
@@ -214,6 +220,10 @@ function App() {
             
             {/* Turkish region routes */}
             <Route path="/reviere/mittelmeer/tuerkei/tuerkische-aegaeis" element={<TuerkischeAegaeis />} />
+            <Route path="/reviere/mittelmeer/tuerkei/bodrum" element={<Bodrum />} />
+            <Route path="/reviere/mittelmeer/tuerkei/marmaris" element={<Marmaris />} />
+            <Route path="/reviere/mittelmeer/tuerkei/goecek-fethiye" element={<GoecekFethiye />} />
+            <Route path="/reviere/mittelmeer/tuerkei/kas-kalkan" element={<KasKalkan />} />
             
             {/* Italian region routes */}
             <Route path="/reviere/mittelmeer/italien/sardinien" element={<Sardinien />} />
