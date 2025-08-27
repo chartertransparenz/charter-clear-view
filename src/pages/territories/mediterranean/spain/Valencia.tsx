@@ -131,8 +131,8 @@ const Valencia = () => {
             <h3 className="text-2xl font-bold mt-8 mb-4">Erreichbarkeit</h3>
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <ul className="list-disc pl-6 space-y-2 text-black">
-                <li><strong>Flug & Bahn:</strong> Der Flughafen Valencia (VLC) ist hervorragend angebunden; per Metro oder Taxi bist du schnell in den Häfen. Als Alternativen bieten sich Alicante (ALC) im Süden oder Castellón (CDT) im Norden an. Auch per Schnellzug aus Madrid/Barcelona bist du flott vor Ort.</li>
-                <li><strong>City-Plus:</strong> Viele Crews kombinieren eine Nacht in der Stadt (Altstadt, Turia-Park, City of Arts & Sciences) mit dem Törnstart – praktisch, inspirierend und entspannt.</li>
+                <li><strong>Flug & Bahn:</strong> Der Flughafen Valencia VLC ist hervorragend angebunden; per Metro oder Taxi bist du schnell in den Häfen. Als Alternativen bieten sich Alicante ALC im Süden oder Castellón CDT im Norden an. Auch per Schnellzug aus Madrid/Barcelona bist du flott vor Ort.</li>
+                <li><strong>City-Plus:</strong> Viele Crews kombinieren eine Nacht in der Stadt mit Altstadt, Turia-Park, City of Arts & Sciences mit dem Törnstart – praktisch, inspirierend und entspannt.</li>
               </ul>
             </div>
 
@@ -142,7 +142,7 @@ const Valencia = () => {
                 <p><strong>La Marina de València</strong> – Großzügige Steganlagen, Muring/Lazy Lines, Strom/Wasser am Platz, zahlreiche Werften & Chandlers sowie Restaurants direkt am Kai. Die legendäre America's-Cup-Promenade macht den Start besonders angenehm.</p>
                 <p><strong>Real Club Náutico de Valencia</strong> – Sportlich-traditionsreiche Alternative im Süden des Stadthafens mit kompletter Servicekette.</p>
                 <p><strong>Gandía & Cullera</strong> – Ideale Zwischenbasen für den südlichen Sektor: kompakt, gut organisiert, kurze Wege in die Stadt und an breite Strände.</p>
-                <p><strong>Dénia</strong> – Kulinarische Hochburg und Top-Drehscheibe für die nördliche Costa Blanca. Von hier ist es ein Katzensprung zu den Kap- und Felsbuchten bei Jávea/Xàbia (Cabo de San Antonio, Cabo de la Nao).</p>
+                <p><strong>Dénia</strong> – Kulinarische Hochburg und Top-Drehscheibe für die nördliche Costa Blanca. Von hier ist es ein Katzensprung zu den Kap- und Felsbuchten bei Jávea/Xàbia wie Cabo de San Antonio und Cabo de la Nao.</p>
                 <p><strong>Castellón / Oropesa / Alcossebre</strong> – Für die Costa del Azahar nach Norden: moderne Häfen, gute Logistik und der perfekte Absprung zu Peñíscola und – bei passendem Wetterfenster – zu den Columbretes.</p>
               </div>
             </div>
@@ -200,7 +200,7 @@ const Valencia = () => {
               </div>
               
               <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 5 – Jávea/Xàbia → Altea (oder Moraira/Calpe-Variante)</h5>
+                <h5 className="font-semibold">Tag 5 – Jávea/Xàbia → Altea oder Moraira/Calpe-Variante</h5>
                 <p className="text-sm text-muted-foreground">Kurze Etappe mit Badestopp; abends Bummel durch Altea-Altstadt. Alternative je nach Lust: Moraira/Calpe mit markantem Peñón de Ifach.</p>
               </div>
               
@@ -218,8 +218,8 @@ const Valencia = () => {
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Varianten</h4>
               <ul className="list-disc pl-6 space-y-1 text-black">
-                <li><strong>Azahar-Variante:</strong> Nördlicher Bogen via Castellón – Oropesa – Peñíscola (mehr Stadt-/Kulturmix, ruhige Reeden).</li>
-                <li><strong>Columbretes-Window:</strong> Bei stabilem Fenster Offshore-Abstecher zu den Columbretes (Moorings/Regeln beachten) – Bonus für naturverliebte Crews.</li>
+                <li><strong>Azahar-Variante:</strong> Nördlicher Bogen via Castellón – Oropesa – Peñíscola mit mehr Stadt-/Kulturmix und ruhigen Reeden.</li>
+                <li><strong>Columbretes-Window:</strong> Bei stabilem Fenster Offshore-Abstecher zu den Columbretes wobei Moorings/Regeln beachtet werden müssen – Bonus für naturverliebte Crews.</li>
                 <li><strong>Katamaran-Fokus:</strong> Mehr Cala-Nächte bei Jávea/Altea; flache Reeden spielen ihre Stärken aus.</li>
               </ul>
             </div>
@@ -227,7 +227,7 @@ const Valencia = () => {
             <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <ul className="list-disc pl-6 space-y-2 text-black">
-                <li><strong>Sommerbrise („Embat/Garbí"):</strong> Tagsüber setzt die Seewind-Thermik ein – ideal fürs Cruising mit Badepausen. Morgens/abends häufig ruhig.</li>
+                <li><strong>Sommerbrise „Embat/Garbí":</strong> Tagsüber setzt die Seewind-Thermik ein – ideal fürs Cruising mit Badepausen. Morgens/abends häufig ruhig.</li>
                 <li><strong>Levante:</strong> Östliche Lagen bringen Schwell an offene Strände; Häfen und Kaps mit Lee einplanen.</li>
                 <li><strong>Poniente:</strong> Westliche Binnenwinde sorgen nahe der Küste für flaches Wasser und schnelle Etappen – in der Hitze sehr trocken und warm.</li>
                 <li><strong>Gewitterfenster:</strong> Spätsommer möglich; Forecast/Nowcast im Blick.</li>
@@ -269,7 +269,7 @@ const Valencia = () => {
             <h3 className="text-2xl font-bold mt-8 mb-4">Sicherheit & Seemannschaft</h3>
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <p className="text-black">
-                Reservate/Regeln vor Abfahrt prüfen (v. a. Columbretes), auf Sand ankern (Posidonia schützen), Kette großzügig stecken und Halt prüfen, Fischfarmen/Fährlinien mit Abstand queren, Reffpunkte markieren und Wetterfenster täglich checken. Komfort schlägt Knoten – besonders mit Familie an Bord.
+                Reservate/Regeln vor Abfahrt prüfen vor allem Columbretes, auf Sand ankern und Posidonia schützen, Kette großzügig stecken und Halt prüfen, Fischfarmen/Fährlinien mit Abstand queren, Reffpunkte markieren und Wetterfenster täglich checken. Komfort schlägt Knoten – besonders mit Familie an Bord.
               </p>
             </div>
 
