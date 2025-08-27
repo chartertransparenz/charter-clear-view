@@ -152,6 +152,24 @@ const Turkey = () => {
           ))}
         </div>
 
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte Türkische Mittelmeerküste</h2>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800000!2d28.010101!3d37.4905103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDI5JzI1LjgiTiAyOMKwMDAnMzYuNCJF!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde"
+              width="100%" 
+              height="450" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade" 
+              className="w-full h-96"
+              title="Karte Türkische Mittelmeerküste"
+            />
+          </div>
+        </div>
+
         {/* Detailed Description */}
         <div className="max-w-none mx-auto mb-12">
           <div className="prose prose-lg max-w-none">
