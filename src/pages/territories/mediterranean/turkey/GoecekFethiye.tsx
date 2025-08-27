@@ -146,8 +146,7 @@ const GoecekFethiye = () => {
         {/* Comprehensive Description */}
         <div className="max-w-none mx-auto mb-12">
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="prose prose-lg max-w-none">
-              <h2 className="text-4xl font-bold mb-6">Yachtcharter Göcek & Fethiye – Ihr Premium-Törn an der Lykischen Küste</h2>
+            <h2 className="text-4xl font-bold mb-6">Yachtcharter Göcek & Fethiye – Ihr Premium-Törn an der Lykischen Küste</h2>
               
               <h3 className="text-2xl font-semibold mt-8 mb-4">Einleitung</h3>
               <p className="text-lg leading-relaxed mb-6">
@@ -157,23 +156,38 @@ const GoecekFethiye = () => {
                 Die Topografie schützt vor Dünung, die Brise baut sich zuverlässig auf, und die Distanzen zwischen den Buchten sind so kurz, dass der Skipper jeden Tag flexibel planen kann. Ob Badestopp in kristallklarem Wasser, Landgang zu lykischen Stätten oder Dinner am Kai – Yachtcharter Göcek steht für maximalen Urlaubsertrag pro Segelmeile. Für Segeln Türkei, Bareboat Türkei oder Skipper Göcek ist dies das Revier, in dem selbst Einsteiger souverän wirken – und erfahrene Skipper das Feinhandwerk des Ankerns mit Landleinen zelebrieren.
               </p>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Erreichbarkeit</h3>
-              <p className="text-lg leading-relaxed mb-6">
-                Dalaman Flughafen (DLM) ist die komfortabelste Anlaufstelle: Kurze Transferzeiten bringen Sie direkt in die Marinas von Göcek oder nach Fethiye – ideal für Crews mit knapper Urlaubszeit oder für Familien, die ohne Umwege an Bord möchten. Alternativ erreichen Sie das Revier über Antalya (AYT) oder Bodrum (BJV); die Straßenanbindung ist gut, Transfers lassen sich unkompliziert organisieren.
-              </p>
-              <p className="text-lg leading-relaxed mb-6">
-                Für PKW-Anreise bietet sich der Transit über den Balkan oder über Fähren nach Italien/Griechenland mit anschließendem Landweg an. Vor Ort stehen Parkplätze in den Marinas, Shuttle- und Privattransfers sowie Proviant-Lieferdienste zur Verfügung – Letztere bringen Einkauf und Getränke direkt an den Steg. So bleibt der Check-in stressfrei und der erste Ableger gelingt noch am Ankunftstag.
-              </p>
-
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Besonderheiten des Reviers</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Sehr geschützte Buchten:</strong> Die Skopea Limanı ist ein natürlicher „Wellenbrecher". Selbst bei auffrischender Brise liegen Sie in den Buchten ruhig und sicher.</li>
-                <li><strong>Kurze Schläge & hohe Flexibilität:</strong> Viele Törnziele liegen nur wenige Seemeilen auseinander. Badepause, Lunch-Ankerplatz, Abendliege – alles ist fein dosierbar.</li>
-                <li><strong>Thermische Nachmittagswinde:</strong> Häufig baut sich ab Mittag eine moderate Brise auf und schläft am Abend wieder ein – ideal für Genusssegler, Familien und SUP-Fans.</li>
-                <li><strong>Ankern mit Heckleinen:</strong> Typisch für Göcek & Fethiye: Sand-/Mudgrund mit sehr gutem Halt. In schmaleren Calas sichern Skipper die Yacht mit Landleinen an Bäumen/Felsösen; das reduziert Schwojen und schafft Raum für Nachbaryachten.</li>
-                <li><strong>Bojenfelder & Restaurantstege:</strong> In vielen Buchten liegen Mooringbojen; zahlreiche Tavernen betreiben Stege mit Lazy Lines, oft mit Wasser/Strom, Duschen und Küche am Kai.</li>
-                <li><strong>Landschaft & Kultur:</strong> Hamam Koyu (Cleopatra's Bath), die byzantinischen Ruinen auf Tersane Adası, die Felsgräber über Fethiye und Aussichtspunkte über Ölüdeniz machen das Revier auch an Land zu einem Erlebnis.</li>
+            {/* Erreichbarkeit Box */}
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h4 className="font-semibold mb-3 text-black">Erreichbarkeit & Anreise</h4>
+              <p className="text-black mb-3">Dalaman Flughafen (DLM) ist die komfortabelste Anlaufstelle:</p>
+              <ul className="list-disc pl-6 space-y-1 text-black">
+                <li>Kurze Transferzeiten direkt zu den Marinas von Göcek oder Fethiye</li>
+                <li>Alternative Anreise über Antalya (AYT) oder Bodrum (BJV)</li>
+                <li>PKW-Anreise über Balkan oder Fähren Italien/Griechenland</li>
+                <li>Parkplätze in Marinas, Shuttle-Services und Proviant-Lieferdienste verfügbar</li>
               </ul>
+            </div>
+
+            {/* Besonderheiten des Reviers */}
+            <h3 className="text-2xl font-semibold mt-8 mb-4">Besonderheiten des Reviers</h3>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <div className="border border-gray-200 p-4 rounded-lg">
+                <h5 className="font-semibold mb-2">Geschützte Buchten</h5>
+                <p className="text-sm">Die Skopea Limanı ist ein natürlicher „Wellenbrecher". Selbst bei auffrischender Brise liegen Sie ruhig und sicher.</p>
+              </div>
+              <div className="border border-gray-200 p-4 rounded-lg">
+                <h5 className="font-semibold mb-2">Kurze Schläge</h5>
+                <p className="text-sm">Viele Törnziele liegen nur wenige Seemeilen auseinander. Badepause, Lunch-Ankerplatz – alles fein dosierbar.</p>
+              </div>
+              <div className="border border-gray-200 p-4 rounded-lg">
+                <h5 className="font-semibold mb-2">Thermische Winde</h5>
+                <p className="text-sm">Ab Mittag baut sich moderate Brise auf, schläft abends ein – ideal für Genusssegler und Familien.</p>
+              </div>
+              <div className="border border-gray-200 p-4 rounded-lg">
+                <h5 className="font-semibold mb-2">Ankern mit Landleinen</h5>
+                <p className="text-sm">Sand-/Mudgrund mit sehr gutem Halt. Landleinen an Bäumen/Felsösen reduzieren Schwojen.</p>
+              </div>
+            </div>
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">Vorschriften & Regeln – kompakt und praxisnah</h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -372,7 +386,6 @@ const GoecekFethiye = () => {
               <p className="text-lg leading-relaxed">
                 Jetzt unverbindlich anfragen – und die Leinen in der Skopea Limanı lösen. Für Segeln Türkei an der Lykischen Küste, fein dosierte Tagesetappen und Törnerinnerungen, die bleiben.
               </p>
-            </div>
           </div>
         </div>
 
