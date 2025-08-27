@@ -68,8 +68,7 @@ const Mediterranean = () => {
         { name: "Bodrum", link: "/reviere/mittelmeer/tuerkei/bodrum" },
         { name: "Marmaris", link: "/reviere/mittelmeer/tuerkei/marmaris" },
         { name: "Göcek & Fethiye", link: "/reviere/mittelmeer/tuerkei/goecek-fethiye" },
-        { name: "Kas", link: "/reviere/mittelmeer/tuerkei/kas" },
-        { name: "Kalkan", link: "/reviere/mittelmeer/tuerkei/kalkan" }
+        { name: "Kas & Kalkan", link: "/reviere/mittelmeer/tuerkei/kas-kalkan" }
       ]
     },
     { 
