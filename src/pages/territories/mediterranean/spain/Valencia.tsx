@@ -101,13 +101,11 @@ const Valencia = () => {
           <Card>
             <CardContent className="p-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d803434.5785240464!2d0.5037699!3d38.9876416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12172227f5a3b0dd%3A0x91d9d3e4ead65db!2sValencia%2C%20Spanien!5e1!3m2!1sde!2sde!4v1640995200000!5m2!1sde!2sde"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.5962%2C39.3000%2C0.1038%2C39.6752&layer=mapnik&marker=39.4699%2C-0.3763"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
-                allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 title="Karte von Valencia"
               />
             </CardContent>
