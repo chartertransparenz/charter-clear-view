@@ -8,66 +8,40 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
-
 const Marmaris = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    {
-      icon: MapPin,
-      label: "Lage",
-      value: "Türkische Ägäis, Südwestküste"
-    },
-    {
-      icon: Calendar,
-      label: "Beste Zeit",
-      value: "Mai-Oktober"
-    },
-    {
-      icon: Users,
-      label: "Geeignet für",
-      value: "Alle Erfahrungsstufen"
-    },
-    {
-      icon: Star,
-      label: "Besonderheit",
-      value: "Größte Marina der Türkei"
-    }
-  ];
-
-  const highlights = [
-    "Idealer Ausgangspunkt für Yachtcharter an der Karischen Küste",
-    "Geschützter Naturhafen von Marmaris für entspanntes Ankern",
-    "Hisarönü-Golf mit verlässlicher thermischer Brise",
-    "Spektakuläre Ankerbuchten mit Restaurantstegen",
-    "Antike Stätte Knidos mit Doppelkap und Abendlicht",
-    "Dalyan-Delta und Ekincik für Natur-Erlebnisse",
-    "Erstklassige Marina-Infrastruktur mit Netsel und Adaköy",
-    "Kurze Distanzen zwischen sicheren Ankerplätzen",
-    "Perfekt für Einsteiger bis ambitionierte Crews"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Türkische Ägäis, Südwestküste"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Mai-Oktober"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Star,
+    label: "Besonderheit",
+    value: "Größte Marina der Türkei"
+  }];
+  const highlights = ["Idealer Ausgangspunkt für Yachtcharter an der Karischen Küste", "Geschützter Naturhafen von Marmaris für entspanntes Ankern", "Hisarönü-Golf mit verlässlicher thermischer Brise", "Spektakuläre Ankerbuchten mit Restaurantstegen", "Antike Stätte Knidos mit Doppelkap und Abendlicht", "Dalyan-Delta und Ekincik für Natur-Erlebnisse", "Erstklassige Marina-Infrastruktur mit Netsel und Adaköy", "Kurze Distanzen zwischen sicheren Ankerplätzen", "Perfekt für Einsteiger bis ambitionierte Crews"];
+  return <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-[60vh] bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-          style={{
-            backgroundImage: "url('/boot-mieten-costa-smeralda.jpg')",
-            filter: "brightness(0.7)"
-          }} 
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/boot-mieten-costa-smeralda.jpg')",
+        filter: "brightness(0.7)"
+      }} />
         <div className="relative z-10 text-center text-white px-4">
           <div className="mb-6">
-            <Link 
-              to="/reviere/mittelmeer/tuerkei" 
-              className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
-            >
+            <Link to="/reviere/mittelmeer/tuerkei" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors">
               <ArrowLeft className="h-4 w-4" />
               Zurück zur Türkei
             </Link>
@@ -108,9 +82,8 @@ const Marmaris = () => {
         <div className="mb-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {quickFacts.map((fact, index) => {
-              const IconComponent = fact.icon;
-              return (
-                <Card key={index} className="text-center">
+            const IconComponent = fact.icon;
+            return <Card key={index} className="text-center">
                   <CardContent className="p-6">
                     <IconComponent className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <p className="font-semibold text-sm text-muted-foreground mb-1">
@@ -118,25 +91,18 @@ const Marmaris = () => {
                     </p>
                     <p className="font-bold">{fact.value}</p>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
 
         {/* Map Section */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold mb-8 text-center">Karte der Region Marmaris</h3>
-          <TerritoryMap
-            region="Marmaris"
-            center={{
-              lat: 36.8359908,
-              lng: 28.2162717
-            }}
-            zoom={11}
-            maptype="satellite"
-            className="max-w-4xl mx-auto"
-          />
+          <TerritoryMap region="Marmaris" center={{
+          lat: 36.8359908,
+          lng: 28.2162717
+        }} zoom={11} maptype="satellite" className="max-w-4xl mx-auto" />
         </div>
 
         {/* Detailed Region Description */}
@@ -258,7 +224,7 @@ const Marmaris = () => {
               Weil hier alles zusammenkommt: eine Top-Infrastruktur mit Netsel Marina, Marmaris Yacht Marina (Adaköy), Albatros, Pupa und der Martı Marina in Orhaniye; eine Logistik, die mit großen Supermärkten, Basar und Lieferservice das Proviantieren leicht macht; ein Revier, das vom Stadtausleger bis zum Doppelkap von Knidos, vom Ekincik-Ausflug bis zu den Göcek-Buchten jede Vorliebe bedient. Yachtcharter Marmaris, Hisarönü-Golf, Bozburun-Halbinsel und Datça sind Namen, die für verlässliche Winde, sichere Ankerplätze und intensive Erlebnisse stehen – auf Segelyacht, Katamaran oder Gulet.
             </p>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Call to Action</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Jetzt Yachtcharter Marmaris planen</h3>
             <p className="text-lg leading-relaxed mb-6">
               Wenn Sie jetzt Lust bekommen haben, die Leinen zu lösen, nennen Sie uns Ihre Crewgröße, Ihre Reisezeit und die gewünschte Yachtklasse. Wir planen einen Törn, der zu Ihnen passt, reservieren Restaurantstege und Moorings, koordinieren Mavi-Kart-Entsorgung und organisieren auf Wunsch den Transfer vom Dalaman Flughafen bis an den Steg. Yachtcharter Marmaris bedeutet Segeln Türkei auf den Punkt: klare Routen, kurze Wege, viel Zeit im Wasser – und Erinnerungen, die länger tragen als jede Welle.
             </p>
@@ -269,13 +235,11 @@ const Marmaris = () => {
         <div className="mb-16">
           <h3 className="text-3xl font-bold mb-8 text-center">Highlights in Marmaris</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="h-full">
+            {highlights.map((highlight, index) => <Card key={index} className="h-full">
                 <CardContent className="p-6">
                   <p className="text-center">{highlight}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -294,8 +258,6 @@ const Marmaris = () => {
           </CharterRequestForm>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Marmaris;
