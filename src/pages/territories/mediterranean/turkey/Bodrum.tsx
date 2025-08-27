@@ -55,7 +55,7 @@ const Bodrum = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: "url('/public/lovable-uploads/c8c65ed0-67d5-4426-956e-aa67126c946f.png')",
+            backgroundImage: "url('/lovable-uploads/e19f0a81-a9e7-495b-892e-5071c5ed57ba.png')",
             filter: "brightness(0.7)"
           }} 
         />
