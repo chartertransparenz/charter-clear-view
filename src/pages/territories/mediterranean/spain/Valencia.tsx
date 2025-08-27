@@ -162,21 +162,21 @@ const Valencia = () => {
             
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
-                <h5 className="font-semibold mb-2">Südlicher Sektor: Cullera – Gandía – Dénia – Jávea/Xàbia – Altea</h5>
-                <p className="text-sm text-gray-600">Die Sandbuchten südlich von Valencia eignen sich perfekt für den ersten Badestopp. Ab Gandía wird die Küste abwechslungsreicher; bei Dénia ragen die Felsmassive von Cabo de San Antonio und Cabo de la Nao ins Meer. Dazwischen liegen kleine Calas mit klarem Wasser – ideal zum Ankern, Schnorcheln, SUP. Jávea/Xàbia punktet mit Buchten wie Granadella und Portitxol, Altea mit stimmungsvoller Altstadt über der Bucht.</p>
+                <h5 className="font-semibold mb-2">Südlicher Sektor: Cullera - Gandía - Dénia - Jávea/Xàbia - Altea</h5>
+                <p className="text-sm text-gray-600">Die Sandbuchten südlich von Valencia eignen sich perfekt für den ersten Badestopp. Ab Gandía wird die Küste abwechslungsreicher; bei Dénia ragen die Felsmassive von Cabo de San Antonio und Cabo de la Nao ins Meer. Dazwischen liegen kleine Calas mit klarem Wasser, ideal zum Ankern, Schnorcheln, SUP. Jávea/Xàbia punktet mit Buchten wie Granadella und Portitxol, Altea mit stimmungsvoller Altstadt über der Bucht.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
-                <h5 className="font-semibold mb-2">Nördlicher Sektor: Sagunto – Castellón – Oropesa – Alcossebre – Peñíscola</h5>
-                <p className="text-sm text-gray-600">Nördlich von Valencia beginnt die Costa del Azahar – weniger überlaufen, mit langen Stränden, Kaps und Felsabschnitten. Peñíscola sticht heraus: die Burgstadt auf dem Felsen ist vom Wasser aus spektakulär – ein perfekter Landgang zwischen Hafenmauer und Altstadtgassen.</p>
+                <h5 className="font-semibold mb-2">Nördlicher Sektor: Sagunto - Castellón - Oropesa - Alcossebre - Peñíscola</h5>
+                <p className="text-sm text-gray-600">Nördlich von Valencia beginnt die Costa del Azahar mit weniger überlaufenen, langen Stränden, Kaps und Felsabschnitten. Peñíscola sticht heraus: die Burgstadt auf dem Felsen ist vom Wasser aus spektakulär und ein perfekter Landgang zwischen Hafenmauer und Altstadtgassen.</p>
               </div>
             </div>
 
             <div className="bg-blue-50 p-6 rounded-lg mb-8 border-l-4 border-blue-400">
               <h4 className="font-semibold mb-3 text-black">Offshore-Highlight: Columbretes-Inseln</h4>
-              <p className="text-black">Der vulkanische Mini-Archipel liegt draußen im Tyrrheno-/Balearenbecken der spanischen Ostküste: klares Wasser, reiches Meeresleben, limitierte Moorings – ein Traum für Naturfreunde. Unbedingt Wetterfenster prüfen; bei E-/NE-Lagen kann rasch Schwell stehen.</p>
+              <p className="text-black">Der vulkanische Mini-Archipel liegt draußen im Tyrrheno-/Balearenbecken der spanischen Ostküste: klares Wasser, reiches Meeresleben, limitierte Moorings. Ein Traum für Naturfreunde. Unbedingt Wetterfenster prüfen; bei E-/NE-Lagen kann rasch Schwell stehen.</p>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Törnvorschlag – 7 Tage ab València</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Törnvorschlag: 7 Tage ab València</h3>
             
             <div className="space-y-3 mb-8">
               <div className="border-l-4 border-primary pl-4">
@@ -218,8 +218,8 @@ const Valencia = () => {
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Varianten</h4>
               <ul className="list-disc pl-6 space-y-1 text-black">
-                <li><strong>Azahar-Variante:</strong> Nördlicher Bogen via Castellón – Oropesa – Peñíscola mit mehr Stadt-/Kulturmix und ruhigen Reeden.</li>
-                <li><strong>Columbretes-Window:</strong> Bei stabilem Fenster Offshore-Abstecher zu den Columbretes wobei Moorings/Regeln beachtet werden müssen – Bonus für naturverliebte Crews.</li>
+                <li><strong>Azahar-Variante:</strong> Nördlicher Bogen via Castellón - Oropesa - Peñíscola mit mehr Stadt-/Kulturmix und ruhigen Reeden.</li>
+                <li><strong>Columbretes-Window:</strong> Bei stabilem Fenster Offshore-Abstecher zu den Columbretes, wobei Moorings/Regeln beachtet werden müssen. Bonus für naturverliebte Crews.</li>
                 <li><strong>Katamaran-Fokus:</strong> Mehr Cala-Nächte bei Jávea/Altea; flache Reeden spielen ihre Stärken aus.</li>
               </ul>
             </div>
@@ -227,18 +227,18 @@ const Valencia = () => {
             <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <ul className="list-disc pl-6 space-y-2 text-black">
-                <li><strong>Sommerbrise „Embat/Garbí":</strong> Tagsüber setzt die Seewind-Thermik ein – ideal fürs Cruising mit Badepausen. Morgens/abends häufig ruhig.</li>
+                <li><strong>Sommerbrise „Embat/Garbí":</strong> Tagsüber setzt die Seewind-Thermik ein, ideal fürs Cruising mit Badepausen. Morgens/abends häufig ruhig.</li>
                 <li><strong>Levante:</strong> Östliche Lagen bringen Schwell an offene Strände; Häfen und Kaps mit Lee einplanen.</li>
-                <li><strong>Poniente:</strong> Westliche Binnenwinde sorgen nahe der Küste für flaches Wasser und schnelle Etappen – in der Hitze sehr trocken und warm.</li>
+                <li><strong>Poniente:</strong> Westliche Binnenwinde sorgen nahe der Küste für flaches Wasser und schnelle Etappen, in der Hitze sehr trocken und warm.</li>
                 <li><strong>Gewitterfenster:</strong> Spätsommer möglich; Forecast/Nowcast im Blick.</li>
-                <li><strong>Seegang:</strong> Im Küstenschutz moderat, an exponierten Kaps und über Grundsee bei Ostlagen kabbelig – Reffbereitschaft einplanen.</li>
+                <li><strong>Seegang:</strong> Im Küstenschutz moderat, an exponierten Kaps und über Grundsee bei Ostlagen kabbelig. Reffbereitschaft einplanen.</li>
               </ul>
             </div>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <p className="text-black">
-                Mai–Juni und September–Oktober bieten warme Temperaturen, planbare Brisen und entspanntere Häfen. Juli/August ist Hauptsaison: früh einlaufen, ggf. Marinas/Bojen reservieren und Wasser/Diesel nicht „auf Kante" planen. Wer City-Programm mag, baut eine Vor-/Nachnacht in Valencia ein – Logistik und Erlebnis in einem.
+                Mai-Juni und September-Oktober bieten warme Temperaturen, planbare Brisen und entspanntere Häfen. Juli/August ist Hauptsaison: früh einlaufen, ggf. Marinas/Bojen reservieren und Wasser/Diesel nicht „auf Kante" planen. Wer City-Programm mag, baut eine Vor-/Nachnacht in Valencia ein, das kombiniert Logistik und Erlebnis.
               </p>
             </div>
 
@@ -258,7 +258,7 @@ const Valencia = () => {
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Katamarane</h5>
-                <p className="text-sm text-gray-600">Profitieren von flachen Buchten bei Jávea/Altea und langen Strandreeden wobei Schwojkreis beachtet und früh an Moorings angelegt werden sollte.</p>
+                <p className="text-sm text-gray-600">Profitieren von flachen Buchten bei Jávea/Altea und langen Strandreeden, wobei Schwojkreis beachtet und früh an Moorings angelegt werden sollte.</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
                 <h5 className="font-semibold mb-2">Motoryachten/Daycruiser</h5>
