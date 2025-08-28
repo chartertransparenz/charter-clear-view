@@ -60,6 +60,7 @@ import Sardinien from "./pages/territories/mediterranean/italy/Sardinien";
 import Sizilien from "./pages/territories/mediterranean/italy/Sizilien";
 import Toskana from "./pages/territories/mediterranean/italy/Toskana";
 import CostaSmeralda from "./pages/territories/mediterranean/italy/costa-smeralda/CostaSmeralda";
+import Amalfikuste from "./pages/territories/mediterranean/italy/Amalfikuste";
 
 // Atlantic territories
 import Atlantic from "./pages/territories/Atlantic";
@@ -230,6 +231,7 @@ function App() {
             <Route path="/reviere/mittelmeer/italien/sardinien/costa-smeralda" element={<CostaSmeralda />} />
             <Route path="/reviere/mittelmeer/italien/sizilien" element={<Sizilien />} />
             <Route path="/reviere/mittelmeer/italien/toskana" element={<Toskana />} />
+            <Route path="/reviere/mittelmeer/italien/amalfikuste" element={<Amalfikuste />} />
             
             {/* Atlantic routes */}
             <Route path="/reviere/atlantik" element={<Atlantic />} />
