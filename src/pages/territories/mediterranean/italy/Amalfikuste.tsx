@@ -84,7 +84,7 @@ const Amalfikuste = () => {
             Amalfiküste
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto px-4">
-            Texte und Beschreibung werden später ergänzt
+            Dramatische Schönheit der italienischen Riviera
           </p>
         </div>
       </div>
