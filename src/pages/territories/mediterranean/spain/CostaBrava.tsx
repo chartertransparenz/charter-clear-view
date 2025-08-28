@@ -52,7 +52,7 @@ const CostaBrava = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/boot-mieten-costa-smeralda.jpg')",
+            backgroundImage: "url('/lovable-uploads/a401a8a9-fa46-46e3-8800-13442aaae36a.png')",
             filter: "brightness(0.7)"
           }}
         />
