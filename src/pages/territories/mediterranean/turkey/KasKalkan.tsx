@@ -130,7 +130,7 @@ const KasKalkan = () => {
             <TerritoryMap
               region="Kas & Kalkan"
               center={{ lat: 36.2427094, lng: 29.6395256 }}
-              zoom={18}
+              zoom={10}
               maptype="satellite"
               className="mb-8"
             />
