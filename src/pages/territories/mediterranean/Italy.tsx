@@ -157,15 +157,22 @@ const Italy = () => {
           ))}
         </div>
 
-        {/* Territory Map */}
-        <div className="max-w-4xl mx-auto mb-12 border-2 border-red-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Karte von Italien</h2>
+        {/* Italien Segelreviere - Übersichtskarte */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Italien Segelreviere - Übersichtskarte</h2>
           <TerritoryMap 
             region="Italien"
-            center={{ lat: 42.5, lng: 12.5 }}
-            zoom={5}
+            center={{ lat: 42.8968517, lng: 15.5597979 }}
+            zoom={7}
             maptype="satellite"
-            className="min-h-[400px]"
+            markers={[
+              { lat: 40.7589, lng: 14.2681, name: "Olbia", description: "Sardinien - Hauptcharterhafen" },
+              { lat: 38.1157, lng: 13.3615, name: "Palermo", description: "Sizilien - Kulturhauptstadt" },
+              { lat: 40.8518, lng: 14.2681, name: "Neapel", description: "Kampanien - Golf von Neapel" },
+              { lat: 43.5448, lng: 10.3117, name: "Livorno", description: "Toskana - Festlandhafen" },
+              { lat: 44.4056, lng: 8.9463, name: "Genua", description: "Ligurien - Italienische Riviera" }
+            ]}
+            className="shadow-lg"
           />
         </div>
 
