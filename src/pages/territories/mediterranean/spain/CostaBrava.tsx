@@ -52,7 +52,7 @@ const CostaBrava = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/lovable-uploads/a401a8a9-fa46-46e3-8800-13442aaae36a.png')",
+            backgroundImage: "url('/lovable-uploads/0027bb02-2f53-4dd7-81ed-206d49f8e2c8.png')",
             filter: "brightness(0.7)"
           }}
         />
