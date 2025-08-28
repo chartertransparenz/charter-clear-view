@@ -165,13 +165,6 @@ const Italy = () => {
             center={{ lat: 42.8968517, lng: 15.5597979 }}
             zoom={7}
             maptype="satellite"
-            markers={[
-              { lat: 40.7589, lng: 14.2681, name: "Olbia", description: "Sardinien - Hauptcharterhafen" },
-              { lat: 38.1157, lng: 13.3615, name: "Palermo", description: "Sizilien - Kulturhauptstadt" },
-              { lat: 40.8518, lng: 14.2681, name: "Neapel", description: "Kampanien - Golf von Neapel" },
-              { lat: 43.5448, lng: 10.3117, name: "Livorno", description: "Toskana - Festlandhafen" },
-              { lat: 44.4056, lng: 8.9463, name: "Genua", description: "Ligurien - Italienische Riviera" }
-            ]}
             className="shadow-lg"
           />
         </div>
