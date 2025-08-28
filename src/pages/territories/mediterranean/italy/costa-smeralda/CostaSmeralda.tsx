@@ -6,63 +6,39 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const CostaSmeralda = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Nordost-Sardinien" },
-    { icon: Calendar, label: "Beste Zeit", value: "Mai-Oktober" },
-    { icon: Users, label: "Geeignet für", value: "Naturliebhaber" },
-    { icon: Anchor, label: "Besonderheit", value: "Unzählige Buchten" }
-  ];
-
-  const marinas = [
-    "Porto Cervo",
-    "Portisco", 
-    "Porto Rotondo",
-    "Poltu Quatu",
-    "Cannigione",
-    "Olbia"
-  ];
-
-  const highlights = [
-    "Weltberühmte Costa Smeralda",
-    "Exklusive Marinas und Yachthäfen",
-    "La Maddalena Archipel",
-    "Kristallklares, smaragdgrünes Wasser",
-    "Luxuriöse Boutiquen und Restaurants",
-    "Spektakuläre Granitformationen",
-    "Internationale Jet-Set Atmosphäre",
-    "Perfekte Ankerplätze",
-    "Erstklassige nautische Infrastruktur"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Nordost-Sardinien"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Mai-Oktober"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Naturliebhaber"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Unzählige Buchten"
+  }];
+  const marinas = ["Porto Cervo", "Portisco", "Porto Rotondo", "Poltu Quatu", "Cannigione", "Olbia"];
+  const highlights = ["Weltberühmte Costa Smeralda", "Exklusive Marinas und Yachthäfen", "La Maddalena Archipel", "Kristallklares, smaragdgrünes Wasser", "Luxuriöse Boutiquen und Restaurants", "Spektakuläre Granitformationen", "Internationale Jet-Set Atmosphäre", "Perfekte Ankerplätze", "Erstklassige nautische Infrastruktur"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png')",
-            filter: "brightness(0.7)"
-          }}
-        ></div>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "url('/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png')",
+        filter: "brightness(0.7)"
+      }}></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -73,10 +49,7 @@ const CostaSmeralda = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/mittelmeer/italien/sardinien" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/mittelmeer/italien/sardinien" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zu Sardinien
@@ -138,15 +111,13 @@ const CostaSmeralda = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <Card key={index} className="shadow-lg">
+          {quickFacts.map((fact, index) => <Card key={index} className="shadow-lg">
               <CardContent className="p-6 text-center">
                 <fact.icon className="w-8 h-8 text-emerald-600 mx-auto mb-3" />
                 <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
                 <p className="text-sm text-gray-600">{fact.value}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Description */}
@@ -165,13 +136,7 @@ const CostaSmeralda = () => {
 
               {/* Yachtcharter Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/2112d3b6-fd2a-4cce-ab71-7c25452c2d4a.png" 
-                  alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" 
-                  title="Yachtcharter Costa Smeralda"
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
+                <img src="/lovable-uploads/2112d3b6-fd2a-4cce-ab71-7c25452c2d4a.png" alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" title="Yachtcharter Costa Smeralda" className="w-full h-auto object-cover" loading="lazy" />
               </div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Die Costa Smeralda: Wo Luxus auf Natur trifft</h3>
@@ -204,13 +169,7 @@ const CostaSmeralda = () => {
 
               {/* Boot mieten Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/150dda6b-099a-40d6-a3d4-4c716d4be464.png" 
-                  alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" 
-                  title="Boot mieten Costa Smeralda"
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
+                <img src="/lovable-uploads/150dda6b-099a-40d6-a3d4-4c716d4be464.png" alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" title="Boot mieten Costa Smeralda" className="w-full h-auto object-cover" loading="lazy" />
               </div>
 
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
@@ -329,35 +288,22 @@ const CostaSmeralda = () => {
 
         {/* Important Harbors & Ports */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Exklusive Marinas & Häfen</h2>
-          <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-3">
-            {marinas.map((marina, index) => (
-              <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-emerald-600" />
-                    <h3 className="text-lg font-semibold text-gray-800">{marina}</h3>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
+          
         </div>
 
         {/* Highlights */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Costa Smeralda?</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-lg">
+            {highlights.map((highlight, index) => <Card key={index} className="shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
                     <p className="font-medium text-gray-800">{highlight}</p>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -379,8 +325,6 @@ const CostaSmeralda = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default CostaSmeralda;
