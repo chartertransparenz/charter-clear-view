@@ -220,6 +220,101 @@ const CostaSmeralda = () => {
                 <li><strong>La Maddalena:</strong> Die gleichnamige Hauptinsel beherbergt das einzige Städtchen des Archipels mit einem charmanten Hafen und lebhaften Gassen.</li>
               </ul>
 
+              {/* Route Suggestions */}
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Routenvorschläge – 1 & 2 Wochen</h3>
+              
+              {/* 1 Week Route */}
+              <div className="mb-8">
+                <h4 className="text-xl font-bold text-gray-800 mb-4">1 Woche – „Maddalena & Costa Smeralda"</h4>
+                <div className="space-y-3 mb-4">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 1</span>
+                    <span className="text-gray-700">Portisco/Porto Cervo → Caprera (Cala Coticcio) – Einsegeln, Badestopp; abends ggf. La Maddalena (Cala Gavetta).</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 2</span>
+                    <span className="text-gray-700">La Maddalena → Spargi (Cala Corsara) → Budelli (Aussicht Spiaggia Rosa) – Distanz wahren, in Parkzone bojen.</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 3</span>
+                    <span className="text-gray-700">Budelli/Santa Maria → Razzoli-Passagen → Caprera (Cala Napoletana) – kurzes Inselhüpfen, Longline nur wo zulässig.</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 4</span>
+                    <span className="text-gray-700">Caprera → Santo Stefano → La Maddalena Stadt – Versorger-Stopp, ggf. Pump-Out.</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 5</span>
+                    <span className="text-gray-700">La Maddalena → Costa Smeralda (Cala di Volpe/Liscia Ruja) – Tagesanker; für die Nacht in Bojenfeld/Marina ausweichen.</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 6</span>
+                    <span className="text-gray-700">Costa Smeralda → Poltu Quatu/Porto Cervo – mondäner Abend, Boutiquen & Kulinarik.</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 7</span>
+                    <span className="text-gray-700">Porto Cervo/Poltu Quatu → Portisco/Cala dei Sardi – ruhiger Ausklang, Bunkern, Check-out.</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded">
+                  <strong>Unsere Gedanken zum Thema Wind & Törnplanung:</strong> Bei Mistral sind Ost- und Südseiten der Inseln oft ruhiger; bei Scirocco eher Nord-/Westcales. Früh starten, Mittagsthermik nutzen, nachmittags früh festmachen.
+                </p>
+              </div>
+
+              {/* 2 Week Route */}
+              <div className="mb-8">
+                <h4 className="text-xl font-bold text-gray-800 mb-4">2 Wochen – „Smaragd & Südkorsika"</h4>
+                <p className="text-gray-700 mb-3">
+                  <strong>Woche 1:</strong> wie oben, jedoch mit zusätzlichen Nächten in Cala Granara (Spargi), Cala Brigantina (Caprera) und einem Lay-Day in La Maddalena (Stadt & Inselhikes).
+                </p>
+                <p className="text-gray-700 mb-3">
+                  <strong>Woche 2:</strong> Bei stabilem Fenster Kurs Capo Testa → Bonifacio (Hafeninformationen beachten), Lavezzi/Cavallo nur bei ruhigen Bedingungen. Alternativ südwärts Tavolara/Molara und Golfo Aranci mit Fokus Schnorcheln/Tauchen. Für die Rückkehr in die Costa Smeralda rechtzeitig Marina-Reservierungen (Porto Cervo/Portisco/Cala dei Sardi) einplanen.
+                </p>
+                <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded">
+                  <strong>Windgedanke:</strong> Der Mistral kann in der Achse Bonifacio stark böig werden; Reffstrategie, Crewbriefing und Lee-Routen über Inselabdeckung sind entscheidend.
+                </p>
+              </div>
+
+              {/* Skipper Experiences */}
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Erfahrungen von Skippern – was unsere Kunden berichten</h3>
+              <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
+                <li><strong>Exklusivität & Luxus:</strong> Die Costa Smeralda gilt als einer der exklusivsten Hotspots im Mittelmeer. Hohe Dichte an Superyachten, luxuriöse Marinas (vor allem Porto Cervo) und ein internationales Publikum prägen das Bild.</li>
+                <li><strong>Vielfältige Reviere:</strong> Zwischen mondänen Häfen und naturbelassenen Buchten – besonders im Maddalena-Archipel – sind die Etappen kurz, die Auswahl groß. Entspannte Tagespläne gelingen fast immer.</li>
+                <li><strong>Wetter & Wind:</strong> Der Mistral kann im Sommer kräftig sein – reizvoll für Sportliche, aber nichts für Nachlässigkeit. Navigation zwischen den Inseln verlangt Aufmerksamkeit: Untiefen, Felsen, enge Passagen. Gute Seekarten (digital & Papier) und Plotter sind Standard.</li>
+                <li><strong>Service & Infrastruktur:</strong> Marinas sind hervorragend ausgestattet, jedoch in der Hochsaison oft ausgebucht und teuer. Empfehlung: frühzeitig reservieren – gelegentlich auch Bojenplätze in besonders beliebten Buchten.</li>
+                <li><strong>Kosten:</strong> Die Region ist preisintensiver als andere Reviere in Italien – von Liegegebühren über Restaurantbesuche bis Services.</li>
+              </ul>
+
+              {/* Seamanship */}
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Praxis & Seemannschaft</h3>
+              <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
+                <li><strong>Permit & Zonen:</strong> Permit auf dem Smartphone griffbereit, Zonenplan laminieren. Bojen vor Anker bevorzugen, Seegras meiden, Sandflecken suchen.</li>
+                <li><strong>Mistral-Management:</strong> Reff früh, Trimm sauber, Crewbriefing vor den Passagen. Düseneffekte an Kaps antizipieren, Inselabdeckung nutzen, notfalls Marina-Ausweich.</li>
+                <li><strong>Abwasser & Abfall:</strong> Kein Einleiten; Pump-Out und Hafenentsorgung fest in die Woche einplanen.</li>
+                <li><strong>Manöver & Etikette:</strong> Langsam fahren, Sog/Welle vermeiden, Badezonen respektieren. VHF checken, vor Restaurantstegen kurz anfunken.</li>
+                <li><strong>Ankern mit Landleinen:</strong> Nur wo zulässig und ohne Natur zu schädigen. Scheuerschutz nutzen, Winkel sauber setzen, anschließend leicht Vorlauf auf die Kette, Ankeralarm aktivieren.</li>
+              </ul>
+
+              {/* Best Time */}
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Beste Reisezeit</h3>
+              <p className="text-base text-gray-600 mb-6">
+                Mai–Juni und September–Oktober bieten warmes Wasser, stabile Winde und überschaubaren Andrang. Juli/August sind hoch frequentiert – Jetset-Atmosphäre inklusive. Wer die Hochsaison wählt, plant frühe Ankünfte, Reservierungen und Budgetpuffer ein. Bei Mistral helfen Lee-Cales im Archipel oder die Marinas an der Festlandküste.
+              </p>
+
+              {/* Charter Options */}
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Ihr Yachtcharter – Optionen & Service</h3>
+              <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
+                <li><strong>Bareboat Sardinien:</strong> Für erfahrene Skipper, die Flexibilität schätzen.</li>
+                <li><strong>Skipper Sardinien:</strong> Berufsskipper an Bord – entspannt ankommen, sicher segeln, lokal profitieren.</li>
+                <li><strong>Crewed-Yacht:</strong> Skipper + Hostess/Koch – Premiumkomfort für Familien, Freunde, Incentives.</li>
+                <li><strong>Katamaran mieten Sardinien:</strong> Viel Raum, Stabilität, geringer Tiefgang – perfekt für flache Cale.</li>
+                <li><strong>Segelyacht Sardinien:</strong> Charakter, Performance, leises Gleiten – ideal bei Brise und Inselabdeckung.</li>
+                <li><strong>Motoryacht:</strong> Tempo, mehrere Buchten pro Tag, Dinner-Sprung nach Porto Cervo oder Porto Rotondo.</li>
+              </ul>
+              <p className="text-base text-gray-600 mb-6">
+                Auf Wunsch organisieren wir Transfer ab Olbia Flughafen, Proviant-Lieferung, Wasser-Toys (SUP, Seascooter) und natürlich Ihr Permit Maddalena.
+              </p>
+
               <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit: Sardinien – Ein Segelrevier der Superlative</h3>
               <p className="text-base text-gray-600 mb-6">
                 Ein Yachtcharter an der Costa Smeralda bietet eine Vielfalt, die ihresgleichen sucht. Es ist die Freiheit, zwischen einem glamourösen Abend in Porto Cervo und einer stillen Nacht unter dem Sternenhimmel in einer einsamen Bucht zu wählen. Es ist die Kombination aus anspruchsvollem Segeln und entspanntem Badeurlaub. Es ist die Begegnung mit einer der spektakulärsten Küstenlandschaften Europas.
