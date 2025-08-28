@@ -74,9 +74,9 @@ const Bodrum = () => {
             Türkische Ägäis
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Bodrum</h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Antike Hafenstadt mit türkisblauen Buchten und lebendiger Yachtszene
-          </p>
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+              Antike Hafenstadt mit türkisblauen Buchten und lebendiger Yachtszene
+            </p>
         </div>
       </div>
 
