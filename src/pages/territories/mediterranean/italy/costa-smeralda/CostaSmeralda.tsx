@@ -227,33 +227,33 @@ const CostaSmeralda = () => {
               <div className="mb-8">
                 <h4 className="text-xl font-bold text-gray-800 mb-4">1 Woche – „Maddalena & Costa Smeralda"</h4>
                 <div className="space-y-3 mb-4">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 1</span>
-                    <span className="text-gray-700">Portisco/Porto Cervo → Caprera (Cala Coticcio) – Einsegeln, Badestopp; abends ggf. La Maddalena (Cala Gavetta).</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 1: Portisco/Porto Cervo → Caprera (Cala Coticcio) – Einsegeln, Badestopp; abends ggf. La Maddalena (Cala Gavetta).</span>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 2</span>
-                    <span className="text-gray-700">La Maddalena → Spargi (Cala Corsara) → Budelli (Aussicht Spiaggia Rosa) – Distanz wahren, in Parkzone bojen.</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 2: La Maddalena → Spargi (Cala Corsara) → Budelli (Aussicht Spiaggia Rosa) – Distanz wahren, in Parkzone bojen.</span>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 3</span>
-                    <span className="text-gray-700">Budelli/Santa Maria → Razzoli-Passagen → Caprera (Cala Napoletana) – kurzes Inselhüpfen, Longline nur wo zulässig.</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 3: Budelli/Santa Maria → Razzoli-Passagen → Caprera (Cala Napoletana) – kurzes Inselhüpfen, Longline nur wo zulässig.</span>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 4</span>
-                    <span className="text-gray-700">Caprera → Santo Stefano → La Maddalena Stadt – Versorger-Stopp, ggf. Pump-Out.</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 4: Caprera → Santo Stefano → La Maddalena Stadt – Versorger-Stopp, ggf. Pump-Out.</span>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 5</span>
-                    <span className="text-gray-700">La Maddalena → Costa Smeralda (Cala di Volpe/Liscia Ruja) – Tagesanker; für die Nacht in Bojenfeld/Marina ausweichen.</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 5: La Maddalena → Costa Smeralda (Cala di Volpe/Liscia Ruja) – Tagesanker; für die Nacht in Bojenfeld/Marina ausweichen.</span>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 6</span>
-                    <span className="text-gray-700">Costa Smeralda → Poltu Quatu/Porto Cervo – mondäner Abend, Boutiquen & Kulinarik.</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 6: Costa Smeralda → Poltu Quatu/Porto Cervo – mondäner Abend, Boutiquen & Kulinarik.</span>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm font-medium">Tag 7</span>
-                    <span className="text-gray-700">Porto Cervo/Poltu Quatu → Portisco/Cala dei Sardi – ruhiger Ausklang, Bunkern, Check-out.</span>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">Tag 7: Porto Cervo/Poltu Quatu → Portisco/Cala dei Sardi – ruhiger Ausklang, Bunkern, Check-out.</span>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded">
