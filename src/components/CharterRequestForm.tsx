@@ -20,7 +20,9 @@ const CharterRequestForm = ({
   onOpenChange,
   children
 }: CharterRequestFormProps) => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
 
   // Handle browser back button and ESC key
@@ -30,20 +32,19 @@ const CharterRequestForm = ({
         handleClose();
       }
     };
-
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && dialogOpen) {
         handleClose();
       }
     };
-
     if (dialogOpen) {
       window.addEventListener('popstate', handlePopState);
       document.addEventListener('keydown', handleKeyDown);
       // Add a history entry when dialog opens
-      window.history.pushState({ dialogOpen: true }, '');
+      window.history.pushState({
+        dialogOpen: true
+      }, '');
     }
-
     return () => {
       window.removeEventListener('popstate', handlePopState);
       document.removeEventListener('keydown', handleKeyDown);
@@ -56,12 +57,10 @@ const CharterRequestForm = ({
       setDialogOpen(isOpen);
     }
   }, [isOpen]);
-
   const handleClose = () => {
     setDialogOpen(false);
     onOpenChange?.(false);
   };
-
   const handleOpenChange = (open: boolean) => {
     setDialogOpen(open);
     onOpenChange?.(open);
@@ -146,164 +145,7 @@ const CharterRequestForm = ({
       [name]: value
     });
   };
-  const FormContent = () => <Card className="shadow-elegant border-ocean-light/50 max-w-4xl mx-auto">
-      <CardHeader className="text-center text-white rounded-t-lg relative overflow-hidden h-64 md:h-80 flex flex-col justify-center bg-cover bg-center" style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(/lovable-uploads/425e8e7c-d82f-4959-a47c-f3ce2d8d8cff.png)`
-      }}>
-        <div className="relative z-10">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <CardTitle className="text-2xl">Jetzt Ihren Traum-Törn starten!</CardTitle>
-          </div>
-          
-          <Badge variant="secondary" className="w-fit mx-auto mt-3 bg-white/20 text-white border-white/30">
-            <CheckCircle className="w-4 h-4 mr-2" />
-            Unverbindlich & kostenlos
-          </Badge>
-        </div>
-      </CardHeader>
-      
-      <CardContent className="p-6">
-        <p className="text-center text-muted-foreground mb-6">Profitieren Sie von unserer 30-jährigen Erfahrung auf dem internationalen Chartermarkt.
-Wir bieten Ihnen kompetente Beratung, individuelle und unabhängige Angebote und begleiten Sie mit persönlichem Service – selbstverständlich zu den besten Preisen. Profitieren Sie von unserer Erfahrung und erleben Sie unbeschwert Ihr Segel- oder Motorboot-Abenteuer.</p>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Personal Information */}
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="firstName" className="text-sm font-medium mb-2 block">
-                Ihr Vorname *
-              </label>
-              <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Ihr Vorname" required />
-            </div>
-            <div>
-              <label htmlFor="lastName" className="text-sm font-medium mb-2 block">
-                Ihr Nachname *
-              </label>
-              <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Ihr Nachname" required />
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="email" className="text-sm font-medium mb-2 block">
-                E-Mail *
-              </label>
-              <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="ihre@email.de" required />
-            </div>
-            <div>
-              <label htmlFor="phone" className="text-sm font-medium mb-2 block">
-                Telefon
-              </label>
-              <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} placeholder="+49 (0) 123 456789" />
-            </div>
-          </div>
-
-          {/* Charter Details */}
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="charterType" className="text-sm font-medium mb-2 block">
-                Chartertyp
-              </label>
-              <Select value={formData.charterType} onValueChange={value => handleSelectChange('charterType', value)}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Wählen Sie den Chartertyp" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="bareboat">Selbstsegler (Bareboat)</SelectItem>
-                  <SelectItem value="skippered">Mitsegeln (mit Skipper)</SelectItem>
-                  <SelectItem value="crewed">Vollservice (mit Crew)</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            <div>
-              <label htmlFor="boatType" className="text-sm font-medium mb-2 block">
-                Bootstyp
-              </label>
-              <Select value={formData.boatType} onValueChange={value => handleSelectChange('boatType', value)}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Wählen Sie den Bootstyp" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="monohull">Segelboot (Einrumpf)</SelectItem>
-                  <SelectItem value="catamaran">Katamaran</SelectItem>
-                  <SelectItem value="motorboat">Motorboot</SelectItem>
-                  <SelectItem value="gulet">Gulet</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="territory" className="text-sm font-medium mb-2 block">
-              Revier
-            </label>
-            <Input id="territory" name="territory" value={formData.territory} onChange={handleInputChange} placeholder="z.B. Kroatien, Griechenland, Karibik oder gewünschter Ausgangshafen" />
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="startDate" className="text-sm font-medium mb-2 block">
-                Zeitraum von
-              </label>
-              <Input id="startDate" name="startDate" type="date" value={formData.startDate} onChange={handleInputChange} />
-            </div>
-            <div>
-              <label htmlFor="endDate" className="text-sm font-medium mb-2 block">
-                Zeitraum bis
-              </label>
-              <Input id="endDate" name="endDate" type="date" value={formData.endDate} onChange={handleInputChange} />
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="boatSize" className="text-sm font-medium mb-2 block">
-                Größe des Bootes
-              </label>
-              <Input id="boatSize" name="boatSize" value={formData.boatSize} onChange={handleInputChange} placeholder="z.B. 12-15m oder 40-50ft" />
-            </div>
-            <div>
-              <label htmlFor="cabins" className="text-sm font-medium mb-2 block">
-                Anzahl Kabinen
-              </label>
-              <Input id="cabins" name="cabins" value={formData.cabins} onChange={handleInputChange} placeholder="z.B. 3-4 Kabinen" />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="message" className="text-sm font-medium mb-2 block">
-              Ihre Nachricht an uns
-            </label>
-            <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Nennen Sie uns z.B. bestimmte Ausrüstungsmerkmale wie Rollgroß oder Bugstrahlruder und weitere zu berücksichtigende Details Ihrer Planung..." className="min-h-[100px]" />
-          </div>
-
-          {/* Privacy Consent */}
-          <div className="flex items-start space-x-2">
-            <Checkbox id="privacy" checked={formData.privacyAccepted} onCheckedChange={checked => setFormData({
-            ...formData,
-            privacyAccepted: checked as boolean
-          })} required />
-            <label htmlFor="privacy" className="text-sm text-muted-foreground leading-relaxed">
-              Ich stimme der Verarbeitung meiner Daten gemäß der{" "}
-              <a href="#" className="text-ocean-blue hover:underline">
-                Datenschutzerklärung
-              </a>{" "}
-              zu. *
-            </label>
-          </div>
-
-          <Button type="submit" variant="ocean" size="lg" className="w-full" disabled={!formData.privacyAccepted}>
-            <Send className="w-4 h-4 mr-2" />
-            Jetzt kostenloses Angebot anfordern
-          </Button>
-
-          <p className="text-xs text-muted-foreground text-center">
-            Unverbindlich & kostenlos • Antwort innerhalb von 24 Stunden • 
-            Individuelle Beratung von Experten
-          </p>
-        </form>
-      </CardContent>
-    </Card>;
+  const FormContent = () => {};
   if (children) {
     return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>
@@ -316,11 +158,7 @@ Wir bieten Ihnen kompetente Beratung, individuelle und unabhängige Angebote und
           </DialogDescription>
           <div className="relative">
             {/* Close button - visible on all screen sizes */}
-            <button
-              onClick={handleClose}
-              className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200"
-              aria-label="Formular schließen"
-            >
+            <button onClick={handleClose} className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200" aria-label="Formular schließen">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
