@@ -344,10 +344,37 @@ const Bodrum = () => {
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Seemannschaft – kompakt, aber in ganzen Sätzen</h4>
-              <p className="text-black">
-                Gute Seemannschaft beginnt mit realistischen Tageszielen. Planen Sie die Pump-Outs und das Bunkern in ruhige Stunden und verbinden Sie sie mit der Proviantaufnahme. Ankern Sie auf Sand oder Schlick, stecken Sie ausreichend Kette, testen Sie den Halt und sichern Sie in engeren Buchten mit Landleinen. Fahren Sie in Buchten langsam, respektieren Sie Badezonen und nehmen Sie bei Restaurantstegen kurz Funkkontakt auf. Internationale Abstecher gelingen nur mit Erlaubnis der Basis und nach sauberem Einklarieren. Wer diese Leitlinien beachtet, segelt entspannter – und genießt mehr Zeit im Wasser.
-              </p>
+              <h4 className="font-semibold mb-3 text-black">Seemannschaft: kurze Tipps</h4>
+              <div className="space-y-3 text-black">
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>Realistische Tagesetappen planen und immer einen Plan B haben</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>Pump-Out und Bunkern in ruhige Stunden legen, mit Proviant kombinieren</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>Auf Sand/Schlick ankern, ausreichend Kette stecken, Halt testen</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>In engen Buchten mit Landleinen sichern für ruhige Nächte</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>Langsamfahrt in Buchten, Badezonen respektieren</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>VHF-Kontakt zu Restaurantstegen vor Anfahrt</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>Griechenland-Abstecher nur mit Basis-Erlaubnis und sauberem Einklarieren</span>
+                </div>
+              </div>
             </div>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Warum Yachtcharter Bodrum?</h3>
