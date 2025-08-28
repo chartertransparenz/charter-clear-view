@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 
 const Bodrum = () => {
   useEffect(() => {
@@ -120,6 +121,23 @@ const Bodrum = () => {
               );
             })}
           </div>
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold">Karte der Region Bodrum</h2>
+          </div>
+          <TerritoryMap
+            region="Bodrum"
+            center={{
+              lat: 37.1499634,
+              lng: 27.5013838
+            }}
+            zoom={11}
+            maptype="satellite"
+            className="w-full"
+          />
         </div>
 
         {/* Detailed Territory Description */}
