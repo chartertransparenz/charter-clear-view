@@ -147,63 +147,59 @@ const KasKalkan = () => {
               </p>
             </div>
 
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Besonderheiten des Reviers</h4>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Große Kulisse, geschützte Buchten</h5>
-              <p className="text-black mb-3">
-                Zwischen Kaş und Kalkan fällt das Taurusgebirge nahezu direkt ins Meer ab. Vor der Küste liegt die Inselkette von Kekova und Kekova Adası, die zusammen mit dem Festland die berühmte Kekova-Reede bilden – ein natürlicher Schutzschirm mit zahllosen Ankerplätzen. Die Buchten sind tief eingeschnitten, das Wasser außergewöhnlich klar, und viele Stellen sind vor Dünung hervorragend geschützt.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Thermik mit Meltemi-Einfluss</h5>
-              <p className="text-black mb-3">
-                Im Sommer stellt sich tagsüber eine verlässliche Brise aus nördlichen bis westlichen Sektoren ein; am Abend beruhigt sich der Wind oft – beste Voraussetzungen für Ankern in stillen Buchten. Auf den offenen Abschnitten zwischen Kaş und Kalkan, an Kaps oder Düsenzonen, kann der Wind frisch durchziehen, während in Kekova oft spiegelglatte Bedingungen herrschen.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Ankern mit Heckleinen – Standard an der Lykischen Küste</h5>
-              <p className="text-black mb-3">
-                Die Küsten fallen häufig steil ab; Sand-/Schlickfelder und Felsbänder wechseln. Der typische Ablauf: Anker auf gutem Grund, Kette stecken, Halt prüfen, eine oder zwei Landleinen an Bäumen/Felsösen ausbringen, Yacht ausrichten, Leinen und Kette sauber auf Spannung. Das spart Raum, reduziert Schwojen und sorgt für ruhige Nächte.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Bojenfelder & Restaurantstege</h5>
-              <p className="text-black mb-3">
-                In vielen Bereichen von Kekova (Üçağız, Kaleköy/Simena, Tersane) gibt es Mooringbojen und Stege mit Lazy Lines. Häufig gehören Strom/Wasser und ein sehr gutes Abendessen am Kai dazu – ein Komfort, der Yachtcharter Kaş so angenehm macht.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Landschaft & Kultur</h5>
-              <p className="text-black">
-                Berühmte Ziele sind die versunkene Stadt an der Nordküste von Kekova, die Burg von Kaleköy/Simena, das antike Aperlai, die langen Sandbänder von Patara, das Amphitheater von Kaş und die Bilderbuchbucht Kaputaş. Wer einen Landtag einschiebt, erlebt in kurzer Distanz eine ungewöhnliche Dichte an lykischen Stätten.
-              </p>
-            </div>
+            <h4 className="font-semibold mb-3">Besonderheiten des Reviers</h4>
+            
+            <h5 className="font-semibold mt-4 mb-2">Große Kulisse, geschützte Buchten</h5>
+            <p className="mb-3">
+              Zwischen Kaş und Kalkan fällt das Taurusgebirge nahezu direkt ins Meer ab. Vor der Küste liegt die Inselkette von Kekova und Kekova Adası, die zusammen mit dem Festland die berühmte Kekova-Reede bilden – ein natürlicher Schutzschirm mit zahllosen Ankerplätzen. Die Buchten sind tief eingeschnitten, das Wasser außergewöhnlich klar, und viele Stellen sind vor Dünung hervorragend geschützt.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">Thermik mit Meltemi-Einfluss</h5>
+            <p className="mb-3">
+              Im Sommer stellt sich tagsüber eine verlässliche Brise aus nördlichen bis westlichen Sektoren ein; am Abend beruhigt sich der Wind oft – beste Voraussetzungen für Ankern in stillen Buchten. Auf den offenen Abschnitten zwischen Kaş und Kalkan, an Kaps oder Düsenzonen, kann der Wind frisch durchziehen, während in Kekova oft spiegelglatte Bedingungen herrschen.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">Ankern mit Heckleinen – Standard an der Lykischen Küste</h5>
+            <p className="mb-3">
+              Die Küsten fallen häufig steil ab; Sand-/Schlickfelder und Felsbänder wechseln. Der typische Ablauf: Anker auf gutem Grund, Kette stecken, Halt prüfen, eine oder zwei Landleinen an Bäumen/Felsösen ausbringen, Yacht ausrichten, Leinen und Kette sauber auf Spannung. Das spart Raum, reduziert Schwojen und sorgt für ruhige Nächte.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">Bojenfelder & Restaurantstege</h5>
+            <p className="mb-3">
+              In vielen Bereichen von Kekova (Üçağız, Kaleköy/Simena, Tersane) gibt es Mooringbojen und Stege mit Lazy Lines. Häufig gehören Strom/Wasser und ein sehr gutes Abendessen am Kai dazu – ein Komfort, der Yachtcharter Kaş so angenehm macht.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">Landschaft & Kultur</h5>
+            <p className="mb-6">
+              Berühmte Ziele sind die versunkene Stadt an der Nordküste von Kekova, die Burg von Kaleköy/Simena, das antike Aperlai, die langen Sandbänder von Patara, das Amphitheater von Kaş und die Bilderbuchbucht Kaputaş. Wer einen Landtag einschiebt, erlebt in kurzer Distanz eine ungewöhnliche Dichte an lykischen Stätten.
+            </p>
 
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Vorschriften & Regeln – praxisnah erklärt</h4>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Transit Log Türkei (Cruising Permit)</h5>
-              <p className="text-black mb-3">
-                Für jede Charteryacht obligatorisch. Der Transit Log wird beim Check-in erstellt (Boot, Crew, Revier) und begleitet Sie bis zum Check-out. Crewänderungen und besondere Streckenabschnitte werden dokumentiert.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">SEPA Kekova – Schutzgebiet mit Zonen</h5>
-              <p className="text-black mb-3">
-                Große Teile der Kekova-Reede sind Sonderschutzgebiet (SEPA). Hier gelten Bojenpflicht bzw. Ankerbeschränkungen in sensiblen Zonen (u. a. über Ruinenfeldern), Mindestabstände zum Ufer sowie Geschwindigkeitslimits. Die versunkene Stadt darf nicht betaucht werden; Tauchgänge sind nur in freigegebenen Bereichen und mit lokalen Centern möglich.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Mavi Kart (Blue Card) & Pump-Out</h5>
-              <p className="text-black mb-3">
-                Das Einleiten von Schwarzwasser und – je nach Zone – Grauwasser ist verboten. Entsorgung erfolgt an Pump-Out-Stationen (Marinas/Serviceboote) und wird per Mavi Kart bzw. Nachweis dokumentiert. Planen Sie Pump-Out und Bunkern gemeinsam mit Proviant-Stopps, um Wartezeiten zu vermeiden.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">VHF, Fahrregeln & Nacht</h5>
-              <p className="text-black mb-3">
-                VHF betriebsbereit halten; Marinas/Stege funken auf festen Kanälen. In Buchten gilt Langsamfahrt, Badezonen sind freizuhalten, Sog/Welle vermeiden. Nachtfahrten sind in vielen Charterverträgen nicht vorgesehen; das Revier lässt sich ideal im Tageslichtfenster segeln.
-              </p>
-              
-              <h5 className="font-semibold mt-4 mb-2 text-black">Grenznah & international</h5>
-              <p className="text-black">
-                Direkt vor Kaş liegt die griechische Insel Kastellorizo/Meis – ein beliebtes Ziel mit Postkartenhafen. Ein Besuch ist nur mit Einklarieren und Chartererlaubnis möglich. Klären Sie vorab, ob Ihr Vertrag internationale Fahrten zulässt.
-              </p>
-            </div>
+            <h4 className="font-semibold mb-3">Vorschriften & Regeln – praxisnah erklärt</h4>
+            
+            <h5 className="font-semibold mt-4 mb-2">Transit Log Türkei (Cruising Permit)</h5>
+            <p className="mb-3">
+              Für jede Charteryacht obligatorisch. Der Transit Log wird beim Check-in erstellt (Boot, Crew, Revier) und begleitet Sie bis zum Check-out. Crewänderungen und besondere Streckenabschnitte werden dokumentiert.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">SEPA Kekova – Schutzgebiet mit Zonen</h5>
+            <p className="mb-3">
+              Große Teile der Kekova-Reede sind Sonderschutzgebiet (SEPA). Hier gelten Bojenpflicht bzw. Ankerbeschränkungen in sensiblen Zonen (u. a. über Ruinenfeldern), Mindestabstände zum Ufer sowie Geschwindigkeitslimits. Die versunkene Stadt darf nicht betaucht werden; Tauchgänge sind nur in freigegebenen Bereichen und mit lokalen Centern möglich.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">Mavi Kart (Blue Card) & Pump-Out</h5>
+            <p className="mb-3">
+              Das Einleiten von Schwarzwasser und – je nach Zone – Grauwasser ist verboten. Entsorgung erfolgt an Pump-Out-Stationen (Marinas/Serviceboote) und wird per Mavi Kart bzw. Nachweis dokumentiert. Planen Sie Pump-Out und Bunkern gemeinsam mit Proviant-Stopps, um Wartezeiten zu vermeiden.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">VHF, Fahrregeln & Nacht</h5>
+            <p className="mb-3">
+              VHF betriebsbereit halten; Marinas/Stege funken auf festen Kanälen. In Buchten gilt Langsamfahrt, Badezonen sind freizuhalten, Sog/Welle vermeiden. Nachtfahrten sind in vielen Charterverträgen nicht vorgesehen; das Revier lässt sich ideal im Tageslichtfenster segeln.
+            </p>
+            
+            <h5 className="font-semibold mt-4 mb-2">Grenznah & international</h5>
+            <p className="mb-6">
+              Direkt vor Kaş liegt die griechische Insel Kastellorizo/Meis – ein beliebtes Ziel mit Postkartenhafen. Ein Besuch ist nur mit Einklarieren und Chartererlaubnis möglich. Klären Sie vorab, ob Ihr Vertrag internationale Fahrten zulässt.
+            </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 id="segelscheine" className="font-semibold mb-3 text-black">Segelscheine & Qualifikationen</h4>
@@ -212,22 +208,18 @@ const KasKalkan = () => {
               </p>
             </div>
 
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 id="eignung-nach-erfahrungsstufe" className="font-semibold mb-3 text-black">Für wen ist das Revier geeignet – und warum?</h4>
-              <p className="text-black">
-                Alle Erfahrungsstufen profitieren. Einsteiger und Familien genießen die geschützten Ankerplätze in Kekova, kurze Hüpfer und ruhige Nächte – mit viel Zeit zum Schwimmen und Schnorcheln. Genusssegler kombinieren Küstenpanorama, Restaurantstege und die Kultur der Lykischen Küste. Ambitionierte Crews suchen die offeneren Abschnitte zwischen Kaş und Kalkan, setzen längere Schläge nach Westen in Richtung Fethiye/Göcek oder nach Osten bis Finike/Kemer – je nach Wetterfenster und Reiselust. So lässt sich der Schwierigkeitsgrad von „entspannt" bis „sportlich" fein dosieren.
-              </p>
-            </div>
+            <h4 id="eignung-nach-erfahrungsstufe" className="font-semibold mb-3">Für wen ist das Revier geeignet – und warum?</h4>
+            <p className="mb-6">
+              Alle Erfahrungsstufen profitieren. Einsteiger und Familien genießen die geschützten Ankerplätze in Kekova, kurze Hüpfer und ruhige Nächte – mit viel Zeit zum Schwimmen und Schnorcheln. Genusssegler kombinieren Küstenpanorama, Restaurantstege und die Kultur der Lykischen Küste. Ambitionierte Crews suchen die offeneren Abschnitte zwischen Kaş und Kalkan, setzen längere Schläge nach Westen in Richtung Fethiye/Göcek oder nach Osten bis Finike/Kemer – je nach Wetterfenster und Reiselust. So lässt sich der Schwierigkeitsgrad von „entspannt" bis „sportlich" fein dosieren.
+            </p>
 
-            <div className="border border-gray-300 p-6 rounded-lg mb-8">
-              <h4 className="font-semibold mb-3 text-black">Marinas & Versorgung in Kaş–Kalkan</h4>
-              <p className="text-black mb-3">
-                Kaş Marina ist die zentrale Drehscheibe für Yachtcharter Kaş: moderne Steganlagen, Wasser, Strom, Diesel, Pump-Out, Technik/Chandlery, Shops und Gastronomie – dazu Taxi- und Transferdienste. Kalkan verfügt über einen kleinen Stadthafen mit begrenzten Plätzen; Wasser/ Strom sind saisonal verfügbar, der Ort selbst punktet mit Restaurants, Bars und kurzen Wegen. Als zusätzliche Stützpunkte bieten sich Setur Finike Marina (östlich) und – für Westrouten – die Anlagen um Fethiye/Göcek an.
-              </p>
-              <p className="text-black">
-                Proviantierung ist unkompliziert: In Kaş und Kalkan gibt es Migros, CarrefourSA, Wochenmärkte und Bäckereien; viele liefern direkt an den Steg. In Üçağız und Kaleköy (Kekova) versorgen Restaurantstege die Crews; kleine Läden, Wasser, Eis und frische Produkte sind verfügbar. Taxi-Boote verbinden Stege und Dörfer – praktisch für kurze Landgänge.
-              </p>
-            </div>
+            <h4 className="font-semibold mb-3">Marinas & Versorgung in Kaş–Kalkan</h4>
+            <p className="mb-3">
+              Kaş Marina ist die zentrale Drehscheibe für Yachtcharter Kaş: moderne Steganlagen, Wasser, Strom, Diesel, Pump-Out, Technik/Chandlery, Shops und Gastronomie – dazu Taxi- und Transferdienste. Kalkan verfügt über einen kleinen Stadthafen mit begrenzten Plätzen; Wasser/ Strom sind saisonal verfügbar, der Ort selbst punktet mit Restaurants, Bars und kurzen Wegen. Als zusätzliche Stützpunkte bieten sich Setur Finike Marina (östlich) und – für Westrouten – die Anlagen um Fethiye/Göcek an.
+            </p>
+            <p className="mb-6">
+              Proviantierung ist unkompliziert: In Kaş und Kalkan gibt es Migros, CarrefourSA, Wochenmärkte und Bäckereien; viele liefern direkt an den Steg. In Üçağız und Kaleköy (Kekova) versorgen Restaurantstege die Crews; kleine Läden, Wasser, Eis und frische Produkte sind verfügbar. Taxi-Boote verbinden Stege und Dörfer – praktisch für kurze Landgänge.
+            </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Törnziele – die Klassiker ab Kaş & Kalkan</h3>
 
