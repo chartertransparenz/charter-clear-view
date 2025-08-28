@@ -162,7 +162,7 @@ const Italy = () => {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="h-96 w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000000!2d15.5597979!3d42.8968517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f18c51c6770a3%3A0x132f18c51c6770a3!2sItaly!5e1!3m2!1sde!2sde!4v1641234567890!5m2!1sde!2sde&z=7"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000000!2d12.5674!3d41.8719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzE5LjQiTiAxMsKwMzQnMDIuNyJF!5e1!3m2!1sde!2sde!4v1641234567890!5m2!1sde!2sde&z=6"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
