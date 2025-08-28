@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 
 const KasKalkan = () => {
   useEffect(() => {
@@ -119,6 +120,20 @@ const KasKalkan = () => {
                 </Card>
               );
             })}
+          </div>
+        </div>
+
+        {/* Territory Map */}
+        <div className="mb-16">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-3xl font-bold mb-8 text-center">Karte der Region Kas & Kalkan</h3>
+            <TerritoryMap
+              region="Kas & Kalkan"
+              center={{ lat: 36.2427094, lng: 29.6395256 }}
+              zoom={18}
+              maptype="satellite"
+              className="mb-8"
+            />
           </div>
         </div>
 
