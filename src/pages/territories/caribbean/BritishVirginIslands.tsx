@@ -48,7 +48,7 @@ const BritishVirginIslands = () => {
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png" alt="BVI Segelrevier" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/b09245c2-f326-4fb5-9caf-48210540a4cb.png" alt="Karibische Bucht BVI" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">
