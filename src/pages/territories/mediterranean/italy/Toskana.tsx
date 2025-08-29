@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight, Landmark, Compass, Waves, ChefHat, Mountain } from "lucide-react";
+import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -217,82 +217,12 @@ const Toskana = () => {
                   Sind Sie bereit, die Segel zu setzen und den Zauber des Toskanischen Archipels zu entdecken?
                 </p>
                 
-                {/* CTA Box */}
-                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 p-8 rounded-lg mt-8">
-                  <h4 className="text-xl font-bold text-gray-800 mb-4">Jetzt unverbindliches Angebot anfordern:</h4>
-                  <p className="text-gray-700">
-                    Teilen Sie uns Crewgröße, Reisedaten und Wunschyacht mit – wir prüfen Live-Verfügbarkeiten, beraten persönlich zu Route, Liegeplätzen und Proviantierung und senden Ihnen umgehend Ihr maßgeschneidertes Angebot.
-                  </p>
-                </div>
+                <p>
+                  Kontaktieren Sie uns noch heute für ein persönliches und unverbindliches Angebot. Unser Team aus erfahrenen Revierkennern hilft Ihnen dabei, die perfekte Yacht für Ihren Traumurlaub zu finden.
+                </p>
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Highlights Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-8">Highlights der Toskana</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Landmark size={24} />
-                </div>
-                <h3 className="font-semibold mb-2">Insel Elba & Napoleon</h3>
-                <p className="text-sm text-muted-foreground">Napoleons Exilinsel mit reicher Geschichte</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Compass size={24} />
-                </div>
-                <h3 className="font-semibold mb-2">Toskanischer Archipel</h3>
-                <p className="text-sm text-muted-foreground">7 einzigartige Inseln als Nationalpark</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Waves size={24} />
-                </div>
-                <h3 className="font-semibold mb-2">Kristallklares Wasser</h3>
-                <p className="text-sm text-muted-foreground">Türkisfarbenes Wasser und Traumstrände</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <MapPin size={24} />
-                </div>
-                <h3 className="font-semibold mb-2">Kurze Distanzen</h3>
-                <p className="text-sm text-muted-foreground">Perfekt für entspanntes Inselhüpfen</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <ChefHat size={24} />
-                </div>
-                <h3 className="font-semibold mb-2">Toskanische Küche</h3>
-                <p className="text-sm text-muted-foreground">Weltberühmte Kulinarik und exzellente Weine</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Mountain size={24} />
-                </div>
-                <h3 className="font-semibold mb-2">Capraia Vulkaninsel</h3>
-                <p className="text-sm text-muted-foreground">Wilde Schönheit und spektakuläre Felsformationen</p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
 
         {/* Important Harbors & Ports */}
@@ -335,11 +265,7 @@ const Toskana = () => {
               Kombinieren Sie die berühmte toskanische Kultur mit entspanntem Segeln 
               an einer der schönsten Küsten Italiens.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            
           </div>
         </div>
       </div>
