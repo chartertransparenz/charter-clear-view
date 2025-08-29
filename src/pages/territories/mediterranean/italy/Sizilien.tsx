@@ -30,16 +30,39 @@ const Sizilien = () => {
     value: "Vielfältige Küsten"
   }];
   const cities = ["Capo d'Orlando", "Marsala", "Palermo", "Portorosa", "Sant'Agata di Militello", "Trapani"];
-  const sizilienHighlights = [
-    { icon: Landmark, title: "Valle dei Templi", description: "Antike griechische Tempel in Agrigent" },
-    { icon: Mountain, title: "Ätna & Stromboli", description: "Aktive Vulkane mit spektakulären Landschaften" },
-    { icon: Waves, title: "Äolische Inseln", description: "7 einzigartige Vulkaninseln vor der Nordküste" },
-    { icon: ChefHat, title: "Sizilianische Küche", description: "Arancini, Cannoli und frische Meeresfrüchte" },
-    { icon: Compass, title: "Ganzjähriges Segeln", description: "Mildes Klima ermöglicht Segeln das ganze Jahr" },
-    { icon: Building2, title: "Barocke Städte", description: "Noto, Modica und Ragusa - UNESCO Welterbe" },
-    { icon: Shield, title: "Geschützte Buchten", description: "Sichere Ankerplätze rund um die gesamte Insel" },
-    { icon: Anchor, title: "Vielfältige Häfen", description: "Von Palermo bis Catania - exzellente Marina-Infrastruktur" }
-  ];
+  const sizilienHighlights = [{
+    icon: Landmark,
+    title: "Valle dei Templi",
+    description: "Antike griechische Tempel in Agrigent"
+  }, {
+    icon: Mountain,
+    title: "Ätna & Stromboli",
+    description: "Aktive Vulkane mit spektakulären Landschaften"
+  }, {
+    icon: Waves,
+    title: "Äolische Inseln",
+    description: "7 einzigartige Vulkaninseln vor der Nordküste"
+  }, {
+    icon: ChefHat,
+    title: "Sizilianische Küche",
+    description: "Arancini, Cannoli und frische Meeresfrüchte"
+  }, {
+    icon: Compass,
+    title: "Ganzjähriges Segeln",
+    description: "Mildes Klima ermöglicht Segeln das ganze Jahr"
+  }, {
+    icon: Building2,
+    title: "Barocke Städte",
+    description: "Noto, Modica und Ragusa - UNESCO Welterbe"
+  }, {
+    icon: Shield,
+    title: "Geschützte Buchten",
+    description: "Sichere Ankerplätze rund um die gesamte Insel"
+  }, {
+    icon: Anchor,
+    title: "Vielfältige Häfen",
+    description: "Von Palermo bis Catania - exzellente Marina-Infrastruktur"
+  }];
   return <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Navigation />
       
@@ -122,13 +145,10 @@ const Sizilien = () => {
         {/* Territory Map */}
         <div className="max-w-6xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelrevier Sizilien & Liparische Inseln</h2>
-          <TerritoryMap 
-            region="Sizilien"
-            center={{ lat: 38.2, lng: 14.8 }}
-            zoom={8}
-            maptype="satellite"
-            className="shadow-lg"
-          />
+          <TerritoryMap region="Sizilien" center={{
+          lat: 38.2,
+          lng: 14.8
+        }} zoom={8} maptype="satellite" className="shadow-lg" />
         </div>
 
         {/* Main Content */}
@@ -165,11 +185,7 @@ const Sizilien = () => {
             <div className="mb-6">
               <Card className="shadow-lg">
                 <div className="relative h-64 md:h-80 overflow-hidden rounded-t-lg">
-                  <img 
-                    src="/lovable-uploads/e70d653b-4615-446e-8129-7c44ff90b33c.png" 
-                    alt="Stromboli vom Meer aus gesehen mit tiefblauem Wasser" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/e70d653b-4615-446e-8129-7c44ff90b33c.png" alt="Stromboli vom Meer aus gesehen mit tiefblauem Wasser" className="w-full h-full object-cover" />
                 </div>
                 <CardContent className="p-6">
                   <p className="text-gray-600 text-center">
@@ -288,20 +304,7 @@ const Sizilien = () => {
 
           {/* Scilla Image */}
           <div className="mb-8">
-            <Card className="shadow-lg">
-              <div className="relative h-64 md:h-80 overflow-hidden rounded-t-lg">
-                <img 
-                  src="/lovable-uploads/19cf53ad-fb0e-4624-b9cd-3cef03160a83.png" 
-                  alt="Scilla am kalabrischen Festland mit kristallklarem Wasser und Castello Ruffo"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <CardContent className="p-6">
-                <p className="text-gray-600 text-center">
-                  Am kalabrischen Festland gegenüber Sizilien gelegen, bietet Scilla kristallklares Wasser, gut haltenden Sandgrund und die Kulisse des Castello Ruffo – ideal für einen kurzen Badestopp.
-                </p>
-              </CardContent>
-            </Card>
+            
           </div>
 
           {/* Fazit */}
@@ -332,8 +335,7 @@ const Sizilien = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Die Highlights auf Sizilien</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {sizilienHighlights.map((highlight, index) => (
-              <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
+            {sizilienHighlights.map((highlight, index) => <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <highlight.icon size={24} className="text-blue-600" />
@@ -341,8 +343,7 @@ const Sizilien = () => {
                   <h3 className="font-semibold text-gray-800 mb-2">{highlight.title}</h3>
                   <p className="text-sm text-gray-600">{highlight.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
