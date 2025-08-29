@@ -120,13 +120,15 @@ const LeewardIslands = () => {
                 <li><strong>Taucher & Schnorchler:</strong> Die Unterwasserwelt ist lebendig und vielfältig, mit bunten Korallenriffen und einer reichen Meeresfauna.</li>
               </ul>
 
-              <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Die Besonderheiten der Leeward Islands</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Kulturelle Vielfalt:</strong> Die einzigartige Mischung aus britischen, französischen und niederländischen Einflüssen schafft eine faszinierende kulturelle Landschaft, die sich in Sprache, Küche und Architektur widerspiegelt.</li>
-                <li><strong>Hervorragende Infrastruktur:</strong> Die Leeward Islands verfügen über einige der besten Marinas und Yachtservice-Einrichtungen in der gesamten Karibik, insbesondere in Antigua und St. Martin.</li>
-                <li><strong>Historische Bedeutung:</strong> Viele Inseln spielten eine wichtige Rolle in der Seefahrtsgeschichte, was sich in gut erhaltenen Festungen und Marinestützpunkten widerspiegelt.</li>
-                <li><strong>Vielfältige Landschaften:</strong> Von den trockenen, kaktusbewachsenen Hügeln Anguillas bis zu den üppigen Regenwäldern Guadeloupes – die landschaftliche Vielfalt ist beeindruckend.</li>
-              </ul>
+              <div className="border border-gray-300 p-6 rounded-lg mb-6">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Die Besonderheiten der Leeward Islands</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Kulturelle Vielfalt:</strong> Die einzigartige Mischung aus britischen, französischen und niederländischen Einflüssen schafft eine faszinierende kulturelle Landschaft, die sich in Sprache, Küche und Architektur widerspiegelt.</li>
+                  <li><strong>Hervorragende Infrastruktur:</strong> Die Leeward Islands verfügen über einige der besten Marinas und Yachtservice-Einrichtungen in der gesamten Karibik, insbesondere in Antigua und St. Martin.</li>
+                  <li><strong>Historische Bedeutung:</strong> Viele Inseln spielten eine wichtige Rolle in der Seefahrtsgeschichte, was sich in gut erhaltenen Festungen und Marinestützpunkten widerspiegelt.</li>
+                  <li><strong>Vielfältige Landschaften:</strong> Von den trockenen, kaktusbewachsenen Hügeln Anguillas bis zu den üppigen Regenwäldern Guadeloupes – die landschaftliche Vielfalt ist beeindruckend.</li>
+                </ul>
+              </div>
 
               <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Die Perlen der Leeward Islands: Ihre Törnziele und Highlights</h3>
               <p>Jede Insel der Leeward Islands Kette ist ein Juwel für sich und bietet einzigartige Erlebnisse:</p>
@@ -214,27 +216,57 @@ const LeewardIslands = () => {
                 <li><strong>Bareboat vs. Skippered:</strong> Sie können eine Bareboat-Charter wählen, wenn Sie über die nötige Erfahrung und Lizenzen verfügen. Für weniger erfahrene Segler oder diejenigen, die sich einfach entspannen möchten, empfehlen wir einen erfahrenen Skipper, der Sie sicher zu den schönsten Plätzen führt und Ihnen wertvolle Geheimtipps verrät.</li>
               </ul>
 
-              <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Wetter & Windbedingungen: Im Rhythmus der Passatwinde</h3>
-              <p>Das Klima in den Leeward Islands ist tropisch, mit zwei Hauptsaisons:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Trockenzeit (Dezember - Mai):</strong> Dies ist die Hauptsaison für Yachtcharter. Das Wetter ist stabil, sonnig und trocken. Die Temperaturen sind angenehm warm (ca. 25-30°C), und die Luftfeuchtigkeit ist geringer. Die Passatwinde aus Nordost sind in dieser Zeit am beständigsten und wehen meist mit 15-25 Knoten, was für hervorragende Segelbedingungen sorgt.</li>
-                <li><strong>Regenzeit (Juni - November):</strong> In dieser Zeit ist die Luftfeuchtigkeit höher, und es kann zu kurzen, aber intensiven tropischen Regenschauern kommen. Die Winde sind tendenziell etwas schwächer und variabler. Dies ist auch die Hurrikansaison, wobei das höchste Risiko zwischen August und Oktober liegt.</li>
-              </ul>
+              <div className="border border-gray-300 p-6 rounded-lg mb-6">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Wetter & Windbedingungen: Im Rhythmus der Passatwinde</h3>
+                <p className="mb-4">Das Klima in den Leeward Islands ist tropisch, mit zwei Hauptsaisons:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Trockenzeit (Dezember - Mai):</strong> Dies ist die Hauptsaison für Yachtcharter. Das Wetter ist stabil, sonnig und trocken. Die Temperaturen sind angenehm warm (ca. 25-30°C), und die Luftfeuchtigkeit ist geringer. Die Passatwinde aus Nordost sind in dieser Zeit am beständigsten und wehen meist mit 15-25 Knoten, was für hervorragende Segelbedingungen sorgt.</li>
+                  <li><strong>Regenzeit (Juni - November):</strong> In dieser Zeit ist die Luftfeuchtigkeit höher, und es kann zu kurzen, aber intensiven tropischen Regenschauern kommen. Die Winde sind tendenziell etwas schwächer und variabler. Dies ist auch die Hurrikansaison, wobei das höchste Risiko zwischen August und Oktober liegt.</li>
+                </ul>
+              </div>
 
               <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beste Reisezeit: Wann Ihr Leeward Islands-Traum wahr wird</h3>
               <p>Die beste Reisezeit für Yachtcharter in den Leeward Islands ist von Mitte Dezember bis Ende Mai. In diesen Monaten ist das Wetter am stabilsten, die Passatwinde sind beständig, und das Risiko von Hurrikans ist minimal.</p>
 
               <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Routenvorschlag: 1 Woche Segeltörn durch die Leeward Islands (ab St. Martin)</h3>
-              <p>Dieser Törnvorschlag ist ein Klassiker und führt Sie zu den Highlights der Leeward Islands, ideal für eine entspannte Woche voller Segelspaß und Entdeckungen.</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Tag 1:</strong> Anreise nach St. Martin, Check-in in der Marina (z.B. in Simpson Bay Lagoon). Proviantierung und erste Nacht an Bord. Erkunden Sie die lebhafte Simpson Bay.</li>
-                <li><strong>Tag 2:</strong> St. Martin → Anguilla. Segeln Sie nach Anguilla, bekannt für seine unberührten Strände. Ankern Sie in der Road Bay oder der Rendezvous Bay. Genießen Sie die Ruhe und die ausgezeichnete Küche.</li>
-                <li><strong>Tag 3:</strong> Anguilla → St. Barth. Setzen Sie die Segel nach St. Barth, der Insel des Luxus. Ankern Sie in der Gustavia Harbour (Außenbereich) oder einer der schönen Buchten wie Anse de Colombier. Erkunden Sie die Boutiquen und Restaurants.</li>
-                <li><strong>Tag 4:</strong> St. Barth → St. Kitts. Ein längerer Schlag nach St. Kitts. Ankern Sie in der White House Bay. Erkunden Sie die historische Brimstone Hill Fortress.</li>
-                <li><strong>Tag 5:</strong> St. Kitts → Nevis. Kurzer Schlag zur ruhigeren Nachbarinsel Nevis. Ankern Sie in der Pinney's Beach und entspannen Sie an den Stränden oder erkunden Sie die historischen Plantagen.</li>
-                <li><strong>Tag 6:</strong> Nevis → St. Martin. Rückkehr nach St. Martin. Ankern Sie in der Grand Case Bucht auf der französischen Seite. Genießen Sie ein Gourmet-Dinner in einem der vielen Restaurants.</li>
-                <li><strong>Tag 7:</strong> St. Martin. Letzter Vormittag zum Schwimmen oder zollfreien Einkaufen. Rückkehr zur Charterbasis, Yachtübergabe und Abreise.</li>
-              </ul>
+              <p className="mb-6">Dieser Törnvorschlag ist ein Klassiker und führt Sie zu den Highlights der Leeward Islands, ideal für eine entspannte Woche voller Segelspaß und Entdeckungen.</p>
+              
+              <div className="space-y-4">
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 1</h4>
+                  <p className="text-gray-700">Anreise nach St. Martin, Check-in in der Marina (z.B. in Simpson Bay Lagoon). Proviantierung und erste Nacht an Bord. Erkunden Sie die lebhafte Simpson Bay.</p>
+                </div>
+                
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 2</h4>
+                  <p className="text-gray-700">St. Martin → Anguilla. Segeln Sie nach Anguilla, bekannt für seine unberührten Strände. Ankern Sie in der Road Bay oder der Rendezvous Bay. Genießen Sie die Ruhe und die ausgezeichnete Küche.</p>
+                </div>
+                
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 3</h4>
+                  <p className="text-gray-700">Anguilla → St. Barth. Setzen Sie die Segel nach St. Barth, der Insel des Luxus. Ankern Sie in der Gustavia Harbour (Außenbereich) oder einer der schönen Buchten wie Anse de Colombier. Erkunden Sie die Boutiquen und Restaurants.</p>
+                </div>
+                
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 4</h4>
+                  <p className="text-gray-700">St. Barth → St. Kitts. Ein längerer Schlag nach St. Kitts. Ankern Sie in der White House Bay. Erkunden Sie die historische Brimstone Hill Fortress.</p>
+                </div>
+                
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 5</h4>
+                  <p className="text-gray-700">St. Kitts → Nevis. Kurzer Schlag zur ruhigeren Nachbarinsel Nevis. Ankern Sie in der Pinney's Beach und entspannen Sie an den Stränden oder erkunden Sie die historischen Plantagen.</p>
+                </div>
+                
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 6</h4>
+                  <p className="text-gray-700">Nevis → St. Martin. Rückkehr nach St. Martin. Ankern Sie in der Grand Case Bucht auf der französischen Seite. Genießen Sie ein Gourmet-Dinner in einem der vielen Restaurants.</p>
+                </div>
+                
+                <div className="border-l-4 border-blue-600 pl-4">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Tag 7</h4>
+                  <p className="text-gray-700">St. Martin. Letzter Vormittag zum Schwimmen oder zollfreien Einkaufen. Rückkehr zur Charterbasis, Yachtübergabe und Abreise.</p>
+                </div>
+              </div>
 
               <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Fazit: Ihr Leeward Islands-Abenteuer wartet</h3>
               <p>Ein Yachtcharter in den Leeward Islands ist ein Versprechen für einen unvergesslichen Urlaub. Es ist die Freiheit, jeden Tag aufs Neue zu entscheiden, ob Sie eine versteckte Bucht ansteuern, in einer lebhaften Stadt anlegen oder einfach auf dem offenen Meer die Sonne und den Wind genießen. Es ist die perfekte Kombination aus:</p>
