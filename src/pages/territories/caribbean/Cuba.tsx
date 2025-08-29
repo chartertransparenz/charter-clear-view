@@ -205,6 +205,20 @@ const Cuba = () => {
                 <li><strong>Weniger geeignet für:</strong> Crews, die einen Party-Törn oder spontanes Restaurant-Hopping erwarten. Die Kulinarik ist eher einfach, aber authentisch.</li>
               </ul>
 
+              {/* Havanna-Bild */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/lovable-uploads/39f41d29-fb20-46ee-a388-651dee246b70.png"
+                  alt="Bunte Oldtimer vor kolonialer Architektur in Havanna"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+                <div className="bg-gray-50 p-4">
+                  <p className="text-gray-700 italic text-center">
+                    Erleben Sie Havanna, wo bunte Oldtimer wie rollende Zeitkapseln an pastellfarbenen Fassaden vorbeigleiten und jede Fahrt sich anfühlt wie eine Filmszene.
+                  </p>
+                </div>
+              </div>
+
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Regeln, Vorschriften und Formalitäten: Segeln in Kuba</h2>
               
               <p>
