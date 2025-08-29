@@ -267,7 +267,7 @@ const Cuba = () => {
                 <img
                   src="/lovable-uploads/065ef7b6-04d2-42cd-9d89-8af299c29ed5.png"
                   alt="Paradiesischer Strand auf Cayo Largo mit türkisfarbenem Wasser und Palmen"
-                  className="w-full h-64 md:h-80 object-cover"
+                  className="w-full max-w-prose mx-auto h-64 md:h-80 object-cover"
                 />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
