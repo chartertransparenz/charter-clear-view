@@ -245,40 +245,6 @@ const WindwardIslands = () => {
           </div>
         </div>
 
-        {/* Charterbasen */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charterbasen & Infrastruktur</h2>
-          <div className="grid gap-6">
-            {regions.map((region, index) => (
-              <div key={index} className="max-w-2xl mx-auto">
-                <Card className="shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <MapPin className="w-5 h-5 text-blue-700" />
-                      <h3 className="text-xl font-semibold text-gray-800">
-                        {region.name}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="mb-4">
-                        <div className="text-sm font-medium text-gray-700 mb-2">Verfügbare Standorte:</div>
-                        <div className="flex flex-wrap gap-2">
-                          {region.cities.map((city, idx) => (
-                            <span key={idx} className="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-                              {city}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Wind & Wetter */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -321,6 +287,40 @@ const WindwardIslands = () => {
                 <p className="text-gray-600 text-sm">Die "Gewürzinsel" mit dem Duft von Muskatnuss und Zimt. Erkunden Sie die malerische Hauptstadt St. George's.</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Charterbasen */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charterbasen & Infrastruktur</h2>
+          <div className="grid gap-6">
+            {regions.map((region, index) => (
+              <div key={index} className="max-w-2xl mx-auto">
+                <Card className="shadow-lg">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <MapPin className="w-5 h-5 text-blue-700" />
+                      <h3 className="text-xl font-semibold text-gray-800">
+                        {region.name}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 mb-4">{region.description}</p>
+                    {region.cities && (
+                      <div className="mb-4">
+                        <div className="text-sm font-medium text-gray-700 mb-2">Verfügbare Standorte:</div>
+                        <div className="flex flex-wrap gap-2">
+                          {region.cities.map((city, idx) => (
+                            <span key={idx} className="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                              {city}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
           </div>
         </div>
 
