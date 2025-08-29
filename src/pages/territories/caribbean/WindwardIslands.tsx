@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import caribbean from "@/assets/caribbean.jpg";
 
 const WindwardIslands = () => {
@@ -164,6 +165,20 @@ const WindwardIslands = () => {
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Übersichtskarte */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Übersicht über die Windward Islands
+          </h2>
+          <TerritoryMap
+            region="Windward Islands"
+            center={{ lat: 13.63, lng: -61.19 }}
+            zoom={8}
+            maptype="satellite"
+            className="w-full"
+          />
         </div>
 
         {/* Main Description Box */}
