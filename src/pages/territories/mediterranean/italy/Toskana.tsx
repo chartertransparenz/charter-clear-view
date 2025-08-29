@@ -217,9 +217,13 @@ const Toskana = () => {
                   Sind Sie bereit, die Segel zu setzen und den Zauber des Toskanischen Archipels zu entdecken?
                 </p>
                 
-                <p>
-                  Kontaktieren Sie uns noch heute für ein persönliches und unverbindliches Angebot. Unser Team aus erfahrenen Revierkennern hilft Ihnen dabei, die perfekte Yacht für Ihren Traumurlaub zu finden.
-                </p>
+                {/* CTA Box */}
+                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 p-8 rounded-lg mt-8">
+                  <h4 className="text-xl font-bold text-gray-800 mb-4">Jetzt unverbindliches Angebot anfordern:</h4>
+                  <p className="text-gray-700">
+                    Teilen Sie uns Crewgröße, Reisedaten und Wunschyacht mit – wir prüfen Live-Verfügbarkeiten, beraten persönlich zu Route, Liegeplätzen und Proviantierung und senden Ihnen umgehend Ihr maßgeschneidertes Angebot.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
