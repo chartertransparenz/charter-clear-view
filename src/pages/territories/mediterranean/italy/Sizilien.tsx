@@ -291,8 +291,8 @@ const Sizilien = () => {
             <Card className="shadow-lg">
               <div className="relative h-64 md:h-80 overflow-hidden rounded-t-lg">
                 <img 
-                  src="/lovable-uploads/ff7a0bc3-011e-4054-a5d2-dbd397859b3b.png" 
-                  alt="Scilla am kalabrischen Festland mit kristallklarem Wasser und Castello Ruffo" 
+                  src="/lovable-uploads/87297b57-c561-4a26-ab9a-59254c22ea4e.png" 
+                  alt="Scilla am kalabrischen Festland mit kristallklarem Wasser und Castello Ruffo"
                   className="w-full h-full object-cover"
                 />
               </div>
