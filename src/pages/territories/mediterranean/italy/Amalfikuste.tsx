@@ -6,7 +6,15 @@ import {
   Users, 
   Anchor,
   Star,
-  ArrowLeft
+  ArrowLeft,
+  Landmark,
+  Mountain,
+  Waves,
+  Palette,
+  Compass,
+  ChefHat,
+  Building2,
+  Shield
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -284,6 +292,92 @@ const Amalfikuste = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Highlights Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8">Highlights der Amalfiküste</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Landmark size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">UNESCO Welterbe</h3>
+                <p className="text-sm text-muted-foreground">Einzigartige Kulturlandschaft der Amalfiküste</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Mountain size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Capri & Blaue Grotte</h3>
+                <p className="text-sm text-muted-foreground">Weltberühmte Insel mit spektakulären Naturwundern</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Waves size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Ischia Thermalquellen</h3>
+                <p className="text-sm text-muted-foreground">Entspannung in natürlichen heißen Quellen</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Palette size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Positano Dolce Vita</h3>
+                <p className="text-sm text-muted-foreground">Malerisches Fischerdorf in pastellfarbener Pracht</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Compass size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Kurze Schläge</h3>
+                <p className="text-sm text-muted-foreground">Entspanntes Segeln zwischen nahegelegenen Zielen</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <ChefHat size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Kulinarik & Limoncello</h3>
+                <p className="text-sm text-muted-foreground">Authentische italienische Küche und Zitrusgenuss</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Building2 size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Neapel & Pompeji</h3>
+                <p className="text-sm text-muted-foreground">Historische Schätze und antike Ruinen entdecken</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Shield size={24} />
+                </div>
+                <h3 className="font-semibold mb-2">Geschützte Buchten</h3>
+                <p className="text-sm text-muted-foreground">Sichere Ankerplätze auch bei stärkerem Wind</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Call to Action */}
