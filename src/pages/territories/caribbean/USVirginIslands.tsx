@@ -56,7 +56,7 @@ const USVirginIslands = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/b09245c2-f326-4fb5-9caf-48210540a4cb.png"
+          src="/lovable-uploads/808a1327-1e02-46a0-abc3-90d96bd5667a.png"
           alt="Karibische Bucht US Virgin Islands"
           className="w-full h-full object-cover"
         />
