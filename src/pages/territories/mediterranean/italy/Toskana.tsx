@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -132,6 +133,18 @@ const Toskana = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelrevier Toskana & Toskanischer Archipel</h2>
+          <TerritoryMap 
+            region="Segelrevier Toskana & Toskanischer Archipel"
+            center={{ lat: 43.0, lng: 10.4 }}
+            zoom={9}
+            maptype="satellite"
+            className="mb-8"
+          />
         </div>
 
         {/* Description */}
