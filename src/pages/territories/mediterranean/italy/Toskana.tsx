@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
+import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight, Landmark, Compass, Waves, ChefHat, Mountain } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -227,6 +227,72 @@ const Toskana = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Highlights Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8">Highlights der Toskana</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Landmark className="h-6 w-6" />
+                </div>
+                <h3 className="font-semibold mb-2">Insel Elba & Napoleon</h3>
+                <p className="text-sm text-muted-foreground">Napoleons Exilinsel mit reicher Geschichte</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Compass className="h-6 w-6" />
+                </div>
+                <h3 className="font-semibold mb-2">Toskanischer Archipel</h3>
+                <p className="text-sm text-muted-foreground">7 einzigartige Inseln als Nationalpark</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Waves className="h-6 w-6" />
+                </div>
+                <h3 className="font-semibold mb-2">Kristallklares Wasser</h3>
+                <p className="text-sm text-muted-foreground">Türkisfarbenes Wasser und Traumstrände</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <MapPin className="h-6 w-6" />
+                </div>
+                <h3 className="font-semibold mb-2">Kurze Distanzen</h3>
+                <p className="text-sm text-muted-foreground">Perfekt für entspanntes Inselhüpfen</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <ChefHat className="h-6 w-6" />
+                </div>
+                <h3 className="font-semibold mb-2">Toskanische Küche</h3>
+                <p className="text-sm text-muted-foreground">Weltberühmte Kulinarik und exzellente Weine</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
+                  <Mountain className="h-6 w-6" />
+                </div>
+                <h3 className="font-semibold mb-2">Capraia Vulkaninsel</h3>
+                <p className="text-sm text-muted-foreground">Wilde Schönheit und spektakuläre Felsformationen</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Important Harbors & Ports */}
