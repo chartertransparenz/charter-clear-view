@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 const LeewardIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,6 +67,18 @@ const LeewardIslands = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Map Overview */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Übersicht über die Leeward Islands</h2>
+          <TerritoryMap 
+            region="Leeward Islands"
+            center={{ lat: 16.0, lng: -61.0 }}
+            zoom={8}
+            maptype="satellite"
+            className="w-full"
+          />
         </div>
 
         {/* Description */}
