@@ -304,7 +304,18 @@ const Sizilien = () => {
 
           {/* Scilla Image */}
           <div className="mb-8">
-            
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/lovable-uploads/4af560e1-bf0d-424d-ae8a-505fa9612896.png"
+                alt="Scilla mit dem Castello Ruffo an der kalabrischen Küste - kristallklares Wasser und idealer Ankerplatz"
+                className="w-full h-64 md:h-80 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
+                <p className="text-white text-sm md:text-base leading-relaxed">
+                  Am kalabrischen Festland gegenüber Sizilien gelegen, bietet Scilla kristallklares Wasser, gut haltenden Sandgrund und die Kulisse des Castello Ruffo – ideal für einen kurzen Badestopp.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Fazit */}
