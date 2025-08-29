@@ -55,6 +55,11 @@ const Sizilien = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img 
+          src="/lovable-uploads/b7d7c0a7-0a06-469c-b6e5-08e0ff93bd91.png" 
+          alt="Sizilien Küste mit historischen Mauern und türkisfarbenem Meer" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
