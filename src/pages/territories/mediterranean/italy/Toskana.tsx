@@ -51,6 +51,11 @@ const Toskana = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+        <img 
+          src="/lovable-uploads/6d28d345-9301-486e-865a-9cd75aa0a966.png" 
+          alt="Traumhafte Bucht in der Toskana mit türkisfarbenem Wasser und Segelbooten" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
