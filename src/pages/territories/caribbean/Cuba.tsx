@@ -260,6 +260,23 @@ const Cuba = () => {
               
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Cayo Largo del Sur:</strong> Das Herzstück des Archipiélago de los Canarreos. Hier finden Sie die einzige Marina im Revier, die grundlegende Versorgung (Treibstoff, Wasser, eingeschränkt Proviant), Immigration und Restaurants bietet. Cayo Largo ist bekannt für seine weiten, weißen Sandstrände und das kristallklare Wasser.</li>
+              </ul>
+
+              {/* Cayo Largo-Bild */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/lovable-uploads/065ef7b6-04d2-42cd-9d89-8af299c29ed5.png"
+                  alt="Paradiesischer Strand auf Cayo Largo mit türkisfarbenem Wasser und Palmen"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+                <div className="bg-gray-50 p-4">
+                  <p className="text-gray-700 italic text-center">
+                    Auf Cayo Largo stehen Sie auf feinem, weißem Sand, blicken auf klares Türkis und genießen einfach Ruhe, Platz und entspanntes Abschalten.
+                  </p>
+                </div>
+              </div>
+
+              <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Cayos Rosario, Cantiles, Rico, Iguana:</strong> Diese und weitere kleine Inseln bieten traumhafte Sandbänke, türkisfarbene Flachwasserbereiche und oft eine beeindruckende Tierwelt, darunter Leguane und verschiedene Vogelarten. Die Cayos sind ideal für entspannte Ankerstopps, Schwimmen und Sonnenbaden.</li>
                 <li><strong>Canarreos-Riffe:</strong> Die Unterwasserwelt ist spektakulär. Die Patch-Riffe sind von bunten Hartkorallen bedeckt und beherbergen eine reiche Vielfalt an Meereslebewesen, darunter Rochen, Schildkröten, Barrakudas und Ammenhaie. Die Sicht ist oft exzellent, was das Schnorcheln und Tauchen zu einem unvergesslichen Erlebnis macht.</li>
                 <li><strong>Jardines de la Reina:</strong> Weiter östlich liegt dieses streng geschützte Marinegebiet, das als eines der besten Tauchgebiete der Welt gilt, bekannt für seine intakten Riffe und Haipopulationen. Der Zugang ist hier jedoch stark reglementiert und meist nur mit spezialisierten Anbietern möglich.</li>
