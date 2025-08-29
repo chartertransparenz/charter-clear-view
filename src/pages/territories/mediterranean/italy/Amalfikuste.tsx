@@ -21,6 +21,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 const Amalfikuste = () => {
   useEffect(() => {
@@ -104,19 +105,27 @@ const Amalfikuste = () => {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <span>Start</span>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Start</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span>Reviere</span>
+                <BreadcrumbLink asChild>
+                  <Link to="/#reviere">Reviere</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span>Mittelmeer</span>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/mittelmeer">Mittelmeer</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <span>Italien</span>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/mittelmeer/italien">Italien</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
