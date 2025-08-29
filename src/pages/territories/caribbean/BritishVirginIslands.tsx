@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationBvi from "@/assets/destination-bvi.jpg";
 const BritishVirginIslands = () => {
@@ -109,6 +110,20 @@ const BritishVirginIslands = () => {
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Map Section */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+            Karte der Britischen Jungferninseln
+          </h2>
+          <TerritoryMap
+            region="Britische Jungferninseln"
+            center={{ lat: 18.431, lng: -64.623 }}
+            zoom={11}
+            maptype="satellite"
+            className="shadow-lg"
+          />
         </div>
 
         {/* Main Content Wrapper */}
