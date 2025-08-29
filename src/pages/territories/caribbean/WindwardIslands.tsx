@@ -306,9 +306,9 @@ const WindwardIslands = () => {
         {/* Charterbasen - Copy above highlights */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charterbasen & Infrastruktur</h2>
-          <div className="grid gap-6">
+          <div className="grid gap-6 max-w-6xl mx-auto">
             {regions.map((region, index) => (
-              <div key={index} className="max-w-2xl mx-auto">
+              <div key={index}>
                 <Card className="shadow-lg">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
