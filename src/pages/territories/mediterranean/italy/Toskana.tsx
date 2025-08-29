@@ -205,10 +205,7 @@ const Toskana = () => {
                   Das Segelrevier der Toskana ist für seine generell moderaten und gutmütigen Wetterbedingungen bekannt.
                 </p>
                 
-                <ul className="space-y-2">
-                  <li><strong>Wind:</strong> Im Sommer dominieren thermische Winde, die tagsüber für eine zuverlässige Brise (3-4 Bft) sorgen und nachts abflauen. Die vorherrschenden überregionalen Winde sind der Maestrale (Mistral) aus Nordwest und der Scirocco aus Südost, die jedoch seltener und meist schwächer auftreten als in anderen Mittelmeerrevieren wie Sardinien.</li>
-                  <li><strong>Beste Reisezeit:</strong> Die idealen Monate für einen Segeltörn sind Mai, Juni, Juli und September. Das Wetter ist stabil und sonnig, die Temperaturen sind angenehm warm, und das Wasser lädt zum Baden ein. Die Häfen und Buchten sind belebt, aber nicht überfüllt. Der Hochsommer im Juli und August ist ebenfalls sehr beliebt, aber es ist deutlich heißer und voller.</li>
-                </ul>
+                
 
                 <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Fazit: Ihr unvergesslicher Törn in der Toskana</h3>
                 
