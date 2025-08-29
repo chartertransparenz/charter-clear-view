@@ -290,7 +290,30 @@ const WindwardIslands = () => {
           </div>
         </div>
 
-        {/* Charterbasen */}
+        {/* Törnempfehlung */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Törnempfehlung: 14 Tage Martinique zu den Juwelen der Grenadinen</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-lg text-gray-600 mb-6">
+                Diese Törnempfehlung ist für Segler konzipiert, die das Beste der Karibik erleben möchten: sportliche Passagen auf offenem Meer, unvergessliche Naturerlebnisse und das Gefühl, im Paradies angekommen zu sein.
+              </p>
+              
+              <div className="space-y-4">
+                {dailyItinerary.map((day, index) => (
+                  <div key={index} className="pb-4">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                      Tag {day.day}: {day.title}
+                    </h3>
+                    <p className="text-gray-600">{day.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Charterbasen - Copy above highlights */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charterbasen & Infrastruktur</h2>
           <div className="grid gap-6">
@@ -321,29 +344,6 @@ const WindwardIslands = () => {
                 </Card>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Törnempfehlung */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Törnempfehlung: 14 Tage Martinique zu den Juwelen der Grenadinen</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <p className="text-lg text-gray-600 mb-6">
-                Diese Törnempfehlung ist für Segler konzipiert, die das Beste der Karibik erleben möchten: sportliche Passagen auf offenem Meer, unvergessliche Naturerlebnisse und das Gefühl, im Paradies angekommen zu sein.
-              </p>
-              
-              <div className="space-y-4">
-                {dailyItinerary.map((day, index) => (
-                  <div key={index} className="pb-4">
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                      Tag {day.day}: {day.title}
-                    </h3>
-                    <p className="text-gray-600">{day.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
