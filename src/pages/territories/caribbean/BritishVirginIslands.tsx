@@ -111,50 +111,41 @@ const BritishVirginIslands = () => {
             </div>)}
         </div>
 
-        {/* Main Description */}
+        {/* Main Content Wrapper */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            {/* Main Description */}
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Yachtcharter British Virgin Islands (BVI): Inselhüpfen im Passatwind zwischen Korallenriffen und Karibikflair</h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Setzen Sie die Segel für einen der legendärsten Törns der Welt: Die British Virgin Islands sind das synonyme Revier für entspanntes Inselhopping, glasklare Buchten und beständige Passatwinde. Ein Yachtcharter in den BVI ist eine Expedition für die Sinne – vom Türkis der Sir Francis Drake Channel bis zum Duft tropischer Inseln und der kreolischen Küche an Strandbars wie Foxy's oder der Soggy Dollar. Die BVI sind kein gewöhnliches Segelrevier – sie sind die Bühne der Karibikklassiker.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Werfen Sie die Leinen los in einer der Top-Charterbasen rund um Tortola (Road Town, Nanny Cay, Hodges Creek, Scrub Island) und nehmen Sie Kurs auf ikonische Spots: die Granitfelsen der The Baths auf Virgin Gorda, die Schnorchelreviere The Indians und The Caves bei Norman Island, die butterweichen Strände von Anegada und die Sundowner-Buchten von Jost Van Dyke. Jeder Tag auf See enthüllt eine neue Facette dieses Archipels: geschützte Ankerbuchten, gut gepflegte Mooringfelder, kurze Schläge mit „line of sight"-Navigation und karibische Lebensfreude an Land.
             </p>
-          </div>
-        </div>
 
-        {/* Für wen geeignet - Box */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
+            {/* Für wen geeignet */}
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Für wen das Revier geeignet ist & Schwierigkeitsgrad
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 mb-8 leading-relaxed">
               Die BVI sind ideal für Einsteiger, Familien und Genießer, die kurze Etappen, verlässliche Mooringbojen und viele sichere Buchten schätzen. Katamarane sind besonders beliebt – viel Platz, geringe Tiefe, ruhiges Liegen. Ambitionierte Skipper finden in der Passatzeit (Winter/Frühjahr) sportliche, aber gut beherrschbare Bedingungen und können – wetterabhängig – den Abstecher nach Anegada planen (Auge-navigieren über helle Sandbänke, Tagesansteuerung). Insgesamt: leicht bis moderat, mit Aufmerksamkeit für Riffe, Schwell bei Nordwinden und Verkehr in den Klassikerbuchten.
             </p>
-          </div>
-        </div>
 
-        {/* Besonderheiten - Box */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Besonderheiten, Regeln & Umwelt
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Viele Highlights liegen in Nationalparkzonen mit Mooringpflicht (z. B. The Indians, The Caves, The Baths). Nutzen Sie ausschließlich Mooringbojen oder sandige Bereiche – nie auf Korallen ankern. Ein National Parks Mooring Permit ist für ausgewiesene Bojenfelder erforderlich; die Verfügbarkeit ist in der Hauptsaison limitiert, daher früh ankommen. Strömung, Böen in Passagen und nächtlicher Schwell können auftreten; ein Anker- bzw. Mooring-Check am Abend ist Standard. Respektieren Sie Sperrzonen, Geschwindigkeit in Häfen und achten Sie auf Schildkröten- und Manatee-Schutz.
-            </p>
-          </div>
-        </div>
+            {/* Besonderheiten - Nested Box */}
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Besonderheiten, Regeln & Umwelt
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Viele Highlights liegen in Nationalparkzonen mit Mooringpflicht (z. B. The Indians, The Caves, The Baths). Nutzen Sie ausschließlich Mooringbojen oder sandige Bereiche – nie auf Korallen ankern. Ein National Parks Mooring Permit ist für ausgewiesene Bojenfelder erforderlich; die Verfügbarkeit ist in der Hauptsaison limitiert, daher früh ankommen. Strömung, Böen in Passagen und nächtlicher Schwell können auftreten; ein Anker- bzw. Mooring-Check am Abend ist Standard. Respektieren Sie Sperrzonen, Geschwindigkeit in Häfen und achten Sie auf Schildkröten- und Manatee-Schutz.
+              </p>
+            </div>
 
-        {/* Charterbasen - Box */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
+            {/* Charterbasen */}
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Charterbasen & Infrastruktur
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">• Tortola – Road Town & Nanny Cay:</h4>
                 <p className="text-gray-700 ml-4">große Flotten, Technik, Diesel, Wasser, Eis; hervorragende Proviantierung (z. B. Supermärkte in Road Town).</p>
@@ -171,33 +162,27 @@ const BritishVirginIslands = () => {
                 In fast allen Buchten finden Sie Mooringfelder, Dinghy-Docks und Strandrestaurants – Reservierung ist in der Hochsaison sinnvoll.
               </p>
             </div>
-          </div>
-        </div>
 
-        {/* Wind und Wetter - Box */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Wind und Wetter
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Die BVI liegen im Gürtel der nordöstlichen Passatwinde. Von Dezember bis April wehen sie verlässlich aus NE-E mit etwa 15-22 kn; kurzzeitig können die Christmas Winds auf 25-30 kn auffrischen. In den Passagen steht dann oft 1-2 m See, im Lee der Inseln ist es deutlich ruhiger. Von Mai bis Juli nimmt der Wind häufig auf 10-15 kn ab, nachmittags setzt Thermik ein; kurze Squalls sind normal. Im Winter kann Nordschwell nördlich offene Buchten (z. B. Cane Garden Bay, Anegada Nordseite) ungemütlich machen - weichen Sie auf südliche Buchten aus (Norman, Peter, Cooper, Great Harbour/JVD). Strömung meist moderat (unter 1 kn), Tidenhub gering (ca. 30-50 cm), in Engstellen dennoch auf Set und Drift achten.
-            </p>
-            <div className="border-l-4 border-primary pl-4">
-              <h4 className="font-semibold text-gray-800 mb-2">Beste Reisezeit</h4>
-              <p className="text-gray-700">
-                Dezember-April ist Hochsaison: stabile Passate, wenig Regen, hervorragende Sicht - ideal für Bareboat, Familien und Einsteiger. Mai-Juni gelten als Shoulder Season mit warmem, meist ruhigerem Wetter, weniger Betrieb und oft attraktiveren Preisen. August-Oktober liegt der Schwerpunkt der Hurrikansaison: nur mit flexiblen Plänen, passender Versicherung und engmaschiger Wetterbeobachtung chartern; einzelne Betriebe pausieren. November ist Übergang - erste Nordschwells möglich, die Passate bauen sich wieder auf. Wasser 26-29 °C, Luft 26-31 °C: ganzjährig badetauglich.
+            {/* Wind und Wetter - Nested Box */}
+            <div className="border border-gray-300 p-6 rounded-lg mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Wind und Wetter
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Die BVI liegen im Gürtel der nordöstlichen Passatwinde. Von Dezember bis April wehen sie verlässlich aus NE-E mit etwa 15-22 kn; kurzzeitig können die Christmas Winds auf 25-30 kn auffrischen. In den Passagen steht dann oft 1-2 m See, im Lee der Inseln ist es deutlich ruhiger. Von Mai bis Juli nimmt der Wind häufig auf 10-15 kn ab, nachmittags setzt Thermik ein; kurze Squalls sind normal. Im Winter kann Nordschwell nördlich offene Buchten (z. B. Cane Garden Bay, Anegada Nordseite) ungemütlich machen - weichen Sie auf südliche Buchten aus (Norman, Peter, Cooper, Great Harbour/JVD). Strömung meist moderat (unter 1 kn), Tidenhub gering (ca. 30-50 cm), in Engstellen dennoch auf Set und Drift achten.
               </p>
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-800 mb-2">Beste Reisezeit</h4>
+                <p className="text-gray-700">
+                  Dezember-April ist Hochsaison: stabile Passate, wenig Regen, hervorragende Sicht - ideal für Bareboat, Familien und Einsteiger. Mai-Juni gelten als Shoulder Season mit warmem, meist ruhigerem Wetter, weniger Betrieb und oft attraktiveren Preisen. August-Oktober liegt der Schwerpunkt der Hurrikansaison: nur mit flexiblen Plänen, passender Versicherung und engmaschiger Wetterbeobachtung chartern; einzelne Betriebe pausieren. November ist Übergang - erste Nordschwells möglich, die Passate bauen sich wieder auf. Wasser 26-29 °C, Luft 26-31 °C: ganzjährig badetauglich.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* Törnempfehlung */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
+            {/* Törnempfehlung */}
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Törnempfehlung: 7 Tage ab Tortola</h3>
             
-            <div className="space-y-6">
+            <div className="space-y-6 mb-8">
               <div className="border-l-4 border-primary pl-6">
                 <h4 className="font-semibold text-gray-800 mb-2">Tag 1 – Tortola → The Bight, Norman Island</h4>
                 <p className="text-gray-700">Check-in, Sicherheitsbriefing, kurzer Einweisungsschlag. Sundowner an Bord, abends Dinghy rüber zu „Pirates" oder „Willy T". Mooringboje empfohlen.</p>
@@ -233,43 +218,28 @@ const BritishVirginIslands = () => {
                 <p className="text-gray-700">Frühstücksstop in Soper's Hole (bunte Holzhäuser, Bäckerei), dann gemütlich zurück zur Basis. Tanken, Auscheck, letzten Abend karibisch ausklingen lassen.</p>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Highlights */}
-        
-
-        {/* Regions */}
-        
-
-        {/* Popular Routes */}
-        
-
-        {/* Zusammenfassung */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg border border-gray-300">
+            {/* Zusammenfassung */}
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Zusammenfassung</h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Die BVI sind zweifellos die Kronjuwelen der karibischen Charterwelt – eine Region, die entspanntes Segeln, karibische Kultur und spektakuläre Naturerlebnisse wie kein anderes Revier vereint. Von erstklassiger Charter-Infrastruktur über verlässliche Passatwinde bis hin zu legendären Ankerplätzen (The Baths, Norman Island) und lebendigen Beach Bars (Foxy's, Soggy Dollar) bieten die BVI alles, was das Seglerherz begehrt. Egal, ob Sie zum ersten Mal bareboat segeln oder als erfahrener Charterprofi neue Horizonte entdecken – die British Virgin Islands versprechen unvergessliche Momente auf dem Wasser und ashore.
             </p>
-          </div>
-        </div>
 
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-primary to-primary/80 text-white p-8 rounded-lg shadow-lg">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">
-                Bereit für Ihren BVI-Charter?
-              </h3>
-              <p className="mb-6 text-blue-100">
-                Das karibische Segelparadies erwartet Sie – mit perfekten Bedingungen für unvergessliche Segeltörns zwischen traumhaften Inseln.
-              </p>
-              <CharterRequestForm>
-                <Button className="bg-white text-primary hover:bg-blue-50" size="lg">
-                  Jetzt BVI Charter anfragen
-                </Button>
-              </CharterRequestForm>
+            {/* CTA within main content */}
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 p-8 rounded-lg mt-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                  Bereit für Ihren BVI-Charter?
+                </h3>
+                <p className="mb-6 text-gray-600">
+                  Das karibische Segelparadies erwartet Sie – mit perfekten Bedingungen für unvergessliche Segeltörns zwischen traumhaften Inseln.
+                </p>
+                <CharterRequestForm>
+                  <Button size="lg">
+                    Jetzt BVI Charter anfragen
+                  </Button>
+                </CharterRequestForm>
+              </div>
             </div>
           </div>
         </div>
