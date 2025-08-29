@@ -236,7 +236,7 @@ const Toskana = () => {
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Landmark className="h-6 w-6" />
+                  <Landmark size={24} />
                 </div>
                 <h3 className="font-semibold mb-2">Insel Elba & Napoleon</h3>
                 <p className="text-sm text-muted-foreground">Napoleons Exilinsel mit reicher Geschichte</p>
@@ -246,7 +246,7 @@ const Toskana = () => {
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Compass className="h-6 w-6" />
+                  <Compass size={24} />
                 </div>
                 <h3 className="font-semibold mb-2">Toskanischer Archipel</h3>
                 <p className="text-sm text-muted-foreground">7 einzigartige Inseln als Nationalpark</p>
@@ -256,7 +256,7 @@ const Toskana = () => {
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Waves className="h-6 w-6" />
+                  <Waves size={24} />
                 </div>
                 <h3 className="font-semibold mb-2">Kristallklares Wasser</h3>
                 <p className="text-sm text-muted-foreground">Türkisfarbenes Wasser und Traumstrände</p>
@@ -266,7 +266,7 @@ const Toskana = () => {
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <MapPin className="h-6 w-6" />
+                  <MapPin size={24} />
                 </div>
                 <h3 className="font-semibold mb-2">Kurze Distanzen</h3>
                 <p className="text-sm text-muted-foreground">Perfekt für entspanntes Inselhüpfen</p>
@@ -276,7 +276,7 @@ const Toskana = () => {
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <ChefHat className="h-6 w-6" />
+                  <ChefHat size={24} />
                 </div>
                 <h3 className="font-semibold mb-2">Toskanische Küche</h3>
                 <p className="text-sm text-muted-foreground">Weltberühmte Kulinarik und exzellente Weine</p>
@@ -286,7 +286,7 @@ const Toskana = () => {
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <div className="p-3 bg-primary/10 rounded-full text-primary w-fit mx-auto mb-4">
-                  <Mountain className="h-6 w-6" />
+                  <Mountain size={24} />
                 </div>
                 <h3 className="font-semibold mb-2">Capraia Vulkaninsel</h3>
                 <p className="text-sm text-muted-foreground">Wilde Schönheit und spektakuläre Felsformationen</p>
