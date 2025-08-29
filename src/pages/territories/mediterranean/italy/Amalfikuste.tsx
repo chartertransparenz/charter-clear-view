@@ -215,37 +215,37 @@ const Amalfikuste = () => {
                   
                   <div className="space-y-4">
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 1: Salerno → Amalfi (ca. 12 sm, 2–3 Std.)</h5>
+                      <h5 className="font-bold">Tag 1: Salerno → Amalfi</h5>
                       <p>Check-in in Salerno/Marina d'Arechi, Proviantierung, Sicherheitsbriefing. Früher Nachmittag: Ablegen Richtung West, entlang der Steilküste nach Amalfi. Liegeplatz im Hafen oder, bei ruhigem Wetter, an ausgewiesenem Bojenfeld vor der Küste. Landgang: Dom von Amalfi, Pastifici, Gelaterie. Tipp: Brise am Nachmittag nutzen, abends nimmt der Schiffsverkehr meist ab.</p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 2: Amalfi → Capri (Marina Grande) oder Ankerbucht Marina Piccola (18–20 sm, 3–4 Std.)</h5>
+                      <h5 className="font-bold">Tag 2: Amalfi → Capri (Marina Grande) oder Ankerbucht Marina Piccola</h5>
                       <p>Morgens ablegen, Fotostopp vor Positano. Bei geeignetem Wetter Badepause an den Isole Li Galli (Schutzzonen beachten). Weiter nach Capri. Option 1: Marina Grande – knappe Transitplätze, früh reservieren. Option 2: Marina Piccola – beliebte Ankerbucht unterhalb der Faraglioni, bei Südschwell ausweichen. An Land: Piazzetta, Monte Solaro (Sessellift), Grotta Azzurra per Ausflugsboot.</p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 3: Capri → Ischia (18–20 sm, 3–4 Std.)</h5>
+                      <h5 className="font-bold">Tag 3: Capri → Ischia</h5>
                       <p>Vormittags ruhiger, am Nachmittag oft Thermik/Seebrise aus W–NW. Ziel je nach Wind und Vorlieben: Ischia Porto (urban, zentrale Lage), Casamicciola Terme (gute Technik), Forio (Sonnenuntergänge, Restaurants). Alternativ Ankerplatz Sant'Angelo (bei passendem Wetter). Wellness-Stopp in den Thermalparks oder Wanderung am Monte Epomeo.</p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 4: Ischia → Procida (4–5 sm, 1–1,5 Std.)</h5>
+                      <h5 className="font-bold">Tag 4: Ischia → Procida</h5>
                       <p>Kurzer Hüpfer. Marina di Procida als sicherer Liegeplatz, pittoreske Kulisse in Corricella (teils Bojen, restriktives Ankern möglich). Ideal für einen entspannten Layover-Tag: Fischküche, Spaziergänge durch bunte Gassen, Vorräte ergänzen.</p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 5: Procida → Sorrent (18–20 sm, 3–4 Std.)</h5>
+                      <h5 className="font-bold">Tag 5: Procida → Sorrent</h5>
                       <p>Durch den Golf von Neapel Richtung Sorrent. Bei spürbarem Verkehr AIS und Ausguck im Blick behalten. Porto di Sorrento oder Marina di Stabia (Castellammare) als Alternative mit exzellenter Infrastruktur. Landgang: Altstadt Sorrent, Zitronenhaine, Limoncello-Manufakturen.</p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 6: Sorrent → Positano (über Nerano/Punta Campanella) (17 sm, 3–4 Std.)</h5>
+                      <h5 className="font-bold">Tag 6: Sorrent → Positano (über Nerano/Punta Campanella)</h5>
                       <p>Küstennahe Route rund Punta Campanella – Schutzgebiet beachten. Bade- oder Lunchstopp in der Ankerbucht von Nerano/Marina del Cantone (bei Schwell auf Alternativen ausweichen). Weiter nach Positano: Festmachen an genehmigten Bojen; Dinghy-Service an Land. Sunset-Aperitivo, Boutique-Bummel.</p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-bold">Tag 7: Positano → Salerno (18–20 sm, 3–4 Std.)</h5>
+                      <h5 className="font-bold">Tag 7: Positano → Salerno</h5>
                       <p>Rücketappe entlang der Panoramaküste. Früh ablegen, um vormittägliche Ruhe zu nutzen; am Nachmittag kann lokaler Schwell zunehmen. Tanken, Auscheck in Marina d'Arechi. Abends Zeitpuffer für Technikübergabe einplanen.</p>
                     </div>
                   </div>
