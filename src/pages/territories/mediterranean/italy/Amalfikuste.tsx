@@ -274,6 +274,13 @@ const Amalfikuste = () => {
                     Großeinkauf in Salerno oder Sorrent/Castellammare; Frischware in Amalfi, Positano und auf Procida. Tanken in Salerno, Ischia und teils Sorrent/Marina di Stabia. Wasser/Strom in allen genannten Häfen üblich; früh anfragen in der Hochsaison.
                   </p>
                 </div>
+
+                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 p-8 rounded-lg mt-8">
+                  <h3 className="text-2xl font-bold mb-4 text-center">Jetzt unverbindliches Angebot anfordern:</h3>
+                  <p className="text-lg leading-relaxed text-center">
+                    Teilen Sie uns Crewgröße, Reisedaten und Wunschyacht mit – wir prüfen Live-Verfügbarkeiten, beraten persönlich zu Route, Liegeplätzen und Proviantierung und senden Ihnen umgehend Ihr maßgeschneidertes Angebot.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
