@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import TerritoryMap from "@/components/TerritoryMap";
 const Sizilien = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -116,6 +117,18 @@ const Sizilien = () => {
                 <p className="text-sm text-gray-600">{fact.value}</p>
               </CardContent>
             </Card>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelrevier Sizilien & Liparische Inseln</h2>
+          <TerritoryMap 
+            region="Sizilien"
+            center={{ lat: 38.2, lng: 14.8 }}
+            zoom={8}
+            maptype="satellite"
+            className="shadow-lg"
+          />
         </div>
 
         {/* Main Content */}
