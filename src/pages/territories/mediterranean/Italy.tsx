@@ -32,21 +32,10 @@ const Italy = () => {
 
   const regions = [
     {
-      name: "Campania / Mittelitalien",
-      link: "/reviere/mittelmeer/italien/campania",
+      name: "Amalfiküste",
+      link: "/reviere/mittelmeer/italien/amalfikuste",
       description: "Amalfiküste, Neapel und die bezaubernden Inseln Capri und Ischia",
       cities: ["Agropoli", "Amalfi Küste", "Castellamare", "Neapel", "Procida", "Salerno"]
-    },
-    {
-      name: "Kalabrien / Süditalien",
-      link: "/reviere/mittelmeer/italien/kalabrien",
-      description: "Die Stiefelspitze Italiens mit kristallklarem Wasser",
-      cities: ["Tropea"]
-    },
-    {
-      name: "Livorno",
-      link: "/reviere/mittelmeer/italien/livorno",
-      description: "Toskanische Küste mit historischen Häfen"
     },
     {
       name: "Sardinien",
@@ -193,10 +182,10 @@ const Italy = () => {
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Profil & Besonderheiten</h4>
             <p className="mb-6">
-              Die Toskana verbindet seglerischen Komfort mit Kultur und dem Toskanischen Archipel: Elba, Giglio, Giannutri, Capraia, Montecristo, Pianosa, Gorgona. Nördlich schließt die italienische Riviera (Ligurien) an – mit den Ikonen Portofino und Cinque Terre.
+              Die <Link to="/reviere/mittelmeer/italien/toskana" className="text-blue-600 hover:text-blue-800 underline font-medium">Toskana</Link> verbindet seglerischen Komfort mit Kultur und dem Toskanischen Archipel: Elba, Giglio, Giannutri, Capraia, Montecristo, Pianosa, Gorgona. Nördlich schließt die italienische Riviera (Ligurien) an – mit den Ikonen Portofino und Cinque Terre.
             </p>
             <p className="mb-6">
-              Warum hier chartern? Überschaubare Etappen, viele Lee Buchten, sandiger Grund (Elba/„Golfi"), solide Marinas und Sightseeing vom Feinsten – Pisa, Lucca, Florenz an Land; auf dem Wasser die grün granitenen Inseln mit kristallklaren Ankerplätzen.
+              Warum hier chartern? Überschaubare Etappen, viele Lee Buchten, sandiger Grund (Elba/„Golfi"), solide Marinas und Sightseeing vom Feinsten – Pisa, Lucca, Florenz an Land; auf dem Wasser die grün granitenen Inseln mit kristallklaren Ankerplätzen. <Link to="/reviere/mittelmeer/italien/toskana" className="text-blue-600 hover:text-blue-800 underline font-medium">Mehr zur Toskana erfahren →</Link>
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -240,7 +229,7 @@ const Italy = () => {
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Profil & Besonderheiten</h4>
             <p className="mb-6">
-              Das Spektakel aus Steilküste, pastellfarbenen Dörfern und in den Fels gehauenen Häfen ist weltberühmt: Positano, Amalfi, Ravello (an Land), davor Capri, Ischia, Procida im Golf von Neapel. Das Revier ist logistisch exzellent, nautisch aber wegen Schwell und Fährverkehr aufmerksam zu segeln. In der Hochsaison sind Liegeplätze rar – Reservierung/Plan B Buchten sind Gold wert.
+              Das Spektakel aus Steilküste, pastellfarbenen Dörfern und in den Fels gehauenen Häfen ist weltberühmt: Positano, Amalfi, Ravello (an Land), davor Capri, Ischia, Procida im Golf von Neapel. Die <Link to="/reviere/mittelmeer/italien/amalfikuste" className="text-blue-600 hover:text-blue-800 underline font-medium">Amalfiküste</Link> ist logistisch exzellent, nautisch aber wegen Schwell und Fährverkehr aufmerksam zu segeln. In der Hochsaison sind Liegeplätze rar – Reservierung/Plan B Buchten sind Gold wert. <Link to="/reviere/mittelmeer/italien/amalfikuste" className="text-blue-600 hover:text-blue-800 underline font-medium">Mehr zur Amalfiküste erfahren →</Link>
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -288,7 +277,7 @@ const Italy = () => {
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Profil & Besonderheiten</h4>
             <p className="mb-6">
-              Sardinien ist Italiens Karibik: Granit, Smaragd Töne, Dünenstrände – und der legendäre Mistral (NW), der für kernige, aber meist gut planbare Segeltage sorgt. Im Nordosten liegt das Arcipelago di La Maddalena – ein Nationalpark mit Moorings, Parkgebühr und Postkartenbuchten. Die Ostküste bietet Langstrände, die Westküste ist offener und wellenreicher, der Süden (Villasimius/Carloforte) mediterran lässig.
+              <Link to="/reviere/mittelmeer/italien/sardinien" className="text-blue-600 hover:text-blue-800 underline font-medium">Sardinien</Link> ist Italiens Karibik: Granit, Smaragd Töne, Dünenstrände – und der legendäre Mistral (NW), der für kernige, aber meist gut planbare Segeltage sorgt. Im Nordosten liegt das Arcipelago di La Maddalena – ein Nationalpark mit Moorings, Parkgebühr und Postkartenbuchten. Die Ostküste bietet Langstrände, die Westküste ist offener und wellenreicher, der Süden (Villasimius/Carloforte) mediterran lässig. <Link to="/reviere/mittelmeer/italien/sardinien" className="text-blue-600 hover:text-blue-800 underline font-medium">Mehr zu Sardinien erfahren →</Link>
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -303,7 +292,7 @@ const Italy = () => {
             <h4 className="text-xl font-semibold mt-6 mb-4">La Maddalena & Costa Smeralda</h4>
             <ul className="list-disc pl-6 space-y-3 mb-6">
               <li><strong>Maddalena Archipel:</strong> Spargi, Budelli (rosa Strand – strikte Regeln), Santa Maria, Razzoli, Caprera. Überwiegend Moorings/Bojen; Ankern teils limitiert – Regelwerk beachten.</li>
-              <li><strong>Costa Smeralda:</strong> Jet Set Flair (Porto Cervo, Porto Rotondo) und blitzsaubere Buchten; Preise in Hochsaison hoch, dafür Infrastruktur top.</li>
+              <li><strong><Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline font-medium">Costa Smeralda</Link>:</strong> Jet Set Flair (Porto Cervo, Porto Rotondo) und blitzsaubere Buchten; Preise in Hochsaison hoch, dafür Infrastruktur top. <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-blue-600 hover:text-blue-800 underline font-medium">Mehr zur Costa Smeralda →</Link></li>
             </ul>
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Weitere Highlights</h4>
@@ -331,7 +320,7 @@ const Italy = () => {
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Profil & Besonderheiten</h4>
             <p className="mb-6">
-              Sizilien bietet alles: Vulkanlandschaften, Barockstädte, offene Passagen und All Weather Buchten. Nördlich liegen die Äolischen Inseln – Vulcano, Lipari, Salina, Panarea, Stromboli, Filicudi, Alicudi – eine der spannendsten Inselketten des Mittelmeers.
+              <Link to="/reviere/mittelmeer/italien/sizilien" className="text-blue-600 hover:text-blue-800 underline font-medium">Sizilien</Link> bietet alles: Vulkanlandschaften, Barockstädte, offene Passagen und All Weather Buchten. Nördlich liegen die Äolischen Inseln – Vulcano, Lipari, Salina, Panarea, Stromboli, Filicudi, Alicudi – eine der spannendsten Inselketten des Mittelmeers. <Link to="/reviere/mittelmeer/italien/sizilien" className="text-blue-600 hover:text-blue-800 underline font-medium">Mehr zu Sizilien erfahren →</Link>
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
