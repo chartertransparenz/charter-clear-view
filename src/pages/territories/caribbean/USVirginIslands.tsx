@@ -16,7 +16,7 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 import { ChevronRight } from "lucide-react";
-import caribbean from "@/assets/caribbean.jpg";
+
 
 const USVirginIslands = () => {
   useEffect(() => {
@@ -56,8 +56,8 @@ const USVirginIslands = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={caribbean}
-          alt="US Virgin Islands"
+          src="/lovable-uploads/b09245c2-f326-4fb5-9caf-48210540a4cb.png"
+          alt="Karibische Bucht US Virgin Islands"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
