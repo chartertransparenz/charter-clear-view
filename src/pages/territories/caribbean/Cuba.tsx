@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import caribbean from "@/assets/caribbean.jpg";
 import {
   Breadcrumb,
@@ -118,6 +119,16 @@ const Cuba = () => {
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <TerritoryMap
+            region="Das Segelrevier um Cienfuegos, Kuba"
+            center={{ lat: 21.9, lng: -81.0 }}
+            zoom={8}
+            maptype="satellite"
+          />
         </div>
 
         {/* Hauptbeschreibung */}
