@@ -293,7 +293,7 @@ const Sizilien = () => {
 
         {/* Highlights */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Highlights von Sizilien</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Die Highlights auf Sizilien</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {sizilienHighlights.map((highlight, index) => (
               <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
