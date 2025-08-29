@@ -82,8 +82,43 @@ const Italy = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
+      {/* Breadcrumb Navigation */}
+      <div className="bg-white border-b border-gray-200 shadow-sm sticky top-20 z-40">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList className="text-sm">
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/" className="text-blue-600 hover:text-blue-800 font-medium">Start</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4 text-gray-400" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/#reviere" className="text-blue-600 hover:text-blue-800 font-medium">Reviere</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4 text-gray-400" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/mittelmeer" className="text-blue-600 hover:text-blue-800 font-medium">Mittelmeer</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4 text-gray-400" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-gray-900 font-semibold">Italien</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+      </div>
+
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+      <div className="relative h-64 md:h-96 overflow-hidden">
         <img
           src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png"
           alt="Italien Mittelmeer"
@@ -108,41 +143,6 @@ const Italy = () => {
             Zurück zum Mittelmeer
           </Button>
         </Link>
-      </div>
-
-      {/* Breadcrumb Navigation */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4 py-3">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/">Start</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator>
-                <ChevronRight className="h-4 w-4" />
-              </BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator>
-                <ChevronRight className="h-4 w-4" />
-              </BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/reviere/mittelmeer">Mittelmeer</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator>
-                <ChevronRight className="h-4 w-4" />
-              </BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbPage>Italien</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </div>
       </div>
 
       <div className="container mx-auto px-4 py-12">
