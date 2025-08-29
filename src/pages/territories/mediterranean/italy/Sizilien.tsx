@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
+import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight, Landmark, Mountain, Waves, ChefHat, Compass, Building2, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -29,7 +29,16 @@ const Sizilien = () => {
     value: "Vielfältige Küsten"
   }];
   const cities = ["Capo d'Orlando", "Marsala", "Palermo", "Portorosa", "Sant'Agata di Militello", "Trapani"];
-  const highlights = ["Größte Insel des Mittelmeers", "Vielfältige Küstenlandschaften", "Reiche Geschichte und Kultur", "Authentische sizilianische Küche", "Aktive Vulkane (Ätna, Stromboli)", "Kristallklares Wasser", "Zahlreiche geschützte Buchten", "Excellente Windverhältnisse", "Ganzjährig mildes Klima"];
+  const sizilienHighlights = [
+    { icon: Landmark, title: "Valle dei Templi", description: "Antike griechische Tempel in Agrigent" },
+    { icon: Mountain, title: "Ätna & Stromboli", description: "Aktive Vulkane mit spektakulären Landschaften" },
+    { icon: Waves, title: "Äolische Inseln", description: "7 einzigartige Vulkaninseln vor der Nordküste" },
+    { icon: ChefHat, title: "Sizilianische Küche", description: "Arancini, Cannoli und frische Meeresfrüchte" },
+    { icon: Compass, title: "Ganzjähriges Segeln", description: "Mildes Klima ermöglicht Segeln das ganze Jahr" },
+    { icon: Building2, title: "Barocke Städte", description: "Noto, Modica und Ragusa - UNESCO Welterbe" },
+    { icon: Shield, title: "Geschützte Buchten", description: "Sichere Ankerplätze rund um die gesamte Insel" },
+    { icon: Anchor, title: "Vielfältige Häfen", description: "Von Palermo bis Catania - exzellente Marina-Infrastruktur" }
+  ];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
@@ -137,8 +146,20 @@ const Sizilien = () => {
 
         {/* Highlights */}
         <div className="mb-12">
-          
-          
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Highlights von Sizilien</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {sizilienHighlights.map((highlight, index) => (
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <highlight.icon size={24} className="text-blue-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-800 mb-2">{highlight.title}</h3>
+                  <p className="text-sm text-gray-600">{highlight.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* CTA */}
