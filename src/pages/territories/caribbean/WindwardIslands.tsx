@@ -166,151 +166,141 @@ const WindwardIslands = () => {
           ))}
         </div>
 
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Yachtcharter Windward Islands: Ihr Segelabenteuer in der Karibik</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Willkommen an Bord! Entdecken Sie mit uns die Windward Islands, das pulsierende Herz der Karibik und ein Segelrevier der Superlative. Vergessen Sie den Alltag und tauchen Sie ein in eine Welt, in der jede Insel ihren eigenen Charakter hat – von französischem Savoir-vivre über britisches Kolonialerbe bis hin zu unberührter, vulkanischer Natur.
-            </p>
-            <p className="text-lg text-gray-600">
-              Ein Yachtcharter in den Windward Islands ist mehr als nur ein Urlaub; es ist eine Entdeckungsreise durch smaragdgrüne Regenwälder, vorbei an majestätischen Vulkanen und zu Ankerplätzen in türkisblauen Buchten. Setzen Sie die Segel für ein unvergessliches Inselhopping in der Karibik und erleben Sie die Freiheit des Meeres auf Ihrer privaten Segelyacht oder Ihrem Katamaran.
-            </p>
-          </div>
-        </div>
-
-        {/* Anreise */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Komfortable Anreise in Ihr Segelparadies</h2>
-            <p className="text-lg text-gray-600">
-              Ihr Yachturlaub in den Windward Islands beginnt mit einer entspannten Anreise. Internationale Flughäfen auf Martinique (FDF), St. Lucia (UVF) und Grenada (GND) werden regelmäßig per Direktflug aus Europa und Nordamerika angeflogen. Von dort aus sind es nur kurze und gut organisierte Transfers zu den wichtigsten Charterbasen. Dank eines gut ausgebauten Netzes an regionalen Flügen und Fähren können Sie auch problemlos zwischen den Inseln reisen und Ihren Törn flexibel gestalten.
-            </p>
-          </div>
-        </div>
-
-        {/* Für wen geeignet */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Für wen ist das Revier geeignet?</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Die Windward Islands bieten für jeden Segler das passende Erlebnis. Das Revier wird als mittel bis anspruchsvoll eingestuft.
-            </p>
-            <div className="grid gap-4 md:grid-cols-3">
-              <div className="border border-gray-300 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">Erfahrene Skipper</h3>
-                <p className="text-sm text-gray-600">Genießen die sportlichen Passagen auf offenem Meer, die navigatorischen Herausforderungen und die langen Schläge unter vollen Segeln.</p>
-              </div>
-              <div className="border border-gray-300 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">Segelneulinge & Familien</h3>
-                <p className="text-sm text-gray-600">Für einen entspannten Yachturlaub empfehlen wir, einen erfahrenen Skipper zu buchen. Ein geräumiger Katamaran bietet mehr Stabilität und Komfort.</p>
-              </div>
-              <div className="border border-gray-300 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">Wassersportler & Abenteurer</h3>
-                <p className="text-sm text-gray-600">Das Revier ist ein Paradies zum Schnorcheln, Tauchen und Kitesurfen. Die vielfältige Landschaft lädt zu Erkundungstouren an Land ein.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Besonderheiten */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Besonderheiten des Reviers: Segeln mit dem Passatwind</h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Das Segeln in der Karibik wird von den beständigen Passatwinden geprägt, die von November bis Juni für ideale Segelbedingungen sorgen. Diese konstanten Winde aus Nordost machen das Segeln zwischen den Inseln zu einem wahren Genuss.
-            </p>
-            
-            <div className="border border-gray-300 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Wichtige Hinweise für Ihren Törn</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Nachtsegelverbot</h4>
-                  <p className="text-gray-600 text-sm">In diesem Revier herrscht bei den meisten Charterflotten ein striktes Nachtsegelverbot. Unbeleuchtete Riffe, Fischerboote und die anspruchsvolle Navigation machen das Segeln nach Sonnenuntergang zu einem hohen Risiko. Planen Sie Ihre Törns so, dass Sie Ihren Ankerplatz stets sicher bei Tageslicht erreichen (idealerweise vor 16:00 Uhr).</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Eye Navigation (Navigation nach Sicht)</h4>
-                  <p className="text-gray-600 text-sm">Insbesondere in den Grenadinen ist die "Eye Navigation" entscheidend. Die Farbe des Wassers verrät die Tiefe: Dunkelblau bedeutet tiefes Wasser, Türkis signalisiert Sandgrund, bräunliche Flecken deuten auf gefährlich flache Riffe hin. Navigieren Sie bei hochstehender Sonne (10:00-15:00 Uhr).</p>
-                </div>
-              </div>
-            </div>
-
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Vorschriften und Regeln für einen sicheren Törn</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>• <strong>Ein- und Ausklarieren:</strong> Bei jedem Wechsel des Staatsgebiets müssen Sie bei Zoll und Einwanderung ein- und ausklarieren</li>
-              <li>• <strong>Cruising Permits:</strong> Für St. Vincent und die Grenadinen ist eine Cruising Permit erforderlich</li>
-              <li>• <strong>Bareboat-Qualifikation:</strong> Detaillierter Segelerfahrungsnachweis statt formeller Segelschein</li>
-              <li>• <strong>Naturschutz:</strong> In geschützten Meeresparks wie den Tobago Cays gelten strenge Regeln</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Wind & Wetter */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Törnziele: Von Martinique bis zur Gewürzinsel Grenada</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Die Törnziele der Windward Islands sind so vielfältig wie die Karibik selbst. Ein klassischer Törn führt als One-Way von Nord nach Süd, um die Passatwinde optimal zu nutzen.
-            </p>
-            
-            <div className="border border-gray-300 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Wind & Wetter</h3>
-              <p className="text-gray-600 text-sm mb-3">
-                <strong>Beste Reisezeit:</strong> Die Trockenzeit von Dezember bis Mai ist ideal. Die Hurrikan-Saison von Juli bis Oktober sollte von Skippern gemieden werden.
-              </p>
-              <ul className="space-y-1 text-gray-600 text-sm">
-                <li>• <strong>Stabile Windverhältnisse:</strong> Verlassen Sie sich auf den Passat für planbare und sportliche Törns</li>
-                <li>• <strong>Abwechslungsreiche Passagen:</strong> Echtes Blauwassersegeln kombiniert mit geschützten Schlägen</li>
-                <li>• <strong>Natur pur:</strong> Geschützte Ankerbuchten, farbenprächtigen Korallenriffe und tropische Wasserfälle</li>
-              </ul>
-            </div>
-
-            <div className="mt-6 space-y-4">
-              <div className="border-l-4 border-blue-600 pl-4">
-                <h4 className="font-semibold text-gray-800">Martinique</h4>
-                <p className="text-gray-600 text-sm">Starten Sie mit französischem Flair, besuchen Sie historische Destillerien und ankern Sie in der Bucht von Saint-Pierre am Fuße des Vulkans Mont Pelé.</p>
-              </div>
-              <div className="border-l-4 border-blue-600 pl-4">
-                <h4 className="font-semibold text-gray-800">St. Lucia (ca. 25 NM)</h4>
-                <p className="text-gray-600 text-sm">Segeln Sie zu den majestätischen Pitons, einem UNESCO-Weltnaturerbe. Die Marigot Bay gilt als eine der schönsten Buchten der Karibik.</p>
-              </div>
-              <div className="border-l-4 border-blue-600 pl-4">
-                <h4 className="font-semibold text-gray-800">St. Vincent & die Grenadinen (ca. 45 NM)</h4>
-                <p className="text-gray-600 text-sm">Entdecken Sie Wallilabou Bay (Drehort von "Fluch der Karibik") und die charmante Insel Bequia mit ihrer Walfang-Tradition.</p>
-              </div>
-              <div className="border-l-4 border-blue-600 pl-4">
-                <h4 className="font-semibold text-gray-800">Tobago Cays</h4>
-                <p className="text-gray-600 text-sm">Das absolute Juwel der Grenadinen. Meeresschutzgebiet zum Schnorcheln mit Meeresschildkröten in kristallklarem Wasser.</p>
-              </div>
-              <div className="border-l-4 border-blue-600 pl-4">
-                <h4 className="font-semibold text-gray-800">Grenada (ca. 40 NM von Union Island)</h4>
-                <p className="text-gray-600 text-sm">Die "Gewürzinsel" mit dem Duft von Muskatnuss und Zimt. Erkunden Sie die malerische Hauptstadt St. George's.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Törnempfehlung */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Törnempfehlung: 14 Tage Martinique zu den Juwelen der Grenadinen</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <p className="text-lg text-gray-600 mb-6">
-                Diese Törnempfehlung ist für Segler konzipiert, die das Beste der Karibik erleben möchten: sportliche Passagen auf offenem Meer, unvergessliche Naturerlebnisse und das Gefühl, im Paradies angekommen zu sein.
-              </p>
+        {/* Main Description Box */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <Card className="shadow-lg">
+            <CardContent className="p-8">
+              <h2 className="text-3xl font-bold mb-8 text-center">Yachtcharter Windward Islands: Ihr Segelabenteuer in der Karibik</h2>
               
-              <div className="space-y-4">
-                {dailyItinerary.map((day, index) => (
-                  <div key={index} className="pb-4">
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                      Tag {day.day}: {day.title}
-                    </h3>
-                    <p className="text-gray-600">{day.description}</p>
+              <div className="prose max-w-none space-y-8">
+                <div>
+                  <p className="text-lg text-gray-600 mb-4">
+                    Willkommen an Bord! Entdecken Sie mit uns die Windward Islands, das pulsierende Herz der Karibik und ein Segelrevier der Superlative. Vergessen Sie den Alltag und tauchen Sie ein in eine Welt, in der jede Insel ihren eigenen Charakter hat – von französischem Savoir-vivre über britisches Kolonialerbe bis hin zu unberührter, vulkanischer Natur.
+                  </p>
+                  <p className="text-lg text-gray-600">
+                    Ein Yachtcharter in den Windward Islands ist mehr als nur ein Urlaub; es ist eine Entdeckungsreise durch smaragdgrüne Regenwälder, vorbei an majestätischen Vulkanen und zu Ankerplätzen in türkisblauen Buchten. Setzen Sie die Segel für ein unvergessliches Inselhopping in der Karibik und erleben Sie die Freiheit des Meeres auf Ihrer privaten Segelyacht oder Ihrem Katamaran.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Komfortable Anreise in Ihr Segelparadies</h3>
+                  <p className="text-lg text-gray-600">
+                    Ihr Yachturlaub in den Windward Islands beginnt mit einer entspannten Anreise. Internationale Flughäfen auf Martinique (FDF), St. Lucia (UVF) und Grenada (GND) werden regelmäßig per Direktflug aus Europa und Nordamerika angeflogen. Von dort aus sind es nur kurze und gut organisierte Transfers zu den wichtigsten Charterbasen. Dank eines gut ausgebauten Netzes an regionalen Flügen und Fähren können Sie auch problemlos zwischen den Inseln reisen und Ihren Törn flexibel gestalten.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Für wen ist das Revier geeignet?</h3>
+                  <p className="text-lg text-gray-600 mb-4">
+                    Die Windward Islands bieten für jeden Segler das passende Erlebnis. Das Revier wird als mittel bis anspruchsvoll eingestuft.
+                  </p>
+                  <div className="grid gap-4 md:grid-cols-3">
+                    <div className="border border-gray-300 p-4 rounded-lg">
+                      <h3 className="font-semibold text-gray-800 mb-2">Erfahrene Skipper</h3>
+                      <p className="text-sm text-gray-600">Genießen die sportlichen Passagen auf offenem Meer, die navigatorischen Herausforderungen und die langen Schläge unter vollen Segeln.</p>
+                    </div>
+                    <div className="border border-gray-300 p-4 rounded-lg">
+                      <h3 className="font-semibold text-gray-800 mb-2">Segelneulinge & Familien</h3>
+                      <p className="text-sm text-gray-600">Für einen entspannten Yachturlaub empfehlen wir, einen erfahrenen Skipper zu buchen. Ein geräumiger Katamaran bietet mehr Stabilität und Komfort.</p>
+                    </div>
+                    <div className="border border-gray-300 p-4 rounded-lg">
+                      <h3 className="font-semibold text-gray-800 mb-2">Wassersportler & Abenteurer</h3>
+                      <p className="text-sm text-gray-600">Das Revier ist ein Paradies zum Schnorcheln, Tauchen und Kitesurfen. Die vielfältige Landschaft lädt zu Erkundungstouren an Land ein.</p>
+                    </div>
                   </div>
-                ))}
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Besonderheiten des Reviers: Segeln mit dem Passatwind</h3>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Das Segeln in der Karibik wird von den beständigen Passatwinden geprägt, die von November bis Juni für ideale Segelbedingungen sorgen. Diese konstanten Winde aus Nordost machen das Segeln zwischen den Inseln zu einem wahren Genuss.
+                  </p>
+                  
+                  <div className="border border-gray-300 p-6 rounded-lg mb-6">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Wichtige Hinweise für Ihren Törn</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-gray-800 mb-2">Nachtsegelverbot</h4>
+                        <p className="text-gray-600 text-sm">In diesem Revier herrscht bei den meisten Charterflotten ein striktes Nachtsegelverbot. Unbeleuchtete Riffe, Fischerboote und die anspruchsvolle Navigation machen das Segeln nach Sonnenuntergang zu einem hohen Risiko. Planen Sie Ihre Törns so, dass Sie Ihren Ankerplatz stets sicher bei Tageslicht erreichen (idealerweise vor 16:00 Uhr).</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-800 mb-2">Eye Navigation (Navigation nach Sicht)</h4>
+                        <p className="text-gray-600 text-sm">Insbesondere in den Grenadinen ist die "Eye Navigation" entscheidend. Die Farbe des Wassers verrät die Tiefe: Dunkelblau bedeutet tiefes Wasser, Türkis signalisiert Sandgrund, bräunliche Flecken deuten auf gefährlich flache Riffe hin. Navigieren Sie bei hochstehender Sonne (10:00-15:00 Uhr).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Vorschriften und Regeln für einen sicheren Törn</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• <strong>Ein- und Ausklarieren:</strong> Bei jedem Wechsel des Staatsgebiets müssen Sie bei Zoll und Einwanderung ein- und ausklarieren</li>
+                    <li>• <strong>Cruising Permits:</strong> Für St. Vincent und die Grenadinen ist eine Cruising Permit erforderlich</li>
+                    <li>• <strong>Bareboat-Qualifikation:</strong> Detaillierter Segelerfahrungsnachweis statt formeller Segelschein</li>
+                    <li>• <strong>Naturschutz:</strong> In geschützten Meeresparks wie den Tobago Cays gelten strenge Regeln</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Törnziele: Von Martinique bis zur Gewürzinsel Grenada</h3>
+                  <p className="text-lg text-gray-600 mb-4">
+                    Die Törnziele der Windward Islands sind so vielfältig wie die Karibik selbst. Ein klassischer Törn führt als One-Way von Nord nach Süd, um die Passatwinde optimal zu nutzen.
+                  </p>
+                  
+                  <div className="border border-gray-300 p-6 rounded-lg mb-6">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Wind & Wetter</h3>
+                    <p className="text-gray-600 text-sm mb-3">
+                      <strong>Beste Reisezeit:</strong> Die Trockenzeit von Dezember bis Mai ist ideal. Die Hurrikan-Saison von Juli bis Oktober sollte von Skippern gemieden werden.
+                    </p>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• <strong>Stabile Windverhältnisse:</strong> Verlassen Sie sich auf den Passat für planbare und sportliche Törns</li>
+                      <li>• <strong>Abwechslungsreiche Passagen:</strong> Echtes Blauwassersegeln kombiniert mit geschützten Schlägen</li>
+                      <li>• <strong>Natur pur:</strong> Geschützte Ankerbuchten, farbenprächtigen Korallenriffe und tropische Wasserfälle</li>
+                    </ul>
+                  </div>
+
+                  <div className="mt-6 space-y-4">
+                    <div className="border-l-4 border-blue-600 pl-4">
+                      <h4 className="font-semibold text-gray-800">Martinique</h4>
+                      <p className="text-gray-600 text-sm">Starten Sie mit französischem Flair, besuchen Sie historische Destillerien und ankern Sie in der Bucht von Saint-Pierre am Fuße des Vulkans Mont Pelé.</p>
+                    </div>
+                    <div className="border-l-4 border-blue-600 pl-4">
+                      <h4 className="font-semibold text-gray-800">St. Lucia (ca. 25 NM)</h4>
+                      <p className="text-gray-600 text-sm">Segeln Sie zu den majestätischen Pitons, einem UNESCO-Weltnaturerbe. Die Marigot Bay gilt als eine der schönsten Buchten der Karibik.</p>
+                    </div>
+                    <div className="border-l-4 border-blue-600 pl-4">
+                      <h4 className="font-semibold text-gray-800">St. Vincent & die Grenadinen (ca. 45 NM)</h4>
+                      <p className="text-gray-600 text-sm">Entdecken Sie Wallilabou Bay (Drehort von "Fluch der Karibik") und die charmante Insel Bequia mit ihrer Walfang-Tradition.</p>
+                    </div>
+                    <div className="border-l-4 border-blue-600 pl-4">
+                      <h4 className="font-semibold text-gray-800">Tobago Cays</h4>
+                      <p className="text-gray-600 text-sm">Das absolute Juwel der Grenadinen. Meeresschutzgebiet zum Schnorcheln mit Meeresschildkröten in kristallklarem Wasser.</p>
+                    </div>
+                    <div className="border-l-4 border-blue-600 pl-4">
+                      <h4 className="font-semibold text-gray-800">Grenada (ca. 40 NM von Union Island)</h4>
+                      <p className="text-gray-600 text-sm">Die "Gewürzinsel" mit dem Duft von Muskatnuss und Zimt. Erkunden Sie die malerische Hauptstadt St. George's.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Törnempfehlung: 14 Tage Martinique zu den Juwelen der Grenadinen</h3>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Diese Törnempfehlung ist für Segler konzipiert, die das Beste der Karibik erleben möchten: sportliche Passagen auf offenem Meer, unvergessliche Naturerlebnisse und das Gefühl, im Paradies angekommen zu sein.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    {dailyItinerary.map((day, index) => (
+                      <div key={index} className="border-l-4 border-primary pl-4">
+                        <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                          Tag {day.day}: {day.title}
+                        </h4>
+                        <p className="text-gray-600">{day.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Charterbasen - Copy above highlights */}
