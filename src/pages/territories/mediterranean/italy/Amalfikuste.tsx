@@ -146,7 +146,7 @@ const Amalfikuste = () => {
         </div>
 
         {/* Map */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-6xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Karte der Amalfiküste</h2>
           <TerritoryMap
             region="Amalfiküste"
