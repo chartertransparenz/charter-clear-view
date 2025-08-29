@@ -335,7 +335,7 @@ const WindwardIslands = () => {
               
               <div className="space-y-4">
                 {dailyItinerary.map((day, index) => (
-                  <div key={index} className="border-l-4 border-primary pl-6 pb-4">
+                  <div key={index} className="pb-4">
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">
                       Tag {day.day}: {day.title}
                     </h3>
