@@ -5,79 +5,49 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationBvi from "@/assets/destination-bvi.jpg";
-
 const BritishVirginIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const quickFacts = [
-    { label: "Lage", value: "Kleine Antillen, Karibik" },
-    { label: "Beste Zeit", value: "Dezember - Mai" },
-    { label: "Geeignet für", value: "Einsteiger & Familien" },
-    { label: "Besonderheit", value: "Line-of-sight Segeln" }
-  ];
-
-  const regions = [
-    {
-      name: "Tortola",
-      bases: ["Road Town", "Nanny Cay"],
-      description: "Hauptinsel mit modernen Marinas und Charter-Basen"
-    },
-    {
-      name: "Virgin Gorda", 
-      bases: ["Spanish Town", "Bitter End"],
-      description: "The Baths und exklusive Resorts"
-    },
-    {
-      name: "Jost Van Dyke",
-      bases: ["Great Harbour", "White Bay"],
-      description: "Berühmt für Soggy Dollar Bar und entspannte Atmosphäre"
-    },
-    {
-      name: "Anegada",
-      bases: ["Setting Point"],
-      description: "Flaches Korallenatoll mit weißen Sandstränden"
-    }
-  ];
-
-  const highlights = [
-    "Traumhafte kurze Tagesetappen",
-    "Karibik-Feeling pur", 
-    "Perfekt für Einsteiger",
-    "Line-of-sight Segeln",
-    "Top Charter-Logistik",
-    "Stabile Passatwinde",
-    "Warmes, türkises Wasser",
-    "Entspannte Insel-Atmosphäre"
-  ];
-
-  const routes = [
-    "Tortola - Virgin Gorda - The Baths",
-    "Jost Van Dyke - Sandy Cay", 
-    "Norman Island - Peter Island",
-    "Anegada - Coral World"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    label: "Lage",
+    value: "Kleine Antillen, Karibik"
+  }, {
+    label: "Beste Zeit",
+    value: "Dezember - Mai"
+  }, {
+    label: "Geeignet für",
+    value: "Einsteiger & Familien"
+  }, {
+    label: "Besonderheit",
+    value: "Line-of-sight Segeln"
+  }];
+  const regions = [{
+    name: "Tortola",
+    bases: ["Road Town", "Nanny Cay"],
+    description: "Hauptinsel mit modernen Marinas und Charter-Basen"
+  }, {
+    name: "Virgin Gorda",
+    bases: ["Spanish Town", "Bitter End"],
+    description: "The Baths und exklusive Resorts"
+  }, {
+    name: "Jost Van Dyke",
+    bases: ["Great Harbour", "White Bay"],
+    description: "Berühmt für Soggy Dollar Bar und entspannte Atmosphäre"
+  }, {
+    name: "Anegada",
+    bases: ["Setting Point"],
+    description: "Flaches Korallenatoll mit weißen Sandstränden"
+  }];
+  const highlights = ["Traumhafte kurze Tagesetappen", "Karibik-Feeling pur", "Perfekt für Einsteiger", "Line-of-sight Segeln", "Top Charter-Logistik", "Stabile Passatwinde", "Warmes, türkises Wasser", "Entspannte Insel-Atmosphäre"];
+  const routes = ["Tortola - Virgin Gorda - The Baths", "Jost Van Dyke - Sandy Cay", "Norman Island - Peter Island", "Anegada - Coral World"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png"
-          alt="BVI Segelrevier"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png" alt="BVI Segelrevier" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">
@@ -89,10 +59,7 @@ const BritishVirginIslands = () => {
             BVI - Das perfekte Karibik-Charterrevier für Einsteiger
           </p>
         </div>
-        <Link 
-          to="/reviere/karibik" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/karibik" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zur Karibik
@@ -138,8 +105,7 @@ const BritishVirginIslands = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="text-orange-500 mb-2">
                 {index === 0 && <MapPin className="w-6 h-6 mx-auto" />}
                 {index === 1 && <Sun className="w-6 h-6 mx-auto" />}
@@ -148,8 +114,7 @@ const BritishVirginIslands = () => {
               </div>
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Main Description */}
@@ -282,55 +247,13 @@ const BritishVirginIslands = () => {
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
-                <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-800 text-sm">{highlight}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Regions */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Hauptinseln</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{region.name}</h3>
-                <p className="text-gray-600 mb-4">{region.description}</p>
-                <div className="space-y-2">
-                  <h4 className="font-medium text-gray-800">Häfen & Ankerplätze:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {region.bases.map((base, idx) => (
-                      <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
-                        {base}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Popular Routes */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="grid gap-3 md:grid-cols-2">
-              {routes.map((route, index) => (
-                <div key={index} className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-800">{route}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        
 
         {/* Zusammenfassung */}
         <div className="max-w-4xl mx-auto mb-12">
@@ -361,8 +284,6 @@ const BritishVirginIslands = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default BritishVirginIslands;
