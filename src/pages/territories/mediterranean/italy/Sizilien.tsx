@@ -39,7 +39,7 @@ const Sizilien = () => {
     { icon: Shield, title: "Geschützte Buchten", description: "Sichere Ankerplätze rund um die gesamte Insel" },
     { icon: Anchor, title: "Vielfältige Häfen", description: "Von Palermo bis Catania - exzellente Marina-Infrastruktur" }
   ];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       <Navigation />
       
       {/* Header */}
