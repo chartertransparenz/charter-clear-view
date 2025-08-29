@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import caribbean from "@/assets/caribbean.jpg";
 
 const LeewardIslands = () => {
   useEffect(() => {
@@ -47,8 +46,8 @@ const LeewardIslands = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={caribbean}
-          alt="Leeward Inseln"
+          src="/lovable-uploads/06db4fbd-d175-433d-aa01-2af35202f7b4.png"
+          alt="Leeward Inseln - Karibische Bucht mit Segelbooten"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
