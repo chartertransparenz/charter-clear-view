@@ -111,7 +111,7 @@ const Italy = () => {
       </div>
 
       {/* Breadcrumb Navigation */}
-      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+      <div className="sticky top-20 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4 py-3">
           <Breadcrumb>
             <BreadcrumbList>
