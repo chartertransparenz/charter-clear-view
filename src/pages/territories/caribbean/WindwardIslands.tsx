@@ -8,9 +8,12 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import { useIsMobile } from "@/hooks/use-mobile";
 import caribbean from "@/assets/caribbean.jpg";
 
 const WindwardIslands = () => {
+  const isMobile = useIsMobile();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -157,15 +160,17 @@ const WindwardIslands = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
-              <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
-        </div>
+        {!isMobile && (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+            {quickFacts.map((fact, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+                <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
+                <p className="text-sm text-gray-600">{fact.value}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Übersichtskarte */}
         <div className="max-w-6xl mx-auto mb-12">
@@ -353,19 +358,21 @@ const WindwardIslands = () => {
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
+        {!isMobile && (
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {highlights.map((highlight, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                    <p className="font-medium text-gray-800">{highlight}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
