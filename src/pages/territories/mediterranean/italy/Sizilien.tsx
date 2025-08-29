@@ -160,6 +160,25 @@ const Sizilien = () => {
           {/* Der vulkanische Norden */}
           <div className="mb-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Der vulkanische Norden: Törn zu den Liparischen (Äolischen) Inseln</h3>
+            
+            {/* Stromboli Image */}
+            <div className="mb-6">
+              <Card className="shadow-lg">
+                <div className="relative h-64 md:h-80 overflow-hidden rounded-t-lg">
+                  <img 
+                    src="/lovable-uploads/e70d653b-4615-446e-8129-7c44ff90b33c.png" 
+                    alt="Stromboli vom Meer aus gesehen mit tiefblauem Wasser" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-gray-600 text-center">
+                    Tiefblaues Wasser, dahinter der Stromboli: die Essenz der Äolischen – segeln nah an aktiver Vulkanik (abends Sciara del Fuoco), ; ankern nördlich von Scari auf 4–8 m nur bei ruhigem Wetter.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            
             <p className="text-gray-600 mb-6">
               Dies ist zweifellos eines der spektakulärsten Segelreviere Europas. Das Tor zu diesem vulkanischen Paradies ist die Nordküste Siziliens, die eine Reihe von erstklassigen Charterbasen beherbergt, die perfekt als Ausgangspunkt für Ihren Törn zu den Liparischen Inseln positioniert sind.
             </p>
