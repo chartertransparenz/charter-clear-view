@@ -83,7 +83,7 @@ const Italy = () => {
       <Navigation />
       
       {/* Header */}
-      <div className="relative h-64 md:h-96 overflow-hidden mt-20">
+      <div className="relative h-64 md:h-96 overflow-hidden">
         <img
           src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png"
           alt="Italien Mittelmeer"
@@ -111,7 +111,7 @@ const Italy = () => {
       </div>
 
       {/* Breadcrumb Navigation */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4 py-3">
           <Breadcrumb>
             <BreadcrumbList>
