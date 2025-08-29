@@ -162,7 +162,7 @@ const USVirginIslands = () => {
             </div>
 
             {/* Törnempfehlung */}
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Törnempfehlung: 7 Tage ab St. Thomas (ohne Seemeilenangaben)</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Törnempfehlung: 7 Tage ab St. Thomas</h3>
             
             <div className="space-y-6 mb-8">
               <div className="border-l-4 border-primary pl-6">
