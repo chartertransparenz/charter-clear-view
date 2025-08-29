@@ -6,57 +6,36 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import TerritoryMap from "@/components/TerritoryMap";
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Toskana = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Westliches Italien" },
-    { icon: Calendar, label: "Beste Zeit", value: "Mai-September" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Insel Elba" }
-  ];
-
-  const cities = [
-    "Castiglioncello",
-    "Elba"
-  ];
-
-  const highlights = [
-    "Traumhafte Insel Elba",
-    "Toskanische Küstenlandschaft",
-    "Kulturreiche Küstenstädte",
-    "Exzellente toskanische Küche",
-    "Wunderschöne Weinregion",
-    "Geschützte Naturparks",
-    "Kristallklares Wasser",
-    "Kurze Entfernungen",
-    "Perfekt für Wochenendtörns"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Westliches Italien"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Mai-September"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Insel Elba"
+  }];
+  const cities = ["Castiglioncello", "Elba"];
+  const highlights = ["Traumhafte Insel Elba", "Toskanische Küstenlandschaft", "Kulturreiche Küstenstädte", "Exzellente toskanische Küche", "Wunderschöne Weinregion", "Geschützte Naturparks", "Kristallklares Wasser", "Kurze Entfernungen", "Perfekt für Wochenendtörns"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img 
-          src="/lovable-uploads/6d28d345-9301-486e-865a-9cd75aa0a966.png" 
-          alt="Traumhafte Bucht in der Toskana mit türkisfarbenem Wasser und Segelbooten" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/6d28d345-9301-486e-865a-9cd75aa0a966.png" alt="Traumhafte Bucht in der Toskana mit türkisfarbenem Wasser und Segelbooten" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -67,10 +46,7 @@ const Toskana = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/mittelmeer/italien" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/mittelmeer/italien" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zu Italien
@@ -124,27 +100,13 @@ const Toskana = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <Card key={index} className="shadow-lg">
+          {quickFacts.map((fact, index) => <Card key={index} className="shadow-lg">
               <CardContent className="p-6 text-center">
                 <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
                 <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
                 <p className="text-sm text-gray-600">{fact.value}</p>
               </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Map */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelrevier Toskana & Toskanischer Archipel</h2>
-          <TerritoryMap 
-            region="Segelrevier Toskana & Toskanischer Archipel"
-            center={{ lat: 43.0, lng: 10.4 }}
-            zoom={9}
-            maptype="satellite"
-            className="mb-8"
-          />
+            </Card>)}
         </div>
 
         {/* Description */}
@@ -270,33 +232,29 @@ const Toskana = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Ziele</h2>
           <div className="grid gap-4 md:grid-cols-2">
-            {cities.map((city, index) => (
-              <Card key={index} className="shadow-lg">
+            {cities.map((city, index) => <Card key={index} className="shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-2">
                     <MapPin className="w-5 h-5 text-blue-600" />
                     <h3 className="text-xl font-semibold text-gray-800">{city}</h3>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
         {/* Highlights */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Toskana?</h2>
+          
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-lg">
+            {highlights.map((highlight, index) => <Card key={index} className="shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                     <p className="font-medium text-gray-800">{highlight}</p>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -318,8 +276,6 @@ const Toskana = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Toskana;
