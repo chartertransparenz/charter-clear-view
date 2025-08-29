@@ -138,6 +138,20 @@ const Cuba = () => {
                 Ein Yachtcharter in Kuba ist kein gewöhnlicher Segelurlaub. Es ist eine Reise, die Geduld und Flexibilität erfordert, aber mit unvergleichlichen Erlebnissen belohnt wird. Es ist die perfekte Wahl für erfahrene Segler, die autarke Törns lieben, für Naturliebhaber, die die Stille und Schönheit unberührter Landschaften schätzen, und für Abenteurer, die tief in eine einzigartige Kultur eintauchen möchten.
               </p>
 
+              {/* Strand-Bild */}
+              <div className="my-8 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/lovable-uploads/697bcf13-dfd0-497a-a399-232cf2a1c1ed.png"
+                  alt="Traumhafter kubanischer Strand mit türkisfarbenem Wasser"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+                <div className="bg-gray-50 p-4">
+                  <p className="text-gray-700 italic text-center">
+                    Verlieben Sie sich in kubanische Traumstrände – pudriger, weißer Sand unter den Füßen, Palmen im warmen Passatwind und ein endloses Türkis, das nach einem Sprung ins Wasser ruft.
+                  </p>
+                </div>
+              </div>
+
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cienfuegos: Ihr Tor zum kubanischen Segelabenteuer</h2>
               
               <p>
