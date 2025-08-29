@@ -1,12 +1,20 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
+import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 const LeewardIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -57,6 +65,43 @@ const LeewardIslands = () => {
             Zurück zur Karibik
           </Button>
         </Link>
+      </div>
+
+      {/* Breadcrumb Navigation */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="container mx-auto px-4 py-3">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Start</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/#reviere">Reviere</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/karibik">Karibik</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbPage>Leeward Islands</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 py-12">
