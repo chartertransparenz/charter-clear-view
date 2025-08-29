@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import destinationItaly from "@/assets/destination-italy.jpg";
+
 const Italy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,7 +15,7 @@ const Italy = () => {
     label: "Lage",
     value: "Mittelmeer"
   }, {
-    label: "Beste Zeit",
+    label: "Beste Zeit", 
     value: "April - Oktober"
   }, {
     label: "Geeignet für",
@@ -100,7 +101,7 @@ const Italy = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">Toskana & das Tyrrhenische Meer – Kultur und Inselzauber</h3>
                 <p className="text-gray-600 mb-4">
-                  Die Toskana, weltberühmt für ihre sanften Hügel, Zypressenalleen und Renaissance-Städte, besitzt auch eine 
+                  Die <Link to="/reviere/mittelmeer/italien/toskana" className="text-blue-600 hover:text-blue-800 underline">Toskana</Link>, weltberühmt für ihre sanften Hügel, Zypressenalleen und Renaissance-Städte, besitzt auch eine 
                   faszinierende Küste. Ausgangshäfen wie Livorno, Punta Ala oder Salivoli sind der ideale Startpunkt für einen 
                   Törn in den Toskanischen Archipel. Das Juwel dieser Inselgruppe ist zweifellos Elba, die drittgrößte Insel Italiens. 
                   Hier finden Segler eine perfekte Mischung aus gut ausgestatteten Marinas wie in Portoferraio, charmanten 
