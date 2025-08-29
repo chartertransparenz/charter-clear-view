@@ -11,6 +11,7 @@ import {
 import { useEffect, useState } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 const Amalfikuste = () => {
@@ -134,6 +135,17 @@ const Amalfikuste = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <TerritoryMap
+            region="Amalfiküste"
+            center={{ lat: 40.633, lng: 14.60 }}
+            zoom={12}
+            maptype="satellite"
+            className="shadow-lg"
+          />
         </div>
 
         {/* Description */}
