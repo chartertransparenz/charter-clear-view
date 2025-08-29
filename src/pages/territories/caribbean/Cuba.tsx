@@ -55,8 +55,8 @@ const Cuba = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={caribbean}
-          alt="Kuba"
+          src="/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png"
+          alt="Kubanische Architektur mit Blick aufs Meer - Cienfuegos"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
