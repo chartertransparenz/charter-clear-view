@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -107,6 +108,21 @@ const USVirginIslands = () => {
               <p className="text-gray-600 text-sm">{fact.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Interactive Map */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">Karte der U.S. Virgin Islands</h2>
+            <p className="text-gray-600">Entdecken Sie die Schönheit der amerikanischen Jungferninseln</p>
+          </div>
+          <TerritoryMap 
+            region="U.S. Virgin Islands"
+            center={{ lat: 18.3418, lng: -64.9307 }}
+            zoom={11}
+            maptype="satellite"
+            className="shadow-lg"
+          />
         </div>
 
         {/* Main Content Wrapper */}
