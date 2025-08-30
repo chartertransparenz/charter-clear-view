@@ -198,8 +198,12 @@ const Cuba = () => {
 
               {/* Havanna-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                
-                
+                <img src="user-uploads://havanna-oldtimer.jpg" alt="Havanna mit bunten Oldtimern und pastellfarbenen Fassaden" className="w-full h-80 md:h-96 object-contain bg-gray-100" />
+                <div className="bg-gray-50 p-4">
+                  <p className="text-gray-700 italic text-center">
+                    Erleben Sie Havanna, wo bunte Oldtimer wie rollende Zeitkapseln an pastellfarbenen Fassaden vorbeigleiten und jede Fahrt sich anfühlt wie eine Filmszene.
+                  </p>
+                </div>
               </div>
 
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Regeln, Vorschriften und Formalitäten: Segeln in Kuba</h2>
