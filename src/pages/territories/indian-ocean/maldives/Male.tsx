@@ -70,15 +70,46 @@ const Male = () => {
               Charter-Standort Malé
             </h2>
             <p className="text-lg text-gray-600 mb-4">
-              Malé ist das Tor zu den Malediven und Ausgangspunkt für luxuriöse 
-              Yacht-Charter zwischen 1200 Koralleninseln. Als Hauptstadt bietet 
-              Malé die beste Infrastruktur für internationale Anreise und 
-              Charter-Services im Paradies des Indischen Ozeans.
+              Yachtcharter ab Malé / Hulhumalé, Malediven – Atolle, Lagunen & Privatsphäre auf Ihrer Route
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              Eine Yachtcharter ab Malé bzw. Hulhumalé ist die eleganteste Art, die Malediven jenseits fester Resortpläne zu erleben. Von Ihrem zentral gelegenen Ausgangshafen Hulhumalé – nur wenige Minuten vom internationalen Flughafen entfernt – steuern Sie smaragdgrüne Lagunen, strahlend weiße Sandbänke und ringförmige Atolle an. Statt festen Check-in-Zeiten bestimmen Sie den Törn: heute Schnorcheln an einem Korallenriff, morgen ein Dinner auf einer einsamen Sandbank – und dazwischen ruhige Nächte in windgeschützten Ankerbuchten.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Anreise & Ausgangshafen</strong><br />
+              Sie fliegen nach Malé (Velana International Airport, MLE). Der Transfer nach Hulhumalé dauert je nach Marina nur 10–20 Minuten per Taxi oder Shuttle. Viele Vercharterer koordinieren Flugzeiten, Transfers und einen Early Check-in, sodass Sie noch am Ankunftstag den ersten Sprung ins warme, klare Wasser genießen.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Yacht- und Charteroptionen</strong><br />
+              Die Flotten vor Ort sind vielfältig: moderne Katamarane mit viel Wohnfläche, sportliche Segelyachten, komfortable Motoryachten und traditionelle Dhonis. Sie wählen zwischen Bareboat, Skippered-Charter oder Crew-Charter mit Koch und Deckhand. Besonders beliebt ist die Crew-Charter: maximale Entspannung, maßgeschneiderte Routen und ein Team, das die Revierspezifika (Riffe, Strömungen, Sandbänke) perfekt kennt. Skippered-Charter eignen sich für weniger erfahrene Crews; geübte Segler finden auch Bareboat-Angebote.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Beste Reisezeit</strong><br />
+              Die Trockenzeit von November bis April gilt als Premiumfenster: stabile Wetterlagen, lange Sonnentage und ruhige See – perfekt zum Segeln, Schnorcheln und Tauchen. In dieser Zeit liegen die Wassertemperaturen meist zwischen 25 °C und 30 °C. Auch außerhalb der Hauptzeit sind Törns möglich; planen Sie dann flexibler und beobachten Sie die Vorhersagen sorgfältig.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Routen & Highlights</strong><br />
+              Von Hulhumalé aus erreichen Sie in kurzen Schlägen Postkartenmotive wie Kuda Wataru, Farukolhufushi, Dhoonidhoo oder Vihamanaafushi. Typische Tagesabläufe: morgens ein Badestopp in einer türkisfarbenen Lagune, mittags Kayak oder SUP, nachmittags Schnorcheln an Korallengärten – mit Glück gleiten Mantarochen vorbei – und abends ein privates Sandbank-Dinner unter Sternen. Taucher freuen sich auf klare Sichten, bunt bewachsene Thilas (Unterwasserberge) und tropische Fische in großer Vielfalt. Ihre Crew plant die Route so, dass Sie Wetterschutz, Strömung und Tidenfenster optimal nutzen und stets einen geschützten Ankerplatz für die Nacht finden.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Service & Extras</strong><br />
+              Viele Yachten bieten Vollpension, Wassersportausrüstung (Schnorchel-Set, SUP, Kayaks) und individuell geführte Ausflüge an. Die Crews kennen lokale Gegebenheiten, achten auf Sicherheit und führen Sie zu ruhigen Spots abseits des Trubels. Auf Wunsch arrangieren sie Sandbank-Picknicks, Inselbesuche oder Tauchgänge mit zertifizierten Guides.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Proviantierung & Bordalltag</strong><br />
+              In Hulhumalé/Malé erhalten Sie frischen Fisch, Obst, Gemüse sowie Basisartikel; viele Anbieter übernehmen die Proviantierung nach Ihrer Einkaufsliste und liefern die Ware gekühlt direkt an Bord. Trinkwasser kommt über den Watermaker oder wird in Kanistern gebunkert; Kühlkette und Müllmanagement sind in den Tropen besonders wichtig (organische Abfälle nicht über Bord, Entsorgung an Land). Alkohol unterliegt auf den Malediven strengen Regeln: klären Sie die Getränkeversorgung vorab mit dem Vercharterer – häufig kann an Bord im Rahmen der Charterlizenz serviert werden; Mitbringen im Gepäck ist in der Regel nicht gestattet.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Revierbesonderheiten & Verhalten</strong><br />
+              Die Malediven sind ein sensibles Riff-Ökosystem. Ankern grundsätzlich nur auf Sand, niemals auf Korallen oder im Seegras; vielerorts stehen Mooringbojen zur Verfügung. Fahren Sie langsam in Lagunen, halten Sie Abstand zu Riffkronen und beachten Sie Badezonen. Nachtnavigation ist wegen unbeleuchteter Marker, Riffe und Strömungen nicht zu empfehlen; planen Sie Tagesansteuerungen. Sonnen- und Hautschutz (UV-Kleidung, riffschonende Sonnencreme) sind Pflicht, ebenso ausreichend Trinkwasser. Respektieren Sie die lokalen Sitten bei Besuchen bewohnter Inseln (schulter- und kniebedeckende Kleidung außerhalb von „Bikini Beaches").
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Sicherheit & Planung</strong><br />
+              Ihr Skipper/Vercharterer checkt Wetter, Strömungen und Tidenfenster täglich und passt die Route entsprechend an. In Kanälen („Kandus") können kräftige Strömungen stehen – ideal fürs Tauchen, erfordern aber Erfahrung in der Planung. Halten Sie VHF bereit, führen Sie Ersatzanker/-leine, prüfen Sie regelmäßig Ankergrepen und Alarm. Für jede Nacht empfiehlt sich ein Plan B (alternativer Ankerplatz in Reichweite).
             </p>
             <p className="text-lg text-gray-600">
-              Von hier aus erreichen Sie die schönsten Atolle der Malediven, 
-              von denen jedes sein eigenes Paradies mit kristallklaren Lagunen, 
-              Luxus-Resorts und weltklasse Schnorchel- und Tauchgebieten bietet.
+              <strong>Fazit</strong><br />
+              Eine Yachtcharter ab Malé/Hulhumalé ist die ultimative Einladung, die Malediven flexibel, naturnah und individuell zu entdecken: Sie kombinieren Privatsphäre und Komfort mit dem Luxus, jeden Tag eine andere Lagune zu Ihrer eigenen zu machen. Ob Bareboat, Skipper oder Crew-Charter – mit der passenden Yacht, kluger Routenplanung und Respekt für das Riff wird Ihr Törn zu genau der Mischung aus Entspannung und Abenteuer, die man von einem Yachturlaub auf den Malediven erwartet.
             </p>
           </div>
         </div>
