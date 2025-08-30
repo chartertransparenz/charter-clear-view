@@ -118,18 +118,47 @@ const Australia = () => {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Warum Australien?</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Die Whitsunday Islands vor der Küste Queenslands gelten als das 
-              beste Segelrevier der Südhalbkugel. 74 tropische Inseln liegen 
-              geschützt im Great Barrier Reef Marine Park und bieten 
-              spektakuläre Segelerlebnisse in unberührter Natur.
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Yachtcharter Australien – große Küsten, große Freiheit</h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Yachtcharter Australien verbindet spektakuläre Natur mit erstklassiger Nautik-Infrastruktur. Von den tropischen Whitsunday Islands am Great Barrier Reef über den ikonischen Sydney Harbour bis zu den wilden Revieren Tasmaniens und der entlegenen Kimberley-Küste – Segeln in Australien bietet kurze Etappen zwischen Traumbuchten ebenso wie anspruchsvolle Routen mit Tiden- und Passatwindtaktik. Ob Bareboat Australia, mit Skipper, auf Segelyacht oder Katamaran mieten Australien: Hier finden Sie für jede Crew und jedes Erfahrungslevel das passende Revier.
             </p>
-            <p className="text-lg text-gray-600">
-              Das warme, tropische Klima, kristallklares Wasser und Traumstrände 
-              wie Whitehaven Beach machen jeden Törn zu einem unvergesslichen 
-              Abenteuer. Aufgrund der besonderen Gegebenheiten wird meist ein 
-              lokaler Skipper empfohlen.
+            
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Wo segeln? Die wichtigsten Reviere</h3>
+            <div className="space-y-3 mb-6">
+              <p className="text-gray-600"><strong>Whitsunday Islands (Queensland):</strong> 74 Inseln, geschützte Passagen, starke Tiden – perfekt für Inselhüpfen mit Whitehaven Beach, Hill Inlet, Nara Inlet oder Butterfly Bay. Beste Zeit: meist April–Oktober.</p>
+              <p className="text-gray-600"><strong>Sydney & Pittwater (New South Wales):</strong> Urbanes Segeln vor Oper und Harbour Bridge, danach nordwärts in die ruhigen Buchten von Pittwater und Broken Bay. Sommer ist Hauptsaison.</p>
+              <p className="text-gray-600"><strong>Tasmanien (Hobart, D'Entrecasteaux Channel, Bruny Island):</strong> Kühler, rauer, landschaftlich grandios – für ambitionierte Crews, die Natur und Seemannschaft lieben. High Season: Dezember–Februar.</p>
+              <p className="text-gray-600"><strong>Great Sandy Strait & K'gari/Fraser Island (QLD):</strong> Flaches, geschütztes Fahrwasser, Delfine und Sandbänke – ideal für Katamarane.</p>
+              <p className="text-gray-600"><strong>Western Australia (Ningaloo, Abrolhos, Kimberley):</strong> Expeditionstaugliche Ziele mit gewaltigem Tidenhub und atemberaubender Küstengeologie – meist als Crewed oder Expeditionscharter.</p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Wetter, Wind & Saison</h3>
+            <p className="text-gray-600 mb-6">
+              An der Ostküste dominieren südöstliche Passatwinde; im tropischen Norden gilt: Zyklonzeit und Stinger-Saison (Quallen) beachten – leichte Stinger-Suits sind im Sommerhalbjahr Standard. Weiter südlich bestimmen Seebriese und Frontdurchgänge das Programm. Wer flexibel plant, segelt vormittags mit der Brise, nutzt Tide und Stromfenster an Engstellen und wählt abends eine Ankerbucht mit Leeschutz.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Vorschriften & Umweltschutz</h3>
+            <p className="text-gray-600 mb-6">
+              Australien schützt seine Meeresparks konsequent. Im Great Barrier Reef Marine Park gelten Zonierungen: In sensiblen Bereichen sind Ankerverbotszonen ausgebracht; nutzen Sie Mooringbojen, ankern Sie nur auf Sand und führen Sie aktuelle Karten/Apps mit. Abfall gehört in den Hafen, Abwasser wird nicht eingeleitet. In Buchten und Häfen gilt Langsamfahrt. Respektieren Sie Wildlife-Distanzen (Wale, Schildkröten, Dugongs) und vermeiden Sie nächtliche Störungen.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Lizenzen, Qualifikation & Schiffe</h3>
+            <p className="text-gray-600 mb-6">
+              Für Bareboat verlangen Vercharterer einen international anerkannten Bootsführerschein (z. B. ICC/RYA) plus Revier- und Tiden-Erfahrung; ein Funkzeugnis ist empfohlen. Wer entspannt einsteigen will, bucht Skipper Australien oder gleich eine Crewed-Yacht. Katamarane sind populär: viel Platz, Stabilität und geringer Tiefgang für Flachwasserbuchten; Monohulls punkten mit direktem Segelgefühl bei Passatwind. Für schnelle Distanzen stehen Motoryachten zur Wahl.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Marinas & Logistik</h3>
+            <p className="text-gray-600 mb-6">
+              Dreh- und Angelpunkte sind Airlie Beach (Coral Sea Marina, Port of Airlie) und Hamilton Island Marina für die Whitsundays; in Sydney wählen Sie u. a. CYCA/Rushcutters Bay, The Spit oder Pittwater/Newport. Alle bieten Wasser/Strom, Fuel, Pump-out, Chandlery, WLAN und Proviant (Woolworths/Coles oft in Nähe). Transfers vom Flughafen sind kurz und planbar – ideal, um am Anreisetag noch in Ruhe zu übernehmen.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Warum jetzt Yachtcharter Australien?</h3>
+            <p className="text-gray-600 mb-6">
+              Weil kaum ein Land so viel Vielfalt auf dem Wasser bietet: tropische Riffe, schneeweiße Strände, urbane Skylines, kühle Wildnisse – und dazwischen eine Infrastruktur, die Sicherheit und Komfort mit echter Abenteuerluft verbindet. Sie segeln planbare Tagesetappen, schnorcheln über Korallen, beobachten Wale in der Saison, ankern unter Millionen Sternen – und wachen auf mit dem Gefühl, an einem Ort zu sein, der wie für Seefahrer gemacht ist.
+            </p>
+
+            <p className="text-gray-600">
+              Ihr Törn beginnt hier: Teilen Sie uns Reisezeit, Crewgröße und Yachtwunsch mit. Wir empfehlen Reviere, sichern Moorings/Marinas, planen Tide & Route und organisieren Transfers. Yachtcharter Australien – das ist Segeln ohne Umwege zum Wesentlichen: Freiheit, Weite und Wasser in seiner schönsten Form.
             </p>
           </div>
         </div>
