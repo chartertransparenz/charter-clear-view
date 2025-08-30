@@ -68,6 +68,45 @@ const WhitsundayIslands = () => {
         </div>
       </div>
 
+      {/* Quick Facts */}
+      <div className="bg-sky-50 py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Card className="bg-white/80 backdrop-blur-sm border-sky-200">
+              <CardContent className="p-6 text-center">
+                <MapPin className="w-8 h-8 text-sky-600 mx-auto mb-3" />
+                <h3 className="font-bold text-gray-800 mb-1">74 Inseln</h3>
+                <p className="text-sm text-gray-600">Tropisches Inselparadies</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/80 backdrop-blur-sm border-sky-200">
+              <CardContent className="p-6 text-center">
+                <Fish className="w-8 h-8 text-sky-600 mx-auto mb-3" />
+                <h3 className="font-bold text-gray-800 mb-1">Great Barrier Reef</h3>
+                <p className="text-sm text-gray-600">Weltklasse Schnorcheln</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/80 backdrop-blur-sm border-sky-200">
+              <CardContent className="p-6 text-center">
+                <Plane className="w-8 h-8 text-sky-600 mx-auto mb-3" />
+                <h3 className="font-bold text-gray-800 mb-1">2 Flughäfen</h3>
+                <p className="text-sm text-gray-600">PPP & HTI direkt vor Ort</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/80 backdrop-blur-sm border-sky-200">
+              <CardContent className="p-6 text-center">
+                <Anchor className="w-8 h-8 text-sky-600 mx-auto mb-3" />
+                <h3 className="font-bold text-gray-800 mb-1">Airlie Beach Marina</h3>
+                <p className="text-sm text-gray-600">Perfekter Starthafen</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-12">
         {/* Main Content */}
         <div className="max-w-4xl mx-auto mb-12">
