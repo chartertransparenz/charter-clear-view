@@ -251,6 +251,74 @@ export default function Greece() {
               <li><strong>Zakynthos:</strong> Navagio Beach (Schiffswrack), blaue Grotten, Meeresschildkröten</li>
             </ul>
 
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Wind & Wetter:</strong> Im Sommer herrscht der Maestral aus 
+              Nordwest (3-5 Bft), sanfter als der Meltemi in der Ägäis. Im Frühjahr und Herbst ideale 
+              Bedingungen für entspanntes Segeln. Selten starke Winde.</p>
+            </div>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">4. <Link to="/reviere/mittelmeer/griechenland/dodekanes" className="text-primary hover:underline">Dodekanes</Link>: Das geschichtsträchtige Revier für Kultur- und Inselhüpfer</h4>
+            <p className="mb-4">
+              Der Dodekanes im Südosten der Ägäis, zwischen Kreta und der türkischen Küste, ist ein vielseitiges Segelrevier mit über 160 Inseln. Die bekanntesten sind Rhodos, Kos, Symi, Patmos, Leros, Kalymnos, Nisyros, Kastellorizo. Das Revier bietet eine einzigartige Mischung aus griechischer und orientalischer Kultur, antiken Stätten, bunten Hafenstädten und ruhigen Buchten.
+            </p>
+            
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Rhodos:</strong> Mittelalterliche Altstadt, Strände, Akropolis von Lindos</li>
+              <li><strong>Symi:</strong> Bunte Hafenstadt, neoklassische Architektur, Tavernen</li>
+              <li><strong>Kos:</strong> Antike Stätten, Strände, Thermalquellen</li>
+              <li><strong>Patmos:</strong> Kloster des Heiligen Johannes, Höhle der Apokalypse</li>
+              <li><strong>Leros, Kalymnos:</strong> Authentische Inseln, Tauchspots, Kletterparadies Kalymnos</li>
+              <li><strong>Nisyros:</strong> Vulkaninsel mit aktiver Caldera</li>
+              <li><strong>Kastellorizo:</strong> Kleinste und östlichste Insel, Blaue Grotte, türkise Buchten</li>
+            </ul>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Wind & Wetter:</strong> Im Sommer weht der Meltemi aus Nord bis Nordwest (4-6 Bft, gelegentlich mehr). Im Frühjahr und Herbst ist das Wetter milder und die Winde schwächer. Die See ist meist ruhig, aber in den offenen Passagen kann es sportlich werden.</p>
+            </div>
+            
+            <p className="mb-6">
+              <strong>Für wen geeignet:</strong> Erfahrene Skipper, Crews mit Lust auf längere Schläge, Kulturinteressierte und Inselhüpfer. Auch für Familien geeignet, wenn die Route angepasst wird.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">5. <Link to="/reviere/mittelmeer/griechenland/sporaden" className="text-primary hover:underline">Sporaden</Link>: Das ursprüngliche Naturrevier für Ruhesuchende und Entdecker</h4>
+            <p className="mb-4">
+              Die Nördlichen Sporaden, östlich von Volos, sind ein Geheimtipp für Segler, die das ursprüngliche Griechenland suchen. Die Hauptinseln Skiathos, Skopelos, Alonnisos und Skyros sind grün, bewaldet und bieten traumhafte Buchten, Strände und Naturhäfen. Die Hafendichte ist geringer als in anderen Regionen, dafür ist die Natur umso beeindruckender.
+            </p>
+            
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Skiathos:</strong> Lebhafte Stadt, Strände, Kloster Evangelistria</li>
+              <li><strong>Skopelos:</strong> Filmkulisse von "Mamma Mia", grüne Wälder, Strände</li>
+              <li><strong>Alonnisos:</strong> Nationalpark, Delfine, Robben, ruhige Buchten</li>
+              <li><strong>Skyros:</strong> Ursprüngliche Insel, Strände, Wanderungen</li>
+            </ul>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Wind & Wetter:</strong> Im Sommer weht der Meltemi schwächer als in den Kykladen (3-5 Bft), die See ist meist ruhig. Im Frühjahr und Frühsommer sind die Bedingungen besonders angenehm.</p>
+            </div>
+            
+            <p className="mb-6">
+              <strong>Für wen geeignet:</strong> Familien, Naturliebhaber, Genießer, Einsteiger und Crews, die Wert auf Ruhe, Natur und authentische Dörfer legen.
+            </p>
+
+            <h4 className="text-xl font-semibold mt-6 mb-4">6. Nordgriechenland & Chalkidiki: Der Geheimtipp für Individualisten</h4>
+            <p className="mb-4">
+              Die Küste Nordgriechenlands und die Halbinsel Chalkidiki bieten ein noch wenig entdecktes Segelrevier mit langen Sandstränden, Pinienwäldern, antiken Stätten und einer entspannten Atmosphäre. Die Region ist weniger touristisch als die südlicheren Inselgruppen, dafür besonders authentisch.
+            </p>
+            
+            <ul className="list-disc pl-6 space-y-3 mb-6">
+              <li><strong>Thessaloniki:</strong> Lebendige Metropole, byzantinische Kirchen, Museen</li>
+              <li><strong>Chalkidiki:</strong> Drei "Finger" – Kassandra (Strände, Nightlife), Sithonia (Natur, Buchten), Athos (Mönchsrepublik, nur vom Wasser aus zu besichtigen)</li>
+              <li><strong>Kavala, Alexandroupoli:</strong> Historische Städte, Festungen, Fischrestaurants</li>
+            </ul>
+
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Wind & Wetter:</strong> Im Sommer wehen mäßige Winde (3-4 Bft) aus Nord bis Nordost. Die See ist meist ruhig, ideal für entspannte Törns.</p>
+            </div>
+            
+            <p className="mb-6">
+              <strong>Für wen geeignet:</strong> Entdecker, Individualisten, Familien, Kultur- und Naturfans.
+            </p>
+
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
               <p className="text-black mb-3">Griechenland verfügt über eine hervorragende maritime Infrastruktur:</p>
