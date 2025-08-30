@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -154,6 +155,21 @@ const Seychelles = () => {
             ))}
           </div>
         </div>
+        
+        {/* Territory Map */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+            Lage der Seychellen im Indischen Ozean
+          </h2>
+          <TerritoryMap
+            region="Seychellen"
+            center={{ lat: -4.6796, lng: 55.4915 }}
+            zoom={9}
+            maptype="satellite"
+            className="w-full"
+          />
+        </div>
+        
         {/* Main Content */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-8 rounded-lg shadow-lg">
