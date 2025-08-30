@@ -6,95 +6,72 @@ import { ArrowLeft, MapPin, Anchor, Plane, Sun, Waves } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import pacific from "@/assets/pacific.jpg";
-
 const Raiatea = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const marinas = [
-    {
-      name: "Marina Apooiti",
-      description: "Hauptcharter-Marina auf Raiatea",
-      amenities: ["60+ Liegeplätze", "Fuel Station", "Provisioning", "Restaurant", "Charterbasen", "WiFi", "Airport Transfer"]
-    },
-    {
-      name: "Marina Uturoa",
-      description: "Zentrale Marina im Hauptort",
-      amenities: ["40 Liegeplätze", "Stadtnähe", "Shopping", "Restaurants", "Bank", "Markt", "Kultur"]
-    },
-    {
-      name: "Port de Raiatea",
-      description: "Kommerzielle Marina mit Charter-Service",
-      amenities: ["Charter-Zentrum", "Reparaturen", "Proviant", "Zoll", "Fährverbindungen", "Autovermietung"]
-    }
-  ];
-
-  const highlights = [
-    "Heilige Insel der Polynesier",
-    "Ausgangspunkt für Leeward Islands",
-    "Keine Überriffe zwischen Inseln",
-    "Konstante Passatwinde",
-    "Französisches Flair im Paradies",
-    "Kurze Distanzen zu Tahaa",
-    "Kristallklare Lagunen"
-  ];
-
-  const distances = [
-    { destination: "Tahaa", distance: "3 sm", time: "45 Min." },
-    { destination: "Bora Bora", distance: "15 sm", time: "2-3 Std." },
-    { destination: "Huahine", distance: "20 sm", time: "3-4 Std." },
-    { destination: "Tahiti", distance: "120 sm", time: "15-18 Std." },
-    { destination: "Rangiroa", distance: "200 sm", time: "24-30 Std." }
-  ];
-
-  const attractions = [
-    {
-      name: "Taputapuatea Marae",
-      description: "UNESCO-Weltkulturerbe - heilige polynesische Stätte"
-    },
-    {
-      name: "Mount Temehani",
-      description: "Mystischer Berg mit der legendären Tiare Apetahi Blume"
-    },
-    {
-      name: "Faaroa Bay",
-      description: "Einzige schiffbare Flussmündung in Französisch-Polynesien"
-    },
-    {
-      name: "Vanilla-Plantagen",
-      description: "Besichtigung traditioneller Vanille-Anbaugebiete"
-    },
-    {
-      name: "Raiatea Safari Tours",
-      description: "4WD-Touren durch das bergige Inselinnere"
-    },
-    {
-      name: "Pearl Farms",
-      description: "Besuch von Tahiti-Perlen-Zuchtfarmen"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const marinas = [{
+    name: "Marina Apooiti",
+    description: "Hauptcharter-Marina auf Raiatea",
+    amenities: ["60+ Liegeplätze", "Fuel Station", "Provisioning", "Restaurant", "Charterbasen", "WiFi", "Airport Transfer"]
+  }, {
+    name: "Marina Uturoa",
+    description: "Zentrale Marina im Hauptort",
+    amenities: ["40 Liegeplätze", "Stadtnähe", "Shopping", "Restaurants", "Bank", "Markt", "Kultur"]
+  }, {
+    name: "Port de Raiatea",
+    description: "Kommerzielle Marina mit Charter-Service",
+    amenities: ["Charter-Zentrum", "Reparaturen", "Proviant", "Zoll", "Fährverbindungen", "Autovermietung"]
+  }];
+  const highlights = ["Heilige Insel der Polynesier", "Ausgangspunkt für Leeward Islands", "Keine Überriffe zwischen Inseln", "Konstante Passatwinde", "Französisches Flair im Paradies", "Kurze Distanzen zu Tahaa", "Kristallklare Lagunen"];
+  const distances = [{
+    destination: "Tahaa",
+    distance: "3 sm",
+    time: "45 Min."
+  }, {
+    destination: "Bora Bora",
+    distance: "15 sm",
+    time: "2-3 Std."
+  }, {
+    destination: "Huahine",
+    distance: "20 sm",
+    time: "3-4 Std."
+  }, {
+    destination: "Tahiti",
+    distance: "120 sm",
+    time: "15-18 Std."
+  }, {
+    destination: "Rangiroa",
+    distance: "200 sm",
+    time: "24-30 Std."
+  }];
+  const attractions = [{
+    name: "Taputapuatea Marae",
+    description: "UNESCO-Weltkulturerbe - heilige polynesische Stätte"
+  }, {
+    name: "Mount Temehani",
+    description: "Mystischer Berg mit der legendären Tiare Apetahi Blume"
+  }, {
+    name: "Faaroa Bay",
+    description: "Einzige schiffbare Flussmündung in Französisch-Polynesien"
+  }, {
+    name: "Vanilla-Plantagen",
+    description: "Besichtigung traditioneller Vanille-Anbaugebiete"
+  }, {
+    name: "Raiatea Safari Tours",
+    description: "4WD-Touren durch das bergige Inselinnere"
+  }, {
+    name: "Pearl Farms",
+    description: "Besuch von Tahiti-Perlen-Zuchtfarmen"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src={pacific}
-          alt="Raiatea, Französisch-Polynesien"
-          className="w-full h-full object-cover"
-        />
+        <img src={pacific} alt="Raiatea, Französisch-Polynesien" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -105,10 +82,7 @@ const Raiatea = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/suedpazifik" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/suedpazifik" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zum Südpazifik
@@ -184,74 +158,21 @@ const Raiatea = () => {
         </div>
 
         {/* Marinas */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Charter-Basen</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {marinas.map((marina, index) => (
-              <Card key={index} className="h-full">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">{marina.name}</h3>
-                  <p className="text-gray-600 mb-4">{marina.description}</p>
-                  <div className="space-y-2">
-                    {marina.amenities.map((amenity, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                        <span className="text-sm text-gray-700">{amenity}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Distanzen */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Distanzen & Fahrtzeiten</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {distances.map((item, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex justify-between items-center">
-                  <span className="font-semibold text-gray-800">{item.destination}</span>
-                  <div className="text-right">
-                    <div className="text-blue-600 font-bold">{item.distance}</div>
-                    <div className="text-sm text-gray-600">{item.time}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Sehenswürdigkeiten */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Sehenswürdigkeiten & Aktivitäten</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {attractions.map((attraction, index) => (
-              <Card key={index}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{attraction.name}</h3>
-                  <p className="text-gray-600">{attraction.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
+          
         </div>
 
         {/* Highlights */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Vorteile von Raiatea</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          
+          
         </div>
 
         {/* CTA */}
@@ -269,8 +190,6 @@ const Raiatea = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Raiatea;
