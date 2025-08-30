@@ -130,7 +130,7 @@ const Mahe = () => {
             {/* Anse Source d'Argent Image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/440f6df2-4896-4e62-9fd9-c399e51debb4.png" 
+                src="/lovable-uploads/23391a09-873b-4fa2-87c7-156845817f98.png" 
                 alt="Anse Source d'Argent auf La Digue mit Granitfelsen"
                 className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
               />
