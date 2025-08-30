@@ -8,11 +8,14 @@ import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import pacific from "@/assets/pacific.jpg";
+
 const WhitsundayIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
@@ -104,7 +107,7 @@ const WhitsundayIslands = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Für wen sind die Whitsundays geeignet?</h2>
               <p className="text-gray-700 mb-4">
-                Dieses Revier ist leicht bis mittelschwer und damit ideal für Familien, Paare und Genießer, die kurze Schläge, gut geschützte Ankerbuchten und ein berechenbares Tagesfenster schätzen. Gleichzeitig kommen erfahrene Skipper auf ihre Kosten: Tidenavigation, Stromtaktik, präzises Anker-Handling und das Lesen von Karten und Sektorenzeichen verleihen jeder Etappe Tiefe. Katamarane spielen ihre Stärken in Flachwasserbereichen und beim Bordkomfort aus; Segelyachten glänzen bei den Passatwinden mit effizientem Vorankommen und feinfühligem Trimm.
+                Dieses Revier ist leicht bis mittelschwer und damit ideal für Familien, Paare und Genießer, die kurze Schläge, gut geschützte Ankerbuchten und ein berechenbares Tagesfenster schätzen. Gleichzeitig kommen erfahrene Skipper auf ihre Kosten: Tidennavigation, Stromtaktik, präzises Anker-Handling und das Lesen von Karten und Sektorenzeichen verleihen jeder Etappe Tiefe. Katamarane spielen ihre Stärken in Flachwasserbereichen und beim Bordkomfort aus; Segelyachten glänzen bei den Passatwinden mit effizientem Vorankommen und feinfühligem Trimm.
               </p>
             </section>
 
@@ -171,19 +174,21 @@ const WhitsundayIslands = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-orange-600 to-orange-800 text-white p-8 rounded-lg shadow-lg">
+          <div className="bg-gradient-to-r from-sky-400 to-sky-600 text-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-4">Entdecken Sie die Whitsunday Islands</h2>
             <p className="text-xl mb-6">
               74 tropische Inseln im Great Barrier Reef warten auf Sie
             </p>
             <CharterRequestForm>
-              <Button size="lg" variant="secondary" className="bg-white text-orange-600 hover:bg-gray-100">
+              <Button size="lg" variant="secondary" className="bg-white text-sky-600 hover:bg-gray-100">
                 Whitsundays Charter anfragen
               </Button>
             </CharterRequestForm>
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default WhitsundayIslands;
