@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationAustralia from "@/assets/destination-australia.jpg";
 
 const Australia = () => {
@@ -132,7 +132,7 @@ const Australia = () => {
             
             <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Wo segeln? Die wichtigsten Reviere</h3>
             <div className="space-y-3 mb-6">
-              <p className="text-gray-600"><Link to="/reviere/suedpazifik/australien/whitsundays" className="text-ocean-blue hover:text-ocean-dark underline font-medium"><strong>Whitsunday Islands (Queensland):</strong></Link> 74 Inseln, geschützte Passagen, starke Tiden – perfekt für Inselhüpfen mit Whitehaven Beach, Hill Inlet, Nara Inlet oder Butterfly Bay. Beste Zeit: meist April–Oktober.</p>
+              <p className="text-gray-600"><strong>Whitsunday Islands (Queensland):</strong> 74 Inseln, geschützte Passagen, starke Tiden – perfekt für Inselhüpfen mit Whitehaven Beach, Hill Inlet, Nara Inlet oder Butterfly Bay. Beste Zeit: meist April–Oktober.</p>
               <p className="text-gray-600"><strong>Sydney & Pittwater (New South Wales):</strong> Urbanes Segeln vor Oper und Harbour Bridge, danach nordwärts in die ruhigen Buchten von Pittwater und Broken Bay. Sommer ist Hauptsaison.</p>
               <p className="text-gray-600"><strong>Tasmanien (Hobart, D'Entrecasteaux Channel, Bruny Island):</strong> Kühler, rauer, landschaftlich grandios – für ambitionierte Crews, die Natur und Seemannschaft lieben. High Season: Dezember–Februar.</p>
               <p className="text-gray-600"><strong>Great Sandy Strait & K'gari/Fraser Island (QLD):</strong> Flaches, geschütztes Fahrwasser, Delfine und Sandbänke – ideal für Katamarane.</p>
