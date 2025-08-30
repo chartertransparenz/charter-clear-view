@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import destinationSeychelles from "@/assets/destination-seychelles.jpg";
+
 const Praslin = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,7 +43,7 @@ const Praslin = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={destinationSeychelles} alt="Praslin, Seychellen" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/a01ef375-2c09-46c0-b2b1-f10026d0ecf2.png" alt="Praslin, Seychellen" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
