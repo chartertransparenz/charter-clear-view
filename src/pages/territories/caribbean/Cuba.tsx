@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,48 +8,40 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import caribbean from "@/assets/caribbean.jpg";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Cuba = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Große Antillen" },
-    { icon: Calendar, label: "Beste Zeit", value: "November-April" },
-    { icon: Users, label: "Geeignet für", value: "Erfahrene Segler" },
-    { icon: Anchor, label: "Besonderheit", value: "Authentische Karibikkultur" }
-  ];
-
-  const regions = [
-    {
-      name: "Kuba",
-      link: "/reviere/karibik/charter-standorte/havanna",
-      description: "Die größte Karibikinsel mit authentischer Kultur",
-      cities: ["Havanna", "Cienfuegos", "Trinidad", "Cayo Largo"]
-    }
-  ];
-
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Große Antillen"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "November-April"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Erfahrene Segler"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Authentische Karibikkultur"
+  }];
+  const regions = [{
+    name: "Kuba",
+    link: "/reviere/karibik/charter-standorte/havanna",
+    description: "Die größte Karibikinsel mit authentischer Kultur",
+    cities: ["Havanna", "Cienfuegos", "Trinidad", "Cayo Largo"]
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png"
-          alt="Kubanische Architektur mit Blick aufs Meer - Cienfuegos"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png" alt="Kubanische Architektur mit Blick aufs Meer - Cienfuegos" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -61,10 +52,7 @@ const Cuba = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/karibik" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/karibik" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zur Karibik
@@ -112,23 +100,19 @@ const Cuba = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Territory Map */}
         <div className="max-w-4xl mx-auto mb-12">
-          <TerritoryMap
-            region="Das Segelrevier um Cienfuegos, Kuba"
-            center={{ lat: 21.9, lng: -81.0 }}
-            zoom={8}
-            maptype="satellite"
-          />
+          <TerritoryMap region="Das Segelrevier um Cienfuegos, Kuba" center={{
+          lat: 21.9,
+          lng: -81.0
+        }} zoom={8} maptype="satellite" />
         </div>
 
         {/* Hauptbeschreibung */}
@@ -151,11 +135,7 @@ const Cuba = () => {
 
               {/* Strand-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/lovable-uploads/697bcf13-dfd0-497a-a399-232cf2a1c1ed.png"
-                  alt="Traumhafter kubanischer Strand mit türkisfarbenem Wasser"
-                  className="w-full h-64 md:h-80 object-cover"
-                />
+                <img src="/lovable-uploads/697bcf13-dfd0-497a-a399-232cf2a1c1ed.png" alt="Traumhafter kubanischer Strand mit türkisfarbenem Wasser" className="w-full h-64 md:h-80 object-cover" />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
                     Verlieben Sie sich in kubanische Traumstrände – pudriger, weißer Sand unter den Füßen, Palmen im warmen Passatwind und ein endloses Türkis, das nach einem Sprung ins Wasser ruft.
@@ -218,16 +198,8 @@ const Cuba = () => {
 
               {/* Havanna-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/lovable-uploads/39f41d29-fb20-46ee-a388-651dee246b70.png"
-                  alt="Bunte Oldtimer vor kolonialer Architektur in Havanna"
-                  className="w-full h-64 md:h-80 object-cover"
-                />
-                <div className="bg-gray-50 p-4">
-                  <p className="text-gray-700 italic text-center">
-                    Erleben Sie Havanna, wo bunte Oldtimer wie rollende Zeitkapseln an pastellfarbenen Fassaden vorbeigleiten und jede Fahrt sich anfühlt wie eine Filmszene.
-                  </p>
-                </div>
+                
+                
               </div>
 
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Regeln, Vorschriften und Formalitäten: Segeln in Kuba</h2>
@@ -275,11 +247,7 @@ const Cuba = () => {
 
               {/* Cayo Largo-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/lovable-uploads/065ef7b6-04d2-42cd-9d89-8af299c29ed5.png"
-                  alt="Paradiesischer Strand auf Cayo Largo mit türkisfarbenem Wasser und Palmen"
-                  className="w-full h-64 md:h-80 object-cover"
-                />
+                <img src="/lovable-uploads/065ef7b6-04d2-42cd-9d89-8af299c29ed5.png" alt="Paradiesischer Strand auf Cayo Largo mit türkisfarbenem Wasser und Palmen" className="w-full h-64 md:h-80 object-cover" />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
                     Auf Cayo Largo stehen Sie auf feinem, weißem Sand, blicken auf klares Türkis und genießen einfach Ruhe, Platz und entspanntes Abschalten.
@@ -382,8 +350,7 @@ const Cuba = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="block hover:no-underline group max-w-2xl mx-auto">
+            {regions.map((region, index) => <Link key={index} to={region.link} className="block hover:no-underline group max-w-2xl mx-auto">
                 <Card className="shadow-lg h-full group-hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-green-200 group-hover:scale-105">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
@@ -393,31 +360,24 @@ const Cuba = () => {
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4 group-hover:text-gray-700">{region.description}</p>
-                    {region.cities && (
-                      <div className="mb-4">
+                    {region.cities && <div className="mb-4">
                         <div className="text-sm font-medium text-gray-700 mb-2">Verfügbare Charter-Standorte:</div>
                         <div className="grid grid-cols-2 gap-2">
-                          {region.cities.map((city, idx) => (
-                            <div key={idx} className="text-sm text-green-700 font-medium group-hover:text-green-800">
+                          {region.cities.map((city, idx) => <div key={idx} className="text-sm text-green-700 font-medium group-hover:text-green-800">
                               • {city}
-                            </div>
-                          ))}
+                            </div>)}
                         </div>
-                      </div>
-                    )}
+                      </div>}
                     <div className="text-sm text-green-700 font-medium group-hover:text-green-800 flex items-center gap-1">
                       → Charter-Informationen & Marinas
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
 
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Cuba;
