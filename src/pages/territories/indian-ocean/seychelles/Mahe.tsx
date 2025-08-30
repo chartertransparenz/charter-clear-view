@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 const Mahe = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -91,6 +92,19 @@ const Mahe = () => {
                 </div>
               </CardContent>
             </Card>)}
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Mahé, Seychellen</h2>
+          <div className="max-w-4xl mx-auto">
+            <TerritoryMap
+              region="Mahé, Seychellen"
+              center={{ lat: -4.6796, lng: 55.4918 }}
+              zoom={11}
+              maptype="satellite"
+            />
+          </div>
         </div>
 
         {/* Description */}
