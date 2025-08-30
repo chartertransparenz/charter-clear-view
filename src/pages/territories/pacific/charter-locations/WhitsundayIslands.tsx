@@ -230,6 +230,23 @@ const WhitsundayIslands = () => {
           </div>
         </div>
         
+        {/* Additional CTA with light blue gradient */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-gradient-to-r from-sky-400 to-sky-600 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Kostenlose Beratung für Ihren Whitsundays Charter
+            </h3>
+            <p className="mb-6 text-sky-100">
+              Unsere Experten helfen Ihnen bei der Planung Ihres perfekten Segeltörns 
+              durch die traumhaften Whitsunday Islands.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-white text-sky-600 hover:bg-sky-50" size="lg">
+                Jetzt kostenlos beraten lassen
+              </Button>
+            </CharterRequestForm>
+          </div>
+        </div>
 
         {/* CTA */}
         <div className="text-center">
