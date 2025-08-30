@@ -176,6 +176,18 @@ const Mahe = () => {
           </div>
         </div>
 
+        {/* Anse Source d'Argent Image with Caption */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <img 
+            src="/lovable-uploads/90692d00-febc-4526-bda2-5bd3e808161c.png" 
+            alt="Anse Source d'Argent auf La Digue mit charakteristischen Granitfelsen"
+            className="w-full h-auto object-cover rounded-lg shadow-lg mb-4"
+          />
+          <p className="text-gray-700 text-center italic leading-relaxed">
+            An der Anse Source d&apos;Argent auf La Digue (Seychellen) stehen Sie zwischen haushohen Granitfelsen auf feinem, hellen Sand, blicken in eine seichte türkisfarbene Lagune – und fühlen sofort Ruhe, Wärme und gelassenes Inseltempo.
+          </p>
+        </div>
+
         {/* Must-see Box */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-lg">
