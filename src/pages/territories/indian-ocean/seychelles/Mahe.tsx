@@ -79,7 +79,7 @@ const Mahe = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
@@ -93,7 +93,7 @@ const Mahe = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <Badge className="mb-4 bg-pink-500 text-white">💎 Mahé</Badge>
+            <Badge className="mb-4 bg-blue-500 text-white">💎 Mahé</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Mahé</h1>
             <p className="text-xl max-w-2xl">
               Hauptinsel der Seychellen
@@ -117,7 +117,7 @@ const Mahe = () => {
           {quickFacts.map((fact, index) => (
             <Card key={index} className="text-center">
               <CardContent className="p-4">
-                <div className="flex justify-center text-pink-600 mb-2">
+                <div className="flex justify-center text-blue-600 mb-2">
                   {fact.icon}
                 </div>
                 <div className="font-semibold text-sm text-gray-600 mb-1">
@@ -135,7 +135,7 @@ const Mahe = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <Heart className="w-6 h-6 text-pink-600" />
+              <Heart className="w-6 h-6 text-blue-600" />
               Charter-Standort Mahé
             </h2>
             <p className="text-lg text-gray-600 mb-4">
@@ -160,7 +160,7 @@ const Mahe = () => {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <Anchor className="w-5 h-5 text-pink-600" />
+                    <Anchor className="w-5 h-5 text-blue-600" />
                     <h3 className="text-xl font-semibold text-gray-800">{marina.name}</h3>
                   </div>
                   <p className="text-gray-600 mb-4">{marina.description}</p>
@@ -204,7 +204,7 @@ const Mahe = () => {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {highlights.map((highlight, index) => (
               <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
-                <Heart className="w-6 h-6 text-pink-600 mx-auto mb-2" />
+                <Heart className="w-6 h-6 text-blue-600 mx-auto mb-2" />
                 <p className="text-sm font-medium text-gray-700">{highlight}</p>
               </div>
             ))}
@@ -213,16 +213,16 @@ const Mahe = () => {
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white p-8 rounded-lg shadow-lg text-center">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
             <h3 className="text-2xl font-bold mb-4">
               Charter ab Mahé
             </h3>
-            <p className="mb-6 text-pink-100">
+            <p className="mb-6 text-blue-100">
               Entdecken Sie 115 Granitinseln mit den schönsten Stränden der Welt, 
               UNESCO Naturparks und einer einzigartigen kreolischen Kultur.
             </p>
             <CharterRequestForm>
-              <Button className="bg-white text-pink-600 hover:bg-pink-50" size="lg">
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
                 Mahé Charter anfragen
               </Button>
             </CharterRequestForm>
