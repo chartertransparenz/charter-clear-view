@@ -244,6 +244,38 @@ const Thailand = () => {
               <li><strong>Ang Thong Marine National Park (Golf von Thailand):</strong> Ein weiteres Naturwunder mit spektakulären Inseln, Höhlen und dem smaragdgrünen "Emerald Lake" (Thale Nai).</li>
             </ul>
             
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Ihr 7-Tage-Traumtörn in der Andamanensee (ab Phuket)</h3>
+            <div className="space-y-4 mb-6">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1: Ankunft & Inselzauber</h5>
+                <p className="text-sm text-muted-foreground">Nach dem Check-in auf Phuket setzen Sie die Segel für einen kurzen Schlag zu einer ruhigen Bucht nahe der Phang Nga Bucht. Genießen Sie das erste Bad im tropischen Wasser und lassen Sie den Ankerabend ausklingen.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2: Phang Nga Bay – Die Welt der Karste</h5>
+                <p className="text-sm text-muted-foreground">Tauchen Sie ein in die ikonische Phang Nga Bucht. Erkunden Sie mit dem Dingi oder Kajak die versteckten "Hongs" (Lagunen) und besuchen Sie die berühmte James Bond Insel (Koh Tapu) und das schwimmende Dorf Koh Panyee.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3: Kurs auf Krabi – Klippen und Strände</h5>
+                <p className="text-sm text-muted-foreground">Segeln Sie weiter nach Krabi. Ankern Sie vor den spektakulären Felsen von Railay Beach, einem Paradies für Kletterer und Badegäste. Genießen Sie den Sonnenuntergang vor dieser atemberaubenden Kulisse.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4: Phi Phi Islands – Das Juwel der Andamanensee</h5>
+                <p className="text-sm text-muted-foreground">Ein kurzer Schlag bringt Sie zu den weltberühmten Phi Phi Inseln. Erkunden Sie die Maya Bay (unter Beachtung der Zugangsregeln), schnorcheln Sie in den umliegenden Buchten und erleben Sie das lebhafte Treiben auf Phi Phi Don.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5: Entspannung und südliche Inseln</h5>
+                <p className="text-sm text-muted-foreground">Genießen Sie einen entspannten Tag auf See. Segeln Sie zu einer der südlicheren Inseln wie Koh Lanta oder Koh Bida Nok/Nai für weitere Schnorchel- und Bademöglichkeiten in ruhiger Atmosphäre.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6: Rückfahrt und Abschiedsbucht</h5>
+                <p className="text-sm text-muted-foreground">Beginnen Sie die Rückreise in Richtung Phuket. Legen Sie einen letzten Stopp an einer schönen, ruhigen Bucht an der Ostküste Phukets oder einer nahegelegenen Insel ein, um den letzten Abend an Bord zu genießen.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7: Abschied vom Paradies</h5>
+                <p className="text-sm text-muted-foreground">Nach einem letzten Frühstück an Bord segeln Sie zurück zu Ihrer Charterbasis auf Phuket und treten die Heimreise an – erfüllt von unvergesslichen Eindrücken aus dem Land des Lächelns.</p>
+              </div>
+            </div>
+            
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Wetter & Windbedingungen: Segeln im tropischen Klima</h3>
             <p className="text-lg text-gray-600 mb-4">
               Thailand liegt in den Tropen und ist von einem Monsunklima geprägt, das zwei Hauptjahreszeiten bestimmt:
