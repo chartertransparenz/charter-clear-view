@@ -31,14 +31,17 @@ const IndianOcean = () => {
       link: "/reviere/indischer-ozean/seychellen",
       description: "115 Granitinseln im Paradies",
       areas: [
-        { name: "Malé", link: "/reviere/indischer-ozean/malediven/male" }
+        { name: "Mahé", link: "/reviere/indischer-ozean/seychellen/mahe" },
+        { name: "Praslin", link: "/reviere/indischer-ozean/seychellen/praslin" }
       ]
     },
     { 
       name: "Malediven", 
       link: "/reviere/indischer-ozean/malediven",
       description: "1200 Koralleninseln für Luxus-Charter",
-      areas: ["Malé"]
+      areas: [
+        { name: "Malé", link: "/reviere/indischer-ozean/malediven/male" }
+      ]
     }
   ];
 
