@@ -172,15 +172,44 @@ const Praslin = () => {
               Praslin bietet sehr gute Versorgung: In Baie Sainte Anne und Grand Anse finden Sie Supermärkte, Bäckereien, Gemüse- und Fischstände. Frischware (Fisch, Obst, Gemüse) am besten direkt nach Ankunft kaufen; haltbare Basics und Getränke können Sie vorbestellen und an Bord liefern lassen. In der Praslin Marina erhalten Sie üblicherweise Treibstoff, Wasser, Gas sowie Eis. Müll bitte trennen und ausschließlich an Land entsorgen; Grauwasser/Schwarzwasser nicht in Buchten oder Parks ablassen. Ein Dinghy mit Paddel, kräftige Mooringleinen, Schnorchelset und Sonnenschutz mit hohem LSF gehören zur Standardausrüstung.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Routenvorschlag (7–9 Tage, variabel)</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-6">Routenvorschlag (7–9 Tage, variabel)</h3>
+            
+            <div className="mb-4 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 1: Praslin Marina → Côte d'Or / Anse Volbert</h4>
+              <p className="text-gray-600">Ruhiger Start, Badestopp und erstes Ankermanöver auf Sand.</p>
+            </div>
+            
+            <div className="mb-4 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 2: Anse Volbert → Curieuse & St. Pierre</h4>
+              <p className="text-gray-600">Vormittags Schildkröten auf Curieuse, nachmittags Schnorcheln am Îlot St. Pierre; Übernachtung je nach Bedingungen in einer geschützten Ankerbucht.</p>
+            </div>
+            
+            <div className="mb-4 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 3: Curieuse → Anse Lazio</h4>
+              <p className="text-gray-600">Früh ankommen, Anker sorgfältig einfahren; Strandtag und Sundowner an Bord.</p>
+            </div>
+            
+            <div className="mb-4 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 4: Anse Lazio → La Digue</h4>
+              <p className="text-gray-600">Sichere Mooring/Ankerplatz wählen, Dinghy an Land, Fahrräder mieten und Granitstrände erkunden.</p>
+            </div>
+            
+            <div className="mb-4 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 5: La Digue → Coco/Félicité/Sisters</h4>
+              <p className="text-gray-600">Wetterfenster prüfen; Schnorcheltag im klaren Wasser, ggf. Moorings nutzen.</p>
+            </div>
+            
+            <div className="mb-4 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 6: Reserve- oder Landtag</h4>
+              <p className="text-gray-600">Vallée de Mai (Praslin) oder ruhiger Lagunentag nach Wahl.</p>
+            </div>
+            
+            <div className="mb-6 border-l-4 border-blue-600 pl-4">
+              <h4 className="font-semibold text-gray-800">Tag 7: Gemütlicher Rückweg → Praslin Marina</h4>
+              <p className="text-gray-600">Tanken, Wasser füllen, Technikübergabe.</p>
+            </div>
+            
             <p className="text-gray-600 mb-6">
-              Tag 1 – Praslin Marina → Côte d'Or / Anse Volbert: Ruhiger Start, Badestopp und erstes Ankermanöver auf Sand.
-              Tag 2 – Anse Volbert → Curieuse & St. Pierre: Vormittags Schildkröten auf Curieuse, nachmittags Schnorcheln am Îlot St. Pierre; Übernachtung je nach Bedingungen in einer geschützten Ankerbucht.
-              Tag 3 – Curieuse → Anse Lazio: Früh ankommen, Anker sorgfältig einfahren; Strandtag und Sundowner an Bord.
-              Tag 4 – Anse Lazio → La Digue: Sichere Mooring/Ankerplatz wählen, Dinghy an Land, Fahrräder mieten und Granitstrände erkunden.
-              Tag 5 – La Digue → Coco/Félicité/Sisters: Wetterfenster prüfen; Schnorcheltag im klaren Wasser, ggf. Moorings nutzen.
-              Tag 6 – Reserve- oder Landtag: Vallée de Mai (Praslin) oder ruhiger Lagunentag nach Wahl.
-              Tag 7 – Gemütlicher Rückweg → Praslin Marina: Tanken, Wasser füllen, Technikübergabe.
               Bei 9–10 Tagen lassen sich Cousin/Cousine (Regeln beachten) sowie zusätzliche Ankerbuchten rund um Praslin einbauen.
             </p>
 
