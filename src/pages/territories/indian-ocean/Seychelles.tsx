@@ -108,53 +108,145 @@ const Seychelles = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Yachtcharter Seychellen - Segeln im Paradies des Indischen Ozeans</h2>
             
-            <p className="text-lg text-gray-600 mb-6">
-              Die Seychellen, ein Archipel aus 115 Inseln im westlichen Indischen Ozean, gelten als eines der schönsten und exklusivsten Segelreviere der Welt. Mit ihren berühmten Granitfelsen-Stränden, kristallklarem türkisfarbenem Wasser und einer einzigartigen tropischen Flora und Fauna bieten die Seychellen Seglern ein unvergleichliches Naturerlebnis.
-            </p>
-
-            <p className="text-lg text-gray-600 mb-6">
-              Das Segeln zwischen den Inner Islands der Seychellen ist ideal für entspannte Charter-Touren geeignet. Die Distanzen zwischen den Hauptinseln Mahé, Praslin und La Digue sind überschaubar (15-25 Seemeilen), was auch weniger erfahrenen Seglern traumhafte Inselhüpfen-Erlebnisse ermöglicht. Die geschützten Gewässer zwischen den Inseln bieten ruhige Segelbedingungen und spektakuläre Ankerplätze in paradiesischen Buchten.
-            </p>
-
-            <p className="text-lg text-gray-600 mb-6">
-              Die Seychellen beheimaten zwei UNESCO-Weltnaturerbestätten: das berühmte Vallée de Mai auf Praslin mit der weltweit größten natürlichen Population der seltenen Seychellenpalme (Coco de Mer) und das Aldabra-Atoll, eines der größten Korallenatolle der Welt mit über 100.000 Riesenschildkröten. Diese einmaligen Naturschätze machen einen Segelurlaub auf den Seychellen zu einem unvergesslichen Erlebnis für Naturliebhaber.
-            </p>
-
-            <p className="text-lg text-gray-600 mb-6">
-              Beim Yachtcharter auf den Seychellen stehen vor allem Katamarane im Vordergrund, da sie aufgrund ihrer geringen Tiefgangs ideal für das Navigieren in den teilweise seichten Gewässern rund um die Korallenriffe geeignet sind. Die modernen Charter-Katamarane bieten zudem den Komfort und Platz, der für entspannte Tage in diesem tropischen Paradies erforderlich ist.
-            </p>
-
-            <p className="text-lg text-gray-600 mb-8">
-              Die Seychellen zeichnen sich durch ihre politische Stabilität, ausgezeichnete touristische Infrastruktur und die Gastfreundschaft der kreolischen Bevölkerung aus. Das ganzjährig warme tropische Klima mit Wassertemperaturen zwischen 26-29°C macht die Seychellen zu einem perfekten Segelrevier für alle, die exotische Natur, traumhafte Strände und entspanntes Segeln in einer der schönsten Inselwelten der Erde erleben möchten.
-            </p>
-
-            {/* Erreichbarkeit */}
-            <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <Plane className="w-5 h-5 text-blue-600" />
-                Erreichbarkeit: Ihr direkter Weg ins Inselparadies
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Die Seychellen sind über den internationalen Flughafen Mahé (SEZ) erreichbar, der etwa 45 Flugminuten von der Hauptstadt Victoria entfernt liegt. Direktflüge gibt es von Europa (Emirates, Qatar Airways, Turkish Airlines) mit einer Flugzeit von etwa 9-11 Stunden.
+            <div className="prose prose-lg max-w-none text-gray-600 mb-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Yachtcharter Seychellen: Segeln im Paradies des Indischen Ozeans – Ihr Traumtörn wartet auf Sie</h2>
+              
+              <p className="mb-6">
+                Die Seychellen – ein Name, der Sehnsüchte weckt. Ein Archipel von 115 Inseln, die wie smaragdgrüne Juwelen im kristallklaren Wasser des Indischen Ozeans liegen. Ein Yachtcharter auf den Seychellen ist die ultimative Einladung, ein einzigartiges Naturparadies zu entdecken, das mit seinen traumhaften Stränden, der üppigen Vegetation, spektakulären Granitfelsen, einer farbenfrohen Unterwasserwelt und einer authentischen Inselkultur verzaubert. Hier, wo die Palmen im sanften Passatwind wiegen und das Meer in unzähligen Türkistönen leuchtet, erwartet Sie ein Segelabenteuer, das alle Ihre Sinne berühren wird.
               </p>
-              <p className="text-gray-600">
-                Die meisten Charterbasen befinden sich in der Eden Bleu Marina auf Mahé oder im Praslin Island Marina. Transfer vom Flughafen zur Marina dauert etwa 45 Minuten per Taxi oder 15 Minuten per Helikopter.
+              
+              <p className="mb-6">
+                Stellen Sie sich vor, Sie lichten den Anker in einer modernen Marina auf Mahé, lassen die tropische Kulisse hinter sich und nehmen Kurs auf eine der nächsten Inseln. Jeder Tag bringt neue Horizonte: malerische Buchten, die zum Schnorcheln und Schwimmen einladen, unberührte Strände, die Sie ganz für sich allein haben, und die Möglichkeit, die einzigartige Flora und Fauna dieser Inselwelt hautnah zu erleben.
+              </p>
+              
+              <p className="mb-6">
+                Gerade in diesem Revier, das von flachen, korallenreichen Gewässern und unzähligen Ankerbuchten geprägt ist, spielt ein Katamaran seine Stärken voll aus. Mit seinem geringen Tiefgang ermöglicht er das sichere Ansteuern von Lagunen und abgelegenen Buchten, die für Monohulls oft unerreichbar bleiben. Die Stabilität eines Katamarans sorgt für maximalen Liegekomfort, auch bei leichtem Schwell, und das großzügige Platzangebot an Deck und im Salon bietet Crew und Gepäck den nötigen Raum für einen entspannten und luxuriösen Urlaub. Ein Katamaran ist die ideale Wahl für Familien, Freunde und alle, die das Inselhopping auf den Seychellen in vollen Zügen genießen möchten.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Die Inselwelten der Seychellen: Ein Paradies in zwei Teilen</h3>
+              
+              <p className="mb-4">
+                Die Seychellen gliedern sich in zwei Hauptgruppen, die unterschiedliche Segelerlebnisse versprechen.
+              </p>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Die Inner Islands: Das Herz des Yachtcharters</h4>
+              
+              <p className="mb-4">
+                Die Inner Islands sind die Granitinseln und bilden das touristische und nautische Zentrum der Seychellen. Hier konzentrieren sich die Charterbasen und die meisten der beliebten Törnziele. Sie sind bekannt für ihre spektakulären Granitfelsen, die üppige Vegetation und die weltberühmten Traumstrände.
+              </p>
+              
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Mahé:</strong> Die größte Insel und das Tor zu den Seychellen. Hier befindet sich der internationale Flughafen und die meisten Charterbasen. Mahé bietet eine Mischung aus lebhaften Städten (Victoria, die Hauptstadt), beeindruckenden Bergen, Teeplantagen und wunderschönen Stränden.</li>
+                <li><strong>Praslin:</strong> Die zweitgrößte Insel, berühmt für das UNESCO-Welterbe Vallée de Mai, Heimat der einzigartigen Coco de Mer Palme. Praslin ist ein exzellenter Ausgangspunkt für Törns zu den umliegenden Inseln.</li>
+                <li><strong>La Digue:</strong> Eine der malerischsten Inseln, bekannt für den Anse Source d'Argent, einen der meistfotografierten Strände der Welt mit seinen riesigen Granitfelsen. La Digue erkundet man am besten mit dem Fahrrad.</li>
+                <li><strong>Silhouette Island:</strong> Eine große, bergige Insel, die größtenteils unberührt ist und einen Nationalpark beherbergt. Ideal für Wanderungen und das Erleben unberührter Natur.</li>
+                <li><strong>Curieuse Island:</strong> Bekannt für ihre Riesenschildkröten und Mangrovenwälder.</li>
+                <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet.</li>
+              </ul>
+              
+              <p className="mb-6">
+                Gerade in den Inner Islands sind Katamarane die unangefochtenen Könige der Gewässer. Ihr geringer Tiefgang ermöglicht es, über Riffe hinweg in flachere, geschützte Lagunen und nahe an die Strände zu fahren, wo Monohulls oft nicht hinkommen. Die Stabilität der zwei Rümpfe sorgt für minimales Rollen, was das Ankern und Übernachten an Bord besonders angenehm macht – ein enormer Vorteil für komfortables Inselhopping.
+              </p>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Die Outer Islands: Das Abenteuer für Expeditionen</h4>
+              
+              <p className="mb-6">
+                Die Outer Islands sind Koralleninseln, die weit entfernt von den Hauptinseln liegen und oft nur mit speziellen Expeditionen oder längeren Törns erreicht werden. Hierzu gehören Atolle wie Aldabra, die Amiranten, Farquhar und Alphonse. Diese Reviere sind für erfahrene Segler mit viel Zeit und Abenteuerlust gedacht, die das absolute Naturerlebnis und unberührte Tauchgründe suchen.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Erreichbarkeit: Ihr direkter Weg ins Inselparadies</h3>
+              
+              <p className="mb-4">
+                Die Seychellen sind überraschend gut an das internationale Flugnetz angebunden, was die Anreise zu Ihrem Yachtcharter-Abenteuer einfach und bequem macht.
+              </p>
+              
+              <ul className="list-disc pl-6 mb-6 space-y-2">
+                <li><strong>Per Direktflug:</strong> Der Seychelles International Airport (SEZ) auf Mahé wird von verschiedenen internationalen Flughäfen direkt angeflogen. Fluggesellschaften wie Condor, Edelweiss Air (saisonal), Emirates, Qatar Airways, Ethiopian Airlines und Turkish Airlines bieten Verbindungen aus Deutschland, Österreich, der Schweiz und anderen europäischen Städten an.</li>
+                <li><strong>Kurze Transfers:</strong> Vom Flughafen auf Mahé sind die meisten Charterbasen in der Regel nur eine kurze Taxifahrt entfernt. Für Charter, die auf Praslin oder La Digue starten, gibt es bequeme Weiterreiseoptionen per Inlandsflug oder Fähre.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Marinas & Ausgangshäfen: Moderne Infrastruktur im Tropenparadies</h3>
+              
+              <p className="mb-4">
+                Die Seychellen verfügen über eine moderne und gut ausgebaute maritime Infrastruktur, die speziell auf die Bedürfnisse von Yachtcharter-Gästen zugeschnitten ist.
+              </p>
+              
+              <ul className="list-disc pl-6 mb-6 space-y-2">
+                <li><strong>Mahé:</strong> Die Hauptinsel beherbergt die wichtigsten Charterbasen, insbesondere in der Eden Island Marina und der Port Victoria Marina. Diese Marinas bieten umfassende Dienstleistungen wie Wasser, Strom, Treibstoff, Supermärkte, Restaurants und technische Unterstützung. Hier finden Sie die größte Auswahl an Charteryachten, darunter zahlreiche Katamarane, Segelyachten und Motorboote verschiedener Größen und Ausstattungen.</li>
+                <li><strong>Praslin:</strong> Auch auf Praslin gibt es Charterbasen, die einen direkten Start in die Inselwelt der Inner Islands ermöglichen. Die Baie Sainte Anne Marina ist ein beliebter Anlaufpunkt.</li>
+                <li><strong>La Digue:</strong> Auf La Digue gibt es kleinere Anlegemöglichkeiten, die jedoch weniger als Ausgangsbasis, sondern eher als Törnziel dienen.</li>
+              </ul>
+              
+              <p className="mb-6">
+                Die große Auswahl an Multihulls ist ein entscheidender Vorteil auf den Seychellen. Sie sind nicht nur komfortabler und stabiler, sondern auch ideal für die Navigation in den flachen Gewässern und die Ansteuerung der zahlreichen Korallenriffe und Lagunen.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Beliebte Törnziele: Ein Kaleidoskop tropischer Schönheit</h3>
+              
+              <p className="mb-4">
+                Ein Yachtcharter auf den Seychellen ist ein ständiges Inselhopping-Abenteuer, bei dem jeder Tag neue Höhepunkte bereithält.
+              </p>
+              
+              <ul className="list-disc pl-6 mb-6 space-y-2">
+                <li><strong>Sainte Anne Marine National Park (Mahé):</strong> Nur einen Katzensprung von Mahé entfernt, ist dieser Marinepark ein Muss für Schnorchel- und Tauchbegeisterte. Das kristallklare Wasser und die bunte Unterwasserwelt sind atemberaubend. Hier können Sie sicher ankern und die Ruhe genießen.</li>
+                <li><strong>Beau Vallon (Mahé):</strong> Ein langer, belebter Sandstrand mit Restaurants und Wassersportmöglichkeiten. Ein guter Ort für einen Landgang und das Eintauchen ins lokale Leben.</li>
+                <li><strong>Anse Lazio (Praslin):</strong> Oft als einer der schönsten Strände der Welt bezeichnet, begeistert Anse Lazio mit seinem puderfeinen Sand, dem türkisfarbenen Wasser und den charakteristischen Granitfelsen. Perfekt für einen ausgedehnten Badestopp.</li>
+                <li><strong>Curieuse Island:</strong> Ein Naturreservat, das für seine freilebenden Riesenschildkröten bekannt ist. Hier können Sie an Land gehen, die Schildkröten beobachten und durch Mangrovenwälder wandern.</li>
+                <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet, das nur unter Führung besucht werden darf. Ein Paradies für Ornithologen.</li>
+                <li><strong>La Digue:</strong> Mit dem Fahrrad erkunden Sie die Insel und besuchen den berühmten Anse Source d'Argent, wo riesige Granitfelsen den Strand säumen und ein einzigartiges Fotomotiv bieten.</li>
+                <li><strong>Die kleinen Inseln:</strong> Entdecken Sie weitere unbewohnte Inseln wie Grande Soeur, Petite Soeur oder Coco Island mit ihren fantastischen Schnorchelplätzen und unberührten Stränden.</li>
+              </ul>
+              
+              <p className="mb-6">
+                Dank ihres geringen Tiefgangs sind Katamarane ideal für das Inselhopping auf den Seychellen. Sie können näher an die Strände heranfahren, in flacheren Lagunen ankern und bieten somit einen direkteren Zugang zu den schönsten Plätzen. Ihr großzügiges Deck und die Badeplattformen machen sie perfekt für Wassersportaktivitäten direkt vom Boot aus.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Wetter & Windbedingungen: Segeln im tropischen Klima</h3>
+              
+              <p className="mb-4">
+                Die Seychellen liegen außerhalb des Zyklongürtels und sind somit ganzjährig ein sicheres Segelrevier. Das Klima ist tropisch-warm und feucht. Die Winde werden von den Monsunperioden bestimmt:
+              </p>
+              
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Nordwestmonsun (November bis März):</strong> In dieser Zeit wehen die Winde aus Nordwest, meist mit 8-12 Knoten. Das Meer ist ruhiger, aber es kann heißer und feuchter sein, mit gelegentlichen tropischen Schauern, besonders von Dezember bis Februar. Dies ist eine gute Zeit für entspanntes Cruisen und für Crews, die weniger Wind bevorzugen. Katamarane sorgen auch bei höheren Temperaturen für eine angenehme Belüftung und bieten viel Schatten auf dem Deck.</li>
+                <li><strong>Südostpassat (April bis Oktober):</strong> Dies ist die trockenere und kühlere Jahreszeit mit beständigeren Winden aus Südost, die oft 10-20 Knoten erreichen können. Das Meer kann etwas rauer sein, aber die Segelbedingungen sind hervorragend für sportlicheres Segeln. Katamarane bieten auch bei stärkeren Winden und leichtem Schwell einen stabilen und komfortablen Stand, was Seekrankheit vorbeugt und das Segelerlebnis entspannter macht.</li>
+              </ul>
+              
+              <p className="mb-6">
+                <strong>Wichtige nautische Besonderheit:</strong> Auf den Seychellen ist das Segeln bei Nacht behördlich untersagt. Dies erfordert eine sorgfältige Törnplanung, sodass Sie Ihren Ankerplatz immer vor Einbruch der Dunkelheit (ca. 17:00 Uhr) erreichen. Ankern sollte stets auf Sandgrund erfolgen, um die empfindlichen Korallenriffe zu schützen.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Beste Reisezeit: Wann Ihr Seychellen-Traum wahr wird</h3>
+              
+              <p className="mb-4">
+                Die Seychellen sind ganzjährig segelbar, doch bestimmte Perioden bieten optimale Bedingungen:
+              </p>
+              
+              <ul className="list-disc pl-6 mb-6 space-y-2">
+                <li><strong>April/Mai und Oktober/November (Übergangszeiten):</strong> Diese Monate gelten als die besten Reisezeiten. Die Winde sind moderater, das Wasser ist besonders klar (Sichtweiten bis zu 30 Meter), ideal zum Schnorcheln und Tauchen, und die Temperaturen sind angenehm.</li>
+                <li><strong>Juni bis September:</strong> Hervorragend für aktives Segeln dank des beständigen Südostpassats. Es ist trockener und kühler.</li>
+                <li><strong>Dezember bis März:</strong> Ruhigeres Segeln mit weniger Wind, aber potenziell mehr Regen und höherer Luftfeuchtigkeit.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit: Ein Katamaran-Paradies im Indischen Ozean</h3>
+              
+              <p className="mb-4">
+                Ein Yachtcharter auf den Seychellen ist eine unvergleichliche Erfahrung, die alle Sinne anspricht. Es ist die einzigartige Kombination aus karibischem Flair, exotischen Landschaften, abwechslungsreichen Segelbedingungen und einer entspannten Atmosphäre. Die Seychellen sind ein Revier, das zum Entschleunigen einlädt, zum Eintauchen in eine Welt voller natürlicher Wunder.
+              </p>
+              
+              <p className="mb-4">
+                Insbesondere die Wahl eines Katamarans maximiert Ihr Seychellen-Erlebnis. Sein geringer Tiefgang, die Stabilität, das großzügige Platzangebot und der hohe Komfort machen ihn zum idealen Begleiter für Crews und Familien, die die verborgenen Schätze dieser Inselwelt entdecken möchten. Erleben Sie die Seychellen vom Wasser aus – es wird ein Abenteuer, das Sie nie vergessen werden.
+              </p>
+              
+              <p className="mb-6">
+                Sind Sie bereit, die Segel zu setzen und Ihr Paradies auf Erden zu entdecken?
+              </p>
+              
+              <p className="text-lg font-semibold text-gray-800">
+                Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter auf den Seychellen an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
               </p>
             </div>
 
-            {/* Wetter & Windbedingungen */}
-            <div className="mb-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <Wind className="w-5 h-5 text-blue-600" />
-                Wetter & Windbedingungen: Segeln im tropischen Klima
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Die Seychellen haben ein tropisches Klima mit zwei Hauptjahreszeiten: die Trockenzeit (Mai-September) mit südöstlichen Passatwinden von 15-20 Knoten und die Regenzeit (Dezember-März) mit nordwestlichen Winden und häufigen kurzen Regenschauern.
-              </p>
-              <p className="text-gray-600">
-                Die besten Segelbedingungen herrschen in den Übergangszeiten (April-Mai, Oktober-November) mit mäßigen Winden von 10-15 Knoten und ruhiger See.
-              </p>
-            </div>
           </div>
         </div>
 
