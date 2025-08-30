@@ -179,37 +179,25 @@ const Maldives = () => {
               
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Die zentralen Atolle: Malé, Ari, Baa – Das Herz des Yachtcharters</h3>
               
-              <div className="space-y-4 mb-6">
-                <div className="p-4 rounded-lg border">
-                  <h4 className="font-bold text-gray-800 mb-2">Malé-Atoll (Nord- und Süd-Malé-Atoll)</h4>
-                  <p className="text-gray-700">Das Tor zu den Malediven und der wichtigste Ausgangspunkt für Yachtcharter. Hier befindet sich der internationale Flughafen und die Hauptstadt Malé. Die Atolle bieten eine Mischung aus belebten Inseln, luxuriösen Resorts und unzähligen Tauch- und Schnorchelplätzen.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h4 className="font-bold text-gray-800 mb-2">Ari-Atoll (Nord- und Süd-Ari-Atoll)</h4>
-                  <p className="text-gray-700">Berühmt für seine spektakulären Tauchplätze, insbesondere für Walhaie und Mantarochen. Das Ari-Atoll ist ein Paradies für Unterwasserfotografen und bietet eine Vielzahl von Sandbänken und unbewohnten Inseln für private Ankerstopps.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h4 className="font-bold text-gray-800 mb-2">Baa-Atoll</h4>
-                  <p className="text-gray-700">Ein UNESCO-Biosphärenreservat, bekannt für seine reiche marine Biodiversität. Hier befindet sich die Hanifaru Bay, einer der weltweit besten Orte, um Mantarochen und Walhaie in großen Gruppen zu beobachten (saisonal). Das Baa-Atoll ist ein Muss für Naturliebhaber.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h4 className="font-bold text-gray-800 mb-2">Raa-Atoll & Lhaviyani-Atoll</h4>
-                  <p className="text-gray-700">Nördlich des Baa-Atolls gelegen, bieten diese Atolle unberührte Riffe und eine ruhigere Atmosphäre, ideal für Segler, die Abgeschiedenheit suchen.</p>
-                </div>
-              </div>
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Malé-Atoll (Nord- und Süd-Malé-Atoll)</h4>
+              <p className="text-gray-700 mb-4">Das Tor zu den Malediven und der wichtigste Ausgangspunkt für Yachtcharter. Hier befindet sich der internationale Flughafen und die Hauptstadt Malé. Die Atolle bieten eine Mischung aus belebten Inseln, luxuriösen Resorts und unzähligen Tauch- und Schnorchelplätzen.</p>
+              
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Ari-Atoll (Nord- und Süd-Ari-Atoll)</h4>
+              <p className="text-gray-700 mb-4">Berühmt für seine spektakulären Tauchplätze, insbesondere für Walhaie und Mantarochen. Das Ari-Atoll ist ein Paradies für Unterwasserfotografen und bietet eine Vielzahl von Sandbänken und unbewohnten Inseln für private Ankerstopps.</p>
+              
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Baa-Atoll</h4>
+              <p className="text-gray-700 mb-4">Ein UNESCO-Biosphärenreservat, bekannt für seine reiche marine Biodiversität. Hier befindet sich die Hanifaru Bay, einer der weltweit besten Orte, um Mantarochen und Walhaie in großen Gruppen zu beobachten (saisonal). Das Baa-Atoll ist ein Muss für Naturliebhaber.</p>
+              
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Raa-Atoll & Lhaviyani-Atoll</h4>
+              <p className="text-gray-700 mb-6">Nördlich des Baa-Atolls gelegen, bieten diese Atolle unberührte Riffe und eine ruhigere Atmosphäre, ideal für Segler, die Abgeschiedenheit suchen.</p>
               
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Die südlichen Atolle: Dhaalu, Thaa, Laamu, Addu – Unberührte Schönheit</h3>
               
-              <div className="space-y-4 mb-8">
-                <div className="p-4 rounded-lg border">
-                  <h4 className="font-bold text-gray-800 mb-2">Dhaalu-Atoll</h4>
-                  <p className="text-gray-700">Ein aufstrebendes Atoll mit einigen luxuriösen Resorts und unberührten Tauchplätzen.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h4 className="font-bold text-gray-800 mb-2">Addu-Atoll</h4>
-                  <p className="text-gray-700">Das südlichste Atoll der Malediven, bekannt für seine einzigartige Herzform und seine historische Bedeutung im Zweiten Weltkrieg. Hier befindet sich der Flughafen Gan, der einen alternativen Ausgangspunkt für Törns im Süden bietet.</p>
-                </div>
-              </div>
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Dhaalu-Atoll</h4>
+              <p className="text-gray-700 mb-4">Ein aufstrebendes Atoll mit einigen luxuriösen Resorts und unberührten Tauchplätzen.</p>
+              
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Addu-Atoll</h4>
+              <p className="text-gray-700 mb-8">Das südlichste Atoll der Malediven, bekannt für seine einzigartige Herzform und seine historische Bedeutung im Zweiten Weltkrieg. Hier befindet sich der Flughafen Gan, der einen alternativen Ausgangspunkt für Törns im Süden bietet.</p>
 
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Erreichbarkeit: Ihr direkter Weg ins Inselparadies</h2>
               
@@ -236,25 +224,17 @@ const Maldives = () => {
                 Die maritime Infrastruktur auf den Malediven ist speziell auf den Tourismus und den Yachtcharter zugeschnitten.
               </p>
               
-              <div className="space-y-4 mb-6">
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Malé-Atoll</h3>
-                  <p className="text-gray-700">Die meisten Charteryachten haben ihren Heimathafen im Malé-Atoll, oft in der Nähe des internationalen Flughafens. Hier finden Sie moderne Marinas und Anlegestellen, die umfassende Dienstleistungen bieten.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Auswahl an Yachten</h3>
-                  <p className="text-gray-700">Das Angebot reicht von luxuriösen Segelyachten und geräumigen Katamaranen bis hin zu komfortablen Motoryachten. Die Flotten sind in der Regel sehr gut gewartet und für die Bedingungen des Reviers optimiert.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Besonderheiten des Service</h3>
-                  <p className="text-gray-700">Die Malediven sind bekannt für ihren erstklassigen Service. Bei einem Yachtcharter bedeutet das oft, dass Sie eine erfahrene Crew an Bord haben, die sich um Navigation, Verpflegung und alle Details kümmert. Bareboat-Charter sind auf den Malediven praktisch nicht verfügbar.</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Malé-Atoll</h3>
+              <p className="text-gray-700 mb-4">Die meisten Charteryachten haben ihren Heimathafen im Malé-Atoll, oft in der Nähe des internationalen Flughafens. Hier finden Sie moderne Marinas und Anlegestellen, die umfassende Dienstleistungen bieten.</p>
               
-              <div className="p-4 rounded-lg border mb-8">
-                <h4 className="font-bold text-gray-800 mb-2">Wichtiger Hinweis</h4>
-                <p className="text-gray-700">Die Komplexität der Navigation zwischen den Riffen, die Notwendigkeit lokaler Kenntnisse und die strengen Vorschriften erfordern die Anwesenheit eines erfahrenen Skippers und oft einer kompletten Crew. Dies garantiert Ihnen jedoch ein Höchstmaß an Sicherheit und Komfort.</p>
-              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Auswahl an Yachten</h3>
+              <p className="text-gray-700 mb-4">Das Angebot reicht von luxuriösen Segelyachten und geräumigen Katamaranen bis hin zu komfortablen Motoryachten. Die Flotten sind in der Regel sehr gut gewartet und für die Bedingungen des Reviers optimiert.</p>
+              
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Besonderheiten des Service</h3>
+              <p className="text-gray-700 mb-4">Die Malediven sind bekannt für ihren erstklassigen Service. Bei einem Yachtcharter bedeutet das oft, dass Sie eine erfahrene Crew an Bord haben, die sich um Navigation, Verpflegung und alle Details kümmert. Bareboat-Charter sind auf den Malediven praktisch nicht verfügbar.</p>
+              
+              <h4 className="text-xl font-bold text-gray-800 mb-3">Wichtiger Hinweis</h4>
+              <p className="text-gray-700 mb-8">Die Komplexität der Navigation zwischen den Riffen, die Notwendigkeit lokaler Kenntnisse und die strengen Vorschriften erfordern die Anwesenheit eines erfahrenen Skippers und oft einer kompletten Crew. Dies garantiert Ihnen jedoch ein Höchstmaß an Sicherheit und Komfort.</p>
 
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Beliebte Törnziele: Ein Kaleidoskop tropischer Schönheit</h2>
               
@@ -262,24 +242,17 @@ const Maldives = () => {
                 Ein Yachtcharter auf den Malediven ist ein ständiges Inselhopping-Abenteuer, bei dem jeder Tag neue Höhepunkte bereithält.
               </p>
               
-              <div className="space-y-4 mb-8">
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Malé-Atoll</h3>
-                  <p className="text-gray-700">Erkunden Sie die belebte Hauptstadt Malé mit ihren Märkten und Moscheen, oder entspannen Sie auf den Resort-Inseln. Die umliegenden Riffe bieten fantastische Schnorchel- und Tauchmöglichkeiten.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Ari-Atoll</h3>
-                  <p className="text-gray-700">Ein Paradies für Taucher. Besuchen Sie die Insel Dhigurah, bekannt für ihre Walhai-Sichtungen. Die unzähligen Sandbänke und unbewohnten Inseln bieten ideale Orte für private Picknicks und Sonnenbäder.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Baa-Atoll (UNESCO-Biosphärenreservat)</h3>
-                  <p className="text-gray-700">Ein Muss für Naturliebhaber. Die Hanifaru Bay ist weltberühmt für die saisonale Ansammlung von Mantarochen und Walhaien. Die Riffe des Atolls sind intakt und voller Leben.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Maafushi</h3>
-                  <p className="text-gray-700">Eine lokale Insel, die einen Einblick in das authentische maledivische Leben abseits der Resorts bietet. Hier können Sie lokale Märkte besuchen und mit Einheimischen in Kontakt treten.</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Malé-Atoll</h3>
+              <p className="text-gray-700 mb-4">Erkunden Sie die belebte Hauptstadt Malé mit ihren Märkten und Moscheen, oder entspannen Sie auf den Resort-Inseln. Die umliegenden Riffe bieten fantastische Schnorchel- und Tauchmöglichkeiten.</p>
+              
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Ari-Atoll</h3>
+              <p className="text-gray-700 mb-4">Ein Paradies für Taucher. Besuchen Sie die Insel Dhigurah, bekannt für ihre Walhai-Sichtungen. Die unzähligen Sandbänke und unbewohnten Inseln bieten ideale Orte für private Picknicks und Sonnenbäder.</p>
+              
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Baa-Atoll (UNESCO-Biosphärenreservat)</h3>
+              <p className="text-gray-700 mb-4">Ein Muss für Naturliebhaber. Die Hanifaru Bay ist weltberühmt für die saisonale Ansammlung von Mantarochen und Walhaien. Die Riffe des Atolls sind intakt und voller Leben.</p>
+              
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Maafushi</h3>
+              <p className="text-gray-700 mb-8">Eine lokale Insel, die einen Einblick in das authentische maledivische Leben abseits der Resorts bietet. Hier können Sie lokale Märkte besuchen und mit Einheimischen in Kontakt treten.</p>
               
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Ihr 7-Tage-Traumtörn in den zentralen Malediven-Atollen (ab Malé)</h2>
               
@@ -341,21 +314,14 @@ const Maldives = () => {
                 Die Malediven liegen nahe am Äquator und genießen ein tropisches Monsunklima, das ganzjährig warme Temperaturen um 28-30°C bietet. Die Winde werden von zwei Monsunperioden bestimmt:
               </p>
               
-              <div className="space-y-4 mb-6">
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Nordost-Monsun (Iruvai) – Trockenzeit (Dezember bis April)</h3>
-                  <p className="text-gray-700">Dies ist die Hauptsaison und die beste Reisezeit für die Malediven. Die Winde wehen aus Nordost mit meist 10-15 Knoten, das Meer ist ruhig, und der Himmel ist klar und sonnig. Die Sicht unter Wasser ist hervorragend.</p>
-                </div>
-                <div className="p-4 rounded-lg border">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Südwest-Monsun (Hulhangu) – Regenzeit (Mai bis November)</h3>
-                  <p className="text-gray-700">In dieser Zeit wehen die Winde aus Südwest, oft mit 15-20 Knoten. Es kann zu vermehrten, aber meist kurzen und intensiven Regenschauern kommen, gefolgt von Sonnenschein. Das Meer kann etwas rauer sein, aber das Segeln ist immer noch angenehm. Die Sicht unter Wasser kann durch Planktonblüten beeinträchtigt sein, was aber wiederum die Chance auf Mantas und Walhaie erhöht.</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Nordost-Monsun (Iruvai) – Trockenzeit (Dezember bis April)</h3>
+              <p className="text-gray-700 mb-4">Dies ist die Hauptsaison und die beste Reisezeit für die Malediven. Die Winde wehen aus Nordost mit meist 10-15 Knoten, das Meer ist ruhig, und der Himmel ist klar und sonnig. Die Sicht unter Wasser ist hervorragend.</p>
               
-              <div className="p-4 rounded-lg border mb-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Revier-Eignung für Erfahrungsstufen</h3>
-                <p className="text-gray-700">Die Malediven sind aufgrund der komplexen Riffstrukturen und der Notwendigkeit lokaler Kenntnisse kein klassisches Bareboat-Revier. Crewed-Charter mit erfahrenem Skipper und oft einer kompletten Crew sind hier Standard. Dies macht das Revier jedoch für alle Erfahrungsstufen zugänglich – vom Segelneuling bis zum erfahrenen Skipper, der sich entspannt zurücklehnen möchte.</p>
-              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Südwest-Monsun (Hulhangu) – Regenzeit (Mai bis November)</h3>
+              <p className="text-gray-700 mb-4">In dieser Zeit wehen die Winde aus Südwest, oft mit 15-20 Knoten. Es kann zu vermehrten, aber meist kurzen und intensiven Regenschauern kommen, gefolgt von Sonnenschein. Das Meer kann etwas rauer sein, aber das Segeln ist immer noch angenehm. Die Sicht unter Wasser kann durch Planktonblüten beeinträchtigt sein, was aber wiederum die Chance auf Mantas und Walhaie erhöht.</p>
+              
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Revier-Eignung für Erfahrungsstufen</h3>
+              <p className="text-gray-700 mb-8">Die Malediven sind aufgrund der komplexen Riffstrukturen und der Notwendigkeit lokaler Kenntnisse kein klassisches Bareboat-Revier. Crewed-Charter mit erfahrenem Skipper und oft einer kompletten Crew sind hier Standard. Dies macht das Revier jedoch für alle Erfahrungsstufen zugänglich – vom Segelneuling bis zum erfahrenen Skipper, der sich entspannt zurücklehnen möchte.</p>
 
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Beste Reisezeit: Wann Ihr Malediven-Traum wahr wird</h2>
               
