@@ -279,14 +279,26 @@ const Seychelles = () => {
                 Sind Sie bereit, die Segel zu setzen und Ihr Paradies auf Erden zu entdecken?
               </p>
               
-              <p className="text-lg font-semibold text-gray-800">
-                Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter auf den Seychellen an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
-              </p>
             </div>
 
           </div>
         </div>
 
+        {/* CTA Section */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-blue-50 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Bereit für Ihren Seychellen-Charter?</h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter auf den Seychellen an! Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-blue-600 text-white hover:bg-blue-700"
+            >
+              Jetzt Seychellen Charter anfragen
+            </Button>
+          </div>
+        </div>
 
         {/* FAQ Section */}
         <div className="max-w-4xl mx-auto mb-12">
