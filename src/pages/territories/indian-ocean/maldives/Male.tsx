@@ -6,6 +6,14 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import maldivesSailing from "@/assets/maldives-sailing.jpg";
 const Male = () => {
   useEffect(() => {
@@ -54,12 +62,59 @@ const Male = () => {
         </Link>
       </div>
 
+      {/* Breadcrumb Navigation */}
+      <div className="sticky top-20 z-10 bg-white border-b border-gray-200">
+        <div className="container mx-auto px-4 py-3">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Start</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/#reviere">Reviere</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/indischer-ozean">Indischer Ozean</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/indischer-ozean/malediven">Malediven</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Malé</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => <Card key={index} className="text-center">
-              
-            </Card>)}
+          {quickFacts.map((fact, index) => (
+            <Card key={index} className="text-center">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-cyan-600">{fact.icon}</div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">{fact.label}</p>
+                    <p className="font-semibold">{fact.value}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         {/* Description */}
