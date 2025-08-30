@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import anseSourceArgent from "@/assets/anse-source-argent.png";
 
 const Mahe = () => {
   useEffect(() => {
@@ -130,7 +131,7 @@ const Mahe = () => {
             {/* Anse Source d'Argent Image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/23391a09-873b-4fa2-87c7-156845817f98.png" 
+                src={anseSourceArgent} 
                 alt="Anse Source d'Argent auf La Digue mit Granitfelsen"
                 className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
               />
