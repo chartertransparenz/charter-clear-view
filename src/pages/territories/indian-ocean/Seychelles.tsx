@@ -124,47 +124,38 @@ const Seychelles = () => {
               Beim Yachtcharter auf den Seychellen stehen vor allem Katamarane im Vordergrund, da sie aufgrund ihrer geringen Tiefgangs ideal für das Navigieren in den teilweise seichten Gewässern rund um die Korallenriffe geeignet sind. Die modernen Charter-Katamarane bieten zudem den Komfort und Platz, der für entspannte Tage in diesem tropischen Paradies erforderlich ist.
             </p>
 
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mb-8">
               Die Seychellen zeichnen sich durch ihre politische Stabilität, ausgezeichnete touristische Infrastruktur und die Gastfreundschaft der kreolischen Bevölkerung aus. Das ganzjährig warme tropische Klima mit Wassertemperaturen zwischen 26-29°C macht die Seychellen zu einem perfekten Segelrevier für alle, die exotische Natur, traumhafte Strände und entspanntes Segeln in einer der schönsten Inselwelten der Erde erleben möchten.
             </p>
-          </div>
-        </div>
 
-        {/* Erreichbarkeit und Wetter in Cards */}
-        <div className="grid gap-6 md:grid-cols-2 mb-12">
-          <Card className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+            {/* Erreichbarkeit */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
                 <Plane className="w-5 h-5 text-blue-600" />
-                Erreichbarkeit
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
+                Erreichbarkeit: Ihr direkter Weg ins Inselparadies
+              </h3>
               <p className="text-gray-600 mb-4">
                 Die Seychellen sind über den internationalen Flughafen Mahé (SEZ) erreichbar, der etwa 45 Flugminuten von der Hauptstadt Victoria entfernt liegt. Direktflüge gibt es von Europa (Emirates, Qatar Airways, Turkish Airlines) mit einer Flugzeit von etwa 9-11 Stunden.
               </p>
               <p className="text-gray-600">
                 Die meisten Charterbasen befinden sich in der Eden Bleu Marina auf Mahé oder im Praslin Island Marina. Transfer vom Flughafen zur Marina dauert etwa 45 Minuten per Taxi oder 15 Minuten per Helikopter.
               </p>
-            </CardContent>
-          </Card>
+            </div>
 
-          <Card className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+            {/* Wetter & Windbedingungen */}
+            <div className="mb-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
                 <Wind className="w-5 h-5 text-blue-600" />
-                Wetter & Windbedingungen
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
+                Wetter & Windbedingungen: Segeln im tropischen Klima
+              </h3>
               <p className="text-gray-600 mb-4">
                 Die Seychellen haben ein tropisches Klima mit zwei Hauptjahreszeiten: die Trockenzeit (Mai-September) mit südöstlichen Passatwinden von 15-20 Knoten und die Regenzeit (Dezember-März) mit nordwestlichen Winden und häufigen kurzen Regenschauern.
               </p>
               <p className="text-gray-600">
                 Die besten Segelbedingungen herrschen in den Übergangszeiten (April-Mai, Oktober-November) mit mäßigen Winden von 10-15 Knoten und ruhiger See.
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
 
         {/* 7-Tage-Törnvorschlag */}
