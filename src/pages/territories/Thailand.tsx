@@ -90,13 +90,8 @@ const Thailand = () => {
           </p>
         </div>
         <Link 
-          to="/" 
+          to="/reviere/indischer-ozean/asien" 
           className="absolute top-6 left-6"
-          onClick={() => {
-            setTimeout(() => {
-              document.getElementById('reviere')?.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-          }}
         >
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -120,6 +115,22 @@ const Thailand = () => {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/indischer-ozean">Indischer Ozean</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/indischer-ozean/asien">Asien</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
                 <ChevronRight className="h-4 w-4" />
