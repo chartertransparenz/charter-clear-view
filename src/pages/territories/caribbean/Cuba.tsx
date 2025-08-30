@@ -198,7 +198,7 @@ const Cuba = () => {
 
               {/* Havanna-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/dc994272-770a-4f1f-8469-8ca91cbb59f5.png" alt="Havanna mit bunten Oldtimern und pastellfarbenen Fassaden" className="w-full h-80 md:h-96 object-contain bg-gray-100" />
+                <img src="/lovable-uploads/dc994272-770a-4f1f-8469-8ca91cbb59f5.png" alt="Havanna mit bunten Oldtimern und pastellfarbenen Fassaden" className="w-full h-64 md:h-80 object-cover" />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
                     Erleben Sie Havanna, wo bunte Oldtimer wie rollende Zeitkapseln an pastellfarbenen Fassaden vorbeigleiten und jede Fahrt sich anfühlt wie eine Filmszene.
