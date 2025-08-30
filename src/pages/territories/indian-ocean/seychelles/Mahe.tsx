@@ -85,7 +85,7 @@ const Mahe = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={destinationSeychelles}
+          src="/lovable-uploads/ea72cf43-32c6-428b-aada-6f6b326b8052.png"
           alt="Mahé Seychellen"
           className="w-full h-full object-cover"
         />
