@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import destinationSeychelles from "@/assets/destination-seychelles.jpg";
+
 
 const Mahe = () => {
   useEffect(() => {
