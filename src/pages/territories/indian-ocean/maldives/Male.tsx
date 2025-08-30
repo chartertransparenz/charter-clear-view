@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Crown } from "lucide-react";
+import { ArrowLeft, MapPin, Users, Waves, Calendar, Crown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -28,29 +28,7 @@ const Male = () => {
     label: "Chartertyp",
     value: "Luxus-Katamaran"
   }];
-  const marinas = [{
-    name: "Male Marina",
-    description: "Internationale Marina nahe dem Flughafen",
-    facilities: ["Flughafen Transfer", "Provisioning", "Zoll Abfertigung", "Fuel"]
-  }, {
-    name: "Hulhumalé Marina",
-    description: "Moderne Marina auf der Flughafeninsel",
-    facilities: ["Neue Infrastruktur", "24h Service", "Resorts nahe", "Wassertaxi"]
-  }];
   const highlights = ["1200 Koralleninseln", "Kristallklare Lagunen", "Luxus-Resort Hopping", "Weltklasse Schnorcheln", "Manta Ray & Walhai Spots", "Unberührte Korallenriffe", "Overwater Bungalows", "Absolute Privatsphäre"];
-  const attractions = [{
-    name: "Ari Atoll",
-    description: "Berühmt für Walhai-Begegnungen",
-    type: "Marine Life"
-  }, {
-    name: "Baa Atoll",
-    description: "UNESCO Biosphärenreservat",
-    type: "Natur"
-  }, {
-    name: "Resort Islands",
-    description: "Exklusive Luxus-Resorts",
-    type: "Luxury"
-  }];
   return <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
       <Navigation />
       
@@ -105,45 +83,6 @@ const Male = () => {
           </div>
         </div>
 
-        {/* Marinas */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Häfen</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {marinas.map((marina, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Anchor className="w-5 h-5 text-cyan-600" />
-                    <h3 className="text-xl font-semibold text-gray-800">{marina.name}</h3>
-                  </div>
-                  <p className="text-gray-600 mb-4">{marina.description}</p>
-                  <div className="space-y-2">
-                    <div className="text-sm font-medium text-gray-700">Services:</div>
-                    <div className="flex flex-wrap gap-2">
-                      {marina.facilities.map((facility, idx) => <Badge key={idx} variant="secondary" className="text-xs">
-                          {facility}
-                        </Badge>)}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
-
-        {/* Attractions */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Ziele</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            {attractions.map((attraction, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="mb-3">
-                    <Badge className="mb-2">{attraction.type}</Badge>
-                    <h3 className="text-lg font-semibold text-gray-800">{attraction.name}</h3>
-                  </div>
-                  <p className="text-gray-600">{attraction.description}</p>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
 
         {/* Highlights */}
         
