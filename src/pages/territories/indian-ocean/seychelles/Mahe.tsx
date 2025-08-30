@@ -312,11 +312,6 @@ const Mahe = () => {
                     ))}
                   </div>
                 </div>
-                <img 
-                  src="/lovable-uploads/5a74279f-c55e-4e22-9e59-9dba920407ed.png" 
-                  alt="Eden Island Marina Luftaufnahme mit charakteristischen roten Dächern" 
-                  className="w-full h-48 object-cover rounded-lg"
-                />
               </CardContent>
             </Card>
             
