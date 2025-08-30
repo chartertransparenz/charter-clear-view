@@ -138,13 +138,10 @@ const WhitsundayIslands = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <div className="flex items-center gap-2 mb-4">
               <Heart className="w-5 h-5 text-orange-600" />
-              <h2 className="text-2xl font-bold text-gray-800">Charter-Standort Whitsunday Islands</h2>
+              <h2 className="text-2xl font-bold text-gray-800">Yachtcharter Whitsunday Islands – Ihr Segelabenteuer im Herzen des Great Barrier Reef</h2>
             </div>
-            <p className="text-lg text-gray-600 mb-4">
-              Die Whitsunday Islands sind Australiens Premier-Segelrevier und Heimat von 
-              Whitehaven Beach, dem weißesten Strand der Welt. Inmitten des Great Barrier 
-              Reef gelegen, bieten die 74 tropischen Inseln perfekte Segelbedingungen 
-              und Weltklasse-Schnorcheln.
+            <p className="text-lg text-gray-600 mb-6">
+              Die Whitsunday Islands sind mehr als eine tropische Destination – sie sind ein Traumrevier für Yachtcharter am Great Barrier Reef. Zwischen 74 Inseln erwarten Sie leuchtend türkisfarbenes Wasser, palmengesäumte Strände und sichere Ankerbuchten in geschützten Passagen. Airlie Beach gilt als lebendiger Ausgangshafen mit hervorragender Infrastruktur und kurzen Distanzen zu den Highlights. Ob Bareboat mit Segelyacht oder Katamaran, oder mit Skipper an Bord: Inselhopping Whitsundays bedeutet entspanntes Segeln in Australien – mit ikonischen Motiven wie Whitehaven Beach und dem spektakulären Hill Inlet.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-3 bg-orange-50 rounded-lg">
@@ -171,19 +168,144 @@ const WhitsundayIslands = () => {
           </div>
         </div>
 
+        {/* Erreichbarkeit */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Erreichbarkeit</h3>
+            <p className="text-gray-600">
+              Sie erreichen die Whitsundays bequem per Flug nach Whitsunday Coast Airport (Proserpine, PPP) oder Hamilton Island (HTI). Von PPP sind es rund 30–40 Minuten Transfer zur Coral Sea Marina bzw. zum Port of Airlie in Airlie Beach. Wer auf Hamilton Island landet, spaziert wenige Minuten zur Hamilton Island Marina – ideal, wenn Sie direkt an Bord gehen möchten.
+            </p>
+          </div>
+        </div>
+
+        {/* Besonderheiten des Reviers */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Besonderheiten des Reviers</h3>
+            <p className="text-gray-600">
+              Das Revier ist von starkem Tidenhub geprägt. Strömungen in Engstellen und Riffen verlangen Aufmerksamkeit bei Strom- und Kursplanung sowie beim Timing von Ein- und Ausfahrten in Ankerbuchten. Zugleich bieten die Inseln lange Leeseiten und geschützte Gewässer, die das Navigieren angenehm machen. Die Tierwelt ist einzigartig: Mit etwas Glück beobachten Sie Buckelwale (saisonal), Meeresschildkröten, Delfine und farbenprächtige Korallenriffe – perfekte Bedingungen zum Schnorcheln und Tauchen. Die vorherrschenden südöstlichen Passatwinde sorgen meist für konstante, moderate Segelbedingungen.
+            </p>
+          </div>
+        </div>
+
+        {/* Vorschriften und Regeln */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Vorschriften und Regeln</h3>
+            <p className="text-gray-600">
+              Die Whitsundays liegen im Great Barrier Reef Marine Park. Beachten Sie die Zonierung: In ausgewiesenen Schutzbereichen gelten Ankerverbote, es sind Mooringbojen zu nutzen oder Mindestabstände einzuhalten. Das Berühren von Korallen und das Absetzen von Ankern in sensiblen Habitaten ist strikt zu vermeiden. Informieren Sie sich vor dem Ablegen über aktuelle Marine-Park-Maps, Mooringkapazitäten und No-anchoring-Zonen. Allgemein gilt: Abfall nur in Häfen entsorgen, Abwasser nicht einleiten, Geschwindigkeit in Buchten und Hafennähe reduzieren und Wildlife respektieren (kein Füttern, angemessene Distanz).
+            </p>
+          </div>
+        </div>
+
+        {/* Für wen ist das Revier geeignet? */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Für wen ist das Revier geeignet?</h3>
+            <p className="text-gray-600">
+              Die Whitsundays sind leicht bis mittelschwer und damit ideal für Familien, Paare und Genießer, die kurze Etappen und sichere Ankerplätze schätzen. Gleichzeitig bietet die Tidennavigation genügend Anspruch für erfahrene Skipper, die Strömungstaktik, Passagenplanung und präzises Anker-Handling lieben. Katamarane punkten mit Stabilität, Raum und geringem Tiefgang in flachen Buchten; Segelyachten glänzen bei den Passatwinden mit effizientem Vorankommen.
+            </p>
+          </div>
+        </div>
+
         {/* Marinas */}
-        
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-6">Marinas</h3>
+            <p className="text-gray-600 mb-6">
+              Coral Sea Marina (Airlie Beach) ist der Hauptdreh- und Angelpunkt für Yachtcharter Whitsundays: moderne Stege, Wasser/Strom, Fuel, Pump-out, Chandlery, WLAN, Gastronomie – dazu kurze Wege zu Woolworths und Coles. Port of Airlie bietet ebenfalls vollwertige Charter-Infrastruktur mit Shops und Restaurants direkt am Becken. Auf der Insel selbst empfängt Sie die Hamilton Island Marina mit exzellenten Services, Resorts, Restaurants und schnellen Wegen zu Stränden und Wanderwegen – ideal, wenn Sie die Crew bequem per Inselflug bündeln möchten.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {marinas.map((marina, index) => (
+                <Card key={index} className="h-full">
+                  <CardContent className="p-6">
+                    <h4 className="font-semibold text-gray-800 mb-2">{marina.name}</h4>
+                    <p className="text-sm text-gray-600 mb-4">{marina.description}</p>
+                    <ul className="space-y-1">
+                      {marina.amenities.map((amenity, idx) => (
+                        <li key={idx} className="text-sm text-gray-600 flex items-center">
+                          <Anchor className="w-3 h-3 text-orange-600 mr-2 flex-shrink-0" />
+                          {amenity}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
 
-        {/* Inseln */}
-        
+        {/* Törnziele */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Törnziele</h3>
+            <p className="text-gray-600 mb-6">
+              Whitsunday Island mit Whitehaven Beach ist der ikonische Höhepunkt: feiner, schneeweißer Sand, klares Wasser und das berühmte Hill Inlet mit seinen Meeresarmen, die bei Tidenwechsel atemberaubende Muster zeichnen. Hook Island lockt mit der geschützten Nara Inlet (beliebt für die Nacht, Wanderung zu Höhlenmalereien) und Butterfly Bay mit hervorragenden Mooringfeldern zum Schnorcheln. Langford Island bietet einen malerischen Sandspit – ideal für einen Badestopp bei auflaufendem Wasser. Weitere Favoriten sind Cateran Bay (Border Island), Stonehaven (Hook Island West) und die Cid Harbour-Region, die mit weiten Ankerbuchten und guten Wanderoptionen überzeugt.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {islands.map((island, index) => (
+                <Card key={index} className="h-full">
+                  <CardContent className="p-6">
+                    <h4 className="font-semibold text-gray-800 mb-2">{island.name}</h4>
+                    <p className="text-sm text-gray-600">{island.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
 
-        {/* Aktivitäten */}
-        
+        {/* Routenempfehlung */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Routenempfehlung (7 Tage)</h3>
+            <p className="text-gray-600">
+              Start Airlie Beach → Nara Inlet → Butterfly Bay → Blue Pearl Bay (Hayman) → Whitehaven Beach/Hill Inlet → Cid Harbour/Goldsmith-Region → Airlie Beach. Planen Sie kurze Distanzen (typisch 8–20 sm pro Tag) und segeln Sie mit den Passatwinden am Vormittag; nutzen Sie die Tide für enge Passagen und wählen Sie abends eine Ankerbucht mit Leeschutz.
+            </p>
+          </div>
+        </div>
 
         {/* Distanzen */}
-        
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-6">Distanzen</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {distances.map((distance, index) => (
+                <div key={index} className="p-4 bg-orange-50 rounded-lg text-center">
+                  <div className="font-semibold text-gray-800">{distance.destination}</div>
+                  <div className="text-orange-600 font-bold">{distance.distance}</div>
+                  <div className="text-sm text-gray-600">{distance.time}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* Highlights */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-6">Highlights</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {highlights.map((highlight, index) => (
+                <div key={index} className="flex items-center p-3 bg-orange-50 rounded-lg">
+                  <Heart className="w-4 h-4 text-orange-600 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">{highlight}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Fazit */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit</h3>
+            <p className="text-gray-600">
+              Mit Yachtcharter Whitsundays kombinieren Sie Great Barrier Reef, Airlie Beach-Komfort und abwechslungsreiches Inselhopping Whitsundays. Ob Bareboat, mit Skipper, Segelyacht oder Katamaran – dieses Revier verbindet tropische Bilderbuchkulissen mit planbaren Segeltagen und unvergesslichen Erlebnissen über und unter Wasser.
+            </p>
+          </div>
+        </div>
         
 
         {/* CTA */}
