@@ -203,9 +203,9 @@ const Seychelles = () => {
               </p>
               
               <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Mahé:</strong> Die größte Insel und das Tor zu den Seychellen. Hier befindet sich der internationale Flughafen und die meisten Charterbasen. Mahé bietet eine Mischung aus lebhaften Städten (Victoria, die Hauptstadt), beeindruckenden Bergen, Teeplantagen und wunderschönen Stränden.</li>
-                <li><strong>Praslin:</strong> Die zweitgrößte Insel, berühmt für das UNESCO-Welterbe Vallée de Mai, Heimat der einzigartigen Coco de Mer Palme. Praslin ist ein exzellenter Ausgangspunkt für Törns zu den umliegenden Inseln.</li>
-                <li><strong>La Digue:</strong> Eine der malerischsten Inseln, bekannt für den Anse Source d'Argent, einen der meistfotografierten Strände der Welt mit seinen riesigen Granitfelsen. La Digue erkundet man am besten mit dem Fahrrad.</li>
+                <li><strong><Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-primary hover:underline">Mahé</Link>:</strong> Die größte Insel und das Tor zu den Seychellen. Hier befindet sich der internationale Flughafen und die meisten Charterbasen. Mahé bietet eine Mischung aus lebhaften Städten (Victoria, die Hauptstadt), beeindruckenden Bergen, Teeplantagen und wunderschönen Stränden.</li>
+                <li><strong><Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link>:</strong> Die zweitgrößte Insel, berühmt für das UNESCO-Welterbe Vallée de Mai, Heimat der einzigartigen Coco de Mer Palme. Praslin ist ein exzellenter Ausgangspunkt für Törns zu den umliegenden Inseln.</li>
+                <li><strong><Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link>:</strong> Eine der malerischsten Inseln, bekannt für den Anse Source d'Argent, einen der meistfotografierten Strände der Welt mit seinen riesigen Granitfelsen. La Digue erkundet man am besten mit dem Fahrrad.</li>
                 <li><strong>Silhouette Island:</strong> Eine große, bergige Insel, die größtenteils unberührt ist und einen Nationalpark beherbergt. Ideal für Wanderungen und das Erleben unberührter Natur.</li>
                 <li><strong>Curieuse Island:</strong> Bekannt für ihre Riesenschildkröten und Mangrovenwälder.</li>
                 <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet.</li>
@@ -256,11 +256,11 @@ const Seychelles = () => {
               
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Sainte Anne Marine National Park (Mahé):</strong> Nur einen Katzensprung von Mahé entfernt, ist dieser Marinepark ein Muss für Schnorchel- und Tauchbegeisterte. Das kristallklare Wasser und die bunte Unterwasserwelt sind atemberaubend. Hier können Sie sicher ankern und die Ruhe genießen.</li>
-                <li><strong>Beau Vallon (Mahé):</strong> Ein langer, belebter Sandstrand mit Restaurants und Wassersportmöglichkeiten. Ein guter Ort für einen Landgang und das Eintauchen ins lokale Leben.</li>
-                <li><strong>Anse Lazio (Praslin):</strong> Oft als einer der schönsten Strände der Welt bezeichnet, begeistert Anse Lazio mit seinem puderfeinen Sand, dem türkisfarbenen Wasser und den charakteristischen Granitfelsen. Perfekt für einen ausgedehnten Badestopp.</li>
+                <li><strong>Beau Vallon (<Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-primary hover:underline">Mahé</Link>):</strong> Ein langer, belebter Sandstrand mit Restaurants und Wassersportmöglichkeiten. Ein guter Ort für einen Landgang und das Eintauchen ins lokale Leben.</li>
+                <li><strong>Anse Lazio (<Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link>):</strong> Oft als einer der schönsten Strände der Welt bezeichnet, begeistert Anse Lazio mit seinem puderfeinen Sand, dem türkisfarbenen Wasser und den charakteristischen Granitfelsen. Perfekt für einen ausgedehnten Badestopp.</li>
                 <li><strong>Curieuse Island:</strong> Ein Naturreservat, das für seine freilebenden Riesenschildkröten bekannt ist. Hier können Sie an Land gehen, die Schildkröten beobachten und durch Mangrovenwälder wandern.</li>
                 <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet, das nur unter Führung besucht werden darf. Ein Paradies für Ornithologen.</li>
-                <li><strong>La Digue:</strong> Mit dem Fahrrad erkunden Sie die Insel und besuchen den berühmten Anse Source d'Argent, wo riesige Granitfelsen den Strand säumen und ein einzigartiges Fotomotiv bieten.</li>
+                <li><strong><Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link>:</strong> Mit dem Fahrrad erkunden Sie die Insel und besuchen den berühmten Anse Source d'Argent, wo riesige Granitfelsen den Strand säumen und ein einzigartiges Fotomotiv bieten.</li>
                 <li><strong>Die kleinen Inseln:</strong> Entdecken Sie weitere unbewohnte Inseln wie Grande Soeur, Petite Soeur oder Coco Island mit ihren fantastischen Schnorchelplätzen und unberührten Stränden.</li>
               </ul>
               
@@ -298,7 +298,7 @@ const Seychelles = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-6">7-Tage-Törnvorschlag Seychellen</h3>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 1: Mahé - Eden Bleu Marina</h4>
+                <h4 className="font-bold text-gray-800">Tag 1: <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-primary hover:underline">Mahé</Link> - Eden Bleu Marina</h4>
                 <p className="text-gray-600">Übernahme der Yacht, Einweisung und erste Übernachtung in der Marina. Einkauf und Proviantierung für die Woche.</p>
               </div>
               
@@ -308,28 +308,28 @@ const Seychelles = () => {
               </div>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 3: St. Anne - Praslin/Baie Sainte Anne (22 SM)</h4>
-                <p className="text-gray-600">Segeln nach Praslin. Besuch des berühmten UNESCO-Welterbes Vallée de Mai mit den seltenen Coco de Mer Palmen.</p>
+                <h4 className="font-bold text-gray-800">Tag 3: St. Anne - <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link>/Baie Sainte Anne (22 SM)</h4>
+                <p className="text-gray-600">Segeln nach <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link>. Besuch des berühmten UNESCO-Welterbes Vallée de Mai mit den seltenen Coco de Mer Palmen.</p>
               </div>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 4: Praslin - La Digue (6 SM)</h4>
-                <p className="text-gray-600">Kurzer Schlag zur malerischen La Digue. Besuch der berühmten Anse Source d'Argent mit den ikonischen Granitfelsen.</p>
+                <h4 className="font-bold text-gray-800">Tag 4: <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> - <Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link> (6 SM)</h4>
+                <p className="text-gray-600">Kurzer Schlag zur malerischen <Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link>. Besuch der berühmten Anse Source d'Argent mit den ikonischen Granitfelsen.</p>
               </div>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 5: La Digue - Cousin Island - Praslin (15 SM)</h4>
-                <p className="text-gray-600">Besuch der Vogelschutzinsel Cousin Island am Morgen, dann weiter nach Praslin zum Anse Volbert Beach.</p>
+                <h4 className="font-bold text-gray-800">Tag 5: <Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link> - Cousin Island - <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> (15 SM)</h4>
+                <p className="text-gray-600">Besuch der Vogelschutzinsel Cousin Island am Morgen, dann weiter nach <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> zum Anse Volbert Beach.</p>
               </div>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 6: Praslin - Curieuse Island - St. Pierre (10 SM)</h4>
+                <h4 className="font-bold text-gray-800">Tag 6: <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> - Curieuse Island - St. Pierre (10 SM)</h4>
                 <p className="text-gray-600">Ausflug zur Curieuse Island mit Riesenschildkröten-Beobachtung. Schnorcheln bei St. Pierre Island.</p>
               </div>
               
               <div className="mb-6 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 7: St. Pierre - Mahé/Eden Bleu (25 SM)</h4>
-                <p className="text-gray-600">Rücksegeln nach Mahé mit letztem Stopp in einer geschützten Bucht vor der Yacht-Rückgabe am nächsten Morgen.</p>
+                <h4 className="font-bold text-gray-800">Tag 7: St. Pierre - <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-primary hover:underline">Mahé</Link>/Eden Bleu (25 SM)</h4>
+                <p className="text-gray-600">Rücksegeln nach <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-primary hover:underline">Mahé</Link> mit letztem Stopp in einer geschützten Bucht vor der Yacht-Rückgabe am nächsten Morgen.</p>
               </div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit: Ein Katamaran-Paradies im Indischen Ozean</h3>
