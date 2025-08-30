@@ -224,23 +224,52 @@ const Mahe = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Häfen</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {marinas.map((marina, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Anchor className="w-5 h-5 text-blue-600" />
-                    <h3 className="text-xl font-semibold text-gray-800">{marina.name}</h3>
+            {/* Eden Bleu Marina with image */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Anchor className="w-5 h-5 text-blue-600" />
+                  <h3 className="text-xl font-semibold text-gray-800">Eden Bleu Marina</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Moderne Marina nahe dem Flughafen</p>
+                <div className="space-y-2 mb-4">
+                  <div className="text-sm font-medium text-gray-700">Services:</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Premium Service", "Flughafen nahe", "Shopping", "Restaurants"].map((facility, idx) => (
+                      <Badge key={idx} variant="secondary" className="text-xs">
+                        {facility}
+                      </Badge>
+                    ))}
                   </div>
-                  <p className="text-gray-600 mb-4">{marina.description}</p>
-                  <div className="space-y-2">
-                    <div className="text-sm font-medium text-gray-700">Services:</div>
-                    <div className="flex flex-wrap gap-2">
-                      {marina.facilities.map((facility, idx) => <Badge key={idx} variant="secondary" className="text-xs">
-                          {facility}
-                        </Badge>)}
-                    </div>
+                </div>
+                <img 
+                  src="/src/assets/eden-bleu-marina.jpg" 
+                  alt="Eden Bleu Marina Luftaufnahme" 
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </CardContent>
+            </Card>
+            
+            {/* Port Victoria */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Anchor className="w-5 h-5 text-blue-600" />
+                  <h3 className="text-xl font-semibold text-gray-800">Port Victoria</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Haupthafen von Victoria</p>
+                <div className="space-y-2">
+                  <div className="text-sm font-medium text-gray-700">Services:</div>
+                  <div className="flex flex-wrap gap-2">
+                    {["Stadtzentrum", "Provisioning", "Lokale Kultur", "Märkte"].map((facility, idx) => (
+                      <Badge key={idx} variant="secondary" className="text-xs">
+                        {facility}
+                      </Badge>
+                    ))}
                   </div>
-                </CardContent>
-              </Card>)}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
