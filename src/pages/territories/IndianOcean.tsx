@@ -30,7 +30,10 @@ const IndianOcean = () => {
       name: "Seychellen", 
       link: "/reviere/indischer-ozean/seychellen",
       description: "115 Granitinseln im Paradies",
-      areas: ["Mahé", "Praslin", "La Digue"]
+      areas: [
+        { name: "Mahé", link: "/reviere/indischer-ozean/seychellen/mahe" },
+        { name: "Praslin", link: "/reviere/indischer-ozean/seychellen/praslin" }
+      ]
     },
     { 
       name: "Malediven", 
@@ -137,7 +140,17 @@ const IndianOcean = () => {
                       {region.areas.map((area, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-sm">
                           <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
-                          <span className="text-gray-600 group-hover:text-gray-700">{area}</span>
+                          {typeof area === 'object' && area.link ? (
+                            <Link 
+                              to={area.link} 
+                              className="text-gray-600 group-hover:text-orange-600 hover:text-orange-700 transition-colors duration-200"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              {area.name}
+                            </Link>
+                          ) : (
+                            <span className="text-gray-600 group-hover:text-gray-700">{typeof area === 'string' ? area : area.name}</span>
+                          )}
                         </div>
                       ))}
                     </div>
