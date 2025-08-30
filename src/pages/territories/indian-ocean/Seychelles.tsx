@@ -228,6 +228,43 @@ const Seychelles = () => {
                 <li><strong>Dezember bis März:</strong> Ruhigeres Segeln mit weniger Wind, aber potenziell mehr Regen und höherer Luftfeuchtigkeit.</li>
               </ul>
 
+              <h3 className="text-xl font-bold text-gray-800 mb-6">7-Tage-Törnvorschlag Seychellen</h3>
+              
+              <div className="mb-4 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 1: Mahé - Eden Bleu Marina</h4>
+                <p className="text-gray-600">Übernahme der Yacht, Einweisung und erste Übernachtung in der Marina. Einkauf und Proviantierung für die Woche.</p>
+              </div>
+              
+              <div className="mb-4 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 2: Mahé - St. Anne Island (8 SM)</h4>
+                <p className="text-gray-600">Kurzer erster Schlag zur geschützten St. Anne Island. Schnorcheln im Meerespark und Besuch des Luxury Resorts.</p>
+              </div>
+              
+              <div className="mb-4 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 3: St. Anne - Praslin/Baie Sainte Anne (22 SM)</h4>
+                <p className="text-gray-600">Segeln nach Praslin. Besuch des berühmten UNESCO-Welterbes Vallée de Mai mit den seltenen Coco de Mer Palmen.</p>
+              </div>
+              
+              <div className="mb-4 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 4: Praslin - La Digue (6 SM)</h4>
+                <p className="text-gray-600">Kurzer Schlag zur malerischen La Digue. Besuch der berühmten Anse Source d'Argent mit den ikonischen Granitfelsen.</p>
+              </div>
+              
+              <div className="mb-4 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 5: La Digue - Cousin Island - Praslin (15 SM)</h4>
+                <p className="text-gray-600">Besuch der Vogelschutzinsel Cousin Island am Morgen, dann weiter nach Praslin zum Anse Volbert Beach.</p>
+              </div>
+              
+              <div className="mb-4 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 6: Praslin - Curieuse Island - St. Pierre (10 SM)</h4>
+                <p className="text-gray-600">Ausflug zur Curieuse Island mit Riesenschildkröten-Beobachtung. Schnorcheln bei St. Pierre Island.</p>
+              </div>
+              
+              <div className="mb-6 border-l-4 border-primary pl-4">
+                <h4 className="font-bold text-gray-800">Tag 7: St. Pierre - Mahé/Eden Bleu (25 SM)</h4>
+                <p className="text-gray-600">Rücksegeln nach Mahé mit letztem Stopp in einer geschützten Bucht vor der Yacht-Rückgabe am nächsten Morgen.</p>
+              </div>
+
               <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit: Ein Katamaran-Paradies im Indischen Ozean</h3>
               
               <p className="mb-4">
@@ -250,49 +287,6 @@ const Seychelles = () => {
           </div>
         </div>
 
-        {/* 7-Tage-Törnvorschlag */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">7-Tage-Törnvorschlag Seychellen</h3>
-            
-            <div className="border-l-4 border-blue-600 pl-4 space-y-4">
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 1: Mahé - Eden Bleu Marina</h4>
-                <p className="text-gray-600">Übernahme der Yacht, Einweisung und erste Übernachtung in der Marina. Einkauf und Proviantierung für die Woche.</p>
-              </div>
-              
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 2: Mahé - St. Anne Island (8 SM)</h4>
-                <p className="text-gray-600">Kurzer erster Schlag zur geschützten St. Anne Island. Schnorcheln im Meerespark und Besuch des Luxury Resorts.</p>
-              </div>
-              
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 3: St. Anne - Praslin/Baie Sainte Anne (22 SM)</h4>
-                <p className="text-gray-600">Segeln nach Praslin. Besuch des berühmten UNESCO-Welterbes Vallée de Mai mit den seltenen Coco de Mer Palmen.</p>
-              </div>
-              
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 4: Praslin - La Digue (6 SM)</h4>
-                <p className="text-gray-600">Kurzer Schlag zur malerischen La Digue. Besuch der berühmten Anse Source d'Argent mit den ikonischen Granitfelsen.</p>
-              </div>
-              
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 5: La Digue - Cousin Island - Praslin (15 SM)</h4>
-                <p className="text-gray-600">Besuch der Vogelschutzinsel Cousin Island am Morgen, dann weiter nach Praslin zum Anse Volbert Beach.</p>
-              </div>
-              
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 6: Praslin - Curieuse Island - St. Pierre (10 SM)</h4>
-                <p className="text-gray-600">Ausflug zur Curieuse Island mit Riesenschildkröten-Beobachtung. Schnorcheln bei St. Pierre Island.</p>
-              </div>
-              
-              <div className="mb-4">
-                <h4 className="font-bold text-gray-800">Tag 7: St. Pierre - Mahé/Eden Bleu (25 SM)</h4>
-                <p className="text-gray-600">Rücksegeln nach Mahé mit letztem Stopp in einer geschützten Bucht vor der Yacht-Rückgabe am nächsten Morgen.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* FAQ Section */}
         <div className="max-w-4xl mx-auto mb-12">
