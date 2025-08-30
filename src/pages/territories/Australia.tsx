@@ -100,6 +100,14 @@ const Australia = () => {
                 <ChevronRight className="h-4 w-4" />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/reviere/suedpazifik">Südpazifik</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
                 <BreadcrumbPage>Australien</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
