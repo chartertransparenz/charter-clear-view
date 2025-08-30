@@ -179,33 +179,33 @@ const Mahe = () => {
         {/* Must-see Box */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-blue-800 mb-6 flex items-center gap-2">
-              <MapPin className="w-6 h-6 text-blue-600" />
+            <h3 className="text-2xl font-bold text-black mb-6 flex items-center gap-2">
+              <MapPin className="w-6 h-6 text-gray-600" />
               Must-see: Was Sie unbedingt anschauen sollten
             </h3>
-            <ul className="space-y-3 text-blue-900">
+            <ul className="space-y-3 text-black">
               <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-black font-bold">•</span>
                 <span><strong>Sainte-Anne Marine National Park (vor Mahé):</strong> Perfekt für den ersten Badestopp – Ankerplatz auf Sand oder Park-Moorings, Schnorcheln zwischen farbigen Riffen.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-black font-bold">•</span>
                 <span><strong>Praslin:</strong> Anse Lazio und Anse Georgette zählen zu den schönsten Stränden der Welt; an Land lockt das Vallée de Mai (Coco de Mer).</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-black font-bold">•</span>
                 <span><strong>La Digue:</strong> Mit dem Fahrrad zur Anse Source d'Argent zwischen Granitblöcken; vor der Küste ruhige Ankerbuchten je nach Wetterfenster.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-black font-bold">•</span>
                 <span><strong>Curieuse & St. Pierre:</strong> Riesenschildkröten auf Curieuse, Bilderbuch-Schnorchelplatz vor Îlot St. Pierre.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-black font-bold">•</span>
                 <span><strong>Coco, Félicité, Sister Islands:</strong> Kristallklares Wasser, Riffe zum Drift-Schnorcheln; je nach Schutzstatus Moorings nutzen und auf Sand ankern.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-blue-600 font-bold">•</span>
+                <span className="text-black font-bold">•</span>
                 <span><strong>Mahé by land:</strong> Markt in Victoria, Botanischer Garten, Strände im Südwesten (z. B. Anse Intendance) – ideal als Start oder Abschluss.</span>
               </li>
             </ul>
