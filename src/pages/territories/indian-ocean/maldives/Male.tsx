@@ -29,7 +29,7 @@ const Male = () => {
     value: "Luxus-Katamaran"
   }];
   const highlights = ["1200 Koralleninseln", "Kristallklare Lagunen", "Luxus-Resort Hopping", "Weltklasse Schnorcheln", "Manta Ray & Walhai Spots", "Unberührte Korallenriffe", "Overwater Bungalows", "Absolute Privatsphäre"];
-  return <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
