@@ -173,18 +173,6 @@ const Mahe = () => {
               Von hier aus erreichen Sie in kurzen bis mittleren Etappen die berühmten Granitinseln Praslin und La Digue, Nationalparks mit Korallenriffen und Tauchspots von Weltrang sowie stille Ankerbuchten, in denen Sie bei Sonnenuntergang nur das Plätschern am Rumpf hören. Ob Bareboat auf Katamaran oder Segelyacht mit Skipper: Das Revier belohnt gute Planung mit maximaler Urlaubsqualität.
             </p>
             
-            {/* Anse Source d'Argent Image */}
-            <div className="mb-8">
-              <img 
-                src={anseSourceArgent} 
-                alt="Anse Source d'Argent auf La Digue mit Granitfelsen"
-                className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
-              />
-              <p className="text-center text-gray-500 italic text-sm">
-                An der Anse Source d'Argent auf La Digue (Seychellen) stehen Sie zwischen haushohen Granitfelsen auf feinem, hellen Sand, blicken in eine seichte türkisfarbene Lagune – und fühlen sofort Ruhe, Wärme und gelassenes Inseltempo.
-              </p>
-            </div>
-            
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Anreise & Transfer</h3>
             <p className="text-gray-600 mb-6">
               Sie fliegen nach Seychelles International (SEZ) auf Mahé, meist via große Drehkreuze. Nach der Landung sind es je nach Basis nur etwa 15–30 Minuten per Taxi oder Shuttle bis zur Marina – typischerweise Eden Island Marina oder Victoria. Wer weiter nach Praslin oder La Digue will, nutzt den Inlandsflug Mahé–Praslin oder die Schnellfähre. Praktisch: Viele Vercharterer bieten Early Check-in/Proviantservice, sodass Sie am Ankunftstag noch einen kurzen Eingewöhnungsschlag in den Sainte-Anne Marine Park schaffen. Prüfen Sie vorab Einreise- und Gesundheitsbestimmungen sowie Versicherungsschutz.
@@ -221,6 +209,17 @@ const Mahe = () => {
           </div>
         </div>
 
+        {/* Anse Source d'Argent Image with Caption */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <img 
+            src="/lovable-uploads/90692d00-febc-4526-bda2-5bd3e808161c.png" 
+            alt="Anse Source d'Argent auf La Digue mit charakteristischen Granitfelsen"
+            className="w-full h-auto object-cover rounded-lg shadow-lg mb-4"
+          />
+          <p className="text-gray-700 text-center italic leading-relaxed">
+            An der Anse Source d&apos;Argent auf La Digue (Seychellen) stehen Sie zwischen haushohen Granitfelsen auf feinem, hellen Sand, blicken in eine seichte türkisfarbene Lagune – und fühlen sofort Ruhe, Wärme und gelassenes Inseltempo.
+          </p>
+        </div>
 
         {/* Must-see Box */}
         <div className="max-w-4xl mx-auto mb-12">
