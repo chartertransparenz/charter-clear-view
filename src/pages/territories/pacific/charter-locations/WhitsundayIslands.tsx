@@ -6,114 +6,85 @@ import { ArrowLeft, MapPin, Anchor, Plane, Heart, Fish } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import pacific from "@/assets/pacific.jpg";
-
 const WhitsundayIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const marinas = [
-    {
-      name: "Abell Point Marina",
-      description: "Australiens größte Superyacht-Marina",
-      amenities: ["500+ Liegeplätze", "Superyacht-Service", "Restaurants", "Shopping", "Resort", "Concierge"]
-    },
-    {
-      name: "Port of Airlie",
-      description: "Charter-Zentrum von Airlie Beach",
-      amenities: ["Charter-Basen", "Fuel Station", "Provisioning", "Restaurants", "Nachtleben", "Transport"]
-    },
-    {
-      name: "Shute Harbour",
-      description: "Gateway zu den Whitsunday Islands",
-      amenities: ["Fährverbindungen", "Charter-Pickup", "Parkplätze", "Café", "Toiletten", "Gepäckaufbewahrung"]
-    }
-  ];
-
-  const highlights = [
-    "Heart Reef - Weltberühmtes Herzriff",
-    "Whitehaven Beach - Weißester Sand der Welt",
-    "Great Barrier Reef - UNESCO Welterbe",
-    "74 tropische Inseln",
-    "Konstante Südost-Passatwinde",
-    "Luxury Island Resorts",
-    "Weltklasse Schnorcheln & Tauchen"
-  ];
-
-  const distances = [
-    { destination: "Hamilton Island", distance: "8 sm", time: "1-1.5 Std." },
-    { destination: "Whitehaven Beach", distance: "12 sm", time: "1.5-2 Std." },
-    { destination: "Hook Island", distance: "15 sm", time: "2-2.5 Std." },
-    { destination: "Daydream Island", distance: "6 sm", time: "45 Min." },
-    { destination: "Cairns", distance: "140 sm", time: "18-22 Std." }
-  ];
-
-  const islands = [
-    {
-      name: "Hamilton Island",
-      description: "Resort-Insel mit Flughafen und Marina"
-    },
-    {
-      name: "Whitehaven Beach",
-      description: "7km weißester Silica-Sand der Welt"
-    },
-    {
-      name: "Hayman Island",
-      description: "Luxus-Resort-Insel der Extraklasse"
-    },
-    {
-      name: "Daydream Island",
-      description: "All-Inclusive Resort mit Wassersport"
-    },
-    {
-      name: "Hook Island",
-      description: "Nationalpark mit spektakulären Buchten"
-    },
-    {
-      name: "Long Island",
-      description: "Unberührte Natur und einsame Strände"
-    }
-  ];
-
-  const activities = [
-    {
-      name: "Great Barrier Reef",
-      description: "Schnorcheln und Tauchen am größten Korallenriff"
-    },
-    {
-      name: "Heart Reef Flug",
-      description: "Rundflug über das berühmte herzförmige Riff"
-    },
-    {
-      name: "Whitehaven Beach",
-      description: "Besuch des schönsten Strandes Australiens"
-    },
-    {
-      name: "Hill Inlet",
-      description: "Spektakulärer Aussichtspunkt über swirling sands"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const marinas = [{
+    name: "Abell Point Marina",
+    description: "Australiens größte Superyacht-Marina",
+    amenities: ["500+ Liegeplätze", "Superyacht-Service", "Restaurants", "Shopping", "Resort", "Concierge"]
+  }, {
+    name: "Port of Airlie",
+    description: "Charter-Zentrum von Airlie Beach",
+    amenities: ["Charter-Basen", "Fuel Station", "Provisioning", "Restaurants", "Nachtleben", "Transport"]
+  }, {
+    name: "Shute Harbour",
+    description: "Gateway zu den Whitsunday Islands",
+    amenities: ["Fährverbindungen", "Charter-Pickup", "Parkplätze", "Café", "Toiletten", "Gepäckaufbewahrung"]
+  }];
+  const highlights = ["Heart Reef - Weltberühmtes Herzriff", "Whitehaven Beach - Weißester Sand der Welt", "Great Barrier Reef - UNESCO Welterbe", "74 tropische Inseln", "Konstante Südost-Passatwinde", "Luxury Island Resorts", "Weltklasse Schnorcheln & Tauchen"];
+  const distances = [{
+    destination: "Hamilton Island",
+    distance: "8 sm",
+    time: "1-1.5 Std."
+  }, {
+    destination: "Whitehaven Beach",
+    distance: "12 sm",
+    time: "1.5-2 Std."
+  }, {
+    destination: "Hook Island",
+    distance: "15 sm",
+    time: "2-2.5 Std."
+  }, {
+    destination: "Daydream Island",
+    distance: "6 sm",
+    time: "45 Min."
+  }, {
+    destination: "Cairns",
+    distance: "140 sm",
+    time: "18-22 Std."
+  }];
+  const islands = [{
+    name: "Hamilton Island",
+    description: "Resort-Insel mit Flughafen und Marina"
+  }, {
+    name: "Whitehaven Beach",
+    description: "7km weißester Silica-Sand der Welt"
+  }, {
+    name: "Hayman Island",
+    description: "Luxus-Resort-Insel der Extraklasse"
+  }, {
+    name: "Daydream Island",
+    description: "All-Inclusive Resort mit Wassersport"
+  }, {
+    name: "Hook Island",
+    description: "Nationalpark mit spektakulären Buchten"
+  }, {
+    name: "Long Island",
+    description: "Unberührte Natur und einsame Strände"
+  }];
+  const activities = [{
+    name: "Great Barrier Reef",
+    description: "Schnorcheln und Tauchen am größten Korallenriff"
+  }, {
+    name: "Heart Reef Flug",
+    description: "Rundflug über das berühmte herzförmige Riff"
+  }, {
+    name: "Whitehaven Beach",
+    description: "Besuch des schönsten Strandes Australiens"
+  }, {
+    name: "Hill Inlet",
+    description: "Spektakulärer Aussichtspunkt über swirling sands"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/d21e2c57-a5c9-4fc8-8d3d-7e0d86f320d3.png"
-          alt="Whitsunday Islands, Australien"
-          className="w-full h-full object-cover"
-        />
+        <img src={pacific} alt="Whitsunday Islands, Australien" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -124,10 +95,7 @@ const WhitsundayIslands = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/suedpazifik" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/suedpazifik" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zum Südpazifik
@@ -204,90 +172,19 @@ const WhitsundayIslands = () => {
         </div>
 
         {/* Marinas */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Charter-Basen</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {marinas.map((marina, index) => (
-              <Card key={index} className="h-full">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">{marina.name}</h3>
-                  <p className="text-gray-600 mb-4">{marina.description}</p>
-                  <div className="space-y-2">
-                    {marina.amenities.map((amenity, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                        <span className="text-sm text-gray-700">{amenity}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Inseln */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Must-Visit Inseln</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {islands.map((island, index) => (
-              <Card key={index}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{island.name}</h3>
-                  <p className="text-gray-600">{island.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Aktivitäten */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights & Aktivitäten</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {activities.map((activity, index) => (
-              <Card key={index}>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">{activity.name}</h3>
-                  <p className="text-sm text-gray-600">{activity.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Distanzen */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Distanzen & Fahrtzeiten</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {distances.map((item, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex justify-between items-center">
-                  <span className="font-semibold text-gray-800">{item.destination}</span>
-                  <div className="text-right">
-                    <div className="text-orange-600 font-bold">{item.distance}</div>
-                    <div className="text-sm text-gray-600">{item.time}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Whitsundays?</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="text-center">
@@ -304,8 +201,6 @@ const WhitsundayIslands = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default WhitsundayIslands;
