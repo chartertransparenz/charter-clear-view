@@ -61,18 +61,6 @@ const Maldives = () => {
       link: "/reviere/indischer-ozean/malediven/male",
       description: "Hauptstadt und wichtigster Ausgangspunkt für Yachtcharter",
       cities: ["Malé", "Hulhumalé", "Vilimalé"]
-    },
-    {
-      name: "Ari-Atoll",
-      link: "/reviere/indischer-ozean/malediven/ari-atoll",
-      description: "Berühmt für Walhai-Begegnungen und spektakuläre Tauchplätze",
-      cities: ["Dhigurah", "Ari Sud", "Ari Nord"]
-    },
-    {
-      name: "Baa-Atoll",
-      link: "/reviere/indischer-ozean/malediven/baa-atoll",
-      description: "UNESCO Biosphärenreservat mit Hanifaru Bay",
-      cities: ["Hanifaru Bay", "Dharavandhoo", "Thulhaadhoo"]
     }
   ];
 
