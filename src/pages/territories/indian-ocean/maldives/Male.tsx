@@ -80,17 +80,7 @@ const Male = () => {
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => <Card key={index} className="text-center">
-              <CardContent className="p-4">
-                <div className="flex justify-center text-cyan-600 mb-2">
-                  {fact.icon}
-                </div>
-                <div className="font-semibold text-sm text-gray-600 mb-1">
-                  {fact.label}
-                </div>
-                <div className="text-sm font-medium">
-                  {fact.value}
-                </div>
-              </CardContent>
+              
             </Card>)}
         </div>
 
