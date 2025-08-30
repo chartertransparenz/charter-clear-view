@@ -266,7 +266,7 @@ function App() {
             <Route path="/reviere/suedpazifik/charter-standorte/raiatea" element={<Raiatea />} />
             <Route path="/reviere/suedpazifik/charter-standorte/bora-bora" element={<BoraBora />} />
             <Route path="/reviere/suedpazifik/charter-standorte/rangiroa" element={<Rangiroa />} />
-        <Route path="/reviere/suedpazifik/charter-standorte/whitsundays" element={<WhitsundayIslands />} />
+        <Route path="/reviere/suedpazifik/australien/whitsundays" element={<WhitsundayIslands />} />
         <Route path="/reviere/suedpazifik/charter-standorte/noumea" element={<Noumea />} />
         <Route path="/reviere/suedpazifik/charter-standorte/fidschi" element={<Fiji />} />
         <Route path="/reviere/suedpazifik/charter-standorte/neuseeland" element={<NewZealand />} />

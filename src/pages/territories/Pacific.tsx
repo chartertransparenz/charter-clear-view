@@ -17,7 +17,7 @@ const Pacific = () => {
     areas: ["Raiatea", "Bora Bora", "Rangiroa"]
   }, {
     name: "Australien",
-    link: "/reviere/suedpazifik/charter-standorte/whitsundays",
+    link: "/reviere/suedpazifik/australien/whitsundays",
     areas: ["Whitsunday Islands", "Great Barrier Reef"]
   }, {
     name: "Fidschi",
