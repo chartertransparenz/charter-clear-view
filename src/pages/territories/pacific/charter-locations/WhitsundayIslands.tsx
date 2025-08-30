@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
+import TerritoryMap from "@/components/TerritoryMap";
 import pacific from "@/assets/pacific.jpg";
 
 const WhitsundayIslands = () => {
@@ -103,6 +104,25 @@ const WhitsundayIslands = () => {
                 <p className="text-sm text-gray-600">Perfekter Starthafen</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </div>
+
+      {/* Map Section */}
+      <div className="bg-gradient-to-b from-sky-50 to-white py-8">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">Die Whitsunday Islands im Überblick</h2>
+            <p className="text-gray-600">Entdecken Sie die 74 Inseln im Herzen des Great Barrier Reef</p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <TerritoryMap
+              region="Whitsunday Islands"
+              center={{ lat: -20.2759, lng: 148.8988 }}
+              zoom={11}
+              maptype="satellite"
+              className="shadow-lg"
+            />
           </div>
         </div>
       </div>
@@ -213,13 +233,13 @@ const WhitsundayIslands = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-sky-400 to-sky-600 text-white p-8 rounded-lg shadow-lg">
+          <div className="bg-gradient-to-r from-sunset-orange to-sunset-red text-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-4">Entdecken Sie die Whitsunday Islands</h2>
             <p className="text-xl mb-6">
               74 tropische Inseln im Great Barrier Reef warten auf Sie
             </p>
             <CharterRequestForm>
-              <Button size="lg" variant="secondary" className="bg-white text-sky-600 hover:bg-gray-100">
+              <Button size="lg" variant="secondary" className="bg-white text-sunset-orange hover:bg-gray-100">
                 Whitsundays Charter anfragen
               </Button>
             </CharterRequestForm>
