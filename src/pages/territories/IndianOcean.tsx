@@ -24,7 +24,10 @@ const IndianOcean = () => {
       name: "Asien", 
       link: "/reviere/indischer-ozean/asien",
       description: "Thailand, Malaysia mit exotischen Kulturen",
-      areas: ["Thailand", "Malaysia"]
+      areas: [
+        { name: "Thailand", link: "/reviere/indischer-ozean/asien/thailand" },
+        { name: "Malaysia", link: "/reviere/indischer-ozean/asien/malaysia" }
+      ]
     },
     { 
       name: "Seychellen", 
