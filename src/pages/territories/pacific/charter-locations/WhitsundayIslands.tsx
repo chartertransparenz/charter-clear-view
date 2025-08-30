@@ -110,7 +110,7 @@ const WhitsundayIslands = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={pacific}
+          src="/lovable-uploads/d21e2c57-a5c9-4fc8-8d3d-7e0d86f320d3.png"
           alt="Whitsunday Islands, Australien"
           className="w-full h-full object-cover"
         />
