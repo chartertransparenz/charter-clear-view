@@ -22,6 +22,39 @@ const Seychelles = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const quickFacts = [
+    { 
+      icon: MapPin, 
+      label: "Lage", 
+      value: "115 Inseln, Indischer Ozean" 
+    },
+    { 
+      icon: Calendar, 
+      label: "Beste Zeit", 
+      value: "April-Mai, Oktober-November" 
+    },
+    { 
+      icon: Users, 
+      label: "Geeignet für", 
+      value: "Alle Levels" 
+    },
+    { 
+      icon: Ship, 
+      label: "Besonderheit", 
+      value: "Katamaran-Paradies" 
+    },
+    { 
+      icon: Wind, 
+      label: "Windverhältnisse", 
+      value: "Passatwinde 8-20 Knoten" 
+    },
+    { 
+      icon: Anchor, 
+      label: "Ankerverbote", 
+      value: "Nachtfahrtverbot 17:00 Uhr" 
+    }
+  ];
+
   const faqData = [
     {
       question: "Welche Segelscheine und Befähigungsnachweise sind für das Chartern einer Yacht auf den Seychellen erforderlich?",
@@ -103,6 +136,24 @@ const Seychelles = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12">
+        {/* Quick Facts */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+            {quickFacts.map((fact, index) => (
+              <Card key={index} className="text-center">
+                <CardHeader className="pb-2">
+                  <fact.icon className="w-8 h-8 text-blue-600 mx-auto" />
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <CardTitle className="text-sm font-medium text-muted-foreground mb-1">
+                    {fact.label}
+                  </CardTitle>
+                  <p className="text-sm font-semibold">{fact.value}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
         {/* Main Content */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-8 rounded-lg shadow-lg">
