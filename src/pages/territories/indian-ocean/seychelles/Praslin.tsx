@@ -193,6 +193,22 @@ const Praslin = () => {
               <li>• Plan B: Für jede Nacht eine Ausweich-Ankerbucht notieren; Winddreher und Schwellwechsel sind in den Tropen normal.</li>
             </ul>
 
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Unbedingt anschauen – Highlights ab Praslin</h3>
+            <ul className="text-gray-600 mb-6 space-y-2">
+              <li>• <strong>Anse Lazio & Anse Georgette (Praslin):</strong> Bilderbuchstrände mit hellem Sand und smaragdgrünem Wasser; tagsüber perfekter Badestopp.</li>
+              <li>• <strong>Vallée de Mai (Praslin):</strong> An Land lockt der Palmenurwald mit der legendären Coco de Mer – ideal als Landtag vor oder nach dem Törn.</li>
+              <li>• <strong>Curieuse Island:</strong> Freilebende Aldabra-Riesenschildkröten, flache Sandflächen zum Ankern (je nach Bedingungen), Naturpfade und Picknickplätze.</li>
+              <li>• <strong>Îlot St. Pierre:</strong> Granitfelsen in der Lagune – einer der schönsten Schnorchel-Spots, bei ruhigem Wetter ein Muss.</li>
+              <li>• <strong>La Digue:</strong> Mit dem Fahrrad zur Anse Source d'Argent; davor mehrere Ankerbuchten je nach Windfenster.</li>
+              <li>• <strong>Coco, Félicité & Sisters:</strong> Turquoise satt, driftiges Schnorcheln über Riffen; je nach Schutzstatus Moorings nutzen und auf Sand ankern.</li>
+              <li>• <strong>Cousin & Cousine:</strong> Naturreservate mit Anlandeauflagen – Schutzregeln prüfen; oft nur geführte Landgänge.</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Regeln, Umwelt & Sicherheit</h3>
+            <p className="text-gray-600 mb-6">
+              Die Inseln rund um Praslin sind sensibel. In Marine Parks und Schutzgebieten gelten Mooringpflicht, Geschwindigkeitslimits und teilweise Ankerverbote außerhalb sandiger Zonen. Ankern Sie niemals auf Korallen oder im Seegras, respektieren Sie Badezonen und Dinghy-Korridore. Einige Privatinseln verlangen Genehmigungen bzw. Gebühren für Anlandungen. Nachtnavigation ist nicht empfehlenswert: unbeleuchtete Riffe, Fischer-Floats und wechselnde Strömungen können riskant sein. Halten Sie VHF 16 abhörbereit; eine lokale SIM erleichtert Wetter-Updates. In Passatphasen ggf. früh reffen, um Material und Crew zu schonen.
+            </p>
+
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Fazit</h3>
             <p className="text-gray-600">
               Ein Yachtcharter ab Praslin bündelt die Stärken der Seychellen: kurze Schläge, sichere Ankerplätze, spektakuläre Granitkulissen und Begegnungen mit einer einzigartigen Unterwasserwelt. Mit klarem Blick auf Wetter, Schutzregeln und Proviantliste wird Ihr Törn vom ersten Ableger an zur entspannten Entdeckungsreise – und jede Bucht zum Postkartenmotiv.
@@ -200,61 +216,20 @@ const Praslin = () => {
           </div>
         </div>
 
-        {/* Must-see Box */}
+        {/* CTA */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-black mb-6 flex items-center gap-2">
-              <MapPin className="w-6 h-6 text-gray-600" />
-              Unbedingt anschauen – Highlights ab Praslin
+          <div className="bg-blue-50 border border-blue-200 text-blue-900 p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Yachtcharter ab Praslin anfragen
             </h3>
-            <ul className="space-y-3 text-black">
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>Anse Lazio & Anse Georgette (Praslin):</strong> Bilderbuchstrände mit hellem Sand und smaragdgrünem Wasser; tagsüber perfekter Badestopp.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>Vallée de Mai (Praslin):</strong> An Land lockt der Palmenurwald mit der legendären Coco de Mer – ideal als Landtag vor oder nach dem Törn.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>Curieuse Island:</strong> Freilebende Aldabra-Riesenschildkröten, flache Sandflächen zum Ankern (je nach Bedingungen), Naturpfade und Picknickplätze.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>Îlot St. Pierre:</strong> Granitfelsen in der Lagune – einer der schönsten Schnorchel-Spots, bei ruhigem Wetter ein Muss.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>La Digue:</strong> Mit dem Fahrrad zur Anse Source d'Argent; davor mehrere Ankerbuchten je nach Windfenster.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>Coco, Félicité & Sisters:</strong> Turquoise satt, driftiges Schnorcheln über Riffen; je nach Schutzstatus Moorings nutzen und auf Sand ankern.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-black font-bold">•</span>
-                <span><strong>Cousin & Cousine:</strong> Naturreservate mit Anlandeauflagen – Schutzregeln prüfen; oft nur geführte Landgänge.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Regeln, Umwelt & Sicherheit */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-              <Anchor className="w-6 h-6 text-blue-600" />
-              Regeln, Umwelt & Sicherheit
-            </h3>
-            <div className="text-gray-600 space-y-4">
-              <p>
-                Die Inseln rund um Praslin sind sensibel. In Marine Parks und Schutzgebieten gelten Mooringpflicht, Geschwindigkeitslimits und teilweise Ankerverbote außerhalb sandiger Zonen. Ankern Sie niemals auf Korallen oder im Seegras, respektieren Sie Badezonen und Dinghy-Korridore. Einige Privatinseln verlangen Genehmigungen bzw. Gebühren für Anlandungen.
-              </p>
-              <p>
-                Nachtnavigation ist nicht empfehlenswert: unbeleuchtete Riffe, Fischer-Floats und wechselnde Strömungen können riskant sein. Halten Sie VHF 16 abhörbereit; eine lokale SIM erleichtert Wetter-Updates. In Passatphasen ggf. früh reffen, um Material und Crew zu schonen.
-              </p>
-            </div>
+            <p className="mb-6 text-blue-700">
+              Entdecken Sie Inselhüpfen zwischen Granitkolossen, Lagunen und Riesenschildkröten ab Praslin.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
+                Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
 
@@ -298,24 +273,8 @@ const Praslin = () => {
               </div>)}
           </div>
         </div>
-
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Yachtcharter ab Praslin anfragen
-            </h3>
-            <p className="mb-6 text-blue-100">
-              Entdecken Sie Inselhüpfen zwischen Granitkolossen, Lagunen und Riesenschildkröten ab Praslin.
-            </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Yachtcharter ab Praslin anfragen
-              </Button>
-            </CharterRequestForm>
-          </div>
-        </div>
       </div>
     </div>;
 };
+
 export default Praslin;
