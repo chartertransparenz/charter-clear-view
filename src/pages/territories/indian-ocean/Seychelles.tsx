@@ -205,7 +205,7 @@ const Seychelles = () => {
               <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li><strong><Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-primary hover:underline">Mahé</Link>:</strong> Die größte Insel und das Tor zu den Seychellen. Hier befindet sich der internationale Flughafen und die meisten Charterbasen. Mahé bietet eine Mischung aus lebhaften Städten (Victoria, die Hauptstadt), beeindruckenden Bergen, Teeplantagen und wunderschönen Stränden.</li>
                 <li><strong><Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link>:</strong> Die zweitgrößte Insel, berühmt für das UNESCO-Welterbe Vallée de Mai, Heimat der einzigartigen Coco de Mer Palme. Praslin ist ein exzellenter Ausgangspunkt für Törns zu den umliegenden Inseln.</li>
-                <li><strong><Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link>:</strong> Eine der malerischsten Inseln, bekannt für den Anse Source d'Argent, einen der meistfotografierten Strände der Welt mit seinen riesigen Granitfelsen. La Digue erkundet man am besten mit dem Fahrrad.</li>
+                <li><strong>La Digue:</strong> Eine der malerischsten Inseln, bekannt für den Anse Source d'Argent, einen der meistfotografierten Strände der Welt mit seinen riesigen Granitfelsen. La Digue erkundet man am besten mit dem Fahrrad.</li>
                 <li><strong>Silhouette Island:</strong> Eine große, bergige Insel, die größtenteils unberührt ist und einen Nationalpark beherbergt. Ideal für Wanderungen und das Erleben unberührter Natur.</li>
                 <li><strong>Curieuse Island:</strong> Bekannt für ihre Riesenschildkröten und Mangrovenwälder.</li>
                 <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet.</li>
@@ -260,7 +260,7 @@ const Seychelles = () => {
                 <li><strong>Anse Lazio (<Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link>):</strong> Oft als einer der schönsten Strände der Welt bezeichnet, begeistert Anse Lazio mit seinem puderfeinen Sand, dem türkisfarbenen Wasser und den charakteristischen Granitfelsen. Perfekt für einen ausgedehnten Badestopp.</li>
                 <li><strong>Curieuse Island:</strong> Ein Naturreservat, das für seine freilebenden Riesenschildkröten bekannt ist. Hier können Sie an Land gehen, die Schildkröten beobachten und durch Mangrovenwälder wandern.</li>
                 <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet, das nur unter Führung besucht werden darf. Ein Paradies für Ornithologen.</li>
-                <li><strong><Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link>:</strong> Mit dem Fahrrad erkunden Sie die Insel und besuchen den berühmten Anse Source d'Argent, wo riesige Granitfelsen den Strand säumen und ein einzigartiges Fotomotiv bieten.</li>
+                <li><strong>La Digue:</strong> Mit dem Fahrrad erkunden Sie die Insel und besuchen den berühmten Anse Source d'Argent, wo riesige Granitfelsen den Strand säumen und ein einzigartiges Fotomotiv bieten.</li>
                 <li><strong>Die kleinen Inseln:</strong> Entdecken Sie weitere unbewohnte Inseln wie Grande Soeur, Petite Soeur oder Coco Island mit ihren fantastischen Schnorchelplätzen und unberührten Stränden.</li>
               </ul>
               
@@ -313,12 +313,12 @@ const Seychelles = () => {
               </div>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 4: <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> - <Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link> (6 SM)</h4>
-                <p className="text-gray-600">Kurzer Schlag zur malerischen <Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link>. Besuch der berühmten Anse Source d'Argent mit den ikonischen Granitfelsen.</p>
+                <h4 className="font-bold text-gray-800">Tag 4: <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> - La Digue (6 SM)</h4>
+                <p className="text-gray-600">Kurzer Schlag zur malerischen La Digue. Besuch der berühmten Anse Source d'Argent mit den ikonischen Granitfelsen.</p>
               </div>
               
               <div className="mb-4 border-l-4 border-primary pl-4">
-                <h4 className="font-bold text-gray-800">Tag 5: <Link to="/reviere/indischer-ozean/seychellen/ladigue" className="text-primary hover:underline">La Digue</Link> - Cousin Island - <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> (15 SM)</h4>
+                <h4 className="font-bold text-gray-800">Tag 5: La Digue - Cousin Island - <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> (15 SM)</h4>
                 <p className="text-gray-600">Besuch der Vogelschutzinsel Cousin Island am Morgen, dann weiter nach <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-primary hover:underline">Praslin</Link> zum Anse Volbert Beach.</p>
               </div>
               
