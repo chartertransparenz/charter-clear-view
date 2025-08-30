@@ -178,7 +178,7 @@ const Mahe = () => {
 
         {/* Must-see Box */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-blue-50 border border-blue-200 p-8 rounded-lg shadow-lg">
+          <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-blue-800 mb-6 flex items-center gap-2">
               <MapPin className="w-6 h-6 text-blue-600" />
               Must-see: Was Sie unbedingt anschauen sollten
