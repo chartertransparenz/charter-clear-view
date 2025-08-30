@@ -76,18 +76,6 @@ const Maldives = () => {
     }
   ];
 
-  const highlights = [
-    "Über 1.200 Koralleninseln in 26 Atollen",
-    "Kristallklares, türkisfarbenes Wasser",
-    "UNESCO Biosphärenreservat Baa-Atoll",
-    "Weltklasse Walhai- und Mantarochen-Sichtungen",
-    "Luxuriöse Crewed-Charter mit erstklassigem Service",
-    "Spektakuläre Korallenriffe und Unterwasserwelt",
-    "Absolute Privatsphäre und Entspannung",
-    "Traumhafte Overwater-Bungalows und Resorts",
-    "Perfekt für Honeymooner und Luxusliebhaber",
-    "Ganzjährig warme Temperaturen (28-30°C)"
-  ];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
@@ -445,22 +433,6 @@ const Maldives = () => {
           </Card>
         </div>
 
-        {/* Highlights */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <Card className="shadow-lg">
-            <CardContent className="p-8">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Highlights der Malediven</h2>
-              <div className="grid gap-3 md:grid-cols-2">
-                {highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">{highlight}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Fazit */}
         <div className="max-w-4xl mx-auto mb-12">
