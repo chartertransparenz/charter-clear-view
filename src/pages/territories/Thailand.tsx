@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import TerritoryMap from "@/components/TerritoryMap";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -159,20 +158,6 @@ const Thailand = () => {
               <p className="text-gray-600 text-sm">{fact.value}</p>
             </div>
           ))}
-        </div>
-
-        {/* Territory Map */}
-        <div className="max-w-6xl mx-auto mb-12">
-          <TerritoryMap 
-            region="Thailand - Andamanensee"
-            center={{
-              lat: 7.9519,
-              lng: 98.3381
-            }}
-            zoom={8}
-            maptype="satellite"
-            className="w-full"
-          />
         </div>
 
         {/* Description */}
