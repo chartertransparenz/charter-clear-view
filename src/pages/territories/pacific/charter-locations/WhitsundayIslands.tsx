@@ -70,7 +70,7 @@ const WhitsundayIslands = () => {
       </div>
 
       {/* Quick Facts */}
-      <div className="bg-sky-50 py-8">
+      <div className="bg-white py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <Card className="bg-white/80 backdrop-blur-sm border-sky-200">
