@@ -112,19 +112,105 @@ const Mahe = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
               <Heart className="w-6 h-6 text-blue-600" />
-              Charter-Standort Mahé
+              Yachtcharter ab Mahé, Seychellen – Granitinseln, Lagunen & Passatbrise
             </h2>
             <p className="text-lg text-gray-600 mb-4">
-              Mahé ist die Hauptinsel der Seychellen und Ausgangspunkt für Charter 
-              zwischen den 115 Granitinseln des Archipels. Mit dem internationalen 
-              Flughafen, der Hauptstadt Victoria und modernen Marinas bietet Mahé 
-              die beste Infrastruktur für Seychellen-Charter.
+              Mahé ist die Hauptinsel der Seychellen und Ausgangspunkt für Charter zwischen den 115 Granitinseln des Archipels. Mit dem internationalen Flughafen, der Hauptstadt Victoria und modernen Marinas bietet Mahé die beste Infrastruktur für Seychellen-Charter.
             </p>
-            <p className="text-lg text-gray-600">
-              Von hier erreichen Sie legendäre Inseln wie Praslin mit dem UNESCO 
-              Vallée de Mai, La Digue mit den berühmtesten Stränden der Welt 
-              und das entlegene Aldabra Atoll mit seinen Riesenschildkröten.
+            <p className="text-lg text-gray-600 mb-6">
+              Von hier aus erreichen Sie in kurzen bis mittleren Etappen die berühmten Granitinseln Praslin und La Digue, Nationalparks mit Korallenriffen und Tauchspots von Weltrang sowie stille Ankerbuchten, in denen Sie bei Sonnenuntergang nur das Plätschern am Rumpf hören. Ob Bareboat auf Katamaran oder Segelyacht mit Skipper: Das Revier belohnt gute Planung mit maximaler Urlaubsqualität.
             </p>
+            
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Anreise & Transfer</h3>
+            <p className="text-gray-600 mb-6">
+              Sie fliegen nach Seychelles International (SEZ) auf Mahé, meist via große Drehkreuze. Nach der Landung sind es je nach Basis nur etwa 15–30 Minuten per Taxi oder Shuttle bis zur Marina – typischerweise Eden Island Marina oder Victoria. Wer weiter nach Praslin oder La Digue will, nutzt den Inlandsflug Mahé–Praslin oder die Schnellfähre. Praktisch: Viele Vercharterer bieten Early Check-in/Proviantservice, sodass Sie am Ankunftstag noch einen kurzen Eingewöhnungsschlag in den Sainte-Anne Marine Park schaffen. Prüfen Sie vorab Einreise- und Gesundheitsbestimmungen sowie Versicherungsschutz.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Reviercharakter & Wind</h3>
+            <p className="text-gray-600 mb-6">
+              Ganzjährig warm, in zwei monsungeprägten Jahreszeiten: Nordwest-Monsun (Nov–Apr) bringt meist leichtere Winde und glattere See, gelegentlich Schauer; Südost-Passat (Mai–Okt) weht frischer und trockener, mit mehr Wind und teils Schwell an exponierten SE-Küsten. Besonders ruhig und klar sind oft die Übergangsmonate April/Mai sowie Oktober/November – beliebt bei Seglern, Schnorchlern und Fotografen. Navigiert wird überwiegend line of sight, dennoch gilt: Ansteuerungen im Tageslicht, Riffe/Flats beachten, nicht „blind" dem Plotter folgen, Ausguck führen.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Proviantierung & Technik</h3>
+            <p className="text-gray-600 mb-6">
+              Mahé bietet die beste Versorgungsinfrastruktur: Supermärkte und Feinkostläden in Victoria/Eden Island, frischer Fisch, Obst und Gemüse auf dem Markt, Eis, Trinkwasser, Gas und Treibstoff in der Marina. Viele Anbieter liefern vorbestellte Waren direkt an Bord; Alkohol, Spezialitäten und Frischware besorgen Sie am besten schon am ersten Tag. Trinkwasser ist verfügbar, dennoch empfiehlt sich Vorratsdisziplin (insbesondere Eis/Frischware). Mülltrennung, Entsorgung in der Marina; Grauwasser/Schwarzwasser keinesfalls in Buchten oder Parks ablassen.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Route – sanftes Inselhüpfen (Beispiel, 7–10 Tage)</h3>
+            <p className="text-gray-600 mb-6">
+              Start Mahé/Eden Island → Sainte-Anne zum Eingewöhnen → langer Schlag nach Praslin/Anse Lazio → Curieuse (Tortoises) & St. Pierre (Schnorcheln) → La Digue (Fahrradtag) → je nach Wetter Coco/Sisters oder Félicité → zurück via Baie Chevalier oder Cousin/Cousine (Schutzauflagen beachten) → Mahé. Variieren Sie die Reihenfolge mit Wind/Schwell; bei kräftigem Südost besser leeseitige Buchten wählen und exponierte Kaps am Vormittag passieren.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Tipps für einen entspannten Törn</h3>
+            <ul className="text-gray-600 mb-6 space-y-2">
+              <li>• Früh reservieren: Auch in Paradiesen sind Moorings/Charteryachten zu Saisonspitzen gefragt.</li>
+              <li>• Gewicht & Trim: Katamarane liegen ruhiger in der Dünung – ideal für Familien; Monohulls segeln knackiger am Wind.</li>
+              <li>• Sonnenschutz & Riffschutz: Langer UV-Schutz, riff-freundliche Sonnencreme, Rutschschutz an Deck.</li>
+              <li>• Cash & Gebühren: Kleinere Bars/Insellandgänge rechnen gern bar ab; Park- und Bojengebühren passend bereithalten.</li>
+              <li>• Plan B: Für jede Nacht einen Ausweich-Ankerplatz notieren – Winddreher und Schwellwechsel sind in den Tropen normal.</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Fazit</h3>
+            <p className="text-gray-600">
+              Ein Yachtcharter ab Mahé vereint das Beste der Seychellen: kurze bis mittlere Schläge, sichere Ankerbuchten, spektakuläre Granitkulissen und warmes, klares Wasser – ein Revier, das Einsteiger begeistert und erfahrene Skipper mit feinem Inselhopping belohnt. Wenn Sie möchten, erstellen wir Ihnen gern einen maßgeschneiderten Törnplan mit aktuellen Parkregeln, Bojenoptionen und Proviantliste – damit Sie vom ersten Meter an in den Seychellenmodus schalten.
+            </p>
+          </div>
+        </div>
+
+        {/* Must-see Box */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-blue-50 border border-blue-200 p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-blue-800 mb-6 flex items-center gap-2">
+              <MapPin className="w-6 h-6 text-blue-600" />
+              Must-see: Was Sie unbedingt anschauen sollten
+            </h3>
+            <ul className="space-y-3 text-blue-900">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold">•</span>
+                <span><strong>Sainte-Anne Marine National Park (vor Mahé):</strong> Perfekt für den ersten Badestopp – Ankerplatz auf Sand oder Park-Moorings, Schnorcheln zwischen farbigen Riffen.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold">•</span>
+                <span><strong>Praslin:</strong> Anse Lazio und Anse Georgette zählen zu den schönsten Stränden der Welt; an Land lockt das Vallée de Mai (Coco de Mer).</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold">•</span>
+                <span><strong>La Digue:</strong> Mit dem Fahrrad zur Anse Source d'Argent zwischen Granitblöcken; vor der Küste ruhige Ankerbuchten je nach Wetterfenster.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold">•</span>
+                <span><strong>Curieuse & St. Pierre:</strong> Riesenschildkröten auf Curieuse, Bilderbuch-Schnorchelplatz vor Îlot St. Pierre.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold">•</span>
+                <span><strong>Coco, Félicité, Sister Islands:</strong> Kristallklares Wasser, Riffe zum Drift-Schnorcheln; je nach Schutzstatus Moorings nutzen und auf Sand ankern.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold">•</span>
+                <span><strong>Mahé by land:</strong> Markt in Victoria, Botanischer Garten, Strände im Südwesten (z. B. Anse Intendance) – ideal als Start oder Abschluss.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Regeln, Umwelt & Sicherheit Box */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-green-50 border border-green-200 p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-2">
+              <Anchor className="w-6 h-6 text-green-600" />
+              Regeln, Umwelt & Sicherheit
+            </h3>
+            <div className="text-green-900 space-y-4">
+              <p>
+                Die Seychellen schützen ihre Riffe konsequent. In Marine Parks gelten Bojenpflicht oder Ankerverbote außerhalb sandiger Zonen; Ankern nie auf Korallen oder Seegras. Gebühren und Aufenthaltslimits sind ausgeschildert; einige Privatinseln verlangen Genehmigungen. Fahren Sie langsam in sensiblen Bereichen, respektieren Sie Badezonen und Dinghy-Korridore.
+              </p>
+              <p>
+                Nachtnavigation ist wegen unbeleuchteter Riffe/Fischereimarkierungen nicht zu empfehlen. Halten Sie VHF 16 abhörbereit; für Wetter/Gezeiten lohnt sich eine lokale SIM. In der Passatzeit ausreichend Kette/Schwojkreis einplanen, bei Böen Ankeralarm setzen.
+              </p>
+              <p>
+                Schildkröten, Rochen und – je nach Saison – Walhaie sind keine Seltenheit: Abstand halten, nicht anfüttern oder berühren.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -152,11 +238,6 @@ const Mahe = () => {
           </div>
         </div>
 
-        {/* Attractions */}
-        
-
-        {/* Highlights */}
-        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
