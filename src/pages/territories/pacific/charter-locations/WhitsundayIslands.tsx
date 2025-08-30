@@ -109,7 +109,7 @@ const WhitsundayIslands = () => {
       </div>
 
       {/* Map Section */}
-      <div className="bg-gradient-to-b from-sky-50 to-white py-8">
+      <div className="bg-white py-8">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Die Whitsunday Islands im Überblick</h2>
