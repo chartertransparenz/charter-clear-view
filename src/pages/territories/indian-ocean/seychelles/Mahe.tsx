@@ -7,10 +7,12 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+
 const Mahe = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const quickFacts = [{
     icon: <MapPin className="w-5 h-5" />,
     label: "Lage",
@@ -28,6 +30,7 @@ const Mahe = () => {
     label: "Chartertyp",
     value: "Katamaran bevorzugt"
   }];
+
   const marinas = [{
     name: "Eden Bleu Marina",
     description: "Moderne Marina nahe dem Flughafen",
@@ -37,7 +40,9 @@ const Mahe = () => {
     description: "Haupthafen von Victoria",
     facilities: ["Stadtzentrum", "Provisioning", "Lokale Kultur", "Märkte"]
   }];
+
   const highlights = ["115 Granitinseln erkunden", "Unique Coco de Mer Palmen", "Weltklasse Strände", "Riesenschildkröten auf Aldabra", "Kreolische Kultur", "Vallée de Mai UNESCO Park", "Pristine Korallenriffe", "Luxuriöse Entspannung"];
+
   const attractions = [{
     name: "Praslin & Vallée de Mai",
     description: "UNESCO Weltnaturerbe mit Coco de Mer",
@@ -51,6 +56,7 @@ const Mahe = () => {
     description: "Riesenschildkröten Heiligtum",
     type: "Wildlife"
   }];
+
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
@@ -193,14 +199,14 @@ const Mahe = () => {
           </div>
         </div>
 
-        {/* Regeln, Umwelt & Sicherheit Box */}
+        {/* Regeln, Umwelt & Sicherheit */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-green-50 border border-green-200 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-2">
-              <Anchor className="w-6 h-6 text-green-600" />
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+              <Anchor className="w-6 h-6 text-blue-600" />
               Regeln, Umwelt & Sicherheit
             </h3>
-            <div className="text-green-900 space-y-4">
+            <div className="text-gray-600 space-y-4">
               <p>
                 Die Seychellen schützen ihre Riffe konsequent. In Marine Parks gelten Bojenpflicht oder Ankerverbote außerhalb sandiger Zonen; Ankern nie auf Korallen oder Seegras. Gebühren und Aufenthaltslimits sind ausgeschildert; einige Privatinseln verlangen Genehmigungen. Fahren Sie langsam in sensiblen Bereichen, respektieren Sie Badezonen und Dinghy-Korridore.
               </p>
@@ -259,4 +265,5 @@ const Mahe = () => {
       </div>
     </div>;
 };
+
 export default Mahe;
