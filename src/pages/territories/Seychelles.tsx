@@ -155,8 +155,8 @@ const Seychelles = () => {
             </p>
 
             <ul className="text-gray-600 mb-6 space-y-2 ml-4">
-              <li><strong><Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link>:</strong> Die größte Insel und das Tor zu den Seychellen. Hier befindet sich der internationale Flughafen und die meisten Charterbasen. Mahé bietet eine Mischung aus lebhaften Städten (Victoria, die Hauptstadt), beeindruckenden Bergen, Teeplantagen und wunderschönen Stränden.</li>
-              <li><strong><Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline">Praslin</Link>:</strong> Die zweitgrößte Insel, berühmt für das UNESCO-Welterbe Vallée de Mai, Heimat der einzigartigen Coco de Mer Palme. Praslin ist ein exzellenter Ausgangspunkt für Törns zu den umliegenden Inseln.</li>
+              <li><strong><Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link>:</strong> Die größte Insel und das Tor zu den Seychellen. Hier befindet sich der internationale Flughafen und die meisten Charterbasen. Mahé bietet eine Mischung aus lebhaften Städten (Victoria, die Hauptstadt), beeindruckenden Bergen, Teeplantagen und wunderschönen Stränden.</li>
+              <li><strong><Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline font-bold">Praslin</Link>:</strong> Die zweitgrößte Insel, berühmt für das UNESCO-Welterbe Vallée de Mai, Heimat der einzigartigen Coco de Mer Palme. Praslin ist ein exzellenter Ausgangspunkt für Törns zu den umliegenden Inseln.</li>
               <li><strong>La Digue:</strong> Eine der malerischsten Inseln, bekannt für den Anse Source d'Argent, einen der meistfotografierten Strände der Welt mit seinen riesigen Granitfelsen. La Digue erkundet man am besten mit dem Fahrrad.</li>
               <li><strong>Silhouette Island:</strong> Eine große, bergige Insel, die größtenteils unberührt ist und einen Nationalpark beherbergt. Ideal für Wanderungen und das Erleben unberührter Natur.</li>
               <li><strong>Curieuse Island:</strong> Bekannt für ihre Riesenschildkröten und Mangrovenwälder.</li>
@@ -197,8 +197,8 @@ const Seychelles = () => {
                 Die Seychellen verfügen über eine moderne und gut ausgebaute maritime Infrastruktur, die speziell auf die Bedürfnisse von Yachtcharter-Gästen zugeschnitten ist.
               </p>
               <ul className="text-gray-600 space-y-2 ml-4">
-                <li><strong><Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link>:</strong> Die Hauptinsel beherbergt die wichtigsten Charterbasen, insbesondere in der Eden Island Marina und der Port Victoria Marina. Diese Marinas bieten umfassende Dienstleistungen wie Wasser, Strom, Treibstoff, Supermärkte, Restaurants und technische Unterstützung. Hier finden Sie die größte Auswahl an Charteryachten, darunter zahlreiche Katamarane, Segelyachten und Motorboote verschiedener Größen und Ausstattungen.</li>
-                <li><strong><Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline">Praslin</Link>:</strong> Auch auf Praslin gibt es Charterbasen, die einen direkten Start in die Inselwelt der Inner Islands ermöglichen. Die Baie Sainte Anne Marina ist ein beliebter Anlaufpunkt.</li>
+                <li><strong><Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link>:</strong> Die Hauptinsel beherbergt die wichtigsten Charterbasen, insbesondere in der Eden Island Marina und der Port Victoria Marina. Diese Marinas bieten umfassende Dienstleistungen wie Wasser, Strom, Treibstoff, Supermärkte, Restaurants und technische Unterstützung. Hier finden Sie die größte Auswahl an Charteryachten, darunter zahlreiche Katamarane, Segelyachten und Motorboote verschiedener Größen und Ausstattungen.</li>
+                <li><strong><Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline font-bold">Praslin</Link>:</strong> Auch auf Praslin gibt es Charterbasen, die einen direkten Start in die Inselwelt der Inner Islands ermöglichen. Die Baie Sainte Anne Marina ist ein beliebter Anlaufpunkt.</li>
                 <li><strong>La Digue:</strong> Auf La Digue gibt es kleinere Anlegemöglichkeiten, die jedoch weniger als Ausgangsbasis, sondern eher als Törnziel dienen.</li>
               </ul>
               <p className="text-gray-600 mt-4">
@@ -218,8 +218,8 @@ const Seychelles = () => {
             
             <ul className="text-gray-600 space-y-3 ml-4">
               <li><strong>Sainte Anne Marine National Park (Mahé):</strong> Nur einen Katzensprung von Mahé entfernt, ist dieser Marinepark ein Muss für Schnorchel- und Tauchbegeisterte. Das kristallklare Wasser und die bunte Unterwasserwelt sind atemberaubend. Hier können Sie sicher ankern und die Ruhe genießen.</li>
-              <li><strong>Beau Vallon (<Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link>):</strong> Ein langer, belebter Sandstrand mit Restaurants und Wassersportmöglichkeiten. Ein guter Ort für einen Landgang und das Eintauchen ins lokale Leben.</li>
-              <li><strong>Anse Lazio (<Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline">Praslin</Link>):</strong> Oft als einer der schönsten Strände der Welt bezeichnet, begeistert Anse Lazio mit seinem puderfeinen Sand, dem türkisfarbenen Wasser und den charakteristischen Granitfelsen. Perfekt für einen ausgedehnten Badestopp.</li>
+              <li><strong>Beau Vallon (<Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link>):</strong> Ein langer, belebter Sandstrand mit Restaurants und Wassersportmöglichkeiten. Ein guter Ort für einen Landgang und das Eintauchen ins lokale Leben.</li>
+              <li><strong>Anse Lazio (<Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline font-bold">Praslin</Link>):</strong> Oft als einer der schönsten Strände der Welt bezeichnet, begeistert Anse Lazio mit seinem puderfeinen Sand, dem türkisfarbenen Wasser und den charakteristischen Granitfelsen. Perfekt für einen ausgedehnten Badestopp.</li>
               <li><strong>Curieuse Island:</strong> Ein Naturreservat, das für seine freilebenden Riesenschildkröten bekannt ist. Hier können Sie an Land gehen, die Schildkröten beobachten und durch Mangrovenwälder wandern.</li>
               <li><strong>Cousin Island:</strong> Ein streng geschütztes Vogelschutzgebiet, das nur unter Führung besucht werden darf. Ein Paradies für Ornithologen.</li>
               <li><strong>La Digue:</strong> Mit dem Fahrrad erkunden Sie die Insel und besuchen den berühmten Anse Source d'Argent, wo riesige Granitfelsen den Strand säumen und ein einzigartiges Fotomotiv bieten.</li>
@@ -231,17 +231,17 @@ const Seychelles = () => {
         {/* 7-Tage-Törnvorschlag */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Ihr 7-Tage-Törnvorschlag auf den Seychellen (ab <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link>)</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Ihr 7-Tage-Törnvorschlag auf den Seychellen (ab <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link>)</h2>
             
             <div className="space-y-4">
               <div className="border-l-4 border-blue-600 pl-4">
                 <h3 className="font-semibold text-gray-800">Tag 1: Ankunft & Inselzauber</h3>
-                <p className="text-gray-600">Nach dem Check-in auf <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link> setzen Sie die Segel für einen kurzen Schlag zum Sainte Anne Marine National Park. Genießen Sie das erste Bad im kristallklaren Wasser und schnorcheln Sie durch die farbenfrohe Unterwasserwelt.</p>
+                <p className="text-gray-600">Nach dem Check-in auf <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link> setzen Sie die Segel für einen kurzen Schlag zum Sainte Anne Marine National Park. Genießen Sie das erste Bad im kristallklaren Wasser und schnorcheln Sie durch die farbenfrohe Unterwasserwelt.</p>
               </div>
               
               <div className="border-l-4 border-blue-600 pl-4">
                 <h3 className="font-semibold text-gray-800">Tag 2: Kurs auf Praslin</h3>
-                <p className="text-gray-600">Segeln Sie nach <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline">Praslin</Link>, der Heimat des UNESCO-Welterbes Vallée de Mai. Am Nachmittag ankern Sie vor dem berühmten Anse Lazio, einem der schönsten Strände der Welt, und lassen den Tag ausklingen.</p>
+                <p className="text-gray-600">Segeln Sie nach <Link to="/reviere/indischer-ozean/seychellen/praslin" className="text-blue-600 hover:text-blue-800 underline font-bold">Praslin</Link>, der Heimat des UNESCO-Welterbes Vallée de Mai. Am Nachmittag ankern Sie vor dem berühmten Anse Lazio, einem der schönsten Strände der Welt, und lassen den Tag ausklingen.</p>
               </div>
               
               <div className="border-l-4 border-blue-600 pl-4">
@@ -261,12 +261,12 @@ const Seychelles = () => {
               
               <div className="border-l-4 border-blue-600 pl-4">
                 <h3 className="font-semibold text-gray-800">Tag 6: Entspannung & Rückfahrt</h3>
-                <p className="text-gray-600">Beginnen Sie die Rückreise in Richtung <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link>. Legen Sie einen entspannten Stopp an einer der schönen Buchten von Silhouette Island oder einer abgelegenen Bucht an der Nordwestküste <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahés</Link> ein.</p>
+                <p className="text-gray-600">Beginnen Sie die Rückreise in Richtung <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link>. Legen Sie einen entspannten Stopp an einer der schönen Buchten von Silhouette Island oder einer abgelegenen Bucht an der Nordwestküste <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahés</Link> ein.</p>
               </div>
               
               <div className="border-l-4 border-blue-600 pl-4">
                 <h3 className="font-semibold text-gray-800">Tag 7: Abschied vom Paradies</h3>
-                <p className="text-gray-600">Nach einem letzten Frühstück an Bord segeln Sie zurück zu Ihrer Charterbasis auf <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline">Mahé</Link> und treten die Heimreise an – erfüllt von unvergesslichen Eindrücken.</p>
+                <p className="text-gray-600">Nach einem letzten Frühstück an Bord segeln Sie zurück zu Ihrer Charterbasis auf <Link to="/reviere/indischer-ozean/seychellen/mahe" className="text-blue-600 hover:text-blue-800 underline font-bold">Mahé</Link> und treten die Heimreise an – erfüllt von unvergesslichen Eindrücken.</p>
               </div>
             </div>
             
