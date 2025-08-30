@@ -15,26 +15,6 @@ const Maldives = () => {
   }, []);
   const quickFacts = [
     {
-      icon: MapPin,
-      label: "Lage",
-      value: "Zentraler Indischer Ozean"
-    },
-    {
-      icon: Calendar,
-      label: "Beste Zeit",
-      value: "Dezember-April (Trockenzeit)"
-    },
-    {
-      icon: Users,
-      label: "Charter-Typ",
-      value: "Crewed-Charter (Skippercharter)"
-    },
-    {
-      icon: Anchor,
-      label: "Atolls",
-      value: "26 Atolls, über 1.200 Inseln"
-    },
-    {
       icon: Waves,
       label: "Windverhältnisse",
       value: "10-20 Knoten, meist moderat"
