@@ -28,46 +28,6 @@ const Thailand = () => {
     { label: "Besonderheit", value: "Exotische Felseninseln" }
   ];
 
-  const regions = [
-    {
-      name: "Phuket",
-      bases: ["Ao Po", "Royal Phuket Marina", "Yacht Haven"],
-      description: "Hauptbasis mit bester Infrastruktur und internationalen Flugverbindungen"
-    },
-    {
-      name: "Phang Nga Bay", 
-      bases: ["Ao Po", "Krabi"],
-      description: "Berühmte Kalksteinfelsen und versteckte Lagunen wie James Bond Island"
-    },
-    {
-      name: "Krabi & Railay",
-      bases: ["Ao Nang", "Railay Beach"],
-      description: "Spektakuläre Klippen und kristallklare Buchten"
-    },
-    {
-      name: "Langkawi (Malaysia)",
-      bases: ["Kuah", "Telaga Harbour"],
-      description: "Grenzüberschreitende Törns in malaysische Gewässer"
-    }
-  ];
-
-  const highlights = [
-    "Exotische Felseninseln-Kulisse",
-    "Günstige Charterpreise", 
-    "Reiche Kultur & Küche",
-    "Warmes, tropisches Wasser",
-    "Versteckte Lagunen",
-    "Freundliche Bevölkerung",
-    "Beste Reisezeit Nov-Apr",
-    "Kombination Segeln & Landprogramm"
-  ];
-
-  const routes = [
-    "Phuket - Phang Nga Bay",
-    "James Bond Island - Koh Yao", 
-    "Krabi - Phi Phi Islands",
-    "Langkawi - Penang"
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -316,42 +276,6 @@ const Thailand = () => {
             <p className="text-lg text-gray-600">
               Insbesondere die Wahl eines Katamarans maximiert Ihr Thailand-Erlebnis. Sein geringer Tiefgang, die Stabilität, das großzügige Platzangebot und der hohe Komfort machen ihn zum idealen Begleiter für Crews und Familien, die die verborgenen Schätze dieser Inselwelt entdecken möchten. Erleben Sie Thailand vom Wasser aus – es wird ein Abenteuer, das Sie nie vergessen werden.
             </p>
-          </div>
-        </div>
-
-        {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
-                <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-800 text-sm">{highlight}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Regions */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{region.name}</h3>
-                <p className="text-gray-600 mb-4">{region.description}</p>
-                <div className="space-y-2">
-                  <h4 className="font-medium text-gray-800">Stützpunkte:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {region.bases.map((base, idx) => (
-                      <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
-                        {base}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
