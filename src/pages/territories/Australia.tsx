@@ -7,10 +7,12 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationAustralia from "@/assets/destination-australia.jpg";
+
 const Australia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const quickFacts = [{
     label: "Lage",
     value: "Whitsunday Islands, Queensland"
@@ -24,6 +26,7 @@ const Australia = () => {
     label: "Besonderheit",
     value: "Great Barrier Reef"
   }];
+
   const regions = [{
     name: "Whitsunday Islands",
     bases: ["Airlie Beach", "Hamilton Island"],
@@ -41,10 +44,14 @@ const Australia = () => {
     bases: ["Verschiedene Ankerplätze"],
     description: "Weltgrößtes Korallenriff-System mit einzigartiger Unterwasserwelt"
   }];
+
   const highlights = ["Unberührte Inselwelt", "Traumhafte Ankerbuchten", "Great Barrier Reef", "Tropisches Klima", "Bestes Segelrevier Südhalbkugel", "Meist mit Skipper empfohlen", "Whitehaven Beach", "Einzigartige Tierwelt"];
+
   const routes = ["Hamilton Island - Whitehaven Beach", "Airlie Beach - Hook Island", "Whitsunday Island - Hayman Island", "Great Barrier Reef Expedition"];
+
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
+      
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img src="/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.png" alt="Australien Segelrevier" className="w-full h-full object-cover object-top" />
@@ -120,7 +127,7 @@ const Australia = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Yachtcharter Australien – große Küsten, große Freiheit</h2>
             <p className="text-lg text-gray-600 mb-6">
-              Yachtcharter Australien verbindet spektakuläre Natur mit erstklassiger Nautik-Infrastruktur. Von den tropischen Whitsunday Islands am Great Barrier Reef über den ikonischen Sydney Harbour bis zu den wilden Revieren Tasmaniens und der entlegenen Kimberley-Küste – Segeln in Australien bietet kurze Etappen zwischen Traumbuchten ebenso wie anspruchsvolle Routen mit Tiden- und Passatwindtaktik. Ob Bareboat Australia, mit Skipper, auf Segelyacht oder Katamaran mieten Australien: Hier finden Sie für jede Crew und jedes Erfahrungslevel das passende Revier.
+              Yachtcharter Australien verbindet spektakuläre Natur mit erstklassiger Nautik-Infrastruktur. Von den tropischen <Link to="/reviere/suedpazifik/australien/whitsundays" className="text-ocean-blue hover:text-ocean-dark underline font-medium">Whitsunday Islands</Link> am Great Barrier Reef über den ikonischen Sydney Harbour bis zu den wilden Revieren Tasmaniens und der entlegenen Kimberley-Küste – Segeln in Australien bietet kurze Etappen zwischen Traumbuchten ebenso wie anspruchsvolle Routen mit Tiden- und Passatwindtaktik. Ob Bareboat Australia, mit Skipper, auf Segelyacht oder Katamaran mieten Australien: Hier finden Sie für jede Crew und jedes Erfahrungslevel das passende Revier.
             </p>
             
             <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Wo segeln? Die wichtigsten Reviere</h3>
@@ -192,4 +199,5 @@ const Australia = () => {
       </div>
     </div>;
 };
+
 export default Australia;
