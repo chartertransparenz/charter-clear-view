@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const frenchAtlanticCoast = "/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.png";
 const FrenchAtlanticCoast = () => {
   useEffect(() => {
@@ -223,11 +224,60 @@ const FrenchAtlanticCoast = () => {
           </div>
         </div>
 
-        {/* Regions */}
-        
-
-        {/* Highlights */}
-        
+        {/* FAQ Section */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">FAQ – Häufig gestellte Fragen zum Yachtcharter an der französischen Atlantikküste</h2>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Wie sind die Wind- und Gezeitenbedingungen an der französischen Atlantikküste?</AccordionTrigger>
+              <AccordionContent>
+                Die vorherrschenden Winde sind Westwinde, die im Sommer meist moderat sind. Die größte Besonderheit sind die starken Gezeiten mit einem Tidenhub von bis zu 6 Metern oder mehr. Dies verursacht starke Gezeitenströme und erfordert eine exakte Törnplanung.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Wie findet man sichere Liegeplätze an der französischen Atlantikküste?</AccordionTrigger>
+              <AccordionContent>
+                Das Revier verfügt über eine exzellente Infrastruktur mit unzähligen modernen Marinas, die Schutz bei jedem Wetter bieten. Zusätzlich gibt es viele Mooringfelder und Ankerbuchten. Wichtig ist, bei der Planung die Wassertiefe bei Ebbe zu berücksichtigen, da viele Plätze trockenfallen können.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Welche nautischen Besonderheiten gibt es dort?</AccordionTrigger>
+              <AccordionContent>
+                Die alles beherrschende nautische Besonderheit ist die Tide. Die Navigation erfordert die ständige Nutzung von Tidentabellen und Stromatlanten. Starke Strömungen, sich schnell ändernde Wassertiefen und das Phänomen „Wind gegen Strom" sind die zentralen Herausforderungen beim Gezeitensegeln.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Welche Segelscheine werden für eine Bareboat-Charter in Frankreich benötigt?</AccordionTrigger>
+              <AccordionContent>
+                Für eine Bareboat-Charter wird in der Regel der deutsche Sportbootführerschein See (SBF See) als Minimum verlangt, der Sportküstenschifferschein (SKS) wird dringend empfohlen. Entscheidend ist jedoch der Erfahrungsnachweis des Skippers, insbesondere in Gezeitenrevieren. Ein Funkzeugnis (SRC oder höher) ist obligatorisch.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>Wie viel Segelerfahrung brauche ich, um selbstständig eine Yacht an der französischen Atlantikküste zu führen?</AccordionTrigger>
+              <AccordionContent>
+                Solide Erfahrung als Skipper ist unerlässlich. Sie sollten mit der Tiden-Navigation vertraut sein und Erfahrung in Revieren mit Starkwind und Strömung haben. Für Skipper ohne Gezeitenerfahrung ist die Buchung eines ortskundigen Skippers für die ersten Tage oder den gesamten Törn die sicherste und lehrreichste Option.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>Wann ist die beste Reisezeit für die französische Atlantikküste?</AccordionTrigger>
+              <AccordionContent>
+                Die beste Reisezeit ist von Mai bis September. Die Vor- und Nachsaison (Mai, Juni, September) bieten angenehmes Wetter bei weniger überlaufenen Häfen. Juli und August sind die wärmsten, aber auch belebtesten Monate.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger>Wie gut sind die Häfen und Marinas auf den einzelnen Inseln ausgebaut?</AccordionTrigger>
+              <AccordionContent>
+                Die Infrastruktur ist erstklassig. Selbst auf den kleineren Inseln finden sich gut geschützte und ausgestattete Häfen. Frankreich ist eine Segelnation, und die Marinas bieten in der Regel alle notwendigen Dienstleistungen wie Strom, Wasser, Sanitäranlagen und oft auch technische Services.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger>Wie gut sind die Proviantierungsmöglichkeiten unterwegs?</AccordionTrigger>
+              <AccordionContent>
+                Die Proviantierung ist ausgezeichnet und ein Teil des Erlebnisses. In jedem Hafenort finden Sie Bäckereien, Metzger und kleine Supermärkte. Besonders reizvoll sind die Wochenmärkte mit frischem Fisch, Meeresfrüchten, Gemüse und lokalen Spezialitäten.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
