@@ -52,7 +52,7 @@ const CanaryIslands = () => {
     cities: ["Puerto del Rosario", "Corralejo"]
   }];
   const highlights = ["Ganzjährig perfektes Segelwetter", "Konstante Nordost-Passatwinde", "Vulkanische Landschaften", "Vielfältige Inselcharaktere", "Weltklasse Windsurfing", "Stopover für Atlantiküberquerungen", "Spanische Kultur mit afrikanischen Einflüssen"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
