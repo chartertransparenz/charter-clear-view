@@ -110,8 +110,7 @@ const Atlantic = () => {
               <h2 className="text-2xl font-bold text-gray-800">Atlantik-Feeling</h2>
             </div>
             <p className="text-lg text-gray-600">
-              Perfekte Bedingungen für sportliches Segeln mit konstanten Passatwinden 
-              und ganzjährig milden Temperaturen.
+              Ein Yachtcharter in Atlantikrevieren wie den Kanaren, Azoren oder an der französischen Atlantikküste bietet Seglern eine einzigartige Kombination aus anspruchsvollen Bedingungen und unvergleichlicher Natur. Hier erwarten Sie faszinierende Passatwinde, die Ihre Segelkünste fordern, sowie die Möglichkeit, zwischen vulkanischen Inselparadiesen, wilden Küstenlinien und charmanten Hafenstädten zu navigieren. Erleben Sie die Freiheit des Hochseesegelns gepaart mit der Entdeckung kultureller und landschaftlicher Vielfalt, die jeden Törn zu einem unvergesslichen Abenteuer macht.
             </p>
           </div>
         </div>
