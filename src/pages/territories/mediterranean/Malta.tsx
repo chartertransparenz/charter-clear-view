@@ -139,6 +139,18 @@ const Malta = () => {
                 <li><strong>Xlendi Bay:</strong> Eine wunderschöne, fjordähnliche Bucht an der Südwestküste. Die Uferpromenade ist gesäumt von exzellenten Restaurants, in denen Sie mit den Füßen fast im Wasser speisen können. Ein perfekter Ort für einen entspannten Abend.</li>
               </ul>
               
+              {/* Gozo Image */}
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/32290b86-1a67-4820-b449-fcef6d84def3.png" 
+                  alt="Naturwunder Gozo vom besten Platz aus: dem Deck Ihrer Charteryacht" 
+                  className="w-full rounded-lg shadow-lg mb-4"
+                />
+                <p className="text-center text-gray-600 text-sm italic">
+                  Naturwunder Gozo vom besten Platz aus: dem Deck Ihrer Charteryacht
+                </p>
+              </div>
+              
               <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
                 <h4 className="text-lg font-semibold text-gray-800 mb-3">Wind, Wetter und die beste Reisezeit</h4>
                 <p className="mb-3">Das Klima auf Malta ist typisch mediterran. Die Segelsaison dauert von April bis in den späten Oktober.</p>
