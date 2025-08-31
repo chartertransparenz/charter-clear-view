@@ -174,6 +174,18 @@ const CanaryIslands = () => {
               </ul>
             </div>
 
+            {/* Image section */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/3b3b6bfd-87ce-409d-9764-482a463645bd.png" 
+                alt="Yachtcharter Kanaren – segeln Sie entlang Teneriffas Küste und erleben Sie unvergessliche Atlantik-Momente." 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-gray-600 mt-3 italic">
+                Yachtcharter Kanaren – segeln Sie entlang Teneriffas Küste und erleben Sie unvergessliche Atlantik-Momente.
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Marinas & Ausgangshäfen: Erstklassige maritime Infrastruktur</h3>
 
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
