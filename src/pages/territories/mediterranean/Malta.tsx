@@ -97,6 +97,18 @@ const Malta = () => {
                 </ul>
               </div>
               
+              {/* Blue Lagoon Image */}
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/db059046-e2cd-4a2d-8933-6bc8c3e02c4e.png" 
+                  alt="Von der eigenen Yacht aus: Schnorcheln und Baden in der weltberühmten Blue Lagoon Comino" 
+                  className="w-full rounded-lg shadow-lg mb-4"
+                />
+                <p className="text-center text-gray-600 text-sm italic">
+                  Von der eigenen Yacht aus: Schnorcheln und Baden in der weltberühmten Blue Lagoon Comino
+                </p>
+              </div>
+
               <h3 className="text-xl font-bold text-gray-800 mt-8 mb-4">Die Perlen des Archipels: Ihre Törnziele rund um Malta, Gozo und Comino</h3>
               <p>
                 Das Revier ist so reich an Zielen, dass Sie jeden Tag etwas Neues entdecken können.
