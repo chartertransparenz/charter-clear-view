@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import mediterranean from "@/assets/mediterranean.jpg";
 const Montenegro = () => {
   useEffect(() => {
@@ -67,6 +68,18 @@ const Montenegro = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Map Section */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Die montenegrinische Küste im Überblick</h2>
+          <TerritoryMap 
+            region="Montenegro"
+            center={{ lat: 42.3, lng: 19.1 }}
+            zoom={9}
+            maptype="satellite"
+            className="mb-12"
+          />
         </div>
 
         {/* Description */}
