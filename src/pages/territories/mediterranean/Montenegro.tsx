@@ -83,6 +83,17 @@ const Montenegro = () => {
               </p>
             </div>
 
+            <div className="mt-8 mb-6">
+              <img 
+                src="/lovable-uploads/82a9b3f1-dcde-4a55-8468-5dc3f22b6f7c.png" 
+                alt="Die Zwillingsinseln von Perast liegen im ruhigen Wasser der Bucht von Kotor und bieten mediterranes Flair inmitten der beeindruckenden Berglandschaft Montenegros." 
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-gray-600 mt-3 italic">
+                Die Zwillingsinseln von Perast liegen im ruhigen Wasser der Bucht von Kotor und bieten mediterranes Flair inmitten der beeindruckenden Berglandschaft Montenegros.
+              </p>
+            </div>
+
             <h3 className="text-xl font-bold text-gray-800 mb-4">Montenegros Adriaküste: Ein Segelrevier der Superlative</h3>
             <p className="text-lg text-gray-600 mb-4">
               Die Küste Montenegros ist zwar kompakt, aber unglaublich vielfältig. Sie bietet eine einzigartige Kombination aus tief eingeschnittenen Buchten, offenen Meerabschnitten, vorgelagerten Inseln und einer beeindruckenden Bergkulisse, die direkt am Wasser beginnt.
