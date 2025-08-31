@@ -148,18 +148,20 @@ const Azores = () => {
                 <li><strong>Corvo:</strong> Die kleinste und nördlichste Insel, ein wahres Naturparadies mit einem beeindruckenden Kratersee im Inselinneren.</li>
               </ul>
               
-              <div className="bg-gray-50 p-4 rounded-lg mt-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Erreichbarkeit: Ihr Weg ins Atlantikparadies</h4>
-                <p className="mb-3">Die Azoren sind überraschend gut angebunden, insbesondere durch Flugverbindungen.</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li><strong>Per Flugzeug:</strong> Die Hauptflughäfen auf São Miguel (Ponta Delgada – PDL), Terceira (Lajes – TER) und Faial (Horta – HOR) werden von verschiedenen europäischen Städten angeflogen.
-                    <ul className="list-disc list-inside ml-4 mt-1">
-                      <li>Aus Deutschland, Österreich und der Schweiz: Es gibt Direktflüge oder bequeme Verbindungen mit Zwischenstopp in Lissabon oder Porto. TAP Air Portugal bietet regelmäßige Flüge an.</li>
-                    </ul>
-                  </li>
-                  <li><strong>Inselhopping per Flugzeug:</strong> Zwischen den Hauptinseln gibt es regelmäßige Inlandsflüge, die das Inselhopping erleichtern, wenn Sie nicht alle Distanzen segeln möchten.</li>
-                  <li><strong>Mit dem Schiff von Portugal (Festland):</strong> Für eine längere Anreise mit dem eigenen Schiff oder einer Überführung ist die Atlantikpassage von Lissabon oder Porto aus möglich, erfordert aber eine sorgfältige Planung und ausreichend Zeit.</li>
-                </ul>
+              <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mt-6">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Erreichbarkeit: Ihr Weg ins Atlantikparadies</h4>
+                  <p className="mb-3">Die Azoren sind überraschend gut angebunden, insbesondere durch Flugverbindungen.</p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Per Flugzeug:</strong> Die Hauptflughäfen auf São Miguel (Ponta Delgada – PDL), Terceira (Lajes – TER) und Faial (Horta – HOR) werden von verschiedenen europäischen Städten angeflogen.
+                      <ul className="list-disc list-inside ml-4 mt-1">
+                        <li>Aus Deutschland, Österreich und der Schweiz: Es gibt Direktflüge oder bequeme Verbindungen mit Zwischenstopp in Lissabon oder Porto. TAP Air Portugal bietet regelmäßige Flüge an.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Inselhopping per Flugzeug:</strong> Zwischen den Hauptinseln gibt es regelmäßige Inlandsflüge, die das Inselhopping erleichtern, wenn Sie nicht alle Distanzen segeln möchten.</li>
+                    <li><strong>Mit dem Schiff von Portugal (Festland):</strong> Für eine längere Anreise mit dem eigenen Schiff oder einer Überführung ist die Atlantikpassage von Lissabon oder Porto aus möglich, erfordert aber eine sorgfältige Planung und ausreichend Zeit.</li>
+                  </ul>
+                </div>
               </div>
               
               <h4 className="text-lg font-semibold text-gray-800 mt-6 mb-3">Marinas & Ausgangshäfen: Exzellente Infrastruktur im Atlantik</h4>
@@ -173,20 +175,22 @@ const Azores = () => {
               </ul>
               <p>Die Flotten umfassen eine gute Auswahl an Monohulls und Katamaranen, die für die Atlantikbedingungen ausgelegt sind.</p>
               
-              <div className="bg-gray-50 p-4 rounded-lg mt-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Wetter & Windbedingungen: Segeln im Rhythmus des Atlantiks</h4>
-                <p className="mb-3">Das Klima auf den Azoren ist ozeanisch-subtropisch, geprägt vom Golfstrom und der Dynamik des Azorenhochs. Dies führt zu milden Temperaturen das ganze Jahr über, aber auch zu wechselhaftem Wetter.</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li><strong>Vorherrschende Winde:</strong> Im Sommer (Juni bis September) dominieren oft moderate bis frische Nordost- bis Nordwest-Passatwinde oder Gradientwinde. Diese bieten hervorragende Segelbedingungen.</li>
-                  <li><strong>Atlantische Einflüsse:</strong> Die Azoren liegen im Einflussbereich von Tiefdruckgebieten, die besonders außerhalb der Hochsaison für stärkere Winde, Schauerstaffeln und atlantischen Schwell sorgen können. Wetterfenster müssen sorgfältig geplant werden.</li>
-                  <li><strong>Lokale Effekte:</strong> Um die Inseln herum können lokale Beschleunigungseffekte und Lee-Wirkungen auftreten, die die Windverhältnisse komplexer machen.</li>
-                  <li><strong>Revier-Eignung für Erfahrungsstufen:</strong>
-                    <ul className="list-disc list-inside ml-4 mt-1">
-                      <li>Erfahrene Skipper: Die Azoren sind ausdrücklich für erfahrene Segler empfohlen. Ozeansegel-Praxis, Kenntnisse über Wetterfenster, Strömungen und Schwell sind von Vorteil. Das Revier erfordert gute Seemannschaft, Reffmanagement und Seegangstauglichkeit.</li>
-                      <li>Crewed Charter: Für weniger erfahrene Segler oder solche, die die Azoren entspannt und sicher erleben möchten, bieten sich Crewed-Charter mit erfahrenem Skipper an. Viele Anbieter bieten auch spezialisierte Segel- und Tauchexpeditionen an.</li>
-                    </ul>
-                  </li>
-                </ul>
+              <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mt-6">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3">Wetter & Windbedingungen: Segeln im Rhythmus des Atlantiks</h4>
+                  <p className="mb-3">Das Klima auf den Azoren ist ozeanisch-subtropisch, geprägt vom Golfstrom und der Dynamik des Azorenhochs. Dies führt zu milden Temperaturen das ganze Jahr über, aber auch zu wechselhaftem Wetter.</p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Vorherrschende Winde:</strong> Im Sommer (Juni bis September) dominieren oft moderate bis frische Nordost- bis Nordwest-Passatwinde oder Gradientwinde. Diese bieten hervorragende Segelbedingungen.</li>
+                    <li><strong>Atlantische Einflüsse:</strong> Die Azoren liegen im Einflussbereich von Tiefdruckgebieten, die besonders außerhalb der Hochsaison für stärkere Winde, Schauerstaffeln und atlantischen Schwell sorgen können. Wetterfenster müssen sorgfältig geplant werden.</li>
+                    <li><strong>Lokale Effekte:</strong> Um die Inseln herum können lokale Beschleunigungseffekte und Lee-Wirkungen auftreten, die die Windverhältnisse komplexer machen.</li>
+                    <li><strong>Revier-Eignung für Erfahrungsstufen:</strong>
+                      <ul className="list-disc list-inside ml-4 mt-1">
+                        <li>Erfahrene Skipper: Die Azoren sind ausdrücklich für erfahrene Segler empfohlen. Ozeansegel-Praxis, Kenntnisse über Wetterfenster, Strömungen und Schwell sind von Vorteil. Das Revier erfordert gute Seemannschaft, Reffmanagement und Seegangstauglichkeit.</li>
+                        <li>Crewed Charter: Für weniger erfahrene Segler oder solche, die die Azoren entspannt und sicher erleben möchten, bieten sich Crewed-Charter mit erfahrenem Skipper an. Viele Anbieter bieten auch spezialisierte Segel- und Tauchexpeditionen an.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
               
               <h4 className="text-lg font-semibold text-gray-800 mt-6 mb-3">Beste Reisezeit: Wann die Azoren am schönsten sind</h4>
