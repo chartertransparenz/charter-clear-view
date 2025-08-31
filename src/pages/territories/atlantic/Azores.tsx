@@ -8,6 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import atlantic from "@/assets/atlantic.jpg";
 const Azores = () => {
   useEffect(() => {
@@ -225,6 +226,62 @@ const Azores = () => {
           </div>
         </div>
 
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Häufig gestellte Fragen (FAQ) zum Yachtcharter auf den Azoren</h2>
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>Wie sind die Windbedingungen auf den Azoren?</AccordionTrigger>
+                <AccordionContent>
+                  Die Azoren liegen im Nordatlantik und sind bekannt für wechselhafte, aber oft beständige Winde. Im Sommer dominieren moderate bis frische Nordost- bis Nordwest-Passatwinde. Außerhalb der Hauptsaison können Tiefdruckgebiete für stärkere Winde, Schauerstaffeln und atlantischen Schwell sorgen. Lokale Effekte um die Inseln können die Windverhältnisse zusätzlich beeinflussen.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Wie findet man sichere Liegeplätze auf den Azoren?</AccordionTrigger>
+                <AccordionContent>
+                  Die Azoren verfügen über gut ausgebaute Marinas auf den Hauptinseln (z.B. Ponta Delgada, Horta, Angra do Heroísmo, Madalena), die sichere Liegeplätze bieten. Daneben gibt es einige geschützte Buchten für Ankerstopps. Aufgrund der ozeanischen Bedingungen und des möglichen Schwell ist die Wahl eines gut geschützten Ankerplatzes oder einer Marina wichtig. In den Marinas ist eine frühzeitige Reservierung, besonders in der Hochsaison, ratsam.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>Welche nautischen Besonderheiten gibt es auf den Azoren?</AccordionTrigger>
+                <AccordionContent>
+                  Nautische Besonderheiten umfassen den Atlantikschwell, der auch bei wenig Wind auftreten kann, sowie die Notwendigkeit, Wetterfenster für längere Schläge zwischen den Inselgruppen sorgfältig zu planen. Die Strömungen zwischen den Inseln können ebenfalls eine Rolle spielen. Das Revier ist bekannt für Wal- und Delfinbeobachtungen. In bestimmten Natur- und Tauchschutzgebieten (z.B. um Formigas/Dollabarat) gelten spezielle Anker- und Verhaltensregeln.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>Welche Segelscheine werden für eine Bareboat-Charter auf den Azoren benötigt?</AccordionTrigger>
+                <AccordionContent>
+                  Für eine Bareboat-Charter auf den Azoren benötigt der Skipper einen amtlichen Sportbootführerschein, der für die Küstengewässer seines Heimatlandes gültig ist (z.B. SBF See oder ICC für deutsche Staatsbürger). Zusätzlich verlangen die meisten Vercharterer einen Nachweis über Segelerfahrung, oft mit Ozeansegel-Praxis oder einer bestimmten Anzahl von Seemeilen (z.B. durch Meilennachweise oder einen detaillierten Segel-Lebenslauf). Mindestens eine Person an Bord muss zudem über ein gültiges Funkzeugnis (SRC oder LRC) verfügen.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>Wie viel Segelerfahrung brauche ich, um selbstständig eine Yacht auf den Azoren zu führen?</AccordionTrigger>
+                <AccordionContent>
+                  Die Azoren gelten als anspruchsvolles Revier. Für eine selbstständige Bareboat-Charter ist umfassende Segelerfahrung erforderlich. Sie sollten in der Lage sein, die Yacht sicher bei wechselnden Atlantikbedingungen zu führen, mit Schwell umzugehen, präzise zu navigieren und Wetterentwicklungen zu interpretieren. Erfahrung im Offshore-Segeln und mit längeren Schlägen ist von großem Vorteil. Wenn Sie unsicher sind oder weniger Erfahrung haben, ist die Buchung eines erfahrenen Skippers dringend empfohlen.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>Wann ist die beste Reisezeit für die Azoren?</AccordionTrigger>
+                <AccordionContent>
+                  Die beste Reisezeit für einen Yachtcharter auf den Azoren ist von Juni bis September. In diesen Monaten sind die Temperaturen am wärmsten, die Winde am stabilsten und die Tage am längsten. Auch Mai und Oktober können für erfahrene Segler attraktiv sein, bieten aber potenziell wechselhaftere Wetterbedingungen.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger>Wie gut sind die Häfen und Marinas auf den einzelnen Inseln ausgebaut?</AccordionTrigger>
+                <AccordionContent>
+                  Die Hauptinseln (São Miguel, Faial, Terceira) verfügen über moderne und gut ausgestattete Marinas, die alle wesentlichen Dienstleistungen (Wasser, Strom, Sanitäranlagen, Treibstoff, Reparaturmöglichkeiten) bieten. Auf den kleineren Inseln sind die Häfen einfacher, aber funktional. Es ist ratsam, Liegeplätze in der Hochsaison vorab zu reservieren.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-8">
+                <AccordionTrigger>Wie gut sind die Proviantierungsmöglichkeiten unterwegs?</AccordionTrigger>
+                <AccordionContent>
+                  Die Proviantierung ist auf den Azoren gut möglich. In den größeren Städten wie Ponta Delgada, Horta oder Angra do Heroísmo finden Sie Supermärkte, Bäckereien und lokale Märkte mit frischen regionalen Produkten. Auf den kleineren Inseln sind die Möglichkeiten begrenzter, aber ausreichend für den täglichen Bedarf. Viele Marinas bieten auch einen Proviantierungsservice an.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
