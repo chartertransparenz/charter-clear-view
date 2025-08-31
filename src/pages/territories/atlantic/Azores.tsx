@@ -134,6 +134,18 @@ const Azores = () => {
                 Dieses Revier im Nordatlantik ist ideal für erfahrene Skipper, die zuverlässige Ausrüstung, gute Seemannschaft und flexible Routenplanung mitbringen. Es belohnt Sie mit unvergesslichen Naturerlebnissen, der Begegnung mit Walen und Delfinen und dem Gefühl, an einem der letzten unberührten Paradiese Europas zu segeln.
               </p>
               
+              {/* Image section */}
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/11a43c77-849d-4dcf-aaff-a185437a6f1d.png" 
+                  alt="Die Horta Marina auf den Azoren – ein traditionsreicher Treffpunkt für Segler aus aller Welt." 
+                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+                />
+                <p className="text-center text-gray-600 mt-3 italic">
+                  Die Horta Marina auf den Azoren – ein traditionsreicher Treffpunkt für Segler aus aller Welt.
+                </p>
+              </div>
+
               <h3 className="text-xl font-bold text-gray-800 mt-8 mb-4">Die Inselgruppen der Azoren: Ein Archipel voller Vielfalt</h3>
               <p>
                 Die neun Azoreninseln gliedern sich in drei geografische Gruppen, die jeweils ihren eigenen Charme und ihre spezifischen Segelbedingungen bieten.
