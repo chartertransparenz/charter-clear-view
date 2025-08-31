@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -294,6 +295,63 @@ const CanaryIslands = () => {
             <p className="text-lg text-gray-700 font-semibold">
               Fordern Sie jetzt Ihr individuelles und unverbindliches Angebot für Ihren Yachtcharter auf den Kanaren an!
             </p>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">FAQ – Häufig gestellte Fragen zum Yachtcharter auf den Kanaren</h2>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-left">Wie sind die Windbedingungen auf den Kanarischen Inseln?</AccordionTrigger>
+                <AccordionContent>
+                  Die Kanaren liegen im Einflussbereich des Nordost-Passats, der meist konstant mit 4 bis 6 Beaufort weht. Charakteristisch sind die Beschleunigungszonen (Düsen) zwischen den hohen Inseln, in denen der Wind plötzlich auf 7 bis 8 Bft. oder mehr zunehmen kann. Eine vorausschauende Segelplanung ist daher essenziell.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-left">Wie findet man sichere Liegeplätze auf den Kanarischen Inseln?</AccordionTrigger>
+                <AccordionContent>
+                  Die Inseln verfügen über ein dichtes Netz an modernen und sicheren Marinas, die Schutz vor allen Wetterlagen bieten. Eine Reservierung, besonders in der Hochsaison, ist empfehlenswert. Es gibt zudem zahlreiche ausgewiesene Ankerbuchten, deren Eignung jedoch stark von der aktuellen Wind- und Dünungsrichtung abhängt. Gängige Seekarten und Revierführer geben detailliert Auskunft.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-left">Welche nautischen Besonderheiten gibt es dort?</AccordionTrigger>
+                <AccordionContent>
+                  Die größten nautischen Besonderheiten sind die bereits erwähnten Düsen-Effekte und die lange Atlantikdünung, die vor allem die Nord- und Westküsten beeinflusst. Zudem ist der Tidenhub mit etwa 2 bis 2,5 Metern spürbar und sollte bei der Ansteuerung von Häfen und Ankerbuchten berücksichtigt werden.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-left">Welche Segelscheine werden für eine Bareboat-Charter auf den Kanarischen Inseln benötigt?</AccordionTrigger>
+                <AccordionContent>
+                  Für eine Bareboat-Charter wird in der Regel der deutsche Sportküstenschifferschein (SKS) oder ein äquivalenter internationaler Schein (z.B. RYA Day Skipper) verlangt. Zusätzlich ist fast immer ein gültiges Funkzeugnis (mindestens SRC) für den Skipper erforderlich. Die Vercharterer prüfen die Segelerfahrung oft anhand eines Segel-Lebenslaufs.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-left">Wie viel Segelerfahrung brauche ich, um selbstständig eine Yacht auf den Kanaren zu führen?</AccordionTrigger>
+                <AccordionContent>
+                  Aufgrund der anspruchsvollen Bedingungen (Starkwind, Dünung, Düsen) wird solide Erfahrung als Skipper in Gezeiten- und Starkwindrevieren dringend empfohlen. Sie sollten Erfahrung im Reffen und in der Schwerwetter-Navigation haben. Für weniger erfahrene Crews ist die Buchung eines ortskundigen Skippers die beste und sicherste Wahl.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="text-left">Wann ist die beste Reisezeit für die Kanarischen Inseln?</AccordionTrigger>
+                <AccordionContent>
+                  Die Kanaren sind ein Ganzjahresrevier. Die Hauptsaison für Segler ist von Oktober bis April, wenn die Winde etwas moderater und die Temperaturen sehr angenehm sind. Die Sommermonate (Mai bis September) bieten stabilere und oft stärkere Winde, ideal für sportlich ambitionierte Segler.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger className="text-left">Wie gut sind die Häfen und Marinas auf den einzelnen Inseln ausgebaut?</AccordionTrigger>
+                <AccordionContent>
+                  Die maritime Infrastruktur ist exzellent. Alle Hauptinseln verfügen über mehrere moderne Marinas mit allen Serviceeinrichtungen wie Strom, Wasser, Sanitäranlagen, WLAN, Travellifts und Werkstätten. Kleinere Häfen auf den westlichen Inseln sind oft einfacher, aber ebenfalls sicher und gut organisiert.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-8">
+                <AccordionTrigger className="text-left">Wie gut sind die Proviantierungsmöglichkeiten unterwegs?</AccordionTrigger>
+                <AccordionContent>
+                  Die Proviantierung ist sehr einfach. In oder in unmittelbarer Nähe aller größeren Marinas finden sich gut sortierte Supermärkte (z.B. Mercadona, HiperDino), die oft auch einen Lieferservice direkt an den Steg anbieten. Auch in kleineren Orten gibt es ausreichend Möglichkeiten, frische Lebensmittel einzukaufen.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
 
