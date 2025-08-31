@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -179,6 +180,127 @@ const Malta = () => {
 
         {/* Highlights */}
         
+
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">FAQ – Yachtcharter Malta</h2>
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>Welche Qualifikationen und Lizenzen brauche ich?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Anerkanntes Küstenzertifikat für Segelyachten (z. B. SKS, oder entsprechende internationale Scheine).</p>
+                    <p>• UKW-Funkschein (z. B. SRC), da Funk an Bord Standard ist.</p>
+                    <p>• Co-Skipper mit Segelerfahrung empfohlen/teils verlangt; Mindestalter für Skipper meist 18–21 Jahre.</p>
+                    <p>• Nachweis der Segelerfahrung (Skipper-CV/Logbuch) kann angefordert werden.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Wie laufen Charterdauer, Preise und Zahlung?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Standarddauer: 7 Nächte, meist Samstag bis Samstag; in der Neben- oder Zwischensaison teils flexible Starts.</p>
+                    <p>• Üblich: 30–50 % Anzahlung bei Buchung, Rest 2–4 Wochen vor Abreise.</p>
+                    <p>• Zahlung per Banküberweisung/Kreditkarte; Kaution per Kreditkartenblock.</p>
+                    <p>• In Malta fällt in der Regel Mehrwertsteuer an (Preisdarstellung je nach Anbieter).</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-3">
+                <AccordionTrigger>Welche Stornobedingungen gelten und was passiert bei Schlechtwetter?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Staffelungen je nach Anbieter/Tarif; frühere Stornierung ist meist günstiger.</p>
+                    <p>• Bei Sicherheitsrisiken durch Wetter: Routenanpassung, Terminverschiebung oder Erstattung gemäß AGB.</p>
+                    <p>• Reiserücktritts- und Kautionsversicherung sind empfehlenswert.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-4">
+                <AccordionTrigger>Wie funktionieren Check-in, Check-out und die Kaution?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Check-in/Übergabe meist Samstag ab Nachmittag; ausführliche Einweisung und Inventar-/Zustandsprotokoll.</p>
+                    <p>• Rückkehr zur Heimmarina am Freitag spätnachmittags, Übernachtung an Bord, Check-out Samstagmorgen.</p>
+                    <p>• Verspätete Rückgabe kann Gebühren auslösen.</p>
+                    <p>• Kaution abhängig von Yacht; optional Damage Waiver/Kautionsversicherung.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-5">
+                <AccordionTrigger>Was ist inkludiert und welche Extras gibt es?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Meist inklusive: Sicherheitsausrüstung, Navigationsinstrumente/Plotter, Beiboot, Gas für die Kombüse, Bettwäsche; Endreinigung teils enthalten.</p>
+                    <p>• Übliche Extras: Außenborder fürs Dinghy, Handtuchsets, Gennaker/Spinnaker, SUP/Water Toys, WLAN-Hotspot, Early Check-in/Late Check-out.</p>
+                    <p>• Kraftstoffregelung: „voll–voll" oder Abrechnung nach Motorstunden (je nach Vertrag).</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-6">
+                <AccordionTrigger>Welche Routen sind möglich und ist Nachtsegeln erlaubt?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Standardrevier: Malta, Comino (Blaue/Crystal Lagoon) und Gozo.</p>
+                    <p>• Abstecher nach Sizilien nur mit schriftlicher Genehmigung und bei passenden Bedingungen/Formalitäten.</p>
+                    <p>• Nachtsegeln ist oft eingeschränkt oder nur nach Absprache erlaubt.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-7">
+                <AccordionTrigger>Wo liegen wir an und was ist beim Ankern zu beachten?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Beliebte Marinas: Grand Harbour (Birgu), Msida & Ta' Xbiex, Portomaso, Marina di Valletta; Mgarr Marina (Gozo).</p>
+                    <p>• Heimathafennacht zu Beginn/Ende häufig inklusive; Gastliegeplätze/Bojen werden separat berechnet.</p>
+                    <p>• In Schutzgebieten/Seegras nicht ankern, bevorzugt auf Sand; Blue/Crystal Lagoon in der Hochsaison sehr voll.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-8">
+                <AccordionTrigger>Welche Technik ist an Bord und wie versorgen wir uns mit Strom/Wasser?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Üblich: GPS/Plotter, UKW-Funk, Autopilot (je nach Yacht), Ankerwinsch, Sicherheits- und Rettungsmittel.</p>
+                    <p>• Strom: 12V/USB; 230V über Landstrom oder Inverter/Generator (modellabhängig).</p>
+                    <p>• Wassertanks regelmäßig in Marinas auffüllen; an Bord-Toiletten nur geeignetes Papier verwenden.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-9">
+                <AccordionTrigger>Wie viele Personen dürfen mit, und was ist mit Kindern/Sicherheit?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Maximal zulässige Personenzahl gemäß Schiffszulassung und Rettungsmitteln.</p>
+                    <p>• Kinder willkommen: Größen für Rettungswesten vorab angeben; Relingsnetz optional.</p>
+                    <p>• Sicherheitsbriefing zu Manövern/Notfällen durchführen, Schwimmwesten bei Bedarf tragen.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-10">
+                <AccordionTrigger>Gibt es Proviantservice, Transfers und technischen Support?</AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-2">
+                    <p>• Proviant kann oft vorab bestellt und ans Boot geliefert werden.</p>
+                    <p>• Flughafentransfers auf Anfrage organisierbar; Parkmöglichkeiten an Marinas begrenzt.</p>
+                    <p>• Technischer Support der Basis mit Notfallkontakten; bei Pannen oder Fragen umgehend melden.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
