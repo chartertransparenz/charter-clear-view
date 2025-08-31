@@ -155,6 +155,17 @@ const Montenegro = () => {
               </li>
             </ul>
 
+            <div className="mt-8">
+              <img 
+                src="/lovable-uploads/eb866192-681b-49f4-8c96-0163e405b375.png" 
+                alt="Wo majestätische Berge auf die tiefblaue Adria treffen: Erleben Sie die Bucht von Kotor vom Wasser aus" 
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-gray-600 mt-3 italic">
+                Wo majestätische Berge auf die tiefblaue Adria treffen: Erleben Sie die Bucht von Kotor vom Wasser aus
+              </p>
+            </div>
+
             <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
               <h3 className="font-bold text-gray-800 mb-4">Wind & Wetter – Segeln an der Adria</h3>
               <p className="text-gray-700 mb-4">
