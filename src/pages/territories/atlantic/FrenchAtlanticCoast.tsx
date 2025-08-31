@@ -164,6 +164,32 @@ const FrenchAtlanticCoast = () => {
                 <li><strong>La Rochelle (Port des Minimes):</strong> Eine der größten und modernsten Marinas an der Atlantikküste. Der historische Hafen von La Rochelle ist nur einen Steinwurf entfernt und die Lage ist ideal für Törns zu den Inseln Île de Ré, Île d'Oléron und Île d'Yeu.</li>
               </ul>
 
+              {/* Two images side by side */}
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div>
+                  <img 
+                    src="/lovable-uploads/604856fc-7b4d-4869-8c90-2c3fba8dc395.png" 
+                    alt="Saint-Martin-de-Ré – Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste." 
+                    className="w-full h-64 object-cover rounded-lg shadow-lg"
+                  />
+                  <p className="text-center text-gray-600 mt-3 italic">
+                    <strong>Saint-Martin-de-Ré</strong><br />
+                    „Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste."
+                  </p>
+                </div>
+                <div>
+                  <img 
+                    src="/lovable-uploads/e19b232f-535a-4047-a55e-9738cf5fc1c0.png" 
+                    alt="Saint-Malo – Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne." 
+                    className="w-full h-64 object-cover rounded-lg shadow-lg"
+                  />
+                  <p className="text-center text-gray-600 mt-3 italic">
+                    <strong>Saint-Malo</strong><br />
+                    „Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne."
+                  </p>
+                </div>
+              </div>
+
               <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Inselhopping für Kenner: Törnziele mit Charakter</h3>
               <p>
                 Die französische Atlantikküste ist ein Paradies für Inselhopping. Jede Insel hat ihre eigene Identität, ihre eigenen kulinarischen Spezialitäten und ihren eigenen Charme. Die Törnplanung richtet sich hier nicht nur nach dem Wind, sondern vor allem nach der Tide.
