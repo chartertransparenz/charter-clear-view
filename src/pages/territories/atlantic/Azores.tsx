@@ -46,7 +46,7 @@ const Azores = () => {
     cities: ["Horta", "Castelo Branco"]
   }];
   const highlights = ["Spektakuläre Vulkanlandschaften", "Unberührte Natur und Kraterseen", "Authentische portugiesische Kultur", "Walbeobachtung und Delfine", "Wenig befahrene Gewässer", "Thermalbäder und heiße Quellen", "Anspruchsvolles Hochsee-Segeln"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
