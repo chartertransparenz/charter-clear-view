@@ -199,6 +199,19 @@ const Azores = () => {
               </ul>
               <p>Die Flotten umfassen eine gute Auswahl an Monohulls und Katamaranen, die für die Atlantikbedingungen ausgelegt sind.</p>
               
+              
+              {/* Image section */}
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/f6db2f01-8362-483d-93e5-1bc434e8bbe0.png" 
+                  alt="Saftig grüne Steilküsten und tiefblaues Meer – die unberührte Natur der Azoren zeigt sich hier von ihrer eindrucksvollsten Seite." 
+                  className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+                />
+                <p className="text-center text-gray-600 mt-3 italic">
+                  Saftig grüne Steilküsten und tiefblaues Meer – die unberührte Natur der Azoren zeigt sich hier von ihrer eindrucksvollsten Seite.
+                </p>
+              </div>
+
               <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
                 <h4 className="text-lg font-semibold text-gray-800 mb-3">Wetter & Windbedingungen: Segeln im Rhythmus des Atlantiks</h4>
                 <p className="mb-3">Das Klima auf den Azoren ist ozeanisch-subtropisch, geprägt vom Golfstrom und der Dynamik des Azorenhochs. Dies führt zu milden Temperaturen das ganze Jahr über, aber auch zu wechselhaftem Wetter.</p>
