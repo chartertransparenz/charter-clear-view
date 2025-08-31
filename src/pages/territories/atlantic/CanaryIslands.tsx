@@ -151,7 +151,7 @@ const CanaryIslands = () => {
             </p>
 
             {/* Erreichbarkeit Box */}
-            <div className="bg-gray-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h3 className="text-xl font-bold text-gray-800 mb-4">Ihre Anreise ins Segelparadies: Erreichbarkeit der Kanaren</h3>
               
               <p className="text-gray-700 mb-4 leading-relaxed">
@@ -254,7 +254,7 @@ const CanaryIslands = () => {
             </ul>
 
             {/* Wetter & Wind Box */}
-            <div className="bg-gray-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h3 className="text-xl font-bold text-gray-800 mb-4">Wetter & Windbedingungen: Das Reich der Passatwinde</h3>
               
               <p className="text-gray-700 mb-4 leading-relaxed">
