@@ -155,8 +155,8 @@ const Montenegro = () => {
               </li>
             </ul>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
-              <h3 className="font-bold text-blue-800 mb-4">Wind & Wetter – Segeln an der Adria</h3>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
+              <h3 className="font-bold text-gray-800 mb-4">Wind & Wetter – Segeln an der Adria</h3>
               <p className="text-gray-700 mb-4">
                 Das Klima in Montenegro ist typisch mediterran mit heißen, trockenen Sommern und milden, feuchteren Wintern. Die Segelsaison erstreckt sich von April bis in den späten Oktober.
               </p>
@@ -181,8 +181,8 @@ const Montenegro = () => {
               </div>
             </div>
 
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mb-6">
-              <h3 className="font-bold text-amber-800 mb-4">Einreiseformalitäten mit der Charteryacht von Kroatien nach Montenegro</h3>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
+              <h3 className="font-bold text-gray-800 mb-4">Einreiseformalitäten mit der Charteryacht von Kroatien nach Montenegro</h3>
               <p className="text-gray-700 mb-4">
                 Für einen Yachtcharter von Kroatien nach Montenegro ist eine sorgfältige Planung der Einreiseformalitäten entscheidend.
               </p>
