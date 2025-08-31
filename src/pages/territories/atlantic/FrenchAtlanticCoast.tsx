@@ -8,6 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import TerritoryMap from "@/components/TerritoryMap";
 const frenchAtlanticCoast = "/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.png";
 const FrenchAtlanticCoast = () => {
   useEffect(() => {
@@ -99,6 +100,15 @@ const FrenchAtlanticCoast = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <TerritoryMap 
+            region="Französische Atlantikküste"
+            center={{ lat: 47.0, lng: -2.5 }}
+            zoom={5}
+          />
         </div>
 
         {/* Description */}
