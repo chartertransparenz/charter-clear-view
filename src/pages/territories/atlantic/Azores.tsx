@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import atlantic from "@/assets/atlantic.jpg";
 const Azores = () => {
@@ -103,6 +104,18 @@ const Azores = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Die Azorischen Inseln</h2>
+          <TerritoryMap
+            region="Azoren"
+            center={{ lat: 38.5, lng: -28.0 }}
+            zoom={7}
+            maptype="satellite"
+            className="mb-8"
+          />
         </div>
 
         {/* Description */}
