@@ -165,28 +165,30 @@ const FrenchAtlanticCoast = () => {
               </ul>
 
               {/* Two images side by side */}
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div>
-                  <img 
-                    src="/lovable-uploads/604856fc-7b4d-4869-8c90-2c3fba8dc395.png" 
-                    alt="Saint-Martin-de-Ré – Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste." 
-                    className="w-full h-64 object-cover rounded-lg shadow-lg"
-                  />
-                  <p className="text-center text-gray-600 mt-3 italic">
-                    <strong>Saint-Martin-de-Ré</strong><br />
-                    „Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste."
-                  </p>
-                </div>
-                <div>
-                  <img 
-                    src="/lovable-uploads/e19b232f-535a-4047-a55e-9738cf5fc1c0.png" 
-                    alt="Saint-Malo – Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne." 
-                    className="w-full h-64 object-cover rounded-lg shadow-lg"
-                  />
-                  <p className="text-center text-gray-600 mt-3 italic">
-                    <strong>Saint-Malo</strong><br />
-                    „Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne."
-                  </p>
+              <div className="border border-gray-200 bg-gray-50 p-6 rounded-lg shadow-sm my-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <img 
+                      src="/lovable-uploads/604856fc-7b4d-4869-8c90-2c3fba8dc395.png" 
+                      alt="Saint-Martin-de-Ré – Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste." 
+                      className="w-full h-64 object-cover rounded-lg shadow-lg"
+                    />
+                    <p className="text-center text-gray-600 mt-3 italic">
+                      <strong>Saint-Martin-de-Ré</strong><br />
+                      „Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste."
+                    </p>
+                  </div>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/e19b232f-535a-4047-a55e-9738cf5fc1c0.png" 
+                      alt="Saint-Malo – Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne." 
+                      className="w-full h-64 object-cover rounded-lg shadow-lg"
+                    />
+                    <p className="text-center text-gray-600 mt-3 italic">
+                      <strong>Saint-Malo</strong><br />
+                      „Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne."
+                    </p>
+                  </div>
                 </div>
               </div>
 
