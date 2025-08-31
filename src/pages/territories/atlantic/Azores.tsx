@@ -225,25 +225,6 @@ const Azores = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="max-w-4xl mx-auto px-6 py-8">
-          <div className="text-center">
-            <CharterRequestForm>
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white shadow-lg px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
-              >
-                Jetzt Charter anfragen für die Azoren
-              </Button>
-            </CharterRequestForm>
-          </div>
-        </div>
-
-        {/* Regions */}
-        
-
-        {/* Highlights */}
-        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
