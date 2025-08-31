@@ -103,18 +103,123 @@ const FrenchAtlanticCoast = () => {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln an der französischen Atlantikküste</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              Die französische Atlantikküste bietet anspruchsvolles Segeln für 
-              erfahrene Segler, die Herausforderungen lieben. Von der rauen Biskaya 
-              bis zur zerklüfteten Bretagne und Normandie - hier herrschen starke 
-              Winde, große Gezeiten und spektakuläre Küstenlandschaften.
-            </p>
-            <p className="text-lg text-gray-600">
-              Diese Region ist perfekt für Segler, die die authentische Seefahrertradition 
-              Frankreichs erleben möchten, kombiniert mit exzellenter Küche und 
-              traditionellen Häfen voller maritimer Geschichte.
-            </p>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Yachtcharter Bretagne & Atlantikküste Frankreich – Segeln zwischen Gezeiten, Inseln & maritimer Kultur</h2>
+            
+            <div className="text-lg text-gray-600 space-y-4">
+              <p>
+                Die französische Atlantikküste gilt als eines der spannendsten Segelreviere Europas. Zwischen der rauen Schönheit der Bretagne und den malerischen Stränden der Biskaya erwartet Skipper und Crews ein Revier voller Kontraste: zerklüftete Klippen, idyllische Buchten, charmante Fischerhäfen, historische Festungen und kulinarische Hochgenüsse von Austern bis Cidre.
+              </p>
+              
+              <p>
+                Die Region ist bekannt für ihre anspruchsvolle Gezeitennavigation, ihre starken Strömungen und das besondere Licht, das Maler, Dichter und Segler seit Jahrhunderten inspiriert. Wer hier segelt, erlebt echtes Atlantik-Feeling, das sowohl sportlich ambitionierte Crews als auch Genießer anspricht.
+              </p>
+              
+              <p>
+                Wichtige Ausgangspunkte für den Yachtcharter Bretagne sind traditionsreiche Häfen wie La Rochelle, Lorient oder La Trinité-sur-Mer. Von hier aus lassen sich die berühmten Inseln und Küstenabschnitte entdecken:
+              </p>
+              
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Die Südbretagne:</strong> Ein Mosaik aus Inseln wie der majestätischen Belle-Île, der kleineren Île de Groix und den idyllischen Zwillingsinseln Hoëdic und Houat. Nicht zu vergessen das sagenumwobene Glénan-Archipel, die „bretonische Karibik".</li>
+                <li><strong>Die Küste der Biskaya:</strong> Hier locken sonnenverwöhnte Inseln wie die elegante Île de Ré, die weitläufige Île d'Oléron und die wilde, ursprüngliche Île d'Yeu.</li>
+              </ul>
+              
+              <p>
+                Ein Yachtcharter in der Bretagne oder der Biskaya ist eine Einladung, im Einklang mit den Elementen zu segeln, die französische Lebensart zu genießen und unvergessliche nautische Erfahrungen zu sammeln.
+              </p>
+
+              {/* Anreise Section */}
+              <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Ihre Anreise ins Herz des französischen Segelsports</h3>
+                <p className="mb-4">
+                  Die Planung Ihres Törns an der französischen Atlantikküste gestaltet sich dank der hervorragenden Infrastruktur denkbar einfach. Die wichtigsten Charterbasen sind aus Deutschland, Österreich und der Schweiz bequem zu erreichen.
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Mit dem Auto:</strong> Die Anreise mit dem eigenen PKW ist besonders für Crews mit viel Gepäck eine flexible Option. Das französische Autobahnnetz ist exzellent ausgebaut.</li>
+                  <li><strong>Mit dem Hochgeschwindigkeitszug (TGV):</strong> Reisen Sie entspannt und schnell. Direkte Verbindungen führen Sie von vielen europäischen Städten nach Nantes, La Rochelle oder Lorient. Von dort aus sind es nur kurze Strecken per Taxi oder Regionalzug zu Ihrer Marina.</li>
+                  <li><strong>Per Flugzeug:</strong> Regionale Flughäfen wie Nantes (NTE), La Rochelle (LRH) oder Lorient (LRT) werden von verschiedenen Fluggesellschaften angeflogen und ermöglichen eine schnelle Anreise.</li>
+                </ul>
+              </div>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Marinas & Ausgangshäfen: Die Weltklasse-Infrastruktur einer Segelnation</h3>
+              <p>
+                Frankreich ist eine der führenden Segelnationen der Welt, und das spiegelt sich in der Dichte und Qualität seiner Marinas wider. Sie finden hier eine perfekte maritime Infrastruktur mit allen erdenklichen Serviceleistungen und eine riesige Auswahl an top-gewarteten Charteryachten.
+              </p>
+              
+              <p><strong>Unsere wichtigsten Charterbasen und empfohlene Marinas im Revier:</strong></p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>La Trinité-sur-Mer:</strong> Das unbestrittene Mekka des französischen Regattasports. Ein Hafen, der Segelgeschichte atmet und der perfekte Ausgangspunkt für Törns in die Bucht von Quiberon und zu den bretonischen Inseln ist.</li>
+                <li><strong>Lorient:</strong> Die „Stadt der fünf Häfen" ist die Heimat vieler Hochsee-Profis und bietet eine riesige Charterflotte. Von hier aus sind die Île de Groix und das Glénan-Archipel zum Greifen nah.</li>
+                <li><strong>Le Crouesty / Port du Crouesty:</strong> Eine der größten Marinas Europas, perfekt gelegen am Eingang des Golfs von Morbihan. Sie bietet Schutz bei jedem Wetter und ist ein idealer Startpunkt für Familien und Crews, die das geschützte Binnenmeer erkunden wollen.</li>
+                <li><strong>La Rochelle (Port des Minimes):</strong> Eine der größten und modernsten Marinas an der Atlantikküste. Der historische Hafen von La Rochelle ist nur einen Steinwurf entfernt und die Lage ist ideal für Törns zu den Inseln Île de Ré, Île d'Oléron und Île d'Yeu.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Inselhopping für Kenner: Törnziele mit Charakter</h3>
+              <p>
+                Die französische Atlantikküste ist ein Paradies für Inselhopping. Jede Insel hat ihre eigene Identität, ihre eigenen kulinarischen Spezialitäten und ihren eigenen Charme. Die Törnplanung richtet sich hier nicht nur nach dem Wind, sondern vor allem nach der Tide.
+              </p>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-2 mt-4">Die Südbretagne: Von Festungen und Lagunen</h4>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Belle-Île-en-Mer:</strong> Die „schöne Insel im Meer" macht ihrem Namen alle Ehre. Erkunden Sie die imposante Zitadelle von Vauban in Le Palais, ankern Sie in der malerischen Bucht von Sauzon und umrunden Sie die wilde Westküste mit ihren spektakulären Klippen. Ein Inselhopping zur Belle-Île ist ein absolutes Muss.</li>
+                <li><strong>Glénan-Archipel:</strong> Etwa zehn Seemeilen südlich von Concarneau liegt ein Naturparadies, das an die Karibik erinnert. Ein Ring aus kleinen Inseln umschließt eine türkisfarbene Lagune mit weißem Sand. Das Ankern und Navigieren in diesem flachen, von Strömungen durchzogenen Gebiet erfordert Präzision, belohnt aber mit unvergesslichen Momenten.</li>
+                <li><strong>Hoëdic und Houat:</strong> Diese beiden kleineren Inseln sind Oasen der Ruhe. Autofrei und ursprünglich bieten sie wunderschöne Strände, kleine Fischerhäfen und die perfekte Entschleunigung vom Alltag.</li>
+              </ul>
+
+              <h4 className="text-lg font-semibold text-gray-800 mb-2 mt-4">Die Biskaya: Sonne, Austern und Savoir-vivre</h4>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Île de Ré:</strong> Verbunden durch eine Brücke mit La Rochelle, ist diese Insel ein Inbegriff französischer Lebensart. Erkunden Sie die charmanten Dörfer mit dem Fahrrad, genießen Sie frische Austern direkt vom Erzeuger und entspannen Sie an den endlosen Sandstränden. Der Hafen von Saint-Martin-de-Ré ist ein Juwel. Ein Törn von La Rochelle zur Île de Ré ist ein Klassiker.</li>
+                <li><strong>Île d'Yeu:</strong> Weiter draußen im Atlantik gelegen, ist die Île d'Yeu wilder und rauer. Die Côte Sauvage im Westen erinnert an Irland, während der Osten mit schönen Stränden und dem lebhaften Hafen von Port-Joinville lockt.</li>
+                <li><strong>Île d'Oléron:</strong> Die größte der französischen Atlantikinseln ist bekannt für ihre Austernzucht, ihre Pinienwälder und ihre familienfreundlichen Strände. Der Hafen von Boyardville bietet einen berühmten Blick auf das Fort Boyard.</li>
+              </ul>
+
+              {/* Wetter Section */}
+              <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 mt-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Wetter & Windbedingungen: Im Rhythmus der Gezeiten</h3>
+                <p className="mb-4">
+                  Das Segeln an der französischen Atlantikküste ist untrennbar mit dem Phänomen der Gezeiten verbunden. Dies ist die größte nautische Herausforderung und zugleich der größte Reiz des Reviers.
+                </p>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">Die Gezeiten:</h4>
+                    <p className="mb-2">Der Tidenhub kann, je nach Region und Mondphase (Spring- oder Nipptide), zwischen drei und über sechs Metern betragen. Dies bedeutet:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li><strong>Starke Strömungen:</strong> In Engstellen und um Kaps können Gezeitenströme Geschwindigkeiten von mehreren Knoten erreichen. Die präzise Berechnung von Strom und Abdrift ist essenziell.</li>
+                      <li><strong>Veränderliche Wassertiefen:</strong> Häfen und Ankerbuchten können bei Ebbe trockenfallen. Die Navigation erfordert ständigen Blick auf Seekarte und Tidentabelle.</li>
+                      <li><strong>Timing ist alles:</strong> Die Ansteuerung von Häfen oder die Passage von Engstellen muss exakt mit der Tide geplant werden. Segeln gegen den Strom ist oft unmöglich.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p><strong>Wind:</strong> Die vorherrschenden Winde kommen aus westlichen Richtungen. Im Sommer sind sie oft moderat, können aber durch durchziehende Atlantiktiefs jederzeit auffrischen. Die Küste bietet bei fast allen Windrichtungen geschützte Abschnitte.</p>
+                  </div>
+                  <div>
+                    <p><strong>Welle:</strong> Die lange Atlantikdünung ist immer präsent und erfordert eine seegängige Yacht und eine erfahrene Crew. In den Küstengewässern kann sich bei Wind gegen Strom eine kurze, steile und unangenehme Welle aufbauen.</p>
+                  </div>
+                  <div>
+                    <p><strong>Erfahrungsstufe:</strong> Dieses Revier ist ideal für erfahrene Skipper, die ihre Kenntnisse im Gezeitensegeln anwenden und vertiefen wollen. Für Segler ohne Tiden-Erfahrung ist eine Bareboat-Charter nur nach gründlicher Vorbereitung oder idealerweise mit einem ortskundigen Skipper zu empfehlen.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Beste Reisezeit für Ihren Atlantik-Törn</h3>
+              <p>Die ideale Saison für einen Yachtcharter an der französischen Atlantikküste erstreckt sich von Mai bis September.</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Mai, Juni & September:</strong> Diese Monate gelten als die beste Zeit. Das Wetter ist oft stabil und sonnig, die Temperaturen sind angenehm und die Häfen sind noch nicht überfüllt. Die Natur zeigt sich von ihrer schönsten Seite.</li>
+                <li><strong>Juli & August:</strong> In der französischen Hauptsaison ist das Wetter am wärmsten, aber die Häfen und Ankerplätze sind sehr belebt. Eine frühzeitige Reservierung von Liegeplätzen ist unerlässlich.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Fazit: Warum ein Yachtcharter an der französischen Atlantikküste unvergesslich ist</h3>
+              <p>
+                Ein Yachtcharter in der Bretagne oder der Biskaya ist eine Belohnung für jeden ambitionierten Segler. Es ist die perfekte Symbiose aus sportlicher Herausforderung und genussvollem Reisen. Die Notwendigkeit, sich intensiv mit den Naturgewalten auseinanderzusetzen, schafft ein tiefes Gefühl der Verbundenheit mit dem Meer. Gepaart mit der unvergleichlichen Schönheit der Inseln, der tief verwurzelten maritimen Kultur und den kulinarischen Verlockungen an jeder Ecke, wird dieser Törn zu einem Erlebnis, das weit über einen normalen Segelurlaub hinausgeht.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mb-3 mt-6">Bereit, die Gezeiten zu meistern?</h3>
+              <p>
+                Fühlen Sie sich bereit für die Herausforderung und die unvergleichlichen Belohnungen der französischen Atlantikküste? Unser erfahrenes Team ist spezialisiert auf dieses anspruchsvolle Revier und hilft Ihnen, die perfekte Segelyacht oder den idealen Katamaran für Ihr Abenteuer zu finden.
+              </p>
+              <p>
+                Kontaktieren Sie uns jetzt für ein maßgeschneidertes Angebot für Ihren Yachtcharter in der Bretagne!
+              </p>
+            </div>
           </div>
         </div>
 
