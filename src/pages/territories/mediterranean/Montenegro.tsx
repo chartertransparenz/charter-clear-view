@@ -113,6 +113,18 @@ const Montenegro = () => {
             <p className="text-lg text-gray-600 mb-4">Montenegro hat in den letzten Jahren massiv in seine maritime Infrastruktur investiert und bietet heute einige der luxuriösesten und modernsten Marinas der Adria.</p>
             <ul className="space-y-3 mb-6 text-gray-600">
               <li><strong>Porto Montenegro (Tivat):</strong> Das Aushängeschild Montenegros. Diese preisgekrönte Superyacht-Marina in Tivat bietet nicht nur Liegeplätze für die größten Yachten der Welt, sondern auch ein exklusives Dorf mit Boutiquen, Restaurants, Hotels und Freizeiteinrichtungen. Ein perfekter Ausgangspunkt für einen luxuriösen Charter.</li>
+              
+              <div className="mt-8 mb-6">
+                <img 
+                  src="/lovable-uploads/f17128f9-b50e-453a-9c40-c684e6ac1e84.png" 
+                  alt="Wo mondäner Luxus auf wilde Natur trifft. Starten Sie Ihren unvergesslichen Yachtcharter ab Tivat" 
+                  className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+                />
+                <p className="text-center text-gray-600 mt-3 italic">
+                  Wo mondäner Luxus auf wilde Natur trifft. Starten Sie Ihren unvergesslichen Yachtcharter ab Tivat
+                </p>
+              </div>
+
               <li><strong>Portonovi (Kumbor, Herceg Novi):</strong> Eine weitere erstklassige Marina am Eingang der Bucht von Kotor, die höchsten Standard und umfassenden Service bietet. D-Marin Portonovi ist ein Synonym für Luxus und Komfort.</li>
               <li><strong>Marina Bar:</strong> Der größte Hafen Montenegros und ein wichtiger Knotenpunkt für den Fährverkehr. Die Marina bietet eine gute Infrastruktur und ist ein idealer Ausgangspunkt, um den südlichen Teil der Küste zu erkunden.</li>
               <li><strong>Marina Kotor:</strong> Direkt in der historischen Stadt Kotor gelegen, bietet diese Marina einen einzigartigen Charme und direkten Zugang zur Altstadt.</li>
