@@ -114,10 +114,10 @@ const CanaryIslands = () => {
         {/* Territory Map */}
         <div className="max-w-4xl mx-auto mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Die Kanarischen Inseln</h2>
-          <TerritoryMap 
+          <TerritoryMap
             region="Kanarische Inseln"
             center={{ lat: 28.0, lng: -15.5 }}
-            zoom={7}
+            zoom={6}
             maptype="satellite"
           />
         </div>
