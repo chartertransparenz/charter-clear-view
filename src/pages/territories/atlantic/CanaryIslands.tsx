@@ -265,6 +265,18 @@ const CanaryIslands = () => {
               <li className="mb-2"><strong>El Hierro:</strong> Die kleinste und westlichste Insel ist ein UNESCO-Biosphärenreservat und ein Ziel für Segler, die Abgeschiedenheit und unberührte Natur suchen. Der Marinepark bei La Restinga ist ein weltberühmtes Tauchrevier.</li>
             </ul>
 
+            {/* Image section */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/6dded8bc-a713-4fbc-936c-45efff0a900b.png" 
+                alt="Blick auf die Steilküste Los Gigantes auf Teneriffa – Palmen, Atlantik und ein altes Fischerboot erzählen vom maritimen Leben der Kanaren." 
+                className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              />
+              <p className="text-center text-gray-600 mt-3 italic">
+                Blick auf die Steilküste Los Gigantes auf Teneriffa – Palmen, Atlantik und ein altes Fischerboot erzählen vom maritimen Leben der Kanaren.
+              </p>
+            </div>
+
             {/* Wetter & Wind Box */}
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h3 className="text-xl font-bold text-gray-800 mb-4">Wetter & Windbedingungen: Das Reich der Passatwinde</h3>
