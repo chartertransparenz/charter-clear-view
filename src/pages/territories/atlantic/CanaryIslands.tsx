@@ -117,7 +117,7 @@ const CanaryIslands = () => {
           <TerritoryMap
             region="Kanarische Inseln"
             center={{ lat: 28.0, lng: -15.5 }}
-            zoom={6}
+            zoom={5}
             maptype="satellite"
           />
         </div>
