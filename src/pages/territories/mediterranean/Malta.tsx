@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 import mediterranean from "@/assets/mediterranean.jpg";
 const Malta = () => {
   useEffect(() => {
@@ -67,6 +68,17 @@ const Malta = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Das maltesische Archipel im Überblick</h2>
+          <TerritoryMap
+            region="Malta"
+            center={{ lat: 35.8997, lng: 14.5146 }}
+            zoom={9}
+            maptype="satellite"
+          />
         </div>
 
         {/* Description */}
