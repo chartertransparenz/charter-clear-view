@@ -7,55 +7,45 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import balticSea from "@/assets/baltic-sea.jpg";
-
 const Scandinavia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Skandinavische Halbinsel" },
-    { icon: Calendar, label: "Beste Zeit", value: "Juni-August" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Schärengärten und Fjorde" }
-  ];
-
-  const regions = [
-    {
-      name: "Dänemark",
-      link: "/reviere/nord-europa/skandinavien/daenemark",
-      description: "Unzählige Inseln und familienfreundliche Reviere",
-      cities: ["Juelsminde"]
-    },
-    {
-      name: "Schweden",
-      link: "/reviere/nord-europa/skandinavien/schweden",
-      description: "Spektakuläre Schärengärten und Fjordlandschaften",
-      cities: ["Göteborg", "Stockholm"]
-    }
-  ];
-
-  const highlights = [
-    "Spektakuläre Schärengärten",
-    "Unberührte Fjordlandschaften",
-    "Mitternachtssonne (Sommer)",
-    "Authentische nordische Kultur",
-    "Saubere, unberührte Natur",
-    "Hervorragende Sicherheitsstandards",
-    "Einzigartige Tierwelt"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Skandinavische Halbinsel"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Juni-August"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Schärengärten und Fjorde"
+  }];
+  const regions = [{
+    name: "Dänemark",
+    link: "/reviere/nord-europa/skandinavien/daenemark",
+    description: "Unzählige Inseln und familienfreundliche Reviere",
+    cities: ["Juelsminde"]
+  }, {
+    name: "Schweden",
+    link: "/reviere/nord-europa/skandinavien/schweden",
+    description: "Spektakuläre Schärengärten und Fjordlandschaften",
+    cities: ["Göteborg", "Stockholm"]
+  }];
+  const highlights = ["Spektakuläre Schärengärten", "Unberührte Fjordlandschaften", "Mitternachtssonne (Sommer)", "Authentische nordische Kultur", "Saubere, unberührte Natur", "Hervorragende Sicherheitsstandards", "Einzigartige Tierwelt"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src={balticSea}
-          alt="Skandinavien"
-          className="w-full h-full object-cover"
-        />
+        <img src={balticSea} alt="Skandinavien" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -66,10 +56,7 @@ const Scandinavia = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/nord-europa" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/nord-europa" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zu Nord- & Ostsee
@@ -80,13 +67,11 @@ const Scandinavia = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Description */}
@@ -111,8 +96,7 @@ const Scandinavia = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
+            {regions.map((region, index) => <Link key={index} to={region.link} className="group">
                 <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
@@ -122,36 +106,19 @@ const Scandinavia = () => {
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
+                    {region.cities && <div className="grid grid-cols-2 gap-2">
+                        {region.cities.map((city, idx) => <div key={idx} className="text-sm text-blue-600 font-medium">
                             • {city}
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                          </div>)}
+                      </div>}
                   </CardContent>
                 </Card>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
@@ -171,8 +138,6 @@ const Scandinavia = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Scandinavia;
