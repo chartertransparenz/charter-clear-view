@@ -54,7 +54,7 @@ const GermanBalticSea = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={balticSea}
+          src="/lovable-uploads/a4ce7804-94fa-4ede-aa9c-6185aa126336.png"
           alt="Deutsche Ostsee"
           className="w-full h-full object-cover"
         />
