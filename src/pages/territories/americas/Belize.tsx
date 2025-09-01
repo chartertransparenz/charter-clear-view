@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 const Belize = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -58,6 +59,17 @@ const Belize = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <TerritoryMap 
+            region="Belize"
+            center={{ lat: 18.0795598, lng: -89.4117611 }}
+            zoom={8}
+            maptype="satellite"
+            className="h-96"
+          />
         </div>
 
         {/* Main Content */}
