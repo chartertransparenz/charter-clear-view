@@ -116,7 +116,7 @@ const Holland = () => {
             region="Holland"
             center={{ lat: 52.7859112, lng: 5.2293219 }}
             zoom={9}
-            maptype="roadmap"
+            maptype="satellite"
           />
         </div>
 
