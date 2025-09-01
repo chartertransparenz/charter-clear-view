@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
+import TerritoryMap from "@/components/TerritoryMap";
 import caribbean from "@/assets/caribbean.jpg";
 const Bahamas = () => {
   useEffect(() => {
@@ -97,6 +98,22 @@ const Bahamas = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="shadow-lg">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Die Inselwelt der Bahamas</h2>
+              <TerritoryMap
+                region="Bahamas"
+                center={{ lat: 25.0443, lng: -77.3504 }}
+                zoom={7}
+                maptype="satellite"
+                className="w-full"
+              />
+            </CardContent>
+          </Card>
         </div>
 
         {/* Description */}
