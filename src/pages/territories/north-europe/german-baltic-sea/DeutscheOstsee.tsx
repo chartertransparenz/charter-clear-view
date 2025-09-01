@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import FloatingCTA from "@/components/FloatingCTA";
 import balticSea from "@/assets/baltic-sea.jpg";
 const DeutscheOstsee = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const DeutscheOstsee = () => {
   const sailingHighlights = ["Tidenfreies Segeln ohne Gezeitenberechnung", "Kurze Distanzen zwischen den Häfen", "Geschützte Gewässer ideal für Anfänger", "Weiße Sandstrände und Kreidefelsen", "Historische Hansestädte entdecken", "Familienfreundliche Segelreviere", "Moderne Marina-Ausstattung"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
+      <FloatingCTA />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
