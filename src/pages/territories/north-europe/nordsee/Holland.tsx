@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 const hollandCoast = "/lovable-uploads/0eef7af9-d0e3-4695-beb3-dcc6a319901a.png";
 const Holland = () => {
   useEffect(() => {
@@ -107,6 +108,16 @@ const Holland = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Google Maps */}
+        <div className="mb-12">
+          <TerritoryMap 
+            region="Holland"
+            center={{ lat: 52.7859112, lng: 5.2293219 }}
+            zoom={9}
+            maptype="roadmap"
+          />
         </div>
 
         {/* Main Description */}
