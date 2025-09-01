@@ -318,6 +318,18 @@ const Slovenia = () => {
                 </div>
               </div>
 
+              {/* Venice Image */}
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/07a02e7c-7650-42a9-952e-86b5cfe52466.png" 
+                  alt="Venice Canal Grande" 
+                  className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
+                />
+                <p className="text-gray-600 text-center italic">
+                  Ein unvergesslicher Anblick. Von Slowenien aus ist es nur eine Tagesetappe bis zum Canal Grande.
+                </p>
+              </div>
+
               <div>
                 <h5 className="text-lg font-bold text-gray-800 mb-4">Route C: Dreiländer-Törn (Slowenien, Italien, Kroatien)</h5>
                 <p className="text-gray-600 mb-4">
