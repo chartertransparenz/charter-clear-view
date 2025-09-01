@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import mediterranean from "@/assets/mediterranean.jpg";
+// Using uploaded header image
 const Slovenia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,7 +40,7 @@ const Slovenia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={mediterranean} alt="Slowenien Mittelmeer" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/98c0e901-0386-4c29-8a01-f29a5deb1055.png" alt="Slowenien Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
