@@ -7,81 +7,59 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import caribbean from "@/assets/caribbean.jpg";
-
 const Belize = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Charter-Standorte", value: "Belize City, Placencia" },
-    { icon: Calendar, label: "Beste Zeit", value: "November-April" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Belize Barrier Reef" }
-  ];
-
-  const charterBases = [
-    {
-      name: "Belize City",
-      link: "/reviere/amerika-bahamas/belize/belize-city",
-      description: "Hauptstadt und wichtigster Charter-Standort mit guter Infrastruktur",
-      highlights: ["Belize Barrier Reef", "Lighthouse Reef", "Blue Hole", "St. George's Caye"]
-    },
-    {
-      name: "Placencia",
-      link: "/reviere/amerika-bahamas/belize/placencia",
-      description: "Entspanntes Fischerdorf mit authentischem karibischen Flair",
-      highlights: ["Placencia Peninsula", "Silk Cayes", "Laughing Bird Caye", "Seine Bight"]
-    }
-  ];
-
-  const sailingHighlights = [
-    "Größtes Korallenriff der westlichen Hemisphäre",
-    "Weltberühmtes Great Blue Hole",
-    "Unberührte Atolle und Cays",
-    "Reiche Unterwasserwelt",
-    "Englischsprachiges Land",
-    "Authentische karibische Kultur",
-    "Geschützte Lagunen und Buchten"
-  ];
-
-  const popularRoutes = [
-    "Belize City - St. George's Caye - Caye Caulker",
-    "Placencia - Silk Cayes - Ranguana Caye",
-    "Belize City - Turneffe Atoll - Lighthouse Reef",
-    "Placencia - Gladden Spit - Whale Shark Area"
-  ];
-
-  const marineHighlights = [
-    {
-      name: "Great Blue Hole",
-      description: "Weltberühmte kreisrunde Unterwasserhöhle mit 124m Tiefe"
-    },
-    {
-      name: "Belize Barrier Reef",
-      description: "Zweitgrößtes Korallenriff der Welt mit UNESCO-Welterbe Status"
-    },
-    {
-      name: "Turneffe Atoll",
-      description: "Größtes Atoll in der westlichen Hemisphäre mit spektakulären Tauchplätzen"
-    },
-    {
-      name: "Hol Chan Marine Reserve",
-      description: "Erstes Meeresschutzgebiet von Belize mit unglaublicher Artenvielfalt"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Charter-Standorte",
+    value: "Belize City, Placencia"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "November-April"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Belize Barrier Reef"
+  }];
+  const charterBases = [{
+    name: "Belize City",
+    link: "/reviere/amerika-bahamas/belize/belize-city",
+    description: "Hauptstadt und wichtigster Charter-Standort mit guter Infrastruktur",
+    highlights: ["Belize Barrier Reef", "Lighthouse Reef", "Blue Hole", "St. George's Caye"]
+  }, {
+    name: "Placencia",
+    link: "/reviere/amerika-bahamas/belize/placencia",
+    description: "Entspanntes Fischerdorf mit authentischem karibischen Flair",
+    highlights: ["Placencia Peninsula", "Silk Cayes", "Laughing Bird Caye", "Seine Bight"]
+  }];
+  const sailingHighlights = ["Größtes Korallenriff der westlichen Hemisphäre", "Weltberühmtes Great Blue Hole", "Unberührte Atolle und Cays", "Reiche Unterwasserwelt", "Englischsprachiges Land", "Authentische karibische Kultur", "Geschützte Lagunen und Buchten"];
+  const popularRoutes = ["Belize City - St. George's Caye - Caye Caulker", "Placencia - Silk Cayes - Ranguana Caye", "Belize City - Turneffe Atoll - Lighthouse Reef", "Placencia - Gladden Spit - Whale Shark Area"];
+  const marineHighlights = [{
+    name: "Great Blue Hole",
+    description: "Weltberühmte kreisrunde Unterwasserhöhle mit 124m Tiefe"
+  }, {
+    name: "Belize Barrier Reef",
+    description: "Zweitgrößtes Korallenriff der Welt mit UNESCO-Welterbe Status"
+  }, {
+    name: "Turneffe Atoll",
+    description: "Größtes Atoll in der westlichen Hemisphäre mit spektakulären Tauchplätzen"
+  }, {
+    name: "Hol Chan Marine Reserve",
+    description: "Erstes Meeresschutzgebiet von Belize mit unglaublicher Artenvielfalt"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src={caribbean}
-          alt="Belize Yacht Charter"
-          className="w-full h-full object-cover"
-        />
+        <img src={caribbean} alt="Belize Yacht Charter" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -92,10 +70,7 @@ const Belize = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/amerika-bahamas" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/amerika-bahamas" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zu Amerika & Bahamas
@@ -106,13 +81,11 @@ const Belize = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Description */}
@@ -138,8 +111,7 @@ const Belize = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {charterBases.map((base, index) => (
-              <Link key={index} to={base.link} className="group">
+            {charterBases.map((base, index) => <Link key={index} to={base.link} className="group">
                 <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
@@ -150,66 +122,25 @@ const Belize = () => {
                     </div>
                     <p className="text-gray-600 mb-4">{base.description}</p>
                     <div className="space-y-1">
-                      {base.highlights.map((highlight, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
+                      {base.highlights.map((highlight, idx) => <div key={idx} className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                           <p className="text-sm text-gray-700">{highlight}</p>
-                        </div>
-                      ))}
+                        </div>)}
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
 
         {/* Marine Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Unterwasser-Highlights</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {marineHighlights.map((highlight, index) => (
-              <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                    {highlight.name}
-                  </h3>
-                  <p className="text-gray-600">{highlight.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Sailing Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {sailingHighlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Popular Routes */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {popularRoutes.map((route, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <Anchor className="w-5 h-5 text-blue-600" />
-                  <p className="font-medium text-gray-800">{route}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
@@ -229,8 +160,6 @@ const Belize = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Belize;
