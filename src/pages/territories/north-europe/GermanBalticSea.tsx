@@ -37,15 +37,6 @@ const GermanBalticSea = () => {
     }
   ];
 
-  const highlights = [
-    "Tidenfreies Segeln",
-    "Familienfreundliche Reviere",
-    "Historische Hansestädte",
-    "Weiße Sandstrände und Kreidefelsen",
-    "Kurze Distanzen zu Dänemark/Schweden",
-    "Exzellente Marina-Infrastruktur",
-    "Deutsche Gründlichkeit und Service"
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -390,20 +381,6 @@ const GermanBalticSea = () => {
           </div>
         </div>
 
-        {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
