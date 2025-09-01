@@ -65,7 +65,7 @@ const Belize = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <TerritoryMap 
             region="Belize"
-            center={{ lat: 18.0795598, lng: -89.4117611 }}
+            center={{ lat: 17.519409, lng: -88.1708217 }}
             zoom={8}
             maptype="satellite"
             className="h-96"
