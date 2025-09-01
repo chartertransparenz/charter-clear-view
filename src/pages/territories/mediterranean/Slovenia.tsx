@@ -111,6 +111,21 @@ const Slovenia = () => {
               <li className="text-gray-600">
                 <strong>Die Bucht von Piran:</strong> Das Herzstück der slowenischen Küste ist zweifellos die Bucht von Piran. Sie beherbergt die gleichnamige, venezianisch geprägte Stadt Piran, die oft als die schönste Stadt Sloweniens bezeichnet wird. Mit ihren engen Gassen, dem Tartini-Platz und der imposanten St.-Georgs-Kirche, die majestätisch über der Stadt thront, bietet Piran ein einzigartiges Flair. Die Bucht selbst ist gut geschützt und bietet einige schöne Ankerplätze, von denen aus man das Panorama der Küste genießen kann.
               </li>
+
+              {/* Piran Image */}
+              <li className="text-gray-600">
+                <div className="mb-4">
+                  <img 
+                    src="/lovable-uploads/3cb7d715-410a-45dc-8c36-092ea4b40c5e.png" 
+                    alt="Piran, slowenische Küste" 
+                    className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
+                  />
+                  <p className="text-gray-600 text-center italic">
+                    Piran, die Perle der Adria: Setzen Sie Kurs auf Sloweniens schönste Küstenstadt und erleben Sie venezianisches Flair direkt von Ihrer Yacht aus.
+                  </p>
+                </div>
+              </li>
+              
               <li className="text-gray-600">
                 <strong>Die Salinen von Sečovlje:</strong> Südlich von Portorož und Piran erstreckt sich ein einzigartiges Natur- und Kulturdenkmal: die Salinen von Sečovlje. Diese historischen Salzgärten sind nicht nur ein wichtiger Lebensraum für zahlreiche Vogelarten und eine beeindruckende Feuchtlandschaft, sondern auch ein Zeugnis der jahrhundertealten Salzgewinnungstradition. Das Ankern in der Nähe ist eine besondere Erfahrung, da man die Ruhe und die einzigartige Atmosphäre dieses Ortes spürt. Es ist ein Ort, der zum Nachdenken und Entspannen einlädt, weitab vom Trubel der touristischen Zentren.
               </li>
