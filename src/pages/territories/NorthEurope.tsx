@@ -14,17 +14,14 @@ const NorthEurope = () => {
   const regions = [{
     name: "Deutsche Ostsee",
     link: "/reviere/nord-europa/deutsche-ostsee",
-    description: "Tidenfreies Segeln vor der deutschen Küste",
     areas: ["Mecklenburgische Seenplatte", "Rügen", "Usedom"]
   }, {
-    name: "Nordsee",
+    name: "Holland",
     link: "/reviere/nord-europa/nordsee",
-    description: "Anspruchsvolle Tidenreviere mit extremen Gezeiten",
     areas: ["Nordseeküste", "IJsselmeer", "Ostfriesische Inseln"]
   }, {
     name: "Skandinavien",
     link: "/reviere/nord-europa/skandinavien",
-    description: "Spektakuläre Schärengärten und Fjordlandschaften",
     areas: ["Dänemark", "Schweden", "Norwegen"]
   }];
   const advantages = ["Nahegelegene Reviere", "Sichere Gewässer", "Interessante Häfen", "Deutsche Qualität"];
@@ -96,19 +93,22 @@ const NorthEurope = () => {
         {/* Top Regions */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
-          <div className="grid gap-6">
-            {regions.map((region, index) => <Link key={index} to={region.link} className="group">
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {regions.map((region, index) => <Link key={index} to={region.link} className="block hover:no-underline group">
+                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full group-hover:scale-105 cursor-pointer border border-transparent hover:border-orange-200">
                   <div className="flex items-center gap-2 mb-4">
-                    <MapPin className="w-4 h-4 text-orange-500" />
-                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors">{region.name}</h3>
+                    <MapPin className="w-4 h-4 text-orange-500 group-hover:text-orange-600" />
+                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-orange-600">{region.name}</h3>
                   </div>
-                  <p className="text-gray-600 mb-4">{region.description}</p>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                    {region.areas.map((area, idx) => <div key={idx} className="flex items-center gap-2 text-sm">
-                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                        <span className="text-gray-600">{area}</span>
-                      </div>)}
+                  {region.areas && <div className="space-y-2 mb-4">
+                      <div className="text-sm font-medium text-gray-700 mb-2">Charter-Standorte:</div>
+                      {region.areas.map((area, idx) => <div key={idx} className="flex items-center gap-2 text-sm">
+                          <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
+                          <span className="text-gray-600 group-hover:text-gray-700">{area}</span>
+                        </div>)}
+                    </div>}
+                  <div className="text-sm text-orange-600 font-medium group-hover:text-orange-700 flex items-center gap-1">
+                    → Charter-Informationen & Marinas
                   </div>
                 </div>
               </Link>)}
