@@ -27,15 +27,15 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
   markers = [],
   className = ""
 }) => {
-  // Create clean Google Maps embed URL without API key
+  // Create Google Maps embed URL with proper formatting
   const createMapUrl = () => {
     const lat = center.lat;
     const lng = center.lng;
     const z = zoom;
-    const satellite = maptype === 'satellite' ? '1' : '0';
     
-    // Use Google Maps embed format without API key requirement
-    return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d${Math.round(40075000 / Math.pow(2, z))}!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM!5e${satellite}!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde`;
+    // Use a more reliable Google Maps embed URL format
+    const mapTypeParam = maptype === 'satellite' ? '&t=k' : '&t=m';
+    return `https://maps.google.com/maps?q=${lat},${lng}&hl=de&z=${z}&output=embed${mapTypeParam}`;
   };
 
   return (
