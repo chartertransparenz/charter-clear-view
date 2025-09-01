@@ -81,7 +81,7 @@ const NorthEurope = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <div className="flex items-center gap-2 mb-4">
               <Star className="w-5 h-5 text-orange-500" />
-              <h2 className="text-2xl font-bold text-gray-800">Norddeutsche Tradition</h2>
+              <h2 className="text-2xl font-bold text-gray-800">Segeln in Nordsee, Ostsee & Holland</h2>
             </div>
             <p className="text-lg text-gray-600">
               Ein Yachtcharter in nordischen Gewässern wie der Ostsee oder Holland bietet ein einzigartiges Segelerlebnis abseits der klassischen Mittelmeerrouten. Hier erwarten Sie abwechslungsreiche Küstenlandschaften, von idyllischen Inselwelten bis zu charmanten Grachtenstädten. Die Reviere punkten mit hervorragender Infrastruktur, gut geschützten Häfen und vielfältigen Segelbedingungen für jedes Können. Genießen Sie die Ruhe und Weite, oft fernab des Massentourismus, und entdecken Sie eine reiche maritime Kultur. Diese Törns versprechen unvergessliche Momente unter einem besonderen Licht und in einer unvergleichlichen Natur.
