@@ -26,7 +26,7 @@ const Belize = () => {
     label: "Besonderheit",
     value: "Belize Barrier Reef"
   }];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
@@ -165,11 +165,11 @@ const Belize = () => {
               </li>
             </ul>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-              <p className="text-blue-800 font-semibold">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+              <p className="text-gray-800 font-semibold">
                 Wichtige Besonderheit: Offizielle Segellizenz durch die belizianische Hafenbehörde
               </p>
-              <p className="text-blue-700 mt-2">
+              <p className="text-gray-600 mt-2">
                 Für Bareboat-Charter in Belize ist ein "Temporary Certificate of Competency" der Belize Port Authority obligatorisch. Dieses muss mindestens zwei Wochen vor Anreise beantragt werden. Ihr Charterunternehmen wird Sie bei diesem Prozess unterstützen und die notwendigen Formulare bereitstellen. Ohne dieses offizielle Permit ist kein eigenständiges Chartern erlaubt.
               </p>
             </div>
