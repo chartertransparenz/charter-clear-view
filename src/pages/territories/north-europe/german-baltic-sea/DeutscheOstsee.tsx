@@ -52,7 +52,7 @@ const DeutscheOstsee = () => {
     description: "Größter Ostseehafen mit hanseatischer Geschichte",
     highlights: ["Hansestadt", "Warnemünder Strand", "Teepott"]
   }];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       <FloatingCTA />
       
