@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TerritoryMap from "@/components/TerritoryMap";
 // Using uploaded header image
 const Slovenia = () => {
   useEffect(() => {
@@ -67,6 +68,20 @@ const Slovenia = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <TerritoryMap
+            region="Slowenien"
+            center={{ lat: 45.8108496, lng: 13.6082144 }}
+            zoom={10}
+            maptype="satellite"
+            className="shadow-lg"
+          />
+          <div className="text-center mt-4">
+            <h3 className="text-xl font-semibold text-gray-800">Die slowenische Küste im Überblick</h3>
+          </div>
         </div>
 
         {/* Description */}
