@@ -118,7 +118,7 @@ const Slovenia = () => {
                   <img 
                     src="/lovable-uploads/3cb7d715-410a-45dc-8c36-092ea4b40c5e.png" 
                     alt="Piran, slowenische Küste" 
-                    className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
+                    className="w-full h-auto rounded-lg shadow-lg mb-4"
                   />
                   <p className="text-gray-600 text-center italic">
                     Piran, die Perle der Adria: Setzen Sie Kurs auf Sloweniens schönste Küstenstadt und erleben Sie venezianisches Flair direkt von Ihrer Yacht aus.
