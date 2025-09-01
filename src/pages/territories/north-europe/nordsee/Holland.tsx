@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import balticSea from "@/assets/baltic-sea.jpg";
+const hollandCoast = "/lovable-uploads/0eef7af9-d0e3-4695-beb3-dcc6a319901a.png";
 const Holland = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -51,7 +51,7 @@ const Holland = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={balticSea} alt="Holland Nordsee" className="w-full h-full object-cover" />
+        <img src={hollandCoast} alt="Holland Nordsee" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
