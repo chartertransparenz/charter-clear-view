@@ -39,7 +39,7 @@ const GermanBalticSea = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
