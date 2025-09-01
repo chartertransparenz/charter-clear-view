@@ -5,58 +5,34 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import balticSea from "@/assets/baltic-sea.jpg";
-
 const NorthEurope = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const regions = [
-    { 
-      name: "Deutsche Ostsee", 
-      link: "/reviere/nord-europa/deutsche-ostsee",
-      description: "Tidenfreies Segeln vor der deutschen Küste",
-      areas: ["Mecklenburgische Seenplatte", "Rügen", "Usedom"] 
-    },
-    { 
-      name: "Nordsee", 
-      link: "/reviere/nord-europa/nordsee",
-      description: "Anspruchsvolle Tidenreviere mit extremen Gezeiten",
-      areas: ["Nordseeküste", "IJsselmeer", "Ostfriesische Inseln"] 
-    },
-    { 
-      name: "Skandinavien", 
-      link: "/reviere/nord-europa/skandinavien",
-      description: "Spektakuläre Schärengärten und Fjordlandschaften",
-      areas: ["Dänemark", "Schweden", "Norwegen"] 
-    }
-  ];
-
-  const advantages = [
-    "Nahegelegene Reviere",
-    "Sichere Gewässer", 
-    "Interessante Häfen",
-    "Deutsche Qualität"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const regions = [{
+    name: "Deutsche Ostsee",
+    link: "/reviere/nord-europa/deutsche-ostsee",
+    description: "Tidenfreies Segeln vor der deutschen Küste",
+    areas: ["Mecklenburgische Seenplatte", "Rügen", "Usedom"]
+  }, {
+    name: "Nordsee",
+    link: "/reviere/nord-europa/nordsee",
+    description: "Anspruchsvolle Tidenreviere mit extremen Gezeiten",
+    areas: ["Nordseeküste", "IJsselmeer", "Ostfriesische Inseln"]
+  }, {
+    name: "Skandinavien",
+    link: "/reviere/nord-europa/skandinavien",
+    description: "Spektakuläre Schärengärten und Fjordlandschaften",
+    areas: ["Dänemark", "Schweden", "Norwegen"]
+  }];
+  const advantages = ["Nahegelegene Reviere", "Sichere Gewässer", "Interessante Häfen", "Deutsche Qualität"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/73d0c104-bfb5-478f-978a-cd437816aa77.png"
-          alt="Nord- & Ostsee"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/73d0c104-bfb5-478f-978a-cd437816aa77.png" alt="Nord- & Ostsee" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -67,15 +43,13 @@ const NorthEurope = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/" 
-          className="absolute top-6 left-6"
-          onClick={() => {
-            setTimeout(() => {
-              document.getElementById('reviere')?.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-          }}
-        >
+        <Link to="/" className="absolute top-6 left-6" onClick={() => {
+        setTimeout(() => {
+          document.getElementById('reviere')?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }, 100);
+      }}>
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück
@@ -123,8 +97,7 @@ const NorthEurope = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Top-Regionen</h2>
           <div className="grid gap-6">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
+            {regions.map((region, index) => <Link key={index} to={region.link} className="group">
                 <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
                   <div className="flex items-center gap-2 mb-4">
                     <MapPin className="w-4 h-4 text-orange-500" />
@@ -132,31 +105,18 @@ const NorthEurope = () => {
                   </div>
                   <p className="text-gray-600 mb-4">{region.description}</p>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                    {region.areas.map((area, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm">
+                    {region.areas.map((area, idx) => <div key={idx} className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                         <span className="text-gray-600">{area}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
 
         {/* Advantages */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Vorteile</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <Anchor className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-                <p className="font-medium text-gray-800">{advantage}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
@@ -176,8 +136,6 @@ const NorthEurope = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default NorthEurope;
