@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import FloatingCTA from "@/components/FloatingCTA";
+import TerritoryMap from "@/components/TerritoryMap";
 import balticSea from "/lovable-uploads/35272578-21b4-41cd-a017-0019ba277b27.png";
 const DeutscheOstsee = () => {
   useEffect(() => {
@@ -113,6 +114,16 @@ const DeutscheOstsee = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="mb-12">
+          <TerritoryMap 
+            region="Deutsche Ostsee"
+            center={{ lat: 54.9399475, lng: 12.342584 }}
+            zoom={8}
+            maptype="satellite"
+          />
         </div>
 
         {/* Description */}
