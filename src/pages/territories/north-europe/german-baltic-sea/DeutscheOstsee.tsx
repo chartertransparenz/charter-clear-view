@@ -50,7 +50,6 @@ const DeutscheOstsee = () => {
     description: "Größter Ostseehafen mit hanseatischer Geschichte",
     highlights: ["Hansestadt", "Warnemünder Strand", "Teepott"]
   }];
-  const sailingHighlights = ["Tidenfreies Segeln ohne Gezeitenberechnung", "Kurze Distanzen zwischen den Häfen", "Geschützte Gewässer ideal für Anfänger", "Weiße Sandstrände und Kreidefelsen", "Historische Hansestädte entdecken", "Familienfreundliche Segelreviere", "Moderne Marina-Ausstattung"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       <FloatingCTA />
@@ -125,9 +124,6 @@ const DeutscheOstsee = () => {
               </Card>)}
           </div>
         </div>
-
-        {/* Sailing Highlights */}
-        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
