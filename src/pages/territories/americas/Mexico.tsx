@@ -15,7 +15,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import caribbean from "@/assets/caribbean.jpg";
 
 const Mexico = () => {
   useEffect(() => {
@@ -87,7 +86,7 @@ const Mexico = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={caribbean}
+          src="/lovable-uploads/2e57e252-c2db-41f7-956a-4e0a8859e082.png"
           alt="Mexiko Yacht Charter"
           className="w-full h-full object-cover"
         />
