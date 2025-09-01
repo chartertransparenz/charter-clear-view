@@ -75,7 +75,7 @@ const Slovenia = () => {
           <TerritoryMap
             region="Slowenien"
             center={{ lat: 45.8108496, lng: 13.6082144 }}
-            zoom={10}
+            zoom={8}
             maptype="satellite"
             className="shadow-lg"
           />
