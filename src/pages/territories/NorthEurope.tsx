@@ -84,8 +84,7 @@ const NorthEurope = () => {
               <h2 className="text-2xl font-bold text-gray-800">Norddeutsche Tradition</h2>
             </div>
             <p className="text-lg text-gray-600">
-              Erleben Sie maritimes Segeln in traditionellen deutschen Gewässern mit 
-              hervorragender Infrastruktur und kurzen Anreisewegen.
+              Ein Yachtcharter in nordischen Gewässern wie der Ostsee oder Holland bietet ein einzigartiges Segelerlebnis abseits der klassischen Mittelmeerrouten. Hier erwarten Sie abwechslungsreiche Küstenlandschaften, von idyllischen Inselwelten bis zu charmanten Grachtenstädten. Die Reviere punkten mit hervorragender Infrastruktur, gut geschützten Häfen und vielfältigen Segelbedingungen für jedes Können. Genießen Sie die Ruhe und Weite, oft fernab des Massentourismus, und entdecken Sie eine reiche maritime Kultur. Diese Törns versprechen unvergessliche Momente unter einem besonderen Licht und in einer unvergleichlichen Natur.
             </p>
           </div>
         </div>
