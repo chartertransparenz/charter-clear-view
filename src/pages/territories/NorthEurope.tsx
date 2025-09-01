@@ -17,7 +17,7 @@ const NorthEurope = () => {
     areas: ["Mecklenburgische Seenplatte", "Rügen", "Usedom"]
   }, {
     name: "Holland",
-    link: "/reviere/nord-europa/nordsee",
+    link: "/reviere/nord-europa/nordsee/holland",
     areas: ["Nordseeküste", "IJsselmeer", "Ostfriesische Inseln"]
   }, {
     name: "Skandinavien",
