@@ -35,7 +35,7 @@ const Holland = () => {
   }, {
     icon: Anchor,
     label: "Besonderheit",
-    value: "Extreme Gezeiten, großes Binnengewässer"
+    value: "Tidenfreier Binnensee & Wattenmeer"
   }];
   const highlights = ["IJsselmeer - riesiges Binnengewässer", "Extreme Nordsee-Gezeiten bis 4m", "Traditionelle Segelkultur", "Historische Hafenstädte", "Wattenmeer UNESCO-Welterbe", "Ausgezeichnete Infrastruktur", "Herausfordernde Tidenreviere"];
   const marinas = [{
