@@ -187,17 +187,76 @@ const Toskana = () => {
                   Die südlichste und kleinste Insel des Archipels ist Giannutri. Die sichelförmige Insel ist fast vollständig ein Naturreservat, das Ankern ist nur in ausgewiesenen Bereichen erlaubt. Ein Landgang lohnt sich, um die Ruinen einer römischen Villa zu erkunden und die absolute Stille zu genießen.
                 </p>
 
-                <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Routenvorschlag für eine Woche (Beispiel ab Salivoli)</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Sieben Inseln, tausend Eindrücke – Ihre Törnvorschlag im Toskanischen Archipel</h3>
                 
-                <ul className="space-y-2">
-                  <li><strong>Tag 1:</strong> Check-in in Salivoli und kurzer Schlag nach Portoferraio.</li>
-                  <li><strong>Tag 2:</strong> Segeln entlang der Nordküste Elbas nach Marciana Marina.</li>
-                  <li><strong>Tag 3:</strong> Törn zur wilden Insel Capraia.</li>
-                  <li><strong>Tag 4:</strong> Zurück nach Elba, Ankern in einer der Südbuchten wie Fetovaia.</li>
-                  <li><strong>Tag 5:</strong> Erkundung der Ostküste mit Stopp in Porto Azzurro.</li>
-                  <li><strong>Tag 6:</strong> Segeln zur malerischen Insel Giglio.</li>
-                  <li><strong>Tag 7:</strong> Entspannter Rückschlag zum Festland nach Salivoli.</li>
-                </ul>
+                <div className="space-y-3 mb-8">
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 1: Salivoli → Porto Azzurro (Elba)</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Törnstart: Proviantieren und Übernahme in Salivoli.<br/>
+                      • Badestopp: Bucht von Cala Seregola – klar, ruhig, schöner Sand.<br/>
+                      • Übernachtung: Marina Porto Azzurro – sicher, lebendig, gemütliche Altstadt.<br/>
+                      • Highlight: Altstadtbummel, Festung San Giacomo, Eisdiele an der Promenade mit Blick auf die Bucht.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 2: Porto Azzurro → Marina di Campo</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Badestopp: Badebucht Lacona – weitläufiger Sandstrand, türkisfarbenes Wasser, gute Schnorchelmöglichkeiten.<br/>
+                      • Übernachtung: Ankerplatz vor Marina di Campo oder am Gästesteg.<br/>
+                      • Besonderheit: Langer Sandstrand, bezaubernder Sonnenuntergang, Lokale mit Fischspezialitäten.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 3: Marina di Campo → Marciana Marina</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Badestopp: Fetovaia oder Cavoli – zwei der beliebtesten Traumstrände Elbas, glasklares Wasser.<br/>
+                      • Übernachtung: Marina Marciana Marina – gut geschützt, charmante Promenade.<br/>
+                      • Sehenswert: Spaziergang durch den kleinen Hafen und die Altstadt, Aperitivo in typischer Bar.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 4: Marciana Marina → Capraia</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Badestopp: Cala Rossa mit spektakulärer Felskulisse, nur bei ruhigem Wetter.<br/>
+                      • Übernachtung: Hafen Capraia – klein, familiäre Atmosphäre, schnelle Füllung im Sommer.<br/>
+                      • Highlight: Wanderung zum Forte di San Giorgio, lokale Spezialität ist der gefüllte Kalmar „Totani ripieni".
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 5: Capraia → Portoferraio (Elba)</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Badestopp: Badepause in der Bucht Enfola – ideal zum Schnorcheln.<br/>
+                      • Übernachtung: Portoferraio – Marina oder Stadtkai, je nach Verfügbarkeit.<br/>
+                      • Sehenswert: Napoleons Wohnstätten, idyllische Altstadtgassen, Aperitif mit Blick auf den Hafen.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 6: Portoferraio → Insel Giglio (alternativ: Cavo oder Porto Azzurro)</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Badestopp: Cala delle Cannelle – karibisch anmutende Bucht am Südzipfel von Giglio.<br/>
+                      • Übernachtung: Porto Giglio – kleiner, malerischer Hafen, rechtzeitig reservieren.<br/>
+                      • Highlight: Spaziergang nach Giglio Castello, malerisches Dorf, Panoramablick über den Archipel.
+                    </p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-4">
+                    <h5 className="font-semibold">Tag 7: Giglio (bzw. Porto Azzurro) → Rückkehr Salivoli</h5>
+                    <p className="text-sm text-muted-foreground">
+                      • Badestopp unterwegs: Zum Beispiel Cala di Nisportino – ruhige Bucht, herrliches Wasser.<br/>
+                      • Rückkehr: Spätnachmittag/Abend in Salivoli, letzte Nacht im Hafen.
+                    </p>
+                  </div>
+                </div>
+                
+                <p className="text-sm text-muted-foreground mb-4">
+                  Alle genannten Stopps sind ideal für Badepausen, Landgänge und kulinarische Genüsse. Häfen sind im Hochsommer oft gut besucht – frühzeitige Reservierung oder frühes Einlaufen ist zu empfehlen. Die Route lässt sich flexibel anpassen – je nach Wetter und Vorlieben der Crew.
+                </p>
 
                 <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Wind, Wetter und die beste Reisezeit</h3>
                 
