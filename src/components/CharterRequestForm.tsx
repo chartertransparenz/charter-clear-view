@@ -532,7 +532,7 @@ const CharterRequestForm = ({
         <DialogTrigger asChild>
           {children}
         </DialogTrigger>
-        <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+        <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 pt-12 pr-12 overflow-hidden">
           <DialogTitle className="sr-only">Charter-Anfrage</DialogTitle>
           <DialogDescription className="sr-only">
             Stellen Sie hier Ihre unverbindliche Charter-Anfrage
