@@ -1,6 +1,8 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { Resend } from "https://esm.sh/resend@2.0.0"
 
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
+const resend = new Resend(RESEND_API_KEY)
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -45,35 +47,33 @@ serve(async (req) => {
     <p><small>Diese Anfrage wurde über das Kontaktformular auf chartertransparenz.de gesendet.</small></p>
     `
 
-    // Send email using Resend
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${RESEND_API_KEY}`,
-      },
-      body: JSON.stringify({
-        from: 'Charter Transparenz <noreply@chartertransparenz.de>',
-        to: ['info@chartertransparenz.de'],
-        subject: `Neue Charter-Anfrage von ${formData.firstName} ${formData.lastName}`,
-        html: emailContent,
-        reply_to: formData.email,
-      }),
+    // Send email using Resend SDK
+    const { data, error } = await resend.emails.send({
+      from: 'Charter Transparenz <onboarding@resend.dev>',
+      to: 'info@chartertransparenz.de',
+      subject: `Neue Charter-Anfrage von ${formData.firstName} ${formData.lastName}`,
+      html: emailContent,
+      reply_to: formData.email,
     })
 
-    if (res.ok) {
-      return new Response(
-        JSON.stringify({ message: 'Email sent successfully' }),
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-          },
-        }
-      )
-    } else {
-      throw new Error('Failed to send email')
+    if (error) {
+      console.error('Resend error:', error)
+      throw new Error(`Failed to send email: ${error.message}`)
     }
+
+    console.log('Email sent successfully:', data)
+    return new Response(
+      JSON.stringify({ 
+        message: 'Email sent successfully',
+        id: data?.id
+      }),
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      }
+    )
   } catch (error) {
     return new Response(
       JSON.stringify({ error: error.message }),
