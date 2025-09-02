@@ -14,7 +14,7 @@ const Mexico = () => {
   const quickFacts = [{
     icon: MapPin,
     label: "Charter-Standorte",
-    value: "Cancún, Cozumel"
+    value: "La Paz, Cabo San Lucas"
   }, {
     icon: Calendar,
     label: "Beste Zeit",
@@ -26,33 +26,33 @@ const Mexico = () => {
   }, {
     icon: Anchor,
     label: "Besonderheit",
-    value: "Maya-Kultur & Cenoten"
+    value: "Wüste trifft Meer"
   }];
   const charterBases = [{
-    name: "Cancún",
-    link: "/reviere/amerika-bahamas/mexiko/cancun",
-    description: "Moderne Touristenmetropole mit erstklassiger Charter-Infrastruktur",
-    highlights: ["Marina V&V", "Isla Mujeres", "Mesoamerikanisches Riff", "Maya-Ruinen"]
+    name: "La Paz",
+    link: "/reviere/amerika-bahamas/mexiko/la-paz",
+    description: "Charmante Hauptstadt von Baja California Sur mit authentischem mexikanischen Flair",
+    highlights: ["Marina de La Paz", "Isla Espíritu Santo", "Seelöwen-Kolonien", "Perlentauchen Geschichte"]
   }, {
-    name: "Cozumel",
-    link: "/reviere/amerika-bahamas/mexiko/cozumel",
-    description: "Taucherparadies mit spektakulären Korallenriffen",
-    highlights: ["Palancar Riff", "Santa Rosa Wall", "Chankanaab Park", "San Gervasio Ruinen"]
+    name: "Cabo San Lucas",
+    link: "/reviere/amerika-bahamas/mexiko/cabo-san-lucas",
+    description: "Weltberühmtes Segelziel am südlichsten Punkt der Baja California",
+    highlights: ["El Arco", "Marina Cabo San Lucas", "Pazifik & Cortez-See", "Luxuriöse Resorts"]
   }];
-  const sailingHighlights = ["Zweitgrößtes Korallenriff der Welt", "Kristallklare Cenoten zum Schwimmen", "Maya-Kulturstätten und Pyramiden", "Tropisches Klima ganzjährig", "Bunte Unterwasserwelt", "Entspannte karibische Atmosphäre", "Exzellente mexikanische Küche"];
-  const popularRoutes = ["Cancún - Isla Mujeres - Isla Contoy", "Cozumel - Playa del Carmen - Tulum", "Cancún - Holbox - Rio Lagartos", "Cozumel - Banco Chinchorro - Xcalak"];
+  const sailingHighlights = ["Golf von Kalifornien (Sea of Cortez)", "Walbeobachtung", "Seelöwen-Kolonien", "Wüsteninseln", "Weltklasse Sportfischen", "Authentische mexikanische Kultur", "Spektakuläre Sonnenuntergänge"];
+  const popularRoutes = ["La Paz - Isla Espíritu Santo - Los Islotes", "Cabo San Lucas - La Paz - Loreto", "La Paz - Isla Cerralvo - Isla San José", "Cabo San Lucas - El Arco - Lover's Beach"];
   const culturalHighlights = [{
-    name: "Chichen Itzá",
-    description: "Eine der bekanntesten Maya-Stätten mit der berühmten Kukulcán-Pyramide"
+    name: "El Arco",
+    description: "Das berühmte Felsentor am südlichsten Punkt der Baja California"
   }, {
-    name: "Tulum",
-    description: "Spektakuläre Maya-Ruinen direkt am karibischen Meer"
+    name: "Mission San Xavier",
+    description: "Historische Jesuitenmission aus dem 18. Jahrhundert"
   }, {
-    name: "Cenoten",
-    description: "Kristallklare Süßwasserhöhlen, heilige Stätten der Maya"
+    name: "Perlentauchen-Geschichte",
+    description: "La Paz war einst das Zentrum der Perlentaucherei im Golf von Kalifornien"
   }, {
-    name: "Isla Mujeres",
-    description: "Charmante Insel mit entspannter Atmosphäre und bunten Häusern"
+    name: "Cabo Pulmo Nationalpark",
+    description: "UNESCO-Welterbe mit einem der ältesten Korallenriffe Nordamerikas"
   }];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
@@ -66,7 +66,7 @@ const Mexico = () => {
             <Badge className="mb-4 bg-blue-500 text-white">🇲🇽 Mexiko</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Mexiko, Baja California</h1>
             <p className="text-xl max-w-2xl">
-              Tropisches Paradies mit Maya-Kultur und spektakulären Korallenriffen
+              Wüste trifft Meer in spektakulärer Landschaft
             </p>
           </div>
         </div>
@@ -126,17 +126,17 @@ const Mexico = () => {
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in der mexikanischen Karibik</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Segeln in Baja California</h2>
             <p className="text-lg text-gray-600 mb-4">
-              Die mexikanische Karibikküste vereint traumhaftes Segeln mit faszinierender 
-              Maya-Kultur. Das zweitgrößte Korallenriff der Welt, kristallklare Cenoten 
-              und spektakuläre Unterwasserhöhlen machen diese Region zu einem einzigartigen 
-              Segelrevier mit unvergleichlichen Tauchmöglichkeiten.
+              Baja California bietet ein einzigartiges Segelerlebnis, wo die Wüste auf den 
+              Golf von Kalifornien trifft. Diese unberührte Region ist bekannt für ihre 
+              reiche Meeresbiologie mit Walen, Seelöwen und spektakulären Wüsteninseln, 
+              die ein wahres Naturparadies für Segler schaffen.
             </p>
             <p className="text-lg text-gray-600">
-              Von den modernen Marinas in Cancún bis zu den authentischen Fischerorten 
-              an der Costa Maya bietet Mexiko eine perfekte Mischung aus Komfort, 
-              Abenteuer und kulturellen Erlebnissen inmitten tropischer Schönheit.
+              Von der charmanten Hauptstadt La Paz bis zum weltberühmten Cabo San Lucas 
+              bietet Baja California authentische mexikanische Kultur, erstklassige 
+              Marinas und unvergessliche Segelerlebnisse in kristallklaren Gewässern.
             </p>
           </div>
         </div>
@@ -183,8 +183,8 @@ const Mexico = () => {
               Bereit für Mexiko?
             </h3>
             <p className="mb-6 text-blue-100">
-              Entdecken Sie die Geheimnisse der Maya-Kultur, tauchen Sie in kristallklaren 
-              Cenoten und segeln Sie entlang des zweitgrößten Korallenriffs der Welt.
+              Erleben Sie spektakuläre Walbeobachtungen, schwimmen Sie mit Seelöwen 
+              und entdecken Sie die unberührte Schönheit des Golf von Kalifornien.
             </p>
             <CharterRequestForm>
               <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
