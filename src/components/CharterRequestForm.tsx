@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -52,6 +52,8 @@ const CharterRequestForm = ({
   } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
   const historyPushedRef = useRef(false);
+  const dialogContentRef = useRef<HTMLDivElement>(null);
+  const scrollPositionRef = useRef(0);
 
   // Stable event handlers using useCallback
   const handleClose = useCallback(() => {
@@ -114,6 +116,18 @@ const CharterRequestForm = ({
       setDialogOpen(isOpen);
     }
   }, [isOpen]);
+
+  // Restore scroll position after re-render
+  useEffect(() => {
+    if (dialogContentRef.current && scrollPositionRef.current > 0) {
+      // Use requestAnimationFrame to ensure DOM is updated
+      requestAnimationFrame(() => {
+        if (dialogContentRef.current) {
+          dialogContentRef.current.scrollTop = scrollPositionRef.current;
+        }
+      });
+    }
+  });
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -186,12 +200,22 @@ const CharterRequestForm = ({
     }
   };
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    // Save current scroll position before state update
+    if (dialogContentRef.current) {
+      scrollPositionRef.current = dialogContentRef.current.scrollTop;
+    }
+    
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   }, []);
   const handleSelectChange = useCallback((name: string, value: string) => {
+    // Save current scroll position before state update
+    if (dialogContentRef.current) {
+      scrollPositionRef.current = dialogContentRef.current.scrollTop;
+    }
+    
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -201,7 +225,7 @@ const CharterRequestForm = ({
   const FormContent = () => (
     <div className="relative">
       {/* Hero Section */}
-      <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
+      <div className="relative h-32 md:h-40 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
         <img
           src="/lovable-uploads/cf269f7b-ff3e-46a1-8751-c1cf37175336.png"
           alt="Segelboot Charter Anfrage"
@@ -457,7 +481,9 @@ const CharterRequestForm = ({
           {children}
         </DialogTrigger>
         <DialogContent 
-          className="max-w-4xl max-h-[90vh] overflow-y-auto p-0"
+          ref={dialogContentRef}
+          className="max-w-4xl max-h-[80vh] overflow-y-auto p-0"
+          style={{ scrollBehavior: 'auto' }}
         >
           <DialogTitle className="sr-only">Charter-Anfrage Formular</DialogTitle>
           <DialogDescription className="sr-only">
