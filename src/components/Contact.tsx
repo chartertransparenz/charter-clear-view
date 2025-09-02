@@ -17,13 +17,39 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Nachricht gesendet!",
-      description: "Wir melden uns schnellstmöglich bei Ihnen zurück.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/functions/v1/send-contact-message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Nachricht gesendet!",
+          description: "Wir melden uns schnellstmöglich bei Ihnen zurück.",
+        });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        throw new Error('Fehler beim Senden der Nachricht');
+      }
+    } catch (error) {
+      toast({
+        title: "Fehler beim Senden",
+        description: "Bitte versuchen Sie es später erneut oder rufen Sie uns direkt an.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -286,9 +312,14 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-ocean-dark text-white py-6 text-lg font-semibold hover:bg-ocean-dark/90 transition-colors" size="lg">
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-ocean-dark text-white py-6 text-lg font-semibold hover:bg-ocean-dark/90 transition-colors disabled:opacity-50" 
+                    size="lg"
+                    disabled={isSubmitting}
+                  >
                     <Send className="w-4 h-4 mr-2" />
-                    Nachricht senden
+                    {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
                   </Button>
 
                   <div className="bg-ocean-light/10 border border-ocean-light/30 rounded-lg p-4 mt-4">
