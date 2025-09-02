@@ -9,7 +9,7 @@ import { Send, Anchor, CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import charterHeroWater from "@/assets/charter-hero-water.jpg";
+
 interface CharterRequestFormProps {
   isOpen?: boolean;
   onOpenChange?: (open: boolean) => void;
@@ -143,7 +143,7 @@ const CharterRequestForm = ({
       {/* Hero Section */}
       <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
         <img
-          src={charterHeroWater}
+          src="/lovable-uploads/cf269f7b-ff3e-46a1-8751-c1cf37175336.png"
           alt="Segelboot Charter Anfrage"
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
