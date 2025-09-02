@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
-import { useState, useEffect, useRef, useCallback, memo } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -208,8 +208,8 @@ const CharterRequestForm = ({
       [name]: value
     }));
   }, []);
-  // Memoized FormContent to prevent unnecessary re-renders
-  const FormContent = memo(() => (
+  // FormContent component
+  const FormContent = () => (
     <div className="relative">
       {/* Hero Section */}
       <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
@@ -460,7 +460,7 @@ const CharterRequestForm = ({
         </Card>
       </div>
     </div>
-  ));
+  );
   if (children) {
     return (
       <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
