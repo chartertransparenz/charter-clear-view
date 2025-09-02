@@ -107,7 +107,7 @@ const Contact = () => {
                 <CharterRequestForm>
                   <Button 
                     size="lg" 
-                    className="bg-gradient-ocean text-white hover:shadow-elegant transition-smooth px-8 py-6 text-lg font-semibold animate-pulse hover:animate-none"
+                    className="gradient-ocean text-white hover:shadow-elegant transition-smooth px-8 py-6 text-lg font-semibold animate-pulse hover:animate-none"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Traumtörn in 24h - Jetzt anfragen
@@ -159,7 +159,7 @@ const Contact = () => {
               <CardContent className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0">
                       <info.icon className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -286,7 +286,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-gradient-ocean text-white hover:shadow-elegant transition-smooth py-6 text-lg font-semibold" size="lg">
+                  <Button type="submit" className="w-full gradient-ocean text-white hover:shadow-elegant transition-smooth py-6 text-lg font-semibold" size="lg">
                     <Send className="w-4 h-4 mr-2" />
                     Nachricht senden
                   </Button>
