@@ -125,7 +125,7 @@ const CostaSmeralda = () => {
         <TerritoryMap 
           region="Costa Smeralda"
           center={{ lat: 41.308856, lng: 9.637043 }}
-          zoom={9}
+          zoom={7}
           maptype="satellite"
           className="mb-12"
         />
