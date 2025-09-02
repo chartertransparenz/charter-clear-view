@@ -1,29 +1,72 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Badge } from "@/components/ui/badge";
-import { Send, Anchor, CheckCircle } from "lucide-react";
-import { useState, useEffect } from "react";
-import { useToast } from "@/hooks/use-toast";
-import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import React, { useState, useEffect } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
+import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Send, Anchor, CheckCircle, Loader2 } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import charterHeroWater from "@/assets/charter-hero-water.jpg";
+
+// Zod validation schema
+const formSchema = z.object({
+  firstName: z.string().min(2, "Vorname muss mindestens 2 Zeichen haben"),
+  lastName: z.string().min(2, "Nachname muss mindestens 2 Zeichen haben"),
+  email: z.string().email("Bitte geben Sie eine gültige E-Mail-Adresse ein"),
+  phone: z.string().optional(),
+  charterType: z.string().min(1, "Bitte wählen Sie eine Charter-Art"),
+  boatType: z.string().min(1, "Bitte wählen Sie einen Bootstyp"),
+  territory: z.string().min(1, "Bitte wählen Sie ein Revier"),
+  startDate: z.string().min(1, "Bitte wählen Sie ein Startdatum"),
+  endDate: z.string().min(1, "Bitte wählen Sie ein Enddatum"),
+  boatSize: z.string().optional(),
+  cabins: z.string().optional(),
+  message: z.string().optional(),
+  privacyAccepted: z.boolean().refine(val => val === true, "Datenschutzerklärung muss akzeptiert werden")
+});
+
+type FormData = z.infer<typeof formSchema>;
+
 interface CharterRequestFormProps {
   isOpen?: boolean;
   onOpenChange?: (open: boolean) => void;
   children?: React.ReactNode;
 }
+
 const CharterRequestForm = ({
   isOpen,
   onOpenChange,
   children
 }: CharterRequestFormProps) => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const form = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      charterType: "",
+      boatType: "",
+      territory: "",
+      startDate: "",
+      endDate: "",
+      boatSize: "",
+      cabins: "",
+      message: "",
+      privacyAccepted: false
+    }
+  });
 
   // Handle browser back button and ESC key
   useEffect(() => {
@@ -32,19 +75,19 @@ const CharterRequestForm = ({
         handleClose();
       }
     };
+    
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && dialogOpen) {
         handleClose();
       }
     };
+    
     if (dialogOpen) {
       window.addEventListener('popstate', handlePopState);
       document.addEventListener('keydown', handleKeyDown);
-      // Add a history entry when dialog opens
-      window.history.pushState({
-        dialogOpen: true
-      }, '');
+      window.history.pushState({ dialogOpen: true }, '');
     }
+    
     return () => {
       window.removeEventListener('popstate', handlePopState);
       document.removeEventListener('keydown', handleKeyDown);
@@ -57,70 +100,36 @@ const CharterRequestForm = ({
       setDialogOpen(isOpen);
     }
   }, [isOpen]);
+
   const handleClose = () => {
     setDialogOpen(false);
     onOpenChange?.(false);
   };
+
   const handleOpenChange = (open: boolean) => {
     setDialogOpen(open);
     onOpenChange?.(open);
   };
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    charterType: "",
-    boatType: "",
-    territory: "",
-    startDate: "",
-    endDate: "",
-    boatSize: "",
-    cabins: "",
-    message: "",
-    privacyAccepted: false
-  });
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.privacyAccepted) {
-      toast({
-        title: "Datenschutzerklärung erforderlich",
-        description: "Bitte akzeptieren Sie die Datenschutzerklärung.",
-        variant: "destructive"
-      });
-      return;
-    }
+
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    
     try {
-      // Call Supabase Edge Function to send email
+      // Note: This requires Supabase connection to work
       const response = await fetch('/functions/v1/send-charter-request', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(data)
       });
+
       if (response.ok) {
         toast({
           title: "Anfrage erfolgreich gesendet!",
           description: "Wir melden uns innerhalb von 24 Stunden mit Ihrem persönlichen Angebot zurück."
         });
-
-        // Reset form
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          charterType: "",
-          boatType: "",
-          territory: "",
-          startDate: "",
-          endDate: "",
-          boatSize: "",
-          cabins: "",
-          message: "",
-          privacyAccepted: false
-        });
+        form.reset();
         handleClose();
       } else {
         throw new Error('Failed to send request');
@@ -128,24 +137,16 @@ const CharterRequestForm = ({
     } catch (error) {
       toast({
         title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+        description: "Ihre Supabase-Integration ist noch nicht aktiv. Bitte verbinden Sie Ihr Projekt mit Supabase, um E-Mails zu versenden.",
         variant: "destructive"
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-  const handleSelectChange = (name: string, value: string) => {
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-  const FormContent = () => <div className="relative">
+
+  const FormContent = () => (
+    <div className="relative">
       {/* Hero Section */}
       <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
         <img
@@ -168,7 +169,7 @@ const CharterRequestForm = ({
       </div>
 
       {/* Form Section */}
-      <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white">
+      <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white max-h-96 overflow-y-auto">
         <Card className="max-w-3xl mx-auto shadow-xl border-0">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
@@ -181,284 +182,375 @@ const CharterRequestForm = ({
           </CardHeader>
 
           <CardContent>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Personal Information */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Vorname *
-                  </label>
-                  <Input
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                {/* Personal Information */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <FormField
+                    control={form.control}
                     name="firstName"
-                    value={formData.firstName}
-                    onChange={handleInputChange}
-                    placeholder="Ihr Vorname"
-                    required
-                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Vorname *</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Ihr Vorname"
+                            className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Nachname *
-                  </label>
-                  <Input
+                  <FormField
+                    control={form.control}
                     name="lastName"
-                    value={formData.lastName}
-                    onChange={handleInputChange}
-                    placeholder="Ihr Nachname"
-                    required
-                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Nachname *</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Ihr Nachname"
+                            className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
                 </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    E-Mail-Adresse *
-                  </label>
-                  <Input
-                    type="email"
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <FormField
+                    control={form.control}
                     name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="ihre@email.de"
-                    required
-                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>E-Mail-Adresse *</FormLabel>
+                        <FormControl>
+                          <Input
+                            type="email"
+                            placeholder="ihre@email.de"
+                            className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Telefonnummer
-                  </label>
-                  <Input
+                  <FormField
+                    control={form.control}
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    placeholder="+49 123 456789"
-                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Telefonnummer</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="+49 123 456789"
+                            className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
                 </div>
-              </div>
 
-              {/* Charter Details */}
-              <div className="border-t pt-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Charter-Details</h3>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Charter-Art *
-                    </label>
-                    <Select value={formData.charterType} onValueChange={(value) => handleSelectChange('charterType', value)}>
-                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                        <SelectValue placeholder="Wählen Sie die Charter-Art" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="bareboat">Bareboat Charter</SelectItem>
-                        <SelectItem value="skippered">Charter mit Skipper</SelectItem>
-                        <SelectItem value="crewed">Charter mit Crew</SelectItem>
-                        <SelectItem value="cabin">Kabinen-Charter</SelectItem>
-                      </SelectContent>
-                    </Select>
+                {/* Charter Details */}
+                <div className="border-t pt-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Charter-Details</h3>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <FormField
+                      control={form.control}
+                      name="charterType"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Charter-Art *</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                                <SelectValue placeholder="Wählen Sie die Charter-Art" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="bareboat">Bareboat Charter</SelectItem>
+                              <SelectItem value="skippered">Charter mit Skipper</SelectItem>
+                              <SelectItem value="crewed">Charter mit Crew</SelectItem>
+                              <SelectItem value="cabin">Kabinen-Charter</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="boatType"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Bootstyp *</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                                <SelectValue placeholder="Wählen Sie den Bootstyp" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="segelboot">Segelboot</SelectItem>
+                              <SelectItem value="motorboot">Motorboot</SelectItem>
+                              <SelectItem value="katamaran">Katamaran</SelectItem>
+                              <SelectItem value="gulet">Gulet</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Bootstyp *
-                    </label>
-                    <Select value={formData.boatType} onValueChange={(value) => handleSelectChange('boatType', value)}>
-                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                        <SelectValue placeholder="Wählen Sie den Bootstyp" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="segelboot">Segelboot</SelectItem>
-                        <SelectItem value="motorboot">Motorboot</SelectItem>
-                        <SelectItem value="katamaran">Katamaran</SelectItem>
-                        <SelectItem value="gulet">Gulet</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
 
-                <div className="mb-4">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Revier *
-                  </label>
-                  <Select value={formData.territory} onValueChange={(value) => handleSelectChange('territory', value)}>
-                    <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                      <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="mittelmeer">Mittelmeer</SelectItem>
-                      <SelectItem value="nordsee">Nordsee</SelectItem>
-                      <SelectItem value="ostsee">Ostsee</SelectItem>
-                      <SelectItem value="atlantik">Atlantik</SelectItem>
-                      <SelectItem value="pazifik">Pazifik</SelectItem>
-                      <SelectItem value="indischer-ozean">Indischer Ozean</SelectItem>
-                      <SelectItem value="karibik">Karibik</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
+                  <FormField
+                    control={form.control}
+                    name="territory"
+                    render={({ field }) => (
+                      <FormItem className="mb-4">
+                        <FormLabel>Revier *</FormLabel>
+                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          <FormControl>
+                            <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                              <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            <SelectItem value="mittelmeer">Mittelmeer</SelectItem>
+                            <SelectItem value="nordsee">Nordsee</SelectItem>
+                            <SelectItem value="ostsee">Ostsee</SelectItem>
+                            <SelectItem value="atlantik">Atlantik</SelectItem>
+                            <SelectItem value="pazifik">Pazifik</SelectItem>
+                            <SelectItem value="indischer-ozean">Indischer Ozean</SelectItem>
+                            <SelectItem value="karibik">Karibik</SelectItem>
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Startdatum *
-                    </label>
-                    <Input
-                      type="date"
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <FormField
+                      control={form.control}
                       name="startDate"
-                      value={formData.startDate}
-                      onChange={handleInputChange}
-                      required
-                      className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Startdatum *</FormLabel>
+                          <FormControl>
+                            <Input
+                              type="date"
+                              className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Enddatum *
-                    </label>
-                    <Input
-                      type="date"
+                    <FormField
+                      control={form.control}
                       name="endDate"
-                      value={formData.endDate}
-                      onChange={handleInputChange}
-                      required
-                      className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Enddatum *</FormLabel>
+                          <FormControl>
+                            <Input
+                              type="date"
+                              className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <FormField
+                      control={form.control}
+                      name="boatSize"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Bootslänge</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                                <SelectValue placeholder="Wählen Sie die Bootslänge" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="30-35ft">30-35 Fuß</SelectItem>
+                              <SelectItem value="36-40ft">36-40 Fuß</SelectItem>
+                              <SelectItem value="41-45ft">41-45 Fuß</SelectItem>
+                              <SelectItem value="46-50ft">46-50 Fuß</SelectItem>
+                              <SelectItem value="50ft+">Über 50 Fuß</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="cabins"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Anzahl Kabinen</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                                <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="1">1 Kabine</SelectItem>
+                              <SelectItem value="2">2 Kabinen</SelectItem>
+                              <SelectItem value="3">3 Kabinen</SelectItem>
+                              <SelectItem value="4">4 Kabinen</SelectItem>
+                              <SelectItem value="5+">5+ Kabinen</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Bootslänge
-                    </label>
-                    <Select value={formData.boatSize} onValueChange={(value) => handleSelectChange('boatSize', value)}>
-                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                        <SelectValue placeholder="Wählen Sie die Bootslänge" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="30-35ft">30-35 Fuß</SelectItem>
-                        <SelectItem value="36-40ft">36-40 Fuß</SelectItem>
-                        <SelectItem value="41-45ft">41-45 Fuß</SelectItem>
-                        <SelectItem value="46-50ft">46-50 Fuß</SelectItem>
-                        <SelectItem value="50ft+">Über 50 Fuß</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Anzahl Kabinen
-                    </label>
-                    <Select value={formData.cabins} onValueChange={(value) => handleSelectChange('cabins', value)}>
-                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                        <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="1">1 Kabine</SelectItem>
-                        <SelectItem value="2">2 Kabinen</SelectItem>
-                        <SelectItem value="3">3 Kabinen</SelectItem>
-                        <SelectItem value="4">4 Kabinen</SelectItem>
-                        <SelectItem value="5+">5+ Kabinen</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-              </div>
-
-              {/* Message */}
-              <div className="border-t pt-6">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Zusätzliche Wünsche oder Anmerkungen
-                </label>
-                <Textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Teilen Sie uns Ihre besonderen Wünsche oder Fragen mit..."
-                  rows={4}
-                  className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                />
-              </div>
-
-              {/* Privacy Policy */}
-              <div className="border-t pt-6">
-                <div className="flex items-start space-x-3">
-                  <Checkbox
-                    id="privacy"
-                    checked={formData.privacyAccepted}
-                    onCheckedChange={(checked) => 
-                      setFormData(prev => ({ ...prev, privacyAccepted: checked === true }))
-                    }
-                    className="border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark"
+                {/* Message */}
+                <div className="border-t pt-6">
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Zusätzliche Wünsche oder Anmerkungen</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder="Teilen Sie uns Ihre besonderen Wünsche oder Fragen mit..."
+                            rows={4}
+                            className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark resize-none"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                  <label htmlFor="privacy" className="text-sm text-gray-600 leading-relaxed">
-                    Ich akzeptiere die{" "}
-                    <a href="/datenschutz" className="text-ocean-dark hover:underline" target="_blank">
-                      Datenschutzerklärung
-                    </a>{" "}
-                    und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. *
-                  </label>
                 </div>
-              </div>
 
-              {/* Submit Button */}
-              <div className="pt-6">
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-ocean-dark hover:bg-ocean-light text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
-                >
-                  <Send className="w-5 h-5" />
-                  Unverbindliche Anfrage senden
-                </Button>
-                
-                <div className="mt-4 text-center">
-                  <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>100% kostenlos & unverbindlich</span>
-                  </div>
-                  <div className="flex flex-wrap items-center justify-center gap-4 mt-2">
-                    <Badge variant="secondary" className="bg-green-50 text-green-700 border-green-200">
-                      ✓ 24h Antwortzeit
-                    </Badge>
-                    <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
-                      ✓ Persönliches Angebot
-                    </Badge>
-                    <Badge variant="secondary" className="bg-orange-50 text-orange-700 border-orange-200">
-                      ✓ Keine Provision
-                    </Badge>
+                {/* Privacy Policy */}
+                <div className="border-t pt-6">
+                  <FormField
+                    control={form.control}
+                    name="privacyAccepted"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                            className="border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark"
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel className="text-sm text-gray-600 leading-relaxed">
+                            Ich akzeptiere die{" "}
+                            <a href="/datenschutz" className="text-ocean-dark hover:underline" target="_blank">
+                              Datenschutzerklärung
+                            </a>{" "}
+                            und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. *
+                          </FormLabel>
+                          <FormMessage />
+                        </div>
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+                {/* Submit Button */}
+                <div className="pt-6">
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={isSubmitting}
+                    className="w-full bg-ocean-dark hover:bg-ocean-light text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl disabled:opacity-50"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-5 h-5 animate-spin" />
+                        Anfrage wird gesendet...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5" />
+                        Unverbindliche Anfrage senden
+                      </>
+                    )}
+                  </Button>
+                  
+                  <div className="mt-4 text-center">
+                    <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <span>100% kostenlos & unverbindlich</span>
+                    </div>
+                    <div className="flex flex-wrap items-center justify-center gap-4 mt-2">
+                      <Badge variant="secondary" className="bg-green-50 text-green-700 border-green-200">
+                        Antwort in 24h
+                      </Badge>
+                      <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
+                        Persönliche Beratung
+                      </Badge>
+                      <Badge variant="secondary" className="bg-purple-50 text-purple-700 border-purple-200">
+                        Beste Preise
+                      </Badge>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </Form>
           </CardContent>
         </Card>
       </div>
-    </div>;
+    </div>
+  );
+
   if (children) {
-    return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
+    return (
+      <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>
           {children}
         </DialogTrigger>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
-          <DialogTitle className="sr-only">Charter-Anfrage Formular</DialogTitle>
+        <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+          <DialogTitle className="sr-only">Charter-Anfrage</DialogTitle>
           <DialogDescription className="sr-only">
-            Füllen Sie das Formular aus, um eine unverbindliche Charter-Anfrage zu stellen. Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+            Stellen Sie hier Ihre unverbindliche Charter-Anfrage
           </DialogDescription>
-          <div className="relative">
-            {/* Close button - visible on all screen sizes */}
-            <button onClick={handleClose} className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200" aria-label="Formular schließen">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <FormContent />
-          </div>
+          <FormContent />
         </DialogContent>
-      </Dialog>;
+      </Dialog>
+    );
   }
-  return <FormContent />;
+
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
+      <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden">
+        <FormContent />
+      </div>
+    </div>
+  );
 };
+
 export default CharterRequestForm;
