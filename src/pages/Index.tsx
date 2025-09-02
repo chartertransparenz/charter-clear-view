@@ -7,7 +7,6 @@ import Territories from "@/components/Territories";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
 
-import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
@@ -27,7 +26,6 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <FloatingCTA />
       <FloatingWhatsApp />
       <Hero />
       <Territories />

@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import CharterRequestForm from "./CharterRequestForm";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -104,15 +103,14 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <CharterRequestForm>
-                  <Button 
-                    size="lg" 
-                    className="bg-ocean-dark text-white px-8 py-6 text-lg font-semibold hover:bg-ocean-dark/90 transition-colors"
-                  >
-                    <Send className="w-5 h-5 mr-2" />
-                    Traumtörn in 24h - Jetzt anfragen
-                  </Button>
-                </CharterRequestForm>
+                <Button 
+                  size="lg" 
+                  className="bg-ocean-dark text-white px-8 py-6 text-lg font-semibold hover:bg-ocean-dark/90 transition-colors"
+                  onClick={() => window.open('tel:+497543499080', '_self')}
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Jetzt anrufen
+                </Button>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground justify-center">
                   <Star className="w-4 h-4 text-yellow-500 fill-current" />
                   <span>10.000+ zufriedene Segler</span>
@@ -204,12 +202,21 @@ const Contact = () => {
                     <Send className="w-4 h-4 mr-2" />
                     WhatsApp senden
                   </Button>
-                  <CharterRequestForm>
-                    <Button variant="default" size="sm" className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
-                      <Send className="w-4 h-4 mr-2" />
-                      Jetzt Anfrage stellen
-                    </Button>
-                  </CharterRequestForm>
+                  <Button 
+                    variant="default" 
+                    size="sm" 
+                    className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                    onClick={() => {
+                      const element = document.getElementById('message');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                        element.focus();
+                      }
+                    }}
+                  >
+                    <Send className="w-4 h-4 mr-2" />
+                    Nachricht senden
+                  </Button>
                 </div>
               </CardContent>
             </Card>

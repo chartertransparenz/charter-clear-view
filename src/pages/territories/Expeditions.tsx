@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Mountain, AlertTriangle, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import {
   Breadcrumb,
@@ -180,11 +179,15 @@ const Expeditions = () => {
               Kontaktieren Sie uns für eine persönliche Beratung zu Expeditions-Charter. 
               Wir prüfen Ihre Qualifikationen und planen Ihr Abenteuer.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-gray-700 hover:bg-gray-50" size="lg">
-                Expedition-Beratung anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-gray-700 hover:bg-gray-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Kontakt aufnehmen
+            </Button>
           </div>
         </div>
       </div>

@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import CharterRequestForm from "./CharterRequestForm";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,15 +72,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <CharterRequestForm>
-              <Button 
-                variant="default" 
-                size="sm" 
-                className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-              >
-                Jetzt Anfrage stellen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              variant="default" 
+              size="sm" 
+              className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+              onClick={() => handleNavClick('#kontakt')}
+            >
+              Kontakt aufnehmen
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -111,15 +109,14 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="px-4">
-                <CharterRequestForm>
-                  <Button 
-                    variant="default" 
-                    size="sm" 
-                    className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-                  >
-                    Jetzt Anfrage stellen
-                  </Button>
-                </CharterRequestForm>
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                  onClick={() => handleNavClick('#kontakt')}
+                >
+                  Kontakt aufnehmen
+                </Button>
               </div>
             </div>
           </div>
