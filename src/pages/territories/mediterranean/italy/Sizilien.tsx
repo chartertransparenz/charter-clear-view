@@ -305,7 +305,11 @@ const Sizilien = () => {
           {/* Scilla Image */}
           <div className="mb-8">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
-              <img src="/lovable-uploads/4af560e1-bf0d-424d-ae8a-505fa9612896.png" alt="Scilla mit dem Castello Ruffo an der kalabrischen Küste - kristallklares Wasser und idealer Ankerplatz" className="w-full h-64 md:h-80 object-cover" />
+              <img 
+                src="/lovable-uploads/90f07d4f-a3e9-4ce7-8590-1f6e7b2f6cdb.png"
+                alt="Scilla mit dem Castello Ruffo an der kalabrischen Küste - kristallklares Wasser und idealer Ankerplatz"
+                className="w-full h-64 md:h-80 object-cover"
+              />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
                 <p className="text-white text-sm md:text-base leading-relaxed">
                   Am kalabrischen Festland gegenüber Sizilien gelegen, bietet Scilla kristallklares Wasser, gut haltenden Sandgrund und die Kulisse des Castello Ruffo – ideal für einen kurzen Badestopp.
@@ -356,7 +360,20 @@ const Sizilien = () => {
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
-          
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4">
+              Bereit für sizilianisches Abenteuer?
+            </h3>
+            <p className="mb-6 text-blue-100">
+              Entdecken Sie die größte Insel des Mittelmeers mit ihrer einzigartigen 
+              Mischung aus Kultur, Geschichte und spektakulären Segelrevieren.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Charter anfragen
+              </Button>
+            </CharterRequestForm>
+          </div>
         </div>
       </div>
     </div>;
