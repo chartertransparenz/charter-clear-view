@@ -50,7 +50,7 @@ const Services = () => {
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
           <div className="relative">
-            <img src={servicesHeroConsultationV2} alt="Luxusyacht bei Sonnenuntergang" className="w-full h-96 md:h-[28rem] object-cover" />
+            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Traumhafte Bucht mit türkisblauem Wasser" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
