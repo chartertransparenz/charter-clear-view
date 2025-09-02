@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Wind } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 
 const Fuerteventura = () => {
@@ -225,11 +224,15 @@ const Fuerteventura = () => {
               Erleben Sie sportliches Segeln mit konstanten starken Winden, 
               endlose Sandstrände und die wilde Schönheit der Sahara-Insel.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-yellow-600 hover:bg-yellow-50" size="lg">
-                Fuerteventura Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-yellow-600 hover:bg-yellow-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Kontakt aufnehmen
+            </Button>
           </div>
         </div>
       </div>

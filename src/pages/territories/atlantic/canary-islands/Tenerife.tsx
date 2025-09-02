@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Mountain } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 
 const Tenerife = () => {
@@ -226,11 +225,15 @@ const Tenerife = () => {
               Erleben Sie die vielfältigste Kanareninsel mit dem höchsten Berg Spaniens 
               und perfekten Segelbedingungen das ganze Jahr über.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-red-600 hover:bg-red-50" size="lg">
-                Teneriffa Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-red-600 hover:bg-red-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Kontakt aufnehmen
+            </Button>
           </div>
         </div>
       </div>

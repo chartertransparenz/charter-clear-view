@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import {
@@ -246,11 +245,14 @@ const USVirginIslands = () => {
                 <p className="mb-6 text-gray-600">
                   Amerikanischer Komfort trifft karibisches Flair – erleben Sie line-of-sight Segeln zwischen traumhaften Inseln im konstanten Passatwind.
                 </p>
-                <CharterRequestForm>
-                  <Button size="lg">
-                    Jetzt USVI Charter anfragen
-                  </Button>
-                </CharterRequestForm>
+                <Button 
+                  size="lg"
+                  onClick={() => {
+                    window.location.href = 'tel:+497543499080';
+                  }}
+                >
+                  Kontakt aufnehmen
+                </Button>
               </div>
             </div>
           </div>

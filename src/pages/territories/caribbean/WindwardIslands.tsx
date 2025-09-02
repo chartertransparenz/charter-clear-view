@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -428,11 +427,15 @@ const WindwardIslands = () => {
             <p className="mb-6 text-gray-600">
               Ob auf einer sportlichen Segelyacht oder einem komfortablen Katamaran, ob als Bareboat-Skipper oder entspannt mit Crew – ein Yachtcharter in den Windward Islands ist ein unvergessliches Erlebnis. Kontaktieren Sie uns und wir planen gemeinsam Ihr perfektes Segelabenteuer in der Karibik.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90" size="lg">
-                Windward Inseln Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-primary text-primary-foreground hover:bg-primary/90" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Kontakt aufnehmen
+            </Button>
           </div>
         </div>
       </div>
