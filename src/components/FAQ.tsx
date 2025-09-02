@@ -229,11 +229,11 @@ const FAQ = () => {
               <HelpCircle className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-ocean-dark mb-4">
-              Deine Frage war nicht dabei?
+              Ihre Frage war nicht dabei?
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Kein Problem! Unser Kundenservice-Team hilft dir gerne weiter. 
-              Kontaktiere uns über einen der folgenden Kanäle:
+              Kein Problem! Unser Kundenservice-Team hilft Ihnen gerne weiter. 
+              Kontaktieren Sie uns über einen der folgenden Kanäle:
             </p>
           </div>
 
