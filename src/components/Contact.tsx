@@ -107,7 +107,7 @@ const Contact = () => {
                 <CharterRequestForm>
                   <Button 
                     size="lg" 
-                    className="gradient-ocean text-white hover:shadow-elegant transition-smooth px-8 py-6 text-lg font-semibold animate-pulse hover:animate-none"
+                    className="bg-primary text-white px-8 py-6 text-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Traumtörn in 24h - Jetzt anfragen
@@ -286,7 +286,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full gradient-ocean text-white hover:shadow-elegant transition-smooth py-6 text-lg font-semibold" size="lg">
+                  <Button type="submit" className="w-full bg-primary text-white py-6 text-lg font-semibold hover:bg-primary/90 transition-colors" size="lg">
                     <Send className="w-4 h-4 mr-2" />
                     Nachricht senden
                   </Button>
