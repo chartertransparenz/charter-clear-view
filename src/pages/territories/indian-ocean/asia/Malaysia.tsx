@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Ship } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import malaysiaSailing from "@/assets/malaysia-sailing.jpg";
 const Malaysia = () => {
@@ -122,11 +122,15 @@ const Malaysia = () => {
               Erleben Sie kulturelle Vielfalt, unberührte Tropeninseln und 
               entspanntes Segeln in einem der authentischsten Länder Asiens.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-green-600 hover:bg-green-50" size="lg">
-                Malaysia Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-green-600 hover:bg-green-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Malaysia Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

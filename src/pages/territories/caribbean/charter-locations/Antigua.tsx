@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane, Crown } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -253,11 +253,16 @@ const Antigua = () => {
             <p className="text-xl mb-6">
               Entdecken Sie die Leeward Islands vom Segelzentrum der Karibik
             </p>
-            <CharterRequestForm>
-              <Button size="lg" variant="secondary" className="bg-white text-purple-600 hover:bg-gray-100">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-white text-purple-600 hover:bg-gray-100"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

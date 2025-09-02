@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Music, Building, Plane } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import caribbean from "@/assets/caribbean.jpg";
 const Havanna = () => {
@@ -268,11 +268,16 @@ const Havanna = () => {
             <p className="text-blue-100 mb-6">
               Charter ab Cienfuegos • Besichtigung von Havanna • Komplette Kuba-Erfahrung
             </p>
-            <CharterRequestForm>
-              <Button size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
-                Charter ab Cienfuegos anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-white text-blue-700 hover:bg-gray-100"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter ab Cienfuegos anfragen
+            </Button>
           </div>
         </div>
       </div>

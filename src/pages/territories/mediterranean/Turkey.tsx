@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -524,11 +524,15 @@ const Turkey = () => {
               Entdecken Sie die traumhaften Buchten der türkischen Ägäis und 
               erleben Sie die legendäre Gastfreundschaft bei einer unvergesslichen Blue Cruise.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Türkei Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-blue-600 hover:bg-blue-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Türkei Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

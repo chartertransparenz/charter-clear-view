@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Wine, Mountain, Plane } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -262,11 +262,16 @@ const Martinique = () => {
             <p className="text-xl mb-6">
               Entdecken Sie die Windward Islands mit französischem Savoir-vivre
             </p>
-            <CharterRequestForm>
-              <Button size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-white text-blue-700 hover:bg-gray-100"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

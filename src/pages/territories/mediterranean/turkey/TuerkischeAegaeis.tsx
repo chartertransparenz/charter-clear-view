@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import {
   Breadcrumb,
@@ -224,11 +224,15 @@ const TuerkischeAegaeis = () => {
               Erleben Sie die legendäre türkische Gastfreundschaft und entdecken Sie 
               die traumhaften Buchten der türkischen Ägäis.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-blue-600 hover:bg-blue-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

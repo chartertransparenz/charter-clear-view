@@ -12,7 +12,7 @@ import {
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 const hollandCoast = "/lovable-uploads/0eef7af9-d0e3-4695-beb3-dcc6a319901a.png";
@@ -404,11 +404,15 @@ const Holland = () => {
             <p className="mb-6 text-blue-100">
               Erleben Sie das vielseitige Holland mit dem entspannten IJsselmeer oder den herausfordernden Nordsee-Gezeiten.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Holland Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-blue-600 hover:bg-blue-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Holland Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

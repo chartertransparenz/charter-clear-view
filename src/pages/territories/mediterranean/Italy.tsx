@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import {
@@ -534,7 +534,26 @@ const Italy = () => {
       </div>
       
       {/* Charter Request Form */}
-      <CharterRequestForm />
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
+          <h3 className="text-2xl font-bold mb-4">
+            Bereit für italienisches Dolce Vita?
+          </h3>
+          <p className="mb-6 text-blue-100">
+            Entdecken Sie die schönsten Küsten des Mittelmeers mit ihrer 
+            einzigartigen Mischung aus Kultur, Geschichte und perfekten Segelbedingungen.
+          </p>
+          <Button 
+            className="bg-white text-blue-600 hover:bg-blue-50" 
+            size="lg"
+            onClick={() => {
+              window.location.href = 'tel:+497543499080';
+            }}
+          >
+            Italien Charter anfragen
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };

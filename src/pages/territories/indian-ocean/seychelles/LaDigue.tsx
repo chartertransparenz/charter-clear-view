@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import destinationSeychelles from "@/assets/destination-seychelles.jpg";
 
@@ -153,11 +153,15 @@ const LaDigue = () => {
             <p className="mb-6 text-blue-100">
               Erleben Sie die spektakulären Granitfelsen-Strände und die authentische Atmosphäre von La Digue.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                La Digue Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-blue-600 hover:bg-blue-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              La Digue Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

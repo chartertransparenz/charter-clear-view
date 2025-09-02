@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
-import CharterRequestForm from '@/components/CharterRequestForm';
+
 
 import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -417,11 +417,15 @@ export default function Istria() {
             Entdecken Sie die venezianische Küste Kroatiens mit perfekter Marina-Infrastruktur
           </p>
           <div className="flex justify-center">
-            <CharterRequestForm>
-              <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              size="lg" 
+              className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
-import CharterRequestForm from '@/components/CharterRequestForm';
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
@@ -636,11 +636,15 @@ export default function Greece() {
             Entdecken Sie die Wiege des Segelns mit ihren traumhaften Inseln und antiker Geschichte
           </p>
           <div className="flex justify-center">
-            <CharterRequestForm>
-              <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              size="lg" 
+              className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

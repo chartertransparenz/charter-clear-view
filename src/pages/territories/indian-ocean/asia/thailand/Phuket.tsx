@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, TreePine } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import thailandSailing from "@/assets/thailand-sailing.jpg";
 
@@ -226,11 +226,15 @@ const Phuket = () => {
               Starten Sie von Thailands premium Segel-Destination zu den 
               spektakulärsten Kalkstein-Formationen und Trauminseln Asiens.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-emerald-600 hover:bg-emerald-50" size="lg">
-                Phuket Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-emerald-600 hover:bg-emerald-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Phuket Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

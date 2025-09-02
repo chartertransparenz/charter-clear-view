@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import {
   Breadcrumb,
@@ -208,11 +208,15 @@ const France = () => {
               Entdecken Sie die Schönheit der französischen Mittelmeerküste mit ihrer 
               einzigartigen Mischung aus Luxus, Kultur und perfekten Segelbedingungen.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Frankreich Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-blue-600 hover:bg-blue-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Frankreich Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

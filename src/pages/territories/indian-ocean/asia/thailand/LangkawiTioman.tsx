@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Palmtree } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 
 const LangkawiTioman = () => {
@@ -185,11 +185,15 @@ const LangkawiTioman = () => {
               Entdecken Sie Malaysias schönste Inseln mit 99 Inseln von Langkawi 
               und den unberührten Korallenriffen von Tioman.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-teal-600 hover:bg-teal-50" size="lg">
-                Langkawi & Tioman Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-white text-teal-600 hover:bg-teal-50" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Langkawi & Tioman Charter anfragen
+            </Button>
           </div>
         </div>
       </div>

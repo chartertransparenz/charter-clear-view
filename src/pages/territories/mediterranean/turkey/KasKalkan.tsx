@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 
@@ -433,11 +433,16 @@ const KasKalkan = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Erleben Sie die authentische Lykische Küste mit kristallklarem Wasser, versunkenen Städten und geschützten Ankerbuchten. Wir organisieren Ihren unvergesslichen Charter.
           </p>
-          <CharterRequestForm>
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-              Jetzt Kaş & Kalkan Charter anfragen
-            </Button>
-          </CharterRequestForm>
+          <Button 
+            size="lg" 
+            variant="secondary" 
+            className="text-lg px-8 py-3"
+            onClick={() => {
+              window.location.href = 'tel:+497543499080';
+            }}
+          >
+            Jetzt Kaş & Kalkan Charter anfragen
+          </Button>
         </div>
       </div>
     </div>

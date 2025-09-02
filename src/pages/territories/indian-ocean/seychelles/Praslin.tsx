@@ -12,7 +12,7 @@ import {
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, Waves, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
+
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 
@@ -254,11 +254,15 @@ const Praslin = () => {
             <p className="mb-6 text-blue-700">
               Entdecken Sie Inselhüpfen zwischen Granitkolossen, Lagunen und Riesenschildkröten ab Praslin.
             </p>
-            <CharterRequestForm>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700 text-white" 
+              size="lg"
+              onClick={() => {
+                window.location.href = 'tel:+497543499080';
+              }}
+            >
+              Charter anfragen
+            </Button>
           </div>
         </div>
 
