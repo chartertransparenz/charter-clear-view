@@ -192,7 +192,7 @@ const Toskana = () => {
                 <div className="space-y-3 mb-8">
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 1: Salivoli → Porto Azzurro (Elba)</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Törnstart: Proviantieren und Übernahme in Salivoli.<br/>
                       • Badestopp: Bucht von Cala Seregola – klar, ruhig, schöner Sand.<br/>
                       • Übernachtung: Marina Porto Azzurro – sicher, lebendig, gemütliche Altstadt.<br/>
@@ -202,7 +202,7 @@ const Toskana = () => {
                   
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 2: Porto Azzurro → Marina di Campo</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Badestopp: Badebucht Lacona – weitläufiger Sandstrand, türkisfarbenes Wasser, gute Schnorchelmöglichkeiten.<br/>
                       • Übernachtung: Ankerplatz vor Marina di Campo oder am Gästesteg.<br/>
                       • Besonderheit: Langer Sandstrand, bezaubernder Sonnenuntergang, Lokale mit Fischspezialitäten.
@@ -211,7 +211,7 @@ const Toskana = () => {
                   
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 3: Marina di Campo → Marciana Marina</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Badestopp: Fetovaia oder Cavoli – zwei der beliebtesten Traumstrände Elbas, glasklares Wasser.<br/>
                       • Übernachtung: Marina Marciana Marina – gut geschützt, charmante Promenade.<br/>
                       • Sehenswert: Spaziergang durch den kleinen Hafen und die Altstadt, Aperitivo in typischer Bar.
@@ -220,7 +220,7 @@ const Toskana = () => {
                   
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 4: Marciana Marina → Capraia</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Badestopp: Cala Rossa mit spektakulärer Felskulisse, nur bei ruhigem Wetter.<br/>
                       • Übernachtung: Hafen Capraia – klein, familiäre Atmosphäre, schnelle Füllung im Sommer.<br/>
                       • Highlight: Wanderung zum Forte di San Giorgio, lokale Spezialität ist der gefüllte Kalmar „Totani ripieni".
@@ -229,7 +229,7 @@ const Toskana = () => {
                   
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 5: Capraia → Portoferraio (Elba)</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Badestopp: Badepause in der Bucht Enfola – ideal zum Schnorcheln.<br/>
                       • Übernachtung: Portoferraio – Marina oder Stadtkai, je nach Verfügbarkeit.<br/>
                       • Sehenswert: Napoleons Wohnstätten, idyllische Altstadtgassen, Aperitif mit Blick auf den Hafen.
@@ -238,7 +238,7 @@ const Toskana = () => {
                   
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 6: Portoferraio → Insel Giglio (alternativ: Cavo oder Porto Azzurro)</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Badestopp: Cala delle Cannelle – karibisch anmutende Bucht am Südzipfel von Giglio.<br/>
                       • Übernachtung: Porto Giglio – kleiner, malerischer Hafen, rechtzeitig reservieren.<br/>
                       • Highlight: Spaziergang nach Giglio Castello, malerisches Dorf, Panoramablick über den Archipel.
@@ -247,14 +247,14 @@ const Toskana = () => {
                   
                   <div className="border-l-4 border-primary pl-4">
                     <h5 className="font-semibold">Tag 7: Giglio (bzw. Porto Azzurro) → Rückkehr Salivoli</h5>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-gray-700">
                       • Badestopp unterwegs: Zum Beispiel Cala di Nisportino – ruhige Bucht, herrliches Wasser.<br/>
                       • Rückkehr: Spätnachmittag/Abend in Salivoli, letzte Nacht im Hafen.
                     </p>
                   </div>
                 </div>
                 
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-base text-gray-700 mb-4">
                   Alle genannten Stopps sind ideal für Badepausen, Landgänge und kulinarische Genüsse. Häfen sind im Hochsommer oft gut besucht – frühzeitige Reservierung oder frühes Einlaufen ist zu empfehlen. Die Route lässt sich flexibel anpassen – je nach Wetter und Vorlieben der Crew.
                 </p>
 
