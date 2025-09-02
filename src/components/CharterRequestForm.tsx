@@ -139,22 +139,30 @@ const CharterRequestForm = ({
       [name]: value
     });
   };
-  const FormContent = () => <div className="bg-gradient-to-br from-slate-50 to-white min-h-screen">
-      {/* Clean Header */}
-      <div className="text-center py-8 md:py-12">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <Anchor className="w-8 h-8 text-ocean-dark" />
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Charter-Anfrage
-          </h1>
+  const FormContent = () => <div className="relative">
+      {/* Hero Section */}
+      <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
+        <img
+          src={charterHeroWater}
+          alt="Segelboot Charter Anfrage"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-transparent"></div>
+        <div className="relative z-10 h-full flex items-center justify-center text-center">
+          <div>
+            <Anchor className="w-12 h-12 text-white mx-auto mb-4" />
+            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
+              Unverbindliche Charter-Anfrage
+            </h1>
+            <p className="text-white/90 text-lg">
+              Ihr Traumurlaub auf dem Wasser wartet auf Sie
+            </p>
+          </div>
         </div>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Füllen Sie das Formular aus und erhalten Sie innerhalb von 24 Stunden Ihr persönliches Angebot
-        </p>
       </div>
 
       {/* Form Section */}
-      <div className="pb-6 md:pb-8">
+      <div className="py-6 md:py-8 bg-gradient-to-br from-slate-50 to-white">
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
