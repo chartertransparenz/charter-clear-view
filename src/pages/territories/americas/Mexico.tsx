@@ -30,12 +30,10 @@ const Mexico = () => {
   }];
   const charterBases = [{
     name: "La Paz",
-    link: "/reviere/amerika-bahamas/mexiko/la-paz",
     description: "Charmante Hauptstadt von Baja California Sur mit authentischem mexikanischen Flair",
     highlights: ["Marina de La Paz", "Isla Espíritu Santo", "Seelöwen-Kolonien", "Perlentauchen Geschichte"]
   }, {
     name: "Cabo San Lucas",
-    link: "/reviere/amerika-bahamas/mexiko/cabo-san-lucas",
     description: "Weltberühmtes Segelziel am südlichsten Punkt der Baja California",
     highlights: ["El Arco", "Marina Cabo San Lucas", "Pazifik & Cortez-See", "Luxuriöse Resorts"]
   }];
@@ -145,12 +143,12 @@ const Mexico = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {charterBases.map((base, index) => <Link key={index} to={base.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
+            {charterBases.map((base, index) => <div key={index}>
+                <Card className="shadow-lg">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-xl font-semibold text-gray-800">
                         {base.name}
                       </h3>
                     </div>
@@ -163,7 +161,7 @@ const Mexico = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>)}
+              </div>)}
           </div>
         </div>
 
