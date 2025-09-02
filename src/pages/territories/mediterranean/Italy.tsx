@@ -420,6 +420,72 @@ const Italy = () => {
           </div>
         </div>
 
+        {/* Segelregionen Section */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Sardinien & Costa Smeralda */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link to="/reviere/mittelmeer/italien/sardinien" className="group">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                  Sardinien & Costa Smeralda
+                </h3>
+              </Link>
+              <p className="text-gray-600 mb-4">
+                Traumhafte Insel mit smaragdgrünem Wasser, dem berühmten La Maddalena Archipel und exklusiven Häfen der Costa Smeralda. Perfekt für alle, die kristallklares Wasser und erstklassige Marinas schätzen.
+              </p>
+              <div className="text-sm text-gray-500">
+                <strong>Wichtige Stützpunkte:</strong> Olbia, Portisco, Cannigione, Palau, Alghero, Cagliari
+              </div>
+            </div>
+
+            {/* Elba & Toskanischer Archipel */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link to="/reviere/mittelmeer/italien/toskana" className="group">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                  Elba & Toskanischer Archipel
+                </h3>
+              </Link>
+              <p className="text-gray-600 mb-4">
+                Kulturreiche Küste mit der vielfältigen Insel Elba und den geheimnisvollen Inseln Giglio, Giannutri und Capraia. Ideal für Einsteiger und Genusssegler mit kurzen Distanzen und sicheren Buchten.
+              </p>
+              <div className="text-sm text-gray-500">
+                <strong>Wichtige Stützpunkte:</strong> Marina di Scarlino, San Vincenzo, Portoferraio, Livorno
+              </div>
+            </div>
+
+            {/* Sizilien & Liparische Inseln */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link to="/reviere/mittelmeer/italien/sizilien" className="group">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                  Sizilien & Liparische Inseln
+                </h3>
+              </Link>
+              <p className="text-gray-600 mb-4">
+                Die größte Mittelmeerinsel mit den spektakulären Äolischen Inseln inklusive dem aktiven Vulkan Stromboli. Ein Paradies für abenteuerlustige Segler mit vielfältigen Landschaften und reicher Geschichte.
+              </p>
+              <div className="text-sm text-gray-500">
+                <strong>Wichtige Stützpunkte:</strong> Palermo, Portorosa, Capo d'Orlando, Marsala, Trapani
+              </div>
+            </div>
+
+            {/* Amalfiküste & Golf von Neapel */}
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link to="/reviere/mittelmeer/italien/amalfikuste" className="group">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                  Amalfiküste & Golf von Neapel
+                </h3>
+              </Link>
+              <p className="text-gray-600 mb-4">
+                Weltberühmte Steilküste mit den glamourösen Inseln Capri, Ischia und Procida. Spektakuläre Landschaften, exquisite Küche und das authentische italienische Dolce Vita erwarten Sie hier.
+              </p>
+              <div className="text-sm text-gray-500">
+                <strong>Wichtige Stützpunkte:</strong> Neapel, Salerno, Castellammare di Stabia, Sorrento
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Regions Cards */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
           {regions.map((region, index) => (
