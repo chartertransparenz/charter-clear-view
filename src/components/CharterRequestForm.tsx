@@ -148,7 +148,7 @@ const CharterRequestForm = ({
     }
   };
 
-  // Scroll preservation utility
+  // Enhanced scroll preservation utility
   const preserveScrollPosition = useCallback((callback: () => void) => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) {
@@ -159,12 +159,48 @@ const CharterRequestForm = ({
     const scrollTop = scrollContainer.scrollTop;
     callback();
     
-    // Restore scroll position after React has re-rendered
+    // First restoration - immediate
     requestAnimationFrame(() => {
       if (scrollContainer) {
         scrollContainer.scrollTop = scrollTop;
       }
+      
+      // Second restoration - after Radix UI focus management
+      setTimeout(() => {
+        if (scrollContainer) {
+          scrollContainer.scrollTop = scrollTop;
+        }
+      }, 50);
     });
+  }, []);
+
+  // Focus event listener as backup
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer) return;
+
+    let lastScrollTop = 0;
+    
+    const handleFocus = (e: Event) => {
+      // If focus event would cause scroll jump, restore position
+      setTimeout(() => {
+        if (scrollContainer && lastScrollTop > 0) {
+          scrollContainer.scrollTop = lastScrollTop;
+        }
+      }, 10);
+    };
+
+    const handleScroll = () => {
+      lastScrollTop = scrollContainer.scrollTop;
+    };
+
+    scrollContainer.addEventListener('focus', handleFocus, true);
+    scrollContainer.addEventListener('scroll', handleScroll);
+
+    return () => {
+      scrollContainer.removeEventListener('focus', handleFocus, true);
+      scrollContainer.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const FormContent = () => (
@@ -191,7 +227,14 @@ const CharterRequestForm = ({
       </div>
 
       {/* Form Section */}
-      <div ref={scrollContainerRef} className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white max-h-[calc(90vh-20rem)] overflow-y-auto">
+      <div 
+        ref={scrollContainerRef} 
+        className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white max-h-[calc(90vh-20rem)] overflow-y-auto"
+        style={{ 
+          scrollBehavior: 'auto',
+          overflowAnchor: 'none'
+        }}
+      >
         <Card className="max-w-5xl mx-auto shadow-xl border-0">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
@@ -303,7 +346,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie die Charter-Art" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent size="lg">
+                            <SelectContent size="lg" container={scrollContainerRef.current || undefined}>
                               <SelectItem value="bareboat">Bareboat Charter</SelectItem>
                               <SelectItem value="skippered">Charter mit Skipper</SelectItem>
                               <SelectItem value="crewed">Charter mit Crew</SelectItem>
@@ -326,7 +369,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie den Bootstyp" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent size="lg">
+                            <SelectContent size="lg" container={scrollContainerRef.current || undefined}>
                               <SelectItem value="segelboot">Segelboot</SelectItem>
                               <SelectItem value="motorboot">Motorboot</SelectItem>
                               <SelectItem value="katamaran">Katamaran</SelectItem>
@@ -351,7 +394,7 @@ const CharterRequestForm = ({
                               <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent size="lg">
+                          <SelectContent size="lg" container={scrollContainerRef.current || undefined}>
                             <SelectItem value="mittelmeer">Mittelmeer</SelectItem>
                             <SelectItem value="nordsee">Nordsee</SelectItem>
                             <SelectItem value="ostsee">Ostsee</SelectItem>
@@ -408,7 +451,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie die Bootslänge" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent size="lg">
+                            <SelectContent size="lg" container={scrollContainerRef.current || undefined}>
                               <SelectItem value="30-35ft">30-35 Fuß</SelectItem>
                               <SelectItem value="36-40ft">36-40 Fuß</SelectItem>
                               <SelectItem value="41-45ft">41-45 Fuß</SelectItem>
@@ -432,7 +475,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent size="lg">
+                            <SelectContent size="lg" container={scrollContainerRef.current || undefined}>
                               <SelectItem value="1">1 Kabine</SelectItem>
                               <SelectItem value="2">2 Kabinen</SelectItem>
                               <SelectItem value="3">3 Kabinen</SelectItem>

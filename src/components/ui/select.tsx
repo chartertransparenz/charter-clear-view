@@ -89,13 +89,15 @@ SelectScrollDownButton.displayName =
 
 export interface SelectContentProps
   extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>,
-    VariantProps<typeof selectTriggerVariants> {}
+    VariantProps<typeof selectTriggerVariants> {
+  container?: HTMLElement | null;
+}
 
 const SelectContent = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Content>,
   SelectContentProps
->(({ className, children, position = "popper", size = "default", ...props }, ref) => (
-  <SelectPrimitive.Portal>
+>(({ className, children, position = "popper", size = "default", container, ...props }, ref) => (
+  <SelectPrimitive.Portal container={container}>
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
