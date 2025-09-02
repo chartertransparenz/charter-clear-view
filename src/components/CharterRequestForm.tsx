@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, memo } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -51,7 +51,9 @@ const CharterRequestForm = ({
     toast
   } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
+  const [isTyping, setIsTyping] = useState(false);
   const historyPushedRef = useRef(false);
+  const typingTimeoutRef = useRef<NodeJS.Timeout>();
 
   // Stable event handlers using useCallback
   const handleClose = useCallback(() => {
@@ -65,21 +67,28 @@ const CharterRequestForm = ({
     onOpenChange?.(open);
   }, [onOpenChange]);
 
-  // Event handlers for popstate and keydown
-  const handlePopState = useCallback(() => {
+  // Stable event handlers using useRef to avoid dependencies
+  const handlePopStateRef = useRef<() => void>();
+  const handleKeyDownRef = useRef<(e: KeyboardEvent) => void>();
+
+  // Update refs when needed
+  handlePopStateRef.current = () => {
     if (dialogOpen) {
       handleClose();
     }
-  }, [dialogOpen, handleClose]);
+  };
 
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+  handleKeyDownRef.current = (e: KeyboardEvent) => {
     if (e.key === 'Escape' && dialogOpen) {
       handleClose();
     }
-  }, [dialogOpen, handleClose]);
+  };
 
-  // Event listeners - only register/unregister when dialog opens/closes
+  // Event listeners - stable references, no dependencies
   useEffect(() => {
+    const handlePopState = () => handlePopStateRef.current?.();
+    const handleKeyDown = (e: KeyboardEvent) => handleKeyDownRef.current?.(e);
+
     if (dialogOpen) {
       window.addEventListener('popstate', handlePopState);
       document.addEventListener('keydown', handleKeyDown);
@@ -89,7 +98,7 @@ const CharterRequestForm = ({
         document.removeEventListener('keydown', handleKeyDown);
       };
     }
-  }, [dialogOpen, handlePopState, handleKeyDown]);
+  }, [dialogOpen]); // Only depend on dialogOpen
 
   // History management - only push once when dialog opens
   useEffect(() => {
@@ -178,19 +187,30 @@ const CharterRequestForm = ({
       });
     }
   };
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    // Set typing state to disable animations
+    setIsTyping(true);
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+    typingTimeoutRef.current = setTimeout(() => {
+      setIsTyping(false);
+    }, 150);
+
+    setFormData(prev => ({
+      ...prev,
       [e.target.name]: e.target.value
-    });
-  };
-  const handleSelectChange = (name: string, value: string) => {
-    setFormData({
-      ...formData,
+    }));
+  }, []);
+  const handleSelectChange = useCallback((name: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
       [name]: value
-    });
-  };
-  const FormContent = () => <div className="relative">
+    }));
+  }, []);
+  // Memoized FormContent to prevent unnecessary re-renders
+  const FormContent = memo(() => (
+    <div className="relative">
       {/* Hero Section */}
       <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
         <img
@@ -439,13 +459,25 @@ const CharterRequestForm = ({
           </CardContent>
         </Card>
       </div>
-    </div>;
+    </div>
+  ));
   if (children) {
-    return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
+    return (
+      <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>
           {children}
         </DialogTrigger>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
+        <DialogContent 
+          className={cn(
+            "max-w-4xl max-h-[90vh] overflow-y-auto p-0",
+            // Disable animations during typing to prevent jumping
+            isTyping && "animate-none"
+          )}
+          style={isTyping ? {
+            animation: 'none',
+            transform: 'none'
+          } : undefined}
+        >
           <DialogTitle className="sr-only">Charter-Anfrage Formular</DialogTitle>
           <DialogDescription className="sr-only">
             Füllen Sie das Formular aus, um eine unverbindliche Charter-Anfrage zu stellen. Wir melden uns innerhalb von 24 Stunden bei Ihnen.
@@ -460,7 +492,8 @@ const CharterRequestForm = ({
             <FormContent />
           </div>
         </DialogContent>
-      </Dialog>;
+      </Dialog>
+    );
   }
   return <FormContent />;
 };
