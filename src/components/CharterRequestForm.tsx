@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -51,6 +51,7 @@ const CharterRequestForm = ({
     toast
   } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
+  const historyPushedRef = useRef(false);
 
   // Handle browser back button and ESC key
   useEffect(() => {
@@ -67,10 +68,13 @@ const CharterRequestForm = ({
     if (dialogOpen) {
       window.addEventListener('popstate', handlePopState);
       document.addEventListener('keydown', handleKeyDown);
-      // Add a history entry when dialog opens
-      window.history.pushState({
-        dialogOpen: true
-      }, '');
+      // Add a history entry when dialog opens - only once
+      if (!historyPushedRef.current) {
+        window.history.pushState({
+          dialogOpen: true
+        }, '');
+        historyPushedRef.current = true;
+      }
     }
     return () => {
       window.removeEventListener('popstate', handlePopState);
@@ -86,6 +90,7 @@ const CharterRequestForm = ({
   }, [isOpen]);
   const handleClose = () => {
     setDialogOpen(false);
+    historyPushedRef.current = false; // Reset history flag
     onOpenChange?.(false);
   };
   const handleOpenChange = (open: boolean) => {
