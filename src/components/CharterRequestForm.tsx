@@ -5,10 +5,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
-import { Send, Anchor, CheckCircle } from "lucide-react";
+import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { format } from "date-fns";
+import { cn } from "@/lib/utils";
 
 interface CharterRequestFormProps {
   isOpen?: boolean;
@@ -70,8 +74,8 @@ const CharterRequestForm = ({
     lastName: "",
     email: "",
     phone: "",
-    startDate: "",
-    endDate: "",
+    startDate: undefined as Date | undefined,
+    endDate: undefined as Date | undefined,
     boatSize: "",
     cabins: "",
     message: "",
@@ -88,13 +92,20 @@ const CharterRequestForm = ({
       return;
     }
     try {
+      // Format dates for backend submission
+      const submissionData = {
+        ...formData,
+        startDate: formData.startDate ? format(formData.startDate, 'yyyy-MM-dd') : '',
+        endDate: formData.endDate ? format(formData.endDate, 'yyyy-MM-dd') : ''
+      };
+
       // Call Supabase Edge Function to send email
       const response = await fetch('/functions/v1/send-charter-request', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(submissionData)
       });
       if (response.ok) {
         toast({
@@ -108,8 +119,8 @@ const CharterRequestForm = ({
           lastName: "",
           email: "",
           phone: "",
-          startDate: "",
-          endDate: "",
+          startDate: undefined,
+          endDate: undefined,
           boatSize: "",
           cabins: "",
           message: "",
@@ -245,27 +256,57 @@ const CharterRequestForm = ({
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Startdatum *
                     </label>
-                    <Input
-                      type="date"
-                      name="startDate"
-                      value={formData.startDate}
-                      onChange={handleInputChange}
-                      required
-                      className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                    />
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <Button
+                          variant="outline"
+                          className={cn(
+                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark hover:bg-accent/50",
+                            !formData.startDate && "text-muted-foreground"
+                          )}
+                        >
+                          <CalendarIcon className="mr-2 h-4 w-4" />
+                          {formData.startDate ? format(formData.startDate, "dd.MM.yyyy") : <span>Datum wählen</span>}
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0" align="start">
+                        <Calendar
+                          mode="single"
+                          selected={formData.startDate}
+                          onSelect={(date) => setFormData(prev => ({ ...prev, startDate: date }))}
+                          disabled={(date) => date < new Date()}
+                          initialFocus
+                        />
+                      </PopoverContent>
+                    </Popover>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Enddatum *
                     </label>
-                    <Input
-                      type="date"
-                      name="endDate"
-                      value={formData.endDate}
-                      onChange={handleInputChange}
-                      required
-                      className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                    />
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <Button
+                          variant="outline"
+                          className={cn(
+                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark hover:bg-accent/50",
+                            !formData.endDate && "text-muted-foreground"
+                          )}
+                        >
+                          <CalendarIcon className="mr-2 h-4 w-4" />
+                          {formData.endDate ? format(formData.endDate, "dd.MM.yyyy") : <span>Datum wählen</span>}
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0" align="start">
+                        <Calendar
+                          mode="single"
+                          selected={formData.endDate}
+                          onSelect={(date) => setFormData(prev => ({ ...prev, endDate: date }))}
+                          disabled={(date) => date < new Date() || (formData.startDate && date <= formData.startDate)}
+                          initialFocus
+                        />
+                      </PopoverContent>
+                    </Popover>
                   </div>
                 </div>
 
