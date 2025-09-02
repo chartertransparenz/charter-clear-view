@@ -281,7 +281,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie die Charter-Art" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent size="lg">
                               <SelectItem value="bareboat">Bareboat Charter</SelectItem>
                               <SelectItem value="skippered">Charter mit Skipper</SelectItem>
                               <SelectItem value="crewed">Charter mit Crew</SelectItem>
@@ -304,7 +304,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie den Bootstyp" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent size="lg">
                               <SelectItem value="segelboot">Segelboot</SelectItem>
                               <SelectItem value="motorboot">Motorboot</SelectItem>
                               <SelectItem value="katamaran">Katamaran</SelectItem>
@@ -329,7 +329,7 @@ const CharterRequestForm = ({
                               <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent>
+                          <SelectContent size="lg">
                             <SelectItem value="mittelmeer">Mittelmeer</SelectItem>
                             <SelectItem value="nordsee">Nordsee</SelectItem>
                             <SelectItem value="ostsee">Ostsee</SelectItem>
@@ -396,7 +396,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie die Bootslänge" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent size="lg">
                               <SelectItem value="30-35ft">30-35 Fuß</SelectItem>
                               <SelectItem value="36-40ft">36-40 Fuß</SelectItem>
                               <SelectItem value="41-45ft">41-45 Fuß</SelectItem>
@@ -420,7 +420,7 @@ const CharterRequestForm = ({
                                 <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent size="lg">
                               <SelectItem value="1">1 Kabine</SelectItem>
                               <SelectItem value="2">2 Kabinen</SelectItem>
                               <SelectItem value="3">3 Kabinen</SelectItem>
