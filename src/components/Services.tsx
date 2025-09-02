@@ -108,10 +108,10 @@ const Services = () => {
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="text-center mb-6">
               <h4 className="text-xl font-semibold text-ocean-dark mb-4">
-                Deine Yacht. Dein Törn. Unser Versprechen.
+                Ihre Yacht. Ihr Törn. Unser Versprechen.
               </h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Wenn du eine Charteryacht suchst und dabei auf Qualität, persönliche Betreuung und langjährige Erfahrung setzen willst, bist du bei uns genau richtig. Seit über 30 Jahren begleiten wir Seglerinnen und Segler auf ihrem Weg zum perfekten Segelurlaub – ehrlich, erfahren und engagiert.
+                Wenn Sie eine Charteryacht suchen und dabei auf Qualität, persönliche Betreuung und langjährige Erfahrung setzen möchten, sind Sie bei uns genau richtig. Seit über 30 Jahren begleiten wir Seglerinnen und Segler auf ihrem Weg zum perfekten Segelurlaub – ehrlich, erfahren und engagiert.
               </p>
             </div>
           </div>
@@ -127,10 +127,10 @@ const Services = () => {
                 <img src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" alt="CharterTransparenz" className="h-20 w-auto" />
               </div>
               <h3 className="text-3xl font-bold mb-4">
-                Bereit für dein Charter-Abenteuer?
+                Bereit für Ihr Charter-Abenteuer?
               </h3>
               <p className="text-xl mb-8 text-white/90">
-                Lass uns gemeinsam deinen perfekten Törn planen
+                Lassen Sie uns gemeinsam Ihren perfekten Törn planen
               </p>
               <div className="flex justify-center">
                 <CharterRequestForm>
