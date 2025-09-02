@@ -310,38 +310,30 @@ const Mexico = () => {
                 Segler, die Baja California besucht haben, berichten von einem Revier, das sowohl atemberaubende Schönheit als auch spezifische, aber beherrschbare Herausforderungen bietet.
               </p>
               
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-3">Positives:</h4>
-                  <ul className="space-y-2 ml-6">
-                    <li>• <strong>Spektakuläre Natur:</strong> Die einzigartige Kombination aus Wüste und Meer, die Vielfalt an Meerestieren und die unberührten Ankerplätze sind unübertroffen.</li>
-                    <li>• <strong>Tierwelt:</strong> Begegnungen mit Walen, Delfinen, Seelöwen und Walhaien sind häufige und unvergessliche Erlebnisse.</li>
-                    <li>• <strong>Einfache Tagesnavigation:</strong> Tagsüber ist die Navigation durch das klare Wasser und die gute Sicht auf Untiefen relativ einfach.</li>
-                    <li>• <strong>Ruhe und Abgeschiedenheit:</strong> Viele Ankerbuchten sind menschenleer und bieten absolute Ruhe.</li>
-                    <li>• <strong>Moderne Marinas:</strong> Die Marinas in La Paz sind modern und bieten guten Service.</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-3">Herausforderungen:</h4>
-                  <ul className="space-y-2 ml-6">
-                    <li>• <strong>Versorgung in abgelegenen Gebieten:</strong> Außerhalb der Städte ist die Versorgung begrenzt. Trinkwasser, Proviant und Treibstoff müssen großzügig geplant werden.</li>
-                    <li>• <strong>Nachtsegeln:</strong> Wird nicht empfohlen und ist riskant.</li>
-                    <li>• <strong>Ankern auf Kies:</strong> In manchen Buchten ist der Untergrund kiesig, was mehr Kette erfordert, um guten Halt zu gewährleisten.</li>
-                    <li>• <strong>Behördenkontrollen:</strong> Die Behörden kontrollieren die Einhaltung der Permits und Umweltauflagen.</li>
-                  </ul>
-                </div>
-              </div>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Positives</h4>
+              <ul className="space-y-2 ml-6">
+                <li>• <strong>Spektakuläre Natur:</strong> Die einzigartige Kombination aus Wüste und Meer, die Vielfalt an Meerestieren und die unberührten Ankerplätze sind unübertroffen.</li>
+                <li>• <strong>Tierwelt:</strong> Begegnungen mit Walen, Delfinen, Seelöwen und Walhaien sind häufige und unvergessliche Erlebnisse.</li>
+                <li>• <strong>Einfache Tagesnavigation:</strong> Tagsüber ist die Navigation durch das klare Wasser und die gute Sicht auf Untiefen relativ einfach.</li>
+                <li>• <strong>Ruhe und Abgeschiedenheit:</strong> Viele Ankerbuchten sind menschenleer und bieten absolute Ruhe.</li>
+                <li>• <strong>Moderne Marinas:</strong> Die Marinas in La Paz sind modern und bieten guten Service.</li>
+              </ul>
 
-              <div className="mt-6">
-                <h4 className="font-semibold text-gray-800 mb-3">Praktische Tipps aus der Seglergemeinschaft:</h4>
-                <ul className="space-y-2 ml-6">
-                  <li>• <strong>Sorgfältige Proviantplanung:</strong> Decken Sie sich in La Paz oder Loreto ausreichend ein.</li>
-                  <li>• <strong>Wassertanks füllen:</strong> Nutzen Sie jede Gelegenheit, um die Wassertanks aufzufüllen, da Frischwasser in den Buchten rar ist.</li>
-                  <li>• <strong>Sonnenschutz:</strong> Die Sonne ist intensiv, ausreichender Sonnenschutz ist unerlässlich.</li>
-                  <li>• <strong>Fernglas und Kamera:</strong> Unverzichtbar für die Tierbeobachtung.</li>
-                </ul>
-              </div>
+              <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Herausforderungen</h4>
+              <ul className="space-y-2 ml-6">
+                <li>• <strong>Versorgung in abgelegenen Gebieten:</strong> Außerhalb der Städte ist die Versorgung begrenzt. Trinkwasser, Proviant und Treibstoff müssen großzügig geplant werden.</li>
+                <li>• <strong>Nachtsegeln:</strong> Wird nicht empfohlen und ist riskant.</li>
+                <li>• <strong>Ankern auf Kies:</strong> In manchen Buchten ist der Untergrund kiesig, was mehr Kette erfordert, um guten Halt zu gewährleisten.</li>
+                <li>• <strong>Behördenkontrollen:</strong> Die Behörden kontrollieren die Einhaltung der Permits und Umweltauflagen.</li>
+              </ul>
+
+              <h4 className="text-xl font-semibold text-gray-800 mt-6 mb-4">Praktische Tipps aus der Seglergemeinschaft</h4>
+              <ul className="space-y-2 ml-6">
+                <li>• <strong>Sorgfältige Proviantplanung:</strong> Decken Sie sich in La Paz oder Loreto ausreichend ein.</li>
+                <li>• <strong>Wassertanks füllen:</strong> Nutzen Sie jede Gelegenheit, um die Wassertanks aufzufüllen, da Frischwasser in den Buchten rar ist.</li>
+                <li>• <strong>Sonnenschutz:</strong> Die Sonne ist intensiv, ausreichender Sonnenschutz ist unerlässlich.</li>
+                <li>• <strong>Fernglas und Kamera:</strong> Unverzichtbar für die Tierbeobachtung.</li>
+              </ul>
 
               <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Fazit: Ihr Traumtörn im „Aquarium der Welt" – Ein unvergessliches Abenteuer</h3>
               
