@@ -28,39 +28,53 @@ export function DateRangePicker({
   className,
   size = "default"
 }: DateRangePickerProps) {
-  const [date, setDate] = React.useState<DateRange | undefined>(() => {
-    if (value?.startDate && value?.endDate) {
-      return {
-        from: new Date(value.startDate),
-        to: new Date(value.endDate)
-      }
-    }
-    return undefined
+  const [startDate, setStartDate] = React.useState<Date | undefined>(() => {
+    return value?.startDate ? new Date(value.startDate) : undefined
   })
+  const [endDate, setEndDate] = React.useState<Date | undefined>(() => {
+    return value?.endDate ? new Date(value.endDate) : undefined
+  })
+  const [isSelectingEnd, setIsSelectingEnd] = React.useState(false)
+  const [open, setOpen] = React.useState(false)
 
-  const handleSelect = (newDate: DateRange | undefined) => {
-    setDate(newDate)
+  const handleSelect = (selectedDate: Date | undefined) => {
+    if (!selectedDate) return
     
-    if (newDate?.from && newDate?.to && onChange) {
-      onChange({
-        startDate: format(newDate.from, "yyyy-MM-dd"),
-        endDate: format(newDate.to, "yyyy-MM-dd")
-      })
-    } else if (newDate?.from && !newDate?.to && onChange) {
-      // Only start date selected
-      onChange({
-        startDate: format(newDate.from, "yyyy-MM-dd"),
-        endDate: ""
-      })
+    if (!startDate || isSelectingEnd) {
+      if (!startDate) {
+        // First click - set start date
+        setStartDate(selectedDate)
+        setEndDate(undefined)
+        setIsSelectingEnd(true)
+      } else {
+        // Second click - set end date
+        if (selectedDate >= startDate) {
+          setEndDate(selectedDate)
+          setIsSelectingEnd(false)
+          // Close popover and call onChange when both dates are set
+          setOpen(false)
+          if (onChange) {
+            onChange({
+              startDate: format(startDate, "yyyy-MM-dd"),
+              endDate: format(selectedDate, "yyyy-MM-dd")
+            })
+          }
+        }
+      }
+    } else {
+      // Third click - reset and start over
+      setStartDate(selectedDate)
+      setEndDate(undefined)
+      setIsSelectingEnd(true)
     }
   }
 
   const formatDateRange = () => {
-    if (date?.from) {
-      if (date.to) {
-        return `${format(date.from, "dd.MM.yyyy", { locale: de })} - ${format(date.to, "dd.MM.yyyy", { locale: de })}`
+    if (startDate) {
+      if (endDate) {
+        return `${format(startDate, "dd.MM.yyyy", { locale: de })} - ${format(endDate, "dd.MM.yyyy", { locale: de })}`
       }
-      return `${format(date.from, "dd.MM.yyyy", { locale: de })} - ...`
+      return `${format(startDate, "dd.MM.yyyy", { locale: de })} - ...`
     }
     return placeholder
   }
@@ -72,13 +86,13 @@ export function DateRangePicker({
   }
 
   return (
-    <Popover>
+    <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
           variant="outline"
           className={cn(
             "justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
-            !date && "text-muted-foreground",
+            !startDate && "text-muted-foreground",
             sizeClasses[size],
             "w-full",
             className
@@ -91,12 +105,32 @@ export function DateRangePicker({
       <PopoverContent className="w-auto p-0" align="start">
         <Calendar
           initialFocus
-          mode="range"
-          defaultMonth={date?.from}
-          selected={date}
+          mode="single"
+          defaultMonth={startDate}
+          selected={isSelectingEnd ? endDate : startDate}
           onSelect={handleSelect}
-          numberOfMonths={2}
+          numberOfMonths={1}
           className="p-3 pointer-events-auto"
+          disabled={(date) => {
+            if (isSelectingEnd && startDate) {
+              return date < startDate
+            }
+            return false
+          }}
+          modifiers={{
+            saturday: (date) => date.getDay() === 6,
+            rangeStart: startDate ? (date) => date.getTime() === startDate.getTime() : undefined,
+            rangeEnd: endDate ? (date) => date.getTime() === endDate.getTime() : undefined,
+            rangeMiddle: (startDate && endDate) ? (date) => {
+              return date > startDate && date < endDate
+            } : undefined
+          }}
+          modifiersClassNames={{
+            saturday: "bg-accent/30 text-accent-foreground",
+            rangeStart: "bg-accent text-accent-foreground",
+            rangeEnd: "bg-accent text-accent-foreground", 
+            rangeMiddle: "bg-accent/20 text-accent-foreground"
+          }}
           classNames={{
             months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
             month: "space-y-4",
@@ -114,32 +148,18 @@ export function DateRangePicker({
             row: "flex w-full mt-2",
             cell: cn(
               "relative h-12 w-12 text-center text-base p-0",
-              "focus-within:relative focus-within:z-20",
-              "[&:has([data-selected])]:bg-accent/20 first:[&:has([data-selected])]:rounded-l-md last:[&:has([data-selected])]:rounded-r-md",
-              "[&:has([data-range-start])]:rounded-l-md [&:has([data-range-end])]:rounded-r-md",
-              "[&:has([data-range-middle])]:bg-accent/20"
+              "focus-within:relative focus-within:z-20"
             ),
             day: cn(
               "h-12 w-12 p-0 font-normal text-base rounded-md transition-smooth",
               "hover:bg-accent hover:text-accent-foreground",
-              "focus:bg-accent focus:text-accent-foreground focus:outline-none",
-              // Saturday highlighting (day 6 = Saturday)
-              "[&[data-day-of-week='6']]:bg-accent/30 [&[data-day-of-week='6']]:text-accent-foreground"
+              "focus:bg-accent focus:text-accent-foreground focus:outline-none"
             ),
-            day_range_start: "bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-l-md rounded-r-none",
-            day_range_end: "bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-r-md rounded-l-none", 
             day_selected: "bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             day_today: "bg-accent/50 text-accent-foreground font-semibold",
-            day_outside: "text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
+            day_outside: "text-muted-foreground opacity-50",
             day_disabled: "text-muted-foreground opacity-50",
-            day_range_middle: "aria-selected:bg-accent/20 aria-selected:text-accent-foreground rounded-none",
             day_hidden: "invisible",
-          }}
-          modifiers={{
-            saturday: (date) => date.getDay() === 6
-          }}
-          modifiersClassNames={{
-            saturday: "bg-accent/30 text-accent-foreground"
           }}
         />
       </PopoverContent>
