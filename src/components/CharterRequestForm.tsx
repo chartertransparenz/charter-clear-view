@@ -117,17 +117,27 @@ const CharterRequestForm = ({
     }
   }, [isOpen]);
 
-  // Restore scroll position after re-render
+  // Restore scroll position after re-render (only when not actively typing)
   useEffect(() => {
     if (dialogContentRef.current && scrollPositionRef.current > 0) {
-      // Use requestAnimationFrame to ensure DOM is updated
-      requestAnimationFrame(() => {
-        if (dialogContentRef.current) {
-          dialogContentRef.current.scrollTop = scrollPositionRef.current;
-        }
-      });
+      // Check if user is currently typing in an input field
+      const activeElement = document.activeElement;
+      const isInputActive = activeElement && (
+        activeElement.tagName === 'INPUT' || 
+        activeElement.tagName === 'TEXTAREA' || 
+        activeElement.tagName === 'SELECT'
+      );
+      
+      // Only restore scroll position if no input is currently focused
+      if (!isInputActive) {
+        requestAnimationFrame(() => {
+          if (dialogContentRef.current) {
+            dialogContentRef.current.scrollTop = scrollPositionRef.current;
+          }
+        });
+      }
     }
-  });
+  }, []); // Empty dependency array - only run on mount
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
