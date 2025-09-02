@@ -117,27 +117,6 @@ const CharterRequestForm = ({
     }
   }, [isOpen]);
 
-  // Restore scroll position after re-render (only when not actively typing)
-  useEffect(() => {
-    if (dialogContentRef.current && scrollPositionRef.current > 0) {
-      // Check if user is currently typing in an input field
-      const activeElement = document.activeElement;
-      const isInputActive = activeElement && (
-        activeElement.tagName === 'INPUT' || 
-        activeElement.tagName === 'TEXTAREA' || 
-        activeElement.tagName === 'SELECT'
-      );
-      
-      // Only restore scroll position if no input is currently focused
-      if (!isInputActive) {
-        requestAnimationFrame(() => {
-          if (dialogContentRef.current) {
-            dialogContentRef.current.scrollTop = scrollPositionRef.current;
-          }
-        });
-      }
-    }
-  }, []); // Empty dependency array - only run on mount
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -150,6 +129,30 @@ const CharterRequestForm = ({
     message: "",
     privacyAccepted: false
   });
+
+  // Restore scroll position after form data changes (with focus protection)
+  useEffect(() => {
+    if (dialogContentRef.current && scrollPositionRef.current > 0) {
+      // Check if user is currently typing in an input field
+      const activeElement = document.activeElement;
+      const isInputActive = activeElement && (
+        activeElement.tagName === 'INPUT' || 
+        activeElement.tagName === 'TEXTAREA' || 
+        activeElement.tagName === 'SELECT'
+      );
+      
+      // Only restore scroll position if no input is currently focused
+      if (!isInputActive) {
+        // Use setTimeout for better focus protection timing
+        setTimeout(() => {
+          if (dialogContentRef.current) {
+            dialogContentRef.current.scrollTop = scrollPositionRef.current;
+          }
+        }, 0);
+      }
+    }
+  }, [formData]); // Run when formData changes to restore scroll after input
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.privacyAccepted) {
