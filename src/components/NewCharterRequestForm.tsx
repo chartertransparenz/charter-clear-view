@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { DateRangePicker } from "@/components/ui/date-range-picker";
+import { InlineDateRangePicker } from "@/components/ui/inline-date-range-picker";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Card, CardContent } from "@/components/ui/card";
@@ -209,7 +209,7 @@ const NewCharterRequestForm = ({ children, isOpen, onOpenChange }: NewCharterReq
                       <FormItem>
                         <FormLabel className="text-lg font-semibold text-ocean-dark">Reisezeitraum *</FormLabel>
                         <FormControl>
-                          <DateRangePicker
+                          <InlineDateRangePicker
                             size="lg"
                             value={{
                               startDate: field.value || "",
