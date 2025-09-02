@@ -261,7 +261,7 @@ const CharterRequestForm = ({
                         <Button
                           variant="outline"
                           className={cn(
-                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark hover:bg-accent/50",
+                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
                             !formData.startDate && "text-muted-foreground"
                           )}
                         >
@@ -289,7 +289,7 @@ const CharterRequestForm = ({
                         <Button
                           variant="outline"
                           className={cn(
-                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark hover:bg-accent/50",
+                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
                             !formData.endDate && "text-muted-foreground"
                           )}
                         >
@@ -389,7 +389,7 @@ const CharterRequestForm = ({
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-ocean-dark hover:bg-ocean-light text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-ocean-dark text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
                 >
                   <Send className="w-5 h-5" />
                   Unverbindliche Anfrage senden
