@@ -147,13 +147,293 @@ const CharterRequestForm = ({
   };
   const FormContent = () => <div className="relative">
       {/* Hero Section */}
-      
+      <div className="relative h-48 md:h-64 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
+        <img
+          src={charterHeroWater}
+          alt="Segelboot Charter Anfrage"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-transparent"></div>
+        <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
+          <div>
+            <Anchor className="w-12 h-12 text-white mx-auto mb-4" />
+            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
+              Unverbindliche Charter-Anfrage
+            </h1>
+            <p className="text-white/90 text-lg">
+              Ihr Traumurlaub auf dem Wasser wartet auf Sie
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Form Section */}
       <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white">
         <Card className="max-w-3xl mx-auto shadow-xl border-0">
-          
-          
+          <CardHeader className="text-center pb-6">
+            <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
+              <CheckCircle className="w-6 h-6 text-green-600" />
+              Charter-Anfrage stellen
+            </CardTitle>
+            <CardDescription className="text-gray-600 text-base">
+              Füllen Sie das Formular aus und erhalten Sie innerhalb von 24 Stunden Ihr persönliches Angebot
+            </CardDescription>
+          </CardHeader>
+
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Personal Information */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Vorname *
+                  </label>
+                  <Input
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    placeholder="Ihr Vorname"
+                    required
+                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Nachname *
+                  </label>
+                  <Input
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    placeholder="Ihr Nachname"
+                    required
+                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    E-Mail-Adresse *
+                  </label>
+                  <Input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="ihre@email.de"
+                    required
+                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Telefonnummer
+                  </label>
+                  <Input
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="+49 123 456789"
+                    className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                  />
+                </div>
+              </div>
+
+              {/* Charter Details */}
+              <div className="border-t pt-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Charter-Details</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Charter-Art *
+                    </label>
+                    <Select value={formData.charterType} onValueChange={(value) => handleSelectChange('charterType', value)}>
+                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                        <SelectValue placeholder="Wählen Sie die Charter-Art" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="bareboat">Bareboat Charter</SelectItem>
+                        <SelectItem value="skippered">Charter mit Skipper</SelectItem>
+                        <SelectItem value="crewed">Charter mit Crew</SelectItem>
+                        <SelectItem value="cabin">Kabinen-Charter</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Bootstyp *
+                    </label>
+                    <Select value={formData.boatType} onValueChange={(value) => handleSelectChange('boatType', value)}>
+                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                        <SelectValue placeholder="Wählen Sie den Bootstyp" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="segelboot">Segelboot</SelectItem>
+                        <SelectItem value="motorboot">Motorboot</SelectItem>
+                        <SelectItem value="katamaran">Katamaran</SelectItem>
+                        <SelectItem value="gulet">Gulet</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Revier *
+                  </label>
+                  <Select value={formData.territory} onValueChange={(value) => handleSelectChange('territory', value)}>
+                    <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                      <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="mittelmeer">Mittelmeer</SelectItem>
+                      <SelectItem value="nordsee">Nordsee</SelectItem>
+                      <SelectItem value="ostsee">Ostsee</SelectItem>
+                      <SelectItem value="atlantik">Atlantik</SelectItem>
+                      <SelectItem value="pazifik">Pazifik</SelectItem>
+                      <SelectItem value="indischer-ozean">Indischer Ozean</SelectItem>
+                      <SelectItem value="karibik">Karibik</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Startdatum *
+                    </label>
+                    <Input
+                      type="date"
+                      name="startDate"
+                      value={formData.startDate}
+                      onChange={handleInputChange}
+                      required
+                      className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Enddatum *
+                    </label>
+                    <Input
+                      type="date"
+                      name="endDate"
+                      value={formData.endDate}
+                      onChange={handleInputChange}
+                      required
+                      className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Bootslänge
+                    </label>
+                    <Select value={formData.boatSize} onValueChange={(value) => handleSelectChange('boatSize', value)}>
+                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                        <SelectValue placeholder="Wählen Sie die Bootslänge" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="30-35ft">30-35 Fuß</SelectItem>
+                        <SelectItem value="36-40ft">36-40 Fuß</SelectItem>
+                        <SelectItem value="41-45ft">41-45 Fuß</SelectItem>
+                        <SelectItem value="46-50ft">46-50 Fuß</SelectItem>
+                        <SelectItem value="50ft+">Über 50 Fuß</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Anzahl Kabinen
+                    </label>
+                    <Select value={formData.cabins} onValueChange={(value) => handleSelectChange('cabins', value)}>
+                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                        <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="1">1 Kabine</SelectItem>
+                        <SelectItem value="2">2 Kabinen</SelectItem>
+                        <SelectItem value="3">3 Kabinen</SelectItem>
+                        <SelectItem value="4">4 Kabinen</SelectItem>
+                        <SelectItem value="5+">5+ Kabinen</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+              </div>
+
+              {/* Message */}
+              <div className="border-t pt-6">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Zusätzliche Wünsche oder Anmerkungen
+                </label>
+                <Textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Teilen Sie uns Ihre besonderen Wünsche oder Fragen mit..."
+                  rows={4}
+                  className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                />
+              </div>
+
+              {/* Privacy Policy */}
+              <div className="border-t pt-6">
+                <div className="flex items-start space-x-3">
+                  <Checkbox
+                    id="privacy"
+                    checked={formData.privacyAccepted}
+                    onCheckedChange={(checked) => 
+                      setFormData(prev => ({ ...prev, privacyAccepted: checked === true }))
+                    }
+                    className="border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark"
+                  />
+                  <label htmlFor="privacy" className="text-sm text-gray-600 leading-relaxed">
+                    Ich akzeptiere die{" "}
+                    <a href="/datenschutz" className="text-ocean-dark hover:underline" target="_blank">
+                      Datenschutzerklärung
+                    </a>{" "}
+                    und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. *
+                  </label>
+                </div>
+              </div>
+
+              {/* Submit Button */}
+              <div className="pt-6">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full bg-ocean-dark hover:bg-ocean-light text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                >
+                  <Send className="w-5 h-5" />
+                  Unverbindliche Anfrage senden
+                </Button>
+                
+                <div className="mt-4 text-center">
+                  <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <span>100% kostenlos & unverbindlich</span>
+                  </div>
+                  <div className="flex flex-wrap items-center justify-center gap-4 mt-2">
+                    <Badge variant="secondary" className="bg-green-50 text-green-700 border-green-200">
+                      ✓ 24h Antwortzeit
+                    </Badge>
+                    <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
+                      ✓ Persönliches Angebot
+                    </Badge>
+                    <Badge variant="secondary" className="bg-orange-50 text-orange-700 border-orange-200">
+                      ✓ Keine Provision
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </CardContent>
         </Card>
       </div>
     </div>;
