@@ -327,7 +327,7 @@ const Sizilien = () => {
           </div>
 
           {/* CTA Box */}
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 p-8 rounded-lg text-center">
+          <div className="bg-gradient-to-br from-orange-50 to-yellow-50 border-2 border-orange-200 p-8 rounded-lg text-center shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Sind Sie bereit, das Feuer Siziliens zu spüren und auf den Spuren antiker Seefahrer zu segeln?
             </h3>
@@ -335,7 +335,8 @@ const Sizilien = () => {
               Kontaktieren Sie uns für Ihr persönliches Angebot. Wir helfen Ihnen, die perfekte Yacht für Ihre Entdeckungsreise durch dieses magische Revier zu finden.
             </p>
             <CharterRequestForm>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <Button variant="sunset" size="xl" className="gap-2 animate-pulse hover:animate-none">
+                <Anchor className="w-5 h-5" />
                 Persönliches Angebot anfordern
               </Button>
             </CharterRequestForm>
