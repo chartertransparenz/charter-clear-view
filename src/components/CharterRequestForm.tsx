@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -53,33 +53,52 @@ const CharterRequestForm = ({
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
   const historyPushedRef = useRef(false);
 
-  // Handle browser back button and ESC key
+  // Stable event handlers using useCallback
+  const handleClose = useCallback(() => {
+    setDialogOpen(false);
+    historyPushedRef.current = false; // Reset history flag
+    onOpenChange?.(false);
+  }, [onOpenChange]);
+
+  const handleOpenChange = useCallback((open: boolean) => {
+    setDialogOpen(open);
+    onOpenChange?.(open);
+  }, [onOpenChange]);
+
+  // Event handlers for popstate and keydown
+  const handlePopState = useCallback(() => {
+    if (dialogOpen) {
+      handleClose();
+    }
+  }, [dialogOpen, handleClose]);
+
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    if (e.key === 'Escape' && dialogOpen) {
+      handleClose();
+    }
+  }, [dialogOpen, handleClose]);
+
+  // Event listeners - only register/unregister when dialog opens/closes
   useEffect(() => {
-    const handlePopState = () => {
-      if (dialogOpen) {
-        handleClose();
-      }
-    };
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && dialogOpen) {
-        handleClose();
-      }
-    };
     if (dialogOpen) {
       window.addEventListener('popstate', handlePopState);
       document.addEventListener('keydown', handleKeyDown);
-      // Add a history entry when dialog opens - only once
-      if (!historyPushedRef.current) {
-        window.history.pushState({
-          dialogOpen: true
-        }, '');
-        historyPushedRef.current = true;
-      }
+      
+      return () => {
+        window.removeEventListener('popstate', handlePopState);
+        document.removeEventListener('keydown', handleKeyDown);
+      };
     }
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
+  }, [dialogOpen, handlePopState, handleKeyDown]);
+
+  // History management - only push once when dialog opens
+  useEffect(() => {
+    if (dialogOpen && !historyPushedRef.current) {
+      window.history.pushState({
+        dialogOpen: true
+      }, '');
+      historyPushedRef.current = true;
+    }
   }, [dialogOpen]);
 
   // Sync with external isOpen prop
@@ -88,15 +107,6 @@ const CharterRequestForm = ({
       setDialogOpen(isOpen);
     }
   }, [isOpen]);
-  const handleClose = () => {
-    setDialogOpen(false);
-    historyPushedRef.current = false; // Reset history flag
-    onOpenChange?.(false);
-  };
-  const handleOpenChange = (open: boolean) => {
-    setDialogOpen(open);
-    onOpenChange?.(open);
-  };
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
