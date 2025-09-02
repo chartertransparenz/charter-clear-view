@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { format } from "date-fns";
+import { format, addDays } from "date-fns";
 import { cn } from "@/lib/utils";
 
 interface CharterRequestFormProps {
@@ -273,7 +273,7 @@ const CharterRequestForm = ({
                         <Calendar
                           mode="single"
                           selected={formData.startDate}
-                          onSelect={(date) => setFormData(prev => ({ ...prev, startDate: date }))}
+                          onSelect={(date) => setFormData(prev => ({ ...prev, startDate: date, endDate: date ? addDays(date, 7) : undefined }))}
                           disabled={(date) => date < new Date()}
                           initialFocus
                         />
