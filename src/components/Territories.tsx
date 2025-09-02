@@ -120,10 +120,10 @@ const Territories = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return <section id="reviere" className="py-20 bg-gradient-to-b from-ocean-light/20 to-white">
+  return <section id="reviere" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-ocean-light/20 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 border-ocean-blue text-ocean-blue">
             Segelreviere
           </Badge>
@@ -137,7 +137,7 @@ const Territories = () => {
         </div>
 
         {/* Top 10 Destinations Carousel */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-ocean-dark">
             Unsere Top 10 Revier-Empfehlungen für dich
           </h2>
@@ -183,7 +183,7 @@ const Territories = () => {
         </div>
 
         {/* Navigation Menu */}
-        <div className="mb-16">
+        <div className="mb-8">
           <h2 className="text-3xl font-bold text-ocean-dark mb-8 text-center">Weltweite Segelreviere</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/reviere/mittelmeer" className="group">
