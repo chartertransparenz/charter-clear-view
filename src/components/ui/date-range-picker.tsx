@@ -19,6 +19,7 @@ interface DateRangePickerProps {
   placeholder?: string
   className?: string
   size?: "default" | "lg" | "xl"
+  onPopoverOpenChange?: (open: boolean) => void
 }
 
 export function DateRangePicker({
@@ -26,7 +27,8 @@ export function DateRangePicker({
   onChange,
   placeholder = "Zeitraum wählen",
   className,
-  size = "default"
+  size = "default",
+  onPopoverOpenChange
 }: DateRangePickerProps) {
   const [startDate, setStartDate] = React.useState<Date | undefined>(() => {
     return value?.startDate ? new Date(value.startDate) : undefined
@@ -52,7 +54,7 @@ export function DateRangePicker({
           setEndDate(selectedDate)
           setIsSelectingEnd(false)
           // Close popover and call onChange when both dates are set
-          setOpen(false)
+          handleOpenChange(false)
           if (onChange) {
             onChange({
               startDate: format(startDate, "yyyy-MM-dd"),
@@ -85,8 +87,16 @@ export function DateRangePicker({
     xl: "h-14 text-xl px-5 py-4"
   }
 
+  const handleOpenChange = (newOpen: boolean) => {
+    setOpen(newOpen)
+    onPopoverOpenChange?.(newOpen)
+    if (!newOpen) {
+      setIsSelectingEnd(false)
+    }
+  }
+
   return (
-    <Popover open={open} onOpenChange={setOpen}>
+    <Popover open={open} onOpenChange={handleOpenChange}>
       <PopoverTrigger asChild>
         <Button
           variant="outline"
@@ -102,7 +112,7 @@ export function DateRangePicker({
           {formatDateRange()}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-auto p-0" align="start">
+      <PopoverContent className="w-auto p-0 z-[60]" align="start">
         <Calendar
           initialFocus
           mode="single"

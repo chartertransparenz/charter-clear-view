@@ -49,6 +49,7 @@ const CharterRequestForm = ({
   const { toast } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -78,7 +79,7 @@ const CharterRequestForm = ({
     };
     
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && dialogOpen) {
+      if (e.key === 'Escape' && dialogOpen && !isPopoverOpen) {
         handleClose();
       }
     };
@@ -353,19 +354,20 @@ const CharterRequestForm = ({
                         <FormItem>
                           <FormLabel size="lg">Reisezeitraum *</FormLabel>
                           <FormControl>
-                            <DateRangePicker
-                              size="lg"
-                              value={{
-                                startDate: field.value || "",
-                                endDate: form.watch("endDate") || ""
-                              }}
-                              onChange={(value) => {
-                                form.setValue("startDate", value.startDate);
-                                form.setValue("endDate", value.endDate);
-                              }}
-                              placeholder="Start- und Enddatum wählen"
-                              className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                            />
+                             <DateRangePicker
+                               size="lg"
+                               value={{
+                                 startDate: field.value || "",
+                                 endDate: form.watch("endDate") || ""
+                               }}
+                               onChange={(value) => {
+                                 form.setValue("startDate", value.startDate);
+                                 form.setValue("endDate", value.endDate);
+                               }}
+                               onPopoverOpenChange={setIsPopoverOpen}
+                               placeholder="Start- und Enddatum wählen"
+                               className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                             />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
