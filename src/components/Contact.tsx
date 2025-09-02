@@ -125,7 +125,7 @@ const Contact = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
               <Users className="w-6 h-6 text-ocean-dark mx-auto mb-2" />
-              <div className="text-2xl font-bold text-ocean-dark">500+</div>
+              <div className="text-2xl font-bold text-ocean-dark">10.000+</div>
               <div className="text-sm text-muted-foreground">Zufriedene Kunden</div>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
