@@ -159,7 +159,7 @@ const Contact = () => {
               <CardContent className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-10 h-10 gradient-ocean rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                       <info.icon className="w-5 h-5 text-white" />
                     </div>
                     <div>
