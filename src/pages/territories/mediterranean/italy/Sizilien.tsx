@@ -306,7 +306,7 @@ const Sizilien = () => {
           <div className="mb-8">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="/lovable-uploads/42ecc56d-ba2c-49ea-bbdc-60436bd569a0.png"
+                src="/lovable-uploads/90f07d4f-a3e9-4ce7-8590-1f6e7b2f6cdb.png"
                 alt="Scilla mit dem Castello Ruffo an der kalabrischen Küste - kristallklares Wasser und idealer Ankerplatz"
                 className="w-full h-64 md:h-80 object-cover"
               />
