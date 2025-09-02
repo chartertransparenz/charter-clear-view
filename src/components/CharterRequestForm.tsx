@@ -413,24 +413,6 @@ const CharterRequestForm = ({
                   <Send className="w-5 h-5" />
                   Unverbindliche Anfrage senden
                 </Button>
-                
-                <div className="mt-4 text-center">
-                  <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>100% kostenlos & unverbindlich</span>
-                  </div>
-                  <div className="flex flex-wrap items-center justify-center gap-4 mt-2">
-                    <Badge variant="secondary" className="bg-green-50 text-green-700 border-green-200">
-                      ✓ 24h Antwortzeit
-                    </Badge>
-                    <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
-                      ✓ Persönliches Angebot
-                    </Badge>
-                    <Badge variant="secondary" className="bg-orange-50 text-orange-700 border-orange-200">
-                      ✓ Keine Provision
-                    </Badge>
-                  </div>
-                </div>
               </div>
             </form>
           </CardContent>
