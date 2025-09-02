@@ -124,22 +124,22 @@ const Contact = () => {
           {/* Trust Elements */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
-              <Users className="w-6 h-6 text-ocean-blue mx-auto mb-2" />
+              <Users className="w-6 h-6 text-ocean-dark mx-auto mb-2" />
               <div className="text-2xl font-bold text-ocean-dark">500+</div>
               <div className="text-sm text-muted-foreground">Zufriedene Kunden</div>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
-              <Award className="w-6 h-6 text-sunset mx-auto mb-2" />
+              <Award className="w-6 h-6 text-ocean-dark mx-auto mb-2" />
               <div className="text-2xl font-bold text-ocean-dark">30+</div>
               <div className="text-sm text-muted-foreground">Jahre Erfahrung</div>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
-              <Shield className="w-6 h-6 text-green-600 mx-auto mb-2" />
+              <Shield className="w-6 h-6 text-ocean-dark mx-auto mb-2" />
               <div className="text-2xl font-bold text-ocean-dark">100%</div>
               <div className="text-sm text-muted-foreground">Transparenz</div>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 text-center border border-ocean-light/30">
-              <Clock3 className="w-6 h-6 text-ocean-blue mx-auto mb-2" />
+              <Clock3 className="w-6 h-6 text-ocean-dark mx-auto mb-2" />
               <div className="text-2xl font-bold text-ocean-dark">24h</div>
               <div className="text-sm text-muted-foreground">Antwort-Zeit</div>
             </div>
