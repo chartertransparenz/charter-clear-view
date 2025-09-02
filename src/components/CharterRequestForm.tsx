@@ -148,7 +148,7 @@ const CharterRequestForm = ({
     }
   };
 
-  // Enhanced scroll preservation utility
+  // Simplified scroll preservation utility
   const preserveScrollPosition = useCallback((callback: () => void) => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) {
@@ -157,50 +157,16 @@ const CharterRequestForm = ({
     }
     
     const scrollTop = scrollContainer.scrollTop;
+    console.log('Preserving scroll position:', scrollTop); // Debug log
     callback();
     
-    // First restoration - immediate
+    // Single restoration with proper timing
     requestAnimationFrame(() => {
-      if (scrollContainer) {
+      if (scrollContainer && scrollContainer.scrollTop !== scrollTop) {
+        console.log('Restoring scroll from', scrollContainer.scrollTop, 'to', scrollTop); // Debug log
         scrollContainer.scrollTop = scrollTop;
       }
-      
-      // Second restoration - after Radix UI focus management
-      setTimeout(() => {
-        if (scrollContainer) {
-          scrollContainer.scrollTop = scrollTop;
-        }
-      }, 50);
     });
-  }, []);
-
-  // Focus event listener as backup
-  useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    if (!scrollContainer) return;
-
-    let lastScrollTop = 0;
-    
-    const handleFocus = (e: Event) => {
-      // If focus event would cause scroll jump, restore position
-      setTimeout(() => {
-        if (scrollContainer && lastScrollTop > 0) {
-          scrollContainer.scrollTop = lastScrollTop;
-        }
-      }, 10);
-    };
-
-    const handleScroll = () => {
-      lastScrollTop = scrollContainer.scrollTop;
-    };
-
-    scrollContainer.addEventListener('focus', handleFocus, true);
-    scrollContainer.addEventListener('scroll', handleScroll);
-
-    return () => {
-      scrollContainer.removeEventListener('focus', handleFocus, true);
-      scrollContainer.removeEventListener('scroll', handleScroll);
-    };
   }, []);
 
   const FormContent = () => (
@@ -340,7 +306,7 @@ const CharterRequestForm = ({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel size="lg">Charter-Art *</FormLabel>
-                          <Select onValueChange={(value) => preserveScrollPosition(() => field.onChange(value))} defaultValue={field.value}>
+                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie die Charter-Art" />
@@ -363,7 +329,7 @@ const CharterRequestForm = ({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel size="lg">Bootstyp *</FormLabel>
-                          <Select onValueChange={(value) => preserveScrollPosition(() => field.onChange(value))} defaultValue={field.value}>
+                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie den Bootstyp" />
@@ -388,7 +354,7 @@ const CharterRequestForm = ({
                     render={({ field }) => (
                       <FormItem className="mb-4">
                         <FormLabel size="lg">Revier *</FormLabel>
-                        <Select onValueChange={(value) => preserveScrollPosition(() => field.onChange(value))} defaultValue={field.value}>
+                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                               <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
@@ -445,7 +411,7 @@ const CharterRequestForm = ({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel size="lg">Bootslänge</FormLabel>
-                          <Select onValueChange={(value) => preserveScrollPosition(() => field.onChange(value))} defaultValue={field.value}>
+                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie die Bootslänge" />
@@ -469,7 +435,7 @@ const CharterRequestForm = ({
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel size="lg">Anzahl Kabinen</FormLabel>
-                          <Select onValueChange={(value) => preserveScrollPosition(() => field.onChange(value))} defaultValue={field.value}>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
