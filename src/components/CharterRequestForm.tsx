@@ -171,8 +171,8 @@ const CharterRequestForm = ({
       </div>
 
       {/* Form Section */}
-      <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white max-h-96 overflow-y-auto">
-        <Card className="max-w-3xl mx-auto shadow-xl border-0">
+      <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white max-h-[calc(90vh-20rem)] overflow-y-auto">
+        <Card className="max-w-5xl mx-auto shadow-xl border-0">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
               <CheckCircle className="w-6 h-6 text-green-600" />
@@ -532,7 +532,7 @@ const CharterRequestForm = ({
         <DialogTrigger asChild>
           {children}
         </DialogTrigger>
-        <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 pt-12 pr-12 overflow-hidden">
+        <DialogContent className="max-w-6xl w-full max-h-[90vh] p-0 pt-12 pr-12 overflow-hidden">
           <DialogTitle className="sr-only">Charter-Anfrage</DialogTitle>
           <DialogDescription className="sr-only">
             Stellen Sie hier Ihre unverbindliche Charter-Anfrage
