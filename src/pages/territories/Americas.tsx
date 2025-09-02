@@ -34,10 +34,10 @@ const Americas = () => {
     bases: "Nassau, Georgetown",
     description: "Kristallklares Wasser, unberührte Sandbänke und traumhafte Ankerplätze in den Exumas."
   }, {
-    name: "Mexiko (Karibik)",
+    name: "Mexiko, Baja California",
     link: "/reviere/amerika-bahamas/mexiko",
-    bases: "Cancún, Cozumel",
-    description: "Tropisches Paradies mit Maya-Kultur, Cenoten und bunten Korallenriffen."
+    bases: "La Paz, Cabo San Lucas",
+    description: "Wüste trifft Meer im Golf von Kalifornien - ein Segelparadies mit spektakulärer Natur und Tierwelt."
   }, {
     name: "Belize",
     link: "/reviere/amerika-bahamas/belize",
@@ -55,7 +55,7 @@ const Americas = () => {
     description: "Klassisches amerikanisches Segeln mit historischen Häfen und maritimer Tradition."
   }];
   const highlights = ["Kristallklares Wasser der Bahamas", "Entspanntes Line-of-sight Segeln", "Vielfältige Kulturen und Küchen", "Ganzjährig warmes Klima (Süden)", "Exzellente Marina-Infrastruktur", "Traumhafte Sandstrände und Buchten", "Wassersport und Schnorcheln"];
-  const routes = ["Bahamas: Nassau - Exumas - Eleuthera", "Florida Keys: Key West - Dry Tortugas", "USA Ostküste: Newport - Martha's Vineyard", "Mexiko: Cancún - Isla Mujeres - Cozumel"];
+  const routes = ["Bahamas: Nassau - Exumas - Eleuthera", "Florida Keys: Key West - Dry Tortugas", "USA Ostküste: Newport - Martha's Vineyard", "Mexiko: La Paz - Isla Espíritu Santo - Los Islotes"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
