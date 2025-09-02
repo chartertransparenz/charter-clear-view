@@ -51,9 +51,7 @@ const CharterRequestForm = ({
     toast
   } = useToast();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
-  const [isTyping, setIsTyping] = useState(false);
   const historyPushedRef = useRef(false);
-  const typingTimeoutRef = useRef<NodeJS.Timeout>();
 
   // Stable event handlers using useCallback
   const handleClose = useCallback(() => {
@@ -188,15 +186,6 @@ const CharterRequestForm = ({
     }
   };
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    // Set typing state to disable animations
-    setIsTyping(true);
-    if (typingTimeoutRef.current) {
-      clearTimeout(typingTimeoutRef.current);
-    }
-    typingTimeoutRef.current = setTimeout(() => {
-      setIsTyping(false);
-    }, 150);
-
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
@@ -468,15 +457,7 @@ const CharterRequestForm = ({
           {children}
         </DialogTrigger>
         <DialogContent 
-          className={cn(
-            "max-w-4xl max-h-[90vh] overflow-y-auto p-0",
-            // Disable animations during typing to prevent jumping
-            isTyping && "animate-none"
-          )}
-          style={isTyping ? {
-            animation: 'none',
-            transform: 'none'
-          } : undefined}
+          className="max-w-4xl max-h-[90vh] overflow-y-auto p-0"
         >
           <DialogTitle className="sr-only">Charter-Anfrage Formular</DialogTitle>
           <DialogDescription className="sr-only">
