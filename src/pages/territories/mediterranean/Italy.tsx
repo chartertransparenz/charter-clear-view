@@ -68,7 +68,7 @@ const Italy = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
@@ -165,7 +165,8 @@ const Italy = () => {
         </div>
 
         {/* Detailed Territory Description */}
-        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="bg-white p-8 rounded-lg shadow-lg space-y-8">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold mb-4">Yachtcharter Italien: Ihr Traumtörn an den schönsten Küsten des Mittelmeers</h2>
             <p className="text-xl text-muted-foreground">
@@ -417,6 +418,7 @@ const Italy = () => {
             <p className="mb-6 font-medium">
               Dolce vita trifft blaues Wasser – der Rest ist Ihr Logbucheintrag :)
             </p>
+            </div>
           </div>
         </div>
 
