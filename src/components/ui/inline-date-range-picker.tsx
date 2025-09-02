@@ -49,7 +49,16 @@ export function InlineDateRangePicker({
     }
   }, [isOpen])
 
-  const handleDateClick = (selectedDate: Date) => {
+  const handleDateClick = (selectedDate: Date, event?: React.MouseEvent) => {
+    // Prevent focus and scrolling
+    if (event) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    // Save current scroll position
+    const scrollPosition = window.pageYOffset
+
     if (!startDate || isSelectingEnd) {
       if (!startDate) {
         // First click - set start date
@@ -76,6 +85,11 @@ export function InlineDateRangePicker({
       setEndDate(undefined)
       setIsSelectingEnd(true)
     }
+
+    // Restore scroll position immediately
+    setTimeout(() => {
+      window.scrollTo(0, scrollPosition)
+    }, 0)
   }
 
   const formatDateRange = () => {
@@ -172,6 +186,8 @@ export function InlineDateRangePicker({
               variant="outline"
               size="sm"
               onClick={goToPreviousMonth}
+              onMouseDown={(e) => e.preventDefault()}
+              tabIndex={-1}
               className="h-8 w-8 p-0"
             >
               <ChevronLeft className="h-4 w-4" />
@@ -184,6 +200,8 @@ export function InlineDateRangePicker({
               variant="outline"
               size="sm"
               onClick={goToNextMonth}
+              onMouseDown={(e) => e.preventDefault()}
+              tabIndex={-1}
               className="h-8 w-8 p-0"
             >
               <ChevronRight className="h-4 w-4" />
@@ -206,12 +224,14 @@ export function InlineDateRangePicker({
                 {day ? (
                   <button
                     type="button"
-                    onClick={() => handleDateClick(day)}
+                    onClick={(e) => handleDateClick(day, e)}
+                    onMouseDown={(e) => e.preventDefault()}
+                    onFocus={(e) => e.target.blur()}
+                    tabIndex={-1}
                     disabled={isSelectingEnd && startDate && day < startDate}
                     className={cn(
                       "w-full h-10 text-sm rounded-md transition-colors",
                       "hover:bg-accent hover:text-accent-foreground",
-                      "focus:bg-accent focus:text-accent-foreground focus:outline-none",
                       "disabled:opacity-50 disabled:cursor-not-allowed",
                       isSaturday(day) && "bg-accent/30 text-accent-foreground",
                       isDateRangeStart(day) && "bg-accent text-accent-foreground",
