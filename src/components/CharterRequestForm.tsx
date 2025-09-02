@@ -316,7 +316,7 @@ const CharterRequestForm = ({
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Teilen Sie uns Ihre besonderen Wünsche oder Fragen mit..."
+                  placeholder="Nennen Sie uns Ihre Törn-Details wie Revier/Ziel, Bootstyp und Größe, benötigte Kabinen sowie individuelle Wünsche –, damit wir Ihnen ein optimal passendes Angebot erstellen."
                   rows={4}
                   className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
                 />
