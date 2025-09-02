@@ -187,7 +187,7 @@ const Toskana = () => {
                   Die südlichste und kleinste Insel des Archipels ist Giannutri. Die sichelförmige Insel ist fast vollständig ein Naturreservat, das Ankern ist nur in ausgewiesenen Bereichen erlaubt. Ein Landgang lohnt sich, um die Ruinen einer römischen Villa zu erkunden und die absolute Stille zu genießen.
                 </p>
 
-                <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Sieben Inseln, tausend Eindrücke – Ihre Törnvorschlag im Toskanischen Archipel</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Ihr Törnvorschlag im Toskanischen Archipel</h3>
                 
                 <div className="space-y-3 mb-8">
                   <div className="border-l-4 border-primary pl-4">
