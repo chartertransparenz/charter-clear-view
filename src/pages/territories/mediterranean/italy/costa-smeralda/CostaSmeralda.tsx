@@ -122,13 +122,10 @@ const CostaSmeralda = () => {
         </div>
 
         {/* Map */}
-        <TerritoryMap 
-          region="Costa Smeralda"
-          center={{ lat: 41.308856, lng: 9.637043 }}
-          zoom={7}
-          maptype="satellite"
-          className="mb-12"
-        />
+        <TerritoryMap region="Costa Smeralda" center={{
+        lat: 41.308856,
+        lng: 9.637043
+      }} zoom={11} maptype="satellite" className="mb-12" />
 
         {/* Description */}
         <div className="max-w-4xl mx-auto mb-12">
@@ -303,19 +300,7 @@ const CostaSmeralda = () => {
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Costa Smeralda?</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
-                    <p className="font-medium text-gray-800">{highlight}</p>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
