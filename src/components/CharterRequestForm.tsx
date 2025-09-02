@@ -191,9 +191,10 @@ const CharterRequestForm = ({
                     name="firstName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Vorname *</FormLabel>
+                        <FormLabel size="lg">Vorname *</FormLabel>
                         <FormControl>
                           <Input
+                            size="lg"
                             placeholder="Ihr Vorname"
                             className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
                             {...field}
@@ -208,9 +209,10 @@ const CharterRequestForm = ({
                     name="lastName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Nachname *</FormLabel>
+                        <FormLabel size="lg">Nachname *</FormLabel>
                         <FormControl>
                           <Input
+                            size="lg"
                             placeholder="Ihr Nachname"
                             className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
                             {...field}
@@ -228,9 +230,10 @@ const CharterRequestForm = ({
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>E-Mail-Adresse *</FormLabel>
+                        <FormLabel size="lg">E-Mail-Adresse *</FormLabel>
                         <FormControl>
                           <Input
+                            size="lg"
                             type="email"
                             placeholder="ihre@email.de"
                             className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
@@ -246,9 +249,10 @@ const CharterRequestForm = ({
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Telefonnummer</FormLabel>
+                        <FormLabel size="lg">Telefonnummer</FormLabel>
                         <FormControl>
                           <Input
+                            size="lg"
                             placeholder="+49 123 456789"
                             className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
                             {...field}
@@ -270,10 +274,10 @@ const CharterRequestForm = ({
                       name="charterType"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Charter-Art *</FormLabel>
+                          <FormLabel size="lg">Charter-Art *</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                              <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie die Charter-Art" />
                               </SelectTrigger>
                             </FormControl>
@@ -293,10 +297,10 @@ const CharterRequestForm = ({
                       name="boatType"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Bootstyp *</FormLabel>
+                          <FormLabel size="lg">Bootstyp *</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                              <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie den Bootstyp" />
                               </SelectTrigger>
                             </FormControl>
@@ -318,10 +322,10 @@ const CharterRequestForm = ({
                     name="territory"
                     render={({ field }) => (
                       <FormItem className="mb-4">
-                        <FormLabel>Revier *</FormLabel>
+                        <FormLabel size="lg">Revier *</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                            <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                               <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
                             </SelectTrigger>
                           </FormControl>
@@ -346,9 +350,10 @@ const CharterRequestForm = ({
                       name="startDate"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Startdatum *</FormLabel>
+                          <FormLabel size="lg">Startdatum *</FormLabel>
                           <FormControl>
                             <Input
+                              size="lg"
                               type="date"
                               className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
                               {...field}
@@ -363,9 +368,10 @@ const CharterRequestForm = ({
                       name="endDate"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Enddatum *</FormLabel>
+                          <FormLabel size="lg">Enddatum *</FormLabel>
                           <FormControl>
                             <Input
+                              size="lg"
                               type="date"
                               className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
                               {...field}
@@ -383,10 +389,10 @@ const CharterRequestForm = ({
                       name="boatSize"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Bootslänge</FormLabel>
+                          <FormLabel size="lg">Bootslänge</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                              <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie die Bootslänge" />
                               </SelectTrigger>
                             </FormControl>
@@ -407,10 +413,10 @@ const CharterRequestForm = ({
                       name="cabins"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Anzahl Kabinen</FormLabel>
+                          <FormLabel size="lg">Anzahl Kabinen</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                              <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
+                              <SelectTrigger size="lg" className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
                                 <SelectValue placeholder="Wählen Sie die Anzahl Kabinen" />
                               </SelectTrigger>
                             </FormControl>
@@ -436,9 +442,10 @@ const CharterRequestForm = ({
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Zusätzliche Wünsche oder Anmerkungen</FormLabel>
+                        <FormLabel size="lg">Zusätzliche Wünsche oder Anmerkungen</FormLabel>
                         <FormControl>
                           <Textarea
+                            size="lg"
                             placeholder="Teilen Sie uns Ihre besonderen Wünsche oder Fragen mit..."
                             rows={4}
                             className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark resize-none"
