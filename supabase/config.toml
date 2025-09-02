@@ -1,1 +1,7 @@
 project_id = "bqckduaygatcopxyuyyv"
+
+[functions.send-contact-message]
+verify_jwt = false
+
+[functions.send-charter-request]
+verify_jwt = false
