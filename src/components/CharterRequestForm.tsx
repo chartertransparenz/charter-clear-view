@@ -147,12 +147,7 @@ const CharterRequestForm = ({
   };
   const FormContent = () => <div className="relative">
       {/* Hero Section */}
-      <div className="relative h-64 bg-cover bg-center" style={{
-      backgroundImage: `url(${charterHeroWater})`
-    }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/90 to-ocean-dark/70"></div>
-        
-      </div>
+      
 
       {/* Form Section */}
       <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white">
