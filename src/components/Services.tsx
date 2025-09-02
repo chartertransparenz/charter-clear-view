@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield, Search, Calendar, Navigation, Handshake, Anchor } from "lucide-react";
+import CharterRequestForm from "./CharterRequestForm";
 import servicesHeroConsultationV2 from "@/assets/services-hero-consultation-v2.jpg";
 import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
 import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
@@ -132,19 +133,11 @@ const Services = () => {
                 Lassen Sie uns gemeinsam Ihren perfekten Törn planen
               </p>
               <div className="flex justify-center">
-                <Button 
-                  variant="default" 
-                  size="lg" 
-                  className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-                  onClick={() => {
-                    const element = document.getElementById('kontakt');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                >
-                  Kontakt aufnehmen
-                </Button>
+                <CharterRequestForm>
+                  <Button variant="default" size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                    Jetzt Anfrage stellen
+                  </Button>
+                </CharterRequestForm>
               </div>
             </div>
           </div>

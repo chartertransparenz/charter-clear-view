@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import {
   Breadcrumb,
@@ -176,15 +177,11 @@ const KeyWest = () => {
               Starten Sie Ihren unvergesslichen Segeltörn durch die Florida Keys 
               vom südlichsten Punkt der USA.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Key West Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

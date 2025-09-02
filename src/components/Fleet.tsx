@@ -15,6 +15,7 @@ import baliCatspace from "@/assets/bali-catspace.jpg";
 import dufour460 from "@/assets/dufour-460.jpg";
 import oceanis381 from "@/assets/oceanis-38-1.jpg";
 import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
+import CharterRequestForm from "./CharterRequestForm";
 const Fleet = () => {
   const [api, setApi] = React.useState<CarouselApi>();
   const boats = [{
@@ -203,18 +204,11 @@ const Fleet = () => {
 
                     {/* Button at bottom */}
                     <div className="mt-auto">
-                      <Button 
-                        variant="default" 
-                        className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-                        onClick={() => {
-                          const element = document.getElementById('kontakt');
-                          if (element) {
-                            element.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                      >
-                        Kontakt aufnehmen
-                      </Button>
+                      <CharterRequestForm>
+                        <Button variant="default" className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                          Jetzt Anfrage stellen
+                        </Button>
+                      </CharterRequestForm>
                     </div>
                   </CardContent>
                 </Card>

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, Waves, Wind, Ship, Compass } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
@@ -343,15 +344,11 @@ const Maldives = () => {
               Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter auf den Malediven an! 
               Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Malediven Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

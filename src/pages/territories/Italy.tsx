@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import destinationItaly from "@/assets/destination-italy.jpg";
 
@@ -402,15 +403,11 @@ const Italy = () => {
               Entdecken Sie Italiens schönste Küsten und erleben Sie unvergessliche 
               Momente zwischen Kultur, Kulinarik und kristallklarem Wasser.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Italien-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

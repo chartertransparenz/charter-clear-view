@@ -5,6 +5,7 @@ import heroYacht from "@/assets/hero-yacht.jpg";
 import charterHeroWater from "@/assets/charter-hero-water.jpg";
 import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
 
+import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
 const Hero = () => {
 const slides = [{
@@ -86,19 +87,15 @@ const slides = [{
 
           {/* CTA Button */}
           <div className="flex justify-center px-4">
-            <Button 
-              variant="default" 
-              size="xl" 
-              className="text-base sm:text-lg md:text-2xl px-6 sm:px-8 md:px-16 py-3 sm:py-4 md:py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
-              onClick={() => {
-                const element = document.getElementById('kontakt');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button 
+                variant="default" 
+                size="xl" 
+                className="text-base sm:text-lg md:text-2xl px-6 sm:px-8 md:px-16 py-3 sm:py-4 md:py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
+              >
+                Jetzt Anfrage stellen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

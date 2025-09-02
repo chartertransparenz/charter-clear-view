@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
@@ -248,14 +249,11 @@ const BritishVirginIslands = () => {
                 <p className="mb-6 text-gray-600">
                   Das karibische Segelparadies erwartet Sie – mit perfekten Bedingungen für unvergessliche Segeltörns zwischen traumhaften Inseln.
                 </p>
-                <Button 
-                  size="lg"
-                  onClick={() => {
-                    window.location.href = 'tel:+497543499080';
-                  }}
-                >
-                  Kontakt aufnehmen
-                </Button>
+                <CharterRequestForm>
+                  <Button size="lg">
+                    Jetzt BVI Charter anfragen
+                  </Button>
+                </CharterRequestForm>
               </div>
             </div>
           </div>

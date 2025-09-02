@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Castle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 
 const Terceira = () => {
@@ -220,15 +221,11 @@ const Terceira = () => {
               Entdecken Sie die geschichtsträchtigste Insel der Azoren mit 
               UNESCO-Weltkulturerbe und authentischer azorianischer Kultur.
             </p>
-            <Button 
-              className="bg-white text-purple-600 hover:bg-purple-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-purple-600 hover:bg-purple-50" size="lg">
+                Terceira Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

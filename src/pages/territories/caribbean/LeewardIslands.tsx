@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import {
@@ -346,15 +347,11 @@ const LeewardIslands = () => {
               Entdecken Sie die kulturelle Vielfalt der nördlichen Karibik mit 
               französischem Savoir-vivre und karibischer Gelassenheit.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Leeward Inseln Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

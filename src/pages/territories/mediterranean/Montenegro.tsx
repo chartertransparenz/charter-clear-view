@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import mediterranean from "@/assets/mediterranean.jpg";
@@ -289,15 +289,11 @@ const Montenegro = () => {
               Entdecken Sie die wilde Schönheit der montenegrinischen Küste mit 
               ihrer einzigartigen Fjordlandschaft und authentischen Balkanatmosphäre.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Montenegro Charter anfragen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Montenegro Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

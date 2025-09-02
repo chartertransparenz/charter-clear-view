@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Users, Waves, Calendar, Anchor, Flame } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 
 const Lanzarote = () => {
@@ -225,15 +226,11 @@ const Lanzarote = () => {
               Erleben Sie sportliches Segeln vor einzigartiger Vulkankulisse - 
               wo Natur und Kunst zu einem Gesamtkunstwerk verschmelzen.
             </p>
-            <Button 
-              className="bg-white text-gray-800 hover:bg-gray-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-gray-800 hover:bg-gray-50" size="lg">
+                Lanzarote Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

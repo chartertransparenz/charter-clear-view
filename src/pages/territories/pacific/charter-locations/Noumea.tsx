@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Plane, Sun, Crown } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
-
+import CharterRequestForm from "@/components/CharterRequestForm";
 import {
   Breadcrumb,
   BreadcrumbList,

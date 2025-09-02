@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 const Marmaris = () => {
@@ -251,16 +251,11 @@ const Marmaris = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Starten Sie Ihren Charter von der führenden Marina der türkischen Ägäis. Wir planen Ihren perfekten Segelurlaub.
           </p>
-          <Button 
-            size="lg" 
-            variant="secondary" 
-            className="text-lg px-8 py-3"
-            onClick={() => {
-              window.location.href = 'tel:+497543499080';
-            }}
-          >
-            Jetzt Charter anfragen
-          </Button>
+          <CharterRequestForm>
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+              Jetzt Charter anfragen
+            </Button>
+          </CharterRequestForm>
         </div>
       </div>
     </div>;

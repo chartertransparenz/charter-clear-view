@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import destinationCroatia from "@/assets/destination-croatia.jpg";
 
@@ -380,15 +381,11 @@ const Croatia = () => {
               Entdecken Sie das #1 Segelrevier der Welt mit über 1200 Inseln, 
               kristallklarem Wasser und perfekter Infrastruktur.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                Kroatien-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

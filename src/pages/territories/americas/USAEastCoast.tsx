@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import atlantic from "@/assets/atlantic.jpg";
 const USAEastCoast = () => {
@@ -155,15 +156,11 @@ const USAEastCoast = () => {
               Erleben Sie legendäres amerikanisches Segeln mit maritimer Tradition, 
               anspruchsvollen Gewässern und historischen Häfen von Weltrang.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                USA Ostküste Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>

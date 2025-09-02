@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import destinationGreece from "@/assets/destination-greece.jpg";
 
@@ -191,14 +192,8 @@ const Greece = () => {
               Erleben Sie die Wiege der Seefahrt mit über 6000 Inseln, 
               antiker Geschichte und authentischer griechischer Gastfreundschaft.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
+            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              Griechenland-Charter anfragen
             </Button>
           </div>
         </div>

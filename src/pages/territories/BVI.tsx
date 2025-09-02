@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import {
   Breadcrumb,
@@ -347,15 +348,11 @@ const BVI = () => {
             <p className="mb-6 text-blue-100">
               Nennen Sie uns Reisedaten, Crewgröße und Wunschyacht – wir prüfen Live-Verfügbarkeiten, reservieren auf Wunsch Mooringbojen/Marinas und senden Ihnen umgehend Ihren maßgeschneiderten BVI-Törnplan.
             </p>
-            <Button 
-              className="bg-white text-blue-600 hover:bg-blue-50" 
-              size="lg"
-              onClick={() => {
-                window.location.href = 'tel:+497543499080';
-              }}
-            >
-              Kontakt aufnehmen
-            </Button>
+            <CharterRequestForm>
+              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                BVI-Charter anfragen
+              </Button>
+            </CharterRequestForm>
           </div>
         </div>
       </div>
