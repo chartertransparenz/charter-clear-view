@@ -45,7 +45,7 @@ const VideoBanner = () => {
 
           {/* Headline */}
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Entdecke deine
+            Entdecken Sie Ihre
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-sunset to-wave">
               Charter-Träume
             </span>

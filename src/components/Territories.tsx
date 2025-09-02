@@ -139,7 +139,7 @@ const Territories = () => {
         {/* Top 10 Destinations Carousel */}
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-ocean-dark">
-            Unsere Top 10 Revier-Empfehlungen für dich
+            Unsere Top 10 Revier-Empfehlungen für Sie
           </h2>
           <Carousel className="w-full" setApi={setApi}>
             <CarouselContent className="-ml-2 md:-ml-4">

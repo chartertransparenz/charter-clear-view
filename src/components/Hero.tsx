@@ -73,7 +73,7 @@ const slides = [{
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-            Bereit für Dein
+            Bereit für Ihr
             <br />
             <span className="text-white">
               nächstes
@@ -83,7 +83,7 @@ const slides = [{
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90 max-w-2xl mx-auto">Profitiere von unserer 30-jährigen Erfahrung und lass dir jetzt ein unverbindliches Angebot erstellen.</p>
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90 max-w-2xl mx-auto">Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.</p>
 
           {/* CTA Button */}
           <div className="flex justify-center px-4">

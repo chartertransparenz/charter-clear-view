@@ -44,7 +44,7 @@ const Partners = () => {
             Unsere Partner
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Gemeinsam mit starken Partnern bieten wir dir erstklassigen Service 
+            Gemeinsam mit starken Partnern bieten wir Ihnen erstklassigen Service 
             und höchste Qualität in allen Bereichen des Yacht-Charters
           </p>
         </div>
