@@ -139,22 +139,19 @@ const CharterRequestForm = ({
       [name]: value
     });
   };
-  const FormContent = () => <div className="bg-gradient-to-br from-slate-50 to-white min-h-screen">
-      {/* Clean Header */}
-      <div className="text-center py-8 md:py-12">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <Anchor className="w-8 h-8 text-ocean-dark" />
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+  const FormContent = () => <div>
+      {/* Clean Minimal Header */}
+      <div className="h-20 md:h-24 bg-gradient-to-r from-ocean-dark to-ocean-light flex items-center justify-center">
+        <div className="flex items-center gap-3">
+          <Anchor className="w-6 h-6 text-white" />
+          <h1 className="text-xl md:text-2xl font-bold text-white">
             Charter-Anfrage
           </h1>
         </div>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Füllen Sie das Formular aus und erhalten Sie innerhalb von 24 Stunden Ihr persönliches Angebot
-        </p>
       </div>
 
       {/* Form Section */}
-      <div className="pb-6 md:pb-8">
+      <div className="py-6 md:py-8 bg-gradient-to-br from-slate-50 to-white min-h-screen">
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
