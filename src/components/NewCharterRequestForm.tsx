@@ -216,11 +216,8 @@ const NewCharterRequestForm = ({ children, isOpen, onOpenChange }: NewCharterReq
                               endDate: form.watch("endDate") || ""
                             }}
                             onChange={(value) => {
-                              // Add timeout to prevent scroll issues during state updates
-                              setTimeout(() => {
-                                form.setValue("startDate", value.startDate);
-                                form.setValue("endDate", value.endDate);
-                              }, 10);
+                              form.setValue("startDate", value.startDate);
+                              form.setValue("endDate", value.endDate);
                             }}
                             placeholder="Start- und Enddatum wählen"
                             className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
@@ -478,13 +475,8 @@ const NewCharterRequestForm = ({ children, isOpen, onOpenChange }: NewCharterReq
         <DialogTrigger asChild>
           {children}
         </DialogTrigger>
-        <DialogContent 
-          className="max-w-5xl w-[95vw] h-[95vh] p-0 bg-white"
-          onOpenAutoFocus={(e) => e.preventDefault()}
-        >
-          <div className="h-full overflow-y-auto">
-            <FormContent />
-          </div>
+        <DialogContent className="max-w-5xl w-[95vw] max-h-[95vh] overflow-y-auto p-0 bg-white">
+          <FormContent />
         </DialogContent>
       </Dialog>
     );
@@ -492,13 +484,8 @@ const NewCharterRequestForm = ({ children, isOpen, onOpenChange }: NewCharterReq
 
   return (
     <Dialog open={isDialogOpen} onOpenChange={handleOpenChange}>
-      <DialogContent 
-        className="max-w-5xl w-[95vw] h-[95vh] p-0 bg-white"
-        onOpenAutoFocus={(e) => e.preventDefault()}
-      >
-        <div className="h-full overflow-y-auto">
-          <FormContent />
-        </div>
+      <DialogContent className="max-w-5xl w-[95vw] max-h-[95vh] overflow-y-auto p-0 bg-white">
+        <FormContent />
       </DialogContent>
     </Dialog>
   );
