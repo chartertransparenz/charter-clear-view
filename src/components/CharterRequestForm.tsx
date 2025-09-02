@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Checkbox } from '@/components/ui/checkbox';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { DateRangePicker } from '@/components/ui/date-range-picker';
 import { Send, Anchor, CheckCircle, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -344,37 +345,26 @@ const CharterRequestForm = ({
                     )}
                   />
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div className="mb-4">
                     <FormField
                       control={form.control}
                       name="startDate"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel size="lg">Startdatum *</FormLabel>
+                          <FormLabel size="lg">Reisezeitraum *</FormLabel>
                           <FormControl>
-                            <Input
+                            <DateRangePicker
                               size="lg"
-                              type="date"
+                              value={{
+                                startDate: field.value || "",
+                                endDate: form.watch("endDate") || ""
+                              }}
+                              onChange={(value) => {
+                                form.setValue("startDate", value.startDate);
+                                form.setValue("endDate", value.endDate);
+                              }}
+                              placeholder="Start- und Enddatum wählen"
                               className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="endDate"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel size="lg">Enddatum *</FormLabel>
-                          <FormControl>
-                            <Input
-                              size="lg"
-                              type="date"
-                              className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                              {...field}
                             />
                           </FormControl>
                           <FormMessage />
