@@ -8,8 +8,30 @@ import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { callEdgeFunction } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
+// Helper function to call Supabase Edge Functions
+const callEdgeFunction = async (functionName: string, data: any) => {
+  try {
+    const { data: result, error } = await supabase.functions.invoke(functionName, {
+      body: data,
+    });
+
+    if (error) {
+      console.error(`Supabase Edge Function error:`, error);
+      throw error;
+    }
+
+    return { success: true, data: result };
+  } catch (error: any) {
+    console.error(`Error calling ${functionName}:`, error);
+    return { 
+      success: false, 
+      error: error.message || 'Ein Fehler ist aufgetreten. Bitte nutzen Sie alternativ unsere Telefonnummer oder E-Mail-Adresse für direkten Kontakt.' 
+    };
+  }
+};
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format, addDays } from "date-fns";

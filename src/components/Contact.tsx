@@ -6,8 +6,30 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { callEdgeFunction } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
 import CharterRequestForm from "./CharterRequestForm";
+
+// Helper function to call Supabase Edge Functions
+const callEdgeFunction = async (functionName: string, data: any) => {
+  try {
+    const { data: result, error } = await supabase.functions.invoke(functionName, {
+      body: data,
+    });
+
+    if (error) {
+      console.error(`Supabase Edge Function error:`, error);
+      throw error;
+    }
+
+    return { success: true, data: result };
+  } catch (error: any) {
+    console.error(`Error calling ${functionName}:`, error);
+    return { 
+      success: false, 
+      error: error.message || 'Ein Fehler ist aufgetreten. Bitte nutzen Sie alternativ unsere Telefonnummer oder E-Mail-Adresse für direkten Kontakt.' 
+    };
+  }
+};
 
 const Contact = () => {
   const { toast } = useToast();
