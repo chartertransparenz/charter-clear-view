@@ -6,90 +6,60 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Mexico = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Charter-Standorte", value: "Cancún, Cozumel" },
-    { icon: Calendar, label: "Beste Zeit", value: "November-April" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Maya-Kultur & Cenoten" }
-  ];
-
-  const charterBases = [
-    {
-      name: "Cancún",
-      link: "/reviere/amerika-bahamas/mexiko/cancun",
-      description: "Moderne Touristenmetropole mit erstklassiger Charter-Infrastruktur",
-      highlights: ["Marina V&V", "Isla Mujeres", "Mesoamerikanisches Riff", "Maya-Ruinen"]
-    },
-    {
-      name: "Cozumel", 
-      link: "/reviere/amerika-bahamas/mexiko/cozumel",
-      description: "Taucherparadies mit spektakulären Korallenriffen",
-      highlights: ["Palancar Riff", "Santa Rosa Wall", "Chankanaab Park", "San Gervasio Ruinen"]
-    }
-  ];
-
-  const sailingHighlights = [
-    "Zweitgrößtes Korallenriff der Welt",
-    "Kristallklare Cenoten zum Schwimmen",
-    "Maya-Kulturstätten und Pyramiden",
-    "Tropisches Klima ganzjährig",
-    "Bunte Unterwasserwelt",
-    "Entspannte karibische Atmosphäre",
-    "Exzellente mexikanische Küche"
-  ];
-
-  const popularRoutes = [
-    "Cancún - Isla Mujeres - Isla Contoy",
-    "Cozumel - Playa del Carmen - Tulum",
-    "Cancún - Holbox - Rio Lagartos",
-    "Cozumel - Banco Chinchorro - Xcalak"
-  ];
-
-  const culturalHighlights = [
-    {
-      name: "Chichen Itzá",
-      description: "Eine der bekanntesten Maya-Stätten mit der berühmten Kukulcán-Pyramide"
-    },
-    {
-      name: "Tulum",
-      description: "Spektakuläre Maya-Ruinen direkt am karibischen Meer"
-    },
-    {
-      name: "Cenoten",
-      description: "Kristallklare Süßwasserhöhlen, heilige Stätten der Maya"
-    },
-    {
-      name: "Isla Mujeres",
-      description: "Charmante Insel mit entspannter Atmosphäre und bunten Häusern"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Charter-Standorte",
+    value: "Cancún, Cozumel"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "November-April"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Maya-Kultur & Cenoten"
+  }];
+  const charterBases = [{
+    name: "Cancún",
+    link: "/reviere/amerika-bahamas/mexiko/cancun",
+    description: "Moderne Touristenmetropole mit erstklassiger Charter-Infrastruktur",
+    highlights: ["Marina V&V", "Isla Mujeres", "Mesoamerikanisches Riff", "Maya-Ruinen"]
+  }, {
+    name: "Cozumel",
+    link: "/reviere/amerika-bahamas/mexiko/cozumel",
+    description: "Taucherparadies mit spektakulären Korallenriffen",
+    highlights: ["Palancar Riff", "Santa Rosa Wall", "Chankanaab Park", "San Gervasio Ruinen"]
+  }];
+  const sailingHighlights = ["Zweitgrößtes Korallenriff der Welt", "Kristallklare Cenoten zum Schwimmen", "Maya-Kulturstätten und Pyramiden", "Tropisches Klima ganzjährig", "Bunte Unterwasserwelt", "Entspannte karibische Atmosphäre", "Exzellente mexikanische Küche"];
+  const popularRoutes = ["Cancún - Isla Mujeres - Isla Contoy", "Cozumel - Playa del Carmen - Tulum", "Cancún - Holbox - Rio Lagartos", "Cozumel - Banco Chinchorro - Xcalak"];
+  const culturalHighlights = [{
+    name: "Chichen Itzá",
+    description: "Eine der bekanntesten Maya-Stätten mit der berühmten Kukulcán-Pyramide"
+  }, {
+    name: "Tulum",
+    description: "Spektakuläre Maya-Ruinen direkt am karibischen Meer"
+  }, {
+    name: "Cenoten",
+    description: "Kristallklare Süßwasserhöhlen, heilige Stätten der Maya"
+  }, {
+    name: "Isla Mujeres",
+    description: "Charmante Insel mit entspannter Atmosphäre und bunten Häusern"
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img
-          src="/lovable-uploads/2e57e252-c2db-41f7-956a-4e0a8859e082.png"
-          alt="Mexiko Yacht Charter"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/2e57e252-c2db-41f7-956a-4e0a8859e082.png" alt="Mexiko Yacht Charter" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -100,10 +70,7 @@ const Mexico = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/amerika-bahamas" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/amerika-bahamas" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zu Amerika & Bahamas
@@ -149,13 +116,11 @@ const Mexico = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Description */}
@@ -180,8 +145,7 @@ const Mexico = () => {
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Charter-Standorte</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {charterBases.map((base, index) => (
-              <Link key={index} to={base.link} className="group">
+            {charterBases.map((base, index) => <Link key={index} to={base.link} className="group">
                 <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-3">
@@ -192,66 +156,25 @@ const Mexico = () => {
                     </div>
                     <p className="text-gray-600 mb-4">{base.description}</p>
                     <div className="space-y-1">
-                      {base.highlights.map((highlight, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
+                      {base.highlights.map((highlight, idx) => <div key={idx} className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                           <p className="text-sm text-gray-700">{highlight}</p>
-                        </div>
-                      ))}
+                        </div>)}
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
 
         {/* Cultural Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Kulturelle Highlights</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {culturalHighlights.map((highlight, index) => (
-              <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                    {highlight.name}
-                  </h3>
-                  <p className="text-gray-600">{highlight.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Sailing Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {sailingHighlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Popular Routes */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Beliebte Routen</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {popularRoutes.map((route, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <Anchor className="w-5 h-5 text-blue-600" />
-                  <p className="font-medium text-gray-800">{route}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
@@ -271,8 +194,6 @@ const Mexico = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Mexico;
