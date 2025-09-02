@@ -90,15 +90,15 @@ const Contact = () => {
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <CheckCircle className="w-4 h-4 text-ocean-dark" />
                     <span>30+ Jahre Erfahrung</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock3 className="w-4 h-4 text-ocean-blue" />
+                    <Clock3 className="w-4 h-4 text-ocean-dark" />
                     <span>24h Antwort-Garantie</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-green-600" />
+                    <Shield className="w-4 h-4 text-ocean-dark" />
                     <span>Transparente Preise</span>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                   </Button>
                 </CharterRequestForm>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground justify-center">
-                  <Star className="w-4 h-4 text-yellow-500 fill-current" />
+                  <Star className="w-4 h-4 text-ocean-dark fill-current" />
                   <span>500+ zufriedene Segler</span>
                 </div>
               </div>
