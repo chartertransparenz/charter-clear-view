@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { callEdgeFunction } from "@/lib/supabase";
 import CharterRequestForm from "./CharterRequestForm";
 
 const Contact = () => {
@@ -24,27 +25,22 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/functions/v1/send-contact-message', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
+      const result = await callEdgeFunction('send-contact-message', formData);
+      
+      if (result.success) {
         toast({
           title: "Nachricht gesendet!",
           description: "Wir melden uns schnellstmöglich bei Ihnen zurück.",
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        throw new Error('Fehler beim Senden der Nachricht');
+        throw new Error(result.error || 'Fehler beim Senden der Nachricht');
       }
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Contact form error:', error);
       toast({
         title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es später erneut oder rufen Sie uns direkt an.",
+        description: error.message || "Bitte versuchen Sie es später erneut oder rufen Sie uns direkt an.",
         variant: "destructive",
       });
     } finally {

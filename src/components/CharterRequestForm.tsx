@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { callEdgeFunction } from "@/lib/supabase";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -91,23 +92,24 @@ const CharterRequestForm = ({
       });
       return;
     }
+    
     try {
       // Format dates for backend submission
       const submissionData = {
-        ...formData,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
         startDate: formData.startDate ? format(formData.startDate, 'yyyy-MM-dd') : '',
-        endDate: formData.endDate ? format(formData.endDate, 'yyyy-MM-dd') : ''
+        endDate: formData.endDate ? format(formData.endDate, 'yyyy-MM-dd') : '',
+        boatSize: formData.boatSize,
+        cabins: formData.cabins,
+        message: formData.message
       };
 
-      // Call Supabase Edge Function to send email
-      const response = await fetch('/functions/v1/send-charter-request', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(submissionData)
-      });
-      if (response.ok) {
+      const result = await callEdgeFunction('send-charter-request', submissionData);
+      
+      if (result.success) {
         toast({
           title: "Anfrage erfolgreich gesendet!",
           description: "Wir melden uns innerhalb von 24 Stunden mit Ihrem persönlichen Angebot zurück."
@@ -128,12 +130,13 @@ const CharterRequestForm = ({
         });
         handleClose();
       } else {
-        throw new Error('Failed to send request');
+        throw new Error(result.error || 'Failed to send request');
       }
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Charter request form error:', error);
       toast({
         title: "Fehler beim Senden",
-        description: "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+        description: error.message || "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
         variant: "destructive"
       });
     }
