@@ -20,6 +20,7 @@ interface DateRangePickerProps {
   className?: string
   size?: "default" | "lg" | "xl"
   onPopoverOpenChange?: (open: boolean) => void
+  container?: Element | null
 }
 
 export function DateRangePicker({
@@ -28,7 +29,8 @@ export function DateRangePicker({
   placeholder = "Zeitraum wählen",
   className,
   size = "default",
-  onPopoverOpenChange
+  onPopoverOpenChange,
+  container
 }: DateRangePickerProps) {
   const [startDate, setStartDate] = React.useState<Date | undefined>(() => {
     return value?.startDate ? new Date(value.startDate) : undefined
@@ -112,7 +114,7 @@ export function DateRangePicker({
           {formatDateRange()}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-auto p-0 z-[60]" align="start">
+      <PopoverContent className="w-auto p-0 z-[60]" align="start" container={container}>
         <Calendar
           initialFocus
           mode="single"

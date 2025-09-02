@@ -157,13 +157,11 @@ const CharterRequestForm = ({
     }
     
     const scrollTop = scrollContainer.scrollTop;
-    console.log('Preserving scroll position:', scrollTop); // Debug log
     callback();
     
     // Single restoration with proper timing
     requestAnimationFrame(() => {
       if (scrollContainer && scrollContainer.scrollTop !== scrollTop) {
-        console.log('Restoring scroll from', scrollContainer.scrollTop, 'to', scrollTop); // Debug log
         scrollContainer.scrollTop = scrollTop;
       }
     });
@@ -383,20 +381,21 @@ const CharterRequestForm = ({
                         <FormItem>
                           <FormLabel size="lg">Reisezeitraum *</FormLabel>
                           <FormControl>
-                             <DateRangePicker
-                               size="lg"
-                               value={{
-                                 startDate: field.value || "",
-                                 endDate: form.watch("endDate") || ""
-                               }}
-                               onChange={(value) => {
-                                 form.setValue("startDate", value.startDate);
-                                 form.setValue("endDate", value.endDate);
-                               }}
-                               onPopoverOpenChange={setIsPopoverOpen}
-                               placeholder="Start- und Enddatum wählen"
-                               className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
-                             />
+                              <DateRangePicker
+                                size="lg"
+                                value={{
+                                  startDate: field.value || "",
+                                  endDate: form.watch("endDate") || ""
+                                }}
+                                onChange={(value) => {
+                                  form.setValue("startDate", value.startDate);
+                                  form.setValue("endDate", value.endDate);
+                                }}
+                                onPopoverOpenChange={setIsPopoverOpen}
+                                placeholder="Start- und Enddatum wählen"
+                                className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark"
+                                container={scrollContainerRef.current}
+                              />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
