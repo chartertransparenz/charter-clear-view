@@ -297,7 +297,7 @@ const Contact = () => {
                       <span className="font-semibold text-ocean-dark">Ihre Vorteile</span>
                     </div>
                     <ul className="text-sm text-ocean-dark/80 space-y-1">
-                      <li>• 24h Antwort-Garantie</li>
+                      <li>• Antwort innerhalb von 24h</li>
                       <li>• Kostenlose & unverbindliche Beratung</li>
                       <li>• Transparente Preise ohne versteckte Kosten</li>
                     </ul>
