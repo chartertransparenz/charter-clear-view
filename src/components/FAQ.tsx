@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { HelpCircle, MessageCircle, Phone, Mail, FileText, Anchor, CreditCard, Ship, Headphones } from "lucide-react";
+import { HelpCircle, MessageCircle, Phone, Mail, FileText, Anchor, CreditCard, Ship, Headphones, Send } from "lucide-react";
 
 const FAQ = () => {
   const faqCategories = [
@@ -158,11 +158,11 @@ const FAQ = () => {
       color: "bg-blue-500"
     },
     {
-      icon: MessageCircle,
-      title: "Live Chat",
-      description: "Sofort-Hilfe online",
-      action: "Chat starten",
-      color: "bg-orange-500"
+      icon: Send,
+      title: "WhatsApp Support",
+      description: "Direkter Chat verfügbar",
+      action: "WhatsApp öffnen",
+      color: "bg-green-500"
     }
   ];
 
@@ -246,7 +246,17 @@ const FAQ = () => {
                   </div>
                   <h4 className="font-semibold text-ocean-dark mb-2">{option.title}</h4>
                   <p className="text-sm text-muted-foreground mb-4">{option.description}</p>
-                  <Button variant="outline" className="w-full border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white"
+                    onClick={() => {
+                      if (option.title === "WhatsApp Support") {
+                        const phoneNumber = "497543499080";
+                        const message = encodeURIComponent("Hallo! Ich interessiere mich für Ihre Yacht Charter Services.");
+                        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+                      }
+                    }}
+                  >
                     {option.action}
                   </Button>
                 </CardContent>
