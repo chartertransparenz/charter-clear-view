@@ -148,7 +148,7 @@ const CharterRequestForm = ({
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-transparent"></div>
-        <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
+        <div className="relative z-10 h-full flex items-center justify-center text-center">
           <div>
             <Anchor className="w-12 h-12 text-white mx-auto mb-4" />
             <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
@@ -162,8 +162,8 @@ const CharterRequestForm = ({
       </div>
 
       {/* Form Section */}
-      <div className="p-6 md:p-8 bg-gradient-to-br from-slate-50 to-white">
-        <Card className="max-w-3xl mx-auto shadow-xl border-0">
+      <div className="py-6 md:py-8 bg-gradient-to-br from-slate-50 to-white">
+        <Card className="shadow-xl border-0">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
               <CheckCircle className="w-6 h-6 text-green-600" />
