@@ -258,12 +258,22 @@ const Toskana = () => {
                   Alle genannten Stopps sind ideal für Badepausen, Landgänge und kulinarische Genüsse. Häfen sind im Hochsommer oft gut besucht – frühzeitige Reservierung oder frühes Einlaufen ist zu empfehlen. Die Route lässt sich flexibel anpassen – je nach Wetter und Vorlieben der Crew.
                 </p>
 
-                <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Wind, Wetter und die beste Reisezeit</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Wind, Wetter und beste Reisezeit für Ihren Elba-Törn</h3>
                 
-                <p>
-                  Das Segelrevier der Toskana ist für seine generell moderaten und gutmütigen Wetterbedingungen bekannt.
+                <h4 className="text-lg font-semibold text-gray-800 mt-6 mb-3">Windverhältnisse:</h4>
+                <p className="text-base text-gray-700 mb-4">
+                  Elba ist vom Maestrale (NW) und Sirocco (SE) geprägt. Der Maestrale bringt trockene, frische Luft, der Sirocco feuchte, warme Böen. Im Frühling und Herbst sind die Winde meist moderat und verlässlich. Im Sommer ist generell mit Thermik und örtlichen Seebrisen zu rechnen, im Winter können Libeccio (SW) und Ponente (W) stürmisch sein.
                 </p>
                 
+                <h4 className="text-lg font-semibold text-gray-800 mt-6 mb-3">Wetter:</h4>
+                <p className="text-base text-gray-700 mb-4">
+                  Die Segelsaison dauert von Mai bis Oktober. Die Sommer sind sonnig, heiß und trocken, mit seltenen Tagen über 30 Grad. Frühling und Frühherbst bieten angenehm milde Temperaturen und weniger Trubel.
+                </p>
+                
+                <h4 className="text-lg font-semibold text-gray-800 mt-6 mb-3">Beste Reisezeit:</h4>
+                <p className="text-base text-gray-700 mb-8">
+                  Mai, Juni, September und Oktober sind für Segler perfekt: stabile Wetterlagen, noch warme Wassertemperaturen und entspannte Häfen. Juli/August sind lebhaft, mit volleren Buchten und Marinas, bieten aber das authentische, italienische Urlaubsflair.
+                </p>
                 
 
                 <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Fazit: Ihr unvergesslicher Törn in der Toskana</h3>
