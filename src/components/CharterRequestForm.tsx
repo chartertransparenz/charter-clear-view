@@ -70,9 +70,6 @@ const CharterRequestForm = ({
     lastName: "",
     email: "",
     phone: "",
-    charterType: "",
-    boatType: "",
-    territory: "",
     startDate: "",
     endDate: "",
     boatSize: "",
@@ -111,9 +108,6 @@ const CharterRequestForm = ({
           lastName: "",
           email: "",
           phone: "",
-          charterType: "",
-          boatType: "",
-          territory: "",
           startDate: "",
           endDate: "",
           boatSize: "",
@@ -245,60 +239,6 @@ const CharterRequestForm = ({
               <div className="border-t pt-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Charter-Details</h3>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Charter-Art *
-                    </label>
-                    <Select value={formData.charterType} onValueChange={(value) => handleSelectChange('charterType', value)}>
-                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                        <SelectValue placeholder="Wählen Sie die Charter-Art" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="bareboat">Bareboat Charter</SelectItem>
-                        <SelectItem value="skippered">Charter mit Skipper</SelectItem>
-                        <SelectItem value="crewed">Charter mit Crew</SelectItem>
-                        <SelectItem value="cabin">Kabinen-Charter</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Bootstyp *
-                    </label>
-                    <Select value={formData.boatType} onValueChange={(value) => handleSelectChange('boatType', value)}>
-                      <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                        <SelectValue placeholder="Wählen Sie den Bootstyp" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="segelboot">Segelboot</SelectItem>
-                        <SelectItem value="motorboot">Motorboot</SelectItem>
-                        <SelectItem value="katamaran">Katamaran</SelectItem>
-                        <SelectItem value="gulet">Gulet</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Revier *
-                  </label>
-                  <Select value={formData.territory} onValueChange={(value) => handleSelectChange('territory', value)}>
-                    <SelectTrigger className="border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark">
-                      <SelectValue placeholder="Wählen Sie Ihr Wunschrevier" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="mittelmeer">Mittelmeer</SelectItem>
-                      <SelectItem value="nordsee">Nordsee</SelectItem>
-                      <SelectItem value="ostsee">Ostsee</SelectItem>
-                      <SelectItem value="atlantik">Atlantik</SelectItem>
-                      <SelectItem value="pazifik">Pazifik</SelectItem>
-                      <SelectItem value="indischer-ozean">Indischer Ozean</SelectItem>
-                      <SelectItem value="karibik">Karibik</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
