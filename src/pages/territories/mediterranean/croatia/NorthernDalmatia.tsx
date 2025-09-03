@@ -57,7 +57,7 @@ export default function NorthernDalmatia() {
   }, {
     name: 'Murter',
     description: 'Tor zu den Kornaten mit traditioneller Atmosphäre',
-    marinas: 2,
+    marinas: 3,
     highlights: ['Marina Hramina', 'Kornati Tor', 'Slanica Strand']
   }];
   const highlights = ['Kornati Nationalpark - 89 Inseln', 'Krka Nationalpark mit Wasserfällen', 'Unberührte Natur und einsame Buchten', 'Starke Maestral-Winde für sportliches Segeln', 'Reiche Geschichte und Kultur', 'Authentische dalmatinische Küche', 'Weniger Massentourismus', 'Perfekt für Naturliebhaber'];
