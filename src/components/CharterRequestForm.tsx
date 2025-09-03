@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
-import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo, useLayoutEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -54,6 +54,7 @@ const CharterRequestForm = ({
   const historyPushedRef = useRef(false);
   const dialogContentRef = useRef<HTMLDivElement>(null);
   const scrollPositionRef = useRef(0);
+  const shouldRestoreRef = useRef(false);
 
   // Stable event handlers using useCallback
   const handleClose = useCallback(() => {
@@ -130,28 +131,38 @@ const CharterRequestForm = ({
     privacyAccepted: false
   });
 
-  // Restore scroll position after form data changes (with focus protection)
-  useEffect(() => {
-    if (dialogContentRef.current && scrollPositionRef.current > 0) {
-      // Check if user is currently typing in an input field
-      const activeElement = document.activeElement;
-      const isInputActive = activeElement && (
-        activeElement.tagName === 'INPUT' || 
-        activeElement.tagName === 'TEXTAREA' || 
-        activeElement.tagName === 'SELECT'
-      );
-      
-      // Only restore scroll position if no input is currently focused
-      if (!isInputActive) {
-        // Use setTimeout for better focus protection timing
-        setTimeout(() => {
-          if (dialogContentRef.current) {
-            dialogContentRef.current.scrollTop = scrollPositionRef.current;
-          }
-        }, 0);
+  // Helper functions for scroll restoration
+  const rememberScroll = useCallback(() => {
+    if (dialogContentRef.current) {
+      scrollPositionRef.current = dialogContentRef.current.scrollTop;
+    }
+  }, []);
+
+  const triggerRestoreSoon = useCallback(() => {
+    shouldRestoreRef.current = true;
+  }, []);
+
+  // Event-based scroll restoration (robust & synchronous)
+  useLayoutEffect(() => {
+    // Save current focus state before scroll restoration
+    const activeElement = document.activeElement as (HTMLInputElement | HTMLTextAreaElement | null);
+    const selectionStart = (activeElement && 'selectionStart' in activeElement) ? activeElement.selectionStart : null;
+    const selectionEnd = (activeElement && 'selectionEnd' in activeElement) ? activeElement.selectionEnd : null;
+
+    // Restore scroll position when dialog opens or when explicitly triggered
+    if ((dialogOpen || shouldRestoreRef.current) && dialogContentRef.current && scrollPositionRef.current > 0) {
+      dialogContentRef.current.scrollTop = scrollPositionRef.current;
+      shouldRestoreRef.current = false;
+
+      // Restore focus and cursor position after scroll
+      if (activeElement && typeof activeElement.focus === 'function') {
+        activeElement.focus();
+        if (selectionStart !== null && selectionEnd !== null && 'setSelectionRange' in activeElement) {
+          activeElement.setSelectionRange(selectionStart, selectionEnd);
+        }
       }
     }
-  }, [formData]); // Run when formData changes to restore scroll after input
+  }, [dialogOpen]); // Only trigger on dialog open/close
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -214,26 +225,26 @@ const CharterRequestForm = ({
   };
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     // Save current scroll position before state update
-    if (dialogContentRef.current) {
-      scrollPositionRef.current = dialogContentRef.current.scrollTop;
-    }
+    rememberScroll();
     
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
-  }, []);
+  }, [rememberScroll]);
+
   const handleSelectChange = useCallback((name: string, value: string) => {
     // Save current scroll position before state update
-    if (dialogContentRef.current) {
-      scrollPositionRef.current = dialogContentRef.current.scrollTop;
-    }
+    rememberScroll();
     
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
-  }, []);
+    
+    // Trigger scroll restoration for select changes (layout may change)
+    triggerRestoreSoon();
+  }, [rememberScroll, triggerRestoreSoon]);
   // FormContent component
   const FormContent = () => (
     <div className="relative">
@@ -359,7 +370,11 @@ const CharterRequestForm = ({
                         <Calendar
                           mode="single"
                           selected={formData.startDate}
-                          onSelect={(date) => setFormData(prev => ({ ...prev, startDate: date, endDate: date ? addDays(date, 7) : undefined }))}
+                          onSelect={(date) => {
+                            rememberScroll();
+                            setFormData(prev => ({ ...prev, startDate: date, endDate: date ? addDays(date, 7) : undefined }));
+                            triggerRestoreSoon();
+                          }}
                           disabled={(date) => date < new Date()}
                           initialFocus
                         />
@@ -387,7 +402,11 @@ const CharterRequestForm = ({
                         <Calendar
                           mode="single"
                           selected={formData.endDate}
-                          onSelect={(date) => setFormData(prev => ({ ...prev, endDate: date }))}
+                          onSelect={(date) => {
+                            rememberScroll();
+                            setFormData(prev => ({ ...prev, endDate: date }));
+                            triggerRestoreSoon();
+                          }}
                           disabled={(date) => date < new Date() || (formData.startDate && date <= formData.startDate)}
                           initialFocus
                         />
