@@ -534,6 +534,11 @@ export default function Greece() {
                 Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. 
                 Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
               </p>
+              <CharterRequestForm>
+                <Button className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  Jetzt unverbindliches Angebot einholen
+                </Button>
+              </CharterRequestForm>
             </div>
           </div>
         </div>
