@@ -279,6 +279,21 @@ const Nordgriechenland = () => {
             <p className="text-gray-600 font-semibold">
               Kontakt aufnehmen & Angebot erhalten – Ihr Yachtcharter in Nordgriechenland beginnt hier.
             </p>
+
+            {/* Prominent CTA Button */}
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-6 mt-8 text-center">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Bereit für Ihr Nordgriechenland-Abenteuer?
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Starten Sie jetzt Ihre Anfrage und lassen Sie sich von unseren Experten beraten.
+              </p>
+              <CharterRequestForm>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-base font-semibold">
+                  Jetzt Nordgriechenland-Charter anfragen
+                </Button>
+              </CharterRequestForm>
+            </div>
           </div>
         </div>
 
