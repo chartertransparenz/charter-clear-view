@@ -404,7 +404,19 @@ const Italy = () => {
             </div>
 
             {/* Sizilien & Liparische Inseln */}
-            
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link to="/reviere/mittelmeer/italien/sizilien" className="group">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                  Sizilien & Liparische Inseln
+                </h3>
+              </Link>
+              <p className="text-gray-600 mb-4">
+                Größte Mittelmeerinsel mit vielfältigen Segelrevieren zwischen vulkanischen Küsten und den mystischen Äolischen Inseln. Reiche Kultur, authentische Küche und perfekte Winde für unvergessliche Segeltörns.
+              </p>
+              <div className="text-sm text-gray-500">
+                <strong>Wichtige Stützpunkte:</strong> Palermo, Trapani, Capo d'Orlando, Portorosa, Marsala
+              </div>
+            </div>
 
             {/* Amalfiküste & Golf von Neapel */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
