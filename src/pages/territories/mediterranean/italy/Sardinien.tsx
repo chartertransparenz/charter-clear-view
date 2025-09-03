@@ -248,18 +248,17 @@ const Sardinien = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <Card className="shadow-lg border-blue-200">
             <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Costa Smeralda</h3>
-                  <p className="text-gray-600 mb-4">
-                    Entdecken Sie das exklusivste Segelrevier Sardiniens mit seinen weltberühmten Marinas und dem La Maddalena Archipel.
-                  </p>
-                </div>
-                <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                    Mehr erfahren
-                    <ChevronRight className="w-4 h-4 ml-2" />
-                  </Button>
+              <div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Costa Smeralda</h3>
+                <p className="text-gray-600 mb-4">
+                  Entdecken Sie das exklusivste Segelrevier Sardiniens mit seinen weltberühmten Marinas und dem La Maddalena Archipel.
+                </p>
+                <Link 
+                  to="/reviere/mittelmeer/italien/sardinien/costa-smeralda"
+                  className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-colors"
+                >
+                  Jetzt mehr erfahren
+                  <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>
               </div>
             </CardContent>
