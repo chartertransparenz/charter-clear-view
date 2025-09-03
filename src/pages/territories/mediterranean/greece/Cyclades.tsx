@@ -344,29 +344,6 @@ const Cyclades = () => {
           </div>
         </div>
 
-        {/* Cities */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Inseln & Häfen</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {cities.map((city, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
-                <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                <p className="font-medium text-gray-800">{city}</p>
-              </div>)}
-          </div>
-        </div>
-
-        {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>)}
-          </div>
-        </div>
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
