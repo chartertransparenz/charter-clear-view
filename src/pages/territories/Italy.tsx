@@ -24,23 +24,6 @@ const Italy = () => {
     label: "Besonderheit",
     value: "Dolce Vita & Kultur"
   }];
-  const regions = [{
-    name: "Sardinien & Costa Smeralda",
-    bases: ["Olbia", "Portisco", "Cannigione"],
-    description: "Exklusive Buchten, kristallklares Wasser und mondäne Häfen"
-  }, {
-    name: "Elba & Toskanischer Archipel",
-    bases: ["Portoferraio", "Marina di Campo"],
-    description: "Napoleons Exil-Insel mit charmanten Küstenstädten"
-  }, {
-    name: "Sizilien & Liparische Inseln",
-    bases: ["Palermo", "Catania", "Lipari"],
-    description: "Vulkanische Landschaften und authentische italienische Kultur"
-  }, {
-    name: "Amalfiküste & Golf von Neapel",
-    bases: ["Salerno", "Castellammare"],
-    description: "Spektakuläre Küstenlandschaft und romantische Atmosphäre"
-  }];
   const highlights = ["Exzellente italienische Küche", "Wunderschöne Küstenlandschaften", "Reiche Geschichte und Kultur", "Kristallklares Wasser", "Abwechslungsreiche Routen", "Gastfreundliche Marinas"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
@@ -374,24 +357,6 @@ const Italy = () => {
           </div>
         </div>
 
-        {/* Regions */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {regions.map((region, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{region.name}</h3>
-                <p className="text-gray-600 mb-4">{region.description}</p>
-                <div className="space-y-2">
-                  <h4 className="font-medium text-gray-800">Stützpunkte:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {region.bases.map((base, idx) => <span key={idx} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-sm">
-                        {base}
-                      </span>)}
-                  </div>
-                </div>
-              </div>)}
-          </div>
-        </div>
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
