@@ -36,6 +36,7 @@ import IonicIslands from "./pages/territories/mediterranean/greece/IonicIslands"
 import Dodecanese from "./pages/territories/mediterranean/greece/Dodecanese";
 import Sporades from "./pages/territories/mediterranean/greece/Sporades";
 import AthenSaronischerGolf from "./pages/territories/mediterranean/greece/AthenSaronischerGolf";
+import Nordgriechenland from "./pages/territories/mediterranean/greece/Nordgriechenland";
 
 // Spanish regions
 import Balearics from "./pages/territories/mediterranean/spain/Balearics";
@@ -205,6 +206,7 @@ function App() {
             <Route path="/reviere/mittelmeer/griechenland/dodekanes" element={<Dodecanese />} />
             <Route path="/reviere/mittelmeer/griechenland/sporaden" element={<Sporades />} />
             <Route path="/reviere/mittelmeer/griechenland/athen-saronischer-golf" element={<AthenSaronischerGolf />} />
+            <Route path="/reviere/mittelmeer/griechenland/nordgriechenland" element={<Nordgriechenland />} />
             
             {/* Spanish region routes */}
             <Route path="/reviere/mittelmeer/spanien/balearen" element={<Balearics />} />

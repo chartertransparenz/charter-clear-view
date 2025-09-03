@@ -9,6 +9,7 @@ import destinationGreece from "@/assets/destination-greece.jpg";
 
 const Greece = () => {
   useEffect(() => {
+    document.title = "Yachtcharter Griechenland | Segeln Ägäis & Ionisches Meer - 6000+ Inseln";
     window.scrollTo(0, 0);
   }, []);
   const quickFacts = [
