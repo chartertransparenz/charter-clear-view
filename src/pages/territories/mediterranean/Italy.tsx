@@ -365,25 +365,26 @@ const Italy = () => {
             <p className="mb-6 font-medium">
               Dolce vita trifft blaues Wasser – der Rest ist Ihr Logbucheintrag :)
             </p>
-            </div>
-          </div>
-        </div>
 
-        {/* CTA */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">
-              Jetzt Ihren Italien-Charter planen
-            </h3>
-            <p className="mb-6 text-gray-700">
-              Von der Toskana bis Sizilien – lassen Sie sich Ihr persönliches 
-              Angebot für den perfekten Italien-Törn erstellen.
-            </p>
-            <CharterRequestForm>
-              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
-                Unverbindliches Angebot anfordern
-              </Button>
-            </CharterRequestForm>
+            {/* CTA */}
+            <div className="mt-8">
+              <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                  Jetzt Ihren Italien-Charter planen
+                </h3>
+                <p className="mb-6 text-gray-700">
+                  Von der Toskana bis Sizilien – lassen Sie sich Ihr persönliches 
+                  Angebot für den perfekten Italien-Törn erstellen.
+                </p>
+                <CharterRequestForm>
+                  <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
+                    Unverbindliches Angebot anfordern
+                  </Button>
+                </CharterRequestForm>
+              </div>
+            </div>
+
+            </div>
           </div>
         </div>
 
