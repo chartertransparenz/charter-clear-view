@@ -310,16 +310,16 @@ const Azores = () => {
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
               Bereit für die Azoren?
             </h3>
-            <p className="mb-6 text-blue-100">
+            <p className="mb-6 text-gray-700">
               Entdecken Sie die vulkanischen Perlen des Atlantiks mit ihrer 
               unberührten Natur und authentischen portugiesischen Kultur.
             </p>
             <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
                 Azoren Charter anfragen
               </Button>
             </CharterRequestForm>

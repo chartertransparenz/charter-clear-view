@@ -332,16 +332,16 @@ const Cuba = () => {
               </p>
 
               {/* CTA im Textbereich */}
-              <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-6 rounded-lg shadow-lg text-center mt-8">
-                <h3 className="text-xl font-bold mb-3">
+              <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-6 rounded-lg shadow-lg text-center mt-8">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">
                   Bereit für authentisches Kuba?
                 </h3>
-                <p className="mb-4 text-blue-100">
+                <p className="mb-4 text-gray-700">
                   Entdecken Sie die authentische Seite der Karibik mit ihrer 
                   lebendigen Kultur und unberührten Naturschönheiten.
                 </p>
                 <CharterRequestForm>
-                  <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                  <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
                     Kuba Charter anfragen
                   </Button>
                 </CharterRequestForm>

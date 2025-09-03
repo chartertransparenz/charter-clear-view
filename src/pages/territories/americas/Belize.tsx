@@ -374,16 +374,16 @@ const Belize = () => {
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
               Bereit für Belize?
             </h3>
-            <p className="mb-6 text-blue-100">
+            <p className="mb-6 text-gray-700">
               Entdecken Sie das unberührte Segelparadies Belize mit dem Great Blue Hole, 
               spektakulären Korallenriffen und authentischer karibischer Kultur.
             </p>
             <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
                 Belize Charter anfragen
               </Button>
             </CharterRequestForm>
