@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
@@ -76,7 +77,7 @@ const initialFormData: FormState = {
 type FormContentProps = {
   formData: FormState;
   onInputChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-  onSelectChange: (name: string, value: string) => void;
+  onSelectChange: (name: string, value: any) => void;
   onSubmit: (e: React.FormEvent) => void;
   onClose: () => void;
 };
@@ -89,10 +90,184 @@ const FormContent = memo(function FormContent({
 }: FormContentProps) {
   return <div className="relative">
       {/* Hero Section */}
-      
+      <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white px-8 py-12 rounded-t-lg">
+        <div className="flex items-center gap-4 mb-4">
+          <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm14 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm-7-8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2s2-.9 2-2V6c0-1.1-.9-2-2-2z"/>
+          </svg>
+          <div>
+            <h2 className="text-3xl font-bold">Charter-Anfrage stellen</h2>
+            <p className="text-blue-100 mt-2">Erhalten Sie Ihr individuelles Angebot für den perfekten Yacht-Charter</p>
+          </div>
+        </div>
+      </div>
 
       {/* Form Section */}
-      
+      <div className="p-8">
+        <form onSubmit={onSubmit} className="space-y-6">
+          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            {/* Personal Data */}
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Persönliche Daten</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <Label htmlFor="firstName">Vorname*</Label>
+                  <input
+                    id="firstName"
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={onInputChange}
+                    required
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="lastName">Nachname*</Label>
+                  <input
+                    id="lastName"
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={onInputChange}
+                    required
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="email">E-Mail*</Label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={onInputChange}
+                    required
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="phone">Telefon</Label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={onInputChange}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Charter Details */}
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Charter-Details</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <Label htmlFor="startDate">Startdatum</Label>
+                  <input
+                    id="startDate"
+                    type="date"
+                    name="startDate"
+                    value={formData.startDate ? format(formData.startDate, 'yyyy-MM-dd') : ''}
+                    onChange={(e) => onSelectChange('startDate', e.target.value ? new Date(e.target.value) : null)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="endDate">Enddatum</Label>
+                  <input
+                    id="endDate"
+                    type="date"
+                    name="endDate"
+                    value={formData.endDate ? format(formData.endDate, 'yyyy-MM-dd') : ''}
+                    onChange={(e) => onSelectChange('endDate', e.target.value ? new Date(e.target.value) : null)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="boatSize">Bootsgröße</Label>
+                  <select
+                    id="boatSize"
+                    name="boatSize"
+                    value={formData.boatSize}
+                    onChange={(e) => onSelectChange('boatSize', e.target.value)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  >
+                    <option value="">Bitte wählen</option>
+                    <option value="30-35ft">30-35ft</option>
+                    <option value="35-40ft">35-40ft</option>
+                    <option value="40-45ft">40-45ft</option>
+                    <option value="45-50ft">45-50ft</option>
+                    <option value="50ft+">50ft+</option>
+                  </select>
+                </div>
+                <div>
+                  <Label htmlFor="cabins">Anzahl Kabinen</Label>
+                  <select
+                    id="cabins"
+                    name="cabins"
+                    value={formData.cabins}
+                    onChange={(e) => onSelectChange('cabins', e.target.value)}
+                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  >
+                    <option value="">Bitte wählen</option>
+                    <option value="1">1 Kabine</option>
+                    <option value="2">2 Kabinen</option>
+                    <option value="3">3 Kabinen</option>
+                    <option value="4">4 Kabinen</option>
+                    <option value="5+">5+ Kabinen</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Message */}
+            <div className="mb-6">
+              <Label htmlFor="message">Nachricht</Label>
+              <Textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={onInputChange}
+                placeholder="Teilen Sie uns Ihre Wünsche und besonderen Anforderungen mit..."
+                rows={4}
+                className="mt-1"
+              />
+            </div>
+
+            {/* Privacy */}
+            <div className="mb-6">
+              <label className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  name="privacyAccepted"
+                  checked={formData.privacyAccepted}
+                  onChange={(e) => onSelectChange('privacyAccepted', e.target.checked)}
+                  className="mt-1"
+                />
+                <span className="text-sm text-gray-600">
+                  Ich stimme der Verarbeitung meiner Daten gemäß der{" "}
+                  <a href="/datenschutz" className="text-blue-600 hover:underline" target="_blank">
+                    Datenschutzerklärung
+                  </a>{" "}
+                  zu.*
+                </span>
+              </label>
+            </div>
+
+            {/* Submit Button */}
+            <Button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium"
+              disabled={!formData.privacyAccepted}
+            >
+              Unverbindliches Angebot anfordern
+            </Button>
+          </div>
+        </form>
+      </div>
 
       {/* Close-Button */}
       <button onClick={onClose} className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200" aria-label="Formular schließen">
