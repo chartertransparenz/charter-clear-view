@@ -245,7 +245,7 @@ const Sardinien = () => {
         </div>
 
         {/* Costa Smeralda Link */}
-        <div className="mb-12">
+        <div className="max-w-4xl mx-auto mb-12">
           <Card className="shadow-lg border-blue-200">
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
