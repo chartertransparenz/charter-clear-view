@@ -30,27 +30,6 @@ const Italy = () => {
     label: "Küstenlänge",
     value: "Über 7.600 km"
   }];
-  const regions = [{
-    name: "Amalfiküste",
-    link: "/reviere/mittelmeer/italien/amalfikuste",
-    description: "Amalfiküste, Neapel und die bezaubernden Inseln Capri und Ischia",
-    cities: ["Agropoli", "Amalfi Küste", "Castellamare", "Neapel", "Procida", "Salerno"]
-  }, {
-    name: "Sardinien",
-    link: "/reviere/mittelmeer/italien/sardinien",
-    description: "Traumhafte Insel mit smaragdgrünem Wasser und exklusiven Häfen",
-    cities: ["Alghero", "Cagliari", "Cannigione", "Carloforte", "Costa Smeralda", "Olbia", "Portisco", "Porto Rotondo"]
-  }, {
-    name: "Sizilien",
-    link: "/reviere/mittelmeer/italien/sizilien",
-    description: "Größte Mittelmeerinsel mit vielfältigen Segelrevieren",
-    cities: ["Capo d'Orlando", "Marsala", "Palermo", "Portorosa", "Sant'Agata di Militello", "Trapani"]
-  }, {
-    name: "Toskana",
-    link: "/reviere/mittelmeer/italien/toskana",
-    description: "Kulturdreiecke an der Küste mit Insel Elba",
-    cities: ["Castiglioncello", "Elba"]
-  }];
   const highlights = ["Vielfältige Segelreviere für jeden Geschmack", "Weltklasse italienische Küche", "Reiche Kultur und Geschichte", "Exzellente Marina-Infrastruktur", "Traumhafte Inseln und Buchten", "Kurze Distanzen für Wochenendtörns", "Warmes, kristallklares Wasser"];
   return <div className="min-h-screen bg-white">
       <Navigation />
@@ -444,28 +423,6 @@ const Italy = () => {
           </div>
         </div>
 
-        {/* Regions Cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
-          {regions.map((region, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-2">{region.name}</h3>
-                <p className="text-muted-foreground mb-4">{region.description}</p>
-                {region.cities && <div className="mb-4">
-                    <div className="flex flex-wrap gap-2">
-                      {region.cities.map((city, cityIndex) => <Badge key={cityIndex} variant="secondary" className="text-xs">
-                          {city}
-                        </Badge>)}
-                    </div>
-                  </div>}
-                <Link to={region.link}>
-                  <Button variant="outline" className="w-full">
-                    Mehr erfahren
-                    <ChevronRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>)}
-        </div>
 
         {/* Highlights */}
         
