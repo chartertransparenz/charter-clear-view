@@ -377,7 +377,7 @@ const Italy = () => {
                   Angebot für den perfekten Italien-Törn erstellen.
                 </p>
                 <CharterRequestForm>
-                  <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                     Unverbindliches Angebot anfordern
                   </Button>
                 </CharterRequestForm>

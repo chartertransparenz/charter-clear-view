@@ -349,8 +349,8 @@ const BVI = () => {
               Nennen Sie uns Reisedaten, Crewgröße und Wunschyacht – wir prüfen Live-Verfügbarkeiten, reservieren auf Wunsch Mooringbojen/Marinas und senden Ihnen umgehend Ihren maßgeschneiderten BVI-Törnplan.
             </p>
             <CharterRequestForm>
-              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
-                BVI-Charter anfragen
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
+                Unverbindliches Angebot anfordern
               </Button>
             </CharterRequestForm>
           </div>

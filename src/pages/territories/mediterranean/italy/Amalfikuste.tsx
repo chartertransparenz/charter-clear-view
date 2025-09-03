@@ -16,7 +16,7 @@ import {
   Building2,
   Shield
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
@@ -27,8 +27,6 @@ const Amalfikuste = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const [showCharterForm, setShowCharterForm] = useState(false);
 
   const quickFacts = [
     {
@@ -397,23 +395,18 @@ const Amalfikuste = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Entdecken Sie die dramatische Schönheit der italienischen Küste
               </p>
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-4"
-                onClick={() => setShowCharterForm(true)}
-              >
-                Charter anfragen
-              </Button>
+               <CharterRequestForm>
+                 <Button 
+                   size="lg" 
+                   className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4"
+                 >
+                   Unverbindliches Angebot anfordern
+                 </Button>
+               </CharterRequestForm>
             </CardContent>
           </Card>
         </div>
       </div>
-
-      {/* Charter Form Modal */}
-      <CharterRequestForm 
-        isOpen={showCharterForm}
-        onOpenChange={setShowCharterForm}
-      />
     </div>
   );
 };

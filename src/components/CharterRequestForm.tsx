@@ -583,7 +583,7 @@ const CharterRequestForm = ({
           </DialogDescription>
           {content}
         </DialogContent>
-      </Dialog>;
+      </Dialog>
   }
   return content;
 };
