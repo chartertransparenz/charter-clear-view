@@ -306,7 +306,7 @@ export default function AllTerritories() {
       </div>
       
       {/* Hero Section */}
-      <div className="relative h-[20vh] bg-gradient-to-b from-ocean-light/20 to-white">
+      <div className="relative h-[40vh] bg-gradient-to-b from-ocean-light/20 to-white">
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl">
             <Link to="/" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-4 transition-colors">
@@ -326,7 +326,7 @@ export default function AllTerritories() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-16">
         {/* Countries Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {countries.map((country, index) => (
