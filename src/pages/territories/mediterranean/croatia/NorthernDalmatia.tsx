@@ -634,8 +634,7 @@ export default function NorthernDalmatia() {
             <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg text-center">
               <h4 className="text-xl font-bold mb-4">Fordern Sie jetzt Ihr unverbindliches Angebot an!</h4>
               <p className="mb-6">
-                Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten 
-                Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+                Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
               </p>
               <CharterRequestForm>
                 <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
