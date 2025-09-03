@@ -54,7 +54,7 @@ const CharterRequestForm = ({
   const historyPushedRef = useRef(false);
   const dialogContentRef = useRef<HTMLDivElement>(null);
   const scrollPositionRef = useRef(0);
-  const shouldRestoreRef = useRef(false);
+  const isEditingRef = useRef(false);
 
   // Stable event handlers using useCallback
   const handleClose = useCallback(() => {
@@ -131,38 +131,64 @@ const CharterRequestForm = ({
     privacyAccepted: false
   });
 
-  // Helper functions for scroll restoration
-  const rememberScroll = useCallback(() => {
-    if (dialogContentRef.current) {
-      scrollPositionRef.current = dialogContentRef.current.scrollTop;
-    }
+  // 1) Passive scroll tracking - never during keystrokes
+  useEffect(() => {
+    const el = dialogContentRef.current;
+    if (!el) return;
+
+    const onScroll = () => { scrollPositionRef.current = el.scrollTop; };
+    el.addEventListener('scroll', onScroll, { passive: true });
+    return () => el.removeEventListener('scroll', onScroll);
   }, []);
 
-  const triggerRestoreSoon = useCallback(() => {
-    shouldRestoreRef.current = true;
+  // 2) Focus detection for hard-gate protection during typing
+  useEffect(() => {
+    const root = dialogContentRef.current;
+    if (!root) return;
+
+    const isTextual = (t: EventTarget | null) =>
+      t instanceof HTMLElement && (t.matches('input, textarea, [contenteditable="true"]'));
+
+    const onFocusIn = (e: FocusEvent) => { if (isTextual(e.target)) isEditingRef.current = true; };
+    const onFocusOut = () => { requestAnimationFrame(() => { isEditingRef.current = false; }); };
+
+    // IME support for international users
+    const onCompStart = () => { isEditingRef.current = true; };
+    const onCompEnd = () => { requestAnimationFrame(() => { isEditingRef.current = false; }); };
+
+    root.addEventListener('focusin', onFocusIn);
+    root.addEventListener('focusout', onFocusOut);
+    root.addEventListener('compositionstart', onCompStart as any);
+    root.addEventListener('compositionend', onCompEnd as any);
+
+    return () => {
+      root.removeEventListener('focusin', onFocusIn);
+      root.removeEventListener('focusout', onFocusOut);
+      root.removeEventListener('compositionstart', onCompStart as any);
+      root.removeEventListener('compositionend', onCompEnd as any);
+    };
   }, []);
 
-  // Event-based scroll restoration (robust & synchronous)
+  // 3) Scroll restoration only when dialog opens (quiet moment)
   useLayoutEffect(() => {
-    // Save current focus state before scroll restoration
-    const activeElement = document.activeElement as (HTMLInputElement | HTMLTextAreaElement | null);
-    const selectionStart = (activeElement && 'selectionStart' in activeElement) ? activeElement.selectionStart : null;
-    const selectionEnd = (activeElement && 'selectionEnd' in activeElement) ? activeElement.selectionEnd : null;
+    if (!dialogOpen || !dialogContentRef.current) return;
+    dialogContentRef.current.scrollTop = scrollPositionRef.current;
+  }, [dialogOpen]);
 
-    // Restore scroll position when dialog opens or when explicitly triggered
-    if ((dialogOpen || shouldRestoreRef.current) && dialogContentRef.current && scrollPositionRef.current > 0) {
-      dialogContentRef.current.scrollTop = scrollPositionRef.current;
-      shouldRestoreRef.current = false;
+  // 4) Safe restore helper for targeted restores (never during typing)
+  const safeRestoreScroll = useCallback(() => {
+    if (isEditingRef.current) return; // Hard-gate protection
+    const el = dialogContentRef.current;
+    if (!el) return;
 
-      // Restore focus and cursor position after scroll
-      if (activeElement && typeof activeElement.focus === 'function') {
-        activeElement.focus();
-        if (selectionStart !== null && selectionEnd !== null && 'setSelectionRange' in activeElement) {
-          activeElement.setSelectionRange(selectionStart, selectionEnd);
-        }
-      }
+    el.scrollTop = scrollPositionRef.current;
+
+    // Preserve active element without scroll jump
+    const active = document.activeElement as HTMLInputElement | HTMLTextAreaElement | null;
+    if (active?.focus) {
+      try { active.focus({ preventScroll: true } as any); } catch {}
     }
-  }, [dialogOpen]); // Only trigger on dialog open/close
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -224,27 +250,18 @@ const CharterRequestForm = ({
     }
   };
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    // Save current scroll position before state update
-    rememberScroll();
-    
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
-  }, [rememberScroll]);
+  }, []);
 
   const handleSelectChange = useCallback((name: string, value: string) => {
-    // Save current scroll position before state update
-    rememberScroll();
-    
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
-    
-    // Trigger scroll restoration for select changes (layout may change)
-    triggerRestoreSoon();
-  }, [rememberScroll, triggerRestoreSoon]);
+  }, []);
   // FormContent component
   const FormContent = () => (
     <div className="relative">
@@ -371,9 +388,9 @@ const CharterRequestForm = ({
                           mode="single"
                           selected={formData.startDate}
                           onSelect={(date) => {
-                            rememberScroll();
                             setFormData(prev => ({ ...prev, startDate: date, endDate: date ? addDays(date, 7) : undefined }));
-                            triggerRestoreSoon();
+                            // Optional safe restore after calendar interaction
+                            requestAnimationFrame(() => safeRestoreScroll());
                           }}
                           disabled={(date) => date < new Date()}
                           initialFocus
@@ -403,9 +420,9 @@ const CharterRequestForm = ({
                           mode="single"
                           selected={formData.endDate}
                           onSelect={(date) => {
-                            rememberScroll();
                             setFormData(prev => ({ ...prev, endDate: date }));
-                            triggerRestoreSoon();
+                            // Optional safe restore after calendar interaction
+                            requestAnimationFrame(() => safeRestoreScroll());
                           }}
                           disabled={(date) => date < new Date() || (formData.startDate && date <= formData.startDate)}
                           initialFocus
