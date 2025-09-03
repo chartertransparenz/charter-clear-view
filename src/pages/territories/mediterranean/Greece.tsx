@@ -32,7 +32,7 @@ export default function Greece() {
   }, {
     icon: Wind,
     label: 'Windverhältnisse',
-    value: 'Meltemi ideal'
+    value: 'Meltemi im Hochsommer'
   }, {
     icon: Sun,
     label: 'Sonnentage',
@@ -300,7 +300,7 @@ export default function Greece() {
               <strong>Für wen geeignet:</strong> Familien, Naturliebhaber, Genießer, Einsteiger und Crews, die Wert auf Ruhe, Natur und authentische Dörfer legen.
             </p>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">6. Nordgriechenland & Chalkidiki: Der Geheimtipp für Individualisten</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4">6. <Link to="/reviere/mittelmeer/griechenland/nordgriechenland" className="text-primary hover:underline">Nordgriechenland & Chalkidiki</Link>: Der Geheimtipp für Individualisten</h4>
             <p className="mb-4">
               Die Küste Nordgriechenlands und die Halbinsel Chalkidiki bieten ein noch wenig entdecktes Segelrevier mit langen Sandstränden, Pinienwäldern, antiken Stätten und einer entspannten Atmosphäre. Die Region ist weniger touristisch als die südlicheren Inselgruppen, dafür besonders authentisch.
             </p>
