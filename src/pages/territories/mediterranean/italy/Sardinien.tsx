@@ -7,62 +7,36 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Sardinien = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Westliches Mittelmeer" },
-    { icon: Calendar, label: "Beste Zeit", value: "Mai-Oktober" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Besonderheit", value: "Costa Smeralda" }
-  ];
-
-  const cities = [
-    "Alghero",
-    "Cagliari", 
-    "Cannigione",
-    "Carloforte",
-    "Costa Smeralda",
-    "Olbia",
-    "Portisco",
-    "Porto Rotondo"
-  ];
-
-  const highlights = [
-    "Smaragdgrünes, kristallklares Wasser",
-    "Exklusive Costa Smeralda",
-    "Unberührte Strände und Buchten",
-    "Excellente Marina-Infrastruktur",
-    "Vielfältige Küstenlandschaften",
-    "Authentische sardische Kultur",
-    "Kurze Distanzen zwischen Häfen",
-    "Perfekte Windverhältnisse",
-    "Ganzjährig mildes Klima"
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Westliches Mittelmeer"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Mai-Oktober"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Costa Smeralda"
+  }];
+  const cities = ["Alghero", "Cagliari", "Cannigione", "Carloforte", "Costa Smeralda", "Olbia", "Portisco", "Porto Rotondo"];
+  const highlights = ["Smaragdgrünes, kristallklares Wasser", "Exklusive Costa Smeralda", "Unberührte Strände und Buchten", "Excellente Marina-Infrastruktur", "Vielfältige Küstenlandschaften", "Authentische sardische Kultur", "Kurze Distanzen zwischen Häfen", "Perfekte Windverhältnisse", "Ganzjährig mildes Klima"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img 
-          src="/lovable-uploads/9ed7e340-fa6c-4e80-a817-0f19eda7e395.png" 
-          alt="Sardinien - Türkisfarbenes Wasser und grüne Küstenlandschaft" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/9ed7e340-fa6c-4e80-a817-0f19eda7e395.png" alt="Sardinien - Türkisfarbenes Wasser und grüne Küstenlandschaft" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -73,10 +47,7 @@ const Sardinien = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/mittelmeer/italien" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/mittelmeer/italien" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zu Italien
@@ -130,34 +101,53 @@ const Sardinien = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="hidden md:grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <Card key={index} className="shadow-lg">
+          {quickFacts.map((fact, index) => <Card key={index} className="shadow-lg">
               <CardContent className="p-6 text-center">
                 <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
                 <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
                 <p className="text-sm text-gray-600">{fact.value}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Territory Map */}
         <div className="mb-12">
-          <TerritoryMap
-            region="Sardinien"
-            center={{ lat: 40.8518, lng: 9.6116 }}
-            zoom={8}
-            markers={[
-              { lat: 40.9216, lng: 9.5034, name: "Olbia" },
-              { lat: 41.1325, lng: 9.5142, name: "Porto Cervo" },
-              { lat: 41.1074, lng: 9.4902, name: "Portisco" },
-              { lat: 41.0567, lng: 9.5019, name: "Cannigione" },
-              { lat: 41.2144, lng: 9.4068, name: "La Maddalena" },
-              { lat: 39.2238, lng: 9.1217, name: "Cagliari" },
-              { lat: 39.1433, lng: 8.3099, name: "Carloforte" },
-              { lat: 40.5645, lng: 8.3206, name: "Alghero" }
-            ]}
-          />
+          <TerritoryMap region="Sardinien" center={{
+          lat: 40.8518,
+          lng: 9.6116
+        }} zoom={8} markers={[{
+          lat: 40.9216,
+          lng: 9.5034,
+          name: "Olbia"
+        }, {
+          lat: 41.1325,
+          lng: 9.5142,
+          name: "Porto Cervo"
+        }, {
+          lat: 41.1074,
+          lng: 9.4902,
+          name: "Portisco"
+        }, {
+          lat: 41.0567,
+          lng: 9.5019,
+          name: "Cannigione"
+        }, {
+          lat: 41.2144,
+          lng: 9.4068,
+          name: "La Maddalena"
+        }, {
+          lat: 39.2238,
+          lng: 9.1217,
+          name: "Cagliari"
+        }, {
+          lat: 39.1433,
+          lng: 8.3099,
+          name: "Carloforte"
+        }, {
+          lat: 40.5645,
+          lng: 8.3206,
+          name: "Alghero"
+        }]} />
         </div>
 
         {/* Description */}
@@ -176,11 +166,7 @@ const Sardinien = () => {
               
               {/* Stranderlebnis Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/57b6c045-a49a-4111-9dbe-7cab4456fec9.png" 
-                  alt="Paar entspannt am türkisfarbenen Strand von Sardinien mit kristallklarem Wasser und Segelbooten im Hintergrund" 
-                  className="w-full h-auto object-cover max-h-96 md:max-h-[500px]"
-                />
+                <img src="/lovable-uploads/57b6c045-a49a-4111-9dbe-7cab4456fec9.png" alt="Paar entspannt am türkisfarbenen Strand von Sardinien mit kristallklarem Wasser und Segelbooten im Hintergrund" className="w-full h-auto object-cover max-h-96 md:max-h-[500px]" />
               </div>
               
               <p className="text-lg text-gray-600 mb-8">
@@ -211,11 +197,7 @@ const Sardinien = () => {
               
               {/* Küstenlandschaft mit Turm */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/dec3e030-3572-47d6-8aec-cb5e616c181e.png" 
-                  alt="Luftaufnahme der sardischen Küste mit historischem Wachturm auf Klippe und türkisfarbenem Meer, typisch für das La Maddalena Archipel" 
-                  className="w-full h-auto object-cover"
-                />
+                <img src="/lovable-uploads/dec3e030-3572-47d6-8aec-cb5e616c181e.png" alt="Luftaufnahme der sardischen Küste mit historischem Wachturm auf Klippe und türkisfarbenem Meer, typisch für das La Maddalena Archipel" className="w-full h-auto object-cover" />
               </div>
               
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
@@ -232,11 +214,7 @@ const Sardinien = () => {
               
               {/* Granitfelsen bei Sonnenuntergang */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/f90003bc-6e22-4a6e-a0d9-02d53b9b730c.png" 
-                  alt="Blick durch beeindruckende Granitfelsen auf die sardische Küstenlandschaft bei goldenem Sonnenlicht, charakteristisch für die Region" 
-                  className="w-full h-auto object-cover"
-                />
+                <img src="/lovable-uploads/f90003bc-6e22-4a6e-a0d9-02d53b9b730c.png" alt="Blick durch beeindruckende Granitfelsen auf die sardische Küstenlandschaft bei goldenem Sonnenlicht, charakteristisch für die Region" className="w-full h-auto object-cover" />
               </div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Der ursprüngliche Süden: Von Cagliari nach Carloforte</h3>
@@ -289,38 +267,10 @@ const Sardinien = () => {
         </div>
 
         {/* Important Harbors & Ports */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Marinas</h2>
-          <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
-            {cities.map((city, index) => (
-              <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-blue-600" />
-                    <h3 className="text-lg font-semibold text-gray-800">{city}</h3>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Sardinien?</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                    <p className="font-medium text-gray-800">{highlight}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
@@ -340,8 +290,6 @@ const Sardinien = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Sardinien;
