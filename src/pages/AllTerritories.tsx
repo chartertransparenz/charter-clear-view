@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ChevronRight } from 'lucide-react';
 
 export default function AllTerritories() {
   useEffect(() => {
@@ -278,17 +278,25 @@ export default function AllTerritories() {
       
       {/* Breadcrumb Navigation */}
       <div className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">Start</BreadcrumbLink>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Start</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+                <BreadcrumbLink asChild>
+                  <Link to="/#reviere">Reviere</Link>
+                </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage>Alle Reviere</BreadcrumbPage>
               </BreadcrumbItem>
