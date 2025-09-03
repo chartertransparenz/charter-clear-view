@@ -158,6 +158,7 @@ import WhitsundayIslands from "./pages/territories/pacific/charter-locations/Whi
 import Noumea from "./pages/territories/pacific/charter-locations/Noumea";
 import Fiji from "./pages/territories/pacific/charter-locations/Fiji";
 import NewZealand from "./pages/territories/pacific/charter-locations/NewZealand";
+import AllTerritories from "./pages/AllTerritories";
 
 const queryClient = new QueryClient();
 
@@ -178,6 +179,7 @@ function App() {
           <Route path="/ueber-uns" element={<About />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
             
             {/* Mediterranean routes */}
             <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
