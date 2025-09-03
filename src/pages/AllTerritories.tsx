@@ -276,6 +276,27 @@ export default function AllTerritories() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
+      {/* Breadcrumb Navigation */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Start</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Alle Reviere</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+      </div>
+      
       {/* Hero Section */}
       <div className="relative h-[40vh] bg-gradient-to-b from-ocean-light/20 to-white">
         <div className="relative container mx-auto px-4 h-full flex items-center">
@@ -294,27 +315,6 @@ export default function AllTerritories() {
               Entdecken Sie alle verfügbaren Segelreviere weltweit - von klassischen Mittelmeerzielen bis zu exotischen Traumdestinationen
             </p>
           </div>
-        </div>
-      </div>
-
-      {/* Breadcrumb Navigation */}
-      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
-        <div className="container mx-auto px-4 py-4">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/">Start</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/#reviere">Reviere</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Alle Reviere</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
         </div>
       </div>
 
