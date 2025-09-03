@@ -7,77 +7,57 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
-import {
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationItaly from "@/assets/destination-italy.jpg";
-
 const Italy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Lage", value: "Zentrales Mittelmeer" },
-    { icon: Calendar, label: "Beste Zeit", value: "Mai-Oktober" },
-    { icon: Users, label: "Geeignet für", value: "Alle Erfahrungsstufen" },
-    { icon: Anchor, label: "Küstenlänge", value: "Über 7.600 km" }
-  ];
-
-  const regions = [
-    {
-      name: "Amalfiküste",
-      link: "/reviere/mittelmeer/italien/amalfikuste",
-      description: "Amalfiküste, Neapel und die bezaubernden Inseln Capri und Ischia",
-      cities: ["Agropoli", "Amalfi Küste", "Castellamare", "Neapel", "Procida", "Salerno"]
-    },
-    {
-      name: "Sardinien",
-      link: "/reviere/mittelmeer/italien/sardinien",
-      description: "Traumhafte Insel mit smaragdgrünem Wasser und exklusiven Häfen",
-      cities: ["Alghero", "Cagliari", "Cannigione", "Carloforte", "Costa Smeralda", "Olbia", "Portisco", "Porto Rotondo"]
-    },
-    {
-      name: "Sizilien",
-      link: "/reviere/mittelmeer/italien/sizilien",
-      description: "Größte Mittelmeerinsel mit vielfältigen Segelrevieren",
-      cities: ["Capo d'Orlando", "Marsala", "Palermo", "Portorosa", "Sant'Agata di Militello", "Trapani"]
-    },
-    {
-      name: "Toskana",
-      link: "/reviere/mittelmeer/italien/toskana",
-      description: "Kulturdreiecke an der Küste mit Insel Elba",
-      cities: ["Castiglioncello", "Elba"]
-    }
-  ];
-
-  const highlights = [
-    "Vielfältige Segelreviere für jeden Geschmack",
-    "Weltklasse italienische Küche",
-    "Reiche Kultur und Geschichte",
-    "Exzellente Marina-Infrastruktur",
-    "Traumhafte Inseln und Buchten",
-    "Kurze Distanzen für Wochenendtörns",
-    "Warmes, kristallklares Wasser"
-  ];
-
-  return (
-    <div className="min-h-screen bg-white">
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Lage",
+    value: "Zentrales Mittelmeer"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Mai-Oktober"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Küstenlänge",
+    value: "Über 7.600 km"
+  }];
+  const regions = [{
+    name: "Amalfiküste",
+    link: "/reviere/mittelmeer/italien/amalfikuste",
+    description: "Amalfiküste, Neapel und die bezaubernden Inseln Capri und Ischia",
+    cities: ["Agropoli", "Amalfi Küste", "Castellamare", "Neapel", "Procida", "Salerno"]
+  }, {
+    name: "Sardinien",
+    link: "/reviere/mittelmeer/italien/sardinien",
+    description: "Traumhafte Insel mit smaragdgrünem Wasser und exklusiven Häfen",
+    cities: ["Alghero", "Cagliari", "Cannigione", "Carloforte", "Costa Smeralda", "Olbia", "Portisco", "Porto Rotondo"]
+  }, {
+    name: "Sizilien",
+    link: "/reviere/mittelmeer/italien/sizilien",
+    description: "Größte Mittelmeerinsel mit vielfältigen Segelrevieren",
+    cities: ["Capo d'Orlando", "Marsala", "Palermo", "Portorosa", "Sant'Agata di Militello", "Trapani"]
+  }, {
+    name: "Toskana",
+    link: "/reviere/mittelmeer/italien/toskana",
+    description: "Kulturdreiecke an der Küste mit Insel Elba",
+    cities: ["Castiglioncello", "Elba"]
+  }];
+  const highlights = ["Vielfältige Segelreviere für jeden Geschmack", "Weltklasse italienische Küche", "Reiche Kultur und Geschichte", "Exzellente Marina-Infrastruktur", "Traumhafte Inseln und Buchten", "Kurze Distanzen für Wochenendtörns", "Warmes, kristallklares Wasser"];
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
       <div className="relative h-[50vh] overflow-hidden">
-        <img
-          src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png"
-          alt="Italien Mittelmeer"
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png" alt="Italien Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -88,10 +68,7 @@ const Italy = () => {
             </p>
           </div>
         </div>
-        <Link 
-          to="/reviere/mittelmeer" 
-          className="absolute top-6 left-6"
-        >
+        <Link to="/reviere/mittelmeer" className="absolute top-6 left-6">
           <Button variant="outline" className="bg-white/90 text-black border-white">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Zurück zum Mittelmeer
@@ -137,29 +114,20 @@ const Italy = () => {
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          {quickFacts.map((fact, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+          {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         <div className="max-w-4xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Italien Segelreviere - Übersichtskarte</h2>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="h-96 w-full">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500000!2d12.5674!3d41.8719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzE5LjQiTiAxMsKwMzQnMDIuNyJF!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Italien Karte"
-              ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500000!2d12.5674!3d41.8719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzE5LjQiTiAxMsKwMzQnMDIuNyJF!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Italien Karte"></iframe>
             </div>
           </div>
         </div>
@@ -490,22 +458,17 @@ const Italy = () => {
 
         {/* Regions Cards */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
-          {regions.map((region, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+          {regions.map((region, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">{region.name}</h3>
                 <p className="text-muted-foreground mb-4">{region.description}</p>
-                {region.cities && (
-                  <div className="mb-4">
+                {region.cities && <div className="mb-4">
                     <div className="flex flex-wrap gap-2">
-                      {region.cities.map((city, cityIndex) => (
-                        <Badge key={cityIndex} variant="secondary" className="text-xs">
+                      {region.cities.map((city, cityIndex) => <Badge key={cityIndex} variant="secondary" className="text-xs">
                           {city}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
-                  </div>
-                )}
+                  </div>}
                 <Link to={region.link}>
                   <Button variant="outline" className="w-full">
                     Mehr erfahren
@@ -513,30 +476,15 @@ const Italy = () => {
                   </Button>
                 </Link>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Highlights */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Warum Italien chartern?
-          </h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="flex items-center p-4 bg-white rounded-lg shadow">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                <span>{highlight}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
       
       {/* Charter Request Form */}
       <CharterRequestForm />
-    </div>
-  );
+    </div>;
 };
-
 export default Italy;
