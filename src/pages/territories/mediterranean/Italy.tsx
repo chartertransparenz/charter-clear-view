@@ -427,9 +427,7 @@ const Italy = () => {
             {/* Sizilien & Liparische Inseln */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <Link to="/reviere/mittelmeer/italien/sizilien" className="group">
-                <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
-                  Sizilien & Liparische Inseln
-                </h3>
+                
               </Link>
               <p className="text-gray-600 mb-4">
                 Die größte Mittelmeerinsel mit den spektakulären Äolischen Inseln inklusive dem aktiven Vulkan Stromboli. Ein Paradies für abenteuerlustige Segler mit vielfältigen Landschaften und reicher Geschichte.
