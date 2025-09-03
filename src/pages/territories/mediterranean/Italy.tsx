@@ -369,6 +369,24 @@ const Italy = () => {
           </div>
         </div>
 
+        {/* CTA */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Jetzt Ihren Italien-Charter planen
+            </h3>
+            <p className="mb-6 text-gray-700">
+              Von der Toskana bis Sizilien – lassen Sie sich Ihr persönliches 
+              Angebot für den perfekten Italien-Törn erstellen.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
+                Unverbindliches Angebot anfordern
+              </Button>
+            </CharterRequestForm>
+          </div>
+        </div>
+
         {/* Segelregionen Section */}
         <div className="max-w-6xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
@@ -438,24 +456,6 @@ const Italy = () => {
 
         {/* Highlights */}
         
-      </div>
-      
-      {/* CTA */}
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">
-            Jetzt Ihren Italien-Charter planen
-          </h3>
-          <p className="mb-6 text-gray-700">
-            Von der Toskana bis Sizilien – lassen Sie sich Ihr persönliches 
-            Angebot für den perfekten Italien-Törn erstellen.
-          </p>
-          <CharterRequestForm>
-            <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
-              Unverbindliches Angebot anfordern
-            </Button>
-          </CharterRequestForm>
-        </div>
       </div>
     </div>;
 };
