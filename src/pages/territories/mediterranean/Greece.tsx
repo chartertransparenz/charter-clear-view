@@ -231,6 +231,57 @@ export default function Greece() {
               <li><strong>Milos:</strong> Bizarre Felsformationen, bunte Häfen, Kleftiko-Höhlen</li>
             </ul>
 
+            <h3 className="text-2xl font-bold mt-8 mb-4">Ihr 7-Tage-Traumtörn in den <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link></h3>
+            <p className="mb-4 font-medium">Ab Marina Lavrion (Athen):</p>
+            
+            <div className="space-y-3 mb-8">
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 1: Ankunft & Einstieg (Lavrion – Kea)</h5>
+                <p className="text-sm text-muted-foreground">Nach dem Check-in segeln Sie zur nahegelegenen Insel Kea. 
+                Legen Sie im charmanten Hafen von Korissia an oder ankern Sie in einer ruhigen Bucht. 
+                Erster Eindruck der Kykladen-Atmosphäre.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 2: Syros – Hauptstadt der Kykladen (Kea – Syros)</h5>
+                <p className="text-sm text-muted-foreground">Segeln Sie nach Syros, dem Verwaltungssitz der Kykladen. 
+                Erkunden Sie die neoklassische Architektur von Ermoupolis und genießen Sie das lebendige Stadtleben.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 3: Mykonos – Jetset und Windmühlen (Syros – Mykonos)</h5>
+                <p className="text-sm text-muted-foreground">Kurs auf die berühmteste Insel der Kykladen. 
+                Schlendern Sie durch die engen Gassen der Altstadt, besuchen Sie die ikonischen Windmühlen 
+                und erleben Sie das pulsierende Nachtleben.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 4: Delos & Paros – Antike und Tradition (Mykonos – Delos – Paros)</h5>
+                <p className="text-sm text-muted-foreground">Besuchen Sie das UNESCO-Welterbe Delos mit seinen 
+                antiken Ruinen. Anschließend weiter nach Paros, bekannt für traditionelle Dörfer und 
+                hervorragende Tavernen.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 5: Naxos – Die grüne Kykladeninsel (Paros – Naxos)</h5>
+                <p className="text-sm text-muted-foreground">Kurzer Schlag zur größten Kykladeninsel. 
+                Naxos bietet traumhafte Sandstrände, fruchtbare Täler und das beeindruckende 
+                Portara-Tor bei Sonnenuntergang.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 6: Kythnos – Authentisches Inselleben (Naxos – Kythnos)</h5>
+                <p className="text-sm text-muted-foreground">Segeln Sie zu der weniger touristischen Insel Kythnos. 
+                Genießen Sie authentisches griechisches Inselleben, Thermalquellen und unberührte Buchten.</p>
+              </div>
+              
+              <div className="border-l-4 border-primary pl-4">
+                <h5 className="font-semibold">Tag 7: Rückkehr (Kythnos – Lavrion)</h5>
+                <p className="text-sm text-muted-foreground">Entspannter Rückschlag zum Ausgangspunkt. 
+                Check-out und Abreise mit unvergesslichen Erinnerungen an die Kykladen.</p>
+              </div>
+            </div>
+
             <div className="border border-gray-300 p-4 rounded-lg mb-6">
               <p className="text-black"><strong>Wind & Wetter:</strong> Im Sommer dominiert der Meltemi, 
               ein starker, trockener Nordwind (4-7 Bft, gelegentlich mehr), der für sportliches Segeln sorgt. 
@@ -331,56 +382,6 @@ export default function Greece() {
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Ihr 7-Tage-Traumtörn in den <Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link></h3>
-            <p className="mb-4 font-medium">Ab Marina Lavrion (Athen):</p>
-            
-            <div className="space-y-3 mb-8">
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 1: Ankunft & Einstieg (Lavrion – Kea)</h5>
-                <p className="text-sm text-muted-foreground">Nach dem Check-in segeln Sie zur nahegelegenen Insel Kea. 
-                Legen Sie im charmanten Hafen von Korissia an oder ankern Sie in einer ruhigen Bucht. 
-                Erster Eindruck der Kykladen-Atmosphäre.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 2: Syros – Hauptstadt der Kykladen (Kea – Syros)</h5>
-                <p className="text-sm text-muted-foreground">Segeln Sie nach Syros, dem Verwaltungssitz der Kykladen. 
-                Erkunden Sie die neoklassische Architektur von Ermoupolis und genießen Sie das lebendige Stadtleben.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 3: Mykonos – Jetset und Windmühlen (Syros – Mykonos)</h5>
-                <p className="text-sm text-muted-foreground">Kurs auf die berühmteste Insel der Kykladen. 
-                Schlendern Sie durch die engen Gassen der Altstadt, besuchen Sie die ikonischen Windmühlen 
-                und erleben Sie das pulsierende Nachtleben.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 4: Delos & Paros – Antike und Tradition (Mykonos – Delos – Paros)</h5>
-                <p className="text-sm text-muted-foreground">Besuchen Sie das UNESCO-Welterbe Delos mit seinen 
-                antiken Ruinen. Anschließend weiter nach Paros, bekannt für traditionelle Dörfer und 
-                hervorragende Tavernen.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 5: Naxos – Die grüne Kykladeninsel (Paros – Naxos)</h5>
-                <p className="text-sm text-muted-foreground">Kurzer Schlag zur größten Kykladeninsel. 
-                Naxos bietet traumhafte Sandstrände, fruchtbare Täler und das beeindruckende 
-                Portara-Tor bei Sonnenuntergang.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 6: Kythnos – Authentisches Inselleben (Naxos – Kythnos)</h5>
-                <p className="text-sm text-muted-foreground">Segeln Sie zu der weniger touristischen Insel Kythnos. 
-                Genießen Sie authentisches griechisches Inselleben, Thermalquellen und unberührte Buchten.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary pl-4">
-                <h5 className="font-semibold">Tag 7: Rückkehr (Kythnos – Lavrion)</h5>
-                <p className="text-sm text-muted-foreground">Entspannter Rückschlag zum Ausgangspunkt. 
-                Check-out und Abreise mit unvergesslichen Erinnerungen an die Kykladen.</p>
-              </div>
-            </div>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen: Segeln unter der Mittelmeersonne</h3>
             <p className="mb-4">
