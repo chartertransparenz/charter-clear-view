@@ -308,25 +308,6 @@ const Nordgriechenland = () => {
           
         </div>
 
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4 text-center">
-              Bereit für Nordgriechenland?
-            </h3>
-            <p className="mb-8 text-blue-100 text-center max-w-2xl mx-auto">
-              Entdecken Sie die unberührte Schönheit der Chalkidiki mit ihren drei "Fingern", 
-              dem heiligen Berg Athos und authentischer griechischer Gastfreundschaft.
-            </p>
-            <div className="text-center">
-              <CharterRequestForm>
-                <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                  Nordgriechenland-Charter anfragen
-                </Button>
-              </CharterRequestForm>
-            </div>
-          </div>
-        </div>
       </div>
     </div>;
 };
