@@ -637,6 +637,11 @@ export default function NorthernDalmatia() {
                 Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten 
                 Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
               </p>
+              <CharterRequestForm>
+                <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                  Jetzt unverbindliches Angebot einholen
+                </Button>
+              </CharterRequestForm>
             </div>
           </div>
         </div>
