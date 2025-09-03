@@ -119,6 +119,13 @@ export default function AllTerritories() {
       hasPage: true
     },
     {
+      name: 'Kroatien',
+      flag: '🇭🇷',
+      route: '/reviere/mittelmeer/kroatien',
+      image: '/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png',
+      hasPage: true
+    },
+    {
       name: 'Kuba',
       flag: '🇨🇺',
       route: '/reviere/karibik/kuba',
@@ -200,6 +207,34 @@ export default function AllTerritories() {
       flag: '🇸🇪',
       route: '/reviere/nord-europa/skandinavien/schweden',
       image: '/placeholder.svg',
+      hasPage: true
+    },
+    {
+      name: 'Seychellen',
+      flag: '🇸🇨',
+      route: '/reviere/indischer-ozean/seychellen',
+      image: '/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.png',
+      hasPage: true
+    },
+    {
+      name: 'Spanien',
+      flag: '🇪🇸',
+      route: '/reviere/mittelmeer/spanien',
+      image: '/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.png',
+      hasPage: true
+    },
+    {
+      name: 'Thailand',
+      flag: '🇹🇭',
+      route: '/reviere/indischer-ozean/asien/thailand',
+      image: '/lovable-uploads/b8d7c49e-e173-4854-b08c-755db093505f.png',
+      hasPage: true
+    },
+    {
+      name: 'Türkei',
+      flag: '🇹🇷',
+      route: '/reviere/mittelmeer/tuerkei',
+      image: '/lovable-uploads/b0c596f4-551d-4816-958d-570974af6c8d.png',
       hasPage: true
     }
   ];
