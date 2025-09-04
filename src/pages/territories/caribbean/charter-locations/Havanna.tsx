@@ -6,6 +6,7 @@ import { ArrowLeft, MapPin, Anchor, Music, Building, Plane } from "lucide-react"
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import caribbean from "@/assets/caribbean.jpg";
 const Havanna = () => {
@@ -276,6 +277,8 @@ const Havanna = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>;
 };
 export default Havanna;

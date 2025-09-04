@@ -6,6 +6,7 @@ import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane, ShoppingBag } from "lucide
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -261,6 +262,8 @@ const StThomas = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>
   );
 };

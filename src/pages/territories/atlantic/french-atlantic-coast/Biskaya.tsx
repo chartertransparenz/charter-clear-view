@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 
 const Biskaya = () => {
   useEffect(() => {
@@ -198,6 +199,8 @@ const Biskaya = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>
   );
 };

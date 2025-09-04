@@ -6,6 +6,7 @@ import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -227,6 +228,8 @@ const Tortola = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>
   );
 };
