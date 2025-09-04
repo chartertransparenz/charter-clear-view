@@ -13,7 +13,7 @@ const Pacific = () => {
   }, []);
   const regions = [{
     name: "Französisch-Polynesien",
-    link: "/reviere/suedpazifik/charter-standorte/raiatea",
+    link: "/reviere/suedpazifik/franzoesisch-polynesien",
     areas: ["Raiatea", "Bora Bora", "Rangiroa"]
   }, {
     name: "Australien",
