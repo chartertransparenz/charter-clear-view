@@ -164,7 +164,7 @@ export default function AllTerritories() {
       name: 'Montenegro',
       flag: '🇲🇪',
       route: '/reviere/mittelmeer/montenegro',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/7dab9754-bebc-42ce-afbe-80cb31345f52.png',
       hasPage: true
     },
     {
