@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import pacific from "@/assets/pacific.jpg";
+const frenchPolynesiaHeader = "/lovable-uploads/a6e74b2e-f2a3-4510-99de-f4d333eeac84.png";
 const FrenchPolynesia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -46,7 +46,7 @@ const FrenchPolynesia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={pacific} alt="Französisch Polynesien" className="w-full h-full object-cover" />
+        <img src={frenchPolynesiaHeader} alt="Französisch Polynesien" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
