@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
+import TerritoryMap from "@/components/TerritoryMap";
 const frenchPolynesiaHeader = "/lovable-uploads/a6e74b2e-f2a3-4510-99de-f4d333eeac84.png";
 const FrenchPolynesia = () => {
   useEffect(() => {
@@ -98,6 +99,18 @@ const FrenchPolynesia = () => {
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+
+        {/* Territory Map */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Französisch-Polynesien Archipel</h2>
+          <TerritoryMap
+            region="Französisch-Polynesien"
+            center={{ lat: -17.0845677, lng: -149.4113217 }}
+            zoom={6}
+            maptype="satellite"
+            className="mb-8"
+          />
         </div>
 
         {/* Description */}
