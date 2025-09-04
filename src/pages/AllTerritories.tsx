@@ -86,7 +86,7 @@ export default function AllTerritories() {
     {
       name: 'Französisch-Polynesien',
       flag: '🇵🇫',
-      route: '/reviere/suedpazifik/charter-standorte/raiatea',
+      route: '/reviere/suedpazifik/franzoesisch-polynesien',
       image: '/lovable-uploads/7f8674c8-bde0-4646-a599-780ed4172d9f.png',
       hasPage: true
     },
