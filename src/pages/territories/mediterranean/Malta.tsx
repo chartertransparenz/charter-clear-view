@@ -62,7 +62,7 @@ const Malta = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="hidden md:grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>

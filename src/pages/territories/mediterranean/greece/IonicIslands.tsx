@@ -101,7 +101,7 @@ const IonicIslands = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="hidden md:grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => {
             const getAnchorLink = (label) => {
               switch(label) {
@@ -360,7 +360,7 @@ const IonicIslands = () => {
         </div>
 
         {/* Cities */}
-        <div className="mb-12">
+        <div className="hidden md:block mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Inseln & Häfen</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {cities.map((city, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
@@ -371,7 +371,7 @@ const IonicIslands = () => {
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
+        <div className="hidden md:block mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {highlights.map((highlight, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg">

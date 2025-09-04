@@ -94,7 +94,7 @@ const KasKalkan = () => {
         </Breadcrumb>
 
         {/* Quick Facts */}
-        <div className="mb-12">
+        <div className="hidden md:block mb-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {quickFacts.map((fact, index) => {
               const IconComponent = fact.icon;
