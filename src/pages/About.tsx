@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Anchor, Compass, Ship, Star, Trophy, Globe } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import maritimeImage from "@/assets/maritime-experience.jpg";
 const About = () => {
   const milestones = [{
     year: "1997",
@@ -83,7 +84,7 @@ const About = () => {
             <div className="mb-16 flex justify-center">
               <div className="w-full max-w-4xl">
                 <img 
-                  src="/lovable-uploads/6b13b174-3eab-402e-90de-69f81e1ac06e.png" 
+                  src={maritimeImage} 
                   alt="Charter Transparenz - Maritime Erfahrung" 
                   className="w-full h-auto rounded-xl shadow-ocean hover:shadow-elegant transition-all duration-300"
                 />
