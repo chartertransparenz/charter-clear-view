@@ -45,7 +45,7 @@ export default function AllTerritories() {
       name: 'Belize',
       flag: '🇧🇿',
       route: '/reviere/amerika-bahamas/belize',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/640b11b6-58e3-4f63-9b38-7b1542f7d168.png',
       hasPage: true
     },
     {
