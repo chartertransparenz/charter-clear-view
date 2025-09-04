@@ -66,7 +66,7 @@ export default function AllTerritories() {
       name: 'Deutschland',
       flag: '🇩🇪',
       route: '/reviere/nord-europa/deutsche-ostsee',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/9b523891-80c7-4afa-9c1e-b3334d6bdfca.png',
       hasPage: true
     },
     {
