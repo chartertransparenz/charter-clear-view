@@ -347,6 +347,19 @@ const Korsika = () => {
             <p className="text-lg text-gray-700">
               Kontaktieren Sie uns für Ihr persönliches Angebot. Wir helfen Ihnen, die perfekte Yacht für Ihre Entdeckungsreise durch dieses magische Revier zu finden, sei es direkt ab Korsika oder als spannender Überführungstörn von Sardinien oder dem französischen Festland.
             </p>
+            
+            {/* CTA innerhalb der Textbox */}
+            <div className="mt-8 bg-blue-50 rounded-lg p-6 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Bereit für Ihr korsisches Segelajahr?</h3>
+              <p className="text-lg text-gray-700 mb-4">
+                Lassen Sie sich von der wilden Schönheit Korsikas verzaubern und erleben Sie unvergessliche Segeltage in kristallklaren Gewässern.
+              </p>
+              <CharterRequestForm>
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+                  Jetzt unverbindlich anfragen
+                </Button>
+              </CharterRequestForm>
+            </div>
           </div>
         </div>
 
