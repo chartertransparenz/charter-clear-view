@@ -16,7 +16,8 @@ const Footer = () => {
       { name: "Atlantik", href: "/reviere/atlantik" },
       { name: "Indischer Ozean", href: "/reviere/indischer-ozean" },
       { name: "Nord- & Ostsee", href: "/reviere/nord-europa" },
-      { name: "Amerika & Bahamas", href: "/reviere/amerika-bahamas" }
+      { name: "Amerika & Bahamas", href: "/reviere/amerika-bahamas" },
+      { name: "Alle Destinationen", href: "/reviere/alle-reviere" }
     ],
     company: [
       { name: "Über uns", href: "/ueber-uns" },
