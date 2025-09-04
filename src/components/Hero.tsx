@@ -68,7 +68,7 @@ const slides = [{
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <Award className="w-4 h-4" />
-            <span className="text-sm">Rund 30 Jahre Erfahrung auf dem Chartermarkt</span>
+            <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
           </div>
 
           {/* Main Heading */}
