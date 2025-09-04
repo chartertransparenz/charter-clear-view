@@ -101,7 +101,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="kontakt" className="py-20 bg-ocean-light/30 relative overflow-hidden">
+    <section id="kontakt" className="py-20 bg-ocean-light/30 border-b border-ocean-light/20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-ocean-blue/20 to-transparent"></div>

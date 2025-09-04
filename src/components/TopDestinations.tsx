@@ -5,7 +5,7 @@ const TopDestinations = () => {
     <section 
       id="top-destinations" 
       aria-labelledby="top-destinations-heading" 
-      className="py-12 bg-muted/30 border-t border-border"
+      className="py-12 bg-ocean-light/20 border-t border-ocean-light/30 border-b border-ocean-light/20"
     >
       <div className="container mx-auto px-4">
         <h2 
