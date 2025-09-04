@@ -420,7 +420,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Welche Segelscheine brauche ich für einen Bareboat-Charter?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Für einen Bareboat-Charter in Französisch-Polynesien verlangt die Charterbasis einen international anerkannten Bootsführerschein, der zur Größe und Motorisierung der Yacht passt. Häufig akzeptiert werden der ICC (International Certificate of Competence) oder ein gleichwertiger nationaler Schein wie SKS/FB2 bzw. RYA. Ein Funkzeugnis wie SRC ist sehr zu empfehlen, da UKW-Funk für Sicherheit und Hafenkommunikation zum Standard gehört. Wer keinen Schein oder wenig Erfahrung hat, bucht einen Skipper und segelt als Skippered- oder Crewed-Charter; so genießen Sie das Revier ohne Navigationsverantwortung.</p>
+                    <p className="text-lg text-gray-600">Für einen Bareboat-Charter in Französisch-Polynesien verlangt die Charterbasis einen international anerkannten Bootsführerschein, der zur Größe und Motorisierung der Yacht passt. Häufig akzeptiert werden der ICC (International Certificate of Competence) oder ein gleichwertiger nationaler Schein wie SKS/FB2 bzw. RYA. Ein Funkzeugnis wie SRC ist sehr zu empfehlen, da UKW-Funk für Sicherheit und Hafenkommunikation zum Standard gehört. Wer keinen Schein oder wenig Erfahrung hat, bucht einen Skipper und segelt als Skippered- oder Crewed-Charter; so genießen Sie das Revier ohne Navigationsverantwortung.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -429,7 +429,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Für welches Erfahrungsniveau eignet sich das Revier – und warum gelten Katamarane als erste Wahl?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Die Gesellschaftsinseln mit Tahiti, Moorea, Raiatea, Taha'a, Huahine und Bora Bora sind für Einsteiger und Familien hervorragend geeignet, weil viele Etappen innerhalb der Lagunen gefahren werden und die Distanzen überschaubar sind. Ein Katamaran punktet hier gleich doppelt: Der geringe Tiefgang eröffnet flache Motu-Buchten und komfortable Ansteuerungen über Sand, die breite Plattform liegt in Lagunen auffallend ruhig, und das Platzangebot an Deck und im Salon macht den Bordalltag entspannt. Fortgeschrittene Crews haben ihren Spaß an Passfahrten und längeren Schlägen zwischen den Inseln. Die Tuamotu-Atolle sind das Königskapitel für sehr erfahrene Skipper, denn hier sind Pass-Strömungen, Slack-Water-Timing und Korallennavigation entscheidend.</p>
+                    <p className="text-lg text-gray-600">Die Gesellschaftsinseln mit Tahiti, Moorea, Raiatea, Taha'a, Huahine und Bora Bora sind für Einsteiger und Familien hervorragend geeignet, weil viele Etappen innerhalb der Lagunen gefahren werden und die Distanzen überschaubar sind. Ein Katamaran punktet hier gleich doppelt: Der geringe Tiefgang eröffnet flache Motu-Buchten und komfortable Ansteuerungen über Sand, die breite Plattform liegt in Lagunen auffallend ruhig, und das Platzangebot an Deck und im Salon macht den Bordalltag entspannt. Fortgeschrittene Crews haben ihren Spaß an Passfahrten und längeren Schlägen zwischen den Inseln. Die Tuamotu-Atolle sind das Königskapitel für sehr erfahrene Skipper, denn hier sind Pass-Strömungen, Slack-Water-Timing und Korallennavigation entscheidend.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -438,7 +438,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Wie sind Wind, Wetter und Jahreszeiten in Französisch-Polynesien?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Das Klima ist tropisch mit verlässlichen Passatwinden aus östlichen bis südöstlichen Richtungen. In der sogenannten Trockenzeit von Mai bis Oktober herrschen meist moderate, stabile Bedingungen, die Sicht ist klar und die Luftfeuchte niedriger – das ist die beliebteste Zeit für Yachtcharter. Von November bis April ist es wärmer und feuchter, mit mehr Schauern und lokalen Böen. Tropische Störungen sind selten, aber möglich; wer in dieser Periode reist, beobachtet die Vorhersagen aufmerksam und plant flexible Etappen sowie sichere Ausweichplätze ein. In den Lagunen bleibt das Wasser häufig ruhig, auf offenen Passagen zwischen den Inseln kann eine frische Brise zulegen. Katamarane dämpfen Krängung und Schwell spürbar und sorgen so auch bei wechselnden Bedingungen für gelassenes Segeln.</p>
+                    <p className="text-lg text-gray-600">Das Klima ist tropisch mit verlässlichen Passatwinden aus östlichen bis südöstlichen Richtungen. In der sogenannten Trockenzeit von Mai bis Oktober herrschen meist moderate, stabile Bedingungen, die Sicht ist klar und die Luftfeuchte niedriger – das ist die beliebteste Zeit für Yachtcharter. Von November bis April ist es wärmer und feuchter, mit mehr Schauern und lokalen Böen. Tropische Störungen sind selten, aber möglich; wer in dieser Periode reist, beobachtet die Vorhersagen aufmerksam und plant flexible Etappen sowie sichere Ausweichplätze ein. In den Lagunen bleibt das Wasser häufig ruhig, auf offenen Passagen zwischen den Inseln kann eine frische Brise zulegen. Katamarane dämpfen Krängung und Schwell spürbar und sorgen so auch bei wechselnden Bedingungen für gelassenes Segeln.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -447,7 +447,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Wann ist die beste Reisezeit für einen Törn?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Als Faustregel gelten die Monate Mai bis Oktober als ideal: konstante Passatbrise, angenehme Temperaturen und sehr gute Sicht unter Wasser. Schultermonate wie April und November sind oft ebenfalls attraktiv, mit etwas mehr Wärme und weniger Andrang. In den Sommermonaten Dezember bis März segeln Flexiblere und Ruhesuchende, die gelegentliche Schauer und ein wachsames Auge auf das Wetter in Kauf nehmen.</p>
+                    <p className="text-lg text-gray-600">Als Faustregel gelten die Monate Mai bis Oktober als ideal: konstante Passatbrise, angenehme Temperaturen und sehr gute Sicht unter Wasser. Schultermonate wie April und November sind oft ebenfalls attraktiv, mit etwas mehr Wärme und weniger Andrang. In den Sommermonaten Dezember bis März segeln Flexiblere und Ruhesuchende, die gelegentliche Schauer und ein wachsames Auge auf das Wetter in Kauf nehmen.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -456,7 +456,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Worin unterscheidet sich die Navigation in Lagunen und Atollen von europäischen Revieren?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Das Besondere sind die Saumriffe, die durch markierte Pässe mit dem Ozean verbunden sind. Innerhalb des Riffs fahren Sie in türkisfarbenem, meist ruhigem Wasser, doch müssen überall Korallenköpfe – die sogenannten Bommies – beachtet werden. Augennavigation ist hier genauso wichtig wie Plotter und Papierkarte. Fahren Sie heikle Abschnitte am besten bei hohem Sonnenstand und mit einem Ausguck am Bug, der Sandflächen von Koralle unterscheiden kann. Bei Passdurchfahrten sind Strömung und Wellenauflauf zu berücksichtigen; ideal ist das Zeitfenster um den Stillstand der Tide, wenn die Strömung schwächer ist und die Sicht in der Einfahrt besser. In den Tuamotu-Atollen kommt hinzu, dass die Passströme kraftvoll sein können; dort ist saubere Tiden- und Wetterplanung unverzichtbar.</p>
+                    <p className="text-lg text-gray-600">Das Besondere sind die Saumriffe, die durch markierte Pässe mit dem Ozean verbunden sind. Innerhalb des Riffs fahren Sie in türkisfarbenem, meist ruhigem Wasser, doch müssen überall Korallenköpfe – die sogenannten Bommies – beachtet werden. Augennavigation ist hier genauso wichtig wie Plotter und Papierkarte. Fahren Sie heikle Abschnitte am besten bei hohem Sonnenstand und mit einem Ausguck am Bug, der Sandflächen von Koralle unterscheiden kann. Bei Passdurchfahrten sind Strömung und Wellenauflauf zu berücksichtigen; ideal ist das Zeitfenster um den Stillstand der Tide, wenn die Strömung schwächer ist und die Sicht in der Einfahrt besser. In den Tuamotu-Atollen kommt hinzu, dass die Passströme kraftvoll sein können; dort ist saubere Tiden- und Wetterplanung unverzichtbar.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -465,7 +465,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Wo darf ich ankern und gibt es Moorings?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>In vielen Lagunen ankern Sie über hellem Sand, stets mit gebührendem Abstand zu Korallen- und Seegrasflächen. In beliebten Zonen rund um Resorts oder empfindliche Riffbereiche sind Mooringbojen ausgelegt, die zu nutzen sind, teils gegen Gebühr. Ankern auf Koralle ist tabu, weil Anker und Kette die Lebensräume dauerhaft schädigen. Manche Gemeinden und Parks verwalten Schutzbereiche mit klaren Regeln; die Basen geben dazu aktuelle Hinweise und Karten aus. In Bora Bora beispielsweise sind weite Teile der Lagune mooringpflichtig, während Sandflächen abseits der Riffe frei nutzbar bleiben.</p>
+                    <p className="text-lg text-gray-600">In vielen Lagunen ankern Sie über hellem Sand, stets mit gebührendem Abstand zu Korallen- und Seegrasflächen. In beliebten Zonen rund um Resorts oder empfindliche Riffbereiche sind Mooringbojen ausgelegt, die zu nutzen sind, teils gegen Gebühr. Ankern auf Koralle ist tabu, weil Anker und Kette die Lebensräume dauerhaft schädigen. Manche Gemeinden und Parks verwalten Schutzbereiche mit klaren Regeln; die Basen geben dazu aktuelle Hinweise und Karten aus. In Bora Bora beispielsweise sind weite Teile der Lagune mooringpflichtig, während Sandflächen abseits der Riffe frei nutzbar bleiben.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -474,7 +474,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Welche Umweltschutzregeln sollte ich beachten?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Französisch-Polynesien schützt seine Lagunen konsequent. Abwasser wird nicht eingeleitet, Müll gehört in die Hafenentsorgung, und Treibstoffe oder Öle sind sorgfältig zu handhaben. Beim Schnorcheln und Tauchen gilt: nichts anfassen, nichts mitnehmen, keine Fische füttern. Dingi-Ritte durch sehr flache Lagunenarme erfolgen langsam, um Seegras und Jungfische zu schonen. Viele Strände und Motu sind privat; Respekt vor Grundstücken und traditionelle Gastfreundschaft schließen einander nicht aus – fragen ist besser als einfach anlanden.</p>
+                    <p className="text-lg text-gray-600">Französisch-Polynesien schützt seine Lagunen konsequent. Abwasser wird nicht eingeleitet, Müll gehört in die Hafenentsorgung, und Treibstoffe oder Öle sind sorgfältig zu handhaben. Beim Schnorcheln und Tauchen gilt: nichts anfassen, nichts mitnehmen, keine Fische füttern. Dingi-Ritte durch sehr flache Lagunenarme erfolgen langsam, um Seegras und Jungfische zu schonen. Viele Strände und Motu sind privat; Respekt vor Grundstücken und traditionelle Gastfreundschaft schließen einander nicht aus – fragen ist besser als einfach anlanden.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -483,7 +483,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Wie funktioniert Check-in und Check-out bei einem Charter?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Die Übergabe beginnt mit einem ausführlichen Briefing zu Yacht, Ausrüstung, Funkkanälen, lokalen Regeln und Pass-Besonderheiten. Ein kurzer Probeschlag in der Lagune ist üblich, damit man Antrieb, Ankerwinde und Manöver checken kann. Beim Check-out wird im Regelfall in der Übernahmebasis abgegeben; Kraftstoff, Wassertanks und Abfallentsorgung werden wie im Vertrag vereinbart erledigt. Wer Einweg-Törns plant, etwa von Raiatea nach Bora Bora, klärt Verfügbarkeit und Rückführung rechtzeitig.</p>
+                    <p className="text-lg text-gray-600">Die Übergabe beginnt mit einem ausführlichen Briefing zu Yacht, Ausrüstung, Funkkanälen, lokalen Regeln und Pass-Besonderheiten. Ein kurzer Probeschlag in der Lagune ist üblich, damit man Antrieb, Ankerwinde und Manöver checken kann. Beim Check-out wird im Regelfall in der Übernahmebasis abgegeben; Kraftstoff, Wassertanks und Abfallentsorgung werden wie im Vertrag vereinbart erledigt. Wer Einweg-Törns plant, etwa von Raiatea nach Bora Bora, klärt Verfügbarkeit und Rückführung rechtzeitig.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -492,7 +492,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Wie steht es um Proviant, Wasser und Versorgung unterwegs?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Auf Tahiti, Raiatea, Huahine und Bora Bora gibt es gut sortierte Supermärkte, Märkte mit Obst und Gemüse sowie Bäckereien. Viele Basen bieten Vorbestellung und liefern direkt an den Steg. In den Lagunen helfen kleine Läden, Resorts oder Farmen mit Grundbedarf, doch die Auswahl ist eingeschränkt und die Preise höher. Wasser kann in Marinas oder an kommunalen Pontons gebunkert werden; auf längeren Strecken hilft die Bord-Entsalzungsanlage, die viele Katamarane serienmäßig an Bord haben. Frischer Fisch ist reichlich vorhanden, allerdings ist in Teilen der Südsee Ciguatera möglich – informieren Sie sich lokal, welche Arten und Fanggebiete unbedenklich sind.</p>
+                    <p className="text-lg text-gray-600">Auf Tahiti, Raiatea, Huahine und Bora Bora gibt es gut sortierte Supermärkte, Märkte mit Obst und Gemüse sowie Bäckereien. Viele Basen bieten Vorbestellung und liefern direkt an den Steg. In den Lagunen helfen kleine Läden, Resorts oder Farmen mit Grundbedarf, doch die Auswahl ist eingeschränkt und die Preise höher. Wasser kann in Marinas oder an kommunalen Pontons gebunkert werden; auf längeren Strecken hilft die Bord-Entsalzungsanlage, die viele Katamarane serienmäßig an Bord haben. Frischer Fisch ist reichlich vorhanden, allerdings ist in Teilen der Südsee Ciguatera möglich – informieren Sie sich lokal, welche Arten und Fanggebiete unbedenklich sind.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -501,7 +501,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Welche Distanzen sind realistisch und wie plant man einen typischen Törn?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Zwischen den Leeward-Inseln liegen meist Tagesdistanzen zwischen 20 und 35 Seemeilen. Ein klassischer Kurs verbindet Raiatea, Taha'a und Huahine mit Bora Bora, wobei lange Abschnitte innerhalb der Lagune gefahren werden. Ein gutes Tagesmuster lautet: am Vormittag die Passage oder den offenen Schlag erledigen, mittags in die Lagune einlaufen und am frühen Nachmittag den Anker über Sand fallen lassen. So bleibt Zeit für Schnorcheltrails, Motu-Spaziergänge und einen ruhigen Abend im Leeschutz. Wer weiter hinaus in die Tuamotu segelt, kalkuliert zusätzliche Tage für Wetterfenster, Pass-Timing und größere Distanzen ein.</p>
+                    <p className="text-lg text-gray-600">Zwischen den Leeward-Inseln liegen meist Tagesdistanzen zwischen 20 und 35 Seemeilen. Ein klassischer Kurs verbindet Raiatea, Taha'a und Huahine mit Bora Bora, wobei lange Abschnitte innerhalb der Lagune gefahren werden. Ein gutes Tagesmuster lautet: am Vormittag die Passage oder den offenen Schlag erledigen, mittags in die Lagune einlaufen und am frühen Nachmittag den Anker über Sand fallen lassen. So bleibt Zeit für Schnorcheltrails, Motu-Spaziergänge und einen ruhigen Abend im Leeschutz. Wer weiter hinaus in die Tuamotu segelt, kalkuliert zusätzliche Tage für Wetterfenster, Pass-Timing und größere Distanzen ein.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -510,7 +510,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Ist Yachtcharter in Französisch-Polynesien familienfreundlich?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Ja, und gerade Katamarane machen es besonders komfortabel. Der geringe Tiefgang bringt Sie nah an Strände, die große Terrasse am Heck wird zum Badeplateau, und die Doppelrümpfe liegen auch bei Brise gemütlich. Kinder lieben die einfache Abfolge aus kurzer Etappe, Mittagsschwimmen und Lagunen-Action. Schwimmwesten und Sonnenschutz sind Pflicht, rutschfeste Schuhe schützen vor Riffkratzern, und beim Schnorcheln gilt Abstand zu Rochen, Haien und Schildkröten.</p>
+                    <p className="text-lg text-gray-600">Ja, und gerade Katamarane machen es besonders komfortabel. Der geringe Tiefgang bringt Sie nah an Strände, die große Terrasse am Heck wird zum Badeplateau, und die Doppelrümpfe liegen auch bei Brise gemütlich. Kinder lieben die einfache Abfolge aus kurzer Etappe, Mittagsschwimmen und Lagunen-Action. Schwimmwesten und Sonnenschutz sind Pflicht, rutschfeste Schuhe schützen vor Riffkratzern, und beim Schnorcheln gilt Abstand zu Rochen, Haien und Schildkröten.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -519,7 +519,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Gibt es besondere Sicherheitsaspekte, auf die ich achten sollte?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Das Revier ist sicher, sofern man die eigenen Grenzen kennt und die lokalen Besonderheiten ernst nimmt. Passfahrten nur bei ausreichend Sicht, Strömungen vorher prüfen, in der Lagune nie mit Speed unterwegs sein und die Kette so stecken, dass sie Sand berührt, nicht Koralle. Ein zuverlässiges Dingi mit Außenborder ist essenziell, ebenso eine starke Taschenlampe für nächtliche Wege, auch wenn Nachtfahrten selbst zu vermeiden sind. Bei Schauerböen oder Frontdurchgang bleiben Sie innerhalb der Lagune, wo die Welle klein bleibt.</p>
+                    <p className="text-lg text-gray-600">Das Revier ist sicher, sofern man die eigenen Grenzen kennt und die lokalen Besonderheiten ernst nimmt. Passfahrten nur bei ausreichend Sicht, Strömungen vorher prüfen, in der Lagune nie mit Speed unterwegs sein und die Kette so stecken, dass sie Sand berührt, nicht Koralle. Ein zuverlässiges Dingi mit Außenborder ist essenziell, ebenso eine starke Taschenlampe für nächtliche Wege, auch wenn Nachtfahrten selbst zu vermeiden sind. Bei Schauerböen oder Frontdurchgang bleiben Sie innerhalb der Lagune, wo die Welle klein bleibt.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -528,7 +528,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Wie bezahle ich vor Ort und wie bleibe ich verbunden?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Währung ist der CFP-Franc (XPF). In den größeren Orten gibt es Kartenakzeptanz und Geldautomaten, auf kleineren Inseln empfiehlt sich Bargeld. Für Kommunikation funktionieren lokale SIM-Karten gut; Marinas, Resorts und manche Moorea- oder Bora-Bora-Motu bieten zusätzlich WLAN. UKW-Funk bleibt das wichtigste Bordmittel; Hören auf Kanal 16 ist üblich.</p>
+                    <p className="text-lg text-gray-600">Währung ist der CFP-Franc (XPF). In den größeren Orten gibt es Kartenakzeptanz und Geldautomaten, auf kleineren Inseln empfiehlt sich Bargeld. Für Kommunikation funktionieren lokale SIM-Karten gut; Marinas, Resorts und manche Moorea- oder Bora-Bora-Motu bieten zusätzlich WLAN. UKW-Funk bleibt das wichtigste Bordmittel; Hören auf Kanal 16 ist üblich.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -537,7 +537,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Kann ich Tauchen, Kiten oder mit Water-Toys fahren?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Schnorcheln ist überall exzellent, Tauchen organisieren Sie am besten mit lizenzierten Centers in Tahiti, Moorea, Rangiroa oder Fakarava. Kite- und Wing-Spots existieren in flachen Lagunenbereichen, doch Sicherheitsabstände, Startzonen und Windfenster müssen respektiert werden. SUP und Kajak sind ideale Begleiter und meist im Katamaran-Charter enthalten.</p>
+                    <p className="text-lg text-gray-600">Schnorcheln ist überall exzellent, Tauchen organisieren Sie am besten mit lizenzierten Centers in Tahiti, Moorea, Rangiroa oder Fakarava. Kite- und Wing-Spots existieren in flachen Lagunenbereichen, doch Sicherheitsabstände, Startzonen und Windfenster müssen respektiert werden. SUP und Kajak sind ideale Begleiter und meist im Katamaran-Charter enthalten.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -546,7 +546,7 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Warum sollte ich meinen Törn frühzeitig buchen?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Die Zahl der Charteryachten ist begrenzt, besonders bei Katamaranen mit vier oder mehr Kabinen. Hinzu kommt die hohe Nachfrage in der Trockenzeit. Wer früh bucht, sichert sich die Wunsch-Yacht, spart bei Flügen nach Papeete und kann Liege- oder Mooring-Optionen an beliebten Spots entspannt reservieren.</p>
+                    <p className="text-lg text-gray-600">Die Zahl der Charteryachten ist begrenzt, besonders bei Katamaranen mit vier oder mehr Kabinen. Hinzu kommt die hohe Nachfrage in der Trockenzeit. Wer früh bucht, sichert sich die Wunsch-Yacht, spart bei Flügen nach Papeete und kann Liege- oder Mooring-Optionen an beliebten Spots entspannt reservieren.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -555,8 +555,8 @@ const FrenchPolynesia = () => {
                 <AccordionTrigger>Was ist der größte „Geheimtipp" für ein entspanntes Inselhüpfen?</AccordionTrigger>
                 <AccordionContent>
                   <div className="space-y-2">
-                    <p>Planen Sie Ihre heiklen Manöver ins beste Licht: Pass-Einfahrten und Bommie-Zonen bei Mittagssonne, Lagunen-Transfers mit einem Ausguck am Bug, längere offenen Schläge am Vormittag. Nutzen Sie die Stärken des Katamarans – geringe Tiefe, breite Plattform, viel Schatten – und lassen Sie den Nachmittag der Lagune, dem Wasser und dem Himmel. Genau dann entfaltet Französisch-Polynesien seinen Zauber, und genau dafür kommt man hierher.</p>
-                    <p>Diese FAQ soll Ihnen die wichtigsten Fragen zu Yachtcharter in Französisch-Polynesien beantworten. Wenn Sie Details zu Routen, Permit-Situationen, Mooring-Regeln oder Verfügbarkeiten wünschen, beraten wir Sie persönlich, stellen aktuelle Karten und Hinweise der Basen zusammen und entwickeln einen Törnplan, der zu Ihrer Crew, Ihrem Zeitfenster und Ihrem Wunsch nach Südsee-Magie passt.</p>
+                     <p className="text-lg text-gray-600">Planen Sie Ihre heiklen Manöver ins beste Licht: Pass-Einfahrten und Bommie-Zonen bei Mittagssonne, Lagunen-Transfers mit einem Ausguck am Bug, längere offenen Schläge am Vormittag. Nutzen Sie die Stärken des Katamarans – geringe Tiefe, breite Plattform, viel Schatten – und lassen Sie den Nachmittag der Lagune, dem Wasser und dem Himmel. Genau dann entfaltet Französisch-Polynesien seinen Zauber, und genau dafür kommt man hierher.</p>
+                     <p className="text-lg text-gray-600">Diese FAQ soll Ihnen die wichtigsten Fragen zu Yachtcharter in Französisch-Polynesien beantworten. Wenn Sie Details zu Routen, Permit-Situationen, Mooring-Regeln oder Verfügbarkeiten wünschen, beraten wir Sie persönlich, stellen aktuelle Karten und Hinweise der Basen zusammen und entwickeln einen Törnplan, der zu Ihrer Crew, Ihrem Zeitfenster und Ihrem Wunsch nach Südsee-Magie passt.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
