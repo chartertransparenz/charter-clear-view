@@ -73,7 +73,7 @@ export default function AllTerritories() {
       name: 'Fidschi',
       flag: '🇫🇯',
       route: null,
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/18dfe02d-d123-40c6-a24a-00292d317a9c.png',
       hasPage: false
     },
     {
