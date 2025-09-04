@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import FAQ from "@/components/FAQ";
+import TopDestinations from "@/components/TopDestinations";
 
 
 const FAQPage = () => {
@@ -16,7 +17,7 @@ const FAQPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <FAQ />
-      
+      <TopDestinations />
     </div>
   );
 };

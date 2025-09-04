@@ -6,6 +6,7 @@ import { ArrowLeft, MapPin, Anchor, Plane, Fish, Waves } from "lucide-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
+import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -303,6 +304,8 @@ const Rangiroa = () => {
           </div>
         </div>
       </div>
+
+      <TopDestinations />
     </div>
   );
 };
