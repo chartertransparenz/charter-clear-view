@@ -85,7 +85,7 @@ const Fiji = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/src/assets/fiji-sailing.jpg"
+          src="/lovable-uploads/3f01dd77-8adc-4669-b2eb-b13a2a41f6da.png"
           alt="Fiji"
           className="w-full h-full object-cover"
         />
