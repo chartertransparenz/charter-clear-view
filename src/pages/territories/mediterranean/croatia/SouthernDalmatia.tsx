@@ -578,18 +578,6 @@ export default function SouthernDalmatia() {
           </div>
         </div>
 
-        {/* Highlights */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Warum Süddalmatien?</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {highlights.map((highlight, index) => <Card key={index} className="text-center hover:shadow-md transition-shadow">
-                <CardContent className="p-6">
-                  <Star className="w-6 h-6 mx-auto mb-3 text-primary" />
-                  <p className="text-sm">{highlight}</p>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
 
         {/* CTA */}
         <div className="bg-primary/5 rounded-lg p-8 text-center">
