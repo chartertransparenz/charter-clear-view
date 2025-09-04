@@ -130,9 +130,11 @@ const Territories = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
             Unsere Reviere
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Von heimischen Gewässern bis zu exotischen Destinationen - 
-            entdecke die schönsten Segelreviere Europas
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Yachtcharter weltweit - Von der Adria und der Ägäis bis Französisch Polynesien. 
+            Yachtcharter, der man vertraut: 30 Jahre Markterfahrung, geprüfte Flotten und 
+            fundiertes Expertenwissen. So wird das Boot mieten in Europas schönsten Revieren 
+            und weltweit zum sicheren Erlebnis. Für Törns, die bleiben.
           </p>
         </div>
 
