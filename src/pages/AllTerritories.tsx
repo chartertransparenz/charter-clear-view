@@ -31,7 +31,7 @@ export default function AllTerritories() {
       name: 'Barbados',
       flag: '🇧🇧',
       route: null,
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/8f1756a4-f683-4f30-8afe-3e3f7efc8d82.png',
       hasPage: false
     },
     {
