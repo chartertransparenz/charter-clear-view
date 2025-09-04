@@ -158,7 +158,7 @@ All colors MUST be HSL.
     border: 1px solid hsl(0 0% 85%);
     border-radius: 0.5rem;
     box-shadow: var(--shadow-elegant);
-    min-width: 400px;
+    min-width: 440px;
     max-width: none;
     z-index: 1000;
     animation: reviere-flyout-enter 200ms ease-out;

@@ -52,7 +52,7 @@ const DesktopDropdown = ({ isOpen, onClose, onNavigate, menuItems }: DesktopDrop
     >
       <div className="flex min-h-[300px]">
         {/* Left Column - Main Categories */}
-        <div className="reviere-main-column flex-1 min-w-[200px]">
+        <div className="reviere-main-column w-[240px]">
           {menuItems.map((item) => (
             <button
               key={item.href}
