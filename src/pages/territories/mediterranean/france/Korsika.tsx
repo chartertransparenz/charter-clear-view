@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
+import TerritoryMap from "@/components/TerritoryMap";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
@@ -131,6 +132,16 @@ const Korsika = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Karte */}
+        <div className="mb-12">
+          <TerritoryMap 
+            region="Korsika & Nordsardinien"
+            center={{ lat: 41.6, lng: 9.1 }}
+            zoom={8}
+            maptype="satellite"
+          />
         </div>
 
         {/* Description */}
