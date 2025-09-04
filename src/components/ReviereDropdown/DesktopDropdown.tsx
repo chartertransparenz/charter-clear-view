@@ -33,12 +33,9 @@ const DesktopDropdown = ({ isOpen, onClose, onNavigate, menuItems }: DesktopDrop
   if (!isOpen) return null;
 
   const handleItemClick = (item: MenuItem) => {
-    if (item.children && item.children.length > 0) {
-      setActiveItem(activeItem?.label === item.label ? null : item);
-    } else {
-      onNavigate(item.href);
-      onClose();
-    }
+    // Always navigate to the main page, regardless of children
+    onNavigate(item.href);
+    onClose();
   };
 
   const handleSubItemClick = (href: string) => {
