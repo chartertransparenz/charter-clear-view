@@ -143,12 +143,7 @@ const About = () => {
             {/* Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
               {stats.map((stat, index) => <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50">
-                  <CardContent className="pt-6 pb-6">
-                    <div className="text-3xl font-bold text-ocean-blue mb-2">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
-                  </CardContent>
+                  
                 </Card>)}
             </div>
 
