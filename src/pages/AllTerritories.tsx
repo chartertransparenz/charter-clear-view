@@ -80,15 +80,15 @@ export default function AllTerritories() {
       name: 'Frankreich',
       flag: '🇫🇷',
       route: '/reviere/mittelmeer/frankreich',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.png',
       hasPage: true
     },
     {
       name: 'Französisch-Polynesien',
       flag: '🇵🇫',
-      route: null,
-      image: '/placeholder.svg',
-      hasPage: false
+      route: '/reviere/suedpazifik/charter-standorte/raiatea',
+      image: '/lovable-uploads/7f8674c8-bde0-4646-a599-780ed4172d9f.png',
+      hasPage: true
     },
     {
       name: 'Grenada',
@@ -157,7 +157,7 @@ export default function AllTerritories() {
       name: 'Mexiko',
       flag: '🇲🇽',
       route: '/reviere/amerika-bahamas/mexiko',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/2e57e252-c2db-41f7-956a-4e0a8859e082.png',
       hasPage: true
     },
     {
