@@ -109,6 +109,7 @@ import Sweden from "./pages/territories/north-europe/skandinavien/Sweden";
 
 // Pacific territories
 import Pacific from "./pages/territories/Pacific";
+import FrenchPolynesia from "./pages/territories/pacific/FrenchPolynesia";
 
 // America territories
 import Americas from "./pages/territories/Americas";
@@ -300,6 +301,7 @@ function App() {
 
             {/* Pacific routes */}
             <Route path="/reviere/suedpazifik" element={<Pacific />} />
+            <Route path="/reviere/suedpazifik/franzoesisch-polynesien" element={<FrenchPolynesia />} />
             <Route path="/reviere/suedpazifik/australien" element={<Australia />} />
 
              {/* America & Bahamas routes */}
