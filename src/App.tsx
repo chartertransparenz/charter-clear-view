@@ -271,7 +271,7 @@ function App() {
             <Route path="/reviere/suedpazifik/charter-standorte/rangiroa" element={<Rangiroa />} />
         <Route path="/reviere/suedpazifik/australien/whitsundays" element={<WhitsundayIslands />} />
         <Route path="/reviere/suedpazifik/charter-standorte/noumea" element={<Noumea />} />
-        <Route path="/reviere/suedpazifik/charter-standorte/fidschi" element={<Fiji />} />
+        <Route path="/reviere/suedpazifik/fidschi" element={<Fiji />} />
         <Route path="/reviere/suedpazifik/charter-standorte/neuseeland" element={<NewZealand />} />
 
             {/* Indian Ocean routes */}
