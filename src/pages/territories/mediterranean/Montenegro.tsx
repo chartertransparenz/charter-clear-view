@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import TopDestinations from "@/components/TopDestinations";
 import mediterranean from "@/assets/mediterranean.jpg";
 const Montenegro = () => {
   useEffect(() => {
@@ -297,6 +298,8 @@ const Montenegro = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>;
 };
 export default Montenegro;
