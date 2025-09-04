@@ -363,9 +363,25 @@ const FrenchPolynesia = () => {
               Mit einem Yachtcharter in Französisch-Polynesien entscheiden Sie sich für entschleunigtes Reisen: morgens der erste Sprung in warmes Wasser, mittags eine Lagunenfahrt im Farbverlauf von Türkis bis Kobaltblau, abends Ukulele-Klänge, Vanilleduft und Sterne, so dicht wie auf einer gemalten Leinwand. Dieses Revier berührt – und bleibt.
             </p>
 
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mb-8">
               Sie möchten Französisch-Polynesien per Yachtcharter entdecken? Sagen Sie uns Crewgröße, Reisezeit und Yachtwunsch – Segelyacht oder lieber Katamaran. Wir prüfen Flugverbindungen nach Tahiti, reservieren Marina-Liegeplätze oder Moorings, organisieren Transfers, Proviantlieferung sowie – auf Wunsch – Skipper und Crew. Dazu erhalten Sie unseren maßgeschneiderten Törnplan: sichere Passfenster, Lagunenrouten mit Sand-Ankerplätzen, Tipps zu Schnorchel-Spots, Motu-Picknicks und kulturellen Highlights.
             </p>
+
+            {/* CTA Box */}
+            <div className="bg-blue-50 p-8 rounded-lg text-center mt-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Bereit für Französisch-Polynesien?
+              </h3>
+              <p className="text-lg text-gray-600 mb-6">
+                Entdecken Sie das Herz des Südpazifiks mit seinen türkisblauen Lagunen, 
+                smaragdgrünen Vulkaninseln und authentischer polynesischer Kultur.
+              </p>
+              <CharterRequestForm>
+                <Button className="bg-blue-600 text-white hover:bg-blue-700" size="lg">
+                  Französisch-Polynesien Charter anfragen
+                </Button>
+              </CharterRequestForm>
+            </div>
           </div>
         </div>
 
