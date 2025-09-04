@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Mexico = () => {
   useEffect(() => {
@@ -408,6 +409,8 @@ const Mexico = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>;
 };
 export default Mexico;

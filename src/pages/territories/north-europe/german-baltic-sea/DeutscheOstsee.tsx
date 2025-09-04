@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import FloatingCTA from "@/components/FloatingCTA";
 
 import balticSea from "/lovable-uploads/35272578-21b4-41cd-a017-0019ba277b27.png";
@@ -190,6 +191,8 @@ const DeutscheOstsee = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>;
 };
 export default DeutscheOstsee;

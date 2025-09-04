@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
 import atlantic from "@/assets/atlantic.jpg";
@@ -397,6 +398,8 @@ const CanaryIslands = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>;
 };
 export default CanaryIslands;

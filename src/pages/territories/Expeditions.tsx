@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -188,6 +189,8 @@ const Expeditions = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>
   );
 };
