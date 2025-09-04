@@ -59,7 +59,7 @@ export default function AllTerritories() {
       name: 'Dänemark',
       flag: '🇩🇰',
       route: '/reviere/nord-europa/skandinavien/daenemark',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/4131ef87-3698-4e4b-a475-a01aa8ce35dd.png',
       hasPage: true
     },
     {
