@@ -38,7 +38,7 @@ export default function AllTerritories() {
       name: 'Belgien',
       flag: '🇧🇪',
       route: '/reviere/nord-europa/nordsee/belgien',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/4f459677-1e16-410a-b08a-9adabf290630.png',
       hasPage: true
     },
     {
