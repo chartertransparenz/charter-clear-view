@@ -122,7 +122,7 @@ const Korsika = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="hidden md:grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {quickFacts.map((fact, index) => (
             <Card key={index} className="shadow-lg">
               <CardContent className="p-6 text-center">
@@ -364,7 +364,7 @@ const Korsika = () => {
         </div>
 
         {/* Important Harbors & Ports */}
-        <div className="mb-12">
+        <div className="hidden md:block mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Ankerplätze</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {cities.map((city, index) => (
@@ -381,7 +381,7 @@ const Korsika = () => {
         </div>
 
         {/* Highlights */}
-        <div className="mb-12">
+        <div className="hidden md:block mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Korsika?</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {highlights.map((highlight, index) => (
