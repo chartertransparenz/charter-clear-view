@@ -72,7 +72,7 @@ const About = () => {
                 Über uns
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-                30 Jahre Charter Transparenz
+                Bald 30 Jahre Charter Transparenz
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Seit 1997 stehen wir für Transparenz, Qualität und Vertrauen im Yacht-Charter. 
