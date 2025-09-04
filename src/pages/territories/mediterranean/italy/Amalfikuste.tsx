@@ -136,7 +136,7 @@ const Amalfikuste = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {quickFacts.map((fact, index) => (
             <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
@@ -309,7 +309,7 @@ const Amalfikuste = () => {
         </div>
 
         {/* Highlights Section */}
-        <div className="mb-12">
+        <div className="hidden md:block mb-12">
           <h2 className="text-3xl font-bold text-center mb-8">Highlights der Amalfiküste</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
