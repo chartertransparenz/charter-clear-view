@@ -295,6 +295,13 @@ const Amalfikuste = () => {
                   <p className="text-lg leading-relaxed text-center">
                     Teilen Sie uns Crewgröße, Reisedaten und Wunschyacht mit – wir prüfen Live-Verfügbarkeiten, beraten persönlich zu Route, Liegeplätzen und Proviantierung und senden Ihnen umgehend Ihr maßgeschneidertes Angebot.
                   </p>
+                  <div className="text-center mt-6">
+                    <CharterRequestForm>
+                      <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                        Jetzt Angebot einholen
+                      </Button>
+                    </CharterRequestForm>
+                  </div>
                 </div>
               </div>
             </CardContent>
