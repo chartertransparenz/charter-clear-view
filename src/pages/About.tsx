@@ -158,16 +158,6 @@ const About = () => {
                 </Card>)}
             </div>
 
-            {/* Nautical Treasure Map Timeline */}
-            <div className="mb-16 relative">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-ocean-dark mb-4">Unsere Schatz-Route</h2>
-                <p className="text-lg text-muted-foreground">30 Jahre Charter-Abenteuer auf den Weltmeeren</p>
-              </div>
-              
-              {/* Treasure Map Container */}
-              
-            </div>
 
             {/* Values */}
             <div>
