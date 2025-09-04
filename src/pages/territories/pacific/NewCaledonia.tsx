@@ -46,7 +46,7 @@ const NewCaledonia = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={pacific}
+          src="/lovable-uploads/a8975703-6204-452f-9c7f-8b727b7d953c.png"
           alt="Neukaledonien"
           className="w-full h-full object-cover"
         />
