@@ -25,7 +25,7 @@ const Pacific = () => {
     areas: ["Viti Levu", "Vanua Levu"]
   }, {
     name: "Neukaledonien",
-    link: "/reviere/suedpazifik/charter-standorte/noumea",
+    link: "/reviere/suedpazifik/neukaledonien",
     areas: ["Nouméa", "Ile des Pins"]
   }, {
     name: "Neuseeland",

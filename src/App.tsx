@@ -110,6 +110,7 @@ import Sweden from "./pages/territories/north-europe/skandinavien/Sweden";
 // Pacific territories
 import Pacific from "./pages/territories/Pacific";
 import FrenchPolynesia from "./pages/territories/pacific/FrenchPolynesia";
+import NewCaledonia from "./pages/territories/pacific/NewCaledonia";
 
 // America territories
 import Americas from "./pages/territories/Americas";
@@ -264,6 +265,10 @@ function App() {
             <Route path="/reviere/karibik/charter-standorte/antigua" element={<Antigua />} />
             <Route path="/reviere/karibik/charter-standorte/martinique" element={<Martinique />} />
             <Route path="/reviere/karibik/charter-standorte/havanna" element={<Havanna />} />
+
+            {/* Pacific routes */}
+            <Route path="/reviere/suedpazifik" element={<Pacific />} />
+            <Route path="/reviere/suedpazifik/neukaledonien" element={<NewCaledonia />} />
 
             {/* Pacific Charter Location routes */}
             <Route path="/reviere/suedpazifik/charter-standorte/raiatea" element={<Raiatea />} />
