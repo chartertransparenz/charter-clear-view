@@ -403,18 +403,20 @@ const KasKalkan = () => {
 
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-primary to-secondary text-white py-16 px-8 rounded-lg text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Bereit für Ihr Kaş & Kalkan-Abenteuer?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Erleben Sie die authentische Lykische Küste mit kristallklarem Wasser, versunkenen Städten und geschützten Ankerbuchten. Wir organisieren Ihren unvergesslichen Charter.
-          </p>
-          <CharterRequestForm>
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-              Jetzt Kaş & Kalkan Charter anfragen
-            </Button>
-          </CharterRequestForm>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 shadow-lg p-8 rounded-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Bereit für Kas & Kalkan?
+            </h3>
+            <p className="text-lg mb-6 text-gray-700">
+              Entdecken Sie die türkische Lykische Küste mit kristallklarem Wasser und malerischen Ankerbuchten.
+            </p>
+            <CharterRequestForm>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-3">
+                Kas & Kalkan Charter anfragen
+              </Button>
+            </CharterRequestForm>
+          </div>
         </div>
       </div>
     </div>
