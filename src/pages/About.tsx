@@ -4,7 +4,6 @@ import { Award, Anchor, Compass, Ship, Star, Trophy, Globe } from "lucide-react"
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import maritimeImage from "@/assets/maritime-experience.jpg";
-import aboutUsImage from "/images/about-us-ocean-themed.png";
 const About = () => {
   const milestones = [{
     year: "1997",
@@ -86,7 +85,7 @@ const About = () => {
             <div className="mb-16 flex justify-center">
               <div className="w-full max-w-4xl">
                 <img 
-                  src={aboutUsImage} 
+                  src="/lovable-uploads/48ae290b-f7f7-4f0a-82a5-2771aa15fb3a.png" 
                   alt="Wir über uns - Seite im Aufbau" 
                   className="w-full h-auto rounded-xl shadow-ocean hover:shadow-elegant transition-all duration-300"
                 />
