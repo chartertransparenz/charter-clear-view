@@ -28,7 +28,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-ocean-dark text-white">
+    <footer className="bg-gradient-to-b from-ocean-light/20 to-ocean-dark text-white">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
