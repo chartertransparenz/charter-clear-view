@@ -8,6 +8,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import TopDestinations from "@/components/TopDestinations";
 const Marmaris = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -257,6 +258,8 @@ const Marmaris = () => {
             </Button>
           </CharterRequestForm>
         </div>
+
+        <TopDestinations />
       </div>
     </div>;
 };

@@ -10,6 +10,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TerritoryMap from '@/components/TerritoryMap';
+import TopDestinations from '@/components/TopDestinations';
 export default function SouthernDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -593,6 +594,8 @@ export default function SouthernDalmatia() {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>;
 }

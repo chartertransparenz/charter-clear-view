@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
+import TopDestinations from '@/components/TopDestinations';
 export default function CentralDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -664,6 +665,8 @@ export default function CentralDalmatia() {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>;
 }

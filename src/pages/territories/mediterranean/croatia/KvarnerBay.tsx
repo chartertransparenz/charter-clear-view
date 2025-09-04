@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
+import TopDestinations from '@/components/TopDestinations';
 
 export default function KvarnerBay() {
   useEffect(() => {
@@ -410,6 +411,8 @@ export default function KvarnerBay() {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>
   );

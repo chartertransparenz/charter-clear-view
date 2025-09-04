@@ -16,6 +16,7 @@ import {
   BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
+import TopDestinations from '@/components/TopDestinations';
 
 export default function Istria() {
   useEffect(() => {
@@ -424,6 +425,8 @@ export default function Istria() {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>
   );
