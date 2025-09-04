@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import TopDestinations from '@/components/TopDestinations';
 
 
 export default function Impressum() {
@@ -85,6 +86,7 @@ export default function Impressum() {
         </div>
       </div>
       
+      <TopDestinations />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import destinationGreece from "@/assets/destination-greece.jpg";
 
 const Greece = () => {
@@ -199,6 +200,8 @@ const Greece = () => {
           </div>
         </div>
       </div>
+      
+      <TopDestinations />
     </div>
   );
 };
