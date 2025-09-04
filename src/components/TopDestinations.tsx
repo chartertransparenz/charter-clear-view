@@ -261,7 +261,7 @@ const TopDestinations = () => {
                   href="/reviere/karibik/us-virgin-islands"
                   className="block text-base leading-6 text-foreground hover:text-primary transition-colors hover:underline"
                 >
-                  US Virgin Islands (Alternative Route)
+                  US Virgin Islands
                 </a>
               </li>
               <li>
