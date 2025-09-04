@@ -72,9 +72,9 @@ export default function AllTerritories() {
     {
       name: 'Fidschi',
       flag: '🇫🇯',
-      route: null,
+      route: '/reviere/suedpazifik/fidschi',
       image: '/lovable-uploads/18dfe02d-d123-40c6-a24a-00292d317a9c.png',
-      hasPage: false
+      hasPage: true
     },
     {
       name: 'Frankreich',
