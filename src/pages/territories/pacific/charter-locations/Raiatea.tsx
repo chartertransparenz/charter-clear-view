@@ -158,21 +158,82 @@ const Raiatea = () => {
         </div>
 
         {/* Marinas */}
-        
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Marinas & Charter-Zentren</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {marinas.map((marina, index) => (
+              <Card key={index} className="shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Anchor className="w-5 h-5 text-blue-600" />
+                    <h3 className="text-xl font-semibold text-gray-800">{marina.name}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">{marina.description}</p>
+                  <div className="space-y-2">
+                    {marina.amenities.map((amenity, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                        <span className="text-gray-600">{amenity}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
 
         {/* Distanzen */}
-        
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Distanzen zu anderen Inseln</h2>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {distances.map((route, index) => (
+                  <div key={index} className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
+                    <div className="flex items-center gap-3">
+                      <Waves className="w-5 h-5 text-blue-600" />
+                      <span className="font-semibold text-gray-800">{route.destination}</span>
+                    </div>
+                    <div className="text-right">
+                      <div className="font-bold text-blue-600">{route.distance}</div>
+                      <div className="text-sm text-gray-600">{route.time}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Sehenswürdigkeiten */}
         <div className="mb-12">
-          
-          
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Sehenswürdigkeiten</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {attractions.map((attraction, index) => (
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-3">{attraction.name}</h3>
+                  <p className="text-gray-600">{attraction.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Highlights */}
         <div className="mb-12">
-          
-          
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {highlights.map((highlight, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <p className="font-medium text-gray-800">{highlight}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA */}
