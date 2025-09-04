@@ -140,6 +140,13 @@ export default function AllTerritories() {
       hasPage: true
     },
     {
+      name: 'Malta',
+      flag: '🇲🇹',
+      route: '/reviere/mittelmeer/malta',
+      image: '/lovable-uploads/c6b03fa0-a839-4e70-9cf8-2a7323fa52ce.png',
+      hasPage: true
+    },
+    {
       name: 'Maldiven',
       flag: '🇲🇻',
       route: '/reviere/indischer-ozean/malediven',
