@@ -104,6 +104,17 @@ const About = () => {
               </p>
             </div>
 
+            {/* Maritime Bild */}
+            <div className="mb-16 flex justify-center">
+              <div className="w-full max-w-4xl">
+                <img 
+                  src="/lovable-uploads/6b13b174-3eab-402e-90de-69f81e1ac06e.png" 
+                  alt="Charter Transparenz - Maritime Erfahrung" 
+                  className="w-full h-auto rounded-xl shadow-ocean hover:shadow-elegant transition-all duration-300"
+                />
+              </div>
+            </div>
+
             {/* Team Section */}
             <div className="mb-16">
               <h2 className="text-2xl font-bold text-center mb-12 text-ocean-dark">Unser Team</h2>
