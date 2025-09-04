@@ -9,6 +9,7 @@ import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
 import destinationGreece from "@/assets/destination-greece.jpg";
+import TopDestinations from "@/components/TopDestinations";
 const Sporades = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -383,6 +384,8 @@ const Sporades = () => {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>;
 };

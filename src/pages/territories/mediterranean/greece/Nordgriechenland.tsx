@@ -8,6 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import TopDestinations from "@/components/TopDestinations";
 const Nordgriechenland = () => {
   useEffect(() => {
     document.title = "Yachtcharter Nordgriechenland | Chalkidiki & Thessaloniki Segeln";
@@ -308,6 +309,7 @@ const Nordgriechenland = () => {
           
         </div>
 
+        <TopDestinations />
       </div>
     </div>;
 };

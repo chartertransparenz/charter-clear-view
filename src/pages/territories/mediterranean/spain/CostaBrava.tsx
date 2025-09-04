@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 
 const CostaBrava = () => {
   useEffect(() => {
@@ -229,6 +230,8 @@ const CostaBrava = () => {
             </Button>
           </CharterRequestForm>
         </div>
+
+        <TopDestinations />
       </div>
     </div>
   );

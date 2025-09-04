@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 
 const GoecekFethiye = () => {
   useEffect(() => {
@@ -405,6 +406,8 @@ const GoecekFethiye = () => {
             </Button>
           </CharterRequestForm>
         </div>
+
+        <TopDestinations />
       </div>
     </div>
   );

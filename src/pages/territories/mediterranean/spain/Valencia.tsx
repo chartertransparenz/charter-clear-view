@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 const Valencia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -304,6 +305,8 @@ const Valencia = () => {
             </Button>
           </CharterRequestForm>
         </div>
+
+        <TopDestinations />
       </div>
     </div>;
 };

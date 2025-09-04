@@ -8,6 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
+import TopDestinations from "@/components/TopDestinations";
 
 const AthenSaronischerGolf = () => {
   useEffect(() => {
@@ -363,6 +364,7 @@ const AthenSaronischerGolf = () => {
           </div>
         </div>
 
+        <TopDestinations />
       </div>
     </div>
   );
