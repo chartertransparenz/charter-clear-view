@@ -102,7 +102,7 @@ const FrenchPolynesia = () => {
         </div>
 
         {/* Territory Map */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-6xl mx-auto mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Französisch-Polynesien Archipel</h2>
           <TerritoryMap
             region="Französisch-Polynesien"
