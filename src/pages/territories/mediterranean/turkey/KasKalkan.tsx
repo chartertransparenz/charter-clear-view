@@ -37,16 +37,6 @@ const KasKalkan = () => {
     }
   ];
 
-  const highlights = [
-    "Kas - authentisches Fischerdorf mit antikem Theater am Wasser",
-    "Kalkan - malerisches Bergdorf mit osmanischen Häusern",
-    "Kekova - versunkene Stadt mit glasklarem Wasser",
-    "Meis (Kastellorizo) - griechische Insel in Sichtweite",
-    "Patara Beach - einer der längsten Sandstrände der Türkei",
-    "Lykische Felsengräber und antike Ruinenstätten",
-    "Kristallklare Gewässer ideal zum Schnorcheln und Tauchen",
-    "Ruhige Ankerplätze abseits der Massen"
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
@@ -411,19 +401,6 @@ const KasKalkan = () => {
           </div>
         </div>
 
-        {/* Highlights */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold mb-8 text-center">Highlights in Kas & Kalkan</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="h-full">
-                <CardContent className="p-6">
-                  <p className="text-center">{highlight}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-primary to-secondary text-white py-16 px-8 rounded-lg text-center">
