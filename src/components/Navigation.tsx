@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import CharterRequestForm from "./CharterRequestForm";
+import ReviereDropdown from "./ReviereDropdown";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,6 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { href: "#reviere", label: "Reviere" },
     { href: "#leistungen", label: "Services" },
     { href: "#flotte", label: "Yachten" },
     { href: "#partner", label: "Partner" },
@@ -69,6 +69,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <ReviereDropdown onNavigate={handleNavClick} />
             {navItems.map((item) => (
               <button
                 key={item.href}
@@ -106,6 +107,9 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
+              <div className="px-4">
+                <ReviereDropdown isMobile={true} onNavigate={handleNavClick} />
+              </div>
               {navItems.map((item) => (
                 <button
                   key={item.href}
