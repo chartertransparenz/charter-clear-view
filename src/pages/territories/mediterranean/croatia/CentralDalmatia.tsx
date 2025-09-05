@@ -602,6 +602,11 @@ export default function CentralDalmatia() {
                 Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten 
                 Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
               </p>
+              <CharterRequestForm>
+                <Button className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  Jetzt unverbindliches Angebot einholen
+                </Button>
+              </CharterRequestForm>
             </div>
           </div>
         </div>
