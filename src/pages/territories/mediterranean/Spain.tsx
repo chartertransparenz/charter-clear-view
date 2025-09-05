@@ -370,6 +370,21 @@ const Spain = () => {
             <p className="text-lg leading-relaxed text-gray-700">
               Spanien vereint als Charterrevier alles, was das Seglerherz begehrt: Von der mediterranen Eleganz der Balearen über die wilde Schönheit der Costa Brava bis hin zum ganzjährigen Atlantik-Abenteuer auf den Kanaren. Die erstklassige maritime Infrastruktur, kurze Anreise aus dem deutschsprachigen Raum und die perfekte Balance zwischen entspanntem Segeln und kulturellem Erlebnis machen Spanien zur idealen Wahl für Ihren nächsten Yachtcharter. Ob romantischer Pärchenurlaub, Familienabenteuer oder Segeln mit Freunden – in spanischen Gewässern finden Sie garantiert Ihr persönliches Segelparadies.
             </p>
+
+            {/* CTA within main box */}
+            <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-6 rounded-lg text-center mt-8">
+              <h3 className="text-xl font-bold mb-3 text-gray-800">
+                Lust die Spanische Küste zu erkunden?
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+              </p>
+              <CharterRequestForm>
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium">
+                  Jetzt unverbindliches Angebot einholen
+                </Button>
+              </CharterRequestForm>
+            </div>
           </div>
         </div>
 
