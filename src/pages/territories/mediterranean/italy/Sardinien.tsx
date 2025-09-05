@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Sardinien = () => {
   useEffect(() => {
@@ -303,6 +304,8 @@ const Sardinien = () => {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>;
 };
