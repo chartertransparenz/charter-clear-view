@@ -285,13 +285,13 @@ const Valencia = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Jetzt Charter-Anfrage stellen</h2>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+        <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 rounded-xl p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">Jetzt Charter-Anfrage stellen</h2>
+          <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
             Entdecken Sie Valencia mit einem Charterboot. Unser Team hilft Ihnen bei der Planung Ihres perfekten Segeltörns.
           </p>
           <CharterRequestForm>
-            <Button size="lg" className="text-lg px-8 py-3">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
               Unverbindliche Anfrage stellen
             </Button>
           </CharterRequestForm>
