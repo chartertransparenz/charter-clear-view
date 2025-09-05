@@ -136,7 +136,7 @@ export default function Istria() {
           <TerritoryMap
             region="Istrien Yachtcharter"
             center={{ lat: 45.1, lng: 13.9 }}
-            zoom={10}
+            zoom={7}
             markers={[
               {
                 lat: 44.8664,
