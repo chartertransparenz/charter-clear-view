@@ -532,16 +532,16 @@ const Turkey = () => {
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">
               Bereit für eine Blue Cruise?
             </h3>
-            <p className="mb-6 text-blue-100">
+            <p className="text-gray-600 mb-6 text-lg">
               Entdecken Sie die traumhaften Buchten der türkischen Ägäis und 
               erleben Sie die legendäre Gastfreundschaft bei einer unvergesslichen Blue Cruise.
             </p>
             <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
                 Türkei Charter anfragen
               </Button>
             </CharterRequestForm>
