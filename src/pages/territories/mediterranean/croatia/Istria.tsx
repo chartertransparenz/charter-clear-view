@@ -354,9 +354,24 @@ export default function Istria() {
 
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Bereit für die kroatische Toskana auf dem Wasser?</h2>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Fordern Sie jetzt Ihr unverbindliches Angebot für einen Bareboat-Charter oder eine Yacht mit Skipper an. Unser erfahrenes Team ist auf Istrien spezialisiert und berät Sie gerne bei der Planung Ihres Traumtörns.
             </p>
+
+            {/* CTA within main box */}
+            <div className="bg-primary/5 rounded-lg p-6 text-center mt-8">
+              <h3 className="text-2xl font-bold mb-4">Bereit für Ihr Istrien-Abenteuer?</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Entdecken Sie die venezianische Küste Kroatiens mit perfekter Marina-Infrastruktur
+              </p>
+              <div className="flex justify-center">
+                <CharterRequestForm>
+                  <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                    Charter anfragen
+                  </Button>
+                </CharterRequestForm>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -411,20 +426,6 @@ export default function Istria() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="bg-primary/5 rounded-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Bereit für Ihr Istrien-Abenteuer?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Entdecken Sie die venezianische Küste Kroatiens mit perfekter Marina-Infrastruktur
-          </p>
-          <div className="flex justify-center">
-            <CharterRequestForm>
-              <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
-                Charter anfragen
-              </Button>
-            </CharterRequestForm>
-          </div>
-        </div>
 
         <TopDestinations />
       </div>
