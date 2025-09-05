@@ -310,20 +310,6 @@ const Toskana = () => {
           </Card>
         </div>
 
-        {/* Important Harbors & Ports */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Ziele</h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            {cities.map((city, index) => <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-blue-600" />
-                    <h3 className="text-xl font-semibold text-gray-800">{city}</h3>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
 
         {/* Highlights */}
         <div className="mb-12">
