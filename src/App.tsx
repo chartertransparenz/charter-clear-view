@@ -13,11 +13,16 @@ import Impressum from '@/pages/Impressum';
 import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
 
-// Territory pages - lazy loaded only for critical ones
+// Territory pages - lazy loaded
 const Mediterranean = lazy(() => import("./pages/territories/Mediterranean"));
 const Croatia = lazy(() => import("./pages/territories/mediterranean/Croatia"));
 const Greece = lazy(() => import("./pages/territories/mediterranean/Greece"));
 const Italy = lazy(() => import("./pages/territories/mediterranean/Italy"));
+const Caribbean = lazy(() => import("./pages/territories/Caribbean"));
+const Atlantic = lazy(() => import("./pages/territories/Atlantic"));
+const Americas = lazy(() => import("./pages/territories/Americas"));
+const BritishVirginIslands = lazy(() => import("./pages/territories/caribbean/BritishVirginIslands"));
+const USVirginIslands = lazy(() => import("./pages/territories/caribbean/USVirginIslands"));
 const AllTerritories = lazy(() => import("./pages/AllTerritories"));
 
 // Loading fallback component
@@ -49,11 +54,22 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
               
-              {/* Critical Mediterranean routes only */}
+              {/* Mediterranean routes */}
               <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
               <Route path="/reviere/mittelmeer/kroatien" element={<Croatia />} />
               <Route path="/reviere/mittelmeer/griechenland" element={<Greece />} />
               <Route path="/reviere/mittelmeer/italien" element={<Italy />} />
+              
+              {/* Caribbean routes */}
+              <Route path="/reviere/karibik" element={<Caribbean />} />
+              <Route path="/reviere/karibik/british-virgin-islands" element={<BritishVirginIslands />} />
+              <Route path="/reviere/karibik/us-virgin-islands" element={<USVirginIslands />} />
+              
+              {/* Atlantic routes */}
+              <Route path="/reviere/atlantik" element={<Atlantic />} />
+              
+              {/* Americas routes */}
+              <Route path="/reviere/amerika" element={<Americas />} />
               
               {/* Catch all other routes and redirect to home or show 404 */}
               <Route path="*" element={<NotFound />} />
