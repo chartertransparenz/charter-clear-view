@@ -36,7 +36,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <StructuredData
+      <StructuredData 
         organization={{
           name: "CharterTransparenz",
           description: "Yachtcharter Preisvergleich mit 30 Jahren Erfahrung",

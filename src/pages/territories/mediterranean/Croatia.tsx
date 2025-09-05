@@ -59,9 +59,7 @@ const Croatia = () => {
     document.head.appendChild(script);
 
     return () => {
-      if (script && script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
+      document.head.removeChild(script);
     };
   }, []);
   const quickFacts = [{

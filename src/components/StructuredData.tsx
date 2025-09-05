@@ -29,11 +29,7 @@ export const StructuredData = ({ organization, breadcrumbs, faqData }: Structure
   useEffect(() => {
     // Remove existing structured data scripts
     const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-    existingScripts.forEach(script => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    });
+    existingScripts.forEach(script => script.remove());
 
     const scripts: any[] = [];
 
@@ -96,22 +92,17 @@ export const StructuredData = ({ organization, breadcrumbs, faqData }: Structure
     }
 
     // Add all scripts to document head
-    const addedScripts: HTMLScriptElement[] = [];
     scripts.forEach(schema => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.textContent = JSON.stringify(schema);
       document.head.appendChild(script);
-      addedScripts.push(script);
     });
 
     // Cleanup function
     return () => {
-      addedScripts.forEach(script => {
-        if (script.parentNode) {
-          script.parentNode.removeChild(script);
-        }
-      });
+      const scriptsToRemove = document.querySelectorAll('script[type="application/ld+json"]');
+      scriptsToRemove.forEach(script => script.remove());
     };
   }, [organization, breadcrumbs, faqData]);
 
