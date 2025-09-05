@@ -158,7 +158,7 @@ export default function AllTerritories() {
       name: 'Martinique',
       flag: '🇲🇶',
       route: null,
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/537ebe02-9e44-4b64-8e00-1257a50464d1.png',
       hasPage: false
     },
     {
