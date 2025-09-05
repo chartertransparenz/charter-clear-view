@@ -343,9 +343,11 @@ export default function KvarnerBay() {
               mit erfahrenem Skipper suchen – die Kvarner Bucht wird Sie mit ihrer Schönheit und ihren Kontrasten 
               begeistern.</p>
               <div className="flex justify-center">
-                <button className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
-                  Jetzt Angebot für dieses Revier einholen
-                </button>
+                <CharterRequestForm>
+                  <button className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                    Jetzt Angebot für dieses Revier einholen
+                  </button>
+                </CharterRequestForm>
               </div>
             </div>
           </div>
