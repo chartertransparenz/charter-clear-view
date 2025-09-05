@@ -360,6 +360,24 @@ const IonicIslands = () => {
           </div>
         </div>
 
+        {/* CTA - moved here */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              Bereit für die Ionischen Inseln?
+            </h3>
+            <p className="text-gray-600 mb-6 text-lg">
+              Entdecken Sie die grünen Perlen Westgriechenlands mit sanften Winden 
+              und familienfreundlichen Segelbedingungen.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
+                Ionische Inseln Charter anfragen
+              </Button>
+            </CharterRequestForm>
+          </div>
+        </div>
+
         {/* Cities */}
         <div className="hidden md:block mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Inseln & Häfen</h2>
@@ -384,23 +402,6 @@ const IonicIslands = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Bereit für die Ionischen Inseln?
-            </h3>
-            <p className="mb-6 text-blue-100">
-              Entdecken Sie die grünen Perlen Westgriechenlands mit sanften Winden 
-              und familienfreundlichen Segelbedingungen.
-            </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Ionische Inseln Charter anfragen
-              </Button>
-            </CharterRequestForm>
-          </div>
-        </div>
       </div>
       
       <TopDestinations />
