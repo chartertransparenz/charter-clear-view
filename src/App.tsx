@@ -9,7 +9,18 @@ import Footer from "@/components/Footer";
 // Core pages only - test basic functionality
 import Index from "./pages/Index";
 import About from '@/pages/About';
+import Impressum from '@/pages/Impressum';
+import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
+
+// Territory pages - add back essential ones
+import { lazy } from "react";
+const Mediterranean = lazy(() => import("./pages/territories/Mediterranean"));
+const Croatia = lazy(() => import("./pages/territories/mediterranean/Croatia"));
+const Greece = lazy(() => import("./pages/territories/mediterranean/Greece"));
+const Italy = lazy(() => import("./pages/territories/mediterranean/Italy"));
+const Caribbean = lazy(() => import("./pages/territories/Caribbean"));
+const AllTerritories = lazy(() => import("./pages/AllTerritories"));
 
 // Loading fallback component
 const PageLoader = () => (
@@ -31,6 +42,17 @@ function App() {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/ueber-uns" element={<About />} />
+              <Route path="/impressum" element={<Impressum />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
+              
+              {/* Territory routes */}
+              <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
+              <Route path="/reviere/mittelmeer/kroatien" element={<Croatia />} />
+              <Route path="/reviere/mittelmeer/griechenland" element={<Greece />} />
+              <Route path="/reviere/mittelmeer/italien" element={<Italy />} />
+              <Route path="/reviere/karibik" element={<Caribbean />} />
+              
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
