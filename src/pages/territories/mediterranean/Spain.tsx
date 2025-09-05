@@ -150,7 +150,7 @@ const Spain = () => {
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 bg-white border border-gray-200 rounded-lg shadow-lg p-8">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4">Yachtcharter Spanien: Balearen & Mittelmeerküste</h2>
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Spanien: <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> & Mittelmeerküste</h2>
             <p className="text-xl text-muted-foreground">
               Ihr Segeltörn im westlichen Mittelmeer
             </p>
@@ -159,11 +159,11 @@ const Spain = () => {
           <div className="prose prose-lg max-w-none">
             <h3 id="warum-spanien-klassiker" className="text-2xl font-bold mt-8 mb-4">Warum Spanien ein Segelklassiker ist</h3>
             <p className="text-lg leading-relaxed mb-6">
-              Spanien vereint wie kein anderes Land die perfekte Balance zwischen mediterranem Lifestyle, erstklassiger nautischer Infrastruktur und endloser Vielfalt. Die Balearen bilden das Herzstück des spanischen Chartererlebnisses – mit Mallorca als zentralem Dreh- und Angelpunkt für unvergessliche Segeltörns. Hier finden Sie alles, was das Seglerherz begehrt: beständige Winde, kristallklare Buchten, weltklasse Marinas und das unvergleichliche spanische Lebensgefühl.
+              Spanien vereint wie kein anderes Land die perfekte Balance zwischen mediterranem Lifestyle, erstklassiger nautischer Infrastruktur und endloser Vielfalt. Die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> bilden das Herzstück des spanischen Chartererlebnisses – mit Mallorca als zentralem Dreh- und Angelpunkt für unvergessliche Segeltörns. Hier finden Sie alles, was das Seglerherz begehrt: beständige Winde, kristallklare Buchten, weltklasse Marinas und das unvergleichliche spanische Lebensgefühl.
             </p>
             
             <p className="text-lg leading-relaxed mb-6">
-              Von Palma de Mallorca aus erschließt sich Ihnen ein Archipel aus vier Hauptinseln – Mallorca, Ibiza, Menorca und Formentera – jede mit eigenem Charakter. Kurze Distanzen zwischen den Inseln, perfekte Ankerbuchten und eine Infrastruktur, die keine Wünsche offen lässt, machen die Balearen zum idealen Revier für Einsteiger wie Profis. Das ganzjährig milde Klima ermöglicht Segelsaison von März bis November.
+              Von Palma de Mallorca aus erschließt sich Ihnen ein Archipel aus vier Hauptinseln – Mallorca, Ibiza, Menorca und Formentera – jede mit eigenem Charakter. Kurze Distanzen zwischen den Inseln, perfekte Ankerbuchten und eine Infrastruktur, die keine Wünsche offen lässt, machen die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> zum idealen Revier für Einsteiger wie Profis. Das ganzjährig milde Klima ermöglicht Segelsaison von März bis November.
             </p>
 
             <p className="text-lg leading-relaxed mb-8">
@@ -183,7 +183,7 @@ const Spain = () => {
 
             <div id="marinas-ausgangshaefen" className="border border-gray-300 p-6 rounded-lg mb-8">
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
-              <p className="text-black mb-3">Die Balearen verfügen über erstklassige maritime Infrastruktur:</p>
+              <p className="text-black mb-3">Die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> verfügen über erstklassige maritime Infrastruktur:</p>
               <ul className="list-disc pl-6 space-y-1 text-black">
                 <li><strong>Marina Palma:</strong> Modernste Charter-Homebase mit breiten Boxen und Full-Service</li>
                 <li><strong>Real Club Náutico Palma:</strong> Traditionsreiche Marina im Herzen der Altstadt</li>
@@ -192,7 +192,7 @@ const Spain = () => {
               </ul>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Die Vielfalt der Balearen</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Die Vielfalt der <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link></h3>
             
             <h4 className="text-xl font-semibold mt-6 mb-4">Mallorca – Buchten für jeden Geschmack</h4>
             <p className="mb-4">
@@ -246,7 +246,7 @@ const Spain = () => {
             </p>
 
             <div className="border border-gray-300 p-4 rounded-lg mb-6">
-              <p className="text-black"><strong>Nautische Hinweise:</strong> Die Balearen bieten verlässliche thermische Winde (3-4 Bft) und kurze Distanzen zwischen den Inseln. Ankern mit Buganker in Sand- oder Sandbuchten ist Standard.</p>
+              <p className="text-black"><strong>Nautische Hinweise:</strong> Die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> bieten verlässliche thermische Winde (3-4 Bft) und kurze Distanzen zwischen den Inseln. Ankern mit Buganker in Sand- oder Sandbuchten ist Standard.</p>
             </div>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Ihr 7-Tage-Traumtörn ab Marina Palma</h3>
@@ -291,12 +291,12 @@ const Spain = () => {
 
             <h3 id="wetter-windbedingungen" className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen: Perfekte Segelbedingungen</h3>
             <p className="mb-4">
-              Die Balearen bieten typisch mediterranes Klima mit verlässlichen thermischen Winden und ganzjährig milden Temperaturen – ideal für entspanntes Segeln in allen Erfahrungsstufen.
+              Die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> bieten typisch mediterranes Klima mit verlässlichen thermischen Winden und ganzjährig milden Temperaturen – ideal für entspanntes Segeln in allen Erfahrungsstufen.
             </p>
             
             <div className="border border-gray-300 p-6 rounded-lg mb-6">
               <h4 className="font-semibold mb-3 text-black">Typische Winde</h4>
-              <p className="text-black mb-3">Die lokalen Windsysteme der Balearen:</p>
+              <p className="text-black mb-3">Die lokalen Windsysteme der <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link>:</p>
               <ul className="space-y-2 text-black">
                 <li><strong>Thermische Winde:</strong> Verlässliche Land- und Seebrisen (3-4 Bft), 
                 ideal für entspanntes Segeln mit der ganzen Familie.</li>
@@ -322,7 +322,7 @@ const Spain = () => {
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Weitere spanische Segelreviere</h3>
             
-            <h4 className="text-xl font-semibold mt-6 mb-4">Costa Brava – Wilde Küste im Nordosten</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/mittelmeer/spanien/costa-brava" className="text-blue-600 hover:text-blue-800 underline">Costa Brava</Link> – Wilde Küste im Nordosten</h4>
             <p className="mb-6">
               Die "wilde Küste" von Blanes bis zur französischen Grenze bietet felsige Steilküsten, versteckte Buchten und die Nähe zu Barcelona. Ein kompakteres, aber nicht weniger reizvolles Charterrevier.
             </p>
@@ -335,13 +335,13 @@ const Spain = () => {
                 className="w-full rounded-lg shadow-lg mb-4"
               />
               <p className="text-sm text-gray-600 italic text-center">
-                Bunte Häuser säumen eine ruhige Meeresbucht mit Strand in Sa Tuna, Costa Brava, Spanien
+                Bunte Häuser säumen eine ruhige Meeresbucht mit Strand in Sa Tuna, <Link to="/reviere/mittelmeer/spanien/costa-brava" className="text-blue-600 hover:text-blue-800 underline">Costa Brava</Link>, Spanien
               </p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">Kanarische Inseln – Segelabenteuer im ewigen Frühling</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/atlantik/kanaren" className="text-blue-600 hover:text-blue-800 underline">Kanarische Inseln</Link> – Segelabenteuer im ewigen Frühling</h4>
             <p className="mb-6">
-              Die Kanaren im Atlantik bieten ganzjährig mildes Klima und sportlicheres Segeln mit verlässlichen Passatwinden. Teneriffa und Gran Canaria sind die Hauptausgangspunkte für Atlantik-Charter.
+              Die <Link to="/reviere/atlantik/kanaren" className="text-blue-600 hover:text-blue-800 underline">Kanaren</Link> im Atlantik bieten ganzjährig mildes Klima und sportlicheres Segeln mit verlässlichen Passatwinden. Teneriffa und Gran Canaria sind die Hauptausgangspunkte für Atlantik-Charter.
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -368,7 +368,7 @@ const Spain = () => {
 
             <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Fazit</h3>
             <p className="text-lg leading-relaxed text-gray-700">
-              Spanien vereint als Charterrevier alles, was das Seglerherz begehrt: Von der mediterranen Eleganz der Balearen über die wilde Schönheit der Costa Brava bis hin zum ganzjährigen Atlantik-Abenteuer auf den Kanaren. Die erstklassige maritime Infrastruktur, kurze Anreise aus dem deutschsprachigen Raum und die perfekte Balance zwischen entspanntem Segeln und kulturellem Erlebnis machen Spanien zur idealen Wahl für Ihren nächsten Yachtcharter. Ob romantischer Pärchenurlaub, Familienabenteuer oder Segeln mit Freunden – in spanischen Gewässern finden Sie garantiert Ihr persönliches Segelparadies.
+              Spanien vereint als Charterrevier alles, was das Seglerherz begehrt: Von der mediterranen Eleganz der <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> über die wilde Schönheit der <Link to="/reviere/mittelmeer/spanien/costa-brava" className="text-blue-600 hover:text-blue-800 underline">Costa Brava</Link> bis hin zum ganzjährigen Atlantik-Abenteuer auf den <Link to="/reviere/atlantik/kanaren" className="text-blue-600 hover:text-blue-800 underline">Kanaren</Link>. Die erstklassige maritime Infrastruktur, kurze Anreise aus dem deutschsprachigen Raum und die perfekte Balance zwischen entspanntem Segeln und kulturellem Erlebnis machen Spanien zur idealen Wahl für Ihren nächsten Yachtcharter. Ob romantischer Pärchenurlaub, Familienabenteuer oder Segeln mit Freunden – in spanischen Gewässern finden Sie garantiert Ihr persönliches Segelparadies.
             </p>
 
             {/* CTA within main box */}
