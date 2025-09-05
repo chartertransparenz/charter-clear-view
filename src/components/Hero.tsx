@@ -8,8 +8,6 @@ import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39
 import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
 const Hero = () => {
-  console.log("Hero component is rendering");
-  
 const slides = [{
     image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
     title: "Luxuriöse Yachten",
