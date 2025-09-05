@@ -37,7 +37,8 @@ const Dodecanese = () => {
   }];
   const cities = ["Rhodos", "Kos", "Patmos", "Leros", "Kalymnos", "Symi", "Tilos", "Karpathos"];
   const highlights = ["UNESCO-Weltkulturerbe Rhodos", "Klöster und Pilgerorte", "Authentische griechische Kultur", "Längere Segeletappen", "Kristallklares Wasser", "Weniger Tourismus als Kykladen", "Abwechslungsreiche Landschaften"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
