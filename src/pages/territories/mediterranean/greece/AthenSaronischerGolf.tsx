@@ -310,6 +310,24 @@ const AthenSaronischerGolf = () => {
           </div>
         </div>
 
+        {/* CTA - moved here */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              Bereit für den Saronischen Golf?
+            </h3>
+            <p className="text-gray-600 mb-6 text-lg">
+              Entdecken Sie die historischen Inseln Griechenlands mit geschützten Gewässern 
+              und authentischer griechischer Kultur.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
+                Saronischer Golf Charter anfragen
+              </Button>
+            </CharterRequestForm>
+          </div>
+        </div>
+
         {/* Important Islands & Harbors */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Inseln & Häfen</h2>
@@ -343,24 +361,6 @@ const AthenSaronischerGolf = () => {
                   <p className="font-medium text-gray-800">{highlight}</p>
                 </div>
               </div>)}
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Bereit für den Saronischen Golf?
-            </h3>
-            <p className="mb-6 text-blue-100">
-              Entdecken Sie die historischen Inseln Griechenlands mit geschützten Gewässern 
-              und authentischer griechischer Kultur.
-            </p>
-            <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Saronischer Golf Charter anfragen
-              </Button>
-            </CharterRequestForm>
           </div>
         </div>
 
