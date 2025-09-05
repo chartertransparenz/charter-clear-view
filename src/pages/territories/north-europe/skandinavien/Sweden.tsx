@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
-import balticSea from "@/assets/baltic-sea.jpg";
+import swedenArchipelago from "@/assets/sweden-archipelago.png";
 
 const Sweden = () => {
   useEffect(() => {
@@ -50,7 +50,7 @@ const Sweden = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src={balticSea}
+          src={swedenArchipelago}
           alt="Schweden"
           className="w-full h-full object-cover"
         />
