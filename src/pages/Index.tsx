@@ -14,6 +14,8 @@ import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
+  console.log("Index component is rendering");
+  
   useMetaTags({
     title: "Yachtcharter Preisvergleich | 30 Jahre Erfahrung",
     description: "Yachtcharter Preisvergleich ✓ 30+ Jahre Erfahrung ✓ Kroatien, Griechenland, Italien ab 890€/Woche. Jetzt Angebot anfragen!",
@@ -35,8 +37,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <StructuredData 
+    <div className="min-h-screen" style={{ backgroundColor: 'red', visibility: 'visible', zIndex: 1 }}>
+      <StructuredData
         organization={{
           name: "CharterTransparenz",
           description: "Yachtcharter Preisvergleich mit 30 Jahren Erfahrung",
