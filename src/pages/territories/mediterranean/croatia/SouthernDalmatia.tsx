@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
@@ -12,6 +13,8 @@ import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TerritoryMap from '@/components/TerritoryMap';
 import TopDestinations from '@/components/TopDestinations';
 export default function SouthernDalmatia() {
+  const isMobile = useIsMobile();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -112,15 +115,17 @@ export default function SouthernDalmatia() {
 
       <div className="container mx-auto px-4 py-16">
         {/* Quick Facts */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
-          {quickFacts.map((fact, index) => <Card key={index} className="text-center">
-              <CardContent className="p-4">
-                <fact.icon className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-sm text-muted-foreground mb-1">{fact.label}</p>
-                <p className="font-semibold">{fact.value}</p>
-              </CardContent>
-            </Card>)}
-        </div>
+        {!isMobile && (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
+            {quickFacts.map((fact, index) => <Card key={index} className="text-center">
+                <CardContent className="p-4">
+                  <fact.icon className="w-8 h-8 mx-auto mb-2 text-primary" />
+                  <p className="text-sm text-muted-foreground mb-1">{fact.label}</p>
+                  <p className="font-semibold">{fact.value}</p>
+                </CardContent>
+              </Card>)}
+          </div>
+        )}
 
         {/* Map */}
         <div className="mb-16">
@@ -564,36 +569,38 @@ export default function SouthernDalmatia() {
         </div>
 
         {/* Cities */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelbasen</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {cities.map((city, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-xl">{city.name}</CardTitle>
-                      <CardDescription className="mt-2">{city.description}</CardDescription>
+        {!isMobile && (
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelbasen</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {cities.map((city, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <CardTitle className="text-xl">{city.name}</CardTitle>
+                        <CardDescription className="mt-2">{city.description}</CardDescription>
+                      </div>
+                      <Badge variant="secondary">{city.marinas} Marina{city.marinas > 1 ? 's' : ''}</Badge>
                     </div>
-                    <Badge variant="secondary">{city.marinas} Marina{city.marinas > 1 ? 's' : ''}</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold flex items-center">
-                      <Star className="w-4 h-4 mr-2 text-primary" />
-                      Highlights
-                    </h4>
-                    <ul className="space-y-1">
-                      {city.highlights.map((highlight, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-center">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
-                          {highlight}
-                        </li>)}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>)}
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold flex items-center">
+                        <Star className="w-4 h-4 mr-2 text-primary" />
+                        Highlights
+                      </h4>
+                      <ul className="space-y-1">
+                        {city.highlights.map((highlight, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-center">
+                            <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
+                            {highlight}
+                          </li>)}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>)}
+            </div>
           </div>
-        </div>
+        )}
 
 
 
