@@ -581,15 +581,23 @@ export default function SouthernDalmatia() {
 
 
         {/* CTA */}
-        <div className="bg-primary/5 rounded-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Bereit für Süddalmatien?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Entdecken Sie Dubrovnik und die südlichsten Perlen Kroatiens
-          </p>
-          <div className="flex justify-center">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Sind Sie bereit, die Segel zu setzen und Kroatien zu entdecken?</h2>
+        </div>
+
+        {/* Ocean-Breeze CTA Box */}
+        <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 text-center mb-12">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4 text-primary">
+              Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an!
+            </h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten 
+              Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+            </p>
             <CharterRequestForm>
-              <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
-                Charter anfragen
+              <Button className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                Jetzt unverbindliches Angebot einholen
               </Button>
             </CharterRequestForm>
           </div>
