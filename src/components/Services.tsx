@@ -50,10 +50,12 @@ const Services = () => {
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
           <div className="relative">
-            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Traumhafte Bucht mit türkisblauem Wasser" className="w-full h-96 md:h-[28rem] object-cover" />
+            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Luxuriöse Segelyacht in türkisfarbener Bucht mit kristallklarem Wasser und weißem Sandstrand" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
+            Yachtcharter Services – Von Bareboat bis Luxus Charter
+          </h2>
               <p className="text-lg text-white/90">Beratung nach Maß – Angebote, die passen.</p>
             </div>
           </div>
@@ -69,7 +71,7 @@ const Services = () => {
           {services.map((service, index) => <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden">
               {/* Service Image */}
               <div className="relative h-48 overflow-hidden">
-                <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                <img src={service.image} alt={`${service.title} - Premium Yachtcharter Service`} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/50 to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <div className="w-12 h-12 bg-gradient-ocean rounded-xl flex items-center justify-center">

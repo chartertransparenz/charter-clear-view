@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Mittelmeer Destinationen -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  
+  <!-- Griechenland Destinationen -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/saronic-golf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/sporaden</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  
+  <!-- Italien Destinationen -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/elba-toskana</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  
+  <!-- Spanien Destinationen -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/spanien/kanaren</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  
+  <!-- Karibik & weitere Destinationen -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/antigua</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/martinique</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/guadeloupe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2024-01-15</lastmod>
+  </url>
+</urlset>
