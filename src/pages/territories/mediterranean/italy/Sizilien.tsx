@@ -8,6 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
+import TopDestinations from "@/components/TopDestinations";
 const Sizilien = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -358,6 +359,7 @@ const Sizilien = () => {
           </div>
         </div>
 
+        <TopDestinations />
       </div>
     </div>;
 };
