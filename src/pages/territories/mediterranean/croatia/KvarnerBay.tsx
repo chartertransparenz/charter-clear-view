@@ -127,7 +127,7 @@ export default function KvarnerBay() {
 
       <div className="container mx-auto px-4 py-16">
         {/* Quick Facts */}
-        <div className="hidden md:block grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
+        <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
           {quickFacts.map((fact, index) => (
             <Card key={index} className="text-center">
               <CardContent className="p-4">
