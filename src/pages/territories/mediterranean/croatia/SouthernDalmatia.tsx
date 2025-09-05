@@ -580,11 +580,6 @@ export default function SouthernDalmatia() {
         </div>
 
 
-        {/* CTA */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Sind Sie bereit, die Segel zu setzen und Kroatien zu entdecken?</h2>
-        </div>
-
         {/* Ocean-Breeze CTA Box */}
         <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 text-center mb-12">
           <div className="max-w-4xl mx-auto">
