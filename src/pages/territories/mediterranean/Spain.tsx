@@ -57,7 +57,7 @@ const Spain = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
@@ -148,7 +148,7 @@ const Spain = () => {
         </div>
 
         {/* Detailed Territory Description */}
-        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+        <div className="max-w-4xl mx-auto mb-16 bg-white border border-gray-200 rounded-lg shadow-lg p-8">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold mb-4">Yachtcharter Spanien: Balearen & Mittelmeerküste</h2>
             <p className="text-xl text-muted-foreground">
@@ -365,6 +365,11 @@ const Spain = () => {
                 </div>
               </div>
             </div>
+
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Fazit</h3>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Spanien vereint als Charterrevier alles, was das Seglerherz begehrt: Von der mediterranen Eleganz der Balearen über die wilde Schönheit der Costa Brava bis hin zum ganzjährigen Atlantik-Abenteuer auf den Kanaren. Die erstklassige maritime Infrastruktur, kurze Anreise aus dem deutschsprachigen Raum und die perfekte Balance zwischen entspanntem Segeln und kulturellem Erlebnis machen Spanien zur idealen Wahl für Ihren nächsten Yachtcharter. Ob romantischer Pärchenurlaub, Familienabenteuer oder Segeln mit Freunden – in spanischen Gewässern finden Sie garantiert Ihr persönliches Segelparadies.
+            </p>
           </div>
         </div>
 
@@ -480,17 +485,16 @@ const Spain = () => {
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Bereit für Spanien?
+          <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              Lust die Spanische Küste zu erkunden?
             </h3>
-            <p className="mb-6 text-blue-100">
-              Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Spanien an! 
-              Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt.
+            <p className="text-gray-600 mb-6 text-lg">
+              Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
             </p>
             <CharterRequestForm>
-              <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-                Spanien Charter anfragen
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
+                Jetzt unverbindliches Angebot einholen
               </Button>
             </CharterRequestForm>
           </div>
