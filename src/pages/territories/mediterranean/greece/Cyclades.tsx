@@ -9,33 +9,11 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const Cyclades = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
-    description: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
-    ogTitle: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
-    ogDescription: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
-    structuredData: {
-      ...generateStructuredData.service("Kykladen", "Yachtcharter auf den Kykladen - Segeln zwischen den berühmten griechischen Inseln Mykonos, Santorini und Paros"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
-        { name: "Kykladen", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen" }
-      ])
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -60,12 +38,12 @@ const Cyclades = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png" alt="Yachtcharter Kykladen - Segelboote vor der berühmten weißen Architektur von Santorini und Mykonos" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png" alt="Kykladen Griechenland" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Kykladen</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Kykladen</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Kykladen</h1>
             <p className="text-xl max-w-2xl">
               Das Herz der Ägäis
             </p>

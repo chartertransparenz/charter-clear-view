@@ -8,32 +8,11 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
 const Croatia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
-    description: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
-    ogTitle: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
-    ogDescription: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
-    structuredData: {
-      ...generateStructuredData.service("Kroatien", "Yachtcharter in Kroatien - Segeln zwischen über 1.200 Inseln der Adria"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Kroatien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien" }
-      ])
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -83,12 +62,12 @@ const Croatia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src={destinationCroatia} alt="Yachtcharter Kroatien - Segelboote in türkisblauer Adria mit kroatischen Inseln im Hintergrund" className="w-full h-full object-cover" />
+        <img src={destinationCroatia} alt="Kroatien Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇭🇷 Kroatien</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Kroatien</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Kroatien</h1>
             <p className="text-xl max-w-2xl">
               Die Perle der Adria
             </p>
