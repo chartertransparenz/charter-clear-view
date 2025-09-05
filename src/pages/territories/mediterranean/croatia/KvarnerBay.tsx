@@ -127,7 +127,7 @@ export default function KvarnerBay() {
 
       <div className="container mx-auto px-4 py-16">
         {/* Quick Facts */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
+        <div className="hidden md:block grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
           {quickFacts.map((fact, index) => (
             <Card key={index} className="text-center">
               <CardContent className="p-4">
@@ -354,7 +354,7 @@ export default function KvarnerBay() {
         </div>
 
         {/* Cities */}
-        <div className="mb-16">
+        <div className="hidden md:block mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelbasen</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cities.map((city, index) => (
@@ -390,7 +390,7 @@ export default function KvarnerBay() {
         </div>
 
         {/* Highlights */}
-        <div className="mb-16">
+        <div className="hidden md:block mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Warum Kvarner Bucht?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {highlights.map((highlight, index) => (
