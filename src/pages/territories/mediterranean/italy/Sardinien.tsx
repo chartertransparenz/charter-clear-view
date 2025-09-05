@@ -237,12 +237,27 @@ const Sardinien = () => {
               </p>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Fazit: Sardinien – Ein Segelrevier der Superlative</h3>
-              <p className="text-base text-gray-600 mb-6">
-                Ein Yachtcharter auf Sardinien bietet eine Vielfalt, die ihresgleichen sucht. Es ist die Freiheit, zwischen einem glamourösen Abend in Porto Cervo und einer stillen Nacht unter dem Sternenhimmel in einer einsamen Bucht zu wählen. Es ist die Kombination aus anspruchsvollem Segeln und entspanntem Badeurlaub. Es ist die Begegnung mit einer der spektakulärsten Küstenlandschaften Europas.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+               <p className="text-base text-gray-600 mb-6">
+                 Ein Yachtcharter auf Sardinien bietet eine Vielfalt, die ihresgleichen sucht. Es ist die Freiheit, zwischen einem glamourösen Abend in Porto Cervo und einer stillen Nacht unter dem Sternenhimmel in einer einsamen Bucht zu wählen. Es ist die Kombination aus anspruchsvollem Segeln und entspanntem Badeurlaub. Es ist die Begegnung mit einer der spektakulärsten Küstenlandschaften Europas.
+               </p>
+
+               {/* Ocean-Breeze CTA */}
+               <div className="mt-8 bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+                 <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                   Lust Sardinien zu erkunden?
+                 </h3>
+                 <p className="text-gray-600 mb-6 text-lg">
+                   Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+                 </p>
+                 <CharterRequestForm>
+                   <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
+                     Jetzt unverbindliches Angebot einholen
+                   </Button>
+                 </CharterRequestForm>
+               </div>
+             </CardContent>
+           </Card>
+         </div>
 
         {/* Costa Smeralda Link */}
         <div className="max-w-4xl mx-auto mb-12">
