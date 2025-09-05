@@ -1,12 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Absolutely minimal test
+// Test Index page import
+import Index from "./pages/Index";
+
 function App() {
   return (
-    <div>
-      <h1>Basic Test Page</h1>
-      <p>If you see this, the basic app is working.</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="*" element={<div>Page not found</div>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
