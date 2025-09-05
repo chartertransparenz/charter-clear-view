@@ -339,9 +339,14 @@ export default function KvarnerBay() {
               aktivem Segeln, kultureller Entdeckung und dem Eintauchen in eine einzigartige Natur. Die 
               beeindruckenden Küstenlandschaften, die Vielfalt der Inseln und das unvergleichliche mediterrane 
               Flair machen diese Region zu einem unvergesslichen Ziel.</p>
-              <p className="text-lg">Ob Sie eine moderne Segelyacht, einen geräumigen Katamaran oder eine Charter 
+              <p className="text-lg mb-6">Ob Sie eine moderne Segelyacht, einen geräumigen Katamaran oder eine Charter 
               mit erfahrenem Skipper suchen – die Kvarner Bucht wird Sie mit ihrer Schönheit und ihren Kontrasten 
               begeistern.</p>
+              <div className="flex justify-center">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                  Jetzt Angebot für dieses Revier einholen
+                </button>
+              </div>
             </div>
           </div>
         </div>
