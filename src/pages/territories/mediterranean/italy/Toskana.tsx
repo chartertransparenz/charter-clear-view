@@ -289,6 +289,21 @@ const Toskana = () => {
                 <p>
                   Kontaktieren Sie uns noch heute für ein persönliches und unverbindliches Angebot. Unser Team aus erfahrenen Revierkennern hilft Ihnen dabei, die perfekte Yacht für Ihren Traumurlaub zu finden.
                 </p>
+
+                {/* Ocean-Breeze CTA */}
+                <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center mt-8">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                    Lust Elba & das Toskanische Archipel zu erkunden?
+                  </h3>
+                  <p className="text-gray-600 mb-6 text-lg">
+                    Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+                  </p>
+                  <CharterRequestForm>
+                    <Button size="lg" className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3">
+                      Jetzt unverbindliches Angebot einholen
+                    </Button>
+                  </CharterRequestForm>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -324,19 +339,6 @@ const Toskana = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Bereit für toskanisches Flair auf dem Wasser?
-            </h3>
-            <p className="mb-6 text-blue-100">
-              Kombinieren Sie die berühmte toskanische Kultur mit entspanntem Segeln 
-              an einer der schönsten Küsten Italiens.
-            </p>
-            
-          </div>
-        </div>
       </div>
     </div>;
 };
