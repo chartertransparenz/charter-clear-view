@@ -95,7 +95,7 @@ export default function AllTerritories() {
       name: 'Grenada',
       flag: '🇬🇩',
       route: null,
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/d51125a4-326c-494d-8666-f3dda8018dd3.png',
       hasPage: false
     },
     {
