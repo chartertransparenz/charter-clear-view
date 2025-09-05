@@ -151,7 +151,7 @@ const Spain = () => {
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 bg-white border border-gray-200 rounded-lg shadow-lg p-8">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4">Yachtcharter Spanien: <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> & Mittelmeerküste</h2>
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Spanien: Balearen & Mittelmeerküste</h2>
             <p className="text-xl text-muted-foreground">
               Ihr Segeltörn im westlichen Mittelmeer
             </p>
