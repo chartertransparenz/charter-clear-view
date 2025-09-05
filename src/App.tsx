@@ -13,13 +13,51 @@ import Impressum from '@/pages/Impressum';
 import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
 
-// Territory pages - add back essential ones
+// Territory pages - comprehensive routing
 import { lazy } from "react";
+
+// Main territory regions
 const Mediterranean = lazy(() => import("./pages/territories/Mediterranean"));
+const Caribbean = lazy(() => import("./pages/territories/Caribbean"));
+const Atlantic = lazy(() => import("./pages/territories/Atlantic"));
+const Americas = lazy(() => import("./pages/territories/Americas"));
+const Pacific = lazy(() => import("./pages/territories/Pacific"));
+const IndianOcean = lazy(() => import("./pages/territories/IndianOcean"));
+const NorthEurope = lazy(() => import("./pages/territories/NorthEurope"));
+const Expeditions = lazy(() => import("./pages/territories/Expeditions"));
+
+// Mediterranean subpages
 const Croatia = lazy(() => import("./pages/territories/mediterranean/Croatia"));
 const Greece = lazy(() => import("./pages/territories/mediterranean/Greece"));
 const Italy = lazy(() => import("./pages/territories/mediterranean/Italy"));
-const Caribbean = lazy(() => import("./pages/territories/Caribbean"));
+const Spain = lazy(() => import("./pages/territories/Spain"));
+const France = lazy(() => import("./pages/territories/France"));
+const Turkey = lazy(() => import("./pages/territories/Turkey"));
+
+// Caribbean subpages
+const BritishVirginIslands = lazy(() => import("./pages/territories/caribbean/BritishVirginIslands"));
+const USVirginIslands = lazy(() => import("./pages/territories/caribbean/USVirginIslands"));
+const WindwardIslands = lazy(() => import("./pages/territories/caribbean/WindwardIslands"));
+const LeewardIslands = lazy(() => import("./pages/territories/caribbean/LeewardIslands"));
+const Cuba = lazy(() => import("./pages/territories/caribbean/Cuba"));
+
+// Atlantic subpages
+const Azores = lazy(() => import("./pages/territories/atlantic/Azores"));
+const CanaryIslands = lazy(() => import("./pages/territories/atlantic/CanaryIslands"));
+const FrenchAtlanticCoast = lazy(() => import("./pages/territories/atlantic/FrenchAtlanticCoast"));
+
+// Americas subpages
+const Bahamas = lazy(() => import("./pages/territories/americas/Bahamas"));
+const FloridaKeys = lazy(() => import("./pages/territories/americas/FloridaKeys"));
+const Mexico = lazy(() => import("./pages/territories/americas/Mexico"));
+const USAEastCoast = lazy(() => import("./pages/territories/americas/USAEastCoast"));
+const Belize = lazy(() => import("./pages/territories/americas/Belize"));
+
+// Other regions
+const Australia = lazy(() => import("./pages/territories/Australia"));
+const Thailand = lazy(() => import("./pages/territories/Thailand"));
+const Seychelles = lazy(() => import("./pages/territories/Seychelles"));
+
 const AllTerritories = lazy(() => import("./pages/AllTerritories"));
 
 // Loading fallback component
@@ -46,12 +84,47 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
               
-              {/* Territory routes */}
+              {/* Main territory regions */}
               <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
+              <Route path="/reviere/karibik" element={<Caribbean />} />
+              <Route path="/reviere/atlantik" element={<Atlantic />} />
+              <Route path="/reviere/amerika" element={<Americas />} />
+              <Route path="/reviere/pazifik" element={<Pacific />} />
+              <Route path="/reviere/indischer-ozean" element={<IndianOcean />} />
+              <Route path="/reviere/nordeuropa" element={<NorthEurope />} />
+              <Route path="/reviere/expeditionen" element={<Expeditions />} />
+              
+              {/* Mediterranean subpages */}
               <Route path="/reviere/mittelmeer/kroatien" element={<Croatia />} />
               <Route path="/reviere/mittelmeer/griechenland" element={<Greece />} />
               <Route path="/reviere/mittelmeer/italien" element={<Italy />} />
-              <Route path="/reviere/karibik" element={<Caribbean />} />
+              <Route path="/reviere/mittelmeer/spanien" element={<Spain />} />
+              <Route path="/reviere/mittelmeer/frankreich" element={<France />} />
+              <Route path="/reviere/mittelmeer/tuerkei" element={<Turkey />} />
+              
+              {/* Caribbean subpages */}
+              <Route path="/reviere/karibik/british-virgin-islands" element={<BritishVirginIslands />} />
+              <Route path="/reviere/karibik/us-virgin-islands" element={<USVirginIslands />} />
+              <Route path="/reviere/karibik/windward-islands" element={<WindwardIslands />} />
+              <Route path="/reviere/karibik/leeward-islands" element={<LeewardIslands />} />
+              <Route path="/reviere/karibik/kuba" element={<Cuba />} />
+              
+              {/* Atlantic subpages */}
+              <Route path="/reviere/atlantik/azoren" element={<Azores />} />
+              <Route path="/reviere/atlantik/kanaren" element={<CanaryIslands />} />
+              <Route path="/reviere/atlantik/franzoesische-atlantikkueste" element={<FrenchAtlanticCoast />} />
+              
+              {/* Americas subpages */}
+              <Route path="/reviere/amerika/bahamas" element={<Bahamas />} />
+              <Route path="/reviere/amerika/florida-keys" element={<FloridaKeys />} />
+              <Route path="/reviere/amerika/mexiko" element={<Mexico />} />
+              <Route path="/reviere/amerika/usa-ostkueste" element={<USAEastCoast />} />
+              <Route path="/reviere/amerika/belize" element={<Belize />} />
+              
+              {/* Other regions */}
+              <Route path="/reviere/pazifik/australien" element={<Australia />} />
+              <Route path="/reviere/pazifik/thailand" element={<Thailand />} />
+              <Route path="/reviere/indischer-ozean/seychellen" element={<Seychelles />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>
