@@ -388,51 +388,6 @@ const Spain = () => {
           </div>
         </div>
 
-        {/* Regions */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Segelregionen</h2>
-          <div className="grid gap-6">
-            {regions.map((region, index) => (
-              <Link key={index} to={region.link} className="group">
-                <Card className="shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer h-full max-w-2xl mx-auto">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                        {region.name}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 mb-4">{region.description}</p>
-                    {region.cities && (
-                      <div className="grid grid-cols-2 gap-2">
-                        {region.cities.map((city, idx) => (
-                          <div key={idx} className="text-sm text-blue-600 font-medium">
-                            • {city}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <p className="font-medium text-gray-800">{highlight}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* FAQ Section */}
         <div className="mb-16">
