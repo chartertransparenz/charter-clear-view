@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Footer from "@/components/Footer";
+import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
 import About from '@/pages/About';
 import Impressum from '@/pages/Impressum';
@@ -172,10 +173,11 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
+      <HelmetProviderContext>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<About />} />
@@ -334,6 +336,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </TooltipProvider>
+      </HelmetProviderContext>
     </QueryClientProvider>
   );
 }
