@@ -376,7 +376,7 @@ export default function Istria() {
         </div>
 
         {/* Cities */}
-        <div className="mb-16">
+        <div className="mb-16 hidden md:block">
           <h2 className="text-3xl font-bold text-center mb-8">Wichtige Segelbasen</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {cities.map((city, index) => (
@@ -412,7 +412,7 @@ export default function Istria() {
         </div>
 
         {/* Highlights */}
-        <div className="mb-16">
+        <div className="mb-16 hidden md:block">
           <h2 className="text-3xl font-bold text-center mb-8">Warum Istrien?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {highlights.map((highlight, index) => (
