@@ -29,8 +29,6 @@ const Toskana = () => {
     label: "Besonderheit",
     value: "Insel Elba"
   }];
-  const cities = ["Castiglioncello", "Elba"];
-  const highlights = ["Traumhafte Insel Elba", "Toskanische Küstenlandschaft", "Kulturreiche Küstenstädte", "Exzellente toskanische Küche", "Wunderschöne Weinregion", "Geschützte Naturparks", "Kristallklares Wasser", "Kurze Entfernungen", "Perfekt für Wochenendtörns"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
@@ -311,20 +309,6 @@ const Toskana = () => {
         </div>
 
 
-        {/* Highlights */}
-        <div className="mb-12">
-          
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => <Card key={index} className="shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                    <p className="font-medium text-gray-800">{highlight}</p>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
 
         <TopDestinations />
       </div>
