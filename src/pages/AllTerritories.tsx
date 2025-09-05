@@ -214,7 +214,7 @@ export default function AllTerritories() {
       name: 'Schweden',
       flag: '🇸🇪',
       route: '/reviere/nord-europa/skandinavien/schweden',
-      image: '/placeholder.svg',
+      image: '/lovable-uploads/4674fa49-d34c-453e-96ca-5ebac378ce34.png',
       hasPage: true
     },
     {
