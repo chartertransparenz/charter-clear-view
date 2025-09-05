@@ -281,15 +281,6 @@ const Valencia = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-6 text-center">
-              <h4 className="text-xl font-bold mb-3">Bereit für Valencia & die Costa del Azahar?</h4>
-              <p className="text-lg mb-4">
-                Nenne uns Crewgröße, Reisezeit und Yachtklasse – wir bauen dir eine Route mit Lee-Optionen, reservieren Marinas/Bojen und organisieren den Proviantservice.
-              </p>
-              <p className="font-semibold text-primary">
-                Jetzt unverbindlich anfragen – und Kurs auf Valencia setzen!
-              </p>
-            </div>
           </div>
         </div>
 
