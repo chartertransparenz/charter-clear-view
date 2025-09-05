@@ -545,22 +545,22 @@ export default function SouthernDalmatia() {
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Ocean-Breeze CTA Box */}
-        <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 text-center mb-12">
-          <h3 className="text-2xl font-bold mb-4 text-primary">
-            Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an!
-          </h3>
-          <p className="text-lg text-muted-foreground mb-6">
-            Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten 
-            Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
-          </p>
-          <CharterRequestForm>
-            <Button className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Jetzt unverbindliches Angebot einholen
-            </Button>
-          </CharterRequestForm>
+          {/* Ocean-Breeze CTA Box */}
+          <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 text-center mb-12">
+            <h3 className="text-2xl font-bold mb-4 text-primary">
+              Fordern Sie jetzt Ihr unverbindliches Angebot für einen Yachtcharter in Kroatien an!
+            </h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              Durchstöbern Sie unsere Online-Yachtsuche oder kontaktieren Sie unser Expertenteam direkt. Wir beraten 
+              Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-ocean-dark hover:bg-ocean-dark/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                Jetzt unverbindliches Angebot einholen
+              </Button>
+            </CharterRequestForm>
+          </div>
         </div>
 
         {/* Cities */}
