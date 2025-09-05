@@ -512,7 +512,7 @@ export default function SouthernDalmatia() {
                 <li><strong>Hafenhandbuch:</strong> Ein aktuelles Hafenhandbuch ist für die Navigation und die Wahl der Ankerplätze unerlässlich.</li>
                 <li><strong>Konobas:</strong> Nutzen Sie die Gelegenheit, in den kleinen Inselrestaurants (Konobas) frischen Fisch und lokale Spezialitäten zu genießen.</li>
                 <li><strong>Bargeld:</strong> In kleineren Konobas oder auf Inseln ist es ratsam, etwas Bargeld dabei zu haben.</li>
-                <li><strong>Charter nach Montenegro:</strong> Dubrovnik ist ein idealer Ausgangspunkt für einen Yachtcharter nach Montenegro. Dies ist nach vorheriger Klärung mit dem Vercharterer und Einhaltung der Ein- und Ausreiseformalitäten (Zoll, Polizei, Hafenamt) in beiden Ländern möglich. Es erfordert eine sorgfältige Planung und die Bereitschaft, die notwendigen Behördengänge zu erledigen.</li>
+                <li><strong>Charter nach Montenegro:</strong> Dubrovnik ist ein idealer Ausgangspunkt für einen Yachtcharter nach <Link to="/reviere/mittelmeer/montenegro" className="text-primary hover:underline">Montenegro</Link>. Dies ist nach vorheriger Klärung mit dem Vercharterer und Einhaltung der Ein- und Ausreiseformalitäten (Zoll, Polizei, Hafenamt) in beiden Ländern möglich. Es erfordert eine sorgfältige Planung und die Bereitschaft, die notwendigen Behördengänge zu erledigen.</li>
               </ul>
             </div>
 
