@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
+import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -469,6 +470,9 @@ const Spain = () => {
             </CharterRequestForm>
           </div>
         </div>
+
+        {/* TopDestinations */}
+        <TopDestinations />
       </div>
     </div>
   );
