@@ -39,12 +39,25 @@ const slides = [{
     return () => clearInterval(interval);
   }, [nextSlide]);
   return <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-28 md:pt-24 lg:pt-20">
-      {/* Background Images Carousel */}
-      {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
-      backgroundImage: `url(${slide.image})`
-    }}>
+      {/* Background Images Carousel - Optimized with preload */}
+      {slides.map((slide, index) => (
+        <div 
+          key={index} 
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          }`} 
+          style={{
+            backgroundImage: index === currentSlide || index === (currentSlide + 1) % slides.length 
+              ? `url(${slide.image})` 
+              : 'none'
+          }}
+        >
           <div className="absolute inset-0 bg-black/40"></div>
-        </div>)}
+        </div>
+      ))}
+      
+      {/* Preload next image */}
+      <link rel="preload" as="image" href={slides[(currentSlide + 1) % slides.length]?.image} />
 
       {/* Navigation Arrows */}
       <button onClick={prevSlide} className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 group">
