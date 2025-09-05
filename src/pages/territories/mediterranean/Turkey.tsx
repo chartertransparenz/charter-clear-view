@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
   Breadcrumb,
@@ -395,6 +396,21 @@ const Turkey = () => {
               <p className="text-gray-700">
                 Sind Sie bereit, die Leinen in der Türkei zu lösen? Nennen Sie uns Crewgröße, Reisezeit und Yachtklasse – wir planen eine Route mit Lee-Optionen, reservieren Moorings/Stege, kümmern uns um Pump-Out-Logistik und geben Ihnen tagesaktuelle Hinweise zu SEPA-Regeln und Wetterfenstern.
               </p>
+
+              {/* Ocean-Breeze CTA */}
+              <div className="mt-8 bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                  Lust die Türkische Küste zu erkunden?
+                </h3>
+                <p className="text-gray-600 mb-6 text-lg">
+                  Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
+                </p>
+                <CharterRequestForm>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
+                    Jetzt unverbindliches Angebot einholen
+                  </Button>
+                </CharterRequestForm>
+              </div>
             </div>
           </div>
         </div>
@@ -531,6 +547,8 @@ const Turkey = () => {
             </CharterRequestForm>
           </div>
         </div>
+
+        <TopDestinations />
       </div>
     </div>
   );
