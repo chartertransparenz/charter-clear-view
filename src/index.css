@@ -282,7 +282,15 @@ All colors MUST be HSL.
     background: var(--gradient-ocean);
   }
   
+  .bg-gradient-ocean {
+    background: var(--gradient-ocean);
+  }
+  
   .gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+  
+  .bg-gradient-sunset {
     background: var(--gradient-sunset);
   }
   
