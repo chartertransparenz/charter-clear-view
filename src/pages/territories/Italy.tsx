@@ -12,6 +12,7 @@ import { JsonLd } from "@/seo/JsonLd";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
+  console.log("Italy component loading...");
   const m = META.italien;
   
   const absoluteOg = (path: string) => {
@@ -20,8 +21,12 @@ const Italy = () => {
   };
   
   useEffect(() => {
+    console.log("Italy useEffect running...");
     window.scrollTo(0, 0);
   }, []);
+  
+  console.log("Italy component rendering with meta:", m);
+  
   const quickFacts = [{
     label: "Lage",
     value: "Mittelmeer"
@@ -55,8 +60,6 @@ const Italy = () => {
         ]
       }} />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        {/* Temporarily disabled Meta and JsonLd due to JSX structure issues */}
-      <Navigation />
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
