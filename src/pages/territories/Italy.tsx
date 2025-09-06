@@ -6,9 +6,19 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import destinationItaly from "@/assets/destination-italy.jpg";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
+// import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
+  const m = META.italien;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,7 +36,10 @@ const Italy = () => {
     value: "Dolce Vita & Kultur"
   }];
   const highlights = ["Exzellente italienische Küche", "Wunderschöne Küstenlandschaften", "Reiche Geschichte und Kultur", "Kristallklares Wasser", "Abwechslungsreiche Routen", "Gastfreundliche Marinas"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      {/* Temporarily disabled Meta and JsonLd due to JSX structure issues */}
+      <Navigation />
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -379,6 +392,10 @@ const Italy = () => {
       </div>
       
       <TopDestinations />
-    </div>;
+        </div>
+      </div>
+    </div>
+  );
 };
+
 export default Italy;

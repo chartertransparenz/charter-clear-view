@@ -2,7 +2,8 @@
 export type RegionKey =
   | "home" | "about" | "faq" | "impressum" | "allTerritories"
   | "kroatien" | "istrien" | "kvarner" | "norddalmatien" | "zentraldalmatien" | "sueddalmatien"
-  | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer";
+  | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer"
+  | "italien" | "spanien" | "frankreich" | "croatia";
 
 export const META: Record<RegionKey, {
   title: string;
@@ -122,5 +123,33 @@ export const META: Record<RegionKey, {
     keywords: ["Yachtcharter Süddalmatien","Dubrovnik","Korčula","Mljet","Kroatien"],
     ogImage: "/og/sueddalmatien.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien"
+  },
+  italien: {
+    title: "Yachtcharter Italien | Sardinien, Sizilien, Amalfiküste",
+    description: "Segeln Italien: malerische Küsten, charmante Häfen & italienisches Flair. Sardinien, Sizilien & Amalfiküste entdecken. Jetzt anfragen!",
+    keywords: ["Yachtcharter Italien","Sardinien","Sizilien","Amalfiküste","Italien segeln"],
+    ogImage: "/og/italien.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien"
+  },
+  spanien: {
+    title: "Yachtcharter Spanien | Balearen, Costa Brava, Valencia",
+    description: "Segeln Spanien: sonnige Balearen, Costa Brava & Valencia. Traumhafte Buchten, lebendige Häfen & spanische Kultur. Jetzt anfragen!",
+    keywords: ["Yachtcharter Spanien","Balearen","Costa Brava","Valencia","Spanien segeln"],
+    ogImage: "/og/spanien.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/spanien"
+  },
+  frankreich: {
+    title: "Yachtcharter Frankreich | Côte d'Azur, Korsika, Provence",
+    description: "Segeln Frankreich: glamouröse Côte d'Azur, wilde Korsika & provenzalische Küste. Luxuriöse Häfen & französisches Savoir-vivre. Jetzt anfragen!",
+    keywords: ["Yachtcharter Frankreich","Côte d'Azur","Korsika","Provence","Frankreich segeln"],
+    ogImage: "/og/frankreich.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/frankreich"
+  },
+  croatia: {
+    title: "Yachtcharter Kroatien | Adria-Perle mit 1200+ Inseln",
+    description: "Kroatien segeln: kristallklare Adria, 1200+ Inseln, kurze Distanzen & perfekte Marina-Infrastruktur. Von Istrien bis Dubrovnik. Jetzt anfragen!",
+    keywords: ["Yachtcharter Kroatien","Adria","Kroatien segeln","Inseln","Marinas"],
+    ogImage: "/og/croatia.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien"
   }
 };
