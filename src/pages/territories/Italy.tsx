@@ -9,7 +9,7 @@ import TopDestinations from "@/components/TopDestinations";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
-// import destinationItaly from "@/assets/destination-italy.jpg";
+import heroItalySailing from "@/assets/hero-italy-sailing.jpg";
 
 const Italy = () => {
   console.log("Italy component loading...");
@@ -63,7 +63,7 @@ const Italy = () => {
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png" alt="Italien Segelrevier" className="w-full h-full object-cover" />
+        <img src={heroItalySailing} alt="Italien Segelrevier - Traumhafte Mittelmeerküste mit türkisfarbenem Wasser und malerischen Küstenstädten" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">
