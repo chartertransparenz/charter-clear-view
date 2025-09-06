@@ -8,32 +8,32 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
 const Croatia = () => {
+  const m = META.kroatien;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+
+  const croatiaStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAction",
+    "name": "Yachtcharter Kroatien",
+    "description": "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Charter Transparenz"
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
-    description: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
-    ogTitle: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
-    ogDescription: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
-    structuredData: {
-      ...generateStructuredData.service("Kroatien", "Yachtcharter in Kroatien - Segeln zwischen über 1.200 Inseln der Adria"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Kroatien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien" }
-      ])
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -48,6 +48,17 @@ const Croatia = () => {
     value: "Alle Erfahrungsstufen"
   }, {
     icon: Anchor,
+    label: "Besonderheit",
+    value: "1.200+ Inseln"
+  }];
+  const regions = [{
+    name: 'Istrien',
+    link: '/reviere/mittelmeer/kroatien/istrien',
+    description: 'Nördlichste Region mit venezianischem Flair',
+    cities: ['Pula', 'Rovinj', 'Poreč']
+  }, {
+    name: 'Kvarner Bucht',
+    link: '/reviere/mittelmeer/kroatien/kvarner-bucht',
     label: "Inseln",
     value: "Über 1.200 Inseln"
   }];

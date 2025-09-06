@@ -9,33 +9,32 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const Cyclades = () => {
+  const m = META.kykladen;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+
+  const cycladesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAction",
+    "name": "Yachtcharter Kykladen",
+    "description": "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Charter Transparenz"
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
-    description: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
-    ogTitle: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
-    ogDescription: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
-    structuredData: {
-      ...generateStructuredData.service("Kykladen", "Yachtcharter auf den Kykladen - Segeln zwischen den berühmten griechischen Inseln Mykonos, Santorini und Paros"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
-        { name: "Kykladen", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen" }
-      ])
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -48,6 +47,23 @@ const Cyclades = () => {
     icon: Users,
     label: "Geeignet für",
     value: "Alle Erfahrungsstufen"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "Ikonische Inseln"
+  }];
+  const cities = ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Andros", "Tinos", "Syros"];
+  const highlights = ["Weltberühmtes Inselhüpfen", "Ikonische weiße Dörfer", "Spektakuläre Sonnenuntergänge", "Meltemi-Wind für perfektes Segeln", "Kristallklare Buchten", "Griechische Inselkultur pur", "Kurze Distanzen zwischen Inseln"];
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={cycladesStructuredData} />
   }, {
     icon: Anchor,
     label: "Besonderheit",
@@ -388,6 +404,9 @@ const Cyclades = () => {
 
         <TopDestinations />
       </div>
-    </div>;
+      </>
+    </div>
+  );
 };
+
 export default Cyclades;

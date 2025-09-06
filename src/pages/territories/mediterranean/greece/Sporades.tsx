@@ -10,10 +10,32 @@ import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, Breadcr
 import TerritoryMap from "@/components/TerritoryMap";
 import destinationGreece from "@/assets/destination-greece.jpg";
 import TopDestinations from "@/components/TopDestinations";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 const Sporades = () => {
+  const m = META.sporaden;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+
+  const sporadesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAction",
+    "name": "Yachtcharter Sporaden",
+    "description": "Segeln in den Sporaden: Grüne Juwelen der Nordägäis mit unberührter Natur.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Charter Transparenz"
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -34,7 +56,16 @@ const Sporades = () => {
   const cities = ["Skiathos", "Skopelos", "Alonissos", "Skyros"];
   const highlights = ["Mamma Mia Filmkulisse (Skopelos)", "Unberührte Natur und Strände", "Meeresschutzgebiet Alonissos", "Weniger frequentiert", "Grüne, bewaldete Inseln", "Authentisches Griechenland", "Kurze Distanzen zwischen Inseln"];
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={sporadesStructuredData} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
@@ -388,7 +419,7 @@ const Sporades = () => {
 
         <TopDestinations />
       </div>
-    </div>
+    </>
   );
 };
 
