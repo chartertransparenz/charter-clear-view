@@ -11,6 +11,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 
 const Index = () => {
   const m = META.home;
@@ -42,6 +43,19 @@ const Index = () => {
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
       />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CharterTransparenz",
+        "url": "https://chartertransparenz.de",
+        "logo": "https://chartertransparenz.de/logo.png",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+49-xxx-xxxxxxx",
+          "contactType": "customer service",
+          "areaServed": "EU"
+        }]
+      }} />
       <div className="min-h-screen">
         <Navigation />
         <FloatingCTA />
