@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 export default function Greece() {
   const m = META.griechenland;
   
