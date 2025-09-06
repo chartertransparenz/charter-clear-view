@@ -12,6 +12,7 @@ import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } fr
 import TerritoryMap from '@/components/TerritoryMap';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 export default function Greece() {
   const m = META.griechenland;
   
@@ -89,6 +90,15 @@ export default function Greece() {
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
       />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList", 
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Griechenland", "item": "https://chartertransparenz.de/reviere/mittelmeer/griechenland"}
+        ]
+      }} />
       <div className="min-h-screen bg-background">
         <Navigation />
       

@@ -20,6 +20,7 @@ import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide
 import TopDestinations from '@/components/TopDestinations';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 
 export default function Istria() {
   const m = META.istrien;
@@ -91,6 +92,16 @@ export default function Istria() {
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
       />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
+          {"@type": "ListItem", "position": 4, "name": "Istrien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"}
+        ]
+      }} />
       <div className="min-h-screen bg-background">
       <Navigation />
       
