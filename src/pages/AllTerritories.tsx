@@ -6,6 +6,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, ChevronRight } from 'lucide-react';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -288,7 +290,15 @@ export default function AllTerritories() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Breadcrumb Navigation */}
