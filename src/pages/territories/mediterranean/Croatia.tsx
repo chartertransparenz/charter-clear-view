@@ -11,6 +11,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
+import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
 const Croatia = () => {
   const m = META.kroatien;
@@ -88,6 +89,12 @@ const Croatia = () => {
         canonical={m.canonical()}
       />
       <JsonLd json={croatiaStructuredData} />
+      <BreadcrumbSchema items={[
+        { name: "Start", url: "https://chartertransparenz.de/" },
+        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Kroatien", url: "https://chartertransparenz.de/reviere/mittelmeer/kroatien" }
+      ]} />
       <div className="min-h-screen bg-white">
       <Navigation />
       
