@@ -392,8 +392,6 @@ const Italy = () => {
       </div>
       
       <TopDestinations />
-        </div>
-      </div>
     </div>
   );
 };
