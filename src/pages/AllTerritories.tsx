@@ -8,6 +8,13 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, ChevronRight } from 'lucide-react';
 
 export default function AllTerritories() {
+  const m = META.allTerritories;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -344,6 +351,7 @@ export default function AllTerritories() {
       </div>
       
       <TopDestinations />
-    </div>
+      </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 // src/seo/meta.config.ts
 export type RegionKey =
-  | "home" | "kroatien" | "istrien" | "kvarner" | "norddalmatien"
+  | "home" | "about" | "faq" | "impressum" | "allTerritories"
+  | "kroatien" | "istrien" | "kvarner" | "norddalmatien" | "zentraldalmatien" | "sueddalmatien"
   | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer";
 
 export const META: Record<RegionKey, {
@@ -79,5 +80,47 @@ export const META: Record<RegionKey, {
     keywords: ["Yachtcharter Mittelmeer","Kroatien","Griechenland","Italien","Türkei"],
     ogImage: "/og/mittelmeer.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer"
+  },
+  about: {
+    title: "Über uns | 30 Jahre Charter Transparenz - Yachtcharter Experten",
+    description: "30 Jahre Erfahrung im Yachtcharter: Von der Gründung 1997 bis zur internationalen Anerkennung. Transparenz, Qualität & Vertrauen seit drei Jahrzehnten.",
+    keywords: ["Charter Transparenz","Über uns","30 Jahre Erfahrung","Yachtcharter Experten"],
+    ogImage: "/og/about.jpg",
+    canonical: () => "https://chartertransparenz.de/about"
+  },
+  faq: {
+    title: "FAQ Yachtcharter | Häufige Fragen & Antworten - Charter Transparenz",
+    description: "Häufige Fragen zum Yachtcharter beantwortet: Kosten, Buchung, Stornierung, Kaution & mehr. Alle wichtigen Infos für Ihren Segeltörn.",
+    keywords: ["FAQ Yachtcharter","Häufige Fragen","Yachtcharter Antworten","Charter Fragen"],
+    ogImage: "/og/faq.jpg",
+    canonical: () => "https://chartertransparenz.de/faq"
+  },
+  impressum: {
+    title: "Impressum | Charter Transparenz - Rechtliche Hinweise",
+    description: "Impressum und rechtliche Hinweise von Charter Transparenz. Kontaktdaten, Verantwortlicher, Datenschutz & Haftungsausschluss.",
+    keywords: ["Impressum","Charter Transparenz","Rechtliche Hinweise","Kontakt"],
+    ogImage: "/og/impressum.jpg",
+    canonical: () => "https://chartertransparenz.de/impressum"
+  },
+  allTerritories: {
+    title: "Alle Charter Destinationen | Weltweite Yachtcharter Reviere",
+    description: "Komplette Übersicht aller Yachtcharter Destinationen weltweit: Mittelmeer, Karibik, Atlantik, Indischer Ozean & mehr. Jetzt entdecken!",
+    keywords: ["Charter Destinationen","Yachtcharter Reviere","Weltweite Charter","Segelreviere"],
+    ogImage: "/og/all-territories.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere"
+  },
+  zentraldalmatien: {
+    title: "Yachtcharter Zentraldalmatien | Split, Hvar, Brač, Vis",
+    description: "Segeln Zentraldalmatien: Split als Ausgangspunkt, traumhafte Inseln Hvar, Brač & Vis. Perfekte Kombination aus Kultur & Natur. Jetzt anfragen!",
+    keywords: ["Yachtcharter Zentraldalmatien","Split","Hvar","Brač","Vis","Kroatien"],
+    ogImage: "/og/zentraldalmatien.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zentraldalmatien"
+  },
+  sueddalmatien: {
+    title: "Yachtcharter Süddalmatien | Dubrovnik, Korčula, Mljet",
+    description: "Segeln Süddalmatien: UNESCO-Stadt Dubrovnik, grüne Insel Korčula & Nationalpark Mljet. Kroatiens schönster Süden. Jetzt anfragen!",
+    keywords: ["Yachtcharter Süddalmatien","Dubrovnik","Korčula","Mljet","Kroatien"],
+    ogImage: "/og/sueddalmatien.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien"
   }
 };
