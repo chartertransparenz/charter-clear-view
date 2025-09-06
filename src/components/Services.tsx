@@ -53,7 +53,7 @@ const Services = () => {
             <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Luxuriöse Segelyacht in türkisfarbener Bucht mit kristallklarem Wasser und weißem Sandstrand" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Yachtcharter Services – Von Bareboat bis Luxus Charter
           </h2>
               <p className="text-lg text-white/90">Beratung nach Maß – Angebote, die passen.</p>
