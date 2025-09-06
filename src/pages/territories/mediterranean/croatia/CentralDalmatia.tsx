@@ -12,6 +12,7 @@ import TerritoryMap from '@/components/TerritoryMap';
 import TopDestinations from '@/components/TopDestinations';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 export default function CentralDalmatia() {
   const m = META.zentraldalmatien;
   
@@ -80,7 +81,42 @@ export default function CentralDalmatia() {
     highlights: ['ACI Marina Trogir', 'Altstadt', 'Kathedrale St. Lovro']
   }];
   const highlights = ['Split - perfekte Ausgangsbasis', 'Hvar - Glamour und Lavendel', 'Brač - Goldenes Horn Strand', 'Vis - authentisches Inselleben', 'Kristallklares türkisfarbenes Wasser', 'Ideale Maestral-Winde', 'Reiche Geschichte und Kultur', 'Exzellente Marina-Infrastruktur'];
-  return <div className="min-h-screen bg-background">
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
+          {"@type": "ListItem", "position": 4, "name": "Mitteldalmatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien"}
+        ]
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marina Split",
+        "address": {"@type": "PostalAddress", "addressLocality": "Split", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 43.5081, "longitude": 16.4402},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien"
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marina Trogir",
+        "address": {"@type": "PostalAddress", "addressLocality": "Trogir", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 43.5154, "longitude": 16.2517},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien"
+      }} />
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -682,5 +718,7 @@ export default function CentralDalmatia() {
 
         <TopDestinations />
       </div>
-    </div>;
+      </div>
+    </>
+  );
 }

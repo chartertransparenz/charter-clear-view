@@ -91,6 +91,14 @@ export default function NorthernDalmatia() {
           {"@type": "ListItem", "position": 4, "name": "Norddalmatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien"}
         ]
       }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marina Zadar",
+        "address": {"@type": "PostalAddress", "addressLocality": "Zadar", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.1194, "longitude": 15.2314},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien"
+      }} />
       <div className="min-h-screen bg-background">
       <Navigation />
       

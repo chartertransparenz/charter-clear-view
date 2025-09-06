@@ -102,6 +102,22 @@ export default function Istria() {
           {"@type": "ListItem", "position": 4, "name": "Istrien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"}
         ]
       }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ACI Marina Pula",
+        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.8664, "longitude": 13.8496},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marina Veruda",
+        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.8234, "longitude": 13.8387},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
+      }} />
       <div className="min-h-screen bg-background">
       <Navigation />
       
