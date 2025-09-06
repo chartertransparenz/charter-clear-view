@@ -12,7 +12,9 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 // Using uploaded header image
 const Slovenia = () => {
+  console.log("Slovenia component loading...");
   const m = META.slowenien;
+  console.log("Slovenia META loaded:", m);
   
   const absoluteOg = (path: string) => {
     const base = "https://chartertransparenz.de";
