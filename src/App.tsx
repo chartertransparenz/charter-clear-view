@@ -3,158 +3,165 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect, lazy, Suspense } from "react";
+import { useEffect } from "react";
 import Footer from "@/components/Footer";
+import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
+import About from '@/pages/About';
+import Impressum from '@/pages/Impressum';
+import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
 
-// Lazy load all territory pages
-const About = lazy(() => import("./pages/About"));
-const Impressum = lazy(() => import("./pages/Impressum"));
-const FAQ = lazy(() => import("./pages/FAQ"));
-const AllTerritories = lazy(() => import("./pages/AllTerritories"));
-
 // Territory pages
-const Mediterranean = lazy(() => import("./pages/territories/Mediterranean"));
-const Croatia = lazy(() => import("./pages/territories/mediterranean/Croatia"));
-const Greece = lazy(() => import("./pages/territories/mediterranean/Greece"));
-const Italy = lazy(() => import("./pages/territories/mediterranean/Italy"));
-const Spain = lazy(() => import("./pages/territories/mediterranean/Spain"));
-const Turkey = lazy(() => import("./pages/territories/mediterranean/Turkey"));
-const France = lazy(() => import("./pages/territories/mediterranean/France"));
-const Malta = lazy(() => import("./pages/territories/mediterranean/Malta"));
-const Montenegro = lazy(() => import("./pages/territories/mediterranean/Montenegro"));
-const Slovenia = lazy(() => import("./pages/territories/mediterranean/Slovenia"));
+import Mediterranean from "./pages/territories/Mediterranean";
+import Croatia from "./pages/territories/mediterranean/Croatia";
+import Greece from "./pages/territories/mediterranean/Greece";
+import Italy from "./pages/territories/mediterranean/Italy";
+import Spain from "./pages/territories/mediterranean/Spain";
+import Turkey from "./pages/territories/mediterranean/Turkey";
+import France from "./pages/territories/mediterranean/France";
+import Malta from "./pages/territories/mediterranean/Malta";
+import Montenegro from "./pages/territories/mediterranean/Montenegro";
+import Slovenia from "./pages/territories/mediterranean/Slovenia";
 
 // Croatian regions
-const Istria = lazy(() => import("./pages/territories/mediterranean/croatia/Istria"));
-const KvarnerBay = lazy(() => import("./pages/territories/mediterranean/croatia/KvarnerBay"));
-const NorthernDalmatia = lazy(() => import("./pages/territories/mediterranean/croatia/NorthernDalmatia"));
-const CentralDalmatia = lazy(() => import("./pages/territories/mediterranean/croatia/CentralDalmatia"));
-const SouthernDalmatia = lazy(() => import("./pages/territories/mediterranean/croatia/SouthernDalmatia"));
+import Istria from "./pages/territories/mediterranean/croatia/Istria";
+import KvarnerBay from "./pages/territories/mediterranean/croatia/KvarnerBay";
+import NorthernDalmatia from "./pages/territories/mediterranean/croatia/NorthernDalmatia";
+import CentralDalmatia from "./pages/territories/mediterranean/croatia/CentralDalmatia";
+import SouthernDalmatia from "./pages/territories/mediterranean/croatia/SouthernDalmatia";
 
 // Greek regions
-const Cyclades = lazy(() => import("./pages/territories/mediterranean/greece/Cyclades"));
-const IonicIslands = lazy(() => import("./pages/territories/mediterranean/greece/IonicIslands"));
-const Dodecanese = lazy(() => import("./pages/territories/mediterranean/greece/Dodecanese"));
-const Sporades = lazy(() => import("./pages/territories/mediterranean/greece/Sporades"));
-const AthenSaronischerGolf = lazy(() => import("./pages/territories/mediterranean/greece/AthenSaronischerGolf"));
-const Nordgriechenland = lazy(() => import("./pages/territories/mediterranean/greece/Nordgriechenland"));
+import Cyclades from "./pages/territories/mediterranean/greece/Cyclades";
+import IonicIslands from "./pages/territories/mediterranean/greece/IonicIslands";
+import Dodecanese from "./pages/territories/mediterranean/greece/Dodecanese";
+import Sporades from "./pages/territories/mediterranean/greece/Sporades";
+import AthenSaronischerGolf from "./pages/territories/mediterranean/greece/AthenSaronischerGolf";
+import Nordgriechenland from "./pages/territories/mediterranean/greece/Nordgriechenland";
 
 // Spanish regions
-const Balearics = lazy(() => import("./pages/territories/mediterranean/spain/Balearics"));
-const CostaBrava = lazy(() => import("./pages/territories/mediterranean/spain/CostaBrava"));
-const Valencia = lazy(() => import("./pages/territories/mediterranean/spain/Valencia"));
+import Balearics from "./pages/territories/mediterranean/spain/Balearics";
+import CostaBrava from "./pages/territories/mediterranean/spain/CostaBrava";
+import Valencia from "./pages/territories/mediterranean/spain/Valencia";
 
 // French regions
-const CoteAzur = lazy(() => import("./pages/territories/mediterranean/france/CoteAzur"));
-const Korsika = lazy(() => import("./pages/territories/mediterranean/france/Korsika"));
+import CoteAzur from "./pages/territories/mediterranean/france/CoteAzur";
+import Korsika from "./pages/territories/mediterranean/france/Korsika";
 
 // Turkish regions
-const TuerkischeAegaeis = lazy(() => import("./pages/territories/mediterranean/turkey/TuerkischeAegaeis"));
-const Bodrum = lazy(() => import("./pages/territories/mediterranean/turkey/Bodrum"));
-const Marmaris = lazy(() => import("./pages/territories/mediterranean/turkey/Marmaris"));
-const GoecekFethiye = lazy(() => import("./pages/territories/mediterranean/turkey/GoecekFethiye"));
-const KasKalkan = lazy(() => import("./pages/territories/mediterranean/turkey/KasKalkan"));
+import TuerkischeAegaeis from "./pages/territories/mediterranean/turkey/TuerkischeAegaeis";
+
+// Turkey territory sub-pages
+import Bodrum from "./pages/territories/mediterranean/turkey/Bodrum";
+import Marmaris from "./pages/territories/mediterranean/turkey/Marmaris";
+import GoecekFethiye from "./pages/territories/mediterranean/turkey/GoecekFethiye";
+import KasKalkan from "./pages/territories/mediterranean/turkey/KasKalkan";
 
 // Italian regions
-const Sardinien = lazy(() => import("./pages/territories/mediterranean/italy/Sardinien"));
-const Sizilien = lazy(() => import("./pages/territories/mediterranean/italy/Sizilien"));
-const Toskana = lazy(() => import("./pages/territories/mediterranean/italy/Toskana"));
-const CostaSmeralda = lazy(() => import("./pages/territories/mediterranean/italy/costa-smeralda/CostaSmeralda"));
-const Amalfikuste = lazy(() => import("./pages/territories/mediterranean/italy/Amalfikuste"));
+import Sardinien from "./pages/territories/mediterranean/italy/Sardinien";
+import Sizilien from "./pages/territories/mediterranean/italy/Sizilien";
+import Toskana from "./pages/territories/mediterranean/italy/Toskana";
+import CostaSmeralda from "./pages/territories/mediterranean/italy/costa-smeralda/CostaSmeralda";
+import Amalfikuste from "./pages/territories/mediterranean/italy/Amalfikuste";
 
 // Atlantic territories
-const Atlantic = lazy(() => import("./pages/territories/Atlantic"));
-const Azores = lazy(() => import("./pages/territories/atlantic/Azores"));
-const SaoMiguel = lazy(() => import("./pages/territories/atlantic/azores/SaoMiguel"));
-const Terceira = lazy(() => import("./pages/territories/atlantic/azores/Terceira"));
-const Faial = lazy(() => import("./pages/territories/atlantic/azores/Faial"));
-const FrenchAtlanticCoast = lazy(() => import("./pages/territories/atlantic/FrenchAtlanticCoast"));
-const Biskaya = lazy(() => import("./pages/territories/atlantic/french-atlantic-coast/Biskaya"));
-const BrittanyNormandy = lazy(() => import("./pages/territories/atlantic/french-atlantic-coast/BrittanyNormandy"));
-const CanaryIslands = lazy(() => import("./pages/territories/atlantic/CanaryIslands"));
-const GranCanaria = lazy(() => import("./pages/territories/atlantic/canary-islands/GranCanaria"));
-const Tenerife = lazy(() => import("./pages/territories/atlantic/canary-islands/Tenerife"));
-const Lanzarote = lazy(() => import("./pages/territories/atlantic/canary-islands/Lanzarote"));
-const Fuerteventura = lazy(() => import("./pages/territories/atlantic/canary-islands/Fuerteventura"));
+import Atlantic from "./pages/territories/Atlantic";
+import Azores from "./pages/territories/atlantic/Azores";
+import SaoMiguel from "./pages/territories/atlantic/azores/SaoMiguel";
+import Terceira from "./pages/territories/atlantic/azores/Terceira";
+import Faial from "./pages/territories/atlantic/azores/Faial";
+import FrenchAtlanticCoast from "./pages/territories/atlantic/FrenchAtlanticCoast";
+import Biskaya from "./pages/territories/atlantic/french-atlantic-coast/Biskaya";
+import BrittanyNormandy from "./pages/territories/atlantic/french-atlantic-coast/BrittanyNormandy";
+import CanaryIslands from "./pages/territories/atlantic/CanaryIslands";
+import GranCanaria from "./pages/territories/atlantic/canary-islands/GranCanaria";
+import Tenerife from "./pages/territories/atlantic/canary-islands/Tenerife";
+import Lanzarote from "./pages/territories/atlantic/canary-islands/Lanzarote";
+import Fuerteventura from "./pages/territories/atlantic/canary-islands/Fuerteventura";
 
 // Caribbean territories
-const Caribbean = lazy(() => import("./pages/territories/Caribbean"));
-const BritishVirginIslands = lazy(() => import("./pages/territories/caribbean/BritishVirginIslands"));
-const USVirginIslands = lazy(() => import("./pages/territories/caribbean/USVirginIslands"));
-const LeewardIslands = lazy(() => import("./pages/territories/caribbean/LeewardIslands"));
-const WindwardIslands = lazy(() => import("./pages/territories/caribbean/WindwardIslands"));
-const Cuba = lazy(() => import("./pages/territories/caribbean/Cuba"));
-
-// Caribbean Charter Locations
-const Tortola = lazy(() => import("./pages/territories/caribbean/charter-locations/Tortola"));
-const StThomas = lazy(() => import("./pages/territories/caribbean/charter-locations/StThomas"));
-const Antigua = lazy(() => import("./pages/territories/caribbean/charter-locations/Antigua"));
-const Martinique = lazy(() => import("./pages/territories/caribbean/charter-locations/Martinique"));
-const Havanna = lazy(() => import("./pages/territories/caribbean/charter-locations/Havanna"));
+import Caribbean from "./pages/territories/Caribbean";
 
 // Indian Ocean territories
-const IndianOcean = lazy(() => import("./pages/territories/IndianOcean"));
-const Asia = lazy(() => import("./pages/territories/indian-ocean/Asia"));
-const Malaysia = lazy(() => import("./pages/territories/indian-ocean/asia/Malaysia"));
-const Thailand = lazy(() => import("./pages/territories/Thailand"));
-const LangkawiTioman = lazy(() => import("./pages/territories/indian-ocean/asia/thailand/LangkawiTioman"));
-const Phuket = lazy(() => import("./pages/territories/indian-ocean/asia/thailand/Phuket"));
-const SeychellesIndianOcean = lazy(() => import("./pages/territories/indian-ocean/Seychelles"));
-const Mahe = lazy(() => import("./pages/territories/indian-ocean/seychelles/Mahe"));
-const Maldives = lazy(() => import("./pages/territories/indian-ocean/Maldives"));
-const Male = lazy(() => import("./pages/territories/indian-ocean/maldives/Male"));
-const Praslin = lazy(() => import("./pages/territories/indian-ocean/seychelles/Praslin"));
-const LaDigue = lazy(() => import("./pages/territories/indian-ocean/seychelles/LaDigue"));
-const Seychelles = lazy(() => import("./pages/territories/Seychelles"));
+import IndianOcean from "./pages/territories/IndianOcean";
+import Asia from "./pages/territories/indian-ocean/Asia";
+import Malaysia from "./pages/territories/indian-ocean/asia/Malaysia";
+import Thailand from "./pages/territories/Thailand";
+import LangkawiTioman from "./pages/territories/indian-ocean/asia/thailand/LangkawiTioman";
+import Phuket from "./pages/territories/indian-ocean/asia/thailand/Phuket";
+import SeychellesIndianOcean from "./pages/territories/indian-ocean/Seychelles";
+import Mahe from "./pages/territories/indian-ocean/seychelles/Mahe";
+import Maldives from "./pages/territories/indian-ocean/Maldives";
+import Male from "./pages/territories/indian-ocean/maldives/Male";
+import Praslin from "./pages/territories/indian-ocean/seychelles/Praslin";
+import LaDigue from "./pages/territories/indian-ocean/seychelles/LaDigue";
+import Seychelles from "./pages/territories/Seychelles";
 
 // North Europe territories
-const NorthEurope = lazy(() => import("./pages/territories/NorthEurope"));
-const GermanBalticSea = lazy(() => import("./pages/territories/north-europe/GermanBalticSea"));
-const DeutscheOstsee = lazy(() => import("./pages/territories/north-europe/german-baltic-sea/DeutscheOstsee"));
-const NorthSea = lazy(() => import("./pages/territories/north-europe/NorthSea"));
-const Scandinavia = lazy(() => import("./pages/territories/north-europe/Scandinavia"));
-const Belgium = lazy(() => import("./pages/territories/north-europe/nordsee/Belgium"));
-const Holland = lazy(() => import("./pages/territories/north-europe/nordsee/Holland"));
-const Denmark = lazy(() => import("./pages/territories/north-europe/skandinavien/Denmark"));
-const Sweden = lazy(() => import("./pages/territories/north-europe/skandinavien/Sweden"));
+import NorthEurope from "./pages/territories/NorthEurope";
+import GermanBalticSea from "./pages/territories/north-europe/GermanBalticSea";
+import DeutscheOstsee from "./pages/territories/north-europe/german-baltic-sea/DeutscheOstsee";
+import NorthSea from "./pages/territories/north-europe/NorthSea";
+import Scandinavia from "./pages/territories/north-europe/Scandinavia";
+import Belgium from "./pages/territories/north-europe/nordsee/Belgium";
+import Holland from "./pages/territories/north-europe/nordsee/Holland";
+import Denmark from "./pages/territories/north-europe/skandinavien/Denmark";
+import Sweden from "./pages/territories/north-europe/skandinavien/Sweden";
 
 // Pacific territories
-const Pacific = lazy(() => import("./pages/territories/Pacific"));
-const FrenchPolynesia = lazy(() => import("./pages/territories/pacific/FrenchPolynesia"));
-const NewCaledonia = lazy(() => import("./pages/territories/pacific/NewCaledonia"));
-const Raiatea = lazy(() => import("./pages/territories/pacific/charter-locations/Raiatea"));
-const BoraBora = lazy(() => import("./pages/territories/pacific/charter-locations/BoraBora"));
-const Rangiroa = lazy(() => import("./pages/territories/pacific/charter-locations/Rangiroa"));
-const WhitsundayIslands = lazy(() => import("./pages/territories/pacific/charter-locations/WhitsundayIslands"));
-const Noumea = lazy(() => import("./pages/territories/pacific/charter-locations/Noumea"));
-const Fiji = lazy(() => import("./pages/territories/pacific/charter-locations/Fiji"));
-const NewZealand = lazy(() => import("./pages/territories/pacific/charter-locations/NewZealand"));
+import Pacific from "./pages/territories/Pacific";
+import FrenchPolynesia from "./pages/territories/pacific/FrenchPolynesia";
+import NewCaledonia from "./pages/territories/pacific/NewCaledonia";
 
 // America territories
-const Americas = lazy(() => import("./pages/territories/Americas"));
-const Bahamas = lazy(() => import("./pages/territories/americas/Bahamas"));
-const Mexico = lazy(() => import("./pages/territories/americas/Mexico"));
-const Belize = lazy(() => import("./pages/territories/americas/Belize"));
-const FloridaKeys = lazy(() => import("./pages/territories/americas/FloridaKeys"));
-const USAEastCoast = lazy(() => import("./pages/territories/americas/USAEastCoast"));
+import Americas from "./pages/territories/Americas";
+import Bahamas from "./pages/territories/americas/Bahamas";
+import Mexico from "./pages/territories/americas/Mexico";
+import Belize from "./pages/territories/americas/Belize";
+import FloridaKeys from "./pages/territories/americas/FloridaKeys";
+import USAEastCoast from "./pages/territories/americas/USAEastCoast";
 
 // Americas Charter Locations
-const Cancun = lazy(() => import("./pages/territories/americas/charter-locations/Cancun"));
-const Cozumel = lazy(() => import("./pages/territories/americas/charter-locations/Cozumel"));
-const KeyWest = lazy(() => import("./pages/territories/americas/charter-locations/KeyWest"));
-const KeyLargo = lazy(() => import("./pages/territories/americas/charter-locations/KeyLargo"));
-const Nassau = lazy(() => import("./pages/territories/americas/charter-locations/Nassau"));
-const Georgetown = lazy(() => import("./pages/territories/americas/charter-locations/Georgetown"));
-const Newport = lazy(() => import("./pages/territories/americas/charter-locations/Newport"));
-const Boston = lazy(() => import("./pages/territories/americas/charter-locations/Boston"));
-const Annapolis = lazy(() => import("./pages/territories/americas/charter-locations/Annapolis"));
+import Cancun from "./pages/territories/americas/charter-locations/Cancun";
+import Cozumel from "./pages/territories/americas/charter-locations/Cozumel";
+import KeyWest from "./pages/territories/americas/charter-locations/KeyWest";
+import KeyLargo from "./pages/territories/americas/charter-locations/KeyLargo";
+import Nassau from "./pages/territories/americas/charter-locations/Nassau";
+import Georgetown from "./pages/territories/americas/charter-locations/Georgetown";
+import Newport from "./pages/territories/americas/charter-locations/Newport";
+import Boston from "./pages/territories/americas/charter-locations/Boston";
+import Annapolis from "./pages/territories/americas/charter-locations/Annapolis";
 
 // Expedition territories
-const Expeditions = lazy(() => import("./pages/territories/Expeditions"));
-const Australia = lazy(() => import("./pages/territories/Australia"));
-const BVI = lazy(() => import("./pages/territories/BVI"));
+import Expeditions from "./pages/territories/Expeditions";
+
+// Australia
+import Australia from "./pages/territories/Australia";
+import BVI from "./pages/territories/BVI";
+
+// Caribbean territories
+import BritishVirginIslands from "./pages/territories/caribbean/BritishVirginIslands";
+import USVirginIslands from "./pages/territories/caribbean/USVirginIslands";
+import LeewardIslands from "./pages/territories/caribbean/LeewardIslands";
+import WindwardIslands from "./pages/territories/caribbean/WindwardIslands";
+import Cuba from "./pages/territories/caribbean/Cuba";
+
+// Caribbean Charter Locations
+import Tortola from "./pages/territories/caribbean/charter-locations/Tortola";
+import StThomas from "./pages/territories/caribbean/charter-locations/StThomas";
+import Antigua from "./pages/territories/caribbean/charter-locations/Antigua";
+import Martinique from "./pages/territories/caribbean/charter-locations/Martinique";
+import Havanna from "./pages/territories/caribbean/charter-locations/Havanna";
+
+// Pacific Charter Locations
+import Raiatea from "./pages/territories/pacific/charter-locations/Raiatea";
+import BoraBora from "./pages/territories/pacific/charter-locations/BoraBora";
+import Rangiroa from "./pages/territories/pacific/charter-locations/Rangiroa";
+import WhitsundayIslands from "./pages/territories/pacific/charter-locations/WhitsundayIslands";
+import Noumea from "./pages/territories/pacific/charter-locations/Noumea";
+import Fiji from "./pages/territories/pacific/charter-locations/Fiji";
+import NewZealand from "./pages/territories/pacific/charter-locations/NewZealand";
+import AllTerritories from "./pages/AllTerritories";
 
 const queryClient = new QueryClient();
 
@@ -166,17 +173,17 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Lädt...</div>}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/ueber-uns" element={<About />} />
-              <Route path="/impressum" element={<Impressum />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
+      <HelmetProviderContext>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+          <Route path="/ueber-uns" element={<About />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
             
             {/* Mediterranean routes */}
             <Route path="/reviere/mittelmeer" element={<Mediterranean />} />
@@ -324,12 +331,12 @@ function App() {
             {/* Expedition routes */}
             <Route path="/reviere/expeditionen" element={<Expeditions />} />
             
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
           <Footer />
         </BrowserRouter>
       </TooltipProvider>
+      </HelmetProviderContext>
     </QueryClientProvider>
   );
 }

@@ -1,108 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Mittelmeer Destinationen -->
+  <!-- Croatia -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/kroatien</loc>
     <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht</loc>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/kroatien/istrien</loc>
+    <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien</loc>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/kroatien/kvarner-bucht</loc>
+    <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
   </url>
   
-  <!-- Griechenland Destinationen -->
+  <!-- Greece -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/saronic-golf</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/griechenland</loc>
     <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes</loc>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen</loc>
+    <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/sporaden</loc>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln</loc>
+    <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  
-  <!-- Italien Destinationen -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/elba-toskana</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
   </url>
   
-  <!-- Spanien Destinationen -->
+  <!-- Italy -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/italien</loc>
     <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/atlantik/spanien/kanaren</loc>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste</loc>
+    <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  
-  <!-- Karibik & weitere Destinationen -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/antigua</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/martinique</loc>
+    <loc>https://premium-yachtcharter.com/reviere/mittelmeer/italien/toskana</loc>
+    <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/guadeloupe</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2024-01-15</lastmod>
   </url>
 </urlset>

@@ -127,9 +127,9 @@ const Territories = () => {
           <Badge variant="outline" className="mb-4 border-ocean-blue text-ocean-blue">
             Segelreviere
           </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-              Weltweite Yachtcharter Reviere – Ihr perfektes Segelrevier finden
-            </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
+            Unsere Reviere
+          </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Yachtcharter weltweit - Von der Adria und der Ägäis bis Französisch Polynesien. 
             Yachtcharter, der man vertraut: 30 Jahre Markterfahrung, geprüfte Flotten und 
@@ -149,7 +149,7 @@ const Territories = () => {
                   <Link to={destination.link} className="group">
                     <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer h-full">
                       <div className="relative h-48 overflow-hidden">
-                        <img src={destination.image} alt={`Yachtcharter ${destination.name} - Segeln in ${destination.regions}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                        <img src={destination.image} alt={destination.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
                         <div className="absolute top-4 left-4">
                           <Badge className="bg-gradient-sunset text-white font-bold">
@@ -191,7 +191,7 @@ const Territories = () => {
             <Link to="/reviere/mittelmeer" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.png" alt="Mittelmeer Yachtcharter - Türkisfarbenes Wasser und mediterrane Küstenlandschaft" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.png" alt="Mittelmeer" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌍 Europa</Badge>
@@ -209,7 +209,7 @@ const Territories = () => {
             <Link to="/reviere/karibik" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png" alt="Karibik Yachtcharter - Tropische Inseln mit Palmen und türkisem Wasser" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png" alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
