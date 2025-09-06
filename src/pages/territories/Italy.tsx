@@ -6,18 +6,18 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-// import { META } from "@/seo/meta.config";
-// import { Meta } from "@/seo/Meta";
-// import { JsonLd } from "@/seo/JsonLd";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
-  // const m = META.italien;
+  const m = META.italien;
   
-  // const absoluteOg = (path: string) => {
-  //   const base = "https://chartertransparenz.de";
-  //   return path.startsWith("http") ? path : `${base}${path}`;
-  // };
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,8 +37,25 @@ const Italy = () => {
   }];
   const highlights = ["Exzellente italienische Küche", "Wunderschöne Küstenlandschaften", "Reiche Geschichte und Kultur", "Kristallklares Wasser", "Abwechslungsreiche Routen", "Gastfreundliche Marinas"];
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Temporarily disabled Meta and JsonLd due to JSX structure issues */}
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Italien", "item": "https://chartertransparenz.de/reviere/mittelmeer/italien"}
+        ]
+      }} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        {/* Temporarily disabled Meta and JsonLd due to JSX structure issues */}
       <Navigation />
       <Navigation />
       {/* Header */}
@@ -389,10 +406,11 @@ const Italy = () => {
             </CharterRequestForm>
           </div>
         </div>
-      </div>
+        </div>
       
       <TopDestinations />
-    </div>
+      </div>
+    </>
   );
 };
 
