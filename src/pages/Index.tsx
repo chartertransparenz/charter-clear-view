@@ -9,11 +9,13 @@ import Contact from "@/components/Contact";
 import TopDestinations from "@/components/TopDestinations";
 import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
+// import { META } from "@/seo/meta.config";
+// import { Meta } from "@/seo/Meta";
 
 const Index = () => {
-  const m = META.home;
+  console.log("Index component loading");
+  // const m = META.home;
+  // console.log("Meta config loaded:", m);
   
   useEffect(() => {
     // Handle hash navigation when page loads
@@ -33,15 +35,16 @@ const Index = () => {
     return path.startsWith("http") ? path : `${base}${path}`;
   };
 
+  console.log("Rendering Index component");
   return (
     <>
-      <Meta
+      {/* <Meta
         title={m.title}
         description={m.description}
         keywords={m.keywords}
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
-      />
+      /> */}
       <div className="min-h-screen">
         <Navigation />
         <FloatingCTA />

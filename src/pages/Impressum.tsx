@@ -1,27 +1,19 @@
 import Navigation from '@/components/Navigation';
 import TopDestinations from '@/components/TopDestinations';
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
+// import { META } from "@/seo/meta.config";
+// import { Meta } from "@/seo/Meta";
 
 
 export default function Impressum() {
-  const m = META.impressum;
+  // const m = META.impressum;
   
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
+  // const absoluteOg = (path: string) => {
+  //   const base = "https://chartertransparenz.de";
+  //   return path.startsWith("http") ? path : `${base}${path}`;
+  // };
   
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <div className="bg-card rounded-xl shadow-elegant p-8 md:p-12">
@@ -105,6 +97,5 @@ export default function Impressum() {
       
         <TopDestinations />
       </div>
-    </>
   );
 }

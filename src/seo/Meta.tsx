@@ -15,6 +15,7 @@ export function Meta({
   title, description, keywords, canonical, ogImage,
   ogType = "website", twitterCard = "summary_large_image",
 }: Props) {
+  console.log("Meta component rendering with:", { title, description, canonical, ogImage });
   return (
     <Helmet prioritizeSeoTags>
       <title>{title}</title>
