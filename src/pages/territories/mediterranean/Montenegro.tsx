@@ -13,9 +13,7 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import mediterranean from "@/assets/mediterranean.jpg";
 const Montenegro = () => {
-  console.log("Montenegro component loading...");
   const m = META.montenegro;
-  console.log("Montenegro META loaded:", m);
   
   const absoluteOg = (path: string) => {
     const base = "https://chartertransparenz.de";

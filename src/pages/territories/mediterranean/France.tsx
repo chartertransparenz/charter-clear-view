@@ -22,9 +22,7 @@ import { JsonLd } from "@/seo/JsonLd";
 import destinationFrance from "@/assets/destination-france.jpg";
 
 const France = () => {
-  console.log("France component loading...");
   const m = META.frankreich;
-  console.log("France META loaded:", m);
   
   const absoluteOg = (path: string) => {
     const base = "https://chartertransparenz.de";
