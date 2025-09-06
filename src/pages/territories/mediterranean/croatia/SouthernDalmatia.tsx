@@ -15,6 +15,7 @@ import TopDestinations from '@/components/TopDestinations';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 export default function SouthernDalmatia() {
+  const isMobile = useIsMobile();
   const m = META.sueddalmatien;
   
   const absoluteOg = (path: string) => {

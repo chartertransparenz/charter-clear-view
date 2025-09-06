@@ -78,8 +78,17 @@ export default function Greece() {
     highlights: ['Thessaloniki', 'Chalkidiki', 'Kavala', 'Alexandroupoli']
   }];
   const highlights = ['Über 6.000 Inseln und Inselchen', 'Konstante Meltemi-Winde', 'Authentische griechische Tavernen', 'Kristallklares türkises Wasser', 'Reiche antike Geschichte', 'UNESCO-Weltkulturerbe Stätten', 'Perfekte Segelbedingungen', 'Mediterrane Gastfreundschaft'];
-  return <div className="min-h-screen bg-background">
-      <Navigation />
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <div className="min-h-screen bg-background">
+        <Navigation />
       
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-cover bg-top" style={{
