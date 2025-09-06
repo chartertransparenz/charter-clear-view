@@ -10,31 +10,32 @@ import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, Breadcr
 import TerritoryMap from "@/components/TerritoryMap";
 import destinationGreece from "@/assets/destination-greece.jpg";
 import TopDestinations from "@/components/TopDestinations";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 const Sporades = () => {
-  const m = META.sporaden;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-
-  const sporadesStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "TravelAction",
-    "name": "Yachtcharter Sporaden",
-    "description": "Segeln in den Sporaden: Grüne Juwelen der Nordägäis mit unberührter Natur.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Charter Transparenz"
-    }
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Sporaden – Grüne Juwelen der Nordägäis",
+    description: "Segeln in den Sporaden: Grüne Inseln, Mamma Mia Filmkulisse, Meeresschutzgebiet. Unberührte Natur abseits der Touristenströme.",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/sporaden",
+    ogTitle: "Yachtcharter Sporaden – Grüne Juwelen der Nordägäis",
+    ogDescription: "Segeln in den Sporaden: Grüne Inseln, Mamma Mia Filmkulisse, Meeresschutzgebiet. Unberührte Natur abseits der Touristenströme.",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/2fa92b23-1064-4b8e-b8aa-53f7c85fdfdf.png",
+    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/sporaden",
+    structuredData: {
+      ...generateStructuredData.service("Sporaden", "Yachtcharter auf den Sporaden - Segeln zwischen grünen Inseln der Nordägäis"),
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com/" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
+        { name: "Sporaden", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/sporaden" }
+      ])
+    }
+  });
 
   const quickFacts = [{
     icon: MapPin,
@@ -57,6 +58,7 @@ const Sporades = () => {
   const highlights = ["Mamma Mia Filmkulisse (Skopelos)", "Unberührte Natur und Strände", "Meeresschutzgebiet Alonissos", "Weniger frequentiert", "Grüne, bewaldete Inseln", "Authentisches Griechenland", "Kurze Distanzen zwischen Inseln"];
   return (
     <>
+    <>
       <Meta
         title={m.title}
         description={m.description}
@@ -66,7 +68,7 @@ const Sporades = () => {
       />
       <JsonLd json={sporadesStructuredData} />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -419,7 +421,7 @@ const Sporades = () => {
 
         <TopDestinations />
       </div>
-    </>
+    </div>
   );
 };
 

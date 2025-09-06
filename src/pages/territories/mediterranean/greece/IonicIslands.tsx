@@ -63,15 +63,8 @@ const IonicIslands = () => {
         canonical={m.canonical()}
       />
       <JsonLd json={ionicStructuredData} />
-  }, {
-    icon: Anchor,
-    label: "Besonderheit",
-    value: "Sanftere Winde"
-  }];
-  const cities = ["Korfu", "Kefalonia", "Zakynthos", "Lefkada", "Ithaka", "Paxi", "Antipaxi"];
-  const highlights = ["Venezianische Architektur auf Korfu", "Sanftere Winde als in der Ägäis", "Grüne, bergige Landschaften", "Kristallklare Buchten", "Familienfreundliche Reviere", "Reiche Geschichte und Kultur", "Ausgezeichnete Marinas"];
-  return ( <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -443,8 +436,7 @@ const IonicIslands = () => {
       
         <TopDestinations />
       </div>
-      </>
-    </div>
+    </>
   );
 };
 

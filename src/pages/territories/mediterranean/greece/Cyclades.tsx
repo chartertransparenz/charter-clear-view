@@ -56,6 +56,7 @@ const Cyclades = () => {
   const highlights = ["Weltberühmtes Inselhüpfen", "Ikonische weiße Dörfer", "Spektakuläre Sonnenuntergänge", "Meltemi-Wind für perfektes Segeln", "Kristallklare Buchten", "Griechische Inselkultur pur", "Kurze Distanzen zwischen Inseln"];
   return (
     <>
+    <>
       <Meta
         title={m.title}
         description={m.description}
@@ -64,15 +65,8 @@ const Cyclades = () => {
         canonical={m.canonical()}
       />
       <JsonLd json={cycladesStructuredData} />
-  }, {
-    icon: Anchor,
-    label: "Besonderheit",
-    value: "Meltemi-Winde"
-  }];
-  const cities = ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Syros", "Tinos", "Andros"];
-  const highlights = ["Weltberühmte Inseln Mykonos & Santorini", "Konstante Meltemi-Winde im Sommer", "Authentische griechische Tavernen", "Kristallklares, türkises Wasser", "Klassisches Inselhopping", "Reiche antike Geschichte", "Perfekte Segelbedingungen"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -404,8 +398,7 @@ const Cyclades = () => {
 
         <TopDestinations />
       </div>
-      </>
-    </div>
+    </>
   );
 };
 
