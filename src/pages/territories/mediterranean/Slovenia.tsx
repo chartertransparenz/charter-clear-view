@@ -59,14 +59,15 @@ const Slovenia = () => {
   const highlights = ["Kompakte, überschaubare Küste", "Authentische Adriaatmosphäre", "Ausgezeichnete Weinregion", "Kurze Distanzen zu Kroatien/Italien", "Familienfreundliche Reviere", "Hochwertige Marina-Infrastruktur", "Grüne, unberührte Hinterländer"];
   return (
     <>
-      <Meta
+      {/* Temporarily disabled meta tags */}
+      {/* <Meta
         title={m.title}
         description={m.description}
         keywords={m.keywords}
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
       />
-      <JsonLd json={sloveniaStructuredData} />
+      <JsonLd json={sloveniaStructuredData} /> */}
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <Navigation />
       

@@ -60,14 +60,15 @@ const Montenegro = () => {
   const highlights = ["UNESCO-Weltkulturerbe Kotor", "Spektakuläre Fjordlandschaft", "Unberührte Natur", "Authentische Balkanbee", "Kristallklares Adriawasser", "Wenig befahrene Gewässer", "Atemberaubende Bergkulisse"];
   return (
     <>
-      <Meta
+      {/* Temporarily disabled meta tags */}
+      {/* <Meta
         title={m.title}
         description={m.description}
         keywords={m.keywords}
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
       />
-      <JsonLd json={montenegroStructuredData} />
+      <JsonLd json={montenegroStructuredData} /> */}
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <Navigation />
       
