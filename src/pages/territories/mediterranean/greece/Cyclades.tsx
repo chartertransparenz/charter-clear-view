@@ -150,9 +150,11 @@ const Cyclades = () => {
         })}
         </div>
 
-        {/* Description */}
-        <div className="max-w-4xl mx-auto mb-12">
-          
+        {/* Crawlbarer Einleitungstext */}
+        <div className="max-w-4xl mx-auto mb-12 bg-blue-50 p-6 rounded-lg">
+          <p className="text-lg leading-relaxed text-gray-800">
+            <strong>Yachtcharter Kykladen:</strong> Segeln Sie zu den berühmtesten Inseln der Ägäis mit Mykonos, Santorini, Paros und Naxos. Die Kykladen bieten perfekte Segelbedingungen mit dem zuverlässigen Meltemi-Wind, kristallklare Buchten und ikonische weiß-blaue Dorfkulissen. Starten Sie Ihren Törn ab Athen, Lavrion oder direkt von Mykonos und erleben Sie weltberühmtes Inselhüpfen mit kurzen Distanzen zwischen den Inseln. Ideal für sportliches Segeln und authentische griechische Kultur in traditionellen Tavernen.
+          </p>
         </div>
 
         {/* Map */}
@@ -177,7 +179,7 @@ const Cyclades = () => {
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4">Yachtcharter Kykladen – Ihr Törn ab Athen, Lavrion, Mykonos, Paros oder Syros</h2>
+            <h2 className="text-3xl font-bold mb-4">Kykladen Charter – Ihr Törn ab Athen, Lavrion oder Mykonos</h2>
             <p className="text-xl text-muted-foreground">
               Das Herz der Ägäis
             </p>

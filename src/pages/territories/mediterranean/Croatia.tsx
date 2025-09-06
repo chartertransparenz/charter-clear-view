@@ -177,12 +177,15 @@ const Croatia = () => {
           </div>
         </div>
 
+        {/* Crawlbarer Einleitungstext */}
+        <div className="max-w-4xl mx-auto mb-12 bg-blue-50 p-6 rounded-lg">
+          <p className="text-lg leading-relaxed text-gray-800">
+            <strong>Yachtcharter Kroatien:</strong> Entdecken Sie über 1.200 Inseln der kristallklaren Adria mit Ihrer eigenen Segelyacht oder Ihrem Katamaran. Von Split über Hvar bis Dubrovnik erwarten Sie kurze Distanzen, perfekte Marina-Infrastruktur und UNESCO-Weltkulturerbe-Städte. Kroatien bietet ideale Segelbedingungen für alle Erfahrungsstufen – von Familien bis zu erfahrenen Skippern. Buchen Sie jetzt Ihren Traumtörn ab Split, Zadar oder Pula und erleben Sie das mediterrane Paradies der Adria mit seiner einzigartigen Kombination aus Natur, Kultur und erstklassigen Charterbedingungen.
+          </p>
+        </div>
+
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto mb-16 space-y-8">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-4">Yachtcharter Kroatien: Segeln im Paradies der Adria – Ihr Traumtörn entlang der Inseln und Küsten</h2>
-          </div>
-          
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">          
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-6">
               Kroatien – das Land der über 1.200 Inseln, der türkisblauen Buchten, der antiken Städte und der mediterranen Lebensart. Kaum ein anderes Segelrevier in Europa bietet so viel Abwechslung, eine so dichte maritime Infrastruktur und eine so große Vielfalt an Natur und Kultur wie die kroatische Adria. Ein Yachtcharter in Kroatien ist weit mehr als nur ein Urlaub: Es ist die Einladung, die Schönheit der Küste und der Inselwelt vom Wasser aus zu erleben, authentische Gastfreundschaft zu genießen und auf den Spuren der Geschichte zu segeln.
