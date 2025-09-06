@@ -11,7 +11,16 @@ import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide
 import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TerritoryMap from '@/components/TerritoryMap';
 import TopDestinations from '@/components/TopDestinations';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 export default function NorthernDalmatia() {
+  const m = META.norddalmatien;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

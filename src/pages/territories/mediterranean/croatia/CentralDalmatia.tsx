@@ -10,7 +10,16 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
 import TopDestinations from '@/components/TopDestinations';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 export default function CentralDalmatia() {
+  const m = META.zentraldalmatien;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

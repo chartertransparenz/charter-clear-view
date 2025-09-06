@@ -18,10 +18,18 @@ import {
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TopDestinations from '@/components/TopDestinations';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 
 export default function KvarnerBay() {
+  const m = META.kvarner;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
-    console.log('KvarnerBay component rendered with highlights:', highlights);
     window.scrollTo(0, 0);
   }, []);
 

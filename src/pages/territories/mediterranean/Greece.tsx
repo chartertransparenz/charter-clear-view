@@ -11,6 +11,13 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
 export default function Greece() {
+  const m = META.griechenland;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -653,5 +660,7 @@ export default function Greece() {
       </div>
       
       <TopDestinations />
-    </div>;
+      </div>
+    </>
+  );
 }

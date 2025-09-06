@@ -18,6 +18,8 @@ import {
 } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import TopDestinations from '@/components/TopDestinations';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 
 export default function Istria() {
   useEffect(() => {
@@ -93,7 +95,15 @@ export default function Istria() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png)' }}>
@@ -450,7 +460,8 @@ export default function Istria() {
 
 
         <TopDestinations />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
