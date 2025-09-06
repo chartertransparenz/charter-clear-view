@@ -6,18 +6,18 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
+// import { META } from "@/seo/meta.config";
+// import { Meta } from "@/seo/Meta";
+// import { JsonLd } from "@/seo/JsonLd";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
-  const m = META.italien;
+  // const m = META.italien;
   
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
+  // const absoluteOg = (path: string) => {
+  //   const base = "https://chartertransparenz.de";
+  //   return path.startsWith("http") ? path : `${base}${path}`;
+  // };
   
   useEffect(() => {
     window.scrollTo(0, 0);
