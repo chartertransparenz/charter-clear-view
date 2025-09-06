@@ -13,7 +13,7 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const IonicIslands = () => {
-  const m = META.ionische_inseln;
+  const m = META.ionisches;
   
   const absoluteOg = (path: string) => {
     const base = "https://chartertransparenz.de";

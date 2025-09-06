@@ -52,17 +52,6 @@ const Croatia = () => {
     value: "1.200+ Inseln"
   }];
   const regions = [{
-    name: 'Istrien',
-    link: '/reviere/mittelmeer/kroatien/istrien',
-    description: 'Nördlichste Region mit venezianischem Flair',
-    cities: ['Pula', 'Rovinj', 'Poreč']
-  }, {
-    name: 'Kvarner Bucht',
-    link: '/reviere/mittelmeer/kroatien/kvarner-bucht',
-    label: "Inseln",
-    value: "Über 1.200 Inseln"
-  }];
-  const regions = [{
     name: "Istrien",
     link: "/reviere/mittelmeer/kroatien/istrien",
     description: "Die grüne Halbinsel mit venezianischem Flair und perfekter Marina-Infrastruktur",
@@ -89,7 +78,17 @@ const Croatia = () => {
     cities: ["Dubrovnik", "Korčula", "Mljet", "Lastovo"]
   }];
   const highlights = ["Über 1.200 Inseln und Inselchen", "Kristallklares, türkisfarbenes Wasser", "Exzellente Marina-Infrastruktur", "Kurze Distanzen zwischen Ankerplätzen", "UNESCO-Weltkulturerbe Städte", "Kornaten-Nationalpark", "Perfekte Segelbedingungen"];
-  return <div className="min-h-screen bg-white">
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={croatiaStructuredData} />
+      <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
@@ -647,6 +646,9 @@ const Croatia = () => {
       </div>
       
       <TopDestinations />
-    </div>;
+    </div>
+    </>
+  );
 };
+
 export default Croatia;

@@ -55,18 +55,8 @@ const Cyclades = () => {
   const cities = ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Andros", "Tinos", "Syros"];
   const highlights = ["Weltberühmtes Inselhüpfen", "Ikonische weiße Dörfer", "Spektakuläre Sonnenuntergänge", "Meltemi-Wind für perfektes Segeln", "Kristallklare Buchten", "Griechische Inselkultur pur", "Kurze Distanzen zwischen Inseln"];
   return (
-    <>
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={cycladesStructuredData} />
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        <Navigation />
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -398,7 +388,7 @@ const Cyclades = () => {
 
         <TopDestinations />
       </div>
-    </>
+    </div>
   );
 };
 
