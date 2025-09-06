@@ -8,7 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
-import caribbean from "@/assets/caribbean.jpg";
+// import caribbean from "@/assets/caribbean.jpg";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Cuba = () => {
   useEffect(() => {
