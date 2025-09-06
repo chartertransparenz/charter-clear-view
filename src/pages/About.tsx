@@ -3,16 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { Award, Anchor, Compass, Ship, Star, Trophy, Globe } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-// import { META } from "@/seo/meta.config";
-// import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
 // import maritimeImage from "@/assets/maritime-experience.jpg";
 const About = () => {
-  // const m = META.about;
+  const m = META.about;
   
-  // const absoluteOg = (path: string) => {
-  //   const base = "https://chartertransparenz.de";
-  //   return path.startsWith("http") ? path : `${base}${path}`;
-  // };
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
   
   const milestones = [{
     year: "1997",
@@ -71,7 +71,15 @@ const About = () => {
     label: "Service Support"
   }];
   return (
-    <div className="min-h-screen">
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <div className="min-h-screen">
       <Navigation />
       
       <main>
@@ -107,7 +115,8 @@ const About = () => {
       </main>
 
       <TopDestinations />
-    </div>
+      </div>
+    </>
   );
 };
 export default About;
