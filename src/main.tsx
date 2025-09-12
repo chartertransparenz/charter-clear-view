@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import GlobalErrorBoundary from '@/components/GlobalErrorBoundary'
+import GlobalErrorBoundary from './components/GlobalErrorBoundary'
 
 const rootEl = document.getElementById('root')!;
 const root = createRoot(rootEl);

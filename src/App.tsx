@@ -1,14 +1,14 @@
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { TooltipProvider } from "./components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
-import Footer from "@/components/Footer";
-import { HelmetProviderContext } from "@/contexts/HelmetContext";
+import Footer from "./components/Footer";
+import { HelmetProviderContext } from "./contexts/HelmetContext";
 
 import SanityCheck from "./pages/SanityCheck";
-import About from '@/pages/About';
-import Impressum from '@/pages/Impressum';
-import FAQ from '@/pages/FAQ';
+import About from './pages/About';
+import Impressum from './pages/Impressum';
+import FAQ from './pages/FAQ';
 import NotFound from "./pages/NotFound";
 
 // Territory pages
