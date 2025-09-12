@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Navigation from "@/components/Navigation";
+import Navigation from "../components/Navigation";
 
 const Index = () => {
   useEffect(() => {
