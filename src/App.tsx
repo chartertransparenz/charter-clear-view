@@ -6,10 +6,6 @@ import Footer from "./components/Footer";
 import { HelmetProviderContext } from "./contexts/HelmetContext";
 
 import SanityCheck from "./pages/SanityCheck";
-import About from './pages/About';
-import Impressum from './pages/Impressum';
-import FAQ from './pages/FAQ';
-import NotFound from "./pages/NotFound";
 
 // Territory pages
 const Mediterranean = lazy(() => import("./pages/territories/Mediterranean"));
@@ -22,6 +18,12 @@ const France = lazy(() => import("./pages/territories/mediterranean/France"));
 const Malta = lazy(() => import("./pages/territories/mediterranean/Malta"));
 const Montenegro = lazy(() => import("./pages/territories/mediterranean/Montenegro"));
 const Slovenia = lazy(() => import("./pages/territories/mediterranean/Slovenia"));
+
+// Core pages (lazy)
+const About = lazy(() => import('./pages/About'));
+const Impressum = lazy(() => import('./pages/Impressum'));
+const FAQ = lazy(() => import('./pages/FAQ'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Croatian regions
 const Istria = lazy(() => import("./pages/territories/mediterranean/croatia/Istria"));
