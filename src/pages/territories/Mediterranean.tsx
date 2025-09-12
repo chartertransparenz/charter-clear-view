@@ -1,11 +1,11 @@
-import { Badge } from "../../components/ui/badge";
-import { Button } from "../../components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Sun, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "../../components/CharterRequestForm";
-import Navigation from "../../components/Navigation";
-import TopDestinations from "../../components/TopDestinations";
+import CharterRequestForm from "@/components/CharterRequestForm";
+import Navigation from "@/components/Navigation";
+import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -13,7 +13,9 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator,
   BreadcrumbPage,
-} from "../../components/ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
+import mediterranean from "@/assets/mediterranean.jpg";
+
 const Mediterranean = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -21,7 +21,6 @@ import TopDestinations from '@/components/TopDestinations';
 
 export default function KvarnerBay() {
   useEffect(() => {
-    console.log('KvarnerBay component rendered with highlights:', highlights);
     window.scrollTo(0, 0);
   }, []);
 

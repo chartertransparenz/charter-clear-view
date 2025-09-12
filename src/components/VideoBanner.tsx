@@ -1,6 +1,6 @@
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { Play, Users, Compass, Award } from "lucide-react";
-// import videoBannerBg from "@/assets/video-banner-bg.jpg";
+import videoBannerBg from "@/assets/video-banner-bg.jpg";
 
 const VideoBanner = () => {
   const highlights = [
@@ -23,7 +23,7 @@ const VideoBanner = () => {
       {/* Background Video/Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png')` }}
+        style={{ backgroundImage: `url(${videoBannerBg})` }}
       >
         <div className="absolute inset-0 bg-ocean-dark/60"></div>
       </div>

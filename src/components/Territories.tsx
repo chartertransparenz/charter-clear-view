@@ -1,28 +1,28 @@
 import React, { useEffect } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "./ui/carousel";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { MapPin, Anchor, Waves, Mountain, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-// import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
-// import mediterranean from "@/assets/mediterranean.jpg";
-// import balticSea from "@/assets/baltic-sea.jpg";
-// import atlantic from "@/assets/atlantic.jpg";
-// import caribbean from "@/assets/caribbean.jpg";
-// import pacific from "@/assets/pacific.jpg";
-// import indianOcean from "@/assets/indian-ocean.jpg";
-// import expedition from "@/assets/expedition.jpg";
-// import destinationCroatia from "@/assets/destination-croatia.jpg";
-// import destinationGreece from "@/assets/destination-greece.jpg";
-// import destinationItaly from "@/assets/destination-italy.jpg";
-// import destinationSpain from "@/assets/destination-spain.jpg";
-// import destinationTurkey from "@/assets/destination-turkey.jpg";
-// import destinationFrance from "@/assets/destination-france.jpg";
-// import destinationBvi from "@/assets/destination-bvi.jpg";
-// import destinationThailand from "@/assets/destination-thailand.jpg";
-// import destinationSeychelles from "@/assets/destination-seychelles.jpg";
-// import destinationAustralia from "@/assets/destination-australia.jpg";
+import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
+import mediterranean from "@/assets/mediterranean.jpg";
+import balticSea from "@/assets/baltic-sea.jpg";
+import atlantic from "@/assets/atlantic.jpg";
+import caribbean from "@/assets/caribbean.jpg";
+import pacific from "@/assets/pacific.jpg";
+import indianOcean from "@/assets/indian-ocean.jpg";
+import expedition from "@/assets/expedition.jpg";
+import destinationCroatia from "@/assets/destination-croatia.jpg";
+import destinationGreece from "@/assets/destination-greece.jpg";
+import destinationItaly from "@/assets/destination-italy.jpg";
+import destinationSpain from "@/assets/destination-spain.jpg";
+import destinationTurkey from "@/assets/destination-turkey.jpg";
+import destinationFrance from "@/assets/destination-france.jpg";
+import destinationBvi from "@/assets/destination-bvi.jpg";
+import destinationThailand from "@/assets/destination-thailand.jpg";
+import destinationSeychelles from "@/assets/destination-seychelles.jpg";
+import destinationAustralia from "@/assets/destination-australia.jpg";
 const Territories = () => {
   const [api, setApi] = React.useState<CarouselApi>();
   const topDestinations = [{
@@ -120,17 +120,16 @@ const Territories = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return (
-    <section id="reviere" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-ocean-light/20 to-white">
+  return <section id="reviere" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-ocean-light/20 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 border-ocean-blue text-ocean-blue">
             Segelreviere
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
-            Unsere Reviere
-          </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
+              Weltweite Yachtcharter Reviere – Ihr perfektes Segelrevier finden
+            </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Yachtcharter weltweit - Von der Adria und der Ägäis bis Französisch Polynesien. 
             Yachtcharter, der man vertraut: 30 Jahre Markterfahrung, geprüfte Flotten und 
@@ -150,7 +149,7 @@ const Territories = () => {
                   <Link to={destination.link} className="group">
                     <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer h-full">
                       <div className="relative h-48 overflow-hidden">
-                        <img src={destination.image} alt={destination.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                        <img src={destination.image} alt={`Yachtcharter ${destination.name} - Segeln in ${destination.regions}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
                         <div className="absolute top-4 left-4">
                           <Badge className="bg-gradient-sunset text-white font-bold">
@@ -192,7 +191,7 @@ const Territories = () => {
             <Link to="/reviere/mittelmeer" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.png" alt="Mittelmeer" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.png" alt="Mittelmeer Yachtcharter - Türkisfarbenes Wasser und mediterrane Küstenlandschaft" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌍 Europa</Badge>
@@ -210,7 +209,7 @@ const Territories = () => {
             <Link to="/reviere/karibik" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png" alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png" alt="Karibik Yachtcharter - Tropische Inseln mit Palmen und türkisem Wasser" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
@@ -323,7 +322,6 @@ const Territories = () => {
           
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Territories;

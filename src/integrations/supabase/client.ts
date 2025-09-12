@@ -8,31 +8,9 @@ const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiO
 // Import the supabase client like this:
 // import { supabase } from "@/integrations/supabase/client";
 
-// Use a safe storage to avoid iframe/localStorage security errors
-const memoryStorage: Storage = {
-  getItem: () => null,
-  setItem: () => {},
-  removeItem: () => {},
-  clear: () => {},
-  key: () => null,
-  length: 0,
-};
-
-const getSafeStorage = (): Storage => {
-  try {
-    const ls = window.localStorage;
-    const testKey = "__sb_test__";
-    ls.setItem(testKey, "1");
-    ls.removeItem(testKey);
-    return ls;
-  } catch {
-    return memoryStorage;
-  }
-};
-
 export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
-    storage: getSafeStorage(),
+    storage: localStorage,
     persistSession: true,
     autoRefreshToken: true,
   }

@@ -14,7 +14,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-
+import indianOcean from "@/assets/indian-ocean.jpg";
 
 const IndianOcean = () => {
   useEffect(() => {
