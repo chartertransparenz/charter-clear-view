@@ -20,6 +20,7 @@ const Montenegro = lazy(() => import("./pages/territories/mediterranean/Monteneg
 const Slovenia = lazy(() => import("./pages/territories/mediterranean/Slovenia"));
 
 // Core pages (lazy)
+const Index = lazy(() => import('./pages/Index'));
 const About = lazy(() => import('./pages/About'));
 const Impressum = lazy(() => import('./pages/Impressum'));
 const FAQ = lazy(() => import('./pages/FAQ'));
@@ -181,7 +182,7 @@ function App() {
           <BrowserRouter>
           <Suspense fallback={<div className="p-6">Lädt…</div>}>
           <Routes>
-            <Route path="/" element={<SanityCheck />} />
+            <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<About />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/faq" element={<FAQ />} />
