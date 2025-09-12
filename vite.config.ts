@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import tsconfigPaths from "vite-tsconfig-paths";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
@@ -11,6 +12,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
+    tsconfigPaths(),
     // componentTagger disabled for debugging runtime "Script error" in preview
     // mode === 'development' && componentTagger(),
   ].filter(Boolean),
