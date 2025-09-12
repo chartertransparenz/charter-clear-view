@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
-import Index from "./pages/Index";
+
 import SanityCheck from "./pages/SanityCheck";
 import About from '@/pages/About';
 import Impressum from '@/pages/Impressum';
