@@ -167,9 +167,11 @@ const AllTerritories = lazy(() => import("./pages/AllTerritories"));
 const queryClient = new QueryClient();
 
 function App() {
+  console.info('[App] render start');
   useEffect(() => {
     // Set German locale for the application
     document.documentElement.lang = 'de';
+    console.info('[App] mounted, locale set to de');
   }, []);
 
   return (

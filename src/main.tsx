@@ -4,6 +4,7 @@ import GlobalErrorBoundary from '@/components/GlobalErrorBoundary'
 
 const rootEl = document.getElementById('root')!;
 const root = createRoot(rootEl);
+console.info('[main] Root created, preparing to render App');
 
 // Global error listeners wieder aktiviert
 window.addEventListener("error", (event) => {

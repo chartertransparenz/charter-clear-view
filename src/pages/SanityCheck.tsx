@@ -1,4 +1,5 @@
 const SanityCheck = () => {
+  console.info('[SanityCheck] render');
   return (
     <div className="min-h-screen bg-white text-foreground">
       <main className="container mx-auto px-4 pt-20">
