@@ -179,6 +179,7 @@ function App() {
           <Toaster />
           <Sonner />
           <BrowserRouter>
+          <Suspense fallback={<div className="p-6">Lädt…</div>}>
           <Routes>
             <Route path="/" element={<SanityCheck />} />
           <Route path="/ueber-uns" element={<About />} />
@@ -334,6 +335,7 @@ function App() {
             
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
           <Footer />
         </BrowserRouter>
       </TooltipProvider>

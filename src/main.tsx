@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import GlobalErrorBoundary from '@/components/GlobalErrorBoundary'
 
 const rootEl = document.getElementById('root')!;
 const root = createRoot(rootEl);
@@ -23,7 +24,11 @@ window.addEventListener("unhandledrejection", (event) => {
 
 // Test: App-Import ohne Provider
 import('./App.tsx').then(({ default: App }) => {
-  root.render(<App />);
+  root.render(
+    <GlobalErrorBoundary>
+      <App />
+    </GlobalErrorBoundary>
+  );
 }).catch(e => {
   console.error('[App-import-error]', e);
   root.render(
