@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Award, Anchor, Compass, Ship, Star, Trophy, Globe } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import maritimeImage from "@/assets/maritime-experience.jpg";
+// import maritimeImage from "@/assets/maritime-experience.jpg";
 const About = () => {
   const milestones = [{
     year: "1997",

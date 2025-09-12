@@ -1,12 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Badge } from "./ui/badge";
 import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "../hooks/use-toast";
+import { supabase } from "../integrations/supabase/client";
 import CharterRequestForm from "./CharterRequestForm";
 
 // Helper function to call Supabase Edge Functions

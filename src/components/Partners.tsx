@@ -1,16 +1,16 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import { Award, Users, MapPin, Shield, Anchor, Star } from "lucide-react";
-import { useAnimatedCounter } from "@/hooks/use-animated-counter";
-import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import partnerMarina from "@/assets/partner-marina.jpg";
-import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
-import partnerCertifications from "@/assets/partner-certifications.jpg";
-import partnersTrust from "@/assets/partners-trust.jpg";
-import partnersGlobal from "@/assets/partners-global.jpg";
-import partnersYears from "@/assets/partners-years.jpg";
-import partnersQuality from "@/assets/partners-quality.jpg";
+import { useAnimatedCounter } from "../hooks/use-animated-counter";
+import { useIntersectionObserver } from "../hooks/use-intersection-observer";
+// import partnerMarina from "@/assets/partner-marina.jpg";
+// import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
+// import partnerCertifications from "@/assets/partner-certifications.jpg";
+// import partnersTrust from "@/assets/partners-trust.jpg";
+// import partnersGlobal from "@/assets/partners-global.jpg";
+// import partnersYears from "@/assets/partners-years.jpg";
+// import partnersQuality from "@/assets/partners-quality.jpg";
 
 const Partners = () => {
   const partnerCategories = [];
@@ -27,9 +27,9 @@ const Partners = () => {
 
   const statistics = [
     { number: count1, suffix: "+", label: "Vertrauensvolle Partner", icon: Users, image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png" },
-    { number: count2, suffix: "+", label: "Länder weltweit", icon: MapPin, image: partnersGlobal },
-    { number: count3, suffix: "+", label: "Jahre Partnerschaft", icon: Award, image: partnersYears },
-    { number: count4, suffix: "%", label: "Qualitätsgarantie", icon: Shield, image: partnersQuality }
+    { number: count2, suffix: "+", label: "Länder weltweit", icon: MapPin, image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png" },
+    { number: count3, suffix: "+", label: "Jahre Partnerschaft", icon: Award, image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png" },
+    { number: count4, suffix: "%", label: "Qualitätsgarantie", icon: Shield, image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png" }
   ];
 
   return (

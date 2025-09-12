@@ -8,12 +8,33 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
-
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const IonicIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Ionische Inseln – Korfu & Lefkada",
+    description: "Segeln Ionische Inseln: Sanfte Winde, grüne Landschaften, Korfu & Lefkada. Ideal für Familien. Segelyacht oder Katamaran mieten.",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln",
+    ogTitle: "Yachtcharter Ionische Inseln – Korfu & Lefkada",
+    ogDescription: "Segeln Ionische Inseln: Sanfte Winde, grüne Landschaften, Korfu & Lefkada. Ideal für Familien. Segelyacht oder Katamaran mieten.",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
+    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln",
+    structuredData: {
+      ...generateStructuredData.service("Ionische Inseln", "Yachtcharter auf den Ionischen Inseln - Segeln vor Korfu, Lefkada und Kefalonia mit sanften Winden"),
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com/" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
+        { name: "Ionische Inseln", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln" }
+      ])
+    }
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -38,12 +59,12 @@ const IonicIslands = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png" alt="Ionische Inseln Griechenland" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png" alt="Yachtcharter Ionische Inseln - Segelboot vor grünen Küsten von Korfu und Lefkada bei ruhiger See" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Ionische Inseln</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Ionische Inseln</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Ionische Inseln</h1>
             <p className="text-xl max-w-2xl">
               Grüne Perlen des Ionischen Meeres
             </p>
