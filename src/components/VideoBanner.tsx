@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { Play, Users, Compass, Award } from "lucide-react";
 // import videoBannerBg from "@/assets/video-banner-bg.jpg";
 
