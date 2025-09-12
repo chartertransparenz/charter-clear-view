@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import Navigation from "../components/Navigation";
+import Hero from "../components/Hero";
 
 const Index = () => {
   useEffect(() => {
-    console.info('[Index] with Navigation');
+    console.info('[Index] with Navigation + Hero');
     const hash = window.location.hash;
     if (hash) {
       setTimeout(() => {
@@ -18,9 +19,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <Hero />
       <main className="container mx-auto px-4 pt-20">
-        <h1 className="text-2xl font-semibold">Startseite mit Navigation</h1>
-        <p className="mt-2 opacity-80">Navigation hinzugefügt - Test läuft.</p>
+        <h1 className="text-2xl font-semibold">Navigation + Hero Test</h1>
+        <p className="mt-2 opacity-80">Hero-Bereich hinzugefügt.</p>
       </main>
     </div>
   );
