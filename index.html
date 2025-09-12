@@ -30,9 +30,19 @@
     <meta name="twitter:title" content="Yachtcharter mit 30 Jahren Erfahrung | Segelyacht & Katamaran mieten" />
     <meta name="twitter:description" content="Yachtcharter weltweit mit 30 Jahren Erfahrung. Große Auswahl an Segelyachten, Motorbooten & Katamaranen, geprüfte Anbieter, Top-Bewertungen & persönliche Beratung." />
     <meta name="twitter:image" content="https://[IHRE-DOMAIN]/twitter-image.jpg" />
+
+    <!-- Global error capture (dev) -->
+    <script>
+      window.addEventListener('error', function(e) {
+        console.error('[GlobalError]', e.message, e.filename, e.lineno+':'+e.colno, e.error);
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('[UnhandledRejection]', e.reason);
+      });
+    </script>
     
-    <!-- Cookiebot Consent Manager -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="90f2041c-07f6-43b5-9855-e31d5276fe87" data-blockingmode="auto" type="text/javascript"></script>
+    <!-- Cookiebot temporär entfernt, da es in der Preview eine generische "Script error" Meldung verursachen kann. In Produktion wieder aktivieren. -->
+    <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="90f2041c-07f6-43b5-9855-e31d5276fe87" data-blockingmode="auto" type="text/javascript"></script> -->
   </head>
 
   <body>
