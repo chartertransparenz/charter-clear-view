@@ -6,19 +6,9 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
-// import destinationSpain from "@/assets/destination-spain.jpg";
+import destinationSpain from "@/assets/destination-spain.jpg";
 
 const Spain = () => {
-  const m = META.spanien;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -69,24 +59,7 @@ const Spain = () => {
   ];
 
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Spanien", "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien"}
-        ]
-      }} />
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -227,8 +200,7 @@ const Spain = () => {
       </div>
       
       <TopDestinations />
-      </div>
-    </>
+    </div>
   );
 };
 

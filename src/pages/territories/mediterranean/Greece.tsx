@@ -10,17 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
 export default function Greece() {
-  const m = META.griechenland;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -81,26 +71,8 @@ export default function Greece() {
     highlights: ['Thessaloniki', 'Chalkidiki', 'Kavala', 'Alexandroupoli']
   }];
   const highlights = ['Über 6.000 Inseln und Inselchen', 'Konstante Meltemi-Winde', 'Authentische griechische Tavernen', 'Kristallklares türkises Wasser', 'Reiche antike Geschichte', 'UNESCO-Weltkulturerbe Stätten', 'Perfekte Segelbedingungen', 'Mediterrane Gastfreundschaft'];
-  return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList", 
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Griechenland", "item": "https://chartertransparenz.de/reviere/mittelmeer/griechenland"}
-        ]
-      }} />
-      <div className="min-h-screen bg-background">
-        <Navigation />
+  return <div className="min-h-screen bg-background">
+      <Navigation />
       
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-cover bg-top" style={{
@@ -681,7 +653,5 @@ export default function Greece() {
       </div>
       
       <TopDestinations />
-      </div>
-    </>
-  );
+    </div>;
 }

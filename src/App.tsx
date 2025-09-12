@@ -1,22 +1,22 @@
-import { Toaster } from "./components/ui/toaster";
-import { Toaster as Sonner } from "./components/ui/sonner";
-import { TooltipProvider } from "./components/ui/tooltip";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import Footer from "./components/Footer";
-import { HelmetProviderContext } from "./contexts/HelmetContext";
+import Footer from "@/components/Footer";
+import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
-import About from './pages/About';
-import Impressum from './pages/Impressum';
-import FAQ from './pages/FAQ';
+import About from '@/pages/About';
+import Impressum from '@/pages/Impressum';
+import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
 
 // Territory pages
 import Mediterranean from "./pages/territories/Mediterranean";
 import Croatia from "./pages/territories/mediterranean/Croatia";
 import Greece from "./pages/territories/mediterranean/Greece";
-import Italy from "./pages/territories/Italy";
+import Italy from "./pages/territories/mediterranean/Italy";
 import Spain from "./pages/territories/mediterranean/Spain";
 import Turkey from "./pages/territories/mediterranean/Turkey";
 import France from "./pages/territories/mediterranean/France";

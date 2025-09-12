@@ -6,19 +6,9 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
-// import destinationTurkey from "@/assets/destination-turkey.jpg";
+import destinationTurkey from "@/assets/destination-turkey.jpg";
 
 const Turkey = () => {
-  const m = META.tuerkei;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -71,24 +61,7 @@ const Turkey = () => {
   ];
 
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Türkei", "item": "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"}
-        ]
-      }} />
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -230,8 +203,7 @@ const Turkey = () => {
       </div>
       
       <TopDestinations />
-      </div>
-    </>
+    </div>
   );
 };
 

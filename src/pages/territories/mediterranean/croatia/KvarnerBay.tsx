@@ -18,19 +18,10 @@ import {
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TopDestinations from '@/components/TopDestinations';
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
 
 export default function KvarnerBay() {
-  const m = META.kvarner;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-  
   useEffect(() => {
+    console.log('KvarnerBay component rendered with highlights:', highlights);
     window.scrollTo(0, 0);
   }, []);
 
@@ -88,41 +79,7 @@ export default function KvarnerBay() {
   ];
 
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
-          {"@type": "ListItem", "position": 4, "name": "Kvarner Bucht", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht"}
-        ]
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Marina Punat",
-        "address": {"@type": "PostalAddress", "addressLocality": "Punat", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 45.0175, "longitude": 14.6203},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht"
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Marina Mali Lošinj",
-        "address": {"@type": "PostalAddress", "addressLocality": "Mali Lošinj", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 44.5311, "longitude": 14.4686},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht"
-      }} />
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(/lovable-uploads/e84a0e28-efd8-48a7-a441-191cf3510c86.png)` }}>
@@ -464,7 +421,6 @@ export default function KvarnerBay() {
 
         <TopDestinations />
       </div>
-      </div>
-    </>
+    </div>
   );
 }

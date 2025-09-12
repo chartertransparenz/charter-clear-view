@@ -6,17 +6,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { ArrowLeft, ChevronRight } from 'lucide-react';
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
 
 export default function AllTerritories() {
-  const m = META.allTerritories;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -290,15 +281,7 @@ export default function AllTerritories() {
   };
 
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Breadcrumb Navigation */}
@@ -361,7 +344,6 @@ export default function AllTerritories() {
       </div>
       
       <TopDestinations />
-      </div>
-    </>
+    </div>
   );
 }
