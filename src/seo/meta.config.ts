@@ -18,8 +18,8 @@ export const META: Record<RegionKey, {
   canonical: (path?: string) => string; // Umgebungssicher
 }> = {
   home: {
-    title: "Yachtcharter weltweit | 30 Jahre Erfahrung – Split bis Mykonos",
-    description: "Segelyacht & Katamaran mieten: Kroatien, Griechenland, Italien ab 890€/Woche. 30 Jahre Erfahrung. Jetzt Angebot anfragen & Traumtörn buchen!",
+    title: "Yachtcharter Preisvergleich – 30 Jahre Erfahrung",
+    description: "Yachtcharter weltweit: Segelyacht & Katamaran mieten. Kroatien, Griechenland, Italien ab 890€/Woche. Jetzt Angebot anfragen!",
     keywords: ["Yachtcharter", "Segelyacht mieten", "Katamaran mieten", "Preisvergleich"],
     ogImage: "/og/home.jpg",
     canonical: (p="") => `https://chartertransparenz.de/${p}`
@@ -39,8 +39,8 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
   },
   griechenland: {
-    title: "Yachtcharter Griechenland | Kykladen & Ionisches Meer segeln",
-    description: "Griechenland segeln: Kykladen & Ionisches Meer, malerische Buchten & Tavernen. Segelyacht oder Katamaran ab Athen. Jetzt anfragen!",
+    title: "Yachtcharter Griechenland | Ägäis & Ionisches Meer – 6000+ Inseln",
+    description: "Griechenland segeln: Kykladen & Ionisches Meer, malerische Buchten & Tavernen. Segelyacht oder Katamaran jetzt anfragen!",
     keywords: ["Yachtcharter Griechenland","Kykladen","Ionisches Meer","Segeln Griechenland"],
     ogImage: "/og/griechenland.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland"
@@ -81,8 +81,8 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"
   },
   mittelmeer: {
-    title: "Yachtcharter Mittelmeer | Kroatien bis Türkei – 1000+ Häfen",
-    description: "Mittelmeer segeln: über 20 Länder, 1000+ Häfen, ganzjährig segelbar. Von Kroatien bis Türkei. Segelyacht & Katamaran jetzt anfragen!",
+    title: "Yachtcharter Mittelmeer | Kroatien, Griechenland, Italien, Türkei",
+    description: "Mittelmeer segeln: über 20 Länder, 1000+ Häfen, ganzjährig segelbar. Von Kroatien bis Türkei. Jetzt Traumtörn anfragen!",
     keywords: ["Yachtcharter Mittelmeer","Kroatien","Griechenland","Italien","Türkei"],
     ogImage: "/og/mittelmeer.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer"

@@ -8,33 +8,32 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
-import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
 const Croatia = () => {
-  const m = META.kroatien;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-
-  const croatiaStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "TravelAction",
-    "name": "Yachtcharter Kroatien",
-    "description": "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Charter Transparenz"
-    }
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
+    description: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
+    ogTitle: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
+    ogDescription: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png",
+    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
+    structuredData: {
+      ...generateStructuredData.service("Kroatien", "Yachtcharter in Kroatien - Segeln zwischen über 1.200 Inseln der Adria"),
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com/" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Kroatien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien" }
+      ])
+    }
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -49,8 +48,8 @@ const Croatia = () => {
     value: "Alle Erfahrungsstufen"
   }, {
     icon: Anchor,
-    label: "Besonderheit",
-    value: "1.200+ Inseln"
+    label: "Inseln",
+    value: "Über 1.200 Inseln"
   }];
   const regions = [{
     name: "Istrien",
@@ -79,23 +78,7 @@ const Croatia = () => {
     cities: ["Dubrovnik", "Korčula", "Mljet", "Lastovo"]
   }];
   const highlights = ["Über 1.200 Inseln und Inselchen", "Kristallklares, türkisfarbenes Wasser", "Exzellente Marina-Infrastruktur", "Kurze Distanzen zwischen Ankerplätzen", "UNESCO-Weltkulturerbe Städte", "Kornaten-Nationalpark", "Perfekte Segelbedingungen"];
-  return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={croatiaStructuredData} />
-      <BreadcrumbSchema items={[
-        { name: "Start", url: "https://chartertransparenz.de/" },
-        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Kroatien", url: "https://chartertransparenz.de/reviere/mittelmeer/kroatien" }
-      ]} />
-      <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
@@ -184,15 +167,12 @@ const Croatia = () => {
           </div>
         </div>
 
-        {/* Crawlbarer Einleitungstext */}
-        <div className="max-w-4xl mx-auto mb-12 bg-blue-50 p-6 rounded-lg">
-          <p className="text-lg leading-relaxed text-gray-800">
-            <strong>Yachtcharter Kroatien:</strong> Entdecken Sie über 1.200 Inseln der kristallklaren Adria mit Ihrer eigenen Segelyacht oder Ihrem Katamaran. Von Split über Hvar bis Dubrovnik erwarten Sie kurze Distanzen, perfekte Marina-Infrastruktur und UNESCO-Weltkulturerbe-Städte. Kroatien bietet ideale Segelbedingungen für alle Erfahrungsstufen – von Familien bis zu erfahrenen Skippern. Buchen Sie jetzt Ihren Traumtörn ab Split, Zadar oder Pula und erleben Sie das mediterrane Paradies der Adria mit seiner einzigartigen Kombination aus Natur, Kultur und erstklassigen Charterbedingungen.
-          </p>
-        </div>
-
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto mb-16 space-y-8">          
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Kroatien: Segeln im Paradies der Adria – Ihr Traumtörn entlang der Inseln und Küsten</h2>
+          </div>
+          
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-6">
               Kroatien – das Land der über 1.200 Inseln, der türkisblauen Buchten, der antiken Städte und der mediterranen Lebensart. Kaum ein anderes Segelrevier in Europa bietet so viel Abwechslung, eine so dichte maritime Infrastruktur und eine so große Vielfalt an Natur und Kultur wie die kroatische Adria. Ein Yachtcharter in Kroatien ist weit mehr als nur ein Urlaub: Es ist die Einladung, die Schönheit der Küste und der Inselwelt vom Wasser aus zu erleben, authentische Gastfreundschaft zu genießen und auf den Spuren der Geschichte zu segeln.
@@ -656,9 +636,6 @@ const Croatia = () => {
       </div>
       
       <TopDestinations />
-    </div>
-    </>
-  );
+    </div>;
 };
-
 export default Croatia;

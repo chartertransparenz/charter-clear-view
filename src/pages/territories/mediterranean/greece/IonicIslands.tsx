@@ -8,32 +8,33 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const IonicIslands = () => {
-  const m = META.ionisches;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-
-  const ionicStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "TravelAction",
-    "name": "Yachtcharter Ionische Inseln",
-    "description": "Segeln Ionische Inseln: Sanfte Winde, grüne Landschaften, Korfu & Lefkada.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Charter Transparenz"
-    }
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Ionische Inseln – Korfu & Lefkada",
+    description: "Segeln Ionische Inseln: Sanfte Winde, grüne Landschaften, Korfu & Lefkada. Ideal für Familien. Segelyacht oder Katamaran mieten.",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln",
+    ogTitle: "Yachtcharter Ionische Inseln – Korfu & Lefkada",
+    ogDescription: "Segeln Ionische Inseln: Sanfte Winde, grüne Landschaften, Korfu & Lefkada. Ideal für Familien. Segelyacht oder Katamaran mieten.",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
+    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln",
+    structuredData: {
+      ...generateStructuredData.service("Ionische Inseln", "Yachtcharter auf den Ionischen Inseln - Segeln vor Korfu, Lefkada und Kefalonia mit sanften Winden"),
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com/" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
+        { name: "Ionische Inseln", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln" }
+      ])
+    }
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -49,22 +50,12 @@ const IonicIslands = () => {
   }, {
     icon: Anchor,
     label: "Besonderheit",
-    value: "Sanfte Winde"
+    value: "Sanftere Winde"
   }];
-  const cities = ["Korfu", "Lefkada", "Kefalonia", "Zakynthos", "Ithaka", "Paxos"];
-  const highlights = ["Familienfreundliche Windverhältnisse", "Grüne, bergige Inseln", "Traumhafte Sandstrände", "Venezianisches Erbe", "Kurze Distanzen", "Geschützte Ankerplätze", "Authentisches Griechenland"];
-  return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={ionicStructuredData} />
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        <Navigation />
+  const cities = ["Korfu", "Kefalonia", "Zakynthos", "Lefkada", "Ithaka", "Paxi", "Antipaxi"];
+  const highlights = ["Venezianische Architektur auf Korfu", "Sanftere Winde als in der Ägäis", "Grüne, bergige Landschaften", "Kristallklare Buchten", "Familienfreundliche Reviere", "Reiche Geschichte und Kultur", "Ausgezeichnete Marinas"];
+  return ( <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -434,9 +425,8 @@ const IonicIslands = () => {
 
       </div>
       
-        <TopDestinations />
-      </div>
-    </>
+      <TopDestinations />
+    </div>
   );
 };
 

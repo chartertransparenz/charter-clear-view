@@ -1,15 +1,15 @@
-import { Toaster } from "./components/ui/toaster";
-import { Toaster as Sonner } from "./components/ui/sonner";
-import { TooltipProvider } from "./components/ui/tooltip";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import Footer from "./components/Footer";
-import { HelmetProviderContext } from "./contexts/HelmetContext";
+import Footer from "@/components/Footer";
+import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
-import About from './pages/About';
-import Impressum from './pages/Impressum';
-import FAQ from './pages/FAQ';
+import About from '@/pages/About';
+import Impressum from '@/pages/Impressum';
+import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
 
 // Territory pages
@@ -35,6 +35,7 @@ import SouthernDalmatia from "./pages/territories/mediterranean/croatia/Southern
 import Cyclades from "./pages/territories/mediterranean/greece/Cyclades";
 import IonicIslands from "./pages/territories/mediterranean/greece/IonicIslands";
 import Dodecanese from "./pages/territories/mediterranean/greece/Dodecanese";
+import Sporades from "./pages/territories/mediterranean/greece/Sporades";
 import AthenSaronischerGolf from "./pages/territories/mediterranean/greece/AthenSaronischerGolf";
 import Nordgriechenland from "./pages/territories/mediterranean/greece/Nordgriechenland";
 
@@ -209,6 +210,7 @@ function App() {
             <Route path="/reviere/mittelmeer/griechenland/kykladen" element={<Cyclades />} />
             <Route path="/reviere/mittelmeer/griechenland/ionische-inseln" element={<IonicIslands />} />
             <Route path="/reviere/mittelmeer/griechenland/dodekanes" element={<Dodecanese />} />
+            <Route path="/reviere/mittelmeer/griechenland/sporaden" element={<Sporades />} />
             <Route path="/reviere/mittelmeer/griechenland/athen-saronischer-golf" element={<AthenSaronischerGolf />} />
             <Route path="/reviere/mittelmeer/griechenland/nordgriechenland" element={<Nordgriechenland />} />
             

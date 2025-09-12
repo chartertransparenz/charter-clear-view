@@ -9,32 +9,33 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const Cyclades = () => {
-  const m = META.kykladen;
-  
-  const absoluteOg = (path: string) => {
-    const base = "https://chartertransparenz.de";
-    return path.startsWith("http") ? path : `${base}${path}`;
-  };
-
-  const cycladesStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "TravelAction",
-    "name": "Yachtcharter Kykladen",
-    "description": "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Charter Transparenz"
-    }
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
+    description: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
+    ogTitle: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
+    ogDescription: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png",
+    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
+    structuredData: {
+      ...generateStructuredData.service("Kykladen", "Yachtcharter auf den Kykladen - Segeln zwischen den berühmten griechischen Inseln Mykonos, Santorini und Paros"),
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com/" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
+        { name: "Kykladen", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen" }
+      ])
+    }
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -50,12 +51,11 @@ const Cyclades = () => {
   }, {
     icon: Anchor,
     label: "Besonderheit",
-    value: "Ikonische Inseln"
+    value: "Meltemi-Winde"
   }];
-  const cities = ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Andros", "Tinos", "Syros"];
-  const highlights = ["Weltberühmtes Inselhüpfen", "Ikonische weiße Dörfer", "Spektakuläre Sonnenuntergänge", "Meltemi-Wind für perfektes Segeln", "Kristallklare Buchten", "Griechische Inselkultur pur", "Kurze Distanzen zwischen Inseln"];
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  const cities = ["Mykonos", "Santorini", "Paros", "Naxos", "Ios", "Syros", "Tinos", "Andros"];
+  const highlights = ["Weltberühmte Inseln Mykonos & Santorini", "Konstante Meltemi-Winde im Sommer", "Authentische griechische Tavernen", "Kristallklares, türkises Wasser", "Klassisches Inselhopping", "Reiche antike Geschichte", "Perfekte Segelbedingungen"];
+  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       
       {/* Header */}
@@ -150,11 +150,9 @@ const Cyclades = () => {
         })}
         </div>
 
-        {/* Crawlbarer Einleitungstext */}
-        <div className="max-w-4xl mx-auto mb-12 bg-blue-50 p-6 rounded-lg">
-          <p className="text-lg leading-relaxed text-gray-800">
-            <strong>Yachtcharter Kykladen:</strong> Segeln Sie zu den berühmtesten Inseln der Ägäis mit Mykonos, Santorini, Paros und Naxos. Die Kykladen bieten perfekte Segelbedingungen mit dem zuverlässigen Meltemi-Wind, kristallklare Buchten und ikonische weiß-blaue Dorfkulissen. Starten Sie Ihren Törn ab Athen, Lavrion oder direkt von Mykonos und erleben Sie weltberühmtes Inselhüpfen mit kurzen Distanzen zwischen den Inseln. Ideal für sportliches Segeln und authentische griechische Kultur in traditionellen Tavernen.
-          </p>
+        {/* Description */}
+        <div className="max-w-4xl mx-auto mb-12">
+          
         </div>
 
         {/* Map */}
@@ -179,7 +177,7 @@ const Cyclades = () => {
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Kykladen Charter – Ihr Törn ab Athen, Lavrion oder Mykonos</h2>
+            <h2 className="text-4xl font-bold mb-4">Yachtcharter Kykladen – Ihr Törn ab Athen, Lavrion, Mykonos, Paros oder Syros</h2>
             <p className="text-xl text-muted-foreground">
               Das Herz der Ägäis
             </p>
@@ -390,8 +388,6 @@ const Cyclades = () => {
 
         <TopDestinations />
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Cyclades;
