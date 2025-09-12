@@ -4,6 +4,23 @@ import './index.css'
 const rootEl = document.getElementById('root')!;
 const root = createRoot(rootEl);
 
+// Global error listeners wieder aktiviert
+window.addEventListener("error", (event) => {
+  console.error("[window.onerror]", {
+    message: event.message,
+    filename: event.filename,
+    lineno: event.lineno,
+    colno: event.colno,
+    error: event.error?.stack || String(event.error || "")
+  });
+});
+
+window.addEventListener("unhandledrejection", (event) => {
+  console.error("[unhandledrejection]", {
+    reason: (event as PromiseRejectionEvent).reason
+  });
+});
+
 // Test: App-Import ohne Provider
 import('./App.tsx').then(({ default: App }) => {
   root.render(<App />);
