@@ -1,9 +1,9 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import { Award, Users, MapPin, Shield, Anchor, Star } from "lucide-react";
-import { useAnimatedCounter } from "@/hooks/use-animated-counter";
-import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import { useAnimatedCounter } from "../hooks/use-animated-counter";
+import { useIntersectionObserver } from "../hooks/use-intersection-observer";
 // import partnerMarina from "@/assets/partner-marina.jpg";
 // import partnerManufacturers from "@/assets/partner-manufacturers.jpg";
 // import partnerCertifications from "@/assets/partner-certifications.jpg";
