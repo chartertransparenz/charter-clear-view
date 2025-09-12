@@ -16,7 +16,7 @@ import NotFound from "./pages/NotFound";
 import Mediterranean from "./pages/territories/Mediterranean";
 import Croatia from "./pages/territories/mediterranean/Croatia";
 import Greece from "./pages/territories/mediterranean/Greece";
-import Italy from "./pages/territories/mediterranean/Italy";
+import Italy from "./pages/territories/Italy";
 import Spain from "./pages/territories/mediterranean/Spain";
 import Turkey from "./pages/territories/mediterranean/Turkey";
 import France from "./pages/territories/mediterranean/France";

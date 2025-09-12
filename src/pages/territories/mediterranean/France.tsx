@@ -16,9 +16,30 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 import destinationFrance from "@/assets/destination-france.jpg";
 
 const France = () => {
+  const m = META.frankreich;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+
+  const franceStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAction",
+    "name": "Yachtcharter Frankreich",
+    "description": "Segeln Frankreich: glamouröse Côte d'Azur, wilde Korsika & provenzalische Küste.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Charter Transparenz"
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -56,8 +77,17 @@ const France = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={franceStructuredData} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -219,7 +249,8 @@ const France = () => {
       </div>
       
       <TopDestinations />
-    </div>
+      </div>
+    </>
   );
 };
 

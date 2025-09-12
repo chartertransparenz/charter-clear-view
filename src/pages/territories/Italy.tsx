@@ -6,12 +6,27 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import destinationItaly from "@/assets/destination-italy.jpg";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
+// import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
+  console.log("Italy component loading...");
+  const m = META.italien;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
+    console.log("Italy useEffect running...");
     window.scrollTo(0, 0);
   }, []);
+  
+  console.log("Italy component rendering with meta:", m);
+  
   const quickFacts = [{
     label: "Lage",
     value: "Mittelmeer"
@@ -26,7 +41,25 @@ const Italy = () => {
     value: "Dolce Vita & Kultur"
   }];
   const highlights = ["Exzellente italienische Küche", "Wunderschöne Küstenlandschaften", "Reiche Geschichte und Kultur", "Kristallklares Wasser", "Abwechslungsreiche Routen", "Gastfreundliche Marinas"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Italien", "item": "https://chartertransparenz.de/reviere/mittelmeer/italien"}
+        ]
+      }} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -376,9 +409,12 @@ const Italy = () => {
             </CharterRequestForm>
           </div>
         </div>
-      </div>
+        </div>
       
       <TopDestinations />
-    </div>;
+      </div>
+    </>
+  );
 };
+
 export default Italy;

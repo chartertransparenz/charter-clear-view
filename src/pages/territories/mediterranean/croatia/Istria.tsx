@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
-import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
+// import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -18,32 +18,23 @@ import {
 } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import TopDestinations from '@/components/TopDestinations';
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 
 export default function Istria() {
+  const m = META.istrien;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Istrien – Pula, Rovinj & Poreč",
-    description: "Segeln Istrien: Venezianisches Flair, moderne Marinas, kurze Distanzen. Ab Pula & Rovinj. Segelyacht oder Katamaran mieten.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien/istrien",
-    ogTitle: "Yachtcharter Istrien – Pula, Rovinj & Poreč",
-    ogDescription: "Segeln Istrien: Venezianisches Flair, moderne Marinas, kurze Distanzen. Ab Pula & Rovinj. Segelyacht oder Katamaran mieten.",
-    ogImage: "https://premium-yachtcharter.com/assets/istria-sailing.jpg",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien/istrien",
-    structuredData: {
-      ...generateStructuredData.service("Istrien", "Yachtcharter in Istrien - Segeln vor der kroatischen Halbinsel mit venezianischem Flair"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Kroatien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien" },
-        { name: "Istrien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien/istrien" }
-      ])
-    }
-  });
+  // Old useMetaTags removed - now using new Meta component
 
   const quickFacts = [
     { icon: MapPin, label: 'Region', value: 'Nordkroatien' },
@@ -93,7 +84,41 @@ export default function Istria() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
+          {"@type": "ListItem", "position": 4, "name": "Istrien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"}
+        ]
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ACI Marina Pula",
+        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.8664, "longitude": 13.8496},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marina Veruda",
+        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.8234, "longitude": 13.8387},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
+      }} />
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png)' }}>
@@ -450,7 +475,8 @@ export default function Istria() {
 
 
         <TopDestinations />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

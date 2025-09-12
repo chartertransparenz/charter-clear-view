@@ -9,8 +9,29 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 import mediterranean from "@/assets/mediterranean.jpg";
 const Malta = () => {
+  const m = META.malta;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+
+  const maltaStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAction",
+    "name": "Yachtcharter Malta",
+    "description": "Segeln Malta: historische Häfen, kristallklares Wasser & kulturelle Schätze.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Charter Transparenz"
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -37,8 +58,18 @@ const Malta = () => {
     description: "Haupthafen und maritime Basis der maltesischen Inseln"
   }];
   const highlights = ["Kristallklares, türkisfarbenes Wasser", "Reiche Geschichte und Kultur", "Kompakte Segelreviere", "Ganzjährig mildes Klima", "UNESCO-Weltkulturerbe Valletta", "Authentische mediterrane Atmosphäre", "Exzellente Sicherheitsstandards"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={maltaStructuredData} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -335,6 +366,8 @@ const Malta = () => {
       </div>
       
       <TopDestinations />
-    </div>;
+      </div>
+    </>
+  );
 };
 export default Malta;

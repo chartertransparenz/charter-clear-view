@@ -8,8 +8,29 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
+import { META } from "@/seo/meta.config";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
 import mediterranean from "@/assets/mediterranean.jpg";
 const Montenegro = () => {
+  const m = META.montenegro;
+  
+  const absoluteOg = (path: string) => {
+    const base = "https://chartertransparenz.de";
+    return path.startsWith("http") ? path : `${base}${path}`;
+  };
+
+  const montenegroStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAction",
+    "name": "Yachtcharter Montenegro",
+    "description": "Segeln Montenegro: dramatische Fjorde, mittelalterliche Städte & unberührte Buchten.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Charter Transparenz"
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -37,8 +58,18 @@ const Montenegro = () => {
     cities: ["Kotor", "Tivat"]
   }];
   const highlights = ["UNESCO-Weltkulturerbe Kotor", "Spektakuläre Fjordlandschaft", "Unberührte Natur", "Authentische Balkanbee", "Kristallklares Adriawasser", "Wenig befahrene Gewässer", "Atemberaubende Bergkulisse"];
-  return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={montenegroStructuredData} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -300,6 +331,8 @@ const Montenegro = () => {
       </div>
       
       <TopDestinations />
-    </div>;
+    </div>
+    </>
+  );
 };
 export default Montenegro;
