@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
-// import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
+import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
 const Croatia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -83,7 +83,7 @@ const Croatia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png" alt="Yachtcharter Kroatien - Segelboote in türkisblauer Adria mit kroatischen Inseln im Hintergrund" className="w-full h-full object-cover" />
+        <img src={destinationCroatia} alt="Yachtcharter Kroatien - Segelboote in türkisblauer Adria mit kroatischen Inseln im Hintergrund" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

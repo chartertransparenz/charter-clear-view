@@ -1,10 +1,9 @@
 // Hero component with image carousel
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
-// import heroYacht from "@/assets/hero-yacht.jpg";
-// import charterHeroWater from "@/assets/charter-hero-water.jpg";
-// Using direct URL to avoid module import issues for uploads
-// import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
+import heroYacht from "@/assets/hero-yacht.jpg";
+import charterHeroWater from "@/assets/charter-hero-water.jpg";
+import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
 
 import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
@@ -18,7 +17,7 @@ const slides = [{
     title: "Kristallklares Wasser",
     subtitle: "Die schönsten Gewässer der Welt entdecken"
   }, {
-    image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png",
+    image: mediterraneanImage,
     title: "Mittelmeer Abenteuer",
     subtitle: "Träume von perfekten Segeltörns"
   }, {
@@ -39,8 +38,7 @@ const slides = [{
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [nextSlide]);
-  return (
-    <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-28 md:pt-24 lg:pt-20">
+  return <section id="start" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-28 md:pt-24 lg:pt-20">
       {/* Background Images Carousel */}
       {slides.map((slide, index) => <div key={index} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`} style={{
       backgroundImage: `url(${slide.image})`
@@ -108,7 +106,6 @@ const slides = [{
           <path d="M0,60 C150,100 350,0 600,60 C850,120 1050,20 1200,60 L1200,120 L0,120 Z" fill="currentColor" />
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Hero;

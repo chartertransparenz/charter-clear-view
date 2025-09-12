@@ -1,20 +1,20 @@
 import React, { useEffect } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "./ui/carousel";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { Users, Ruler, Fuel, Zap, Maximize, Star } from "lucide-react";
-// import fleetMarina from "@/assets/fleet-marina.jpg";
-// import bavariaCruiser46 from "@/assets/bavaria-cruiser-46.jpg";
-// import lagoon42 from "@/assets/lagoon-42.jpg";
-// import oceanis461 from "@/assets/oceanis-46-1.jpg";
-// import bavariaCruiser37 from "@/assets/bavaria-cruiser-37.jpg";
-// import sunOdyssey440 from "@/assets/sun-odyssey-440.jpg";
-// import sunOdyssey410 from "@/assets/sun-odyssey-410.jpg";
-// import baliCatspace from "@/assets/bali-catspace.jpg";
-// import dufour460 from "@/assets/dufour-460.jpg";
-// import oceanis381 from "@/assets/oceanis-38-1.jpg";
-// import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
+import fleetMarina from "@/assets/fleet-marina.jpg";
+import bavariaCruiser46 from "@/assets/bavaria-cruiser-46.jpg";
+import lagoon42 from "@/assets/lagoon-42.jpg";
+import oceanis461 from "@/assets/oceanis-46-1.jpg";
+import bavariaCruiser37 from "@/assets/bavaria-cruiser-37.jpg";
+import sunOdyssey440 from "@/assets/sun-odyssey-440.jpg";
+import sunOdyssey410 from "@/assets/sun-odyssey-410.jpg";
+import baliCatspace from "@/assets/bali-catspace.jpg";
+import dufour460 from "@/assets/dufour-460.jpg";
+import oceanis381 from "@/assets/oceanis-38-1.jpg";
+import bavariaCruiser41 from "@/assets/bavaria-cruiser-41.jpg";
 import CharterRequestForm from "./CharterRequestForm";
 const Fleet = () => {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -132,8 +132,7 @@ const Fleet = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return (
-    <section id="flotte" className="py-20">
+  return <section id="flotte" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -224,7 +223,6 @@ const Fleet = () => {
           
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Fleet;

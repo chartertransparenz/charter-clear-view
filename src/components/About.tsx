@@ -1,11 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, MapPin, Users, Heart } from "lucide-react";
-// import transparencyImg from "@/assets/transparency.jpg";
-// import transparencyValue from "@/assets/transparency-value.jpg";
-// import qualityValue from "@/assets/quality-value.jpg";
-// import trustValue from "@/assets/trust-value.jpg";
-// import experienceValue from "@/assets/experience-value.jpg";
+import transparencyImg from "@/assets/transparency.jpg";
+import transparencyValue from "@/assets/transparency-value.jpg";
+import qualityValue from "@/assets/quality-value.jpg";
+import trustValue from "@/assets/trust-value.jpg";
+import experienceValue from "@/assets/experience-value.jpg";
 const About = () => {
   const milestones = [
     {
@@ -57,25 +57,25 @@ const About = () => {
       icon: Heart,
       title: "Transparenz", 
       description: "Ehrliche Beratung und faire Preise ohne versteckte Kosten",
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: transparencyValue
     },
     {
       icon: Award,
       title: "Qualität",
       description: "Nur geprüfte und versicherte Boote in erstklassigem Zustand", 
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: qualityValue
     },
     {
       icon: Users,
       title: "Vertrauen",
       description: "Langjährige Partnerschaften mit renommierten Charterunternehmen",
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: trustValue
     },
     {
       icon: MapPin,
       title: "Erfahrung",
       description: "Tiefe Ortskenntnisse und persönliche Empfehlungen",
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: experienceValue
     }
   ];
 

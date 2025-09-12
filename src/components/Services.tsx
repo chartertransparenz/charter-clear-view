@@ -1,14 +1,14 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Sailboat, Users, GraduationCap, MapPin, Clock, Shield, Search, Calendar, Navigation, Handshake, Anchor } from "lucide-react";
 import CharterRequestForm from "./CharterRequestForm";
-// import servicesHeroConsultationV2 from "@/assets/services-hero-consultation-v2.jpg";
-// import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
-// import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
-// import luxuryYacht from "@/assets/luxury-catamaran-charter.jpg";
-// import transparentPricing from "@/assets/transparent-pricing.jpg";
-// import flexibleBooking from "@/assets/flexible-booking.jpg";
-// import premiumLocations from "@/assets/premium-locations.jpg";
+import servicesHeroConsultationV2 from "@/assets/services-hero-consultation-v2.jpg";
+import selfSailingYacht from "@/assets/self-sailing-yacht.jpg";
+import skipperCharterPremium from "@/assets/skipper-charter-premium.jpg";
+import luxuryYacht from "@/assets/luxury-catamaran-charter.jpg";
+import transparentPricing from "@/assets/transparent-pricing.jpg";
+import flexibleBooking from "@/assets/flexible-booking.jpg";
+import premiumLocations from "@/assets/premium-locations.jpg";
 const Services = () => {
   const services = [{
     icon: Sailboat,
@@ -27,26 +27,25 @@ const Services = () => {
     title: "Luxus Charter",
     description: "Exklusive Luxusyachten mit erstklassiger Ausstattung und Premium-Service",
     features: ["Luxusyachten", "Premium Ausstattung", "VIP Service", "Gourmet Catering"],
-    image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.png"
+    image: luxuryYacht
   }];
   const advantages = [{
     icon: Shield,
     title: "Transparente Preise",
     description: "Alle Kosten auf einen Blick - keine versteckten Gebühren",
-    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
+    image: transparentPricing
   }, {
     icon: Clock,
     title: "Flexible Buchung",
     description: "Einfache Online-Buchung mit flexiblen Stornobedingungen",
-    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
+    image: flexibleBooking
   }, {
     icon: MapPin,
     title: "Beste Lagen",
     description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen",
-    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
+    image: premiumLocations
   }];
-  return (
-    <section id="leistungen" className="py-20 bg-ocean-light/30">
+  return <section id="leistungen" className="py-20 bg-ocean-light/30">
       <div className="container mx-auto px-4">
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
@@ -144,7 +143,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Services;

@@ -1,28 +1,28 @@
 import React, { useEffect } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "./ui/carousel";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { MapPin, Anchor, Waves, Mountain, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-// import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
-// import mediterranean from "@/assets/mediterranean.jpg";
-// import balticSea from "@/assets/baltic-sea.jpg";
-// import atlantic from "@/assets/atlantic.jpg";
-// import caribbean from "@/assets/caribbean.jpg";
-// import pacific from "@/assets/pacific.jpg";
-// import indianOcean from "@/assets/indian-ocean.jpg";
-// import expedition from "@/assets/expedition.jpg";
-// import destinationCroatia from "@/assets/destination-croatia.jpg";
-// import destinationGreece from "@/assets/destination-greece.jpg";
-// import destinationItaly from "@/assets/destination-italy.jpg";
-// import destinationSpain from "@/assets/destination-spain.jpg";
-// import destinationTurkey from "@/assets/destination-turkey.jpg";
-// import destinationFrance from "@/assets/destination-france.jpg";
-// import destinationBvi from "@/assets/destination-bvi.jpg";
-// import destinationThailand from "@/assets/destination-thailand.jpg";
-// import destinationSeychelles from "@/assets/destination-seychelles.jpg";
-// import destinationAustralia from "@/assets/destination-australia.jpg";
+import bodenseeAerial from "@/assets/bodensee-aerial.jpg";
+import mediterranean from "@/assets/mediterranean.jpg";
+import balticSea from "@/assets/baltic-sea.jpg";
+import atlantic from "@/assets/atlantic.jpg";
+import caribbean from "@/assets/caribbean.jpg";
+import pacific from "@/assets/pacific.jpg";
+import indianOcean from "@/assets/indian-ocean.jpg";
+import expedition from "@/assets/expedition.jpg";
+import destinationCroatia from "@/assets/destination-croatia.jpg";
+import destinationGreece from "@/assets/destination-greece.jpg";
+import destinationItaly from "@/assets/destination-italy.jpg";
+import destinationSpain from "@/assets/destination-spain.jpg";
+import destinationTurkey from "@/assets/destination-turkey.jpg";
+import destinationFrance from "@/assets/destination-france.jpg";
+import destinationBvi from "@/assets/destination-bvi.jpg";
+import destinationThailand from "@/assets/destination-thailand.jpg";
+import destinationSeychelles from "@/assets/destination-seychelles.jpg";
+import destinationAustralia from "@/assets/destination-australia.jpg";
 const Territories = () => {
   const [api, setApi] = React.useState<CarouselApi>();
   const topDestinations = [{
@@ -120,8 +120,7 @@ const Territories = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return (
-    <section id="reviere" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-ocean-light/20 to-white">
+  return <section id="reviere" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-ocean-light/20 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -323,7 +322,6 @@ const Territories = () => {
           
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Territories;

@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-import Navigation from "../components/Navigation";
-import Hero from "../components/Hero";
-import Territories from "../components/Territories";
-import Services from "../components/Services";
-import Fleet from "../components/Fleet";
-import Partners from "../components/Partners";
-import Contact from "../components/Contact";
-import TopDestinations from "../components/TopDestinations";
-import FloatingCTA from "../components/FloatingCTA";
-import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Fleet from "@/components/Fleet";
+import Territories from "@/components/Territories";
+import Partners from "@/components/Partners";
+import Contact from "@/components/Contact";
+import TopDestinations from "@/components/TopDestinations";
+
+import FloatingCTA from "@/components/FloatingCTA";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   useEffect(() => {
@@ -36,9 +37,9 @@ const Index = () => {
       <Partners />
       <Contact />
       <TopDestinations />
+      
     </div>
   );
 };
 
 export default Index;
-
