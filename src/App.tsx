@@ -176,7 +176,6 @@ function App() {
       <HelmetProviderContext>
         <TooltipProvider>
           <Toaster />
-          <Sonner />
           <BrowserRouter>
             <Suspense fallback={<div className="p-8 text-center">Laden...</div>}>
           <Routes>
