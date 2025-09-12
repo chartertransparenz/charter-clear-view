@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
@@ -178,6 +178,7 @@ function App() {
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <Suspense fallback={<div className="p-8 text-center">Laden...</div>}>
           <Routes>
             <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<About />} />
@@ -333,8 +334,9 @@ function App() {
             
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <Footer />
-        </BrowserRouter>
+           <Footer />
+            </Suspense>
+         </BrowserRouter>
       </TooltipProvider>
       </HelmetProviderContext>
     </QueryClientProvider>
