@@ -3,10 +3,16 @@ import Navigation from "../components/Navigation";
 import Hero from "../components/Hero";
 import Territories from "../components/Territories";
 import Services from "../components/Services";
+import Fleet from "../components/Fleet";
+import Partners from "../components/Partners";
+import Contact from "../components/Contact";
+import TopDestinations from "../components/TopDestinations";
+import FloatingCTA from "../components/FloatingCTA";
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
 
 const Index = () => {
   useEffect(() => {
-    console.info('[Index] with Navigation + Hero + Territories + Services');
+    // Handle hash navigation when page loads
     const hash = window.location.hash;
     if (hash) {
       setTimeout(() => {
@@ -21,13 +27,15 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <FloatingCTA />
+      <FloatingWhatsApp />
       <Hero />
       <Territories />
       <Services />
-      <main className="container mx-auto px-4 pt-20">
-        <h1 className="text-2xl font-semibold">Navigation + Hero + Territories + Services Test</h1>
-        <p className="mt-2 opacity-80">Weitere Komponenten hinzugefügt.</p>
-      </main>
+      <Fleet />
+      <Partners />
+      <Contact />
+      <TopDestinations />
     </div>
   );
 };
