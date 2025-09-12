@@ -35,7 +35,6 @@ import SouthernDalmatia from "./pages/territories/mediterranean/croatia/Southern
 import Cyclades from "./pages/territories/mediterranean/greece/Cyclades";
 import IonicIslands from "./pages/territories/mediterranean/greece/IonicIslands";
 import Dodecanese from "./pages/territories/mediterranean/greece/Dodecanese";
-import Sporades from "./pages/territories/mediterranean/greece/Sporades";
 import AthenSaronischerGolf from "./pages/territories/mediterranean/greece/AthenSaronischerGolf";
 import Nordgriechenland from "./pages/territories/mediterranean/greece/Nordgriechenland";
 
@@ -210,7 +209,6 @@ function App() {
             <Route path="/reviere/mittelmeer/griechenland/kykladen" element={<Cyclades />} />
             <Route path="/reviere/mittelmeer/griechenland/ionische-inseln" element={<IonicIslands />} />
             <Route path="/reviere/mittelmeer/griechenland/dodekanes" element={<Dodecanese />} />
-            <Route path="/reviere/mittelmeer/griechenland/sporaden" element={<Sporades />} />
             <Route path="/reviere/mittelmeer/griechenland/athen-saronischer-golf" element={<AthenSaronischerGolf />} />
             <Route path="/reviere/mittelmeer/griechenland/nordgriechenland" element={<Nordgriechenland />} />
             

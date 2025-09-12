@@ -29,7 +29,8 @@ const Amalfikuste = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags
+  // SEO Meta Tags - temporarily disabled
+  /*
   useMetaTags({
     title: "Yachtcharter Amalfiküste – Positano, Capri & Sorrent",
     description: "Segeln Amalfiküste: UNESCO-Welterbe, Positano & Capri, dramatische Klippen. Luxus-Yachtcharter zwischen Neapel und Salerno.",
@@ -49,6 +50,7 @@ const Amalfikuste = () => {
       ])
     }
   });
+  */
 
   const quickFacts = [
     {
