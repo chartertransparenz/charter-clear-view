@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
+import SanityCheck from "./pages/SanityCheck";
 import About from '@/pages/About';
 import Impressum from '@/pages/Impressum';
 import FAQ from '@/pages/FAQ';
@@ -179,7 +180,7 @@ function App() {
           <Sonner />
           <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<SanityCheck />} />
           <Route path="/ueber-uns" element={<About />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/faq" element={<FAQ />} />
