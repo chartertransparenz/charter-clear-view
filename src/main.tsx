@@ -8,13 +8,21 @@ console.info('[main] Root created, preparing to render App');
 
 // Global error listeners wieder aktiviert
 window.addEventListener("error", (event) => {
-  console.error("[window.onerror]", {
-    message: event.message,
+  const msg = event.message || "";
+  const isGeneric = msg === "Script error." && (!event.filename || event.filename === "");
+  const payload = {
+    message: msg,
     filename: event.filename,
     lineno: event.lineno,
     colno: event.colno,
-    error: event.error?.stack || String(event.error || "")
-  });
+    error: event.error?.stack || String(event.error || ""),
+  } as const;
+  if (isGeneric) {
+    // Likely a cross-origin or non-actionable error from preview/iframe; avoid noisy console.error
+    console.warn("[window.onerror:generic]", payload);
+    return;
+  }
+  console.error("[window.onerror]", payload);
 });
 
 window.addEventListener("unhandledrejection", (event) => {
