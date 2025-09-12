@@ -1,5 +1,5 @@
 // Hero component with image carousel
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 // import heroYacht from "@/assets/hero-yacht.jpg";
 // import charterHeroWater from "@/assets/charter-hero-water.jpg";
