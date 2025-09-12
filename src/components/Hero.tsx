@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 // import heroYacht from "@/assets/hero-yacht.jpg";
 // import charterHeroWater from "@/assets/charter-hero-water.jpg";
-import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
+// Using direct URL to avoid module import issues for uploads
+// import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
 
 import CharterRequestForm from "./CharterRequestForm";
 import { useState, useEffect, useCallback } from "react";
@@ -17,7 +18,7 @@ const slides = [{
     title: "Kristallklares Wasser",
     subtitle: "Die schönsten Gewässer der Welt entdecken"
   }, {
-    image: mediterraneanImage,
+    image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png",
     title: "Mittelmeer Abenteuer",
     subtitle: "Träume von perfekten Segeltörns"
   }, {
