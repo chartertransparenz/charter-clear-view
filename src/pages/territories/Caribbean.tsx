@@ -1,11 +1,11 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "../../components/ui/badge";
+import { Button } from "../../components/ui/button";
 import { ArrowLeft, MapPin, Waves, Star, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import CharterRequestForm from "@/components/CharterRequestForm";
-import Navigation from "@/components/Navigation";
-import TopDestinations from "@/components/TopDestinations";
+import CharterRequestForm from "../../components/CharterRequestForm";
+import Navigation from "../../components/Navigation";
+import TopDestinations from "../../components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -13,13 +13,12 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator,
   BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+} from "../../components/ui/breadcrumb";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import caribbean from "@/assets/caribbean.jpg";
+} from "../../components/ui/collapsible";
 
 const Caribbean = () => {
   useEffect(() => {
