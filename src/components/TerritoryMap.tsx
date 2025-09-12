@@ -55,6 +55,7 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
             referrerPolicy="no-referrer-when-downgrade" 
             className="w-full h-full" 
             title={`Karte von ${region}`}
+            sandbox="allow-scripts allow-same-origin allow-popups"
             onError={(e) => console.log('Map loading error:', e)}
           />
         </div>
