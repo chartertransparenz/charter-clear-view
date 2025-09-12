@@ -5,8 +5,8 @@ import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 // import charterHeroWater from "@/assets/charter-hero-water.jpg";
 import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
 
-import CharterRequestForm from "./CharterRequestForm";
-import { useState, useEffect, useCallback } from "react";
+import { Suspense, lazy, useState, useEffect, useCallback } from "react";
+const CharterRequestForm = lazy(() => import("./CharterRequestForm"));
 const Hero = () => {
 const slides = [{
     image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
@@ -87,15 +87,17 @@ const slides = [{
 
           {/* CTA Button */}
           <div className="flex justify-center px-4">
-            <CharterRequestForm>
-              <Button 
-                variant="default" 
-                size="xl" 
-                className="text-base sm:text-lg md:text-2xl px-6 sm:px-8 md:px-16 py-3 sm:py-4 md:py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
-              >
-                Jetzt Anfrage stellen
-              </Button>
-            </CharterRequestForm>
+            <Suspense fallback={<div className="px-4 py-2 bg-white/10 rounded-md">Lädt…</div>}>
+              <CharterRequestForm>
+                <Button 
+                  variant="default" 
+                  size="xl" 
+                  className="text-base sm:text-lg md:text-2xl px-6 sm:px-8 md:px-16 py-3 sm:py-4 md:py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
+                >
+                  Jetzt Anfrage stellen
+                </Button>
+              </CharterRequestForm>
+            </Suspense>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense, lazy } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import CharterRequestForm from "./CharterRequestForm";
+const CharterRequestForm = lazy(() => import("./CharterRequestForm"));
 import ReviereDropdown from "./ReviereDropdown";
 
 const Navigation = () => {
@@ -79,15 +79,17 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <CharterRequestForm>
-              <Button 
-                variant="default" 
-                size="sm" 
-                className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-              >
-                Jetzt Anfrage stellen
-              </Button>
-            </CharterRequestForm>
+            <Suspense fallback={<Button variant="default" size="sm" className="bg-[hsl(212_95%_25%)] text-white" disabled>Lädt…</Button>}>
+              <CharterRequestForm>
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                >
+                  Jetzt Anfrage stellen
+                </Button>
+              </CharterRequestForm>
+            </Suspense>
           </div>
 
           {/* Mobile menu button */}
@@ -120,15 +122,17 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="px-4">
-                <CharterRequestForm>
-                  <Button 
-                    variant="default" 
-                    size="sm" 
-                    className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
-                  >
-                    Jetzt Anfrage stellen
-                  </Button>
-                </CharterRequestForm>
+                <Suspense fallback={<Button variant="default" size="sm" className="w-full bg-[hsl(212_95%_25%)] text-white" disabled>Lädt…</Button>}>
+                  <CharterRequestForm>
+                    <Button 
+                      variant="default" 
+                      size="sm" 
+                      className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                    >
+                      Jetzt Anfrage stellen
+                    </Button>
+                  </CharterRequestForm>
+                </Suspense>
               </div>
             </div>
           </div>

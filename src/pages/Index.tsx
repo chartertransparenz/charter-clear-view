@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Fleet from "@/components/Fleet";
 import Territories from "@/components/Territories";
 import Partners from "@/components/Partners";
-import Contact from "@/components/Contact";
+const Contact = lazy(() => import("@/components/Contact"));
 import TopDestinations from "@/components/TopDestinations";
 import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -65,7 +65,9 @@ const Index = () => {
         <Services />
         <Fleet />
         <Partners />
-        <Contact />
+        <Suspense fallback={<div className="p-6 text-center">Kontakt lädt…</div>}>
+          <Contact />
+        </Suspense>
         <TopDestinations />
       </div>
     </>
