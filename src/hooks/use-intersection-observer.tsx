@@ -17,32 +17,41 @@ export const useIntersectionObserver = ({
 
   useEffect(() => {
     const element = ref.current;
-    if (!element) return;
+    if (!element || !(element instanceof Node)) {
+      console.debug('IntersectionObserver: Invalid element', element);
+      return;
+    }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const isElementIntersecting = entry.isIntersecting;
-        
-        if (isElementIntersecting && (!triggerOnce || !hasTriggered)) {
-          setIsIntersecting(true);
-          if (triggerOnce) {
-            setHasTriggered(true);
+    try {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          const isElementIntersecting = entry.isIntersecting;
+          
+          if (isElementIntersecting && (!triggerOnce || !hasTriggered)) {
+            setIsIntersecting(true);
+            if (triggerOnce) {
+              setHasTriggered(true);
+            }
+          } else if (!triggerOnce) {
+            setIsIntersecting(isElementIntersecting);
           }
-        } else if (!triggerOnce) {
-          setIsIntersecting(isElementIntersecting);
+        },
+        {
+          threshold,
+          rootMargin,
         }
-      },
-      {
-        threshold,
-        rootMargin,
-      }
-    );
+      );
 
-    observer.observe(element);
+      observer.observe(element);
 
-    return () => {
-      observer.unobserve(element);
-    };
+      return () => {
+        if (element && observer) {
+          observer.unobserve(element);
+        }
+      };
+    } catch (error) {
+      console.error('IntersectionObserver error:', error);
+    }
   }, [threshold, rootMargin, triggerOnce, hasTriggered]);
 
   return { ref, isIntersecting };
