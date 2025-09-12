@@ -71,10 +71,16 @@ const Contact = () => {
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    try {
+      const { name, value } = e.target;
+      console.debug("Contact onChange", { field: name, length: (value ?? "").length });
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    } catch (err) {
+      console.error("Input error in Contact", err);
+    }
   };
 
   const contactInfo = [

@@ -434,14 +434,17 @@ const CharterRequestForm = ({
   // ---------------------------------
   const [formData, setFormData] = useState<FormState>(initialFormData);
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    try {
+      const { name, value } = e.target;
+      // Debug: trace inputs to catch the exact field when error occurs
+      console.debug("CharterRequestForm onChange", { field: name, length: (value ?? "").length });
+      setFormData(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    } catch (err) {
+      console.error("Input error in CharterRequestForm", err);
+    }
   }, []);
   const handleSelectChange = useCallback((name: string, value: any) => {
     if (name === 'startDate') {
