@@ -132,7 +132,8 @@ const Fleet = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return <section id="flotte" className="py-20">
+  return (
+    <section id="flotte" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -223,6 +224,7 @@ const Fleet = () => {
           
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Fleet;

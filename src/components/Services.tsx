@@ -45,7 +45,8 @@ const Services = () => {
     description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen",
     image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
   }];
-  return <section id="leistungen" className="py-20 bg-ocean-light/30">
+  return (
+    <section id="leistungen" className="py-20 bg-ocean-light/30">
       <div className="container mx-auto px-4">
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
@@ -143,6 +144,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Services;
