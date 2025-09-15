@@ -2,8 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://premium-yachtcharter.com/sitemap.xml
-Sitemap: https://premium-yachtcharter.com/sitemap-destinations.xml
+Sitemap: https://chartertransparenz.de/sitemap.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1
@@ -14,3 +13,9 @@ Disallow: /*.json$
 Disallow: /*?*utm_*
 Disallow: /*?*fbclid*
 Disallow: /*?*gclid*
+
+# Allow important pages
+Allow: /reviere/
+Allow: /ueber-uns
+Allow: /faq
+Allow: /impressum
