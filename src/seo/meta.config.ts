@@ -1,6 +1,6 @@
 // src/seo/meta.config.ts
 export type RegionKey =
-  | "home" | "about" | "faq" | "impressum" | "allTerritories"
+  | "home" | "about" | "faq" | "impressum" | "datenschutz" | "allTerritories"
   | "kroatien" | "istrien" | "kvarner" | "norddalmatien" | "zentraldalmatien" | "sueddalmatien"
   | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer"
   | "italien" | "spanien" | "frankreich" | "croatia" | "malta" | "montenegro" | "slowenien"
@@ -107,6 +107,13 @@ export const META: Record<RegionKey, {
     keywords: ["Impressum","Charter Transparenz","Rechtliche Hinweise","Kontakt"],
     ogImage: "/og/impressum.jpg",
     canonical: () => "https://chartertransparenz.de/impressum"
+  },
+  datenschutz: {
+    title: "Datenschutzerklärung | Charter Transparenz - Datenschutz & DSGVO",
+    description: "Datenschutzerklärung von Charter Transparenz. Transparente Informationen zum Schutz Ihrer personenbezogenen Daten nach DSGVO.",
+    keywords: ["Datenschutz","Datenschutzerklärung","DSGVO","Charter Transparenz","Personenbezogene Daten"],
+    ogImage: "/og/datenschutz.jpg",
+    canonical: () => "https://chartertransparenz.de/datenschutz"
   },
   allTerritories: {
     title: "Alle Charter Destinationen | Weltweite Yachtcharter Reviere",

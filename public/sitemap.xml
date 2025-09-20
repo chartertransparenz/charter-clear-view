@@ -26,6 +26,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://chartertransparenz.de/datenschutz</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://chartertransparenz.de/reviere/alle-reviere</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>

@@ -8,6 +8,7 @@ import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import Index from "./pages/Index";
 import About from '@/pages/About';
 import Impressum from '@/pages/Impressum';
+import { Datenschutz } from '@/pages/Datenschutz';
 import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
 
@@ -180,8 +181,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<About />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/faq" element={<FAQ />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="/faq" element={<FAQ />} />
           <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
             
             {/* Mediterranean routes */}
