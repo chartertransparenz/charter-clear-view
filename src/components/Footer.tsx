@@ -92,6 +92,23 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+
+            {/* Mitglied Section */}
+            <div className="mt-8">
+              <h3 className="font-semibold mb-4 text-sunset">Mitglied</h3>
+              <a
+                href="https://www.vmwd.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img 
+                  src="/assets/vmwd-logo.png" 
+                  alt="VMWD - Verband für Mietboote und Wassertourismus Deutschland e.V." 
+                  className="h-8 w-auto hover:opacity-80 transition-opacity"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Destinations */}
