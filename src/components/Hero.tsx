@@ -47,7 +47,7 @@ const slides = [{
           {/* Frühbucher Stempel Overlay */}
           <div className="ct-stempel-wrap">
             <img 
-              src="/assets/fruehbucher-stempel.png?v=3"
+              src="/assets/fruehbucher-stempel.png?v=4"
               alt="Frühbucher 2026 – bis zu 20% Rabatt"
               className="ct-stempel"
               loading="eager"
