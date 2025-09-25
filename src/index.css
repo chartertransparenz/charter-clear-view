@@ -329,3 +329,52 @@ All colors MUST be HSL.
   background: transparent;
   mix-blend-mode: multiply;
 }
+
+/* Frühbucher Stempel Integration */
+#header { 
+  position: relative; 
+  z-index: 10; 
+}
+
+.carousel, .hero { 
+  position: relative; 
+  z-index: 1; 
+  overflow: visible; 
+}
+
+.ct-stempel-wrap {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ct-stempel {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 20%;
+  height: auto;
+  display: block;
+  background: transparent !important;
+  image-rendering: auto;
+  filter: none;
+  box-shadow: none;
+}
+
+/* Responsive Finetuning */
+@media (max-width: 1023px){
+  .ct-stempel { 
+    top: 14px; 
+    left: 14px; 
+    width: 24%; 
+  }
+}
+
+@media (max-width: 767px){
+  .ct-stempel { 
+    top: 10px; 
+    left: 10px; 
+    width: 30%; 
+  }
+}
