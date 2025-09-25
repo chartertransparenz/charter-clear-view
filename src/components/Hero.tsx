@@ -44,15 +44,6 @@ const slides = [{
       backgroundImage: `url(${slide.image})`
     }}>
           <div className="absolute inset-0 bg-black/40"></div>
-          {/* Frühbucher Stempel Overlay */}
-          <div className="ct-stempel-wrap">
-            <img 
-              src="/assets/fruehbucher-stempel.png?v=4"
-              alt="Frühbucher 2026 – bis zu 20% Rabatt"
-              className="ct-stempel"
-              loading="eager"
-            />
-          </div>
         </div>)}
 
       {/* Navigation Arrows */}
