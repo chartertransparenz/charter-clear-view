@@ -331,6 +331,10 @@ All colors MUST be HSL.
 }
 
 /* Frühbucher Stempel Integration */
+:root { 
+  --ct-header-clear: 56px; 
+}
+
 #header { 
   position: relative; 
   z-index: 10; 
@@ -347,33 +351,40 @@ All colors MUST be HSL.
   inset: 0;
   pointer-events: none;
   z-index: 2;
+  background: transparent !important;
 }
 
 .ct-stempel {
   position: absolute;
-  top: 18px;
+  top: calc(var(--ct-header-clear) + 16px);
   left: 18px;
   width: 20%;
   height: auto;
   display: block;
   background: transparent !important;
+  mix-blend-mode: normal;
+  opacity: 1;
   image-rendering: auto;
   filter: none;
   box-shadow: none;
 }
 
-/* Responsive Finetuning */
+/* Responsive Header Clearance */
 @media (max-width: 1023px){
+  :root { 
+    --ct-header-clear: 48px; 
+  }
   .ct-stempel { 
-    top: 14px; 
     left: 14px; 
     width: 24%; 
   }
 }
 
 @media (max-width: 767px){
+  :root { 
+    --ct-header-clear: 44px; 
+  }
   .ct-stempel { 
-    top: 10px; 
     left: 10px; 
     width: 30%; 
   }
