@@ -3,6 +3,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
+import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -26,6 +27,26 @@ export default function SouthernDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags and Schema.org
+  useMetaTags({
+    title: 'Yachtcharter Süddalmatien - Dubrovnik & Elafiti Inseln | Premium Segelyachten',
+    description: 'Yachtcharter Süddalmatien ⭐ Premium Segelyacht & Katamaran mieten ✓ Dubrovnik, Korčula, Mljet ✓ Perle der Adria ✓ UNESCO Weltkulturerbe ✓ Jetzt buchen',
+    keywords: 'Yachtcharter Süddalmatien, Segelyacht mieten Dubrovnik, Katamaran charter Korčula, Bootsverleih Mljet, Segeln Kroatien, Marina Dubrovnik, Elafiti Inseln',
+    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien',
+    ogTitle: 'Yachtcharter Süddalmatien - Dubrovnik & Inseln erkunden',
+    ogDescription: 'Premium Yachtcharter in Süddalmatien ⭐ Segelyacht & Katamaran mieten ab Dubrovnik ✓ Perle der Adria ✓ UNESCO Weltkulturerbe ✓ Jetzt buchen',
+    ogImage: 'https://chartertransparenz.de/lovable-uploads/95bb22bb-b794-47ba-b336-f3c02e41bfdb.png',
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: 'Reviere', url: 'https://chartertransparenz.de/reviere' },
+        { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
+        { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
+        { name: 'Süddalmatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien' }
+      ]),
+      generateStructuredData.service('Süddalmatien', 'Premium Yachtcharter in Süddalmatien mit Segelyachten und Katamaranen. Dubrovnik, Korčula, Mljet - die Perle der Adria entdecken.')
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: 'Region',
@@ -86,7 +107,7 @@ export default function SouthernDalmatia() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Süddalmatien</h1>
+            <h1 className="text-5xl font-bold mb-4">Yachtcharter Süddalmatien</h1>
             <p className="text-xl text-white/90">Dubrovnik und die südlichsten Perlen Kroatiens - Geschichte und unberührte Natur</p>
           </div>
         </div>

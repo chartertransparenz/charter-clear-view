@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
+import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -25,6 +26,26 @@ export default function NorthernDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags and Schema.org
+  useMetaTags({
+    title: 'Yachtcharter Norddalmatien - Zadar & Kornaten | Premium Segelyachten mieten',
+    description: 'Yachtcharter Norddalmatien ⭐ Premium Segelyacht & Katamaran mieten ✓ Zadar, Kornaten, Šibenik ✓ Nationalpark Kornaten ✓ Krka Wasserfälle ✓ Jetzt buchen',
+    keywords: 'Yachtcharter Norddalmatien, Segelyacht mieten Zadar, Katamaran charter Kornaten, Bootsverleih Šibenik, Segeln Kroatien, Marina Zadar, Krka Wasserfälle',
+    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien',
+    ogTitle: 'Yachtcharter Norddalmatien - Kornaten & Krka entdecken',
+    ogDescription: 'Premium Yachtcharter in Norddalmatien ⭐ Segelyacht & Katamaran mieten ab Zadar ✓ Kornaten Nationalpark ✓ Krka Wasserfälle ✓ Jetzt buchen',
+    ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: 'Reviere', url: 'https://chartertransparenz.de/reviere' },
+        { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
+        { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
+        { name: 'Norddalmatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien' }
+      ]),
+      generateStructuredData.service('Norddalmatien', 'Premium Yachtcharter in Norddalmatien mit Segelyachten und Katamaranen. Zadar, Kornaten, Šibenik - Nationalparks und Wasserfälle entdecken.')
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: 'Region',
@@ -112,7 +133,7 @@ export default function NorthernDalmatia() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Norddalmatien</h1>
+            <h1 className="text-5xl font-bold mb-4">Yachtcharter Norddalmatien</h1>
             <p className="text-xl text-white/90">Kornati Nationalpark und unberührte Naturschönheiten für erfahrene Segler</p>
           </div>
         </div>

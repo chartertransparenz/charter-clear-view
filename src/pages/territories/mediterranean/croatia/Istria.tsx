@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
-// import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
+import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -34,7 +34,25 @@ export default function Istria() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Old useMetaTags removed - now using new Meta component
+  // SEO Meta Tags and Schema.org
+  useMetaTags({
+    title: 'Yachtcharter Istrien - Premium Segelyachten & Katamarane mieten | Pula, Rovinj',
+    description: 'Yachtcharter Istrien ⭐ Premium Segelyacht & Katamaran mieten ✓ Pula, Rovinj, Poreč ✓ Kurze Anreise aus Deutschland ✓ Venezianisches Flair & kristallklares Wasser ✓ Jetzt buchen',
+    keywords: 'Yachtcharter Istrien, Segelyacht mieten Pula, Katamaran charter Rovinj, Bootsverleih Istrien, Segeln Kroatien, Marina Pula, Brijuni Nationalpark',
+    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien',
+    ogTitle: 'Yachtcharter Istrien - Segelyachten & Katamarane mieten',
+    ogDescription: 'Premium Yachtcharter in Istrien ⭐ Segelyacht & Katamaran mieten in Pula, Rovinj ✓ Kurze Anreise ✓ Venezianisches Flair ✓ Jetzt buchen',
+    ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: 'Reviere', url: 'https://chartertransparenz.de/reviere' },
+        { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
+        { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
+        { name: 'Istrien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien' }
+      ]),
+      generateStructuredData.service('Istrien', 'Premium Yachtcharter in Istrien mit Segelyachten und Katamaranen. Pula, Rovinj, Poreč - venezianisches Flair und kurze Anreise aus Deutschland.')
+    ]
+  });
 
   const quickFacts = [
     { icon: MapPin, label: 'Region', value: 'Nordkroatien' },
@@ -84,41 +102,7 @@ export default function Istria() {
   ];
 
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
-          {"@type": "ListItem", "position": 4, "name": "Istrien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"}
-        ]
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "ACI Marina Pula",
-        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 44.8664, "longitude": 13.8496},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Marina Veruda",
-        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 44.8234, "longitude": 13.8387},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
-      }} />
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png)' }}>
@@ -129,7 +113,7 @@ export default function Istria() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Istrien</h1>
+            <h1 className="text-5xl font-bold mb-4">Yachtcharter Istrien</h1>
             <p className="text-xl text-white/90">Die nördlichste Halbinsel Kroatiens - perfekte Marina-Infrastruktur und venezianisches Flair</p>
           </div>
         </div>
@@ -475,8 +459,7 @@ export default function Istria() {
 
 
         <TopDestinations />
-        </div>
       </div>
-    </>
+    </div>
   );
 }

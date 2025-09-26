@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
+import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -24,6 +25,26 @@ export default function CentralDalmatia() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags and Schema.org
+  useMetaTags({
+    title: 'Yachtcharter Mitteldalmatien - Split, Hvar & Brač | Premium Segelyachten',
+    description: 'Yachtcharter Mitteldalmatien ⭐ Premium Segelyacht & Katamaran mieten ✓ Split, Hvar, Brač, Vis ✓ Goldenes Horn ✓ Blaue Grotte ✓ Jetzt buchen',
+    keywords: 'Yachtcharter Mitteldalmatien, Segelyacht mieten Split, Katamaran charter Hvar, Bootsverleih Brač, Segeln Kroatien, Marina Split, Goldenes Horn',
+    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien',
+    ogTitle: 'Yachtcharter Mitteldalmatien - Split & Hvar entdecken',
+    ogDescription: 'Premium Yachtcharter in Mitteldalmatien ⭐ Segelyacht & Katamaran mieten ab Split ✓ Hvar, Brač, Vis ✓ Goldenes Horn ✓ Jetzt buchen',
+    ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: 'Reviere', url: 'https://chartertransparenz.de/reviere' },
+        { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
+        { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
+        { name: 'Mitteldalmatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien' }
+      ]),
+      generateStructuredData.service('Mitteldalmatien', 'Premium Yachtcharter in Mitteldalmatien mit Segelyachten und Katamaranen. Split, Hvar, Brač, Vis - das Herzstück des kroatischen Segelns.')
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: 'Region',
@@ -130,7 +151,7 @@ export default function CentralDalmatia() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Mitteldalmatien</h1>
+            <h1 className="text-5xl font-bold mb-4">Yachtcharter Mitteldalmatien</h1>
             <p className="text-xl text-white/90">Das Herzstück Kroatiens - Split, Hvar und die schönsten Inseln der Adria</p>
           </div>
         </div>

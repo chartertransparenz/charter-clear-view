@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
+import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -33,6 +34,26 @@ export default function KvarnerBay() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags and Schema.org
+  useMetaTags({
+    title: 'Yachtcharter Kvarner Bucht - Cres, Krk & Rab | Premium Segelyachten mieten',
+    description: 'Yachtcharter Kvarner Bucht ⭐ Premium Segelyacht & Katamaran mieten ✓ Cres, Krk, Rab, Lošinj ✓ Delfine beobachten ✓ Geschützte Gewässer ✓ Jetzt buchen',
+    keywords: 'Yachtcharter Kvarner Bucht, Segelyacht mieten Cres, Katamaran charter Krk, Bootsverleih Rab, Segeln Kroatien, Marina Punat, Lošinj Delfine',
+    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht',
+    ogTitle: 'Yachtcharter Kvarner Bucht - Inseln & Delfine entdecken',
+    ogDescription: 'Premium Yachtcharter in der Kvarner Bucht ⭐ Segelyacht & Katamaran mieten ✓ Cres, Krk, Rab ✓ Delfine beobachten ✓ Jetzt buchen',
+    ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: 'Reviere', url: 'https://chartertransparenz.de/reviere' },
+        { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
+        { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
+        { name: 'Kvarner Bucht', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht' }
+      ]),
+      generateStructuredData.service('Kvarner Bucht', 'Premium Yachtcharter in der Kvarner Bucht mit Segelyachten und Katamaranen. Cres, Krk, Rab, Lošinj - Delfine beobachten und geschützte Gewässer entdecken.')
+    ]
+  });
 
   const quickFacts = [
     { icon: MapPin, label: 'Region', value: 'Kvarner Bucht' },
@@ -133,7 +154,7 @@ export default function KvarnerBay() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Kvarner Bucht</h1>
+            <h1 className="text-5xl font-bold mb-4">Yachtcharter Kvarner Bucht</h1>
             <p className="text-xl text-white/90">Geschützte Inselwelt mit authentischem Charme und vielfältigen Segelmöglichkeiten</p>
           </div>
         </div>
