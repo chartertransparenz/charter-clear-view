@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -22,6 +23,23 @@ const USVirginIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useMetaTags({
+    title: "Yachtcharter US Virgin Islands (USVI) | Amerikanische Karibik",
+    description: "Yachtcharter USVI ⭐ US Virgin Islands Charter ✓ St. Thomas, St. John, St. Croix ✓ Amerikanischer Komfort ✓ Line-of-sight Segeln ✓ Seit 25+ Jahren",
+    keywords: "Yachtcharter USVI, US Virgin Islands Charter, St. Thomas, St. John, St. Croix, Virgin Islands National Park, Segeln Amerika Karibik",
+    canonical: "https://premium-yachtcharter.com/reviere/karibik/us-jungferninseln",
+    ogImage: "/lovable-uploads/808a1327-1e02-46a0-abc3-90d96bd5667a.png",
+    structuredData: {
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
+        { name: "US Virgin Islands", url: "https://premium-yachtcharter.com/reviere/karibik/us-jungferninseln" }
+      ]),
+      ...generateStructuredData.service("US Virgin Islands", "Premium Yachtcharter in den US Virgin Islands - Amerikanischer Komfort trifft Karibikflair mit St. Thomas, St. John und St. Croix für entspanntes line-of-sight Segeln.")
+    }
+  });
 
   const quickFacts = [
     { label: "Lage", value: "Kleine Antillen, Karibik" },
@@ -47,7 +65,7 @@ const USVirginIslands = () => {
             <span className="text-3xl">🇺🇸</span>
             <Badge className="bg-blue-600 text-white">Top Karibik-Destination</Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">US Virgin Islands</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Yachtcharter US Virgin Islands</h1>
           <p className="text-lg text-white/90 max-w-md">
             USVI - Amerikanischer Komfort trifft Karibikflair
           </p>

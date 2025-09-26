@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Wine, Mountain, Plane } from "lucide-react";
 import { useEffect } from "react";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import TopDestinations from "@/components/TopDestinations";
@@ -21,6 +22,24 @@ const Martinique = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useMetaTags({
+    title: "Yachtcharter Martinique | Charterbasis Windward Islands - Französisches Flair",
+    description: "Yachtcharter Martinique ⭐ Charter-Standort Windward Islands ✓ Le Marin Marina ✓ Französisches Flair ✓ Mont Pelée ✓ Seit 25+ Jahren",
+    keywords: "Yachtcharter Martinique, Charter Windward Islands, Le Marin Marina, Fort-de-France, Mont Pelée, Französische Antillen Charter",
+    canonical: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/martinique",
+    ogImage: "/lovable-uploads/c7dcc73d-7cf1-40db-8c85-280f7a47c9cb.png",
+    structuredData: {
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
+        { name: "Charter-Standorte", url: "https://premium-yachtcharter.com/reviere/karibik" },
+        { name: "Martinique", url: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/martinique" }
+      ]),
+      ...generateStructuredData.service("Martinique", "Premium Yachtcharter ab Martinique - Französisches Flair in den Windward Islands mit Le Marin Marina und Mont Pelée als spektakulärer Kulisse.")
+    }
+  });
 
   const marinas = [
     {
@@ -100,7 +119,7 @@ const Martinique = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-700 text-white">🇫🇷 Charter-Standort</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Martinique</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Martinique</h1>
             <p className="text-xl max-w-2xl">
               Die Blumeninsel mit französischem Flair
             </p>

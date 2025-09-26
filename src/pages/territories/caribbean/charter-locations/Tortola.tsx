@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane } from "lucide-react";
 import { useEffect } from "react";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import TopDestinations from "@/components/TopDestinations";
@@ -21,6 +22,24 @@ const Tortola = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useMetaTags({
+    title: "Yachtcharter Tortola | Charterbasis British Virgin Islands (BVI)",
+    description: "Yachtcharter Tortola ⭐ Charter-Standort BVI ✓ Road Town Marina ✓ Nanny Cay ✓ Tor zu Virgin Gorda & Jost Van Dyke ✓ Seit 25+ Jahren",
+    keywords: "Yachtcharter Tortola, Charter BVI, Road Town Marina, Nanny Cay, British Virgin Islands Charter, Tortola Charter",
+    canonical: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/tortola",
+    ogImage: "/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png",
+    structuredData: {
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
+        { name: "Charter-Standorte", url: "https://premium-yachtcharter.com/reviere/karibik" },
+        { name: "Tortola", url: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/tortola" }
+      ]),
+      ...generateStructuredData.service("Tortola", "Premium Yachtcharter ab Tortola - Der Haupt-Charter-Standort der British Virgin Islands mit erstklassigen Marinas und perfektem Zugang zu allen BVI-Inseln.")
+    }
+  });
 
   const marinas = [
     {
@@ -73,7 +92,7 @@ const Tortola = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-600 text-white">🏝️ Charter-Standort</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Tortola</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Tortola</h1>
             <p className="text-xl max-w-2xl">
               Das Tor zu den Britischen Jungferninseln
             </p>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Star, Sun, Anchor, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -13,6 +14,23 @@ const BritishVirginIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useMetaTags({
+    title: "Yachtcharter Britische Jungferninseln (BVI) | Das Karibik-Segelparadies",
+    description: "Yachtcharter BVI ⭐ Britische Jungferninseln Segeln ✓ Line-of-sight Navigation ✓ Tortola, Virgin Gorda, The Baths ✓ Perfekt für Einsteiger ✓ Seit 25+ Jahren",
+    keywords: "Yachtcharter BVI, British Virgin Islands Charter, Tortola, Virgin Gorda, Jost Van Dyke, Anegada, The Baths, Segeln Karibik",
+    canonical: "https://premium-yachtcharter.com/reviere/karibik/britische-jungferninseln",
+    ogImage: "/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png",
+    structuredData: {
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
+        { name: "Britische Jungferninseln", url: "https://premium-yachtcharter.com/reviere/karibik/britische-jungferninseln" }
+      ]),
+      ...generateStructuredData.service("Britische Jungferninseln", "Premium Yachtcharter in den British Virgin Islands - Das perfekte Karibik-Charterrevier für Einsteiger mit line-of-sight Navigation zwischen Tortola, Virgin Gorda und traumhaften Inseln.")
+    }
+  });
   const quickFacts = [{
     label: "Lage",
     value: "Kleine Antillen, Karibik"
@@ -56,7 +74,7 @@ const BritishVirginIslands = () => {
             <span className="text-3xl">🇻🇬</span>
             <Badge className="bg-green-600 text-white">Top #7 Destination</Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Britische Jungferninseln</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Yachtcharter Britische Jungferninseln</h1>
           <p className="text-lg text-white/90 max-w-md">
             BVI - Das perfekte Karibik-Charterrevier für Einsteiger
           </p>
