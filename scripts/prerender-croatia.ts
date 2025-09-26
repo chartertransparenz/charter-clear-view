@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import { dirname, join } from 'path';
-import { CROATIA_META } from '../src/config/meta-croatia.js';
+import { CROATIA_META } from '../src/config/meta-croatia';
 
 // Ensure directory exists
 function ensureDirectoryExists(filePath: string) {

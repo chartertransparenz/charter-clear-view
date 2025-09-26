@@ -202,7 +202,6 @@ function App() {
             <Route path="/reviere/mittelmeer/slowenien" element={<Slovenia />} />
             
             {/* Croatian region routes */}
-            <Route path="/reviere/mittelmeer/kroatien" element={<Croatia />} />
             <Route path="/reviere/mittelmeer/kroatien/dalmatien-split" element={<DalmatienSplit />} />
             <Route path="/reviere/mittelmeer/kroatien/sibenik-kornaten" element={<SibenikKornaten />} />
             <Route path="/reviere/mittelmeer/kroatien/zadar" element={<Zadar />} />
