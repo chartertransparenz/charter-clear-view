@@ -31,23 +31,31 @@ const Amalfikuste = () => {
 
   // SEO Meta Tags
   useMetaTags({
-    title: "Yachtcharter Amalfiküste – Positano, Capri & Sorrent",
-    description: "Segeln Amalfiküste: UNESCO-Welterbe, Positano & Capri, dramatische Klippen. Luxus-Yachtcharter zwischen Neapel und Salerno.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste",
-    ogTitle: "Yachtcharter Amalfiküste – Positano, Capri & Sorrent",
-    ogDescription: "Segeln Amalfiküste: UNESCO-Welterbe, Positano & Capri, dramatische Klippen. Luxus-Yachtcharter zwischen Neapel und Salerno.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/amalfi-coast-sailing.jpg",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste",
-    structuredData: {
-      ...generateStructuredData.service("Amalfiküste", "Yachtcharter an der Amalfiküste - Segeln vor Positano, Capri und Sorrent entlang der UNESCO-Welterbe-Küste"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
-        { name: "Amalfiküste", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste" }
-      ])
-    }
+    title: "Yachtcharter Amalfiküste – Positano, Capri & Neapel",
+    description: "Yachtcharter Amalfiküste: Positano, Capri, Ischia & Golf von Neapel. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter an der Amalfiküste anfragen.",
+    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikuste",
+    ogImage: "/lovable-uploads/amalfi-coast-charter.jpg",
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://chartertransparenz.de" },
+        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
+        { name: "Amalfiküste", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikuste" }
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Yachtcharter Amalfiküste",
+        "areaServed": "Amalfiküste, Italien",
+        "provider": {
+          "@type": "Organization",
+          "name": "Charter Transparenz",
+          "url": "https://chartertransparenz.de",
+          "logo": "https://chartertransparenz.de/logo.png"
+        }
+      }
+    ]
   });
 
   const quickFacts = [

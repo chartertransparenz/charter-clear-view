@@ -17,23 +17,30 @@ const Sizilien = () => {
 
   // SEO Meta Tags with Structured Data
   useMetaTags({
-    title: "Yachtcharter Sizilien | Segelyacht & Katamaran mieten",
-    description: "Yachtcharter Sizilien ⭐ Segelyacht & Katamaran mieten ✓ Liparische Inseln, Ätna, Palermo, Catania ✓ Premium Charter Service für authentische Segelerlebnisse",
-    keywords: "Yachtcharter Sizilien, Segelyacht mieten Sizilien, Boot mieten Sizilien, Katamaran Charter Sizilien, Liparische Inseln, Ätna",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/sizilien",
+    title: "Yachtcharter Sizilien – Liparische Inseln & Ätna",
+    description: "Yachtcharter Sizilien: Liparische Inseln, Stromboli, Vulcano & Palermo. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in Sizilien anfragen.",
+    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien",
     ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
     structuredData: [
       generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
-        { name: "Sizilien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/sizilien" }
+        { name: "Start", url: "https://chartertransparenz.de" },
+        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
+        { name: "Sizilien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien" }
       ]),
-      generateStructuredData.service(
-        "Sizilien",
-        "Premium Yachtcharter auf Sizilien mit Segelyachten und Katamaranen. Entdecken Sie die Liparischen Inseln, den Ätna und die historischen Küstenstädte Siziliens."
-      )
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Yachtcharter Sizilien",
+        "areaServed": "Sizilien, Italien",
+        "provider": {
+          "@type": "Organization",
+          "name": "Charter Transparenz",
+          "url": "https://chartertransparenz.de",
+          "logo": "https://chartertransparenz.de/logo.png"
+        }
+      }
     ]
   });
   const quickFacts = [{

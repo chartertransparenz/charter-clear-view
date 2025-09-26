@@ -17,23 +17,30 @@ const Sardinien = () => {
 
   // SEO Meta Tags with Structured Data
   useMetaTags({
-    title: "Yachtcharter Sardinien | Segelyacht & Katamaran mieten",
-    description: "Yachtcharter Sardinien ⭐ Segelyacht & Katamaran mieten ✓ Costa Smeralda, La Maddalena Archipel, Cagliari ✓ Premium Charter Service für unvergessliche Segelerlebnisse",
-    keywords: "Yachtcharter Sardinien, Segelyacht mieten Sardinien, Boot mieten Sardinien, Katamaran Charter Sardinien, Costa Smeralda, La Maddalena",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/sardinien",
+    title: "Yachtcharter Sardinien – Costa Smeralda & La Maddalena",
+    description: "Yachtcharter Sardinien: Costa Smeralda, La Maddalena Archipel & Cagliari. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in Sardinien anfragen.",
+    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien",
     ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
     structuredData: [
       generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
-        { name: "Sardinien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/sardinien" }
+        { name: "Start", url: "https://chartertransparenz.de" },
+        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
+        { name: "Sardinien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien" }
       ]),
-      generateStructuredData.service(
-        "Sardinien",
-        "Premium Yachtcharter auf Sardinien mit Segelyachten und Katamaranen. Entdecken Sie die Costa Smeralda, das La Maddalena Archipel und die traumhaften Küsten Sardiniens."
-      )
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Yachtcharter Sardinien",
+        "areaServed": "Sardinien, Italien",
+        "provider": {
+          "@type": "Organization",
+          "name": "Charter Transparenz",
+          "url": "https://chartertransparenz.de",
+          "logo": "https://chartertransparenz.de/logo.png"
+        }
+      }
     ]
   });
   const quickFacts = [{

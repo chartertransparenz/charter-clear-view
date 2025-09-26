@@ -16,23 +16,19 @@ const Toskana = () => {
 
   // SEO Meta Tags with Structured Data
   useMetaTags({
-    title: "Yachtcharter Toskana | Segelyacht & Katamaran mieten",
-    description: "Yachtcharter Toskana ⭐ Segelyacht & Katamaran mieten ✓ Elba, Toskanischer Archipel, Cinque Terre ✓ Premium Charter Service für einmalige Segelerlebnisse",
-    keywords: "Yachtcharter Toskana, Segelyacht mieten Toskana, Boot mieten Toskana, Katamaran Charter Toskana, Elba, Toskanischer Archipel",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/toskana",
+    title: "Yachtcharter Toskana – Elba & Toskanischer Archipel",
+    description: "Yachtcharter Toskana: Elba, Giglio, Capraia & Marina di Scarlino. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in der Toskana anfragen.",
+    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana",
     ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
     structuredData: [
       generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
-        { name: "Toskana", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/toskana" }
+        { name: "Start", url: "https://chartertransparenz.de" },
+        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
+        { name: "Toskana", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana" }
       ]),
-      generateStructuredData.service(
-        "Toskana",
-        "Premium Yachtcharter in der Toskana mit Segelyachten und Katamaranen. Entdecken Sie Elba, den Toskanischen Archipel und die malerischen Küsten der Toskana."
-      )
+      generateStructuredData.service("Yachtcharter Toskana", "Toskanischer Archipel, Italien")
     ]
   });
   const quickFacts = [{

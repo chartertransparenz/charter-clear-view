@@ -8,11 +8,30 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationItaly from "@/assets/destination-italy.jpg";
+
 const Italy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags with Structured Data
+  useMetaTags({
+    title: "Yachtcharter Italien – Sardinien, Toskana & Sizilien",
+    description: "Yachtcharter Italien: Sardinien, Toskana, Amalfiküste & Sizilien. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in Italien anfragen.",
+    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien",
+    ogImage: "/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png",
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://chartertransparenz.de" },
+        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" }
+      ]),
+      generateStructuredData.organization
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
