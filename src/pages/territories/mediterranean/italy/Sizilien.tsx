@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight, Landmark, Mountain, Waves, ChefHat, Compass, Building2, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
@@ -13,6 +14,28 @@ const Sizilien = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags with Structured Data
+  useMetaTags({
+    title: "Yachtcharter Sizilien | Segelyacht & Katamaran mieten",
+    description: "Yachtcharter Sizilien ⭐ Segelyacht & Katamaran mieten ✓ Liparische Inseln, Ätna, Palermo, Catania ✓ Premium Charter Service für authentische Segelerlebnisse",
+    keywords: "Yachtcharter Sizilien, Segelyacht mieten Sizilien, Boot mieten Sizilien, Katamaran Charter Sizilien, Liparische Inseln, Ätna",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/sizilien",
+    ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
+        { name: "Sizilien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/sizilien" }
+      ]),
+      generateStructuredData.service(
+        "Sizilien",
+        "Premium Yachtcharter auf Sizilien mit Segelyachten und Katamaranen. Entdecken Sie die Liparischen Inseln, den Ätna und die historischen Küstenstädte Siziliens."
+      )
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -74,7 +97,7 @@ const Sizilien = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇮🇹 Italien</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Sizilien</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Sizilien</h1>
             <p className="text-xl max-w-2xl">
               Größte Insel des Mittelmeers
             </p>

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -12,6 +13,28 @@ const Toskana = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags with Structured Data
+  useMetaTags({
+    title: "Yachtcharter Toskana | Segelyacht & Katamaran mieten",
+    description: "Yachtcharter Toskana ⭐ Segelyacht & Katamaran mieten ✓ Elba, Toskanischer Archipel, Cinque Terre ✓ Premium Charter Service für einmalige Segelerlebnisse",
+    keywords: "Yachtcharter Toskana, Segelyacht mieten Toskana, Boot mieten Toskana, Katamaran Charter Toskana, Elba, Toskanischer Archipel",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/toskana",
+    ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
+        { name: "Toskana", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/toskana" }
+      ]),
+      generateStructuredData.service(
+        "Toskana",
+        "Premium Yachtcharter in der Toskana mit Segelyachten und Katamaranen. Entdecken Sie Elba, den Toskanischen Archipel und die malerischen Küsten der Toskana."
+      )
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -39,7 +62,7 @@ const Toskana = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇮🇹 Italien</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Toskana</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Toskana</h1>
             <p className="text-xl max-w-2xl">
               Kultur und Natur an der toskanischen Küste
             </p>

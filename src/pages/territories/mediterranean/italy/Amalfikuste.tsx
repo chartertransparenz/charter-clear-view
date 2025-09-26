@@ -111,7 +111,7 @@ const Amalfikuste = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Amalfiküste
+            Yachtcharter Amalfiküste
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto px-4">
             Spektakuläre Steilküste am Golf von Salerno
