@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { RouteMetaTags } from "@/components/RouteMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
@@ -35,7 +34,6 @@ const Sardinien = () => {
   const cities = ["Alghero", "Cagliari", "Cannigione", "Carloforte", "Costa Smeralda", "Olbia", "Portisco", "Porto Rotondo"];
   const highlights = ["Smaragdgrünes, kristallklares Wasser", "Exklusive Costa Smeralda", "Unberührte Strände und Buchten", "Excellente Marina-Infrastruktur", "Vielfältige Küstenlandschaften", "Authentische sardische Kultur", "Kurze Distanzen zwischen Häfen", "Perfekte Windverhältnisse", "Ganzjährig mildes Klima"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <RouteMetaTags />
       <Navigation />
       
       {/* Header */}

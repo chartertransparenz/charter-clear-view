@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useLayoutEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 interface MetaTagsConfig {
@@ -52,7 +52,7 @@ export const useMetaTags = ({
   const absoluteOgUrl = finalOgUrl?.startsWith('http') ? finalOgUrl : `https://chartertransparenz.de${finalOgUrl}`;
   const absoluteTwitterImage = finalTwitterImage?.startsWith('http') ? finalTwitterImage : `https://chartertransparenz.de${finalTwitterImage}`;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof document === "undefined") return;
     
     const createdElements = new Set<Element>();

@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { RouteMetaTags } from "@/components/RouteMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -32,7 +31,6 @@ const Toskana = () => {
     value: "Insel Elba"
   }];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <RouteMetaTags />
       <Navigation />
       
       {/* Header */}
