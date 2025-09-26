@@ -45,7 +45,7 @@ const CostaSmeralda = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-emerald-500 text-white">🇮🇹 Costa Smeralda</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Costa Smeralda</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Costa Smeralda</h1>
             <p className="text-xl max-w-2xl">
               Das Smaragdparadies Sardiniens
             </p>
