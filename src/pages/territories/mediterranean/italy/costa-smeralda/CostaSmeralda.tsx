@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { RouteMetaTags } from "@/components/RouteMetaTags";
+import { DirectMetaTags } from "@/components/DirectMetaTags";
 const CostaSmeralda = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,7 +35,7 @@ const CostaSmeralda = () => {
   const marinas = ["Porto Cervo", "Portisco", "Porto Rotondo", "Poltu Quatu", "Cannigione", "Olbia"];
   const highlights = ["Weltberühmte Costa Smeralda", "Exklusive Marinas und Yachthäfen", "La Maddalena Archipel", "Kristallklares, smaragdgrünes Wasser", "Luxuriöse Boutiquen und Restaurants", "Spektakuläre Granitformationen", "Internationale Jet-Set Atmosphäre", "Perfekte Ankerplätze", "Erstklassige nautische Infrastruktur"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <RouteMetaTags />
+      <DirectMetaTags />
       <Navigation />
       
       {/* Header */}

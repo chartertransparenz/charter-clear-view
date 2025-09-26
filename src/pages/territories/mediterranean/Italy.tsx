@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { RouteMetaTags } from "@/components/RouteMetaTags";
+import { DirectMetaTags } from "@/components/DirectMetaTags";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,7 +34,7 @@ const Italy = () => {
   }];
   const highlights = ["Vielfältige Segelreviere für jeden Geschmack", "Weltklasse italienische Küche", "Reiche Kultur und Geschichte", "Exzellente Marina-Infrastruktur", "Traumhafte Inseln und Buchten", "Kurze Distanzen für Wochenendtörns", "Warmes, kristallklares Wasser"];
   return <div className="min-h-screen bg-white">
-      <RouteMetaTags />
+      <DirectMetaTags />
       <Navigation />
       
       {/* Header */}

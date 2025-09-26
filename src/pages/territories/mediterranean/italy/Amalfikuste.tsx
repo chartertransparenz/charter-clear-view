@@ -21,7 +21,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { RouteMetaTags } from "@/components/RouteMetaTags";
+import { DirectMetaTags } from "@/components/DirectMetaTags";
 import { Link } from "react-router-dom";
 
 const Amalfikuste = () => {
@@ -72,7 +72,7 @@ const Amalfikuste = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
-      <RouteMetaTags />
+      <DirectMetaTags />
       <Navigation />
       
       {/* Hero Section */}
