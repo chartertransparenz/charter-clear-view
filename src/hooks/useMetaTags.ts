@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 interface MetaTagsConfig {
   title?: string;
@@ -31,19 +32,29 @@ export const useMetaTags = ({
   robots = "index, follow",
   structuredData = []
 }: MetaTagsConfig) => {
-  // SSR Guard
-  if (typeof document === "undefined") return;
-
   // Normalize structuredData to always be an array
-  const normalizedStructuredData = Array.isArray(structuredData) ? structuredData : [structuredData].filter(Boolean);
+  const normalizedStructuredData = useMemo(() => {
+    const data = Array.isArray(structuredData) ? structuredData : [structuredData].filter(Boolean);
+    return data;
+  }, [structuredData]);
 
-  // Stable dependency for structured data
-  const stableStructuredData = useMemo(() => 
-    JSON.stringify(normalizedStructuredData), 
-    [normalizedStructuredData]
-  );
+  // Use backwards compatibility values
+  const finalOgTitle = ogTitle || title;
+  const finalOgDescription = ogDescription || description;
+  const finalOgUrl = ogUrl || canonical;
+  const finalTwitterTitle = twitterTitle || finalOgTitle;
+  const finalTwitterDescription = twitterDescription || finalOgDescription;
+  const finalTwitterImage = twitterImage || ogImage;
+
+  // Convert relative URLs to absolute
+  const absoluteCanonical = canonical?.startsWith('http') ? canonical : `https://chartertransparenz.de${canonical}`;
+  const absoluteOgImage = ogImage?.startsWith('http') ? ogImage : `https://chartertransparenz.de${ogImage}`;
+  const absoluteOgUrl = finalOgUrl?.startsWith('http') ? finalOgUrl : `https://chartertransparenz.de${finalOgUrl}`;
+  const absoluteTwitterImage = finalTwitterImage?.startsWith('http') ? finalTwitterImage : `https://chartertransparenz.de${finalTwitterImage}`;
 
   useEffect(() => {
+    if (typeof document === "undefined") return;
+    
     const createdElements = new Set<Element>();
 
     // 1) Title - remember previous state & restore later
@@ -58,8 +69,7 @@ export const useMetaTags = ({
     // 3) Canonical (always absolute)
     const linkCanonical = ensureLink('canonical', createdElements);
     const prevCanonical = linkCanonical?.getAttribute("href") || "";
-    if (canonical) {
-      const absoluteCanonical = canonical.startsWith('http') ? canonical : `https://chartertransparenz.de${canonical}`;
+    if (absoluteCanonical) {
       setAttr(linkCanonical, "href", absoluteCanonical);
     }
 
@@ -85,19 +95,13 @@ export const useMetaTags = ({
       siteName: ogSiteNameEl?.getAttribute("content") || "",
     };
 
-    const finalOgTitle = ogTitle || title;
-    const finalOgDescription = ogDescription || description;
-    const finalOgUrl = ogUrl || canonical;
-
     if (finalOgTitle) setAttr(ogTitleEl, "content", finalOgTitle);
     if (finalOgDescription) setAttr(ogDescEl, "content", finalOgDescription);
-    if (ogImage) {
-      const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `https://chartertransparenz.de${ogImage}`;
+    if (absoluteOgImage) {
       setAttr(ogImageEl, "content", absoluteOgImage);
     }
-    if (finalOgUrl) {
-      const absoluteCanonical = finalOgUrl.startsWith('http') ? finalOgUrl : `https://chartertransparenz.de${finalOgUrl}`;
-      setAttr(ogUrlEl, "content", absoluteCanonical);
+    if (absoluteOgUrl) {
+      setAttr(ogUrlEl, "content", absoluteOgUrl);
     }
     setAttr(ogTypeEl, "content", "website");
     setAttr(ogSiteNameEl, "content", "Charter Transparenz");
@@ -115,15 +119,10 @@ export const useMetaTags = ({
       img: twitterImageEl?.getAttribute("content") || "",
     };
 
-    const finalTwitterTitle = twitterTitle || finalOgTitle;
-    const finalTwitterDescription = twitterDescription || finalOgDescription;
-    const finalTwitterImage = twitterImage || ogImage;
-
     setAttr(twitterCardEl, "content", "summary_large_image");
     if (finalTwitterTitle) setAttr(twitterTitleEl, "content", finalTwitterTitle);
     if (finalTwitterDescription) setAttr(twitterDescEl, "content", finalTwitterDescription);
-    if (finalTwitterImage) {
-      const absoluteTwitterImage = finalTwitterImage.startsWith('http') ? finalTwitterImage : `https://chartertransparenz.de${finalTwitterImage}`;
+    if (absoluteTwitterImage) {
       setAttr(twitterImageEl, "content", absoluteTwitterImage);
     }
 
@@ -167,7 +166,7 @@ export const useMetaTags = ({
         }
       });
     };
-  }, [title, description, canonical, ogImage, robots, stableStructuredData]);
+  }, [title, description, absoluteCanonical, absoluteOgImage, robots, normalizedStructuredData]);
 };
 
 function ensureTag(selector: string, createdElements: Set<Element>): HTMLMetaElement {

@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight, Landmark, Mountain, Waves, ChefHat, Compass, Building2, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
+import { RouteMetaTags } from "@/components/RouteMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
@@ -14,9 +14,6 @@ const Sizilien = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // Auto-apply SEO meta tags based on route
-  useRouteMetaTags();
 
   const quickFacts = [{
     icon: MapPin,
@@ -70,6 +67,7 @@ const Sizilien = () => {
     description: "Von Palermo bis Catania - exzellente Marina-Infrastruktur"
   }];
   return <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+      <RouteMetaTags />
       <Navigation />
       
       {/* Header */}

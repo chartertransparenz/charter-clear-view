@@ -3,7 +3,7 @@ import { useMetaTags } from "./useMetaTags";
 import { getItalyMetaConfig } from "@/config/meta-italy";
 
 /**
- * Simplified hook that automatically applies meta tags based on current route
+ * Hook that automatically applies meta tags based on current route
  * Supports Italian yacht charter pages with centralized configuration
  */
 export const useRouteMetaTags = () => {

@@ -21,16 +21,13 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
+import { RouteMetaTags } from "@/components/RouteMetaTags";
 import { Link } from "react-router-dom";
 
 const Amalfikuste = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // Auto-apply SEO meta tags based on route
-  useRouteMetaTags();
 
   const quickFacts = [
     {
@@ -75,6 +72,7 @@ const Amalfikuste = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+      <RouteMetaTags />
       <Navigation />
       
       {/* Hero Section */}
