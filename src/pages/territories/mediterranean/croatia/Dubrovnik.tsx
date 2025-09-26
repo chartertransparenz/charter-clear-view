@@ -22,6 +22,7 @@ export default function Dubrovnik() {
     ogTitle: 'Yachtcharter Kroatien – Dubrovnik & Süddalmatien',
     ogDescription: 'Elaphiten, Mljet & Korčula. Traumkulisse & Kultur. Jetzt Yacht ab Dubrovnik mit/ohne Skipper anfragen.',
     ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik',
     structuredData: [
       generateStructuredData.breadcrumb([
         { name: 'Start', url: 'https://chartertransparenz.de' },

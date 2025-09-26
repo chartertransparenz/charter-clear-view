@@ -22,6 +22,7 @@ export default function SibenikKornaten() {
     ogTitle: 'Yachtcharter Kroatien – Šibenik & Kornaten',
     ogDescription: 'Nationalpark Kornaten & Inselketten vor Šibenik. Routen für Familien & Sportliche. Jetzt Kroatien-Charter ab Šibenik anfragen.',
     ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/sibenik-kornaten',
     structuredData: [
       generateStructuredData.breadcrumb([
         { name: 'Start', url: 'https://chartertransparenz.de' },

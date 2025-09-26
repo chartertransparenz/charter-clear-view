@@ -36,21 +36,22 @@ export default function Istria() {
 
   // SEO Meta Tags and Schema.org
   useMetaTags({
-    title: 'Yachtcharter Istrien - Premium Segelyachten & Katamarane mieten | Pula, Rovinj',
-    description: 'Yachtcharter Istrien ⭐ Premium Segelyacht & Katamaran mieten ✓ Pula, Rovinj, Poreč ✓ Kurze Anreise aus Deutschland ✓ Venezianisches Flair & kristallklares Wasser ✓ Jetzt buchen',
-    keywords: 'Yachtcharter Istrien, Segelyacht mieten Pula, Katamaran charter Rovinj, Bootsverleih Istrien, Segeln Kroatien, Marina Pula, Brijuni Nationalpark',
+    title: 'Yachtcharter Kroatien – Istrien & Kvarner Bucht',
+    description: 'Rovinj, Pula & Kvarner. Ruhige Törns, schöne Altstädte & Buchten. Jetzt Istrien-Charter mit/ohne Skipper anfragen.',
     canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien',
-    ogTitle: 'Yachtcharter Istrien - Segelyachten & Katamarane mieten',
-    ogDescription: 'Premium Yachtcharter in Istrien ⭐ Segelyacht & Katamaran mieten in Pula, Rovinj ✓ Kurze Anreise ✓ Venezianisches Flair ✓ Jetzt buchen',
+    ogTitle: 'Yachtcharter Kroatien – Istrien & Kvarner Bucht',
+    ogDescription: 'Rovinj, Pula & Kvarner. Ruhige Törns, schöne Altstädte & Buchten. Jetzt Istrien-Charter mit/ohne Skipper anfragen.',
     ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien',
     structuredData: [
       generateStructuredData.breadcrumb([
-        { name: 'Reviere', url: 'https://chartertransparenz.de/reviere' },
+        { name: 'Start', url: 'https://chartertransparenz.de' },
+        { name: 'Reviere', url: 'https://chartertransparenz.de/#reviere' },
         { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
         { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
         { name: 'Istrien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien' }
       ]),
-      generateStructuredData.service('Istrien', 'Premium Yachtcharter in Istrien mit Segelyachten und Katamaranen. Pula, Rovinj, Poreč - venezianisches Flair und kurze Anreise aus Deutschland.')
+      generateStructuredData.service('Istrien', 'Yachtcharter in Istrien - ruhige Törns, schöne Altstädte und Buchten. Rovinj, Pula und Kvarner Bucht.')
     ]
   });
 
@@ -219,7 +220,7 @@ export default function Istria() {
         {/* Main Content */}
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h1 className="text-4xl font-bold text-gray-800 mb-6">Yachtcharter Istrien: Segeln zwischen römischer Geschichte und venezianischem Flair</h1>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Yachtcharter Istrien: Segeln zwischen römischer Geschichte und venezianischem Flair</h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Willkommen in Istrien, der größten Halbinsel der Adria und einem Segelrevier, das wie kein anderes Kultur, Kulinarik und Küstenzauber vereint. Oft als die „kroatische Toskana" bezeichnet, erwartet Sie hier eine Welt aus sanften, grünen Hügeln, mittelalterlichen Städtchen, weltberühmten Trüffeln und malerischen Weinbergen – alles umrahmt von kristallklarem, türkisblauem Wasser. Ein Yachtcharter in Istrien ist eine Reise für alle Sinne, ideal für Genießer, Kulturinteressierte und Familien.

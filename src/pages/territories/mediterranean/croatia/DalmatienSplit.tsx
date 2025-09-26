@@ -22,6 +22,7 @@ export default function DalmatienSplit() {
     ogTitle: 'Yachtcharter Kroatien – Dalmatien ab Split',
     ogDescription: 'Hvar, Vis & Brač auf kurzen Etappen. Geprüfte Flotten, mit/ohne Skipper. Jetzt Yachtcharter in Dalmatien (ab Split) anfragen.',
     ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split',
     structuredData: [
       generateStructuredData.breadcrumb([
         { name: 'Start', url: 'https://chartertransparenz.de' },

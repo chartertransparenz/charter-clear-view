@@ -22,6 +22,7 @@ export default function Kvarner() {
     ogTitle: 'Yachtcharter Kroatien – Kvarner & Krk',
     ogDescription: 'Inselwelt der Kvarner Bucht: Krk, Cres & Lošinj. Gute Marinas, kurze Etappen. Jetzt Yacht im Kvarner buchen.',
     ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner',
     structuredData: [
       generateStructuredData.breadcrumb([
         { name: 'Start', url: 'https://chartertransparenz.de' },

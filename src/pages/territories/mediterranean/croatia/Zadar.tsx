@@ -22,6 +22,7 @@ export default function Zadar() {
     ogTitle: 'Yachtcharter Kroatien – Zadar & Norddalmatien',
     ogDescription: 'Dugi Otok, Ugljan & Pag. Kurze Distanzen, viele Buchten. Jetzt Yacht ab Zadar vergleichen & buchen.',
     ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
+    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar',
     structuredData: [
       generateStructuredData.breadcrumb([
         { name: 'Start', url: 'https://chartertransparenz.de' },
