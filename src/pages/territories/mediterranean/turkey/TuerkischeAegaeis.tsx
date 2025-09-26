@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -21,6 +22,26 @@ const TuerkischeAegaeis = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Configuration
+  useMetaTags({
+    title: "Yachtcharter Türkische Ägäis | Premium Segelyachten & Katamarane",
+    description: "Yachtcharter Türkische Ägäis ⭐ Blue Cruise Tradition ✓ Segelyacht & Katamaran mieten ✓ Bodrum, Marmaris, Göcek, Fethiye ✓ Traumhafte Buchten & antike Stätten",
+    keywords: "Yachtcharter Türkische Ägäis, Segelyacht mieten Türkei, Katamaran charter Bodrum, Blue Cruise, Gület charter Marmaris, Türkei Segeln",
+    canonical: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/tuerkische-aegaeis",
+    ogTitle: "Yachtcharter Türkische Ägäis - Blue Cruise & Traumhafte Buchten",
+    ogDescription: "Erleben Sie die berühmte Blue Cruise Tradition der Türkischen Ägäis. Premium Yachtcharter in Bodrum, Marmaris, Göcek und Fethiye mit kristallklarem Wasser.",
+    ogImage: "https://chartertransparenz.de/images/og/tuerkische-aegaeis.jpg",
+    structuredData: {
+      ...generateStructuredData.breadcrumb([
+        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
+        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
+        { name: "Türkei", url: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei" },
+        { name: "Türkische Ägäis", url: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/tuerkische-aegaeis" }
+      ]),
+      ...generateStructuredData.service("Türkische Ägäis", "Premium Yachtcharter in der Türkischen Ägäis mit Blue Cruise Tradition, kristallklarem Wasser und antiken Stätten.")
+    }
+  });
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Türkische Ägäis" },
@@ -78,7 +99,7 @@ const TuerkischeAegaeis = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇹🇷 Türkei</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Türkische Ägäis</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Türkische Ägäis</h1>
             <p className="text-xl max-w-2xl">
               Wiege der Blue Cruise Tradition
             </p>

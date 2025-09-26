@@ -103,7 +103,7 @@ const Turkey = () => {
             <span className="text-3xl">🇹🇷</span>
             <Badge className="bg-red-600 text-white">Top #5 Destination</Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Türkei</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Yachtcharter Türkei</h1>
           <p className="text-lg text-white/90 max-w-md">
             Türkische Ägäis - Blue Cruise Tradition mit warmen Gewässern
           </p>
