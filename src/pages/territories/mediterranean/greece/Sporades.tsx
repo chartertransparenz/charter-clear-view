@@ -8,12 +8,34 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationGreece from "@/assets/destination-greece.jpg";
 import TopDestinations from "@/components/TopDestinations";
 const Sporades = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Sporaden | Segeln ab Skiathos & Volos - Grüne Juwelen der Nordägäis",
+    description: "Yachtcharter Sporaden: Segeln Sie zu den grünen Juwelen der Nordägäis ab Skiathos oder Volos ⭐ Mamma Mia Kulisse ✓ Meeresschutzgebiet ✓ Unberührte Natur & kurze Distanzen",
+    keywords: "Yachtcharter Sporaden, Segeln Sporaden, Charter Skiathos, Charter Volos, Skopelos, Alonissos, Sporaden Sailing",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/sporaden",
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
+        { name: "Sporaden", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/sporaden" }
+      ]),
+      generateStructuredData.service(
+        "Sporaden", 
+        "Yachtcharter in den Sporaden - Segeln Sie zu den grünen Juwelen der Nordägäis mit unberührter Natur, dem Meeresschutzgebiet und der berühmten Mamma Mia Kulisse."
+      )
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -44,7 +66,7 @@ const Sporades = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Sporaden</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Sporaden</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Sporaden</h1>
             <p className="text-xl max-w-2xl">
               Grüne Juwelen der Nordägäis
             </p>

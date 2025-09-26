@@ -8,12 +8,33 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import TopDestinations from "@/components/TopDestinations";
 const Nordgriechenland = () => {
   useEffect(() => {
-    document.title = "Yachtcharter Nordgriechenland | Chalkidiki & Thessaloniki Segeln";
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Nordgriechenland | Chalkidiki & Thessaloniki Segeln - 3 Finger der Halbinsel",
+    description: "Yachtcharter Nordgriechenland: Segeln Sie durch Chalkidiki & Thermaischen Golf ab Thessaloniki ⭐ 3 Finger der Halbinsel ✓ Berg Athos ✓ Kristallklare Gewässer ✓ Moderate Winde für Familien",
+    keywords: "Yachtcharter Nordgriechenland, Charter Chalkidiki, Segeln Thessaloniki, Kassandra, Sithonia, Athos, Nordägäis",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/nordgriechenland",
+    structuredData: [
+      generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
+        { name: "Nordgriechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/nordgriechenland" }
+      ]),
+      generateStructuredData.service(
+        "Nordgriechenland", 
+        "Yachtcharter in Nordgriechenland - Segeln Sie durch die drei Finger der Chalkidiki-Halbinsel mit kristallklaren Gewässern, dem heiligen Berg Athos und moderaten Winden ideal für Familien."
+      )
+    ]
+  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -69,7 +90,7 @@ const Nordgriechenland = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Nordgriechenland</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Nordgriechenland</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Nordgriechenland</h1>
             <p className="text-xl max-w-2xl">
               Chalkidiki & Thermaischer Golf
             </p>

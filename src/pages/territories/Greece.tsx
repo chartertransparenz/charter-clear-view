@@ -77,7 +77,7 @@ const Greece = () => {
             <span className="text-3xl">🇬🇷</span>
             <Badge className="bg-blue-500 text-white">Top #2 Destination</Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Griechenland</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Yachtcharter Griechenland</h1>
           <p className="text-lg text-white/90 max-w-md">
             Wiege der Seefahrt mit über 6000 Inseln und antiker Geschichte
           </p>
