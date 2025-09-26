@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
@@ -15,34 +15,9 @@ const Sardinien = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags with Structured Data
-  useMetaTags({
-    title: "Yachtcharter Sardinien – Costa Smeralda & La Maddalena",
-    description: "Yachtcharter Sardinien: Costa Smeralda, La Maddalena Archipel & Cagliari. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in Sardinien anfragen.",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien",
-    ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://chartertransparenz.de" },
-        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
-        { name: "Sardinien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien" }
-      ]),
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Yachtcharter Sardinien",
-        "areaServed": "Sardinien, Italien",
-        "provider": {
-          "@type": "Organization",
-          "name": "Charter Transparenz",
-          "url": "https://chartertransparenz.de",
-          "logo": "https://chartertransparenz.de/logo.png"
-        }
-      }
-    ]
-  });
+  // Auto-apply SEO meta tags based on route
+  useRouteMetaTags();
+
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",

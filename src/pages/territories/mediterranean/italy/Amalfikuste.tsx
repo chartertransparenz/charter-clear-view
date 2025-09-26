@@ -21,7 +21,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
 import { Link } from "react-router-dom";
 
 const Amalfikuste = () => {
@@ -29,34 +29,8 @@ const Amalfikuste = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Amalfiküste – Positano, Capri & Neapel",
-    description: "Yachtcharter Amalfiküste: Positano, Capri, Ischia & Golf von Neapel. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter an der Amalfiküste anfragen.",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikuste",
-    ogImage: "/lovable-uploads/amalfi-coast-charter.jpg",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://chartertransparenz.de" },
-        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
-        { name: "Amalfiküste", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikuste" }
-      ]),
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Yachtcharter Amalfiküste",
-        "areaServed": "Amalfiküste, Italien",
-        "provider": {
-          "@type": "Organization",
-          "name": "Charter Transparenz",
-          "url": "https://chartertransparenz.de",
-          "logo": "https://chartertransparenz.de/logo.png"
-        }
-      }
-    ]
-  });
+  // Auto-apply SEO meta tags based on route
+  useRouteMetaTags();
 
   const quickFacts = [
     {

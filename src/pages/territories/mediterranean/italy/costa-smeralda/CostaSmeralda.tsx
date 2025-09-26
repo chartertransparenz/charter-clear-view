@@ -9,41 +9,15 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
 const CostaSmeralda = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags with Structured Data
-  useMetaTags({
-    title: "Yachtcharter Costa Smeralda – Segeln in Sardinien",
-    description: "La Maddalena, Porto Cervo & smaragdklare Buchten. Geprüfte Yachten, 30 Jahre Erfahrung, mit/ohne Skipper. Jetzt Yacht an der Costa Smeralda anfragen.",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien/costa-smeralda",
-    ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://chartertransparenz.de" },
-        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
-        { name: "Sardinien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien" },
-        { name: "Costa Smeralda", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien/costa-smeralda" }
-      ]),
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Yachtcharter Costa Smeralda",
-        "areaServed": "Costa Smeralda, Sardinien, Italien",
-        "provider": {
-          "@type": "Organization",
-          "name": "Charter Transparenz",
-          "url": "https://chartertransparenz.de",
-          "logo": "https://chartertransparenz.de/logo.png"
-        }
-      }
-    ]
-  });
+  // Auto-apply SEO meta tags based on route
+  useRouteMetaTags();
+
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",

@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -14,23 +14,9 @@ const Toskana = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags with Structured Data
-  useMetaTags({
-    title: "Yachtcharter Toskana – Elba & Toskanischer Archipel",
-    description: "Yachtcharter Toskana: Elba, Giglio, Capraia & Marina di Scarlino. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in der Toskana anfragen.",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana",
-    ogImage: "/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://chartertransparenz.de" },
-        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" },
-        { name: "Toskana", url: "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana" }
-      ]),
-      generateStructuredData.service("Yachtcharter Toskana", "Toskanischer Archipel, Italien")
-    ]
-  });
+  // Auto-apply SEO meta tags based on route
+  useRouteMetaTags();
+
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",

@@ -1,14 +1,14 @@
+import { useEffect } from "react";
+import { useRouteMetaTags } from "@/hooks/useRouteMetaTags";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
@@ -16,22 +16,8 @@ const Italy = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags with Structured Data
-  useMetaTags({
-    title: "Yachtcharter Italien – Sardinien, Toskana & Sizilien",
-    description: "Yachtcharter Italien: Sardinien, Toskana, Amalfiküste & Sizilien. Geprüfte Yachten, faire Preise, 30 Jahre Erfahrung. Jetzt Charter in Italien anfragen.",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/italien",
-    ogImage: "/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://chartertransparenz.de" },
-        { name: "Reviere", url: "https://chartertransparenz.de/#reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Italien", url: "https://chartertransparenz.de/reviere/mittelmeer/italien" }
-      ]),
-      generateStructuredData.organization
-    ]
-  });
+  // Auto-apply SEO meta tags based on route
+  useRouteMetaTags();
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
