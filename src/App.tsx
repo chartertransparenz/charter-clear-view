@@ -1,7 +1,7 @@
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
@@ -176,8 +176,7 @@ function App() {
       <HelmetProviderContext>
         <TooltipProvider>
           <Toaster />
-          <BrowserRouter>
-            <Suspense fallback={<div className="p-8 text-center">Laden...</div>}>
+          <Suspense fallback={<div className="p-8 text-center">Laden...</div>}>
           <Routes>
             <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<About />} />
@@ -342,10 +341,9 @@ function App() {
           </Routes>
            <Footer />
             </Suspense>
-         </BrowserRouter>
-      </TooltipProvider>
-      </HelmetProviderContext>
-    </QueryClientProvider>
+         </TooltipProvider>
+       </HelmetProviderContext>
+     </QueryClientProvider>
   );
 }
 
