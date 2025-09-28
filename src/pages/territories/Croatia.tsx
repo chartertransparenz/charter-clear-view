@@ -42,16 +42,6 @@ const Croatia = () => {
     }
   ];
 
-  const highlights = [
-    "Über 1200 Inseln und Buchten",
-    "Kristallklares, türkisfarbenes Wasser",
-    "Hervorragende Marina-Infrastruktur", 
-    "Kurze Distanzen zwischen Häfen",
-    "Reiche Geschichte und Kultur",
-    "Ausgezeichnete lokale Küche",
-    "Stabile Wetterbedingungen",
-    "Erschwingliche Preise"
-  ];
 
   const routes = [
     "Split - Hvar - Vis - Korčula",
@@ -321,18 +311,6 @@ const Croatia = () => {
           </div>
         </div>
 
-        {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Kroatien?</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
-                <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-800 text-sm">{highlight}</span>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Regions */}
         <div className="mb-12">
