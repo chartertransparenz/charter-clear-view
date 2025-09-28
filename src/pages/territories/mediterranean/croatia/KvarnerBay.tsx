@@ -112,7 +112,7 @@ export default function KvarnerBay() {
         "name": "Marina Punat",
         "address": {"@type": "PostalAddress", "addressLocality": "Punat", "addressCountry": "HR"},
         "geo": {"@type": "GeoCoordinates", "latitude": 45.0175, "longitude": 14.6203},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht"
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner"
       }} />
       <JsonLd json={{
         "@context": "https://schema.org",

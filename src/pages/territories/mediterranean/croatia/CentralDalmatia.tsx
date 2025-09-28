@@ -97,7 +97,7 @@ export default function CentralDalmatia() {
           {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
           {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
           {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
-          {"@type": "ListItem", "position": 4, "name": "Mitteldalmatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien"}
+          {"@type": "ListItem", "position": 4, "name": "Mitteldalmatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split"}
         ]
       }} />
       <JsonLd json={{
@@ -106,7 +106,7 @@ export default function CentralDalmatia() {
         "name": "Marina Split",
         "address": {"@type": "PostalAddress", "addressLocality": "Split", "addressCountry": "HR"},
         "geo": {"@type": "GeoCoordinates", "latitude": 43.5081, "longitude": 16.4402},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien"
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split"
       }} />
       <JsonLd json={{
         "@context": "https://schema.org",
@@ -114,7 +114,7 @@ export default function CentralDalmatia() {
         "name": "Marina Trogir",
         "address": {"@type": "PostalAddress", "addressLocality": "Trogir", "addressCountry": "HR"},
         "geo": {"@type": "GeoCoordinates", "latitude": 43.5154, "longitude": 16.2517},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/mitteldalmatien"
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split"
       }} />
       <div className="min-h-screen bg-background">
       <Navigation />
