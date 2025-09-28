@@ -2,6 +2,9 @@
   command = "bun run build"
   publish = "dist"
 
+[build.environment]
+  PRERENDER = "0"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

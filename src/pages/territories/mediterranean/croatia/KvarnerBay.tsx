@@ -120,7 +120,7 @@ export default function KvarnerBay() {
         "name": "Marina Mali Lošinj",
         "address": {"@type": "PostalAddress", "addressLocality": "Mali Lošinj", "addressCountry": "HR"},
         "geo": {"@type": "GeoCoordinates", "latitude": 44.5311, "longitude": 14.4686},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht"
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner"
       }} />
       <div className="min-h-screen bg-background">
       <Navigation />
