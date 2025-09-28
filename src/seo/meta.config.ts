@@ -1,7 +1,7 @@
 // src/seo/meta.config.ts
 export type RegionKey =
   | "home" | "about" | "faq" | "impressum" | "datenschutz" | "allTerritories"
-  | "kroatien" | "istrien" | "kvarner" | "norddalmatien" | "zentraldalmatien" | "sueddalmatien"
+  | "kroatien" | "istrien" | "kvarner" | "zadar" | "dalmatienSplit" | "dubrovnik"
   | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer"
   | "italien" | "spanien" | "frankreich" | "croatia" | "malta" | "montenegro" | "slowenien"
   | "sardinien" | "sizilien" | "toskana" | "amalfikueste" | "costasmeralda"
@@ -52,12 +52,26 @@ export const META: Record<RegionKey, {
     ogImage: "/og/kvarner.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner"
   },
-  norddalmatien: {
-    title: "Yachtcharter Norddalmatien | Zadar, Kornati, Šibenik",
-    description: "Segeln Norddalmatien: Kornati Nationalpark, historisches Zadar & Šibenik. Kristallklares Wasser & traumhafte Buchten. Jetzt anfragen!",
-    keywords: ["Yachtcharter Norddalmatien","Zadar","Kornati","Šibenik","Kroatien"],
-    ogImage: "/og/norddalmatien.jpg",
-    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/norddalmatien"
+  zadar: {
+    title: "Yachtcharter Zadar & Kornati | Nationalpark, Šibenik – Norddalmatien",
+    description: "Segeln ab Zadar: Kornati Nationalpark, historisches Šibenik & kristallklares Wasser. Traumhafte Buchten. Jetzt anfragen!",
+    keywords: ["Yachtcharter Zadar","Kornati","Šibenik","Norddalmatien","Kroatien"],
+    ogImage: "/og/zadar.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar"
+  },
+  dalmatienSplit: {
+    title: "Yachtcharter Dalmatien ab Split | Hvar, Brač, Vis – Mitteldalmatien",
+    description: "Segeln ab Split: traumhafte Inseln Hvar, Brač & Vis. Perfekte Kombination aus Kultur & Natur. Jetzt anfragen!",
+    keywords: ["Yachtcharter Split","Hvar","Brač","Vis","Dalmatien","Kroatien"],
+    ogImage: "/og/dalmatien-split.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split"
+  },
+  dubrovnik: {
+    title: "Yachtcharter Dubrovnik | Korčula, Mljet – Süddalmatien",
+    description: "Segeln ab Dubrovnik: UNESCO-Stadt, grüne Insel Korčula & Nationalpark Mljet. Kroatiens schönster Süden. Jetzt anfragen!",
+    keywords: ["Yachtcharter Dubrovnik","Korčula","Mljet","Süddalmatien","Kroatien"],
+    ogImage: "/og/dubrovnik.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik"
   },
   kykladen: {
     title: "Yachtcharter Kykladen | Mykonos, Santorini, Paros – Ägäis",
@@ -121,20 +135,6 @@ export const META: Record<RegionKey, {
     keywords: ["Charter Destinationen","Yachtcharter Reviere","Weltweite Charter","Segelreviere"],
     ogImage: "/og/all-territories.jpg",
     canonical: () => "https://chartertransparenz.de/reviere"
-  },
-  zentraldalmatien: {
-    title: "Yachtcharter Zentraldalmatien | Split, Hvar, Brač, Vis",
-    description: "Segeln Zentraldalmatien: Split als Ausgangspunkt, traumhafte Inseln Hvar, Brač & Vis. Perfekte Kombination aus Kultur & Natur. Jetzt anfragen!",
-    keywords: ["Yachtcharter Zentraldalmatien","Split","Hvar","Brač","Vis","Kroatien"],
-    ogImage: "/og/zentraldalmatien.jpg",
-    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zentraldalmatien"
-  },
-  sueddalmatien: {
-    title: "Yachtcharter Süddalmatien | Dubrovnik, Korčula, Mljet",
-    description: "Segeln Süddalmatien: UNESCO-Stadt Dubrovnik, grüne Insel Korčula & Nationalpark Mljet. Kroatiens schönster Süden. Jetzt anfragen!",
-    keywords: ["Yachtcharter Süddalmatien","Dubrovnik","Korčula","Mljet","Kroatien"],
-    ogImage: "/og/sueddalmatien.jpg",
-    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/sueddalmatien"
   },
   italien: {
     title: "Yachtcharter Italien | Sardinien, Sizilien, Amalfiküste",

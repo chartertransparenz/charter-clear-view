@@ -103,7 +103,7 @@ export default function KvarnerBay() {
           {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
           {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
           {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
-          {"@type": "ListItem", "position": 4, "name": "Kvarner Bucht", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner-bucht"}
+          {"@type": "ListItem", "position": 4, "name": "Kvarner", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner"}
         ]
       }} />
       <JsonLd json={{

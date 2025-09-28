@@ -15,7 +15,7 @@ import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 export default function NorthernDalmatia() {
-  const m = META.norddalmatien;
+  const m = META.zadar;
   
   const absoluteOg = (path: string) => {
     const base = "https://chartertransparenz.de";

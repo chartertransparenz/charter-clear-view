@@ -1,7 +1,7 @@
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
@@ -200,12 +200,18 @@ function App() {
             <Route path="/reviere/mittelmeer/montenegro" element={<Montenegro />} />
             <Route path="/reviere/mittelmeer/slowenien" element={<Slovenia />} />
             
-            {/* Croatian region routes */}
+            {/* Croatian region routes - NEW canonical URLs */}
             <Route path="/reviere/mittelmeer/kroatien/istrien" element={<Istria />} />
-            <Route path="/reviere/mittelmeer/kroatien/kvarner-bucht" element={<KvarnerBay />} />
-            <Route path="/reviere/mittelmeer/kroatien/norddalmatien" element={<NorthernDalmatia />} />
-            <Route path="/reviere/mittelmeer/kroatien/mitteldalmatien" element={<CentralDalmatia />} />
-            <Route path="/reviere/mittelmeer/kroatien/sueddalmatien" element={<SouthernDalmatia />} />
+            <Route path="/reviere/mittelmeer/kroatien/kvarner" element={<KvarnerBay />} />
+            <Route path="/reviere/mittelmeer/kroatien/zadar" element={<NorthernDalmatia />} />
+            <Route path="/reviere/mittelmeer/kroatien/dalmatien-split" element={<CentralDalmatia />} />
+            <Route path="/reviere/mittelmeer/kroatien/dubrovnik" element={<SouthernDalmatia />} />
+            
+            {/* 301 Redirects from old Croatian URLs */}
+            <Route path="/reviere/mittelmeer/kroatien/kvarner-bucht" element={<Navigate to="/reviere/mittelmeer/kroatien/kvarner" replace />} />
+            <Route path="/reviere/mittelmeer/kroatien/norddalmatien" element={<Navigate to="/reviere/mittelmeer/kroatien/zadar" replace />} />
+            <Route path="/reviere/mittelmeer/kroatien/mitteldalmatien" element={<Navigate to="/reviere/mittelmeer/kroatien/dalmatien-split" replace />} />
+            <Route path="/reviere/mittelmeer/kroatien/sueddalmatien" element={<Navigate to="/reviere/mittelmeer/kroatien/dubrovnik" replace />} />
             
             {/* Greek region routes */}
             <Route path="/reviere/mittelmeer/griechenland/kykladen" element={<Cyclades />} />

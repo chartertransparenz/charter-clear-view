@@ -26,10 +26,10 @@ const Mediterranean = () => {
       link: "/reviere/mittelmeer/kroatien", 
       areas: [
         { name: "Istrien", link: "/reviere/mittelmeer/kroatien/istrien" },
-        { name: "Kvarner Bucht", link: "/reviere/mittelmeer/kroatien/kvarner-bucht" },
-        { name: "Norddalmatien", link: "/reviere/mittelmeer/kroatien/norddalmatien" },
-        { name: "Mitteldalmatien", link: "/reviere/mittelmeer/kroatien/mitteldalmatien" },
-        { name: "Süddalmatien", link: "/reviere/mittelmeer/kroatien/sueddalmatien" }
+        { name: "Kvarner", link: "/reviere/mittelmeer/kroatien/kvarner" },
+        { name: "Zadar", link: "/reviere/mittelmeer/kroatien/zadar" },
+        { name: "Dalmatien ab Split", link: "/reviere/mittelmeer/kroatien/dalmatien-split" },
+        { name: "Dubrovnik", link: "/reviere/mittelmeer/kroatien/dubrovnik" }
       ]
     },
     { 

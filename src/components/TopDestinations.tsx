@@ -36,36 +36,36 @@ const TopDestinations = () => {
                   Istrien
                 </a>
               </li>
-              <li>
+               <li>
                 <a 
-                  href="/reviere/mittelmeer/kroatien/kvarner-bucht"
+                  href="/reviere/mittelmeer/kroatien/kvarner"
                   className="block text-base leading-6 text-foreground hover:text-primary transition-colors hover:underline"
                 >
-                  Kvarner Bucht
+                  Kvarner
                 </a>
               </li>
               <li>
                 <a 
-                  href="/reviere/mittelmeer/kroatien/norddalmatien"
+                  href="/reviere/mittelmeer/kroatien/zadar"
                   className="block text-base leading-6 text-foreground hover:text-primary transition-colors hover:underline"
                 >
-                  Norddalmatien
+                  Zadar
                 </a>
               </li>
               <li>
                 <a 
-                  href="/reviere/mittelmeer/kroatien/mitteldalmatien"
+                  href="/reviere/mittelmeer/kroatien/dalmatien-split"
                   className="block text-base leading-6 text-foreground hover:text-primary transition-colors hover:underline"
                 >
-                  Mitteldalmatien
+                  Dalmatien ab Split
                 </a>
               </li>
               <li>
                 <a 
-                  href="/reviere/mittelmeer/kroatien/sueddalmatien"
+                  href="/reviere/mittelmeer/kroatien/dubrovnik"
                   className="block text-base leading-6 text-foreground hover:text-primary transition-colors hover:underline"
                 >
-                  Süddalmatien
+                  Dubrovnik
                 </a>
               </li>
             </ul>
