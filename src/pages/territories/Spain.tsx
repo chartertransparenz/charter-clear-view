@@ -101,7 +101,7 @@ const Spain = () => {
             <span className="text-3xl">🇪🇸</span>
             <Badge className="bg-red-500 text-white">Top #4 Destination</Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Yachtcharter Spanien</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Spanien</h1>
           <p className="text-lg text-white/90 max-w-md">
             Balearen & Kanaren - mediterrane Vielfalt mit Ganzjahres-Option
           </p>

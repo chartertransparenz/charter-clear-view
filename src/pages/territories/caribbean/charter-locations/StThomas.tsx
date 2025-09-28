@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane, ShoppingBag } from "lucide-react";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import TopDestinations from "@/components/TopDestinations";
@@ -22,24 +21,6 @@ const StThomas = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter St. Thomas | Charterbasis US Virgin Islands (USVI)",
-    description: "Yachtcharter St. Thomas ⭐ Charter-Standort USVI ✓ American Yacht Harbor ✓ Yacht Haven Grande ✓ Duty-free Shopping ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter St. Thomas, Charter USVI, American Yacht Harbor, Yacht Haven Grande, US Virgin Islands Charter, St. Thomas Charter",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/st-thomas",
-    ogImage: "/lovable-uploads/808a1327-1e02-46a0-abc3-90d96bd5667a.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Charter-Standorte", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "St. Thomas", url: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/st-thomas" }
-      ]),
-      ...generateStructuredData.service("St. Thomas", "Premium Yachtcharter ab St. Thomas - Der Haupt-Charter-Standort der US Virgin Islands mit amerikanischem Komfort und Duty-free Shopping.")
-    }
-  });
 
   const marinas = [
     {
@@ -111,7 +92,7 @@ const StThomas = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-red-600 text-white">🇺🇸 Charter-Standort</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter St. Thomas</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">St. Thomas</h1>
             <p className="text-xl max-w-2xl">
               Das Shopping- und Charter-Paradies der US Virgin Islands
             </p>

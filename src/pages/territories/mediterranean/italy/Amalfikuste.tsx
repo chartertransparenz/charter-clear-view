@@ -21,12 +21,34 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import { Link } from "react-router-dom";
 
 const Amalfikuste = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // SEO Meta Tags
+  useMetaTags({
+    title: "Yachtcharter Amalfiküste – Positano, Capri & Sorrent",
+    description: "Segeln Amalfiküste: UNESCO-Welterbe, Positano & Capri, dramatische Klippen. Luxus-Yachtcharter zwischen Neapel und Salerno.",
+    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste",
+    ogTitle: "Yachtcharter Amalfiküste – Positano, Capri & Sorrent",
+    ogDescription: "Segeln Amalfiküste: UNESCO-Welterbe, Positano & Capri, dramatische Klippen. Luxus-Yachtcharter zwischen Neapel und Salerno.",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/amalfi-coast-sailing.jpg",
+    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste",
+    structuredData: {
+      ...generateStructuredData.service("Amalfiküste", "Yachtcharter an der Amalfiküste - Segeln vor Positano, Capri und Sorrent entlang der UNESCO-Welterbe-Küste"),
+      ...generateStructuredData.breadcrumb([
+        { name: "Start", url: "https://premium-yachtcharter.com/" },
+        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
+        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
+        { name: "Italien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien" },
+        { name: "Amalfiküste", url: "https://premium-yachtcharter.com/reviere/mittelmeer/italien/amalfikuste" }
+      ])
+    }
+  });
 
   const quickFacts = [
     {
@@ -89,7 +111,7 @@ const Amalfikuste = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Yachtcharter Amalfiküste
+            Amalfiküste
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto px-4">
             Spektakuläre Steilküste am Golf von Salerno

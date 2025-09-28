@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -21,23 +20,6 @@ const LeewardIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter Leeward Islands | Antigua, St. Martin, Guadeloupe",
-    description: "Yachtcharter Leeward Islands ⭐ Segeln Antigua, St. Martin, Guadeloupe ✓ Französisches & niederländisches Flair ✓ Kulturelle Vielfalt ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter Leeward Islands, Antigua Charter, St. Martin Charter, Guadeloupe Charter, St. Barth, Anguilla, St. Kitts Nevis",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik/leeward-inseln",
-    ogImage: "/lovable-uploads/0d4c42e2-59bd-4dcb-b526-875ab1f536b0.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Leeward Islands", url: "https://premium-yachtcharter.com/reviere/karibik/leeward-inseln" }
-      ]),
-      ...generateStructuredData.service("Leeward Islands", "Premium Yachtcharter in den Leeward Islands - Segeln zwischen Antigua, St. Martin und Guadeloupe mit kultureller Vielfalt und französisch-niederländischem Flair.")
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -72,7 +54,7 @@ const LeewardIslands = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🏝️ Leeward Inseln</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Leeward Inseln</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Leeward Inseln</h1>
             <p className="text-xl max-w-2xl">
               Kulturelle Vielfalt in der nördlichen Karibik
             </p>

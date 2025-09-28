@@ -8,34 +8,12 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import TopDestinations from "@/components/TopDestinations";
 
 const AthenSaronischerGolf = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Athen & Saronischer Golf | Segeln ab Alimos & Zea Marina - Nähe Athens",
-    description: "Yachtcharter Athen & Saronischer Golf: Segeln Sie ab Alimos oder Zea Marina zu Aegina, Poros, Hydra & Spetses ⭐ Kurze Anreise ✓ Geschützte Gewässer ✓ Ideal für Einsteiger & Familien",
-    keywords: "Yachtcharter Athen, Charter Saronischer Golf, Segeln Athen, Alimos Marina, Zea Marina, Aegina, Poros, Hydra, Spetses",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/athen-saronischer-golf",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
-        { name: "Athen & Saronischer Golf", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/athen-saronischer-golf" }
-      ]),
-      generateStructuredData.service(
-        "Athen & Saronischer Golf", 
-        "Yachtcharter im Saronischen Golf ab Athen - Segeln Sie zu den geschützten Gewässern mit kurzer Anreise, ideal für Einsteiger und Familien mit historischen Inseln vor den Toren Athens."
-      )
-    ]
-  });
 
   const quickFacts = [{
     icon: MapPin,
@@ -78,7 +56,7 @@ const AthenSaronischerGolf = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Athen & Saronischer Golf</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Athen & Saronischer Golf</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Athen & Saronischer Golf</h1>
             <p className="text-xl max-w-2xl">
               Segelparadies vor den Toren Athens
             </p>

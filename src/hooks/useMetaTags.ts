@@ -1,26 +1,26 @@
-import { useLayoutEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 interface MetaTagsConfig {
-  title?: string;
-  description?: string;
-  keywords?: string; // Deprecated but kept for backwards compatibility
+  title: string;
+  description: string;
+  keywords?: string;
   canonical?: string;
-  ogTitle?: string; // Backwards compatibility - uses title if not provided
-  ogDescription?: string; // Backwards compatibility - uses description if not provided
+  ogTitle?: string;
+  ogDescription?: string;
   ogImage?: string;
-  ogUrl?: string; // Backwards compatibility - uses canonical if not provided
-  twitterTitle?: string; // Backwards compatibility - uses ogTitle/title if not provided
-  twitterDescription?: string; // Backwards compatibility - uses ogDescription/description if not provided
-  twitterImage?: string; // Backwards compatibility - uses ogImage if not provided
+  ogUrl?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  twitterImage?: string;
   robots?: string;
-  structuredData?: object | object[]; // Support both single object and array
+  structuredData?: object;
 }
 
 export const useMetaTags = ({
   title,
   description,
-  keywords, // Deprecated, ignored
+  keywords,
   canonical,
   ogTitle,
   ogDescription,
@@ -30,184 +30,115 @@ export const useMetaTags = ({
   twitterDescription,
   twitterImage,
   robots = "index, follow",
-  structuredData = []
+  structuredData
 }: MetaTagsConfig) => {
-  // Normalize structuredData to always be an array
-  const normalizedStructuredData = useMemo(() => {
-    const data = Array.isArray(structuredData) ? structuredData : [structuredData].filter(Boolean);
-    return data;
-  }, [structuredData]);
-
-  // Use backwards compatibility values
-  const finalOgTitle = ogTitle || title;
-  const finalOgDescription = ogDescription || description;
-  const finalOgUrl = ogUrl || canonical;
-  const finalTwitterTitle = twitterTitle || finalOgTitle;
-  const finalTwitterDescription = twitterDescription || finalOgDescription;
-  const finalTwitterImage = twitterImage || ogImage;
-
-  // Convert relative URLs to absolute
-  const absoluteCanonical = canonical?.startsWith('http') ? canonical : `https://chartertransparenz.de${canonical}`;
-  const absoluteOgImage = ogImage?.startsWith('http') ? ogImage : `https://chartertransparenz.de${ogImage}`;
-  const absoluteOgUrl = finalOgUrl?.startsWith('http') ? finalOgUrl : `https://chartertransparenz.de${finalOgUrl}`;
-  const absoluteTwitterImage = finalTwitterImage?.startsWith('http') ? finalTwitterImage : `https://chartertransparenz.de${finalTwitterImage}`;
-
-  useLayoutEffect(() => {
-    if (typeof document === "undefined") return;
+  useEffect(() => {
+    // Set page title in document
+    document.title = title;
     
-    const createdElements = new Set<Element>();
-
-    // 1) Title - remember previous state & restore later
-    const prevTitle = document.title;
-    if (title) document.title = title;
-
-    // 2) Description
-    const descEl = ensureTag('meta[name="description"]', createdElements);
-    const prevDesc = descEl?.getAttribute("content") || "";
-    if (description) setAttr(descEl, "content", description);
-
-    // 3) Canonical (always absolute)
-    const linkCanonical = ensureLink('canonical', createdElements);
-    const prevCanonical = linkCanonical?.getAttribute("href") || "";
-    if (absoluteCanonical) {
-      setAttr(linkCanonical, "href", absoluteCanonical);
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', description);
     }
 
-    // 4) Robots
-    const robotsEl = ensureTag('meta[name="robots"]', createdElements);
-    const prevRobots = robotsEl?.getAttribute("content") || "";
-    if (robots) setAttr(robotsEl, "content", robots);
+    // Update canonical URL
+    if (canonical) {
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (!canonicalLink) {
+        canonicalLink = document.createElement('link');
+        canonicalLink.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.setAttribute('href', canonical);
+    }
 
-    // 5) Open Graph (complete coverage) - with backwards compatibility
-    const ogTitleEl = ensureTag('meta[property="og:title"]', createdElements);
-    const ogDescEl = ensureTag('meta[property="og:description"]', createdElements);
-    const ogImageEl = ensureTag('meta[property="og:image"]', createdElements);
-    const ogUrlEl = ensureTag('meta[property="og:url"]', createdElements);
-    const ogTypeEl = ensureTag('meta[property="og:type"]', createdElements);
-    const ogSiteNameEl = ensureTag('meta[property="og:site_name"]', createdElements);
+    // Update robots meta
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    if (!robotsMeta) {
+      robotsMeta = document.createElement('meta');
+      robotsMeta.setAttribute('name', 'robots');
+      document.head.appendChild(robotsMeta);
+    }
+    robotsMeta.setAttribute('content', robots);
 
-    const prevOg = {
-      title: ogTitleEl?.getAttribute("content") || "",
-      desc: ogDescEl?.getAttribute("content") || "",
-      img: ogImageEl?.getAttribute("content") || "",
-      url: ogUrlEl?.getAttribute("content") || "",
-      type: ogTypeEl?.getAttribute("content") || "",
-      siteName: ogSiteNameEl?.getAttribute("content") || "",
+    // Update Open Graph tags
+    const updateOGTag = (property: string, content: string) => {
+      let ogTag = document.querySelector(`meta[property="${property}"]`);
+      if (!ogTag) {
+        ogTag = document.createElement('meta');
+        ogTag.setAttribute('property', property);
+        document.head.appendChild(ogTag);
+      }
+      ogTag.setAttribute('content', content);
     };
 
-    if (finalOgTitle) setAttr(ogTitleEl, "content", finalOgTitle);
-    if (finalOgDescription) setAttr(ogDescEl, "content", finalOgDescription);
-    if (absoluteOgImage) {
-      setAttr(ogImageEl, "content", absoluteOgImage);
+    updateOGTag('og:title', ogTitle || title);
+    updateOGTag('og:description', ogDescription || description);
+    updateOGTag('og:type', 'website');
+    
+    if (ogImage) {
+      updateOGTag('og:image', ogImage);
     }
-    if (absoluteOgUrl) {
-      setAttr(ogUrlEl, "content", absoluteOgUrl);
+    
+    if (ogUrl) {
+      updateOGTag('og:url', ogUrl);
     }
-    setAttr(ogTypeEl, "content", "website");
-    setAttr(ogSiteNameEl, "content", "Charter Transparenz");
 
-    // 6) Twitter Cards (enhanced) - with backwards compatibility
-    const twitterCardEl = ensureTag('meta[name="twitter:card"]', createdElements);
-    const twitterTitleEl = ensureTag('meta[name="twitter:title"]', createdElements);
-    const twitterDescEl = ensureTag('meta[name="twitter:description"]', createdElements);
-    const twitterImageEl = ensureTag('meta[name="twitter:image"]', createdElements);
-
-    const prevTwitter = {
-      card: twitterCardEl?.getAttribute("content") || "",
-      title: twitterTitleEl?.getAttribute("content") || "",
-      desc: twitterDescEl?.getAttribute("content") || "",
-      img: twitterImageEl?.getAttribute("content") || "",
+    // Update Twitter Card tags
+    const updateTwitterTag = (name: string, content: string) => {
+      let twitterTag = document.querySelector(`meta[name="${name}"]`);
+      if (!twitterTag) {
+        twitterTag = document.createElement('meta');
+        twitterTag.setAttribute('name', name);
+        document.head.appendChild(twitterTag);
+      }
+      twitterTag.setAttribute('content', content);
     };
 
-    setAttr(twitterCardEl, "content", "summary_large_image");
-    if (finalTwitterTitle) setAttr(twitterTitleEl, "content", finalTwitterTitle);
-    if (finalTwitterDescription) setAttr(twitterDescEl, "content", finalTwitterDescription);
-    if (absoluteTwitterImage) {
-      setAttr(twitterImageEl, "content", absoluteTwitterImage);
+    updateTwitterTag('twitter:card', 'summary_large_image');
+    updateTwitterTag('twitter:title', twitterTitle || ogTitle || title);
+    updateTwitterTag('twitter:description', twitterDescription || ogDescription || description);
+    
+    if (twitterImage || ogImage) {
+      updateTwitterTag('twitter:image', twitterImage || ogImage || '');
     }
 
-    // 7) JSON-LD (multiple schemas, safe cleanup)
-    const jsonLdEls: HTMLScriptElement[] = [];
-    normalizedStructuredData.forEach(obj => {
-      const el = document.createElement("script");
-      el.type = "application/ld+json";
-      el.textContent = JSON.stringify(obj);
-      document.head.appendChild(el);
-      jsonLdEls.push(el);
-    });
+    // Add structured data
+    if (structuredData) {
+      let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
+      if (!structuredDataScript) {
+        structuredDataScript = document.createElement('script');
+        structuredDataScript.setAttribute('type', 'application/ld+json');
+        document.head.appendChild(structuredDataScript);
+      }
+      structuredDataScript.textContent = JSON.stringify(structuredData);
+    }
 
-    // Cleanup: restore exact previous state
+    // Cleanup function to reset to defaults when component unmounts
     return () => {
-      document.title = prevTitle;
-
-      if (descEl) setAttr(descEl, "content", prevDesc);
-      if (linkCanonical) setAttr(linkCanonical, "href", prevCanonical);
-      if (robotsEl) setAttr(robotsEl, "content", prevRobots);
-
-      if (ogTitleEl) setAttr(ogTitleEl, "content", prevOg.title);
-      if (ogDescEl) setAttr(ogDescEl, "content", prevOg.desc);
-      if (ogImageEl) setAttr(ogImageEl, "content", prevOg.img);
-      if (ogUrlEl) setAttr(ogUrlEl, "content", prevOg.url);
-      if (ogTypeEl) setAttr(ogTypeEl, "content", prevOg.type);
-      if (ogSiteNameEl) setAttr(ogSiteNameEl, "content", prevOg.siteName);
-
-      if (twitterCardEl) setAttr(twitterCardEl, "content", prevTwitter.card);
-      if (twitterTitleEl) setAttr(twitterTitleEl, "content", prevTwitter.title);
-      if (twitterDescEl) setAttr(twitterDescEl, "content", prevTwitter.desc);
-      if (twitterImageEl) setAttr(twitterImageEl, "content", prevTwitter.img);
-
-      // Remove all JSON-LD scripts
-      jsonLdEls.forEach(el => el.remove());
-
-      // Remove newly created elements
-      createdElements.forEach(el => {
-        if (el.parentNode) {
-          el.parentNode.removeChild(el);
-        }
-      });
+      document.title = 'Premium Yachtcharter weltweit | Segelyacht & Katamaran mieten';
+      
+      const defaultDescription = 'Premium Yachtcharter weltweit ⭐ Segelyacht & Katamaran mieten ✓ 8.000+ Yachten ✓ Mittelmeer, Karibik, Atlantik ✓ Beste Preise & Service seit 25+ Jahren';
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', defaultDescription);
+      }
     };
-  }, [title, description, absoluteCanonical, absoluteOgImage, robots, normalizedStructuredData]);
+  }, [title, description, keywords, canonical, ogTitle, ogDescription, ogImage, ogUrl, twitterTitle, twitterDescription, twitterImage, robots, structuredData]);
 };
-
-function ensureTag(selector: string, createdElements: Set<Element>): HTMLMetaElement {
-  let el = document.head.querySelector(selector) as HTMLMetaElement;
-  if (!el) {
-    el = document.createElement("meta");
-    // Extract name/property from selector like meta[name="description"]
-    const match = selector.match(/\[(name|property)=\"([^\"]+)\"\]/);
-    if (match) el.setAttribute(match[1], match[2]);
-    document.head.appendChild(el);
-    createdElements.add(el);
-  }
-  return el;
-}
-
-function ensureLink(rel: string, createdElements: Set<Element>): HTMLLinkElement {
-  let el = document.head.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement;
-  if (!el) {
-    el = document.createElement("link");
-    el.setAttribute("rel", rel);
-    document.head.appendChild(el);
-    createdElements.add(el);
-  }
-  return el;
-}
-
-function setAttr(el: Element | null, name: string, value: string) {
-  if (el) el.setAttribute(name, value);
-}
 
 // Utility function to generate structured data
 export const generateStructuredData = {
   organization: () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Charter Transparenz",
-    "url": "https://chartertransparenz.de",
-    "logo": "https://chartertransparenz.de/logo.png",
+    "name": "Premium Yachtcharter",
+    "url": "https://premium-yachtcharter.com",
+    "logo": "https://premium-yachtcharter.com/logo.png",
     "sameAs": [
-      "https://www.facebook.com/chartertransparenz",
-      "https://www.instagram.com/chartertransparenz"
+      "https://www.facebook.com/premiumyachtcharter",
+      "https://www.instagram.com/premiumyachtcharter"
     ]
   }),
 
@@ -230,9 +161,7 @@ export const generateStructuredData = {
     "description": description,
     "provider": {
       "@type": "Organization",
-      "name": "Charter Transparenz",
-      "url": "https://chartertransparenz.de",
-      "logo": "https://chartertransparenz.de/logo.png"
+      "name": "Premium Yachtcharter"
     },
     "areaServed": destination,
     "offers": {

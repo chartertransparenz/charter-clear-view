@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -27,23 +26,6 @@ const WindwardIslands = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter Windward Islands | Martinique, St. Lucia, Grenadinen",
-    description: "Yachtcharter Windward Islands ⭐ Segeln Martinique, St. Lucia, Grenadinen ✓ Tobago Cays ✓ Französisches Flair ✓ Sportliche Törns ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter Windward Islands, Martinique Charter, St. Lucia Charter, Grenadinen Charter, Tobago Cays, Bequia, St. Vincent, Grenada",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik/windward-inseln",
-    ogImage: "/lovable-uploads/c7dcc73d-7cf1-40db-8c85-280f7a47c9cb.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Windward Islands", url: "https://premium-yachtcharter.com/reviere/karibik/windward-inseln" }
-      ]),
-      ...generateStructuredData.service("Windward Islands", "Premium Yachtcharter in den Windward Islands - Sportliches Segeln von Martinique über St. Lucia zu den traumhaften Grenadinen und Tobago Cays.")
-    }
-  });
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Südliche Kleine Antillen" },
@@ -168,7 +150,7 @@ const WindwardIslands = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🌬️ Windward Inseln</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Windward Inseln</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Windward Inseln</h1>
             <p className="text-xl max-w-2xl">
               Die windreichen Gewürzinseln der Karibik
             </p>

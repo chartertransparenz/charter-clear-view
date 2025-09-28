@@ -1,14 +1,13 @@
 
-import { useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
-import TopDestinations from "@/components/TopDestinations";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -18,53 +17,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 const balearicsHeader = "/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.png";
 
 const Balearics = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Configuration
-  useMetaTags({
-    title: "Yachtcharter Balearen | Premium Segelyachten & Katamarane",
-    description: "Yachtcharter Balearen ⭐ Segelyacht & Katamaran mieten ✓ Mallorca, Ibiza, Formentera, Menorca ✓ Traumhafte Buchten & exklusive Marinas",
-    keywords: "Yachtcharter Balearen, Segelyacht mieten Mallorca, Katamaran charter Ibiza, Balearen Segeln, Formentera, Menorca, Palma Marina",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen",
-    ogTitle: "Yachtcharter Balearen - Mallorca, Ibiza, Formentera & Menorca",
-    ogDescription: "Entdecken Sie die Balearen beim Yachtcharter. Premium Segelyachten und Katamarane für Mallorca, Ibiza, Formentera und Menorca mit traumhaften Buchten.",
-    ogImage: "https://chartertransparenz.de/images/og/balearen.jpg",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Spanien", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien" },
-        { name: "Balearen", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen" }
-      ]),
-      ...generateStructuredData.service("Balearen", "Premium Yachtcharter auf den Balearen mit Mallorca, Ibiza, Formentera und Menorca - traumhafte Buchten und exklusive Marinas.")
-    }
-  });
-
-  // SEO Configuration
-  useMetaTags({
-    title: "Yachtcharter Balearen | Premium Segelyachten & Katamarane",
-    description: "Yachtcharter Balearen ⭐ Segelyacht & Katamaran mieten ✓ Mallorca, Ibiza, Formentera, Menorca ✓ Traumhafte Buchten & exklusive Marinas",
-    keywords: "Yachtcharter Balearen, Segelyacht mieten Mallorca, Katamaran charter Ibiza, Balearen Segeln, Formentera, Menorca, Palma Marina",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen",
-    ogTitle: "Yachtcharter Balearen - Mallorca, Ibiza, Formentera & Menorca",
-    ogDescription: "Entdecken Sie die Balearen beim Yachtcharter. Premium Segelyachten und Katamarane für Mallorca, Ibiza, Formentera und Menorca mit traumhaften Buchten.",
-    ogImage: "https://chartertransparenz.de/images/og/balearen.jpg",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Spanien", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien" },
-        { name: "Balearen", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen" }
-      ]),
-      ...generateStructuredData.service("Balearen", "Premium Yachtcharter auf den Balearen mit Mallorca, Ibiza, Formentera und Menorca - traumhafte Buchten und exklusive Marinas.")
-    }
-  });
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Westliches Mittelmeer" },

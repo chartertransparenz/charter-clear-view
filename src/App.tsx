@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 
 // Territory pages
 import Mediterranean from "./pages/territories/Mediterranean";
+import Croatia from "./pages/territories/mediterranean/Croatia";
 import Greece from "./pages/territories/mediterranean/Greece";
 import Italy from "./pages/territories/Italy";
 import Spain from "./pages/territories/mediterranean/Spain";
@@ -24,13 +25,11 @@ import Montenegro from "./pages/territories/mediterranean/Montenegro";
 import Slovenia from "./pages/territories/mediterranean/Slovenia";
 
 // Croatian regions
-import Croatia from "./pages/territories/mediterranean/croatia/Croatia";
 import Istria from "./pages/territories/mediterranean/croatia/Istria";
-import Kvarner from "./pages/territories/mediterranean/croatia/Kvarner";
-import Zadar from "./pages/territories/mediterranean/croatia/Zadar";
-import DalmatienSplit from "./pages/territories/mediterranean/croatia/DalmatienSplit";
-import SibenikKornaten from "./pages/territories/mediterranean/croatia/SibenikKornaten";
-import Dubrovnik from "./pages/territories/mediterranean/croatia/Dubrovnik";
+import KvarnerBay from "./pages/territories/mediterranean/croatia/KvarnerBay";
+import NorthernDalmatia from "./pages/territories/mediterranean/croatia/NorthernDalmatia";
+import CentralDalmatia from "./pages/territories/mediterranean/croatia/CentralDalmatia";
+import SouthernDalmatia from "./pages/territories/mediterranean/croatia/SouthernDalmatia";
 
 // Greek regions
 import Cyclades from "./pages/territories/mediterranean/greece/Cyclades";
@@ -202,12 +201,11 @@ function App() {
             <Route path="/reviere/mittelmeer/slowenien" element={<Slovenia />} />
             
             {/* Croatian region routes */}
-            <Route path="/reviere/mittelmeer/kroatien/dalmatien-split" element={<DalmatienSplit />} />
-            <Route path="/reviere/mittelmeer/kroatien/sibenik-kornaten" element={<SibenikKornaten />} />
-            <Route path="/reviere/mittelmeer/kroatien/zadar" element={<Zadar />} />
             <Route path="/reviere/mittelmeer/kroatien/istrien" element={<Istria />} />
-            <Route path="/reviere/mittelmeer/kroatien/kvarner" element={<Kvarner />} />
-            <Route path="/reviere/mittelmeer/kroatien/dubrovnik" element={<Dubrovnik />} />
+            <Route path="/reviere/mittelmeer/kroatien/kvarner-bucht" element={<KvarnerBay />} />
+            <Route path="/reviere/mittelmeer/kroatien/norddalmatien" element={<NorthernDalmatia />} />
+            <Route path="/reviere/mittelmeer/kroatien/mitteldalmatien" element={<CentralDalmatia />} />
+            <Route path="/reviere/mittelmeer/kroatien/sueddalmatien" element={<SouthernDalmatia />} />
             
             {/* Greek region routes */}
             <Route path="/reviere/mittelmeer/griechenland/kykladen" element={<Cyclades />} />

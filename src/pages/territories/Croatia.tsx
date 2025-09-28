@@ -76,7 +76,7 @@ const Croatia = () => {
             <span className="text-3xl">🇭🇷</span>
             <Badge className="bg-green-500 text-white">Top #1 Destination</Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Yachtcharter Kroatien</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Kroatien</h1>
           <p className="text-lg text-white/90 max-w-md">
             Das beliebteste Segelrevier Europas mit über 1200 Inseln
           </p>

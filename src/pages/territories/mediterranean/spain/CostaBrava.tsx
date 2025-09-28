@@ -15,52 +15,11 @@ import {
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 
 const CostaBrava = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Configuration
-  useMetaTags({
-    title: "Yachtcharter Costa Brava | Premium Segelyachten & Katamarane",
-    description: "Yachtcharter Costa Brava ⭐ Segelyacht & Katamaran mieten ✓ Barcelona, Roses, Empuriabrava ✓ Traumhafte Buchten & historische Küstenstädte",
-    keywords: "Yachtcharter Costa Brava, Segelyacht mieten Barcelona, Katamaran charter Roses, Costa Brava Segeln, Yachtverleih Empuriabrava",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava",
-    ogTitle: "Yachtcharter Costa Brava - Traumhafte Buchten & Historische Küste",
-    ogDescription: "Entdecken Sie die Costa Brava beim Yachtcharter. Premium Segelyachten und Katamarane in Barcelona, Roses und Empuriabrava mit traumhaften Buchten.",
-    ogImage: "https://chartertransparenz.de/images/og/costa-brava.jpg",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Spanien", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien" },
-        { name: "Costa Brava", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava" }
-      ]),
-      ...generateStructuredData.service("Costa Brava", "Premium Yachtcharter an der Costa Brava mit traumhaften Buchten, historischen Küstenstäden und exzellenten Segelbedingungen.")
-    }
-  });
-
-  // SEO Configuration
-  useMetaTags({
-    title: "Yachtcharter Costa Brava | Premium Segelyachten & Katamarane",
-    description: "Yachtcharter Costa Brava ⭐ Segelyacht & Katamaran mieten ✓ Barcelona, Roses, Empuriabrava ✓ Traumhafte Buchten & historische Küstenstädte",
-    keywords: "Yachtcharter Costa Brava, Segelyacht mieten Barcelona, Katamaran charter Roses, Costa Brava Segeln, Yachtverleih Empuriabrava",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava",
-    ogTitle: "Yachtcharter Costa Brava - Traumhafte Buchten & Historische Küste",
-    ogDescription: "Entdecken Sie die Costa Brava beim Yachtcharter. Premium Segelyachten und Katamarane in Barcelona, Roses und Empuriabrava mit traumhaften Buchten.",
-    ogImage: "https://chartertransparenz.de/images/og/costa-brava.jpg",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Spanien", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien" },
-        { name: "Costa Brava", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava" }
-      ]),
-      ...generateStructuredData.service("Costa Brava", "Premium Yachtcharter an der Costa Brava mit traumhaften Buchten, historischen Küstenstäden und exzellenten Segelbedingungen.")
-    }
-  });
 
   const quickFacts = [
     {

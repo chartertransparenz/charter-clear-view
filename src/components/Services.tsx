@@ -27,7 +27,7 @@ const Services = () => {
     title: "Luxus Charter",
     description: "Exklusive Luxusyachten mit erstklassiger Ausstattung und Premium-Service",
     features: ["Luxusyachten", "Premium Ausstattung", "VIP Service", "Gourmet Catering"],
-    image: "/images/luxury-yacht-charter.jpg"
+    image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.png"
   }];
   const advantages = [{
     icon: Shield,

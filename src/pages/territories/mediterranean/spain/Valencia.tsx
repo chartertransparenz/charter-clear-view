@@ -8,51 +8,10 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 const Valencia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Configuration
-  useMetaTags({
-    title: "Yachtcharter Valencia | Premium Segelyachten & Katamarane",
-    description: "Yachtcharter Valencia ⭐ Segelyacht & Katamaran mieten ✓ Valencia Marina, Columbretes Inseln ✓ Perfekte Segelbedingungen & moderne Marinas",
-    keywords: "Yachtcharter Valencia, Segelyacht mieten Valencia, Katamaran charter Valencia, Valencia Segeln, Columbretes Inseln, Valencia Marina",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia",
-    ogTitle: "Yachtcharter Valencia - Moderne Marinas & Traumhafte Inseln",
-    ogDescription: "Entdecken Sie Valencia und die Columbretes Inseln beim Yachtcharter. Premium Segelyachten und Katamarane mit modernen Marinas und perfekten Segelbedingungen.",
-    ogImage: "https://chartertransparenz.de/images/og/valencia.jpg",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Spanien", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien" },
-        { name: "Valencia", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia" }
-      ]),
-      ...generateStructuredData.service("Valencia", "Premium Yachtcharter in Valencia mit modernen Marinas, den Columbretes Inseln und exzellenten Segelbedingungen.")
-    }
-  });
-
-  // SEO Configuration
-  useMetaTags({
-    title: "Yachtcharter Valencia | Premium Segelyachten & Katamarane",
-    description: "Yachtcharter Valencia ⭐ Segelyacht & Katamaran mieten ✓ Valencia Marina, Columbretes Inseln ✓ Perfekte Segelbedingungen & moderne Marinas",
-    keywords: "Yachtcharter Valencia, Segelyacht mieten Valencia, Katamaran charter Valencia, Valencia Segeln, Columbretes Inseln, Valencia Marina",
-    canonical: "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia",
-    ogTitle: "Yachtcharter Valencia - Moderne Marinas & Traumhafte Inseln",
-    ogDescription: "Entdecken Sie Valencia und die Columbretes Inseln beim Yachtcharter. Premium Segelyachten und Katamarane mit modernen Marinas und perfekten Segelbedingungen.",
-    ogImage: "https://chartertransparenz.de/images/og/valencia.jpg",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Reviere", url: "https://chartertransparenz.de/reviere" },
-        { name: "Mittelmeer", url: "https://chartertransparenz.de/reviere/mittelmeer" },
-        { name: "Spanien", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien" },
-        { name: "Valencia", url: "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia" }
-      ]),
-      ...generateStructuredData.service("Valencia", "Premium Yachtcharter in Valencia mit modernen Marinas, den Columbretes Inseln und exzellenten Segelbedingungen.")
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",

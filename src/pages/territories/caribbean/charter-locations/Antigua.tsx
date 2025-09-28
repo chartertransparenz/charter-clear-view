@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Wifi, Car, Plane, Crown } from "lucide-react";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import TopDestinations from "@/components/TopDestinations";
@@ -22,24 +21,6 @@ const Antigua = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter Antigua | Charterbasis Leeward Islands - 365 Strände",
-    description: "Yachtcharter Antigua ⭐ Charter-Standort Leeward Islands ✓ Nelson's Dockyard ✓ 365 Strände ✓ Antigua Sailing Week ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter Antigua, Charter Leeward Islands, Nelson's Dockyard, Falmouth Harbour, Antigua Sailing Week, English Harbour Charter",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/antigua",
-    ogImage: "/lovable-uploads/0d4c42e2-59bd-4dcb-b526-875ab1f536b0.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Charter-Standorte", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Antigua", url: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/antigua" }
-      ]),
-      ...generateStructuredData.service("Antigua", "Premium Yachtcharter ab Antigua - Die Segelhauptstadt der Leeward Islands mit 365 Stränden, Nelson's Dockyard und der berühmten Antigua Sailing Week.")
-    }
-  });
 
   const marinas = [
     {
@@ -110,7 +91,7 @@ const Antigua = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-purple-600 text-white">⛵ Charter-Standort</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Antigua</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Antigua</h1>
             <p className="text-xl max-w-2xl">
               Die Segelhauptstadt der Leeward Islands
             </p>

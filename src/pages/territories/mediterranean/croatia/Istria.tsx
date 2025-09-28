@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import CharterRequestForm from '@/components/CharterRequestForm';
-import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
+// import { useMetaTags, generateStructuredData } from '@/hooks/useMetaTags';
 
 import TerritoryMap from '@/components/TerritoryMap';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -34,26 +34,7 @@ export default function Istria() {
     window.scrollTo(0, 0);
   }, []);
 
-  // SEO Meta Tags and Schema.org
-  useMetaTags({
-    title: 'Yachtcharter Kroatien – Istrien & Kvarner Bucht',
-    description: 'Rovinj, Pula & Kvarner. Ruhige Törns, schöne Altstädte & Buchten. Jetzt Istrien-Charter mit/ohne Skipper anfragen.',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien',
-    ogTitle: 'Yachtcharter Kroatien – Istrien & Kvarner Bucht',
-    ogDescription: 'Rovinj, Pula & Kvarner. Ruhige Törns, schöne Altstädte & Buchten. Jetzt Istrien-Charter mit/ohne Skipper anfragen.',
-    ogImage: 'https://chartertransparenz.de/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png',
-    ogUrl: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien',
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: 'Start', url: 'https://chartertransparenz.de' },
-        { name: 'Reviere', url: 'https://chartertransparenz.de/#reviere' },
-        { name: 'Mittelmeer', url: 'https://chartertransparenz.de/reviere/mittelmeer' },
-        { name: 'Kroatien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien' },
-        { name: 'Istrien', url: 'https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien' }
-      ]),
-      generateStructuredData.service('Istrien', 'Yachtcharter in Istrien - ruhige Törns, schöne Altstädte und Buchten. Rovinj, Pula und Kvarner Bucht.')
-    ]
-  });
+  // Old useMetaTags removed - now using new Meta component
 
   const quickFacts = [
     { icon: MapPin, label: 'Region', value: 'Nordkroatien' },
@@ -103,7 +84,41 @@ export default function Istria() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        ogImage={absoluteOg(m.ogImage)}
+        canonical={m.canonical()}
+      />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
+          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
+          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
+          {"@type": "ListItem", "position": 4, "name": "Istrien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"}
+        ]
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ACI Marina Pula",
+        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.8664, "longitude": 13.8496},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
+      }} />
+      <JsonLd json={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Marina Veruda",
+        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 44.8234, "longitude": 13.8387},
+        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
+      }} />
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png)' }}>
@@ -114,7 +129,7 @@ export default function Istria() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Yachtcharter Istrien</h1>
+            <h1 className="text-5xl font-bold mb-4">Istrien</h1>
             <p className="text-xl text-white/90">Die nördlichste Halbinsel Kroatiens - perfekte Marina-Infrastruktur und venezianisches Flair</p>
           </div>
         </div>
@@ -220,7 +235,7 @@ export default function Istria() {
         {/* Main Content */}
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Yachtcharter Istrien: Segeln zwischen römischer Geschichte und venezianischem Flair</h2>
+            <h1 className="text-4xl font-bold text-gray-800 mb-6">Yachtcharter Istrien: Segeln zwischen römischer Geschichte und venezianischem Flair</h1>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Willkommen in Istrien, der größten Halbinsel der Adria und einem Segelrevier, das wie kein anderes Kultur, Kulinarik und Küstenzauber vereint. Oft als die „kroatische Toskana" bezeichnet, erwartet Sie hier eine Welt aus sanften, grünen Hügeln, mittelalterlichen Städtchen, weltberühmten Trüffeln und malerischen Weinbergen – alles umrahmt von kristallklarem, türkisblauem Wasser. Ein Yachtcharter in Istrien ist eine Reise für alle Sinne, ideal für Genießer, Kulturinteressierte und Familien.
@@ -460,7 +475,8 @@ export default function Istria() {
 
 
         <TopDestinations />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

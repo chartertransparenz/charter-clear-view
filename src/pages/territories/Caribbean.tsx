@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Waves, Star, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -26,22 +25,6 @@ const Caribbean = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter Karibik | Premium Segelurlaub zwischen Trauminseln",
-    description: "Yachtcharter Karibik ⭐ Segeln zwischen BVI, USVI, Windward & Leeward Islands ✓ Türkises Wasser ✓ Passatwinde ✓ Traumstrände ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter Karibik, Segeln Karibik, British Virgin Islands, US Virgin Islands, Windward Islands, Leeward Islands, Kuba Charter",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik",
-    ogImage: "/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" }
-      ]),
-      ...generateStructuredData.service("Karibik", "Premium Yachtcharter in der Karibik - Segeln zwischen traumhaften Inseln mit türkisem Wasser und beständigen Passatwinden. BVI, USVI, Windward & Leeward Islands, Kuba.")
-    }
-  });
   const regions = [
     { 
       name: "Britische Jungferninseln (BVI)", 
@@ -96,7 +79,7 @@ const Caribbean = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-orange-500 text-white">🏝️ Karibik & Atlantik</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Karibik</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Karibik</h1>
             <p className="text-xl max-w-2xl">
               Traumhafte Inseln mit perfekten Segelbedingungen
             </p>

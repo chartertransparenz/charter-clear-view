@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, MapPin, Anchor, Calendar, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
@@ -15,23 +14,6 @@ const Cuba = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter Kuba | Authentische Karibik ab Cienfuegos",
-    description: "Yachtcharter Kuba ⭐ Segeln ab Cienfuegos ✓ Cayo Largo ✓ Authentische Karibikkultur ✓ Unberührte Cayos ✓ Für erfahrene Segler ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter Kuba, Charter Cienfuegos, Cayo Largo, Jardines de la Reina, Havanna, Kuba Segeln, Authentische Karibik",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik/kuba",
-    ogImage: "/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Kuba", url: "https://premium-yachtcharter.com/reviere/karibik/kuba" }
-      ]),
-      ...generateStructuredData.service("Kuba", "Premium Yachtcharter in Kuba - Authentische Karibik ab Cienfuegos zu unberührten Cayos und der faszinierenden Kultur der größten Karibikinsel.")
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -65,7 +47,7 @@ const Cuba = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇨🇺 Kuba</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Kuba</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Kuba</h1>
             <p className="text-xl max-w-2xl">
               Die authentische Perle der Karibik
             </p>

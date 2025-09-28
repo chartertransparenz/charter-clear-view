@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Anchor, Music, Building, Plane } from "lucide-react";
 import { useEffect } from "react";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import TopDestinations from "@/components/TopDestinations";
@@ -17,24 +16,6 @@ const Havanna = () => {
     console.log("Havanna useEffect running");
     window.scrollTo(0, 0);
   }, []);
-
-  useMetaTags({
-    title: "Yachtcharter Havanna | Kuba Reiseziel - Kombinieren Sie Charter & Kultur",
-    description: "Yachtcharter Havanna ⭐ Kuba Reiseziel ✓ UNESCO Altstadt ✓ Kombinieren mit Cienfuegos Charter ✓ Authentische Karibikkultur ✓ Seit 25+ Jahren",
-    keywords: "Yachtcharter Havanna, Kuba Reiseziel, Havanna UNESCO, Marina Hemingway, Cienfuegos Charter, Kuba Kultur Yachtcharter",
-    canonical: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/havanna",
-    ogImage: "/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png",
-    structuredData: {
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Karibik", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Charter-Standorte", url: "https://premium-yachtcharter.com/reviere/karibik" },
-        { name: "Havanna", url: "https://premium-yachtcharter.com/reviere/karibik/charter-standorte/havanna" }
-      ]),
-      ...generateStructuredData.service("Havanna", "Havanna als faszinierendes Reiseziel - Kombinieren Sie Ihren Kuba-Charter ab Cienfuegos mit einem Besuch der UNESCO-Weltkulturerbe Altstadt von Havanna.")
-    }
-  });
   const marinas = [{
     name: "Marina Hemingway",
     description: "Hauptcharter-Marina westlich von Havanna",
@@ -112,7 +93,7 @@ const Havanna = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-orange-600 text-white">🇨🇺 Reiseziel</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Havanna</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Havanna</h1>
             <p className="text-xl max-w-2xl">
               Die lebendige Hauptstadt - ideal vor oder nach dem Charter
             </p>

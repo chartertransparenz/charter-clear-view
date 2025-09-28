@@ -9,33 +9,11 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
 import destinationGreece from "@/assets/destination-greece.jpg";
 const Dodecanese = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Dodekanes | Segeln ab Kos & Rhodos - 12 authentische Inseln",
-    description: "Yachtcharter Dodekanes: Segeln Sie zu den 12 authentischen Inseln ab Kos oder Rhodos ⭐ Kristallklares Wasser ✓ UNESCO-Weltkulturerbe ✓ Längere Segeletappen für erfahrene Segler",
-    keywords: "Yachtcharter Dodekanes, Segeln Dodekanes, Charter Kos, Charter Rhodos, Griechische Inseln, Dodecanese Sailing",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/dodekanes",
-    structuredData: [
-      generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Griechenland", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland" },
-        { name: "Dodekanes", url: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/dodekanes" }
-      ]),
-      generateStructuredData.service(
-        "Dodekanes", 
-        "Yachtcharter in den Dodekanes - Segeln Sie zu den 12 authentischen griechischen Inseln mit kristallklarem Wasser und UNESCO-Weltkulturerbe ab Kos oder Rhodos."
-      )
-    ]
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -70,7 +48,7 @@ const Dodecanese = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <Badge className="mb-4 bg-blue-500 text-white">🇬🇷 Dodekanes</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Yachtcharter Dodekanes</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Dodekanes</h1>
             <p className="text-xl max-w-2xl">
               Die zwölf authentischen Inseln
             </p>

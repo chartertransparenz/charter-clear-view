@@ -25,8 +25,8 @@ export const META: Record<RegionKey, {
     canonical: (p="") => `https://chartertransparenz.de/${p}`
   },
   kroatien: {
-    title: "Yachtcharter Kroatien – Segelyacht & Katamaran mieten",
-    description: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Von Umag bis Dubrovnik: Jetzt Segelyacht oder Katamaran anfragen!",
+    title: "Yachtcharter Kroatien | Segeln Adria – Split, Dubrovnik, Hvar",
+    description: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen!",
     keywords: ["Yachtcharter Kroatien","Segeln Adria","Katamaran Kroatien","Split","Dubrovnik","Hvar"],
     ogImage: "/og/kroatien.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien"
