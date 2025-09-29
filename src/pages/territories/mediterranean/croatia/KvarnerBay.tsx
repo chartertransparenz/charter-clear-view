@@ -31,7 +31,9 @@ export default function KvarnerBay() {
   };
   
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   const quickFacts = [

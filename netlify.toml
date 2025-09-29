@@ -3,7 +3,27 @@
   publish = "dist"
 
 [build.environment]
-  PRERENDER = "0"
+  PRERENDER = "1"
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/kvarner-bucht"
+  to = "/reviere/mittelmeer/kroatien/kvarner"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/norddalmatien"
+  to = "/reviere/mittelmeer/kroatien/zadar"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/mitteldalmatien"
+  to = "/reviere/mittelmeer/kroatien/dalmatien-split"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/sueddalmatien"
+  to = "/reviere/mittelmeer/kroatien/dubrovnik"
+  status = 301
 
 [[redirects]]
   from = "/*"

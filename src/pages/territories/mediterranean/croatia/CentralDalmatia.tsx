@@ -22,7 +22,9 @@ export default function CentralDalmatia() {
   };
   
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, []);
   const quickFacts = [{
     icon: MapPin,

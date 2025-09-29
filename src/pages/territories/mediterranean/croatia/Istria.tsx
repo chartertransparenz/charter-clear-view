@@ -31,7 +31,9 @@ export default function Istria() {
   };
   
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   // Old useMetaTags removed - now using new Meta component
