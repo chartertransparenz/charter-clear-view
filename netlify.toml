@@ -5,6 +5,30 @@
 [build.environment]
   PRERENDER = "1"
 
+# Host canonicalization (www -> non-www) - FIRST PRIORITY
+[[redirects]]
+  from = "https://www.chartertransparenz.de/*"
+  to = "https://chartertransparenz.de/:splat"
+  status = 301
+  force = true
+
+# Case normalization - SECOND PRIORITY
+[[redirects]]
+  from = "/Reviere/*"
+  to = "/reviere/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/Mittelmeer/*"
+  to = "/reviere/mittelmeer/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/Kroatien/*"
+  to = "/reviere/mittelmeer/kroatien/:splat"
+  status = 301
+
+# Legacy slug redirects - THIRD PRIORITY
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien/kvarner-bucht"
   to = "/reviere/mittelmeer/kroatien/kvarner"
@@ -25,29 +49,69 @@
   to = "/reviere/mittelmeer/kroatien/dubrovnik"
   status = 301
 
-# Host canonicalization (www -> non-www)
+# Trailing slash normalization - FOURTH PRIORITY
 [[redirects]]
-  from = "https://www.chartertransparenz.de/*"
-  to = "https://chartertransparenz.de/:splat"
-  status = 301
-  force = true
-
-# Case normalization
-[[redirects]]
-  from = "/Reviere/*"
-  to = "/reviere/:splat"
+  from = "/reviere/mittelmeer/kroatien/"
+  to = "/reviere/mittelmeer/kroatien"
   status = 301
 
 [[redirects]]
-  from = "/reviere/Mittelmeer/*"
-  to = "/reviere/mittelmeer/:splat"
+  from = "/reviere/mittelmeer/kroatien/istrien/"
+  to = "/reviere/mittelmeer/kroatien/istrien"
   status = 301
 
 [[redirects]]
-  from = "/reviere/mittelmeer/Kroatien/*"
-  to = "/reviere/mittelmeer/kroatien/:splat"
+  from = "/reviere/mittelmeer/kroatien/kvarner/"
+  to = "/reviere/mittelmeer/kroatien/kvarner"
   status = 301
 
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/zadar/"
+  to = "/reviere/mittelmeer/kroatien/zadar"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/dalmatien-split/"
+  to = "/reviere/mittelmeer/kroatien/dalmatien-split"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/dubrovnik/"
+  to = "/reviere/mittelmeer/kroatien/dubrovnik"
+  status = 301
+
+# Croatia prerendered routes - FIFTH PRIORITY (serve static HTML)
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien"
+  to = "/reviere/mittelmeer/kroatien/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/istrien"
+  to = "/reviere/mittelmeer/kroatien/istrien/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/kvarner"
+  to = "/reviere/mittelmeer/kroatien/kvarner/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/zadar"
+  to = "/reviere/mittelmeer/kroatien/zadar/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/dalmatien-split"
+  to = "/reviere/mittelmeer/kroatien/dalmatien-split/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/dubrovnik"
+  to = "/reviere/mittelmeer/kroatien/dubrovnik/index.html"
+  status = 200
+
+# SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
 [[redirects]]
   from = "/*"
   to = "/index.html"
