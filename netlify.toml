@@ -25,6 +25,29 @@
   to = "/reviere/mittelmeer/kroatien/dubrovnik"
   status = 301
 
+# Host canonicalization (www -> non-www)
+[[redirects]]
+  from = "https://www.chartertransparenz.de/*"
+  to = "https://chartertransparenz.de/:splat"
+  status = 301
+  force = true
+
+# Case normalization
+[[redirects]]
+  from = "/Reviere/*"
+  to = "/reviere/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/Mittelmeer/*"
+  to = "/reviere/mittelmeer/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/reviere/mittelmeer/Kroatien/*"
+  to = "/reviere/mittelmeer/kroatien/:splat"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

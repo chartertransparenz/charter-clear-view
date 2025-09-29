@@ -67,8 +67,8 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split"
   },
   dubrovnik: {
-    title: "Yachtcharter Dubrovnik | Korčula, Mljet – Süddalmatien",
-    description: "Segeln ab Dubrovnik: UNESCO-Stadt, grüne Insel Korčula & Nationalpark Mljet. Kroatiens schönster Süden. Jetzt anfragen!",
+    title: "Yachtcharter Dubrovnik – Süddalmatien, Mljet & Elaphiten",
+    description: "Segeln ab Dubrovnik: Süddalmatien mit Elaphiten & Nationalpark Mljet. UNESCO‑Altstadt, ruhige Buchten, Inselhüpfen bis Korčula & Lastovo.",
     keywords: ["Yachtcharter Dubrovnik","Korčula","Mljet","Süddalmatien","Kroatien"],
     ogImage: "/og/dubrovnik.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik"

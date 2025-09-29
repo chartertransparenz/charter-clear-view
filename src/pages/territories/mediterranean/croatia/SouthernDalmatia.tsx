@@ -13,8 +13,6 @@ import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TerritoryMap from '@/components/TerritoryMap';
 import TopDestinations from '@/components/TopDestinations';
 import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
 export default function SouthernDalmatia() {
   const isMobile = useIsMobile();
   const m = META.dubrovnik;

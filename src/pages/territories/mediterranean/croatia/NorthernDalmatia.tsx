@@ -12,8 +12,6 @@ import destinationCroatia from '@/assets/destination-croatia.jpg';
 import TerritoryMap from '@/components/TerritoryMap';
 import TopDestinations from '@/components/TopDestinations';
 import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
 export default function NorthernDalmatia() {
   const m = META.zadar;
   
@@ -75,33 +73,7 @@ export default function NorthernDalmatia() {
   }];
   const highlights = ['Kornati Nationalpark - 89 Inseln', 'Krka Nationalpark mit Wasserfällen', 'Unberührte Natur und einsame Buchten', 'Starke Maestral-Winde für sportliches Segeln', 'Reiche Geschichte und Kultur', 'Authentische dalmatinische Küche', 'Weniger Massentourismus', 'Perfekt für Naturliebhaber'];
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
-          {"@type": "ListItem", "position": 4, "name": "Norddalmatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar"}
-        ]
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Marina Zadar",
-        "address": {"@type": "PostalAddress", "addressLocality": "Zadar", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 44.1194, "longitude": 15.2314},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar"
-      }} />
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{
@@ -736,6 +708,5 @@ export default function NorthernDalmatia() {
         <TopDestinations />
       </div>
       </div>
-    </>
   );
 }

@@ -8,32 +8,15 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import { useMetaTags, generateStructuredData } from "@/hooks/useMetaTags";
+
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
 const Croatia = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
-  // SEO Meta Tags
-  useMetaTags({
-    title: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
-    description: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
-    canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
-    ogTitle: "Yachtcharter Kroatien – Adria, Split & Dubrovnik",
-    ogDescription: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png",
-    ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien",
-    structuredData: {
-      ...generateStructuredData.service("Kroatien", "Yachtcharter in Kroatien - Segeln zwischen über 1.200 Inseln der Adria"),
-      ...generateStructuredData.breadcrumb([
-        { name: "Start", url: "https://premium-yachtcharter.com/" },
-        { name: "Reviere", url: "https://premium-yachtcharter.com/#reviere" },
-        { name: "Mittelmeer", url: "https://premium-yachtcharter.com/reviere/mittelmeer" },
-        { name: "Kroatien", url: "https://premium-yachtcharter.com/reviere/mittelmeer/kroatien" }
-      ])
-    }
-  });
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",

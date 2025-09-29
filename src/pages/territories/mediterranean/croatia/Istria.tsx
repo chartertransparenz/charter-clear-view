@@ -19,8 +19,6 @@ import {
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star } from 'lucide-react';
 import TopDestinations from '@/components/TopDestinations';
 import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
-import { JsonLd } from "@/seo/JsonLd";
 
 export default function Istria() {
   const m = META.istrien;
@@ -86,41 +84,7 @@ export default function Istria() {
   ];
 
   return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Kroatien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien"},
-          {"@type": "ListItem", "position": 4, "name": "Istrien", "item": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"}
-        ]
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "ACI Marina Pula",
-        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 44.8664, "longitude": 13.8496},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
-      }} />
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Marina Veruda",
-        "address": {"@type": "PostalAddress", "addressLocality": "Pula", "addressCountry": "HR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": 44.8234, "longitude": 13.8387},
-        "url": "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
-      }} />
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png)' }}>
@@ -479,6 +443,5 @@ export default function Istria() {
         <TopDestinations />
         </div>
       </div>
-    </>
   );
 }
