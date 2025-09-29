@@ -61,8 +61,8 @@
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.20.6",
     "vaul": "^0.9.3",
-    "vite-prerender-plugin": "^0.5.12",
     "zod": "^3.23.8"
   },
   "devDependencies": {

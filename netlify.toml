@@ -1,9 +1,6 @@
 [build]
-  command = "bun run build"
+  command = "bun run build && bun run tsx scripts/prerender-croatia.ts"
   publish = "dist"
-
-[build.environment]
-  PRERENDER = "1"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
 [[redirects]]
