@@ -121,6 +121,12 @@
   to = "/reviere/mittelmeer/kroatien/dubrovnik/index.html"
   status = 200
 
+# Wildcard for any Croatia subpages - SIXTH PRIORITY
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/*"
+  to = "/reviere/mittelmeer/kroatien/:splat/index.html"
+  status = 200
+
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
 [[redirects]]
   from = "/*"
