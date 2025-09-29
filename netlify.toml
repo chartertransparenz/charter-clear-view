@@ -53,44 +53,7 @@
   status = 301
   force = true
 
-# Trailing slash normalization - FOURTH PRIORITY
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/"
-  to = "/reviere/mittelmeer/kroatien"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/istrien/"
-  to = "/reviere/mittelmeer/kroatien/istrien"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/kvarner/"
-  to = "/reviere/mittelmeer/kroatien/kvarner"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/zadar/"
-  to = "/reviere/mittelmeer/kroatien/zadar"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/dalmatien-split/"
-  to = "/reviere/mittelmeer/kroatien/dalmatien-split"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/dubrovnik/"
-  to = "/reviere/mittelmeer/kroatien/dubrovnik"
-  status = 301
-  force = true
-
-# Croatia prerendered routes - FIFTH PRIORITY (serve static HTML)
+# Croatia prerendered routes - SERVE STATIC HTML
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien"
   to = "/reviere/mittelmeer/kroatien/index.html"
