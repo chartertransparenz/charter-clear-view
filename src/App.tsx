@@ -239,12 +239,16 @@ function App() {
             <Route path="/reviere/mittelmeer/tuerkei/goecek-fethiye" element={<GoecekFethiye />} />
             <Route path="/reviere/mittelmeer/tuerkei/kas-kalkan" element={<KasKalkan />} />
             
-            {/* Italian region routes */}
+            {/* Italian region routes - NEW canonical URLs */}
             <Route path="/reviere/mittelmeer/italien/sardinien" element={<Sardinien />} />
             <Route path="/reviere/mittelmeer/italien/sardinien/costa-smeralda" element={<CostaSmeralda />} />
             <Route path="/reviere/mittelmeer/italien/sizilien" element={<Sizilien />} />
-            <Route path="/reviere/mittelmeer/italien/toskana" element={<Toskana />} />
-            <Route path="/reviere/mittelmeer/italien/amalfikuste" element={<Amalfikuste />} />
+            <Route path="/reviere/mittelmeer/italien/toskana-elba" element={<Toskana />} />
+            <Route path="/reviere/mittelmeer/italien/amalfikueste" element={<Amalfikuste />} />
+            
+            {/* 301 Redirects from old Italian URLs */}
+            <Route path="/reviere/mittelmeer/italien/toskana" element={<Navigate to="/reviere/mittelmeer/italien/toskana-elba" replace />} />
+            <Route path="/reviere/mittelmeer/italien/amalfikuste" element={<Navigate to="/reviere/mittelmeer/italien/amalfikueste" replace />} />
             
             {/* Atlantic routes */}
             <Route path="/reviere/atlantik" element={<Atlantic />} />

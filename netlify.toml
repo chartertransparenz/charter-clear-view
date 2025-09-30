@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts"
+  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -59,6 +59,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/reviere/mittelmeer/italien/toskana"
+  to = "/reviere/mittelmeer/italien/toskana-elba"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/mittelmeer/italien/amalfikuste"
+  to = "/reviere/mittelmeer/italien/amalfikueste"
+  status = 301
+  force = true
+
 # Croatia prerendered routes - SERVE STATIC HTML
 # Hub page first (before wildcard)
 [[redirects]]
@@ -83,6 +95,19 @@
 [[redirects]]
   from = "/reviere/mittelmeer/griechenland/*"
   to = "/reviere/mittelmeer/griechenland/:splat/index.html"
+  status = 200
+
+# Italy prerendered routes - SERVE STATIC HTML
+# Hub page first (before wildcard)
+[[redirects]]
+  from = "/reviere/mittelmeer/italien"
+  to = "/reviere/mittelmeer/italien/index.html"
+  status = 200
+
+# Wildcard for all Italy subpages (sardinien, toskana-elba, amalfikueste, sizilien)
+[[redirects]]
+  from = "/reviere/mittelmeer/italien/*"
+  to = "/reviere/mittelmeer/italien/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)

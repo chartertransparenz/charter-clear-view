@@ -4,7 +4,7 @@ export type RegionKey =
   | "kroatien" | "istrien" | "kvarner" | "zadar" | "dalmatienSplit" | "dubrovnik"
   | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer"
   | "italien" | "spanien" | "frankreich" | "croatia" | "malta" | "montenegro" | "slowenien"
-  | "sardinien" | "sizilien" | "toskana" | "amalfikueste" | "costasmeralda"
+  | "sardinien" | "sizilien" | "toskana" | "toskanaElba" | "amalfikueste" | "costasmeralda"
   | "balearen" | "costabrava" | "valencia"
   | "coteazur" | "korsika"
   | "bodrum" | "marmaris" | "goecekfethiye" | "kaskalkan" | "tuerkischeaegaeis"
@@ -137,9 +137,9 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere"
   },
   italien: {
-    title: "Yachtcharter Italien | Sardinien, Sizilien, Amalfiküste",
-    description: "Segeln Italien: malerische Küsten, charmante Häfen & italienisches Flair. Sardinien, Sizilien & Amalfiküste entdecken. Jetzt anfragen!",
-    keywords: ["Yachtcharter Italien","Sardinien","Sizilien","Amalfiküste","Italien segeln"],
+    title: "Yachtcharter Italien – Sardinien, Elba & Sizilien",
+    description: "Segeln in Italien: Entdecken Sie Sardinien, Elba, Sizilien & Amalfiküste. Yachtcharter mit Vielfalt & mediterranem Flair.",
+    keywords: ["Yachtcharter Italien","Sardinien","Elba","Sizilien","Amalfiküste","Italien segeln"],
     ogImage: "/og/italien.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien"
   },
@@ -186,16 +186,16 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/slowenien"
   },
   sardinien: {
-    title: "Yachtcharter Sardinien | Costa Smeralda, Cagliari, Alghero",
-    description: "Segeln Sardinien: smaragdgrüne Buchten, exklusive Costa Smeralda & wilde Westküste. Traumstrände & kristallklares Wasser. Jetzt anfragen!",
-    keywords: ["Yachtcharter Sardinien","Costa Smeralda","Cagliari","Alghero","Sardinien segeln"],
+    title: "Yachtcharter Sardinien – Costa Smeralda & Maddalena",
+    description: "Segeln in Sardinien: Exklusive Costa Smeralda & Maddalena-Archipel. Kristallklares Wasser & Luxusmarinas erwarten Sie.",
+    keywords: ["Yachtcharter Sardinien","Costa Smeralda","Maddalena","Sardinien segeln"],
     ogImage: "/og/sardinien.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien"
   },
   sizilien: {
-    title: "Yachtcharter Sizilien | Palermo, Catania, Äolische Inseln",
-    description: "Segeln Sizilien: größte Mittelmeerinsel, Vulkan Ätna, Äolische Inseln & sizilianische Kultur. Von Palermo zu den Liparischen Inseln. Jetzt anfragen!",
-    keywords: ["Yachtcharter Sizilien","Palermo","Catania","Äolische Inseln","Sizilien segeln"],
+    title: "Yachtcharter Sizilien – Äolische Inseln & Palermo",
+    description: "Segeln in Sizilien: Entdecken Sie die Äolischen Inseln, Palermo & vulkanische Landschaften. Sonne & Kultur pur.",
+    keywords: ["Yachtcharter Sizilien","Äolische Inseln","Palermo","Sizilien segeln"],
     ogImage: "/og/sizilien.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien"
   },
@@ -206,10 +206,17 @@ export const META: Record<RegionKey, {
     ogImage: "/og/toskana.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana"
   },
+  toskanaElba: {
+    title: "Yachtcharter Toskana & Elba – Segeln im Tyrrhenischen Meer",
+    description: "Entdecken Sie Elba & die toskanische Küste. Yachtcharter mit kurzen Distanzen, Natur & mediterranem Charme.",
+    keywords: ["Yachtcharter Toskana","Elba","Tyrrhenisches Meer","Toskana segeln"],
+    ogImage: "/og/toskana.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana-elba"
+  },
   amalfikueste: {
-    title: "Yachtcharter Amalfiküste | Neapel, Positano, Capri, Ischia",
-    description: "Segeln Amalfiküste: spektakuläre Küste, glamouröse Inseln Capri & Ischia, pittoreske Dörfer. UNESCO-Welterbe erleben. Jetzt anfragen!",
-    keywords: ["Yachtcharter Amalfiküste","Neapel","Positano","Capri","Ischia"],
+    title: "Yachtcharter Amalfiküste – Capri, Positano & Neapel",
+    description: "Segeln an der Amalfiküste: Erleben Sie Capri, Positano & Neapel vom Wasser aus. UNESCO-Küste mit mediterranem Flair.",
+    keywords: ["Yachtcharter Amalfiküste","Capri","Positano","Neapel"],
     ogImage: "/og/amalfikueste.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikueste"
   },
