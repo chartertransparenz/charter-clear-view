@@ -11,6 +11,7 @@ import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import ibizaHeader from "@/assets/ibiza-header.jpg";
+import espalmadorImage from "@/assets/espalmador.jpg";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Ibiza = () => {
   const m = META.ibiza;
@@ -284,6 +285,18 @@ const Ibiza = () => {
                 <li><strong>Santa Eulària:</strong> Modern, familienfreundlich, perfekte Basis für Ost- und Nordostroute.</li>
                 <li><strong>La Savina (Formentera):</strong> Sicherer Hafen für Bunker, Wasser & Landgang; saisonal stark gefragt.</li>
               </ul>
+
+              <figure className="my-8">
+                <img 
+                  src={espalmadorImage} 
+                  alt="s'Espalmador zwischen Ibiza und Formentera - Luftaufnahme mit weißer Sandzunge und türkisfarbenen Lagunen"
+                  title="Yachtcharter Ibiza - s'Espalmador Ankerstopp zwischen Ibiza und Formentera"
+                  className="w-full rounded-lg shadow-lg"
+                />
+                <figcaption className="mt-3 text-sm text-gray-600 italic">
+                  Aus der Luft: s'Espalmador zwischen Ibiza und Formentera mit schneeweißer Sandzunge, die zwei türkisfarbene Lagunen trennt. Kristallklares Wasser, flache Buchten und karibisches Flair – ein perfekter Ankerstopp zum Schwimmen, Schnorcheln und Sundowner. Ideal als erster Badestopp auf Ihrem Yachtcharter Ibiza–Formentera.
+                </figcaption>
+              </figure>
 
               <p className="mb-6">
                 Flottenauswahl: Aktuelle Charterflotten decken alles ab – von kompakten Fahrtenseglern über geräumige Katamarane bis zu sportlichen Motoryachten. Bareboat, Skippered und Crewed sind möglich.
