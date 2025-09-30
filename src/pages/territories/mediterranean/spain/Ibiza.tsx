@@ -166,69 +166,175 @@ const Ibiza = () => {
 
           {/* Main Content */}
           <div className="max-w-4xl mx-auto mb-16 space-y-8">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold mb-4">Yachtcharter Ibiza & Formentera: Die Weiße Insel entdecken</h2>
-              <p className="text-xl text-muted-foreground">
-                Wo Nachtleben auf Naturparadies trifft
-              </p>
-            </div>
-            
             <div className="prose prose-lg max-w-none">
+              <h2 className="text-4xl font-bold mb-6">Yachtcharter Ibiza – Inselhopping zwischen Ibiza & Formentera</h2>
+              
               <p className="text-lg leading-relaxed mb-6">
-                Ibiza ist weltberühmt für sein pulsierendes Nachtleben, aber die Insel hat auch eine überraschend ruhige und natürliche Seite. Neben den berühmten Beach Clubs und Diskotheken bietet Ibiza unzählige wunderschöne Buchten mit türkisfarbenem Wasser, Pinienwäldern und charmanten Dörfern.
+                Ibiza steht für mehr als Nightlife: Der Balearenklassiker begeistert Skipper und Motorbootfahrer mit türkisblauem Wasser, schroff-schönen Steilküsten, traumhaften Calas und einer lebendigen, mediterranen Kultur. Ideale Ausgangspunkte für Ihren Törn sind Ibiza-Stadt (Eivissa) mit Marina Ibiza und Botafoch, San Antonio (Sant Antoni de Portmany) an der Westküste sowie Santa Eulària im Osten. In direkter Nachbarschaft wartet Formentera – karibisch anmutend mit flachen Sandbänken und kristallklaren Becken.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Dalt Vila - UNESCO-Weltkulturerbe</h3>
               <p className="mb-6">
-                Die Altstadt von Ibiza-Stadt (Dalt Vila) ist UNESCO-Weltkulturerbe und ein Muss für jeden Besucher. Von der Marina Ibiza aus können Sie die historischen Stadtmauern, engen Gassen und die Kathedrale erkunden. Die Marina selbst bietet erstklassige Infrastruktur und liegt zentral für Ihr Nachtleben-Abenteuer.
+                Wichtig: Katamarane spielen eine große Rolle (stabil, geräumig, geringer Tiefgang), doch die Inseln eignen sich ebenso hervorragend für Segelyachten und Motorboote – als Bareboat oder mit Skipper.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Traumhafte Buchten & Beach Clubs</h3>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Conta (Comte)</h4>
-                    <p className="text-sm text-gray-600">Spektakuläre Sonnenuntergänge und kristallklares Wasser. Ideal zum Ankern tagsüber.</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Salada</h4>
-                    <p className="text-sm text-gray-600">Geschützte Bucht mit Pinienwald und türkisblauem Wasser. Beliebt bei Seglern.</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Jondal</h4>
-                    <p className="text-sm text-gray-600">Berühmte Beach Clubs, exklusives Ambiente und ruhigeres Wasser.</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala d'Hort</h4>
-                    <p className="text-sm text-gray-600">Blick auf den mystischen Felsen Es Vedrà - magische Atmosphäre.</p>
-                  </CardContent>
-                </Card>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Revierüberblick: Küsten & Charakter</h3>
+              
+              <h4 className="text-xl font-semibold mt-6 mb-3">Süden & Südosten (Ibiza-Stadt, Talamanca, Ses Salines)</h4>
+              <p className="mb-6">
+                Charter-Hotspot mit Top-Marinas, urbanem Flair, kurzen Schlägen zu Beach-Stopps und guter Proviantierung.
+              </p>
+
+              <h4 className="text-xl font-semibold mt-6 mb-3">Westen (San Antonio, Cala Bassa, Cala Comte, Cala d'Hort/Es Vedrà)</h4>
+              <p className="mb-6">
+                Postkartenkulisse, Sonnenuntergänge, klarer Sandgrund; ideal zum Ankern und Schnorcheln.
+              </p>
+
+              <h4 className="text-xl font-semibold mt-6 mb-3">Norden (Benirràs, Portinatx)</h4>
+              <p className="mb-6">
+                Naturbelassen, ruhige Nächte, Felsformationen; häufig Sandflecken mit verlässlichem Halt.
+              </p>
+
+              <h4 className="text-xl font-semibold mt-6 mb-3">Osten (Santa Eulària, Cala Llonga)</h4>
+              <p className="mb-6">
+                Familienfreundlich, kurze Etappen, gute Infrastruktur.
+              </p>
+
+              <h4 className="text-xl font-semibold mt-6 mb-3">Formentera (La Savina, Illetes, Levante)</h4>
+              <p className="mb-6">
+                Flache Sandplateaus, smaragdgrüne Becken – perfekt für Tagesausflüge oder Übernachtungen an Bojen. Achtung Posidonia: nur auf Sand ankern bzw. Bojen nutzen.
+              </p>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Warum dieses Revier? (ohne Katamaran-Schwerpunkt)</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Vielfalt der Bootstypen:</strong> Ob Segelyacht, Katamaran oder Motorboot – das Revier bietet kurze Distanzen, viele sichere Buchten und planbare Thermik.</li>
+                <li><strong>Komfort & Service:</strong> Marinas mit Fuel Dock, Technik, Chandleries, Restaurants; Proviant-Lieferung bis an den Steg.</li>
+                <li><strong>Planbare Etappen:</strong> Viele Ziele liegen 6–20 sm auseinander – ideal für Badestopps, Landgänge und entspannte Anker-Nächte.</li>
+                <li><strong>Formentera in Griffweite:</strong> Ein Katzensprung mit karibischem Feeling – perfekt für Crews, die Inselhopping lieben.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">7-Tage-Törnidee ab Ibiza-Stadt (variabel für Segelyacht, Katamaran & Motorboot)</h3>
+              
+              <div className="space-y-3 mb-8">
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 1 – Ibiza-Stadt → Talamanca / Cala Llonga (6–10 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Check-in, Sicherheit, Proviant. Kurzer Einsegler, Anker auf Sand, erster Sprung ins Wasser. Abendblick auf Dalt Vila.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 2 – Cala Llonga → Santa Eulària → Ost-Calas (12–18 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Bunkern/Spaziergang in Santa Eulària, danach Schnorchel- und Badebuchten entlang der Ostküste.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 3 – Ost → Nord: Cala de San Vicente → Portinatx (16–22 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Helle Sandflecken mit gutem Halt; ruhige Nacht vor Anker oder Boje.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 4 – Portinatx → Benirràs → San Antonio (18–22 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Fotostopp am Benirràs-Felsen, Sonnenuntergangsetappe Richtung San Antonio. Marina- oder Bojenliegeplatz für Landgang.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 5 – San Antonio → Cala d'Hort / Es Vedrà → Cala Comte/Bassa (15–20 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Dramatische Kulisse vor Es Vedrà, türkisfarbene Becken in Cala Comte/Bassa. Tagsüber Ankerbucht, abends ruhige Marina – je nach Crewlaune.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 6 – West/Süd → Ses Salines → Formentera (La Savina / Illetes) (16–22 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Über Ses Salines nach Formentera. Hellblaue Sandbänke bei Illetes/Levante – bitte Posidonia meiden, Bojen nutzen. Optional Landgang im Hafen La Savina.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 7 – Formentera → Ibiza-Stadt (12–15 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Gemütlicher Rücktörn, Ausklarieren, Zeit für Altstadt, Tapas und Shopping.
+                  </p>
+                </div>
               </div>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Formentera - Die Karibik des Mittelmeers</h3>
+              <div className="border border-gray-300 p-6 rounded-lg mb-8">
+                <p className="text-black">
+                  <strong>Hinweis:</strong> In der Saison setzt Seewind/Thermik oft am frühen Nachmittag ein. Vormittags Anker- und Badepausen, nachmittags Segeln – so nutzt man Wind & Licht optimal.
+                </p>
+              </div>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Marinas & Ausgangshäfen</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Ibiza-Stadt:</strong> Marina Ibiza und Botafoch – Premium-Liegeplätze, Treibstoff, Technik, kurze Wege in die City und zur Dalt Vila.</li>
+                <li><strong>San Antonio:</strong> Lebendige Promenade, gute Versorger, Top-Ausgangspunkt für die Westküsten-Calas.</li>
+                <li><strong>Santa Eulària:</strong> Modern, familienfreundlich, perfekte Basis für Ost- und Nordostroute.</li>
+                <li><strong>La Savina (Formentera):</strong> Sicherer Hafen für Bunker, Wasser & Landgang; saisonal stark gefragt.</li>
+              </ul>
+
               <p className="mb-6">
-                Formentera ist die kleinste bewohnte Baleareninsel und nur einen kurzen Schlag von Ibiza entfernt. Die Insel ist ein wahres Naturparadies, bekannt für ihre puderzuckerweißen Strände und das unglaublich klare, türkisfarbene Wasser, das an die Karibik erinnert. Die Playa de Ses Illetes ist ein ikonischer Ankerplatz mit kristallklarem Wasser.
+                Flottenauswahl: Aktuelle Charterflotten decken alles ab – von kompakten Fahrtenseglern über geräumige Katamarane bis zu sportlichen Motoryachten. Bareboat, Skippered und Crewed sind möglich.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Segeln zwischen Ibiza & Formentera</h3>
-              <p className="mb-4">
-                Die Distanz zwischen Ibiza und Formentera beträgt nur etwa 5-6 Seemeilen - perfekt für einen Tagesausflug oder als Teil Ihres Törns. Das Wasser zwischen den Inseln ist teils flach und erfordert Aufmerksamkeit bei der Navigation, besonders bei Es Freus (der Meerenge zwischen den Inseln).
+              <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Ziele & nautische Tipps</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Cala Comte & Cala Bassa (West):</strong> Kristallklares Wasser, Sandgrund, gut zum Schwimmen & SUP.</li>
+                <li><strong>Cala d'Hort / Es Vedrà:</strong> Landmarke mit gelegentlichem Schwell – früh ankommen, Anker gründlich einfahren.</li>
+                <li><strong>Benirràs & Portinatx (Nord):</strong> Ruhige Nächte, Felskulisse, Sandflecken anpeilen.</li>
+                <li><strong>Cala Llonga & Talamanca (Ost/Südost):</strong> Kurze Distanzen, ideal für Tag 1/7.</li>
+                <li><strong>Ses Salines & Cap des Falcó (Süd):</strong> Flach, sandig, farbintensiv – Schutzgebiet beachten.</li>
+                <li><strong>Formentera – Illetes & Levante:</strong> Karibik-Feeling; wegen Posidonia nur auf Sand oder an Boje.</li>
+                <li><strong>Ankerpraxis:</strong> Größere Kettenvorlage, Rückwärtsgang zum Fieren, Sichtkontrolle mit Maske – auf Sand hält's hervorragend.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Wetter & Windbedingungen</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Sommer:</strong> Verlässliche Seebrise (meist 8–16 kn) am Nachmittag; vormittags oft Leichtwind – perfekt für Bade-Stopps.</li>
+                <li><strong>Frühling/Herbst:</strong> Angenehm, etwas wechselhafter mit Frontdurchgängen; gute Lernbedingungen und mehr Ruhe in Häfen.</li>
+                <li><strong>Dünung & Kaps:</strong> Offene Westbuchten können bei Levante oder Schwell unruhig werden. An Kaps (z. B. Es Vedrà) sind Beschleunigungszonen möglich – früh reffen.</li>
+                <li><strong>Strömung:</strong> Meist schwach, Ankergrund überwiegend Sand/Feinsediment mit guter Haltekraft.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Eignung nach Erfahrungsstufe</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Einsteiger & Familien:</strong> Kurze Distanzen, viele geschützte Buchten, planbare Thermik. Multihulls punkten mit Stabilität und Platz, sind aber kein Muss.</li>
+                <li><strong>Erfahrene Skipper:</strong> Sportliche Etappen an der Westküste, flexible Routen mit Nachtfahrten optional – Verkehr und Wetterfenster beachten.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Lizenzen, Sicherheit & Umwelt</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Bareboat:</strong> International anerkannter Bootsführerschein (z. B. ICC oder äquivalenter nationaler Schein) erforderlich. Ohne Schein: Skipper/Crew buchen.</li>
+                <li><strong>Sicherheitsstandards:</strong> Charteryachten werden regelmäßig gewartet; Rettungsmittel, Signalmittel und Technik nach Vorschrift. Übergabe mit Revierbriefing.</li>
+                <li><strong>Posidonia-Schutz:</strong> Nicht auf Seegras ankern (auch Kette nicht über Seegras führen). Sandflächen und Bojenfelder nutzen, Schutzzonen respektieren.</li>
+                <li><strong>Nachhaltig chartern:</strong> Müll vermeiden, Abwasser in der Marina entsorgen, lokale Regeln befolgen – so bleibt das Revier intakt.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Anreise & Service</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Flug nach Ibiza (IBZ):</strong> In der Saison zahlreiche Nonstop-Verbindungen aus D/AT/CH/FR.</li>
+                <li><strong>Kurze Transfers:</strong> 10–20 Minuten zu den Marinas in Ibiza-Stadt; San Antonio und Santa Eulària per Taxi/Transfer gut erreichbar.</li>
+                <li><strong>Proviant & Extras:</strong> Supermärkte, Frischemärkte, Bäckereien und Lieferdienste sind marinanah. Auf Wunsch organisieren wir Proviant bis an den Steg, Wasserspielzeuge (SUP, Kajak), Kinder- und Sicherheitsausrüstung.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+              <p className="mb-6">
+                Mai–Oktober ist Hauptsaison. Mai–Juni und September–Oktober bieten oft die beste Balance aus Wind, Wassertemperatur und Verfügbarkeit. Juli–August sind sonnensicher und lebhaft – Liegeplätze/Bojen frühzeitig reservieren, besonders für Formentera.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Nachtleben & Beach Clubs</h3>
-              <p className="mb-4">
-                Ibiza ist die Welthauptstadt des elektronischen Tanzes. Von Pacha über Ushuaïa bis Amnesia - die Insel bietet legendäre Clubs und DJs. Tagsüber locken Beach Clubs wie Café del Mar, Blue Marlin oder Nikki Beach mit entspannten Beats und Meerblick. Der perfekte Mix aus Party und Entspannung.
+              <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
+              <p className="mb-6">
+                Yachtcharter Ibiza kombiniert kurze Etappen, sichere Sandankerplätze, eindrucksvolle Küsten und erstklassige Infrastruktur – mit Formentera als naher Traum-Extension. Ob Segelyacht, Katamaran oder Motorboot: Das Revier ist zugänglich für Einsteiger und spannend für Routiniers. Wer verantwortungsvoll mit Posidonia umgeht und clever plant, erlebt pure Mittelmeer-Leichtigkeit – vom ersten Ableger bis zum letzten Sundowner.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Wind & Wetter</h3>
-              <p className="mb-4">
-                Ibiza genießt ein mediterranes Klima mit heißen Sommern und milden Wintern. Die Segelsaison läuft von Mai bis Oktober. Im Sommer dominieren thermische Winde mit 3-4 Bft - ideal für entspanntes Cruisen. Die beste Zeit für Ihren Charter: Juni und September - weniger Trubel, perfekte Temperaturen.
+              <p className="mb-6">
+                <strong>Jetzt Yachtcharter Ibiza anfragen:</strong> Wir finden die passende Yacht (Bareboat oder mit Skipper), planen Route & Bojen – inklusive Formentera –, organisieren Transfers & Proviant und teilen Insider-Tipps zu Buchten, Restaurants und Landaktivitäten. Kontakt aufnehmen & Wunschtermin sichern!
               </p>
             </div>
           </div>
