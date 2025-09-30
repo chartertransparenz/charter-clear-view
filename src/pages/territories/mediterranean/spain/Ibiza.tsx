@@ -10,78 +10,73 @@ import TerritoryMap from "@/components/TerritoryMap";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Ibiza = () => {
   const m = META.ibiza;
-  
   const absoluteOg = (path: string) => {
     const base = "https://chartertransparenz.de";
     return path.startsWith("http") ? path : `${base}${path}`;
   };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const quickFacts = [
-    { icon: MapPin, label: "Hauptstadt", value: "Ibiza-Stadt (Eivissa)" },
-    { icon: Calendar, label: "Beste Zeit", value: "Mai-Oktober" },
-    { icon: Users, label: "Geeignet für", value: "Party & Entspannung" },
-    { icon: Anchor, label: "Besonderheit", value: "UNESCO-Weltkulturerbe" }
-  ];
-
-  const ports = [
-    "Marina Ibiza", "Sant Antoni de Portmany", "Santa Eulària des Riu", "Formentera (La Savina)"
-  ];
-
-  const highlights = [
-    "Dalt Vila - UNESCO-Weltkulturerbe",
-    "Weltberühmtes Nachtleben",
-    "Cala Conta - Traumhafte Sonnenuntergänge",
-    "Formentera - Die Karibik Europas",
-    "Beach Clubs & Chiringuitos",
-    "Kristallklares Türkiswasser",
-    "Hippie-Märkte"
-  ];
-
-  return (
-    <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        keywords={m.keywords}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
+  const quickFacts = [{
+    icon: MapPin,
+    label: "Hauptstadt",
+    value: "Ibiza-Stadt (Eivissa)"
+  }, {
+    icon: Calendar,
+    label: "Beste Zeit",
+    value: "Mai-Oktober"
+  }, {
+    icon: Users,
+    label: "Geeignet für",
+    value: "Party & Entspannung"
+  }, {
+    icon: Anchor,
+    label: "Besonderheit",
+    value: "UNESCO-Weltkulturerbe"
+  }];
+  const ports = ["Marina Ibiza", "Sant Antoni de Portmany", "Santa Eulària des Riu", "Formentera (La Savina)"];
+  const highlights = ["Dalt Vila - UNESCO-Weltkulturerbe", "Weltberühmtes Nachtleben", "Cala Conta - Traumhafte Sonnenuntergänge", "Formentera - Die Karibik Europas", "Beach Clubs & Chiringuitos", "Kristallklares Türkiswasser", "Hippie-Märkte"];
+  return <>
+      <Meta title={m.title} description={m.description} keywords={m.keywords} ogImage={absoluteOg(m.ogImage)} canonical={m.canonical()} />
       <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Spanien", "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien"},
-          {"@type": "ListItem", "position": 4, "name": "Balearen", "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"},
-          {"@type": "ListItem", "position": 5, "name": "Ibiza", "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza"}
-        ]
-      }} />
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Reviere",
+        "item": "https://chartertransparenz.de/reviere"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mittelmeer",
+        "item": "https://chartertransparenz.de/reviere/mittelmeer"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Spanien",
+        "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien"
+      }, {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Balearen",
+        "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"
+      }, {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Ibiza",
+        "item": "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza"
+      }]
+    }} />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <Navigation />
         
         {/* Header */}
         <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-          <img
-            src="/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.png"
-            alt="Ibiza Yachtcharter - Die weiße Insel"
-            className="w-full h-full object-cover"
-          />
+          <img src="/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.png" alt="Ibiza Yachtcharter - Die weiße Insel" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
@@ -92,10 +87,7 @@ const Ibiza = () => {
               </p>
             </div>
           </div>
-          <Link 
-            to="/reviere/mittelmeer/spanien/balearen" 
-            className="absolute top-6 left-6"
-          >
+          <Link to="/reviere/mittelmeer/spanien/balearen" className="absolute top-6 left-6">
             <Button variant="outline" className="bg-white/90 text-black border-white">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Balearen
@@ -157,23 +149,19 @@ const Ibiza = () => {
         <div className="container mx-auto px-4 py-12">
           {/* Quick Facts */}
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
-            {quickFacts.map((fact, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+            {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
                 <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
                 <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
                 <p className="text-sm text-gray-600">{fact.value}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Territory Map */}
           <div className="max-w-4xl mx-auto mb-12">
-            <TerritoryMap 
-              region="Ibiza"
-              center={{ lat: 38.9067, lng: 1.4206 }}
-              zoom={8}
-              maptype="satellite"
-            />
+            <TerritoryMap region="Ibiza" center={{
+            lat: 38.9067,
+            lng: 1.4206
+          }} zoom={8} maptype="satellite" />
           </div>
 
           {/* Main Content */}
@@ -246,32 +234,10 @@ const Ibiza = () => {
           </div>
 
           {/* Ports */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Marinas</h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {ports.map((port, index) => (
-                <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
-                  <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                  <p className="font-medium text-gray-800">{port}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          
 
           {/* Highlights */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {highlights.map((highlight, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                    <p className="font-medium text-gray-800">{highlight}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
 
           {/* CTA */}
           <div className="max-w-4xl mx-auto">
@@ -291,8 +257,6 @@ const Ibiza = () => {
           </div>
         </div>
       </div>
-    </>
-  );
+    </>;
 };
-
 export default Ibiza;
