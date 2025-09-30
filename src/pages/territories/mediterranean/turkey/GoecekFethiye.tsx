@@ -56,7 +56,7 @@ const GoecekFethiye = () => {
 
   return (
     <>
-      <Meta title={m.title} description={m.description} keywords={m.keywords} canonical={m.canonical()} ogImage={m.ogImage} />
+      <Meta title={m.title} description={m.description} canonical={m.canonical()} ogImage={m.ogImage} />
       <JsonLd json={BREADCRUMB_TURKEY.gocekFethiye} />
       <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
         <Navigation />

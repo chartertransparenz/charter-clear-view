@@ -10,8 +10,12 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
+import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
 import atlantic from "@/assets/atlantic.jpg";
+
 const CanaryIslands = () => {
+  const m = META.canaryIslands;
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -54,7 +58,16 @@ const CanaryIslands = () => {
     cities: ["Puerto del Rosario", "Corralejo"]
   }];
   const highlights = ["Ganzjährig perfektes Segelwetter", "Konstante Nordost-Passatwinde", "Vulkanische Landschaften", "Vielfältige Inselcharaktere", "Weltklasse Windsurfing", "Stopover für Atlantiküberquerungen", "Spanische Kultur mit afrikanischen Einflüssen"];
-  return <div className="min-h-screen bg-white">
+  
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        ogImage={m.ogImage}
+        canonical={m.canonical()}
+      />
+      <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}

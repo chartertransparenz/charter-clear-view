@@ -13,7 +13,6 @@ export function Datenschutz() {
       <Meta
         title={META.datenschutz.title}
         description={META.datenschutz.description}
-        keywords={META.datenschutz.keywords}
         ogImage={absoluteOg(META.datenschutz.ogImage)}
         canonical={META.datenschutz.canonical()}
       />

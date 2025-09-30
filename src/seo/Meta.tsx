@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 type Props = {
   title: string;
   description: string;
-  keywords?: string[];
   canonical: string;
   ogImage: string;
   ogType?: "website" | "article";
@@ -12,7 +11,7 @@ type Props = {
 };
 
 export function Meta({
-  title, description, keywords, canonical, ogImage,
+  title, description, canonical, ogImage,
   ogType = "website", twitterCard = "summary_large_image",
 }: Props) {
   return (
@@ -20,7 +19,6 @@ export function Meta({
       <title>{title}</title>
 
       <meta name="description" content={description} />
-      {keywords?.length ? <meta name="keywords" content={keywords.join(", ")} /> : null}
 
       {/* Canonical */}
       <link rel="canonical" href={canonical} />

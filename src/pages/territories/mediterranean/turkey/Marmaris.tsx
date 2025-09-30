@@ -39,7 +39,7 @@ const Marmaris = () => {
   }];
   const highlights = ["Idealer Ausgangspunkt für Yachtcharter an der Karischen Küste", "Geschützter Naturhafen von Marmaris für entspanntes Ankern", "Hisarönü-Golf mit verlässiger thermischer Brise", "Spektakuläre Ankerbuchten mit Restaurantstegen", "Antike Stätte Knidos mit Doppelkap und Abendlicht", "Dalyan-Delta und Ekincik für Natur-Erlebnisse", "Erstklassige Marina-Infrastruktur mit Netsel und Adaköy", "Kurze Distanzen zwischen sicheren Ankerplätzen", "Perfekt für Einsteiger bis ambitionierte Crews"];
   return <>
-      <Meta title={m.title} description={m.description} keywords={m.keywords} canonical={m.canonical()} ogImage={m.ogImage} />
+      <Meta title={m.title} description={m.description} canonical={m.canonical()} ogImage={m.ogImage} />
       <JsonLd json={BREADCRUMB_TURKEY.marmaris} />
       <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
         <Navigation />

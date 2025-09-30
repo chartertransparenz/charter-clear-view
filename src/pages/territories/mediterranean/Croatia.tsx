@@ -8,9 +8,13 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
+import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
 
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
+
 const Croatia = () => {
+  const m = META.kroatien;
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.scrollTo(0, 0);
@@ -61,7 +65,16 @@ const Croatia = () => {
     cities: ["Dubrovnik", "Korčula", "Mljet", "Lastovo"]
   }];
   const highlights = ["Über 1.200 Inseln und Inselchen", "Kristallklares, türkisfarbenes Wasser", "Exzellente Marina-Infrastruktur", "Kurze Distanzen zwischen Ankerplätzen", "UNESCO-Weltkulturerbe Städte", "Kornaten-Nationalpark", "Perfekte Segelbedingungen"];
-  return <div className="min-h-screen bg-white">
+  
+  return (
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        ogImage={m.ogImage}
+        canonical={m.canonical()}
+      />
+      <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}

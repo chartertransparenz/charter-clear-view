@@ -40,7 +40,7 @@ const Mallorca = () => {
   const ports = ["Palma de Mallorca", "Port d'Andratx", "Port de Sóller", "Alcúdia", "Portocolom", "Cala d'Or"];
   const highlights = ["Palma - Lebendige Hauptstadt", "Cabrera Nationalpark", "Serra de Tramuntana UNESCO-Welterbe", "Es Trenc - Karibik-Feeling", "Cap Formentor", "200+ Traumhafte Buchten", "Weltklasse Marinas"];
   return <>
-      <Meta title={m.title} description={m.description} keywords={m.keywords} ogImage={absoluteOg(m.ogImage)} canonical={m.canonical()} />
+      <Meta title={m.title} description={m.description} ogImage={absoluteOg(m.ogImage)} canonical={m.canonical()} />
       <JsonLd json={{
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

@@ -75,7 +75,6 @@ const Turkey = () => {
       <Meta
         title={m.title}
         description={m.description}
-        keywords={m.keywords}
         ogImage={absoluteOg(m.ogImage)}
         canonical={m.canonical()}
       />

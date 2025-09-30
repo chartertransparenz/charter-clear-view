@@ -42,7 +42,7 @@ const Ibiza = () => {
   const ports = ["Marina Ibiza", "Sant Antoni de Portmany", "Santa Eulària des Riu", "Formentera (La Savina)"];
   const highlights = ["Dalt Vila - UNESCO-Weltkulturerbe", "Weltberühmtes Nachtleben", "Cala Conta - Traumhafte Sonnenuntergänge", "Formentera - Die Karibik Europas", "Beach Clubs & Chiringuitos", "Kristallklares Türkiswasser", "Hippie-Märkte"];
   return <>
-      <Meta title={m.title} description={m.description} keywords={m.keywords} ogImage={absoluteOg(m.ogImage)} canonical={m.canonical()} />
+      <Meta title={m.title} description={m.description} ogImage={absoluteOg(m.ogImage)} canonical={m.canonical()} />
       <JsonLd json={{
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

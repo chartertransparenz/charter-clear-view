@@ -59,7 +59,6 @@ const Bodrum = () => {
       <Meta
         title={m.title}
         description={m.description}
-        keywords={m.keywords}
         canonical={m.canonical()}
         ogImage={m.ogImage}
       />
