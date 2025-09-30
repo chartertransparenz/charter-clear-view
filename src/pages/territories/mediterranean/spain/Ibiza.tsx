@@ -210,7 +210,7 @@ const Ibiza = () => {
                 Flache Sandplateaus, smaragdgrüne Becken – perfekt für Tagesausflüge oder Übernachtungen an Bojen. Achtung Posidonia: nur auf Sand ankern bzw. Bojen nutzen.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Warum dieses Revier? (ohne Katamaran-Schwerpunkt)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Warum dieses Revier?</h3>
               <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li><strong>Vielfalt der Bootstypen:</strong> Ob Segelyacht, Katamaran oder Motorboot – das Revier bietet kurze Distanzen, viele sichere Buchten und planbare Thermik.</li>
                 <li><strong>Komfort & Service:</strong> Marinas mit Fuel Dock, Technik, Chandleries, Restaurants; Proviant-Lieferung bis an den Steg.</li>
