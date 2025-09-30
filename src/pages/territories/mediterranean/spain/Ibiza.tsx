@@ -339,14 +339,14 @@ const Ibiza = () => {
             </div>
           </div>
 
-          {/* CTA - Jetzt Ibiza Charter anfragen */}
-          <div className="max-w-4xl mx-auto mt-16">
+          {/* CTA */}
+          <div className="max-w-4xl mx-auto mt-20">
             <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
               <h3 className="text-2xl font-bold mb-4 text-gray-800">
-                Jetzt Yachtcharter Ibiza anfragen
+                Bereit für Ibiza & Formentera?
               </h3>
               <p className="text-gray-600 mb-6 text-lg">
-                Ob Bareboat, Skippered, Segelyacht, Katamaran oder Motorboot – wir beraten zu Yachtwahl, Routenplanung, Bojen-/Liegeplatz-Reservierungen, Transfers und Proviantierung. Sichern Sie sich Ihren Wunschtermin für die Hauptsaison Mai–Oktober und starten Sie Ihren persönlichen Traumtörn ab Ibiza-Stadt, San Antonio oder Santa Eulària – inklusive Formentera.
+                Erleben Sie kurze Etappen zwischen traumhaften Buchten, sichere Sandankerplätze und karibisches Flair – perfekt für Einsteiger und erfahrene Crews.
               </p>
               <CharterRequestForm>
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
