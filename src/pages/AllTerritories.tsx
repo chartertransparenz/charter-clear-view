@@ -12,6 +12,8 @@ import maledivenImage from '@/assets/territories/malediven.jpg';
 import hollandImage from '@/assets/territories/holland.jpg';
 import portugalImage from '@/assets/territories/portugal.jpg';
 import guadeloupeImage from '@/assets/territories/guadeloupe.jpg';
+import neukaledonienImage from '@/assets/territories/neukaledonien.jpg';
+import neuseelandImage from '@/assets/territories/neuseeland.jpg';
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -192,14 +194,14 @@ export default function AllTerritories() {
       name: 'Neukaledonien',
       flag: '🇳🇨',
       route: null,
-      image: '/placeholder.svg',
+      image: neukaledonienImage,
       hasPage: false
     },
     {
       name: 'Neuseeland',
       flag: '🇳🇿',
       route: null,
-      image: '/placeholder.svg',
+      image: neuseelandImage,
       hasPage: false
     },
     {
