@@ -1,5 +1,5 @@
 // SSG Postbuild Script für Karibik-Routen
-// Generiert statisches HTML mit SEO-Tags für 7 Karibik-Seiten
+// Generiert statisches HTML mit SEO-Tags für 8 Karibik-Seiten
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 
@@ -52,6 +52,13 @@ const ROUTES = [
     desc: "Segeln in den Grenadinen: Bequia, Mustique, Tobago Cays & Union Island. Karibik pur.",
     canon: "https://chartertransparenz.de/reviere/karibik/st-vincent-grenadinen",
     ogImage: "https://chartertransparenz.de/og/st-vincent-grenadinen.jpg"
+  },
+  {
+    path: "/reviere/karibik/kuba",
+    title: "Yachtcharter Kuba – Segeln ab Cienfuegos",
+    desc: "Segeln in Kuba: Authentische Karibikkultur, Cienfuegos, Cayo Largo & unberührte Inseln. Charter für erfahrene Segler.",
+    canon: "https://chartertransparenz.de/reviere/karibik/kuba",
+    ogImage: "https://chartertransparenz.de/og/kuba.jpg"
   }
 ];
 
