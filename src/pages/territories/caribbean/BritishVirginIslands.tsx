@@ -9,7 +9,23 @@ import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationBvi from "@/assets/destination-bvi.jpg";
+import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
+import { JsonLd } from "@/seo/JsonLd";
 const BritishVirginIslands = () => {
+  const m = META.bvi;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
+      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
+      { "@type": "ListItem", "position": 4, "name": "BVI", "item": "https://chartertransparenz.de/reviere/karibik/bvi" }
+    ]
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -46,6 +62,13 @@ const BritishVirginIslands = () => {
   const highlights = ["Traumhafte kurze Tagesetappen", "Karibik-Feeling pur", "Perfekt für Einsteiger", "Line-of-sight Segeln", "Top Charter-Logistik", "Stabile Passatwinde", "Warmes, türkises Wasser", "Entspannte Insel-Atmosphäre"];
   const routes = ["Tortola - Virgin Gorda - The Baths", "Jost Van Dyke - Sandy Cay", "Norman Island - Peter Island", "Anegada - Coral World"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Meta 
+        title={m.title}
+        description={m.description}
+        canonical={m.canonical()}
+        ogImage={m.ogImage}
+      />
+      <JsonLd json={breadcrumbJsonLd} />
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">

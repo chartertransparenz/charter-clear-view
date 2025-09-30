@@ -9,7 +9,8 @@ export type RegionKey =
   | "coteazur" | "korsika"
   | "bodrum" | "marmaris" | "goecekfethiye" | "kaskalkan" | "tuerkischeaegaeis"
   | "dodekanes" | "sporaden" | "athenSaronischerGolf" | "nordgriechenland"
-  | "canaryIslands";
+  | "canaryIslands"
+  | "karibik" | "bvi" | "usvi" | "bahamas" | "antigua" | "stMartin" | "stVincentGrenadinen";
 
 export const META: Record<RegionKey, {
   title: string;
@@ -353,5 +354,54 @@ export const META: Record<RegionKey, {
     keywords: ["Yachtcharter Kanaren","Segeln Teneriffa","Gran Canaria Charter"],
     ogImage: "/og/kanaren.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/atlantik/kanaren"
+  },
+
+  karibik: {
+    title: "Yachtcharter Karibik – Bahamas, BVI & St. Martin",
+    description: "Segeln in der Karibik: Bahamas, Britische Jungferninseln, USVI, St. Martin & Grenadinen. Tropisches Klima & türkisfarbenes Meer.",
+    ogImage: "https://chartertransparenz.de/og/karibik.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik"
+  },
+
+  bahamas: {
+    title: "Yachtcharter Bahamas – Exumas & Nassau entdecken",
+    description: "Segeln auf den Bahamas: Exumas, Nassau & paradiesische Strände. Perfekt für Katamaran-Charter & Inselhüpfen.",
+    ogImage: "https://chartertransparenz.de/og/bahamas.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik/bahamas"
+  },
+
+  bvi: {
+    title: "Yachtcharter BVI – Britische Jungferninseln",
+    description: "Segeln auf den BVI: Tortola, Virgin Gorda & Jost Van Dyke. Karibisches Inselhüpfen in den Britischen Jungferninseln.",
+    ogImage: "https://chartertransparenz.de/og/bvi.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik/bvi"
+  },
+
+  usvi: {
+    title: "Yachtcharter USVI – US Jungferninseln",
+    description: "Segeln ab St. Thomas & St. John. Traumhafte Strände & ideale Routen in den US Jungferninseln.",
+    ogImage: "https://chartertransparenz.de/og/usvi.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik/usvi"
+  },
+
+  antigua: {
+    title: "Yachtcharter Antigua – Segeln im Herzen der Karibik",
+    description: "Segeln ab Antigua: English Harbour, Nelson's Dockyard & traumhafte Buchten. Perfekt für Karibik-Charter.",
+    ogImage: "https://chartertransparenz.de/og/antigua.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik/antigua"
+  },
+
+  stMartin: {
+    title: "Yachtcharter St. Martin – Französische & niederländische Seite",
+    description: "Segeln ab St. Martin: Marigot, Orient Bay & Simpson Bay. Idealer Ausgangspunkt für Karibik-Inselhüpfen.",
+    ogImage: "https://chartertransparenz.de/og/st-martin.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik/st-martin"
+  },
+
+  stVincentGrenadinen: {
+    title: "Yachtcharter St. Vincent & Grenadinen – Tobago Cays entdecken",
+    description: "Segeln in den Grenadinen: Bequia, Mustique, Tobago Cays & Union Island. Karibik pur.",
+    ogImage: "https://chartertransparenz.de/og/st-vincent-grenadinen.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/karibik/st-vincent-grenadinen"
   }
 };

@@ -20,8 +20,23 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import caribbean from "@/assets/caribbean.jpg";
+import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
+import { JsonLd } from "@/seo/JsonLd";
 
 const Caribbean = () => {
+  const m = META.karibik;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
+      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" }
+    ]
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -67,6 +82,13 @@ const Caribbean = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Meta 
+        title={m.title}
+        description={m.description}
+        canonical={m.canonical()}
+        ogImage={m.ogImage}
+      />
+      <JsonLd json={breadcrumbJsonLd} />
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">

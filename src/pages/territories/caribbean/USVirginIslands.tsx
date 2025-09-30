@@ -16,9 +16,24 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
+import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
+import { JsonLd } from "@/seo/JsonLd";
 
 
 const USVirginIslands = () => {
+  const m = META.usvi;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
+      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
+      { "@type": "ListItem", "position": 4, "name": "USVI", "item": "https://chartertransparenz.de/reviere/karibik/usvi" }
+    ]
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -32,6 +47,13 @@ const USVirginIslands = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Meta 
+        title={m.title}
+        description={m.description}
+        canonical={m.canonical()}
+        ogImage={m.ogImage}
+      />
+      <JsonLd json={breadcrumbJsonLd} />
       <Navigation />
       
       {/* Header */}
