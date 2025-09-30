@@ -14,6 +14,8 @@ import portugalImage from '@/assets/territories/portugal.jpg';
 import guadeloupeImage from '@/assets/territories/guadeloupe.jpg';
 import neukaledonienImage from '@/assets/territories/neukaledonien.jpg';
 import neuseelandImage from '@/assets/territories/neuseeland.jpg';
+import norweGenImage from '@/assets/territories/norwegen.jpg';
+import malaysiaImage from '@/assets/territories/malaysia.jpg';
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -152,7 +154,7 @@ export default function AllTerritories() {
       name: 'Malaysia',
       flag: '🇲🇾',
       route: '/reviere/indischer-ozean/asien/malaysia',
-      image: '/placeholder.svg',
+      image: malaysiaImage,
       hasPage: true
     },
     {
@@ -215,7 +217,7 @@ export default function AllTerritories() {
       name: 'Norwegen',
       flag: '🇳🇴',
       route: null,
-      image: '/placeholder.svg',
+      image: norweGenImage,
       hasPage: false
     },
     {
