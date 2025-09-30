@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts"
+  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -108,6 +108,38 @@
 [[redirects]]
   from = "/reviere/mittelmeer/italien/*"
   to = "/reviere/mittelmeer/italien/:splat/index.html"
+  status = 200
+
+# Spain/Balearen prerendered routes - SERVE STATIC HTML
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien"
+  to = "/reviere/mittelmeer/spanien/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien/balearen"
+  to = "/reviere/mittelmeer/spanien/balearen/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien/balearen/*"
+  to = "/reviere/mittelmeer/spanien/balearen/:splat/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien/*"
+  to = "/reviere/mittelmeer/spanien/:splat/index.html"
+  status = 200
+
+# Canary Islands prerendered routes - SERVE STATIC HTML
+[[redirects]]
+  from = "/reviere/atlantik/kanaren"
+  to = "/reviere/atlantik/kanaren/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/atlantik/kanaren/*"
+  to = "/reviere/atlantik/kanaren/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)

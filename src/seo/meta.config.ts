@@ -5,10 +5,11 @@ export type RegionKey =
   | "griechenland" | "kykladen" | "ionisches" | "tuerkei" | "mittelmeer"
   | "italien" | "spanien" | "frankreich" | "croatia" | "malta" | "montenegro" | "slowenien"
   | "sardinien" | "sizilien" | "toskana" | "toskanaElba" | "amalfikueste" | "costasmeralda"
-  | "balearen" | "costabrava" | "valencia"
+  | "balearen" | "mallorca" | "ibiza" | "menorca" | "costabrava" | "valencia"
   | "coteazur" | "korsika"
   | "bodrum" | "marmaris" | "goecekfethiye" | "kaskalkan" | "tuerkischeaegaeis"
-  | "dodekanes" | "sporaden" | "athenSaronischerGolf" | "nordgriechenland";
+  | "dodekanes" | "sporaden" | "athenSaronischerGolf" | "nordgriechenland"
+  | "canaryIslands";
 
 export const META: Record<RegionKey, {
   title: string;
@@ -228,11 +229,32 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/italien/costa-smeralda"
   },
   balearen: {
-    title: "Yachtcharter Balearen | Mallorca, Ibiza, Menorca, Formentera",
-    description: "Segeln Balearen: Mallorca, Ibiza & Menorca, traumhafte Buchten & lebendiges Nachtleben. Perfekte Windverhältnisse ganzjährig. Jetzt anfragen!",
+    title: "Yachtcharter Balearen – Mallorca, Ibiza & Menorca",
+    description: "Segeln auf den Balearen: Entdecken Sie Mallorca, Ibiza & Menorca. Inselhüpfen mit Traumstränden & mediterranem Flair.",
     keywords: ["Yachtcharter Balearen","Mallorca","Ibiza","Menorca","Formentera"],
     ogImage: "/og/balearen.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"
+  },
+  mallorca: {
+    title: "Yachtcharter Mallorca – Segeln ab Palma & Port d'Andratx",
+    description: "Mallorca per Yacht entdecken: Palma, Andratx & Cala d'Or. Buchten, Küstenvielfalt & mediterranes Lebensgefühl.",
+    keywords: ["Yachtcharter Mallorca","Segeln Palma","Balearen Charter"],
+    ogImage: "/og/mallorca.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/mallorca"
+  },
+  ibiza: {
+    title: "Yachtcharter Ibiza – Inselhüpfen mit Formentera",
+    description: "Ibiza & Formentera: Segeln, Nachtleben & glasklares Wasser. Entspannung & Party im perfekten Mix.",
+    keywords: ["Yachtcharter Ibiza","Segeln Formentera","Balearen"],
+    ogImage: "/og/ibiza.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza"
+  },
+  menorca: {
+    title: "Yachtcharter Menorca – Mahón, Ciutadella & Naturbuchten",
+    description: "Segeln auf Menorca: Ruhiger & familiärer als Mallorca & Ibiza. Entdecken Sie Mahón, Ciutadella & unberührte Naturbuchten.",
+    keywords: ["Yachtcharter Menorca","Segeln Mahón","Ciutadella"],
+    ogImage: "/og/menorca.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/menorca"
   },
   costabrava: {
     title: "Yachtcharter Costa Brava | Barcelona, Girona, Roses – Katalanische Küste",
@@ -324,5 +346,12 @@ export const META: Record<RegionKey, {
     keywords: ["Yachtcharter Nordgriechenland","Thessaloniki","Chalkidiki","Thasos"],
     ogImage: "/og/nordgriechenland.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/nordgriechenland"
+  },
+  canaryIslands: {
+    title: "Yachtcharter Kanaren – Teneriffa, Gran Canaria & Lanzarote",
+    description: "Segeln auf den Kanaren: Ganzjährig Sonne & Passatwinde. Entdecken Sie Teneriffa, Gran Canaria & Lanzarote per Yacht.",
+    keywords: ["Yachtcharter Kanaren","Segeln Teneriffa","Gran Canaria Charter"],
+    ogImage: "/og/kanaren.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/atlantik/kanaren"
   }
 };

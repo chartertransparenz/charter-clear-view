@@ -41,6 +41,9 @@ import Nordgriechenland from "./pages/territories/mediterranean/greece/Nordgriec
 
 // Spanish regions
 import Balearics from "./pages/territories/mediterranean/spain/Balearics";
+import Mallorca from "./pages/territories/mediterranean/spain/Mallorca";
+import Ibiza from "./pages/territories/mediterranean/spain/Ibiza";
+import Menorca from "./pages/territories/mediterranean/spain/Menorca";
 import CostaBrava from "./pages/territories/mediterranean/spain/CostaBrava";
 import Valencia from "./pages/territories/mediterranean/spain/Valencia";
 
@@ -225,6 +228,9 @@ function App() {
             
             {/* Spanish region routes */}
             <Route path="/reviere/mittelmeer/spanien/balearen" element={<Balearics />} />
+            <Route path="/reviere/mittelmeer/spanien/balearen/mallorca" element={<Mallorca />} />
+            <Route path="/reviere/mittelmeer/spanien/balearen/ibiza" element={<Ibiza />} />
+            <Route path="/reviere/mittelmeer/spanien/balearen/menorca" element={<Menorca />} />
             <Route path="/reviere/mittelmeer/spanien/costa-brava" element={<CostaBrava />} />
             <Route path="/reviere/mittelmeer/spanien/valencia" element={<Valencia />} />
             

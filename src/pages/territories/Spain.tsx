@@ -32,13 +32,15 @@ const Spain = () => {
   const regions = [
     {
       name: "Balearen",
+      link: "/reviere/mittelmeer/spanien/balearen",
       bases: ["Palma de Mallorca", "Mahón", "Ibiza"],
       description: "Mallorca, Menorca, Ibiza, Formentera - mediterrane Vielfalt"
     },
     {
-      name: "Kanaren", 
-      bases: ["Las Palmas", "Tenerife", "Lanzarote"],
-      description: "Ganzjähriges Segelwetter mit Atlantik-Feeling"
+      name: "Kanarische Inseln", 
+      link: "/reviere/atlantik/kanaren",
+      bases: ["Las Palmas", "Santa Cruz", "Arrecife"],
+      description: "Ganzjähriges Segeln im ewigen Frühling - Teneriffa, Gran Canaria, Lanzarote"
     },
     {
       name: "Costa Brava",

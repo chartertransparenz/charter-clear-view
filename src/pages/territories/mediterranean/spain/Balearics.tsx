@@ -132,15 +132,48 @@ const Balearics = () => {
           ))}
         </div>
 
-        {/* Territory Map */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <TerritoryMap 
-            region="Balearen"
-            center={{ lat: 39.7086231, lng: 2.6946892 }}
-            zoom={8}
-            maptype="satellite"
-          />
-        </div>
+          {/* Territory Map */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <TerritoryMap 
+              region="Balearen"
+              center={{ lat: 39.7086231, lng: 2.6946892 }}
+              zoom={8}
+              maptype="satellite"
+            />
+          </div>
+
+          {/* Island Links */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="grid gap-6 md:grid-cols-3">
+              <Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="block">
+                <Card className="hover:shadow-xl transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Mallorca</h3>
+                    <p className="text-sm text-muted-foreground mb-3">Die größte Insel mit 200+ Buchten, Palma & Cabrera Nationalpark</p>
+                    <Button variant="outline" className="w-full">Mehr erfahren →</Button>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="block">
+                <Card className="hover:shadow-xl transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Ibiza</h3>
+                    <p className="text-sm text-muted-foreground mb-3">Weltberühmtes Nachtleben, Beach Clubs & Formentera-Nähe</p>
+                    <Button variant="outline" className="w-full">Mehr erfahren →</Button>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="block">
+                <Card className="hover:shadow-xl transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Menorca</h3>
+                    <p className="text-sm text-muted-foreground mb-3">UNESCO-Biosphärenreservat, unberührte Natur & Mahón Hafen</p>
+                    <Button variant="outline" className="w-full">Mehr erfahren →</Button>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+          </div>
 
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
