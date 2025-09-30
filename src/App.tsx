@@ -212,13 +212,16 @@ function App() {
             <Route path="/reviere/mittelmeer/kroatien/mitteldalmatien" element={<Navigate to="/reviere/mittelmeer/kroatien/dalmatien-split" replace />} />
             <Route path="/reviere/mittelmeer/kroatien/sueddalmatien" element={<Navigate to="/reviere/mittelmeer/kroatien/dubrovnik" replace />} />
             
-            {/* Greek region routes */}
+            {/* Greek region routes - NEW canonical URLs */}
             <Route path="/reviere/mittelmeer/griechenland/kykladen" element={<Cyclades />} />
-            <Route path="/reviere/mittelmeer/griechenland/ionische-inseln" element={<IonicIslands />} />
+            <Route path="/reviere/mittelmeer/griechenland/ionisches-meer" element={<IonicIslands />} />
             <Route path="/reviere/mittelmeer/griechenland/dodekanes" element={<Dodecanese />} />
             <Route path="/reviere/mittelmeer/griechenland/sporaden" element={<Sporades />} />
             <Route path="/reviere/mittelmeer/griechenland/athen-saronischer-golf" element={<AthenSaronischerGolf />} />
             <Route path="/reviere/mittelmeer/griechenland/nordgriechenland" element={<Nordgriechenland />} />
+            
+            {/* 301 Redirect from old Greek URL */}
+            <Route path="/reviere/mittelmeer/griechenland/ionische-inseln" element={<Navigate to="/reviere/mittelmeer/griechenland/ionisches-meer" replace />} />
             
             {/* Spanish region routes */}
             <Route path="/reviere/mittelmeer/spanien/balearen" element={<Balearics />} />

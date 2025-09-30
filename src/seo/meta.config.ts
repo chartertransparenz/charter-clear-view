@@ -39,10 +39,10 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"
   },
   griechenland: {
-    title: "Yachtcharter Griechenland | Ägäis & Ionisches Meer – 6000+ Inseln",
-    description: "Griechenland segeln: Kykladen & Ionisches Meer, malerische Buchten & Tavernen. Segelyacht oder Katamaran jetzt anfragen!",
+    title: "Yachtcharter Griechenland – Ionisches Meer, Kykladen & mehr",
+    description: "Segeln in Griechenland: Entdecken Sie Ionisches Meer, Kykladen, Sporaden & Dodekanes – ideale Reviere für Ihren Yachtcharter.",
     keywords: ["Yachtcharter Griechenland","Kykladen","Ionisches Meer","Segeln Griechenland"],
-    ogImage: "/og/griechenland.jpg",
+    ogImage: "/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland"
   },
   kvarner: {
@@ -74,17 +74,17 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik"
   },
   kykladen: {
-    title: "Yachtcharter Kykladen | Mykonos, Santorini, Paros – Ägäis",
-    description: "Segeln Kykladen: ikonische weiße Dörfer, Mykonos & Santorini, traditionelle Tavernen. Traumreviere der Ägäis. Jetzt anfragen!",
+    title: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
+    description: "Segeln auf den Kykladen: Inselhüpfen zu Mykonos, Santorini & Paros. Kristallklares Wasser & lebendige Hafenorte.",
     keywords: ["Yachtcharter Kykladen","Mykonos","Santorini","Paros","Ägäis"],
-    ogImage: "/og/kykladen.jpg",
+    ogImage: "/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/kykladen"
   },
   ionisches: {
-    title: "Yachtcharter Ionisches Meer | Korfu, Kefalonia, Zakynthos",
-    description: "Segeln Ionisches Meer: grüne Inseln, geschützte Gewässer, Korfu & Kefalonia. Ideal für entspanntes Segeln. Jetzt anfragen!",
-    keywords: ["Yachtcharter Ionisches Meer","Korfu","Kefalonia","Zakynthos","Griechenland"],
-    ogImage: "/og/ionisches.jpg",
+    title: "Yachtcharter Ionisches Meer – Korfu, Lefkas & Kefalonia",
+    description: "Segeln im Ionischen Meer: Entspannte Törns rund um Korfu, Lefkas & Kefalonia. Perfekt für Familien und Einsteiger.",
+    keywords: ["Yachtcharter Ionisches Meer","Korfu","Kefalonia","Lefkas","Griechenland"],
+    ogImage: "/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/ionisches-meer"
   },
   tuerkei: {
@@ -291,24 +291,24 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/tuerkische-aegaeis"
   },
   dodekanes: {
-    title: "Yachtcharter Dodekanes | Rhodos, Kos, Patmos, Kalymnos – Südägäis",
-    description: "Segeln Dodekanes: 12 Inseln der Südägäis, mittelalterliche Rhodos & klösterliches Patmos. Türkei-nahe Inselwelt entdecken. Jetzt anfragen!",
-    keywords: ["Yachtcharter Dodekanes","Rhodos","Kos","Patmos","Kalymnos"],
-    ogImage: "/og/dodekanes.jpg",
+    title: "Yachtcharter Dodekanes – Rhodos, Kos & Symi",
+    description: "Segeln im Dodekanes: Entdecken Sie Rhodos, Kos & Symi. Sonnenreiche Törns entlang der türkischen Küste.",
+    keywords: ["Yachtcharter Dodekanes","Rhodos","Kos","Symi","Südägäis"],
+    ogImage: "/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes"
   },
   sporaden: {
-    title: "Yachtcharter Sporaden | Skiathos, Skopelos, Alonissos – Grüne Inseln",
-    description: "Segeln Sporaden: üppig grüne Inseln, Mamma Mia Filmkulissen & geschützte Gewässer. Von Skiathos zu Alonissos Meerespark. Jetzt anfragen!",
-    keywords: ["Yachtcharter Sporaden","Skiathos","Skopelos","Alonissos","Grüne Inseln"],
-    ogImage: "/og/sporaden.jpg",
+    title: "Yachtcharter Sporaden – Skiathos, Skopelos & Alonnisos",
+    description: "Segeln auf den Sporaden: Grüne Inseln wie Skiathos, Skopelos & Alonnisos. Natur pur im Ägäischen Meer.",
+    keywords: ["Yachtcharter Sporaden","Skiathos","Skopelos","Alonnisos","Grüne Inseln"],
+    ogImage: "/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/sporaden"
   },
   athenSaronischerGolf: {
-    title: "Yachtcharter Saronischer Golf | Athen, Ägina, Hydra, Spetses",
-    description: "Segeln Saronischer Golf: Athen-nahe Inseln, autofreie Hydra & aristokratisches Spetses. Kultur & Segeln perfekt kombiniert. Jetzt anfragen!",
-    keywords: ["Yachtcharter Saronischer Golf","Athen","Ägina","Hydra","Spetses"],
-    ogImage: "/og/saronischergolf.jpg",
+    title: "Yachtcharter Athen & Saronischer Golf – Segeln ab Athen",
+    description: "Segeln ab Athen: Entdecken Sie den Saronischen Golf mit Poros, Hydra & Spetses. Kurze Distanzen & kulturelle Highlights.",
+    keywords: ["Yachtcharter Saronischer Golf","Athen","Hydra","Spetses","Poros"],
+    ogImage: "/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/athen-saronischer-golf"
   },
   nordgriechenland: {

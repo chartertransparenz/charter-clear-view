@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts"
+  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -53,6 +53,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/reviere/mittelmeer/griechenland/ionische-inseln"
+  to = "/reviere/mittelmeer/griechenland/ionisches-meer"
+  status = 301
+  force = true
+
 # Croatia prerendered routes - SERVE STATIC HTML
 # Hub page first (before wildcard)
 [[redirects]]
@@ -64,6 +70,19 @@
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien/*"
   to = "/reviere/mittelmeer/kroatien/:splat/index.html"
+  status = 200
+
+# Greece prerendered routes - SERVE STATIC HTML
+# Hub page first (before wildcard)
+[[redirects]]
+  from = "/reviere/mittelmeer/griechenland"
+  to = "/reviere/mittelmeer/griechenland/index.html"
+  status = 200
+
+# Wildcard for all Greece subpages (ionisches-meer, athen-saronischer-golf, kykladen, dodekanes, sporaden)
+[[redirects]]
+  from = "/reviere/mittelmeer/griechenland/*"
+  to = "/reviere/mittelmeer/griechenland/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
