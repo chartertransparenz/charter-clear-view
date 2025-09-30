@@ -7,7 +7,7 @@ export type RegionKey =
   | "sardinien" | "sizilien" | "toskana" | "toskanaElba" | "amalfikueste" | "costasmeralda"
   | "balearen" | "mallorca" | "ibiza" | "menorca" | "costabrava" | "valencia"
   | "coteazur" | "korsika"
-  | "bodrum" | "marmaris" | "goecekfethiye" | "kaskalkan" | "tuerkischeaegaeis"
+  | "bodrum" | "marmaris" | "gocekFethiye" | "kaskalkan" | "tuerkischeaegaeis"
   | "dodekanes" | "sporaden" | "athenSaronischerGolf" | "nordgriechenland"
   | "canaryIslands"
   | "karibik" | "bvi" | "usvi" | "bahamas" | "antigua" | "stMartin" | "stVincentGrenadinen";
@@ -90,10 +90,10 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/griechenland/ionisches-meer"
   },
   tuerkei: {
-    title: "Yachtcharter Türkei | Bodrum, Marmaris, Göcek – Türkische Riviera",
-    description: "Segeln Türkei: türkisblaue Buchten, antike Stätten & gastfreundliche Kultur. Start ab Bodrum, Marmaris oder Göcek. Jetzt anfragen!",
-    keywords: ["Yachtcharter Türkei","Bodrum","Marmaris","Göcek","Türkische Riviera"],
-    ogImage: "/og/tuerkei.jpg",
+    title: "Yachtcharter Türkei – Bodrum, Göcek & Marmaris",
+    description: "Segeln in der Türkei: Bodrum, Göcek/Fethiye, Marmaris & Antalya. Sonnensicher, viele Buchten & gute Marinas.",
+    keywords: ["Yachtcharter Türkei","Bodrum","Marmaris","Göcek","Fethiye","Segeln Türkei"],
+    ogImage: "https://chartertransparenz.de/og/tuerkei.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"
   },
   mittelmeer: {
@@ -286,25 +286,25 @@ export const META: Record<RegionKey, {
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/frankreich/korsika"
   },
   bodrum: {
-    title: "Yachtcharter Bodrum | Bodrum Peninsula, Gökova Bay – Ägäische Türkei",
-    description: "Segeln Bodrum: kosmopolitisches Flair, antike Stätten & türkisblaue Buchten. Von Bodrum durch die Gökova Bay. Jetzt anfragen!",
-    keywords: ["Yachtcharter Bodrum","Gökova Bay","Türkei segeln","Ägäis"],
-    ogImage: "/og/bodrum.jpg",
+    title: "Yachtcharter Bodrum – Gökova & Datça Golf",
+    description: "Segeln ab Bodrum: Gökova- und Datça-Golf mit Badebuchten & ruhigen Ankerplätzen. Ideal für Inselhüpfen.",
+    keywords: ["Yachtcharter Bodrum","Gökova","Datça","Bodrum segeln","Türkei"],
+    ogImage: "https://chartertransparenz.de/og/bodrum.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum"
   },
   marmaris: {
-    title: "Yachtcharter Marmaris | Marmaris Bay, Datça, Knidos – Türkische Riviera",
-    description: "Segeln Marmaris: geschützte Bucht, lebendiger Hafen & antike Ruinen. Von Marmaris zur Datça-Halbinsel. Perfekte Charterbasis. Jetzt anfragen!",
-    keywords: ["Yachtcharter Marmaris","Datça","Knidos","Türkische Riviera"],
-    ogImage: "/og/marmaris.jpg",
+    title: "Yachtcharter Marmaris – Hisarönü & Bozburun",
+    description: "Ab Marmaris zu den Golfs von Hisarönü & Bozburun: Natur, glasklares Wasser & charmante Küstenorte.",
+    keywords: ["Yachtcharter Marmaris","Hisarönü","Bozburun","Marmaris segeln","Türkei"],
+    ogImage: "https://chartertransparenz.de/og/marmaris.jpg",
     canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris"
   },
-  goecekfethiye: {
-    title: "Yachtcharter Göcek & Fethiye | 12 Inseln, Ölüdeniz – Lykische Küste",
-    description: "Segeln Göcek & Fethiye: 12 Inseln, antike lykische Stätten & türkisblaues Wasser. Von Göcek zur berühmten Blauen Lagune. Jetzt anfragen!",
-    keywords: ["Yachtcharter Göcek","Fethiye","12 Inseln","Ölüdeniz","Lykische Küste"],
-    ogImage: "/og/goecekfethiye.jpg",
-    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye"
+  gocekFethiye: {
+    title: "Yachtcharter Göcek & Fethiye – Buchtenparadies",
+    description: "Göcek & Fethiye: Kurze Etappen, geschützte Buchten, Top-Infrastruktur. Perfekt für Familien & Einsteiger.",
+    keywords: ["Yachtcharter Göcek","Fethiye","Göcek segeln","Buchten","Türkei"],
+    ogImage: "https://chartertransparenz.de/og/gocek-fethiye.jpg",
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/gocek-fethiye"
   },
   kaskalkan: {
     title: "Yachtcharter Kaş & Kalkan | Lykische Küste, Kekova – Antike Türkei",

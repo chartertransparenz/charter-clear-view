@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts"
+  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -231,6 +231,40 @@
 [[redirects]]
   from = "/reviere/atlantik/kanaren/*"
   to = "/reviere/atlantik/kanaren/:splat/index.html"
+  status = 200
+
+############################################
+# TÜRKEI – Legacy-301 & SSG-200 Rewrites
+############################################
+
+# 1) Legacy/alternative Slugs → kanonische (301, force)
+[[redirects]]
+  from = "/reviere/mittelmeer/türkei"
+  to   = "/reviere/mittelmeer/tuerkei"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/reviere/mittelmeer/tuerkei/goecek"
+  to   = "/reviere/mittelmeer/tuerkei/gocek-fethiye"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/reviere/mittelmeer/tuerkei/fethiye"
+  to   = "/reviere/mittelmeer/tuerkei/gocek-fethiye"
+  status = 301
+  force  = true
+
+# 2) SSG-HTML ausliefern (CLEAN-URL → index.html). KEIN force!
+[[redirects]]
+  from = "/reviere/mittelmeer/tuerkei"
+  to   = "/reviere/mittelmeer/tuerkei/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/tuerkei/*"
+  to   = "/reviere/mittelmeer/tuerkei/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)

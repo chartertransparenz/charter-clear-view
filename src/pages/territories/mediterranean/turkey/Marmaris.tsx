@@ -9,10 +9,17 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import TopDestinations from "@/components/TopDestinations";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
+import { META } from "@/seo/meta.config";
+import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
+
 const Marmaris = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const m = META.marmaris;
   const quickFacts = [{
     icon: MapPin,
     label: "Lage",
@@ -30,9 +37,12 @@ const Marmaris = () => {
     label: "Besonderheit",
     value: "Größte Marina der Türkei"
   }];
-  const highlights = ["Idealer Ausgangspunkt für Yachtcharter an der Karischen Küste", "Geschützter Naturhafen von Marmaris für entspanntes Ankern", "Hisarönü-Golf mit verlässlicher thermischer Brise", "Spektakuläre Ankerbuchten mit Restaurantstegen", "Antike Stätte Knidos mit Doppelkap und Abendlicht", "Dalyan-Delta und Ekincik für Natur-Erlebnisse", "Erstklassige Marina-Infrastruktur mit Netsel und Adaköy", "Kurze Distanzen zwischen sicheren Ankerplätzen", "Perfekt für Einsteiger bis ambitionierte Crews"];
-  return <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
-      <Navigation />
+  const highlights = ["Idealer Ausgangspunkt für Yachtcharter an der Karischen Küste", "Geschützter Naturhafen von Marmaris für entspanntes Ankern", "Hisarönü-Golf mit verlässiger thermischer Brise", "Spektakuläre Ankerbuchten mit Restaurantstegen", "Antike Stätte Knidos mit Doppelkap und Abendlicht", "Dalyan-Delta und Ekincik für Natur-Erlebnisse", "Erstklassige Marina-Infrastruktur mit Netsel und Adaköy", "Kurze Distanzen zwischen sicheren Ankerplätzen", "Perfekt für Einsteiger bis ambitionierte Crews"];
+  return <>
+      <Meta title={m.title} description={m.description} keywords={m.keywords} canonical={m.canonical()} ogImage={m.ogImage} />
+      <JsonLd json={BREADCRUMB_TURKEY.marmaris} />
+      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-[60vh] bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center overflow-hidden">
@@ -261,6 +271,7 @@ const Marmaris = () => {
 
         <TopDestinations />
       </div>
-    </div>;
+    </div>
+    </>;
 };
 export default Marmaris;

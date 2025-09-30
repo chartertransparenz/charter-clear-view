@@ -8,6 +8,10 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
+import { META } from "@/seo/meta.config";
+import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -23,6 +27,8 @@ const Turkey = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const m = META.tuerkei;
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Östliches Mittelmeer" },
@@ -75,8 +81,17 @@ const Turkey = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+    <>
+      <Meta
+        title={m.title}
+        description={m.description}
+        keywords={m.keywords}
+        canonical={m.canonical()}
+        ogImage={m.ogImage}
+      />
+      <JsonLd json={BREADCRUMB_TURKEY.tuerkei} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -551,6 +566,7 @@ const Turkey = () => {
         <TopDestinations />
       </div>
     </div>
+    </>
   );
 };
 

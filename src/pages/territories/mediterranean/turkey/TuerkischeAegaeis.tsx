@@ -16,11 +16,17 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
+import { META } from "@/seo/meta.config";
+import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 
 const TuerkischeAegaeis = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const m = META.tuerkischeaegaeis;
 
   const quickFacts = [
     { icon: MapPin, label: "Lage", value: "Türkische Ägäis" },
@@ -69,8 +75,11 @@ const TuerkischeAegaeis = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navigation />
+    <>
+      <Meta title={m.title} description={m.description} keywords={m.keywords} canonical={m.canonical()} ogImage={m.ogImage} />
+      <JsonLd json={BREADCRUMB_TURKEY.tuerkischeAegaeis} />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
@@ -236,6 +245,7 @@ const TuerkischeAegaeis = () => {
         <TopDestinations />
       </div>
     </div>
+    </>
   );
 };
 

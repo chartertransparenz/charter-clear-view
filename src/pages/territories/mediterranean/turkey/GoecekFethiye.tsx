@@ -8,11 +8,17 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
+import { Meta } from "@/seo/Meta";
+import { JsonLd } from "@/seo/JsonLd";
+import { META } from "@/seo/meta.config";
+import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 
 const GoecekFethiye = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const m = META.gocekFethiye;
 
   const quickFacts = [
     {
@@ -49,8 +55,11 @@ const GoecekFethiye = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
-      <Navigation />
+    <>
+      <Meta title={m.title} description={m.description} keywords={m.keywords} canonical={m.canonical()} ogImage={m.ogImage} />
+      <JsonLd json={BREADCRUMB_TURKEY.gocekFethiye} />
+      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
+        <Navigation />
       
       {/* Header */}
       <div className="relative h-[60vh] bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center overflow-hidden">
@@ -410,6 +419,7 @@ const GoecekFethiye = () => {
         <TopDestinations />
       </div>
     </div>
+    </>
   );
 };
 
