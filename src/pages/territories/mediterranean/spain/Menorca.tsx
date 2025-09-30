@@ -178,122 +178,259 @@ const Menorca = () => {
 
           {/* Main Content */}
           <div className="max-w-4xl mx-auto mb-16 space-y-8">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold mb-4">Yachtcharter Menorca: Die Unberührte Perle der Balearen</h2>
-              <p className="text-xl text-muted-foreground">
-                Ruhiger & familiärer als Mallorca & Ibiza
-              </p>
-            </div>
-            
             <div className="prose prose-lg max-w-none">
+              <h2 className="text-4xl font-bold mb-6">Yachtcharter Menorca – entspanntes Inselhopping zwischen Nordküste & Südbuchten</h2>
+              
               <p className="text-lg leading-relaxed mb-6">
-                Menorca ist die östlichste und zweitgrößte Baleareninsel, bekannt für ihre unberührte Natur und ihre entspannte Atmosphäre. Menorca wurde von der UNESCO zum Biosphärenreservat erklärt und bietet eine Fülle von unberührten Stränden (Calas) und eine reiche Flora und Fauna. Die Insel ist ruhiger und weniger touristisch als Mallorca oder Ibiza.
+                Menorca ist das ruhige Juwel der Balearen: türkisblaues Wasser, feinsandige Calas im Süden, wildromantische Nordküste mit rötlichen Klippen, dazu historische Städte und eine maritime Kultur, die seit Jahrhunderten vom Meer lebt. Ideale Ausgangspunkte für Ihren Törn sind Maó/Mahón – einer der größten Naturhäfen des Mittelmeers – sowie Ciutadella im Westen. Auch Fornells (Norden) und Addaia eignen sich hervorragend als Zwischen- oder Startstopp.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Mahón & Ciutadella - Zwei Charakter-Hauptstädte</h3>
               <p className="mb-6">
-                <strong>Mahón (Port de Maó)</strong> im Osten ist der größte Naturhafen im Mittelmeer und einer der größten in Europa. Der fjordartige Hafen erstreckt sich über 5 Kilometer ins Landesinnere und bietet exzellente Marinas sowie Schutz vor fast allen Windrichtungen. Die Stadt selbst ist charmant mit britisch geprägter Architektur aus der Kolonialzeit.
+                Ob Segelyacht, Katamaran oder Motorboot, Bareboat oder mit Skipper: Auf Menorca finden Crews kurze Distanzen, viele sichere Ankerplätze mit Sandgrund und eine Infrastruktur, die entspanntes, genussvolles Segeln Menorca ermöglicht.
               </p>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Revierüberblick: Küsten & Charakter</h3>
+              
+              <h4 className="text-xl font-semibold mt-6 mb-3">Südküste (Cala Galdana, Cala Macarella, Son Saura, Binibèquer)</h4>
               <p className="mb-6">
-                <strong>Ciutadella</strong> im Westen ist die ehemalige Hauptstadt Menorcas und verzaubert mit ihrer mittelalterlichen Altstadt, engen Gassen und dem malerischen Hafen. Der Naturhafen ist enger als Mahón, aber ebenso charmant und ideal für einen Stadtbummel.
+                Helle Sandbuchten mit smaragdgrünem Wasser, meist guter Ankergrund, kurze Schläge zwischen den Calas – ideal für Badestopps und Familien.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Die Traumhaften Südküsten-Calas</h3>
-              <p className="mb-4">
-                Die Südküste Menorcas ist gesäumt von atemberaubenden Calas - kleine geschützte Buchten mit weißem Sand und türkisfarbenem Wasser:
+              <h4 className="text-xl font-semibold mt-6 mb-3">Nordküste (Fornells, Cavalleria, Algaiarens/La Vall)</h4>
+              <p className="mb-6">
+                Länger offen zum Tramontana, rauer und ursprünglicher Reiz mit Felsformationen, Dünen und einsamen Ankerplätzen. Fornells-Bucht bietet hervorragenden Schutz und Bojen.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Macarella & Macarelleta</h4>
-                    <p className="text-sm text-gray-600">Die berühmtesten Buchten Menorcas mit puderzuckerweißem Sand und kristallklarem Wasser.</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Mitjana</h4>
-                    <p className="text-sm text-gray-600">Geschützte Bucht mit türkisblauem Wasser, ideal zum Ankern und Schwimmen.</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Turqueta</h4>
-                    <p className="text-sm text-gray-600">Namensgebend für ihre türkisblaue Farbe - ein Paradies für Schnorchler.</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Cala Galdana</h4>
-                    <p className="text-sm text-gray-600">Eine der größten und geschütztesten Buchten mit Sandstrand und Infrastruktur.</p>
-                  </CardContent>
-                </Card>
+              <h4 className="text-xl font-semibold mt-6 mb-3">Osten (Maó/Mahón & Es Castell/Cales Fonts)</h4>
+              <p className="mb-6">
+                Historischer Naturhafen mit moderner Marina-Infrastruktur, perfekte Basis für Proviantierung, Technik & Cityflair.
+              </p>
+
+              <h4 className="text-xl font-semibold mt-6 mb-3">Westen (Ciutadella & Cala en Bosch)</h4>
+              <p className="mb-6">
+                Mediterrane Altstadt, lebhafte Gastronomie, kurze Wege zu Stränden; kleinere Marinas/Anleger als gemütliche Hubs.
+              </p>
+
+              <p className="mb-6">
+                <strong>Tipp Bootswahl:</strong> Katamarane sind beliebt (stabil, geräumig, geringer Tiefgang), aber nicht Pflicht. Monohulls punkten mit Segelgefühl und „Spaß am Schlag". Motorboote erlauben flexible Tagesrouten. Entscheidend sind Crewgröße, Komfortwunsch und Törnprofil.
+              </p>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">7-Tage-Törnvorschlag ab Maó/Mahón (anpassbar für Segelyacht, Katamaran & Motorboot)</h3>
+              
+              <div className="space-y-3 mb-8">
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 1 – Check-in Mahón → Es Grau (6–8 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Einschiffen, Sicherheitsbriefing, kurzer Einsegler in die geschützte Bucht Es Grau. Ankern auf Sand, erster Sundowner, ruhige Nacht.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 2 – Es Grau → Fornells (12–16 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Kurs Nord. Je nach Bedingungen Badestopp an der Illa d'en Colom. In Fornells liegen Sie sicher an Boje/Anker; das Fischerdorf ist bekannt für Hummergerichte und entspanntes Abendausgehen.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 3 – Fornells → Cala Pregonda/Cavalleria → Algaiarens (18–22 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Nordküsten-Highlights mit kupferfarbenen Felsen und klarem Wasser. Wetter schauen: Bei kräftiger Tramontana lieber in Fornells bleiben oder Schutzbuchten wählen.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 4 – Algaiarens → Ciutadella (10–14 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Kurzer Schlag zur Altstadt. Marina-Stopp für Landgang, Proviant, Kultur und Tapas in den Gassen. Abends Hafenambiente genießen.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 5 – Ciutadella → Südküsten-Runde: Son Saura → Cala Macarella/Macarelleta → Cala Galdana (14–20 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Postkartenreif: helle Sandstrände, türkisfarbenes Becken. Früh ankommen – beliebte Ankerplätze! Auf Sand ankern, Posidonia freihalten.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 6 – Cala Galdana → Binigaus/Es Talaier → Binibèquer (18–24 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Gemütliches Inselhopping die Südküste entlang. Binibèquer punktet mit Dorfcharme und klaren Wasserfarben.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="font-semibold mb-1">Tag 7 – Binibèquer → Mahón (8–12 sm)</h4>
+                  <p className="text-sm text-gray-600">
+                    Letzter Badestopp in einer nahegelegenen Cala, danach Rückkehr nach Mahón, Ausklarieren und Stadtbummel am Naturhafen.
+                  </p>
+                </div>
               </div>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">UNESCO-Biosphärenreservat</h3>
+              <div className="border border-gray-300 p-6 rounded-lg mb-8">
+                <p className="text-black">
+                  <strong>Variante bei stärkerem Nordwind:</strong> Mehr Nächte Fornells/Mahón, die Südküste früher anlaufen; die Südbuchten bieten bei Tramontana oft die besseren Bedingungen.
+                </p>
+              </div>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Marinas, Liegeplätze & Service</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Mahón / Port de Maó:</strong> Mehrere Marinas/Pontoons entlang des Naturhafens; Fuel Dock, Technikbetriebe, Segelmacher, Supermärkte in Stegnähe.</li>
+                <li><strong>Ciutadella:</strong> Zentrale Lage, abends lebhaft; Reservierung in Saison zu empfehlen.</li>
+                <li><strong>Fornells:</strong> Großzügige, geschützte Bucht mit Bojenfeldern, Dinghy-freundlich, ruhige Nächte.</li>
+                <li><strong>Addaia:</strong> Natürliche, gut geschützte Einfahrt; kleinere Infrastruktur, ideal als sicherer Nord-Stützpunkt.</li>
+                <li><strong>Cala en Bosch & Es Castell (Cales Fonts):</strong> Gemütliche Anleger, Gastronomie und maritime Atmosphäre.</li>
+              </ul>
+
               <p className="mb-6">
-                Die gesamte Insel Menorca wurde 1993 von der UNESCO zum Biosphärenreservat erklärt. Dies bedeutet besonders strenge Umweltschutzauflagen, was Menorca seine unberührte Natur bewahrt hat. Beim Ankern ist besonders darauf zu achten, Posidonia-Seegraswiesen zu meiden und nur auf Sand zu ankern.
+                Flotte & Optionen: Breite Auswahl an Segelyachten, Katamaranen und Motoryachten, Bareboat, Skippered oder Crewed. Für die Hochsaison früh buchen – insbesondere bei Multihulls und Familienlayouts.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Familienfreundlich & Entspannt</h3>
-              <p className="mb-4">
-                Menorca ist das perfekte Segelrevier für Familien und alle, die Ruhe und Natur suchen. Die Distanzen zwischen den Buchten sind kurz, die Gewässer meist gut geschützt, und die Atmosphäre ist entspannt. Keine Mega-Clubs, keine Hektik - nur authentisches balearisches Leben.
+              <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele & nautische Hinweise</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Südbuchten (Son Saura, Turqueta, Macarella, Galdana):</strong> Sandiger Grund mit sehr guter Haltekraft, hervorragendes SUP/Schnorchel-Revier.</li>
+                <li><strong>Nordküste (Pregonda, Cavalleria, Algaiarens):</strong> Ursprünglich und fotogen; auf Schwell & Winddreher achten, notfalls Plan B (Fornells).</li>
+                <li><strong>Es Grau & Illa d'en Colom (Ost):</strong> Flache Sandplateaus, ideal für den ersten/letzten Badestopp.</li>
+                <li><strong>Cala Binibèquer & Punta Prima (SO):</strong> Familienfreundlich, kurze Distanzen zur Marina Mahón.</li>
+                <li><strong>Historische Städte:</strong> Ciutadella (westliches Flair), Mahón (britisch-spanisches Erbe, lange Uferpromenade).</li>
+                <li><strong>Ankerpraxis:</strong> Auf Sand zielen, Kette großzügig stecken (mind. 4–5x Wassertiefe), Halt prüfen (Rückwärtsgang), Sichtcheck mit Maske.</li>
+                <li><strong>Bojen & Schutzgebiete:</strong> In sensiblen Zonen Bojen nutzen; Ankern auf Posidonia (Seegras) ist untersagt.</li>
+                <li><strong>Manöver:</strong> In schmalen Calas vorher Dinghy/Boards sichern, Einfahrten langsam und mit Abstand zu Badenden.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Wetter, Winde & Revier-Eignung</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Tramontana (N/NW):</strong> Charakterwind Menorcas, kann frisch bis hart wehen. Dann bieten Mahón, Fornells und Teile der Südküste guten Schutz.</li>
+                <li><strong>Seebrise (thermisch):</strong> In den Sommermonaten nachmittags oft 8–15 kn – ideal für entspannte Schläge mit Badestopps am Vormittag.</li>
+                <li><strong>Mistral/Levante-Phasen:</strong> Kurzfristige Starkwindfenster möglich; Törn flexibel planen, Kaps früh reffen.</li>
+                <li><strong>Seegang & Beschleunigungszonen:</strong> An exponierten Kaps und Nordbuchten können sich Schwell und Böen aufbauen – konservative Segelwahl und Reffstufen einplanen.</li>
+              </ul>
+
+              <h4 className="text-xl font-semibold mt-6 mb-3">Eignung:</h4>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Einsteiger & Familien:</strong> Sehr gut – kurze Distanzen, viele geschützte Buchten, klare Ankerregeln.</li>
+                <li><strong>Erfahrene Skipper:</strong> Nordküsten-Etappen mit „Seemannsreiz", präzise Törnplanung belohnt mit spektakulären Kulissen und leereren Ankerplätzen.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Umwelt, Regeln & Sicherheit</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Posidonia-Schutz:</strong> Nie auf Seegras ankern, auch die Kette nicht über Posidonia führen. Sandflächen oder Bojen nutzen.</li>
+                <li><strong>Biosphärenreservat:</strong> Menorca steht für nachhaltigen Tourismus – Müllvermeidung, Abwasserentsorgung in Marinas, respektvoller Umgang mit Natur & Lärmgebieten.</li>
+                <li><strong>Sicherheitsstandards:</strong> Charteryachten werden regelmäßig gewartet und führen die vorgeschriebenen Rettungs- und Signalmittel. Ein Skipper-Briefing weist auf Revierbesonderheiten und Notfallkontakte hin.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Anreise & Logistik</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Flug nach Maó (MAH):</strong> In der Saison zahlreiche Direktflüge aus D/AT/CH/FR; kurze Transfers zu den Marinas.</li>
+                <li><strong>Proviantierung:</strong> Supermärkte in Mahón & Ciutadella, kleinere Läden in Küstenorten; auf Wunsch Proviant-Lieferung bis an den Steg (gekühlt/gefrostet).</li>
+                <li><strong>Transfers & Extras:</strong> Privattransfer, Wassersport-Toys (SUP/Kajak), Kinder- und Sicherheitsausrüstung organisieren wir gerne vorab.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Lizenzen & Chartermodelle</h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Bareboat:</strong> Erfordert einen international anerkannten Bootsführerschein (z. B. ICC oder äquivalenter nationaler Schein).</li>
+                <li><strong>Skippered/Crews:</strong> Wenn keine Lizenz oder wenn Komfort im Vordergrund steht.</li>
+                <li><strong>Yachttypen:</strong> Segelyacht, Katamaran, Motorboot – wählen Sie nach Crewgröße, Komfortanspruch und gewünschter Revierstrategie (Ankerbuchten vs. Marinas).</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
+              <p className="mb-6">
+                Mai bis Oktober ist ideal. Mai–Juni und September bieten die beste Balance aus beständigem Wetter, freien Liegeplätzen und Wassertemperaturen. Juli–August sind sonnensicher und lebhaft – früh reservieren (Marinas/Bojen), besonders für Südbuchten.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Wind & Wetter</h3>
-              <p className="mb-4">
-                Menorca genießt ein mediterranes Klima mit heißen Sommern und milden Wintern. Die Segelsaison läuft von Mai bis Oktober. Im Sommer dominieren thermische Winde mit 3-4 Bft. Die Nordküste kann bei Tramuntana (Nordwind) rauer sein - die geschützten Südküsten-Calas sind dann ideal.
+              <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
+              <p className="mb-6">
+                Yachtcharter Menorca bedeutet entschleunigtes Mittelmeer-Feeling: kurze Etappen, sichere Sandankerplätze, eindrucksvolle Nordküste und traumhafte Südbuchten – eingerahmt von Städteflair in Mahón und Ciutadella. Ob Segelyacht, Katamaran oder Motorboot: Das Revier ist zugänglich für Einsteiger, lohnend für Routiniers und dank klarer Umweltregeln nachhaltig zu genießen. Wer flexibel plant und Posidonia respektiert, erlebt eine der schönsten, zugleich ruhigsten Seiten der Balearen.
               </p>
 
-              <h3 className="text-2xl font-bold mt-8 mb-4">Anreise</h3>
-              <p className="mb-4">
-                Der Flughafen Menorca (MAH) liegt zentral bei Mahón und wird von vielen europäischen Städten direkt angeflogen. Von dort erreichen Sie die Marinas in Mahón oder Ciutadella in kurzer Zeit.
+              <p className="mb-6">
+                <strong>Jetzt Yachtcharter Menorca anfragen:</strong> Wir finden die passende Yacht (Bareboat oder mit Skipper), planen Route & Bojen nach Windlage (Nord/Süd), organisieren Transfers & Proviant und teilen Insider-Tipps zu Calas, Restaurants und Landaktivitäten. Kontakt aufnehmen & Wunschtermin sichern!
               </p>
-            </div>
-          </div>
-
-          {/* Ports */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Wichtige Häfen & Marinas</h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {ports.map((port, index) => (
-                <div key={index} className="bg-white p-4 rounded-lg shadow-lg text-center">
-                  <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                  <p className="font-medium text-gray-800">{port}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Highlights */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {highlights.map((highlight, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                    <p className="font-medium text-gray-800">{highlight}</p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
           {/* CTA */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-8 rounded-lg shadow-lg text-center">
-              <h3 className="text-2xl font-bold mb-4">
+          <div className="max-w-4xl mx-auto mt-20">
+            <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
                 Bereit für Menorca?
               </h3>
-              <p className="mb-6 text-blue-100">
-                Entdecken Sie die ruhige Schönheit Menorcas mit ihren unberührten Naturbuchten und authentischem Charme.
+              <p className="text-gray-600 mb-6 text-lg">
+                Erleben Sie entschleunigtes Mittelmeer-Feeling mit kurzen Etappen, sicheren Sandankerplätzen und traumhaften Südbuchten – perfekt für Familien und Naturliebhaber.
               </p>
               <CharterRequestForm>
-                <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
                   Menorca Charter anfragen
                 </Button>
               </CharterRequestForm>
+            </div>
+          </div>
+
+          {/* Top-Destinationen */}
+          <div className="max-w-7xl mx-auto mt-20 mb-16">
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Ihre Top-Destinationen</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+              {/* Kroatien */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Kroatien</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Istrien</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Kvarner</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Zadar</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Dalmatien ab Split</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Dubrovnik</Link></li>
+                </ul>
+              </div>
+
+              {/* Griechenland */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Griechenland</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-gray-700 hover:text-blue-600">Kykladen</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="text-gray-700 hover:text-blue-600">Ionische Inseln</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/dodekanes" className="text-gray-700 hover:text-blue-600">Dodekanes</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/sporaden" className="text-gray-700 hover:text-blue-600">Sporaden</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-gray-700 hover:text-blue-600">Athen & Saronischer Golf</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland" className="text-gray-700 hover:text-blue-600">Nordgriechenland</Link></li>
+                </ul>
+              </div>
+
+              {/* Italien */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Italien</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Sardinien</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Costa Smeralda</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Sizilien</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Toskana / Elba</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Amalfiküste</Link></li>
+                </ul>
+              </div>
+
+              {/* Spanien */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Spanien</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/spanien/balearen" className="text-gray-700 hover:text-blue-600">Balearen</Link></li>
+                  <li><Link to="/reviere/mittelmeer/spanien" className="text-gray-700 hover:text-blue-600">Costa Brava</Link></li>
+                  <li><Link to="/reviere/mittelmeer/spanien" className="text-gray-700 hover:text-blue-600">Valencia</Link></li>
+                  <li><Link to="/reviere/mittelmeer/spanien/kanaren" className="text-gray-700 hover:text-blue-600">Kanaren</Link></li>
+                </ul>
+              </div>
+
+              {/* Karibik */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Karibik</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">British Virgin Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">US Virgin Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">Leeward Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">Windward Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">Kuba</Link></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
