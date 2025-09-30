@@ -54,11 +54,19 @@
   force = true
 
 # Croatia prerendered routes - SERVE STATIC HTML
+# Hub page first (before wildcard)
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien"
+  to = "/reviere/mittelmeer/kroatien/index.html"
+  status = 200
+
+# Specific routes
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien/dubrovnik"
   to = "/reviere/mittelmeer/kroatien/dubrovnik/index.html"
   status = 200
 
+# Wildcard for all other Croatia subpages
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien/*"
   to = "/reviere/mittelmeer/kroatien/:splat/index.html"
