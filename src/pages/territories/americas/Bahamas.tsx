@@ -10,7 +10,24 @@ import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
 import caribbean from "@/assets/caribbean.jpg";
+import { Meta } from "@/seo/Meta";
+import { META } from "@/seo/meta.config";
+import { JsonLd } from "@/seo/JsonLd";
+
 const Bahamas = () => {
+  const m = META.bahamas;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
+      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
+      { "@type": "ListItem", "position": 4, "name": "Bahamas", "item": "https://chartertransparenz.de/reviere/karibik/bahamas" }
+    ]
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,6 +60,13 @@ const Bahamas = () => {
   const sailingHighlights = ["Türkisfarbenes, kristallklares Wasser", "Unberührte Sandbänke und Cays", "Line-of-sight Navigation", "Schwimmende Schweine auf Big Major Cay", "Perfekte Ankerplätze und Buchten", "Warmes, tropisches Klima", "Exzellente Schnorchel- und Tauchgebiete"];
   const popularRoutes = ["Nassau - Rose Island - Green Cay", "Exumas: Georgetown - Staniel Cay - Compass Cay", "Nassau - Highbourne Cay - Normans Cay", "Eleuthera: Governor's Harbor - Spanish Wells"];
   return <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Meta 
+        title={m.title}
+        description={m.description}
+        canonical={m.canonical()}
+        ogImage={m.ogImage}
+      />
+      <JsonLd json={breadcrumbJsonLd} />
       <Navigation />
       
       {/* Header */}

@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts"
+  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -126,6 +126,25 @@
   status = 301
   force = true
 
+# Caribbean legacy URLs - NEW canonical structure
+[[redirects]]
+  from = "/reviere/karibik/britische-jungferninseln"
+  to = "/reviere/karibik/bvi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/us-jungferninseln"
+  to = "/reviere/karibik/usvi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/us-virgin-islands"
+  to = "/reviere/karibik/usvi"
+  status = 301
+  force = true
+
 # Croatia prerendered routes - SERVE STATIC HTML
 # Hub page first (before wildcard)
 [[redirects]]
@@ -195,6 +214,17 @@
 [[redirects]]
   from = "/reviere/atlantik/kanaren/*"
   to = "/reviere/atlantik/kanaren/:splat/index.html"
+  status = 200
+
+# Caribbean prerendered routes - SERVE STATIC HTML
+[[redirects]]
+  from = "/reviere/karibik"
+  to = "/reviere/karibik/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/karibik/*"
+  to = "/reviere/karibik/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)

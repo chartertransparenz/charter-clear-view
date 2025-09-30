@@ -148,11 +148,14 @@ import USVirginIslands from "./pages/territories/caribbean/USVirginIslands";
 import LeewardIslands from "./pages/territories/caribbean/LeewardIslands";
 import WindwardIslands from "./pages/territories/caribbean/WindwardIslands";
 import Cuba from "./pages/territories/caribbean/Cuba";
+import Antigua from "./pages/territories/caribbean/Antigua";
+import StMartin from "./pages/territories/caribbean/StMartin";
+import StVincentGrenadinen from "./pages/territories/caribbean/StVincentGrenadinen";
 
 // Caribbean Charter Locations
 import Tortola from "./pages/territories/caribbean/charter-locations/Tortola";
 import StThomas from "./pages/territories/caribbean/charter-locations/StThomas";
-import Antigua from "./pages/territories/caribbean/charter-locations/Antigua";
+import AntiguaCharterLocation from "./pages/territories/caribbean/charter-locations/Antigua";
 import Martinique from "./pages/territories/caribbean/charter-locations/Martinique";
 import Havanna from "./pages/territories/caribbean/charter-locations/Havanna";
 
@@ -271,11 +274,24 @@ function App() {
             <Route path="/reviere/atlantik/kanaren/lanzarote" element={<Lanzarote />} />
             <Route path="/reviere/atlantik/kanaren/fuerteventura" element={<Fuerteventura />} />
 
-            {/* Caribbean routes */}
+            {/* Caribbean routes - NEW canonical URLs */}
             <Route path="/reviere/karibik" element={<Caribbean />} />
-            <Route path="/reviere/karibik/britische-jungferninseln" element={<BritishVirginIslands />} />
-            <Route path="/reviere/karibik/us-jungferninseln" element={<USVirginIslands />} />
-            <Route path="/reviere/karibik/us-virgin-islands" element={<USVirginIslands />} />
+            <Route path="/reviere/karibik/bvi" element={<BritishVirginIslands />} />
+            <Route path="/reviere/karibik/usvi" element={<USVirginIslands />} />
+            <Route path="/reviere/karibik/bahamas" element={<Bahamas />} />
+            <Route path="/reviere/karibik/antigua" element={<Antigua />} />
+            <Route path="/reviere/karibik/st-martin" element={<StMartin />} />
+            <Route path="/reviere/karibik/st-vincent-grenadinen" element={<StVincentGrenadinen />} />
+
+            {/* Redirects from old Caribbean URLs */}
+            <Route path="/reviere/karibik/britische-jungferninseln" 
+                   element={<Navigate to="/reviere/karibik/bvi" replace />} />
+            <Route path="/reviere/karibik/us-jungferninseln" 
+                   element={<Navigate to="/reviere/karibik/usvi" replace />} />
+            <Route path="/reviere/karibik/us-virgin-islands" 
+                   element={<Navigate to="/reviere/karibik/usvi" replace />} />
+
+            {/* Old routes kept for backward compatibility */}
             <Route path="/reviere/karibik/leeward-inseln" element={<LeewardIslands />} />
             <Route path="/reviere/karibik/windward-inseln" element={<WindwardIslands />} />
             <Route path="/reviere/karibik/kuba" element={<Cuba />} />
@@ -283,7 +299,7 @@ function App() {
             {/* Caribbean Charter Location routes */}
             <Route path="/reviere/karibik/charter-standorte/tortola" element={<Tortola />} />
             <Route path="/reviere/karibik/charter-standorte/st-thomas" element={<StThomas />} />
-            <Route path="/reviere/karibik/charter-standorte/antigua" element={<Antigua />} />
+            <Route path="/reviere/karibik/charter-standorte/antigua" element={<AntiguaCharterLocation />} />
             <Route path="/reviere/karibik/charter-standorte/martinique" element={<Martinique />} />
             <Route path="/reviere/karibik/charter-standorte/havanna" element={<Havanna />} />
 
