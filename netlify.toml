@@ -60,13 +60,7 @@
   to = "/reviere/mittelmeer/kroatien/index.html"
   status = 200
 
-# Specific routes
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/dubrovnik"
-  to = "/reviere/mittelmeer/kroatien/dubrovnik/index.html"
-  status = 200
-
-# Wildcard for all other Croatia subpages
+# Wildcard for all Croatia subpages (istrien, kvarner, zadar, dalmatien-split, dubrovnik)
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien/*"
   to = "/reviere/mittelmeer/kroatien/:splat/index.html"
