@@ -434,7 +434,7 @@ const Mallorca = () => {
                 <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Italien</h3>
                 <ul className="space-y-2">
                   <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Sardinien</Link></li>
-                  <li><Link to="/reviere/mittelmeer/italien" className="text-blue-600 hover:text-blue-800 underline">Costa Smeralda</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Costa Smeralda</Link></li>
                   <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Sizilien</Link></li>
                   <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Toskana / Elba</Link></li>
                   <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Amalfiküste</Link></li>
