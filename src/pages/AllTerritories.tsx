@@ -9,6 +9,7 @@ import { ArrowLeft, ChevronRight } from 'lucide-react';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import maledivenImage from '@/assets/territories/malediven.jpg';
+import hollandImage from '@/assets/territories/holland.jpg';
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -203,7 +204,7 @@ export default function AllTerritories() {
       name: 'Niederlande',
       flag: '🇳🇱',
       route: '/reviere/nord-europa/nordsee/holland',
-      image: '/placeholder.svg',
+      image: hollandImage,
       hasPage: true
     },
     {
