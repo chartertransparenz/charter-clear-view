@@ -8,6 +8,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, ChevronRight } from 'lucide-react';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
+import maledivenImage from '@/assets/territories/malediven.jpg';
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -160,7 +161,7 @@ export default function AllTerritories() {
       name: 'Maldiven',
       flag: '🇲🇻',
       route: '/reviere/indischer-ozean/malediven',
-      image: '/placeholder.svg',
+      image: maledivenImage,
       hasPage: true
     },
     {
