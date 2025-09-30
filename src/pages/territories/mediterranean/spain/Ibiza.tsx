@@ -10,6 +10,7 @@ import TerritoryMap from "@/components/TerritoryMap";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
+import ibizaHeader from "@/assets/ibiza-header.jpg";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Ibiza = () => {
   const m = META.ibiza;
@@ -76,7 +77,12 @@ const Ibiza = () => {
         
         {/* Header */}
         <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-          <img src="/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.png" alt="Ibiza Yachtcharter - Die weiße Insel" className="w-full h-full object-cover" />
+          <img 
+            src={ibizaHeader} 
+            alt="Yachtcharter Ibiza - Segelboote vor Es Vedrà bei Sonnenuntergang" 
+            title="Yachtcharter Ibiza - Blick auf den magischen Felsen Es Vedrà mit Segelbooten"
+            className="w-full h-full object-cover" 
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
