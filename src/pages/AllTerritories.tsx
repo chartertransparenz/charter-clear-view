@@ -10,6 +10,8 @@ import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import maledivenImage from '@/assets/territories/malediven.jpg';
 import hollandImage from '@/assets/territories/holland.jpg';
+import portugalImage from '@/assets/territories/portugal.jpg';
+import guadeloupeImage from '@/assets/territories/guadeloupe.jpg';
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -120,7 +122,7 @@ export default function AllTerritories() {
       name: 'Guadeloupe',
       flag: '🇬🇵',
       route: null,
-      image: '/placeholder.svg',
+      image: guadeloupeImage,
       hasPage: false
     },
     {
@@ -218,7 +220,7 @@ export default function AllTerritories() {
       name: 'Portugal',
       flag: '🇵🇹',
       route: '/reviere/atlantik/azoren',
-      image: '/placeholder.svg',
+      image: portugalImage,
       hasPage: true
     },
     {
