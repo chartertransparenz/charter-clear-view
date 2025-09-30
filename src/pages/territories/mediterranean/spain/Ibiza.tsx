@@ -171,7 +171,7 @@ const Ibiza = () => {
             <TerritoryMap 
               region="Ibiza"
               center={{ lat: 38.9067, lng: 1.4206 }}
-              zoom={10}
+              zoom={8}
               maptype="satellite"
             />
           </div>
