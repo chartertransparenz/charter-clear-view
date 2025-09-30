@@ -10,6 +10,7 @@ import TerritoryMap from "@/components/TerritoryMap";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
+import menorcaHeader from "@/assets/menorca-header.jpg";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -78,8 +79,9 @@ const Menorca = () => {
         {/* Header */}
         <div className="relative h-64 md:h-96 overflow-hidden mt-20">
           <img
-            src="/lovable-uploads/16f1d4fc-5a9e-4edc-b6bd-cfd79999a60c.png"
-            alt="Menorca Yachtcharter - Cala Macarella"
+            src={menorcaHeader}
+            alt="Yachtcharter Menorca - Türkisblaue Bucht mit Segelbooten und grüner Küstenlandschaft"
+            title="Yachtcharter Menorca - Naturhafen mit kristallklarem Wasser"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
