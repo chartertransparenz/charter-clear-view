@@ -382,14 +382,14 @@ const Mallorca = () => {
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="max-w-4xl mx-auto">
+          {/* CTA - Jetzt Mallorca Charter anfragen */}
+          <div className="max-w-4xl mx-auto mt-16">
             <div className="bg-gradient-to-r from-blue-50 to-slate-50 border border-blue-200 p-8 rounded-lg text-center">
               <h3 className="text-2xl font-bold mb-4 text-gray-800">
-                Bereit für Mallorca?
+                Jetzt Yachtcharter Mallorca anfragen
               </h3>
               <p className="text-gray-600 mb-6 text-lg">
-                Ob Bareboat, Skippered, Segelyacht, Katamaran oder Motorboot – wir beraten zu Yachtwahl, Routenplanung, Bojen-/Liegeplatz-Reservierungen (Cabrera!), Transfers und Proviantierung. Sichern Sie sich Ihren Wunschtermin für die Hauptsaison Mai–Oktober.
+                Ob Bareboat, Skippered, Segelyacht, Katamaran oder Motorboot – wir beraten zu Yachtwahl, Routenplanung, Bojen-/Liegeplatz-Reservierungen (Cabrera!), Transfers und Proviantierung. Sichern Sie sich Ihren Wunschtermin für die Hauptsaison Mai–Oktober und starten Sie Ihren persönlichen Traumtörn ab Palma, Andratx, Sóller, Alcúdia oder Cala d'Or.
               </p>
               <CharterRequestForm>
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium" size="lg">
