@@ -160,11 +160,11 @@ const Spain = () => {
           <div className="prose prose-lg max-w-none">
             <h3 id="warum-spanien-klassiker" className="text-2xl font-bold mt-8 mb-4">Warum Spanien ein Segelklassiker ist</h3>
             <p className="text-lg leading-relaxed mb-6">
-              Spanien vereint wie kein anderes Land die perfekte Balance zwischen mediterranem Lifestyle, erstklassiger nautischer Infrastruktur und endloser Vielfalt. Die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> bilden das Herzstück des spanischen Chartererlebnisses – mit Mallorca als zentralem Dreh- und Angelpunkt für unvergessliche Segeltörns. Hier finden Sie alles, was das Seglerherz begehrt: beständige Winde, kristallklare Buchten, weltklasse Marinas und das unvergleichliche spanische Lebensgefühl.
+              Spanien vereint wie kein anderes Land die perfekte Balance zwischen mediterranem Lifestyle, erstklassiger nautischer Infrastruktur und endloser Vielfalt. Die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> bilden das Herzstück des spanischen Chartererlebnisses – mit <Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorca</Link> als zentralem Dreh- und Angelpunkt für unvergessliche Segeltörns. Hier finden Sie alles, was das Seglerherz begehrt: beständige Winde, kristallklare Buchten, weltklasse Marinas und das unvergleichliche spanische Lebensgefühl.
             </p>
             
             <p className="text-lg leading-relaxed mb-6">
-              Von Palma de Mallorca aus erschließt sich Ihnen ein Archipel aus vier Hauptinseln – Mallorca, Ibiza, Menorca und Formentera – jede mit eigenem Charakter. Kurze Distanzen zwischen den Inseln, perfekte Ankerbuchten und eine Infrastruktur, die keine Wünsche offen lässt, machen die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> zum idealen Revier für Einsteiger wie Profis. Das ganzjährig milde Klima ermöglicht Segelsaison von März bis November.
+              Von Palma de Mallorca aus erschließt sich Ihnen ein Archipel aus vier Hauptinseln – <Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorca</Link>, <Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibiza</Link>, <Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorca</Link> und Formentera – jede mit eigenem Charakter. Kurze Distanzen zwischen den Inseln, perfekte Ankerbuchten und eine Infrastruktur, die keine Wünsche offen lässt, machen die <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link> zum idealen Revier für Einsteiger wie Profis. Das ganzjährig milde Klima ermöglicht Segelsaison von März bis November.
             </p>
 
             <p className="text-lg leading-relaxed mb-8">
@@ -195,7 +195,7 @@ const Spain = () => {
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Beliebte Törnziele – Die Vielfalt der <Link to="/reviere/mittelmeer/spanien/balearen" className="text-blue-600 hover:text-blue-800 underline">Balearen</Link></h3>
             
-            <h4 className="text-xl font-semibold mt-6 mb-4">Mallorca – Buchten für jeden Geschmack</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorca</Link> – Buchten für jeden Geschmack</h4>
             <p className="mb-4">
               Mallorca bietet über 200 Buchten und Strände – von dramatischen Felsenküsten bis zu karibisch anmutenden Sandbuchten:
             </p>
@@ -231,7 +231,7 @@ const Spain = () => {
               </p>
             </div>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">Ibiza – Zwischen Party und Natur</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibiza</Link> – Zwischen Party und Natur</h4>
             <p className="mb-6">
               Ibiza vereint pulsierendes Nachtleben mit ursprünglicher Natur. Die UNESCO-Weltkulturerbe-Altstadt Dalt Vila steht im Kontrast zu weltberühmten Beach Clubs. Cala Salada und Cala Conta bieten spektakuläre Sonnenuntergänge, während Cala Jondal für entspannte Momente sorgt.
             </p>
@@ -241,7 +241,7 @@ const Spain = () => {
               Die kleinste bewohnte Baleareninsel bezaubert mit puderzuckerweißen Stränden und türkisfarbenem Wasser. Playa de Ses Illetes gilt als einer der schönsten Strände Europas, während Cala Saona und Es Pujols perfekte Ankerplätze bieten.
             </p>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">Menorca – UNESCO-Biosphärenreservat</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorca</Link> – UNESCO-Biosphärenreservat</h4>
             <p className="mb-6">
               Menorca überrascht mit unberührter Natur und entspannter Atmosphäre. Die Südküste ist gesäumt von Traumstränden wie Cala Macarella, Cala Mitjana und Cala Turqueta – allesamt perfekt zum Ankern und Schwimmen.
             </p>

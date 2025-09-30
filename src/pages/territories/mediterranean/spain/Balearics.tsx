@@ -186,16 +186,16 @@ const Balearics = () => {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-6">
-              Die Balearen – ein Name, der Sehnsüchte weckt. Mallorca, Ibiza, Menorca und Formentera bilden ein Archipel, das wie kein anderes für mediterrane Lebensfreude, atemberaubende Natur und unvergessliche Segelerlebnisse steht. Ein Yachtcharter auf den Balearen ist eine Einladung, in eine Welt einzutauchen, in der kristallklares Wasser auf berühmte Buchten, exzellente Marinas auf charmante Altstädte und entspanntes Lebensgefühl auf einen Hauch von Glamour trifft.
+              Die Balearen – ein Name, der Sehnsüchte weckt. <Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorca</Link>, <Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibiza</Link>, <Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorca</Link> und Formentera bilden ein Archipel, das wie kein anderes für mediterrane Lebensfreude, atemberaubende Natur und unvergessliche Segelerlebnisse steht. Ein Yachtcharter auf den Balearen ist eine Einladung, in eine Welt einzutauchen, in der kristallklares Wasser auf berühmte Buchten, exzellente Marinas auf charmante Altstädte und entspanntes Lebensgefühl auf einen Hauch von Glamour trifft.
             </p>
             
             <p className="text-lg leading-relaxed mb-8">
-              Hier, im Herzen des westlichen Mittelmeers, finden Segler und Motorbootfahrer ein Paradies, das für jeden Geschmack das Richtige bereithält. Ob Sie die pulsierende Energie Ibizas erleben, die unberührte Ruhe Menorcas genießen oder die vielseitige Schönheit Mallorcas entdecken möchten – die Balearen bieten eine perfekte Kombination aus beständigen Sommerwinden, hervorragender Infrastruktur und unzähligen Möglichkeiten für unvergessliche Landgänge. Lassen Sie sich von der spanischen Gastfreundschaft verzaubern und erleben Sie die Freiheit des Meeres.
+              Hier, im Herzen des westlichen Mittelmeers, finden Segler und Motorbootfahrer ein Paradies, das für jeden Geschmack das Richtige bereithält. Ob Sie die pulsierende Energie <Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibizas</Link> erleben, die unberührte Ruhe <Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorcas</Link> genießen oder die vielseitige Schönheit <Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorcas</Link> entdecken möchten – die Balearen bieten eine perfekte Kombination aus beständigen Sommerwinden, hervorragender Infrastruktur und unzähligen Möglichkeiten für unvergessliche Landgänge. Lassen Sie sich von der spanischen Gastfreundschaft verzaubern und erleben Sie die Freiheit des Meeres.
             </p>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Mallorca: Die Königin der Balearen – Ihr zentraler Dreh- und Angelpunkt</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4"><Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorca</Link>: Die Königin der Balearen – Ihr zentraler Dreh- und Angelpunkt</h3>
             <p className="text-lg leading-relaxed mb-6">
-              Mallorca, die größte der Baleareninseln, ist nicht nur das wichtigste Charterziel in Spanien, sondern auch ein Segelrevier von Weltklasse. Die Insel bietet eine schier unglaubliche Vielfalt an Landschaften, von den majestätischen Bergen der Serra de Tramuntana im Westen bis zu den weiten Sandstränden im Osten und Süden.
+              <Link to="/reviere/mittelmeer/spanien/balearen/mallorca" className="text-blue-600 hover:text-blue-800 underline">Mallorca</Link>, die größte der Baleareninseln, ist nicht nur das wichtigste Charterziel in Spanien, sondern auch ein Segelrevier von Weltklasse. Die Insel bietet eine schier unglaubliche Vielfalt an Landschaften, von den majestätischen Bergen der Serra de Tramuntana im Westen bis zu den weiten Sandstränden im Osten und Süden.
             </p>
 
             <div className="border border-gray-300 p-6 rounded-lg mb-8">
@@ -334,12 +334,12 @@ const Balearics = () => {
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4">Die anderen Balearen: Ibiza, Menorca und Formentera</h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4">Die anderen Balearen: <Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibiza</Link>, <Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorca</Link> und Formentera</h3>
             <p className="mb-4">Jede der anderen Baleareninseln hat ihren eigenen Reiz und ist ein lohnendes Ziel für einen Yachtcharter.</p>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">Ibiza: Die weiße Insel mit vielen Facetten</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibiza</Link>: Die weiße Insel mit vielen Facetten</h4>
             <p className="mb-6">
-              Ibiza ist weltberühmt für sein pulsierendes Nachtleben, aber die Insel hat auch eine überraschend ruhige und natürliche Seite. Neben den berühmten Beach Clubs und Diskotheken bietet Ibiza unzählige wunderschöne Buchten mit türkisfarbenem Wasser, Pinienwäldern und charmanten Dörfern. Die Altstadt von Ibiza-Stadt (Dalt Vila) ist UNESCO-Weltkulturerbe. Beliebte Ankerplätze sind die Cala Salada, Cala Conta für spektakuläre Sonnenuntergänge, oder die ruhigere Cala Jondal. Von Ibiza aus ist es nur ein kurzer Schlag zur Nachbarinsel Formentera.
+              <Link to="/reviere/mittelmeer/spanien/balearen/ibiza" className="text-blue-600 hover:text-blue-800 underline">Ibiza</Link> ist weltberühmt für sein pulsierendes Nachtleben, aber die Insel hat auch eine überraschend ruhige und natürliche Seite. Neben den berühmten Beach Clubs und Diskotheken bietet Ibiza unzählige wunderschöne Buchten mit türkisfarbenem Wasser, Pinienwäldern und charmanten Dörfern. Die Altstadt von Ibiza-Stadt (Dalt Vila) ist UNESCO-Weltkulturerbe. Beliebte Ankerplätze sind die Cala Salada, Cala Conta für spektakuläre Sonnenuntergänge, oder die ruhigere Cala Jondal. Von Ibiza aus ist es nur ein kurzer Schlag zur Nachbarinsel Formentera.
             </p>
 
             <h4 className="text-xl font-semibold mt-6 mb-4">Formentera: Die Karibik des Mittelmeers</h4>
@@ -347,9 +347,9 @@ const Balearics = () => {
               Formentera ist die kleinste bewohnte Baleareninsel und ein wahres Naturparadies. Bekannt für ihre puderzuckerweißen Strände und das unglaublich klare, türkisfarbene Wasser, das an die Karibik erinnert. Die Insel ist flach und ideal zum Radfahren. Die Playa de Ses Illetes ist ein ikonischer Ankerplatz, aber auch die Cala Saona oder die Bucht von Es Pujols sind sehr beliebt. Das Wasser zwischen Ibiza und Formentera ist teils flach und erfordert Aufmerksamkeit bei der Navigation.
             </p>
 
-            <h4 className="text-xl font-semibold mt-6 mb-4">Menorca: Die ruhige Schönheit</h4>
+            <h4 className="text-xl font-semibold mt-6 mb-4"><Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorca</Link>: Die ruhige Schönheit</h4>
             <p className="mb-6">
-              Menorca ist die östlichste und zweitgrößte Baleareninsel, bekannt für ihre unberührte Natur und ihre entspannte Atmosphäre. Menorca wurde von der UNESCO zum Biosphärenreservat erklärt und bietet eine Fülle von unberührten Stränden (Calas) und eine reiche Flora und Fauna. Die Insel ist ruhiger und weniger touristisch als Mallorca oder Ibiza. Die Südküste Menorcas ist gesäumt von atemberaubenden Calas wie Cala Macarella, Cala Mitjana oder Cala Turqueta, die zum Ankern und Schwimmen einladen. Die beiden Hauptstädte Mahón (im Osten) und Ciutadella (im Westen) verfügen über wunderschöne Naturhäfen, die einen Besuch wert sind.
+              <Link to="/reviere/mittelmeer/spanien/balearen/menorca" className="text-blue-600 hover:text-blue-800 underline">Menorca</Link> ist die östlichste und zweitgrößte Baleareninsel, bekannt für ihre unberührte Natur und ihre entspannte Atmosphäre. Menorca wurde von der UNESCO zum Biosphärenreservat erklärt und bietet eine Fülle von unberührten Stränden (Calas) und eine reiche Flora und Fauna. Die Insel ist ruhiger und weniger touristisch als Mallorca oder Ibiza. Die Südküste Menorcas ist gesäumt von atemberaubenden Calas wie Cala Macarella, Cala Mitjana oder Cala Turqueta, die zum Ankern und Schwimmen einladen. Die beiden Hauptstädte Mahón (im Osten) und Ciutadella (im Westen) verfügen über wunderschöne Naturhäfen, die einen Besuch wert sind.
             </p>
 
             {/* Cala Macarella Image */}
