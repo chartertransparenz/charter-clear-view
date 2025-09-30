@@ -1,167 +1,123 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+// SSG Postbuild Script für Karibik-Routen
+// Generiert statisches HTML mit SEO-Tags für 7 Karibik-Seiten
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { join } from "path";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Base URL for production
-const BASE_URL = 'https://chartertransparenz.de';
-
-// Routes to prerender for Caribbean
-const routes = [
-  { 
-    path: '/reviere/karibik', 
-    title: 'Yachtcharter Karibik – Bahamas, BVI & St. Martin', 
-    description: 'Segeln in der Karibik: Bahamas, Britische Jungferninseln, USVI, St. Martin & Grenadinen. Tropisches Klima & türkisfarbenes Meer.' 
+const ROUTES = [
+  {
+    path: "/reviere/karibik",
+    title: "Yachtcharter Karibik – Bahamas, BVI & St. Martin",
+    desc: "Segeln in der Karibik: Bahamas, Britische Jungferninseln, USVI, St. Martin & Grenadinen. Tropisches Klima & türkisfarbenes Meer.",
+    canon: "https://chartertransparenz.de/reviere/karibik",
+    ogImage: "https://chartertransparenz.de/og/karibik.jpg"
   },
-  { 
-    path: '/reviere/karibik/bahamas', 
-    title: 'Yachtcharter Bahamas – Exumas & Nassau entdecken', 
-    description: 'Segeln auf den Bahamas: Exumas, Nassau & paradiesische Strände. Perfekt für Katamaran-Charter & Inselhüpfen.' 
+  {
+    path: "/reviere/karibik/bahamas",
+    title: "Yachtcharter Bahamas – Exumas & Nassau entdecken",
+    desc: "Segeln auf den Bahamas: Exumas, Nassau & paradiesische Strände. Perfekt für Katamaran-Charter & Inselhüpfen.",
+    canon: "https://chartertransparenz.de/reviere/karibik/bahamas",
+    ogImage: "https://chartertransparenz.de/og/bahamas.jpg"
   },
-  { 
-    path: '/reviere/karibik/bvi', 
-    title: 'Yachtcharter BVI – Britische Jungferninseln', 
-    description: 'Segeln auf den BVI: Tortola, Virgin Gorda & Jost Van Dyke. Karibisches Inselhüpfen in den Britischen Jungferninseln.' 
+  {
+    path: "/reviere/karibik/bvi",
+    title: "Yachtcharter BVI – Britische Jungferninseln",
+    desc: "Segeln auf den BVI: Tortola, Virgin Gorda & Jost Van Dyke. Karibisches Inselhüpfen in den Britischen Jungferninseln.",
+    canon: "https://chartertransparenz.de/reviere/karibik/bvi",
+    ogImage: "https://chartertransparenz.de/og/bvi.jpg"
   },
-  { 
-    path: '/reviere/karibik/usvi', 
-    title: 'Yachtcharter USVI – US Jungferninseln', 
-    description: 'Segeln ab St. Thomas & St. John. Traumhafte Strände & ideale Routen in den US Jungferninseln.' 
+  {
+    path: "/reviere/karibik/usvi",
+    title: "Yachtcharter USVI – US Jungferninseln",
+    desc: "Segeln ab St. Thomas & St. John. Traumhafte Strände & ideale Routen in den US Jungferninseln.",
+    canon: "https://chartertransparenz.de/reviere/karibik/usvi",
+    ogImage: "https://chartertransparenz.de/og/usvi.jpg"
   },
-  { 
-    path: '/reviere/karibik/antigua', 
-    title: 'Yachtcharter Antigua – Segeln im Herzen der Karibik', 
-    description: 'Segeln ab Antigua: English Harbour, Nelson\'s Dockyard & traumhafte Buchten. Perfekt für Karibik-Charter.' 
+  {
+    path: "/reviere/karibik/antigua",
+    title: "Yachtcharter Antigua – Segeln im Herzen der Karibik",
+    desc: "Segeln ab Antigua: English Harbour, Nelson's Dockyard & traumhafte Buchten. Perfekt für Karibik-Charter.",
+    canon: "https://chartertransparenz.de/reviere/karibik/antigua",
+    ogImage: "https://chartertransparenz.de/og/antigua.jpg"
   },
-  { 
-    path: '/reviere/karibik/st-martin', 
-    title: 'Yachtcharter St. Martin – Französische & niederländische Seite', 
-    description: 'Segeln ab St. Martin: Marigot, Orient Bay & Simpson Bay. Idealer Ausgangspunkt für Karibik-Inselhüpfen.' 
+  {
+    path: "/reviere/karibik/st-martin",
+    title: "Yachtcharter St. Martin – Französische & niederländische Seite",
+    desc: "Segeln ab St. Martin: Marigot, Orient Bay & Simpson Bay. Idealer Ausgangspunkt für Karibik-Inselhüpfen.",
+    canon: "https://chartertransparenz.de/reviere/karibik/st-martin",
+    ogImage: "https://chartertransparenz.de/og/st-martin.jpg"
   },
-  { 
-    path: '/reviere/karibik/st-vincent-grenadinen', 
-    title: 'Yachtcharter St. Vincent & Grenadinen – Tobago Cays entdecken', 
-    description: 'Segeln in den Grenadinen: Bequia, Mustique, Tobago Cays & Union Island. Karibik pur.' 
+  {
+    path: "/reviere/karibik/st-vincent-grenadinen",
+    title: "Yachtcharter St. Vincent & Grenadinen – Tobago Cays entdecken",
+    desc: "Segeln in den Grenadinen: Bequia, Mustique, Tobago Cays & Union Island. Karibik pur.",
+    canon: "https://chartertransparenz.de/reviere/karibik/st-vincent-grenadinen",
+    ogImage: "https://chartertransparenz.de/og/st-vincent-grenadinen.jpg"
   }
 ];
 
-function generateBreadcrumbJsonLd(path: string): string {
-  const parts = path.split('/').filter(Boolean);
-  const items = [
-    { name: 'Start', url: `${BASE_URL}/`, position: 1 }
-  ];
-  
-  let currentPath = '';
-  parts.forEach((part, index) => {
-    if (part === 'reviere') {
-      items.push({
-        name: 'Reviere',
-        url: `${BASE_URL}/#reviere`,
-        position: index + 2
-      });
-      return;
-    }
-    
-    currentPath += `/${part}`;
-    
-    let name = part.charAt(0).toUpperCase() + part.slice(1);
-    // Map technical names to display names
-    if (part === 'karibik') name = 'Karibik';
-    if (part === 'bahamas') name = 'Bahamas';
-    if (part === 'bvi') name = 'BVI';
-    if (part === 'usvi') name = 'USVI';
-    if (part === 'antigua') name = 'Antigua';
-    if (part === 'st-martin') name = 'St. Martin';
-    if (part === 'st-vincent-grenadinen') name = 'St. Vincent & Grenadinen';
-    
-    items.push({
-      name,
-      url: `${BASE_URL}/reviere${currentPath}`,
-      position: index + 2
-    });
-  });
-  
-  const breadcrumbList = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map(item => ({
-      '@type': 'ListItem',
-      position: item.position,
-      name: item.name,
-      item: item.url
-    }))
-  };
-  
-  return JSON.stringify(breadcrumbList);
-}
+const escapeHtml = (s: string) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 
-function generateHTML(route: { path: string; title: string; description: string }): string {
-  const canonicalUrl = `${BASE_URL}${route.path}`;
-  const ogImage = `${BASE_URL}/og/karibik.jpg`; // Default OG image, can be customized per route
-  const breadcrumbJsonLd = generateBreadcrumbJsonLd(route.path);
-  
-  return `<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <title>${route.title}</title>
-  <meta name="description" content="${route.description}">
-  
-  <!-- Canonical -->
-  <link rel="canonical" href="${canonicalUrl}">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="${canonicalUrl}">
-  <meta property="og:title" content="${route.title}">
-  <meta property="og:description" content="${route.description}">
-  <meta property="og:image" content="${ogImage}">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="${canonicalUrl}">
-  <meta name="twitter:title" content="${route.title}">
-  <meta name="twitter:description" content="${route.description}">
-  <meta name="twitter:image" content="${ogImage}">
-  
-  <!-- Structured Data - Breadcrumb -->
-  <script type="application/ld+json">
-    ${breadcrumbJsonLd}
-  </script>
-  
-  <script type="module" crossorigin src="/assets/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index.css">
-</head>
-<body>
-  <div id="root"></div>
-</body>
-</html>`;
-}
+const inject = (html: string, r: (typeof ROUTES)[number]) => {
+  // Remove ALL existing head tags to prevent duplicates
+  // NOTE: We do NOT inject Breadcrumb JSON-LD here because it's already 
+  // rendered by the <JsonLd> component in the React pages
+  let h = html
+    // Remove existing title
+    .replace(/<title>[\s\S]*?<\/title>/gi, "")
+    // Remove all meta description tags
+    .replace(/<meta[^>]+name=["']description["'][^>]*>/gi, "")
+    // Remove all canonical links
+    .replace(/<link[^>]+rel=["']canonical["'][^>]*>/gi, "")
+    // Remove all JSON-LD scripts (React will render these)
+    .replace(/<script[^>]+type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "")
+    // Remove all OG tags
+    .replace(/<meta[^>]+property=["']og:[^"']+["'][^>]*>/gi, "")
+    // Remove all Twitter tags
+    .replace(/<meta[^>]+name=["']twitter:[^"']+["'][^>]*>/gi, "");
+
+  // Build new head content (without Breadcrumb JSON-LD)
+  const head = [
+    `<title>${escapeHtml(r.title)}</title>`,
+    `<meta name="description" content="${escapeHtml(r.desc)}">`,
+    `<link rel="canonical" href="${escapeHtml(r.canon)}">`,
+    `<meta property="og:title" content="${escapeHtml(r.title)}">`,
+    `<meta property="og:description" content="${escapeHtml(r.desc)}">`,
+    `<meta property="og:url" content="${escapeHtml(r.canon)}">`,
+    `<meta property="og:type" content="website">`,
+    `<meta property="og:image" content="${escapeHtml(r.ogImage)}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeHtml(r.title)}">`,
+    `<meta name="twitter:description" content="${escapeHtml(r.desc)}">`,
+    `<meta name="twitter:image" content="${escapeHtml(r.ogImage)}">`
+  ].join("\n    ");
+
+  // Inject new head content before </head>
+  return h.replace("</head>", `    ${head}\n  </head>`);
+};
 
 // Main execution
-console.log('🚀 Starting Caribbean prerendering...');
+console.log("\n🚀 Starting Caribbean SSG prerender...\n");
 
-const distPath = path.join(__dirname, '..', 'dist');
-
-routes.forEach(route => {
-  const routePath = path.join(distPath, route.path);
-  const htmlPath = path.join(routePath, 'index.html');
+try {
+  const tpl = readFileSync("dist/index.html", "utf8");
   
-  // Create directory if it doesn't exist
-  if (!fs.existsSync(routePath)) {
-    fs.mkdirSync(routePath, { recursive: true });
+  for (const r of ROUTES) {
+    const dir = join("dist", r.path);
+    mkdirSync(dir, { recursive: true });
+    
+    const finalHtml = inject(tpl, r);
+    writeFileSync(join(dir, "index.html"), finalHtml, "utf8");
+    
+    console.log(`✓ Wrote: dist${r.path}/index.html`);
   }
   
-  // Generate and write HTML
-  const html = generateHTML(route);
-  fs.writeFileSync(htmlPath, html, 'utf-8');
-  
-  console.log(`✅ Generated: ${route.path}/index.html`);
-});
-
-console.log('✨ Caribbean prerendering complete!');
+  console.log("\n✅ SSG prerender completed successfully!\n");
+} catch (error) {
+  console.error("\n❌ SSG prerender failed:", error);
+  process.exit(1);
+}

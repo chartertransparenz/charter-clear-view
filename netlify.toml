@@ -126,6 +126,49 @@
   status = 301
   force = true
 
+# Caribbean trailing slash redirects - FIFTH PRIORITY
+[[redirects]]
+  from = "/reviere/karibik/"
+  to = "/reviere/karibik"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/bahamas/"
+  to = "/reviere/karibik/bahamas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/bvi/"
+  to = "/reviere/karibik/bvi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/usvi/"
+  to = "/reviere/karibik/usvi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/antigua/"
+  to = "/reviere/karibik/antigua"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/st-martin/"
+  to = "/reviere/karibik/st-martin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/karibik/st-vincent-grenadinen/"
+  to = "/reviere/karibik/st-vincent-grenadinen"
+  status = 301
+  force = true
+
 # Caribbean legacy URLs - NEW canonical structure
 [[redirects]]
   from = "/reviere/karibik/britische-jungferninseln"
