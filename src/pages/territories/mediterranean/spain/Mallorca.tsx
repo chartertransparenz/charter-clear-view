@@ -171,7 +171,7 @@ const Mallorca = () => {
             <TerritoryMap 
               region="Mallorca"
               center={{ lat: 39.6953, lng: 3.0176 }}
-              zoom={9}
+              zoom={6}
               maptype="satellite"
             />
           </div>
