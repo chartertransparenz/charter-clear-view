@@ -55,33 +55,13 @@
 
 # Croatia prerendered routes - SERVE STATIC HTML
 [[redirects]]
-  from = "/reviere/mittelmeer/kroatien"
-  to = "/reviere/mittelmeer/kroatien/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/istrien"
-  to = "/reviere/mittelmeer/kroatien/istrien/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/kvarner"
-  to = "/reviere/mittelmeer/kroatien/kvarner/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/zadar"
-  to = "/reviere/mittelmeer/kroatien/zadar/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/reviere/mittelmeer/kroatien/dalmatien-split"
-  to = "/reviere/mittelmeer/kroatien/dalmatien-split/index.html"
-  status = 200
-
-[[redirects]]
   from = "/reviere/mittelmeer/kroatien/dubrovnik"
   to = "/reviere/mittelmeer/kroatien/dubrovnik/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviere/mittelmeer/kroatien/*"
+  to = "/reviere/mittelmeer/kroatien/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
