@@ -398,6 +398,73 @@ const Mallorca = () => {
               </CharterRequestForm>
             </div>
           </div>
+
+          {/* Top-Destinationen */}
+          <div className="max-w-7xl mx-auto mt-20 mb-16">
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Ihre Top-Destinationen</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+              {/* Kroatien */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Kroatien</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Istrien</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Kvarner</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Zadar</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Dalmatien ab Split</Link></li>
+                  <li><Link to="/reviere/mittelmeer/kroatien" className="text-gray-700 hover:text-blue-600">Dubrovnik</Link></li>
+                </ul>
+              </div>
+
+              {/* Griechenland */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Griechenland</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-gray-700 hover:text-blue-600">Kykladen</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/ionische-inseln" className="text-gray-700 hover:text-blue-600">Ionische Inseln</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/dodekanes" className="text-gray-700 hover:text-blue-600">Dodekanes</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/sporaden" className="text-gray-700 hover:text-blue-600">Sporaden</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-gray-700 hover:text-blue-600">Athen & Saronischer Golf</Link></li>
+                  <li><Link to="/reviere/mittelmeer/griechenland" className="text-gray-700 hover:text-blue-600">Nordgriechenland</Link></li>
+                </ul>
+              </div>
+
+              {/* Italien */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Italien</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Sardinien</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-blue-600 hover:text-blue-800 underline">Costa Smeralda</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Sizilien</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Toskana / Elba</Link></li>
+                  <li><Link to="/reviere/mittelmeer/italien" className="text-gray-700 hover:text-blue-600">Amalfiküste</Link></li>
+                </ul>
+              </div>
+
+              {/* Spanien */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Spanien</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/mittelmeer/spanien/balearen" className="text-gray-700 hover:text-blue-600">Balearen</Link></li>
+                  <li><Link to="/reviere/mittelmeer/spanien" className="text-gray-700 hover:text-blue-600">Costa Brava</Link></li>
+                  <li><Link to="/reviere/mittelmeer/spanien" className="text-gray-700 hover:text-blue-600">Valencia</Link></li>
+                  <li><Link to="/reviere/mittelmeer/spanien/kanaren" className="text-gray-700 hover:text-blue-600">Kanaren</Link></li>
+                </ul>
+              </div>
+
+              {/* Karibik */}
+              <div>
+                <h3 className="text-lg font-bold mb-4 text-gray-900">Yachtcharter Karibik</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">British Virgin Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">US Virgin Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">Leeward Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">Windward Islands</Link></li>
+                  <li><Link to="/reviere/karibik" className="text-gray-700 hover:text-blue-600">Kuba</Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>;
