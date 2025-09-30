@@ -71,6 +71,61 @@
   status = 301
   force = true
 
+# Legacy Balearic URLs - FOURTH PRIORITY
+[[redirects]]
+  from = "/spanien/mallorca"
+  to = "/reviere/mittelmeer/spanien/balearen/mallorca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/spanien/ibiza"
+  to = "/reviere/mittelmeer/spanien/balearen/ibiza"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/spanien/menorca"
+  to = "/reviere/mittelmeer/spanien/balearen/menorca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/balearen/mallorca"
+  to = "/reviere/mittelmeer/spanien/balearen/mallorca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/balearen/ibiza"
+  to = "/reviere/mittelmeer/spanien/balearen/ibiza"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/balearen/menorca"
+  to = "/reviere/mittelmeer/spanien/balearen/menorca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien/mallorca"
+  to = "/reviere/mittelmeer/spanien/balearen/mallorca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien/ibiza"
+  to = "/reviere/mittelmeer/spanien/balearen/ibiza"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/mittelmeer/spanien/menorca"
+  to = "/reviere/mittelmeer/spanien/balearen/menorca"
+  status = 301
+  force = true
+
 # Croatia prerendered routes - SERVE STATIC HTML
 # Hub page first (before wildcard)
 [[redirects]]
