@@ -12,19 +12,10 @@ import destinationBvi from "@/assets/destination-bvi.jpg";
 import { Meta } from "@/seo/Meta";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";
+import { BREADCRUMB_CARIBBEAN } from "@/seo/breadcrumbs.caribbean";
+
 const BritishVirginIslands = () => {
   const m = META.bvi;
-
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "BVI", "item": "https://chartertransparenz.de/reviere/karibik/bvi" }
-    ]
-  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,7 +59,7 @@ const BritishVirginIslands = () => {
         canonical={m.canonical()}
         ogImage={m.ogImage}
       />
-      <JsonLd json={breadcrumbJsonLd} />
+      <JsonLd json={BREADCRUMB_CARIBBEAN.bvi} />
       <Navigation />
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
