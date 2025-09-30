@@ -632,6 +632,8 @@ const Croatia = () => {
       </div>
       
       <TopDestinations />
-    </div>;
+    </div>
+    </>
+  );
 };
 export default Croatia;

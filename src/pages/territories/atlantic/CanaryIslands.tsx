@@ -413,6 +413,8 @@ const CanaryIslands = () => {
       </div>
       
       <TopDestinations />
-    </div>;
+    </div>
+    </>
+  );
 };
 export default CanaryIslands;
