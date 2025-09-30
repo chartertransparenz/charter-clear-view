@@ -1,5 +1,5 @@
 // SSG Postbuild Script für Karibik-Routen
-// Generiert statisches HTML mit SEO-Tags für 8 Karibik-Seiten
+// Generiert statisches HTML mit SEO-Tags für 10 Karibik-Seiten
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 
@@ -59,6 +59,20 @@ const ROUTES = [
     desc: "Segeln in Kuba: Authentische Karibikkultur, Cienfuegos, Cayo Largo & unberührte Inseln. Charter für erfahrene Segler.",
     canon: "https://chartertransparenz.de/reviere/karibik/kuba",
     ogImage: "https://chartertransparenz.de/og/kuba.jpg"
+  },
+  {
+    path: "/reviere/karibik/leeward-inseln",
+    title: "Yachtcharter Leeward Islands – Antigua, St. Martin & Guadeloupe",
+    desc: "Segeln in den Leeward Islands: Kulturelle Vielfalt, französisches Flair & perfekte Passatwinde. Antigua, St. Martin, Guadeloupe & St. Barth entdecken.",
+    canon: "https://chartertransparenz.de/reviere/karibik/leeward-inseln",
+    ogImage: "https://chartertransparenz.de/og/leeward-inseln.jpg"
+  },
+  {
+    path: "/reviere/karibik/windward-inseln",
+    title: "Yachtcharter Windward Islands – Martinique, St. Lucia & Grenadinen",
+    desc: "Segeln in den Windward Islands: Martinique, St. Lucia, St. Vincent & Tobago Cays. Sportliches Segeln mit Passatwinden. One-Way-Törns ideal.",
+    canon: "https://chartertransparenz.de/reviere/karibik/windward-inseln",
+    ogImage: "https://chartertransparenz.de/og/windward-inseln.jpg"
   }
 ];
 
