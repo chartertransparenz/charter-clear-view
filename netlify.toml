@@ -126,50 +126,11 @@
   status = 301
   force = true
 
-# Caribbean trailing slash redirects - FIFTH PRIORITY
-[[redirects]]
-  from = "/reviere/karibik/"
-  to = "/reviere/karibik"
-  status = 301
-  force = true
+############################################
+# CARIBBEAN - CANONICALIZATION & SSG
+############################################
 
-[[redirects]]
-  from = "/reviere/karibik/bahamas/"
-  to = "/reviere/karibik/bahamas"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/karibik/bvi/"
-  to = "/reviere/karibik/bvi"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/karibik/usvi/"
-  to = "/reviere/karibik/usvi"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/karibik/antigua/"
-  to = "/reviere/karibik/antigua"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/karibik/st-martin/"
-  to = "/reviere/karibik/st-martin"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/reviere/karibik/st-vincent-grenadinen/"
-  to = "/reviere/karibik/st-vincent-grenadinen"
-  status = 301
-  force = true
-
-# Caribbean legacy URLs - NEW canonical structure
+# 1) Legacy slugs → canonical URLs (permanent 301)
 [[redirects]]
   from = "/reviere/karibik/britische-jungferninseln"
   to = "/reviere/karibik/bvi"
@@ -187,6 +148,19 @@
   to = "/reviere/karibik/usvi"
   status = 301
   force = true
+
+# 2) Serve prerendered HTML (200 rewrite, NO force!)
+# Hub page first
+[[redirects]]
+  from = "/reviere/karibik"
+  to = "/reviere/karibik/index.html"
+  status = 200
+
+# All Caribbean subpages (bvi, usvi, bahamas, antigua, st-martin, st-vincent-grenadinen)
+[[redirects]]
+  from = "/reviere/karibik/*"
+  to = "/reviere/karibik/:splat/index.html"
+  status = 200
 
 # Croatia prerendered routes - SERVE STATIC HTML
 # Hub page first (before wildcard)
@@ -257,17 +231,6 @@
 [[redirects]]
   from = "/reviere/atlantik/kanaren/*"
   to = "/reviere/atlantik/kanaren/:splat/index.html"
-  status = 200
-
-# Caribbean prerendered routes - SERVE STATIC HTML
-[[redirects]]
-  from = "/reviere/karibik"
-  to = "/reviere/karibik/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/reviere/karibik/*"
-  to = "/reviere/karibik/:splat/index.html"
   status = 200
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
