@@ -4,8 +4,9 @@ import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import Footer from "@/components/Footer";
-import { Compass, Home, Map } from "lucide-react";
+import { Home, Map } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/404-hero.jpg";
 
 const NotFound = () => {
   const location = useLocation();
@@ -29,18 +30,17 @@ const NotFound = () => {
       <div className="min-h-screen flex flex-col">
         <Navigation />
         
-        <main className="flex-1 flex items-center justify-center bg-gradient-to-b from-background to-muted/20 py-20 px-4">
-          <div className="text-center max-w-2xl mx-auto">
-            <div className="mb-8 flex justify-center">
-              <Compass className="w-24 h-24 text-muted-foreground/40 animate-pulse" />
+        <main className="flex-1 flex items-center justify-center bg-gradient-to-b from-background to-muted/20 py-12 md:py-20 px-4">
+          <div className="text-center max-w-4xl mx-auto w-full">
+            <div className="mb-8">
+              <img 
+                src={heroImage} 
+                alt="404 Fehlerseite - Segelboot in türkisblauer Bucht" 
+                className="w-full h-[300px] md:h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 text-foreground">404</h1>
-            <p className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
-              Seite nicht gefunden
-            </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Die gesuchte Seite existiert leider nicht oder wurde verschoben. 
               Navigieren Sie zurück zur Startseite oder erkunden Sie unsere Segelreviere.
             </p>
             
