@@ -1,165 +1,151 @@
-// scripts/prerender-turkey.ts
-import { writeFileSync, mkdirSync } from 'fs';
-import { join } from 'path';
+// SSG Postbuild Script für Türkei-Routen
+// Generiert statisches HTML mit SEO-Tags für Türkei-Seiten
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { join } from "path";
 
-const distDir = join(process.cwd(), 'dist');
-
-interface TurkeyPage {
-  path: string;
-  title: string;
-  description: string;
-  canonical: string;
-  ogImage: string;
-  breadcrumb: object;
-}
-
-const turkeyPages: TurkeyPage[] = [
+const ROUTES = [
   {
-    path: 'reviere/mittelmeer/tuerkei',
-    title: 'Yachtcharter Türkei – Bodrum, Göcek & Marmaris',
-    description: 'Segeln in der Türkei: Bodrum, Göcek/Fethiye, Marmaris & Antalya. Sonnensicher, viele Buchten & gute Marinas.',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/tuerkei',
-    ogImage: 'https://chartertransparenz.de/og/tuerkei.jpg',
-    breadcrumb: {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Start","item":"https://chartertransparenz.de/"},
-        {"@type":"ListItem","position":2,"name":"Reviere","item":"https://chartertransparenz.de/#reviere"},
-        {"@type":"ListItem","position":3,"name":"Türkei","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei"}
-      ]
-    }
+    path: "/reviere/mittelmeer/tuerkei",
+    title: "Yachtcharter Türkei – Bodrum, Marmaris, Göcek & Kaş",
+    desc: "Segeln Türkei: türkisblaue Buchten, antike Stätten & herzliche Gastfreundschaft. Bodrum, Marmaris, Göcek/Fethiye & Kaş/Kalkan. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"]
+    ]
   },
   {
-    path: 'reviere/mittelmeer/tuerkei/bodrum',
-    title: 'Yachtcharter Bodrum – Gökova & Datça Golf',
-    description: 'Segeln ab Bodrum: Gökova- und Datça-Golf mit Badebuchten & ruhigen Ankerplätzen. Ideal für Inselhüpfen.',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum',
-    ogImage: 'https://chartertransparenz.de/og/bodrum.jpg',
-    breadcrumb: {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Start","item":"https://chartertransparenz.de/"},
-        {"@type":"ListItem","position":2,"name":"Reviere","item":"https://chartertransparenz.de/#reviere"},
-        {"@type":"ListItem","position":3,"name":"Türkei","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei"},
-        {"@type":"ListItem","position":4,"name":"Bodrum","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum"}
-      ]
-    }
+    path: "/reviere/mittelmeer/tuerkei/bodrum",
+    title: "Yachtcharter Bodrum | Bodrum-Halbinsel & Gökova-Bucht – Türkei",
+    desc: "Segeln Bodrum: antike Städte, türkisblaue Buchten & moderne Marinas. Von der Johanniterfestung durch die Gökova-Bucht. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
+      ["Bodrum", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum"]
+    ]
   },
   {
-    path: 'reviere/mittelmeer/tuerkei/gocek-fethiye',
-    title: 'Yachtcharter Göcek & Fethiye – Buchtenparadies',
-    description: 'Göcek & Fethiye: Kurze Etappen, geschützte Buchten, Top-Infrastruktur. Perfekt für Familien & Einsteiger.',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/tuerkei/gocek-fethiye',
-    ogImage: 'https://chartertransparenz.de/og/gocek-fethiye.jpg',
-    breadcrumb: {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Start","item":"https://chartertransparenz.de/"},
-        {"@type":"ListItem","position":2,"name":"Reviere","item":"https://chartertransparenz.de/#reviere"},
-        {"@type":"ListItem","position":3,"name":"Türkei","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei"},
-        {"@type":"ListItem","position":4,"name":"Göcek & Fethiye","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei/gocek-fethiye"}
-      ]
-    }
+    path: "/reviere/mittelmeer/tuerkei/marmaris",
+    title: "Yachtcharter Marmaris | Marmaris, Datça & Bozburun – Türkei",
+    desc: "Segeln Marmaris: geschützte Buchten, lebendige Marina & authentische Fischerdörfer. Von Marmaris durch die Halbinsel Datça & Bozburun. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
+      ["Marmaris", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris"]
+    ]
   },
   {
-    path: 'reviere/mittelmeer/tuerkei/marmaris',
-    title: 'Yachtcharter Marmaris – Hisarönü & Bozburun',
-    description: 'Ab Marmaris zu den Golfs von Hisarönü & Bozburun: Natur, glasklares Wasser & charmante Küstenorte.',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris',
-    ogImage: 'https://chartertransparenz.de/og/marmaris.jpg',
-    breadcrumb: {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Start","item":"https://chartertransparenz.de/"},
-        {"@type":"ListItem","position":2,"name":"Reviere","item":"https://chartertransparenz.de/#reviere"},
-        {"@type":"ListItem","position":3,"name":"Türkei","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei"},
-        {"@type":"ListItem","position":4,"name":"Marmaris","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris"}
-      ]
-    }
+    path: "/reviere/mittelmeer/tuerkei/goecek-fethiye",
+    title: "Yachtcharter Göcek | Göcek, Fethiye & 12 Inseln – Türkei",
+    desc: "Segeln Göcek & Fethiye: versteckte Buchten, lykische Küste & die berühmten 12 Inseln. Paradies für Segler in der Türkei. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
+      ["Göcek & Fethiye", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye"]
+    ]
   },
   {
-    path: 'reviere/mittelmeer/tuerkei/kas-kalkan',
-    title: 'Yachtcharter Kaş & Kalkan | Lykische Küste, Kekova – Antike Türkei',
-    description: 'Segeln Kaş & Kalkan: authentische Fischerdörfer, versunkene Stadt Kekova & unberührte Buchten. Lykisches Erbe entdecken. Jetzt anfragen!',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan',
-    ogImage: 'https://chartertransparenz.de/og/kaskalkan.jpg',
-    breadcrumb: {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Start","item":"https://chartertransparenz.de/"},
-        {"@type":"ListItem","position":2,"name":"Reviere","item":"https://chartertransparenz.de/#reviere"},
-        {"@type":"ListItem","position":3,"name":"Türkei","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei"},
-        {"@type":"ListItem","position":4,"name":"Kaş & Kalkan","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan"}
-      ]
-    }
-  },
-  {
-    path: 'reviere/mittelmeer/tuerkei/tuerkische-aegaeis',
-    title: 'Yachtcharter Türkische Ägäis | Çeşme, Foça, Ayvalık – Westküste',
-    description: 'Segeln Türkische Ägäis: windreiche Gewässer, antike Städte & authentische Kultur. Von Çeşme zu den griechischen Inseln. Jetzt anfragen!',
-    canonical: 'https://chartertransparenz.de/reviere/mittelmeer/tuerkei/tuerkische-aegaeis',
-    ogImage: 'https://chartertransparenz.de/og/tuerkischeaegaeis.jpg',
-    breadcrumb: {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Start","item":"https://chartertransparenz.de/"},
-        {"@type":"ListItem","position":2,"name":"Reviere","item":"https://chartertransparenz.de/#reviere"},
-        {"@type":"ListItem","position":3,"name":"Türkei","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei"},
-        {"@type":"ListItem","position":4,"name":"Türkische Ägäis","item":"https://chartertransparenz.de/reviere/mittelmeer/tuerkei/tuerkische-aegaeis"}
-      ]
-    }
+    path: "/reviere/mittelmeer/tuerkei/kas-kalkan",
+    title: "Yachtcharter Kaş | Kaş, Kalkan & Kekova – Lykische Küste",
+    desc: "Segeln Kaş & Kalkan: antike lykische Städte, versunkene Ruinen von Kekova & kristallklares Wasser. Abenteuer an der Türkischen Riviera. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
+      ["Kaş & Kalkan", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan"]
+    ]
   }
 ];
 
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
+const escapeHtml = (s: string) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 
-function generateHTML(page: TurkeyPage): string {
-  const escapedTitle = escapeHtml(page.title);
-  const escapedDescription = escapeHtml(page.description);
+const inject = (html: string, r: (typeof ROUTES)[number]) => {
+  // Remove ALL existing head tags to prevent duplicates
+  let h = html
+    // Remove existing title
+    .replace(/<title>[\s\S]*?<\/title>/gi, "")
+    // Remove all meta description tags
+    .replace(/<meta[^>]+name=["']description["'][^>]*>/gi, "")
+    // Remove all canonical links
+    .replace(/<link[^>]+rel=["']canonical["'][^>]*>/gi, "")
+    // Remove all JSON-LD scripts
+    .replace(/<script[^>]+type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "")
+    // Remove all OG tags
+    .replace(/<meta[^>]+property=["']og:[^"']+["'][^>]*>/gi, "")
+    // Remove all Twitter tags
+    .replace(/<meta[^>]+name=["']twitter:[^"']+["'][^>]*>/gi, "");
+
+  // Build breadcrumb JSON-LD
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: r.breadcrumb.map(([name, url], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@id": url,
+        name: name
+      }
+    }))
+  };
+
+  // Build new head content
+  const head = [
+    `<title>${escapeHtml(r.title)}</title>`,
+    `<meta name="description" content="${escapeHtml(r.desc)}">`,
+    `<link rel="canonical" href="${escapeHtml(r.canon)}">`,
+    `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`,
+    `<meta property="og:title" content="${escapeHtml(r.title)}">`,
+    `<meta property="og:description" content="${escapeHtml(r.desc)}">`,
+    `<meta property="og:url" content="${escapeHtml(r.canon)}">`,
+    `<meta property="og:type" content="website">`,
+    `<meta property="og:image" content="https://chartertransparenz.de/lovable-uploads/turkey-sailing.jpg">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeHtml(r.title)}">`,
+    `<meta name="twitter:description" content="${escapeHtml(r.desc)}">`,
+    `<meta name="twitter:image" content="https://chartertransparenz.de/lovable-uploads/turkey-sailing.jpg">`
+  ].join("\n    ");
+
+  // Inject new head content before </head>
+  return h.replace("</head>", `    ${head}\n  </head>`);
+};
+
+// Main execution
+console.log("\n🚀 Starting Turkey SSG prerender...\n");
+
+try {
+  const tpl = readFileSync("dist/index.html", "utf8");
   
-  return `<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapedTitle}</title>
-  <meta name="description" content="${escapedDescription}">
-  <link rel="canonical" href="${page.canonical}">
-  <meta property="og:title" content="${escapedTitle}">
-  <meta property="og:description" content="${escapedDescription}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="${page.canonical}">
-  <meta property="og:image" content="${page.ogImage}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${escapedTitle}">
-  <meta name="twitter:description" content="${escapedDescription}">
-  <meta name="twitter:image" content="${page.ogImage}">
-  <script type="application/ld+json">${JSON.stringify(page.breadcrumb)}</script>
-  <script type="module" crossorigin src="/assets/index.js"></script>
-  <link rel="stylesheet" href="/assets/index.css">
-</head>
-<body>
-  <div id="root"></div>
-</body>
-</html>`;
+  for (const r of ROUTES) {
+    const dir = join("dist", r.path);
+    mkdirSync(dir, { recursive: true });
+    
+    const finalHtml = inject(tpl, r);
+    writeFileSync(join(dir, "index.html"), finalHtml, "utf8");
+    
+    console.log(`✓ Wrote: dist${r.path}/index.html`);
+  }
+  
+  console.log("\n✅ Turkey SSG prerender completed successfully!\n");
+} catch (error) {
+  console.error("\n❌ Turkey SSG prerender failed:", error);
+  process.exit(1);
 }
-
-console.log('🇹🇷 Prerendering Turkey pages...');
-
-turkeyPages.forEach(page => {
-  const pagePath = join(distDir, page.path);
-  mkdirSync(pagePath, { recursive: true });
-  const htmlPath = join(pagePath, 'index.html');
-  const html = generateHTML(page);
-  writeFileSync(htmlPath, html, 'utf-8');
-  console.log(`✅ ${page.path}`);
-});
-
-console.log('✅ Turkey prerendering complete!');

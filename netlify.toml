@@ -245,14 +245,20 @@
   force  = true
 
 [[redirects]]
+  from = "/reviere/mittelmeer/tuerkei/gocek-fethiye"
+  to   = "/reviere/mittelmeer/tuerkei/goecek-fethiye"
+  status = 301
+  force  = true
+
+[[redirects]]
   from = "/reviere/mittelmeer/tuerkei/goecek"
-  to   = "/reviere/mittelmeer/tuerkei/gocek-fethiye"
+  to   = "/reviere/mittelmeer/tuerkei/goecek-fethiye"
   status = 301
   force  = true
 
 [[redirects]]
   from = "/reviere/mittelmeer/tuerkei/fethiye"
-  to   = "/reviere/mittelmeer/tuerkei/gocek-fethiye"
+  to   = "/reviere/mittelmeer/tuerkei/goecek-fethiye"
   status = 301
   force  = true
 

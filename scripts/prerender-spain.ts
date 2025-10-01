@@ -1,146 +1,247 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+// SSG Postbuild Script für Spanien-Routen
+// Generiert statisches HTML mit SEO-Tags für Spanien & Kanaren-Seiten
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { join } from "path";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Base URL for production
-const BASE_URL = 'https://chartertransparenz.de';
-
-// Routes to prerender for Spain & Canary Islands
-const routes = [
+const ROUTES = [
   // Spain Mediterranean routes
-  { path: '/reviere/mittelmeer/spanien', title: 'Yachtcharter Spanien | Balearen, Costa Brava, Valencia', description: 'Segeln Spanien: sonnige Balearen, Costa Brava & Valencia. Traumhafte Buchten, lebendige Häfen & spanische Kultur. Jetzt anfragen!' },
-  { path: '/reviere/mittelmeer/spanien/balearen', title: 'Yachtcharter Balearen – Mallorca, Ibiza & Menorca', description: 'Segeln auf den Balearen: Entdecken Sie Mallorca, Ibiza & Menorca. Inselhüpfen mit Traumstränden & mediterranem Flair.' },
-  { path: '/reviere/mittelmeer/spanien/balearen/mallorca', title: 'Yachtcharter Mallorca – Segeln ab Palma & Port d\'Andratx', description: 'Mallorca per Yacht entdecken: Palma, Andratx & Cala d\'Or. Buchten, Küstenvielfalt & mediterranes Lebensgefühl.' },
-  { path: '/reviere/mittelmeer/spanien/balearen/ibiza', title: 'Yachtcharter Ibiza – Inselhüpfen mit Formentera', description: 'Ibiza & Formentera: Segeln, Nachtleben & glasklares Wasser. Entspannung & Party im perfekten Mix.' },
-  { path: '/reviere/mittelmeer/spanien/balearen/menorca', title: 'Yachtcharter Menorca – Mahón, Ciutadella & Naturbuchten', description: 'Segeln auf Menorca: Ruhiger & familiärer als Mallorca & Ibiza. Entdecken Sie Mahón, Ciutadella & unberührte Naturbuchten.' },
-  { path: '/reviere/mittelmeer/spanien/costa-brava', title: 'Yachtcharter Costa Brava | Barcelona, Girona, Roses – Katalanische Küste', description: 'Segeln Costa Brava: wilde Küste, versteckte Buchten & katalanische Kultur. Von Barcelona zu den Traumstränden der Costa Brava. Jetzt anfragen!' },
-  { path: '/reviere/mittelmeer/spanien/valencia', title: 'Yachtcharter Valencia | Valencia, Alicante, Castellón – Levante', description: 'Segeln Valencia: moderne Marinas, goldene Strände & valencianische Kultur. Von der Stadt der Künste zu den Stränden der Levante. Jetzt anfragen!' },
+  {
+    path: "/reviere/mittelmeer/spanien",
+    title: "Yachtcharter Spanien | Balearen, Costa Brava, Valencia",
+    desc: "Segeln Spanien: sonnige Balearen, Costa Brava & Valencia. Traumhafte Buchten, lebendige Häfen & spanische Kultur. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"]
+    ]
+  },
+  {
+    path: "/reviere/mittelmeer/spanien/balearen",
+    title: "Yachtcharter Balearen – Mallorca, Ibiza & Menorca",
+    desc: "Segeln auf den Balearen: Entdecken Sie Mallorca, Ibiza & Menorca. Inselhüpfen mit Traumstränden & mediterranem Flair.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
+      ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"]
+    ]
+  },
+  {
+    path: "/reviere/mittelmeer/spanien/balearen/mallorca",
+    title: "Yachtcharter Mallorca – Segeln ab Palma & Port d'Andratx",
+    desc: "Mallorca per Yacht entdecken: Palma, Andratx & Cala d'Or. Buchten, Küstenvielfalt & mediterranes Lebensgefühl.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/mallorca",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
+      ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"],
+      ["Mallorca", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/mallorca"]
+    ]
+  },
+  {
+    path: "/reviere/mittelmeer/spanien/balearen/ibiza",
+    title: "Yachtcharter Ibiza – Inselhüpfen mit Formentera",
+    desc: "Ibiza & Formentera: Segeln, Nachtleben & glasklares Wasser. Entspannung & Party im perfekten Mix.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
+      ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"],
+      ["Ibiza", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza"]
+    ]
+  },
+  {
+    path: "/reviere/mittelmeer/spanien/balearen/menorca",
+    title: "Yachtcharter Menorca – Mahón, Ciutadella & Naturbuchten",
+    desc: "Segeln auf Menorca: Ruhiger & familiärer als Mallorca & Ibiza. Entdecken Sie Mahón, Ciutadella & unberührte Naturbuchten.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/menorca",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
+      ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"],
+      ["Menorca", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/menorca"]
+    ]
+  },
+  {
+    path: "/reviere/mittelmeer/spanien/costa-brava",
+    title: "Yachtcharter Costa Brava | Barcelona, Girona, Roses – Katalanische Küste",
+    desc: "Segeln Costa Brava: wilde Küste, versteckte Buchten & katalanische Kultur. Von Barcelona zu den Traumstränden der Costa Brava. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
+      ["Costa Brava", "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava"]
+    ]
+  },
+  {
+    path: "/reviere/mittelmeer/spanien/valencia",
+    title: "Yachtcharter Valencia | Valencia, Alicante, Castellón – Levante",
+    desc: "Segeln Valencia: moderne Marinas, goldene Strände & valencianische Kultur. Von der Stadt der Künste zu den Stränden der Levante. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
+      ["Valencia", "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia"]
+    ]
+  },
   
   // Canary Islands Atlantic routes
-  { path: '/reviere/atlantik/kanaren', title: 'Yachtcharter Kanaren – Teneriffa, Gran Canaria & Lanzarote', description: 'Segeln auf den Kanaren: Ganzjährig Sonne & Passatwinde. Entdecken Sie Teneriffa, Gran Canaria & Lanzarote per Yacht.' },
-  { path: '/reviere/atlantik/kanaren/gran-canaria', title: 'Yachtcharter Gran Canaria | Las Palmas, Puerto Rico – Kanarische Inseln', description: 'Segeln Gran Canaria: Ganzjährig perfektes Wetter, moderne Marinas & vielfältige Küsten. Von Las Palmas durch die goldenen Dünen. Jetzt anfragen!' },
-  { path: '/reviere/atlantik/kanaren/teneriffa', title: 'Yachtcharter Teneriffa | Santa Cruz, Los Cristianos – Vulkaninsel', description: 'Segeln Teneriffa: majestätischer Teide, schwarze Sandstrände & ganzjähriges Segelwetter. Von Santa Cruz entlang der Vulkanküste. Jetzt anfragen!' },
-  { path: '/reviere/atlantik/kanaren/lanzarote', title: 'Yachtcharter Lanzarote | Arrecife, Marina Rubicón – Feuerinsel', description: 'Segeln Lanzarote: Vulkanlandschaften, César Manrique Kunst & ganzjährig ideale Bedingungen. Von Arrecife durch die Feuerinsel. Jetzt anfragen!' },
-  { path: '/reviere/atlantik/kanaren/fuerteventura', title: 'Yachtcharter Fuerteventura | Corralejo, Morro Jable – Strandparadies', description: 'Segeln Fuerteventura: endlose Strände, türkisblaues Wasser & konstante Passatwinde. Von Corralejo durch das Strandparadies. Jetzt anfragen!' }
+  {
+    path: "/reviere/atlantik/kanaren",
+    title: "Yachtcharter Kanaren – Teneriffa, Gran Canaria & Lanzarote",
+    desc: "Segeln auf den Kanaren: Ganzjährig Sonne & Passatwinde. Entdecken Sie Teneriffa, Gran Canaria & Lanzarote per Yacht.",
+    canon: "https://chartertransparenz.de/reviere/atlantik/kanaren",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
+      ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"]
+    ]
+  },
+  {
+    path: "/reviere/atlantik/kanaren/gran-canaria",
+    title: "Yachtcharter Gran Canaria | Las Palmas, Puerto Rico – Kanarische Inseln",
+    desc: "Segeln Gran Canaria: Ganzjährig perfektes Wetter, moderne Marinas & vielfältige Küsten. Von Las Palmas durch die goldenen Dünen. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/gran-canaria",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
+      ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
+      ["Gran Canaria", "https://chartertransparenz.de/reviere/atlantik/kanaren/gran-canaria"]
+    ]
+  },
+  {
+    path: "/reviere/atlantik/kanaren/teneriffa",
+    title: "Yachtcharter Teneriffa | Santa Cruz, Los Cristianos – Vulkaninsel",
+    desc: "Segeln Teneriffa: majestätischer Teide, schwarze Sandstrände & ganzjähriges Segelwetter. Von Santa Cruz entlang der Vulkanküste. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/teneriffa",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
+      ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
+      ["Teneriffa", "https://chartertransparenz.de/reviere/atlantik/kanaren/teneriffa"]
+    ]
+  },
+  {
+    path: "/reviere/atlantik/kanaren/lanzarote",
+    title: "Yachtcharter Lanzarote | Arrecife, Marina Rubicón – Feuerinsel",
+    desc: "Segeln Lanzarote: Vulkanlandschaften, César Manrique Kunst & ganzjährig ideale Bedingungen. Von Arrecife durch die Feuerinsel. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/lanzarote",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
+      ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
+      ["Lanzarote", "https://chartertransparenz.de/reviere/atlantik/kanaren/lanzarote"]
+    ]
+  },
+  {
+    path: "/reviere/atlantik/kanaren/fuerteventura",
+    title: "Yachtcharter Fuerteventura | Corralejo, Morro Jable – Strandparadies",
+    desc: "Segeln Fuerteventura: endlose Strände, türkisblaues Wasser & konstante Passatwinde. Von Corralejo durch das Strandparadies. Jetzt anfragen!",
+    canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/fuerteventura",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
+      ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
+      ["Fuerteventura", "https://chartertransparenz.de/reviere/atlantik/kanaren/fuerteventura"]
+    ]
+  }
 ];
 
-function generateBreadcrumbJsonLd(path: string): string {
-  const parts = path.split('/').filter(Boolean);
-  const items = [
-    { name: 'Reviere', url: `${BASE_URL}/reviere`, position: 1 }
-  ];
-  
-  let currentPath = '';
-  parts.forEach((part, index) => {
-    if (part === 'reviere') return; // Skip the first 'reviere' part
-    currentPath += `/${part}`;
-    
-    let name = part.charAt(0).toUpperCase() + part.slice(1);
-    // Map technical names to display names
-    if (part === 'mittelmeer') name = 'Mittelmeer';
-    if (part === 'atlantik') name = 'Atlantik';
-    if (part === 'spanien') name = 'Spanien';
-    if (part === 'balearen') name = 'Balearen';
-    if (part === 'mallorca') name = 'Mallorca';
-    if (part === 'ibiza') name = 'Ibiza';
-    if (part === 'menorca') name = 'Menorca';
-    if (part === 'costa-brava') name = 'Costa Brava';
-    if (part === 'valencia') name = 'Valencia';
-    if (part === 'kanaren') name = 'Kanarische Inseln';
-    if (part === 'gran-canaria') name = 'Gran Canaria';
-    if (part === 'teneriffa') name = 'Teneriffa';
-    if (part === 'lanzarote') name = 'Lanzarote';
-    if (part === 'fuerteventura') name = 'Fuerteventura';
-    
-    items.push({
-      name,
-      url: `${BASE_URL}/reviere${currentPath}`,
-      position: index + 2
-    });
-  });
-  
-  const breadcrumbList = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map(item => ({
-      '@type': 'ListItem',
-      position: item.position,
-      name: item.name,
-      item: item.url
+const escapeHtml = (s: string) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+const inject = (html: string, r: (typeof ROUTES)[number]) => {
+  // Remove ALL existing head tags to prevent duplicates
+  let h = html
+    // Remove existing title
+    .replace(/<title>[\s\S]*?<\/title>/gi, "")
+    // Remove all meta description tags
+    .replace(/<meta[^>]+name=["']description["'][^>]*>/gi, "")
+    // Remove all canonical links
+    .replace(/<link[^>]+rel=["']canonical["'][^>]*>/gi, "")
+    // Remove all JSON-LD scripts
+    .replace(/<script[^>]+type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "")
+    // Remove all OG tags
+    .replace(/<meta[^>]+property=["']og:[^"']+["'][^>]*>/gi, "")
+    // Remove all Twitter tags
+    .replace(/<meta[^>]+name=["']twitter:[^"']+["'][^>]*>/gi, "");
+
+  // Build breadcrumb JSON-LD
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: r.breadcrumb.map(([name, url], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@id": url,
+        name: name
+      }
     }))
   };
-  
-  return JSON.stringify(breadcrumbList);
-}
 
-function generateHTML(route: { path: string; title: string; description: string }): string {
-  const canonicalUrl = `${BASE_URL}${route.path}`;
-  const ogImage = `${BASE_URL}/og/spanien.jpg`; // Default OG image, can be customized per route
-  const breadcrumbJsonLd = generateBreadcrumbJsonLd(route.path);
-  
-  return `<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary Meta Tags -->
-  <title>${route.title}</title>
-  <meta name="description" content="${route.description}">
-  
-  <!-- Canonical -->
-  <link rel="canonical" href="${canonicalUrl}">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="${canonicalUrl}">
-  <meta property="og:title" content="${route.title}">
-  <meta property="og:description" content="${route.description}">
-  <meta property="og:image" content="${ogImage}">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="${canonicalUrl}">
-  <meta name="twitter:title" content="${route.title}">
-  <meta name="twitter:description" content="${route.description}">
-  <meta name="twitter:image" content="${ogImage}">
-  
-  <!-- Structured Data - Breadcrumb -->
-  <script type="application/ld+json">
-    ${breadcrumbJsonLd}
-  </script>
-  
-  <script type="module" crossorigin src="/assets/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index.css">
-</head>
-<body>
-  <div id="root"></div>
-</body>
-</html>`;
-}
+  // Build new head content
+  const head = [
+    `<title>${escapeHtml(r.title)}</title>`,
+    `<meta name="description" content="${escapeHtml(r.desc)}">`,
+    `<link rel="canonical" href="${escapeHtml(r.canon)}">`,
+    `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`,
+    `<meta property="og:title" content="${escapeHtml(r.title)}">`,
+    `<meta property="og:description" content="${escapeHtml(r.desc)}">`,
+    `<meta property="og:url" content="${escapeHtml(r.canon)}">`,
+    `<meta property="og:type" content="website">`,
+    `<meta property="og:image" content="https://chartertransparenz.de/lovable-uploads/spain-sailing.jpg">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeHtml(r.title)}">`,
+    `<meta name="twitter:description" content="${escapeHtml(r.desc)}">`,
+    `<meta name="twitter:image" content="https://chartertransparenz.de/lovable-uploads/spain-sailing.jpg">`
+  ].join("\n    ");
+
+  // Inject new head content before </head>
+  return h.replace("</head>", `    ${head}\n  </head>`);
+};
 
 // Main execution
-console.log('🚀 Starting Spain & Canary Islands prerendering...');
+console.log("\n🚀 Starting Spain & Canary Islands SSG prerender...\n");
 
-const distPath = path.join(__dirname, '..', 'dist');
-
-routes.forEach(route => {
-  const routePath = path.join(distPath, route.path);
-  const htmlPath = path.join(routePath, 'index.html');
+try {
+  const tpl = readFileSync("dist/index.html", "utf8");
   
-  // Create directory if it doesn't exist
-  if (!fs.existsSync(routePath)) {
-    fs.mkdirSync(routePath, { recursive: true });
+  for (const r of ROUTES) {
+    const dir = join("dist", r.path);
+    mkdirSync(dir, { recursive: true });
+    
+    const finalHtml = inject(tpl, r);
+    writeFileSync(join(dir, "index.html"), finalHtml, "utf8");
+    
+    console.log(`✓ Wrote: dist${r.path}/index.html`);
   }
   
-  // Generate and write HTML
-  const html = generateHTML(route);
-  fs.writeFileSync(htmlPath, html, 'utf-8');
-  
-  console.log(`✅ Generated: ${route.path}/index.html`);
-});
-
-console.log('✨ Spain & Canary Islands prerendering complete!');
+  console.log("\n✅ Spain & Canary Islands SSG prerender completed successfully!\n");
+} catch (error) {
+  console.error("\n❌ Spain & Canary Islands SSG prerender failed:", error);
+  process.exit(1);
+}
