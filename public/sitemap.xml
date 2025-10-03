@@ -484,42 +484,22 @@
 
   <!-- Indischer Ozean - Seychellen Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands</loc>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/mahe</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/outer-islands</loc>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/praslin</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/amiranten</loc>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/la-digue</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-
-  <!-- Indischer Ozean - Seychellen Detail Pages -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands/mahe</loc>
-    <lastmod>2025-10-03T16:15:35Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands/praslin</loc>
-    <lastmod>2025-10-03T16:15:35Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands/la-digue</loc>
-    <lastmod>2025-10-03T16:15:35Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <!-- Indischer Ozean - Asien Regions -->
@@ -544,15 +524,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand/koh-samui</loc>
-    <lastmod>2025-10-03T16:15:35Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Indischer Ozean - Malaysia Regions -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/malaysia/langkawi-tioman</loc>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand/langkawi-tioman</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -590,32 +562,36 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Südpazifik - Französisch-Polynesien Regions -->
+  <!-- Südpazifik - Charter Locations -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien/tahiti</loc>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/charter-standorte/papeete</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien/bora-bora</loc>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/charter-standorte/raiatea</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien/rangiroa</loc>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/charter-standorte/bora-bora</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
-  <!-- Südpazifik - Neukaledonien Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/neukaledonien/noumea</loc>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/charter-standorte/rangiroa</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/charter-standorte/noumea</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Südpazifik - Australien Regions -->
@@ -760,21 +736,15 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Static Pages -->
+  <!-- Service Pages -->
   <url>
     <loc>https://chartertransparenz.de/reviere/alle-reviere</loc>
-    <lastmod>2025-10-03T16:15:35Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/ueber-uns</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/kontakt</loc>
+    <loc>https://chartertransparenz.de/ueber-uns</loc>
     <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
