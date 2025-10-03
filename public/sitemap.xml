@@ -3,506 +3,800 @@
   <!-- Homepage -->
   <url>
     <loc>https://chartertransparenz.de/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Statische Seiten -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/alle-reviere</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/ueber-uns</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/faq</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/impressum</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/datenschutz</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <!-- Mittelmeer Hub -->
+
+  <!-- Main Territory Hubs -->
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Kroatien -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/expeditionen</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mittelmeer - Countries -->
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/frankreich</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/malta</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/montenegro</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/slowenien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Mittelmeer - Kroatien Regions -->
+  <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Griechenland -->
+
+  <!-- Mittelmeer - Griechenland Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/kykladen</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/athen-saronischer-golf</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/ionisches-meer</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/saronischer-golf</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/kykladen</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/sporaden</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Italien -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/toskana</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikuste</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/griechenland/nordgriechenland</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Mittelmeer - Türkei Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien/costa-smeralda</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Spanien -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/tuerkische-aegaeis</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/mallorca</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/menorca</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Frankreich -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/frankreich</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/frankreich/cote-azur</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/frankreich/korsika</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Türkei -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/gocek-fethiye</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mittelmeer - Italien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/tuerkei/aegaeis</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Malta -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/malta</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/toskana-elba</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Montenegro -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/montenegro</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Slowenien -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/mittelmeer/slowenien</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Karibik Hub -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Karibik Destinationen -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/britische-jungferninseln</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/us-jungferninseln</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikueste</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mittelmeer - Italien - Sardinien Detail -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien/costa-smeralda</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Mittelmeer - Spanien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mittelmeer - Spanien - Balearen Detail -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/menorca</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Mittelmeer - Frankreich Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/frankreich/cote-azur</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/mittelmeer/frankreich/korsika</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Karibik - Main Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/bvi</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/usvi</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/antigua</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/st-martin</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/st-vincent-grenadinen</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/karibik/leeward-inseln</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/windward-inseln</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/kuba</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/karibik/bahamas</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Atlantik Hub -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/atlantik</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Kanaren -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/atlantik/kanaren</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/atlantik/kanaren/gran-canaria</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/windward-inseln</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/kuba</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Karibik - Charter Locations -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/charter-standorte/tortola</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/charter-standorte/st-thomas</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/charter-standorte/martinique</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/karibik/charter-standorte/havanna</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Atlantik - Countries -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/azoren</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/kanaren</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/franzoesische-atlantikkueste</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Atlantik - Azoren Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/azoren/faial</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/azoren/terceira</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/azoren/sao-miguel</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Atlantik - Kanaren Regions -->
+  <url>
     <loc>https://chartertransparenz.de/reviere/atlantik/kanaren/teneriffa</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/atlantik/kanaren/gran-canaria</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/atlantik/kanaren/lanzarote</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/atlantik/kanaren/fuerteventura</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Indischer Ozean Hub -->
+
+  <!-- Atlantik - Französische Atlantikküste -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Asien (Indischer Ozean) -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Thailand -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand/phuket</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/atlantik/franzoesische-atlantikkueste/biskaya</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand/koh-samui</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/atlantik/franzoesische-atlantikkueste/bretagne-normandie</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Malaysia -->
+
+  <!-- Indischer Ozean - Main Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/malaysia</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/malediven</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Seychellen -->
   <url>
     <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Indischer Ozean - Malediven Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/malediven/male</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Indischer Ozean - Seychellen Regions -->
+  <url>
     <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/outer-islands</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/amiranten</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Malediven -->
+
+  <!-- Indischer Ozean - Seychellen Detail Pages -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/malediven</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands/mahe</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands/praslin</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/seychellen/inner-islands/la-digue</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Indischer Ozean - Asien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/indischer-ozean/malediven/male-atolle</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Südpazifik Hub -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Französisch-Polynesien -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/franz-polynesien</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/malaysia</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Indischer Ozean - Thailand Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/franz-polynesien/tahiti</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand/phuket</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/franz-polynesien/bora-bora</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/thailand/koh-samui</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Neukaledonien -->
+
+  <!-- Indischer Ozean - Malaysia Regions -->
   <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/neukaledonien</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://chartertransparenz.de/reviere/indischer-ozean/asien/malaysia/langkawi-tioman</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Südpazifik - Main Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/neukaledonien/noumea</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Australien - Whitsundays -->
-  <url>
-    <loc>https://chartertransparenz.de/reviere/suedpazifik/whitsundays</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Fidschi -->
   <url>
     <loc>https://chartertransparenz.de/reviere/suedpazifik/fidschi</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Neuseeland -->
   <url>
     <loc>https://chartertransparenz.de/reviere/suedpazifik/neuseeland</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/neukaledonien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/australien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Südpazifik - Französisch-Polynesien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien/tahiti</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien/bora-bora</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/franzoesisch-polynesien/rangiroa</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Südpazifik - Neukaledonien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/neukaledonien/noumea</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Südpazifik - Australien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/suedpazifik/australien/whitsundays</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Nord-Europa - Main Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/ostsee</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/holland</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/skandinavien</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Nord-Europa - Ostsee Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/ostsee/deutsche-ostsee</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/ostsee/daenische-suedsee</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Nord-Europa - Skandinavien Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/skandinavien/westschweden</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/skandinavien/oslofjord</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/nord-europa/skandinavien/stockholm-schaeren</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Amerika & Bahamas - Main Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/florida</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/bahamas</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/neuengland</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Amerika & Bahamas - Florida Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/florida/florida-keys</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/florida/fort-lauderdale</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/florida/miami</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Amerika & Bahamas - Bahamas Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/bahamas/abaco</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/bahamas/exumas</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/bahamas/nassau</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Amerika & Bahamas - Neuengland Regions -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/neuengland/newport</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/neuengland/cape-cod</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/reviere/amerika-bahamas/neuengland/maine</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Static Pages -->
+  <url>
+    <loc>https://chartertransparenz.de/reviere/alle-reviere</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/ueber-uns</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/kontakt</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/faq</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://chartertransparenz.de/impressum</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://chartertransparenz.de/datenschutz</loc>
+    <lastmod>2025-10-03T16:15:35Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
