@@ -8,7 +8,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import { Meta } from "@/seo/Meta";
+// Meta component removed - SEO tags managed by prerender script
 import { META } from "@/seo/meta.config";
 
 import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
@@ -68,12 +68,6 @@ const Croatia = () => {
   
   return (
     <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        ogImage={m.ogImage}
-        canonical={m.canonical()}
-      />
       <div className="min-h-screen bg-white">
       <Navigation />
       

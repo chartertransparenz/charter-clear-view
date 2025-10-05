@@ -6,12 +6,12 @@ import { join } from "path";
 const ROUTES = [
   {
     path: "/reviere/mittelmeer/kroatien",
-    title: "Yachtcharter Kroatien – Dalmatien, Istrien & Kornaten",
-    desc: "Inselhüpfen an der Adria: Split, Zadar, Šibenik/Kornaten, Istrien & Dubrovnik. Geprüfte Yachten, 30 Jahre Erfahrung. Jetzt Kroatien-Charter anfragen.",
+    title: "Yachtcharter Kroatien | Segeln Adria – Split, Dubrovnik, Hvar",
+    desc: "Segeln in Kroatien: 1.200+ Inseln, kurze Distanzen & klares Wasser. Ab Split, Dubrovnik, Hvar. Jetzt Segelyacht oder Katamaran anfragen!",
     canon: "https://chartertransparenz.de/reviere/mittelmeer/kroatien",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Kroatien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien"]
     ]
@@ -23,7 +23,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Kroatien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien"],
       ["Istrien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien/istrien"]
@@ -36,7 +36,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Kroatien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien"],
       ["Kvarner & Krk", "https://chartertransparenz.de/reviere/mittelmeer/kroatien/kvarner"]
@@ -49,7 +49,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Kroatien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien"],
       ["Zadar", "https://chartertransparenz.de/reviere/mittelmeer/kroatien/zadar"]
@@ -62,7 +62,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Kroatien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien"],
       ["Dalmatien (Split)", "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dalmatien-split"]
@@ -75,7 +75,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Kroatien", "https://chartertransparenz.de/reviere/mittelmeer/kroatien"],
       ["Dubrovnik", "https://chartertransparenz.de/reviere/mittelmeer/kroatien/dubrovnik"]

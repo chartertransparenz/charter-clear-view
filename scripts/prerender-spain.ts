@@ -12,7 +12,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"]
     ]
@@ -24,7 +24,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
       ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"]
@@ -37,7 +37,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/mallorca",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
       ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"],
@@ -51,7 +51,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/ibiza",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
       ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"],
@@ -65,7 +65,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen/menorca",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
       ["Balearen", "https://chartertransparenz.de/reviere/mittelmeer/spanien/balearen"],
@@ -79,7 +79,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
       ["Costa Brava", "https://chartertransparenz.de/reviere/mittelmeer/spanien/costa-brava"]
@@ -92,7 +92,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Spanien", "https://chartertransparenz.de/reviere/mittelmeer/spanien"],
       ["Valencia", "https://chartertransparenz.de/reviere/mittelmeer/spanien/valencia"]
@@ -107,7 +107,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/atlantik/kanaren",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
       ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"]
     ]
@@ -119,7 +119,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/gran-canaria",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
       ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
       ["Gran Canaria", "https://chartertransparenz.de/reviere/atlantik/kanaren/gran-canaria"]
@@ -132,7 +132,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/teneriffa",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
       ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
       ["Teneriffa", "https://chartertransparenz.de/reviere/atlantik/kanaren/teneriffa"]
@@ -145,7 +145,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/lanzarote",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
       ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
       ["Lanzarote", "https://chartertransparenz.de/reviere/atlantik/kanaren/lanzarote"]
@@ -158,7 +158,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/atlantik/kanaren/fuerteventura",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Atlantik", "https://chartertransparenz.de/reviere/atlantik"],
       ["Kanaren", "https://chartertransparenz.de/reviere/atlantik/kanaren"],
       ["Fuerteventura", "https://chartertransparenz.de/reviere/atlantik/kanaren/fuerteventura"]

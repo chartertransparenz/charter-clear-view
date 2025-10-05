@@ -1,171 +1,151 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+// SSG Postbuild Script für Italien-Routen
+// Generiert statisches HTML mit SEO-Tags für Italien-Seiten
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { join } from "path";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const BASE_URL = 'https://chartertransparenz.de';
-const DIST_DIR = path.join(__dirname, '../dist');
-
-interface PageConfig {
-  path: string;
-  title: string;
-  description: string;
-  breadcrumbs: Array<{ name: string; url: string }>;
-  ogImage: string;
-}
-
-const italyPages: PageConfig[] = [
+const ROUTES = [
   {
-    path: '/reviere/mittelmeer/italien',
-    title: 'Yachtcharter Italien – Sardinien, Elba & Sizilien',
-    description: 'Segeln in Italien: Entdecken Sie Sardinien, Elba, Sizilien & Amalfiküste. Yachtcharter mit Vielfalt & mediterranem Flair.',
-    ogImage: '/og/italien.jpg',
-    breadcrumbs: [
-      { name: 'Start', url: '/' },
-      { name: 'Reviere', url: '/reviere/alle-reviere' },
-      { name: 'Mittelmeer', url: '/reviere/mittelmeer' },
-      { name: 'Italien', url: '/reviere/mittelmeer/italien' }
+    path: "/reviere/mittelmeer/italien",
+    title: "Yachtcharter Italien – Sardinien, Elba & Sizilien",
+    desc: "Segeln in Italien: Entdecken Sie Sardinien, Elba, Sizilien & Amalfiküste. Yachtcharter mit Vielfalt & mediterranem Flair.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/italien",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Italien", "https://chartertransparenz.de/reviere/mittelmeer/italien"]
     ]
   },
   {
-    path: '/reviere/mittelmeer/italien/sardinien',
-    title: 'Yachtcharter Sardinien – Costa Smeralda & Maddalena',
-    description: 'Segeln in Sardinien: Exklusive Costa Smeralda & Maddalena-Archipel. Kristallklares Wasser & Luxusmarinas erwarten Sie.',
-    ogImage: '/og/sardinien.jpg',
-    breadcrumbs: [
-      { name: 'Start', url: '/' },
-      { name: 'Reviere', url: '/reviere/alle-reviere' },
-      { name: 'Mittelmeer', url: '/reviere/mittelmeer' },
-      { name: 'Italien', url: '/reviere/mittelmeer/italien' },
-      { name: 'Sardinien', url: '/reviere/mittelmeer/italien/sardinien' }
+    path: "/reviere/mittelmeer/italien/sardinien",
+    title: "Yachtcharter Sardinien – Costa Smeralda & Maddalena",
+    desc: "Segeln in Sardinien: Exklusive Costa Smeralda & Maddalena-Archipel. Kristallklares Wasser & Luxusmarinas erwarten Sie.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Italien", "https://chartertransparenz.de/reviere/mittelmeer/italien"],
+      ["Sardinien", "https://chartertransparenz.de/reviere/mittelmeer/italien/sardinien"]
     ]
   },
   {
-    path: '/reviere/mittelmeer/italien/toskana-elba',
-    title: 'Yachtcharter Toskana & Elba – Segeln im Tyrrhenischen Meer',
-    description: 'Entdecken Sie Elba & die toskanische Küste. Yachtcharter mit kurzen Distanzen, Natur & mediterranem Charme.',
-    ogImage: '/og/toskana.jpg',
-    breadcrumbs: [
-      { name: 'Start', url: '/' },
-      { name: 'Reviere', url: '/reviere/alle-reviere' },
-      { name: 'Mittelmeer', url: '/reviere/mittelmeer' },
-      { name: 'Italien', url: '/reviere/mittelmeer/italien' },
-      { name: 'Toskana & Elba', url: '/reviere/mittelmeer/italien/toskana-elba' }
+    path: "/reviere/mittelmeer/italien/toskana-elba",
+    title: "Yachtcharter Toskana & Elba – Segeln im Tyrrhenischen Meer",
+    desc: "Entdecken Sie Elba & die toskanische Küste. Yachtcharter mit kurzen Distanzen, Natur & mediterranem Charme.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana-elba",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Italien", "https://chartertransparenz.de/reviere/mittelmeer/italien"],
+      ["Toskana & Elba", "https://chartertransparenz.de/reviere/mittelmeer/italien/toskana-elba"]
     ]
   },
   {
-    path: '/reviere/mittelmeer/italien/amalfikueste',
-    title: 'Yachtcharter Amalfiküste – Capri, Positano & Neapel',
-    description: 'Segeln an der Amalfiküste: Erleben Sie Capri, Positano & Neapel vom Wasser aus. UNESCO-Küste mit mediterranem Flair.',
-    ogImage: '/og/amalfikueste.jpg',
-    breadcrumbs: [
-      { name: 'Start', url: '/' },
-      { name: 'Reviere', url: '/reviere/alle-reviere' },
-      { name: 'Mittelmeer', url: '/reviere/mittelmeer' },
-      { name: 'Italien', url: '/reviere/mittelmeer/italien' },
-      { name: 'Amalfiküste', url: '/reviere/mittelmeer/italien/amalfikueste' }
+    path: "/reviere/mittelmeer/italien/amalfikueste",
+    title: "Yachtcharter Amalfiküste – Capri, Positano & Neapel",
+    desc: "Segeln an der Amalfiküste: Erleben Sie Capri, Positano & Neapel vom Wasser aus. UNESCO-Küste mit mediterranem Flair.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikueste",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Italien", "https://chartertransparenz.de/reviere/mittelmeer/italien"],
+      ["Amalfiküste", "https://chartertransparenz.de/reviere/mittelmeer/italien/amalfikueste"]
     ]
   },
   {
-    path: '/reviere/mittelmeer/italien/sizilien',
-    title: 'Yachtcharter Sizilien – Äolische Inseln & Palermo',
-    description: 'Segeln in Sizilien: Entdecken Sie die Äolischen Inseln, Palermo & vulkanische Landschaften. Sonne & Kultur pur.',
-    ogImage: '/og/sizilien.jpg',
-    breadcrumbs: [
-      { name: 'Start', url: '/' },
-      { name: 'Reviere', url: '/reviere/alle-reviere' },
-      { name: 'Mittelmeer', url: '/reviere/mittelmeer' },
-      { name: 'Italien', url: '/reviere/mittelmeer/italien' },
-      { name: 'Sizilien', url: '/reviere/mittelmeer/italien/sizilien' }
+    path: "/reviere/mittelmeer/italien/sizilien",
+    title: "Yachtcharter Sizilien – Äolische Inseln & Palermo",
+    desc: "Segeln in Sizilien: Entdecken Sie die Äolischen Inseln, Palermo & vulkanische Landschaften. Sonne & Kultur pur.",
+    canon: "https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien",
+    breadcrumb: [
+      ["Start", "https://chartertransparenz.de"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
+      ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
+      ["Italien", "https://chartertransparenz.de/reviere/mittelmeer/italien"],
+      ["Sizilien", "https://chartertransparenz.de/reviere/mittelmeer/italien/sizilien"]
     ]
   }
 ];
 
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
+const escapeHtml = (s: string) =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 
-function generateBreadcrumbJsonLd(breadcrumbs: Array<{ name: string; url: string }>): string {
-  const itemListElement = breadcrumbs.map((crumb, index) => ({
-    "@type": "ListItem",
-    "position": index + 1,
-    "name": crumb.name,
-    "item": `${BASE_URL}${crumb.url}`
-  }));
+const inject = (html: string, r: (typeof ROUTES)[number]) => {
+  // Remove ALL existing head tags to prevent duplicates
+  let h = html
+    // Remove existing title
+    .replace(/<title>[\s\S]*?<\/title>/gi, "")
+    // Remove all meta description tags
+    .replace(/<meta[^>]+name=["']description["'][^>]*>/gi, "")
+    // Remove all canonical links
+    .replace(/<link[^>]+rel=["']canonical["'][^>]*>/gi, "")
+    // Remove all JSON-LD scripts
+    .replace(/<script[^>]+type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "")
+    // Remove all OG tags
+    .replace(/<meta[^>]+property=["']og:[^"']+["'][^>]*>/gi, "")
+    // Remove all Twitter tags
+    .replace(/<meta[^>]+name=["']twitter:[^"']+["'][^>]*>/gi, "");
 
-  return JSON.stringify({
+  // Build breadcrumb JSON-LD
+  const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": itemListElement
-  }, null, 2);
-}
+    itemListElement: r.breadcrumb.map(([name, url], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@id": url,
+        name: name
+      }
+    }))
+  };
 
-function injectMetaTags(html: string, page: PageConfig): string {
-  const canonical = `${BASE_URL}${page.path}`;
-  const ogImageUrl = `${BASE_URL}${page.ogImage}`;
-  const breadcrumbJsonLd = generateBreadcrumbJsonLd(page.breadcrumbs);
+  // Build new head content
+  const head = [
+    `<title>${escapeHtml(r.title)}</title>`,
+    `<meta name="description" content="${escapeHtml(r.desc)}">`,
+    `<link rel="canonical" href="${escapeHtml(r.canon)}">`,
+    `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`,
+    `<meta property="og:title" content="${escapeHtml(r.title)}">`,
+    `<meta property="og:description" content="${escapeHtml(r.desc)}">`,
+    `<meta property="og:url" content="${escapeHtml(r.canon)}">`,
+    `<meta property="og:type" content="website">`,
+    `<meta property="og:image" content="https://chartertransparenz.de/lovable-uploads/italy-sailing.jpg">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeHtml(r.title)}">`,
+    `<meta name="twitter:description" content="${escapeHtml(r.desc)}">`,
+    `<meta name="twitter:image" content="https://chartertransparenz.de/lovable-uploads/italy-sailing.jpg">`
+  ].join("\n    ");
 
-  const metaTags = `
-    <title>${escapeHtml(page.title)}</title>
-    <meta name="description" content="${escapeHtml(page.description)}" />
-    <link rel="canonical" href="${canonical}" />
+  // Inject new head content before </head>
+  return h.replace("</head>", `    ${head}\n  </head>`);
+};
+
+// Main execution
+console.log("\n🚀 Starting Italy SSG prerender...\n");
+
+try {
+  const tpl = readFileSync("dist/index.html", "utf8");
+  
+  for (const r of ROUTES) {
+    const dir = join("dist", r.path);
+    mkdirSync(dir, { recursive: true });
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="${canonical}" />
-    <meta property="og:title" content="${escapeHtml(page.title)}" />
-    <meta property="og:description" content="${escapeHtml(page.description)}" />
-    <meta property="og:image" content="${ogImageUrl}" />
+    const finalHtml = inject(tpl, r);
+    writeFileSync(join(dir, "index.html"), finalHtml, "utf8");
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="${canonical}" />
-    <meta property="twitter:title" content="${escapeHtml(page.title)}" />
-    <meta property="twitter:description" content="${escapeHtml(page.description)}" />
-    <meta property="twitter:image" content="${ogImageUrl}" />
-    
-    <!-- JSON-LD Breadcrumb -->
-    <script type="application/ld+json">
-${breadcrumbJsonLd}
-    </script>
-  `;
-
-  return html.replace('</head>', `${metaTags}\n  </head>`);
-}
-
-async function prerenderItalyPages() {
-  console.log('🇮🇹 Starting Italy prerendering...');
-
-  const indexHtmlPath = path.join(DIST_DIR, 'index.html');
-  if (!fs.existsSync(indexHtmlPath)) {
-    throw new Error(`index.html not found at ${indexHtmlPath}`);
+    console.log(`✓ Wrote: dist${r.path}/index.html`);
   }
-
-  const baseHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
-
-  for (const page of italyPages) {
-    const targetDir = path.join(DIST_DIR, page.path.slice(1));
-    const targetFile = path.join(targetDir, 'index.html');
-
-    fs.mkdirSync(targetDir, { recursive: true });
-
-    const htmlWithMeta = injectMetaTags(baseHtml, page);
-    fs.writeFileSync(targetFile, htmlWithMeta, 'utf-8');
-
-    console.log(`✅ Prerendered: ${page.path}`);
-  }
-
-  console.log('🇮🇹 Italy prerendering complete!');
-}
-
-prerenderItalyPages().catch((error) => {
-  console.error('❌ Italy prerendering failed:', error);
+  
+  console.log("\n✅ Italy SSG prerender completed successfully!\n");
+} catch (error) {
+  console.error("\n❌ Italy SSG prerender failed:", error);
   process.exit(1);
-});
+}

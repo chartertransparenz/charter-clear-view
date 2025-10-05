@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts"
+  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts && bun tsx scripts/generate-sitemap.ts && bun tsx scripts/validate-seo.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -272,6 +272,36 @@
   from = "/reviere/mittelmeer/tuerkei/*"
   to   = "/reviere/mittelmeer/tuerkei/:splat/index.html"
   status = 200
+
+############################################
+# TRAILING SLASH CANONICALIZATION (NO SLASH)
+############################################
+# Wildcard: alle /reviere/*/ → /reviere/* (301)
+[[redirects]]
+  from = "/reviere/*/"
+  to = "/reviere/:splat"
+  status = 301
+  force = true
+
+# Root /reviere/ → /reviere
+[[redirects]]
+  from = "/reviere/"
+  to = "/reviere"
+  status = 301
+  force = true
+
+# Additional Case Normalization
+[[redirects]]
+  from = "/REVIERE/*"
+  to = "/reviere/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviere/MITTELMEER/*"
+  to = "/reviere/mittelmeer/:splat"
+  status = 301
+  force = true
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
 [[redirects]]

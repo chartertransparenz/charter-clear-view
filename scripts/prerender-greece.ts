@@ -11,7 +11,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/griechenland",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Griechenland", "https://chartertransparenz.de/reviere/mittelmeer/griechenland"]
     ]
@@ -23,7 +23,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/griechenland/ionisches-meer",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Griechenland", "https://chartertransparenz.de/reviere/mittelmeer/griechenland"],
       ["Ionisches Meer", "https://chartertransparenz.de/reviere/mittelmeer/griechenland/ionisches-meer"]
@@ -36,7 +36,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/griechenland/athen-saronischer-golf",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Griechenland", "https://chartertransparenz.de/reviere/mittelmeer/griechenland"],
       ["Athen & Saronischer Golf", "https://chartertransparenz.de/reviere/mittelmeer/griechenland/athen-saronischer-golf"]
@@ -49,7 +49,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/griechenland/kykladen",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Griechenland", "https://chartertransparenz.de/reviere/mittelmeer/griechenland"],
       ["Kykladen", "https://chartertransparenz.de/reviere/mittelmeer/griechenland/kykladen"]
@@ -62,7 +62,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Griechenland", "https://chartertransparenz.de/reviere/mittelmeer/griechenland"],
       ["Dodekanes", "https://chartertransparenz.de/reviere/mittelmeer/griechenland/dodekanes"]
@@ -75,7 +75,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/griechenland/sporaden",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Griechenland", "https://chartertransparenz.de/reviere/mittelmeer/griechenland"],
       ["Sporaden", "https://chartertransparenz.de/reviere/mittelmeer/griechenland/sporaden"]

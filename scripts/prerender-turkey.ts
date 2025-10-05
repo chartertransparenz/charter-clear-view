@@ -11,7 +11,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"]
     ]
@@ -23,7 +23,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
       ["Bodrum", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/bodrum"]
@@ -36,7 +36,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
       ["Marmaris", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/marmaris"]
@@ -49,7 +49,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
       ["Göcek & Fethiye", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye"]
@@ -62,7 +62,7 @@ const ROUTES = [
     canon: "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan",
     breadcrumb: [
       ["Start", "https://chartertransparenz.de"],
-      ["Reviere", "https://chartertransparenz.de/#reviere"],
+      ["Reviere", "https://chartertransparenz.de/reviere"],
       ["Mittelmeer", "https://chartertransparenz.de/reviere/mittelmeer"],
       ["Türkei", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"],
       ["Kaş & Kalkan", "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/kas-kalkan"]
