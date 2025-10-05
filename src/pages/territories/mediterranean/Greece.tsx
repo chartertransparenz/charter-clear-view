@@ -11,7 +11,6 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } from 'lucide-react';
 import TerritoryMap from '@/components/TerritoryMap';
 import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 export default function Greece() {
   const m = META.griechenland;
@@ -83,12 +82,6 @@ export default function Greece() {
   const highlights = ['Über 6.000 Inseln und Inselchen', 'Konstante Meltemi-Winde', 'Authentische griechische Tavernen', 'Kristallklares türkises Wasser', 'Reiche antike Geschichte', 'UNESCO-Weltkulturerbe Stätten', 'Perfekte Segelbedingungen', 'Mediterrane Gastfreundschaft'];
   return (
     <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
       <JsonLd json={{
         "@context": "https://schema.org",
         "@type": "BreadcrumbList", 

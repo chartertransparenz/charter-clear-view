@@ -20,7 +20,6 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import caribbean from "@/assets/caribbean.jpg";
-import { Meta } from "@/seo/Meta";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";
 import { BREADCRUMB_CARIBBEAN } from "@/seo/breadcrumbs.caribbean";
@@ -73,12 +72,6 @@ const Caribbean = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Meta 
-        title={m.title}
-        description={m.description}
-        canonical={m.canonical()}
-        ogImage={m.ogImage}
-      />
       <JsonLd json={BREADCRUMB_CARIBBEAN.karibik} />
       <Navigation />
       {/* Header */}

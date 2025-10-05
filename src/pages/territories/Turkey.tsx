@@ -7,7 +7,6 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { META } from "@/seo/meta.config";
-import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 // import destinationTurkey from "@/assets/destination-turkey.jpg";
 
@@ -72,12 +71,6 @@ const Turkey = () => {
 
   return (
     <>
-      <Meta
-        title={m.title}
-        description={m.description}
-        ogImage={absoluteOg(m.ogImage)}
-        canonical={m.canonical()}
-      />
       <JsonLd json={{
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
