@@ -4,9 +4,33 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start",   "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      }
     ]
   },
 
@@ -14,10 +38,42 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start",   "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "Bahamas", "item": "https://chartertransparenz.de/reviere/karibik/bahamas" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 4, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik/bahamas",
+          "name": "Bahamas"
+        }
+      }
     ]
   },
 
@@ -25,10 +81,42 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "BVI", "item": "https://chartertransparenz.de/reviere/karibik/bvi" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 4, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik/bvi",
+          "name": "BVI"
+        }
+      }
     ]
   },
 
@@ -36,10 +124,42 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "USVI", "item": "https://chartertransparenz.de/reviere/karibik/usvi" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 4, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik/usvi",
+          "name": "USVI"
+        }
+      }
     ]
   },
 
@@ -47,10 +167,42 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "Antigua", "item": "https://chartertransparenz.de/reviere/karibik/antigua" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 4, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik/antigua",
+          "name": "Antigua"
+        }
+      }
     ]
   },
 
@@ -58,10 +210,42 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "St. Martin", "item": "https://chartertransparenz.de/reviere/karibik/st-martin" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 4, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik/st-martin",
+          "name": "St. Martin"
+        }
+      }
     ]
   },
 
@@ -69,10 +253,42 @@ export const BREADCRUMB_CARIBBEAN = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://chartertransparenz.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Reviere", "item": "https://chartertransparenz.de/#reviere" },
-      { "@type": "ListItem", "position": 3, "name": "Karibik", "item": "https://chartertransparenz.de/reviere/karibik" },
-      { "@type": "ListItem", "position": 4, "name": "St. Vincent & Grenadinen", "item": "https://chartertransparenz.de/reviere/karibik/st-vincent-grenadinen" }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/",
+          "name": "Start"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere",
+          "name": "Reviere"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik",
+          "name": "Karibik"
+        }
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 4, 
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://chartertransparenz.de/reviere/karibik/st-vincent-grenadinen",
+          "name": "St. Vincent & Grenadinen"
+        }
+      }
     ]
   }
 };

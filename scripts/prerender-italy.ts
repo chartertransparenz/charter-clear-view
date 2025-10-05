@@ -93,7 +93,7 @@ const inject = (html: string, r: (typeof ROUTES)[number]) => {
     // Remove all Twitter tags
     .replace(/<meta[^>]+name=["']twitter:[^"']+["'][^>]*>/gi, "");
 
-  // Build breadcrumb JSON-LD
+  // Build breadcrumb JSON-LD with WebPage structure
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -101,6 +101,7 @@ const inject = (html: string, r: (typeof ROUTES)[number]) => {
       "@type": "ListItem",
       position: i + 1,
       item: {
+        "@type": "WebPage",
         "@id": url,
         name: name
       }

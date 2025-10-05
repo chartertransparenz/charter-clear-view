@@ -85,8 +85,8 @@ const escapeHtml = (s: string) =>
 
 const inject = (html: string, r: (typeof ROUTES)[number]) => {
   // Remove ALL existing head tags to prevent duplicates
-  // NOTE: We do NOT inject Breadcrumb JSON-LD here because it's already 
-  // rendered by the <JsonLd> component in the React pages
+  // NOTE: Breadcrumb JSON-LD is rendered by <JsonLd> component in React pages
+  // using centralized breadcrumb definitions from breadcrumbs.caribbean.ts
   let h = html
     // Remove existing title
     .replace(/<title>[\s\S]*?<\/title>/gi, "")

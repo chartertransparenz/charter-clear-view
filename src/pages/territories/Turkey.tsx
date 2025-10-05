@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";
+import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 // import destinationTurkey from "@/assets/destination-turkey.jpg";
 
 const Turkey = () => {
@@ -71,15 +72,7 @@ const Turkey = () => {
 
   return (
     <>
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Türkei", "item": "https://chartertransparenz.de/reviere/mittelmeer/tuerkei"}
-        ]
-      }} />
+      <JsonLd json={BREADCRUMB_TURKEY.tuerkei} />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navigation />
       {/* Header */}

@@ -12,6 +12,7 @@ import { ArrowLeft, MapPin, Clock, Users, Anchor, Wind, Sun, Star, Calendar } fr
 import TerritoryMap from '@/components/TerritoryMap';
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";
+import { BREADCRUMB_GREECE } from "@/seo/breadcrumbs.greece";
 export default function Greece() {
   const m = META.griechenland;
   
@@ -82,15 +83,7 @@ export default function Greece() {
   const highlights = ['Über 6.000 Inseln und Inselchen', 'Konstante Meltemi-Winde', 'Authentische griechische Tavernen', 'Kristallklares türkises Wasser', 'Reiche antike Geschichte', 'UNESCO-Weltkulturerbe Stätten', 'Perfekte Segelbedingungen', 'Mediterrane Gastfreundschaft'];
   return (
     <>
-      <JsonLd json={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList", 
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Reviere", "item": "https://chartertransparenz.de/reviere"},
-          {"@type": "ListItem", "position": 2, "name": "Mittelmeer", "item": "https://chartertransparenz.de/reviere/mittelmeer"},
-          {"@type": "ListItem", "position": 3, "name": "Griechenland", "item": "https://chartertransparenz.de/reviere/mittelmeer/griechenland"}
-        ]
-      }} />
+      <JsonLd json={BREADCRUMB_GREECE.griechenland} />
       <div className="min-h-screen bg-background">
         <Navigation />
       
