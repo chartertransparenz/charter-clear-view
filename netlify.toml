@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts && bun tsx scripts/generate-sitemap.ts && bun tsx scripts/validate-seo.ts"
+  command = "bun run build && bun tsx scripts/prerender-home.ts && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts && bun tsx scripts/generate-sitemap.ts && bun tsx scripts/validate-seo.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
