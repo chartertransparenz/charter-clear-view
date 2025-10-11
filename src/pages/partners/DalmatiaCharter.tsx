@@ -19,23 +19,23 @@ export default function DalmatiaCharter() {
         <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/dalmatia-charter/" />
       </Helmet>
       <Navigation />
-      <div className="relative bg-gradient-ocean py-20">
-        <div className="container mx-auto px-4">
-          <Link to="/yachtcharter-partner/" className="inline-flex items-center text-white/90 hover:text-white mb-4 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" />Zurück zu allen Partnern</Link>
-          <div className="flex items-center gap-6 mb-6">
-            <img src="/media/partner/dalmatia-charter.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Dalmatia Charter" className="w-32 h-auto bg-white p-4 rounded-lg" />
-            <h1 className="text-4xl md:text-5xl font-bold text-white">Dalmatia Charter</h1>
-          </div>
-        </div>
-      </div>
       <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
         <div className="container mx-auto px-4 py-4">
           <Breadcrumb><BreadcrumbList><BreadcrumbItem><BreadcrumbLink href="/">Start</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbPage>Dalmatia Charter</BreadcrumbPage></BreadcrumbItem></BreadcrumbList></Breadcrumb>
         </div>
       </div>
+      <div className="relative bg-gradient-ocean py-8">
+        <div className="container mx-auto px-4">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Dalmatia Charter</h1>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">Die Adria authentisch erleben</p>
+          </div>
+        </div>
+      </div>
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <Card><CardContent className="p-6 text-center"><p className="text-sm text-muted-foreground mb-3">Partner</p><img src="/media/partner/dalmatia-charter.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Dalmatia Charter Logo" className="object-contain max-h-20 mx-auto" /></CardContent></Card>
             <Card><CardContent className="p-6 text-center"><MapPin className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Regionen</p><p className="font-semibold">Kroatien</p></CardContent></Card>
             <Card><CardContent className="p-6 text-center"><Ship className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Flotte</p><p className="font-semibold">140+ Yachten</p></CardContent></Card>
             <Card><CardContent className="p-6 text-center"><Anchor className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Seit</p><p className="font-semibold">1992</p></CardContent></Card>

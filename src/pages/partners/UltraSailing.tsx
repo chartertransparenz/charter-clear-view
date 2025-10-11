@@ -50,7 +50,7 @@ export default function UltraSailing() {
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Ultra Sailing</h1>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Yachtcharter mit modernen Flotten und erstklassigem Service
+              Exzellenz im Yachtcharter
             </p>
           </div>
         </div>
@@ -59,6 +59,17 @@ export default function UltraSailing() {
       <div className="container mx-auto px-4 pt-8 pb-16">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <Card>
+              <CardContent className="p-6 text-center">
+                <p className="text-sm text-muted-foreground mb-3">Partner</p>
+                <img 
+                  src="/media/partner/ultra-sailing.png?v=4" 
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }}
+                  alt="Ultra Sailing Logo" 
+                  className="object-contain max-h-20 mx-auto"
+                />
+              </CardContent>
+            </Card>
             <Card>
               <CardContent className="p-6 text-center">
                 <MapPin className="w-8 h-8 mx-auto mb-2 text-primary" />
@@ -78,17 +89,6 @@ export default function UltraSailing() {
                 <Anchor className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Seit</p>
                 <p className="font-semibold">2005</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6 text-center">
-                <p className="text-sm text-muted-foreground mb-3">Partner</p>
-                <img 
-                  src="/media/partner/ultra-sailing.png?v=4" 
-                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }}
-                  alt="Ultra Sailing Logo" 
-                  className="object-contain max-h-20 mx-auto"
-                />
               </CardContent>
             </Card>
           </div>
