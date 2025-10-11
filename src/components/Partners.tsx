@@ -44,7 +44,7 @@ const Partners = () => {
   const statistics = [{
     number: count1,
     suffix: "+",
-    label: "Vertrauensvolle Partner",
+    label: "Yachtcharter Partner",
     icon: Users,
     image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png"
   }, {
