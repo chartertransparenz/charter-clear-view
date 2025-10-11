@@ -45,7 +45,7 @@ export default function UltraSailing() {
         </div>
       </div>
 
-      <div className="relative bg-gradient-ocean py-16">
+      <div className="relative bg-gradient-ocean py-8">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Ultra Sailing</h1>
@@ -56,7 +56,7 @@ export default function UltraSailing() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 pt-8 pb-16">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <Card>
