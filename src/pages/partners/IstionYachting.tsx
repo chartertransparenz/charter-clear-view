@@ -74,7 +74,7 @@ export default function IstionYachting() {
               <CardContent className="p-6 text-center">
                 <MapPin className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Regionen</p>
-                <p className="font-semibold">Griechenland</p>
+                <p className="font-semibold">Griechenland & Kroatien</p>
               </CardContent>
             </Card>
             <Card>
