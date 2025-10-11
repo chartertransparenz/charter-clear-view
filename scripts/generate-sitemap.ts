@@ -19,6 +19,25 @@ const URLS: SitemapUrl[] = [
   { loc: '/about', priority: 0.8, changefreq: 'monthly', lastmod: BUILD_TIME },
   { loc: '/faq', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
   
+  // Partner Pages
+  { loc: '/yachtcharter-partner/', priority: 0.8, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/pitter-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/croatia-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/angelina-yachtcharter/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/ncp-mare/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/ultra-sailing/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/waypoint/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/istion-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/kavas-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/vernicos-yachts/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/athenian-yachts/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/olympic-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/five-seasons-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/dalmatia-charter/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/dream-yacht/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/navigare-yachting/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/kiriacoulis/', priority: 0.7, changefreq: 'monthly', lastmod: BUILD_TIME },
+  
   // Croatia Routes
   { loc: '/reviere/mittelmeer/kroatien', priority: 0.9, changefreq: 'monthly', lastmod: BUILD_TIME },
   { loc: '/reviere/mittelmeer/kroatien/istrien', priority: 0.8, changefreq: 'monthly', lastmod: BUILD_TIME },
