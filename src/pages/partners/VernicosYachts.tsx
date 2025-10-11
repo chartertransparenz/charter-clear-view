@@ -20,7 +20,7 @@ export default function VernicosYachts() {
       <Helmet>
         <title>Vernicos Yachts - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Vernicos Yachts - Traditionsreicher Yachtcharter in Griechenland. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/vernicos-yachts/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/vernicos-yachts" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function VernicosYachts() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

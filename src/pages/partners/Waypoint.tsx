@@ -20,7 +20,7 @@ export default function Waypoint() {
       <Helmet>
         <title>Waypoint Charter Croatia - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Waypoint Charter Croatia - Kroatien-Spezialist für Yachtcharter. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/waypoint/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/waypoint" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function Waypoint() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

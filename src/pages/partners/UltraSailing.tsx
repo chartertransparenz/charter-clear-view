@@ -20,7 +20,7 @@ export default function UltraSailing() {
       <Helmet>
         <title>Ultra Sailing - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Ultra Sailing - Yachtcharter mit modernen Flotten. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/ultra-sailing/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/ultra-sailing" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function UltraSailing() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

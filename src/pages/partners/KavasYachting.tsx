@@ -20,7 +20,7 @@ export default function KavasYachting() {
       <Helmet>
         <title>Kavas Yachting - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Kavas Yachting - Professioneller Yachtcharter in Griechenland. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/kavas-yachting/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/kavas-yachting" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function KavasYachting() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

@@ -20,7 +20,7 @@ export default function AthenianYachts() {
       <Helmet>
         <title>Athenian Yachts - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Athenian Yachts - Premium Yachtcharter in Griechenland. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/athenian-yachts/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/athenian-yachts" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function AthenianYachts() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

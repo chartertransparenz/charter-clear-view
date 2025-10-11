@@ -20,7 +20,7 @@ export default function IstionYachting() {
       <Helmet>
         <title>Istion Yachting - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Istion Yachting - Griechenland-Spezialist für Yachtcharter. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/istion-yachting/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/istion-yachting" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function IstionYachting() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

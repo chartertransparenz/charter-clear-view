@@ -37,7 +37,7 @@ export default function PartnersOverview() {
       <Helmet>
         <title>Yachtcharter Partner - Chartertransparenz.de</title>
         <meta name="description" content="Alle unsere weltweiten Yachtcharter-Partner im Überblick. Führende Vercharterer für Ihren perfekten Segeltörn." />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner" />
       </Helmet>
 
       <Navigation />
@@ -74,7 +74,7 @@ export default function PartnersOverview() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {partners.map((partner) => (
-            <Link key={partner.slug} to={`/yachtcharter-partner/${partner.slug}/`}>
+            <Link key={partner.slug} to={`/yachtcharter-partner/${partner.slug}`}>
               <Card className="partner-card h-full">
                 <CardContent className="p-6 flex flex-col items-center justify-center h-full min-h-[140px]">
                   <img 

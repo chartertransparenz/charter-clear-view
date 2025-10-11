@@ -16,12 +16,12 @@ export default function Kiriacoulis() {
       <Helmet>
         <title>Kiriacoulis Mediterranean - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Kiriacoulis Mediterranean - Premium Yachtcharter in Griechenland. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/kiriacoulis/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/kiriacoulis" />
       </Helmet>
       <Navigation />
       <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
         <div className="container mx-auto px-4 py-4">
-          <Breadcrumb><BreadcrumbList><BreadcrumbItem><BreadcrumbLink href="/">Start</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbPage>Kiriacoulis Mediterranean</BreadcrumbPage></BreadcrumbItem></BreadcrumbList></Breadcrumb>
+          <Breadcrumb><BreadcrumbList><BreadcrumbItem><BreadcrumbLink href="/">Start</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbPage>Kiriacoulis Mediterranean</BreadcrumbPage></BreadcrumbItem></BreadcrumbList></Breadcrumb>
         </div>
       </div>
       <div className="relative bg-gradient-ocean py-8">

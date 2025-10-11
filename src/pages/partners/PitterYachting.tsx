@@ -20,7 +20,7 @@ export default function PitterYachting() {
       <Helmet>
         <title>Pitter Yachting - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Pitter Yachting - Professioneller Yachtcharter-Partner für Ihren perfekten Segeltörn. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/pitter-yachting/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/pitter-yachting" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function PitterYachting() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

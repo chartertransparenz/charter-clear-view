@@ -16,12 +16,12 @@ export default function FiveSeasonsYachting() {
       <Helmet>
         <title>Five Seasons Yachting - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Five Seasons Yachting - Professioneller Yachtcharter. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/five-seasons-yachting/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/five-seasons-yachting" />
       </Helmet>
       <Navigation />
       <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
         <div className="container mx-auto px-4 py-4">
-          <Breadcrumb><BreadcrumbList><BreadcrumbItem><BreadcrumbLink href="/">Start</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbPage>Five Seasons Yachting</BreadcrumbPage></BreadcrumbItem></BreadcrumbList></Breadcrumb>
+          <Breadcrumb><BreadcrumbList><BreadcrumbItem><BreadcrumbLink href="/">Start</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink></BreadcrumbItem><BreadcrumbSeparator /><BreadcrumbItem><BreadcrumbPage>Five Seasons Yachting</BreadcrumbPage></BreadcrumbItem></BreadcrumbList></Breadcrumb>
         </div>
       </div>
       <div className="relative bg-gradient-ocean py-8">

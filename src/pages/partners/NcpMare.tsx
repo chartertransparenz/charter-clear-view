@@ -20,7 +20,7 @@ export default function NcpMare() {
       <Helmet>
         <title>NCP & Mare - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="NCP & Mare - Professioneller Yachtcharter-Partner. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/ncp-mare/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/ncp-mare" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function NcpMare() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

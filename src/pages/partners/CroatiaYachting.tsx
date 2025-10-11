@@ -20,7 +20,7 @@ export default function CroatiaYachting() {
       <Helmet>
         <title>Croatia Yachting - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Croatia Yachting - Spezialist für Yachtcharter in Kroatien. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/croatia-yachting/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/croatia-yachting" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function CroatiaYachting() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

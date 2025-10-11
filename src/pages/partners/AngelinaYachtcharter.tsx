@@ -20,7 +20,7 @@ export default function AngelinaYachtcharter() {
       <Helmet>
         <title>Angelina Yachtcharter - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Angelina Yachtcharter - Premium Yachtcharter mit persönlichem Service. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/angelina-yachtcharter/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/angelina-yachtcharter" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function AngelinaYachtcharter() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

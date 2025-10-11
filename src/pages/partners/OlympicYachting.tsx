@@ -20,7 +20,7 @@ export default function OlympicYachting() {
       <Helmet>
         <title>Olympic Yachting - Yachtcharter Partner | Chartertransparenz.de</title>
         <meta name="description" content="Olympic Yachting - Renommierter Yachtcharter in Griechenland. Jetzt anfragen!" />
-        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/olympic-yachting/" />
+        <link rel="canonical" href="https://chartertransparenz.de/yachtcharter-partner/olympic-yachting" />
       </Helmet>
 
       <Navigation />
@@ -34,7 +34,7 @@ export default function OlympicYachting() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/yachtcharter-partner/">Yachtcharter Partner</BreadcrumbLink>
+                <BreadcrumbLink href="/yachtcharter-partner">Yachtcharter Partner</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
