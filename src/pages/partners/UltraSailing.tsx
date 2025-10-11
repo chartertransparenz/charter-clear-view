@@ -36,7 +36,7 @@ export default function UltraSailing() {
               src="/media/partner/ultra-sailing.svg" 
               onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }}
               alt="Ultra Sailing" 
-              className="w-32 h-auto bg-white p-4 rounded-lg"
+              className="w-32 h-auto bg-gray-50 p-4 rounded-lg"
             />
             <h1 className="text-4xl md:text-5xl font-bold text-white">Ultra Sailing</h1>
           </div>
