@@ -25,27 +25,6 @@ export default function PitterYachting() {
 
       <Navigation />
       
-      {/* Hero Section */}
-      <div className="relative bg-gradient-ocean py-20">
-        <div className="container mx-auto px-4">
-          <Link to="/yachtcharter-partner/" className="inline-flex items-center text-white/90 hover:text-white mb-4 transition-colors">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Zurück zu allen Partnern
-          </Link>
-          <div className="flex items-center gap-6 mb-6">
-            <img 
-              src="/media/partner/pitter-yachting.svg" 
-              onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }}
-              alt="Pitter Yachting" 
-              className="w-32 h-auto bg-white p-4 rounded-lg"
-            />
-            <h1 className="text-4xl md:text-5xl font-bold text-white">Pitter Yachting</h1>
-          </div>
-          <p className="text-xl text-white/90 max-w-2xl">Professioneller Yachtcharter mit erstklassigem Service</p>
-        </div>
-      </div>
-
-      {/* Breadcrumb Navigation */}
       <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
         <div className="container mx-auto px-4 py-4">
           <Breadcrumb>
@@ -66,10 +45,20 @@ export default function PitterYachting() {
         </div>
       </div>
 
+      <div className="relative bg-gradient-ocean py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Pitter Yachting</h1>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+              Professioneller Yachtcharter mit erstklassigem Service
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          {/* Quick Facts */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <Card>
               <CardContent className="p-6 text-center">
                 <MapPin className="w-8 h-8 mx-auto mb-2 text-primary" />
@@ -89,6 +78,17 @@ export default function PitterYachting() {
                 <Anchor className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Seit</p>
                 <p className="font-semibold">1990</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <p className="text-sm text-muted-foreground mb-3">Partner</p>
+                <img 
+                  src="/media/partner/pitter-yachting.svg" 
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }}
+                  alt="Pitter Yachting Logo" 
+                  className="object-contain max-h-20 mx-auto"
+                />
               </CardContent>
             </Card>
           </div>
