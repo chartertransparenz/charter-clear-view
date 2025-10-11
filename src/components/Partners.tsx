@@ -150,6 +150,150 @@ const Partners = () => {
             </div>)}
         </div>
 
+        {/* Yachtcharter Partner Logo Grid */}
+        <section id="yachtcharter-partner" className="section section--partners" aria-labelledby="partner-heading" itemScope itemType="https://schema.org/ItemList">
+          <div className="container">
+            <header className="section__header">
+              <h2 id="partner-heading" className="text-3xl md:text-4xl font-bold text-ocean-dark">Unsere Yachtcharter-Partner</h2>
+              <p className="section__subtext">Weltweit führende Vercharterer, mit denen wir regelmäßig zusammenarbeiten.</p>
+            </header>
+
+            <ul className="partners-grid" role="list">
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/pitter-yachting/" itemProp="url" aria-label="Pitter Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/pitter-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Pitter Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Pitter Yachting</span>
+                </a>
+                <meta itemProp="position" content="1" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/croatia-yachting/" itemProp="url" aria-label="Croatia Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/croatia-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Croatia Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Croatia Yachting</span>
+                </a>
+                <meta itemProp="position" content="2" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/angelina-yachtcharter/" itemProp="url" aria-label="Angelina Yachtcharter – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/angelina-yachtcharter.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Angelina Yachtcharter" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Angelina Yachtcharter</span>
+                </a>
+                <meta itemProp="position" content="3" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/ncp-mare/" itemProp="url" aria-label="NCP & Mare – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/ncp-mare.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="NCP & Mare" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">NCP &amp; Mare</span>
+                </a>
+                <meta itemProp="position" content="4" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/ultra-sailing/" itemProp="url" aria-label="Ultra Sailing – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/ultra-sailing.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Ultra Sailing" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Ultra Sailing</span>
+                </a>
+                <meta itemProp="position" content="5" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/waypoint/" itemProp="url" aria-label="Waypoint Charter Croatia – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/waypoint.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Waypoint Charter Croatia" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Waypoint Charter Croatia</span>
+                </a>
+                <meta itemProp="position" content="6" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/istion-yachting/" itemProp="url" aria-label="Istion Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/istion-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Istion Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Istion Yachting</span>
+                </a>
+                <meta itemProp="position" content="7" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/kavas-yachting/" itemProp="url" aria-label="Kavas Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/kavas-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Kavas Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Kavas Yachting</span>
+                </a>
+                <meta itemProp="position" content="8" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/vernicos-yachts/" itemProp="url" aria-label="Vernicos Yachts – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/vernicos-yachts.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Vernicos Yachts" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Vernicos Yachts</span>
+                </a>
+                <meta itemProp="position" content="9" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/athenian-yachts/" itemProp="url" aria-label="Athenian Yachts – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/athenian-yachts.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Athenian Yachts" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Athenian Yachts</span>
+                </a>
+                <meta itemProp="position" content="10" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/olympic-yachting/" itemProp="url" aria-label="Olympic Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/olympic-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Olympic Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Olympic Yachting</span>
+                </a>
+                <meta itemProp="position" content="11" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/five-seasons-yachting/" itemProp="url" aria-label="Five Seasons Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/five-seasons-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Five Seasons Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Five Seasons Yachting</span>
+                </a>
+                <meta itemProp="position" content="12" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/dalmatia-charter/" itemProp="url" aria-label="Dalmatia Charter – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/dalmatia-charter.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Dalmatia Charter" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Dalmatia Charter</span>
+                </a>
+                <meta itemProp="position" content="13" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/dream-yacht/" itemProp="url" aria-label="Dream Yacht – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/dream-yacht.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Dream Yacht" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Dream Yacht</span>
+                </a>
+                <meta itemProp="position" content="14" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/navigare-yachting/" itemProp="url" aria-label="Navigare Yachting – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/navigare-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Navigare Yachting" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Navigare Yachting</span>
+                </a>
+                <meta itemProp="position" content="15" />
+              </li>
+
+              <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a className="partner-card" href="/yachtcharter-partner/kiriacoulis/" itemProp="url" aria-label="Kiriacoulis Mediterranean – Partnerseite öffnen">
+                  <img className="partner-card__logo" src="/media/partner/kiriacoulis.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Kiriacoulis Mediterranean" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <span className="visually-hidden" itemProp="name">Kiriacoulis Mediterranean</span>
+                </a>
+                <meta itemProp="position" content="16" />
+              </li>
+            </ul>
+
+            <div className="section__cta">
+              <a className="btn btn--outline" href="/yachtcharter-partner/" aria-label="Alle Yachtcharter-Partner anzeigen">Alle Yachtcharter-Partner</a>
+            </div>
+          </div>
+        </section>
+
       </div>
     </section>;
 };

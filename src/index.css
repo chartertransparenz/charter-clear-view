@@ -329,3 +329,108 @@ All colors MUST be HSL.
   background: transparent;
   mix-blend-mode: multiply;
 }
+
+/* Partner Logo Grid Styles */
+.section--partners { 
+  padding: clamp(2rem, 5vw, 4rem) 0; 
+}
+
+.section--partners .section__header { 
+  text-align: center; 
+  margin-bottom: 1.5rem; 
+}
+
+.section--partners .section__subtext { 
+  color: hsl(var(--muted-foreground)); 
+  max-width: 50ch; 
+  margin: 0.5rem auto 0; 
+}
+
+.partners-grid { 
+  display: grid; 
+  gap: clamp(0.75rem, 2vw, 1.25rem); 
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  align-items: stretch; 
+}
+
+@media (min-width: 640px) { 
+  .partners-grid { 
+    grid-template-columns: repeat(3, 1fr); 
+  } 
+}
+
+@media (min-width: 1024px) { 
+  .partners-grid { 
+    grid-template-columns: repeat(4, 1fr); 
+  } 
+}
+
+.partner-card { 
+  display: grid; 
+  place-items: center; 
+  min-height: 112px; 
+  border: 1px solid rgba(0, 0, 0, 0.08); 
+  border-radius: 16px; 
+  background: hsl(var(--card));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03); 
+  text-decoration: none; 
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s; 
+}
+
+.partner-card:hover, 
+.partner-card:focus-visible { 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); 
+  border-color: rgba(0, 0, 0, 0.12); 
+  outline: none; 
+}
+
+.partner-card__logo { 
+  max-width: 160px; 
+  width: 80%; 
+  height: auto; 
+  filter: grayscale(100%); 
+  opacity: 0.9; 
+  transition: filter 0.2s, opacity 0.2s; 
+}
+
+.partner-card:hover .partner-card__logo, 
+.partner-card:focus-visible .partner-card__logo { 
+  filter: none; 
+  opacity: 1; 
+}
+
+.section__cta { 
+  margin-top: clamp(1rem, 3vw, 2rem); 
+  text-align: center; 
+}
+
+.btn { 
+  display: inline-block; 
+  padding: 0.75rem 1.25rem; 
+  border-radius: 9999px; 
+  border: 1px solid currentColor; 
+  text-decoration: none; 
+}
+
+.btn--outline { 
+  color: hsl(var(--ocean-dark)); 
+  background: transparent; 
+}
+
+.btn--outline:hover {
+  background: hsl(var(--ocean-dark));
+  color: hsl(var(--primary-foreground));
+}
+
+.visually-hidden { 
+  position: absolute !important; 
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden; 
+  clip: rect(0, 0, 0, 0); 
+  white-space: nowrap; 
+  border: 0; 
+}
