@@ -107,6 +107,16 @@ export default function IstionYachting() {
             <p className="text-lg leading-relaxed mb-6">
               Auch beim Thema Kauf & Management ist Istion eine feste Größe: Als offizieller Händler und Brokerage-Partner für Lagoon begleitet das Team den gesamten Prozess vom Modellvergleich über Finanzierung und Ausrüstung bis zur Indienststellung – auf Wunsch inklusive Charter-Management. Neben Lagoon sind weitere Hersteller im Portfolio; Charter Transparenz sorgt dafür, dass Ihre Vorstellungen (Komfort, Performance, Chartertauglichkeit) sauber mit den verfügbaren Layouts und Optionen abgeglichen werden.
             </p>
+            <figure className="my-8">
+              <img 
+                src="/media/partner/istion-yachting-skradin.jpg" 
+                alt="Istion Yachting Basis ACI Marina Skradin" 
+                className="w-full rounded-lg shadow-lg"
+              />
+              <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                An der Istion-Basis in der ACI Marina Skradin liegen moderne Kats und Yachten wie Perlen im smaragdgrünen Krka-Fluss, eingerahmt von Pinienhängen – mit der markanten Brücke als Kulisse zum Törnstart in die Kornaten.
+              </figcaption>
+            </figure>
             <p className="text-lg leading-relaxed mb-6">
               2023 schlug Istion ein neues Kapitel außerhalb Griechenlands auf: die Eröffnung der Basis in der ACI Marina Skradin (Šibenik). Das „Grand Opening" markierte den Start eines kontinuierlichen Ausbaus in <Link to="/reviere/mittelmeer/kroatien" className="text-primary hover:underline">Kroatien</Link> – mit schnellen Wegen in die Kornaten und in die dalmatinische Inselwelt.
             </p>
