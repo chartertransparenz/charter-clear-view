@@ -96,8 +96,19 @@ export default function AthenianYachts() {
           <div className="prose prose-lg max-w-none mb-12">
             <h2 className="text-3xl font-bold mb-4">Über Athenian Yachts</h2>
             <p className="text-lg leading-relaxed mb-6">
-              Athenian Yachts bietet Premium Yachtcharter in den griechischen Gewässern mit Fokus auf exzellenten Service 
-              und hochwertige Yachten. Das Unternehmen ist bekannt für seine professionelle Betreuung und moderne Flotte.
+              Athenian Yachts begann als kleiner, eigentümergeführter Flottenbetreiber in Athen und hat sich über die Jahre zu einem der bekanntesten Full-Service-Charteranbieter Griechenlands entwickelt. Der Grundgedanke blieb stets derselbe: sauber gewartete Yachten, klare Prozesse von der Anfrage bis zur Rückgabe und ein Team, das die Reviere des Landes wie die eigene Westentasche kennt. Aus ersten Liegeplätzen in der Alimos/Marina Kalamaki wuchs ein Netzwerk weiterer Stützpunkte – u. a. im Saronischen Golf (Athen/Lavrion) sowie auf Lefkas und Korfu für das Ionische Meer. Damit deckt Athenian die wichtigsten Routen Griechenlands ab: kurze Distanzen und geschützte Gewässer im Westen, frische Meltemi-Etappen über die Kykladen im Osten.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Flotte ist breit aufgestellt und kombiniert Komfort mit unkomplizierter Handhabung. Bei den Monohulls dominieren populäre Serien von Beneteau, Jeanneau, Bavaria, Dufour und Hanse – vom kompakten Weekender um 30–34 ft für Paare bis zu familien- und performanceorientierten Cruisern im Bereich 40–55 ft. Wer mehr Raum, Stabilität und Privatsphäre wünscht, findet bei den Katamaranen eine große Auswahl von Lagoon, Bali, Fountaine Pajot und Nautitech; gängige Größen liegen zwischen 38–50 ft mit großzügigen Salons, getrennten Eignerkabinen und – je nach Modell – Extras wie Generator, Klimaanlage oder Watermaker. Viele Yachten sind als Bareboat oder mit Skipper buchbar; auf Wunsch ergänzt Athenian das Setup um Hostess oder Koch.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Ein klarer Pluspunkt ist die eigene Technik vor Ort. Winterarbeiten, planmäßige Inspektionen und schnelle Hilfe im Saisonbetrieb sorgen für verlässliche Übergaben und geringe Ausfallzeiten. Transparente Ausstattungslisten, realistische Kautions-/Versicherungsmodelle und – wo möglich – Early Check-in erleichtern Ihnen den Start. Familien schätzen kinderfreundliche Layouts, Bugstrahlruder und Plotter am Steuerstand; ambitionierte Crews greifen zu Modellen mit sportlicherem Rigg oder optionalen Leichtwindsegeln.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Neben Charter bietet Athenian auch Brokerage & Charter-Management: Wer den Schritt zum eigenen Boot plant, erhält Unterstützung bei Modellauswahl, Finanzierung, Ausrüstung und der späteren Flottenintegration. Dadurch lässt sich der Spagat zwischen Eigennutzung und wirtschaftlichem Betrieb realistisch gestalten. Für Gruppen, Vereine oder Firmen unterstützt Athenian zudem Regatta- und Eventformate – von flottenhomogenen Setups über Safety- und Taktik-Briefings bis hin zur Zeitnahme und Abendprogramm-Organisation.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Ob Sie gemütliches Inselhüpfen durch das Ionische Meer planen, kykladische Langschläge bei Meltemi suchen oder einen Teamevent mit mehreren Booten aufsetzen möchten: Athenian Yachts verbindet lokale Expertise, eine vielfältige Flotte und einen serviceorientierten Ablauf. Nennen Sie Reisedaten, Crewgröße und Wunschrevier – wir stellen Ihnen passende Athenian-Yachten mit Verfügbarkeit, Ausstattungsdetails und einem transparenten Gesamtpreis zusammen.
             </p>
           </div>
 
