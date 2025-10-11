@@ -97,14 +97,33 @@ export default function PitterYachting() {
           <div className="prose prose-lg max-w-none mb-12">
             <h2 className="text-3xl font-bold mb-4">Über Pitter Yachting</h2>
             <p className="text-lg leading-relaxed mb-6">
-              Pitter Yachting ist ein erfahrener Yachtcharter-Partner mit langjähriger Expertise in der Vermietung 
-              hochwertiger Segel- und Motoryachten. Mit einer modernen Flotte und exzellentem Service bietet Pitter 
-              Yachting unvergessliche Segelerlebnisse in den schönsten Revieren weltweit.
+              Pitter Yachting zählt seit den frühen 1990er-Jahren zu den konstanten Größen im Adria-Charter. Aus einem familiengeführten Servicebetrieb entwickelte sich ein international aktiver Qualitätsanbieter – mit klarer Philosophie: technisch einwandfreie Yachten, transparente Abläufe und verlässlicher Service von der Buchung bis zur Rückgabe. Heute operiert Pitter mit über 600 Charteryachten auf 30 Basen in 7 Ländern. Herzstück ist weiterhin Kroatien mit mehr als 350 Yachten auf 15 Basen – von Pula/Veruda über Biograd, Jezera/Murter und Šibenik/Mandalina bis Split/Trogir und Dubrovnik. Ergänzend betreibt Pitter Basen in Griechenland (u. a. Athen/Lavrion, Lefkas, Korfu), dazu ausgewählte Standorte in weiteren Mittelmeerregionen. Für die Saison 2025 sind +25 neue Yachten angekündigt; zusätzlich gehen neue Basen in Murter/Hramina (HR) und Kavala (GR) an den Start.
             </p>
-            <p className="text-lg leading-relaxed">
-              Das Unternehmen legt besonderen Wert auf erstklassig gewartete Yachten, persönliche Beratung und 
-              professionellen Support vor Ort. Ob Bareboat-Charter oder mit Skipper – Pitter Yachting macht Ihren 
-              Segeltörn zu einem unvergesslichen Erlebnis.
+            <p className="text-lg leading-relaxed mb-6">
+              Die Flotte deckt ein breites Spektrum ab. Bei den Monohulls dominieren bewährte Serien von Bavaria, Beneteau, Jeanneau, Dufour, Hanse und Elan – von kompakten Cruisern um 30–34 ft (ideal für Paare/kleine Crews) bis hin zu familien- und performanceorientierten Yachten im Bereich 40–55 ft. Exakte Stückzahlen je Hersteller veröffentlicht Pitter nicht; erfahrungsgemäß bilden die populären Familiengrößen um 40–46 ft den Kern. Im Katamaran-Segment finden Sie Modelle von Lagoon, Bali, Fountaine Pajot und Nautitech – typischerweise 38–50 ft. Auch hier nennt Pitter keine exakten Typenzahlen, bietet aber eine breite Abdeckung vom kompakten Urlaubskat bis zum komfortorientierten 50-Fuß-Kat mit Generator/Klimaanlage.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Ein wesentlicher Qualitätsbaustein ist die eigene Technik vor Ort: Winterarbeiten, planmäßige Inspektionen und schnelle Hilfe im Saisonbetrieb sorgen für zuverlässige Übergaben. Transparente Ausstattungslisten, faire Kautions-/Versicherungsmodelle und – wo möglich – frühes Check-in erleichtern Ihnen den Start. Familien freuen sich über kinderfreundliche Layouts, Bugstrahlruder und Plotter am Steuerstand; sportlich Ambitionierte nutzen Performance-Trimms, Gennaker/Code-Zero (modellabhängig) oder wählen flottenhomogene Setups für Regatten und Teamevents. Pitter unterstützt Sie dabei mit Briefings, Safety-Checks, Optional-Coaching und – auf Wunsch – Organisation von Wertung und Rahmenprogramm.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Strategisch wichtig ist die Mitgliedschaft in der Nautic Alliance. Für Sie bedeutet das: Zugang zu einem vernetzten Qualitäts- und Servicestandard über mehrere Länder und Marken hinweg, abgestimmte Prozesse (von der Verfügbarkeit bis zur Wartung), bessere Planbarkeit bei Einweg-Optionen oder Flotten-Events sowie einheitliche, transparente Kommunikation. Kurz: mehr Auswahl, mehr Verlässlichkeit – ohne auf den Pitter-Service zu verzichten, den viele Crews seit Jahren schätzen.
+            </p>
+            <h3 className="text-2xl font-bold mb-3 mt-8">Länder & Basen – Überblick</h3>
+            <p className="text-lg leading-relaxed mb-2">
+              <strong>Kroatien:</strong> Schwerpunktland mit &gt;350 Yachten auf 15 Basen (Istrien, Nord-/Mitteldalmatien, Split/Trogir).
+            </p>
+            <p className="text-lg leading-relaxed mb-2">
+              <strong>Griechenland:</strong> Basen u. a. Athen/Lavrion, Lefkas, Korfu; 2025 zusätzlich Kavala.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              <strong>Weitere Länder:</strong> ausgewählte Mittelmeerstandorte; genaue Yachtzahlen pro Land werden nicht im Detail veröffentlicht.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Ob Buchtenbummeln in den Kornaten, Inselhüpfen rund um Hvar & Vis, Ägäis-One-Ways oder eine Firmenregatta: die Kombination aus dichter Basenstruktur, großer Typenvielfalt und Nautic-Alliance-Rückhalt macht Pitter Yachting zu einer sicheren Wahl.
+            </p>
+            <p className="text-lg leading-relaxed font-semibold">
+              Möchten Sie jetzt Ihre Pitter-Charter planen?<br />
+              Nennen Sie Reisedaten, Crewgröße und Wunschrevier – wir liefern Ihnen konkrete Yachtvorschläge mit Verfügbarkeit, Ausstattungsdetails und einem transparenten Gesamtpreis. Jetzt Anfrage senden und mit Pitter Yachting ablegen!
             </p>
           </div>
 
