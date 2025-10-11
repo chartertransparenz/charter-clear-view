@@ -44,6 +44,14 @@ export default function DalmatiaCharter() {
             <h2 className="text-3xl font-bold mb-6">Dalmatia Charter – persönlich geführt von Ivica Buble</h2>
             <p className="text-lg leading-relaxed mb-6">Dalmatia Charter steht für Charter mit Herz und Handschlagqualität. Inhaber Ivica Buble führt das Unternehmen persönlich – von der ersten Anfrage bis zur Rückkehr an den Steg. Diese Inhaberführung prägt das familiäre Umfeld, kurze Entscheidungswege und einen hohen Servicelevel an Bord wie an Land. Jede Yacht wird sorgfältig vorbereitet, Sonderwünsche werden pragmatisch und schnell gelöst.</p>
             
+            <div className="my-8 rounded-lg overflow-hidden">
+              <img 
+                src="/media/partner/dalmatia-charter-yacht.jpg" 
+                alt="Dalmatia Charter Segelyacht in kristallklarer dalmatinischer Bucht – Ihr unvergessliches Segelerlebnis wartet" 
+                className="w-full h-auto"
+              />
+            </div>
+            
             <h3 className="text-2xl font-bold mb-4">Basen & Revier</h3>
             <p className="text-lg leading-relaxed mb-6">Sie starten wahlweise ab ACI Marina Trogir (bei Split) oder Marina Kremik/Primošten. Von Trogir aus erreichen Sie Hvar, Brač, Vis und Šolta bequem; Kremik öffnet Ihnen den direkten Weg in die Kornaten und nach Norddalmatien. Beide Basen sind ideal gelegen, mit guter Anbindung und kurzen Wegen zu den Highlights der Adria.</p>
             
