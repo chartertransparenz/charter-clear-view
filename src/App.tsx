@@ -386,23 +386,23 @@ function App() {
             <Route path="/reviere/expeditionen" element={<Expeditions />} />
 
             {/* Partner routes */}
-            <Route path="/yachtcharter-partner/" element={<PartnersOverview />} />
-            <Route path="/yachtcharter-partner/pitter-yachting/" element={<PitterYachting />} />
-            <Route path="/yachtcharter-partner/croatia-yachting/" element={<CroatiaYachting />} />
-            <Route path="/yachtcharter-partner/angelina-yachtcharter/" element={<AngelinaYachtcharter />} />
-            <Route path="/yachtcharter-partner/ncp-mare/" element={<NcpMare />} />
-            <Route path="/yachtcharter-partner/ultra-sailing/" element={<UltraSailing />} />
-            <Route path="/yachtcharter-partner/waypoint/" element={<Waypoint />} />
-            <Route path="/yachtcharter-partner/istion-yachting/" element={<IstionYachting />} />
-            <Route path="/yachtcharter-partner/kavas-yachting/" element={<KavasYachting />} />
-            <Route path="/yachtcharter-partner/vernicos-yachts/" element={<VernicosYachts />} />
-            <Route path="/yachtcharter-partner/athenian-yachts/" element={<AthenianYachts />} />
-            <Route path="/yachtcharter-partner/olympic-yachting/" element={<OlympicYachting />} />
-            <Route path="/yachtcharter-partner/five-seasons-yachting/" element={<FiveSeasonsYachting />} />
-            <Route path="/yachtcharter-partner/dalmatia-charter/" element={<DalmatiaCharter />} />
-            <Route path="/yachtcharter-partner/dream-yacht/" element={<DreamYacht />} />
-            <Route path="/yachtcharter-partner/navigare-yachting/" element={<NavigareYachting />} />
-            <Route path="/yachtcharter-partner/kiriacoulis/" element={<Kiriacoulis />} />
+            <Route path="/yachtcharter-partner" element={<PartnersOverview />} />
+            <Route path="/yachtcharter-partner/pitter-yachting" element={<PitterYachting />} />
+            <Route path="/yachtcharter-partner/croatia-yachting" element={<CroatiaYachting />} />
+            <Route path="/yachtcharter-partner/angelina-yachtcharter" element={<AngelinaYachtcharter />} />
+            <Route path="/yachtcharter-partner/ncp-mare" element={<NcpMare />} />
+            <Route path="/yachtcharter-partner/ultra-sailing" element={<UltraSailing />} />
+            <Route path="/yachtcharter-partner/waypoint" element={<Waypoint />} />
+            <Route path="/yachtcharter-partner/istion-yachting" element={<IstionYachting />} />
+            <Route path="/yachtcharter-partner/kavas-yachting" element={<KavasYachting />} />
+            <Route path="/yachtcharter-partner/vernicos-yachts" element={<VernicosYachts />} />
+            <Route path="/yachtcharter-partner/athenian-yachts" element={<AthenianYachts />} />
+            <Route path="/yachtcharter-partner/olympic-yachting" element={<OlympicYachting />} />
+            <Route path="/yachtcharter-partner/five-seasons-yachting" element={<FiveSeasonsYachting />} />
+            <Route path="/yachtcharter-partner/dalmatia-charter" element={<DalmatiaCharter />} />
+            <Route path="/yachtcharter-partner/dream-yacht" element={<DreamYacht />} />
+            <Route path="/yachtcharter-partner/navigare-yachting" element={<NavigareYachting />} />
+            <Route path="/yachtcharter-partner/kiriacoulis" element={<Kiriacoulis />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
