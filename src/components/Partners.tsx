@@ -193,7 +193,7 @@ const Partners = () => {
 
               <li className="partners-grid__item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
                 <a className="partner-card" href="/yachtcharter-partner/ultra-sailing/" itemProp="url" aria-label="Ultra Sailing – Partnerseite öffnen">
-                  <img className="partner-card__logo" src="/media/partner/ultra-sailing.png?v=2" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Ultra Sailing" loading="lazy" width="220" height="100" itemProp="logo" />
+                  <img className="partner-card__logo object-contain" src="/media/partner/ultra-sailing.png?v=3" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Ultra Sailing" loading="lazy" width="220" height="100" itemProp="logo" />
                   <span className="visually-hidden" itemProp="name">Ultra Sailing</span>
                 </a>
                 <meta itemProp="position" content="5" />

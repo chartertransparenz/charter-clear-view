@@ -33,7 +33,7 @@ export default function UltraSailing() {
           </Link>
           <div className="flex items-center gap-6 mb-6">
             <img 
-              src="/media/partner/ultra-sailing.png?v=2" 
+              src="/media/partner/ultra-sailing.png?v=3" 
               onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }}
               alt="Ultra Sailing" 
               className="object-contain w-32 h-auto bg-white p-4 rounded-lg"
