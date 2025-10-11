@@ -102,6 +102,18 @@ export default function PitterYachting() {
             <p className="text-lg leading-relaxed mb-6">
               Die Flotte deckt ein breites Spektrum ab. Bei den Monohulls dominieren bewährte Serien von Bavaria, Beneteau, Jeanneau, Dufour, Hanse und Elan – von kompakten Cruisern um 30–34 ft (ideal für Paare/kleine Crews) bis hin zu familien- und performanceorientierten Yachten im Bereich 40–55 ft. Exakte Stückzahlen je Hersteller veröffentlicht Pitter nicht; erfahrungsgemäß bilden die populären Familiengrößen um 40–46 ft den Kern. Im Katamaran-Segment finden Sie Modelle von Lagoon, Bali, Fountaine Pajot und Nautitech – typischerweise 38–50 ft. Auch hier nennt Pitter keine exakten Typenzahlen, bietet aber eine breite Abdeckung vom kompakten Urlaubskat bis zum komfortorientierten 50-Fuß-Kat mit Generator/Klimaanlage.
             </p>
+            
+            <figure className="my-8">
+              <img 
+                src="/media/partner/pitter-yachtcharter.jpg" 
+                alt="Moderne Yachten von Pitter Yachting" 
+                className="w-full rounded-lg shadow-lg"
+              />
+              <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                Auf den modernen Yachten von Pitter Yachting können Sie die Buchten ganz entspannt erkunden.
+              </figcaption>
+            </figure>
+
             <p className="text-lg leading-relaxed mb-6">
               Ein wesentlicher Qualitätsbaustein ist die eigene Technik vor Ort: Winterarbeiten, planmäßige Inspektionen und schnelle Hilfe im Saisonbetrieb sorgen für zuverlässige Übergaben. Transparente Ausstattungslisten, faire Kautions-/Versicherungsmodelle und – wo möglich – frühes Check-in erleichtern Ihnen den Start. Familien freuen sich über kinderfreundliche Layouts, Bugstrahlruder und Plotter am Steuerstand; sportlich Ambitionierte nutzen Performance-Trimms, Gennaker/Code-Zero (modellabhängig) oder wählen flottenhomogene Setups für Regatten und Teamevents. Pitter unterstützt Sie dabei mit Briefings, Safety-Checks, Optional-Coaching und – auf Wunsch – Organisation von Wertung und Rahmenprogramm.
             </p>
