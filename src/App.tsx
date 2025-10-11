@@ -169,6 +169,25 @@ import Fiji from "./pages/territories/pacific/charter-locations/Fiji";
 import NewZealand from "./pages/territories/pacific/charter-locations/NewZealand";
 import AllTerritories from "./pages/AllTerritories";
 
+// Partner pages
+import PartnersOverview from "./pages/partners/Index";
+import PitterYachting from "./pages/partners/PitterYachting";
+import CroatiaYachting from "./pages/partners/CroatiaYachting";
+import AngelinaYachtcharter from "./pages/partners/AngelinaYachtcharter";
+import NcpMare from "./pages/partners/NcpMare";
+import UltraSailing from "./pages/partners/UltraSailing";
+import Waypoint from "./pages/partners/Waypoint";
+import IstionYachting from "./pages/partners/IstionYachting";
+import KavasYachting from "./pages/partners/KavasYachting";
+import VernicosYachts from "./pages/partners/VernicosYachts";
+import AthenianYachts from "./pages/partners/AthenianYachts";
+import OlympicYachting from "./pages/partners/OlympicYachting";
+import FiveSeasonsYachting from "./pages/partners/FiveSeasonsYachting";
+import DalmatiaCharter from "./pages/partners/DalmatiaCharter";
+import DreamYacht from "./pages/partners/DreamYacht";
+import NavigareYachting from "./pages/partners/NavigareYachting";
+import Kiriacoulis from "./pages/partners/Kiriacoulis";
+
 const queryClient = new QueryClient();
 
 function App() {
@@ -365,6 +384,25 @@ function App() {
 
             {/* Expedition routes */}
             <Route path="/reviere/expeditionen" element={<Expeditions />} />
+
+            {/* Partner routes */}
+            <Route path="/yachtcharter-partner/" element={<PartnersOverview />} />
+            <Route path="/yachtcharter-partner/pitter-yachting/" element={<PitterYachting />} />
+            <Route path="/yachtcharter-partner/croatia-yachting/" element={<CroatiaYachting />} />
+            <Route path="/yachtcharter-partner/angelina-yachtcharter/" element={<AngelinaYachtcharter />} />
+            <Route path="/yachtcharter-partner/ncp-mare/" element={<NcpMare />} />
+            <Route path="/yachtcharter-partner/ultra-sailing/" element={<UltraSailing />} />
+            <Route path="/yachtcharter-partner/waypoint/" element={<Waypoint />} />
+            <Route path="/yachtcharter-partner/istion-yachting/" element={<IstionYachting />} />
+            <Route path="/yachtcharter-partner/kavas-yachting/" element={<KavasYachting />} />
+            <Route path="/yachtcharter-partner/vernicos-yachts/" element={<VernicosYachts />} />
+            <Route path="/yachtcharter-partner/athenian-yachts/" element={<AthenianYachts />} />
+            <Route path="/yachtcharter-partner/olympic-yachting/" element={<OlympicYachting />} />
+            <Route path="/yachtcharter-partner/five-seasons-yachting/" element={<FiveSeasonsYachting />} />
+            <Route path="/yachtcharter-partner/dalmatia-charter/" element={<DalmatiaCharter />} />
+            <Route path="/yachtcharter-partner/dream-yacht/" element={<DreamYacht />} />
+            <Route path="/yachtcharter-partner/navigare-yachting/" element={<NavigareYachting />} />
+            <Route path="/yachtcharter-partner/kiriacoulis/" element={<Kiriacoulis />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
