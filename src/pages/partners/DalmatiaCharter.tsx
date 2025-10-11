@@ -41,8 +41,31 @@ export default function DalmatiaCharter() {
             <Card><CardContent className="p-6 text-center"><Anchor className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Seit</p><p className="font-semibold">1992</p></CardContent></Card>
           </div>
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-4">Über Dalmatia Charter</h2>
-            <p className="text-lg leading-relaxed">Dalmatia Charter ist ein führender Yachtcharter-Anbieter in Kroatien mit exzellenter Flotte und Service.</p>
+            <h2 className="text-3xl font-bold mb-6">Dalmatia Charter – persönlich geführt von Ivica Buble</h2>
+            <p className="text-lg leading-relaxed mb-6">Dalmatia Charter steht für Charter mit Herz und Handschlagqualität. Inhaber Ivica Buble führt das Unternehmen persönlich – von der ersten Anfrage bis zur Rückkehr an den Steg. Diese Inhaberführung prägt das familiäre Umfeld, kurze Entscheidungswege und einen hohen Servicelevel an Bord wie an Land. Jede Yacht wird sorgfältig vorbereitet, Sonderwünsche werden pragmatisch und schnell gelöst.</p>
+            
+            <h3 className="text-2xl font-bold mb-4">Basen & Revier</h3>
+            <p className="text-lg leading-relaxed mb-6">Sie starten wahlweise ab ACI Marina Trogir (bei Split) oder Marina Kremik/Primošten. Von Trogir aus erreichen Sie Hvar, Brač, Vis und Šolta bequem; Kremik öffnet Ihnen den direkten Weg in die Kornaten und nach Norddalmatien. Beide Basen sind ideal gelegen, mit guter Anbindung und kurzen Wegen zu den Highlights der Adria.</p>
+            
+            <h3 className="text-2xl font-bold mb-4">Flotte</h3>
+            <p className="text-lg leading-relaxed mb-6">Die kompakte, gepflegte Flotte umfasst rund 25 Segelyachten (Monohulls) verteilt auf zwei Basen. Der bewusst überschaubare Umfang ermöglicht persönliche Betreuung statt Massenabfertigung – vom Check-in bis zur Übergabe.</p>
+            
+            <h3 className="text-2xl font-bold mb-4">Qualität & Service</h3>
+            <p className="text-lg leading-relaxed mb-6">Wartung, Übergabe und Revierbriefing erfolgen durch das eingespielte Stammteam um Ivica Buble. Ergebnis sind zuverlässige Technik, saubere Yachten und transparente Abläufe. In Gästebewertungen wird regelmäßig die konstante Bootsqualität, die freundliche Betreuung sowie die lösungsorientierte Kommunikation hervorgehoben.</p>
+            
+            <h3 className="text-2xl font-bold mb-4">Sinnvolle Extras</h3>
+            <p className="text-lg leading-relaxed mb-6">Viele Yachten sind mit Solarmodulen, WLAN an Bord und 12/220-V-Invertern ausgestattet – praktisch für komfortables, energieeffizientes Cruisen.</p>
+            
+            <h3 className="text-2xl font-bold mb-4">Warum Dalmatia Charter?</h3>
+            <ul className="list-disc list-inside space-y-3 text-lg mb-6">
+              <li><strong>Inhaberführung:</strong> Direkter Draht zu Ivica Buble – persönlich, verbindlich, schnell.</li>
+              <li><strong>Familiäres Umfeld:</strong> Sie sind Gast, nicht Nummer – an Land wie an Bord.</li>
+              <li><strong>Hoher Servicelevel:</strong> Top-gepflegte Yachten, klare Prozesse, zuverlässige Übergaben.</li>
+              <li><strong>Beste Lage:</strong> Trogir und Kremik als ideale Startpunkte für Süd- und Norddalmatien.</li>
+              <li><strong>Komfort an Bord:</strong> Sinnvolle Ausstattung für entspannte Törns.</li>
+            </ul>
+            
+            <p className="text-lg leading-relaxed font-semibold">Fazit: Wenn Sie persönliche Betreuung, familiäre Atmosphäre und hohe Servicequalität schätzen, ist Dalmatia Charter die richtige Wahl – mit zwei starken Basen in Mitteldalmatien und einer sorgfältig gewarteten Flotte für entspannte, sichere Segelerlebnisse.</p>
           </div>
           <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg text-center">
             <h4 className="text-2xl font-bold mb-4">Jetzt Yachtcharter Dalmatia Charter anfragen</h4>
