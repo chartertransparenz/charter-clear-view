@@ -94,15 +94,33 @@ export default function CroatiaYachting() {
           </div>
 
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-4">Über Croatia Yachting</h2>
+            <h2 className="text-3xl font-bold mb-6">Croatia Yachting – professionell gemanagt, serviceorientiert, strategisch gut verteilt</h2>
+            
             <p className="text-lg leading-relaxed mb-6">
-              Croatia Yachting ist einer der führenden Yachtcharter-Anbieter in Kroatien mit über 35 Jahren Erfahrung. 
-              Das Unternehmen bietet eine umfassende Flotte moderner Segelyachten und Katamarane in allen wichtigen 
-              Marinas entlang der kroatischen Küste.
+              Croatia Yachting wurde 2004 gegründet – mit dem klaren Anspruch, die Attraktivität der dalmatinischen Küste mit einer professionell gemanagten, serviceorientierten Flotte zu verbinden. Aus diesem Ansatz ist einer der bekanntesten kroatischen Charteranbieter entstanden: modern organisiert, mit klaren Prozessen von der Anfrage bis zur Rückgabe und einem Team, das Land, Leute und Liegeplätze seit Jahren aus dem Effeff kennt. Die Flotte ist in den letzten Jahren dynamisch gewachsen und umfasst heute über 170 Yachten – eine komfortable Größenordnung, die Verfügbarkeit in gefragten Wochen sichert und zugleich eine sorgfältige technische Betreuung ermöglicht.
             </p>
-            <p className="text-lg leading-relaxed">
-              Mit exzellentem Service, bestens gewarteten Yachten und professioneller Beratung sorgt Croatia Yachting 
-              für unvergessliche Segelerlebnisse in einem der schönsten Segelreviere Europas.
+
+            <h3 className="text-2xl font-bold mb-4">Basen & Revier</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Basen sind strategisch entlang der Adria verteilt, sodass Sie ohne Umwege in die Inselwelt starten: Seget/Marina Baotić (bei Trogir) und Marina Kaštela erschließen Split und Mitteldalmatien, D-Marin Dalmacija (Sukošan) und die Marinas in Biograd und Šibenik/Mandalina sind perfekte Tore zu den Kornaten, während die Basis in der ACI Marina Komolac (Dubrovnik) den Süden abdeckt. Diese Dichte macht Routenplanungen flexibel – ob entspannter Familien-Törn, Fotopunkte in Nationalparks oder sportlichere Etappen über Hvar und Vis.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4">Flotte & Ausstattung</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Bei den Einrumpfyachten dominieren bewährte Serien von Bavaria, Beneteau, Jeanneau, Dufour, Hanse und Elan: vom kompakten 3-Kabinen-Cruiser um 30–34 Fuß (ideal für Paare und kleine Crews) bis zu familien- und performanceorientierten 45–50-Fuß-Yachten mit Bugstrahlruder, Plotter am Steuerstand und optionalen Leichtwindsegeln. Wer mehr Volumen, Privatsphäre und Komfort wünscht, greift zu Katamaranen von Lagoon, Bali, Fountaine Pajot oder Nautitech. Typische Grundrisse bieten vier gleichwertige Kabinen, große Pantry-Salons und – je nach Modell – Extras wie Generator, Klimaanlage und Watermaker. Viele Einheiten sind wahlweise bareboat oder mit Skipper buchbar; auf Wunsch ergänzt eine Hostess oder ein Koch das Setup.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4">Warum Croatia Yachting über Charter Transparenz buchen?</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Weil Sie mit uns die Erfahrung aus 30 Jahren Beratung und einen direkten Draht zu den Teams vor Ort kombinieren. Wir kennen die Abläufe in der Charterbranche genau, haben Tipps zur Anfahrt, Park- und Proviantoptionen – und gleichen Ihre Wünsche (Kabinenplan, Baujahr, Ausstattungsdetails, Kinder an Bord, Skipperbedarf, sportliche Ambition) mit konkreten Yachtempfehlungen aus genau dieser Flotte ab. Statt generischer Listen erhalten Sie eine kurze, ehrliche Auswahl, die zu Crew und Revierplan passt – inklusive Hinweis, welche Grundrisse sich in welcher Woche bewährt haben, und welche Optionen (z. B. Gennaker, SUPs, früher Check-in) sich wirklich lohnen.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Auch nach der Buchung bleiben wir an Ihrer Seite: mit Routenideen zwischen Kornaten und Hvar/Vis, Tipps zu Bojenfeldern und Konobas Wetterfenster-Briefings und kleinen Praxisdetails, die den ersten Hafentag entspannen. Unser Ziel ist, dass Sie die erste Meile mit Vorfreude statt Fragezeichen segeln – und am Ende genau die Erfahrung mitnehmen, die Sie sich vorgestellt haben.
+            </p>
+
+            <p className="text-lg leading-relaxed font-semibold">
+              Kurz: Mit Croatia Yachting wählen Sie eine große, gut betreute Flotte an erstklassigen Startpunkten der Adria. Mit Charter Transparenz sichern Sie sich die maßgeschneiderte Auswahl, faire Konditionen und eine verlässliche Abwicklung von der Anfrage bis zur Rückgabe. Sagen Sie uns Reisedatum, Crewgröße und Wunschroute – wir senden Ihnen umgehend passende Angebote aus der Croatia-Yachting-Flotte mit Verfügbarkeit, Ausstattungsdetails und transparentem Gesamtpreis.
             </p>
           </div>
 
