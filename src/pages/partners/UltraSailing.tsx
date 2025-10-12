@@ -81,23 +81,52 @@ export default function UltraSailing() {
               <CardContent className="p-6 text-center">
                 <Ship className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Flotte</p>
-                <p className="font-semibold">90+ Yachten</p>
+                <p className="font-semibold">50+ Yachten</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
                 <Anchor className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Seit</p>
-                <p className="font-semibold">2005</p>
+                <p className="font-semibold">1995</p>
               </CardContent>
             </Card>
           </div>
 
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-4">Über Ultra Sailing</h2>
+            <h2 className="text-3xl font-bold mb-6">Ultra Sailing – kroatische Segel-DNA seit 1995, stark in Split, Trogir, Pula & Dubrovnik</h2>
+            
             <p className="text-lg leading-relaxed mb-6">
-              Ultra Sailing bietet modernen Yachtcharter mit Fokus auf Qualität und Service. 
-              Mit einer gepflegten Flotte und erfahrenem Team sorgt Ultra Sailing für unvergessliche Segelerlebnisse.
+              Ultra Sailing wurde 1995 in Split gegründet – zunächst mit klarer Fokussierung auf nautische Ausbildung und Charter. Aus dem kleinen Team entwickelte sich ein etablierter Flottenbetreiber mit eigenem Technik-Know-how, Segelschule und dichtem Basisnetz entlang der Adria. Diese Mischung aus Charter, Training und Service prägt bis heute die Marke: solide gewartete Yachten, klare Abläufe beim Check-in und kurze Wege in die dalmatinische Inselwelt.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">Flotte & Ausrichtung</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Ultra betreibt eine eigene Charterflotte von Segelbooten (und ausgewählten Kats) ungefähr zwischen 30 und 60 Fuß – ideal für Paare, Familien und sportlichere Crews. Besonders sichtbar ist die starke Ausrichtung auf moderne Beneteau-Linien (Oceanis/First), ergänzt durch gängige Charterklassiker anderer Werften. Für Leichtwind-Tage stehen – je nach Yacht – Optionen wie Gennaker/Code Zero bereit. Größenordnung und Ausstattung variieren saisonal; für 7-Tage-Törns lassen sich homogene Boote für kleine Club-Regatten oder Teamevents zusammenstellen.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">Basen & Reviere</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Strategisch gut verteilt, starten Sie mit Ultra u. a. ab Pula (Istrien/Kvarner), Split/Trogir (Mitteldalmatien) und Dubrovnik (Süddalmatien). Damit sind alle klassischen Routen erschlossen: die Kornaten und Nordinseln, Hvar/Vis/Brač um Split sowie die südliche Inselwelt bis Mljet. Für Crews mit begrenzter Zeit sind One-Week-Loops ohne lange Anfahrten möglich; wer zwei Wochen plant, kombiniert bequem zwei Reviercharaktere.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">Segelschule & Know-how</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Ein Alleinstellungsmerkmal ist die Ultra Sailing School (seit 1995), die von Regatta-erfahrenen Skippern geprägt ist. Das spürt man beim Übergabe-Briefing und in den praxisnahen Tipps zu Trimm, Manövern und Revierbesonderheiten – ein Plus für Einsteiger und ambitionierte Crews gleichermaßen.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">Flottengröße – realistisch eingeordnet</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Je nach Saison listet Ultra über 50 Charteryachten entlang der Küste; die genaue Zahl schwankt, weil Neubauten, Verkäufe und Wartungsfenster kontinuierlich einfließen. Für die Törnplanung zählt: In den Kernbasen Split/Trogir sowie Pula und Dubrovnik ist die Modell-Auswahl stabil – gut für Wunschgrundrisse und Baujahre in beliebten Urlaubswochen.
+            </p>
+
+            <h3 className="text-2xl font-bold mb-4 mt-8">Warum Ultra Sailing über Charter Transparenz buchen?</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Weil Sie die Markenstärke von Ultra mit unserem Full-Service kombinieren. Wir kennen die Basen, Übergaben und Teams persönlich, steuern die Yachtauswahl nach Crewprofil (Kabinen, Kinder, Skipperwunsch, Segelambition) und empfehlen konkrete Schiffe mit genau passenden Layouts, Baujahren und Ausstattungen – anstatt langer, unübersichtlicher Listen. Dank unseres Drahts zu den Base-Managern klären wir Early-Check-in, Zusatzsegel, SUPs, Kinder-Netze oder Transfer/Proviant pragmatisch und verbindlich. Vor Abreise erhalten Sie Reviervorschläge (Kornaten vs. Hvar/Vis), Mooring-Tipps, Anreise- und Parkinfos – damit die erste Meile entspannt gelingt.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Kurz: Ultra Sailing steht für verlässliche Technik, seglerische Kompetenz und Top-Lagen; Charter Transparenz sorgt dafür, dass daraus Ihr maßgeschneiderter Törn wird – mit fairen Konditionen, sauberer Organisation und schneller Hilfe, wenn's darauf ankommt. Senden Sie uns Reisedaten und Crewgröße – wir liefern passende Ultra-Vorschläge mit Verfügbarkeit, Ausstattungsdetails und transparentem Gesamtpreis.
             </p>
           </div>
 
