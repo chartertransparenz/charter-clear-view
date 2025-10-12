@@ -96,8 +96,19 @@ export default function Waypoint() {
           <div className="prose prose-lg max-w-none mb-12">
             <h2 className="text-3xl font-bold mb-4">Über Waypoint Charter Croatia</h2>
             <p className="text-lg leading-relaxed mb-6">
-              Waypoint Charter Croatia ist ein renommierter Yachtcharter-Anbieter mit Spezialisierung auf Kroatien. 
-              Das Unternehmen bietet exzellenten Service und eine moderne Flotte in den schönsten kroatischen Marinas.
+              Waypoint Charter steht seit vielen Jahren für unvergessliche Segelerlebnisse an der kroatischen Adriaküste. Von zwei der schönsten Ausgangspunkte starten Sie direkt zu den Highlights der Region – spektakuläre Inselwelten, azurblaue Buchten und malerische Altstädte erwarten Sie. Genießen Sie entspannte Törns zu den Perlen der Adria, wo sowohl ruhige Natur als auch lebendiges mediterranes Flair auf Sie warten.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Die Flotte von Waypoint überzeugt durch moderne, bestens ausgestattete Yachten – ob beliebte Monohulls renommierter Werften oder großzügige Katamarane mit Komfortextras wie Klimaanlage und Watermaker. Vom kompakten Cruiser bis zur großen Performance-Yacht ist für Paare, Familien und Freundesgruppen das Richtige dabei. Sie wählen: Bareboat, mit Skipper, optional Hostess oder Koch – immer flexibel und nach Ihren Wünschen. Zur Grundausstattung gehören sinnvolle Details wie Bugstrahlruder, Plotter am Steuerstand, Bimini/Sprayhood und Dinghy; Zusatzsegel sind häufig zubuchbar.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Der Vorteil: Kurze Anreisewege, bestens ausgestattete Marinas und zuverlässige Technik machen Ihre Charter von Anfang an entspannt. Dank guter Infrastruktur und flexibler Routenmöglichkeiten, wie den traumhaften Insel-Loops, erleben Sie die kroatische Küste völlig unkompliziert – ob für eine Woche oder länger.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Mit Charter Transparenz kombinieren Sie die Erfahrung eines etablierten Vercharterers mit unserem erstklassigen Service. Wir beraten Sie individuell, stimmen Boot und Ausstattung genau auf Ihre Wünsche ab und kümmern uns um Sonderwünsche wie Early Check-in, SUP-Pakete, Kindersicherheit oder Transfers. Vor der Abreise erhalten Sie von uns inspirierende Routenvorschläge, Anlegertipps und einen praktischen Check-in-Leitfaden – so kann das Abenteuer sofort beginnen.
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Egal ob Sie als Verein, Unternehmen oder mit Freunden reisen – wir organisieren auf Wunsch homogene Flotten, professionelle Briefings und, wenn gewünscht, sportliche Wertungsstrukturen inklusive Abendprogramm. Ihr Segelurlaub wird zum gemeinsamen Erlebnis voller spannender Momente und entspannter Stunden.
             </p>
           </div>
 
