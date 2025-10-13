@@ -135,8 +135,6 @@ import Newport from "./pages/territories/americas/charter-locations/Newport";
 import Boston from "./pages/territories/americas/charter-locations/Boston";
 import Annapolis from "./pages/territories/americas/charter-locations/Annapolis";
 
-// Expedition territories
-import Expeditions from "./pages/territories/Expeditions";
 
 // Australia
 import Australia from "./pages/territories/Australia";
@@ -382,8 +380,6 @@ function App() {
              <Route path="/reviere/amerika-bahamas/usa-ostkueste/boston" element={<Boston />} />
              <Route path="/reviere/amerika-bahamas/usa-ostkueste/annapolis" element={<Annapolis />} />
 
-            {/* Expedition routes */}
-            <Route path="/reviere/expeditionen" element={<Expeditions />} />
 
             {/* Partner routes */}
             <Route path="/yachtcharter-partner" element={<PartnersOverview />} />

@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 // import caribbean from "@/assets/caribbean.jpg";
 // import pacific from "@/assets/pacific.jpg";
 // import indianOcean from "@/assets/indian-ocean.jpg";
-// import expedition from "@/assets/expedition.jpg";
+
 // import destinationCroatia from "@/assets/destination-croatia.jpg";
 // import destinationGreece from "@/assets/destination-greece.jpg";
 // import destinationItaly from "@/assets/destination-italy.jpg";
