@@ -1,5 +1,5 @@
 [build]
-  command = "bun run build && bun tsx scripts/prerender-home.ts && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts && bun tsx scripts/prerender-partners.ts && bun tsx scripts/generate-sitemap.ts && bun tsx scripts/validate-seo.ts"
+  command = "bun run build && bun tsx scripts/prerender-home.ts && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts && bun tsx scripts/prerender-partners.ts && bun tsx scripts/generate-sitemap.ts && bun tsx scripts/validate-sitemap.ts && bun tsx scripts/validate-seo.ts"
   publish = "dist"
 
 # Host canonicalization (www -> non-www) - FIRST PRIORITY
@@ -331,6 +331,33 @@
   to = "/reviere/mittelmeer/:splat"
   status = 301
   force = true
+
+# Sitemap & Robots.txt Headers
+[[headers]]
+  for = "/sitemap*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=300, s-maxage=600"
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+# Explicit Sitemap/Robots.txt Serving (before SPA fallback)
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = false
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
 [[redirects]]
