@@ -216,11 +216,32 @@ const escapeHtml = (s: string | number) =>
     .replace(/"/g, "&quot;");
 
 const generateBodyContent = (r: Route) => {
+  // Hub page - minimal template with static H1
   if (!r.h1 || !r.region || !r.fleet || !r.since) {
-    // Hub page - no body content
-    return '';
+    return `
+    <div class="min-h-screen bg-background">
+      <div class="relative bg-gradient-ocean py-8">
+        <div class="container mx-auto px-4">
+          <div class="text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Yachtcharter-Partner</h1>
+            <p class="text-xl text-white/90">Geprüfte Charter-Anbieter weltweit</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none mb-12">
+            <h2 class="text-3xl font-bold mb-4">Unsere Partner</h2>
+            <p class="text-lg leading-relaxed mb-6">${escapeHtml(r.desc)}</p>
+            <p class="text-lg leading-relaxed">Moderne Flotten, transparente Preise, persönlicher Service – entdecken Sie unsere geprüften Yachtcharter-Partner in den beliebtesten Segelrevieren weltweit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
   }
 
+  // Partner pages - full template
   return `
     <div class="min-h-screen bg-background">
       <div class="relative bg-gradient-ocean py-8">
