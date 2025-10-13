@@ -1,7 +1,7 @@
 // Dynamic Sitemap Generator with Build-Time lastmod
 // Generates sitemap.xml with current build timestamp
 
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const BUILD_TIME = new Date().toISOString(); // YYYY-MM-DDThh:mm:ssZ
@@ -204,14 +204,45 @@ const URLS: SitemapUrl[] = [
   { loc: '/yachtcharter-partner/kiriacoulis', priority: 0.6, changefreq: 'weekly', lastmod: BUILD_TIME },
 ];
 
+// Helpers: normalize path, compute priority, load JSON paths
+const normalizePath = (p: string): string => {
+  let path = p.trim();
+  if (!path.startsWith('/')) path = '/' + path;
+  if (path !== '/' && path.endsWith('/')) path = path.slice(0, -1);
+  return path;
+};
+
+const getPriority = (path: string): number => {
+  if (path === '/') return 1.0;
+  if (path === '/impressum' || path === '/datenschutz') return 0.3;
+  if (['/yachtcharter-partner', '/reviere/alle-reviere', '/faq', '/ueber-uns'].includes(path)) return 0.8;
+  if (/^\/reviere\/[^/]+$/.test(path)) return 0.8; // Hubs Ebene 2
+  if (/^\/reviere\/[^/]+\/[^/]+$/.test(path)) return 0.7; // Länder-Übersichten
+  return 0.6; // Detailseiten
+};
+
+const loadPathsFromJson = (): string[] | null => {
+  try {
+    const jsonPath = join('scripts', 'sitemap-paths.json');
+    if (!existsSync(jsonPath)) return null;
+    const raw = readFileSync(jsonPath, 'utf8');
+    const arr = JSON.parse(raw) as string[];
+    return Array.from(new Set(arr.map(normalizePath)));
+  } catch {
+    return null;
+  }
+};
+
 function generateSitemap(): string {
-  const urlEntries = URLS.map(url => `  <url>
-    <loc>https://chartertransparenz.de${url.loc}</loc>
-    <lastmod>${url.lastmod}</lastmod>
-    <changefreq>${url.changefreq}</changefreq>
-    <priority>${url.priority}</priority>
+  const jsonPaths = loadPathsFromJson();
+  const paths = jsonPaths ?? Array.from(new Set(URLS.map(u => normalizePath(u.loc))));
+  const urlEntries = paths.map(loc => `  <url>
+    <loc>https://chartertransparenz.de${loc}</loc>
+    <lastmod>${BUILD_TIME}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${getPriority(loc)}</priority>
   </url>`).join('\n');
-  
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urlEntries}
@@ -224,8 +255,10 @@ console.log('\n🗺️  Generating sitemap.xml...\n');
 try {
   const sitemap = generateSitemap();
   writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
-  
-  console.log(`✅ Sitemap generated with ${URLS.length} URLs`);
+
+  const jsonPaths = loadPathsFromJson();
+  const count = (sitemap.match(/<loc>/g) || []).length;
+  console.log(`✅ Sitemap generated with ${count} URLs${jsonPaths ? ' (from scripts/sitemap-paths.json)' : ' (from fallback list)'}`);
   console.log(`   Build time: ${BUILD_TIME}\n`);
 } catch (error) {
   console.error('\n❌ Sitemap generation failed:', error);
