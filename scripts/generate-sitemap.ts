@@ -24,9 +24,6 @@ const URLS: SitemapUrl[] = [
   // All Reviere Hub
   { loc: '/reviere/alle-reviere', priority: 0.8, changefreq: 'weekly', lastmod: BUILD_TIME },
   
-  // Mediterranean Hub
-  { loc: '/reviere/mittelmeer', priority: 0.8, changefreq: 'weekly', lastmod: BUILD_TIME },
-  
   // Croatia Routes
   { loc: '/reviere/mittelmeer/kroatien', priority: 0.8, changefreq: 'weekly', lastmod: BUILD_TIME },
   { loc: '/reviere/mittelmeer/kroatien/istrien', priority: 0.6, changefreq: 'weekly', lastmod: BUILD_TIME },
