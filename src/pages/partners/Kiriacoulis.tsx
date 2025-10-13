@@ -32,6 +32,13 @@ export default function Kiriacoulis() {
           </div>
         </div>
       </div>
+      <div className="w-full overflow-hidden">
+        <img 
+          src="/media/partner/kiriacoulis_yachting.jpg" 
+          alt="Kiriacoulis Yachting - Segelurlaub in Griechenland"
+          className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover"
+        />
+      </div>
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
