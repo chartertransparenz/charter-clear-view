@@ -54,13 +54,13 @@ export default function NavigareYachting() {
                 src={navigareKatamaranCrew} 
                 alt="Navigare Yachting Katamaran Charter - Crew beim Segeln im Sonnenuntergang auf einem modernen Katamaran" 
                 title="Unvergessliche Segelerlebnisse mit Navigare Yachting Katamaranen"
-                className="w-full h-auto rounded-lg shadow-lg object-cover"
+                className="w-full h-80 rounded-lg shadow-lg object-cover"
               />
               <img 
                 src={navigareEntspannung} 
                 alt="Navigare Yachting Charter - Entspannte Urlauber genießen Wein auf dem Deck einer Segelyacht" 
                 title="Luxuriöser Yachtcharter mit Navigare Yachting - Komfort und Erholung pur"
-                className="w-full h-auto rounded-lg shadow-lg object-cover"
+                className="w-full h-80 rounded-lg shadow-lg object-cover"
               />
             </div>
             
