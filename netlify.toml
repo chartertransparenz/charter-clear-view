@@ -364,3 +364,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Cache-Bust 2025-10-13T19:45:00Z

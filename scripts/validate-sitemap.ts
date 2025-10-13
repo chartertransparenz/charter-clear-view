@@ -4,7 +4,7 @@ import { join } from 'path';
 
 const SITEMAP_PATH = join('dist', 'sitemap.xml');
 const JSON_PATH = join('scripts', 'sitemap-paths.json');
-const EXPECTED_URL_COUNT = 137;
+const EXPECTED_URL_COUNT = 205;
 
 function getExpectedPaths(): string[] | null {
   if (!existsSync(JSON_PATH)) return null;
