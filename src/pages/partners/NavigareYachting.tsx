@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Anchor, Ship } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import navigareKatamaranCrew from '@/assets/partners/navigare-yachting-katamaran-crew.jpg';
+import navigareEntspannung from '@/assets/partners/navigare-yachting-entspannung.jpg';
 
 export default function NavigareYachting() {
   useEffect(() => { if (typeof window !== 'undefined') window.scrollTo(0, 0); }, []);
@@ -46,6 +48,21 @@ export default function NavigareYachting() {
             
             <h3 className="text-2xl font-bold mb-4 mt-8">Entstehung und Entwicklung</h3>
             <p className="text-lg leading-relaxed mb-6">Gegründet von den skandinavischen Seglern Jesper Ronngard und Per Abrahamsson, wuchs Navigare zunächst organisch in den Revieren, die viele Crews jährlich ansteuern: Kroatien, Griechenland, Italien und Spanien. Mit jeder Saison kamen Know-how, Basenerfahrung und Modelle hinzu, die in der Praxis funktionieren – saubere Energiepakete, Plotter am Steuerstand, verlässliche Deckshardware und, je nach Yacht, Leichtwindsegel. Parallel wurde das Portfolio um Katamarane erweitert, wodurch Familien und Freundescrews mehr Privatsphäre und Komfort erhalten. Die Marke professionalisierte zugleich die internen Abläufe: straffe Check-ins, klare Ausstattungsprofile, planbare Hilfe im Fall der Fälle. So entstand ein Setup, das in Split/Trogir ebenso funktioniert wie auf den Balearen – und sich auf Fernziele übertragen ließ.</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              <img 
+                src={navigareKatamaranCrew} 
+                alt="Navigare Yachting Katamaran Charter - Crew beim Segeln im Sonnenuntergang auf einem modernen Katamaran" 
+                title="Unvergessliche Segelerlebnisse mit Navigare Yachting Katamaranen"
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+              />
+              <img 
+                src={navigareEntspannung} 
+                alt="Navigare Yachting Charter - Entspannte Urlauber genießen Wein auf dem Deck einer Segelyacht" 
+                title="Luxuriöser Yachtcharter mit Navigare Yachting - Komfort und Erholung pur"
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+              />
+            </div>
             
             <h3 className="text-2xl font-bold mb-4 mt-8">Flotte, Basen und Reviere</h3>
             <p className="text-lg leading-relaxed mb-6">In der Flotte finden sich bewährte Einrumpfserien von Beneteau, Jeanneau, Bavaria, Hanse und Dufour – typischerweise zwischen rund 30 und 50 Fuß. Bei den Katamaranen sind Lagoon, Bali, Fountaine Pajot und Nautitech verbreitet; gängige Größen bewegen sich zwischen etwa 38 und 50 Fuß. Viele Einheiten bieten – je nach Modell – Extras wie Generator, Klimaanlage oder Watermaker. Im Mittelmeer bedient Navigare die entscheidenden Startpunkte: In Kroatien etwa Trogir/Seget und Split für die Inselwelt um Hvar, Vis und die Kornaten; in Griechenland Athen/Lavrion und die Ionischen Inseln für Saronischer Golf, Kykladen und ruhige West-Routen. Ergänzt wird das Netz durch Standorte in Italien, Spanien und der Türkei. Außerhalb Europas öffnet Navigare Karibik und Bahamas für den Winter sowie ausgewählte Fernziele wie Seychellen oder Thailand. Das Ergebnis ist eine geografische Abdeckung, die sowohl den ersten Familientörn als auch anspruchsvollere Routen sinnvoll unterstützt.</p>
