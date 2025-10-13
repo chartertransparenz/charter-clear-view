@@ -1,5 +1,6 @@
 // Dynamic Sitemap Generator with Build-Time lastmod
 // Generates sitemap.xml with current build timestamp
+// Force rebuild: 2025-10-13T19:50:00Z
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
