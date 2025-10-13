@@ -4,6 +4,7 @@ import { join } from 'path';
 
 const SITEMAP_PATH = join('dist', 'sitemap.xml');
 const JSON_PATH = join('scripts', 'sitemap-paths.json');
+const EXPECTED_URL_COUNT = 137;
 
 function getExpectedPaths(): string[] | null {
   if (!existsSync(JSON_PATH)) return null;
@@ -34,11 +35,11 @@ try {
 
   // Determine expected set
   const expected = getExpectedPaths();
-  const expectedCount = expected ? expected.length : count; // fallback: accept current count when no JSON list
+  const expectedCount = expected ? expected.length : EXPECTED_URL_COUNT;
 
-  console.log(`   URLs found: ${count}` + (expected ? ` / expected: ${expectedCount}` : ' (no JSON reference, skipping count check)'));
+  console.log(`   URLs found: ${count} / expected: ${expectedCount}`);
 
-  if (expected && count !== expectedCount) {
+  if (count !== expectedCount) {
     throw new Error(`❌ Sitemap count mismatch: got ${count}, expected ${expectedCount}`);
   }
 
