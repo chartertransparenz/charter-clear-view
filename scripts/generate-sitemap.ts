@@ -4,6 +4,7 @@
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { createHash } from 'crypto';
 
 const BUILD_TIME = new Date().toISOString(); // YYYY-MM-DDThh:mm:ssZ
 
@@ -257,10 +258,27 @@ try {
   const sitemap = generateSitemap();
   writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
 
+  // Calculate SHA256 hash for verification
+  const hash = createHash('sha256').update(sitemap, 'utf8').digest('hex');
+
   const jsonPaths = loadPathsFromJson();
   const count = (sitemap.match(/<loc>/g) || []).length;
+  
   console.log(`✅ Sitemap generated with ${count} URLs${jsonPaths ? ' (from scripts/sitemap-paths.json)' : ' (from fallback list)'}`);
-  console.log(`   Build time: ${BUILD_TIME}\n`);
+  console.log(`   Build time: ${BUILD_TIME}`);
+  console.log(`\n🔐 SHA256 Hash: ${hash}`);
+  
+  // Log first 10 URL entries for verification
+  const urlMatches = sitemap.match(/<url>[\s\S]*?<\/url>/g) || [];
+  console.log(`\n📋 First 10 URL entries:\n`);
+  urlMatches.slice(0, 10).forEach((entry, idx) => {
+    const locMatch = entry.match(/<loc>(.*?)<\/loc>/);
+    const priorityMatch = entry.match(/<priority>(.*?)<\/priority>/);
+    if (locMatch && priorityMatch) {
+      console.log(`${idx + 1}. ${locMatch[1]} (priority: ${priorityMatch[1]})`);
+    }
+  });
+  console.log('');
 } catch (error) {
   console.error('\n❌ Sitemap generation failed:', error);
   process.exit(1);
