@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://chartertransparenz.de/sitemap.xml
+Sitemap: https://chartertransparenz.de/sitemap-v2.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1

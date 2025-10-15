@@ -241,7 +241,6 @@ function generateSitemap(): string {
   const urlEntries = paths.map(loc => `  <url>
     <loc>https://chartertransparenz.de${loc}</loc>
     <lastmod>${BUILD_TIME}</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>${getPriority(loc)}</priority>
   </url>`).join('\n');
 
@@ -256,7 +255,7 @@ console.log('\n🗺️  Generating sitemap.xml...\n');
 
 try {
   const sitemap = generateSitemap();
-  writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
+  writeFileSync(join('dist', 'sitemap-v2.xml'), sitemap, 'utf8');
 
   // Calculate SHA256 hash for verification
   const hash = createHash('sha256').update(sitemap, 'utf8').digest('hex');
