@@ -2,7 +2,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
-const SITEMAP_PATH = join('dist', 'sitemap.xml');
+const SITEMAP_PATH = join('dist', 'sitemap-v2.xml');
 const JSON_PATH = join('scripts', 'sitemap-paths.json');
 const EXPECTED_URL_COUNT = 137;
 
@@ -26,7 +26,7 @@ function getExpectedPaths(): string[] | null {
 }
 
 try {
-  console.log('\n📋 Validating sitemap.xml...');
+  console.log('\n📋 Validating sitemap-v2.xml...');
   const sitemap = readFileSync(SITEMAP_PATH, 'utf8');
 
   // Extract URLs from generated sitemap
