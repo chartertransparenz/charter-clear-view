@@ -251,7 +251,10 @@ console.log('\n🗺️  Generating sitemap.xml...\n');
 
 try {
   const sitemap = generateSitemap();
+  
+  // Write both sitemap.xml and ct-sitemap.xml
   writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
+  writeFileSync(join('dist', 'ct-sitemap.xml'), sitemap, 'utf8');
 
   // Calculate SHA256 hash for verification
   const hash = createHash('sha256').update(sitemap, 'utf8').digest('hex');
@@ -260,6 +263,7 @@ try {
   const count = (sitemap.match(/<loc>/g) || []).length;
   
   console.log(`✅ Sitemap generated with ${count} URLs${jsonPaths ? ' (from scripts/sitemap-paths.json)' : ' (from fallback list)'}`);
+  console.log(`   Written to: dist/sitemap.xml + dist/ct-sitemap.xml`);
   console.log(`   Build time: ${BUILD_TIME}`);
   console.log(`\n🔐 SHA256 Hash: ${hash}`);
   
