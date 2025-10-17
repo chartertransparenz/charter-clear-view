@@ -4,6 +4,7 @@ import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 // import heroYacht from "@/assets/hero-yacht.jpg";
 // import charterHeroWater from "@/assets/charter-hero-water.jpg";
 import mediterraneanImage from "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
+import fruhbucherButton from "@/assets/fruhbucher-button.png";
 
 import { Suspense, lazy, useState, useEffect, useCallback } from "react";
 const CharterRequestForm = lazy(() => import("./CharterRequestForm"));
@@ -67,35 +68,16 @@ const slides = [{
         <div className="max-w-4xl mx-auto">
           {/* Early Bird Promo Button */}
           <div className="mb-6 md:mb-8 animate-fade-in">
-            <div className="inline-flex flex-col items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl px-6 py-4 md:px-8 md:py-5 shadow-2xl transform hover:scale-105 transition-all duration-300">
-              {/* Header Text */}
-              <h2 className="text-white font-bold text-lg md:text-2xl tracking-wider">
-                FRÜHBUCHER RABATT 2026
-              </h2>
-              
-              {/* CTA Button with decorative elements */}
-              <div className="relative flex items-center gap-3">
-                {/* Left decorative lines */}
-                <div className="hidden sm:flex flex-col gap-1">
-                  <div className="w-6 h-0.5 bg-white/70"></div>
-                  <div className="w-4 h-0.5 bg-white/70"></div>
-                </div>
-                
-                {/* Main CTA Button */}
-                <a 
-                  href="#contact" 
-                  className="bg-white text-orange-600 font-bold text-base md:text-lg px-8 py-3 rounded-lg hover:bg-orange-50 transition-all duration-200 shadow-lg"
-                >
-                  JETZT BUCHEN
-                </a>
-                
-                {/* Right decorative lines */}
-                <div className="hidden sm:flex flex-col gap-1">
-                  <div className="w-6 h-0.5 bg-white/70"></div>
-                  <div className="w-4 h-0.5 bg-white/70"></div>
-                </div>
-              </div>
-            </div>
+            <a 
+              href="#contact" 
+              className="inline-block transform hover:scale-105 transition-all duration-300"
+            >
+              <img 
+                src={fruhbucherButton} 
+                alt="Frühbucher Rabatt 2026 - Jetzt buchen" 
+                className="w-full max-w-xl md:max-w-2xl mx-auto shadow-2xl rounded-2xl"
+              />
+            </a>
           </div>
 
           {/* Badge */}
