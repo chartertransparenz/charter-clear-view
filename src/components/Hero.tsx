@@ -68,16 +68,15 @@ const slides = [{
         <div className="max-w-4xl mx-auto">
           {/* Early Bird Promo Button */}
           <div className="mb-6 md:mb-8 animate-fade-in">
-            <a 
-              href="#contact" 
-              className="inline-block transform hover:scale-105 transition-all duration-300"
-            >
-              <img 
-                src={fruhbucherButton} 
-                alt="Frühbucher Rabatt 2026 - Jetzt buchen" 
-                className="w-full max-w-xl md:max-w-2xl mx-auto shadow-2xl rounded-2xl"
-              />
-            </a>
+            <CharterRequestForm>
+              <button className="inline-block transform hover:scale-105 transition-all duration-300">
+                <img 
+                  src={fruhbucherButton} 
+                  alt="Frühbucher Rabatt 2026 - Jetzt buchen" 
+                  className="w-full max-w-xl md:max-w-2xl mx-auto shadow-2xl rounded-2xl"
+                />
+              </button>
+            </CharterRequestForm>
           </div>
 
           {/* Badge */}
