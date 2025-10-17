@@ -65,6 +65,39 @@ const slides = [{
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
+          {/* Early Bird Promo Button */}
+          <div className="mb-6 md:mb-8 animate-fade-in">
+            <div className="inline-flex flex-col items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl px-6 py-4 md:px-8 md:py-5 shadow-2xl transform hover:scale-105 transition-all duration-300">
+              {/* Header Text */}
+              <h2 className="text-white font-bold text-lg md:text-2xl tracking-wider">
+                FRÜHBUCHER RABATT 2026
+              </h2>
+              
+              {/* CTA Button with decorative elements */}
+              <div className="relative flex items-center gap-3">
+                {/* Left decorative lines */}
+                <div className="hidden sm:flex flex-col gap-1">
+                  <div className="w-6 h-0.5 bg-white/70"></div>
+                  <div className="w-4 h-0.5 bg-white/70"></div>
+                </div>
+                
+                {/* Main CTA Button */}
+                <a 
+                  href="#contact" 
+                  className="bg-white text-orange-600 font-bold text-base md:text-lg px-8 py-3 rounded-lg hover:bg-orange-50 transition-all duration-200 shadow-lg"
+                >
+                  JETZT BUCHEN
+                </a>
+                
+                {/* Right decorative lines */}
+                <div className="hidden sm:flex flex-col gap-1">
+                  <div className="w-6 h-0.5 bg-white/70"></div>
+                  <div className="w-4 h-0.5 bg-white/70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <Award className="w-4 h-4" />
