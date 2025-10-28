@@ -94,15 +94,38 @@ export default function AngelinaYachtcharter() {
           </div>
 
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-4">Über Angelina Yachtcharter</h2>
+            <h2 className="text-3xl font-bold mb-4">Angelina Yacht Charter Croatia – mit Charter Transparenz zum Traumtörn</h2>
             <p className="text-lg leading-relaxed mb-6">
-              Angelina Yachtcharter steht für Premium-Yachtcharter mit persönlichem Service und einer handverlesenen 
-              Auswahl erstklassiger Yachten. Das Unternehmen legt besonderen Wert auf individuelle Beratung und 
-              maßgeschneiderte Charter-Lösungen für anspruchsvolle Kunden.
+              Wer die kroatische Adria mit all ihren Inseln, Buchten und glasklaren Ankerplätzen erleben will, kommt an Angelina Yacht Charter kaum vorbei. Seit Mitte der 1990er als Familienunternehmen gestartet, hat sich Angelina zu einer der renommiertesten Charterflotten des Landes entwickelt – mit sorgfältig gewarteten Yachten, aufmerksamen Basisteams und einem Streckennetz, das jede Wunschroute möglich macht.
+            </p>
+            <h3 className="text-2xl font-bold mb-4">Starke Flotte, große Auswahl</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Aktuell umfasst die Flotte rund 370 Yachten – perfekt verteilt auf alle beliebten Bootsklassen: etwa 270 Segelyachten (Monohulls) für sportliche Crews und klassische Segelfans, rund 85 Katamarane für maximale Privatsphäre, Raum und Komfort, sowie ca. 15 Motorboote und Motoryachten für alle, die gerne zügig von Bucht zu Bucht cruisen. Ob Familienurlaub, Freundestrip oder Genießer-Woche zu zweit: Bei dieser Bandbreite findet jede Crew das passende Schiff – von der kompakten 2-Kabinen-Yacht bis zum großzügigen Katamaran mit Watermaker und Generator.
+            </p>
+            <h3 className="text-2xl font-bold mb-4">Beste Ausgangslagen entlang der Küste</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Angelina punktet mit einem dichtem Netz an Ausgangsbasen – ideal, um Anreise und Törnplanung perfekt zu verbinden. Beliebte Startpunkte sind unter anderem Sukošan und Biograd in Norddalmatien, Šibenik/Mandalina, Vodice und Tribunj im Herz der Inselwelt, Trogir und Split für schnelle Wege zu den Klassikern Hvar, Brač und Vis sowie Dubrovnik für den südlichen Adriazauber. Auch in Istrien und der Kvarner Bucht – etwa Pula/Veruda, Pomer, Punat (Krk) oder Mali Lošinj – stehen attraktive Basen bereit. So starten Sie dort, wo Wind, Route und Urlaubsstimmung am besten zusammenpassen.
+            </p>
+            <h3 className="text-2xl font-bold mb-4">Warum Angelina?</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Weil hier Qualität spürbar ist: moderne Ausrüstung, sauber organisierter Check-in/Check-out, zuverlässige Technik und Service-Teams, die auch im Saisontrubel den Überblick behalten. Kurzum: Sie übernehmen eine Yacht, auf die Sie sich verlassen können – und haben im Hintergrund Profis, die helfen, wenn doch einmal etwas klemmt.
+            </p>
+            <h3 className="text-2xl font-bold mb-4">Und warum über Charter Transparenz buchen?</h3>
+            <p className="text-lg leading-relaxed mb-6">
+              Weil 30 Jahre Erfahrung den entscheidenden Unterschied machen. Als unabhängige Yachtcharter-Agentur kennen wir die Flotten, Basen und Reviere – und sagen Ihnen ehrlich, welches Schiff an welcher Basis zu welcher Reisezeit wirklich passt. Wir…
+            </p>
+            <ul className="list-disc pl-6 mb-6 text-lg leading-relaxed">
+              <li>filtern aus 370 Angelina-Yachten genau die Modelle, die zu Crewgröße, Kabinenwünschen, Komfortansprüchen und Budget passen,</li>
+              <li>beraten zur Route – vom ruhigen Familien-Inselhüpfen bis zum ambitionierten Meilentörn,</li>
+              <li>rechnen alle Kosten transparent vor (Kaution, Versicherungsoptionen, Transit-Log, Marina-Gebühren),</li>
+              <li>geben Revier-Briefings und Wettertipps für jede Saisonphase,</li>
+              <li>und sind im Fall der Fälle Ihr schneller Draht zwischen Crew und Basis.</li>
+            </ul>
+            <p className="text-lg leading-relaxed mb-6">
+              Mit Angelina bekommen Sie die starke Hardware und ein hervorragendes Basisnetz – mit Charter Transparenz sichern Sie sich die maßgeschneiderte Auswahl, klare Preise und echte Profiberatung. Ergebnis: weniger Überraschungen, mehr Urlaubszeit unter Segeln.
             </p>
             <p className="text-lg leading-relaxed">
-              Mit langjähriger Erfahrung und einem engagierten Team bietet Angelina Yachtcharter unvergessliche 
-              Segelerlebnisse in den schönsten Revieren des Mittelmeers.
+              Klingt gut? Dann lassen Sie uns Ihren nächsten Kroatien-Törn gemeinsam planen. Erzählen Sie uns kurz, wann, mit wem und wie Sie segeln möchten – wir kümmern uns um den Rest.
             </p>
           </div>
 
