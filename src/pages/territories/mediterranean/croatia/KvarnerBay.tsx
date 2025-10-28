@@ -71,8 +71,8 @@ export default function KvarnerBay() {
     {
       name: 'Mali Lošinj',
       description: 'Duftinsel mit Wellness-Tradition und Delfinen',
-      marinas: 2,
-      highlights: ['Marina & Hafen Mali Lošinj', 'Delfin-Watching', 'Aromapark']
+      marinas: '1 Marina & 1 Hafen',
+      highlights: ['Marina & Hafen Mali Lošinj', 'Delfin-Watching', 'Gut geschützte Bucht']
     }
   ];
 
@@ -374,7 +374,7 @@ export default function KvarnerBay() {
                       <CardTitle className="text-xl">{city.name}</CardTitle>
                       <CardDescription className="mt-2">{city.description}</CardDescription>
                     </div>
-                    <Badge variant="secondary">{city.marinas} Marina{city.marinas > 1 ? 's' : ''}</Badge>
+                    <Badge variant="secondary">{typeof city.marinas === 'number' ? `${city.marinas} Marina${city.marinas > 1 ? 's' : ''}` : city.marinas}</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
