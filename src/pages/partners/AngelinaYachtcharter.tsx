@@ -74,14 +74,14 @@ export default function AngelinaYachtcharter() {
               <CardContent className="p-6 text-center">
                 <MapPin className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Regionen</p>
-                <p className="font-semibold">Mittelmeer</p>
+                <p className="font-semibold">Kroatien</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
                 <Ship className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Flotte</p>
-                <p className="font-semibold">80+ Yachten</p>
+                <p className="font-semibold">370+ Yachten</p>
               </CardContent>
             </Card>
             <Card>
