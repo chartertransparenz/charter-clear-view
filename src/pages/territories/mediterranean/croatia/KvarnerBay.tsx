@@ -72,7 +72,7 @@ export default function KvarnerBay() {
       name: 'Mali Lošinj',
       description: 'Duftinsel mit Wellness-Tradition und Delfinen',
       marinas: 2,
-      highlights: ['ACI Marina Mali Lošinj', 'Delfin-Watching', 'Aromapark']
+      highlights: ['Marina & Hafen Mali Lošinj', 'Delfin-Watching', 'Aromapark']
     }
   ];
 
