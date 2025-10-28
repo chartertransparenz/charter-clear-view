@@ -99,20 +99,6 @@ const slides = [{
           {/* Description */}
           <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90 max-w-2xl mx-auto">Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.</p>
 
-          {/* CTA Button */}
-          <div className="flex justify-center px-4">
-            <Suspense fallback={<div className="px-4 py-2 bg-white/10 rounded-md">Lädt…</div>}>
-              <CharterRequestForm>
-                <Button 
-                  variant="default" 
-                  size="xl" 
-                  className="text-base sm:text-lg md:text-2xl px-6 sm:px-8 md:px-16 py-3 sm:py-4 md:py-6 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth transform hover:scale-105"
-                >
-                  Jetzt Anfrage stellen
-                </Button>
-              </CharterRequestForm>
-            </Suspense>
-          </div>
         </div>
       </div>
 
