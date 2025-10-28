@@ -74,7 +74,7 @@ export default function AngelinaYachtcharter() {
               <CardContent className="p-6 text-center">
                 <MapPin className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-sm text-muted-foreground mb-1">Regionen</p>
-                <p className="font-semibold">Kroatien</p>
+                <p className="font-semibold"><Link to="/reviere/mittelmeer/kroatien" className="text-primary hover:underline">Kroatien</Link></p>
               </CardContent>
             </Card>
             <Card>
@@ -96,7 +96,7 @@ export default function AngelinaYachtcharter() {
           <div className="prose prose-lg max-w-none mb-12">
             <h2 className="text-3xl font-bold mb-4">Angelina Yacht Charter Croatia – mit Charter Transparenz zum Traumtörn</h2>
             <p className="text-lg leading-relaxed mb-6">
-              Wer die kroatische Adria mit all ihren Inseln, Buchten und glasklaren Ankerplätzen erleben will, kommt an Angelina Yacht Charter kaum vorbei. Seit Mitte der 1990er als Familienunternehmen gestartet, hat sich Angelina zu einer der renommiertesten Charterflotten des Landes entwickelt – mit sorgfältig gewarteten Yachten, aufmerksamen Basisteams und einem Streckennetz, das jede Wunschroute möglich macht.
+              Wer die <Link to="/reviere/mittelmeer/kroatien" className="text-primary hover:underline">kroatische Adria</Link> mit all ihren Inseln, Buchten und glasklaren Ankerplätzen erleben will, kommt an Angelina Yacht Charter kaum vorbei. Seit Mitte der 1990er als Familienunternehmen gestartet, hat sich Angelina zu einer der renommiertesten Charterflotten des Landes entwickelt – mit sorgfältig gewarteten Yachten, aufmerksamen Basisteams und einem Streckennetz, das jede Wunschroute möglich macht.
             </p>
             <h3 className="text-2xl font-bold mb-4">Starke Flotte, große Auswahl</h3>
             <p className="text-lg leading-relaxed mb-6">
@@ -125,7 +125,7 @@ export default function AngelinaYachtcharter() {
               Mit Angelina bekommen Sie die starke Hardware und ein hervorragendes Basisnetz – mit Charter Transparenz sichern Sie sich die maßgeschneiderte Auswahl, klare Preise und echte Profiberatung. Ergebnis: weniger Überraschungen, mehr Urlaubszeit unter Segeln.
             </p>
             <p className="text-lg leading-relaxed">
-              Klingt gut? Dann lassen Sie uns Ihren nächsten Kroatien-Törn gemeinsam planen. Erzählen Sie uns kurz, wann, mit wem und wie Sie segeln möchten – wir kümmern uns um den Rest.
+              Klingt gut? Dann lassen Sie uns Ihren nächsten <Link to="/reviere/mittelmeer/kroatien" className="text-primary hover:underline">Kroatien</Link>-Törn gemeinsam planen. Erzählen Sie uns kurz, wann, mit wem und wie Sie segeln möchten – wir kümmern uns um den Rest.
             </p>
           </div>
 
