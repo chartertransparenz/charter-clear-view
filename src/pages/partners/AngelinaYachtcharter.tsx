@@ -104,7 +104,7 @@ export default function AngelinaYachtcharter() {
             </p>
             <h3 className="text-2xl font-bold mb-4">Beste Ausgangslagen entlang der Küste</h3>
             <p className="text-lg leading-relaxed mb-6">
-              Angelina punktet mit einem dichtem Netz an Ausgangsbasen – ideal, um Anreise und Törnplanung perfekt zu verbinden. Beliebte Startpunkte sind unter anderem Sukošan und Biograd in Norddalmatien, Šibenik/Mandalina, Vodice und Tribunj im Herz der Inselwelt, Trogir und Split für schnelle Wege zu den Klassikern Hvar, Brač und Vis sowie Dubrovnik für den südlichen Adriazauber. Auch in Istrien und der Kvarner Bucht – etwa Pula/Veruda, Pomer, Punat (Krk) oder Mali Lošinj – stehen attraktive Basen bereit. So starten Sie dort, wo Wind, Route und Urlaubsstimmung am besten zusammenpassen.
+              Angelina punktet mit einem dichtem Netz an Ausgangsbasen – ideal, um Anreise und Törnplanung perfekt zu verbinden. Beliebte Startpunkte sind unter anderem Sukošan und Biograd in Norddalmatien, Šibenik/Mandalina, Vodice und Tribunj im Herz der Inselwelt, Trogir und Split für schnelle Wege zu den Klassikern Hvar, Brač und Vis sowie Dubrovnik für den südlichen Adriazauber. Auch in <Link to="/reviere/mittelmeer/kroatien/istrien" className="text-primary hover:underline">Istrien</Link> und der <Link to="/reviere/mittelmeer/kroatien/kvarner" className="text-primary hover:underline">Kvarner Bucht</Link> – etwa Pula/Veruda, Pomer, Punat (Krk) oder Mali Lošinj – stehen attraktive Basen bereit. So starten Sie dort, wo Wind, Route und Urlaubsstimmung am besten zusammenpassen.
             </p>
             <h3 className="text-2xl font-bold mb-4">Warum Angelina?</h3>
             <p className="text-lg leading-relaxed mb-6">
