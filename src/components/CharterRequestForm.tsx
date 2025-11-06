@@ -14,6 +14,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format, addDays } from "date-fns";
 import { cn } from "@/lib/utils";
+import { z } from "zod";
 
 // -----------------------------
 // Supabase Edge Function Helper
@@ -127,7 +128,7 @@ const FormContent = memo(function FormContent({
           </CardHeader>
 
           <CardContent>
-            <form onSubmit={onSubmit} className="space-y-6">
+            <form onSubmit={onSubmit} noValidate className="space-y-6">
               {/* Personal Information */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -198,7 +199,7 @@ const FormContent = memo(function FormContent({
                     </label>
                     <Popover>
                       <PopoverTrigger asChild>
-                        <Button
+                        <Button type="button"
                           variant="outline"
                           className={cn(
                             "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
@@ -227,7 +228,7 @@ const FormContent = memo(function FormContent({
                     </label>
                     <Popover>
                       <PopoverTrigger asChild>
-                        <Button
+                        <Button type="button"
                           variant="outline"
                           className={cn(
                             "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
@@ -481,39 +482,45 @@ const CharterRequestForm = ({
     console.log('=== Charter Request Form Submit Started ===');
     console.log('Form Data:', formData);
     
-    // Validierung: Datenschutz
-    if (!formData.privacyAccepted) {
-      console.log('Validation failed: Privacy not accepted');
-      toast({
-        title: "Datenschutzerklärung erforderlich",
-        description: "Bitte akzeptieren Sie die Datenschutzerklärung.",
-        variant: "destructive"
+    // Zod-Validierung aller Eingaben
+    const formSchema = z
+      .object({
+        firstName: z.string().trim().min(1, "Vorname ist erforderlich").max(100),
+        lastName: z.string().trim().min(1, "Nachname ist erforderlich").max(100),
+        email: z.string().trim().email("Bitte gültige E-Mail angeben").max(255),
+        phone: z.string().trim().max(50).optional(),
+        startDate: z.date({ required_error: "Startdatum erforderlich" }),
+        endDate: z.date({ required_error: "Enddatum erforderlich" }),
+        boatSize: z.string().trim().max(50).optional(),
+        cabins: z.string().trim().max(10).optional(),
+        message: z.string().trim().max(1000).optional(),
+        privacyAccepted: z.literal(true, {
+          errorMap: () => ({ message: "Bitte Datenschutzerklärung akzeptieren" }),
+        }),
+      })
+      .refine((data) => data.endDate > data.startDate, {
+        message: "Enddatum muss nach dem Startdatum liegen",
+        path: ["endDate"],
       });
+
+    const parsed = formSchema.safeParse(formData);
+    if (!parsed.success) {
+      const issue = parsed.error.issues[0];
+      const message = issue?.message || "Bitte Eingaben prüfen";
+      console.log("Validation failed:", message, issue);
+      toast({
+        title: "Eingabe prüfen",
+        description: message,
+        variant: "destructive",
+      });
+      const field = issue?.path?.[0];
+      if (typeof field === "string") {
+        const el = document.querySelector(`[name="${field}"]`) as HTMLElement | null;
+        el?.focus?.();
+      }
       return;
     }
-    
-    // Validierung: Startdatum
-    if (!formData.startDate) {
-      console.log('Validation failed: No start date');
-      toast({
-        title: "Startdatum erforderlich",
-        description: "Bitte wählen Sie ein Startdatum für Ihre Charter aus.",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    // Validierung: Enddatum
-    if (!formData.endDate) {
-      console.log('Validation failed: No end date');
-      toast({
-        title: "Enddatum erforderlich",
-        description: "Bitte wählen Sie ein Enddatum für Ihre Charter aus.",
-        variant: "destructive"
-      });
-      return;
-    }
-    
+
     setIsSubmitting(true);
     console.log('Starting Edge Function call...');
     
