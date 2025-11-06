@@ -10,6 +10,7 @@ import React, { useState, useEffect, useRef, useCallback, useLayoutEffect, memo 
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { useNavigate } from "react-router-dom";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format, addDays } from "date-fns";
@@ -371,6 +372,7 @@ const CharterRequestForm = ({
   const {
     toast
   } = useToast();
+  const navigate = useNavigate();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
   const historyPushedRef = useRef(false);
   const dialogContentRef = useRef<HTMLDivElement>(null);
@@ -544,15 +546,21 @@ const CharterRequestForm = ({
       console.log('Edge Function Result:', result);
       
       if (result.success) {
-        console.log('Success! Email sent.');
+        console.log('Success! Email sent, referenceId:', result.data?.referenceId);
+        
+        const ref = result.data?.referenceId || 'UNKNOWN';
+        
         toast({
           title: "Anfrage erfolgreich gesendet!",
-          description: "Wir melden uns innerhalb von 24 Stunden mit Ihrem persönlichen Angebot zurück."
+          description: `Ihre Referenz-ID: ${ref}`
         });
 
-        // Reset
+        // Reset form and close dialog
         setFormData(initialFormData);
         handleClose();
+        
+        // Navigate to confirmation page
+        navigate(`/anfrage-bestaetigung?ref=${encodeURIComponent(ref)}&name=${encodeURIComponent(formData.firstName)}&email=${encodeURIComponent(formData.email)}`);
       } else {
         throw new Error(result.error || 'Failed to send request');
       }

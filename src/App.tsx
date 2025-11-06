@@ -11,6 +11,7 @@ import Impressum from '@/pages/Impressum';
 import { Datenschutz } from '@/pages/Datenschutz';
 import FAQ from '@/pages/FAQ';
 import NotFound from "./pages/NotFound";
+import CharterConfirmation from "@/pages/CharterConfirmation";
 
 // Territory pages
 import Mediterranean from "./pages/territories/Mediterranean";
@@ -206,6 +207,7 @@ function App() {
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/anfrage-bestaetigung" element={<CharterConfirmation />} />
           <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
             
             {/* Mediterranean routes */}
