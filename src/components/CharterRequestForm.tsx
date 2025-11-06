@@ -80,6 +80,7 @@ type FormContentProps = {
   onSelectChange: (name: string, value: any) => void;
   onSubmit: (e: React.FormEvent) => void;
   onClose: () => void;
+  isSubmitting: boolean;
 };
 const FormContent = memo(function FormContent({
   formData,
@@ -87,6 +88,7 @@ const FormContent = memo(function FormContent({
   onSelectChange,
   onSubmit,
   onClose,
+  isSubmitting,
 }: FormContentProps) {
   return (
     <div className="relative">
@@ -326,10 +328,11 @@ const FormContent = memo(function FormContent({
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-ocean-dark text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                  disabled={isSubmitting}
+                  className="w-full bg-ocean-dark text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5" />
-                  Unverbindliche Anfrage senden
+                  {isSubmitting ? "Wird gesendet..." : "Unverbindliche Anfrage senden"}
                 </Button>
               </div>
             </form>
@@ -433,6 +436,7 @@ const CharterRequestForm = ({
   // Formular-Status
   // ---------------------------------
   const [formData, setFormData] = useState<FormState>(initialFormData);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     try {
       const { name, value } = e.target;
@@ -473,7 +477,13 @@ const CharterRequestForm = ({
   }, []);
   const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    console.log('=== Charter Request Form Submit Started ===');
+    console.log('Form Data:', formData);
+    
+    // Validierung: Datenschutz
     if (!formData.privacyAccepted) {
+      console.log('Validation failed: Privacy not accepted');
       toast({
         title: "Datenschutzerklärung erforderlich",
         description: "Bitte akzeptieren Sie die Datenschutzerklärung.",
@@ -481,20 +491,53 @@ const CharterRequestForm = ({
       });
       return;
     }
+    
+    // Validierung: Startdatum
+    if (!formData.startDate) {
+      console.log('Validation failed: No start date');
+      toast({
+        title: "Startdatum erforderlich",
+        description: "Bitte wählen Sie ein Startdatum für Ihre Charter aus.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    // Validierung: Enddatum
+    if (!formData.endDate) {
+      console.log('Validation failed: No end date');
+      toast({
+        title: "Enddatum erforderlich",
+        description: "Bitte wählen Sie ein Enddatum für Ihre Charter aus.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    console.log('Starting Edge Function call...');
+    
     try {
       const submissionData = {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
         phone: formData.phone,
-        startDate: formData.startDate ? format(formData.startDate, 'yyyy-MM-dd') : '',
-        endDate: formData.endDate ? format(formData.endDate, 'yyyy-MM-dd') : '',
+        startDate: format(formData.startDate, 'yyyy-MM-dd'),
+        endDate: format(formData.endDate, 'yyyy-MM-dd'),
         boatSize: formData.boatSize,
         cabins: formData.cabins,
         message: formData.message
       };
+      
+      console.log('Submission Data:', submissionData);
+      
       const result = await callEdgeFunction('send-charter-request', submissionData);
+      
+      console.log('Edge Function Result:', result);
+      
       if (result.success) {
+        console.log('Success! Email sent.');
         toast({
           title: "Anfrage erfolgreich gesendet!",
           description: "Wir melden uns innerhalb von 24 Stunden mit Ihrem persönlichen Angebot zurück."
@@ -513,6 +556,9 @@ const CharterRequestForm = ({
         description: error.message || "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
         variant: "destructive"
       });
+    } finally {
+      setIsSubmitting(false);
+      console.log('=== Charter Request Form Submit Finished ===');
     }
   }, [formData, handleClose, toast]);
 
@@ -573,7 +619,7 @@ const CharterRequestForm = ({
   // ---------------------------------
   // Render
   // ---------------------------------
-  const content = <FormContent formData={formData} onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSubmit={handleSubmit} onClose={handleClose} />;
+  const content = <FormContent formData={formData} onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSubmit={handleSubmit} onClose={handleClose} isSubmitting={isSubmitting} />;
   if (children) {
     return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>{children}</DialogTrigger>
