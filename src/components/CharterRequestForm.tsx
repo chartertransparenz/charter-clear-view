@@ -83,6 +83,7 @@ type FormContentProps = {
   onSubmit: (e: React.FormEvent) => void;
   onClose: () => void;
   isSubmitting: boolean;
+  privacyError: boolean;
 };
 const FormContent = memo(function FormContent({
   formData,
@@ -91,6 +92,7 @@ const FormContent = memo(function FormContent({
   onSubmit,
   onClose,
   isSubmitting,
+  privacyError,
 }: FormContentProps) {
   return (
     <div className="relative">
@@ -308,20 +310,30 @@ const FormContent = memo(function FormContent({
 
               {/* Privacy Policy */}
               <div className="border-t pt-6">
-                <div className="flex items-start space-x-3">
+                <div id="privacy-section" className={cn(
+                  "flex items-start space-x-3 p-3 rounded-lg transition-all",
+                  privacyError && "ring-2 ring-red-500 bg-red-50"
+                )}>
                   <Checkbox
                     id="privacy"
                     checked={formData.privacyAccepted}
                     onCheckedChange={(checked) => onSelectChange('privacyAccepted', (checked === true) as any)}
-                    className="border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark"
+                    className="border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark mt-0.5"
                   />
-                  <label htmlFor="privacy" className="text-sm text-gray-600 leading-relaxed">
-                    Ich akzeptiere die{" "}
-                    <a href="/datenschutz" className="text-ocean-dark hover:underline" target="_blank">
-                      Datenschutzerklärung
-                    </a>{" "}
-                    und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. *
-                  </label>
+                  <div className="flex-1">
+                    <label htmlFor="privacy" className="text-sm text-gray-600 leading-relaxed">
+                      Ich akzeptiere die{" "}
+                      <a href="/datenschutz" className="text-ocean-dark hover:underline" target="_blank">
+                        Datenschutzerklärung
+                      </a>{" "}
+                      und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. *
+                    </label>
+                    {privacyError && (
+                      <p className="text-sm font-medium text-red-600 mt-2">
+                        Bitte akzeptieren Sie die Datenschutzerklärung, um fortzufahren.
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -440,6 +452,7 @@ const CharterRequestForm = ({
   // ---------------------------------
   const [formData, setFormData] = useState<FormState>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [privacyError, setPrivacyError] = useState(false);
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     try {
       const { name, value } = e.target;
@@ -471,6 +484,7 @@ const CharterRequestForm = ({
         ...prev,
         privacyAccepted: Boolean(value)
       }));
+      setPrivacyError(false); // Clear error when checkbox is checked
     } else {
       setFormData(prev => ({
         ...prev,
@@ -517,8 +531,15 @@ const CharterRequestForm = ({
       });
       const field = issue?.path?.[0];
       if (typeof field === "string") {
-        const el = document.querySelector(`[name="${field}"]`) as HTMLElement | null;
-        el?.focus?.();
+        // Special handling for privacy checkbox
+        if (field === "privacyAccepted") {
+          setPrivacyError(true);
+          const privacySection = document.getElementById("privacy-section");
+          privacySection?.scrollIntoView({ behavior: "smooth", block: "center" });
+        } else {
+          const el = document.querySelector(`[name="${field}"]`) as HTMLElement | null;
+          el?.focus?.();
+        }
       }
       return;
     }
@@ -635,7 +656,7 @@ const CharterRequestForm = ({
   // ---------------------------------
   // Render
   // ---------------------------------
-  const content = <FormContent formData={formData} onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSubmit={handleSubmit} onClose={handleClose} isSubmitting={isSubmitting} />;
+  const content = <FormContent formData={formData} onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSubmit={handleSubmit} onClose={handleClose} isSubmitting={isSubmitting} privacyError={privacyError} />;
   if (children) {
     return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>{children}</DialogTrigger>
