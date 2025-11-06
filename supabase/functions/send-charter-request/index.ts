@@ -115,28 +115,40 @@ serve(async (req) => {
     }
     console.log('✅ Admin email sent:', adminData?.id)
 
-    // Send user confirmation email
+    // Send user confirmation email (with error tolerance)
     console.log('📧 Sending user confirmation email...')
-    const { data: userData, error: userError } = await resend.emails.send({
-      from: 'Charter Transparenz <onboarding@resend.dev>',
-      to: formData.email,
-      subject: `Ihre Charter-Anfrage ${referenceId} wurde empfangen`,
-      html: userEmailContent,
-      reply_to: 'info@chartertransparenz.de',
-    })
+    let userEmailSent = false
+    let userEmailId = null
+    
+    try {
+      const { data: userData, error: userError } = await resend.emails.send({
+        from: 'Charter Transparenz <onboarding@resend.dev>',
+        to: formData.email,
+        subject: `Ihre Charter-Anfrage ${referenceId} wurde empfangen`,
+        html: userEmailContent,
+        reply_to: 'info@chartertransparenz.de',
+      })
 
-    if (userError) {
-      console.error('❌ User email error:', userError)
-      throw new Error(`User confirmation email failed: ${userError.message}`)
+      if (userError) {
+        console.error('❌ User email error (non-fatal):', userError)
+        console.log('ℹ️ Admin email was successful, continuing despite user email failure')
+      } else {
+        console.log('✅ User confirmation email sent:', userData?.id)
+        userEmailSent = true
+        userEmailId = userData?.id
+      }
+    } catch (userEmailError: any) {
+      console.error('❌ User email exception (non-fatal):', userEmailError)
+      console.log('ℹ️ Admin email was successful, continuing despite user email exception')
     }
-    console.log('✅ User confirmation email sent:', userData?.id)
 
     return new Response(
       JSON.stringify({ 
-        message: 'ok',
+        success: true,
         referenceId,
         adminEmailId: adminData?.id,
-        userEmailId: userData?.id,
+        userEmailId,
+        userEmailSent,
       }),
       {
         headers: {
