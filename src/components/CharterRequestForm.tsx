@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Send, Anchor, CheckCircle, CalendarIcon } from "lucide-react";
+import { Send, Anchor, CheckCircle, CalendarIcon, Loader2 } from "lucide-react";
 import React, { useState, useEffect, useRef, useCallback, useLayoutEffect, memo } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -345,7 +345,11 @@ const FormContent = memo(function FormContent({
                   disabled={isSubmitting}
                   className="w-full bg-ocean-dark text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send className="w-5 h-5" />
+                  {isSubmitting ? (
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : (
+                    <Send className="w-5 h-5" />
+                  )}
                   {isSubmitting ? "Wird gesendet..." : "Unverbindliche Anfrage senden"}
                 </Button>
               </div>
@@ -587,10 +591,24 @@ const CharterRequestForm = ({
         throw new Error(result.error || 'Failed to send request');
       }
     } catch (error: any) {
-      console.error('Charter request form error:', error);
+      console.error('=== Charter Request Form Error ===');
+      console.error('Error:', error);
+      console.error('Error message:', error.message);
+      
+      // Provide more specific error messages
+      let errorDescription = "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.";
+      
+      if (error.message?.includes('email') || error.message?.includes('E-Mail')) {
+        errorDescription = "Die E-Mail konnte nicht gesendet werden. Bitte kontaktieren Sie uns direkt unter info@chartertransparenz.de oder +49 123 456789.";
+      } else if (error.message?.includes('network') || error.message?.includes('fetch')) {
+        errorDescription = "Netzwerkfehler. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.";
+      } else if (error.message?.includes('timeout')) {
+        errorDescription = "Die Anfrage hat zu lange gedauert. Bitte versuchen Sie es erneut.";
+      }
+      
       toast({
         title: "Fehler beim Senden",
-        description: error.message || "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+        description: errorDescription,
         variant: "destructive"
       });
     } finally {

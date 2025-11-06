@@ -1,8 +1,28 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { Resend } from "https://esm.sh/resend@2.0.0"
+import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts"
 
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
+const RESEND_FROM = Deno.env.get('RESEND_FROM') || 'Charter Transparenz <noreply@chartertransparenz.de>'
+const REQUESTS_INBOX = Deno.env.get('REQUESTS_INBOX') || 'info@chartertransparenz.de'
+
 const resend = new Resend(RESEND_API_KEY)
+
+// Input validation schema
+const charterRequestSchema = z.object({
+  firstName: z.string().trim().min(1, 'Vorname ist erforderlich').max(100),
+  lastName: z.string().trim().min(1, 'Nachname ist erforderlich').max(100),
+  email: z.string().trim().email('Ungültige E-Mail-Adresse').max(255),
+  phone: z.string().trim().max(50).optional(),
+  charterType: z.string().trim().max(100).optional(),
+  boatType: z.string().trim().max(100).optional(),
+  territory: z.string().trim().max(200).optional(),
+  startDate: z.string().trim().max(50).optional(),
+  endDate: z.string().trim().max(50).optional(),
+  boatSize: z.string().trim().max(100).optional(),
+  cabins: z.string().trim().max(50).optional(),
+  message: z.string().trim().max(2000).optional(),
+})
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -26,8 +46,30 @@ serve(async (req) => {
   }
 
   try {
-    const formData = await req.json()
-    console.log('📥 Charter request received:', { email: formData.email, name: formData.firstName })
+    const rawData = await req.json()
+    console.log('📥 Charter request received:', { email: rawData.email, name: rawData.firstName })
+    
+    // Validate input data
+    const validationResult = charterRequestSchema.safeParse(rawData)
+    if (!validationResult.success) {
+      console.error('❌ Validation failed:', validationResult.error.format())
+      return new Response(
+        JSON.stringify({ 
+          error: 'Ungültige Formulardaten',
+          details: validationResult.error.format()
+        }),
+        {
+          status: 400,
+          headers: {
+            'Content-Type': 'application/json',
+            ...corsHeaders,
+          },
+        }
+      )
+    }
+    
+    const formData = validationResult.data
+    console.log('✅ Validation passed')
     
     // Generate reference ID
     const referenceId = generateReferenceId()
@@ -101,9 +143,11 @@ serve(async (req) => {
 
     // Send admin email
     console.log('📧 Sending admin email...')
+    console.log('   From:', RESEND_FROM)
+    console.log('   To:', REQUESTS_INBOX)
     const { data: adminData, error: adminError } = await resend.emails.send({
-      from: 'Charter Transparenz <onboarding@resend.dev>',
-      to: 'info@chartertransparenz.de',
+      from: RESEND_FROM,
+      to: REQUESTS_INBOX,
       subject: `Neue Charter-Anfrage ${referenceId} von ${formData.firstName} ${formData.lastName}`,
       html: adminEmailContent,
       reply_to: formData.email,
@@ -117,16 +161,17 @@ serve(async (req) => {
 
     // Send user confirmation email (with error tolerance)
     console.log('📧 Sending user confirmation email...')
+    console.log('   To:', formData.email)
     let userEmailSent = false
     let userEmailId = null
     
     try {
       const { data: userData, error: userError } = await resend.emails.send({
-        from: 'Charter Transparenz <onboarding@resend.dev>',
+        from: RESEND_FROM,
         to: formData.email,
         subject: `Ihre Charter-Anfrage ${referenceId} wurde empfangen`,
         html: userEmailContent,
-        reply_to: 'info@chartertransparenz.de',
+        reply_to: REQUESTS_INBOX,
       })
 
       if (userError) {
