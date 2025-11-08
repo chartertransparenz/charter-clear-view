@@ -7,9 +7,9 @@ export const reviereMenu: MenuItem[] = [
     children: [
       { label: "Istrien", href: "/reviere/mittelmeer/kroatien/istrien" },
       { label: "Kvarner", href: "/reviere/mittelmeer/kroatien/kvarner" },
-      { label: "Zadar", href: "/reviere/mittelmeer/kroatien/zadar" },
-      { label: "Dalmatien ab Split", href: "/reviere/mittelmeer/kroatien/dalmatien-split" },
-      { label: "Dubrovnik", href: "/reviere/mittelmeer/kroatien/dubrovnik" }
+      { label: "Norddalmatien", href: "/reviere/mittelmeer/kroatien/zadar" },
+      { label: "Mitteldalmatien", href: "/reviere/mittelmeer/kroatien/dalmatien-split" },
+      { label: "Süddalmatien", href: "/reviere/mittelmeer/kroatien/dubrovnik" }
     ]
   },
   {
