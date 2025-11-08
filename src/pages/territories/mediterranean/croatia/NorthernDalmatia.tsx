@@ -148,7 +148,7 @@ export default function NorthernDalmatia() {
           <TerritoryMap
             region="Norddalmatien"
             center={{ lat: 43.93, lng: 15.55 }}
-            zoom={9}
+            zoom={7}
             markers={[
               {
                 lat: 44.1194,
