@@ -144,31 +144,39 @@ export default function NorthernDalmatia() {
         </div>
 
         {/* Territory Map */}
-        <div className="mb-16">
-          <TerritoryMap region="Norddalmatien" center={{
-          lat: 43.9335,
-          lng: 15.5049
-        }} zoom={10} markers={[{
-          lat: 44.1194,
-          lng: 15.2314,
-          name: 'Zadar',
-          description: 'Historische Stadt mit Marina'
-        }, {
-          lat: 43.7350,
-          lng: 15.8952,
-          name: 'Šibenik',
-          description: 'UNESCO-Weltkulturerbe'
-        }, {
-          lat: 43.9434,
-          lng: 15.4506,
-          name: 'Biograd',
-          description: 'Tor zu den Kornati-Inseln'
-        }, {
-          lat: 43.8394,
-          lng: 15.5897,
-          name: 'Murter',
-          description: 'Traditioneller Segelort'
-        }]} className="max-w-4xl mx-auto" />
+        <div className="max-w-4xl mx-auto mb-16">
+          <TerritoryMap
+            region="Norddalmatien"
+            center={{ lat: 43.93, lng: 15.55 }}
+            zoom={9}
+            markers={[
+              {
+                lat: 44.1194,
+                lng: 15.2314,
+                name: 'Zadar',
+                description: 'Historische Stadt mit Marina'
+              },
+              {
+                lat: 43.7350,
+                lng: 15.8952,
+                name: 'Šibenik',
+                description: 'UNESCO-Weltkulturerbe'
+              },
+              {
+                lat: 43.9434,
+                lng: 15.4506,
+                name: 'Biograd',
+                description: 'Tor zu den Kornati-Inseln'
+              },
+              {
+                lat: 43.8394,
+                lng: 15.5897,
+                name: 'Murter',
+                description: 'Traditioneller Segelort'
+              }
+            ]}
+            className="shadow-lg"
+          />
         </div>
 
         {/* Detailed Region Description */}
