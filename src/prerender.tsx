@@ -12,6 +12,7 @@ function getMetaConfig(url: string) {
     '/reviere/mittelmeer/kroatien/zadar': 'zadar',
     '/reviere/mittelmeer/kroatien/dalmatien-split': 'dalmatienSplit',
     '/reviere/mittelmeer/kroatien/dubrovnik': 'dubrovnik',
+    '/reviere/mittelmeer/frankreich': 'frankreich',
   };
 
   const regionKey = regionMap[url];
@@ -52,9 +53,15 @@ export async function prerender(data: { url: string }) {
   const breadcrumbItems = [
     { position: 1, name: "Start", item: "https://chartertransparenz.de/" },
     { position: 2, name: "Reviere", item: "https://chartertransparenz.de/reviere" },
-    { position: 3, name: "Mittelmeer", item: "https://chartertransparenz.de/reviere/mittelmeer" },
-    { position: 4, name: "Kroatien", item: "https://chartertransparenz.de/reviere/mittelmeer/kroatien" }
+    { position: 3, name: "Mittelmeer", item: "https://chartertransparenz.de/reviere/mittelmeer" }
   ];
+
+  // Add country-specific breadcrumb
+  if (data.url.includes('/kroatien')) {
+    breadcrumbItems.push({ position: 4, name: "Kroatien", item: "https://chartertransparenz.de/reviere/mittelmeer/kroatien" });
+  } else if (data.url.includes('/frankreich')) {
+    breadcrumbItems.push({ position: 4, name: "Frankreich", item: "https://chartertransparenz.de/reviere/mittelmeer/frankreich" });
+  }
 
   // Add specific region if it's a subpage
   if (data.url.includes('/istrien')) {
