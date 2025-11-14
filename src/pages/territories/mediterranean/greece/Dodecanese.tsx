@@ -354,9 +354,9 @@ const Dodecanese = () => {
             <div className="border border-gray-300 p-6 rounded-lg mb-6">
               <h4 className="font-semibold mb-3 text-black">Vergleich zu anderen Revieren</h4>
               <ul className="space-y-2 text-black">
-                <li><strong>Ionisches Meer:</strong> Deutlich grüner und windärmer; der Dodekanes ist sportlicher, mit längeren offenen Passagen und klareren, trockeneren Luftmassen.</li>
-                <li><strong>Kykladen:</strong> In der Zentralägäis oft noch meltemistärker und exponierter; der Dodekanes bietet mehr All-Weather-Anchorages und Lee-Routen entlang der Inselketten.</li>
-                <li><strong>Saronischer Golf:</strong> Nähe zu Athen, kürzere Etappen und mehr Schutz – der Dodekanes ist die steigerungsfähige Alternative für Crews, die „mehr Segeln" möchten.</li>
+                <li><strong><Link to="/reviere/mittelmeer/griechenland/ionisches-meer" className="text-primary hover:underline">Ionisches Meer</Link>:</strong> Deutlich grüner und windärmer; der Dodekanes ist sportlicher, mit längeren offenen Passagen und klareren, trockeneren Luftmassen.</li>
+                <li><strong><Link to="/reviere/mittelmeer/griechenland/kykladen" className="text-primary hover:underline">Kykladen</Link>:</strong> In der Zentralägäis oft noch meltemistärker und exponierter; der Dodekanes bietet mehr All-Weather-Anchorages und Lee-Routen entlang der Inselketten.</li>
+                <li><strong><Link to="/reviere/mittelmeer/griechenland/athen-saronischer-golf" className="text-primary hover:underline">Saronischer Golf</Link>:</strong> Nähe zu Athen, kürzere Etappen und mehr Schutz – der Dodekanes ist die steigerungsfähige Alternative für Crews, die „mehr Segeln" möchten.</li>
               </ul>
             </div>
 
