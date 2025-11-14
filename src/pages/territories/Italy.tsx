@@ -71,7 +71,7 @@ const Italy = () => {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Italien</h1>
           <p className="text-lg text-white/90 max-w-md">
-            Sardinien, Elba, Sizilien & Amalfiküste - Dolce Vita auf dem Wasser
+            <Link to="/reviere/mittelmeer/italien/sardinien" className="text-white hover:underline">Sardinien</Link>, Elba, <Link to="/reviere/mittelmeer/italien/sizilien" className="text-white hover:underline">Sizilien</Link> & <Link to="/reviere/mittelmeer/italien/amalfikueste" className="text-white hover:underline">Amalfiküste</Link> - Dolce Vita auf dem Wasser
           </p>
         </div>
         <Link to="/" className="absolute top-6 left-6" onClick={() => {
@@ -131,9 +131,9 @@ const Italy = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Sardinien – Karibikflair im Herzen des Mittelmeers</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4"><Link to="/reviere/mittelmeer/italien/sardinien" className="text-primary hover:underline">Sardinien</Link> – Karibikflair im Herzen des Mittelmeers</h3>
                 <p className="text-gray-600 mb-4">
-                  Ein Yachtcharter auf Sardinien ist der Traum vieler Segler. Die Insel lockt mit weltberühmten Küstenabschnitten 
+                  Ein Yachtcharter auf <Link to="/reviere/mittelmeer/italien/sardinien" className="text-primary hover:underline">Sardinien</Link> ist der Traum vieler Segler. Die Insel lockt mit weltberühmten Küstenabschnitten
                   und Wasserfarben, die von tiefem Smaragdgrün bis zu leuchtendem Türkis reichen.
                 </p>
                 <div className="ml-4 space-y-4">
@@ -141,7 +141,7 @@ const Italy = () => {
                     <h4 className="text-lg font-medium text-gray-800 mb-2">Der Norden & die Costa Smeralda</h4>
                     <p className="text-gray-600">
                       Der Nordosten Sardiniens ist legendär. Von Charterbasen in Olbia, Portisco oder Cannigione aus erreichen Sie 
-                      die berühmte Costa Smeralda mit ihrem exklusiven Flair und dem mondänen Hafen von Porto Cervo. Das nautische 
+                      die berühmte <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-primary hover:underline">Costa Smeralda</Link> mit ihrem exklusiven Flair und dem mondänen Hafen von Porto Cervo. Das nautische
                       Highlight ist jedoch das Maddalena-Archipel, ein Nationalpark aus über 60 Inseln und Felsen. Hier finden Sie 
                       unzählige, gut geschützte Ankerplätze zwischen von Wind und Wetter geformten Granitfelsen. Inseln wie Spargi, 
                       Budelli (mit seinem berühmten rosa Strand) und Caprera bieten Postkartenmotive an jeder Ecke. Die Windbedingungen 
@@ -160,9 +160,9 @@ const Italy = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Sizilien & die Liparischen Inseln – Feuer, Geschichte und Genuss</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4"><Link to="/reviere/mittelmeer/italien/sizilien" className="text-primary hover:underline">Sizilien</Link> & die Liparischen Inseln – Feuer, Geschichte und Genuss</h3>
                 <p className="text-gray-600 mb-4">
-                  Ein Yachtcharter auf Sizilien ist eine Reise durch Jahrtausende der Geschichte, umgeben von einer dramatischen 
+                  Ein Yachtcharter auf <Link to="/reviere/mittelmeer/italien/sizilien" className="text-primary hover:underline">Sizilien</Link> ist eine Reise durch Jahrtausende der Geschichte, umgeben von einer dramatischen
                   Naturkulisse. Die größte Insel des Mittelmeers ist ein Schmelztiegel der Kulturen. Charterbasen wie Palermo, 
                   Portorosa oder Marsala eröffnen Ihnen zwei grundverschiedene Reviere:
                 </p>
@@ -188,10 +188,10 @@ const Italy = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Campanien & die Amalfiküste – Postkartenmotive und antikes Erbe</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Campanien & die <Link to="/reviere/mittelmeer/italien/amalfikueste" className="text-primary hover:underline">Amalfiküste</Link> – Postkartenmotive und antikes Erbe</h3>
                 <p className="text-gray-600 mb-4">
                   Die Region Campanien mit dem Golf von Neapel ist eine der spektakulärsten Küstenlandschaften der Welt. 
-                  Von den modernen Marinas in Neapel oder Salerno aus segeln Sie entlang der weltberühmten Amalfiküste. 
+                  Von den modernen Marinas in Neapel oder Salerno aus segeln Sie entlang der weltberühmten <Link to="/reviere/mittelmeer/italien/amalfikueste" className="text-primary hover:underline">Amalfiküste</Link>.
                   Die pastellfarbenen Dörfer Positano, Amalfi und Ravello, die sich dramatisch an die Felsen klammern, 
                   sind vom Wasser aus am besten zu bewundern. Ankerplätze sind hier rar, aber die gut ausgestatteten 
                   Bojenfelder und kleinen Häfen machen einen Stopp möglich.
@@ -243,10 +243,10 @@ const Italy = () => {
                       aus direkt angeflogen. Die wichtigsten Zielflughäfen für unsere Chartergäste sind:
                     </p>
                     <ul className="text-gray-600 space-y-1 ml-6">
-                      <li>• <strong>Für die Toskana:</strong> Pisa (PSA) und Florenz (FLR)</li>
-                      <li>• <strong>Für Sardinien:</strong> Olbia (OLB) im Norden und Cagliari (CAG) im Süden</li>
-                      <li>• <strong>Für Sizilien:</strong> Palermo (PMO) und Catania (CTA)</li>
-                      <li>• <strong>Für Campanien/Amalfiküste:</strong> Neapel (NAP)</li>
+                      <li>• <strong>Für die <Link to="/reviere/mittelmeer/italien/toskana" className="text-primary hover:underline">Toskana</Link>:</strong> Pisa (PSA) und Florenz (FLR)</li>
+                      <li>• <strong>Für <Link to="/reviere/mittelmeer/italien/sardinien" className="text-primary hover:underline">Sardinien</Link>:</strong> Olbia (OLB) im Norden und Cagliari (CAG) im Süden</li>
+                      <li>• <strong>Für <Link to="/reviere/mittelmeer/italien/sizilien" className="text-primary hover:underline">Sizilien</Link>:</strong> Palermo (PMO) und Catania (CTA)</li>
+                      <li>• <strong>Für Campanien/<Link to="/reviere/mittelmeer/italien/amalfikueste" className="text-primary hover:underline">Amalfiküste</Link>:</strong> Neapel (NAP)</li>
                       <li>• <strong>Für Ligurien:</strong> Genua (GOA)</li>
                     </ul>
                     <p className="text-gray-600 mt-3">
@@ -257,7 +257,7 @@ const Italy = () => {
                   <div>
                     <h4 className="text-lg font-medium text-gray-800 mb-2">Per PKW</h4>
                     <p className="text-gray-600">
-                      Insbesondere die Reviere in Nord- und Mittelitalien (Ligurien, Toskana) sind aus Süddeutschland, 
+                      Insbesondere die Reviere in Nord- und Mittelitalien (Ligurien, <Link to="/reviere/mittelmeer/italien/toskana" className="text-primary hover:underline">Toskana</Link>) sind aus Süddeutschland, 
                       Österreich und der Schweiz bequem mit dem Auto erreichbar. Dies bietet den Vorteil, mehr Gepäck und 
                       persönlichen Proviant mitnehmen zu können. Die meisten Marinas bieten sichere Parkmöglichkeiten für 
                       die Dauer Ihres Törns.
@@ -301,7 +301,7 @@ const Italy = () => {
                     <h4 className="text-lg font-medium text-gray-800 mb-2">Typische Winde</h4>
                     <p className="text-gray-600 mb-2">Die lokalen Windsysteme sind für die Törnplanung entscheidend:</p>
                     <ul className="text-gray-600 space-y-2 ml-6">
-                      <li>• <strong>Mistral (Maestrale):</strong> Ein starker, trockener Wind aus Nordwest, der vor allem im Bereich Sardinien, Korsika und dem Tyrrhenischen Meer auftritt. Er bringt klaren Himmel und gute Sicht, kann aber auch hohe Wellen aufbauen und erfordert seemännisches Können.</li>
+                      <li>• <strong>Mistral (Maestrale):</strong> Ein starker, trockener Wind aus Nordwest, der vor allem im Bereich <Link to="/reviere/mittelmeer/italien/sardinien" className="text-primary hover:underline">Sardinien</Link>, Korsika und dem Tyrrhenischen Meer auftritt. Er bringt klaren Himmel und gute Sicht, kann aber auch hohe Wellen aufbauen und erfordert seemännisches Können.</li>
                       <li>• <strong>Scirocco (Jugo):</strong> Ein warmer, feuchter Wind aus Südost, der oft Sand aus der Sahara mit sich bringt. Er kündigt sich meist langsam an und kann zu drückender Schwüle und unruhiger See führen.</li>
                       <li>• <strong>Libeccio:</strong> Ein Südwestwind, der häufig an der Westküste Italiens auftritt und schnell an Stärke zunehmen kann.</li>
                       <li>• Im Sommer dominieren thermische Winde (Land- und Seebrisen), die tagsüber für moderate und zuverlässige Segelbedingungen sorgen und nachts oft einschlafen.</li>
