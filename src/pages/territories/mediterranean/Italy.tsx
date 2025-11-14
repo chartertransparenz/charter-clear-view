@@ -333,10 +333,10 @@ const Italy = () => {
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Vergleich der Regionen (auf einen Blick)</h3>
             <ul className="list-disc pl-6 space-y-3 mb-6">
-              <li><strong>Toskana & Riviera:</strong> Am „einfachsten" – viele Lee Buchten, kurze Etappen, Kultur dicht am Wasser.</li>
-              <li><strong>Amalfi & Golf von Neapel:</strong> Spektakulär & belebt – gute Logistik, aber Reservierungen/Plan B wichtig. Ponza/Ventotene als Blauwasser Bonus; Tropea als Brücke zu den Äolischen.</li>
-              <li><strong>Sardinien:</strong> Natur & Farben; Mistral beachten, Maddalena Regeln kennen – dafür Playgrounds par excellence.</li>
-              <li><strong>Sizilien:</strong> Vulkan Abenteuer & Inselketten; je nach Sektor von gemütlich (Egadi/Lee) bis anspruchsvoll (Stromboli/Offenwasser).</li>
+              <li><strong><Link to="/reviere/mittelmeer/italien/toskana" className="text-primary hover:underline">Toskana & Riviera</Link>:</strong> Am „einfachsten" – viele Lee Buchten, kurze Etappen, Kultur dicht am Wasser.</li>
+              <li><strong><Link to="/reviere/mittelmeer/italien/amalfikuste" className="text-primary hover:underline">Amalfi & Golf von Neapel</Link>:</strong> Spektakulär & belebt – gute Logistik, aber Reservierungen/Plan B wichtig. Ponza/Ventotene als Blauwasser Bonus; Tropea als Brücke zu den Äolischen.</li>
+              <li><strong><Link to="/reviere/mittelmeer/italien/sardinien" className="text-primary hover:underline">Sardinien</Link>:</strong> Natur & Farben; Mistral beachten, Maddalena Regeln kennen – dafür Playgrounds par excellence.</li>
+              <li><strong><Link to="/reviere/mittelmeer/italien/sizilien" className="text-primary hover:underline">Sizilien</Link>:</strong> Vulkan Abenteuer & Inselketten; je nach Sektor von gemütlich (Egadi/Lee) bis anspruchsvoll (Stromboli/Offenwasser).</li>
             </ul>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>
@@ -373,7 +373,7 @@ const Italy = () => {
                   Jetzt Ihren Italien-Charter planen
                 </h3>
                 <p className="mb-6 text-gray-700">
-                  Von der Toskana bis Sizilien – lassen Sie sich Ihr persönliches 
+                  Von der <Link to="/reviere/mittelmeer/italien/toskana" className="text-primary hover:underline">Toskana</Link> bis <Link to="/reviere/mittelmeer/italien/sizilien" className="text-primary hover:underline">Sizilien</Link> – lassen Sie sich Ihr persönliches 
                   Angebot für den perfekten Italien-Törn erstellen.
                 </p>
                 <CharterRequestForm>
@@ -400,7 +400,7 @@ const Italy = () => {
                 </h3>
               </Link>
               <p className="text-gray-600 mb-4">
-                Traumhafte Insel mit smaragdgrünem Wasser, dem berühmten La Maddalena Archipel und exklusiven Häfen der Costa Smeralda. Perfekt für alle, die kristallklares Wasser und erstklassige Marinas schätzen.
+                Traumhafte Insel mit smaragdgrünem Wasser, dem berühmten La Maddalena Archipel und exklusiven Häfen der <Link to="/reviere/mittelmeer/italien/sardinien/costa-smeralda" className="text-primary hover:underline">Costa Smeralda</Link>. Perfekt für alle, die kristallklares Wasser und erstklassige Marinas schätzen.
               </p>
               <div className="text-sm text-gray-500">
                 <strong>Wichtige Stützpunkte:</strong> Olbia, Portisco, Cannigione, Palau, Alghero, Cagliari
