@@ -63,9 +63,9 @@ const Index = () => {
         <Hero />
         <NausysWidgetSection />
         <Territories />
-        <Services />
         <Fleet />
         <Partners />
+        <Services />
         <Suspense fallback={<div className="p-6 text-center">Kontakt lädt…</div>}>
           <Contact />
         </Suspense>
