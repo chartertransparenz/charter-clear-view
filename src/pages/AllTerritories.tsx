@@ -8,14 +8,14 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, ChevronRight } from 'lucide-react';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
-import maledivenImage from '@/assets/territories/malediven.jpg';
-import hollandImage from '@/assets/territories/holland.jpg';
-import portugalImage from '@/assets/territories/portugal.jpg';
-import guadeloupeImage from '@/assets/territories/guadeloupe.jpg';
-import neukaledonienImage from '@/assets/territories/neukaledonien.jpg';
-import neuseelandImage from '@/assets/territories/neuseeland.jpg';
-import norweGenImage from '@/assets/territories/norwegen.jpg';
-import malaysiaImage from '@/assets/territories/malaysia.jpg';
+const maledivenImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const hollandImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const portugalImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const guadeloupeImage = '/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.png';
+const neukaledonienImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const neuseelandImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const norweGenImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const malaysiaImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
 
 export default function AllTerritories() {
   const m = META.allTerritories;

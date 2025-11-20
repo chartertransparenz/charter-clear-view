@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Anchor, Ship } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-import navigareKatamaranCrew from '@/assets/partners/navigare-yachting-katamaran-crew.jpg';
-import navigareEntspannung from '@/assets/partners/navigare-yachting-entspannung.jpg';
+const navigareKatamaranCrew = '/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png';
+const navigareEntspannung = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
 
 export default function NavigareYachting() {
   useEffect(() => { if (typeof window !== 'undefined') window.scrollTo(0, 0); }, []);

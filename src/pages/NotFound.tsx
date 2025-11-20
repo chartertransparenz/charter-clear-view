@@ -6,7 +6,7 @@ import TopDestinations from "@/components/TopDestinations";
 import Footer from "@/components/Footer";
 import { Home, Map } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/404-hero.jpg";
+const heroImage = "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png";
 
 const NotFound = () => {
   const location = useLocation();
