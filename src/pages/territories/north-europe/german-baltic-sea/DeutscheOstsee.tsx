@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import FloatingCTA from "@/components/FloatingCTA";
 
-import balticSea from "/lovable-uploads/35272578-21b4-41cd-a017-0019ba277b27.png";
+const balticSea = "/lovable-uploads/35272578-21b4-41cd-a017-0019ba277b27.png";
 const DeutscheOstsee = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
