@@ -10,8 +10,8 @@ import TerritoryMap from "@/components/TerritoryMap";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
-import ibizaHeader from "@/assets/ibiza-header.jpg";
-import espalmadorImage from "@/assets/espalmador.jpg";
+const ibizaHeader = "/ibiza-header.jpg";
+const espalmadorImage = "/espalmador.jpg";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 const Ibiza = () => {
   const m = META.ibiza;

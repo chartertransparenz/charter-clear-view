@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
 import { useIsMobile } from "@/hooks/use-mobile";
-import caribbean from "@/assets/caribbean.jpg";
+const caribbean = "/caribbean.jpg";
 import {
   Breadcrumb,
   BreadcrumbItem,

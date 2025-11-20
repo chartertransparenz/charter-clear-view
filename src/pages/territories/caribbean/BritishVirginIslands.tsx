@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import destinationBvi from "@/assets/destination-bvi.jpg";
+const destinationBvi = "/destination-bvi.jpg";
 import { Meta } from "@/seo/Meta";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";

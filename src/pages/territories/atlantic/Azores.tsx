@@ -10,7 +10,7 @@ import TopDestinations from "@/components/TopDestinations";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import atlantic from "@/assets/atlantic.jpg";
+const atlantic = "/atlantic.jpg";
 const Azores = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

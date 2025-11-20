@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import atlantic from "@/assets/atlantic.jpg";
+const atlantic = "/atlantic.jpg";
 const USAEastCoast = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

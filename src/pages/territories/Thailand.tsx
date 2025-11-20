@@ -16,7 +16,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import destinationThailand from "@/assets/destination-thailand.jpg";
+const destinationThailand = "/destination-thailand.jpg";
 
 const Thailand = () => {
   useEffect(() => {

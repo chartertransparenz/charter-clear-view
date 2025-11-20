@@ -15,7 +15,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-import canaryIslandsSailing from "@/assets/canary-islands-sailing.jpg";
+const canaryIslandsSailing = "/canary-islands-sailing.jpg";
 
 const GranCanaria = () => {
   useEffect(() => {
