@@ -15,7 +15,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-import caribbean from "@/assets/caribbean.jpg";
+const caribbean = "/caribbean.jpg";
 
 const KeyWest = () => {
   useEffect(() => {

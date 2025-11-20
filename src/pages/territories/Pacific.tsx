@@ -7,7 +7,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import pacific from "@/assets/pacific.jpg";
+const pacific = "/pacific.jpg";
 const Pacific = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

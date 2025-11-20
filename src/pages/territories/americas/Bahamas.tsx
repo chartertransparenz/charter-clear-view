@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
-import caribbean from "@/assets/caribbean.jpg";
+const caribbean = "/caribbean.jpg";
 import { Meta } from "@/seo/Meta";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";

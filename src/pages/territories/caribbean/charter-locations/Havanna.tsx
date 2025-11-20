@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import caribbean from "@/assets/caribbean.jpg";
+const caribbean = "/caribbean.jpg";
 const Havanna = () => {
   console.log("Havanna component is rendering");
   

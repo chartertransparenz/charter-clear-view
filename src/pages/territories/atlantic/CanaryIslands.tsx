@@ -12,7 +12,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import TerritoryMap from "@/components/TerritoryMap";
 import { Meta } from "@/seo/Meta";
 import { META } from "@/seo/meta.config";
-import atlantic from "@/assets/atlantic.jpg";
+const atlantic = "/atlantic.jpg";
 
 const CanaryIslands = () => {
   const m = META.canaryIslands;

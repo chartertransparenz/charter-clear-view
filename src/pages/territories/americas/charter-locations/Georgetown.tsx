@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import caribbean from "@/assets/caribbean.jpg";
+const caribbean = "/caribbean.jpg";
 
 const Georgetown = () => {
   useEffect(() => {
