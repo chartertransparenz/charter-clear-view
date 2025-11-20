@@ -11,7 +11,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 // Meta component removed - SEO tags managed by prerender script
 import { META } from "@/seo/meta.config";
 
-import destinationCroatia from "/lovable-uploads/d5096334-3375-4285-8371-fd56ccbbdfad.png";
+const destinationCroatia = "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png";
 
 const Croatia = () => {
   const m = META.kroatien;
