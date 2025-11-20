@@ -134,7 +134,7 @@ const Territories = () => {
             Yachtcharter weltweit - Von der Adria und der Ägäis bis Französisch Polynesien. 
             Yachtcharter, der man vertraut: 30 Jahre Markterfahrung, geprüfte Flotten und 
             fundiertes Expertenwissen. So wird das Boot mieten in Europas schönsten Revieren 
-            und weltweit zum sicheren Erlebnis. Für Törns, die bleiben.
+            und weltweit zum sicheren Erlebnis. Für reibungslose Törns, die in Erinnerung bleiben.
           </p>
         </div>
 
