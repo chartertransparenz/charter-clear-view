@@ -19,7 +19,7 @@ import {
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
-import destinationFrance from "@/assets/destination-france.jpg";
+
 
 const France = () => {
   const m = META.frankreich;
