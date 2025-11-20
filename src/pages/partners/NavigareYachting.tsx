@@ -8,7 +8,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbP
 import { ArrowLeft, MapPin, Anchor, Ship } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 const navigareKatamaranCrew = '/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png';
-const navigareEntspannung = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const navigareEntspannung = '/yacht-interior.jpg';
 
 export default function NavigareYachting() {
   useEffect(() => { if (typeof window !== 'undefined') window.scrollTo(0, 0); }, []);

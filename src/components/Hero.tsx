@@ -4,17 +4,17 @@ import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 // import heroYacht from "@/assets/hero-yacht.jpg";
 // import charterHeroWater from "@/assets/charter-hero-water.jpg";
 const mediterraneanImage = "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
-const fruhbucherButton = "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png";
+const fruhbuckerButton = "/fruhbucher-button.png";
 
 import { Suspense, lazy, useState, useEffect, useCallback } from "react";
 const CharterRequestForm = lazy(() => import("./CharterRequestForm"));
 const Hero = () => {
-const slides = [{
+  const slides = [{
     image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
     title: "Luxuriöse Yachten",
     subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse"
   }, {
-    image: "/charter-hero-water.jpg",
+    image: "/hero-yacht.jpg",
     title: "Kristallklares Wasser",
     subtitle: "Die schönsten Gewässer der Welt entdecken"
   }, {
@@ -71,8 +71,8 @@ const slides = [{
             <CharterRequestForm>
               <button className="inline-block transform hover:scale-105 transition-all duration-300">
                 <img 
-                  src={fruhbucherButton} 
-                  alt="Frühbucher Rabatt 2026 - Jetzt buchen" 
+                  src={fruhbuckerButton} 
+                  alt="Frühbucher Rabatt 2026 - Jetzt buchen"
                   className="w-full max-w-xl md:max-w-2xl mx-auto shadow-2xl rounded-2xl"
                 />
               </button>
