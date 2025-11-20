@@ -19,7 +19,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import caribbean from "@/assets/caribbean.jpg";
+// import caribbean from "@/assets/caribbean.jpg";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";
 import { BREADCRUMB_CARIBBEAN } from "@/seo/breadcrumbs.caribbean";

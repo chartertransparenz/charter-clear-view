@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import destinationFrance from "@/assets/destination-france.jpg";
+// import destinationFrance from "@/assets/destination-france.jpg";
 
 const France = () => {
   useEffect(() => {
