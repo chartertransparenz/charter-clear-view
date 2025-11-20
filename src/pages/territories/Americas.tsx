@@ -7,7 +7,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import caribbean from "@/assets/caribbean.jpg";
+const caribbean = "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.png";
 const Americas = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

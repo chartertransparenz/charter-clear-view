@@ -4,7 +4,7 @@ import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
 // import heroYacht from "@/assets/hero-yacht.jpg";
 // import charterHeroWater from "@/assets/charter-hero-water.jpg";
 const mediterraneanImage = "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
-import fruhbucherButton from "@/assets/fruhbucher-button.png";
+const fruhbucherButton = "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png";
 
 import { Suspense, lazy, useState, useEffect, useCallback } from "react";
 const CharterRequestForm = lazy(() => import("./CharterRequestForm"));

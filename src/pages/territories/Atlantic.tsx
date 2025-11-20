@@ -7,7 +7,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import atlantic from "@/assets/atlantic.jpg";
+const atlantic = "/lovable-uploads/ff7dc4cb-f11b-4982-bae9-e7ac8218165e.png";
 const Atlantic = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
