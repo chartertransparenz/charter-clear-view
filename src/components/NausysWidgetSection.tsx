@@ -42,8 +42,9 @@ export default function NausysWidgetSection() {
         console.log("[NauSYS] Loader-Script wird angehängt...");
         const w = document.createElement("script");
         w.src = "https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js";
-        w.setAttribute("data-nausys-widget-token","e57fc4ee-9a49-4869-8962-11ad54a8645d");
-        w.setAttribute("data-nausys-widget-settings","b64a7438-be50-4ab8-bed8-9efd47f22fb1");
+        w.setAttribute("data-nausys-widget-token","5450ecdb-6a7d-49e1-aae5-c62e44d05a6a");
+        w.setAttribute("data-nausys-widget-settings","9976ea89-1907-4cbc-aec0-e5c4c310d086");
+        w.setAttribute("data-nausys-widget-language","GERMAN");
         w.async = true;
         w.onload = () => { 
           console.log("[NauSYS] Loader-Script erfolgreich geladen."); 
