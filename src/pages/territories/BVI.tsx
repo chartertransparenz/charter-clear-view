@@ -15,7 +15,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import destinationBvi from "@/assets/destination-bvi.jpg";
+// import destinationBvi from "@/assets/destination-bvi.jpg";
 
 const BVI = () => {
   useEffect(() => {

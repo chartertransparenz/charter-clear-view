@@ -7,7 +7,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import destinationAustralia from "@/assets/destination-australia.jpg";
+// import destinationAustralia from "@/assets/destination-australia.jpg";
 
 const Australia = () => {
   useEffect(() => {

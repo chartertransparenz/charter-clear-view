@@ -14,7 +14,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-import mediterranean from "@/assets/mediterranean.jpg";
+// import mediterranean from "@/assets/mediterranean.jpg";
 
 const Mediterranean = () => {
   useEffect(() => {

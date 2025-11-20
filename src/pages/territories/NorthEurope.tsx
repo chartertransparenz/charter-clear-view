@@ -7,7 +7,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-import balticSea from "@/assets/baltic-sea.jpg";
+// import balticSea from "@/assets/baltic-sea.jpg";
 const NorthEurope = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
