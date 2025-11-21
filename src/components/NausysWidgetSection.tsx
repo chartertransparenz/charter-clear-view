@@ -12,6 +12,7 @@ export default function NausysWidgetSection() {
         {/* NauSYS Widget Container - exakt nach Snippet */}
         <div 
           id="nausysWidgetContainer" 
+          data-nausys-widget="search-wizard"
           style={{ margin: "0 auto", width: "100%" }}
         />
 
