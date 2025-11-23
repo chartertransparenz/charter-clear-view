@@ -3,8 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Home } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 const CharterConfirmation = () => {
+  useEffect(() => {
+    // Track Meta Pixel Lead event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead');
+    }
+  }, []);
   return (
     <>
       <Helmet>
