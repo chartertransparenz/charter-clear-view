@@ -9,6 +9,8 @@ import TopDestinations from "@/components/TopDestinations";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
+import TerritoryMap from "@/components/TerritoryMap";
+import NausysWidgetSection from "@/components/NausysWidgetSection";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
@@ -98,10 +100,26 @@ const Italy = () => {
             </div>)}
         </div>
 
-        {/* Main Introduction */}
+        {/* Übersichtskarte */}
         <div className="max-w-4xl mx-auto mb-12">
-          
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Italien Segelreviere - Übersichtskarte</h2>
+          <TerritoryMap 
+            region="Italien" 
+            center={{ lat: 41.8719, lng: 12.5674 }} 
+            zoom={6} 
+            maptype="satellite"
+            markers={[
+              { lat: 43.5503, lng: 10.3081, name: 'Toskana', description: 'Toskanischer Archipel & Elba' },
+              { lat: 40.6401, lng: 14.6007, name: 'Amalfiküste', description: 'Golf von Neapel & Capri' },
+              { lat: 41.1171, lng: 9.0833, name: 'Sardinien', description: 'Costa Smeralda & La Maddalena' },
+              { lat: 37.5079, lng: 15.0830, name: 'Sizilien', description: 'Äolische Inseln & Palermo' }
+            ]}
+            className="mb-6"
+          />
         </div>
+
+        {/* NauSYS Widget Section */}
+        <NausysWidgetSection />
 
         {/* Segelreviere Detail */}
         <div className="max-w-4xl mx-auto mb-12">
