@@ -5,8 +5,93 @@ import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts"
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
 const RESEND_FROM = Deno.env.get('RESEND_FROM') || 'Charter Transparenz <noreply@chartertransparenz.de>'
 const REQUESTS_INBOX = Deno.env.get('REQUESTS_INBOX') || 'info@chartertransparenz.de'
+const FACEBOOK_ACCESS_TOKEN = Deno.env.get('FACEBOOK_ACCESS_TOKEN')
+const FACEBOOK_PIXEL_ID = Deno.env.get('FACEBOOK_PIXEL_ID')
 
 const resend = new Resend(RESEND_API_KEY)
+
+// SHA-256 hash function for Facebook data
+async function hashData(data: string): Promise<string> {
+  if (!data) return ''
+  const normalized = data.toLowerCase().trim()
+  const encoder = new TextEncoder()
+  const dataBuffer = encoder.encode(normalized)
+  const hashBuffer = await crypto.subtle.digest('SHA-256', dataBuffer)
+  const hashArray = Array.from(new Uint8Array(hashBuffer))
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('')
+}
+
+// Send Facebook Conversion API event
+async function sendFacebookEvent(formData: any, req: Request) {
+  if (!FACEBOOK_ACCESS_TOKEN || !FACEBOOK_PIXEL_ID) {
+    console.log('⚠️ Facebook Conversion API not configured, skipping')
+    return
+  }
+
+  try {
+    console.log('📊 Sending Facebook Conversion API event...')
+    
+    const eventTime = Math.floor(Date.now() / 1000)
+    const userAgent = req.headers.get('user-agent') || ''
+    const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0] || 
+                     req.headers.get('x-real-ip') || ''
+
+    // Hash user data
+    const hashedEmail = await hashData(formData.email)
+    const hashedPhone = formData.phone ? await hashData(formData.phone) : ''
+    const hashedFirstName = await hashData(formData.firstName)
+    const hashedLastName = await hashData(formData.lastName)
+
+    const eventData = {
+      data: [{
+        event_name: 'Lead',
+        event_time: eventTime,
+        event_source_url: 'https://chartertransparenz.de',
+        action_source: 'website',
+        user_data: {
+          em: [hashedEmail],
+          ...(hashedPhone && { ph: [hashedPhone] }),
+          fn: [hashedFirstName],
+          ln: [hashedLastName],
+          client_user_agent: userAgent,
+          client_ip_address: clientIp,
+        },
+        custom_data: {
+          territory: formData.territory || '',
+          boat_size: formData.boatSize || '',
+          cabins: formData.cabins || '',
+          start_date: formData.startDate || '',
+          end_date: formData.endDate || '',
+          charter_type: formData.charterType || '',
+          boat_type: formData.boatType || '',
+          value: 1.00,
+          currency: 'EUR',
+        }
+      }]
+    }
+
+    const fbResponse = await fetch(
+      `https://graph.facebook.com/v18.0/${FACEBOOK_PIXEL_ID}/events?access_token=${FACEBOOK_ACCESS_TOKEN}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(eventData),
+      }
+    )
+
+    const fbResult = await fbResponse.json()
+    
+    if (fbResponse.ok) {
+      console.log('✅ Facebook event sent successfully:', fbResult)
+    } else {
+      console.error('❌ Facebook API error:', fbResult)
+    }
+  } catch (error) {
+    console.error('❌ Facebook event error (non-fatal):', error)
+  }
+}
 
 // Input validation schema
 const charterRequestSchema = z.object({
@@ -186,6 +271,11 @@ serve(async (req) => {
       console.error('❌ User email exception (non-fatal):', userEmailError)
       console.log('ℹ️ Admin email was successful, continuing despite user email exception')
     }
+
+    // Send Facebook Conversion API event (non-blocking)
+    sendFacebookEvent(formData, req).catch(err => {
+      console.error('❌ Facebook event failed (non-blocking):', err)
+    })
 
     return new Response(
       JSON.stringify({ 
