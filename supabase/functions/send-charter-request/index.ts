@@ -10,6 +10,32 @@ const FACEBOOK_PIXEL_ID = Deno.env.get('FACEBOOK_PIXEL_ID')
 
 const resend = new Resend(RESEND_API_KEY)
 
+// Simple rate limiting using Deno KV
+const kv = await Deno.openKv()
+
+async function checkRateLimit(ip: string): Promise<boolean> {
+  const key = ["rate_limit", "charter", ip]
+  const now = Date.now()
+  const windowMs = 3600000 // 1 hour
+  const maxRequests = 3 // Lower limit for charter requests
+  
+  const entry = await kv.get<{ count: number; resetAt: number }>(key)
+  
+  if (!entry.value || entry.value.resetAt < now) {
+    // New window
+    await kv.set(key, { count: 1, resetAt: now + windowMs }, { expireIn: windowMs })
+    return true
+  }
+  
+  if (entry.value.count >= maxRequests) {
+    return false
+  }
+  
+  // Increment counter
+  await kv.set(key, { count: entry.value.count + 1, resetAt: entry.value.resetAt }, { expireIn: windowMs })
+  return true
+}
+
 // SHA-256 hash function for Facebook data
 async function hashData(data: string): Promise<string> {
   if (!data) return ''
@@ -131,6 +157,23 @@ serve(async (req) => {
   }
 
   try {
+    // Rate limiting
+    const ip = req.headers.get('x-forwarded-for')?.split(',')[0] || 
+               req.headers.get('x-real-ip') || 
+               'unknown'
+    
+    const isAllowed = await checkRateLimit(ip)
+    if (!isAllowed) {
+      console.log(`⚠️ Rate limit exceeded for IP: ${ip}`)
+      return new Response(
+        JSON.stringify({ error: 'Zu viele Anfragen. Bitte versuchen Sie es später erneut.' }),
+        { 
+          status: 429, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        }
+      )
+    }
+
     const rawData = await req.json()
     console.log('📥 Charter request received:', { email: rawData.email, name: rawData.firstName })
     
