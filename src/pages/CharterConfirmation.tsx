@@ -24,7 +24,7 @@ const CharterConfirmation = () => {
 
             {/* Message */}
             <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-              Vielen Dank für deine Anfrage. Sie bekommen in Kürze eine Rückmeldung.
+              Vielen Dank für Ihre Anfrage. Sie bekommen in Kürze eine Rückmeldung.
             </h1>
 
             {/* Action button */}
