@@ -11,6 +11,7 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import TerritoryMap from "@/components/TerritoryMap";
 import NausysWidgetSection from "@/components/NausysWidgetSection";
+import elbaBeach from "@/assets/elba-beach.jpg";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
@@ -146,6 +147,16 @@ const Italy = () => {
                   fantastische Bedingungen zum Tauchen und Wandern. Die Navigation ist hier unkompliziert, die Distanzen zwischen 
                   den Inseln sind moderat, was das Revier auch für Familien und weniger erfahrene Crews ideal macht.
                 </p>
+                <figure className="my-6">
+                  <img 
+                    src={elbaBeach} 
+                    alt="Traumhafte Bucht auf Elba mit kristallklarem Wasser und Segelbooten" 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                  <figcaption className="text-sm text-gray-600 mt-2 text-center italic">
+                    Genießen Sie den Traumurlaub auf Elba: Segeln Sie entlang der atemberaubenden Küstenlinie, entdecken Sie versteckte Buchten und erleben Sie das kristallklare Wasser – ein Paradies für alle, die Ruhe und Abenteuer suchen.
+                  </figcaption>
+                </figure>
               </div>
 
               <div>
