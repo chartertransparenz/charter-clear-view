@@ -573,20 +573,12 @@ const CharterRequestForm = ({
       if (result.success && result.data?.success) {
         console.log('Success! Request received, referenceId:', result.data?.referenceId);
         
-        const ref = result.data?.referenceId || 'UNKNOWN';
-        const userEmailSent = result.data?.userEmailSent ?? true;
-        
-        toast({
-          title: "Anfrage erfolgreich gesendet!",
-          description: `Ihre Referenz-ID: ${ref}${!userEmailSent ? ' (Bestätigungs-E-Mail konnte nicht zugestellt werden)' : ''}`
-        });
-
         // Reset form and close dialog
         setFormData(initialFormData);
         handleClose();
         
-        // Navigate to confirmation page with emailSent parameter
-        navigate(`/anfrage-bestaetigung?ref=${encodeURIComponent(ref)}&name=${encodeURIComponent(formData.firstName)}&email=${encodeURIComponent(formData.email)}&emailSent=${userEmailSent}`);
+        // Navigate to thank you page
+        navigate('/charter-confirmation');
       } else {
         throw new Error(result.error || 'Failed to send request');
       }
