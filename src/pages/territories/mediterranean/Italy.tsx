@@ -9,6 +9,7 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationItaly from "@/assets/destination-italy.jpg";
+import NausysWidgetSection from "@/components/NausysWidgetSection";
 const Italy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -102,14 +103,23 @@ const Italy = () => {
 
         <div className="max-w-4xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Italien Segelreviere - Übersichtskarte</h2>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="h-96 w-full">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500000!2d12.5674!3d41.8719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzE5LjQiTiAxMsKwMzQnMDIuNyJF!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde" width="100%" height="100%" style={{
-              border: 0
-            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin allow-popups" title="Italien Karte"></iframe>
-            </div>
-          </div>
+          <TerritoryMap 
+            region="Italien" 
+            center={{ lat: 41.8719, lng: 12.5674 }} 
+            zoom={6} 
+            maptype="satellite"
+            markers={[
+              { lat: 43.5503, lng: 10.3081, name: 'Toskana', description: 'Toskanischer Archipel & Elba' },
+              { lat: 40.6401, lng: 14.6007, name: 'Amalfiküste', description: 'Golf von Neapel & Capri' },
+              { lat: 41.1171, lng: 9.0833, name: 'Sardinien', description: 'Costa Smeralda & La Maddalena' },
+              { lat: 37.5079, lng: 15.0830, name: 'Sizilien', description: 'Äolische Inseln & Palermo' }
+            ]}
+            className="mb-6"
+          />
         </div>
+
+        {/* NauSYS Widget Section */}
+        <NausysWidgetSection />
 
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16">
