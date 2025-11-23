@@ -12,6 +12,7 @@ import { JsonLd } from "@/seo/JsonLd";
 import TerritoryMap from "@/components/TerritoryMap";
 import NausysWidgetSection from "@/components/NausysWidgetSection";
 import elbaBeach from "@/assets/elba-beach.jpg";
+import amalfiCoast from "@/assets/amalfi-coast.jpg";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
@@ -225,6 +226,16 @@ const Italy = () => {
                   sind vom Wasser aus am besten zu bewundern. Ankerplätze sind hier rar, aber die gut ausgestatteten 
                   Bojenfelder und kleinen Häfen machen einen Stopp möglich.
                 </p>
+                <figure className="my-6">
+                  <img 
+                    src={amalfiCoast} 
+                    alt="Positano an der Amalfiküste mit bunten Häusern und Yachten im kristallklaren Wasser" 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                  <figcaption className="text-sm text-gray-600 mt-2 text-center italic">
+                    Segeln Sie entlang der atemberaubenden Amalfi-Küste und lassen Sie sich von den charmanten, bunten Häusern in Positano verzaubern. Genießen Sie die Freiheit auf dem Wasser, das kristallklare Meer und den spektakulären Blick auf eine der schönsten Küstenlandschaften der Welt
+                  </figcaption>
+                </figure>
                 <p className="text-gray-600">
                   Gegenüber liegen die legendären Inseln: das glamouröse Capri mit seiner Blauen Grotte, das größere, 
                   grüne Ischia mit seinen Thermalquellen und das authentische Procida, Italiens Kulturhauptstadt 2022. 
