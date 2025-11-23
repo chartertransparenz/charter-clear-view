@@ -419,38 +419,38 @@ const Italy = () => {
           </div>
         </div>
 
-        {/* Highlights */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((highlight, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
-                <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-800">{highlight}</span>
-              </div>)}
-          </div>
-        </div>
-
-
-        {/* CTA */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">
-              Bereit für "Dolce Vita" auf dem Wasser?
-            </h3>
-            <p className="mb-6 text-gray-700">
-              Entdecken Sie Italiens schönste Küsten und erleben Sie unvergessliche 
-              Momente zwischen Kultur, Kulinarik und kristallklarem Wasser.
-            </p>
-            <CharterRequestForm>
-              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
-                Italien-Charter anfragen
-              </Button>
-            </CharterRequestForm>
-          </div>
-        </div>
         </div>
       
       <TopDestinations />
+
+      {/* Highlights */}
+      <div className="max-w-7xl mx-auto px-4 mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Highlights</h2>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {highlights.map((highlight, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex items-center">
+              <Star className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
+              <span className="text-gray-800">{highlight}</span>
+            </div>)}
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            Bereit für "Dolce Vita" auf dem Wasser?
+          </h3>
+          <p className="mb-6 text-gray-700">
+            Entdecken Sie Italiens schönste Küsten und erleben Sie unvergessliche 
+            Momente zwischen Kultur, Kulinarik und kristallklarem Wasser.
+          </p>
+          <CharterRequestForm>
+            <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
+              Italien-Charter anfragen
+            </Button>
+          </CharterRequestForm>
+        </div>
+      </div>
       </div>
     </>
   );
