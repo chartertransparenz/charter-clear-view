@@ -10,29 +10,28 @@ const FACEBOOK_PIXEL_ID = Deno.env.get('FACEBOOK_PIXEL_ID')
 
 const resend = new Resend(RESEND_API_KEY)
 
-// Simple rate limiting using Deno KV
-const kv = await Deno.openKv()
+// In-memory rate limiting (resets on function restart)
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
 
-async function checkRateLimit(ip: string): Promise<boolean> {
-  const key = ["rate_limit", "charter", ip]
+function checkRateLimit(ip: string): boolean {
   const now = Date.now()
   const windowMs = 3600000 // 1 hour
   const maxRequests = 3 // Lower limit for charter requests
   
-  const entry = await kv.get<{ count: number; resetAt: number }>(key)
+  const entry = rateLimitMap.get(ip)
   
-  if (!entry.value || entry.value.resetAt < now) {
+  if (!entry || entry.resetAt < now) {
     // New window
-    await kv.set(key, { count: 1, resetAt: now + windowMs }, { expireIn: windowMs })
+    rateLimitMap.set(ip, { count: 1, resetAt: now + windowMs })
     return true
   }
   
-  if (entry.value.count >= maxRequests) {
+  if (entry.count >= maxRequests) {
     return false
   }
   
   // Increment counter
-  await kv.set(key, { count: entry.value.count + 1, resetAt: entry.value.resetAt }, { expireIn: windowMs })
+  rateLimitMap.set(ip, { count: entry.count + 1, resetAt: entry.resetAt })
   return true
 }
 
@@ -162,7 +161,7 @@ serve(async (req) => {
                req.headers.get('x-real-ip') || 
                'unknown'
     
-    const isAllowed = await checkRateLimit(ip)
+    const isAllowed = checkRateLimit(ip)
     if (!isAllowed) {
       console.log(`⚠️ Rate limit exceeded for IP: ${ip}`)
       return new Response(
