@@ -207,7 +207,7 @@ function App() {
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/anfrage-bestaetigung" element={<CharterConfirmation />} />
+            <Route path="/charter-confirmation" element={<CharterConfirmation />} />
           <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
             
             {/* Mediterranean routes */}
