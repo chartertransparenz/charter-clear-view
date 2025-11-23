@@ -419,6 +419,24 @@ const Italy = () => {
           </div>
         </div>
 
+        {/* CTA */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Bereit für "Dolce Vita" auf dem Wasser?
+            </h3>
+            <p className="mb-6 text-gray-700">
+              Entdecken Sie Italiens schönste Küsten und erleben Sie unvergessliche 
+              Momente zwischen Kultur, Kulinarik und kristallklarem Wasser.
+            </p>
+            <CharterRequestForm>
+              <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
+                Italien-Charter anfragen
+              </Button>
+            </CharterRequestForm>
+          </div>
+        </div>
+
         </div>
       
       <TopDestinations />
@@ -434,23 +452,6 @@ const Italy = () => {
         </div>
       </div>
 
-      {/* CTA */}
-      <div className="max-w-4xl mx-auto px-4 mb-12">
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 p-8 rounded-lg shadow-lg text-center">
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">
-            Bereit für "Dolce Vita" auf dem Wasser?
-          </h3>
-          <p className="mb-6 text-gray-700">
-            Entdecken Sie Italiens schönste Küsten und erleben Sie unvergessliche 
-            Momente zwischen Kultur, Kulinarik und kristallklarem Wasser.
-          </p>
-          <CharterRequestForm>
-            <Button className="bg-primary hover:bg-primary/90 text-white" size="lg">
-              Italien-Charter anfragen
-            </Button>
-          </CharterRequestForm>
-        </div>
-      </div>
       </div>
     </>
   );
