@@ -36,13 +36,35 @@ export default function FiveSeasonsYachting() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <Card><CardContent className="p-6 text-center"><p className="text-sm text-muted-foreground mb-3">Partner</p><img src="/media/partner/five-seasons-yachting.svg" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/media/partner/placeholder.svg'; }} alt="Five Seasons Yachting Logo" className="object-contain max-h-20 mx-auto" /></CardContent></Card>
-            <Card><CardContent className="p-6 text-center"><MapPin className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Regionen</p><p className="font-semibold">Mittelmeer</p></CardContent></Card>
-            <Card><CardContent className="p-6 text-center"><Ship className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Flotte</p><p className="font-semibold">85+ Yachten</p></CardContent></Card>
-            <Card><CardContent className="p-6 text-center"><Anchor className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Seit</p><p className="font-semibold">2002</p></CardContent></Card>
+            <Card><CardContent className="p-6 text-center"><MapPin className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Regionen</p><p className="font-semibold">Mittelmeer & Karibik</p></CardContent></Card>
+            <Card><CardContent className="p-6 text-center"><Ship className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Flotte</p><p className="font-semibold">100+ Yachten</p></CardContent></Card>
+            <Card><CardContent className="p-6 text-center"><Anchor className="w-8 h-8 mx-auto mb-2 text-primary" /><p className="text-sm text-muted-foreground mb-1">Seit</p><p className="font-semibold">2016</p></CardContent></Card>
           </div>
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-4">Über Five Seasons Yachting</h2>
-            <p className="text-lg leading-relaxed">Five Seasons Yachting bietet professionellen Yachtcharter mit moderner Flotte und exzellentem Service.</p>
+            <h2 className="text-3xl font-bold mb-6">Five Seasons Yachting – starke Flotte, starke Reviere</h2>
+            <p className="text-lg leading-relaxed mb-6">
+              Five Seasons Yachting ist eine der größeren inhabergeführten Charterflotten in Europa und der Karibik mit über 100 modernen Segelyachten und Katamaranen. In der Flotte finden sich vor allem komfortable Monohulls und Kats namhafter Werften wie Jeanneau, Beneteau, Hanse, Bavaria, Lagoon oder Fountaine Pajot – ideal für Familien, Crews und Fahrtensegler.
+            </p>
+            <p className="text-lg font-semibold mb-3">Die Yachten liegen an sorgfältig ausgewählten Stützpunkten in Top-Revieren:</p>
+            <ul className="space-y-2 mb-6 list-disc pl-6">
+              <li className="text-base leading-relaxed"><strong>Kroatien:</strong> Trogir & Skradin – perfekter Einstieg in Dalmatien und die Kornaten</li>
+              <li className="text-base leading-relaxed"><strong>Griechenland (Ionisches Meer):</strong> Korfu / Marina Gouvia – entspanntes Inselhüpfen</li>
+              <li className="text-base leading-relaxed"><strong>Spanien / Balearen:</strong> Palma de Mallorca & Portocolom, dazu Ibiza – kurze Schläge, Traumbuchten und viel Infrastruktur</li>
+              <li className="text-base leading-relaxed"><strong>Kanarische Inseln:</strong> Teneriffa – für atlantische Törns mit mehr Wind</li>
+              <li className="text-base leading-relaxed"><strong>Karibik:</strong> Basen z. B. in Grenada bzw. Martinique für exotische Wintertörns</li>
+            </ul>
+            <p className="text-lg leading-relaxed mb-6">
+              Five Seasons Yachting steht für professionell gewartete, sauber übergebene Yachten und wurde für seine Servicequalität bereits ausgezeichnet.
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              <strong>Über Charter Transparenz buchen Sie die Yachten von Five Seasons Yachting mit einem Plus an Sicherheit:</strong>
+            </p>
+            <p className="text-lg leading-relaxed mb-6">
+              Wir vergleichen für Sie die verfügbaren Schiffe und Stützpunkte, erklären alle Kosten verständlich und transparent und finden die Yacht, die wirklich zu Ihrer Crew passt.
+            </p>
+            <p className="text-lg leading-relaxed font-medium">
+              👉 Jetzt unverbindliche Anfrage senden und Ihren Segeltraum mit Five Seasons Yachting und Charter Transparenz planen.
+            </p>
           </div>
           <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg text-center">
             <h4 className="text-2xl font-bold mb-4">Jetzt Yachtcharter Five Seasons Yachting anfragen</h4>
