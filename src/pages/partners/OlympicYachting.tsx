@@ -94,10 +94,27 @@ export default function OlympicYachting() {
           </div>
 
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold mb-4">Über Olympic Yachting</h2>
+            <h2 className="text-3xl font-bold mb-6">Olympic Yachting – Inhabergeführte Qualität ab Lavrion</h2>
+            
             <p className="text-lg leading-relaxed mb-6">
-              Olympic Yachting ist ein renommierter Yachtcharter-Anbieter in Griechenland mit langjähriger Tradition. 
-              Das Unternehmen bietet exzellenten Service und eine große Auswahl an modernen Yachten.
+              Olympic Yachting ist ein seit vielen Jahren inhabergeführtes Charterunternehmen im Hafen von Lavrion, nur rund eine halbe Stunde vom Flughafen Athen entfernt. An der Spitze stehen Marko Basialekos und sein Vater, die sich persönlich um Flotte, Gäste und Abläufe vor Ort kümmern. Diese direkte Inhaberbetreuung spürt man sofort: kurze Wege, schnelle Entscheidungen und echte Verantwortung für jede einzelne Yacht und jede Crew.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Die Flotte besteht aus sorgfältig gewarteten Einrumpf-Segelyachten renommierter Werften wie Jeanneau, Bavaria oder Dufour – vom komfortablen Familiencruiser bis zur großzügigen Yacht mit mehreren Kabinen für größere Crews. Viele Schiffe sind mit sinnvollen Extras wie Solarpanels, moderner Navigation, WLAN und guter Sicherheitsausrüstung ausgestattet. Das Ergebnis: ein hoher technischer Standard, auf den sich erfahrene Segler ebenso verlassen können wie Einsteiger.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Besonders auffällig ist die außergewöhnlich hohe Servicequalität, für die Olympic Yachting seit vielen Jahren in der Charterwelt zur Spitze zählt. Marko und sein Vater sind regelmäßig persönlich am Steg, begleiten Check-in und Check-out, achten auf den Zustand der Yachten und stehen mit ihrem Team für Fragen und Unterstützung bereit. Viele Gäste berichten von einem Gefühl, „wie bei Freunden zu chartern" – verbunden mit der Professionalität eines etablierten Unternehmens.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              Der Standort Lavrion ist ideal: Von hier aus öffnen sich die Tore zu den Kykladen mit Inseln wie Kea, Kythnos, Serifos, Syros oder Paros sowie zum Saronischen Golf mit Aegina, Poros, Hydra und Spetses. Kurze Wege zu Supermarkt, Tavernen und Infrastruktur machen Anreise und Proviantierung unkompliziert – Ihr Törn beginnt ohne Stress und Wartezeit.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-6">
+              <strong>Über Charter Transparenz buchen Sie Olympic Yachting mit einem zusätzlichen Plus an Sicherheit:</strong><br />
+              Wir kennen Basis, Menschen und Flotte und wissen, welche Yacht zu welcher Crew passt. Wir vergleichen für Sie Verfügbarkeiten und Preise, erklären alle Kosten klar und verständlich und begleiten Sie von der Anfrage bis zur Buchung. So wird Ihr Traum vom Segelurlaub in den Kykladen oder im Saronischen Golf ganz real – mit Olympic Yachting als starkem, inhabergeführtem Partner in Lavrion und Charter Transparenz an Ihrer Seite.
             </p>
           </div>
 
