@@ -4,14 +4,64 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Home } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
+import { trackFacebookConversion } from "@/lib/facebook-tracking";
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+    fbq: (...args: any[]) => void;
+  }
+}
 
 const CharterConfirmation = () => {
   useEffect(() => {
-    // Track Meta Pixel Lead event
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'Lead');
-    }
+    const trackConversion = async () => {
+      try {
+        // Track via Facebook Conversion API (server-side)
+        const result = await trackFacebookConversion("Lead", {
+          contentName: "Charter Anfrage",
+          contentCategory: "Yacht Charter",
+        });
+
+        if (result.success && result.eventId) {
+          console.log("📊 Server-side conversion tracked, event_id:", result.eventId);
+
+          // Track client-side with SAME event_id for deduplication
+          if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'Lead', {}, { eventID: result.eventId });
+            console.log("📊 Client-side pixel fired with matching event_id");
+          }
+
+          // Push to dataLayer with same event_id
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'lead',
+            event_id: result.eventId,
+            ecommerce: {
+              content_name: 'Charter Anfrage',
+              content_category: 'Yacht Charter',
+            }
+          });
+          console.log("📊 DataLayer push with event_id:", result.eventId);
+        } else {
+          // Fallback: Fire pixel without server tracking
+          console.warn("Server-side tracking failed, firing pixel only");
+          if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'Lead');
+          }
+        }
+      } catch (error) {
+        console.error("Conversion tracking error:", error);
+        // Fallback to client-side only
+        if (typeof window !== 'undefined' && window.fbq) {
+          window.fbq('track', 'Lead');
+        }
+      }
+    };
+
+    trackConversion();
   }, []);
+
   return (
     <>
       <Helmet>
