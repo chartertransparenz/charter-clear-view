@@ -1,4 +1,4 @@
-import { useEffect, useId } from "react";
+import { useEffect, useRef } from "react";
 import { NAUSYS_PROFILES, NausysProfileKey } from "@/config/nausys-profiles";
 
 interface NausysWidgetProps {
@@ -11,39 +11,42 @@ export default function NausysWidget({
   customTitle 
 }: NausysWidgetProps) {
   const profile = NAUSYS_PROFILES[profileKey];
-  const instanceId = useId().replace(/:/g, '');
-  const containerId = `nausysWidget_${profileKey}_${instanceId}`;
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Clean up any old scripts for this specific container
-    const oldScripts = document.querySelectorAll(
-      `script[data-nausys-container="${containerId}"]`
-    );
+    // Remove all previous NauSYS widgets and scripts
+    const oldWidgets = document.querySelectorAll('[id^="nausys"]');
+    oldWidgets.forEach(el => {
+      if (el !== containerRef.current) {
+        el.innerHTML = '';
+      }
+    });
+    
+    // Remove old NauSYS scripts
+    const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
     oldScripts.forEach(s => s.remove());
 
-    // Load NauSYS Widget for this container
-    const script = document.createElement('script');
-    script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
-    script.setAttribute('data-nausys-widget-token', profile.token);
-    script.setAttribute('data-nausys-widget-settings', profile.settings);
-    script.setAttribute('data-nausys-widget-language', 'GERMAN');
-    script.setAttribute('data-nausys-container', containerId);
-    
-    if (profile.profile) {
-      script.setAttribute('data-nausys-widget-profile', profile.profile);
-    }
-    
-    // Specify container selector for NauSYS
-    script.setAttribute('data-nausys-widget-container', containerId);
-    
-    document.body.appendChild(script);
+    // Wait briefly for clean DOM state
+    const timer = setTimeout(() => {
+      const script = document.createElement('script');
+      script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
+      script.setAttribute('data-nausys-widget-token', profile.token);
+      script.setAttribute('data-nausys-widget-settings', profile.settings);
+      script.setAttribute('data-nausys-widget-language', 'GERMAN');
+      
+      if (profile.profile) {
+        script.setAttribute('data-nausys-widget-profile', profile.profile);
+      }
+      
+      document.body.appendChild(script);
+    }, 100);
 
     return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
+      clearTimeout(timer);
+      const scripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
+      scripts.forEach(s => s.remove());
     };
-  }, [containerId, profile]);
+  }, [profile]);
 
   const title = customTitle || `Yachten ${profile.regionName === 'weltweit' ? 'weltweit' : `in ${profile.regionName}`} finden`;
 
@@ -55,7 +58,8 @@ export default function NausysWidget({
           <p className="text-slate-500">Direkt suchen, filtern & anfragen</p>
         </div>
         <div 
-          id={containerId}
+          ref={containerRef}
+          id="nausysWidgetContainer"
           style={{ margin: "0 auto", width: "100%" }}
         />
         <noscript>Bitte JavaScript aktivieren, um die Yacht-Suche zu verwenden.</noscript>
