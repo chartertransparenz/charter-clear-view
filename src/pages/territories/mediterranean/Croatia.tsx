@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
+import NausysWidget from "@/components/NausysWidget";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 // Meta component removed - SEO tags managed by prerender script
 import { META } from "@/seo/meta.config";
@@ -128,6 +129,9 @@ const Croatia = () => {
           </Breadcrumb>
         </div>
       </div>
+
+      {/* NauSYS Widget Section */}
+      <NausysWidget profileKey="croatia" />
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
