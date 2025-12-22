@@ -9,7 +9,7 @@ const Contact = lazy(() => import("@/components/Contact"));
 import TopDestinations from "@/components/TopDestinations";
 import FloatingCTA from "@/components/FloatingCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import NausysWidgetSection from "@/components/NausysWidgetSection";
+import NausysWidget from "@/components/NausysWidget";
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
@@ -61,7 +61,7 @@ const Index = () => {
         <FloatingCTA />
         <FloatingWhatsApp />
         <Hero />
-        <NausysWidgetSection />
+        <NausysWidget profileKey="default" customTitle="Yacht-Suche" />
         <Territories />
         <Fleet />
         <Partners />

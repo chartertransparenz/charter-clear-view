@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
-import NausysWidgetCroatia from "@/components/NausysWidgetCroatia";
+import NausysWidget from "@/components/NausysWidget";
 // import destinationCroatia from "@/assets/destination-croatia.jpg";
 
 const Croatia = () => {
@@ -88,7 +88,7 @@ const Croatia = () => {
         </Link>
       </div>
 
-      <NausysWidgetCroatia />
+      <NausysWidget profileKey="croatia" />
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
