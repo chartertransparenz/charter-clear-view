@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
 import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import destinationItaly from "@/assets/destination-italy.jpg";
-import NausysWidgetSection from "@/components/NausysWidgetSection";
+import NausysWidget from "@/components/NausysWidget";
 const Italy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -119,7 +119,7 @@ const Italy = () => {
         </div>
 
         {/* NauSYS Widget Section */}
-        <NausysWidgetSection />
+        <NausysWidget profileKey="default" customTitle="Yachten in Italien finden" />
 
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16">

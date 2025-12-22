@@ -10,7 +10,7 @@ import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import TerritoryMap from "@/components/TerritoryMap";
-import NausysWidgetSection from "@/components/NausysWidgetSection";
+import NausysWidget from "@/components/NausysWidget";
 import elbaBeach from "@/assets/elba-beach.jpg";
 import amalfiCoast from "@/assets/amalfi-coast.jpg";
 // import destinationItaly from "@/assets/destination-italy.jpg";
@@ -121,7 +121,7 @@ const Italy = () => {
         </div>
 
         {/* NauSYS Widget Section */}
-        <NausysWidgetSection />
+        <NausysWidget profileKey="default" customTitle="Yachten in Italien finden" />
 
         {/* Segelreviere Detail */}
         <div className="max-w-4xl mx-auto mb-12">
