@@ -14,7 +14,7 @@ export default function NausysWidget({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Remove all previous NauSYS widgets and scripts
+    // Remove all previous NauSYS widgets and scripts (NOT jQuery!)
     const oldWidgets = document.querySelectorAll('[id^="nausys"]');
     oldWidgets.forEach(el => {
       if (el !== containerRef.current) {
@@ -22,34 +22,24 @@ export default function NausysWidget({
       }
     });
     
-    // Remove old NauSYS scripts
-    const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"], script[src*="jquery"]');
+    // Only remove NauSYS scripts, keep jQuery (loaded globally in index.html)
+    const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
     oldScripts.forEach(s => s.remove());
 
-    // Wait briefly for clean DOM state
-    const timer = setTimeout(() => {
-      // First load jQuery (required by NauSYS widget)
-      const jqueryScript = document.createElement('script');
-      jqueryScript.src = 'https://code.jquery.com/jquery-3.5.1.min.js';
-      jqueryScript.onload = () => {
-        // Then load NauSYS widget
-        const script = document.createElement('script');
-        script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
-        script.setAttribute('data-nausys-widget-token', profile.token);
-        script.setAttribute('data-nausys-widget-settings', profile.settings);
-        script.setAttribute('data-nausys-widget-language', 'GERMAN');
-        
-        if (profile.profile) {
-          script.setAttribute('data-nausys-widget-profile', profile.profile);
-        }
-        
-        document.body.appendChild(script);
-      };
-      document.body.appendChild(jqueryScript);
-    }, 100);
+    // Load NauSYS widget directly (jQuery is already global)
+    const script = document.createElement('script');
+    script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
+    script.setAttribute('data-nausys-widget-token', profile.token);
+    script.setAttribute('data-nausys-widget-settings', profile.settings);
+    script.setAttribute('data-nausys-widget-language', 'GERMAN');
+    
+    if (profile.profile) {
+      script.setAttribute('data-nausys-widget-profile', profile.profile);
+    }
+    
+    document.body.appendChild(script);
 
     return () => {
-      clearTimeout(timer);
       const scripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
       scripts.forEach(s => s.remove());
     };
