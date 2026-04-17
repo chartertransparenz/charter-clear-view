@@ -19,8 +19,8 @@ export const META: Record<RegionKey, {
   canonical: (path?: string) => string; // Umgebungssicher
 }> = {
   home: {
-    title: "Yachtcharter Preisvergleich – 30 Jahre Erfahrung",
-    description: "Yachtcharter weltweit: Segelyacht & Katamaran mieten. Kroatien, Griechenland, Italien ab 890€/Woche. Jetzt Angebot anfragen!",
+    title: "Yachtcharter weltweit – Segelyacht & Katamaran mieten | 30 Jahre Erfahrung",
+    description: "Premium Yachtcharter weltweit: 8.000+ Segelyachten & Katamarane. Kroatien, Griechenland, Karibik ab 890€/Woche. Transparente Preise, 250+ Partner. Jetzt Angebot anfragen!",
     ogImage: "/og/home.jpg",
     canonical: (p="") => `https://chartertransparenz.de/${p}`
   },
@@ -94,7 +94,7 @@ export const META: Record<RegionKey, {
     title: "Über uns | 30 Jahre Charter Transparenz - Yachtcharter Experten",
     description: "30 Jahre Erfahrung im Yachtcharter: Von der Gründung 1997 bis zur internationalen Anerkennung. Transparenz, Qualität & Vertrauen seit drei Jahrzehnten.",
     ogImage: "/og/about.jpg",
-    canonical: () => "https://chartertransparenz.de/about"
+    canonical: () => "https://chartertransparenz.de/ueber-uns"
   },
   faq: {
     title: "FAQ Yachtcharter | Häufige Fragen & Antworten - Charter Transparenz",

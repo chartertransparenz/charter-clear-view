@@ -152,7 +152,7 @@ const Fleet = () => {
                 <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-ocean-light/50 flex flex-col h-full overflow-hidden cursor-pointer">
                   {/* Boat Image */}
                   <div className="relative h-48 overflow-hidden">
-                    <img src={boat.image} alt={boat.name} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                    <img src={boat.image} alt={boat.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
                     <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/30 to-transparent"></div>
                     {/* Attribute Icons overlaid on image */}
                     <div className="absolute top-4 left-4 flex flex-wrap gap-1">

@@ -149,13 +149,19 @@ const Footer = () => {
               <h4 className="font-semibold mb-3 text-sunset text-sm">Folge uns</h4>
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/chartertransparenz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="CharterTransparenz auf Facebook"
                   className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-sunset/20 transition-smooth"
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/chartertransparenz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="CharterTransparenz auf Instagram"
                   className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-sunset/20 transition-smooth"
                 >
                   <Instagram className="w-4 h-4" />

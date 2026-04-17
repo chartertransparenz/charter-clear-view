@@ -149,7 +149,7 @@ const Territories = () => {
                   <Link to={destination.link} className="group">
                     <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer h-full">
                       <div className="relative h-48 overflow-hidden">
-                        <img src={destination.image} alt={destination.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                        <img src={destination.image} alt={destination.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-transparent"></div>
                         <div className="absolute top-4 left-4">
                           <Badge className="bg-gradient-sunset text-white font-bold">

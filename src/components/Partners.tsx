@@ -83,7 +83,7 @@ const Partners = () => {
         <div ref={statisticsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {statistics.map((stat, index) => <Card key={index} className="text-center shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
               <div className="relative h-32 overflow-hidden">
-                <img src={stat.image} alt={stat.label} className="w-full h-full object-cover" />
+                <img src={stat.image} alt={stat.label} loading="lazy" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/80 to-ocean-dark/40"></div>
                 <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
                   <div className="w-10 h-10 bg-gradient-ocean rounded-lg flex items-center justify-center">
@@ -105,7 +105,7 @@ const Partners = () => {
           {partnerCategories.map((category, categoryIndex) => <div key={categoryIndex}>
               {/* Category Image */}
               <div className="relative mb-8 rounded-2xl overflow-hidden shadow-elegant">
-                <img src={category.image} alt={category.title} className="w-full h-64 object-cover" />
+                <img src={category.image} alt={category.title} loading="lazy" className="w-full h-64 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/90 to-ocean-dark/60"></div>
                 <div className="absolute inset-0 flex items-center">
                   <div className="container mx-auto px-8">

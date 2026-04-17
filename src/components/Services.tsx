@@ -50,7 +50,7 @@ const Services = () => {
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
           <div className="relative">
-            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Traumhafte Bucht mit türkisblauem Wasser" className="w-full h-96 md:h-[28rem] object-cover" />
+            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Traumhafte Bucht mit türkisblauem Wasser" loading="lazy" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
@@ -64,7 +64,7 @@ const Services = () => {
           {services.map((service, index) => <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-ocean-light/50 overflow-hidden cursor-pointer">
               {/* Service Image */}
               <div className="relative h-48 overflow-hidden">
-                <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                <img src={service.image} alt={service.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/50 to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <div className="w-12 h-12 bg-gradient-ocean rounded-xl flex items-center justify-center">
@@ -118,7 +118,7 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10">
               <div className="flex justify-center mb-8">
-                <img src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" alt="CharterTransparenz" className="h-20 w-auto" />
+                <img src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" alt="CharterTransparenz" loading="lazy" className="h-20 w-auto" />
               </div>
               <h3 className="text-3xl font-bold mb-4">
                 Bereit für Ihr Charter-Abenteuer?

@@ -44,16 +44,30 @@ const Index = () => {
       />
       <JsonLd json={{
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "LocalBusiness",
         "name": "CharterTransparenz",
         "url": "https://chartertransparenz.de",
         "logo": "https://chartertransparenz.de/logo.png",
+        "image": "https://chartertransparenz.de/og/home.jpg",
+        "description": "Premium Yachtcharter weltweit – 30 Jahre Erfahrung, 8.000+ Segelyachten & Katamarane, 250+ verifizierte Partner in 30+ Ländern.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Goethestraße 24",
+          "addressLocality": "Kressbronn",
+          "postalCode": "88079",
+          "addressCountry": "DE"
+        },
         "contactPoint": [{
           "@type": "ContactPoint",
-          "telephone": "+49-xxx-xxxxxxx",
+          "telephone": "+49-7543-499080",
           "contactType": "customer service",
-          "areaServed": "EU"
-        }]
+          "areaServed": "EU",
+          "availableLanguage": "German"
+        }],
+        "sameAs": [
+          "https://www.facebook.com/chartertransparenz",
+          "https://www.instagram.com/chartertransparenz"
+        ]
       }} />
       <div className="min-h-screen">
         <Navigation />

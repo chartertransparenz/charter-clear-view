@@ -8,19 +8,19 @@ const Hero = () => {
   const slides = [{
     image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
     title: "Luxuriöse Yachten",
-    subtitle: "Erstklassige Flotte für unvergessliche Erlebnisse"
+    alt: "Luxuriöse Segelyacht auf dem Mittelmeer – Yachtcharter CharterTransparenz"
   }, {
     image: "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png",
     title: "Kristallklares Wasser",
-    subtitle: "Die schönsten Gewässer der Welt entdecken"
+    alt: "Katamaran in kristallklarem Wasser – Segelyacht mieten"
   }, {
     image: mediterraneanImage,
     title: "Mittelmeer Abenteuer",
-    subtitle: "Träume von perfekten Segeltörns"
+    alt: "Segelyacht in kroatischer Bucht – Yachtcharter Mittelmeer"
   }, {
     image: "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.png",
     title: "Karibische Träume",
-    subtitle: "Paradiesische Destinationen erleben"
+    alt: "Katamaran in der Karibik – Segelurlaub weltweit buchen"
   }];
   const [currentSlide, setCurrentSlide] = useState(0);
   const nextSlide = useCallback(() => {
@@ -41,6 +41,8 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
+          role="img"
+          aria-label={slide.alt}
           className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
@@ -78,7 +80,7 @@ const Hero = () => {
               <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
-              Bereit für Ihr nächstes<br />Segelabenteuer?
+              Yachtcharter weltweit –<br />Ihr perfekter Segeltörn
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
               Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.
