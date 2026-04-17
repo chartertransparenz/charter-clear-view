@@ -18,34 +18,29 @@ export default function NausysWidget({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Delay script injection slightly so the hero image paints first (LCP).
-    // The container div is already in the DOM, so the widget initializes correctly.
-    const timer = setTimeout(() => {
-      const oldWidgets = document.querySelectorAll('[id^="nausys"]');
-      oldWidgets.forEach(el => {
-        if (el !== containerRef.current) {
-          el.innerHTML = '';
-        }
-      });
-
-      const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
-      oldScripts.forEach(s => s.remove());
-
-      const script = document.createElement('script');
-      script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
-      script.setAttribute('data-nausys-widget-token', profile.token);
-      script.setAttribute('data-nausys-widget-settings', profile.settings);
-      script.setAttribute('data-nausys-widget-language', 'GERMAN');
-
-      if (profile.profile) {
-        script.setAttribute('data-nausys-widget-profile', profile.profile);
+    const oldWidgets = document.querySelectorAll('[id^="nausys"]');
+    oldWidgets.forEach(el => {
+      if (el !== containerRef.current) {
+        el.innerHTML = '';
       }
+    });
 
-      document.body.appendChild(script);
-    }, 1200);
+    const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
+    oldScripts.forEach(s => s.remove());
+
+    const script = document.createElement('script');
+    script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
+    script.setAttribute('data-nausys-widget-token', profile.token);
+    script.setAttribute('data-nausys-widget-settings', profile.settings);
+    script.setAttribute('data-nausys-widget-language', 'GERMAN');
+
+    if (profile.profile) {
+      script.setAttribute('data-nausys-widget-profile', profile.profile);
+    }
+
+    document.body.appendChild(script);
 
     return () => {
-      clearTimeout(timer);
       const scripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
       scripts.forEach(s => s.remove());
     };
