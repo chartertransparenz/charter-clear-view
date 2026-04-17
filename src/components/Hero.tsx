@@ -67,33 +67,31 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex-1 flex items-end justify-center container mx-auto px-4 text-center text-white pb-6">
-        <div className="max-w-4xl mx-auto flex flex-col items-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
-            <Award className="w-4 h-4" />
-            <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
+      {/* Centered content block: text + widget grouped together */}
+      <div className="relative z-10 flex-1 flex items-center justify-center w-full px-4 py-8">
+        <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center gap-8 text-center text-white">
+
+          {/* Text */}
+          <div className="max-w-4xl flex flex-col items-center">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
+              <Award className="w-4 h-4" />
+              <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
+            </div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
+              Bereit für Ihr nächstes<br />Segelabenteuer?
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
+              Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.
+            </p>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
-            Bereit für Ihr nächstes<br />Segelabenteuer?
-          </h1>
-
-          {/* Description */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
-            Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.
-          </p>
-        </div>
-      </div>
-
-      {/* Search Widget — glassmorphism card */}
-      <div className="relative z-20 w-full">
-        <div className="w-full mx-auto px-4 max-w-[1200px]">
-          <div className="bg-black/30 backdrop-blur-md rounded-2xl overflow-hidden">
-            <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" embedded={true} />
+          {/* Search Widget — glassmorphism card */}
+          <div className="w-full">
+            <div className="bg-black/30 backdrop-blur-md rounded-2xl overflow-hidden">
+              <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" embedded={true} />
+            </div>
           </div>
+
         </div>
       </div>
     </section>
