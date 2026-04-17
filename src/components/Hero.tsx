@@ -67,8 +67,8 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Content — vertically centered between nav and widget */}
-      <div className="relative z-10 flex-1 flex items-center justify-center container mx-auto px-4 text-center text-white py-6">
+      {/* Content */}
+      <div className="relative z-10 flex-1 flex items-end justify-center container mx-auto px-4 text-center text-white pb-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
@@ -89,7 +89,7 @@ const Hero = () => {
       </div>
 
       {/* Search Widget — glassmorphism card */}
-      <div className="relative z-20 w-full flex-1 flex items-center">
+      <div className="relative z-20 w-full">
         <div className="w-full mx-auto px-4 max-w-[1200px]">
           <div className="bg-black/30 backdrop-blur-md rounded-2xl overflow-hidden">
             <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" embedded={true} />
