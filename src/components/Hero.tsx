@@ -88,13 +88,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Search Widget Card — floats at the bottom, overlaps into next section */}
+      {/* Search Widget — floats at the bottom of the hero, no background box */}
       <div className="relative z-20 w-full">
-        <div className="container mx-auto px-4">
-          <div className="bg-white rounded-t-2xl shadow-2xl overflow-hidden">
-            <NausysWidget profileKey="default" customTitle="Yacht-Suche" />
-          </div>
-        </div>
+        <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" />
       </div>
     </section>
   );

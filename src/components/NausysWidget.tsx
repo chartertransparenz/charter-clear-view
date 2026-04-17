@@ -4,11 +4,13 @@ import { NAUSYS_PROFILES, NausysProfileKey } from "@/config/nausys-profiles";
 interface NausysWidgetProps {
   profileKey: NausysProfileKey;
   customTitle?: string;
+  className?: string;
 }
 
-export default function NausysWidget({ 
-  profileKey, 
-  customTitle 
+export default function NausysWidget({
+  profileKey,
+  customTitle,
+  className,
 }: NausysWidgetProps) {
   const profile = NAUSYS_PROFILES[profileKey];
   const containerRef = useRef<HTMLDivElement>(null);
@@ -48,7 +50,7 @@ export default function NausysWidget({
   const title = customTitle || `Yachten ${profile.regionName === 'weltweit' ? 'weltweit' : `in ${profile.regionName}`} finden`;
 
   return (
-    <section aria-label={`Yacht-Suche ${profile.regionName}`} className="bg-slate-50/60">
+    <section aria-label={`Yacht-Suche ${profile.regionName}`} className={className ?? "bg-slate-50/60"}>
       <div className="max-w-[1200px] mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between items-baseline mb-4 gap-2">
           <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
