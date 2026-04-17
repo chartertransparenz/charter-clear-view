@@ -53,9 +53,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="block">
@@ -74,17 +74,17 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="menu-typography text-gray-900 hover:text-ocean-dark transition-smooth bg-transparent border-0 cursor-pointer"
+                className="menu-typography text-gray-700 hover:text-sunset transition-smooth bg-transparent border-0 cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-sunset after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
               </button>
             ))}
-            <Suspense fallback={<Button variant="default" size="sm" className="bg-[hsl(212_95%_25%)] text-white" disabled>Lädt…</Button>}>
+            <Suspense fallback={<Button variant="default" size="sm" className="bg-ocean-dark text-white" disabled>Lädt…</Button>}>
               <CharterRequestForm>
-                <Button 
-                  variant="default" 
-                  size="sm" 
-                  className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="bg-ocean-dark hover:bg-ocean-blue text-white border-0 shadow-sm transition-smooth font-sans text-xs font-600 tracking-widest uppercase"
                 >
                   Jetzt Anfrage stellen
                 </Button>
@@ -116,7 +116,7 @@ const Navigation = () => {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="menu-typography text-gray-900 hover:text-ocean-dark transition-smooth px-4 py-2 text-left bg-transparent border-0 cursor-pointer"
+                  className="menu-typography text-gray-700 hover:text-sunset transition-smooth px-4 py-2 text-left bg-transparent border-0 cursor-pointer"
                 >
                   {item.label}
                 </button>
@@ -127,7 +127,7 @@ const Navigation = () => {
                     <Button 
                       variant="default" 
                       size="sm" 
-                      className="w-full bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth"
+                      className="w-full bg-ocean-dark hover:bg-ocean-blue text-white border-0 shadow-sm transition-smooth font-sans text-xs tracking-widest uppercase"
                     >
                       Jetzt Anfrage stellen
                     </Button>

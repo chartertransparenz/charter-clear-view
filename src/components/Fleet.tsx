@@ -136,7 +136,7 @@ const Fleet = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">Einige der beliebtesten Charteryachten</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark font-heading">Einige der beliebtesten Charteryachten</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Aus einer Flotte von mehr als 10.000 Charteryachten stellen wir Ihnen exemplarisch 10 besonders gefragte Yachten und Katamarane vor.</p>
         </div>
 
@@ -149,7 +149,7 @@ const Fleet = () => {
         <Carousel className="w-full" setApi={setApi}>
           <CarouselContent className="-ml-2 md:-ml-4">
             {boats.map((boat, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 flex flex-col h-full overflow-hidden">
+                <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-ocean-light/50 flex flex-col h-full overflow-hidden cursor-pointer">
                   {/* Boat Image */}
                   <div className="relative h-48 overflow-hidden">
                     <img src={boat.image} alt={boat.name} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />

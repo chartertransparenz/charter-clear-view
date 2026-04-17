@@ -53,20 +53,15 @@ const Services = () => {
             <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Traumhafte Bucht mit türkisblauem Wasser" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 font-heading">Unsere Services</h2>
               <p className="text-lg text-white/90">Beratung nach Maß – Angebote, die passen.</p>
             </div>
           </div>
         </div>
 
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto"></p>
-        </div>
-
         {/* Main Services */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {services.map((service, index) => <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden">
+          {services.map((service, index) => <Card key={index} className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-ocean-light/50 overflow-hidden cursor-pointer">
               {/* Service Image */}
               <div className="relative h-48 overflow-hidden">
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
