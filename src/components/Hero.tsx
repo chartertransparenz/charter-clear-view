@@ -57,7 +57,7 @@ const Hero = () => {
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-[22rem] md:bottom-72 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -67,30 +67,34 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex-1 flex items-center justify-center container mx-auto px-4 text-center text-white py-8">
+      {/* Content — pushed toward top */}
+      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-4 pb-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
             <Award className="w-4 h-4" />
             <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
             Bereit für Ihr nächstes<br />Segelabenteuer?
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl md:text-2xl mb-0 text-white/90 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
             Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.
           </p>
         </div>
       </div>
 
-      {/* Search Widget — floats at the bottom of the hero, no background box */}
-      <div className="relative z-20 w-full">
-        <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" />
+      {/* Search Widget — glassmorphism card */}
+      <div className="relative z-20 w-full flex-1 flex items-center">
+        <div className="w-full mx-auto px-4 max-w-[1200px]">
+          <div className="bg-black/30 backdrop-blur-md rounded-2xl overflow-hidden">
+            <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" embedded={true} />
+          </div>
+        </div>
       </div>
     </section>
   );

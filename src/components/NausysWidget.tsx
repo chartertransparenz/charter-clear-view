@@ -5,12 +5,14 @@ interface NausysWidgetProps {
   profileKey: NausysProfileKey;
   customTitle?: string;
   className?: string;
+  embedded?: boolean;
 }
 
 export default function NausysWidget({
   profileKey,
   customTitle,
   className,
+  embedded = false,
 }: NausysWidgetProps) {
   const profile = NAUSYS_PROFILES[profileKey];
   const containerRef = useRef<HTMLDivElement>(null);
@@ -53,8 +55,8 @@ export default function NausysWidget({
     <section aria-label={`Yacht-Suche ${profile.regionName}`} className={className ?? "bg-slate-50/60"}>
       <div className="max-w-[1200px] mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row justify-between items-baseline mb-4 gap-2">
-          <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
-          <p className="text-slate-500">Direkt suchen, filtern & anfragen</p>
+          <h2 className={`text-2xl font-bold ${embedded ? 'text-white' : 'text-gray-800'}`}>{title}</h2>
+          <p className={embedded ? 'text-white/70' : 'text-slate-500'}>Direkt suchen, filtern & anfragen</p>
         </div>
         <div 
           ref={containerRef}
