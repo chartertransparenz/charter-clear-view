@@ -67,8 +67,8 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Content — pushed toward top */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-4 pb-6">
+      {/* Content — vertically centered between nav and widget */}
+      <div className="relative z-10 flex-1 flex items-center justify-center container mx-auto px-4 text-center text-white py-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
