@@ -33,6 +33,7 @@ export default function NausysWidget({
     // Load NauSYS widget directly (jQuery is already global)
     const script = document.createElement('script');
     script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
+    script.async = true;
     script.setAttribute('data-nausys-widget-token', profile.token);
     script.setAttribute('data-nausys-widget-settings', profile.settings);
     script.setAttribute('data-nausys-widget-language', 'GERMAN');

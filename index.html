@@ -25,6 +25,10 @@
   </head>
 
   <body>
+    <!-- Critical inline CSS: prevents blank white flash before React mounts -->
+    <style>
+      #root { min-height: 100vh; background: #0a1628; }
+    </style>
     <div id="root"></div>
 
     <!-- jQuery with defer so it doesn't block rendering -->
