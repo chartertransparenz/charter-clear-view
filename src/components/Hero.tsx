@@ -77,7 +77,7 @@ const Hero = () => {
               <Award className="w-4 h-4" />
               <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
             </div>
-            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold mb-4 leading-tight animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
               Bereit für Ihr nächstes<br />Segelabenteuer?
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">

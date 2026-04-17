@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -131,12 +131,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat', system-ui, sans-serif;
-  }
-
-  h1, h2, h3, h4 {
-    font-family: 'Cormorant', Georgia, serif;
-    letter-spacing: -0.01em;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 }
 
@@ -152,10 +147,10 @@ All colors MUST be HSL.
   }
   
   .menu-typography {
-    font-family: 'Montserrat', system-ui, sans-serif;
-    font-size: 13px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 1.4;
     color: #1a2744;
