@@ -29,9 +29,6 @@ const Hero = () => {
   }];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  // Defer the Nausys widget until after the hero image has painted (LCP).
-  // This prevents the third-party widget from becoming the LCP element.
-  const [widgetReady, setWidgetReady] = useState(false);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide(prev => (prev + 1) % slides.length);
@@ -44,13 +41,6 @@ const Hero = () => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [nextSlide]);
-
-  useEffect(() => {
-    // Give the browser ~1.5s to paint the hero image and record LCP
-    // before loading the third-party Nausys widget scripts
-    const timer = setTimeout(() => setWidgetReady(true), 1500);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <section id="start" className="relative min-h-screen flex flex-col overflow-visible pt-16">
@@ -112,26 +102,10 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Search Widget — glassmorphism card, deferred to avoid being LCP element */}
+          {/* Search Widget — glassmorphism card */}
           <div className="w-full">
             <div className="bg-black/30 backdrop-blur-md rounded-2xl overflow-hidden">
-              {widgetReady ? (
-                <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" embedded={true} />
-              ) : (
-                /* Placeholder with same structure as widget — prevents layout shift */
-                <div className="max-w-[1200px] mx-auto px-4 py-10">
-                  <div className="flex flex-col md:flex-row justify-between items-baseline mb-4 gap-2">
-                    <h2 className="text-2xl font-bold text-white">Yacht-Suche</h2>
-                    <p className="text-white/70">Direkt suchen, filtern &amp; anfragen</p>
-                  </div>
-                  <div className="h-16 flex items-center justify-center">
-                    <div className="flex gap-2 items-center text-white/50 text-sm">
-                      <div className="w-4 h-4 border-2 border-white/30 border-t-white/70 rounded-full animate-spin"></div>
-                      Suche wird geladen…
-                    </div>
-                  </div>
-                </div>
-              )}
+              <NausysWidget profileKey="default" customTitle="Yacht-Suche" className="bg-transparent" embedded={true} />
             </div>
           </div>
 
