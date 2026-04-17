@@ -5,13 +5,34 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' https://widget.nausys.com https://*.nausys.com https://code.jquery.com https://cdn.gpteng.co https://*.lovable.dev https://consent.cookiebot.com https://www.google.com https://www.gstatic.com https://connect.facebook.net 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://widget.nausys.com https://*.nausys.com https://code.jquery.com https://lovable-api.com https://api.lovable.dev https://cdn.gpteng.co https://*.lovable.dev https://consent.cookiebot.com https://www.google.com https://www.gstatic.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://bqckduaygatcopxyuyyv.supabase.co wss://bqckduaygatcopxyuyyv.supabase.co; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:; frame-src https://widget.nausys.com https://*.nausys.com https://*.lovable.dev https://www.google.com https://www.gstatic.com; child-src https://widget.nausys.com https://*.nausys.com https://*.lovable.dev https://www.google.com https://www.gstatic.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
+
     <!-- Favicon -->
     <link rel="icon" href="/favicon.png" type="image/png">
-    
+
     <!-- Theme Color for Mobile -->
     <meta name="theme-color" content="#1e40af" />
-    
-    <!-- Meta Pixel Code -->
+
+    <!-- Preconnect for Google Fonts (eliminates render-blocking @import) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+
+    <!-- Preconnect for Nausys widget CDN -->
+    <link rel="preconnect" href="https://widget.nausys.com" />
+
+    <!-- Preload first hero image for LCP -->
+    <link rel="preload" as="image" href="/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png" fetchpriority="high" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- jQuery with defer so it doesn't block rendering -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Meta Pixel Code — deferred to end of body, does not block paint -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,22 +45,9 @@
     fbq('init', '732254976580940');
     fbq('track', 'PageView');
     </script>
-    <!-- End Meta Pixel Code -->
-  </head>
-
-  <body>
-    <!-- Meta Pixel noscript fallback -->
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=732254976580940&ev=PageView&noscript=1"
     /></noscript>
-    
-    <div id="root"></div>
-    
-    <!-- jQuery 3.5.1 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    
-    <!-- NauSYS Widget loaded dynamically per page -->
-    
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- End Meta Pixel Code -->
   </body>
 </html>

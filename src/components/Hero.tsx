@@ -37,15 +37,21 @@ const Hero = () => {
 
   return (
     <section id="start" className="relative min-h-screen flex flex-col overflow-visible pt-16">
-      {/* Background Images Carousel */}
+      {/* Background Images Carousel — using <img> for LCP/preload eligibility */}
       {slides.map((slide, index) => (
         <div
           key={index}
-          role="img"
-          aria-label={slide.alt}
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
-          style={{ backgroundImage: `url(${slide.image})` }}
+          aria-hidden={index !== currentSlide}
+          className={`absolute inset-0 overflow-hidden transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
         >
+          <img
+            src={slide.image}
+            alt={slide.alt}
+            fetchPriority={index === 0 ? "high" : "low"}
+            loading={index === 0 ? "eager" : "lazy"}
+            decoding={index === 0 ? "sync" : "async"}
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/45"></div>
         </div>
       ))}
