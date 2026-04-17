@@ -1,13 +1,8 @@
 // Hero component with image carousel
-import { Button } from "@/components/ui/button";
-import { Anchor, Award, Shield, ChevronLeft, ChevronRight } from "lucide-react";
-// import heroYacht from "@/assets/hero-yacht.jpg";
-// import charterHeroWater from "@/assets/charter-hero-water.jpg";
+import { Award, ChevronLeft, ChevronRight } from "lucide-react";
 const mediterraneanImage = "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
-const fruhbuckerButton = "/fruhbucher-button.png";
 
-import { Suspense, lazy, useState, useEffect, useCallback } from "react";
-const CharterRequestForm = lazy(() => import("./CharterRequestForm"));
+import { useState, useEffect, useCallback } from "react";
 const Hero = () => {
   const slides = [{
     image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
@@ -65,40 +60,22 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto">
-          {/* Early Bird Promo Button */}
-          <div className="mb-6 md:mb-8 animate-fade-in">
-            <CharterRequestForm>
-              <button className="inline-block transform hover:scale-105 transition-all duration-300">
-                <img 
-                  src={fruhbuckerButton} 
-                  alt="Frühbucher Rabatt 2026 - Jetzt buchen"
-                  className="w-full max-w-xl md:max-w-2xl mx-auto shadow-2xl rounded-2xl"
-                />
-              </button>
-            </CharterRequestForm>
-          </div>
-
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-in">
             <Award className="w-4 h-4" />
             <span className="text-sm">30 Jahre Erfahrung im Chartermarkt</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-            Bereit für Ihr
-            <br />
-            <span className="text-white">
-              nächstes
-            </span>
-            <br />
-            Segelabenteuer?
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            Bereit für Ihr nächstes<br />Segelabenteuer?
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90 max-w-2xl mx-auto">Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.</p>
-
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90 max-w-2xl mx-auto animate-fade-in">
+            Profitieren Sie von unserer 30-jährigen Erfahrung und lassen Sie sich jetzt ein unverbindliches Angebot erstellen.
+          </p>
         </div>
       </div>
 
