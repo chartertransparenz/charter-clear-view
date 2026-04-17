@@ -92,8 +92,7 @@ const Services = () => {
 
         {/* Advantages */}
         <div className="bg-white rounded-2xl p-8 shadow-elegant">
-          <div className="flex items-center justify-center mb-8">
-            <img src="/lovable-uploads/659b769a-8043-415e-8200-0c56b66bcc47.png" alt="CharterTransparenz" className="h-12 w-auto mr-4" />
+          <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-ocean-dark">
               Warum Charter Transparenz?
             </h3>
