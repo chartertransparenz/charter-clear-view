@@ -74,7 +74,7 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="menu-typography text-gray-700 hover:text-sunset transition-smooth bg-transparent border-0 cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-sunset after:transition-all after:duration-300 hover:after:w-full"
+                className="menu-typography hover:text-sunset transition-smooth bg-transparent border-0 cursor-pointer"
               >
                 {item.label}
               </button>
@@ -116,7 +116,7 @@ const Navigation = () => {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="menu-typography text-gray-700 hover:text-sunset transition-smooth px-4 py-2 text-left bg-transparent border-0 cursor-pointer"
+                  className="menu-typography hover:text-sunset transition-smooth px-4 py-2 text-left bg-transparent border-0 cursor-pointer"
                 >
                   {item.label}
                 </button>

@@ -153,11 +153,12 @@ All colors MUST be HSL.
   
   .menu-typography {
     font-family: 'Montserrat', system-ui, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     line-height: 1.4;
+    color: #1a2744;
   }
 
   /* Reviere Dropdown Styles */
