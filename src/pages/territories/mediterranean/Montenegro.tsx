@@ -72,7 +72,7 @@ const Montenegro = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/c14a7d52-f289-40a7-af4d-7565cc68fcf7.png" alt="Montenegro Mittelmeer" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/c14a7d52-f289-40a7-af4d-7565cc68fcf7.webp" alt="Montenegro Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -129,7 +129,7 @@ const Montenegro = () => {
 
             <div className="mt-8 mb-6">
               <img 
-                src="/lovable-uploads/82a9b3f1-dcde-4a55-8468-5dc3f22b6f7c.png" 
+                src="/lovable-uploads/82a9b3f1-dcde-4a55-8468-5dc3f22b6f7c.webp" 
                 alt="Die Zwillingsinseln von Perast liegen im ruhigen Wasser der Bucht von Kotor und bieten mediterranes Flair inmitten der beeindruckenden Berglandschaft Montenegros." 
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -171,7 +171,7 @@ const Montenegro = () => {
               
               <div className="mt-8 mb-6">
                 <img 
-                  src="/lovable-uploads/f17128f9-b50e-453a-9c40-c684e6ac1e84.png" 
+                  src="/lovable-uploads/f17128f9-b50e-453a-9c40-c684e6ac1e84.webp" 
                   alt="Wo mondäner Luxus auf wilde Natur trifft. Starten Sie Ihren unvergesslichen Yachtcharter ab Tivat" 
                   className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
                 />
@@ -224,7 +224,7 @@ const Montenegro = () => {
 
             <div className="mt-8">
               <img 
-                src="/lovable-uploads/eb866192-681b-49f4-8c96-0163e405b375.png" 
+                src="/lovable-uploads/eb866192-681b-49f4-8c96-0163e405b375.webp" 
                 alt="Wo majestätische Berge auf die tiefblaue Adria treffen: Erleben Sie die Bucht von Kotor vom Wasser aus" 
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />

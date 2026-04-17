@@ -55,7 +55,7 @@ const Australia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.png" alt="Australien Segelrevier" className="w-full h-full object-cover object-top" />
+        <img src="/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.webp" alt="Australien Segelrevier" className="w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute bottom-6 left-6 text-white">
           <div className="flex items-center gap-2 mb-2">

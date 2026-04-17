@@ -35,7 +35,7 @@ const Valencia = () => {
       {/* Header */}
       <div className="relative h-[60vh] bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: "url('/lovable-uploads/671e6007-126c-4bfb-b90e-b82f9f470db2.png')",
+        backgroundImage: "url('/lovable-uploads/671e6007-126c-4bfb-b90e-b82f9f470db2.webp')",
         filter: "brightness(0.7)"
       }} />
         <div className="relative z-10 text-center text-white px-4">

@@ -23,7 +23,7 @@ const Cyclades = () => {
     canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
     ogTitle: "Yachtcharter Kykladen – Mykonos, Santorini & Paros",
     ogDescription: "Inselhüpfen auf den Kykladen: Meltemi im Sommer, ikonische Dörfer, klare Buchten. Segelyacht oder Katamaran jetzt anfragen.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.webp",
     ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/kykladen",
     structuredData: {
       ...generateStructuredData.service("Kykladen", "Yachtcharter auf den Kykladen - Segeln zwischen den berühmten griechischen Inseln Mykonos, Santorini und Paros"),
@@ -60,7 +60,7 @@ const Cyclades = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.png" alt="Yachtcharter Kykladen - Segelboote vor der berühmten weißen Architektur von Santorini und Mykonos" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/bfbeae49-044a-4e7b-9f0d-067c2b94c69e.webp" alt="Yachtcharter Kykladen - Segelboote vor der berühmten weißen Architektur von Santorini und Mykonos" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -193,7 +193,7 @@ const Cyclades = () => {
             </p>
 
             <div className="my-8">
-              <img src="/lovable-uploads/83530afe-f741-44d5-b98c-ebd1c9aad6df.png" alt="Griechische Taverne am Meer" className="w-full rounded-lg shadow-lg" />
+              <img src="/lovable-uploads/83530afe-f741-44d5-b98c-ebd1c9aad6df.webp" alt="Griechische Taverne am Meer" className="w-full rounded-lg shadow-lg" />
               <p className="text-sm text-muted-foreground mt-3 italic text-center">
                 Stellen Sie sich vor: Nach einem perfekten Segeltag den Abend in einer griechischen Taverne ausklingen lassen, die Stühle direkt am Meer, und das sanfte Plätschern der Wellen lauschen.
               </p>
@@ -214,7 +214,7 @@ const Cyclades = () => {
               <h4 className="font-semibold mb-3 text-black">Marinas & Ausgangshäfen</h4>
               
               <div className="my-6">
-                <img src="/lovable-uploads/963358b3-7cad-4b57-aadf-4cea2f3470ef.png" alt="Hafen mit Muringleinen auf Milos" className="w-full rounded-lg shadow-lg" />
+                <img src="/lovable-uploads/963358b3-7cad-4b57-aadf-4cea2f3470ef.webp" alt="Hafen mit Muringleinen auf Milos" className="w-full rounded-lg shadow-lg" />
                 <p className="text-sm text-muted-foreground mt-3 italic text-center">
                   Hafen mit Muringleinen auf der Insel Milos.
                 </p>
@@ -277,7 +277,7 @@ const Cyclades = () => {
             </p>
             
             <div className="my-8">
-              <img src="/lovable-uploads/72d6a75d-c97b-4b2e-b4e6-d0f739d31830.png" alt="Sonnenuntergang über Mykonos mit Windmühlen" className="w-full rounded-lg shadow-lg" />
+              <img src="/lovable-uploads/72d6a75d-c97b-4b2e-b4e6-d0f739d31830.webp" alt="Sonnenuntergang über Mykonos mit Windmühlen" className="w-full rounded-lg shadow-lg" />
               <p className="text-sm text-muted-foreground mt-3 italic text-center">
                 Lust auf einen atemberaubenden Sonnenuntergang über den sanften Hügeln des griechischen Dorfes Mykonos, wo die farbenfrohe Altstadt und die ikonischen historischen Windmühlen in goldenes Licht getaucht werden?
               </p>

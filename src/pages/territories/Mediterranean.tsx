@@ -99,7 +99,7 @@ const Mediterranean = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.png"
+          src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.webp"
           alt="Mittelmeer"
           className="w-full h-full object-cover"
         />

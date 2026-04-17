@@ -26,7 +26,7 @@ const Fleet = () => {
     features: ["4 Kabinen", "3 Nasszellen", "Breite: 4,35m", "Geräumig & komfortabel"],
     price: "ab €1.300/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.png"
+    image: "/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.webp"
   }, {
     name: "Lagoon 42",
     type: "Segelkatamaran",
@@ -35,7 +35,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen", "3-4 Nasszellen", "Breite: 7,68m", "Weitläufiges Deck & viel Platz"],
     price: "ab €1.680/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
+    image: "/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.webp"
   }, {
     name: "Lagoon 440",
     type: "Segelkatamaran",
@@ -44,7 +44,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen", "3-4 Nasszellen", "Breite: 7,70m", "Panorama-Salon & komfort-orientiert"],
     price: "ab €1.800/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/1ea68c6f-87dc-44e1-9f11-6805e2ddf28f.png"
+    image: "/lovable-uploads/1ea68c6f-87dc-44e1-9f11-6805e2ddf28f.webp"
   }, {
     name: "Oceanis 46.1",
     type: "Monohull Cruising Yacht",
@@ -53,7 +53,7 @@ const Fleet = () => {
     features: ["3-5 Kabinen", "2-4 Nasszellen", "Breite: 4,50m", "Elegant & modernes Layout"],
     price: "ab €1.260/Woche",
     attributes: ["beliebt"],
-    image: "/lovable-uploads/725dc9eb-cef9-47b0-9eb3-1097bd7e3324.png"
+    image: "/lovable-uploads/725dc9eb-cef9-47b0-9eb3-1097bd7e3324.webp"
   }, {
     name: "Bavaria Cruiser 37",
     type: "Monohull Segelyacht",
@@ -62,7 +62,7 @@ const Fleet = () => {
     features: ["2-3 Kabinen", "1-2 Nasszellen", "Breite: 3,67m", "Agil & platzoptimiert"],
     price: "ab €990/Woche",
     attributes: ["sportlich"],
-    image: "/lovable-uploads/05c9defc-3ded-4df8-a513-4e3f4c8fb7ae.png"
+    image: "/lovable-uploads/05c9defc-3ded-4df8-a513-4e3f4c8fb7ae.webp"
   }, {
     name: "Sun Odyssey 440",
     type: "Monohull Cruiser",
@@ -71,7 +71,7 @@ const Fleet = () => {
     features: ["2-4 Kabinen", "2-3 Nasszellen", "Breite: 4,29m", "Modern & komfortabel"],
     price: "ab €1.440/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/fb1a8403-78ac-459d-9e98-87667420bcb2.png"
+    image: "/lovable-uploads/fb1a8403-78ac-459d-9e98-87667420bcb2.webp"
   }, {
     name: "Bavaria C 42",
     type: "Monohull Segelyacht",
@@ -80,7 +80,7 @@ const Fleet = () => {
     features: ["2-3 Kabinen", "1-2 Nasszellen", "Breite: 4,30m", "Hell, geräumig & komfortabel"],
     price: "ab €1.200/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.png"
+    image: "/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.webp"
   }, {
     name: "Sun Odyssey 410",
     type: "Monohull Cruiser",
@@ -89,7 +89,7 @@ const Fleet = () => {
     features: ["2-3 Kabinen", "2 Nasszellen", "Breite: 3,99m", "Kompakt & familienfreundlich"],
     price: "ab €1.200/Woche",
     attributes: ["sportlich"],
-    image: "/lovable-uploads/626a5986-a8dd-495e-97d7-9c028042f1a4.png"
+    image: "/lovable-uploads/626a5986-a8dd-495e-97d7-9c028042f1a4.webp"
   }, {
     name: "Oceanis 38.1",
     type: "Monohull Segelyacht",
@@ -98,7 +98,7 @@ const Fleet = () => {
     features: ["2-3 Kabinen", "1-2 Nasszellen", "Breite: 3,99m", "Vielseitig & modernes Interieur"],
     price: "ab €1.050/Woche",
     attributes: ["beliebt"],
-    image: "/lovable-uploads/f0ed71e0-7256-499f-82d0-aca518c443ef.png"
+    image: "/lovable-uploads/f0ed71e0-7256-499f-82d0-aca518c443ef.webp"
   }, {
     name: "Bali Catspace",
     type: "Katamaran",
@@ -107,7 +107,7 @@ const Fleet = () => {
     features: ["4 Kabinen", "3-4 Nasszellen", "Breite: 6,59m", "Viel Raum, Panoramablick & großzügiges Cockpit"],
     price: "ab €1.700/Woche",
     attributes: ["voluminös"],
-    image: "/lovable-uploads/b2bcf86f-90d1-45cf-8f0c-73739b25f26c.png"
+    image: "/lovable-uploads/b2bcf86f-90d1-45cf-8f0c-73739b25f26c.webp"
   }, {
     name: "Dufour 460 Grand Large",
     type: "Monohull Cruising Yacht",
@@ -116,7 +116,7 @@ const Fleet = () => {
     features: ["3-4 Kabinen", "2-4 Nasszellen", "Breite: 4,50m", "Komfortabel & leistungsstark"],
     price: "ab €1.600/Woche",
     attributes: ["beliebt"],
-    image: "/lovable-uploads/68a41bf5-1573-472d-8722-34cdca418a0e.png"
+    image: "/lovable-uploads/68a41bf5-1573-472d-8722-34cdca418a0e.webp"
   }];
 
   // Automatisches Karussell für Yachten

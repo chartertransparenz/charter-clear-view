@@ -76,7 +76,7 @@ const Mallorca = () => {
         
         {/* Header */}
         <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-          <img src="/lovable-uploads/cc180839-2a23-40be-b2bd-45eedcf7e909.png" alt="Mallorca Yachtcharter - Cala Llombards" className="w-full h-full object-cover" />
+          <img src="/lovable-uploads/cc180839-2a23-40be-b2bd-45eedcf7e909.webp" alt="Mallorca Yachtcharter - Cala Llombards" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">

@@ -71,7 +71,7 @@ const Slovenia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/98c0e901-0386-4c29-8a01-f29a5deb1055.png" alt="Slowenien Mittelmeer" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/98c0e901-0386-4c29-8a01-f29a5deb1055.webp" alt="Slowenien Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -146,7 +146,7 @@ const Slovenia = () => {
               <li className="text-gray-600">
                 <div className="mb-4">
                   <img 
-                    src="/lovable-uploads/3cb7d715-410a-45dc-8c36-092ea4b40c5e.png" 
+                    src="/lovable-uploads/3cb7d715-410a-45dc-8c36-092ea4b40c5e.webp" 
                     alt="Piran, slowenische Küste" 
                     className="w-full h-auto rounded-lg shadow-lg mb-4"
                   />
@@ -366,7 +366,7 @@ const Slovenia = () => {
               {/* Venice Image */}
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/07a02e7c-7650-42a9-952e-86b5cfe52466.png" 
+                  src="/lovable-uploads/07a02e7c-7650-42a9-952e-86b5cfe52466.webp" 
                   alt="Venice Canal Grande" 
                   className="w-full h-64 object-cover rounded-lg shadow-lg mb-4"
                 />

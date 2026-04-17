@@ -46,7 +46,7 @@ const Scandinavia = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/0f7cd708-160a-48c4-a2f6-58b28a164040.png" alt="Skandinavien" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/0f7cd708-160a-48c4-a2f6-58b28a164040.webp" alt="Skandinavien" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

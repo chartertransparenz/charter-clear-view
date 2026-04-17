@@ -87,7 +87,7 @@ export default function CentralDalmatia() {
       
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-cover bg-top" style={{
-      backgroundImage: 'url(/lovable-uploads/16041da5-2d0d-490f-b325-47a855ffc362.png)'
+      backgroundImage: 'url(/lovable-uploads/16041da5-2d0d-490f-b325-47a855ffc362.webp)'
     }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">

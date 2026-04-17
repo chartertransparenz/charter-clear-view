@@ -38,7 +38,7 @@ const CostaSmeralda = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: "url('/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.png')",
+        backgroundImage: "url('/lovable-uploads/814afb1d-620f-465b-8dff-f17614a1487e.webp')",
         filter: "brightness(0.7)"
       }}></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -144,7 +144,7 @@ const CostaSmeralda = () => {
 
               {/* Yachtcharter Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/2112d3b6-fd2a-4cce-ab71-7c25452c2d4a.png" alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" title="Yachtcharter Costa Smeralda" className="w-full h-auto object-cover" loading="lazy" />
+                <img src="/lovable-uploads/2112d3b6-fd2a-4cce-ab71-7c25452c2d4a.webp" alt="Yachtcharter Costa Smeralda - Luxusyachten ankern in türkisblauer Bucht mit Granitfelsen an der Smaragdküste Sardiniens, perfekt für exklusiven Segelurlaub" title="Yachtcharter Costa Smeralda" className="w-full h-auto object-cover" loading="lazy" />
               </div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Die Costa Smeralda: Wo Luxus auf Natur trifft</h3>
@@ -177,7 +177,7 @@ const CostaSmeralda = () => {
 
               {/* Boot mieten Costa Smeralda Image */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/150dda6b-099a-40d6-a3d4-4c716d4be464.png" alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" title="Boot mieten Costa Smeralda" className="w-full h-auto object-cover" loading="lazy" />
+                <img src="/lovable-uploads/150dda6b-099a-40d6-a3d4-4c716d4be464.webp" alt="Boot mieten Costa Smeralda - Luftaufnahme weißer Sandstrand mit türkisfarbenem Wasser und Segelbooten, La Maddalena Archipel Nationalpark ideal für Bootsverleih" title="Boot mieten Costa Smeralda" className="w-full h-auto object-cover" loading="lazy" />
               </div>
 
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">

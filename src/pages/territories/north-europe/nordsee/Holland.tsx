@@ -15,7 +15,7 @@ import { useEffect } from "react";
 import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TerritoryMap from "@/components/TerritoryMap";
-const hollandCoast = "/lovable-uploads/0eef7af9-d0e3-4695-beb3-dcc6a319901a.png";
+const hollandCoast = "/lovable-uploads/0eef7af9-d0e3-4695-beb3-dcc6a319901a.webp";
 const Holland = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

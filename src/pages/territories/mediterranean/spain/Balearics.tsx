@@ -17,7 +17,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-const balearicsHeader = "/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.png";
+const balearicsHeader = "/lovable-uploads/c0896df7-5ba2-4d93-9c3a-ffd817d565c5.webp";
 
 const Balearics = () => {
   useEffect(() => {
@@ -246,7 +246,7 @@ const Balearics = () => {
             {/* Cap de ses Salines Lighthouse Image */}
             <div className="my-8">
               <img
-                src="/lovable-uploads/a3c45dc2-70f0-4ef8-965b-c96e9db59319.png"
+                src="/lovable-uploads/a3c45dc2-70f0-4ef8-965b-c96e9db59319.webp"
                 alt="Leuchtturm am Cap de ses Salines - südlichster Punkt Mallorcas"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -325,7 +325,7 @@ const Balearics = () => {
             {/* Cala Llombards Image */}
             <div className="my-8">
               <img
-                src="/lovable-uploads/cc180839-2a23-40be-b2bd-45eedcf7e909.png"
+                src="/lovable-uploads/cc180839-2a23-40be-b2bd-45eedcf7e909.webp"
                 alt="Cala Llombards - windgeschützte Bucht auf Mallorca"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -355,7 +355,7 @@ const Balearics = () => {
             {/* Cala Macarella Image */}
             <div className="my-8">
               <img
-                src="/lovable-uploads/16f1d4fc-5a9e-4edc-b6bd-cfd79999a60c.png"
+                src="/lovable-uploads/16f1d4fc-5a9e-4edc-b6bd-cfd79999a60c.webp"
                 alt="Cala Macarella - malerische Bucht an Menorcas Südküste"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />

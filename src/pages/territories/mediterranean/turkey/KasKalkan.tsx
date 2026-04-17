@@ -57,7 +57,7 @@ const KasKalkan = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: "url('/lovable-uploads/472572c9-d9e8-4b98-85ce-e8f2cc4114c7.png')",
+            backgroundImage: "url('/lovable-uploads/472572c9-d9e8-4b98-85ce-e8f2cc4114c7.webp')",
             filter: "brightness(0.7)"
           }} 
         />

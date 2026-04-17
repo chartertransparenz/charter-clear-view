@@ -345,6 +345,29 @@
   status = 301
   force = true
 
+# Long-term cache for immutable assets (hashed filenames from Vite build)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Long-term cache for images (1 year — filenames are content-addressable UUIDs)
+[[headers]]
+  for = "/lovable-uploads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Favicon
+[[headers]]
+  for = "/favicon.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
 # Sitemap & Robots.txt Headers
 [[headers]]
   for = "/sitemap*.xml"

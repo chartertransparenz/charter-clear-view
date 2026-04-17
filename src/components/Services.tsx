@@ -15,13 +15,13 @@ const Services = () => {
     title: "Yacht Charter für Selbstsegler",
     description: "Premium Segelyachten für erfahrene Segler mit gültigem Segelschein",
     features: ["Verschiedene Bootsgrößen", "Bareboat Charter", "Vollständige Ausstattung", "Gültiger Segelschein erforderlich"],
-    image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.png"
+    image: "/lovable-uploads/1179037a-34f2-4a2e-b4a9-874c8eebaf59.webp"
   }, {
     icon: Users,
     title: "Yacht Charter mit Skipper",
     description: "Entspannter Segeltörn mit professionellem Skipper für alle Erfahrungsstufen",
     features: ["Erfahrener Skipper inklusive", "Für Anfänger & Profis", "Bis zu 12 Personen", "Keine Segelschein erforderlich"],
-    image: "/lovable-uploads/b8357492-3fda-42a7-8fcc-bd564c0db1d7.png"
+    image: "/lovable-uploads/b8357492-3fda-42a7-8fcc-bd564c0db1d7.webp"
   }, {
     icon: GraduationCap,
     title: "Luxus Charter",
@@ -33,24 +33,24 @@ const Services = () => {
     icon: Shield,
     title: "Transparente Preise",
     description: "Alle Kosten auf einen Blick - keine versteckten Gebühren",
-    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
+    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp"
   }, {
     icon: Clock,
     title: "Flexible Buchung",
     description: "Einfache Online-Buchung mit flexiblen Stornobedingungen",
-    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
+    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp"
   }, {
     icon: MapPin,
     title: "Beste Lagen",
     description: "Premium Liegeplätze am Bodensee und anderen Top-Destinationen",
-    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png"
+    image: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp"
   }];
   return <section id="leistungen" className="py-20 bg-ocean-light/30">
       <div className="container mx-auto px-4">
         {/* Hero Image */}
         <div className="mb-16 rounded-2xl overflow-hidden shadow-elegant">
           <div className="relative">
-            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png" alt="Traumhafte Bucht mit türkisblauem Wasser" loading="lazy" className="w-full h-96 md:h-[28rem] object-cover" />
+            <img src="/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp" alt="Traumhafte Bucht mit türkisblauem Wasser" loading="lazy" className="w-full h-96 md:h-[28rem] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Services</h2>
@@ -118,7 +118,7 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10">
               <div className="flex justify-center mb-8">
-                <img src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.png" alt="CharterTransparenz" loading="lazy" className="h-20 w-auto" />
+                <img src="/lovable-uploads/79099e73-1133-46cd-9883-b91311019777.webp" alt="CharterTransparenz" loading="lazy" className="h-20 w-auto" />
               </div>
               <h3 className="text-3xl font-bold mb-4">
                 Bereit für Ihr Charter-Abenteuer?

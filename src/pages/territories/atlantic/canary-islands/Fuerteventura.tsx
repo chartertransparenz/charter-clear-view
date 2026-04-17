@@ -90,7 +90,7 @@ const Fuerteventura = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/1ea68c6f-87dc-44e1-9f11-6805e2ddf28f.png"
+          src="/lovable-uploads/1ea68c6f-87dc-44e1-9f11-6805e2ddf28f.webp"
           alt="Fuerteventura"
           className="w-full h-full object-cover"
         />

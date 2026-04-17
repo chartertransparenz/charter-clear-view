@@ -48,7 +48,7 @@ const StVincentGrenadinen = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png"
+          src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.webp"
           alt="St. Vincent & Grenadinen Yachtcharter"
           className="w-full h-full object-cover"
         />

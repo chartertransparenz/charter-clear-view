@@ -85,7 +85,7 @@ const Terceira = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.png"
+          src="/lovable-uploads/a732ed55-1ced-4b36-9f14-871afdac10de.webp"
           alt="Terceira Azoren"
           className="w-full h-full object-cover"
         />

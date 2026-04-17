@@ -72,7 +72,7 @@ const CanaryIslands = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/60d2e120-f975-4b09-9582-d3ec1f64e725.png" alt="Kanarische Inseln" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/60d2e120-f975-4b09-9582-d3ec1f64e725.webp" alt="Kanarische Inseln" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -191,7 +191,7 @@ const CanaryIslands = () => {
             {/* Image section */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/3b3b6bfd-87ce-409d-9764-482a463645bd.png" 
+                src="/lovable-uploads/3b3b6bfd-87ce-409d-9764-482a463645bd.webp" 
                 alt="Yachtcharter Kanaren – segeln Sie entlang Teneriffas Küste und erleben Sie unvergessliche Atlantik-Momente." 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
               />
@@ -282,7 +282,7 @@ const CanaryIslands = () => {
             {/* Image section */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/6dded8bc-a713-4fbc-936c-45efff0a900b.png" 
+                src="/lovable-uploads/6dded8bc-a713-4fbc-936c-45efff0a900b.webp" 
                 alt="Blick auf die Steilküste Los Gigantes auf Teneriffa – Palmen, Atlantik und ein altes Fischerboot erzählen vom maritimen Leben der Kanaren." 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
               />

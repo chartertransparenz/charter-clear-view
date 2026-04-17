@@ -142,7 +142,7 @@ const WindwardIslands = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/c7dcc73d-7cf1-40db-8c85-280f7a47c9cb.png"
+          src="/lovable-uploads/c7dcc73d-7cf1-40db-8c85-280f7a47c9cb.webp"
           alt="Windward Inseln"
           className="w-full h-full object-cover"
         />

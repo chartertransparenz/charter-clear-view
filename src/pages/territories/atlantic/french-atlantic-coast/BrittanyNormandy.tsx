@@ -77,7 +77,7 @@ const BrittanyNormandy = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/322fb30e-004f-44b0-a51b-aed662239ae7.png"
+          src="/lovable-uploads/322fb30e-004f-44b0-a51b-aed662239ae7.webp"
           alt="Bretagne Normandie"
           className="w-full h-full object-cover"
         />

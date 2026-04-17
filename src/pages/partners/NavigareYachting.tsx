@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import { ArrowLeft, MapPin, Anchor, Ship } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-const navigareKatamaranCrew = '/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png';
+const navigareKatamaranCrew = '/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.webp';
 const navigareEntspannung = '/yacht-interior.jpg';
 
 export default function NavigareYachting() {

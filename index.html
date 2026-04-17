@@ -20,8 +20,12 @@
     <!-- Preconnect for Nausys widget CDN -->
     <link rel="preconnect" href="https://widget.nausys.com" />
 
-    <!-- Preload first hero image for LCP -->
-    <link rel="preload" as="image" href="/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png" fetchpriority="high" />
+    <!-- Preload first hero image for LCP — WebP with mobile srcset -->
+    <link rel="preload" as="image"
+      href="/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.webp"
+      imagesrcset="/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c-mobile.webp 800w, /lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.webp 1920w"
+      imagesizes="100vw"
+      fetchpriority="high" />
   </head>
 
   <body>

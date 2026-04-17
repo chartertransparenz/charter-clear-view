@@ -64,7 +64,7 @@ const Spain = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.png"
+          src="/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.webp"
           alt="Spanien Mittelmeer"
           className="w-full h-full object-cover"
         />
@@ -222,7 +222,7 @@ const Spain = () => {
             {/* Cala Pi Image with Description */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/e4c1ff7b-f972-4af5-b734-1ab72d4f905c.png" 
+                src="/lovable-uploads/e4c1ff7b-f972-4af5-b734-1ab72d4f905c.webp" 
                 alt="Cala Pi Mallorca - türkisfarbenes Wasser mit Segelbooten" 
                 className="w-full rounded-lg shadow-lg mb-4"
               />
@@ -331,7 +331,7 @@ const Spain = () => {
             {/* Costa Brava Image with Description */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/11945d8a-63c7-46f0-abff-8edc0e2be073.png" 
+                src="/lovable-uploads/11945d8a-63c7-46f0-abff-8edc0e2be073.webp" 
                 alt="Sa Tuna Costa Brava - bunte Häuser an ruhiger Meeresbucht" 
                 className="w-full rounded-lg shadow-lg mb-4"
               />

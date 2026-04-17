@@ -9,7 +9,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import TerritoryMap from "@/components/TerritoryMap";
-const frenchPolynesiaHeader = "/lovable-uploads/a6e74b2e-f2a3-4510-99de-f4d333eeac84.png";
+const frenchPolynesiaHeader = "/lovable-uploads/a6e74b2e-f2a3-4510-99de-f4d333eeac84.webp";
 const FrenchPolynesia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

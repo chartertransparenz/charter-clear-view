@@ -10,7 +10,7 @@ import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import TerritoryMap from "@/components/TerritoryMap";
-const frenchAtlanticCoast = "/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.png";
+const frenchAtlanticCoast = "/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.webp";
 const FrenchAtlanticCoast = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -170,7 +170,7 @@ const FrenchAtlanticCoast = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <img 
-                      src="/lovable-uploads/604856fc-7b4d-4869-8c90-2c3fba8dc395.png" 
+                      src="/lovable-uploads/604856fc-7b4d-4869-8c90-2c3fba8dc395.webp" 
                       alt="Saint-Martin-de-Ré – Schmale Gassen, weiße Häuser und grüne Fensterläden – Saint-Martin-de-Ré zeigt das sanfte, mediterran anmutende Gesicht der Atlantikküste." 
                       className="w-full h-64 object-cover rounded-lg shadow-lg"
                     />
@@ -181,7 +181,7 @@ const FrenchAtlanticCoast = () => {
                   </div>
                   <div>
                     <img 
-                      src="/lovable-uploads/e19b232f-535a-4047-a55e-9738cf5fc1c0.png" 
+                      src="/lovable-uploads/e19b232f-535a-4047-a55e-9738cf5fc1c0.webp" 
                       alt="Saint-Malo – Mächtige Stadtmauern, Granitfassaden und tosende Wellen – Saint-Malo verkörpert die raue, kraftvolle Seite der Bretagne." 
                       className="w-full h-64 object-cover rounded-lg shadow-lg"
                     />

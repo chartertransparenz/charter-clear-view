@@ -90,7 +90,7 @@ const Lanzarote = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/58d61b25-e0c3-44d0-9e60-202f1de6c843.png"
+          src="/lovable-uploads/58d61b25-e0c3-44d0-9e60-202f1de6c843.webp"
           alt="Lanzarote"
           className="w-full h-full object-cover"
         />

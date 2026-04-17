@@ -31,7 +31,7 @@ const Territories = () => {
     name: "Kroatien",
     regions: "Dalmatien (Split, Šibenik, Dubrovnik), Kornaten, Istrien, Kvarner",
     highlights: ["Hunderte Inseln & Buchten", "Hervorragende Infrastruktur", "Klare Regeln & guter Service", "Ideales Klima (Mai–Oktober)"],
-    image: "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png",
+    image: "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.webp",
     link: "/reviere/mittelmeer/kroatien"
   }, {
     rank: 2,
@@ -39,7 +39,7 @@ const Territories = () => {
     name: "Griechenland",
     regions: "Kykladen, Ionische Inseln, Athen/Saronischer Golf, Dodekanes, Sporaden",
     highlights: ["Inselhopping mit Tavernen-Charme", "Konstante Meltemi-Winde (Sommer)", "Kultur & Natur vereint", "Ideal für Bareboat- oder Skippercharter"],
-    image: "/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png",
+    image: "/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.webp",
     link: "/reviere/mittelmeer/griechenland"
   }, {
     rank: 3,
@@ -47,7 +47,7 @@ const Territories = () => {
     name: "Italien",
     regions: "Sardinien, Elba/Toskana, Sizilien, Amalfiküste, Aeolische Inseln",
     highlights: ["Vielfalt an Revierarten: ruhig bis anspruchsvoll", "Gutes Essen, Kultur & spektakuläre Küsten", "Auch für Wochenend-Törns beliebt"],
-    image: "/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png",
+    image: "/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.webp",
     link: "/reviere/mittelmeer/italien"
   }, {
     rank: 4,
@@ -55,7 +55,7 @@ const Territories = () => {
     name: "Spanien",
     regions: "Balearen (Mallorca, Menorca, Ibiza, Formentera), Kanaren",
     highlights: ["Mediterrane Atmosphäre mit Top-Infrastruktur", "Ganzjahresziel (v.a. Kanaren)", "Große Auswahl an Charterbasen"],
-    image: "/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.png",
+    image: "/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.webp",
     link: "/reviere/mittelmeer/spanien"
   }, {
     rank: 5,
@@ -63,7 +63,7 @@ const Territories = () => {
     name: "Türkei",
     regions: "Türkische Ägäis (Bodrum, Marmaris, Göcek, Fethiye)",
     highlights: ["Blue Cruise-Tradition", "Gület-Charter beliebt", "Warmes Wasser, geschützte Buchten", "Gastfreundschaft & gutes Preis-Leistungs-Verhältnis"],
-    image: "/lovable-uploads/b0c596f4-551d-4816-958d-570974af6c8d.png",
+    image: "/lovable-uploads/b0c596f4-551d-4816-958d-570974af6c8d.webp",
     link: "/reviere/mittelmeer/tuerkei"
   }, {
     rank: 6,
@@ -71,7 +71,7 @@ const Territories = () => {
     name: "Frankreich",
     regions: "Côte d'Azur, Korsika, Bretagne",
     highlights: ["Segeln mit Stil (Cannes, St. Tropez)", "Anspruchsvolles Tidenrevier (Bretagne)", "Sehr gute Yachtausstattung & Infrastruktur"],
-    image: "/lovable-uploads/ff15c825-2f79-4d1a-accd-732ed85772b1.png",
+    image: "/lovable-uploads/ff15c825-2f79-4d1a-accd-732ed85772b1.webp",
     link: "/reviere/mittelmeer/frankreich"
   }, {
     rank: 7,
@@ -79,7 +79,7 @@ const Territories = () => {
     name: "Britische Jungferninseln (BVI)",
     regions: "Inselgruppe der Kleinen Antillen, Karibik",
     highlights: ["Traumhafte, kurze Tagesetappen", "Karibik-Feeling pur", "Perfekt für Einsteiger & Familien", "Line-of-sight sailing mit Top-Logistik"],
-    image: "/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png",
+    image: "/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.webp",
     link: "/reviere/karibik/britische-jungferninseln"
   }, {
     rank: 8,
@@ -87,7 +87,7 @@ const Territories = () => {
     name: "Thailand",
     regions: "Phuket & Andamanensee",
     highlights: ["Exotische Kulisse mit Felseninseln & Lagunen", "Günstige Charterpreise", "Kultur & Küche an Land", "Beste Reisezeit: Nov–Apr"],
-    image: "/lovable-uploads/b8d7c49e-e173-4854-b08c-755db093505f.png",
+    image: "/lovable-uploads/b8d7c49e-e173-4854-b08c-755db093505f.webp",
     link: "/reviere/indischer-ozean/asien/thailand"
   }, {
     rank: 9,
@@ -95,7 +95,7 @@ const Territories = () => {
     name: "Seychellen",
     regions: "Mahé, Praslin, La Digue, Amiranten",
     highlights: ["Tropisches Inselparadies", "Katamaran bevorzugt", "Glasklares Wasser, Schnorcheln", "Ankern vor Traumstränden"],
-    image: "/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.png",
+    image: "/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.webp",
     link: "/reviere/indischer-ozean/seychellen"
   }, {
     rank: 10,
@@ -103,7 +103,7 @@ const Territories = () => {
     name: "Australien",
     regions: "Whitsunday Islands (Great Barrier Reef)",
     highlights: ["Unberührte Inselwelt", "Traumhafte Ankerbuchten", "Tropisches Klima, bestes Segelrevier der Südhalbkugel", "Meist mit Skipper empfohlen"],
-    image: "/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.png",
+    image: "/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.webp",
     link: "/reviere/suedpazifik/australien"
   }];
 
@@ -191,7 +191,7 @@ const Territories = () => {
             <Link to="/reviere/mittelmeer" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.png" alt="Mittelmeer" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/66e001de-7e8e-4a59-98c3-0219f1f5f2e2.webp" alt="Mittelmeer" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌍 Europa</Badge>
@@ -209,7 +209,7 @@ const Territories = () => {
             <Link to="/reviere/karibik" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.png" alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/092bc1eb-a5ff-4dd3-9b22-1838f44ee4c6.webp" alt="Karibik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌊 Atlantik</Badge>
@@ -227,7 +227,7 @@ const Territories = () => {
             <Link to="/reviere/suedpazifik" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/2e92d7f8-6a8d-4d0f-b002-c953b144e652.png" alt="Südpazifik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/2e92d7f8-6a8d-4d0f-b002-c953b144e652.webp" alt="Südpazifik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌴 Südsee</Badge>
@@ -245,7 +245,7 @@ const Territories = () => {
             <Link to="/reviere/atlantik" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/ff7dc4cb-f11b-4982-bae9-e7ac8218165e.png" alt="Atlantik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/ff7dc4cb-f11b-4982-bae9-e7ac8218165e.webp" alt="Atlantik" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🌬️ Atlantik</Badge>
@@ -263,7 +263,7 @@ const Territories = () => {
             <Link to="/reviere/indischer-ozean" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/d596d2c8-b553-4506-8bc2-950556c81b06.png" alt="Indischer Ozean" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/d596d2c8-b553-4506-8bc2-950556c81b06.webp" alt="Indischer Ozean" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🐧 Indischer Ozean</Badge>
@@ -281,7 +281,7 @@ const Territories = () => {
             <Link to="/reviere/nord-europa" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/73d0c104-bfb5-478f-978a-cd437816aa77.png" alt="Nord- und Ostsee" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/73d0c104-bfb5-478f-978a-cd437816aa77.webp" alt="Nord- und Ostsee" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🧭 Nordeuropa</Badge>
@@ -299,7 +299,7 @@ const Territories = () => {
             <Link to="/reviere/amerika-bahamas" className="group">
               <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105 border-ocean-light/50 overflow-hidden cursor-pointer">
                 <div className="relative h-32 overflow-hidden">
-                  <img src="/lovable-uploads/c34ad746-b92d-4e55-a09d-c0a32d23dc4d.png" alt="Amerika & Bahamas" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-110" />
+                  <img src="/lovable-uploads/c34ad746-b92d-4e55-a09d-c0a32d23dc4d.webp" alt="Amerika & Bahamas" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 to-transparent"></div>
                   <div className="absolute bottom-2 left-3 text-white">
                     <Badge className="mb-1 bg-sunset text-white text-xs">🇺🇸 Amerika</Badge>

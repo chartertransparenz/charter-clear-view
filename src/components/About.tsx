@@ -57,25 +57,25 @@ const About = () => {
       icon: Heart,
       title: "Transparenz", 
       description: "Ehrliche Beratung und faire Preise ohne versteckte Kosten",
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.webp"
     },
     {
       icon: Award,
       title: "Qualität",
       description: "Nur geprüfte und versicherte Boote in erstklassigem Zustand", 
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.webp"
     },
     {
       icon: Users,
       title: "Vertrauen",
       description: "Langjährige Partnerschaften mit renommierten Charterunternehmen",
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.webp"
     },
     {
       icon: MapPin,
       title: "Erfahrung",
       description: "Tiefe Ortskenntnisse und persönliche Empfehlungen",
-      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png"
+      image: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.webp"
     }
   ];
 
@@ -105,7 +105,7 @@ const About = () => {
             <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src="/lovable-uploads/1c1a939c-69d4-4725-97f0-6b97c1d90e5d.png"
+                  src="/lovable-uploads/1c1a939c-69d4-4725-97f0-6b97c1d90e5d.webp"
                   alt="Geschäftsführerin"
                   className="w-full h-full object-cover"
                 />
@@ -123,7 +123,7 @@ const About = () => {
             <Card className="shadow-ocean hover:shadow-elegant transition-all duration-300 border-ocean-light/50 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src="/lovable-uploads/6c0dd6c0-3e84-4a08-bd14-ef5dc5120e4c.png"
+                  src="/lovable-uploads/6c0dd6c0-3e84-4a08-bd14-ef5dc5120e4c.webp"
                   alt="Charter-Experte"
                   className="w-full h-full object-cover"
                 />

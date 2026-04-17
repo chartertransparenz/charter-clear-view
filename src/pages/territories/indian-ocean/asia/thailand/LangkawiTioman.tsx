@@ -66,7 +66,7 @@ const LangkawiTioman = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/725dc9eb-cef9-47b0-9eb3-1097bd7e3324.png"
+          src="/lovable-uploads/725dc9eb-cef9-47b0-9eb3-1097bd7e3324.webp"
           alt="Langkawi Tioman"
           className="w-full h-full object-cover"
         />

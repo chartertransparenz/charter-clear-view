@@ -7,7 +7,7 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
-const caribbean = "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.png";
+const caribbean = "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.webp";
 const Americas = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -62,7 +62,7 @@ const Americas = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/c34ad746-b92d-4e55-a09d-c0a32d23dc4d.png" alt="Amerika & Bahamas" className="w-full h-full object-cover object-top" />
+        <img src="/lovable-uploads/c34ad746-b92d-4e55-a09d-c0a32d23dc4d.webp" alt="Amerika & Bahamas" className="w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

@@ -60,7 +60,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/" className="block">
               <img 
-                src="/lovable-uploads/91b8d598-4457-4e8d-abcf-abab6ff6b7fa.png" 
+                src="/lovable-uploads/91b8d598-4457-4e8d-abcf-abab6ff6b7fa.webp" 
                 alt="CharterTransparenz Logo" 
                 className="h-10 sm:h-12 md:h-14 w-auto hover:opacity-90 transition-smooth cursor-pointer"
               />

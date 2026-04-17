@@ -43,7 +43,7 @@ const Dodecanese = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/3ef8c5ec-ec18-4744-a9ad-6df0fb1aaf83.png" alt="Dodekanes Griechenland" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/3ef8c5ec-ec18-4744-a9ad-6df0fb1aaf83.webp" alt="Dodekanes Griechenland" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -152,7 +152,7 @@ const Dodecanese = () => {
             {/* Entdeckung Bild */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/53d8675d-f0c1-4508-8572-cf7aa48f1d93.png" 
+                src="/lovable-uploads/53d8675d-f0c1-4508-8572-cf7aa48f1d93.webp" 
                 alt="Es gibt viel zu entdecken im Revier der Dodekanes wie z.B. die kleine Kirche auf einer Insel vor Agios Stefanos Beach, Kos" 
                 className="w-full h-64 object-cover rounded-lg mb-3"
               />

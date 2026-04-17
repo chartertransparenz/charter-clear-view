@@ -72,7 +72,7 @@ const Malta = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/c6b03fa0-a839-4e70-9cf8-2a7323fa52ce.png" alt="Malta Mittelmeer" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/c6b03fa0-a839-4e70-9cf8-2a7323fa52ce.webp" alt="Malta Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -144,7 +144,7 @@ const Malta = () => {
               {/* Blue Lagoon Image */}
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/db059046-e2cd-4a2d-8933-6bc8c3e02c4e.png" 
+                  src="/lovable-uploads/db059046-e2cd-4a2d-8933-6bc8c3e02c4e.webp" 
                   alt="Von der eigenen Yacht aus: Schnorcheln und Baden in der weltberühmten Blue Lagoon Comino" 
                   className="w-full rounded-lg shadow-lg mb-4"
                 />
@@ -186,7 +186,7 @@ const Malta = () => {
               {/* Gozo Image */}
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/32290b86-1a67-4820-b449-fcef6d84def3.png" 
+                  src="/lovable-uploads/32290b86-1a67-4820-b449-fcef6d84def3.webp" 
                   alt="Naturwunder Gozo vom besten Platz aus: dem Deck Ihrer Charteryacht" 
                   className="w-full rounded-lg shadow-lg mb-4"
                 />

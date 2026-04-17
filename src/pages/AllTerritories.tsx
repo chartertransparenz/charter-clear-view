@@ -8,14 +8,14 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { ArrowLeft, ChevronRight } from 'lucide-react';
 import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
-const maledivenImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
-const hollandImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
-const portugalImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
-const guadeloupeImage = '/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.png';
-const neukaledonienImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
-const neuseelandImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
-const norweGenImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
-const malaysiaImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png';
+const maledivenImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
+const hollandImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
+const portugalImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
+const guadeloupeImage = '/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.webp';
+const neukaledonienImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
+const neuseelandImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
+const norweGenImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
+const malaysiaImage = '/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp';
 
 export default function AllTerritories() {
   const m = META.allTerritories;
@@ -35,91 +35,91 @@ export default function AllTerritories() {
       name: 'Australien',
       flag: '🇦🇺',
       route: '/reviere/suedpazifik/australien',
-      image: '/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.png',
+      image: '/lovable-uploads/6c0bd0d6-fffa-4af9-ad9d-cf725e99ab68.webp',
       hasPage: true
     },
     {
       name: 'Bahamas',
       flag: '🇧🇸',
       route: '/reviere/amerika-bahamas/bahamas',
-      image: '/lovable-uploads/72646193-1d57-47bd-adcd-0db66bb17fb7.png',
+      image: '/lovable-uploads/72646193-1d57-47bd-adcd-0db66bb17fb7.webp',
       hasPage: true
     },
     {
       name: 'Barbados',
       flag: '🇧🇧',
       route: null,
-      image: '/lovable-uploads/8f1756a4-f683-4f30-8afe-3e3f7efc8d82.png',
+      image: '/lovable-uploads/8f1756a4-f683-4f30-8afe-3e3f7efc8d82.webp',
       hasPage: false
     },
     {
       name: 'Belgien',
       flag: '🇧🇪',
       route: '/reviere/nord-europa/nordsee/belgien',
-      image: '/lovable-uploads/4f459677-1e16-410a-b08a-9adabf290630.png',
+      image: '/lovable-uploads/4f459677-1e16-410a-b08a-9adabf290630.webp',
       hasPage: true
     },
     {
       name: 'Belize',
       flag: '🇧🇿',
       route: '/reviere/amerika-bahamas/belize',
-      image: '/lovable-uploads/640b11b6-58e3-4f63-9b38-7b1542f7d168.png',
+      image: '/lovable-uploads/640b11b6-58e3-4f63-9b38-7b1542f7d168.webp',
       hasPage: true
     },
     {
       name: 'BVI (British Virgin Islands)',
       flag: '🇻🇬',
       route: '/reviere/karibik/britische-jungferninseln',
-      image: '/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.png',
+      image: '/lovable-uploads/63f7b57f-ee43-43f7-b1e6-c4720b7ad0ba.webp',
       hasPage: true
     },
     {
       name: 'Dänemark',
       flag: '🇩🇰',
       route: '/reviere/nord-europa/skandinavien/daenemark',
-      image: '/lovable-uploads/4131ef87-3698-4e4b-a475-a01aa8ce35dd.png',
+      image: '/lovable-uploads/4131ef87-3698-4e4b-a475-a01aa8ce35dd.webp',
       hasPage: true
     },
     {
       name: 'Deutschland',
       flag: '🇩🇪',
       route: '/reviere/nord-europa/deutsche-ostsee',
-      image: '/lovable-uploads/9b523891-80c7-4afa-9c1e-b3334d6bdfca.png',
+      image: '/lovable-uploads/9b523891-80c7-4afa-9c1e-b3334d6bdfca.webp',
       hasPage: true
     },
     {
       name: 'Fidschi',
       flag: '🇫🇯',
       route: '/reviere/suedpazifik/fidschi',
-      image: '/lovable-uploads/18dfe02d-d123-40c6-a24a-00292d317a9c.png',
+      image: '/lovable-uploads/18dfe02d-d123-40c6-a24a-00292d317a9c.webp',
       hasPage: true
     },
     {
       name: 'Frankreich',
       flag: '🇫🇷',
       route: '/reviere/mittelmeer/frankreich',
-      image: '/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.png',
+      image: '/lovable-uploads/dbea27be-ce97-4174-8a0b-b1908596fb03.webp',
       hasPage: true
     },
     {
       name: 'Französisch-Polynesien',
       flag: '🇵🇫',
       route: '/reviere/suedpazifik/franzoesisch-polynesien',
-      image: '/lovable-uploads/7f8674c8-bde0-4646-a599-780ed4172d9f.png',
+      image: '/lovable-uploads/7f8674c8-bde0-4646-a599-780ed4172d9f.webp',
       hasPage: true
     },
     {
       name: 'Grenada',
       flag: '🇬🇩',
       route: null,
-      image: '/lovable-uploads/d51125a4-326c-494d-8666-f3dda8018dd3.png',
+      image: '/lovable-uploads/d51125a4-326c-494d-8666-f3dda8018dd3.webp',
       hasPage: false
     },
     {
       name: 'Griechenland',
       flag: '🇬🇷',
       route: '/reviere/mittelmeer/griechenland',
-      image: '/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png',
+      image: '/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.webp',
       hasPage: true
     },
     {
@@ -133,21 +133,21 @@ export default function AllTerritories() {
       name: 'Italien',
       flag: '🇮🇹',
       route: '/reviere/mittelmeer/italien',
-      image: '/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png',
+      image: '/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.webp',
       hasPage: true
     },
     {
       name: 'Kroatien',
       flag: '🇭🇷',
       route: '/reviere/mittelmeer/kroatien',
-      image: '/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png',
+      image: '/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.webp',
       hasPage: true
     },
     {
       name: 'Kuba',
       flag: '🇨🇺',
       route: '/reviere/karibik/kuba',
-      image: '/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png',
+      image: '/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.webp',
       hasPage: true
     },
     {
@@ -161,7 +161,7 @@ export default function AllTerritories() {
       name: 'Malta',
       flag: '🇲🇹',
       route: '/reviere/mittelmeer/malta',
-      image: '/lovable-uploads/c6b03fa0-a839-4e70-9cf8-2a7323fa52ce.png',
+      image: '/lovable-uploads/c6b03fa0-a839-4e70-9cf8-2a7323fa52ce.webp',
       hasPage: true
     },
     {
@@ -175,21 +175,21 @@ export default function AllTerritories() {
       name: 'Martinique',
       flag: '🇲🇶',
       route: null,
-      image: '/lovable-uploads/537ebe02-9e44-4b64-8e00-1257a50464d1.png',
+      image: '/lovable-uploads/537ebe02-9e44-4b64-8e00-1257a50464d1.webp',
       hasPage: false
     },
     {
       name: 'Mexiko',
       flag: '🇲🇽',
       route: '/reviere/amerika-bahamas/mexiko',
-      image: '/lovable-uploads/2e57e252-c2db-41f7-956a-4e0a8859e082.png',
+      image: '/lovable-uploads/2e57e252-c2db-41f7-956a-4e0a8859e082.webp',
       hasPage: true
     },
     {
       name: 'Montenegro',
       flag: '🇲🇪',
       route: '/reviere/mittelmeer/montenegro',
-      image: '/lovable-uploads/7dab9754-bebc-42ce-afbe-80cb31345f52.png',
+      image: '/lovable-uploads/7dab9754-bebc-42ce-afbe-80cb31345f52.webp',
       hasPage: true
     },
     {
@@ -231,35 +231,35 @@ export default function AllTerritories() {
       name: 'Schweden',
       flag: '🇸🇪',
       route: '/reviere/nord-europa/skandinavien/schweden',
-      image: '/lovable-uploads/4674fa49-d34c-453e-96ca-5ebac378ce34.png',
+      image: '/lovable-uploads/4674fa49-d34c-453e-96ca-5ebac378ce34.webp',
       hasPage: true
     },
     {
       name: 'Seychellen',
       flag: '🇸🇨',
       route: '/reviere/indischer-ozean/seychellen',
-      image: '/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.png',
+      image: '/lovable-uploads/753887c4-55b0-40ea-890c-1a64defa8c5f.webp',
       hasPage: true
     },
     {
       name: 'Spanien',
       flag: '🇪🇸',
       route: '/reviere/mittelmeer/spanien',
-      image: '/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.png',
+      image: '/lovable-uploads/51017cc9-4751-4d75-a64a-388f2babb4dc.webp',
       hasPage: true
     },
     {
       name: 'Thailand',
       flag: '🇹🇭',
       route: '/reviere/indischer-ozean/asien/thailand',
-      image: '/lovable-uploads/b8d7c49e-e173-4854-b08c-755db093505f.png',
+      image: '/lovable-uploads/b8d7c49e-e173-4854-b08c-755db093505f.webp',
       hasPage: true
     },
     {
       name: 'Türkei',
       flag: '🇹🇷',
       route: '/reviere/mittelmeer/tuerkei',
-      image: '/lovable-uploads/b0c596f4-551d-4816-958d-570974af6c8d.png',
+      image: '/lovable-uploads/b0c596f4-551d-4816-958d-570974af6c8d.webp',
       hasPage: true
     }
   ];

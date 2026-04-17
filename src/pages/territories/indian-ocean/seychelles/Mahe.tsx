@@ -71,7 +71,7 @@ const Mahe = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/ea72cf43-32c6-428b-aada-6f6b326b8052.png" alt="Mahé Seychellen" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/ea72cf43-32c6-428b-aada-6f6b326b8052.webp" alt="Mahé Seychellen" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
@@ -212,7 +212,7 @@ const Mahe = () => {
         {/* Anse Source d'Argent Image with Caption */}
         <div className="max-w-4xl mx-auto mb-12">
           <img 
-            src="/lovable-uploads/90692d00-febc-4526-bda2-5bd3e808161c.png" 
+            src="/lovable-uploads/90692d00-febc-4526-bda2-5bd3e808161c.webp" 
             alt="Anse Source d'Argent auf La Digue mit charakteristischen Granitfelsen"
             className="w-full h-auto object-cover rounded-lg shadow-lg mb-4"
           />

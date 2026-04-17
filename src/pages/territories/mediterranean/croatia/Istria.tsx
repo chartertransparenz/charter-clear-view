@@ -87,7 +87,7 @@ export default function Istria() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.png)' }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/7c05b27a-9c71-42e6-a256-4389bb513bcd.webp)' }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
@@ -249,7 +249,7 @@ export default function Istria() {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/7b74e2cd-6b59-409b-956f-21a342c849ee.png" 
+                src="/lovable-uploads/7b74e2cd-6b59-409b-956f-21a342c849ee.webp" 
                 alt="Luftaufnahme von Pula mit dem römischen Amphitheater und Marina" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -271,7 +271,7 @@ export default function Istria() {
             
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/54f48215-4790-47b9-a175-73813b6f57c1.png" 
+                src="/lovable-uploads/54f48215-4790-47b9-a175-73813b6f57c1.webp" 
                 alt="Luftaufnahme von Rovinj mit dem charakteristischen Kirchturm und der Altstadt auf der Halbinsel" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />

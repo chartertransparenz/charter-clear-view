@@ -1,25 +1,29 @@
 // Hero component with image carousel
 import { Award, ChevronLeft, ChevronRight } from "lucide-react";
 import NausysWidget from "./NausysWidget";
-const mediterraneanImage = "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.png";
+const mediterraneanImage = "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992.webp";
 
 import { useState, useEffect, useCallback } from "react";
 
 const Hero = () => {
   const slides = [{
-    image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.png",
+    image: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c.webp",
+    mobile: "/lovable-uploads/5ed77d3d-0796-4844-abb5-9507d269869c-mobile.webp",
     title: "Luxuriöse Yachten",
     alt: "Luxuriöse Segelyacht auf dem Mittelmeer – Yachtcharter CharterTransparenz"
   }, {
-    image: "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.png",
+    image: "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14.webp",
+    mobile: "/lovable-uploads/256fb72b-90de-437f-9045-9f5b1b170b14-mobile.webp",
     title: "Kristallklares Wasser",
     alt: "Katamaran in kristallklarem Wasser – Segelyacht mieten"
   }, {
     image: mediterraneanImage,
+    mobile: "/lovable-uploads/4150206c-dd18-4f04-84cf-eb44e39fe992-mobile.webp",
     title: "Mittelmeer Abenteuer",
     alt: "Segelyacht in kroatischer Bucht – Yachtcharter Mittelmeer"
   }, {
-    image: "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.png",
+    image: "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300.webp",
+    mobile: "/lovable-uploads/c766448f-b061-494f-aecd-f58670d94300-mobile.webp",
     title: "Karibische Träume",
     alt: "Katamaran in der Karibik – Segelurlaub weltweit buchen"
   }];
@@ -59,6 +63,8 @@ const Hero = () => {
         >
           <img
             src={slide.image}
+            srcSet={`${slide.mobile} 800w, ${slide.image} 1920w`}
+            sizes="100vw"
             alt={slide.alt}
             fetchPriority={index === 0 ? "high" : "low"}
             loading={index === 0 ? "eager" : "lazy"}

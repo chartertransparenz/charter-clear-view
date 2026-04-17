@@ -67,7 +67,7 @@ const Greece = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png"
+          src="/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.webp"
           alt="Griechenland Segelrevier"
           className="w-full h-full object-cover"
         />

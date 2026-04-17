@@ -51,7 +51,7 @@ const AthenSaronischerGolf = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/de517069-a66e-40d2-b848-d55b392f41eb.png" alt="Athen Saronischer Golf - Akropolis von Athen mit Parthenon" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/de517069-a66e-40d2-b848-d55b392f41eb.webp" alt="Athen Saronischer Golf - Akropolis von Athen mit Parthenon" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -210,7 +210,7 @@ const AthenSaronischerGolf = () => {
             <div className="my-12">
               <div className="relative h-64 md:h-96 overflow-hidden rounded-lg shadow-lg mb-4">
                 <img 
-                  src="/lovable-uploads/5c4d5c49-2d62-4b5b-8c3a-e39beb428dfc.png" 
+                  src="/lovable-uploads/5c4d5c49-2d62-4b5b-8c3a-e39beb428dfc.webp" 
                   alt="Traumhafte Ankerbucht im Saronischen Golf mit türkisfarbenem Wasser und Yachten" 
                   className="w-full h-full object-cover"
                 />

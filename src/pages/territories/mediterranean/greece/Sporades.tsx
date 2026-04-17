@@ -39,7 +39,7 @@ const Sporades = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/2fa92b23-1064-4b8e-b8aa-53f7c85fdfdf.png" alt="Sporaden Griechenland - Kristallklares Wasser und Segelyacht" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/2fa92b23-1064-4b8e-b8aa-53f7c85fdfdf.webp" alt="Sporaden Griechenland - Kristallklares Wasser und Segelyacht" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -187,7 +187,7 @@ const Sporades = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/cf2311b1-fbc6-4174-910a-a5d89e0d8191.png" 
+                src="/lovable-uploads/cf2311b1-fbc6-4174-910a-a5d89e0d8191.webp" 
                 alt="Blick auf Skiathos mit dem Hafen im Hintergrund" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg mb-4"
               />
@@ -280,7 +280,7 @@ const Sporades = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/5d3cff17-20d4-4be9-a618-be5438ccdb0e.png" 
+                src="/lovable-uploads/5d3cff17-20d4-4be9-a618-be5438ccdb0e.webp" 
                 alt="Kristallklares Wasser in den Sporaden mit Yachten vor anker in einer türkisblauen Bucht" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg mb-4"
               />

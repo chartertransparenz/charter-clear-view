@@ -72,7 +72,7 @@ const Biskaya = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.png"
+          src="/lovable-uploads/c8bfaa4b-ebd4-41ee-93ed-386172a93bf4.webp"
           alt="Biskaya Frankreich"
           className="w-full h-full object-cover"
         />

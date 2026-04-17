@@ -22,7 +22,7 @@ const IonicIslands = () => {
     canonical: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln",
     ogTitle: "Yachtcharter Ionische Inseln – Korfu & Lefkada",
     ogDescription: "Segeln Ionische Inseln: Sanfte Winde, grüne Landschaften, Korfu & Lefkada. Ideal für Familien. Segelyacht oder Katamaran mieten.",
-    ogImage: "https://premium-yachtcharter.com/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png",
+    ogImage: "https://premium-yachtcharter.com/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.webp",
     ogUrl: "https://premium-yachtcharter.com/reviere/mittelmeer/griechenland/ionische-inseln",
     structuredData: {
       ...generateStructuredData.service("Ionische Inseln", "Yachtcharter auf den Ionischen Inseln - Segeln vor Korfu, Lefkada und Kefalonia mit sanften Winden"),
@@ -59,7 +59,7 @@ const IonicIslands = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.png" alt="Yachtcharter Ionische Inseln - Segelboot vor grünen Küsten von Korfu und Lefkada bei ruhiger See" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/ac12d7be-4a6e-4ac7-90b1-6d045810cae8.webp" alt="Yachtcharter Ionische Inseln - Segelboot vor grünen Küsten von Korfu und Lefkada bei ruhiger See" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -182,7 +182,7 @@ const IonicIslands = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/d746b3cd-24fc-4942-9308-28b2f14b45c6.png" 
+                src="/lovable-uploads/d746b3cd-24fc-4942-9308-28b2f14b45c6.webp" 
                 alt="Blick auf den Strand von Voutoumi auf der schönen Insel Antipaxos" 
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -242,7 +242,7 @@ const IonicIslands = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/31f5fef2-6b0a-471a-9822-2e65dbf4639d.png" 
+                src="/lovable-uploads/31f5fef2-6b0a-471a-9822-2e65dbf4639d.webp" 
                 alt="Lust zu schnorcheln?" 
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -337,7 +337,7 @@ const IonicIslands = () => {
 
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/c8c65ed0-67d5-4426-956e-aa67126c946f.png" 
+                src="/lovable-uploads/c8c65ed0-67d5-4426-956e-aa67126c946f.webp" 
                 alt="Der Navagio-Strand (Schiffbruchbucht) auf Zakynthos ist seit 2023 wegen bestätigter Erdrutschgefahr durch die umliegenden Klippen bis auf Weiteres gesperrt" 
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />

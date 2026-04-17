@@ -54,7 +54,7 @@ const Azores = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/9df57668-65a5-425f-b2f3-070373f8aee2.png" alt="Azoren" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/9df57668-65a5-425f-b2f3-070373f8aee2.webp" alt="Azoren" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -138,7 +138,7 @@ const Azores = () => {
               {/* Image section */}
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/11a43c77-849d-4dcf-aaff-a185437a6f1d.png" 
+                  src="/lovable-uploads/11a43c77-849d-4dcf-aaff-a185437a6f1d.webp" 
                   alt="Die Horta Marina auf den Azoren – ein traditionsreicher Treffpunkt für Segler aus aller Welt." 
                   className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
                 />
@@ -204,7 +204,7 @@ const Azores = () => {
               {/* Image section */}
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/f6db2f01-8362-483d-93e5-1bc434e8bbe0.png" 
+                  src="/lovable-uploads/f6db2f01-8362-483d-93e5-1bc434e8bbe0.webp" 
                   alt="Saftig grüne Steilküsten und tiefblaues Meer – die unberührte Natur der Azoren zeigt sich hier von ihrer eindrucksvollsten Seite." 
                   className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
                 />

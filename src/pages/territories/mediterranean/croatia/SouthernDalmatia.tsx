@@ -78,7 +78,7 @@ export default function SouthernDalmatia() {
       <Navigation />
       
       <div className="relative h-[60vh] bg-cover bg-center" style={{
-      backgroundImage: `url('/lovable-uploads/95bb22bb-b794-47ba-b336-f3c02e41bfdb.png')`
+      backgroundImage: `url('/lovable-uploads/95bb22bb-b794-47ba-b336-f3c02e41bfdb.webp')`
     }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
@@ -174,7 +174,7 @@ export default function SouthernDalmatia() {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/b4cd3f2d-847c-48ad-8345-04bb08f3e7dd.png" 
+                src="/lovable-uploads/b4cd3f2d-847c-48ad-8345-04bb08f3e7dd.webp" 
                 alt="Traumhafte Bucht in Süddalmatien mit Segelyachten vor malerischen Inseln"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -206,7 +206,7 @@ export default function SouthernDalmatia() {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/ac6086b1-9d18-42fd-ae7d-2b4879b3bfe2.png" 
+                src="/lovable-uploads/ac6086b1-9d18-42fd-ae7d-2b4879b3bfe2.webp" 
                 alt="Spektakulärer Blick über die grünen Hügel und türkisblauen Buchten Süddalmatiens"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -252,7 +252,7 @@ export default function SouthernDalmatia() {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/55105c0d-79f3-4a8c-be4f-6635eddae340.png" 
+                src="/lovable-uploads/55105c0d-79f3-4a8c-be4f-6635eddae340.webp" 
                 alt="Luftaufnahme der malerischen Inselwelt Süddalmatiens mit kristallklaren Gewässern"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -365,7 +365,7 @@ export default function SouthernDalmatia() {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/a2fa853d-8a65-48d9-b50e-201e57486739.png" 
+                src="/lovable-uploads/a2fa853d-8a65-48d9-b50e-201e57486739.webp" 
                 alt="Dubrovnik - Die Perle der Adria mit ihrer beeindruckenden Altstadt und den historischen Stadtmauern"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

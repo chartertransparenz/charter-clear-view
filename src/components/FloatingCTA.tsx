@@ -29,7 +29,7 @@ const FloatingCTA = () => {
           
           {/* Logo */}
           <img 
-            src="/lovable-uploads/7800ce91-211c-4ccb-b034-a6ce0187f339.png" 
+            src="/lovable-uploads/7800ce91-211c-4ccb-b034-a6ce0187f339.webp" 
             alt="Charter Anfrage stellen" 
             className="w-8 h-8 relative z-10 filter brightness-0 invert"
           />

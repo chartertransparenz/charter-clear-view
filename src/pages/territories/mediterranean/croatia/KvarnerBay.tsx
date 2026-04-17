@@ -91,7 +91,7 @@ export default function KvarnerBay() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(/lovable-uploads/e84a0e28-efd8-48a7-a441-191cf3510c86.png)` }}>
+      <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: `url(/lovable-uploads/e84a0e28-efd8-48a7-a441-191cf3510c86.webp)` }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
@@ -267,7 +267,7 @@ export default function KvarnerBay() {
             <div className="mb-8">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/ad8e5768-a953-492f-9be5-ecbb1ad9e047.png" 
+                  src="/lovable-uploads/ad8e5768-a953-492f-9be5-ecbb1ad9e047.webp" 
                   alt="Kristallklares blaues Wasser und grüne Inseln der Kvarner Bucht unter blauem Himmel"
                   className="w-full h-80 object-cover"
                 />
@@ -322,7 +322,7 @@ export default function KvarnerBay() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/06f3d73a-3877-4382-8762-04ba81bb5bf7.png" 
+                  src="/lovable-uploads/06f3d73a-3877-4382-8762-04ba81bb5bf7.webp" 
                   alt="Panoramablick auf die Kvarner Bucht mit goldener Abendsonne über den Inseln und der Küstenlandschaft"
                   className="w-full h-64 object-cover"
                 />
@@ -332,7 +332,7 @@ export default function KvarnerBay() {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/a6bdb74b-7918-4d3e-928d-d16a1cc0a2e7.png" 
+                  src="/lovable-uploads/a6bdb74b-7918-4d3e-928d-d16a1cc0a2e7.webp" 
                   alt="Malerischer Hafen in der Kvarner Bucht mit Segelyachten und bunten kroatischen Häusern am Wasser"
                   className="w-full h-64 object-cover"
                 />

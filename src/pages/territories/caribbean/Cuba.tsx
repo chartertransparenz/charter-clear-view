@@ -42,7 +42,7 @@ const Cuba = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.png" alt="Kubanische Architektur mit Blick aufs Meer - Cienfuegos" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/f8c4f172-fe99-4b84-a4e0-028fe453b795.webp" alt="Kubanische Architektur mit Blick aufs Meer - Cienfuegos" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -136,7 +136,7 @@ const Cuba = () => {
 
               {/* Strand-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/697bcf13-dfd0-497a-a399-232cf2a1c1ed.png" alt="Traumhafter kubanischer Strand mit türkisfarbenem Wasser" className="w-full h-64 md:h-80 object-cover" />
+                <img src="/lovable-uploads/697bcf13-dfd0-497a-a399-232cf2a1c1ed.webp" alt="Traumhafter kubanischer Strand mit türkisfarbenem Wasser" className="w-full h-64 md:h-80 object-cover" />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
                     Verlieben Sie sich in kubanische Traumstrände – pudriger, weißer Sand unter den Füßen, Palmen im warmen Passatwind und ein endloses Türkis, das nach einem Sprung ins Wasser ruft.
@@ -199,7 +199,7 @@ const Cuba = () => {
 
               {/* Havanna-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/2639d9ae-a075-4f39-8075-52faa39f863a.png" alt="Havanna mit bunten Oldtimern und pastellfarbenen Fassaden" className="w-full h-64 md:h-80 object-cover" />
+                <img src="/lovable-uploads/2639d9ae-a075-4f39-8075-52faa39f863a.webp" alt="Havanna mit bunten Oldtimern und pastellfarbenen Fassaden" className="w-full h-64 md:h-80 object-cover" />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
                     Erleben Sie Havanna, wo bunte Oldtimer wie rollende Zeitkapseln an pastellfarbenen Fassaden vorbeigleiten und jede Fahrt sich anfühlt wie eine Filmszene.
@@ -252,7 +252,7 @@ const Cuba = () => {
 
               {/* Cayo Largo-Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/065ef7b6-04d2-42cd-9d89-8af299c29ed5.png" alt="Paradiesischer Strand auf Cayo Largo mit türkisfarbenem Wasser und Palmen" className="w-full h-64 md:h-80 object-cover" />
+                <img src="/lovable-uploads/065ef7b6-04d2-42cd-9d89-8af299c29ed5.webp" alt="Paradiesischer Strand auf Cayo Largo mit türkisfarbenem Wasser und Palmen" className="w-full h-64 md:h-80 object-cover" />
                 <div className="bg-gray-50 p-4">
                   <p className="text-gray-700 italic text-center">
                     Auf Cayo Largo stehen Sie auf feinem, weißem Sand, blicken auf klares Türkis und genießen einfach Ruhe, Platz und entspanntes Abschalten.

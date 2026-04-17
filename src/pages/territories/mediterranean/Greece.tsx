@@ -89,7 +89,7 @@ export default function Greece() {
       
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-cover bg-top" style={{
-      backgroundImage: 'url(/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.png)'
+      backgroundImage: 'url(/lovable-uploads/f5227d64-8443-47fd-be3d-af465828b4a5.webp)'
     }}>
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative container mx-auto px-4 h-full flex items-center">

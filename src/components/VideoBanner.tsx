@@ -23,7 +23,7 @@ const VideoBanner = () => {
       {/* Background Video/Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.png')` }}
+        style={{ backgroundImage: `url('/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp')` }}
       >
         <div className="absolute inset-0 bg-ocean-dark/60"></div>
       </div>

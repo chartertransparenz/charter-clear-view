@@ -52,7 +52,7 @@ const Korsika = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img 
-          src="/lovable-uploads/b54e3a6d-8df0-42dd-a8c2-3d59a4618322.png" 
+          src="/lovable-uploads/b54e3a6d-8df0-42dd-a8c2-3d59a4618322.webp" 
           alt="Korsika sailing paradise with turquoise waters"
           className="absolute inset-0 w-full h-full object-cover"
         />

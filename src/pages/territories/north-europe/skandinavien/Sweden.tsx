@@ -50,7 +50,7 @@ const Sweden = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/18e608ca-d322-4886-8b66-9c905012bf1b.png"
+          src="/lovable-uploads/18e608ca-d322-4886-8b66-9c905012bf1b.webp"
           alt="Schweden"
           className="w-full h-full object-cover"
         />

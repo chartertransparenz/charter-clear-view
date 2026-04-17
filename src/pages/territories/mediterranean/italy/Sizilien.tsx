@@ -69,7 +69,7 @@ const Sizilien = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/b7d7c0a7-0a06-469c-b6e5-08e0ff93bd91.png" alt="Sizilien Küste mit historischen Mauern und türkisfarbenem Meer" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/lovable-uploads/b7d7c0a7-0a06-469c-b6e5-08e0ff93bd91.webp" alt="Sizilien Küste mit historischen Mauern und türkisfarbenem Meer" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -186,7 +186,7 @@ const Sizilien = () => {
             <div className="mb-6">
               <Card className="shadow-lg">
                 <div className="relative h-64 md:h-80 overflow-hidden rounded-t-lg">
-                  <img src="/lovable-uploads/e70d653b-4615-446e-8129-7c44ff90b33c.png" alt="Stromboli vom Meer aus gesehen mit tiefblauem Wasser" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/e70d653b-4615-446e-8129-7c44ff90b33c.webp" alt="Stromboli vom Meer aus gesehen mit tiefblauem Wasser" className="w-full h-full object-cover" />
                 </div>
                 <CardContent className="p-6">
                   <p className="text-gray-600 text-center">
@@ -307,7 +307,7 @@ const Sizilien = () => {
           <div className="mb-8">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="/lovable-uploads/90f07d4f-a3e9-4ce7-8590-1f6e7b2f6cdb.png"
+                src="/lovable-uploads/90f07d4f-a3e9-4ce7-8590-1f6e7b2f6cdb.webp"
                 alt="Scilla mit dem Castello Ruffo an der kalabrischen Küste - kristallklares Wasser und idealer Ankerplatz"
                 className="w-full h-64 md:h-80 object-cover"
               />

@@ -37,7 +37,7 @@ const Italy = () => {
       
       {/* Header */}
       <div className="relative h-[50vh] overflow-hidden">
-        <img src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.png" alt="Italien Mittelmeer" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/79fac9fd-550d-4a4f-b314-fffdb854e49d.webp" alt="Italien Mittelmeer" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

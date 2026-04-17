@@ -100,7 +100,7 @@ const Amalfikuste = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/lovable-uploads/77329fbc-9553-49e6-9548-5fdd997d4376.png')`
+            backgroundImage: `url('/lovable-uploads/77329fbc-9553-49e6-9548-5fdd997d4376.webp')`
           }}
         />
         <div className="absolute inset-0 bg-black/40" />

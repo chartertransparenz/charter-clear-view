@@ -37,7 +37,7 @@ const Sardinien = () => {
       
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
-        <img src="/lovable-uploads/9ed7e340-fa6c-4e80-a817-0f19eda7e395.png" alt="Sardinien - Türkisfarbenes Wasser und grüne Küstenlandschaft" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/lovable-uploads/9ed7e340-fa6c-4e80-a817-0f19eda7e395.webp" alt="Sardinien - Türkisfarbenes Wasser und grüne Küstenlandschaft" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -167,7 +167,7 @@ const Sardinien = () => {
               
               {/* Stranderlebnis Bild */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/57b6c045-a49a-4111-9dbe-7cab4456fec9.png" alt="Paar entspannt am türkisfarbenen Strand von Sardinien mit kristallklarem Wasser und Segelbooten im Hintergrund" className="w-full h-auto object-cover max-h-96 md:max-h-[500px]" />
+                <img src="/lovable-uploads/57b6c045-a49a-4111-9dbe-7cab4456fec9.webp" alt="Paar entspannt am türkisfarbenen Strand von Sardinien mit kristallklarem Wasser und Segelbooten im Hintergrund" className="w-full h-auto object-cover max-h-96 md:max-h-[500px]" />
               </div>
               
               <p className="text-lg text-gray-600 mb-8">
@@ -198,7 +198,7 @@ const Sardinien = () => {
               
               {/* Küstenlandschaft mit Turm */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/dec3e030-3572-47d6-8aec-cb5e616c181e.png" alt="Luftaufnahme der sardischen Küste mit historischem Wachturm auf Klippe und türkisfarbenem Meer, typisch für das La Maddalena Archipel" className="w-full h-auto object-cover" />
+                <img src="/lovable-uploads/dec3e030-3572-47d6-8aec-cb5e616c181e.webp" alt="Luftaufnahme der sardischen Küste mit historischem Wachturm auf Klippe und türkisfarbenem Meer, typisch für das La Maddalena Archipel" className="w-full h-auto object-cover" />
               </div>
               
               <ul className="list-disc list-inside text-base text-gray-600 mb-6 space-y-2">
@@ -215,7 +215,7 @@ const Sardinien = () => {
               
               {/* Granitfelsen bei Sonnenuntergang */}
               <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/f90003bc-6e22-4a6e-a0d9-02d53b9b730c.png" alt="Blick durch beeindruckende Granitfelsen auf die sardische Küstenlandschaft bei goldenem Sonnenlicht, charakteristisch für die Region" className="w-full h-auto object-cover" />
+                <img src="/lovable-uploads/f90003bc-6e22-4a6e-a0d9-02d53b9b730c.webp" alt="Blick durch beeindruckende Granitfelsen auf die sardische Küstenlandschaft bei goldenem Sonnenlicht, charakteristisch für die Region" className="w-full h-auto object-cover" />
               </div>
 
               <h3 className="text-xl font-bold text-gray-800 mb-4">Der ursprüngliche Süden: Von Cagliari nach Carloforte</h3>

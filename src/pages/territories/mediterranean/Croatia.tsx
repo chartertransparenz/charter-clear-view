@@ -12,7 +12,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 // Meta component removed - SEO tags managed by prerender script
 import { META } from "@/seo/meta.config";
 
-const destinationCroatia = "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.png";
+const destinationCroatia = "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.webp";
 
 const Croatia = () => {
   const m = META.kroatien;
@@ -178,7 +178,7 @@ const Croatia = () => {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/a4bf08e3-d913-4d08-8011-51e59286bd87.png" 
+                src="/lovable-uploads/a4bf08e3-d913-4d08-8011-51e59286bd87.webp" 
                 alt="Traumhafter kroatischer Strand mit türkisblauem Wasser und weißem Sand" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
               />
@@ -262,7 +262,7 @@ const Croatia = () => {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/67300c66-3444-42ca-8bfd-f30e4922efc7.png" 
+                src="/lovable-uploads/67300c66-3444-42ca-8bfd-f30e4922efc7.webp" 
                 alt="Segeltörn in Kroatien - Segelboote in einer malerischen kroatischen Bucht" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
               />
@@ -334,7 +334,7 @@ const Croatia = () => {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/f4a11792-1e6d-41dd-b71b-c006fc8b4457.png" 
+                src="/lovable-uploads/f4a11792-1e6d-41dd-b71b-c006fc8b4457.webp" 
                 alt="Spektakuläre kroatische Bucht mit kleinen Inseln und Ankerbuchten" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
               />
@@ -381,7 +381,7 @@ const Croatia = () => {
 
             <div className="my-8">
               <img 
-                src="/lovable-uploads/ff80d3b1-62a9-4ae4-b318-65ad5c345279.png" 
+                src="/lovable-uploads/ff80d3b1-62a9-4ae4-b318-65ad5c345279.webp" 
                 alt="Luftaufnahme einer grünen kroatischen Insel umgeben von tiefblauem Wasser" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
               />

@@ -102,7 +102,7 @@ const About = () => {
             <div className="mb-16 flex justify-center">
               <div className="w-full max-w-4xl">
                 <img 
-                  src="/lovable-uploads/48ae290b-f7f7-4f0a-82a5-2771aa15fb3a.png" 
+                  src="/lovable-uploads/48ae290b-f7f7-4f0a-82a5-2771aa15fb3a.webp" 
                   alt="Wir über uns - Seite im Aufbau" 
                   className="w-full h-auto rounded-xl shadow-ocean hover:shadow-elegant transition-all duration-300"
                 />

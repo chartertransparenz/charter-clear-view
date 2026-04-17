@@ -46,25 +46,25 @@ const Partners = () => {
     suffix: "+",
     label: "Yachtcharter Partner",
     icon: Users,
-    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png"
+    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.webp"
   }, {
     number: count2,
     suffix: "+",
     label: "Länder weltweit",
     icon: MapPin,
-    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png"
+    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.webp"
   }, {
     number: count3,
     suffix: "+",
     label: "Jahre Partnerschaft",
     icon: Award,
-    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png"
+    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.webp"
   }, {
     number: count4,
     suffix: "%",
     label: "Qualitätsgarantie",
     icon: Shield,
-    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.png"
+    image: "/lovable-uploads/fdbb6cb0-9d73-40b9-9c33-dc86861446c0.webp"
   }];
   return <section id="partner" className="py-20 bg-white">
       <div className="container mx-auto px-4">

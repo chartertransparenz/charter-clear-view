@@ -99,7 +99,7 @@ const FormContent = memo(function FormContent({
       {/* Hero Section */}
       <div className="relative h-32 md:h-40 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
         <img
-          src="/lovable-uploads/cf269f7b-ff3e-46a1-8751-c1cf37175336.png"
+          src="/lovable-uploads/cf269f7b-ff3e-46a1-8751-c1cf37175336.webp"
           alt="Segelboot Charter Anfrage"
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />

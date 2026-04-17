@@ -90,7 +90,7 @@ const Tenerife = () => {
       {/* Header */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-20">
         <img
-          src="/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.png"
+          src="/lovable-uploads/1e3e1bfd-15d0-42ac-8a23-f371077a44ec.webp"
           alt="Teneriffa"
           className="w-full h-full object-cover"
         />
