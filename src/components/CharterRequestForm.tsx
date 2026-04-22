@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Send, Anchor, CheckCircle, CalendarIcon, Loader2 } from "lucide-react";
 import React, { useState, useEffect, useRef, useCallback, useLayoutEffect, memo } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useNavigate } from "react-router-dom";
@@ -385,9 +385,6 @@ const CharterRequestForm = ({
   onOpenChange,
   children
 }: CharterRequestFormProps) => {
-  const {
-    toast
-  } = useToast();
   const navigate = useNavigate();
   const [dialogOpen, setDialogOpen] = useState(isOpen || false);
   const historyPushedRef = useRef(false);
@@ -528,11 +525,7 @@ const CharterRequestForm = ({
       const issue = parsed.error.issues[0];
       const message = issue?.message || "Bitte Eingaben prüfen";
       console.log("Validation failed:", message, issue);
-      toast({
-        title: "Eingabe prüfen",
-        description: message,
-        variant: "destructive",
-      });
+      toast.error("Eingabe prüfen: " + message);
       const field = issue?.path?.[0];
       if (typeof field === "string") {
         // Special handling for privacy checkbox
@@ -598,16 +591,12 @@ const CharterRequestForm = ({
         errorDescription = "Die Anfrage hat zu lange gedauert. Bitte versuchen Sie es erneut.";
       }
       
-      toast({
-        title: "Fehler beim Senden",
-        description: errorDescription,
-        variant: "destructive"
-      });
+      toast.error("Fehler beim Senden: " + errorDescription);
     } finally {
       setIsSubmitting(false);
       console.log('=== Charter Request Form Submit Finished ===');
     }
-  }, [formData, handleClose, toast]);
+  }, [formData, handleClose]);
 
   // ---------------------------------
   // PASSIVES Scroll-Tracking
