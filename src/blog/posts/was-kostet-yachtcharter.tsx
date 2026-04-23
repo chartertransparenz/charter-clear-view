@@ -3,107 +3,108 @@ import type { BlogPost } from "../types";
 const content = (
   <div>
     <p>
-      Wer sich zum ersten Mal mit einem Yachtcharter beschäftigt, stößt schnell auf eine Frage, die viele unterschätzen:
-      Was kostet ein Charter wirklich? Die Antwort ist komplexer als ein einzelner Preis — und wer nur auf den Basispreis
-      schaut, erlebt am Ende oft eine unangenehme Überraschung. Dieser Artikel erklärt, woraus sich die
-      tatsächlichen Gesamtkosten zusammensetzen, was Sie einplanen sollten und wo sich echte Einsparmöglichkeiten
-      ergeben.
+      Ein Törn auf dem Mittelmeer, frischer Wind, abends in einer ruhigen Bucht ankern – wer einen
+      Yachtcharter plant, denkt zunächst ans Erlebnis. Das ist auch gut so. Damit die Planung
+      genauso entspannt verläuft wie der Törn selbst, lohnt ein klarer Blick auf die Kostenstruktur:
+      Was ist im Charterpreis enthalten, was kommt hinzu und wie sieht ein übersichtliches
+      Gesamtbudget aus? Dieser Artikel gibt Ihnen eine transparente Grundlage für Ihre Planung.
     </p>
 
-    <h2 id="basispreis">Der Basispreis: Was er enthält — und was nicht</h2>
+    <h2 id="basispreis">Der Charterpreis: Ihre Basis für die Kalkulation</h2>
     <p>
-      Der Basispreis (auch Charterrate genannt) ist der Preis für die Yacht selbst, ohne jegliche Extras.
-      Er variiert stark je nach Saison, Region, Yachtgröße und Ausstattung. Für eine solide Segelyacht
-      mit 38–42 Fuß in Kroatien in der Hauptsaison (Juli/August) rechnen Sie grob mit
+      Der Charterpreis (auch Charterrate) ist der Preis für die Nutzung der Yacht im gebuchten
+      Zeitraum. Er variiert je nach Saison, Region, Yachtgröße und Ausstattung. Für eine solide
+      Segelyacht mit 38–42 Fuß in Kroatien in der Hauptsaison (Juli/August) rechnen Sie grob mit
       <strong> 1.500 bis 3.500 € pro Woche</strong>.
     </p>
     <p>
-      In der Vor- und Nachsaison (Mai, Juni, September) können dieselben Yachten
-      <strong> 30 bis 50 % günstiger</strong> sein — bei oft besseren Segelbedingungen und ruhigeren Häfen.
-      Das ist für viele Skipper die attraktivste Zeit.
+      In der Vor- und Nachsaison (Mai, Juni, September) sind dieselben Yachten
+      <strong> 30 bis 50 % günstiger</strong> – bei oft angenehmeren Segelbedingungen und
+      entspannteren Häfen. Für viele Crews ist das die attraktivste Reisezeit.
     </p>
     <p>
-      Wichtig zu verstehen: Der Basispreis enthält in der Regel lediglich die Nutzung des Bootes.
-      Alles andere wird separat berechnet.
+      Auf Basis des Charterpreises lässt sich Ihr Törn individuell gestalten – je nach Revierauswahl,
+      Yachttyp und persönlichen Wünschen.
     </p>
 
-    <h2 id="pflichtextras">obligatorische Nebenkosten: Diese Kosten kommen immer dazu</h2>
+    <h2 id="nebenkosten">Obligatorische Nebenkosten: Was transparent zum Gesamtpreis gehört</h2>
     <p>
-      Nahezu jeder Chartervertrag enthält sogenannte obligatorische Nebenkosten — Positionen, die nicht optional sind
-      und die man beim Angebotsvergleich immer einkalkulieren muss:
+      Nahezu jeder Chartervertrag enthält obligatorische Nebenkosten – Positionen, die im Angebot
+      ausgewiesen sind und sich gut in die Gesamtkalkulation einplanen lassen:
     </p>
     <ul>
       <li>
-        <strong>Endreinigung:</strong> Üblicherweise 150 bis 350 €, abhängig von Yachtgröße und Charterbasis.
-        Einige Anbieter erlauben es, gegen Aufpreis auf die eigene Reinigung zu verzichten — sinnvoll
-        bei langen Törns.
+        <strong>Endreinigung:</strong> Üblicherweise 150 bis 350 €, abhängig von Yachtgröße und
+        Charterbasis. Viele Anbieter ermöglichen es, gegen Aufpreis auf die eigene Reinigung zu
+        verzichten – praktisch bei längeren Törns.
       </li>
       <li>
         <strong>Bettwäsche und Handtücher:</strong> Oft 20–40 € pro Person, sofern nicht inklusive.
-        Wer eigene mitbringt, kann hier sparen.
+        Wer eigene mitbringt, spart an dieser Stelle.
       </li>
       <li>
         <strong>Touristensteuer / Kurtaxe:</strong> In Kroatien, Griechenland und anderen beliebten
-        Regionen wird pro Person und Nacht eine Abgabe erhoben — kalkulieren Sie 2–8 € pro Person/Nacht ein.
+        Revieren fällt eine lokale Abgabe von 2–8 € pro Person und Nacht an.
       </li>
       <li>
-        <strong>Hafengebühren:</strong> Diese zahlen Sie direkt vor Ort. In Kroatien kostet eine
-        Marinanliegeplatz je nach Größe und Saison 50 bis über 200 € pro Nacht. Ankerplätze
-        sind meist kostenlos oder sehr günstig.
+        <strong>Hafengebühren:</strong> Direkt vor Ort zu bezahlen. In Kroatien liegt der
+        Marineliegeplatz je nach Yachtgröße und Saison zwischen 50 und über 200 € pro Nacht.
+        Ankern in Buchten ist in der Regel kostenlos oder sehr günstig.
       </li>
     </ul>
 
-    <h2 id="kaution">Die Kaution: Groß, aber nicht verloren</h2>
+    <h2 id="kaution">Die Kaution: Gegenseitige Absicherung, vollständig rückerstattet</h2>
     <p>
-      Die Kaution (Sicherheitsleistung) ist keine Kostenposition im eigentlichen Sinne — sie wird bei
-      Rückgabe der Yacht in einwandfreiem Zustand vollständig zurückgezahlt. Dennoch muss sie
-      vorfinanziert werden und ist daher ein wichtiger Faktor bei der Planung.
+      Die Kaution ist ein fester Bestandteil eines Bareboat-Charters. Sie dient als
+      Sicherheitsleistung und wird bei einwandfreier Rückgabe der Yacht vollständig erstattet –
+      sie ist keine Ausgabe, sondern eine temporäre Hinterlegung.
     </p>
     <p>
       Typische Kautionshöhen liegen zwischen <strong>1.500 und 5.000 €</strong>, je nach Yachtklasse.
-      Für Katamarane und größere Fahrtenyachten können es auch 8.000 € oder mehr sein.
+      Für Katamarane und größere Fahrtenyachten kann die Kaution auch höher ausfallen.
     </p>
     <p>
-      Eine sinnvolle Option ist die <strong>Kautionsversicherung</strong>: Für etwa 100–250 € pro Woche
-      übernimmt eine Versicherung im Schadensfall den Selbstbehalt. Ob das sinnvoll ist, hängt vom
-      eigenen Risikoempfinden und der Erfahrung der Crew ab.
+      Eine bewährte Option ist die <strong>Kautionsversicherung</strong>: Für rund 100–250 € pro Woche
+      übernimmt eine Versicherung den Selbstbehalt im Schadensfall. Ob das sinnvoll ist, hängt vom
+      eigenen Sicherheitsbedürfnis und der Erfahrung der Crew ab.
     </p>
 
-    <h2 id="kraftstoff">Kraftstoff: Der variable Kostenfaktor</h2>
+    <h2 id="kraftstoff">Kraftstoff: Gut planbar, individuell nutzbar</h2>
     <p>
-      Kraftstoffkosten sind schwer pauschal zu nennen — sie hängen von der Motorlaufzeit, der
-      Motorleistung und den lokalen Dieselpreisen ab. Als Orientierung für eine Woche in Kroatien:
+      Kraftstoffkosten lassen sich solide einschätzen – sie hängen von Ihrer Motorlaufzeit,
+      der Yachtgröße und den lokalen Dieselpreisen ab. Als Orientierung für eine Woche in Kroatien:
     </p>
     <ul>
-      <li>Sparsame Nutzung (viel segeln, wenig motoren): 100–200 €</li>
+      <li>Viel segeln, wenig motoren: 100–200 €</li>
       <li>Durchschnittliche Nutzung: 200–400 €</li>
-      <li>Viel Motorfahrt (z. B. Katamaran bei Flaute): 400–700 € und mehr</li>
+      <li>Häufige Motorfahrt (z. B. Katamaran bei Flaute): 400–700 € und mehr</li>
     </ul>
     <p>
-      Die meisten Yachten werden vollgetankt übergeben und müssen vollgetankt zurückgegeben werden.
-      Der Kraftstoff wird direkt an der Marina bezahlt.
+      Yachten werden vollgetankt übergeben und vollgetankt zurückgegeben. Der Kraftstoff wird
+      direkt an der Marina bezahlt.
     </p>
 
-    <h2 id="skipper">Skipper und Crew: Kosten, die sich lohnen können</h2>
+    <h2 id="skipper">Mit Skipper an Bord: Volle Unterstützung, mehr Entspannung</h2>
     <p>
-      Wer keinen gültigen Führerschein besitzt oder die Crew lieber entlastet, kann einen
-      Profi-Skipper buchen. Die Kosten liegen je nach Region und Erfahrung bei
-      <strong> 150 bis 350 € pro Tag</strong> — üblicherweise trägt die Crew zusätzlich Verpflegung
-      und eine angemessene Unterbringung an Bord.
+      Ein professioneller Skipper übernimmt die nautische Führung – ideal für Crews ohne eigenen
+      Führerschein, mit wenig Erfahrung oder wer den Urlaub einfach vollständig genießen möchte.
+      Die Kosten liegen je nach Region und Erfahrung bei
+      <strong> 150 bis 350 € pro Tag</strong>. Verpflegung und Unterkunft an Bord trägt
+      üblicherweise die Crew.
     </p>
     <p>
-      Ein erfahrener Skipper ist nicht nur aus rechtlichen Gründen wertvoll: Er kennt die
-      Revier spezifischen Besonderheiten, hilft beim Anlegen und ermöglicht es, auch bei
-      anspruchsvolleren Bedingungen entspannt zu segeln.
+      Ein erfahrener Skipper kennt die besten Ankerbuchten, navigiert souverän in unbekannte
+      Häfen und macht auch anspruchsvollere Bedingungen zu einem entspannten Erlebnis. Für
+      viele Crews ist das ein sehr lohnender Teil der Reise.
     </p>
 
-    <h2 id="gesamtbudget">Was Sie realistisch einplanen sollten</h2>
+    <h2 id="gesamtbudget">Ihr Gesamtbudget auf einen Blick</h2>
     <p>
-      Hier eine realistische Kalkulation für <strong>6 Personen, eine Woche Kroatien</strong> im Juni
-      auf einer 42-Fuß-Segelyacht:
+      Zur Orientierung: eine Beispielkalkulation für{" "}
+      <strong>6 Personen, eine Woche Kroatien</strong> im Juni auf einer 42-Fuß-Segelyacht:
     </p>
     <ul>
-      <li>Basispreis Yacht: ca. 2.200 €</li>
+      <li>Charterpreis Yacht: ca. 2.200 €</li>
       <li>Endreinigung: 220 €</li>
       <li>Bettwäsche (6 Pers.): 150 €</li>
       <li>Hafengebühren (ca. 4 Marina-Nächte): 500 €</li>
@@ -112,24 +113,24 @@ const content = (
       <li><strong>Gesamtkosten: ca. 3.450 € / rund 575 € pro Person</strong></li>
     </ul>
     <p>
-      Hinzu kommen persönliche Verpflegungskosten und Ausflüge an Land. Für eine
-      entspannte Woche sollten Sie pro Person mit einem Gesamtbudget von
-      <strong> 900 bis 1.300 €</strong> (inkl. Anreise) rechnen.
+      Hinzu kommen persönliche Ausgaben für Verpflegung und Ausflüge an Land. Pro Person sollten
+      Sie für eine Woche Segelurlaub mit einem Gesamtbudget von
+      <strong> 900 bis 1.300 €</strong> rechnen – inklusive Anreise.
     </p>
   </div>
 );
 
 export const wasKostetYachtcharter: BlogPost = {
   slug: "was-kostet-ein-yachtcharter",
-  title: "Was kostet ein Yachtcharter wirklich?",
-  seoTitle: "Was kostet ein Yachtcharter? Kosten, Extras & reale Kalkulation | CharterTransparenz",
+  title: "Was kostet ein Yachtcharter?",
+  seoTitle: "Was kostet ein Yachtcharter? Kosten transparent geplant | CharterTransparenz",
   metaDescription:
-    "Basispreis, Kaution, obligatorische Nebenkosten, Kraftstoff, Skipper: So setzen sich die Gesamtkosten eines Yachtcharters zusammen – mit realistischen Zahlen und klarer Kalkulation.",
+    "Charterpreis, Kaution, Nebenkosten, Kraftstoff, Skipper: Wir zeigen, wie sich Ihr Törnbudget übersichtlich zusammensetzt – mit transparenten Zahlen und einer klaren Beispielkalkulation.",
   ogImage: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp",
   category: "Charterwissen & Kosten",
   date: "2025-03-15",
   teaser:
-    "Der Basispreis ist nur der Anfang. Wer die echten Kosten eines Yachtcharters kennt – Kaution, obligatorische Nebenkosten, Kraftstoff – plant entspannter und bucht klüger.",
+    "Wer die Kostenstruktur eines Yachtcharters kennt, plant entspannter und startet besser vorbereitet in den Törn. Ein transparenter Überblick mit realistischen Zahlen.",
   heroImage: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp",
   heroImageAlt: "Segelyacht im Hafen – Kosten und Planung eines Yachtcharters",
   readingTime: 8,
@@ -139,22 +140,22 @@ export const wasKostetYachtcharter: BlogPost = {
     {
       question: "Wie hoch ist die typische Kaution bei einem Yachtcharter?",
       answer:
-        "Die Kaution liegt je nach Yachtgröße und Anbieter zwischen 1.500 und 5.000 €, bei Katamaranen auch deutlich darüber. Sie wird bei sauberer Rückgabe vollständig erstattet. Eine Kautionsversicherung für rund 150–250 € pro Woche übernimmt den Selbstbehalt im Schadensfall.",
+        "Die Kaution liegt je nach Yachtgröße und Anbieter zwischen 1.500 und 5.000 €, bei Katamaranen auch höher. Sie wird bei einwandfreier Rückgabe vollständig erstattet. Eine Kautionsversicherung für rund 150–250 € pro Woche übernimmt den Selbstbehalt im Schadensfall.",
     },
     {
       question: "Sind Kraftstoffkosten im Charterpreis enthalten?",
       answer:
-        "In der Regel nein. Die Yacht wird vollgetankt übergeben und muss vollgetankt zurückgegeben werden. Die Kraftstoffkosten hängen stark von der Motornutzung ab und liegen pro Woche typischerweise zwischen 150 und 500 €.",
+        "Kraftstoffkosten werden separat abgerechnet und direkt vor Ort an der Marina bezahlt. Die Yacht wird vollgetankt übergeben und zurückgegeben. Pro Woche liegen die Kosten je nach Motornutzung typischerweise zwischen 150 und 500 €.",
     },
     {
-      question: "Was kostet ein Skipper zusätzlich?",
+      question: "Was kostet ein Skipper?",
       answer:
-        "Ein professioneller Skipper kostet je nach Region und Erfahrung 150–350 € pro Tag. Die Crew trägt üblicherweise zusätzlich Verpflegung und Unterkunft an Bord. Für Einsteiger oder unerfahrene Crews kann ein Skipper eine wertvolle Investition sein.",
+        "Ein professioneller Skipper kostet je nach Region und Erfahrung 150–350 € pro Tag. Für Einsteiger oder Crews, die den Törn vollständig entspannt genießen möchten, ist das eine lohnende Option – der Skipper trägt die nautische Verantwortung und kennt das Revier.",
     },
     {
       question: "Wann lohnt sich die Vor- oder Nachsaison?",
       answer:
-        "Im Mai, Juni und September sind Yachten 30–50 % günstiger als in der Hauptsaison – bei oft angenehmeren Temperaturen, weniger überfüllten Häfen und gutem Segelwind. Für die meisten Crews ist das die attraktivste Reisezeit.",
+        "Im Mai, Juni und September sind Yachten 30–50 % günstiger als in der Hauptsaison – bei oft angenehmeren Temperaturen, entspannteren Häfen und zuverlässigem Segelwind. Für die meisten Crews ist das die attraktivste Reisezeit.",
     },
   ],
 };
