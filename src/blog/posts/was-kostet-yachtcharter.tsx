@@ -12,9 +12,9 @@ const content = (
 
     <h2 id="basispreis">Der Charterpreis: Ihre Basis für die Kalkulation</h2>
     <p>
-      Der Charterpreis (auch Charterrate) ist der Preis für die Nutzung der Yacht im gebuchten
-      Zeitraum. Er variiert je nach Saison, Region, Yachtgröße und Ausstattung. Für eine solide
-      Segelyacht mit 38–42 Fuß in Kroatien in der Hauptsaison (Juli/August) rechnen Sie grob mit
+      Der Charterpreis ist der Preis für die Nutzung der Yacht im gebuchten Zeitraum. Er variiert
+      je nach Yachttyp, Saison, Revier, Yachtgröße und Ausstattung. Für eine solide Segelyacht
+      mit 38–42 Fuß in Kroatien in der Hauptsaison (Juli/August) rechnen Sie grob mit
       <strong> 1.500 bis 3.500 € pro Woche</strong>.
     </p>
     <p>
@@ -34,9 +34,8 @@ const content = (
     </p>
     <ul>
       <li>
-        <strong>Endreinigung:</strong> Üblicherweise 150 bis 350 €, abhängig von Yachtgröße und
-        Charterbasis. Viele Anbieter ermöglichen es, gegen Aufpreis auf die eigene Reinigung zu
-        verzichten – praktisch bei längeren Törns.
+        <strong>Endreinigung:</strong> Üblicherweise liegt die Endreinigung zwischen 150 bis 350 €,
+        abhängig von Yachtgröße und Charterbasis.
       </li>
       <li>
         <strong>Bettwäsche und Handtücher:</strong> Oft 20–40 € pro Person, sofern nicht inklusive.
@@ -44,12 +43,14 @@ const content = (
       </li>
       <li>
         <strong>Touristensteuer / Kurtaxe:</strong> In Kroatien, Griechenland und anderen beliebten
-        Revieren fällt eine lokale Abgabe von 2–8 € pro Person und Nacht an.
+        Revieren fällt eine lokale Abgabe pro Person und Nacht an. In Kroatien kostet die Kurtaxe
+        ca. 1,50 € p.P. / Tag.
       </li>
       <li>
-        <strong>Hafengebühren:</strong> Direkt vor Ort zu bezahlen. In Kroatien liegt der
-        Marineliegeplatz je nach Yachtgröße und Saison zwischen 50 und über 200 € pro Nacht.
-        Ankern in Buchten ist in der Regel kostenlos oder sehr günstig.
+        <strong>Hafengebühren:</strong> In Kroatien liegt der Marineliegeplatz je nach Yachtgröße
+        und Saison zwischen 50 und über 200 € pro Nacht. Städtische Häfen sind etwas
+        preisgünstiger. Liegen an einer Boje kostet ca. 50 € pro Nacht. Ankern in Buchten
+        ist in der Regel kostenlos oder sehr günstig.
       </li>
     </ul>
 
@@ -76,13 +77,13 @@ const content = (
       <a href="/reviere/mittelmeer/kroatien">Revier Kroatien</a>:
     </p>
     <ul>
-      <li>Viel segeln, wenig motoren: 100–200 €</li>
-      <li>Durchschnittliche Nutzung: 200–400 €</li>
-      <li>Häufige Motorfahrt (z. B. Katamaran bei Flaute): 400–700 € und mehr</li>
+      <li>Viel segeln, wenig motoren: 50–100 €</li>
+      <li>Durchschnittliche Nutzung: 100–200 €</li>
+      <li>Häufige Motorfahrt (z. B. Katamaran bei Flaute): 400 € und mehr</li>
     </ul>
     <p>
       Yachten werden vollgetankt übergeben und vollgetankt zurückgegeben. Der Kraftstoff wird
-      direkt an der Marina bezahlt.
+      direkt an der Tankstelle bezahlt.
     </p>
 
     <h2 id="skipper">Mit Skipper an Bord: Volle Unterstützung, mehr Entspannung</h2>
@@ -91,7 +92,7 @@ const content = (
       Führerschein, mit wenig Erfahrung oder wer den Urlaub einfach vollständig genießen möchte.
       Die Kosten liegen je nach Region und Erfahrung bei
       <strong> 150 bis 350 € pro Tag</strong>. Verpflegung und Unterkunft an Bord trägt
-      üblicherweise die Crew.
+      üblicherweise die Chartercrew.
     </p>
     <p>
       Ein erfahrener Skipper kennt die besten Ankerbuchten, navigiert souverän in unbekannte
@@ -109,10 +110,10 @@ const content = (
       <li>Charterpreis Yacht: ca. 2.200 €</li>
       <li>Endreinigung: 220 €</li>
       <li>Bettwäsche (6 Pers.): 150 €</li>
-      <li>Hafengebühren (ca. 4 Marina-Nächte): 500 €</li>
-      <li>Kraftstoff: ca. 250 €</li>
+      <li>Liegeplatzgebühren (2 Marina-Nächte, 1× Boje): 250 €</li>
+      <li>Kraftstoff: ca. 200 €</li>
       <li>Kurtaxe (6 Pers. × 7 Nächte × 3 €): ca. 126 €</li>
-      <li><strong>Gesamtkosten: ca. 3.450 € / rund 575 € pro Person</strong></li>
+      <li><strong>Gesamtkosten: ca. 3.146 € / rund 524 € pro Person</strong></li>
     </ul>
     <p>
       Hinzu kommen persönliche Ausgaben für Verpflegung und Ausflüge an Land. Pro Person sollten
