@@ -27,9 +27,9 @@ const content = (
       Alles andere wird separat berechnet.
     </p>
 
-    <h2 id="pflichtextras">Pflichtextras: Diese Kosten kommen immer dazu</h2>
+    <h2 id="pflichtextras">obligatorische Nebenkosten: Diese Kosten kommen immer dazu</h2>
     <p>
-      Nahezu jeder Chartervertrag enthält sogenannte Pflichtextras — Positionen, die nicht optional sind
+      Nahezu jeder Chartervertrag enthält sogenannte obligatorische Nebenkosten — Positionen, die nicht optional sind
       und die man beim Angebotsvergleich immer einkalkulieren muss:
     </p>
     <ul>
@@ -124,12 +124,12 @@ export const wasKostetYachtcharter: BlogPost = {
   title: "Was kostet ein Yachtcharter wirklich?",
   seoTitle: "Was kostet ein Yachtcharter? Kosten, Extras & reale Kalkulation | CharterTransparenz",
   metaDescription:
-    "Basispreis, Kaution, Pflichtextras, Kraftstoff, Skipper: So setzen sich die Gesamtkosten eines Yachtcharters zusammen – mit realistischen Zahlen und klarer Kalkulation.",
+    "Basispreis, Kaution, obligatorische Nebenkosten, Kraftstoff, Skipper: So setzen sich die Gesamtkosten eines Yachtcharters zusammen – mit realistischen Zahlen und klarer Kalkulation.",
   ogImage: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp",
   category: "Charterwissen & Kosten",
   date: "2025-03-15",
   teaser:
-    "Der Basispreis ist nur der Anfang. Wer die echten Kosten eines Yachtcharters kennt – Kaution, Pflichtextras, Kraftstoff – plant entspannter und bucht klüger.",
+    "Der Basispreis ist nur der Anfang. Wer die echten Kosten eines Yachtcharters kennt – Kaution, obligatorische Nebenkosten, Kraftstoff – plant entspannter und bucht klüger.",
   heroImage: "/lovable-uploads/078607c7-e315-459a-b095-449836e21acd.webp",
   heroImageAlt: "Segelyacht im Hafen – Kosten und Planung eines Yachtcharters",
   readingTime: 8,
