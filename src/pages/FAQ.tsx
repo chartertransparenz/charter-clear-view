@@ -116,7 +116,7 @@ const FAQPage = () => {
         canonical={m.canonical()}
       />
       <JsonLd json={faqStructuredData} />
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-background">
         <Navigation />
         <FAQ />
         <TopDestinations />
