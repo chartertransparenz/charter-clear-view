@@ -330,6 +330,46 @@ All colors MUST be HSL.
   animation: float 6s ease-in-out infinite;
 }
 
+/* -------------------------------------------------------
+   Blog Article Typography
+   Applied via className="blog-content" wrapper
+------------------------------------------------------- */
+.blog-content p {
+  @apply text-lg text-gray-700 leading-relaxed mb-6;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold text-gray-900 mt-12 mb-4;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold text-gray-800 mt-8 mb-3;
+}
+
+.blog-content ul {
+  @apply list-disc pl-6 mb-6 space-y-2;
+}
+
+.blog-content ol {
+  @apply list-decimal pl-6 mb-6 space-y-2;
+}
+
+.blog-content li {
+  @apply text-lg text-gray-700 leading-relaxed;
+}
+
+.blog-content strong {
+  @apply font-semibold text-gray-900;
+}
+
+.blog-content a {
+  @apply text-ocean-blue hover:text-ocean-dark underline underline-offset-2 transition-colors;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-ocean-light pl-6 py-1 my-8 text-gray-600 italic;
+}
+
 .logo-transparent {
   background: transparent;
   mix-blend-mode: multiply;

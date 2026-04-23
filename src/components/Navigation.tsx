@@ -47,6 +47,7 @@ const Navigation = () => {
     { href: "#leistungen", label: "Services" },
     { href: "#flotte", label: "Yachten" },
     { href: "#partner", label: "Partner" },
+    { href: "/blog", label: "Blog" },
     { href: "/faq", label: "FAQ" },
     { href: "/ueber-uns", label: "Über uns" },
     { href: "#kontakt", label: "Kontakt" },
