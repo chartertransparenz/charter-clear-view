@@ -72,7 +72,8 @@ const content = (
     <h2 id="kraftstoff">Kraftstoff: Gut planbar, individuell nutzbar</h2>
     <p>
       Kraftstoffkosten lassen sich solide einschätzen – sie hängen von Ihrer Motorlaufzeit,
-      der Yachtgröße und den lokalen Dieselpreisen ab. Als Orientierung für eine Woche in Kroatien:
+      der Yachtgröße und den lokalen Dieselpreisen ab. Als Orientierung für eine Woche im{" "}
+      <a href="/reviere/mittelmeer/kroatien">Revier Kroatien</a>:
     </p>
     <ul>
       <li>Viel segeln, wenig motoren: 100–200 €</li>
@@ -95,7 +96,8 @@ const content = (
     <p>
       Ein erfahrener Skipper kennt die besten Ankerbuchten, navigiert souverän in unbekannte
       Häfen und macht auch anspruchsvollere Bedingungen zu einem entspannten Erlebnis. Für
-      viele Crews ist das ein sehr lohnender Teil der Reise.
+      viele Crews ist das ein sehr lohnender Teil der Reise. Mehr dazu im Artikel{" "}
+      <a href="/blog/bareboat-oder-skipper">Bareboat oder Charter mit Skipper</a>.
     </p>
 
     <h2 id="gesamtbudget">Ihr Gesamtbudget auf einen Blick</h2>
@@ -115,7 +117,9 @@ const content = (
     <p>
       Hinzu kommen persönliche Ausgaben für Verpflegung und Ausflüge an Land. Pro Person sollten
       Sie für eine Woche Segelurlaub mit einem Gesamtbudget von
-      <strong> 900 bis 1.300 €</strong> rechnen – inklusive Anreise.
+      <strong> 900 bis 1.300 €</strong> rechnen – inklusive Anreise. Bei weiteren Fragen rund
+      um Kosten und Ablauf finden Sie Antworten in unserem{" "}
+      <a href="/faq">Charter-FAQ</a>.
     </p>
   </div>
 );
