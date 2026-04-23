@@ -87,13 +87,13 @@ export const bareboatOderSkipper: BlogPost = {
   seoTitle: "Bareboat oder Skipper buchen? Entscheidungshilfe für Ihren Yachtcharter | CharterTransparenz",
   metaDescription:
     "Eigenständig segeln oder Skipper buchen? Wir erklären die Unterschiede, Kosten und wann welche Option wirklich sinnvoll ist – für eine entspannte Charter-Entscheidung.",
-  ogImage: "/lovable-uploads/54f48215-4790-47b9-a175-73813b6f57c1.webp",
+  ogImage: "/images/charter_with_skipper.jpg",
   category: "Yachtwahl & Bordleben",
   date: "2025-03-28",
   teaser:
     "Bareboat oder mit Skipper? Die Entscheidung hängt von Erfahrung, Crew und Erwartungen ab – nicht nur vom Budget. Eine klare Entscheidungshilfe.",
-  heroImage: "/lovable-uploads/54f48215-4790-47b9-a175-73813b6f57c1.webp",
-  heroImageAlt: "Segelboot auf dem Wasser – Bareboat oder mit Skipper?",
+  heroImage: "/images/charter_with_skipper.jpg",
+  heroImageAlt: "Crew an Bord einer Segelyacht – Bareboat oder Charter mit Skipper?",
   readingTime: 5,
   relatedSlugs: ["was-kostet-ein-yachtcharter", "kroatien-einsteiger"],
   content,
