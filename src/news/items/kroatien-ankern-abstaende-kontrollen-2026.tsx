@@ -2,92 +2,57 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
+    <h2>Einordnung</h2>
     <p>
-      Kroatien hat sein Seerecht in den vergangenen Jahren schrittweise verschärft und die
-      Kontrollen auf dem Wasser intensiviert. Für Charterkunden bedeutet das: Wer gut informiert
-      in die Saison startet, hat weniger Überraschungen und vermeidet unnötige Bußgelder.
-      Dieser Hinweis erklärt die wichtigsten Regeln rund um Ankern, Abstände und Schutzgebiete –
-      als Grundlage für alle aktuellen Meldungen zu diesem Thema.
+      Kroatien ist für viele Crews das klassische Einstiegs- und Lieblingsrevier: kurze
+      Distanzen, viele Inseln, geschützte Buchten und eine sehr gute nautische
+      Infrastruktur. Gerade deshalb sind die beliebten Ankerplätze in der Saison stark
+      frequentiert. Die Behörden achten zunehmend darauf, dass Regeln zum Ankern, zu
+      Schutzbereichen und zum Verhalten in Küstennähe eingehalten werden.
     </p>
-
-    <h2>Was ist neu?</h2>
     <p>
-      Die kroatischen Behörden haben die Bestimmungen der Sicherheits- und Schutzverordnung
-      (SSVO) für Küstengewässer und Schutzgebiete mehrfach angepasst. Die Kernpunkte, die
-      Charterkunden kennen sollten:
+      Für Charterkunden ist das kein Grund zur Sorge, aber ein guter Grund zur
+      Vorbereitung. Wer weiß, welche Abstände gelten, wo Bojenfelder genutzt werden
+      sollen und welche Buchten besonders sensibel sind, segelt entspannter und vermeidet
+      vermeidbare Konflikte.
     </p>
-    <ul>
-      <li>
-        <strong>Ankern in Schutzgebieten:</strong> In Nationalparks wie dem Kornati-Archipel
-        oder im Mljet-Nationalpark ist freies Ankern außerhalb ausgewiesener Ankerstellen
-        grundsätzlich untersagt. Nur genehmigte Mooringbojen dürfen genutzt werden.
-      </li>
-      <li>
-        <strong>Mindestabstände zur Küste:</strong> In bestimmten Buchten und vor geschützten
-        Stränden gelten Mindestabstände – je nach Zone zwischen 50 und 300 Metern.
-        Zuwiderhandlungen werden von der Küstenwache und gelegentlich auch durch Drohnen erfasst.
-      </li>
-      <li>
-        <strong>Ankerverbotszonen:</strong> Einige Buchten, die früher als freie Ankerstellen
-        beliebt waren, wurden als Ankerverbotszonen ausgewiesen. Dazu gehören Teile der
-        Kornaten und bestimmte Buchten auf Hvar und Vis.
-      </li>
-      <li>
-        <strong>Kontrollen durch die Küstenwache:</strong> Die kroatische Küstenwache führt
-        regelmäßige Kontrollen durch – zu Fuß, per Boot und zunehmend auch mit Drohnen.
-        Geprüft werden Schiffsdokumente, Führerscheine, Sicherheitsausrüstung und die
-        Einhaltung von Ankerregeln.
-      </li>
-    </ul>
 
     <h2>Was bedeutet das für Charterkunden?</h2>
     <p>
-      Für die meisten Charter-Törns ändert sich im Alltag wenig, wenn man die grundlegenden
-      Regeln kennt: gut ausgebautes Marinennetz, klare Ankerbereiche in den gängigen Revieren,
-      und ausgewiesene Bojenfelder in den Nationalparks. Wer allerdings abseits der Hauptrouten
-      unterwegs ist oder bewusst ruhige Buchten ansteuert, sollte vorab prüfen, ob dort Anker-
-      beschränkungen gelten.
+      Beim Ankern in Kroatien geht es nicht nur darum, ob der Anker hält. Wichtig sind
+      auch die örtlichen Regeln: In Nationalparks, Naturbuchten, Badezonen oder
+      ausgewiesenen Schutzbereichen können besondere Vorgaben gelten. In einigen Buchten
+      haben Bojenfelder Vorrang vor freiem Ankern. Auch das Festmachen mit Landleinen
+      sollte nur dort erfolgen, wo es erlaubt und revierüblich ist.
     </p>
     <p>
-      Besondere Aufmerksamkeit verdienen:
+      Charterkunden sollten sich deshalb nicht allein auf Erfahrung oder Gewohnheit
+      verlassen. Was in einer Bucht in Ordnung ist, kann in einer anderen Bucht
+      problematisch sein. Besonders in der Hauptsaison lohnt es sich, aktuelle
+      Revierhinweise, Karten-Apps und die Informationen der Charterbasis zu beachten.
     </p>
+
+    <h2>Was sollte man vor dem Törn prüfen?</h2>
+    <p>Vor dem Ablegen sollten Skipper kurz klären:</p>
     <ul>
-      <li>Nationalpark Kornati – ausschließlich Mooringbojen, keine freien Ankerstellen</li>
-      <li>Nationalpark Mljet – gebührenpflichtige Bojenbenutzung, strenge Kontrollen</li>
-      <li>Park prirode Lastovo – ähnliche Regeln wie in den Nationalparks</li>
-      <li>Buchten auf Hvar, Vis, Šolta und den Kornaten – Einzelfallprüfung empfohlen</li>
+      <li>Welche lokalen Anker- und Abstandsregeln gelten im geplanten Revier?</li>
+      <li>Gibt es Nationalparks, Schutzgebiete oder Buchten mit besonderen Einschränkungen?</li>
+      <li>Welche Bojenfelder sind reservierungspflichtig oder kostenpflichtig?</li>
+      <li>Sind Navigations-App und Seekarten aktuell?</li>
+      <li>Sind Befähigungsnachweise, Funkzeugnis und Bordpapiere vollständig?</li>
+      <li>Gibt es aktuelle Hinweise der Charterbasis zu Kontrollen oder gesperrten Bereichen?</li>
     </ul>
 
-    <h2>Was sollte man jetzt tun?</h2>
-    <ul>
-      <li>
-        Törnplanung mit aktueller Navigationssoftware (z. B. Navionics, Aqua Map) abgleichen –
-        Schutzgebietsgrenzen werden dort laufend aktualisiert.
-      </li>
-      <li>
-        Charterfirma vor Abfahrt nach aktuellen Hinweisen fragen – sie kennen die lokalen
-        Änderungen oft zuverlässiger als allgemeine Online-Quellen.
-      </li>
-      <li>
-        Papiere an Bord vollständig halten: Zulassung, Führerschein (mindestens SKS),
-        Versicherungsnachweis, Crewliste.
-      </li>
-      <li>
-        Nationalpark-Gebühren direkt vor Ort oder vorab online bezahlen – Ranger akzeptieren
-        keine Nachzahlung nach einer Kontrolle ohne voherige Anmeldung.
-      </li>
-    </ul>
-
-    <h2>Quelle und Stand</h2>
-    <p>
-      Die Regelungen basieren auf den Verordnungen des kroatischen Ministeriums für
-      Meeresangelegenheiten, Verkehr und Infrastruktur sowie den Bekanntmachungen der
-      Nationalparkverwaltungen. Stand: Frühjahr 2026.
-    </p>
-    <p className="text-sm text-gray-500 mt-4 border-t border-gray-100 pt-4">
-      Regeln können sich kurzfristig ändern. Prüfen Sie vor dem Törn immer die aktuellen
-      Informationen beim Vercharterer und bei den zuständigen kroatischen Behörden.
-    </p>
+    <div className="my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
+      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">
+        Kurz gesagt
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Kroatien bleibt ein sehr gut planbares Charterrevier. Die Regeln sind vor allem
+        dann entspannt zu handhaben, wenn man sie vor dem Törn kennt und bei der
+        Buchtenwahl berücksichtigt.
+      </p>
+    </div>
   </div>
 );
 
@@ -95,7 +60,7 @@ export const kroatienAnkernAbstaendeKontrollen2026: NewsItem = {
   slug: "kroatien-ankern-abstaende-kontrollen-2026",
   title: "Kroatien 2026: Was Charterkunden zu Ankern, Abständen und Kontrollen wissen sollten",
   excerpt:
-    "Kroatien hat seine Anker- und Schutzgebietsregeln verschärft. Wer die Grundregeln kennt – Mindestabstände, Nationalpark-Bojen, Kontrollen durch die Küstenwache – plant entspannter.",
+    "Kroatien bleibt eines der beliebtesten Charterreviere im Mittelmeer. Gleichzeitig werden Ankerregeln, Schutzbereiche und Kontrollen in Buchten wichtiger. Wer die Grundregeln kennt, plant entspannter und vermeidet unnötige Diskussionen vor Ort.",
   content_type: "basis_hinweis",
   region: "Kroatien",
   country_or_area: "Kroatien",
@@ -108,9 +73,9 @@ export const kroatienAnkernAbstaendeKontrollen2026: NewsItem = {
   source_name: "Kroatisches Ministerium für Meeresangelegenheiten",
   source_url: "https://mmpi.gov.hr",
   customer_impact:
-    "Charterkunden müssen Ankerregeln in Nationalparks und Schutzgebieten kennen. Verstöße werden aktiv kontrolliert und können zu Bußgeldern führen.",
+    "Charterkunden müssen Ankerregeln in Nationalparks und Schutzgebieten kennen. Verstöße werden kontrolliert und können zu Bußgeldern führen.",
   action_advice:
-    "Törnplanung mit aktueller Navigationssoftware prüfen, Charterfirma nach lokalen Hinweisen fragen, Papiere vollständig mitführen.",
+    "Törnplanung mit aktueller Navigationssoftware prüfen, Charterbasis nach lokalen Hinweisen fragen, Papiere vollständig mitführen.",
   show_on_blog: true,
   show_on_region_page: true,
   linked_region_slug: "kroatien",
@@ -118,6 +83,8 @@ export const kroatienAnkernAbstaendeKontrollen2026: NewsItem = {
   seo_title:
     "Kroatien 2026: Ankern, Abstände & Kontrollen – Was Charterkunden wissen müssen",
   meta_description:
-    "Ankerregeln, Schutzgebiete und Kontrollen in Kroatien 2026: Alles, was Yachtcharter-Kunden für einen entspannten Törn wissen sollten.",
+    "Ankerregeln, Schutzbereiche und Kontrollen in Kroatien 2026: Was Yachtcharter-Kunden für einen entspannten Törn wissen sollten.",
   is_featured: true,
+  cta_text:
+    "Wenn Sie einen Kroatien-Törn planen und unsicher sind, welche Regeln für Ihre Route wichtig sind, prüfen wir das gerne gemeinsam mit Ihnen.",
 };

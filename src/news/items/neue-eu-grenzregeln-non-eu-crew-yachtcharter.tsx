@@ -2,97 +2,58 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
+    <h2>Einordnung</h2>
     <p>
-      Die Europäische Union arbeitet an der Einführung eines neuen Ein- und Ausreisesystems,
-      dem Entry/Exit System (EES). Für Yachtcharter-Crews mit Mitgliedern aus Nicht-EU-Ländern
-      kann das praktische Auswirkungen haben – besonders auf Törns mit Etappen in Schengen- und
-      Nicht-Schengen-Häfen. Dieser Hinweis erklärt die Grundlagen.
-    </p>
-
-    <h2>Was ist neu?</h2>
-    <p>
-      Das EES (Entry/Exit System) ist ein geplantes digitales Grenzkontrollsystem der EU,
-      das die bisherige manuelle Reisepassstempelung ersetzen soll. Es registriert biometrisch,
-      wann Drittstaatsangehörige (also Nicht-EU-Bürger) den Schengen-Raum betreten und verlassen.
+      Mit dem Entry/Exit System, kurz EES, stellt die EU die Grenzerfassung für Reisende
+      aus Nicht-EU-Staaten schrittweise auf digitale Verfahren um. Für viele Chartergäste
+      aus Deutschland, Österreich oder anderen EU-Ländern ändert sich dadurch wenig.
+      Relevant wird das Thema vor allem, wenn Crewmitglieder aus Nicht-EU- oder
+      Nicht-Schengen-Staaten mit an Bord sind.
     </p>
     <p>
-      Relevante Punkte für Charterkunden:
+      Bei Yachtcharter ist die Situation manchmal komplexer als bei einer klassischen
+      Flugreise. Crews bewegen sich über Seegrenzen, wechseln Häfen oder fahren durch
+      mehrere Länder. Deshalb ist es wichtig, Ein- und Ausreisen nachvollziehbar zu
+      dokumentieren und die bekannten Schengen-Aufenthaltsregeln nicht aus dem Blick zu
+      verlieren.
     </p>
-    <ul>
-      <li>
-        <strong>Wer ist betroffen?</strong> Crew-Mitglieder aus Nicht-EU-Ländern, also z. B.
-        aus Großbritannien (nach dem Brexit), den USA, Australien, Kanada oder der Schweiz.
-        EU-Bürger sind vom EES nicht betroffen.
-      </li>
-      <li>
-        <strong>90/180-Tage-Regel:</strong> Unabhängig vom EES gilt bereits jetzt: Drittstaats-
-        angehörige dürfen sich innerhalb von 180 Tagen maximal 90 Tage im Schengen-Raum
-        aufhalten. Das EES würde diese Aufenthalte künftig automatisch erfassen und prüfen.
-      </li>
-      <li>
-        <strong>Warum Italien besonders relevant ist:</strong> Viele internationale Charter-Törns
-        führen durch italienische Gewässer oder starten in Italien. Gleichzeitig befinden sich
-        nicht alle Seehäfen am technisch gleichen Stand, und die praktische Umsetzung an
-        kleinen Häfen und Marinas ist noch nicht vollständig geklärt.
-      </li>
-      <li>
-        <strong>Aktueller Stand:</strong> Das EES war mehrfach verschoben worden. Der genaue
-        Einführungstermin und die genaue Umsetzung an Schiffsanlegestellen sind weiterhin
-        im Fluss. Charterkunden sollten den Status vor ihrem Törn prüfen.
-      </li>
-    </ul>
 
     <h2>Was bedeutet das für Charterkunden?</h2>
     <p>
-      Für rein innereuropäische Crews – also alle Mitglieder mit EU-Pass – ändert sich
-      durch das EES nichts. Wer jedoch eine gemischte Crew plant, bei der einzelne Mitglieder
-      aus Drittstaaten kommen (z. B. britische, amerikanische oder australische Mitsegler),
-      sollte folgendes prüfen:
+      Wenn alle Crewmitglieder aus der EU oder dem Schengen-Raum kommen, ist das Thema
+      meist unkompliziert. Anders sieht es aus, wenn Gäste aus Großbritannien, den USA
+      oder anderen Drittstaaten an Bord sind. Dann können Aufenthaltsdauer, Einreisepunkt
+      und Ausreiseformalitäten eine Rolle spielen.
     </p>
-    <ul>
-      <li>
-        Wie viele Tage haben die Betroffenen im laufenden 180-Tage-Zeitraum bereits im
-        Schengen-Raum verbracht?
-      </li>
-      <li>
-        Führt der Törn in Nicht-Schengen-Gebiete (z. B. Montenegro, Türkei) und zurück?
-        Dann kann jeder Schengen-Wiedereintritt einen neuen Ein-/Ausreise-Vorgang auslösen.
-      </li>
-      <li>
-        Sind die Reisepässe der betroffenen Crew-Mitglieder noch mindestens drei Monate
-        über das geplante Ausreisedatum hinaus gültig?
-      </li>
-    </ul>
-
-    <h2>Was sollte man jetzt tun?</h2>
-    <ul>
-      <li>
-        Reisepässe und Aufenthaltsstatus aller Nicht-EU-Crew-Mitglieder vor dem Törn prüfen.
-      </li>
-      <li>
-        Geplante Route auf mögliche Schengen-Außengrenzen prüfen – besonders bei Törns
-        zwischen Adrialändern (z. B. Kroatien → Montenegro → zurück).
-      </li>
-      <li>
-        Kurz vor Abreise den aktuellen EES-Status recherchieren: Die Einführung kann sich
-        noch einmal verschieben oder stufenweise erfolgen.
-      </li>
-      <li>
-        Im Zweifelsfall die zuständige Botschaft oder ein Reiserechtsbüro konsultieren.
-      </li>
-    </ul>
-
-    <h2>Quelle und Stand</h2>
     <p>
-      Grundlage dieser Zusammenfassung sind die offiziellen Informationen der Europäischen
-      Kommission zum EES sowie die Schengen-Grenzregeln. Da sich der Einführungszeitplan
-      mehrfach verschoben hat, empfiehlt sich eine Prüfung des aktuellen Stands kurz vor
-      dem geplanten Törn.
+      Besonders bei längeren Törns oder Grenzübertritten sollte vorab geklärt werden,
+      ob ein offizieller Ein- oder Ausreisehafen angelaufen werden muss und welche
+      Dokumentation sinnvoll ist. Italien sollte dabei besonders aufmerksam betrachtet
+      werden, weil die praktische Anwendung von Einreise- und Aufenthaltsregeln dort
+      für Yachten und Crew relevant sein kann.
     </p>
-    <p className="text-sm text-gray-500 mt-4 border-t border-gray-100 pt-4">
-      Regeln können sich kurzfristig ändern. Prüfen Sie vor dem Törn immer die aktuellen
-      Einreisebestimmungen für alle Crew-Mitglieder.
-    </p>
+
+    <h2>Was sollte man vor dem Törn prüfen?</h2>
+    <p>Vor dem Törn sollte geklärt werden:</p>
+    <ul>
+      <li>Kommen Crewmitglieder aus Nicht-EU- oder Nicht-Schengen-Staaten?</li>
+      <li>Wie viele Schengen-Tage wurden bereits genutzt?</li>
+      <li>Gibt es Grenzübertritte während des Törns?</li>
+      <li>Welche Häfen sind offizielle Ein- oder Ausreisehäfen?</li>
+      <li>Welche Dokumente sollten zusätzlich zum Reisepass mitgeführt werden?</li>
+      <li>Sollte die Charterbasis vorab über die internationale Crew informiert werden?</li>
+    </ul>
+
+    <div className="my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
+      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">
+        Kurz gesagt
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Für die meisten EU-Crews bleibt Yachtcharter unkompliziert. Bei internationaler
+        Crew hilft etwas Vorbereitung, damit Einreise, Aufenthaltsdauer und Ausreise
+        sauber dokumentiert sind.
+      </p>
+    </div>
   </div>
 );
 
@@ -100,7 +61,7 @@ export const neueEuGrenzregelnNonEuCrewYachtcharter: NewsItem = {
   slug: "neue-eu-grenzregeln-non-eu-crew-yachtcharter",
   title: "Neue EU-Grenzregeln: Was Non-EU-Crew beim Yachtcharter beachten sollte",
   excerpt:
-    "Das geplante EU-Einreisesystem EES betrifft Charterkunden mit Nicht-EU-Crewmitgliedern. Britische, amerikanische und andere Drittstaats-Mitsegler sollten die 90/180-Tage-Regel und offene Fragen zur Umsetzung kennen.",
+    "Das neue EU Entry/Exit System betrifft vor allem Crewmitglieder, die nicht aus der EU oder dem Schengen-Raum kommen. Für Chartertörns mit internationaler Crew lohnt es sich, Ein- und Ausreisen künftig genauer zu dokumentieren.",
   content_type: "basis_hinweis",
   region: "EU-weit / Italien",
   country_or_area: "Europäische Union",
@@ -111,9 +72,10 @@ export const neueEuGrenzregelnNonEuCrewYachtcharter: NewsItem = {
   priority: "mittel",
   category: "Einreise & Schengen",
   source_name: "Europäische Kommission – EES",
-  source_url: "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/smart-borders/entry-exit-system_en",
+  source_url:
+    "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/smart-borders/entry-exit-system_en",
   customer_impact:
-    "Crews mit Nicht-EU-Mitgliedern müssen die 90/180-Tage-Schengen-Regel beachten. Das geplante EES-System könnte künftig jeden Ein- und Ausreisevorgang digital erfassen.",
+    "Crews mit Nicht-EU-Mitgliedern müssen die 90/180-Tage-Schengen-Regel beachten. Das EES-System kann künftig Ein- und Ausreisevorgänge digital erfassen.",
   action_advice:
     "Pässe und Aufenthaltsstatus aller Nicht-EU-Crew prüfen, Route auf Schengen-Außengrenzen analysieren, EES-Status kurz vor Reiseantritt recherchieren.",
   show_on_blog: true,
@@ -123,5 +85,7 @@ export const neueEuGrenzregelnNonEuCrewYachtcharter: NewsItem = {
   seo_title:
     "EU-Grenzregeln & EES: Was Non-EU-Crew beim Yachtcharter wissen muss",
   meta_description:
-    "Das EU Entry/Exit System (EES) und die 90/180-Tage-Schengen-Regel: Was Yachtcharter-Crews mit Nicht-EU-Mitgliedern vor dem Törn prüfen sollten.",
+    "Das EU Entry/Exit System (EES) und die Schengen-Aufenthaltsregeln: Was Yachtcharter-Crews mit Nicht-EU-Mitgliedern vor dem Törn prüfen sollten.",
+  cta_text:
+    "Wenn Sie mit internationaler Crew planen, helfen wir gerne dabei, die wichtigsten Punkte vorab zu sortieren.",
 };

@@ -54,6 +54,7 @@ export interface NewsItemMeta {
   is_featured?: boolean;
   is_update_of?: string;
   related_base_slug?: string;
+  cta_text?: string;
 }
 
 export interface NewsItem extends NewsItemMeta {
