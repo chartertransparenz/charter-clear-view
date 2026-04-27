@@ -3,10 +3,12 @@ import type { BlogPost } from "../types";
 const content = (
   <div>
     <p>
-      Kroatien gehört zu den Revieren, die man einmal erlebt haben möchte – und dann immer
-      wieder besucht. Klares Wasser, gut erreichbare Inseln, eine verlässliche Infrastruktur:
-      Die Adria bietet Chartercrews aller Erfahrungsstufen eine solide Grundlage für
-      entspannte Törns. Seit 2026 gilt beim Ankern in der Nähe der kroatischen Küste eine
+      <a href="/reviere/mittelmeer/kroatien">Kroatien</a> gehört zu den Revieren, die man
+      einmal erlebt haben möchte – und dann immer wieder besucht. Klares Wasser, gut
+      erreichbare Inseln, eine verlässliche Infrastruktur: Die Adria bietet Chartercrews
+      aller Erfahrungsstufen – ob{" "}
+      <a href="/blog/bareboat-oder-skipper">Bareboat oder mit Skipper</a>{" "}
+      – eine solide Grundlage für entspannte Törns. Seit 2026 gilt beim Ankern in der Nähe der kroatischen Küste eine
       neu präzisierte Abstandsregel. Die Mindestdistanz wurde auf 70 Meter festgelegt. Was
       das konkret bedeutet und wie gut sich das in der Praxis planen lässt, zeigt dieser
       Beitrag.
@@ -115,7 +117,8 @@ const content = (
       <p className="text-sm font-medium text-ocean-dark mb-1">Ihr nächster Kroatien-Törn</p>
       <p className="text-gray-700 leading-relaxed">
         Sie planen einen Chartertörn in Kroatien? Wir helfen Ihnen, Revier, Yacht und Törn
-        realistisch und entspannt zu planen.
+        realistisch und entspannt zu planen – und die{" "}
+        <a href="/blog/was-kostet-ein-yachtcharter">Kosten transparent zu kalkulieren</a>.
       </p>
     </div>
   </div>

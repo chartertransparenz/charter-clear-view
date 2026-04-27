@@ -27,7 +27,9 @@ const content = (
     <p>
       Der Hauptvorteil: Bareboat ist in der Regel <strong>günstiger</strong> und bietet die
       maximale Unabhängigkeit. Sie bestimmen, wo Sie anlegen, wie lange Sie bleiben und
-      welche Route Sie segeln.
+      welche Route Sie segeln. Wer ohne Skipper unterwegs ist, sollte sich vor dem Törn auch
+      mit lokalen Vorschriften vertraut machen – zum Beispiel mit den{" "}
+      <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone">neuen Ankerregeln in Kroatien</a>.
     </p>
 
     <h2 id="skippered">Charter mit Skipper: Expertise an Bord</h2>

@@ -116,6 +116,12 @@ const content = (
       <li><strong>Gesamtkosten: ca. 3.146 € / rund 524 € pro Person</strong></li>
     </ul>
     <p>
+      Gerade in beliebten Revieren wie Kroatien können auch aktuelle lokale Regeln – etwa
+      die{" "}
+      <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone">neuen Ankerabstände in Kroatien</a>
+      {" "}– Teil einer realistischen Törnplanung sein.
+    </p>
+    <p>
       Hinzu kommen persönliche Ausgaben für Verpflegung und Ausflüge an Land. Pro Person sollten
       Sie für eine Woche Segelurlaub mit einem Gesamtbudget von
       <strong> 900 bis 1.300 €</strong> rechnen – inklusive Anreise. Bei weiteren Fragen rund

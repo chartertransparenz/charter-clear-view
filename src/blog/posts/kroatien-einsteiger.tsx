@@ -94,6 +94,11 @@ const content = (
         den Urlaub entspannter.
       </li>
     </ul>
+    <p>
+      Für Einsteiger lohnt sich außerdem ein Blick auf die{" "}
+      <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone">aktuellen Ankerregeln in Kroatien</a>
+      , da sie die Planung in beliebten Buchten beeinflussen können.
+    </p>
   </div>
 );
 
