@@ -113,7 +113,7 @@ export default function NewsDetailPage() {
         </div>
 
         {/* Article */}
-        <div className="container mx-auto px-4 py-10 max-w-2xl">
+        <div className="container mx-auto px-4 py-10 max-w-3xl">
 
           {/* Badges */}
           <div className="flex flex-wrap items-center gap-2 mb-5">
@@ -157,7 +157,15 @@ export default function NewsDetailPage() {
           </p>
 
           {/* Article body */}
-          <div className="prose prose-gray prose-headings:font-semibold prose-headings:text-gray-900 prose-h2:text-lg prose-h2:mt-10 prose-h2:mb-3 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-li:leading-relaxed prose-strong:text-gray-800 max-w-none">
+          <div className="
+            prose prose-slate max-w-none
+            prose-headings:font-bold prose-headings:text-slate-900 prose-headings:tracking-tight
+            prose-h2:text-xl prose-h2:mt-12 prose-h2:mb-4
+            prose-p:text-gray-700 prose-p:leading-relaxed prose-p:my-4
+            prose-ul:my-5 prose-ul:pl-6 prose-ul:list-disc
+            prose-li:text-gray-700 prose-li:leading-relaxed prose-li:my-2
+            prose-strong:text-gray-800 prose-strong:font-semibold
+          ">
             {item.content}
           </div>
 

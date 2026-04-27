@@ -43,7 +43,7 @@ const content = (
       <li>Gibt es aktuelle Hinweise der Charterbasis zu Kontrollen oder gesperrten Bereichen?</li>
     </ul>
 
-    <div className="my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
+    <div className="not-prose my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
       <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">
         Kurz gesagt
       </p>
