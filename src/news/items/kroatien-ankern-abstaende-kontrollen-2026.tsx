@@ -57,6 +57,7 @@ const content = (
 );
 
 export const kroatienAnkernAbstaendeKontrollen2026: NewsItem = {
+  content,
   slug: "kroatien-ankern-abstaende-kontrollen-2026",
   title: "Kroatien 2026: Was Charterkunden zu Ankern, Abständen und Kontrollen wissen sollten",
   excerpt:

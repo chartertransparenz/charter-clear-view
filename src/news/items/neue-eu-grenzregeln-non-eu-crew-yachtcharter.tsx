@@ -58,6 +58,7 @@ const content = (
 );
 
 export const neueEuGrenzregelnNonEuCrewYachtcharter: NewsItem = {
+  content,
   slug: "neue-eu-grenzregeln-non-eu-crew-yachtcharter",
   title: "Neue EU-Grenzregeln: Was Non-EU-Crew beim Yachtcharter beachten sollte",
   excerpt:

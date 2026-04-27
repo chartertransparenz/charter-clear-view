@@ -55,6 +55,7 @@ const content = (
 );
 
 export const montenegroDutyFreeDieselOhneMindestaufenthalt: NewsItem = {
+  content,
   slug: "montenegro-duty-free-diesel-ohne-mindestaufenthalt",
   title: "Montenegro als Tankstopp: Duty-Free-Diesel ohne Mindestaufenthalt",
   excerpt:

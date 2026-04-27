@@ -54,6 +54,7 @@ const content = (
 );
 
 export const tuerkeiGoecekBojenfelder2026: NewsItem = {
+  content,
   slug: "tuerkei-goecek-bojenfelder-2026",
   title: "Göcek 2026: Bojenfelder sollen freies Ankern besser regulieren",
   excerpt:
