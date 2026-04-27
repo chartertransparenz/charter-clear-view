@@ -12,6 +12,7 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import { META } from "@/seo/meta.config";
 import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -543,6 +544,8 @@ const Turkey = () => {
             </div>
           </div>
         </div>
+
+        <NewsRegionTeaser regionSlug="tuerkei-goecek" regionLabel="Göcek" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">

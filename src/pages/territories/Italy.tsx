@@ -13,6 +13,7 @@ import TerritoryMap from "@/components/TerritoryMap";
 import NausysWidget from "@/components/NausysWidget";
 import elbaBeach from "@/assets/elba-beach.jpg";
 import amalfiCoast from "@/assets/amalfi-coast.jpg";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
@@ -418,6 +419,8 @@ const Italy = () => {
             </div>
           </div>
         </div>
+
+        <NewsRegionTeaser regionSlug="italien" regionLabel="Italien" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto mb-12">

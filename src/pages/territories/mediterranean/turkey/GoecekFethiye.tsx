@@ -12,6 +12,7 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import { META } from "@/seo/meta.config";
 import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
 
 const GoecekFethiye = () => {
   useEffect(() => {
@@ -400,6 +401,8 @@ const GoecekFethiye = () => {
               </p>
           </div>
         </div>
+
+        <NewsRegionTeaser regionSlug="tuerkei-goecek" regionLabel="Göcek & Fethiye" />
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-primary to-secondary text-white py-16 px-8 rounded-lg text-center">

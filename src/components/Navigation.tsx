@@ -45,6 +45,7 @@ const Navigation = () => {
 
   const navItems = [
     { href: "/blog", label: "Blog" },
+    { href: "/news", label: "Törn-Hinweise" },
     { href: "#partner", label: "Partner" },
     { href: "#flotte", label: "Yachten" },
     { href: "#leistungen", label: "Services" },

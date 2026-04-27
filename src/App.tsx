@@ -10,6 +10,8 @@ import Index from "./pages/Index";
 // Lazy-load all non-home pages so the initial bundle stays small
 const BlogListPage = lazy(() => import('@/pages/blog/BlogListPage'));
 const BlogPostPage = lazy(() => import('@/pages/blog/BlogPostPage'));
+const NewsListPage = lazy(() => import('@/pages/news/NewsListPage'));
+const NewsDetailPage = lazy(() => import('@/pages/news/NewsDetailPage'));
 const About = lazy(() => import('@/pages/About'));
 const Impressum = lazy(() => import('@/pages/Impressum'));
 const Datenschutz = lazy(() => import('@/pages/Datenschutz').then(m => ({ default: m.Datenschutz })));
@@ -197,6 +199,8 @@ function App() {
               <Route path="/" element={<Index />} />
               <Route path="/blog" element={<BlogListPage />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
+              <Route path="/news" element={<NewsListPage />} />
+              <Route path="/news/:slug" element={<NewsDetailPage />} />
               <Route path="/ueber-uns" element={<About />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />

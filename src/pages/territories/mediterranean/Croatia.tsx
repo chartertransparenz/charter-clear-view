@@ -11,6 +11,7 @@ import NausysWidget from "@/components/NausysWidget";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 // Meta component removed - SEO tags managed by prerender script
 import { META } from "@/seo/meta.config";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
 
 const destinationCroatia = "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.webp";
 
@@ -609,6 +610,8 @@ const Croatia = () => {
               </div>)}
           </div>
         </div>
+
+        <NewsRegionTeaser regionSlug="kroatien" regionLabel="Kroatien" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">

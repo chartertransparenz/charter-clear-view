@@ -12,6 +12,7 @@ import { META } from "@/seo/meta.config";
 import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import mediterranean from "@/assets/mediterranean.jpg";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
 const Montenegro = () => {
   const m = META.montenegro;
   
@@ -309,6 +310,8 @@ const Montenegro = () => {
 
         {/* Highlights */}
         
+
+        <NewsRegionTeaser regionSlug="montenegro" regionLabel="Montenegro" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">

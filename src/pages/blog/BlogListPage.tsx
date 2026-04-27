@@ -5,6 +5,8 @@ import { Meta } from "@/seo/Meta";
 import { Badge } from "@/components/ui/badge";
 import { allPosts } from "@/blog/posts/index";
 import { ALL_CATEGORIES, type BlogCategory } from "@/blog/types";
+import { getNewsItemsForBlog } from "@/news/items/index";
+import type { NewsStatus } from "@/news/types";
 
 const BASE_URL = "https://chartertransparenz.de";
 
@@ -16,6 +18,20 @@ function formatDate(iso: string): string {
   });
 }
 
+const NEWS_STATUS_LABEL: Record<NewsStatus, string> = {
+  in_kraft: "In Kraft",
+  angekuendigt: "Angekündigt",
+  update: "Update",
+  unklar: "Unklar",
+};
+
+const NEWS_STATUS_CLASS: Record<NewsStatus, string> = {
+  in_kraft: "bg-green-50 text-green-700 border-green-200",
+  angekuendigt: "bg-amber-50 text-amber-700 border-amber-200",
+  update: "bg-blue-50 text-blue-700 border-blue-200",
+  unklar: "bg-gray-50 text-gray-600 border-gray-200",
+};
+
 const CATEGORY_COLORS: Record<BlogCategory, string> = {
   "Reviere & Destinationen":        "bg-ocean-light/60 text-ocean-dark",
   "Charterwissen & Kosten":         "bg-sunset/15 text-amber-800",
@@ -25,8 +41,17 @@ const CATEGORY_COLORS: Record<BlogCategory, string> = {
   "Inspiration & Erfahrungsberichte": "bg-purple-50 text-purple-800",
 };
 
+function formatNewsDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("de-DE", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
+}
+
 export default function BlogListPage() {
   const [activeCategory, setActiveCategory] = useState<BlogCategory | "Alle">("Alle");
+  const newsItems = getNewsItemsForBlog().slice(0, 4);
 
   const filtered =
     activeCategory === "Alle"
@@ -93,6 +118,57 @@ export default function BlogListPage() {
             </div>
           </div>
         </div>
+
+        {/* Aktuelle Törn-Hinweise */}
+        {newsItems.length > 0 && (
+          <div className="bg-gray-50 border-b border-gray-100 py-10">
+            <div className="container mx-auto px-4">
+              <div className="flex items-end justify-between mb-5">
+                <div>
+                  <p className="text-xs font-medium text-ocean-blue tracking-wide uppercase mb-1">
+                    Revier-Updates
+                  </p>
+                  <h2 className="text-xl font-semibold text-gray-900">
+                    Aktuelle Törn-Hinweise
+                  </h2>
+                </div>
+                <Link
+                  to="/news"
+                  className="text-sm text-ocean-blue hover:text-ocean-dark transition-colors whitespace-nowrap"
+                >
+                  Alle ansehen →
+                </Link>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {newsItems.map((item) => (
+                  <Link
+                    key={item.slug}
+                    to={`/news/${item.slug}`}
+                    className="group flex flex-col bg-white rounded-lg border border-gray-100 p-4 hover:shadow-sm transition-shadow"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <Badge
+                        variant="outline"
+                        className={`text-xs font-medium ${NEWS_STATUS_CLASS[item.status]}`}
+                      >
+                        {NEWS_STATUS_LABEL[item.status]}
+                      </Badge>
+                    </div>
+                    <p className="text-sm font-medium text-gray-900 group-hover:text-ocean-blue transition-colors leading-snug mb-2 flex-1">
+                      {item.title}
+                    </p>
+                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
+                      <span className="text-xs text-gray-400">{item.region}</span>
+                      <span className="text-xs text-gray-400">
+                        {formatNewsDate(item.effective_from)}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Article Grid */}
         <div className="container mx-auto px-4 py-12">
