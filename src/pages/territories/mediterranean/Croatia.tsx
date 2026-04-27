@@ -12,6 +12,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 // Meta component removed - SEO tags managed by prerender script
 import { META } from "@/seo/meta.config";
 import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 
 const destinationCroatia = "/lovable-uploads/fe53453c-c6a8-44af-b2de-e27a0a8033ae.webp";
 
@@ -136,12 +137,15 @@ const Croatia = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-4">
           {quickFacts.map((fact, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>)}
+        </div>
+        <div className="text-right mb-8">
+          <NewsRegionHint regionSlug="kroatien" />
         </div>
 
         {/* Google Maps */}

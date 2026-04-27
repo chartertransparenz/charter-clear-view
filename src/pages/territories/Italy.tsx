@@ -14,6 +14,7 @@ import NausysWidget from "@/components/NausysWidget";
 import elbaBeach from "@/assets/elba-beach.jpg";
 import amalfiCoast from "@/assets/amalfi-coast.jpg";
 import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 // import destinationItaly from "@/assets/destination-italy.jpg";
 
 const Italy = () => {
@@ -100,6 +101,7 @@ const Italy = () => {
               
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
+              {fact.label === "Besonderheit" && <NewsRegionHint regionSlug="italien" />}
             </div>)}
         </div>
 

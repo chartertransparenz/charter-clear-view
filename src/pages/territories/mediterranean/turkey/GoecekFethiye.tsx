@@ -13,6 +13,7 @@ import { JsonLd } from "@/seo/JsonLd";
 import { META } from "@/seo/meta.config";
 import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 
 const GoecekFethiye = () => {
   useEffect(() => {
@@ -126,6 +127,7 @@ const GoecekFethiye = () => {
                       {fact.label}
                     </p>
                     <p className="font-bold">{fact.value}</p>
+                    {fact.label === "Besonderheit" && <NewsRegionHint regionSlug="tuerkei-goecek" />}
                   </CardContent>
                 </Card>
               );

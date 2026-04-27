@@ -46,7 +46,7 @@ export default function NewsRegionTeaser({ regionSlug, regionLabel }: Props) {
     : "Aktuelle Törn-Hinweise";
 
   return (
-    <div className="max-w-4xl mx-auto my-12 px-4">
+    <div id="aktuelle-toern-hinweise" className="max-w-4xl mx-auto my-12 px-4">
       <div className="border-l-4 border-ocean-blue pl-5 mb-6">
         <h2 className="text-xl font-semibold text-gray-900">{heading}</h2>
         <p className="text-sm text-gray-500 mt-1">

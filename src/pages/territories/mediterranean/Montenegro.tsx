@@ -13,6 +13,7 @@ import { Meta } from "@/seo/Meta";
 import { JsonLd } from "@/seo/JsonLd";
 import mediterranean from "@/assets/mediterranean.jpg";
 import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 const Montenegro = () => {
   const m = META.montenegro;
   
@@ -99,6 +100,7 @@ const Montenegro = () => {
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
+              {fact.label === "Besonderheit" && <NewsRegionHint regionSlug="montenegro" />}
             </div>)}
         </div>
 

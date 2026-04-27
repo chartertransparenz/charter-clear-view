@@ -38,3 +38,9 @@ export function getNewsItemsForRegion(regionSlug: string): NewsItem[] {
 export function getFeaturedNewsItems(): NewsItem[] {
   return allNewsItems.filter((item) => item.is_featured);
 }
+
+export function getNewsCountForRegion(regionSlug: string): number {
+  return allNewsItems.filter(
+    (item) => item.show_on_region_page && item.linked_region_slug === regionSlug
+  ).length;
+}

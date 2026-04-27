@@ -13,6 +13,7 @@ import { JsonLd } from "@/seo/JsonLd";
 import { META } from "@/seo/meta.config";
 import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 import {
   Breadcrumb,
   BreadcrumbEllipsis,
@@ -158,7 +159,7 @@ const Turkey = () => {
 
       <div className="container mx-auto px-4 py-12">
         {/* Quick Facts */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-4">
           {quickFacts.map((fact, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
@@ -166,6 +167,9 @@ const Turkey = () => {
               <p className="text-sm text-gray-600">{fact.value}</p>
             </div>
           ))}
+        </div>
+        <div className="text-right mb-8">
+          <NewsRegionHint regionSlug="tuerkei-goecek" />
         </div>
 
         {/* Map */}

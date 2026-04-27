@@ -14,6 +14,8 @@ import { Meta } from "@/seo/Meta";
 import { META } from "@/seo/meta.config";
 import { JsonLd } from "@/seo/JsonLd";
 import { BREADCRUMB_CARIBBEAN } from "@/seo/breadcrumbs.caribbean";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 
 const Bahamas = () => {
   const m = META.bahamas;
@@ -112,6 +114,7 @@ const Bahamas = () => {
               <fact.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <p className="font-semibold text-gray-800 mb-1">{fact.label}</p>
               <p className="text-sm text-gray-600">{fact.value}</p>
+              {fact.label === "Besonderheit" && <NewsRegionHint regionSlug="bahamas" />}
             </div>)}
         </div>
 
@@ -331,6 +334,8 @@ const Bahamas = () => {
           </div>
         </div>
         
+
+        <NewsRegionTeaser regionSlug="bahamas" regionLabel="Bahamas" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">
