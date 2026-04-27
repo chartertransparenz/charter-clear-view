@@ -1,10 +1,12 @@
 import type { BlogPost } from "../types";
+import { neueAnkerregelnKroatien202670MeterZone } from "./neue-ankerregeln-kroatien-2026-70-meter-zone";
 import { wasKostetYachtcharter } from "./was-kostet-yachtcharter";
 import { kroatienEinsteiger } from "./kroatien-einsteiger";
 import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  neueAnkerregelnKroatien202670MeterZone,
   kroatienEinsteiger,
   bareboatOderSkipper,
   wasKostetYachtcharter,
