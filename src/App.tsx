@@ -18,6 +18,7 @@ const Datenschutz = lazy(() => import('@/pages/Datenschutz').then(m => ({ defaul
 const FAQ = lazy(() => import('@/pages/FAQ'));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const CharterConfirmation = lazy(() => import("@/pages/CharterConfirmation"));
+const CharterAnfrage = lazy(() => import("@/pages/CharterAnfrage"));
 const AllTerritories = lazy(() => import("./pages/AllTerritories"));
 
 // Territory pages
@@ -206,6 +207,7 @@ function App() {
               <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/charter-confirmation" element={<CharterConfirmation />} />
+              <Route path="/charter-anfrage" element={<CharterAnfrage />} />
               <Route path="/reviere/alle-reviere" element={<AllTerritories />} />
 
               {/* Mediterranean routes */}

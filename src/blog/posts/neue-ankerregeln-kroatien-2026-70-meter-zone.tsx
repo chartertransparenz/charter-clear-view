@@ -120,6 +120,11 @@ const content = (
         realistisch und entspannt zu planen – und die{" "}
         <a href="/blog/was-kostet-ein-yachtcharter">Kosten transparent zu kalkulieren</a>.
       </p>
+      <p className="mt-3">
+        <a href="/charter-anfrage" className="text-ocean-dark font-medium hover:underline">
+          Jetzt unverbindlich anfragen →
+        </a>
+      </p>
     </div>
   </div>
 );

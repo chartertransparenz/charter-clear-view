@@ -78,7 +78,9 @@ const content = (
       Verantwortung als Teil des Erlebnisses verstehen. Wählen Sie einen Skipper, wenn Sie
       sich erstmals auf das Meer wagen, mit einer gemischten Crew reisen oder einfach
       einen entspannten Urlaub ohne nautische Pflichten möchten. Beides ist richtig.
-      Entscheidend ist, dass Sie ehrlich mit sich selbst und Ihrer Crew sind.
+      Entscheidend ist, dass Sie ehrlich mit sich selbst und Ihrer Crew sind. Wenn Sie
+      dabei Unterstützung suchen, helfen wir Ihnen gerne weiter –{" "}
+      <a href="/charter-anfrage">unverbindlich und persönlich</a>.
     </p>
   </div>
 );

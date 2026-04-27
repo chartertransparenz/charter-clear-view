@@ -97,7 +97,9 @@ const content = (
     <p>
       Für Einsteiger lohnt sich außerdem ein Blick auf die{" "}
       <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone">aktuellen Ankerregeln in Kroatien</a>
-      , da sie die Planung in beliebten Buchten beeinflussen können.
+      , da sie die Planung in beliebten Buchten beeinflussen können. Wenn Sie Ihren ersten
+      Kroatien-Törn planen und konkrete Fragen haben, stehen wir für eine{" "}
+      <a href="/charter-anfrage">persönliche Beratung</a> gerne zur Verfügung.
     </p>
   </div>
 );

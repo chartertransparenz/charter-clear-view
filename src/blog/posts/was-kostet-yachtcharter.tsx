@@ -126,7 +126,8 @@ const content = (
       Sie für eine Woche Segelurlaub mit einem Gesamtbudget von
       <strong> 900 bis 1.300 €</strong> rechnen – inklusive Anreise. Bei weiteren Fragen rund
       um Kosten und Ablauf finden Sie Antworten in unserem{" "}
-      <a href="/faq">Charter-FAQ</a>.
+      <a href="/faq">Charter-FAQ</a>. Oder stellen Sie direkt eine{" "}
+      <a href="/charter-anfrage">unverbindliche Beratungsanfrage</a>.
     </p>
   </div>
 );
