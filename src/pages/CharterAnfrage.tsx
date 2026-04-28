@@ -10,10 +10,21 @@ const BASE_URL = "https://chartertransparenz.de";
 async function callEdgeFunction(functionName: string, data: unknown) {
   try {
     const { data: result, error } = await supabase.functions.invoke(functionName, { body: data });
-    if (error) throw error;
+    if (error) {
+      // FunctionsHttpError carries an optional .context with the raw response body
+      const ctx = (error as Record<string, unknown>).context;
+      console.error(
+        `[callEdgeFunction] ${functionName} returned an error:`,
+        error.message,
+        ctx ?? ""
+      );
+      throw error;
+    }
+    console.log(`[callEdgeFunction] ${functionName} success:`, result);
     return { success: true, data: result };
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Unbekannter Fehler";
+    console.error(`[callEdgeFunction] ${functionName} exception:`, message);
     return { success: false, error: message };
   }
 }
@@ -113,6 +124,9 @@ function AnfrageForm() {
       destination: values.destination.trim() || undefined,
       message: values.message.trim(),
     });
+    if (!result.success) {
+      console.error("[CharterAnfrage] Form submission failed:", result.error);
+    }
     setStatus(result.success ? "success" : "error");
   }
 

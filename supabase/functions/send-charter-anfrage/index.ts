@@ -6,6 +6,16 @@ const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
 const RESEND_FROM = Deno.env.get('RESEND_FROM') || 'Charter Transparenz <noreply@chartertransparenz.de>'
 const REQUESTS_INBOX = Deno.env.get('REQUESTS_INBOX') || 'info@chartertransparenz.de'
 
+// Startup diagnostics (logged once when the isolate boots)
+console.log('send-charter-anfrage: function loaded')
+console.log('  RESEND_API_KEY present:', !!RESEND_API_KEY)
+console.log('  RESEND_FROM:', RESEND_FROM)
+console.log('  REQUESTS_INBOX:', REQUESTS_INBOX)
+
+if (!RESEND_API_KEY) {
+  console.error('FATAL: RESEND_API_KEY is not set. Emails cannot be sent.')
+}
+
 const resend = new Resend(RESEND_API_KEY)
 
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
@@ -38,8 +48,19 @@ const charterAnfrageSchema = z.object({
 })
 
 serve(async (req) => {
+  console.log('Request:', req.method, req.url)
+
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders })
+  }
+
+  // Guard: fail fast if API key is missing
+  if (!RESEND_API_KEY) {
+    console.error('Aborting: RESEND_API_KEY not configured')
+    return new Response(
+      JSON.stringify({ error: 'E-Mail-Dienst nicht konfiguriert. Bitte administrator kontaktieren.' }),
+      { status: 503, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    )
   }
 
   try {
@@ -48,6 +69,7 @@ serve(async (req) => {
                'unknown'
 
     if (!checkRateLimit(ip)) {
+      console.log('Rate limit exceeded for IP:', ip)
       return new Response(
         JSON.stringify({ error: 'Zu viele Anfragen. Bitte versuchen Sie es später erneut.' }),
         { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
@@ -55,9 +77,11 @@ serve(async (req) => {
     }
 
     const rawData = await req.json()
+    console.log('Received payload keys:', Object.keys(rawData))
     const result = charterAnfrageSchema.safeParse(rawData)
 
     if (!result.success) {
+      console.error('Validation failed:', result.error.flatten().fieldErrors)
       return new Response(
         JSON.stringify({ error: 'Ungültige Formulardaten', details: result.error.flatten().fieldErrors }),
         { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
@@ -65,6 +89,7 @@ serve(async (req) => {
     }
 
     const { name, email, travelPeriod, destination, message } = result.data
+    console.log('Sending email to:', REQUESTS_INBOX, '| from:', RESEND_FROM)
 
     const emailHtml = `
       <h2 style="color:#1e3a5f;">Neue Yachtcharter-Anfrage über chartertransparenz.de</h2>
@@ -96,11 +121,11 @@ serve(async (req) => {
     })
 
     if (error) {
-      console.error('Resend error:', error)
-      throw new Error(`Failed to send email: ${error.message}`)
+      console.error('Resend API error:', JSON.stringify(error))
+      throw new Error(`Resend rejected the request: ${error.message}`)
     }
 
-    console.log('Charter-Anfrage email sent:', data?.id)
+    console.log('Email sent successfully, id:', data?.id)
     return new Response(
       JSON.stringify({ success: true, id: data?.id }),
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
