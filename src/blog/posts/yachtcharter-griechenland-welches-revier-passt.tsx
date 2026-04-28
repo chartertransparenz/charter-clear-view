@@ -267,7 +267,7 @@ const content = (
     <InlineImage
       src="/images/blog/griechenland-reviere/yachtcharter-griechenland-reviere-detail1.jpg"
       alt="Türkisfarbene Bucht mit bewaldeter Küste in Griechenland"
-      caption="Geschützte Buchten und grüne Inseln prägen viele entspannte Reviere in Griechenland – besonders im Ionischen Meer und in den Sporaden."
+      caption="Türkisfarbenes Wasser, grüne Hänge und ruhige Ankerplätze: Gerade die geschützteren Reviere Griechenlands zeigen, wie entspannt ein Yachtcharter sein kann."
     />
 
     <CtaBox
@@ -418,7 +418,7 @@ const content = (
     <InlineImage
       src="/images/blog/griechenland-reviere/yachtcharter-griechenland-reviere-detail2.jpg"
       alt="Taverne am Wasser in einem griechischen Hafen"
-      caption="Zum Griechenland-Törn gehören nicht nur Wind und Route, sondern auch kleine Häfen, Tavernen und entspannte Abende an Land."
+      caption="Nach einem Segeltag in der Ägäis beginnt oft der schönste Teil des Abends: festmachen, ankommen und in einer kleinen Taverne direkt am Wasser den Törn Revue passieren lassen."
     />
 
     <p>
