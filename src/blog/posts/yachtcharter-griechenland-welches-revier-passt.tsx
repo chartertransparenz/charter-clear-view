@@ -132,25 +132,25 @@ const content = (
     </p>
     <ul>
       <li>
-        <strong>Ionisches Meer</strong> – die westliche Seite Griechenlands. Grüner,
+        <strong><a href="/reviere/mittelmeer/griechenland/ionisches-meer">Ionisches Meer</a></strong> – die westliche Seite Griechenlands. Grüner,
         geschützter, idealer für Einsteiger und Familien. Start typischerweise ab Korfu,
         Lefkas oder Preveza.
       </li>
       <li>
-        <strong>Saronischer / Argolischer Golf</strong> – rund um Athen. Gut erreichbar,
+        <strong><a href="/reviere/mittelmeer/griechenland/athen-saronischer-golf">Saronischer / Argolischer Golf</a></strong> – rund um Athen. Gut erreichbar,
         vielseitig, ideal für eine Woche mit gemischter Crew. Start ab Athen oder Lavrion.
       </li>
       <li>
-        <strong>Kykladen</strong> – das ikonische Griechenland mit weißen Dörfern und
+        <strong><a href="/reviere/mittelmeer/griechenland/kykladen">Kykladen</a></strong> – das ikonische Griechenland mit weißen Dörfern und
         blauer Ägäis. Windreicher, längere Schläge, sportlicher. Ab Lavrion, Paros oder
         Mykonos.
       </li>
       <li>
-        <strong>Sporaden</strong> – grüne, ursprüngliche Inseln im Norden der Ägäis.
+        <strong><a href="/reviere/mittelmeer/griechenland/sporaden">Sporaden</a></strong> – grüne, ursprüngliche Inseln im Norden der Ägäis.
         Weniger touristisch, ruhigere Atmosphäre. Ab Volos oder Skiathos.
       </li>
       <li>
-        <strong>Dodekanes</strong> – die südöstliche Inselgruppe rund um Rhodos und Kos.
+        <strong><a href="/reviere/mittelmeer/griechenland/dodekanes">Dodekanes</a></strong> – die südöstliche Inselgruppe rund um Rhodos und Kos.
         Abwechslungsreich, lange Saison, ideal für Griechenland-Wiederholer.
       </li>
     </ul>
