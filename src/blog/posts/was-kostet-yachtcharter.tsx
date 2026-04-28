@@ -87,13 +87,12 @@ const content = (
         borderRadius: "12px",
         padding: "28px 32px",
         margin: "40px 0",
-        color: "#fff",
       }}
     >
-      <p style={{ fontSize: "1.05rem", marginBottom: "8px", fontWeight: 600 }}>
+      <p style={{ fontSize: "1.05rem", marginBottom: "8px", fontWeight: 700, color: "#ffffff" }}>
         Sie möchten wissen, was Ihr konkreter Törn kostet?
       </p>
-      <p style={{ marginBottom: "20px", opacity: 0.9 }}>
+      <p style={{ marginBottom: "20px", color: "#e8edf2", lineHeight: 1.65 }}>
         Wir stellen Ihnen unverbindlich zwei bis drei passende Yachten mit transparenter
         Preisaufstellung zusammen – abgestimmt auf Revier, Crewgröße und Reisezeitraum.
       </p>
@@ -102,7 +101,7 @@ const content = (
         style={{
           display: "inline-block",
           background: "#e8a020",
-          color: "#fff",
+          color: "#ffffff",
           padding: "12px 28px",
           borderRadius: "8px",
           textDecoration: "none",
@@ -252,13 +251,12 @@ const content = (
         borderRadius: "12px",
         padding: "32px 36px",
         margin: "48px 0 24px",
-        color: "#fff",
       }}
     >
-      <p style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "10px" }}>
+      <p style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "10px", color: "#ffffff" }}>
         Sie möchten wissen, was Ihr konkreter Törn kostet?
       </p>
-      <p style={{ marginBottom: "24px", opacity: 0.9, lineHeight: 1.65 }}>
+      <p style={{ marginBottom: "24px", lineHeight: 1.65, color: "#e8edf2" }}>
         Wir erstellen Ihnen ein individuelles und transparentes Angebot – abgestimmt auf
         Ihre Wünsche, Ihr Revier und Ihre Crewgröße. Keine Pauschalen, keine versteckten
         Kosten: nur klare Zahlen.
@@ -268,7 +266,7 @@ const content = (
         style={{
           display: "inline-block",
           background: "#e8a020",
-          color: "#fff",
+          color: "#ffffff",
           padding: "14px 32px",
           borderRadius: "8px",
           textDecoration: "none",
