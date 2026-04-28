@@ -2,6 +2,14 @@
   command = "bun run build && bun tsx scripts/prerender-home.ts && bun tsx scripts/prerender-croatia.ts && bun tsx scripts/prerender-greece.ts && bun tsx scripts/prerender-italy.ts && bun tsx scripts/prerender-france.ts && bun tsx scripts/prerender-spain.ts && bun tsx scripts/prerender-caribbean.ts && bun tsx scripts/prerender-turkey.ts && bun tsx scripts/prerender-partners.ts && bun tsx scripts/generate-sitemap.ts && bun tsx scripts/validate-sitemap.ts && bun tsx scripts/validate-seo.ts"
   publish = "dist"
 
+# Sitemap: always serve our curated ct-sitemap.xml at /sitemap.xml
+# (Netlify's auto-plugin overwrites dist/sitemap.xml after build – force=true bypasses it)
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/ct-sitemap.xml"
+  status = 200
+  force = true
+
 # Host canonicalization (www -> non-www) - SECOND PRIORITY
 [[redirects]]
   from = "https://www.chartertransparenz.de/*"

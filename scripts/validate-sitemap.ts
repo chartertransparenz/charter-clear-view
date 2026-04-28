@@ -2,7 +2,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
-const SITEMAP_PATH = join('dist', 'sitemap.xml');
+const SITEMAP_PATH = join('dist', 'ct-sitemap.xml');
 const JSON_PATH = join('scripts', 'sitemap-paths.json');
 const EXPECTED_URL_COUNT = 154;
 

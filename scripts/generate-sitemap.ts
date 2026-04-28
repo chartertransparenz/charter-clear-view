@@ -262,13 +262,14 @@ try {
   writeFileSync(join('public', 'sitemap.xml'), sitemap, 'utf8');
   console.log(`   ✓ public/sitemap.xml`);
 
-  // Also write to dist/ when it exists (post-build step)
+  // Write to dist/ct-sitemap.xml when dist/ exists (post-build step).
+  // NOTE: Netlify's auto-sitemap plugin overwrites dist/sitemap.xml after the build command
+  // finishes, so we only write to ct-sitemap.xml. A force-redirect in netlify.toml ensures
+  // /sitemap.xml requests are served from ct-sitemap.xml.
   const distDir = join('dist');
   if (existsSync(distDir)) {
-    writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
-    writeFileSync(join('dist', 'ct-sitemap.xml'), sitemap, 'utf8'); // backward compat alias
-    console.log(`   ✓ dist/sitemap.xml`);
-    console.log(`   ✓ dist/ct-sitemap.xml (alias)`);
+    writeFileSync(join('dist', 'ct-sitemap.xml'), sitemap, 'utf8');
+    console.log(`   ✓ dist/ct-sitemap.xml`);
   } else {
     console.log(`   ℹ  dist/ not found – skipped (run as post-build step to populate dist/)`);
   }
