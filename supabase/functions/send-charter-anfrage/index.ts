@@ -42,8 +42,12 @@ const corsHeaders = {
 const charterAnfrageSchema = z.object({
   name: z.string().trim().min(1, 'Name erforderlich').max(100, 'Name zu lang'),
   email: z.string().trim().email('Ungültige E-Mail').max(255, 'E-Mail zu lang'),
+  phone: z.string().trim().max(50).optional(),
   travelPeriod: z.string().trim().max(200).optional(),
   destination: z.string().trim().max(200).optional(),
+  boatType: z.string().trim().max(100).optional(),
+  experienceLevel: z.string().trim().max(100).optional(),
+  consultationPreference: z.string().trim().max(100).optional(),
   message: z.string().trim().min(1, 'Nachricht erforderlich').max(2000, 'Nachricht zu lang'),
 })
 
@@ -88,21 +92,29 @@ serve(async (req) => {
       )
     }
 
-    const { name, email, travelPeriod, destination, message } = result.data
+    const { name, email, phone, travelPeriod, destination, boatType, experienceLevel, consultationPreference, message } = result.data
     console.log('Sending email to:', REQUESTS_INBOX, '| from:', RESEND_FROM)
+
+    const row = (label: string, value: string | undefined) =>
+      value
+        ? `<tr><td style="padding:6px 12px 6px 0;font-weight:bold;color:#374151;white-space:nowrap;">${label}:</td><td style="padding:6px 0;">${value}</td></tr>`
+        : ''
 
     const emailHtml = `
       <h2 style="color:#1e3a5f;">Neue Yachtcharter-Anfrage über chartertransparenz.de</h2>
 
       <table style="border-collapse:collapse;width:100%;max-width:600px;">
-        <tr><td style="padding:6px 12px 6px 0;font-weight:bold;color:#374151;white-space:nowrap;">Name:</td>
-            <td style="padding:6px 0;">${name}</td></tr>
-        <tr><td style="padding:6px 12px 6px 0;font-weight:bold;color:#374151;white-space:nowrap;">E-Mail:</td>
-            <td style="padding:6px 0;"><a href="mailto:${email}">${email}</a></td></tr>
-        <tr><td style="padding:6px 12px 6px 0;font-weight:bold;color:#374151;white-space:nowrap;">Reisezeitraum:</td>
-            <td style="padding:6px 0;">${travelPeriod || '—'}</td></tr>
-        <tr><td style="padding:6px 12px 6px 0;font-weight:bold;color:#374151;white-space:nowrap;">Wunschrevier:</td>
-            <td style="padding:6px 0;">${destination || '—'}</td></tr>
+        ${row('Name', name)}
+        <tr>
+          <td style="padding:6px 12px 6px 0;font-weight:bold;color:#374151;white-space:nowrap;">E-Mail:</td>
+          <td style="padding:6px 0;"><a href="mailto:${email}">${email}</a></td>
+        </tr>
+        ${row('Telefon', phone)}
+        ${row('Kontaktpräferenz', consultationPreference)}
+        ${row('Reisezeitraum', travelPeriod)}
+        ${row('Wunschrevier', destination)}
+        ${row('Yachttyp', boatType)}
+        ${row('Charter-Erfahrung', experienceLevel)}
       </table>
 
       <h3 style="color:#1e3a5f;margin-top:24px;">Nachricht:</h3>
