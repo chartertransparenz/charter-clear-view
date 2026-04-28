@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
+Sitemap: https://chartertransparenz.de/sitemap.xml
 Sitemap: https://chartertransparenz.de/ct-sitemap.xml
 
 # Crawl-delay for better server performance
@@ -16,6 +17,9 @@ Disallow: /*?*gclid*
 
 # Allow important pages
 Allow: /reviere/
+Allow: /blog/
+Allow: /news/
 Allow: /ueber-uns
 Allow: /faq
+Allow: /charter-anfrage
 Allow: /impressum

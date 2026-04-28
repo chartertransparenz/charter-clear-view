@@ -1,12 +1,12 @@
 // Dynamic Sitemap Generator with Build-Time lastmod
 // Generates sitemap.xml with current build timestamp
-// Force rebuild: 2025-10-13T19:50:00Z
+// Writes to: public/sitemap.xml (always) + dist/sitemap.xml (when dist/ exists after vite build)
 
-import { writeFileSync, readFileSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { createHash } from 'crypto';
 
-const BUILD_TIME = new Date().toISOString(); // YYYY-MM-DDThh:mm:ssZ
+const BUILD_TIME = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
 interface SitemapUrl {
   loc: string;
@@ -14,197 +14,215 @@ interface SitemapUrl {
 }
 
 const URLS: SitemapUrl[] = [
-  // Homepage
-  { loc: '/', lastmod: BUILD_TIME },
-  
-  // Legal Pages
-  { loc: '/impressum', lastmod: BUILD_TIME },
+  // ── Core pages ──────────────────────────────────────────────────────────
+  { loc: '/',                 lastmod: BUILD_TIME },
+  { loc: '/ueber-uns',        lastmod: BUILD_TIME },
+  { loc: '/faq',              lastmod: BUILD_TIME },
+  { loc: '/charter-anfrage',  lastmod: BUILD_TIME },
+
+  // ── Legal ────────────────────────────────────────────────────────────────
+  { loc: '/impressum',   lastmod: BUILD_TIME },
   { loc: '/datenschutz', lastmod: BUILD_TIME },
-  
-  // Service & Hub Pages
-  { loc: '/ueber-uns', lastmod: BUILD_TIME },
-  { loc: '/faq', lastmod: BUILD_TIME },
+
+  // ── Blog ─────────────────────────────────────────────────────────────────
+  { loc: '/blog', lastmod: BUILD_TIME },
+  // Blog posts – use publication date for accurate lastmod
+  { loc: '/blog/neue-ankerregeln-kroatien-2026-70-meter-zone', lastmod: '2026-04-27' },
+  { loc: '/blog/kroatien-einsteiger',     lastmod: '2025-04-10' },
+  { loc: '/blog/bareboat-oder-skipper',   lastmod: '2025-03-28' },
+  { loc: '/blog/was-kostet-ein-yachtcharter', lastmod: '2025-03-15' },
+
+  // ── News ─────────────────────────────────────────────────────────────────
+  { loc: '/news', lastmod: BUILD_TIME },
+  // News detail pages
+  { loc: '/news/sardinien-la-maddalena-nachtankerverbot-2026',    lastmod: BUILD_TIME },
+  { loc: '/news/ees-italien-non-eu-crew-update-2026',             lastmod: BUILD_TIME },
+  { loc: '/news/etias-reisegenehmigung-eu-2026',                  lastmod: BUILD_TIME },
+  { loc: '/news/bahamas-cruising-permits-2026',                   lastmod: BUILD_TIME },
+  { loc: '/news/kroatien-ankern-abstaende-kontrollen-2026',       lastmod: BUILD_TIME },
+  { loc: '/news/neue-eu-grenzregeln-non-eu-crew-yachtcharter',    lastmod: BUILD_TIME },
+  { loc: '/news/montenegro-duty-free-diesel-ohne-mindestaufenthalt', lastmod: BUILD_TIME },
+  { loc: '/news/tuerkei-goecek-bojenfelder-2026',                 lastmod: BUILD_TIME },
+
+  // ── Reviere hub ──────────────────────────────────────────────────────────
   { loc: '/reviere/alle-reviere', lastmod: BUILD_TIME },
-  
-  // Main Territory Hubs
-  { loc: '/reviere/atlantik', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas', lastmod: BUILD_TIME },
-  
-  // Mediterranean Hub
+
+  // ── Mediterranean hub ─────────────────────────────────────────────────────
   { loc: '/reviere/mittelmeer', lastmod: BUILD_TIME },
-  
+
   // Croatia
-  { loc: '/reviere/mittelmeer/kroatien', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/kroatien/istrien', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/kroatien/kvarner', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/kroatien/zadar', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/kroatien/dalmatien-split', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/kroatien/dubrovnik', lastmod: BUILD_TIME },
-  
+  { loc: '/reviere/mittelmeer/kroatien',                   lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/kroatien/istrien',           lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/kroatien/kvarner',           lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/kroatien/zadar',             lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/kroatien/dalmatien-split',   lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/kroatien/dubrovnik',         lastmod: BUILD_TIME },
+
   // Greece
-  { loc: '/reviere/mittelmeer/griechenland', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/griechenland/ionisches-meer', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/griechenland/kykladen', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/griechenland/dodekanes', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/griechenland/sporaden', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/griechenland/athen-saronischer-golf', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/griechenland/nordgriechenland', lastmod: BUILD_TIME },
-  
+  { loc: '/reviere/mittelmeer/griechenland',                            lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/griechenland/ionisches-meer',             lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/griechenland/kykladen',                   lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/griechenland/dodekanes',                  lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/griechenland/sporaden',                   lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/griechenland/athen-saronischer-golf',     lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/griechenland/nordgriechenland',           lastmod: BUILD_TIME },
+
   // Turkey
-  { loc: '/reviere/mittelmeer/tuerkei', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/tuerkei/tuerkische-aegaeis', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/tuerkei/bodrum', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/tuerkei/marmaris', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/tuerkei/goecek-fethiye', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/tuerkei/kas-kalkan', lastmod: BUILD_TIME },
-  
+  { loc: '/reviere/mittelmeer/tuerkei',                         lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/tuerkei/tuerkische-aegaeis',      lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/tuerkei/bodrum',                  lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/tuerkei/marmaris',                lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/tuerkei/goecek-fethiye',          lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/tuerkei/kas-kalkan',              lastmod: BUILD_TIME },
+
   // Italy
-  { loc: '/reviere/mittelmeer/italien', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/italien/sardinien', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/italien/sardinien/costa-smeralda', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/italien/toskana-elba', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/italien/amalfikueste', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/italien/sizilien', lastmod: BUILD_TIME },
-  
+  { loc: '/reviere/mittelmeer/italien',                             lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/italien/sardinien',                   lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/italien/sardinien/costa-smeralda',    lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/italien/toskana-elba',                lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/italien/amalfikueste',                lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/italien/sizilien',                    lastmod: BUILD_TIME },
+
   // Spain
-  { loc: '/reviere/mittelmeer/spanien', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/spanien/balearen', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/spanien/balearen/mallorca', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/spanien/balearen/ibiza', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/spanien/balearen/menorca', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/spanien/costa-brava', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/spanien/valencia', lastmod: BUILD_TIME },
-  
+  { loc: '/reviere/mittelmeer/spanien',                       lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/spanien/balearen',              lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/spanien/balearen/mallorca',     lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/spanien/balearen/ibiza',        lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/spanien/balearen/menorca',      lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/spanien/costa-brava',           lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/spanien/valencia',              lastmod: BUILD_TIME },
+
   // France
-  { loc: '/reviere/mittelmeer/frankreich', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/frankreich/cote-azur', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/frankreich/korsika', lastmod: BUILD_TIME },
-  
-  // Other Mediterranean Countries
-  { loc: '/reviere/mittelmeer/malta', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/montenegro', lastmod: BUILD_TIME },
-  { loc: '/reviere/mittelmeer/slowenien', lastmod: BUILD_TIME },
-  
+  { loc: '/reviere/mittelmeer/frankreich',            lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/frankreich/cote-azur',  lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/frankreich/korsika',    lastmod: BUILD_TIME },
+
+  // Other Mediterranean
+  { loc: '/reviere/mittelmeer/malta',       lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/montenegro',  lastmod: BUILD_TIME },
+  { loc: '/reviere/mittelmeer/slowenien',   lastmod: BUILD_TIME },
+
+  // ── Atlantic ──────────────────────────────────────────────────────────────
+  { loc: '/reviere/atlantik', lastmod: BUILD_TIME },
+
   // Canary Islands
-  { loc: '/reviere/atlantik/kanaren', lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/kanaren',              lastmod: BUILD_TIME },
   { loc: '/reviere/atlantik/kanaren/gran-canaria', lastmod: BUILD_TIME },
-  { loc: '/reviere/atlantik/kanaren/teneriffa', lastmod: BUILD_TIME },
-  { loc: '/reviere/atlantik/kanaren/lanzarote', lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/kanaren/teneriffa',    lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/kanaren/lanzarote',    lastmod: BUILD_TIME },
   { loc: '/reviere/atlantik/kanaren/fuerteventura', lastmod: BUILD_TIME },
-  
+
   // Azores
-  { loc: '/reviere/atlantik/azoren', lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/azoren',           lastmod: BUILD_TIME },
   { loc: '/reviere/atlantik/azoren/sao-miguel', lastmod: BUILD_TIME },
-  { loc: '/reviere/atlantik/azoren/terceira', lastmod: BUILD_TIME },
-  { loc: '/reviere/atlantik/azoren/faial', lastmod: BUILD_TIME },
-  
-  // French Atlantic Coast
-  { loc: '/reviere/atlantik/franzoesische-atlantikkueste', lastmod: BUILD_TIME },
-  { loc: '/reviere/atlantik/franzoesische-atlantikkueste/biskaya', lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/azoren/terceira',  lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/azoren/faial',     lastmod: BUILD_TIME },
+
+  // French Atlantic
+  { loc: '/reviere/atlantik/franzoesische-atlantikkueste',                    lastmod: BUILD_TIME },
+  { loc: '/reviere/atlantik/franzoesische-atlantikkueste/biskaya',            lastmod: BUILD_TIME },
   { loc: '/reviere/atlantik/franzoesische-atlantikkueste/bretagne-normandie', lastmod: BUILD_TIME },
-  
-  // Caribbean
-  { loc: '/reviere/karibik/bvi', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/usvi', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/bahamas', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/antigua', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/st-martin', lastmod: BUILD_TIME },
+
+  // ── Caribbean ─────────────────────────────────────────────────────────────
+  { loc: '/reviere/karibik',                       lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/bvi',                   lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/usvi',                  lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/bahamas',               lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/antigua',               lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/st-martin',             lastmod: BUILD_TIME },
   { loc: '/reviere/karibik/st-vincent-grenadinen', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/leeward-inseln', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/windward-inseln', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/kuba', lastmod: BUILD_TIME },
-  
-  // Caribbean Charter Locations
-  { loc: '/reviere/karibik/charter-standorte/tortola', lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/leeward-inseln',        lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/windward-inseln',       lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/kuba',                  lastmod: BUILD_TIME },
+  // Caribbean charter locations
+  { loc: '/reviere/karibik/charter-standorte/tortola',   lastmod: BUILD_TIME },
   { loc: '/reviere/karibik/charter-standorte/st-thomas', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/charter-standorte/antigua', lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/charter-standorte/antigua',   lastmod: BUILD_TIME },
   { loc: '/reviere/karibik/charter-standorte/martinique', lastmod: BUILD_TIME },
-  { loc: '/reviere/karibik/charter-standorte/havanna', lastmod: BUILD_TIME },
-  
-  // South Pacific
-  { loc: '/reviere/suedpazifik/franzoesisch-polynesien', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/australien', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/australien/whitsundays', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/neukaledonien', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/fidschi', lastmod: BUILD_TIME },
-  
-  // South Pacific Charter Locations
-  { loc: '/reviere/suedpazifik/charter-standorte/raiatea', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/charter-standorte/bora-bora', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/charter-standorte/rangiroa', lastmod: BUILD_TIME },
-  { loc: '/reviere/suedpazifik/charter-standorte/noumea', lastmod: BUILD_TIME },
+  { loc: '/reviere/karibik/charter-standorte/havanna',   lastmod: BUILD_TIME },
+
+  // ── South Pacific ─────────────────────────────────────────────────────────
+  { loc: '/reviere/suedpazifik',                            lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/franzoesisch-polynesien',    lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/australien',                 lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/australien/whitsundays',     lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/neukaledonien',              lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/fidschi',                    lastmod: BUILD_TIME },
+  // South Pacific charter locations
+  { loc: '/reviere/suedpazifik/charter-standorte/raiatea',    lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/charter-standorte/bora-bora',  lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/charter-standorte/rangiroa',   lastmod: BUILD_TIME },
+  { loc: '/reviere/suedpazifik/charter-standorte/noumea',     lastmod: BUILD_TIME },
   { loc: '/reviere/suedpazifik/charter-standorte/neuseeland', lastmod: BUILD_TIME },
-  
-  // Indian Ocean - Asian Routes
-  { loc: '/reviere/indischer-ozean/asien', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/asien/malaysia', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/asien/thailand', lastmod: BUILD_TIME },
+
+  // ── Indian Ocean ──────────────────────────────────────────────────────────
+  { loc: '/reviere/indischer-ozean',                        lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/asien',                  lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/asien/malaysia',         lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/asien/thailand',         lastmod: BUILD_TIME },
   { loc: '/reviere/indischer-ozean/asien/thailand/langkawi-tioman', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/asien/thailand/phuket', lastmod: BUILD_TIME },
-  
-  // Indian Ocean - Seychelles
-  { loc: '/reviere/indischer-ozean/seychellen', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/seychellen/mahe', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/seychellen/praslin', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/seychellen/la-digue', lastmod: BUILD_TIME },
-  
-  // Indian Ocean - Maldives
-  { loc: '/reviere/indischer-ozean/malediven', lastmod: BUILD_TIME },
-  { loc: '/reviere/indischer-ozean/malediven/male', lastmod: BUILD_TIME },
-  
-  // Northern Europe
-  { loc: '/reviere/nord-europa/deutsche-ostsee', lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/asien/thailand/phuket',  lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/seychellen',             lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/seychellen/mahe',        lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/seychellen/praslin',     lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/seychellen/la-digue',    lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/malediven',              lastmod: BUILD_TIME },
+  { loc: '/reviere/indischer-ozean/malediven/male',         lastmod: BUILD_TIME },
+  // Standalone Seychelles page (separate route in App.tsx)
+  { loc: '/reviere/seychellen', lastmod: BUILD_TIME },
+
+  // ── North Europe ──────────────────────────────────────────────────────────
+  { loc: '/reviere/nord-europa',                                    lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/deutsche-ostsee',                    lastmod: BUILD_TIME },
   { loc: '/reviere/nord-europa/deutsche-ostsee/charter-standorte', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa/nordsee', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa/nordsee/belgien', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa/nordsee/holland', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa/skandinavien', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa/skandinavien/daenemark', lastmod: BUILD_TIME },
-  { loc: '/reviere/nord-europa/skandinavien/schweden', lastmod: BUILD_TIME },
-  
-  // Americas & Bahamas
-  { loc: '/reviere/amerika-bahamas/bahamas', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/bahamas/nassau', lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/nordsee',                            lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/nordsee/belgien',                    lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/nordsee/holland',                    lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/skandinavien',                       lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/skandinavien/daenemark',             lastmod: BUILD_TIME },
+  { loc: '/reviere/nord-europa/skandinavien/schweden',              lastmod: BUILD_TIME },
+
+  // ── Americas & Bahamas ────────────────────────────────────────────────────
+  { loc: '/reviere/amerika-bahamas',                        lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/bahamas',                lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/bahamas/nassau',         lastmod: BUILD_TIME },
   { loc: '/reviere/amerika-bahamas/bahamas/georgetown-exumas', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/mexiko', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/mexiko/cancun', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/mexiko/cozumel', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/belize', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/florida-keys', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/florida-keys/key-west', lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/mexiko',                 lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/mexiko/cancun',          lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/mexiko/cozumel',         lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/belize',                 lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/florida-keys',           lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/florida-keys/key-west',  lastmod: BUILD_TIME },
   { loc: '/reviere/amerika-bahamas/florida-keys/key-largo', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/usa-ostkueste', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/usa-ostkueste/newport', lastmod: BUILD_TIME },
-  { loc: '/reviere/amerika-bahamas/usa-ostkueste/boston', lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/usa-ostkueste',          lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/usa-ostkueste/newport',  lastmod: BUILD_TIME },
+  { loc: '/reviere/amerika-bahamas/usa-ostkueste/boston',   lastmod: BUILD_TIME },
   { loc: '/reviere/amerika-bahamas/usa-ostkueste/annapolis', lastmod: BUILD_TIME },
-  
-  // Partner Hub
-  { loc: '/yachtcharter-partner', lastmod: BUILD_TIME },
-  
-  // Individual Partner Pages
-  { loc: '/yachtcharter-partner/pitter-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/croatia-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/angelina-yachtcharter', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/ncp-mare', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/ultra-sailing', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/waypoint', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/istion-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/kavas-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/vernicos-yachts', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/athenian-yachts', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/olympic-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/five-seasons-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/dalmatia-charter', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/dream-yacht', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/navigare-yachting', lastmod: BUILD_TIME },
-  { loc: '/yachtcharter-partner/kiriacoulis', lastmod: BUILD_TIME },
+  // Standalone BVI page (separate route in App.tsx)
+  { loc: '/reviere/bvi', lastmod: BUILD_TIME },
+
+  // ── Partner pages ─────────────────────────────────────────────────────────
+  { loc: '/yachtcharter-partner',                           lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/pitter-yachting',          lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/croatia-yachting',         lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/angelina-yachtcharter',    lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/ncp-mare',                 lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/ultra-sailing',            lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/waypoint',                 lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/istion-yachting',          lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/kavas-yachting',           lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/vernicos-yachts',          lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/athenian-yachts',          lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/olympic-yachting',         lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/five-seasons-yachting',    lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/dalmatia-charter',         lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/dream-yacht',              lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/navigare-yachting',        lastmod: BUILD_TIME },
+  { loc: '/yachtcharter-partner/kiriacoulis',              lastmod: BUILD_TIME },
 ];
 
-// Helpers: normalize path, compute priority, load JSON paths
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
 const normalizePath = (p: string): string => {
   let path = p.trim();
   if (!path.startsWith('/')) path = '/' + path;
@@ -212,30 +230,16 @@ const normalizePath = (p: string): string => {
   return path;
 };
 
-
-const loadPathsFromJson = (): string[] | null => {
-  try {
-    const jsonPath = join('scripts', 'sitemap-paths.json');
-    if (!existsSync(jsonPath)) return null;
-    const raw = readFileSync(jsonPath, 'utf8');
-    const arr = JSON.parse(raw) as string[];
-    return Array.from(new Set(arr.map(normalizePath)));
-  } catch {
-    return null;
-  }
-};
-
 function generateSitemap(): string {
-  const jsonPaths = loadPathsFromJson();
-  const paths = jsonPaths ?? Array.from(new Set(URLS.map(u => normalizePath(u.loc))));
-  
+  const paths = Array.from(new Set(URLS.map(u => normalizePath(u.loc))));
+  const lastmodMap = new Map(URLS.map(u => [normalizePath(u.loc), u.lastmod]));
+
   const urlEntries = paths.map(loc => {
-    // Only homepage gets <priority>1.0</priority>
+    const lastmod = lastmodMap.get(loc) ?? BUILD_TIME;
     const priorityTag = loc === '/' ? '\n    <priority>1.0</priority>' : '';
-    
     return `  <url>
     <loc>https://chartertransparenz.de${loc}</loc>
-    <lastmod>${BUILD_TIME}</lastmod>${priorityTag}
+    <lastmod>${lastmod}</lastmod>${priorityTag}
   </url>`;
   }).join('\n');
 
@@ -246,36 +250,41 @@ ${urlEntries}
 </urlset>`;
 }
 
-// Main execution
+// ── Main ─────────────────────────────────────────────────────────────────────
+
 console.log('\n🗺️  Generating sitemap.xml...\n');
 
 try {
   const sitemap = generateSitemap();
-  
-  // Write both sitemap.xml and ct-sitemap.xml
-  writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
-  writeFileSync(join('dist', 'ct-sitemap.xml'), sitemap, 'utf8');
+  const count = (sitemap.match(/<loc>/g) || []).length;
 
-  // Calculate SHA256 hash for verification
+  // Always write to public/ so Vite copies it on next build
+  writeFileSync(join('public', 'sitemap.xml'), sitemap, 'utf8');
+  console.log(`   ✓ public/sitemap.xml`);
+
+  // Also write to dist/ when it exists (post-build step)
+  const distDir = join('dist');
+  if (existsSync(distDir)) {
+    writeFileSync(join('dist', 'sitemap.xml'), sitemap, 'utf8');
+    writeFileSync(join('dist', 'ct-sitemap.xml'), sitemap, 'utf8'); // backward compat alias
+    console.log(`   ✓ dist/sitemap.xml`);
+    console.log(`   ✓ dist/ct-sitemap.xml (alias)`);
+  } else {
+    console.log(`   ℹ  dist/ not found – skipped (run as post-build step to populate dist/)`);
+  }
+
   const hash = createHash('sha256').update(sitemap, 'utf8').digest('hex');
 
-  const jsonPaths = loadPathsFromJson();
-  const count = (sitemap.match(/<loc>/g) || []).length;
-  
-  console.log(`✅ Sitemap generated with ${count} URLs${jsonPaths ? ' (from scripts/sitemap-paths.json)' : ' (from fallback list)'}`);
-  console.log(`   Written to: dist/sitemap.xml + dist/ct-sitemap.xml`);
-  console.log(`   Build time: ${BUILD_TIME}`);
-  console.log(`\n🔐 SHA256 Hash: ${hash}`);
-  
-  // Log first 10 URL entries for verification
+  console.log(`\n✅ Sitemap generated: ${count} URLs`);
+  console.log(`   Build date:  ${BUILD_TIME}`);
+  console.log(`   SHA256: ${hash}`);
+
+  // Sample URLs
   const urlMatches = sitemap.match(/<url>[\s\S]*?<\/url>/g) || [];
-  console.log(`\n📋 First 10 URL entries:\n`);
+  console.log(`\n📋 First 10 entries:`);
   urlMatches.slice(0, 10).forEach((entry, idx) => {
     const locMatch = entry.match(/<loc>(.*?)<\/loc>/);
-    const priorityMatch = entry.match(/<priority>(.*?)<\/priority>/);
-    if (locMatch && priorityMatch) {
-      console.log(`${idx + 1}. ${locMatch[1]} (priority: ${priorityMatch[1]})`);
-    }
+    if (locMatch) console.log(`   ${idx + 1}. ${locMatch[1]}`);
   });
   console.log('');
 } catch (error) {
