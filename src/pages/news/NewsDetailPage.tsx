@@ -216,7 +216,7 @@ export default function NewsDetailPage() {
               {item.cta_text ?? DEFAULT_CTA}
             </p>
             <Link
-              to="/#anfrage"
+              to="/charter-anfrage"
               className="inline-block text-sm font-medium text-gray-700 border border-gray-300 rounded-lg px-5 py-2.5 hover:border-gray-400 hover:text-gray-900 transition-colors"
             >
               Unverbindlich anfragen
