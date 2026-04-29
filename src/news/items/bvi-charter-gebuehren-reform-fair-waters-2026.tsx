@@ -97,7 +97,7 @@ export const bviCharterGebuehrenReformFairWaters2026: NewsItem = {
   canonical_topic_key: "bvi_charter_gebuehren_reform_2026",
   cta_text:
     "Wenn Sie einen BVI- oder Karibik-Törn planen, helfen wir gerne dabei, Angebote, Startbasen und mögliche Zusatzkosten transparent einzuordnen.",
-  image: "/destination-bvi.jpg",
+  image: "/images/blog/BVI/BVI.jpg",
   imageAlt:
     "Ankernde Yachten vor Felsen und türkisfarbenem Wasser in den British Virgin Islands",
   imageCaption:
