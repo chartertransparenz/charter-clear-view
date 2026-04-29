@@ -16,6 +16,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 // import destinationBvi from "@/assets/destination-bvi.jpg";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 
 const BVI = () => {
   useEffect(() => {
@@ -146,6 +148,7 @@ const BVI = () => {
               </div>
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
+              {index === 3 && <NewsRegionHint regionSlug="bvi" />}
             </div>
           ))}
         </div>
@@ -339,6 +342,8 @@ const BVI = () => {
             </p>
           </div>
         </div>
+
+        <NewsRegionTeaser regionSlug="bvi" regionLabel="British Virgin Islands" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">

@@ -44,6 +44,8 @@ const URLS: SitemapUrl[] = [
   { loc: '/news/neue-eu-grenzregeln-non-eu-crew-yachtcharter',    lastmod: BUILD_TIME },
   { loc: '/news/montenegro-duty-free-diesel-ohne-mindestaufenthalt', lastmod: BUILD_TIME },
   { loc: '/news/tuerkei-goecek-bojenfelder-2026',                 lastmod: BUILD_TIME },
+  { loc: '/news/sardinien-capo-spartivento-meeresschutzgebiet-2026', lastmod: '2026-04-29' },
+  { loc: '/news/bvi-charter-gebuehren-reform-fair-waters-2026',      lastmod: '2026-04-29' },
 
   // ── Reviere hub ──────────────────────────────────────────────────────────
   { loc: '/reviere/alle-reviere', lastmod: BUILD_TIME },

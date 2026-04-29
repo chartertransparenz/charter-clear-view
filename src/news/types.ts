@@ -55,6 +55,9 @@ export interface NewsItemMeta {
   is_update_of?: string;
   related_base_slug?: string;
   cta_text?: string;
+  image?: string;
+  imageAlt?: string;
+  imageCaption?: string;
 }
 
 export interface NewsItem extends NewsItemMeta {

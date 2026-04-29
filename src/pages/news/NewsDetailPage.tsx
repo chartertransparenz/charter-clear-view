@@ -151,6 +151,22 @@ export default function NewsDetailPage() {
             </span>
           </div>
 
+          {/* Article image */}
+          {item.image && (
+            <figure className="mb-10">
+              <img
+                src={item.image}
+                alt={item.imageAlt ?? item.title}
+                className="w-full rounded-lg object-cover max-h-80"
+              />
+              {item.imageCaption && (
+                <figcaption className="mt-2 text-sm text-gray-400 leading-relaxed">
+                  {item.imageCaption}
+                </figcaption>
+              )}
+            </figure>
+          )}
+
           {/* Intro */}
           <p className="text-lg text-gray-700 leading-relaxed mb-10">
             {item.excerpt}
