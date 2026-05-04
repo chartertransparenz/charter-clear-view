@@ -4,9 +4,11 @@ const content = (
   <div>
     <h2>Einordnung</h2>
     <p>
-      Die Anreise ist für viele Kroatien-Törns ein wichtiger Teil der Planung. Besonders
-      Crews, die im Kvarner starten – etwa rund um Krk, Rijeka, Rab oder Lošinj – sind auf
-      passende Flugverbindungen angewiesen. Nachdem Lufthansa-Verbindungen nach Rijeka,
+      Die Anreise ist für viele{" "}
+      <a href="/reviere/mittelmeer/kroatien">Kroatien-Törns</a> ein wichtiger Teil der
+      Planung. Besonders Crews, die im{" "}
+      <a href="/reviere/mittelmeer/kroatien/kvarner">Kvarner</a> starten – etwa rund um
+      Krk, Rijeka, Rab oder Lošinj – sind auf passende Flugverbindungen angewiesen. Nachdem Lufthansa-Verbindungen nach Rijeka,
       Ljubljana und Tivat für 2026 gestrichen wurden, gibt es nun zumindest für einen Teil
       der Kunden eine neue Option.
     </p>
@@ -31,7 +33,9 @@ const content = (
 
     <h2>Was bedeutet das für Charterkunden?</h2>
     <p>
-      Für Crews mit Start im Kvarner kann Rijeka ein sehr praktischer Zielflughafen sein.
+      Für Crews mit Start im{" "}
+      <a href="/reviere/mittelmeer/kroatien/kvarner">Kvarner</a> kann Rijeka ein sehr
+      praktischer Zielflughafen sein.
       Die neue Verbindung kann Transfers verkürzen und die Anreise entspannter machen, wenn
       Flugzeiten und Charterbeginn gut zusammenpassen.
     </p>

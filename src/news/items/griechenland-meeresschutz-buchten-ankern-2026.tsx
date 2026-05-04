@@ -4,10 +4,13 @@ const content = (
   <div>
     <h2>Einordnung</h2>
     <p>
-      Griechenland gehört zu den beliebtesten Charterrevieren im Mittelmeer. Gerade die
-      Kykladen, der Dodekanes und viele kleinere Inselgruppen leben von ihrer besonderen
-      Mischung aus klaren Buchten, kleinen Häfen und naturnahen Ankerplätzen. Gleichzeitig
-      rückt der Schutz sensibler Küsten- und Meeresräume stärker in den Mittelpunkt.
+      <a href="/reviere/mittelmeer/griechenland">Yachtcharter in Griechenland</a> gehört
+      zu den beliebtesten Optionen im Mittelmeer. Gerade die{" "}
+      <a href="/reviere/mittelmeer/griechenland/kykladen">Kykladen</a>, der{" "}
+      <a href="/reviere/mittelmeer/griechenland/dodekanes">Dodekanes</a> und viele kleinere
+      Inselgruppen leben von ihrer besonderen Mischung aus klaren Buchten, kleinen Häfen
+      und naturnahen Ankerplätzen. Gleichzeitig rückt der Schutz sensibler Küsten- und
+      Meeresräume stärker in den Mittelpunkt.
     </p>
     <p>
       Aktuell geht es nicht um ein sofortiges neues Ankerverbot für die Saison 2026.
@@ -41,8 +44,10 @@ const content = (
       Posidonia-Wiesen, sensible Buchten und Schutzgebiete werden mittelfristig wichtiger.
     </p>
     <p>
-      Gerade in beliebten Revieren wie den Kykladen kann es künftig mehr ausgewiesene
-      Bojenfelder, lokale Einschränkungen oder genauere Regeln für bestimmte Buchten geben.
+      Gerade in beliebten Revieren wie den{" "}
+      <a href="/reviere/mittelmeer/griechenland/kykladen">Kykladen</a> kann es künftig mehr
+      ausgewiesene Bojenfelder, lokale Einschränkungen oder genauere Regeln für bestimmte
+      Buchten geben.
       Das ist nicht negativ, wenn es gut vorbereitet wird. Für Charterkunden bedeutet es
       vor allem, dass aktuelle Karten, Revierführer und Hinweise der Charterbasis wichtiger
       werden.
