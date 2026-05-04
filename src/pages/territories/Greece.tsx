@@ -7,6 +7,8 @@ import CharterRequestForm from "@/components/CharterRequestForm";
 import Navigation from "@/components/Navigation";
 import TopDestinations from "@/components/TopDestinations";
 // import destinationGreece from "@/assets/destination-greece.jpg";
+import NewsRegionTeaser from "@/components/NewsRegionTeaser";
+import { NewsRegionHint } from "@/components/NewsRegionHint";
 
 const Greece = () => {
   useEffect(() => {
@@ -111,6 +113,7 @@ const Greece = () => {
               </div>
               <h3 className="font-bold text-gray-800 mb-1">{fact.label}</h3>
               <p className="text-gray-600 text-sm">{fact.value}</p>
+              {index === 3 && <NewsRegionHint regionSlug="griechenland" />}
             </div>
           ))}
         </div>
@@ -183,6 +186,8 @@ const Greece = () => {
             </div>
           </div>
         </div>
+
+        <NewsRegionTeaser regionSlug="griechenland" regionLabel="Griechenland" />
 
         {/* CTA */}
         <div className="max-w-4xl mx-auto">

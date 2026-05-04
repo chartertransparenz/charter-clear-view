@@ -8,12 +8,17 @@ import { sardinienLaMaddalenaNachtankerverbot2026 } from "./sardinien-la-maddale
 import { eesItalienNonEuCrewUpdate2026 } from "./ees-italien-non-eu-crew-update-2026";
 import { etiasReisegenehmigungEu2026 } from "./etias-reisegenehmigung-eu-2026";
 import { bahamasCruisingPermits2026 } from "./bahamas-cruising-permits-2026";
+// Import: 2026-05-04
+import { griechenlandMeeresschutzBuchtenAnkern2026 } from "./griechenland-meeresschutz-buchten-ankern-2026";
+import { kroatienAnreiseSwissRijeka2026 } from "./kroatien-anreise-swiss-rijeka-2026";
 // Import: 2026-04-29
 import { sardinienCapoSpartiventoMeeresschutzgebiet2026 } from "./sardinien-capo-spartivento-meeresschutzgebiet-2026";
 import { bviCharterGebuehrenReformFairWaters2026 } from "./bvi-charter-gebuehren-reform-fair-waters-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  griechenlandMeeresschutzBuchtenAnkern2026,
+  kroatienAnreiseSwissRijeka2026,
   sardinienCapoSpartiventoMeeresschutzgebiet2026,
   bviCharterGebuehrenReformFairWaters2026,
   sardinienLaMaddalenaNachtankerverbot2026,
