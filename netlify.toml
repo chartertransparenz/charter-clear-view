@@ -28,6 +28,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/reviere/mittelmeer/Griechenland/*"
+  to = "/reviere/mittelmeer/griechenland/:splat"
+  status = 301
+  force = true
+
 # Legacy slug redirects - THIRD PRIORITY
 [[redirects]]
   from = "/reviere/mittelmeer/kroatien/kvarner-bucht"
@@ -383,6 +389,62 @@
   to = "/robots.txt"
   status = 200
   force = false
+
+############################################
+# LEGACY STATIC PAGE REDIRECTS (.html)
+############################################
+
+# Kontakt (no /kontakt route exists – redirect to contact form)
+[[redirects]]
+  from = "/Kontakt.html"
+  to = "/charter-anfrage"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kontakt.html"
+  to = "/charter-anfrage"
+  status = 301
+  force = true
+
+# Datenschutz
+[[redirects]]
+  from = "/Datenschutz.html"
+  to = "/datenschutz"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutz.html"
+  to = "/datenschutz"
+  status = 301
+  force = true
+
+# Impressum
+[[redirects]]
+  from = "/Impressum.html"
+  to = "/impressum"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impressum.html"
+  to = "/impressum"
+  status = 301
+  force = true
+
+# Legacy /charter/ URLs
+[[redirects]]
+  from = "/charter/YachtcharterKroatien.html"
+  to = "/reviere/mittelmeer/kroatien"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/charter/kiriacoulis.htm"
+  to = "/yachtcharter-partner/kiriacoulis"
+  status = 301
+  force = true
 
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
 [[redirects]]
