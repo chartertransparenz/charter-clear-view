@@ -25,6 +25,12 @@ const content = (
       <li>Die Crew grundlegende Manöver (Ankern, Kreuzschlag, Reffen) beherrscht</li>
     </ul>
     <p>
+      Wer die Grundlagen des sicheren Ankerns im Mittelmeer auffrischen möchte,
+      findet im{" "}
+      <a href="/blog/richtig-ankern-yachtcharter">Praxis-Guide zum Richtig ankern beim Yachtcharter</a>
+      {" "}eine ausführliche Hilfestellung zu Platzwahl, Kettenlänge, Haltetest und mehr.
+    </p>
+    <p>
       Der Hauptvorteil: Bareboat ist in der Regel <strong>günstiger</strong> und bietet die
       maximale Unabhängigkeit. Sie bestimmen, wo Sie anlegen, wie lange Sie bleiben und
       welche Route Sie segeln. Wer ohne Skipper unterwegs ist, sollte sich vor dem Törn auch

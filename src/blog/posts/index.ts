@@ -1,4 +1,5 @@
 import type { BlogPost } from "../types";
+import { richtigAnkernYachtcharter } from "./richtig-ankern-yachtcharter";
 import { yachtcharterGriechenlandWelchesRevierPasst } from "./yachtcharter-griechenland-welches-revier-passt";
 import { neueAnkerregelnKroatien202670MeterZone } from "./neue-ankerregeln-kroatien-2026-70-meter-zone";
 import { wasKostetYachtcharter } from "./was-kostet-yachtcharter";
@@ -7,6 +8,7 @@ import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  richtigAnkernYachtcharter,
   yachtcharterGriechenlandWelchesRevierPasst,
   neueAnkerregelnKroatien202670MeterZone,
   kroatienEinsteiger,

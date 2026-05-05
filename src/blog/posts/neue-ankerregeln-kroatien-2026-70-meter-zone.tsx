@@ -112,6 +112,12 @@ const content = (
       versteht, wie der Abstand gemessen wird, und bei der Törnplanung etwas Spielraum
       einkalkuliert, ankert 2026 genauso entspannt wie in den Jahren zuvor.
     </p>
+    <p>
+      Wer die allgemeinen Grundlagen des Ankerns – Platzwahl, Kettenlänge, Haltetest,
+      Snubber und Landleine – vertiefen möchte, findet im{" "}
+      <a href="/blog/richtig-ankern-yachtcharter">Praxis-Guide zum Richtig ankern beim Yachtcharter</a>
+      {" "}einen ausführlichen Überblick für Chartercrews im Mittelmeer.
+    </p>
 
     <div className="not-prose my-8 p-5 bg-ocean-light/20 rounded-lg border border-ocean-light/40">
       <p className="text-sm font-medium text-ocean-dark mb-1">Ihr nächster Kroatien-Törn</p>

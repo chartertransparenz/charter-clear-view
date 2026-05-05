@@ -380,7 +380,10 @@ const content = (
     <p>
       Die Windverhältnisse sind moderat und gut planbar. Für Crews mit etwas Erfahrung –
       die die Kykladen vielleicht zu anspruchsvoll finden, das Ionische Meer aber schon
-      kennen – sind die Sporaden eine ausgezeichnete Wahl.
+      kennen – sind die Sporaden eine ausgezeichnete Wahl. Wer die schönsten Buchten
+      optimal nutzen möchte, findet im{" "}
+      <a href="/blog/richtig-ankern-yachtcharter">Praxis-Guide zum Richtig ankern beim Yachtcharter</a>
+      {" "}hilfreiche Grundlagen für sichere Ankerstopps.
     </p>
 
     {/* ── Section 7: Dodekanes ─────────────────────────────────────── */}
