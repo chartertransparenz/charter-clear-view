@@ -105,7 +105,7 @@ const content = (
     <p>
       Eine ruhige Ankerbucht am Abend – das Wasser klar bis auf den Grund, das Schiff liegt
       still, kein Liegeplatz-Lärm, nur das leise Klatschen kleiner Wellen. Wer einmal so
-      eine Nacht auf einer Charteracht erlebt hat, plant den nächsten Törn gerne mit mehr
+      eine Nacht auf einer Charteryacht erlebt hat, plant den nächsten Törn gerne mit mehr
       Ankerstopps.
     </p>
     <p>
@@ -156,7 +156,7 @@ const content = (
     <InlineImage
       src="/images/blog/richtig-ankern-yachtcharter/Ankergrund_seegras.jpg"
       alt="Ankerkette auf hellem Sandgrund zwischen Seegrasfeldern im Mittelmeer"
-      caption="Helle Sandflächen sind meist die bessere Wahl: Der Anker soll halten, ohne sensible Seegrasfelder zu beschädigen."
+      caption="Auf hellem Sand hält der Anker meist am besten – und sensible Seegrasfelder bleiben geschützt."
     />
 
     <p>
@@ -382,7 +382,7 @@ const content = (
     <InlineImage
       src="/images/blog/richtig-ankern-yachtcharter/kettenkurve-ankerlast.jpg"
       alt="Infografik zur Kettenkurve beim Ankern einer Segelyacht"
-      caption="Die Kettenkurve zeigt, warum Kettenlänge, Wind und Entlastung zusammen betrachtet werden müssen."
+      caption="Mehr Wind bedeutet mehr Zug: Die Kette hebt sich an, der Snubber dämpft Lastspitzen."
     />
 
     <p>
@@ -440,7 +440,7 @@ const content = (
       Die Last nach dem Setzen des Ankers auf eine Klampe zu übertragen, ist Standardpraxis.
     </p>
     <p>
-      Ein <strong>Snubber</strong> – eine elastische Leine oder ein Kettenanker mit
+      Ein <strong>Snubber</strong> – eine elastische Leine oder eine Ankerkralle mit
       angespleißter Leine – wird in die Kette eingehängt und mit ausreichend Länge an
       einer Bugklampe belegt. Die Kette kann dann etwas durchhängen. Ergebnis: weniger
       Geräusche an Bord, gedämpfte Stoßlasten, und die Ankerwinde ist entlastet.
@@ -465,7 +465,7 @@ const content = (
     <InlineImage
       src="/images/blog/richtig-ankern-yachtcharter/ankern-mit-landleine.jpg"
       alt="Yacht mit Landleine in einer geschützten Bucht im Mittelmeer"
-      caption="Mit Landleine liegt die Yacht ruhiger in engen Buchten – das Manöver braucht klare Rollen und gute Vorbereitung."
+      caption="Mit Landleine wird der Schwojraum kleiner – die Leinen dürfen aber nicht an Bäumen oder Sträuchern festgemacht werden."
     />
 
     {/* Phase B1 */}
@@ -510,7 +510,7 @@ const content = (
         B2 – Schwojraum &amp; Methode
       </h3>
       <p style={{ margin: 0, color: "#374151", lineHeight: 1.65 }}>
-        Mit Landleine schwojen Schiff weniger oder gar nicht. Die Yacht liegt fester.
+        Mit Landleine schwojt die Yacht weniger oder gar nicht. Die Yacht liegt fester.
         Erwartete Windrichtung und mögliche Winddrehung müssen zur Ausrichtung passen –
         eine Landleine kann bei ungünstiger Winddrehung zur Belastung werden.
       </p>
