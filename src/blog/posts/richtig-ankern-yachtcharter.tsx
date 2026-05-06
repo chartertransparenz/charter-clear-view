@@ -872,17 +872,64 @@ const content = (
       <a href="/reviere/mittelmeer/kroatien">Yachtcharter in Kroatien</a> ist für viele
       Chartercrews ein verlässliches und gut planbares Revier. Beim Ankern sind
       Abstände zur Küste, ausgewiesene Badebereiche und die revierüblichen Landleinen
-      besonders relevant. Seit 2026 gilt eine präzisierte Abstandsregel von 70 Metern.
+      besonders relevant.
+    </p>
+    <p>
+      Stand: Mai 2026 sieht die kroatische SSVO beim Festmachen zur Küste eine
+      50-Meter-Regel vor. Nach aktueller Darstellung soll dieser Bereich auf 70 Meter
+      erweitert werden. Maßgeblich ist dabei nicht der Anker am Grund, sondern der
+      Bereich zwischen Küste und dem Punkt, an dem Kette oder Leine ins Wasser laufen.
+      Crews sollten vor Ort aktuelle Seekarten, Hinweise der Charterbasis und
+      Informationen der Hafenbehörde prüfen.
     </p>
     <p>
       Die{" "}
       <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone">
         neuen Ankerregeln in Kroatien
       </a>{" "}
-      – insbesondere wie der Abstand gemessen wird – sind gut planbar, wenn man weiß,
-      worauf zu achten ist (Stand: Mai 2026). Die Charterbasis gibt vor dem Ablegen
-      verlässliche aktuelle Hinweise zum Revier.
+      sind gut planbar, wenn man versteht, worauf es ankommt. Die Charterbasis gibt
+      vor dem Ablegen verlässliche aktuelle Hinweise zum Revier.
     </p>
+
+    {/* ── Croatia practice box ──────────────────────────────────────────── */}
+    <div
+      style={{
+        background: "#f0f7f4",
+        border: "1px solid #d1e7dd",
+        borderLeft: "4px solid #1a6b4a",
+        borderRadius: "0 8px 8px 0",
+        padding: "18px 22px",
+        margin: "24px 0",
+      }}
+    >
+      <p style={{ fontWeight: 700, color: "#1a6b4a", margin: "0 0 12px" }}>
+        Kroatien: Worauf Crews beim Ankern besonders achten sollten
+      </p>
+      <ul style={{ margin: 0, paddingLeft: "20px", color: "#374151", lineHeight: 1.7 }}>
+        <li>
+          Beim Fahren entlang der Küste gelten Mindestabstände: unter 15 m Bootslänge
+          50 m, 15–30 m 150 m, ab 30 m 300 m.
+        </li>
+        <li>
+          Für Ankern und Festmachen gelten eigene Regeln. Leinen und Ankerketten müssen
+          sichtbar bzw. angemessen markiert sein und dürfen andere Boote, Dinghys, SUPs
+          oder Kajaks nicht behindern.
+        </li>
+        <li>
+          Uferprivez darf die Vegetation an Land nicht beschädigen – keine Leinen an
+          Bäumen oder Sträuchern befestigen.
+        </li>
+        <li>
+          Ankern ist unter anderem in gekennzeichneten Ankerverbotszonen, in von
+          Hafenbehörden gesperrten Bereichen, nahe Unterwasserkabeln, Leitungen oder
+          Auslässen sowie zu nah an Badebereichen untersagt.
+        </li>
+        <li>
+          Vor Ort immer aktuelle Seekarten, Hinweise der Charterbasis und Informationen
+          der Hafenbehörde prüfen.
+        </li>
+      </ul>
+    </div>
 
     <h3 id="ankern-balearen">Ankern auf den Balearen</h3>
     <p>
@@ -984,6 +1031,10 @@ const content = (
         {
           q: "Welche Reviere eignen sich besonders für Ankerbuchten?",
           a: "Griechenland bietet besonders viele Ankermöglichkeiten – das passende Revier hängt aber von Crew, Saison und Erfahrung ab. Ionisches Meer, Saronischer Golf und die Sporaden sind ankertechnisch gut zugänglich. Welches Revier zu Ihrer Crew passt, zeigt der Artikel zum Yachtcharter Griechenland.",
+        },
+        {
+          q: "Was gilt beim Ankern mit Landleine in Kroatien?",
+          a: "In Kroatien regelt die SSVO das Ankern und Festmachen an der Küste genauer als früher. Leinen und Ankerketten dürfen andere Boote oder persönliche Wasserfahrzeuge nicht behindern und müssen sichtbar geführt werden. Außerdem darf beim Festmachen die Vegetation an Land nicht beschädigt werden. Crews sollten deshalb keine Leinen an Bäumen oder Sträuchern befestigen und vor Ort aktuelle Seekarten, Charterbasis-Informationen und Hinweise der Hafenbehörde prüfen.",
         },
       ].map(({ q, a }, i) => (
         <div
@@ -1099,6 +1150,11 @@ export const richtigAnkernYachtcharter: BlogPost = {
       question: "Welche Reviere eignen sich besonders für Ankerbuchten?",
       answer:
         "Griechenland bietet besonders viele Ankermöglichkeiten. Das passende Revier hängt von Crew, Saison und Erfahrung ab. Ionisches Meer, Saronischer Golf und Sporaden sind gut zugänglich. Für eine persönliche Einschätzung beraten wir gerne.",
+    },
+    {
+      question: "Was gilt beim Ankern mit Landleine in Kroatien?",
+      answer:
+        "In Kroatien regelt die SSVO das Ankern und Festmachen an der Küste genauer. Leinen und Ankerketten dürfen andere Boote oder Wasserfahrzeuge nicht behindern und müssen sichtbar geführt werden. Die Vegetation an Land darf nicht beschädigt werden – keine Leinen an Bäumen oder Sträuchern. Vor Ort aktuelle Seekarten und Charterbasis-Informationen prüfen.",
     },
   ],
 };
