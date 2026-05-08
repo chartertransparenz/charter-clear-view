@@ -14,9 +14,14 @@ import { kroatienAnreiseSwissRijeka2026 } from "./kroatien-anreise-swiss-rijeka-
 // Import: 2026-04-29
 import { sardinienCapoSpartiventoMeeresschutzgebiet2026 } from "./sardinien-capo-spartivento-meeresschutzgebiet-2026";
 import { bviCharterGebuehrenReformFairWaters2026 } from "./bvi-charter-gebuehren-reform-fair-waters-2026";
+// Import: 2026-05-08
+import { treibstoffkriseSommerfluege2026Yachtcharter } from "./treibstoffkrise-sommerfluege-2026-yachtcharter";
+import { eesUpdateGriechenlandItalienPortugal2026 } from "./ees-update-griechenland-italien-portugal-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  treibstoffkriseSommerfluege2026Yachtcharter,
+  eesUpdateGriechenlandItalienPortugal2026,
   griechenlandMeeresschutzBuchtenAnkern2026,
   kroatienAnreiseSwissRijeka2026,
   sardinienCapoSpartiventoMeeresschutzgebiet2026,

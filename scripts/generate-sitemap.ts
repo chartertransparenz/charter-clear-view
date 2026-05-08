@@ -45,6 +45,8 @@ const URLS: SitemapUrl[] = [
   { loc: '/news/neue-eu-grenzregeln-non-eu-crew-yachtcharter',    lastmod: BUILD_TIME },
   { loc: '/news/montenegro-duty-free-diesel-ohne-mindestaufenthalt', lastmod: BUILD_TIME },
   { loc: '/news/tuerkei-goecek-bojenfelder-2026',                 lastmod: BUILD_TIME },
+  { loc: '/news/treibstoffkrise-sommerfluege-2026-yachtcharter',     lastmod: '2026-05-08' },
+  { loc: '/news/ees-update-griechenland-italien-portugal-2026',      lastmod: '2026-05-08' },
   { loc: '/news/griechenland-meeresschutz-buchten-ankern-2026',      lastmod: '2026-05-04' },
   { loc: '/news/kroatien-anreise-swiss-rijeka-2026',                 lastmod: '2026-05-04' },
   { loc: '/news/sardinien-capo-spartivento-meeresschutzgebiet-2026', lastmod: '2026-04-29' },
