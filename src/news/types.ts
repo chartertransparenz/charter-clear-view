@@ -58,6 +58,7 @@ export interface NewsItemMeta {
   image?: string;
   imageAlt?: string;
   imageCaption?: string;
+  region_links?: Array<{ label: string; href: string }>;
 }
 
 export interface NewsItem extends NewsItemMeta {

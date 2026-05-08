@@ -172,6 +172,12 @@ export const treibstoffkriseSommerfluege2026Yachtcharter: NewsItem = {
   show_on_region_page: false,
   linked_region_slug: "",
   canonical_topic_key: "treibstoffkrise_sommerfluege_2026_yachtcharter",
+  region_links: [
+    { label: "Kroatien",    href: "/reviere/mittelmeer/kroatien" },
+    { label: "Griechenland", href: "/reviere/mittelmeer/griechenland" },
+    { label: "Türkei",      href: "/reviere/mittelmeer/tuerkei" },
+    { label: "Balearen",    href: "/reviere/mittelmeer/spanien/balearen" },
+  ],
   seo_title: "Treibstoffkrise 2026: Flugausfälle vor dem Yachtcharter",
   meta_description:
     "Kerosinpreise und Flugstreichungen treffen den Sommer 2026. Was Yachtcharter-Crews für Kroatien, Griechenland, Türkei und Balearen beachten sollten.",

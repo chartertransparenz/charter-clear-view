@@ -139,7 +139,22 @@ export default function NewsDetailPage() {
           {/* Meta row */}
           <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-gray-400 mb-8 pb-6 border-b border-gray-100">
             <span>
-              <span className="text-gray-500">Revier:</span> {item.region}
+              <span className="text-gray-500">Revier:</span>{" "}
+              {item.region_links && item.region_links.length > 0 ? (
+                item.region_links.map((rl, i) => (
+                  <span key={rl.href}>
+                    {i > 0 && " / "}
+                    <Link
+                      to={rl.href}
+                      className="hover:text-gray-700 underline underline-offset-2 transition-colors"
+                    >
+                      {rl.label}
+                    </Link>
+                  </span>
+                ))
+              ) : (
+                item.region
+              )}
             </span>
             <span>
               <span className="text-gray-500">Wirksam ab:</span>{" "}
