@@ -4,17 +4,9 @@ const content = (
   <div>
     <h2>Was ist neu?</h2>
     <p>
-      Die kroatische Regierung hat am 4. Mai 2026 erneut staatliche Höchstpreise für
-      Kraftstoffe festgelegt. Für das jeweils aktuelle 14-Tage-Preisfenster galten laut
-      Regierungsmitteilung folgende Obergrenzen:
-    </p>
-    <ul>
-      <li>Benzin: 1,64 EUR/l</li>
-      <li>Diesel: 1,72 EUR/l</li>
-      <li>Blauer Diesel (mariner Diesel): 1,22 EUR/l</li>
-    </ul>
-    <p>
-      Diese Preisdeckelung gilt für das jeweils laufende staatliche Preisfenster und wird
+      Für das aktuell geltende staatliche Preisfenster nennt die kroatische Regierung
+      Obergrenzen von 1,64 Euro je Liter Benzin und 1,72 Euro je Liter Diesel. Diese
+      Preisdeckelung gilt für das jeweils laufende staatliche Preisfenster und wird
       regelmäßig neu bewertet. Die Werte können sich bei der nächsten Festsetzung ändern.
     </p>
 
@@ -26,12 +18,6 @@ const content = (
       längeren Motoretappen plant – etwa durch den Kvarner oder entlang Dalmatiens – kann
       Treibstoffkosten realistischer kalkulieren als in Revieren ohne Preisregulierung.
     </p>
-    <p>
-      Blauer Diesel (mariner Diesel) ist für Yachten besonders relevant. Der deutlich
-      niedrigere Preis gegenüber regulärem Diesel macht bei größeren Tankfüllungen einen
-      spürbaren Unterschied im Budget.
-    </p>
-
     {/* ── Mid-article CTA ──────────────────────────────────────────────────── */}
     <div
       className="not-prose"
@@ -96,9 +82,9 @@ const content = (
         Kurz gesagt
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Kroatien hat staatliche Kraftstoffhöchstpreise. Für das Preisfenster ab 4. Mai 2026
-        gelten: Benzin 1,64 EUR/l, Diesel 1,72 EUR/l, blauer Diesel 1,22 EUR/l. Die Preise
-        werden regelmäßig neu festgesetzt. Für Charterkunden bedeutet das gut planbare
+        Kroatien hat staatliche Kraftstoffhöchstpreise. Für das aktuelle Preisfenster
+        (ab 4. Mai 2026) gelten: Benzin 1,64 EUR/l, Diesel 1,72 EUR/l. Die Preise werden
+        regelmäßig neu festgesetzt. Für Charterkunden bedeutet das gut planbare
         Treibstoffkosten – mit einem realistischen Puffer für Abweichungen vor Ort.
       </p>
     </div>
@@ -118,7 +104,7 @@ export const kroatienKraftstoffpreiseCharter2026: NewsItem = {
   slug: "kroatien-kraftstoffpreise-charter-2026",
   title: "Kroatien: Staatlich gedeckelte Kraftstoffpreise entlasten Törn-Budgets",
   excerpt:
-    "Die kroatische Regierung hat am 4. Mai 2026 erneut Höchstpreise für Kraftstoffe festgelegt: Benzin 1,64 EUR/l, Diesel 1,72 EUR/l, blauer Diesel 1,22 EUR/l. Für Charterkunden bedeutet das besser planbare Treibstoffkosten im Revier.",
+    "Die kroatische Regierung hat am 4. Mai 2026 erneut Höchstpreise für Kraftstoffe festgelegt: Benzin 1,64 EUR/l, Diesel 1,72 EUR/l. Für Charterkunden bedeutet das besser planbare Treibstoffkosten im Revier.",
   content_type: "kurzmeldung",
   region: "Kroatien",
   country_or_area: "Kroatien",
@@ -131,7 +117,7 @@ export const kroatienKraftstoffpreiseCharter2026: NewsItem = {
   source_name: "Kroatische Regierung",
   source_url: "",
   customer_impact:
-    "Staatlich gedeckelte Kraftstoffpreise machen Treibstoffkosten für Kroatien-Törns besser planbar. Blauer Diesel für Yachten besonders günstig. Preise gelten für das laufende Preisfenster und werden regelmäßig neu bewertet.",
+    "Staatlich gedeckelte Kraftstoffpreise machen Treibstoffkosten für Kroatien-Törns besser planbar. Preise gelten für das laufende Preisfenster und werden regelmäßig neu bewertet.",
   action_advice:
     "Bei Charterbasis prüfen, welcher Kraftstoff für die Yacht relevant ist. Aktuelle Tankpreise vor Ort beachten. Kleinen Puffer im Kraftstoffbudget einplanen.",
   show_on_blog: true,
@@ -143,7 +129,7 @@ export const kroatienKraftstoffpreiseCharter2026: NewsItem = {
   ],
   seo_title: "Kroatien Kraftstoffpreise 2026: Was Charterkunden wissen müssen",
   meta_description:
-    "Kroatien deckt Kraftstoffpreise staatlich: Benzin 1,64 €/l, Diesel 1,72 €/l, blauer Diesel 1,22 €/l (Stand Mai 2026). Gut planbare Kosten für Yachtcharter-Crews.",
+    "Kroatien deckt Kraftstoffpreise staatlich: Benzin 1,64 €/l, Diesel 1,72 €/l (Stand Mai 2026). Gut planbare Kosten für Yachtcharter-Crews.",
   is_featured: false,
   cta_text:
     "Wenn Sie einen Kroatien-Törn 2026 planen, helfen wir Ihnen, Revier, Yacht und Kosten realistisch einzuordnen.",
