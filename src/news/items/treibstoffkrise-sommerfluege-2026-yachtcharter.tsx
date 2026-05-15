@@ -2,6 +2,24 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
+    {/* Update-Hinweis */}
+    <div
+      className="not-prose"
+      style={{
+        background: "#f0f7ff",
+        border: "1px solid #b8d4f0",
+        borderRadius: "8px",
+        padding: "12px 16px",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: 0 }}>
+        <strong>Update: 15. Mai 2026.</strong> EU-Kommission Guidance vom 8. Mai 2026
+        eingearbeitet: keine nachträglichen Treibstoffzuschläge auf bereits gekaufte
+        Tickets. SunExpress-Zuschlag ergänzt.
+      </p>
+    </div>
+
     <h2>Einordnung</h2>
     <p>
       Seit Ende Februar 2026 sind die Kerosinpreise in Europa deutlich gestiegen.
@@ -64,11 +82,11 @@ const content = (
       }}
     >
       <p style={{ color: "#ffffff", fontWeight: 700, marginBottom: "8px", fontSize: "1rem" }}>
-        Sie planen einen Törn und sind bei Anreise oder Revierwahl unsicher?
+        Sie planen einen Törn und möchten Anreise und Revier realistisch zusammen denken?
       </p>
       <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
-        Wir helfen Ihnen, Yacht, Revier und realistische Anreise zusammenzudenken –
-        persönlich, unabhängig und mit über 30 Jahren Charter-Erfahrung.
+        Wir unterstützen Sie bei Yacht, Zielgebiet und sinnvoller Törnplanung – persönlich
+        und mit langjähriger Charter-Erfahrung.
       </p>
       <a
         href="/charter-anfrage"
@@ -87,7 +105,7 @@ const content = (
       </a>
     </div>
 
-    <h2>Gut zu wissen: Rechte bei Flugstreichungen</h2>
+    <h2>Gut zu wissen: Rechte bei Flugstreichungen und Zuschlägen</h2>
     <p>
       Unter EU-Recht haben Passagiere bei Flugstreichungen grundsätzlich Anspruch
       auf Erstattung oder anderweitige Beförderung. Je nach Zeitpunkt der Streichung,
@@ -95,10 +113,29 @@ const content = (
       261/2004 in Betracht kommen.
     </p>
     <p>
-      Wichtig: Hohe Treibstoffpreise allein gelten nach aktueller EU-Einordnung nicht
-      automatisch als außergewöhnlicher Umstand. Bei konkreten Streichungen sollten
-      Reisende deshalb die Mitteilung der Airline prüfen und Ansprüche nicht vorschnell
-      aufgeben.
+      Die EU-Kommission hat am 8. Mai 2026 klargestellt: Airlines dürfen auf bereits
+      gekaufte Tickets keine nachträglichen Treibstoffzuschläge aufschlagen. Hohe
+      Kerosinpreise allein rechtfertigen nicht automatisch den Wegfall von Fluggastrechten.
+      Passagiere behalten bei Streichungen grundsätzlich Ansprüche auf Erstattung oder
+      anderweitige Beförderung; ob weitere Ausgleichsansprüche bestehen, hängt vom
+      konkreten Einzelfall ab.
+    </p>
+    <p>
+      Bei konkreten Streichungen sollten Reisende deshalb die Mitteilung der Airline
+      genau prüfen und Ansprüche nicht vorschnell aufgeben.
+    </p>
+
+    <h2>Treibstoffzuschläge: Was Airlines dürfen und was nicht</h2>
+    <p>
+      Einige Airlines erheben auf neuen Buchungen Treibstoffzuschläge. Laut Reuters-Bericht
+      erhebt SunExpress ab 1. Mai 2026 einen Treibstoffzuschlag von 10 Euro pro Passagier
+      auf bestimmten Türkei-Europa-Verbindungen. Dieser Zuschlag betrifft neue Buchungen
+      und ist nicht auf alle Airlines oder alle Routen übertragbar.
+    </p>
+    <p>
+      Wer bereits ein Ticket für eine Türkei-Verbindung gekauft hat, sollte prüfen, ob
+      eine Nachbelastung kommuniziert wurde – und gegebenenfalls der EU-Kommission-Guidance
+      entsprechend widersprechen.
     </p>
 
     <h2>Praktischer Hinweis</h2>
@@ -118,6 +155,10 @@ const content = (
         Verbindungen über alternative Hubs oder Nachbarflughäfen prüfen.
       </li>
       <li>
+        Keine nachträglichen Treibstoffzuschläge auf bereits gekaufte Tickets
+        einfach akzeptieren – EU-Recht schützt Passagiere hier.
+      </li>
+      <li>
         Bei Flugausfall: Umbuchung oder Erstattung verlangen und mögliche
         EU-261-Ansprüche prüfen.
       </li>
@@ -131,14 +172,16 @@ const content = (
         Die Treibstoffkrise kann Sommerflüge 2026 teurer und knapper machen. Früh
         buchen, flexibel bleiben und Alternativen prüfen – das gilt besonders für
         beliebte Charterziele wie Kroatien, Griechenland, Türkei und die Balearen.
-        Bei Streichungen: EU-Rechte kennen und nutzen.
+        Keine nachträglichen Zuschläge auf gekaufte Tickets akzeptieren. Bei
+        Streichungen: EU-Rechte kennen und nutzen.
       </p>
     </div>
 
     <h2>Quelle und Stand</h2>
     <p>
-      Quellen: Lufthansa Group Newsroom (21. April 2026), Euronews Travel (Mai 2026),
-      Al Jazeera (April / Mai 2026). Redaktionsstand: 8. Mai 2026. Alle Angaben ohne
+      Quellen: Lufthansa Group Newsroom (21. April 2026); Euronews Travel (Mai 2026);
+      Al Jazeera (April / Mai 2026); EU-Kommission Guidance (8. Mai 2026); Reuters
+      (SunExpress-Bericht, Mai 2026). Redaktionsstand: 15. Mai 2026. Alle Angaben ohne
       Gewähr – die Situation entwickelt sich. Bitte vor dem Törn aktuelle Verbindungen
       und Konditionen direkt bei der Airline prüfen.
     </p>
@@ -151,23 +194,23 @@ export const treibstoffkriseSommerfluege2026Yachtcharter: NewsItem = {
   title:
     "Treibstoffkrise trifft Sommerflüge 2026: Was Charterkunden jetzt wissen müssen",
   excerpt:
-    "Flüge zu beliebten Charterbasen könnten 2026 teurer, knapper und unsicherer werden. Die Lufthansa Group streicht rund 20.000 Kurzstreckenflüge bis Oktober. Wer seinen Törn plant, sollte Anreise und Alternativen früh prüfen.",
+    "Flüge zu beliebten Charterbasen könnten 2026 teurer, knapper und unsicherer werden. EU-Kommission: keine nachträglichen Treibstoffzuschläge auf bereits gekaufte Tickets. Wer seinen Törn plant, sollte Anreise und Alternativen früh prüfen.",
   content_type: "update",
   region: "Kroatien / Griechenland / Türkei / Balearen",
   country_or_area: "Mittelmeer / Europa",
   status: "angekuendigt",
   effective_from: "2026-05-01",
   published_at: "2026-05-08",
-  updated_at: "2026-05-08",
+  updated_at: "2026-05-15",
   priority: "hoch",
   category: "Anreise & Logistik",
   source_name:
-    "Lufthansa Group Newsroom; Euronews Travel; Al Jazeera",
+    "Lufthansa Group Newsroom; Euronews Travel; Al Jazeera; EU-Kommission; Reuters",
   source_url: "",
   customer_impact:
-    "Flugverbindungen zu Charterdestinationen können 2026 knapper und teurer werden. Einzelne Routen oder Umsteigeverbindungen können sich kurzfristig ändern. EU-Fahrgastrechte bei Streichungen weiterhin gültig.",
+    "Flugverbindungen zu Charterdestinationen können 2026 knapper und teurer werden. Keine nachträglichen Treibstoffzuschläge auf bereits gekaufte Tickets. EU-Fahrgastrechte bei Streichungen weiterhin gültig.",
   action_advice:
-    "Flüge frühzeitig buchen, flexible Tarife wählen, ausreichend Zeitpuffer einplanen. Verbindungen regelmäßig prüfen. Bei Streichung: Erstattung oder Umbuchung verlangen, EU-261-Ansprüche prüfen.",
+    "Flüge frühzeitig buchen, flexible Tarife wählen, ausreichend Zeitpuffer einplanen. Verbindungen regelmäßig prüfen. Keine nachträglichen Zuschläge akzeptieren. Bei Streichung: Erstattung oder Umbuchung verlangen, EU-261-Ansprüche prüfen.",
   show_on_blog: true,
   show_on_region_page: false,
   linked_region_slug: "",
@@ -180,7 +223,7 @@ export const treibstoffkriseSommerfluege2026Yachtcharter: NewsItem = {
   ],
   seo_title: "Treibstoffkrise 2026: Flugausfälle vor dem Yachtcharter",
   meta_description:
-    "Kerosinpreise und Flugstreichungen treffen den Sommer 2026. Was Yachtcharter-Crews für Kroatien, Griechenland, Türkei und Balearen beachten sollten.",
+    "Kerosinpreise und Flugstreichungen treffen den Sommer 2026. EU: keine nachträglichen Zuschläge auf gekaufte Tickets. Was Yachtcharter-Crews für Kroatien, Griechenland, Türkei und Balearen beachten sollten.",
   is_featured: true,
   cta_text:
     "Wenn Sie Ihren Yachtcharter 2026 noch planen, unterstützen wir Sie gerne bei Revier, Yacht und sinnvoller Anreiseplanung.",

@@ -2,26 +2,50 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
-    <h2>Was ist neu?</h2>
+    {/* Update-Hinweis */}
+    <div
+      className="not-prose"
+      style={{
+        background: "#f0f7ff",
+        border: "1px solid #b8d4f0",
+        borderRadius: "8px",
+        padding: "12px 16px",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: 0 }}>
+        <strong>Aktualisiert: 15. Mai 2026.</strong> Inkrafttreten auf 1. Juni 2026
+        korrigiert. 5-Meter-Baderegel und Nachtankern-Thema fachlich präzisiert.
+      </p>
+    </div>
+
+    <h2>Was tritt wann in Kraft?</h2>
     <p>
-      Das nächtliche Ankerverbot im La-Maddalena-Nationalpark fällt weg. Bisher galt
-      in den Schutzzonen des Nationalparks von Sonnenuntergang bis Sonnenaufgang ein
-      striktes Ankerverbot. Die neue Verordnung 33/2026, die am 2. Juni 2026 in Kraft
-      tritt, enthält diese Regelung nicht mehr. Zunächst auf zwei Jahre befristet, dürfen
-      Segelboote und Yachten damit künftig wieder auf Anker übernachten – eine Rückkehr
-      zu dem, was viele Segler noch aus früheren Saisons kennen.
+      Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena tritt am{" "}
+      <strong>1. Juni 2026</strong> in Kraft. Die Verordnung präzisiert die geltenden
+      Regeln für das Revier rund um La Maddalena und den{" "}
+      <a href="/reviere/mittelmeer/italien/sardinien">Nationalpark Sardinien</a> – und
+      macht damit die Planung für Charterkunden konkreter.
     </p>
 
-    <h2>Was bedeutet das für Charterkunden?</h2>
+    <h2>Was ändert sich – und was nicht?</h2>
     <p>
-      La Maddalena und die umliegenden Inseln – Spargi, Budelli mit dem berühmten Rosa
-      Strand, Santa Maria, Razzoli – gehören zu den schönsten Ankerplätzen des
-      Mittelmeers. Die Möglichkeit, dort wieder ruhige Ankernächte zu verbringen, macht
-      Charter in diesem Revier deutlich attraktiver als in den letzten Jahren.
+      Das zuvor diskutierte generelle Nachtankerverbot wird in der Ordinanza 33/2026 nicht
+      erneut pauschal ausgesprochen. Maßgeblich bleiben die jeweils geltenden Zonen,
+      Ankerverbote, Parkvorgaben und sonstigen Schutzregeln des Nationalparks.
     </p>
     <p>
-      Allerdings bleiben einige Regeln unverändert oder werden ab 2. Juni 2026 neu
-      präzisiert:
+      Das bedeutet: Ankerübernachtungen im Revier sind nicht pauschal verboten. Wo, wann
+      und unter welchen Bedingungen Übernachten auf Anker möglich ist, ergibt sich aus den
+      jeweils gültigen Zonenkarten, Bojenfeldern und lokalen Schutzgebietsvorgaben.
+    </p>
+    <p>
+      La Maddalena und die umliegenden Inseln – Spargi, Budelli mit dem berühmten Rosa
+      Strand, Santa Maria, Razzoli – gehören zu den schönsten Ankerplätzen des Mittelmeers.
+      Wer die Regeln kennt und die aktuellen Zonen vor dem Törn prüft, segelt entspannter.
+    </p>
+    <p>
+      Einige Regeln bleiben unverändert oder werden ab 1. Juni 2026 konkretisiert:
     </p>
     <ul>
       <li>
@@ -33,54 +57,93 @@ const content = (
       <li>
         <strong>Ankern nur auf Sand oder Fels</strong> – nie über Posidonia-Seegras. Das
         ist keine neue Regel, wird aber aktiv kontrolliert. Posidonia ist geschützt und
-        ökologisch wichtig; Verstöße können empfindliche Strafen nach sich ziehen.
+        ökologisch wichtig.
       </li>
       <li>
-        <strong>Schwimmen vom Boot aus</strong> ist ab Inkrafttreten der Verordnung am
-        2. Juni 2026 nur noch in einem Umkreis von 5 Metern um das eigene Schiff
-        erlaubt. Diese neue Einschränkung gilt für alle Boote im Nationalpark.
+        <strong>5-Meter-Baderegel für Bojenlieger:</strong> Bei ordnungsgemäß an einer
+        Boje festgemachten Booten ist Baden in unmittelbarer Nähe des eigenen Bootes bis
+        zu einem maximalen Radius von 5 Metern erlaubt. Diese Regelung betrifft Boote, die
+        regulär an einer Nationalpark-Boje liegen.
+      </li>
+      <li>
+        <strong>Sanktionen bei Verstößen.</strong> Verstöße gegen die Vorgaben der
+        Verordnung können sanktioniert werden. Bitte aktuelle offizielle Nationalpark- und
+        Küstenwachhinweise beachten.
       </li>
     </ul>
-    <p>
-      Die Charterbasis informiert in der Regel über aktuelle Revierhinweise. Dennoch
-      lohnt es sich, das Permit schon vor dem Törn online zu bestellen und die aktuelle
-      Verordnung kurz zu überprüfen, da sich Details bis Saisonbeginn noch ändern können.
-    </p>
 
-    <h2>Was sollte man jetzt tun?</h2>
+    <h2>Was müssen Chartercrews jetzt prüfen?</h2>
     <ul>
-      <li>Permit für den La-Maddalena-Nationalpark frühzeitig online bestellen.</li>
       <li>
-        Törnplanung auf Sardinien für Sommer 2026 anpassen – Übernachtungsanker in
-        La Maddalena sind ab 2. Juni 2026 wieder möglich.
+        Permit für den La-Maddalena-Nationalpark frühzeitig online bestellen –
+        Frühbucherrabatt von 5&nbsp;% nutzen.
       </li>
       <li>
-        Navigations-App und Seekarte aktuell halten, um Posidonia-Gebiete zu meiden.
+        Aktuelle Zonenkarten, Bojenfelder und Ankerverbotszonen vor dem Törn prüfen. Die
+        geltenden Schutzgebiete bestimmen, wo Übernachten auf Anker möglich ist.
       </li>
       <li>
-        Charterbasis vor dem Törn nach aktuellen Revierhinweisen fragen, da die
-        Verordnung erst ab 2. Juni 2026 gilt und lokale Auslegungen variieren können.
+        Navigations-App und Seekarte aktuell halten, um Posidonia-Gebiete und Schutzzonen
+        zu erkennen und zu meiden.
+      </li>
+      <li>
+        Charterbasis vor dem Törn nach aktuellen Revierhinweisen fragen – lokale
+        Auslegungen und Kontrollen können variieren.
       </li>
     </ul>
+
+    {/* ── CTA ──────────────────────────────────────────────────── */}
+    <div
+      className="not-prose"
+      style={{
+        background: "linear-gradient(135deg, #0f3460 0%, #1a5276 100%)",
+        borderRadius: "12px",
+        padding: "28px 32px",
+        margin: "2rem 0",
+      }}
+    >
+      <p style={{ color: "#ffffff", fontWeight: 700, marginBottom: "8px", fontSize: "1rem" }}>
+        Sie planen einen Sardinien-Törn rund um La Maddalena?
+      </p>
+      <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
+        Wir helfen Ihnen, Revier, Route und Yacht passend zu Ihrer Crew zu planen – damit
+        besondere Reviere nicht nur schön, sondern auch gut vorbereitet sind.
+      </p>
+      <a
+        href="/charter-anfrage"
+        style={{
+          display: "inline-block",
+          background: "#e8a020",
+          color: "#ffffff",
+          fontWeight: 600,
+          borderRadius: "8px",
+          padding: "10px 22px",
+          textDecoration: "none",
+          fontSize: "0.9rem",
+        }}
+      >
+        Sardinien-Törn anfragen
+      </a>
+    </div>
 
     <div className="not-prose my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
       <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">
         Kurz gesagt
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Das Nachtankerverbot im La-Maddalena-Nationalpark entfällt ab 2. Juni 2026.
-        Permit bleibt Pflicht, Posidonia bleibt tabu, Schwimmen gilt ab Verordnungsbeginn
-        nur noch 5&nbsp;m ums Boot. Wer sorgfältig plant, hat wieder Zugang zu einem der
-        schönsten Ankerreviere des Mittelmeers.
+        Die Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft. Kein pauschales
+        Nachtankerverbot – maßgeblich bleiben die geltenden Zonenkarten und
+        Schutzregelungen. Permit bleibt Pflicht, Posidonia bleibt tabu.
+        5-Meter-Baderegel gilt für Bojenlieger. Verstöße können sanktioniert werden.
       </p>
     </div>
 
     <h2>Quelle und Stand</h2>
     <p>
-      Quelle: YACHT.de. Redaktionsstand: 24. April 2026. Alle Angaben ohne Gewähr –
-      bitte vor dem Törn aktuelle offizielle Quellen und die Informationen des
-      Nationalparks prüfen, da die Verordnung erst ab 2. Juni 2026 gilt und lokale
-      Anwendungen variieren können.
+      Quellen: Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena; YACHT.de.
+      Redaktionsstand: 15. Mai 2026. Alle Angaben ohne Gewähr – bitte vor dem Törn
+      aktuelle offizielle Quellen, die Informationen der Capitaneria und des Nationalparks
+      prüfen, da lokale Auslegungen variieren können.
     </p>
   </div>
 );
@@ -88,31 +151,31 @@ const content = (
 export const sardinienLaMaddalenaNachtankerverbot2026: NewsItem = {
   content,
   slug: "sardinien-la-maddalena-nachtankerverbot-2026",
-  title: "Sardinien: Nachtankerverbot im La-Maddalena-Nationalpark fällt weg",
+  title: "Sardinien: Neue Parkregeln für La Maddalena ab 1. Juni 2026",
   excerpt:
-    "Ab dem 2. Juni 2026 dürfen Segelboote im La-Maddalena-Nationalpark wieder über Nacht ankern. Das bisherige Nachtankerverbot entfällt. Das Permit bleibt Pflicht – neu ist eine 5-Meter-Schwimmregel um das Boot.",
+    "Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena tritt am 1. Juni 2026 in Kraft. Kein pauschales Nachtankerverbot – maßgeblich bleiben Zonenkarten und Schutzregelungen. Permit bleibt Pflicht. 5-Meter-Baderegel gilt für Bojenlieger.",
   content_type: "basis_hinweis",
   region: "Sardinien / La Maddalena",
   country_or_area: "Italien",
   status: "angekuendigt",
-  effective_from: "2026-06-02",
+  effective_from: "2026-06-01",
   published_at: "2026-04-24",
-  updated_at: "2026-04-24",
+  updated_at: "2026-05-15",
   priority: "hoch",
   category: "Ankern & Bojen",
-  source_name: "YACHT.de",
+  source_name: "Capitaneria di Porto di La Maddalena; YACHT.de",
   source_url: "https://www.yacht.de",
   customer_impact:
-    "Übernachten auf Anker im La-Maddalena-Nationalpark ist ab 2. Juni 2026 wieder erlaubt. Permit bleibt Pflicht. Ankern nur auf Sand/Fels – nicht über Posidonia. Schwimmen ab Verordnungsbeginn nur 5 m ums Boot.",
+    "Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft. Kein pauschales Nachtankerverbot – geltende Zonen und Schutzregelungen beachten. Permit bleibt Pflicht. 5-Meter-Baderegel für Bojenlieger. Verstöße können sanktioniert werden.",
   action_advice:
-    "Nationalparkpermit online vorbestellen (5 % Rabatt). Törnplanung anpassen. Charterbasis nach aktuellen Hinweisen fragen. Posidonia-Zonen in Seekarte markieren.",
+    "Nationalparkpermit online vorbestellen (5 % Rabatt). Aktuelle Zonenkarten und Bojenfelder prüfen. Charterbasis nach aktuellen Revierhinweisen fragen. Posidonia-Zonen in Seekarte markieren.",
   show_on_blog: true,
   show_on_region_page: true,
   linked_region_slug: "italien",
   canonical_topic_key: "sardinien_la_maddalena_ankern_nationalpark_2026",
   seo_title:
-    "Sardinien La Maddalena 2026: Nachtankerverbot fällt weg – was Charterkunden wissen müssen",
+    "Sardinien La Maddalena 2026: Neue Parkregeln ab 1. Juni – was Charterkunden wissen müssen",
   meta_description:
-    "Nachtankerverbot im La-Maddalena-Nationalpark fällt ab 2. Juni 2026. Permit bleibt Pflicht, Posidonia weiter tabu. Alle wichtigen Infos für Charterkunden.",
+    "Ordinanza 33/2026 für La Maddalena tritt am 1. Juni 2026 in Kraft. Kein pauschales Nachtankerverbot – Permit bleibt Pflicht, 5-Meter-Baderegel für Bojenlieger, Zonenkarten prüfen.",
   is_featured: true,
 };

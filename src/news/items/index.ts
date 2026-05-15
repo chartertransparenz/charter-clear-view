@@ -1,4 +1,5 @@
 import type { NewsItem } from "../types";
+import { kroatienKraftstoffpreiseCharter2026 } from "./kroatien-kraftstoffpreise-charter-2026";
 import { kroatienAnkernAbstaendeKontrollen2026 } from "./kroatien-ankern-abstaende-kontrollen-2026";
 import { neueEuGrenzregelnNonEuCrewYachtcharter } from "./neue-eu-grenzregeln-non-eu-crew-yachtcharter";
 import { montenegroDutyFreeDieselOhneMindestaufenthalt } from "./montenegro-duty-free-diesel-ohne-mindestaufenthalt";
@@ -20,6 +21,7 @@ import { eesUpdateGriechenlandItalienPortugal2026 } from "./ees-update-griechenl
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienKraftstoffpreiseCharter2026,
   treibstoffkriseSommerfluege2026Yachtcharter,
   eesUpdateGriechenlandItalienPortugal2026,
   griechenlandMeeresschutzBuchtenAnkern2026,
