@@ -52,7 +52,7 @@ const InlineImage = ({
 const content = (
   <div>
     <InlineImage
-      src="/images/blog/kroatien-digitale-maut-2027/kroatien-digitale-maut-2027-hero.jpg"
+      src="/images/blog/kroatien-digitale-maut-2027/kroatien-digitale-maut-2027-hero.png"
       alt="Digitale Maut in Kroatien ab 2027 für die Auto-Anreise zum Yachtcharter"
       caption="Ab 2027 soll Kroatien die Autobahnmaut digital und schrankenlos erheben – für Chartercrews wird die Vorbereitung vor der Abfahrt wichtiger."
       credit="Symbolbild, KI-generiert."
@@ -362,12 +362,12 @@ export const digitaleMautKroatien2027: BlogPost = {
   seoTitle: "Digitale Maut Kroatien 2027: Anreise zum Yachtcharter | CharterTransparenz",
   metaDescription:
     "Kroatien stellt 2027 auf digitale Maut um. Was Chartercrews bei Auto-Anreise, Kennzeichenregistrierung, Zahlung und Planung beachten sollten.",
-  ogImage: "/images/blog/kroatien-digitale-maut-2027/kroatien-digitale-maut-2027-hero.jpg",
+  ogImage: "/images/blog/kroatien-digitale-maut-2027/kroatien-digitale-maut-2027-hero.png",
   category: "Törnplanung & Vorbereitung",
   date: "2026-05-21",
   teaser:
     "Ab 2027 soll Kroatien die Autobahnmaut digital und schrankenlos erheben. Für Chartercrews wird die Anreise zur Adria voraussichtlich flüssiger – aber die Vorbereitung wichtiger.",
-  heroImage: "/images/blog/kroatien-digitale-maut-2027/kroatien-digitale-maut-2027-hero.jpg",
+  heroImage: "/images/blog/kroatien-digitale-maut-2027/kroatien-digitale-maut-2027-hero.png",
   heroImageAlt:
     "Digitale Maut in Kroatien ab 2027 – Anreise zum Yachtcharter an der Adria",
   readingTime: 7,
