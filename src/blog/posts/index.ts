@@ -1,4 +1,5 @@
 import type { BlogPost } from "../types";
+import { digitaleMautKroatien2027 } from "./digitale-maut-kroatien-2027";
 import { richtigAnkernYachtcharter } from "./richtig-ankern-yachtcharter";
 import { yachtcharterGriechenlandWelchesRevierPasst } from "./yachtcharter-griechenland-welches-revier-passt";
 import { neueAnkerregelnKroatien202670MeterZone } from "./neue-ankerregeln-kroatien-2026-70-meter-zone";
@@ -8,6 +9,7 @@ import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  digitaleMautKroatien2027,
   richtigAnkernYachtcharter,
   yachtcharterGriechenlandWelchesRevierPasst,
   neueAnkerregelnKroatien202670MeterZone,

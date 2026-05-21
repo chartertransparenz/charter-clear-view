@@ -27,6 +27,7 @@ const URLS: SitemapUrl[] = [
   // ── Blog ─────────────────────────────────────────────────────────────────
   { loc: '/blog', lastmod: BUILD_TIME },
   // Blog posts – use publication date for accurate lastmod
+  { loc: '/blog/digitale-maut-kroatien-2027',                   lastmod: '2026-05-21' },
   { loc: '/blog/richtig-ankern-yachtcharter',                   lastmod: '2026-05-05' },
   { loc: '/blog/yachtcharter-griechenland-welches-revier-passt', lastmod: '2026-04-28' },
   { loc: '/blog/neue-ankerregeln-kroatien-2026-70-meter-zone', lastmod: '2026-04-27' },
