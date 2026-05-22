@@ -18,9 +18,12 @@ import { bviCharterGebuehrenReformFairWaters2026 } from "./bvi-charter-gebuehren
 // Import: 2026-05-08
 import { treibstoffkriseSommerfluege2026Yachtcharter } from "./treibstoffkrise-sommerfluege-2026-yachtcharter";
 import { eesUpdateGriechenlandItalienPortugal2026 } from "./ees-update-griechenland-italien-portugal-2026";
+// Import: 2026-05-22
+import { griechenlandAnreiseRyanairKerosin2026 } from "./griechenland-anreise-ryanair-kerosin-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  griechenlandAnreiseRyanairKerosin2026,
   kroatienKraftstoffpreiseCharter2026,
   treibstoffkriseSommerfluege2026Yachtcharter,
   eesUpdateGriechenlandItalienPortugal2026,

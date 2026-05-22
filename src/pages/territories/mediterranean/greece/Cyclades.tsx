@@ -360,6 +360,36 @@ const Cyclades = () => {
               Die beste Reisezeit für Yachtcharter Kykladen liegt in Mai/Juni sowie September/Oktober: verlässliche Brise, angenehme Temperaturen, entspannte Häfen. In Juli/August herrscht Hochsaison – die Winde sind frischer, die Etappen sportlicher, die Häfen voller: Für erfahrene Skipper ein Traum, für Familien mit kleinen Kindern mitunter fordernd.
             </p>
 
+            {/* ── Revierupdate: Meeresschutzpark Südkykladen ─────────────────── */}
+            <div className="border border-blue-200 bg-blue-50 rounded-lg p-6 mt-8 mb-8">
+              <h3 className="text-xl font-bold mb-3 text-blue-900">
+                Revierupdate: Geplanter Meeresschutzpark in den Südkykladen
+              </h3>
+              <p className="text-gray-800 mb-3">
+                Griechenland bereitet mit dem South Aegean Marine Park 1 ein großes
+                Meeresschutzgebiet in den Südkykladen vor. Nach aktuellen Berichten
+                befindet sich der Entwurf noch im Verfahren – er ist noch nicht
+                abschließend in Kraft getreten. Für die Saison 2026 ergibt sich daraus
+                voraussichtlich kein unmittelbarer Handlungsbedarf für Chartercrews.
+              </p>
+              <p className="text-gray-800 mb-3">
+                Mittelfristig können Posidonia-Schutz, neue Mooringbojen oder lokale
+                Ankerbeschränkungen in Teilen der Südkykladen relevanter werden. Wer ab
+                2027 einen Törn rund um Inseln wie Sifnos, Folegandros, Amorgos oder
+                Naxos plant, sollte die Entwicklung vor der Reise prüfen.
+              </p>
+              <p className="text-gray-700 text-sm">
+                Wir beobachten das Thema und aktualisieren die Revierinformationen, sobald
+                konkrete Regeln veröffentlicht sind.{" "}
+                <a
+                  href="/charter-anfrage"
+                  className="text-blue-700 underline hover:text-blue-900"
+                >
+                  Bei Fragen zur Törnplanung helfen wir gerne persönlich weiter.
+                </a>
+              </p>
+            </div>
+
             <h3 className="text-2xl font-bold mt-8 mb-4">Fazit</h3>
             <p className="mb-6">
               Segeln auf den Kykladen ist pures Griechenland – intensiv, klar, reduziert auf das Wesentliche: Wind, Wasser, Fels, Licht. Die Kombination aus sportlichen Schlägen, charaktervollen Inselorten und verlässlicher Marina-Infrastruktur macht das Revier zum Favoriten anspruchsvoller Crews. Athen/Alimos bietet die große Auswahl und die gelernte Charterlogistik, Lavrion und die Olympic Marine den schnellsten Zugang in die Inselwelt.

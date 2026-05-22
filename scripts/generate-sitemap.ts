@@ -47,6 +47,7 @@ const URLS: SitemapUrl[] = [
   { loc: '/news/montenegro-duty-free-diesel-ohne-mindestaufenthalt', lastmod: BUILD_TIME },
   { loc: '/news/tuerkei-goecek-bojenfelder-2026',                 lastmod: BUILD_TIME },
   { loc: '/news/kroatien-kraftstoffpreise-charter-2026',              lastmod: '2026-05-15' },
+  { loc: '/news/griechenland-anreise-ryanair-kerosin-2026',           lastmod: '2026-05-22' },
   { loc: '/news/treibstoffkrise-sommerfluege-2026-yachtcharter',     lastmod: '2026-05-15' },
   { loc: '/news/ees-update-griechenland-italien-portugal-2026',      lastmod: '2026-05-08' },
   { loc: '/news/griechenland-meeresschutz-buchten-ankern-2026',      lastmod: '2026-05-04' },
