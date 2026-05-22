@@ -193,7 +193,7 @@ export const griechenlandAnreiseRyanairKerosin2026: NewsItem = {
   is_featured: true,
   cta_text:
     "Wir helfen Ihnen, Revier, Yacht und Anreise für Ihren Griechenland-Törn realistisch zusammenzudenken – persönlich und mit über 30 Jahren Charter-Erfahrung.",
-  image: "/images/news/griechenland-anreise-ryanair-kerosin-2026.jpg",
+  image: "/images/news/griechenland-anreise-ryanair-kerosin-2026.png",
   imageAlt: "Griechenland-Anreise zum Yachtcharter mit Winterflugplan und Segelyacht",
   imageCaption:
     "Für Griechenland-Törns im Winter 2026/27 sollten Crews die Flugverbindungen früher prüfen – besonders bei Anreise über Thessaloniki, Kreta oder kleinere Flughäfen. Symbolbild, KI-generiert.",
