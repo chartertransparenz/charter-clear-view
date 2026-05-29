@@ -14,7 +14,11 @@ const content = (
       }}
     >
       <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: 0 }}>
-        <strong>Aktualisiert: 15. Mai 2026.</strong> Inkrafttreten auf 1. Juni 2026
+        <strong>Aktualisiert: 29. Mai 2026.</strong> Rettungskorridore ergänzt,
+        probeweise Geltung für 2026 präzisiert.
+      </p>
+      <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: "6px 0 0 0" }}>
+        <em>Frühere Aktualisierung (15. Mai 2026):</em> Inkrafttreten auf 1. Juni 2026
         korrigiert. 5-Meter-Baderegel und Nachtankern-Thema fachlich präzisiert.
       </p>
     </div>
@@ -25,7 +29,8 @@ const content = (
       <strong>1. Juni 2026</strong> in Kraft. Die Verordnung präzisiert die geltenden
       Regeln für das Revier rund um La Maddalena und den{" "}
       <a href="/reviere/mittelmeer/italien/sardinien">Nationalpark Sardinien</a> – und
-      macht damit die Planung für Charterkunden konkreter.
+      macht damit die Planung für Charterkunden konkreter. Die Regelungen gelten zunächst
+      probeweise für die Saison 2026; eine Überprüfung für 2027 ist vorgesehen.
     </p>
 
     <h2>Was ändert sich – und was nicht?</h2>
@@ -64,6 +69,11 @@ const content = (
         Boje festgemachten Booten ist Baden in unmittelbarer Nähe des eigenen Bootes bis
         zu einem maximalen Radius von 5 Metern erlaubt. Diese Regelung betrifft Boote, die
         regulär an einer Nationalpark-Boje liegen.
+      </li>
+      <li>
+        <strong>Rettungskorridore freihalten.</strong> Zufahrtswege für Rettungsfahrzeuge
+        und Nationalparkwächter müssen jederzeit ungehindert passierbar bleiben. Beim
+        Festmachen darauf achten, keine Durchfahrten zu blockieren.
       </li>
       <li>
         <strong>Sanktionen bei Verstößen.</strong> Verstöße gegen die Vorgaben der
@@ -122,7 +132,7 @@ const content = (
           fontSize: "0.9rem",
         }}
       >
-        Sardinien-Törn anfragen
+        Sardinien-Törn persönlich anfragen
       </a>
     </div>
 
@@ -131,17 +141,18 @@ const content = (
         Kurz gesagt
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Die Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft. Kein pauschales
-        Nachtankerverbot – maßgeblich bleiben die geltenden Zonenkarten und
+        Die Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft – probeweise für Saison 2026.
+        Kein pauschales Nachtankerverbot – maßgeblich bleiben die geltenden Zonenkarten und
         Schutzregelungen. Permit bleibt Pflicht, Posidonia bleibt tabu.
-        5-Meter-Baderegel gilt für Bojenlieger. Verstöße können sanktioniert werden.
+        5-Meter-Baderegel gilt für Bojenlieger. Rettungskorridore freihalten.
+        Verstöße können sanktioniert werden.
       </p>
     </div>
 
     <h2>Quelle und Stand</h2>
     <p>
       Quellen: Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena; YACHT.de.
-      Redaktionsstand: 15. Mai 2026. Alle Angaben ohne Gewähr – bitte vor dem Törn
+      Redaktionsstand: 29. Mai 2026. Alle Angaben ohne Gewähr – bitte vor dem Törn
       aktuelle offizielle Quellen, die Informationen der Capitaneria und des Nationalparks
       prüfen, da lokale Auslegungen variieren können.
     </p>
@@ -153,20 +164,20 @@ export const sardinienLaMaddalenaNachtankerverbot2026: NewsItem = {
   slug: "sardinien-la-maddalena-nachtankerverbot-2026",
   title: "Sardinien: Neue Parkregeln für La Maddalena ab 1. Juni 2026",
   excerpt:
-    "Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena tritt am 1. Juni 2026 in Kraft. Kein pauschales Nachtankerverbot – maßgeblich bleiben Zonenkarten und Schutzregelungen. Permit bleibt Pflicht. 5-Meter-Baderegel gilt für Bojenlieger.",
+    "Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena tritt am 1. Juni 2026 in Kraft – probeweise für Saison 2026. Kein pauschales Nachtankerverbot – Zonenkarten und Schutzregelungen maßgeblich. Permit Pflicht, 5-Meter-Baderegel für Bojenlieger, Rettungskorridore freihalten.",
   content_type: "basis_hinweis",
   region: "Sardinien / La Maddalena",
   country_or_area: "Italien",
   status: "angekuendigt",
   effective_from: "2026-06-01",
   published_at: "2026-04-24",
-  updated_at: "2026-05-15",
+  updated_at: "2026-05-29",
   priority: "hoch",
   category: "Ankern & Bojen",
   source_name: "Capitaneria di Porto di La Maddalena; YACHT.de",
   source_url: "https://www.yacht.de",
   customer_impact:
-    "Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft. Kein pauschales Nachtankerverbot – geltende Zonen und Schutzregelungen beachten. Permit bleibt Pflicht. 5-Meter-Baderegel für Bojenlieger. Verstöße können sanktioniert werden.",
+    "Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft – probeweise für Saison 2026. Kein pauschales Nachtankerverbot – geltende Zonen und Schutzregelungen beachten. Permit bleibt Pflicht. 5-Meter-Baderegel für Bojenlieger. Rettungskorridore freihalten. Verstöße können sanktioniert werden.",
   action_advice:
     "Nationalparkpermit online vorbestellen (5 % Rabatt). Aktuelle Zonenkarten und Bojenfelder prüfen. Charterbasis nach aktuellen Revierhinweisen fragen. Posidonia-Zonen in Seekarte markieren.",
   show_on_blog: true,

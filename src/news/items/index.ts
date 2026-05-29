@@ -1,4 +1,5 @@
 import type { NewsItem } from "../types";
+import { balearenPosidoniaBojenfelderBuchungsstart2026 } from "./balearen-posidonia-bojenfelder-buchungsstart-2026";
 import { kroatienKraftstoffpreiseCharter2026 } from "./kroatien-kraftstoffpreise-charter-2026";
 import { kroatienAnkernAbstaendeKontrollen2026 } from "./kroatien-ankern-abstaende-kontrollen-2026";
 import { neueEuGrenzregelnNonEuCrewYachtcharter } from "./neue-eu-grenzregeln-non-eu-crew-yachtcharter";
@@ -23,6 +24,7 @@ import { griechenlandAnreiseRyanairKerosin2026 } from "./griechenland-anreise-ry
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  balearenPosidoniaBojenfelderBuchungsstart2026,
   griechenlandAnreiseRyanairKerosin2026,
   kroatienKraftstoffpreiseCharter2026,
   treibstoffkriseSommerfluege2026Yachtcharter,

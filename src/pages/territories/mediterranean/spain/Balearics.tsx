@@ -175,6 +175,30 @@ const Balearics = () => {
             </div>
           </div>
 
+        {/* Revierupdate */}
+        <div className="max-w-4xl mx-auto mb-10">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <p className="text-xs font-semibold text-blue-500 uppercase tracking-wide mb-2">
+              Revierupdate Mai 2026
+            </p>
+            <p className="text-gray-800 font-semibold mb-1">
+              PortsIB Posidonia-Bojenfelder: Buchungsstart 11. Juni 2026
+            </p>
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
+              Der Buchungsstart für die offiziellen Posidonia-Bojenfelder der PortsIB auf
+              den Balearen ist auf den <strong>11. Juni 2026, 10:00 Uhr</strong>, terminiert.
+              Ankern auf Posidonia ist verboten – Bojenfelder sind die legale Alternative in
+              geschützten Buchten. In der Hochsaison sind beliebte Felder schnell belegt.
+            </p>
+            <Link
+              to="/news/balearen-posidonia-bojenfelder-buchungsstart-2026"
+              className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            >
+              Details und Tipps zur Buchung →
+            </Link>
+          </div>
+        </div>
+
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center mb-8">
