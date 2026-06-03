@@ -328,8 +328,17 @@ const Mallorca = () => {
               </p>
 
               <h4 className="text-xl font-semibold mt-6 mb-3">Cabrera-Archipel (Nationalpark)</h4>
-              <p className="mb-6">
+              <p className="mb-4">
                 Ein Höhepunkt vieler Mallorca-Törns. Ankern ist verboten, stattdessen werden Bojen vorab reserviert. Der Naturhafen bietet absolute Ruhe, klares Wasser und einen Himmel voller Sterne – eine unvergessliche Nacht.
+              </p>
+              <p className="mb-6">
+                Cabrera ist ein lohnender Abstecher südlich von Mallorca, verlangt aber Vorbereitung: Navigationserlaubnis, Bojenreservierung und klare Regeln im Nationalpark.{" "}
+                <Link
+                  to="/blog/cabrera-yachtcharter-permit-bojen"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                >
+                  Unser Guide erklärt, wie Chartercrews Cabrera sinnvoll einplanen.
+                </Link>
               </p>
 
               <h4 className="text-xl font-semibold mt-6 mb-3">Posidonia & Umweltschutz</h4>

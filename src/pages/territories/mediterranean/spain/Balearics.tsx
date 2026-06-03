@@ -199,6 +199,31 @@ const Balearics = () => {
           </div>
         </div>
 
+        {/* Cabrera-Hinweis */}
+        <div className="max-w-4xl mx-auto mb-10">
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-5">
+            <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">
+              Nationalpark Cabrera
+            </p>
+            <p className="text-gray-800 font-semibold mb-1">
+              Cabrera planen: Permit, Bojen und Übernachtung
+            </p>
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
+              Cabrera ist einer der besonderen Stopps ab Mallorca, aber kein spontanes
+              Ankerziel. Für den Nationalpark sind Navigationserlaubnis und – bei
+              Übernachtung – eine Bojenreservierung erforderlich. Freies Ankern ist nicht
+              erlaubt. Wer Cabrera in den Törn einbauen möchte, sollte Verfügbarkeit,
+              Wetterfenster und Ausweichoptionen frühzeitig prüfen.
+            </p>
+            <Link
+              to="/blog/cabrera-yachtcharter-permit-bojen"
+              className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            >
+              Zum Cabrera-Guide: Permit, Bojen und Übernachtung →
+            </Link>
+          </div>
+        </div>
+
         {/* Detailed Territory Description */}
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center mb-8">

@@ -27,6 +27,7 @@ const URLS: SitemapUrl[] = [
   // ── Blog ─────────────────────────────────────────────────────────────────
   { loc: '/blog', lastmod: BUILD_TIME },
   // Blog posts – use publication date for accurate lastmod
+  { loc: '/blog/cabrera-yachtcharter-permit-bojen',              lastmod: '2026-06-03' },
   { loc: '/blog/digitale-maut-kroatien-2027',                   lastmod: '2026-05-21' },
   { loc: '/blog/richtig-ankern-yachtcharter',                   lastmod: '2026-05-05' },
   { loc: '/blog/yachtcharter-griechenland-welches-revier-passt', lastmod: '2026-04-28' },
