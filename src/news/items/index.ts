@@ -1,4 +1,5 @@
 import type { NewsItem } from "../types";
+import { porosAnkernFestmachenHafenbereich2026 } from "./poros-ankern-festmachen-hafenbereich-2026";
 import { balearenPosidoniaBojenfelderBuchungsstart2026 } from "./balearen-posidonia-bojenfelder-buchungsstart-2026";
 import { kroatienKraftstoffpreiseCharter2026 } from "./kroatien-kraftstoffpreise-charter-2026";
 import { kroatienAnkernAbstaendeKontrollen2026 } from "./kroatien-ankern-abstaende-kontrollen-2026";
@@ -24,6 +25,7 @@ import { griechenlandAnreiseRyanairKerosin2026 } from "./griechenland-anreise-ry
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  porosAnkernFestmachenHafenbereich2026,
   balearenPosidoniaBojenfelderBuchungsstart2026,
   griechenlandAnreiseRyanairKerosin2026,
   kroatienKraftstoffpreiseCharter2026,

@@ -232,6 +232,26 @@ const AthenSaronischerGolf = () => {
               Der Poros Kanal ist ein maritimes Postkartenmotiv: Querpülende Brisen, Fährverkehr und enger Raum verlangen aufmerksames Manövrieren – dafür belohnen Stadtkai und die nahe Russian Bay mit Sandgrund und klarstem Wasser. An Land lockt der Lemonenwald; am Abend liegt man vor Tavernenfassaden, die sich im Hafenwasser spiegeln.
             </p>
 
+            <div className="border-l-4 border-amber-400 bg-amber-50 p-4 rounded-r-lg mb-6">
+              <p className="font-semibold text-amber-900 mb-1">
+                Revierupdate: Poros – eingeschränkter Hafenbereich bis 31. Oktober 2026
+              </p>
+              <p className="text-amber-800 text-sm leading-relaxed mb-2">
+                Im Hafenbereich von Poros gilt bis einschließlich 31. Oktober 2026 eine
+                Einschränkung für eine offiziell definierte Wasserfläche. In dieser Zone
+                sind Ankern, das Ausbringen von Mooring- oder Befestigungspunkten sowie
+                Festmachen an festen oder nicht festen Küstenpunkten untersagt. Poros bleibt
+                grundsätzlich planbar; Crews sollten vor dem Anlaufen jedoch die genaue Lage
+                der Zone, lokale Hafeninformationen und aktuelle nautische Unterlagen prüfen.
+              </p>
+              <a
+                href="/news/poros-ankern-festmachen-hafenbereich-2026"
+                className="text-amber-700 underline text-sm font-medium hover:text-amber-900"
+              >
+                Alle Details und Koordinaten im Revierupdate →
+              </a>
+            </div>
+
             <h4 className="text-xl font-semibold mt-6 mb-4">Hydra – autofreies Hafenjuwel</h4>
             <p className="mb-6">
               Hydra Stadt ist autofrei und eine Kulisse aus steilen, steingepflasterten Gassen. Das Hafenbecken ist klein und schnell gefüllt; Buganker und Heckleinen müssen sitzen, Cross Anchoring vermeiden. Als Plan B bietet sich die Mandraki Bucht östlich an – ruhiger, mit Wasseraktivitäten und kurzer Wassertaxi Distanz zur Stadt.
