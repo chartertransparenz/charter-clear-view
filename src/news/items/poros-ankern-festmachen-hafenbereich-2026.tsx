@@ -370,7 +370,7 @@ export const porosAnkernFestmachenHafenbereich2026: NewsItem = {
   excerpt:
     "Poros bleibt als Stopp im Saronischen Golf planbar. Crews sollten aber eine offiziell definierte Wasserfläche im Hafenbereich beachten, in der Ankern, Moorings und Festmachen bis Ende Oktober 2026 untersagt sind.",
   content_type: "basis_hinweis",
-  region: "Poros / Saronischer Golf",
+  region: "Griechenland / Poros / Saronischer Golf",
   country_or_area: "Griechenland",
   status: "in_kraft",
   effective_from: "2026-04-27",
