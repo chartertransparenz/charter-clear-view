@@ -168,15 +168,15 @@ const content = (
     {/* Drei Erklärungsboxen */}
     <div
       style={{
-        background: "#f0f7f4",
-        border: "1px solid #d1e7dd",
-        borderLeft: "4px solid #1a6b4a",
+        background: "#eef3f8",
+        border: "1px solid #b8cfe0",
+        borderLeft: "4px solid #0f3460",
         borderRadius: "0 8px 8px 0",
         padding: "18px 22px",
         marginBottom: "12px",
       }}
     >
-      <p style={{ fontWeight: 700, color: "#1a6b4a", margin: "0 0 8px" }}>
+      <p style={{ fontWeight: 700, color: "#0f3460", margin: "0 0 8px" }}>
         1. Navigationserlaubnis (Permiso de Navegación)
       </p>
       <p style={{ margin: 0, color: "#374151", lineHeight: 1.65 }}>
@@ -189,15 +189,15 @@ const content = (
 
     <div
       style={{
-        background: "#fffbf0",
-        border: "1px solid #fde68a",
-        borderLeft: "4px solid #d97706",
+        background: "#fef7ec",
+        border: "1px solid #f0c97a",
+        borderLeft: "4px solid #e8a020",
         borderRadius: "0 8px 8px 0",
         padding: "18px 22px",
         marginBottom: "12px",
       }}
     >
-      <p style={{ fontWeight: 700, color: "#92400e", margin: "0 0 8px" }}>
+      <p style={{ fontWeight: 700, color: "#a06800", margin: "0 0 8px" }}>
         2. Tagesbojen (Boyas de Día)
       </p>
       <p style={{ margin: 0, color: "#374151", lineHeight: 1.65 }}>
@@ -211,15 +211,15 @@ const content = (
 
     <div
       style={{
-        background: "#f0f4ff",
-        border: "1px solid #c7d2fe",
-        borderLeft: "4px solid #4f46e5",
+        background: "#e8f0f6",
+        border: "1px solid #9bb8cc",
+        borderLeft: "4px solid #1a5276",
         borderRadius: "0 8px 8px 0",
         padding: "18px 22px",
         marginBottom: "24px",
       }}
     >
-      <p style={{ fontWeight: 700, color: "#3730a3", margin: "0 0 8px" }}>
+      <p style={{ fontWeight: 700, color: "#1a5276", margin: "0 0 8px" }}>
         3. Übernachtungsboje (Reserva de Fondeo)
       </p>
       <p style={{ margin: 0, color: "#374151", lineHeight: 1.65 }}>
