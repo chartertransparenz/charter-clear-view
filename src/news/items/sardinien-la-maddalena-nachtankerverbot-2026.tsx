@@ -33,13 +33,13 @@ const content = (
       </p>
     </div>
 
-    <h2>Was tritt wann in Kraft?</h2>
+    <h2>Was gilt seit dem 1. Juni 2026?</h2>
     <p>
-      Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena tritt am{" "}
+      Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena ist seit dem{" "}
       <strong>1. Juni 2026</strong> in Kraft. Die Verordnung präzisiert die geltenden
       Regeln für das Revier rund um La Maddalena und den{" "}
       <a href="/reviere/mittelmeer/italien/sardinien">Nationalpark Sardinien</a> – und
-      macht damit die Planung für Charterkunden konkreter. Die Regelungen gelten zunächst
+      macht damit die Planung für Charterkunden konkreter. Die Regelungen gelten
       probeweise für die Saison 2026; eine Überprüfung für 2027 ist vorgesehen.
     </p>
 
@@ -60,7 +60,7 @@ const content = (
       Wer die Regeln kennt und die aktuellen Zonen vor dem Törn prüft, segelt entspannter.
     </p>
     <p>
-      Einige Regeln bleiben unverändert oder werden ab 1. Juni 2026 konkretisiert:
+      Einige Regeln bleiben unverändert oder wurden mit dem 1. Juni 2026 konkretisiert:
     </p>
     <ul>
       <li>
@@ -165,7 +165,7 @@ const content = (
         Kurz gesagt
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Die Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft – probeweise für Saison 2026.
+        Die Ordinanza 33/2026 ist seit dem 1. Juni 2026 in Kraft – probeweise für die Saison 2026.
         Kein pauschales Nachtankerverbot – maßgeblich bleiben die geltenden Zonenkarten und
         Schutzregelungen. Permit bleibt Pflicht, Posidonia bleibt tabu.
         5-Meter-Baderegel gilt für Bojenlieger. Rettungskorridore freihalten.
@@ -208,7 +208,7 @@ export const sardinienLaMaddalenaNachtankerverbot2026: NewsItem = {
   content_type: "basis_hinweis",
   region: "Sardinien / La Maddalena",
   country_or_area: "Italien",
-  status: "angekuendigt",
+  status: "in_kraft",
   effective_from: "2026-06-01",
   published_at: "2026-04-24",
   updated_at: "2026-06-05",
@@ -217,7 +217,7 @@ export const sardinienLaMaddalenaNachtankerverbot2026: NewsItem = {
   source_name: "Nationalparkbehörde La Maddalena; Capitaneria di Porto di La Maddalena; YACHT.de",
   source_url: "https://lamaddalenapark.iswebcloud.it/pagina191475_ticket-di-accessoautorizzazioni.html",
   customer_impact:
-    "Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft – probeweise für Saison 2026. Kein pauschales Nachtankerverbot – geltende Zonen und Schutzregelungen beachten. Permit bleibt Pflicht. 5-Meter-Baderegel für Bojenlieger. Rettungskorridore freihalten. Verstöße können sanktioniert werden.",
+    "Ordinanza 33/2026 ist seit dem 1. Juni 2026 in Kraft – probeweise für die Saison 2026. Kein pauschales Nachtankerverbot – geltende Zonen und Schutzregelungen beachten. Permit bleibt Pflicht. 5-Meter-Baderegel für Bojenlieger. Rettungskorridore freihalten. Verstöße können sanktioniert werden.",
   action_advice:
     "Nationalparkpermit online vorbestellen (5 % Rabatt, 40 % Rabatt für Segelboote) auf autorizzazioni.lamaddalenapark.it. Ohne gültige Genehmigung droht Aufschlag von 40 % auf Sportbootgebühren. Aktuelle Zonenkarten und Bojenfelder prüfen. Charterbasis nach aktuellen Revierhinweisen fragen. Posidonia-Zonen in Seekarte markieren.",
   show_on_blog: true,
