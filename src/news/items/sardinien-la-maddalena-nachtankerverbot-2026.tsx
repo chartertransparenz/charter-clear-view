@@ -14,7 +14,17 @@ const content = (
       }}
     >
       <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: 0 }}>
-        <strong>Aktualisiert: 29. Mai 2026.</strong> Rettungskorridore ergänzt,
+        <strong>Stand: 5. Juni 2026.</strong> Offiziell bestätigte Permit-Details und
+        Autorisierungsplattform des Nationalparks ergänzt. Für die Saison 2026 sollten
+        Crews die Permit- und Tarifseite des Nationalparks vor der Einfahrt in die
+        Parkgewässer prüfen. Die offiziellen Parkinformationen nennen unter anderem
+        Online-Autorisierung, Rabatte bei Online-Buchung und einen Aufschlag bei
+        fehlender Genehmigung. Für Chartercrews bleibt entscheidend: Permit vorab
+        klären, Posidonia-Zonen beachten und aktuelle Parkregeln nicht durch ältere
+        Törnführer ersetzen.
+      </p>
+      <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: "6px 0 0 0" }}>
+        <em>Frühere Aktualisierung (29. Mai 2026):</em> Rettungskorridore ergänzt,
         probeweise Geltung für 2026 präzisiert.
       </p>
       <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: "6px 0 0 0" }}>
@@ -54,15 +64,26 @@ const content = (
     </p>
     <ul>
       <li>
-        <strong>Das Permit bleibt Pflicht.</strong> Auch für die reine Durchfahrt durch
-        den Nationalpark wird weiterhin ein Nationalparkpermit benötigt. Wer es online im
-        Voraus kauft, bekommt 5&nbsp;% Rabatt. Segelboote zahlen generell 40&nbsp;%
-        weniger als Motorboote.
+        <strong>Das Permit bleibt Pflicht.</strong> Die Nationalparkgenehmigung gilt für
+        das Navigieren, Ankern und Verweilen innerhalb von 300 Metern der Küste des
+        Nationalparks. Online-Buchung vorab empfohlen: 5&nbsp;% Rabatt bei Online-Kauf.
+        Segelboote zahlen generell 40&nbsp;% weniger als Motorboote. Bei Kontrollen ohne
+        gültige Genehmigung droht ein Aufschlag von 40&nbsp;% auf die Sportbootgebühren.
+        Permits und aktuelle Tarife:{" "}
+        <a
+          href="https://autorizzazioni.lamaddalenapark.it/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+        >
+          autorizzazioni.lamaddalenapark.it
+        </a>
       </li>
       <li>
         <strong>Ankern nur auf Sand oder Fels</strong> – nie über Posidonia-Seegras. Das
         ist keine neue Regel, wird aber aktiv kontrolliert. Posidonia ist geschützt und
-        ökologisch wichtig.
+        erholt sich nur sehr langsam von Ankerschäden. Wie Sie Posidonia-Zonen
+        zuverlässig erkennen, erklärt unser Artikel{" "}
+        <a href="/blog/richtig-ankern-yachtcharter">Richtig ankern beim Yachtcharter</a>.
       </li>
       <li>
         <strong>5-Meter-Baderegel für Bojenlieger:</strong> Bei ordnungsgemäß an einer
@@ -76,8 +97,10 @@ const content = (
         Festmachen darauf achten, keine Durchfahrten zu blockieren.
       </li>
       <li>
-        <strong>Sanktionen bei Verstößen.</strong> Verstöße gegen die Vorgaben der
-        Verordnung können sanktioniert werden. Bitte aktuelle offizielle Nationalpark- und
+        <strong>Sanktionen bei Verstößen.</strong> Wer ohne gültige Nationalparkgenehmigung
+        kontrolliert wird, muss laut offizieller Parkseite mit einem Aufschlag von
+        40&nbsp;% auf die Sportbootgebühren rechnen. Zusätzliche Sanktionen nach den
+        Vorgaben der Verordnung sind möglich. Bitte aktuelle offizielle Nationalpark- und
         Küstenwachhinweise beachten.
       </li>
     </ul>
@@ -113,11 +136,12 @@ const content = (
       }}
     >
       <p style={{ color: "#ffffff", fontWeight: 700, marginBottom: "8px", fontSize: "1rem" }}>
-        Sie planen einen Sardinien-Törn rund um La Maddalena?
+        Sardinien-Törn mit La Maddalena geplant?
       </p>
       <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
-        Wir helfen Ihnen, Revier, Route und Yacht passend zu Ihrer Crew zu planen – damit
-        besondere Reviere nicht nur schön, sondern auch gut vorbereitet sind.
+        Wir helfen Ihnen, Revier, Route, Permit-Fragen und Yachtwahl realistisch
+        zusammenzudenken – damit der Nationalpark nicht zur Unsicherheitsstelle im
+        Törn wird.
       </p>
       <a
         href="/charter-anfrage"
@@ -132,7 +156,7 @@ const content = (
           fontSize: "0.9rem",
         }}
       >
-        Sardinien-Törn persönlich anfragen
+        Sardinien-Törn persönlich planen lassen
       </a>
     </div>
 
@@ -151,8 +175,24 @@ const content = (
 
     <h2>Quelle und Stand</h2>
     <p>
-      Quellen: Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena; YACHT.de.
-      Redaktionsstand: 29. Mai 2026. Alle Angaben ohne Gewähr – bitte vor dem Törn
+      Quellen: Nationalparkbehörde La Maddalena (
+      <a
+        href="https://lamaddalenapark.iswebcloud.it/pagina191475_ticket-di-accessoautorizzazioni.html"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        lamaddalenapark.iswebcloud.it
+      </a>
+      ); Autorisierungsplattform des Nationalparks (
+      <a
+        href="https://autorizzazioni.lamaddalenapark.it/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        autorizzazioni.lamaddalenapark.it
+      </a>
+      ); Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena; YACHT.de.
+      Redaktionsstand: 5. Juni 2026. Alle Angaben ohne Gewähr – bitte vor dem Törn
       aktuelle offizielle Quellen, die Informationen der Capitaneria und des Nationalparks
       prüfen, da lokale Auslegungen variieren können.
     </p>
@@ -171,15 +211,15 @@ export const sardinienLaMaddalenaNachtankerverbot2026: NewsItem = {
   status: "angekuendigt",
   effective_from: "2026-06-01",
   published_at: "2026-04-24",
-  updated_at: "2026-05-29",
+  updated_at: "2026-06-05",
   priority: "hoch",
   category: "Ankern & Bojen",
-  source_name: "Capitaneria di Porto di La Maddalena; YACHT.de",
-  source_url: "https://www.yacht.de",
+  source_name: "Nationalparkbehörde La Maddalena; Capitaneria di Porto di La Maddalena; YACHT.de",
+  source_url: "https://lamaddalenapark.iswebcloud.it/pagina191475_ticket-di-accessoautorizzazioni.html",
   customer_impact:
     "Ordinanza 33/2026 tritt am 1. Juni 2026 in Kraft – probeweise für Saison 2026. Kein pauschales Nachtankerverbot – geltende Zonen und Schutzregelungen beachten. Permit bleibt Pflicht. 5-Meter-Baderegel für Bojenlieger. Rettungskorridore freihalten. Verstöße können sanktioniert werden.",
   action_advice:
-    "Nationalparkpermit online vorbestellen (5 % Rabatt). Aktuelle Zonenkarten und Bojenfelder prüfen. Charterbasis nach aktuellen Revierhinweisen fragen. Posidonia-Zonen in Seekarte markieren.",
+    "Nationalparkpermit online vorbestellen (5 % Rabatt, 40 % Rabatt für Segelboote) auf autorizzazioni.lamaddalenapark.it. Ohne gültige Genehmigung droht Aufschlag von 40 % auf Sportbootgebühren. Aktuelle Zonenkarten und Bojenfelder prüfen. Charterbasis nach aktuellen Revierhinweisen fragen. Posidonia-Zonen in Seekarte markieren.",
   show_on_blog: true,
   show_on_region_page: true,
   linked_region_slug: "italien",
