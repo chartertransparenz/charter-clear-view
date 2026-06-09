@@ -201,11 +201,16 @@ const content = (
         2. Tagesbojen (Boyas de Día)
       </p>
       <p style={{ margin: 0, color: "#374151", lineHeight: 1.65 }}>
-        Für Tagesbesucher gibt es Tagesliegebojen in verschiedenen Bereichen der Bucht.
-        Diese sind nicht vorab reservierbar – man kommt hin und schaut, ob eine frei ist.
-        Tagesbojen sind nur für Boote bis 15 Meter Länge, und sie dürfen nur tagsüber
+        Für Tagesbesucher nennt die offizielle Navigationsseite drei Bojenbereiche
+        mit insgesamt 50 Tagesbojen: <strong>Es Burrí</strong> (30 Bojen),{" "}
+        <strong>Sa Coveta Roja</strong> (8 Bojen) und der{" "}
+        <strong>Hafenbereich nahe dem Hauptkai</strong> (12 Bojen). Diese Bojen sind
+        nicht vorab reservierbar – man kommt hin und schaut, ob eine frei ist.
+        Tagesbojen sind nur für Boote bis 15 Meter Länge und dürfen nur tagsüber
         genutzt werden: von einer Stunde nach Sonnenaufgang bis eine Stunde vor
-        Sonnenuntergang. Übernachten ist an Tagesbojen nicht gestattet.
+        Sonnenuntergang. Übernachten ist an Tagesbojen nicht gestattet – sie ersetzen
+        keine Übernachtungsreservierung und machen Cabrera nicht zu einem spontan frei
+        beankerbaren Ziel.
       </p>
     </div>
 
@@ -505,9 +510,10 @@ const content = (
       <li>Keinen Müll zurücklassen – es gibt keine Müllbehälter im Park; alles
           zurück nach Mallorca bringen.</li>
       <li>
-        Geschwindigkeit in der Bucht und in Parkgewässern moderat halten – keine
-        unnötige Lärmbelästigung durch Motoren oder laute Musik. Offizielle
-        Geschwindigkeitsbegrenzungen vor Ort beachten.
+        In den Parkgewässern gilt nach offizieller Navigationsseite eine
+        Höchstgeschwindigkeit von <strong>10 Knoten</strong>. Für Crews heißt
+        das: langsam, leise und rücksichtsvoll fahren. Übermäßige Geräusche durch
+        Motoren, Hupen oder Musik sind laut offizieller Regelung zu vermeiden.
       </li>
       <li>Rücksicht auf andere Boote und Besucher im Bojenfeld.</li>
     </ul>
@@ -651,7 +657,7 @@ const content = (
     <h3 id="ausgangshafen">Von wo aus einplanen?</h3>
     <p>
       Colonia de Sant Jordi an der Südküste Mallorcas ist die klassische Ausgangsposition.
-      Von dort sind es rund zwölf Seemeilen bis zum Eingang der Cabrера-Bucht – ein
+      Von dort sind es rund zwölf Seemeilen bis zum Eingang der Cabrera-Bucht – ein
       überschaubarer Schlag, auch für Crews, die keine langen Überfahrten mögen. Alternativ
       bieten sich Portocolom und Cala d'Or an, jeweils 15 bis 20 Seemeilen entfernt.
     </p>
