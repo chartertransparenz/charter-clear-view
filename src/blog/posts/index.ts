@@ -1,4 +1,5 @@
 import type { BlogPost } from "../types";
+import { egadiInselnYachtcharterPermitBojenAnkern } from "./egadi-inseln-yachtcharter-permit-bojen-ankern";
 import { cabreraYachtcharterPermitBojen } from "./cabrera-yachtcharter-permit-bojen";
 import { digitaleMautKroatien2027 } from "./digitale-maut-kroatien-2027";
 import { richtigAnkernYachtcharter } from "./richtig-ankern-yachtcharter";
@@ -10,6 +11,7 @@ import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  egadiInselnYachtcharterPermitBojenAnkern,
   cabreraYachtcharterPermitBojen,
   digitaleMautKroatien2027,
   richtigAnkernYachtcharter,

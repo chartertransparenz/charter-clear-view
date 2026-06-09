@@ -289,6 +289,27 @@ const Sizilien = () => {
               <li><strong>San Vito Lo Capo & das Zingaro Naturreservat:</strong> Einer der schönsten Strände Italiens und ein unberührtes Küstenschutzgebiet.</li>
               <li><strong>Cefalù:</strong> Das malerische Städtchen mit seinem imposanten Normannendom direkt am Meer.</li>
             </ul>
+
+            {/* Revierupdate: Ägadische Inseln */}
+            <div className="border border-blue-200 bg-blue-50 rounded-lg p-6 mb-8">
+              <h4 className="text-lg font-bold text-blue-900 mb-3">
+                Revierupdate: Ägadische Inseln – Favignana, Levanzo und Marettimo
+              </h4>
+              <p className="text-gray-700 mb-4">
+                Westlich von Sizilien liegen mit Favignana, Levanzo und Marettimo drei Inseln,
+                die klares Wasser, kleine Orte, Fischerhäfen und italienisches Flair verbinden.
+                Gleichzeitig gehören sie zur Area Marina Protetta Isole Egadi. Für Chartercrews
+                bedeutet das: Buchten, Bojenfelder, Schutzgebietszonen und Autorisierungen
+                sollten vor dem Törn geprüft werden. Unser Guide zeigt, wie sich die Ägadischen
+                Inseln entspannt in einen Sizilien-Törn einbauen lassen.
+              </p>
+              <Link
+                to="/blog/egadi-inseln-yachtcharter-permit-bojen-ankern"
+                className="text-blue-700 hover:text-blue-900 font-medium underline"
+              >
+                Zum Guide: Ägadische Inseln mit der Charteryacht →
+              </Link>
+            </div>
           </div>
 
           {/* Wind, Wetter und die sizilianische See */}

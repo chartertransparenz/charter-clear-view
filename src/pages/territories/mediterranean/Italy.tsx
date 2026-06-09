@@ -300,6 +300,23 @@ const Italy = () => {
               <li><strong>Filicudi/Alicudi:</strong> Abgelegener, rauer – für Kenner und ruhesuchende Crews.</li>
             </ul>
 
+            <div className="border border-blue-200 bg-blue-50 rounded-lg p-6 mb-6">
+              <h4 className="text-base font-bold text-blue-900 mb-2">
+                Neu im Sizilien-Revier: Die Ägadischen Inseln
+              </h4>
+              <p className="text-gray-700 text-sm mb-3">
+                Favignana, Levanzo und Marettimo sind ein reizvolles Ziel für Crews, die Westsizilien,
+                Traumbuchten und italienisches Inselgefühl verbinden möchten. Da die Inseln in einem
+                Meeresschutzgebiet liegen, sollten Bojen, Zonen und Genehmigungen vorab geprüft werden.
+              </p>
+              <Link
+                to="/blog/egadi-inseln-yachtcharter-permit-bojen-ankern"
+                className="text-blue-700 hover:text-blue-900 font-medium text-sm underline"
+              >
+                Ägadische Inseln mit der Charteryacht planen →
+              </Link>
+            </div>
+
             <h4 className="text-xl font-semibold mt-6 mb-4">Weitere Sizilien Highlights</h4>
             <ul className="list-disc pl-6 space-y-3 mb-6">
               <li><strong>Egadi Inseln (AMP):</strong> Favignana mit Cala Rossa (Moorings/Ankerlimits), Levanzo kristallklar, Marettimo naturwild – Parkregeln beachten.</li>
