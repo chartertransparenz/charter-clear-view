@@ -102,9 +102,9 @@ const content = (
 
     {/* ── Hero-Bild ──────────────────────────────────────────────────────── */}
     <InlineImage
-      src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/egadi-inseln-favignana-yachtcharter-hero.jpg"
-      alt="Charteryacht vor der felsigen Küste der Ägadischen Inseln westlich von Sizilien"
-      caption="Favignana, Levanzo und Marettimo: drei Inseln mit klarem Wasser, kleinen Fischerorten und dem Charakter eines echten Revierkleinods westlich von Sizilien."
+      src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/Cala-azzurra-beach-in-favignana.jpg"
+      alt="Cala Azzurra auf Favignana mit türkisfarbenem Wasser und Segelyachten vor der Küste"
+      caption="Cala Azzurra auf Favignana zeigt, warum die Ägadischen Inseln für Crews so reizvoll sind: klares Wasser, helle Felsen und Anker- beziehungsweise Bojenplätze in traumhafter Umgebung."
     />
 
     {/* ── Einleitung ────────────────────────────────────────────────────── */}
@@ -358,9 +358,9 @@ const content = (
     </p>
 
     <InlineImage
-      src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/egadi-inseln-bucht-bojenfeld-schutzgebiet.jpg"
-      alt="Bojenfeld in einer türkisfarbenen Bucht der Ägadischen Inseln mit Segelyacht"
-      caption="Bojenfelder schützen den Meeresgrund und ermöglichen es Chartercrews, schön zu liegen – ohne Posidonia zu beschädigen und ohne Anker setzen zu müssen."
+      src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/Favignana-sizilien.jpg"
+      alt="Blick über türkisfarbenes Wasser und Boote vor Favignana auf den Ägadischen Inseln"
+      caption="Traumbuchten gehören zum Reiz der Ägadischen Inseln. Gerade deshalb sollten Crews Bojenfelder, Schutzgebietszonen und Autorisierungen vor dem Törn prüfen."
     />
 
     {/* ── H2: Zonen verstehen ─────────────────────────────────────────── */}
@@ -600,9 +600,9 @@ const content = (
     <h2 id="toernplanung">Törnplanung: So baut man die Ägadischen Inseln sinnvoll ein</h2>
 
     <InlineImage
-      src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/egadi-inseln-levanzo-hafen-fischerort.jpg"
-      alt="Kleiner Hafen von Levanzo mit weißen Häusern und ruhiger Atmosphäre"
-      caption="Levanzo: der kleinste und ruhigste der drei Inselorte – ideal für einen Gegenpol zu Favignanas lebhafterem Charakter."
+      src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/Insel-levanzo-cala-dogana.jpg"
+      alt="Cala Dogana auf Levanzo mit kleinem Hafenort und türkisfarbenem Wasser"
+      caption="Levanzo ist die ruhige Seite der Ägadischen Inseln: ein kleiner Ort, klares Wasser und kurze Wege an Land – ideal für Crews, die bewusst langsamer planen."
     />
 
     <h3 id="eine-woche-trapani-marsala">Eine Woche ab Trapani oder Marsala</h3>
@@ -852,15 +852,15 @@ export const egadiInselnYachtcharterPermitBojenAnkern: BlogPost = {
   metaDescription:
     "Favignana, Levanzo und Marettimo sind ein Traumziel westlich von Sizilien. Was Chartercrews zu Buchten, Bojen, Permits und Törnplanung wissen sollten.",
   ogImage:
-    "/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/egadi-inseln-favignana-yachtcharter-hero.jpg",
+    "/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/Cala-azzurra-beach-in-favignana.jpg",
   category: "Reviere & Destinationen",
   date: "2026-06-09",
   teaser:
     "Türkisfarbene Buchten, kleine Fischerorte, italienische Gelassenheit und ein Hauch Geheimtipp: Die Ägadischen Inseln gehören zu den schönsten Zielen ab Westsizilien. Wer Favignana, Levanzo und Marettimo mit der Charteryacht erleben möchte, sollte aber auch Bojenfelder, Schutzgebietszonen und Autorisierungen in die Planung einbeziehen.",
   heroImage:
-    "/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/egadi-inseln-favignana-yachtcharter-hero.jpg",
+    "/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/Cala-azzurra-beach-in-favignana.jpg",
   heroImageAlt:
-    "Charteryacht vor der felsigen Küste der Ägadischen Inseln westlich von Sizilien",
+    "Cala Azzurra auf Favignana mit türkisfarbenem Wasser und Segelyachten vor der Küste",
   readingTime: 11,
   relatedSlugs: [
     "richtig-ankern-yachtcharter",
