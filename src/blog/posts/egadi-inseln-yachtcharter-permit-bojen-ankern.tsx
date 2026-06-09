@@ -104,7 +104,7 @@ const content = (
     <InlineImage
       src="/images/blog/egadi-inseln-yachtcharter-permit-bojen-ankern/Cala-azzurra-beach-in-favignana.jpg"
       alt="Cala Azzurra auf Favignana mit türkisfarbenem Wasser und Segelyachten vor der Küste"
-      caption="Cala Azzurra auf Favignana zeigt, warum die Ägadischen Inseln für Crews so reizvoll sind: klares Wasser, helle Felsen und Anker- beziehungsweise Bojenplätze in traumhafter Umgebung."
+      caption="Cala Azzurra auf Favignana liegt im Schutzgebiet Area Marina Protetta Isole Egadi. Klares Wasser und helle Felsen machen das Revier so attraktiv – Ankern und Liegeplätze sind zonenabhängig und sollten vorab über die BlueDiscovery-App oder das AMP-Büro in Favignana geklärt werden."
     />
 
     {/* ── Einleitung ────────────────────────────────────────────────────── */}
@@ -185,11 +185,13 @@ const content = (
       nicht vollständig in allen Seekarten verzeichnet.
     </p>
     <p>
-      Favignana liegt in der Zone C des Schutzgebiets, die vergleichsweise wenige
-      Einschränkungen für die freie Navigation vorsieht. Bojenfelder sind saisonal
-      installiert. Ankern ist zonenabhängig und an ökologisch sensiblen Meeresböden
-      – insbesondere Posidoniawiesen – nicht zulässig. Mehr dazu im Abschnitt zur
-      Schutzgebietslogik.
+      Die meisten Bereiche Favignanas – einschließlich der bekanntesten Buchten wie
+      Cala Rossa, Cala Azzurra und Cala Rotonda – liegen in Zone C, die für
+      Chartercrews vergleichsweise wenige Einschränkungen vorsieht. Eine Ausnahme
+      ist der <strong>Faraglione di Favignana</strong> an der Ostseite der Insel:
+      dieser Bereich gehört zur Zone B und unterliegt strengeren Regeln. Bojenfelder
+      sind saisonal installiert. Ankern ist zonenabhängig und auf
+      Posidoniawiesen nicht zulässig. Mehr dazu im Abschnitt zur Schutzgebietslogik.
     </p>
 
     <h3 id="levanzo">Levanzo – klein, ruhig und fast entrückt</h3>
@@ -290,11 +292,6 @@ const content = (
           </p>
         </div>
       ))}
-      <p style={{ margin: "12px 0 0", color: "#6b7280", fontSize: "0.9rem", fontStyle: "italic" }}>
-        Nicht suggerieren, dass die Ägadischen Inseln ein schneller Tagesabstecher
-        von Palermo sind – für einen entspannten Aufenthalt braucht es mindestens
-        drei bis vier Tage ab Trapani oder Marsala.
-      </p>
     </div>
 
     {/* ── H2: Westsizilien mitdenken ─────────────────────────────────── */}
@@ -388,9 +385,9 @@ const content = (
         bg: "#fffbeb",
         border: "#fcd34d",
         beschreibung:
-          "Umfasst den Faraglione di Favignana, die westliche Seite Levanzo und Teile Marettimos. In Zone B ist freie Navigation für nicht motorisierte Boote möglich (Segeln, Rudern, Elektroantrieb); geführte Tauchgänge und Sport- sowie Berufsfischerei mit Genehmigung. Die Küstendistanzregelung für motorisierte Boote gilt bevorzugt für Inselbewohner.",
+          "Umfasst den Faraglione di Favignana, die westliche Küste Levanzo und Teile Marettimos. Für Chartercrews heißt das konkret: In diesen Bereichen nicht spontan ankern oder an Bojen festmachen. Durchfahrt ist möglich, aber jede Nutzung von Anker oder Mooring erfordert eine explizite AMP-Autorisierung – die man vorab einholt, nicht erst vor Ort.",
         praxis:
-          "Zone B erfordert Aufmerksamkeit. Bevor man an der Westseite Levanzo oder nahe Faraglione di Favignana ankert oder liegt, die aktuelle AMP-Regelung prüfen.",
+          "Westküste Levanzo und Faraglione di Favignana vorab in der BlueDiscovery-App prüfen. Wer hier ankern möchte, holt die Autorisierung vor dem Ablegen ein. Ohne gültige Genehmigung lieber einen anderen Stopp wählen.",
       },
       {
         zone: "Zone C – Teilweiser Schutz",
@@ -398,7 +395,7 @@ const content = (
         bg: "#ecfdf5",
         border: "#6ee7b7",
         beschreibung:
-          "Die für Chartercrews relevanteste Zone. Sie umfasst die gesamte Insel Favignana sowie die Ostseiten von Levanzo und Marettimo. Freie Navigation ist möglich; autorisierte Einzel-Tauchgänge sind erlaubt. Sport- und Kleinfischerei ebenfalls mit entsprechender Genehmigung.",
+          "Die für Chartercrews relevanteste Zone. Sie umfasst die meisten Teile Favignanas (mit Ausnahme des Faraglione di Favignana, der Zone B ist) sowie die Ostseiten von Levanzo und Marettimo. Freie Navigation ist möglich; autorisierte Einzel-Tauchgänge sind erlaubt. Sport- und Kleinfischerei ebenfalls mit entsprechender Genehmigung.",
         praxis:
           "Zone C erlaubt Navigation und – an geeignetem Meeresboden – Ankern oder das Nutzen eines Bojenfelds. Posidoniawiesen und ökologisch sensible Böden sind auch in Zone C zu meiden.",
       },
@@ -454,7 +451,7 @@ const content = (
       Für Crews ist der wichtigste Grundsatz: <strong>nicht einfach an irgendeine
       Boje gehen</strong>. Das Nutzen einer Boje im Bojenfeld der AMP erfordert
       eine Autorisierung. Wer ohne gültige Genehmigung an einer AMP-Boje liegt,
-      riskiert eine Geldstrafe.
+      riskiert Probleme bei Kontrollen und zusätzliche Kosten.
     </p>
 
     <div
@@ -541,6 +538,46 @@ const content = (
       abzustimmen. Manche Vercharterer informieren Crews über aktuelle AMP-Regelungen,
       andere setzen voraus, dass sich die Crew eigenständig informiert hat.
     </p>
+
+    {/* ── Planungsbox Offizielle Quellen ────────────────────────────────────── */}
+    <div
+      style={{
+        background: "#f0f4f8",
+        border: "1px solid #c8d8e8",
+        borderLeft: "4px solid #0f3460",
+        borderRadius: "0 10px 10px 0",
+        padding: "22px 26px",
+        margin: "2rem 0",
+      }}
+    >
+      <p style={{ fontWeight: 700, color: "#0f3460", margin: "0 0 10px", fontSize: "1rem" }}>
+        Offizielle Quellen für die Törnplanung
+      </p>
+      <ul style={{ margin: 0, paddingLeft: "20px", color: "#374151", lineHeight: 1.9 }}>
+        <li>
+          <strong>AMP Isole Egadi – Offizielle Website:</strong>{" "}
+          ampisoleegadi.it – Zonenkarte, aktuelle Regelungen, Bürokontakt
+        </li>
+        <li>
+          <strong>Online-Autorisierungsportal:</strong>{" "}
+          autorizzazionionline.ampisoleegadi.it – Anträge für Ankern, Mooring,
+          Navigation, Sportfischerei und Tauchen
+        </li>
+        <li>
+          <strong>BlueDiscovery-App:</strong> kostenlos im Apple App Store und
+          Google Play – Zonenkarte, Bojenstandorte, Autorisierungen direkt in der App
+        </li>
+        <li>
+          <strong>AMP-Büro Favignana:</strong> Piazza Europa 3, 91023 Favignana –
+          Mo–Fr 10:00–12:00 Uhr
+        </li>
+      </ul>
+      <p style={{ margin: "12px 0 0", color: "#6b7280", fontSize: "0.88rem", fontStyle: "italic" }}>
+        Regelungen und Gebühren können saisonal angepasst werden. Immer die aktuelle
+        Fassung auf den offiziellen Seiten prüfen, nicht veraltete Reiseführer-Angaben
+        verwenden.
+      </p>
+    </div>
 
     {/* ── CTA 2 ──────────────────────────────────────────────────────────── */}
     <CtaBox
@@ -695,8 +732,8 @@ const content = (
       </li>
       <li>
         <strong>Posidonia-Risiko unterschätzen.</strong> Wer auf Posidoniawiesen
-        ankert, riskiert nicht nur eine Strafe, sondern beschädigt irreversibel
-        einen wichtigen Lebensraum.
+        ankert, beschädigt irreversibel einen wichtigen Lebensraum – und riskiert
+        Probleme bei Kontrollen.
       </li>
       <li>
         <strong>Zu viele Inseln in zu wenig Zeit pressen.</strong> Drei Inseln in
@@ -782,62 +819,6 @@ const content = (
       buttonLabel="Jetzt unverbindlich anfragen"
     />
 
-    {/* ── FAQ ────────────────────────────────────────────────────────────── */}
-    <h2 id="faq">Häufige Fragen zu den Ägadischen Inseln mit der Charteryacht</h2>
-
-    <div style={{ marginTop: "1.5rem" }}>
-      {[
-        {
-          q: "Brauche ich für die Ägadischen Inseln eine Genehmigung?",
-          a: "Für die Nutzung von Bojenfeldern und das Ankern in bestimmten Zonen der AMP Isole Egadi ist eine Autorisierung erforderlich. Diese kann online über autorizzazionionline.ampisoleegadi.it, in den AMP-Büros in Favignana oder vor Ort beim Servicepersonal (gegen Zusatzgebühr) beantragt werden. Die BlueDiscovery-App bietet ebenfalls eine Antragsmöglichkeit.",
-        },
-        {
-          q: "Darf man auf den Ägadischen Inseln ankern?",
-          a: "Ankern ist zonenabhängig. In Zone C (umfasst ganz Favignana und die Ostseiten von Levanzo und Marettimo) ist Ankern an geeignetem Meeresboden nach der Zonierung grundsätzlich möglich – allerdings nicht auf Posidoniawiesen oder ökologisch sensiblen Böden. In Zone B gelten strengere Regeln. In Zone A ist Ankern für Charterboote praktisch nicht möglich. Bojenfelder haben in den entsprechenden Bereichen Vorrang.",
-        },
-        {
-          q: "Was ist die BlueDiscovery-App?",
-          a: "Die offizielle App der Area Marina Protetta Isole Egadi. Sie zeigt eine virtuelle Karte mit Zoneneinteilung, Bojenstandorten und Tauchbereichen und ermöglicht Anträge und Zahlungen für Autorisierungen (Navigation, Ankern, Mooring, Sportfischerei, Tauchen). Kostenlos in den App-Stores verfügbar.",
-        },
-        {
-          q: "Welche Insel ist für Einsteiger am besten?",
-          a: "Favignana ist der zugänglichste Einstieg: guter Hafen, Versorgung, Liegeplätze, schöne Buchten in Zone C. Levanzo ist ruhiger und kleiner, aber überschaubar. Marettimo ist am anspruchsvollsten und wetterabhängigsten – für Einsteiger besser als optionaler Bonus planen.",
-        },
-        {
-          q: "Von wo startet man am besten zu den Egadi-Inseln?",
-          a: "Trapani ist der ideale Ausgangspunkt für einen Egadi-fokussierten Törn – nur rund zwanzig Seemeilen von Favignana entfernt. Marsala ist eine gute Alternative. Ab Palermo empfiehlt sich ein längerer Törn mit mindestens zehn bis vierzehn Tagen, der Westsizilien als Route einbezieht.",
-        },
-        {
-          q: "Darf man auf den Ägadischen Inseln fischen?",
-          a: "Sportfischerei ist in bestimmten Zonen mit Genehmigung möglich. Unterwasserfischen und die Entnahme von Organismen aus dem Meer sind im gesamten Schutzgebiet verboten – ohne Ausnahme für Chartercrews.",
-        },
-        {
-          q: "Was kosten die Bojenfelder?",
-          a: "Maßgeblich sind die aktuellen Angaben der Area Marina Protetta Isole Egadi und des jeweiligen Autorisierungssystems. Gültigkeitsdauern sind täglich, wöchentlich oder monatlich. Wer die Genehmigung vor Ort beim Personal beantragt, zahlt eine zusätzliche Verwaltungsgebühr.",
-        },
-        {
-          q: "Ist Marettimo für alle Crews geeignet?",
-          a: "Marettimo ist für erfahrene und gut vorbereitete Crews ein lohnender Stopp – felsige Küste, klares Wasser, ursprüngliche Natur. Die Insel liegt jedoch exponierter als Favignana und ist stärker wetterabhängig. Für Crews mit engen Zeitplänen oder wenig Erfahrung ist ein Puffertag wichtig. Wer Marettimo nicht erzwingen kann, verliert nichts – Favignana und Levanzo sind bereits ein vollständiges Egadi-Erlebnis.",
-        },
-      ].map(({ q, a }, i) => (
-        <div
-          key={i}
-          style={{ borderBottom: "1px solid #e5e7eb", padding: "18px 0" }}
-        >
-          <p
-            style={{
-              fontWeight: 700,
-              color: "#0f3460",
-              marginBottom: "8px",
-              margin: "0 0 8px",
-            }}
-          >
-            {q}
-          </p>
-          <p style={{ color: "#374151", lineHeight: 1.65, margin: 0 }}>{a}</p>
-        </div>
-      ))}
-    </div>
   </div>
 );
 
@@ -877,7 +858,7 @@ export const egadiInselnYachtcharterPermitBojenAnkern: BlogPost = {
     {
       question: "Darf man auf den Ägadischen Inseln ankern?",
       answer:
-        "Ankern ist zonenabhängig. In Zone C (Favignana gesamt, Ostseiten von Levanzo und Marettimo) ist Ankern an geeignetem Meeresboden möglich – aber nicht auf Posidoniawiesen. In Zone B gelten strengere Regeln, in Zone A ist Ankern für Charterboote praktisch nicht möglich.",
+        "Ankern ist zonenabhängig. In Zone C (die meisten Teile Favignanas sowie die Ostseiten von Levanzo und Marettimo) ist Ankern an geeignetem Meeresboden möglich – aber nicht auf Posidoniawiesen. Hinweis: Der Faraglione di Favignana ist Zone B und erfordert eine explizite Autorisierung. In Zone A ist Ankern für Charterboote praktisch nicht möglich.",
     },
     {
       question: "Was ist die BlueDiscovery-App?",
