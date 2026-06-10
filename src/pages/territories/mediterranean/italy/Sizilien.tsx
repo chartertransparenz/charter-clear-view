@@ -64,7 +64,7 @@ const Sizilien = () => {
     title: "Vielfältige Häfen",
     description: "Von Palermo bis Catania - exzellente Marina-Infrastruktur"
   }];
-  return <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+  return <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Header */}
@@ -285,7 +285,7 @@ const Sizilien = () => {
             </p>
             
             <ul className="space-y-2 text-gray-600 mb-6">
-              <li><strong>Die Ägadischen Inseln:</strong> Ein Paradies für Schwimmer und Schnorchler mit Buchten wie der Cala Rossa und Cala Azzurra auf Favignana.</li>
+              <li><strong>Die Ägadischen Inseln:</strong> Ein Paradies für Schwimmer und Schnorchler mit Buchten wie der Cala Rossa und Cala Azzurra auf Favignana. Wer Favignana, Levanzo und Marettimo einplanen möchte, findet in unserem{" "}<Link to="/blog/egadi-inseln-yachtcharter-permit-bojen-ankern" className="text-blue-600 hover:text-blue-800 underline font-medium">Guide zu den Ägadischen Inseln mit der Charteryacht</Link>{" "}konkrete Hinweise zu Bojenfeldern, Schutzgebietszonen und Autorisierungen.</li>
               <li><strong>San Vito Lo Capo & das Zingaro Naturreservat:</strong> Einer der schönsten Strände Italiens und ein unberührtes Küstenschutzgebiet.</li>
               <li><strong>Cefalù:</strong> Das malerische Städtchen mit seinem imposanten Normannendom direkt am Meer.</li>
             </ul>
