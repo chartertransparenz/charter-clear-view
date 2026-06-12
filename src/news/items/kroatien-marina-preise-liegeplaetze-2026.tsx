@@ -16,7 +16,7 @@ const content = (
     <p>
       Zwei unabhängige Auswertungen – von{" "}
       <a href="https://blog.my-sea.com/de/artikel/kroatien-2026-liegeplatzkosten-toernplanung/" rel="nofollow noopener noreferrer" target="_blank">
-        MySea
+        mySea
       </a>{" "}
       und{" "}
       <a href="https://www.sea-help.eu/adria/marinas-kroatien-2026-liegeplatz-1/" rel="nofollow noopener noreferrer" target="_blank">
@@ -41,7 +41,7 @@ const content = (
       </li>
     </ul>
     <p>
-      Die MySea-Auswertung hat Tagesliegerkosten für Boote im Bereich 12–17 m regionalspezifisch erfasst
+      Die mySea-Auswertung hat Tagesliegerkosten für Boote im Bereich 12–17 m regionalspezifisch erfasst
       und kommt für 2026 zu folgenden Beispielspannen:
     </p>
     <ul>
@@ -68,14 +68,10 @@ const content = (
     <h3>ACI-Marinas gesondert</h3>
     <p>
       Die ACI-Kette (Adriatic Croatia International Club) betreibt die größte Marina-Gruppe an der
-      kroatischen Adria. Die MySea-Auswertung hat ACI-Marinas gesondert erfasst und kommt ebenfalls zu
+      kroatischen Adria. Die mySea-Auswertung hat ACI-Marinas gesondert erfasst und kommt ebenfalls zu
       deutlichen Preisunterschieden zwischen einzelnen ACI-Standorten. Wer gezielt ACI-Marinas ansteuern
-      möchte, sollte die aktuellen Preislisten der jeweiligen Marina vorab prüfen. Aktuelle Informationen
-      sind auf{" "}
-      <a href="https://aci-marinas.com/" rel="nofollow noopener noreferrer" target="_blank">
-        aci-marinas.com
-      </a>{" "}
-      verfügbar.
+      möchte, sollte die aktuellen Preislisten der jeweiligen Marina vorab prüfen. Aktuelle
+      Informationen sind direkt bei der jeweiligen ACI-Marina oder auf deren Website verfügbar.
     </p>
 
     <h3>Liegeplätze für kleinere Boote werden knapper</h3>
@@ -99,8 +95,9 @@ const content = (
         Sie planen Ihren Kroatien-Törn 2026?
       </p>
       <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
-        Wir helfen Ihnen, Revier, Route und Nebenkosten realistisch einzuordnen – persönlich,
-        unabhängig und mit über 30 Jahren Charter-Erfahrung.
+        Wir begleiten Sie von der Yachtwahl über die Routenplanung bis zur Einschätzung von
+        Marina-Stopps und Nebenkosten – persönlich, unabhängig und mit über 30 Jahren
+        Charter-Erfahrung. Auch nach der Buchung helfen wir Ihnen beim Törn planen.
       </p>
       <a
         href="/charter-anfrage"
@@ -163,7 +160,11 @@ const content = (
         <strong>Frühzeitig reservieren in der Hochsaison:</strong> In beliebten Regionen – besonders
         Mitteldalmatien rund um Split und Hvar – können stark frequentierte Marinas in Juli und August
         schnell ausgelastet sein. Wer bestimmte Anläufe fest einplant, sollte früh anfragen oder die
-        Charterbasis einbeziehen.
+        Charterbasis einbeziehen. Marina-Liegeplätze lassen sich auch über Plattformen wie{" "}
+        <a href="https://www.my-sea.com/" rel="nofollow noopener noreferrer" target="_blank">
+          my-sea.com
+        </a>{" "}
+        im Voraus online buchen.
       </li>
     </ul>
 
@@ -175,23 +176,19 @@ const content = (
         Kroatien bleibt ein attraktives und gut erschlossenes Charterrevier. Marktauswertungen für 2026
         zeigen, dass Tageslieger- und Transitkosten je nach Marina, Region und Bootslänge deutlich
         variieren und für viele Boote gestiegen sind. Wer Marina-Stopps, Stadthäfen, Bojenfelder und
-        Ankerbuchten bewusst kombiniert und Nebenkosten von Anfang an einplant, reist gut vorbereitet ab.
+        Ankerbuchten bewusst kombiniert und Nebenkosten von Anfang an einplant, segelt gut vorbereitet.
       </p>
     </div>
 
     <h2>Quellen und Stand</h2>
     <p>
-      Quellen: MySea Marktauswertung Kroatien 2026 (
+      Quellen: mySea Marktauswertung Kroatien 2026 (
       <a href="https://blog.my-sea.com/de/artikel/kroatien-2026-liegeplatzkosten-toernplanung/" rel="nofollow noopener noreferrer" target="_blank">
         blog.my-sea.com
       </a>
       ); Sea-Help Marina-Auswertung Kroatien 2026 (
       <a href="https://www.sea-help.eu/adria/marinas-kroatien-2026-liegeplatz-1/" rel="nofollow noopener noreferrer" target="_blank">
         sea-help.eu
-      </a>
-      ); ACI Marinas (
-      <a href="https://aci-marinas.com/" rel="nofollow noopener noreferrer" target="_blank">
-        aci-marinas.com
       </a>
       ). Alle Preisangaben sind Auswertungsbeispiele und Marktdurchschnitte – keine offiziellen
       Preislisten. Aktuelle Preise direkt bei der jeweiligen Marina erfragen. Redaktionsstand:
@@ -215,7 +212,7 @@ export const kroatienMarinaPreiseLiegeplaetze2026: NewsItem = {
   updated_at: "2026-06-12",
   priority: "mittel",
   category: "Marinas & Infrastruktur",
-  source_name: "MySea / Sea-Help",
+  source_name: "mySea / Sea-Help",
   source_url: "https://blog.my-sea.com/de/artikel/kroatien-2026-liegeplatzkosten-toernplanung/",
   customer_impact:
     "Tageslieger in kroatischen Marinas sind 2026 je nach Marina, Region und Bootslänge gestiegen und variieren stark. Wer Marina-Stopps, Stadthäfen und Ankerbuchten bewusst kombiniert, kann Nebenkosten realistisch planen.",
@@ -236,5 +233,5 @@ export const kroatienMarinaPreiseLiegeplaetze2026: NewsItem = {
     "Tageslieger in kroatischen Marinas variieren 2026 stark. Marktauswertungen, regionale Beispiele und praktische Tipps zur Planung von Marina-Kosten beim Yachtcharter in Kroatien.",
   is_featured: false,
   cta_text:
-    "Wenn Sie einen Kroatien-Törn 2026 planen, helfen wir Ihnen, Revier, Route und Nebenkosten realistisch einzuordnen.",
+    "Sie planen Ihren Kroatien-Törn 2026 oder haben bereits gebucht? Wir begleiten Sie bei der Törnplanung – Revier, Route, Marina-Stopps und Budget passend zu Ihrer Crew einordnen. Persönlich, unabhängig und mit über 30 Jahren Charter-Erfahrung.",
 };
