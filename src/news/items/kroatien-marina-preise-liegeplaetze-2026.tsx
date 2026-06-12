@@ -95,9 +95,9 @@ const content = (
         Sie planen Ihren Kroatien-Törn 2026?
       </p>
       <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
-        Wir begleiten Sie von der Yachtwahl über die Routenplanung bis zur Einschätzung von
-        Marina-Stopps und Nebenkosten – persönlich, unabhängig und mit über 30 Jahren
-        Charter-Erfahrung. Auch nach der Buchung helfen wir Ihnen beim Törn planen.
+        Wir begleiten Sie bei der Buchung der optimalen Yacht und im Anschluss bei der
+        Törnplanung passend zu Ihrer Crew. Persönlich, unabhängig und mit über 30 Jahren
+        Charter-Erfahrung. Fordern Sie jetzt Ihr Angebot an.
       </p>
       <a
         href="/charter-anfrage"
