@@ -14,29 +14,29 @@ const content = (
       }}
     >
       <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: 0 }}>
-        <strong>Aktualisiert: 5. Juni 2026.</strong> Offiziell bestätigte Kategorien,
-        Nutzungsmodelle und Tarife für 2026 aus dem PortsIB-Portal ergänzt.
+        <strong>Aktualisiert: 12. Juni 2026.</strong> Das PortsIB-Buchungssystem ist
+        seit <strong>11. Juni 2026, 10:00 Uhr</strong>, geöffnet. Die Bojenfelder sind
+        ab <strong>13. Juni 2026</strong> verfügbar.
       </p>
       <p style={{ color: "#1a4a7a", fontSize: "0.85rem", margin: "6px 0 0 0" }}>
-        Die offizielle PortsIB-Seite nennt weiterhin den{" "}
-        <strong>11. Juni 2026, 10:00 Uhr</strong> als Start der Reservierungswebsite
-        für die ökologischen Posidonia-Bojenfelder. Kategorien, Nutzungsmodelle und
-        Preise 2026 sind bereits im Portal sichtbar. Maßgeblich für Buchung,
-        Verfügbarkeit und Kosten ist immer die aktuelle Anzeige im offiziellen
+        Die Bojenfelder werden laufend in das Buchungssystem aufgenommen, sobald die
+        Installation an den einzelnen Standorten abgeschlossen ist. Maßgeblich für
+        aktuelle Buchung, Verfügbarkeit und Kosten ist immer die Anzeige im offiziellen
         PortsIB-Portal.
       </p>
     </div>
 
-    <h2>Was ist neu?</h2>
+    <h2>Was ist aktuell?</h2>
     <p>
-      Der offizielle Buchungsstart für die Posidonia-Bojenfelder der PortsIB auf den{" "}
-      <a href="/reviere/mittelmeer/spanien/balearen">Balearen</a> wurde auf den{" "}
-      <strong>11. Juni 2026, 10:00 Uhr</strong>, terminiert. Buchungen sind ab diesem
-      Zeitpunkt über die Plattform{" "}
+      Das PortsIB-Buchungssystem für die Posidonia-Bojenfelder auf den{" "}
+      <a href="/reviere/mittelmeer/spanien/balearen">Balearen</a> ist seit{" "}
+      <strong>11. Juni 2026, 10:00 Uhr</strong>, geöffnet. Die Bojenfelder sind ab{" "}
+      <strong>13. Juni 2026</strong> verfügbar. Buchungen sind über die Plattform{" "}
       <a href="https://reservas.portsib.es" rel="nofollow noopener noreferrer" target="_blank">
         reservas.portsib.es
       </a>{" "}
-      möglich.
+      möglich. Die Bojenfelder werden laufend in das System aufgenommen, sobald die
+      Installation an den einzelnen Standorten abgeschlossen ist.
     </p>
 
     <h2>Warum sind Posidonia-Bojenfelder für Charterkunden relevant?</h2>
@@ -96,12 +96,14 @@ const content = (
     <h2>Was bedeutet das für die Törnplanung?</h2>
     <ul>
       <li>
-        <strong>Buchungsstart: 11. Juni 2026, 10:00 Uhr.</strong> Buchungen über{" "}
+        <strong>Buchungssystem geöffnet:</strong> Das PortsIB-System ist seit 11. Juni 2026,
+        10:00 Uhr, aktiv. Buchungen über{" "}
         <a href="https://reservas.portsib.es" rel="nofollow noopener noreferrer" target="_blank">
           reservas.portsib.es
         </a>{" "}
-        vornehmen. Ein Konto bei PortsIB ist vorab empfehlenswert, um am Buchungsstart
-        direkt handlungsfähig zu sein.
+        vornehmen. Die Bojenfelder sind ab dem <strong>13. Juni 2026</strong> verfügbar und
+        werden laufend ins System aufgenommen. Wer noch kein PortsIB-Konto hat, sollte
+        dieses vorab anlegen.
       </li>
       <li>
         <strong>Frühzeitig buchen:</strong> In der Hauptsaison Juli und August sind
@@ -277,12 +279,13 @@ const content = (
         Kurz gesagt
       </p>
       <p className="text-gray-700 leading-relaxed">
-        PortsIB öffnet am 11. Juni 2026 um 10:00 Uhr die Buchung für Posidonia-Bojenfelder
-        auf den Balearen – über reservas.portsib.es. Bootskategorien (bis 8 m, 12 m, 15 m,
-        20 m und 25 m), Nutzungsmodelle und Preise 2026 sind im Portal bereits sichtbar.
-        Ankern auf Posidonia ist strikt verboten; Bojenfelder sind die legale Alternative
-        in geschützten Buchten. Frühzeitig buchen lohnt sich, da beliebte Felder in der
-        Hochsaison schnell belegt sind.
+        Das PortsIB-Buchungssystem für Posidonia-Bojenfelder auf den Balearen ist seit
+        11. Juni 2026, 10:00 Uhr, geöffnet. Bojenfelder sind ab 13. Juni 2026 verfügbar;
+        die Aufnahme ins Buchungssystem erfolgt laufend. Buchungen über reservas.portsib.es.
+        Bootskategorien bis 8 m, 12 m, 15 m, 20 m und 25 m; Nutzungsmodelle Badevoucher
+        (halber Tag), Tagesvoucher und Übernachtung. Ankern auf Posidonia ist strikt
+        verboten; Bojenfelder sind die legale Alternative in geschützten Buchten.
+        Beliebte Felder in der Hochsaison frühzeitig buchen.
       </p>
     </div>
 
@@ -296,7 +299,7 @@ const content = (
       <a href="https://reservas.portsib.es/reservas/es/buoy-fields/" rel="nofollow noopener noreferrer" target="_blank">
         reservas.portsib.es/buoy-fields
       </a>
-      ). Redaktionsstand: 5. Juni 2026. Alle Angaben ohne Gewähr – Buchungsbedingungen,
+      ). Redaktionsstand: 12. Juni 2026. Alle Angaben ohne Gewähr – Buchungsbedingungen,
       Verfügbarkeit und aktuelle Gebühren direkt bei PortsIB prüfen.
     </p>
   </div>
@@ -305,24 +308,24 @@ const content = (
 export const balearenPosidoniaBojenfelderBuchungsstart2026: NewsItem = {
   content,
   slug: "balearen-posidonia-bojenfelder-buchungsstart-2026",
-  title: "Balearen: Buchungsstart für Posidonia-Bojenfelder auf 11. Juni terminiert",
+  title: "Balearen: PortsIB-Buchungssystem für Posidonia-Bojenfelder seit 11. Juni geöffnet",
   excerpt:
-    "PortsIB öffnet am 11. Juni 2026 um 10:00 Uhr die Buchung für Posidonia-Bojenfelder auf den Balearen – über reservas.portsib.es. Ankern auf Posidonia ist verboten; wer Buchten auf Mallorca, Ibiza oder Menorca fest einplant, sollte frühzeitig buchen.",
+    "Das PortsIB-Buchungssystem für Posidonia-Bojenfelder auf den Balearen ist seit 11. Juni 2026, 10:00 Uhr, geöffnet. Bojenfelder sind ab 13. Juni 2026 verfügbar – auf Mallorca, Menorca, Ibiza und Formentera, soweit im Portal ausgewiesen. Frühzeitig buchen, beliebte Felder sind in der Hochsaison schnell belegt.",
   content_type: "kurzmeldung",
   region: "Balearen",
   country_or_area: "Spanien",
-  status: "angekuendigt",
+  status: "in_kraft",
   effective_from: "2026-06-11",
   published_at: "2026-05-29",
-  updated_at: "2026-06-05",
+  updated_at: "2026-06-12",
   priority: "hoch",
   category: "Ankern & Bojen",
   source_name: "PortsIB",
   source_url: "https://reservas.portsib.es/reservas/de/",
   customer_impact:
-    "Buchungsstart für PortsIB Posidonia-Bojenfelder am 11. Juni 2026 um 10:00 Uhr auf reservas.portsib.es. Kategorien bis 8 m, 12 m, 15 m, 20 m und 25 m; Nutzungsmodelle Badevoucher (halber Tag), Tagesvoucher und Übernachtung. Ankern auf Posidonia verboten. In der Hochsaison sind beliebte Felder schnell belegt – frühzeitig buchen empfohlen.",
+    "PortsIB-Buchungssystem seit 11. Juni 2026, 10:00 Uhr, geöffnet. Bojenfelder ab 13. Juni 2026 verfügbar. Kategorien bis 8 m, 12 m, 15 m, 20 m und 25 m; Nutzungsmodelle Badevoucher (halber Tag), Tagesvoucher und Übernachtung. Ankern auf Posidonia verboten. Beliebte Felder in der Hochsaison schnell buchen.",
   action_advice:
-    "Konto bei PortsIB (reservas.portsib.es) einrichten. Am 11. Juni ab 10:00 Uhr buchen. Kategorien und Tarife 2026 im Portal prüfen. Charterbasis nach aktuellen Bojenfeldern fragen.",
+    "Konto bei PortsIB (reservas.portsib.es) einrichten und Buchung vornehmen. Bojenfelder ab 13. Juni 2026 verfügbar. Kategorien, Tarife und Verfügbarkeit 2026 im Portal prüfen. Charterbasis nach aktuellen Bojenfeldern und Schutzgebietsregeln fragen.",
   show_on_blog: true,
   show_on_region_page: true,
   linked_region_slug: "spanien",
@@ -333,9 +336,9 @@ export const balearenPosidoniaBojenfelderBuchungsstart2026: NewsItem = {
     { label: "Ibiza", href: "/reviere/mittelmeer/spanien/balearen/ibiza" },
     { label: "Menorca", href: "/reviere/mittelmeer/spanien/balearen/menorca" },
   ],
-  seo_title: "Balearen Posidonia-Bojenfelder 2026: Buchungsstart 11. Juni – PortsIB",
+  seo_title: "Balearen Posidonia-Bojenfelder 2026: Buchung seit 11. Juni geöffnet – PortsIB",
   meta_description:
-    "PortsIB öffnet am 11. Juni 2026 die Buchung für Posidonia-Bojenfelder auf den Balearen. Ankern auf Posidonia ist verboten – Bojenfelder sind die legale Alternative.",
+    "Das PortsIB-Buchungssystem für Posidonia-Bojenfelder auf den Balearen ist seit 11. Juni 2026 geöffnet. Bojenfelder verfügbar ab 13. Juni 2026. Ankern auf Posidonia verboten.",
   is_featured: false,
   cta_text:
     "Sie planen einen Balearen-Törn 2026? Wir helfen Ihnen, Revier, Buchten und Bojenfelder passend zu Ihrer Crew zu planen.",

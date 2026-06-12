@@ -422,6 +422,14 @@ const Croatia = () => {
             <div className="mb-6">
               <h4 className="text-lg font-semibold mb-3">ACI Marinas</h4>
               <p className="mb-3">Die ACI (Adriatic Croatia International Club) ist die größte Marina-Kette im Mittelmeer und betreibt zahlreiche hochmoderne Marinas entlang der gesamten kroatischen Küste. Sie bieten umfassenden Service (Wasser, Strom, Sanitäranlagen, WLAN, Werften, Restaurants, Geschäfte).</p>
+              <p className="mb-3 text-sm text-gray-600">
+                <strong>Hinweis für 2026:</strong> Tagesliegerkosten variieren je nach Marina, Bootslänge
+                und Saison erheblich. Aktuelle Hinweise zu Preisauswertungen und praktische Tipps zur
+                Budgetplanung finden Sie in unserem{" "}
+                <Link to="/news/kroatien-marina-preise-liegeplaetze-2026" className="text-blue-600 hover:text-blue-800 hover:underline">
+                  Törnhinweis zu Marina-Preisen und Tagesliegerkosten 2026
+                </Link>.
+              </p>
               
               <h5 className="font-semibold mb-2">Vielfalt der Charterbasen:</h5>
               <p className="mb-3">Neben den ACI Marinas gibt es viele weitere private Marinas und Charterstützpunkte in allen Regionen.</p>

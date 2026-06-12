@@ -22,9 +22,12 @@ import { treibstoffkriseSommerfluege2026Yachtcharter } from "./treibstoffkrise-s
 import { eesUpdateGriechenlandItalienPortugal2026 } from "./ees-update-griechenland-italien-portugal-2026";
 // Import: 2026-05-22
 import { griechenlandAnreiseRyanairKerosin2026 } from "./griechenland-anreise-ryanair-kerosin-2026";
+// Import: 2026-06-12
+import { kroatienMarinaPreiseLiegeplaetze2026 } from "./kroatien-marina-preise-liegeplaetze-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienMarinaPreiseLiegeplaetze2026,
   porosAnkernFestmachenHafenbereich2026,
   balearenPosidoniaBojenfelderBuchungsstart2026,
   griechenlandAnreiseRyanairKerosin2026,
