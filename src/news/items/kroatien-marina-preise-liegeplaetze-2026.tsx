@@ -233,5 +233,5 @@ export const kroatienMarinaPreiseLiegeplaetze2026: NewsItem = {
     "Tageslieger in kroatischen Marinas variieren 2026 stark. Marktauswertungen, regionale Beispiele und praktische Tipps zur Planung von Marina-Kosten beim Yachtcharter in Kroatien.",
   is_featured: false,
   cta_text:
-    "Sie planen Ihren Kroatien-Törn 2026 oder haben bereits gebucht? Wir begleiten Sie bei der Törnplanung – Revier, Route, Marina-Stopps und Budget passend zu Ihrer Crew einordnen. Persönlich, unabhängig und mit über 30 Jahren Charter-Erfahrung.",
+    "Sie planen Ihren Kroatien-Törn 2026? Wir begleiten Sie bei der Buchung der optimalen Yacht und im Anschluss bei der Törnplanung passend zu Ihrer Crew. Persönlich, unabhängig und mit über 30 Jahren Charter-Erfahrung. Fordern Sie jetzt Ihr Angebot an.",
 };
