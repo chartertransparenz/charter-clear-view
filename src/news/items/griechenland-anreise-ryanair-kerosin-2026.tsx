@@ -96,6 +96,46 @@ const content = (
       </a>
     </div>
 
+    <h2>Update Juni 2026: Kalamata – Fraport Greece plant deutliche Gebührenerhöhung</h2>
+    <p>
+      Anfang Juni 2026 hat Ryanair eine geplante Gebührenerhöhung am Flughafen Kalamata
+      durch Fraport Greece kritisiert. Laut einer{" "}
+      <a href="https://corporate.ryanair.com/news/fraport-greece-cripples-greek-tourism-with-quadruple-kalamata-airport-fees/" rel="nofollow noopener noreferrer" target="_blank">
+        Ryanair-Pressemitteilung vom 4. Juni 2026
+      </a>{" "}
+      ist eine Erhöhung der Flughafengebühren um rund 390 % vorgesehen, wenn ein neues
+      Konsortium unter Beteiligung von Fraport den Flughafen im Rahmen einer
+      40-Jahres-Konzession übernimmt.
+    </p>
+    <p>
+      Kalamata ist ein wichtiger Anreisepunkt für Crews, die einen Törn auf dem Peloponnes
+      oder in der Region Messinia planen. Ryanair hat angekündigt, bei dieser
+      Gebührenentwicklung Strecken kürzen zu müssen – bisher handelt es sich um eine
+      Ankündigung, nicht um bereits umgesetzte Streichungen.
+    </p>
+    <p>
+      Für Charterkunden bedeutet das konkret:
+    </p>
+    <ul>
+      <li>
+        Flüge nach Kalamata für Peloponnes-Törns 2026 nicht zu knapp planen und
+        Alternativen über Athen mit Bodentransfer prüfen.
+      </li>
+      <li>
+        Buchungen, Flugzeiten und Rückflugpuffer im Blick behalten – falls Verbindungen
+        tatsächlich gestrichen oder ausgedünnt werden.
+      </li>
+      <li>
+        Charterbasis fragen, welche Anreiseoptionen für Kalamata und Messinia aktuell
+        sinnvoll sind.
+      </li>
+    </ul>
+    <p>
+      Solange noch keine konkreten Streichungen umgesetzt sind, bleibt das Thema vor
+      allem ein Planungs- und Beobachtungspunkt. Wer bereits gebucht hat, sollte
+      Streichungsbenachrichtigungen bei der Airline aktivieren.
+    </p>
+
     <h2>Kerosinlage als zusätzlicher Risikofaktor</h2>
     <p>
       Unabhängig von der Ryanair-Entscheidung bleibt die Kerosinlage im europäischen
@@ -144,9 +184,12 @@ const content = (
       <p className="text-gray-700 leading-relaxed">
         Ryanair kürzt den Winterflugplan 2026/27 in Griechenland – aus
         Gebührengründen, nicht wegen Kerosin. Betroffen ist besonders der Raum
-        Thessaloniki und Nordgriechenland. Die angespannte Kerosinlage ist ein
-        davon getrennter Risikofaktor. Wer Griechenland ab Herbst 2026 plant,
-        sollte Flugverbindungen früh prüfen und nicht nur auf einen Anbieter setzen.
+        Thessaloniki und Nordgriechenland. Zusätzlich kritisiert Ryanair eine
+        geplante 390-%-Gebührenerhöhung am Flughafen Kalamata durch Fraport Greece –
+        bisher eine Ankündigung, keine umgesetzte Streichung. Die angespannte
+        Kerosinlage ist ein davon getrennter Risikofaktor. Wer Griechenland ab
+        Herbst 2026 plant, sollte Flugverbindungen früh prüfen, Kalamata-Alternativen
+        über Athen kennen und nicht nur auf einen Anbieter setzen.
       </p>
     </div>
 
@@ -154,9 +197,17 @@ const content = (
     <p>
       Quellen: Ryanair Pressemitteilung vom 8. Mai 2026 („Ryanair closes 3 aircraft
       Thessaloniki base for winter '26"); GTP Headlines (Mai 2026); Reuters / IEA
-      zur Kerosinlage (Mai 2026). Redaktionsstand: 22. Mai 2026. Alle Angaben ohne
-      Gewähr – die Situation kann sich weiterentwickeln. Bitte Flugverbindungen direkt
-      bei der jeweiligen Airline prüfen.
+      zur Kerosinlage (Mai 2026). Update Kalamata:{" "}
+      <a href="https://corporate.ryanair.com/news/fraport-greece-cripples-greek-tourism-with-quadruple-kalamata-airport-fees/" rel="nofollow noopener noreferrer" target="_blank">
+        Ryanair Corporate
+      </a>{" "}
+      (4. Juni 2026);{" "}
+      <a href="https://news.gtp.gr/2026/06/04/ryanair-criticizes-planned-kalamata-airport-fee-increase-ahead-of-new-concession/" rel="nofollow noopener noreferrer" target="_blank">
+        GTP Headlines
+      </a>{" "}
+      (4. Juni 2026). Redaktionsstand: 19. Juni 2026. Alle Angaben ohne Gewähr – die
+      Situation kann sich weiterentwickeln. Bitte Flugverbindungen direkt bei der
+      jeweiligen Airline prüfen.
     </p>
   </div>
 );
@@ -169,18 +220,18 @@ export const griechenlandAnreiseRyanairKerosin2026: NewsItem = {
   excerpt:
     "Für Griechenland-Crews wird die Flugplanung im Winter 2026/27 wichtiger: Ryanair reduziert sein Angebot, während die Kerosinlage im europäischen Flugverkehr angespannt bleibt.",
   content_type: "update",
-  region: "Griechenland / Nordgriechenland / Thessaloniki / Sporaden / Kreta",
+  region: "Griechenland / Nordgriechenland / Thessaloniki / Sporaden / Kreta / Peloponnes / Kalamata",
   country_or_area: "Griechenland",
   status: "angekuendigt",
   effective_from: "2026-10-01",
   published_at: "2026-05-22",
-  updated_at: "2026-05-22",
+  updated_at: "2026-06-19",
   priority: "hoch",
   category: "Anreise & Logistik",
-  source_name: "Ryanair Pressemitteilung; GTP Headlines; Reuters / IEA",
+  source_name: "Ryanair Pressemitteilung; GTP Headlines; Reuters / IEA; Ryanair Corporate (Kalamata, 04.06.2026)",
   source_url: "",
   customer_impact:
-    "Ryanair schließt Thessaloniki-Basis für Winterflugplan 2026/27: 700.000 Sitze und 12 Routen weniger. Besonders Nordgriechenland, Sporaden und Kreta-Crews sollten Alternativen prüfen. Kerosinlage als zusätzlicher volatiler Faktor.",
+    "Ryanair schließt Thessaloniki-Basis für Winterflugplan 2026/27: 700.000 Sitze und 12 Routen weniger. Besonders Nordgriechenland, Sporaden und Kreta-Crews sollten Alternativen prüfen. Kerosinlage als zusätzlicher volatiler Faktor. Update Juni 2026: Ryanair kritisiert geplante 390-%-Gebührenerhöhung am Flughafen Kalamata durch Fraport Greece – Peloponnes-Crews sollten Anreise flexibel planen.",
   action_advice:
     "Flüge für Herbst 2026 und Winter 2026/27 frühzeitig buchen. Nicht nur auf Ryanair verlassen. Alternativen (Aegean, Lufthansa, Austrian, Swiss, EasyJet) prüfen. Ausreichend Zeitpuffer einplanen. Bei Streichungen EU-261-Rechte prüfen.",
   show_on_blog: true,

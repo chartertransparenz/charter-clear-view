@@ -258,9 +258,16 @@ export default function KvarnerBay() {
             </ul>
 
             <div className="border border-gray-300 p-4 rounded-lg mb-6">
-              <p className="text-black"><strong>Nautische Besonderheiten:</strong> Die Meerenge von Osor zwischen 
-              Cres und Lošinj ist eine wichtige Passage mit Brückenöffnung (feste Zeiten beachten). Die Gewässer 
+              <p className="text-black"><strong>Nautische Besonderheiten:</strong> Die Meerenge von Osor zwischen
+              Cres und Lošinj ist eine wichtige Passage mit Brückenöffnung (feste Zeiten beachten). Die Gewässer
               bieten zahlreiche geschützte Ankerbuchten, ideal für entspannte Stopps.</p>
+              <p className="text-black mt-3"><strong>Aktueller Hinweis:</strong> Die Drehbrücke über den
+              Privlaka-Kanal bei Mali Lošinj ist wegen Reparaturarbeiten voraussichtlich bis 1. Juli 2026 nicht
+              für Boote passierbar, die eine Brückenöffnung benötigen. Crews sollten die Etappenplanung anpassen.
+              Details und aktuelle Informationen:{" "}
+              <a href="/news/kroatien-privlaka-kanal-losinj-bruecke-gesperrt-2026" className="text-primary hover:underline">
+                Privlaka-Kanal – aktuelle Meldung
+              </a>.</p>
             </div>
 
             {/* Additional Landscape Image */}
