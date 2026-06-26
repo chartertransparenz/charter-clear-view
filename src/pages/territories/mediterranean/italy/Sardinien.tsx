@@ -172,6 +172,17 @@ const Sardinien = () => {
             >
               Alle Details zur Ordinanza 33/2026 →
             </Link>
+            <p className="text-gray-700 text-sm leading-relaxed mt-3 mb-2">
+              Zusätzlich gilt zwischen Isola Santa Maria und Isola Budelli eine begrenzte
+              Sperrzone wegen eines Kampfmittelfundes (Ordinanza 62/2026). Im Sperrbereich
+              sind Schiffsverkehr, Ankern und Schwimmen untersagt.
+            </p>
+            <Link
+              to="/news/sardinien-la-maddalena-sperrzone-kampfmittelfund-2026"
+              className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            >
+              Details zur Sperrzone bei Santa Maria / Budelli →
+            </Link>
           </div>
         </div>
 

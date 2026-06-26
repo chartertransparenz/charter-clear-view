@@ -173,6 +173,33 @@ const content = (
       </p>
     </div>
 
+    <div
+      className="not-prose"
+      style={{
+        background: "#fff8e6",
+        border: "1px solid #f0d68a",
+        borderRadius: "8px",
+        padding: "12px 16px",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "#6b5900", fontSize: "0.85rem", fontWeight: 600, margin: "0 0 4px 0" }}>
+        Zusätzlicher Hinweis: Begrenzte Sperrzone bei Santa Maria / Budelli
+      </p>
+      <p style={{ color: "#6b5900", fontSize: "0.85rem", margin: "0 0 8px 0" }}>
+        Unabhängig von den allgemeinen Park- und Ankerregeln gilt seit Mai 2026
+        zwischen Isola Santa Maria und Isola Budelli eine separate, begrenzte
+        Sperrzone wegen eines Kampfmittelfundes. Diese betrifft einen konkreten
+        Bereich und muss zusätzlich zu den Parkregeln geprüft werden.
+      </p>
+      <a
+        href="/news/sardinien-la-maddalena-sperrzone-kampfmittelfund-2026"
+        style={{ color: "#8b6f00", fontSize: "0.85rem", fontWeight: 500 }}
+      >
+        Details zur Sperrzone bei Santa Maria / Budelli →
+      </a>
+    </div>
+
     <h2>Quelle und Stand</h2>
     <p>
       Quellen: Nationalparkbehörde La Maddalena (
@@ -211,7 +238,7 @@ export const sardinienLaMaddalenaNachtankerverbot2026: NewsItem = {
   status: "in_kraft",
   effective_from: "2026-06-01",
   published_at: "2026-04-24",
-  updated_at: "2026-06-05",
+  updated_at: "2026-06-26",
   priority: "hoch",
   category: "Ankern & Bojen",
   source_name: "Nationalparkbehörde La Maddalena; Capitaneria di Porto di La Maddalena; YACHT.de",
