@@ -62,6 +62,30 @@ const content = (
       ersten Hinweis geben, wie die Lage am Zielort aktuell eingeschätzt wird.
     </p>
 
+    <h2>Update Juli 2026: EES gilt weiterhin für Nicht-EU-Reisende</h2>
+    <p>
+      Nach aktueller Quellenlage der EU-Kommission bleibt das Einreise-/Ausreisesystem
+      EES in Kraft und betrifft Reisende ohne EU-Pass bei der Ein- und Ausreise in den
+      Schengen-Raum. Laut offizieller EU-Darstellung registriert das System dabei unter
+      anderem Reisedokumentdaten, biometrische Daten (Fingerabdrücke und Gesichtsbild)
+      sowie Ein- und Ausreisedaten von Nicht-EU-Staatsangehörigen.
+    </p>
+    <p>
+      Für Charterkunden mit Nicht-EU-Crewmitgliedern bedeutet das praktisch: bei
+      Anreise und Grenzkontrolle mehr Zeitpuffer einplanen. Besonders bei
+      Flugankünften an stark frequentierten Mittelmeer-Zielflughäfen sollte die
+      Übergabezeit zur Yacht nicht zu knapp geplant werden.
+    </p>
+    <p>
+      Bei gemischten Crews aus EU- und Nicht-EU-Staatsangehörigen ist zu bedenken,
+      dass nicht alle Crewmitglieder gleich schnell durch die Einreise kommen –
+      die biometrische Erfassung an EES-Kontrollen betrifft nur den Nicht-EU-Teil
+      der Crew. Direktverbindungen und großzügige Umsteigezeiten sind daher sinnvoller
+      als knappe Anschlüsse. Einzelne Medien- und Flughafenberichte nennen zeitweise
+      längere Wartezeiten an bestimmten Kontrollpunkten; eine allgemeingültige
+      Wartezeit für alle Flughäfen lässt sich daraus aber nicht ableiten.
+    </p>
+
     <h2>Was sollte man vor dem Törn prüfen?</h2>
     <ul>
       <li>
@@ -125,11 +149,12 @@ const content = (
       oder der Grenzbehörden beachten.
     </p>
     <p>
-      Das{" "}
-      <a href="/news/etias-reisegenehmigung-eu-2026">ETIAS-Reisegenehmigungssystem</a>
-      , das für Nicht-EU-Reisende ebenfalls relevant werden kann, befindet sich
-      separat in Vorbereitung. Auch hier lohnt sich ein Blick auf aktuelle Hinweise
-      vor dem Reiseantritt.
+      Während EES bereits praktisch relevant ist, bleibt das{" "}
+      <a href="/news/etias-reisegenehmigung-eu-2026">ETIAS-Reisegenehmigungssystem</a>{" "}
+      für Reisende vorerst ohne Handlungsbedarf. Offizielle EU-Seiten nennen weiterhin
+      einen Start im letzten Quartal 2026; zugleich berichten einzelne Medien über
+      mögliche Verzögerungen. Für Chartercrews zählt daher aktuell vor allem: EES
+      einplanen, ETIAS weiter beobachten.
     </p>
 
     <div className="not-prose my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
@@ -146,10 +171,22 @@ const content = (
 
     <h2>Quelle und Stand</h2>
     <p>
-      Quellen: Schengen90.app (4. Mai 2026), VisaHQ (3.–5. Mai 2026),
-      BiometricUpdate (7. Mai 2026). Redaktionsstand: 8. Mai 2026. Alle Angaben ohne
-      Gewähr – die Situation entwickelt sich. Bitte vor dem Törn aktuelle offizielle
-      Quellen und die Charterbasis prüfen.
+      Offizielle Quellen: EU-Reiseportal{" "}
+      <a href="https://travel-europe.europa.eu/ees" rel="nofollow noopener noreferrer" target="_blank">
+        travel-europe.europa.eu/ees
+      </a>{" "}
+      und{" "}
+      <a href="https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en" rel="nofollow noopener noreferrer" target="_blank">
+        home-affairs.ec.europa.eu – Entry/Exit System
+      </a>
+      . Ergänzend zur ETIAS-Einordnung:{" "}
+      <a href="https://travel-europe.europa.eu/etias" rel="nofollow noopener noreferrer" target="_blank">
+        travel-europe.europa.eu/etias
+      </a>
+      . Zur Einordnung von Wartezeiten ergänzend: Schengen90.app (4. Mai 2026), VisaHQ
+      (3.–5. Mai 2026), BiometricUpdate (7. Mai 2026). Redaktionsstand: 10. Juli 2026.
+      Alle Angaben ohne Gewähr – die Situation entwickelt sich. Bitte vor dem Törn
+      aktuelle offizielle Quellen und die Charterbasis prüfen.
     </p>
   </div>
 );
@@ -167,16 +204,16 @@ export const eesUpdateGriechenlandItalienPortugal2026: NewsItem = {
   status: "update",
   effective_from: "2026-05-04",
   published_at: "2026-05-08",
-  updated_at: "2026-05-08",
+  updated_at: "2026-07-10",
   priority: "mittel",
   category: "Einreise & Schengen",
   source_name:
-    "Schengen90.app; VisaHQ; BiometricUpdate",
-  source_url: "",
+    "EU-Kommission (travel-europe.europa.eu/ees, home-affairs.ec.europa.eu); Schengen90.app; VisaHQ; BiometricUpdate",
+  source_url: "https://travel-europe.europa.eu/ees",
   customer_impact:
-    "Nicht-EU-Reisende können an vielen Standorten in Griechenland, Italien und Portugal vorerst wieder mit klassischer Passkontrolle rechnen. Situation je nach Flughafen und Hafen unterschiedlich.",
+    "EES bleibt laut EU-Kommission in Kraft und betrifft Nicht-EU-Reisende bei Ein- und Ausreise in den Schengen-Raum. Nicht-EU-Crewmitglieder sollten weiterhin Zeitpuffer bei Anreise und Grenzkontrolle einplanen, besonders an stark frequentierten Mittelmeer-Zielflughäfen.",
   action_advice:
-    "Zeitpuffer einplanen. Reisedokumente und aktuelle Hinweise der Airline prüfen. Charterbasis kontaktieren bei langen Törns mit Non-EU-Crew.",
+    "Zeitpuffer einplanen, besonders bei gemischten Crews und Flugankünften an stark frequentierten Zielflughäfen. Direktverbindungen und großzügige Umsteigezeiten bevorzugen. Reisedokumente und aktuelle Hinweise der Airline prüfen. Charterbasis kontaktieren bei langen Törns mit Non-EU-Crew.",
   show_on_blog: true,
   show_on_region_page: true,
   linked_region_slug: "griechenland",

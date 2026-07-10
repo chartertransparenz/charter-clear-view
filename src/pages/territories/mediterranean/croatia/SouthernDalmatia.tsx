@@ -298,9 +298,17 @@ export default function SouthernDalmatia() {
               <div className="border border-gray-300 p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-black">Per PKW</h4>
                 <p className="text-black">
-                  Kroatien ist aus Süddeutschland, Österreich und der Schweiz bequem mit dem Auto erreichbar. Dies 
-                  bietet den Vorteil, mehr Gepäck und persönlichen Proviant mitnehmen zu können. Die Marinas bieten 
+                  Kroatien ist aus Süddeutschland, Österreich und der Schweiz bequem mit dem Auto erreichbar. Dies
+                  bietet den Vorteil, mehr Gepäck und persönlichen Proviant mitnehmen zu können. Die Marinas bieten
                   sichere Parkmöglichkeiten für die Dauer Ihres Törns.
+                </p>
+                <p className="text-black mt-3">
+                  Hinweis für Herbst 2026: Wegen Sanierungsarbeiten an der{" "}
+                  <Link to="/news/kroatien-peljesac-bruecke-sanierung-dubrovnik-2026" className="text-primary hover:underline">
+                    Pelješac-Brücke
+                  </Link>{" "}
+                  kann die PKW-Anreise nach Dubrovnik und Süddalmatien im Oktober und November etwas mehr Zeit
+                  benötigen. Für Sommer 2026 ändert sich nichts.
                 </p>
               </div>
             </div>

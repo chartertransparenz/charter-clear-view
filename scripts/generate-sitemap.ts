@@ -40,6 +40,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/kroatien-peljesac-bruecke-sanierung-dubrovnik-2026', lastmod: '2026-07-10' },
   { loc: '/news/sardinien-la-maddalena-nachtankerverbot-2026',    lastmod: BUILD_TIME },
   { loc: '/news/ees-italien-non-eu-crew-update-2026',             lastmod: BUILD_TIME },
   { loc: '/news/etias-reisegenehmigung-eu-2026',                  lastmod: BUILD_TIME },

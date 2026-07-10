@@ -28,9 +28,12 @@ import { kroatienMarinaPreiseLiegeplaetze2026 } from "./kroatien-marina-preise-l
 import { kroatienPrivlakaKanalLosinjBrueckeGesperrt2026 } from "./kroatien-privlaka-kanal-losinj-bruecke-gesperrt-2026";
 // Import: 2026-06-26
 import { sardinienLaMaddalenaSperrzoneKampfmittelfund2026 } from "./sardinien-la-maddalena-sperrzone-kampfmittelfund-2026";
+// Import: 2026-07-10
+import { kroatienPeljesacBrueckeSanierungDubrovnik2026 } from "./kroatien-peljesac-bruecke-sanierung-dubrovnik-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienPeljesacBrueckeSanierungDubrovnik2026,
   sardinienLaMaddalenaSperrzoneKampfmittelfund2026,
   kroatienPrivlakaKanalLosinjBrueckeGesperrt2026,
   kroatienMarinaPreiseLiegeplaetze2026,
