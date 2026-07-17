@@ -336,14 +336,35 @@ const IonicIslands = () => {
             </div>
 
             <div className="mb-8">
-              <img 
-                src="/lovable-uploads/c8c65ed0-67d5-4426-956e-aa67126c946f.webp" 
-                alt="Der Navagio-Strand (Schiffbruchbucht) auf Zakynthos ist seit 2023 wegen bestätigter Erdrutschgefahr durch die umliegenden Klippen bis auf Weiteres gesperrt" 
+              <img
+                src="/lovable-uploads/c8c65ed0-67d5-4426-956e-aa67126c946f.webp"
+                alt="Der Navagio-Strand (Schiffbruchbucht) auf Zakynthos ist seit 2023 wegen bestätigter Erdrutschgefahr durch die umliegenden Klippen bis auf Weiteres gesperrt"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />
               <p className="text-sm text-gray-600 mt-2 text-center italic">
                 Der Navagio-Strand (Schiffbruchbucht) auf Zakynthos ist seit 2023 wegen bestätigter Erdrutschgefahr durch die umliegenden Klippen bis auf Weiteres gesperrt
               </p>
+            </div>
+
+            {/* ── Revierupdate: Navagio Beach Sperrung 2026 ─────────────────────── */}
+            <div className="border border-amber-200 bg-amber-50 rounded-lg p-5 mb-8">
+              <h5 className="font-semibold text-amber-900 mb-2">
+                Revierupdate: Navagio Beach bis 31. Oktober 2026 für Yachten gesperrt
+              </h5>
+              <p className="text-gray-800 text-sm mb-3">
+                Auf Grundlage von FEK B 3033/28.05.2026 gilt ein 50-Meter-Mindestabstand
+                zur Navagio-Bucht – kein Ankern, kein Landgang, kein Befahren der Bucht
+                bis mindestens 31. Oktober 2026. Alle anderen Buchten und Häfen auf
+                Zakynthos sowie die übrigen Ionischen Inseln sind uneingeschränkt
+                zugänglich. Besichtigung vom Aussichtspunkt oberhalb der Klippen ist
+                weiterhin möglich.
+              </p>
+              <a
+                href="/news/zakynthos-navagio-beach-sperrung-2026"
+                className="text-amber-700 underline hover:text-amber-900 text-sm font-medium"
+              >
+                Zum ausführlichen Törn-Hinweis: Navagio Beach 2026 →
+              </a>
             </div>
 
             <h3 id="beste-reisezeit" className="text-2xl font-bold mt-8 mb-4">Beste Reisezeit</h3>

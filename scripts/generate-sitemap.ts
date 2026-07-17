@@ -40,7 +40,9 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
-  { loc: '/news/mykonos-yacht-liegeplatz-online-reservierung-2026',  lastmod: '2026-07-17' },
+  { loc: '/news/zakynthos-navagio-beach-sperrung-2026',               lastmod: '2026-07-17' },
+  { loc: '/news/montenegro-plava-spilja-motorbootverbot-2026',        lastmod: '2026-07-17' },
+  { loc: '/news/mykonos-yacht-liegeplatz-online-reservierung-2026',   lastmod: '2026-07-17' },
   { loc: '/news/kroatien-peljesac-bruecke-sanierung-dubrovnik-2026', lastmod: '2026-07-10' },
   { loc: '/news/sardinien-la-maddalena-nachtankerverbot-2026',    lastmod: BUILD_TIME },
   { loc: '/news/ees-italien-non-eu-crew-update-2026',             lastmod: BUILD_TIME },

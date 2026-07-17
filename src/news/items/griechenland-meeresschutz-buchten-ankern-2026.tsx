@@ -73,6 +73,27 @@ const content = (
         in die Törnplanung gehören – besonders in beliebten Inselrevieren.
       </p>
     </div>
+
+    {/* Update 17.07.2026 – Präsidialdekret unterzeichnet, noch nicht in Kraft */}
+    <div className="not-prose my-8 p-5 rounded-lg border border-amber-200 bg-amber-50">
+      <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">
+        Update · Stand 17. Juli 2026
+      </p>
+      <p className="text-gray-800 leading-relaxed mb-3">
+        <strong>Präsidialdekret unterzeichnet – noch nicht in Kraft.</strong>{" "}
+        Umweltminister Stavros Papastavrou hat das Präsidialdekret zur Einrichtung
+        des Meeresparks „Südliches Ägäis – Südliche Kykladen" am 15. Juli 2026
+        unterzeichnet. Das Dekret wird nun dem Staatsrat (Συμβούλιο της Επικρατείας)
+        zur Prüfung vorgelegt. Erst nach Abschluss dieses Verfahrens und
+        Veröffentlichung im Staatsanzeiger tritt es in Kraft.
+      </p>
+      <p className="text-gray-700 leading-relaxed text-sm">
+        Für die Saison 2026 ergeben sich daraus keine neuen Ankerverbote oder
+        sonstigen Einschränkungen. Die bisherigen Revierregeln bleiben gültig.
+        Charterkunden können ihre Törns rund um Milos, Folegandros, Amorgos,
+        Anafi und die übrigen Südkykladen wie gewohnt planen.
+      </p>
+    </div>
   </div>
 );
 
@@ -82,13 +103,13 @@ export const griechenlandMeeresschutzBuchtenAnkern2026: NewsItem = {
   title: "Griechenland: Mehr Meeresschutz in Buchten und Inselrevieren geplant",
   excerpt:
     "Griechenland baut den Schutz sensibler Küsten- und Inselgebiete aus. Für Charterkunden ändern sich 2026 noch keine konkreten Ankerregeln, aber Posidonia-Wiesen, Natura-2000-Buchten und künftige Bojenfelder werden bei der Törnplanung wichtiger.",
-  content_type: "basis_hinweis",
-  region: "Griechenland / Ägäis / Kykladen / Dodekanes",
+  content_type: "update",
+  region: "Griechenland / Ägäis / Südkykladen / Kykladen / Dodekanes",
   country_or_area: "Griechenland",
   status: "angekuendigt",
   effective_from: "2026-01-01",
   published_at: "2026-05-04",
-  updated_at: "2026-05-04",
+  updated_at: "2026-07-17",
   priority: "hoch",
   category: "Ankern & Bojen",
   source_name:

@@ -391,29 +391,38 @@ const Cyclades = () => {
             {/* ── Revierupdate: Meeresschutzpark Südkykladen ─────────────────── */}
             <div className="border border-blue-200 bg-blue-50 rounded-lg p-6 mt-8 mb-8">
               <h3 className="text-xl font-bold mb-3 text-blue-900">
-                Revierupdate: Geplanter Meeresschutzpark in den Südkykladen
+                Revierupdate: Meeresschutzpark Südkykladen – Stand Juli 2026
               </h3>
               <p className="text-gray-800 mb-3">
-                Griechenland bereitet mit dem South Aegean Marine Park 1 ein großes
-                Meeresschutzgebiet in den Südkykladen vor. Nach aktuellen Berichten
-                befindet sich der Entwurf noch im Verfahren – er ist noch nicht
-                abschließend in Kraft getreten. Für die Saison 2026 ergibt sich daraus
-                voraussichtlich kein unmittelbarer Handlungsbedarf für Chartercrews.
+                Griechenland treibt den Meerespark „Südliches Ägäis – Südliche
+                Kykladen" weiter voran. Umweltminister Papastavrou hat das
+                Präsidialdekret am 15. Juli 2026 unterzeichnet. Das Dekret geht nun
+                an den Staatsrat zur Prüfung – es ist noch nicht in Kraft. Für
+                die Saison 2026 ergibt sich daraus kein unmittelbarer
+                Handlungsbedarf für Chartercrews; bestehende Revierregeln bleiben
+                unverändert gültig.
               </p>
               <p className="text-gray-800 mb-3">
-                Mittelfristig können Posidonia-Schutz, neue Mooringbojen oder lokale
-                Ankerbeschränkungen in Teilen der Südkykladen relevanter werden. Wer ab
-                2027 einen Törn rund um Inseln wie Sifnos, Folegandros, Amorgos oder
-                Naxos plant, sollte die Entwicklung vor der Reise prüfen.
+                Mittelfristig können Posidonia-Schutz, neue Mooringbojen oder
+                lokale Ankerbeschränkungen in Teilen der Südkykladen relevanter
+                werden. Wer ab 2027 einen Törn rund um Inseln wie Sifnos,
+                Folegandros, Amorgos oder Anafi plant, sollte die Entwicklung
+                vor der Reise prüfen.
               </p>
               <p className="text-gray-700 text-sm">
-                Wir beobachten das Thema und aktualisieren die Revierinformationen, sobald
-                konkrete Regeln veröffentlicht sind.{" "}
+                Wir beobachten das Thema weiter.{" "}
+                <a
+                  href="/news/griechenland-meeresschutz-buchten-ankern-2026"
+                  className="text-blue-700 underline hover:text-blue-900"
+                >
+                  Zum ausführlichen Törn-Hinweis: Meeresschutz in den Südkykladen
+                </a>{" "}
+                ·{" "}
                 <a
                   href="/charter-anfrage"
                   className="text-blue-700 underline hover:text-blue-900"
                 >
-                  Bei Fragen zur Törnplanung helfen wir gerne persönlich weiter.
+                  Bei Fragen persönlich anfragen
                 </a>
               </p>
             </div>

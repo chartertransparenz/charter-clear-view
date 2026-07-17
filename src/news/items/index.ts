@@ -32,9 +32,13 @@ import { sardinienLaMaddalenaSperrzoneKampfmittelfund2026 } from "./sardinien-la
 import { kroatienPeljesacBrueckeSanierungDubrovnik2026 } from "./kroatien-peljesac-bruecke-sanierung-dubrovnik-2026";
 // Import: 2026-07-17
 import { mykonosYachtLiegeplatzOnlineReservierung2026 } from "./mykonos-yacht-liegeplatz-online-reservierung-2026";
+import { zakynthosNavagioBeachSperrung2026 } from "./zakynthos-navagio-beach-sperrung-2026";
+import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootverbot-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  zakynthosNavagioBeachSperrung2026,
+  montenegroPlavaSpilja2026,
   mykonosYachtLiegeplatzOnlineReservierung2026,
   kroatienPeljesacBrueckeSanierungDubrovnik2026,
   sardinienLaMaddalenaSperrzoneKampfmittelfund2026,

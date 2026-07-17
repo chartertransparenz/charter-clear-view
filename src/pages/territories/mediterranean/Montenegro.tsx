@@ -209,7 +209,22 @@ const Montenegro = () => {
                   <li><strong>Herceg Novi:</strong> Am Eingang der Bucht gelegen, ist diese Stadt bekannt für ihre Festungen, Gärten und das bunte Treiben.</li>
                 </ul>
               </li>
-              <li><strong>Halbinsel Lustica:</strong> Erkunden Sie die unzähligen, oft nur vom Meer aus zugänglichen Buchten wie die Plava Špilja (Blaue Grotte), die zum Schwimmen und Schnorcheln einladen.</li>
+              <li>
+                <strong>Halbinsel Lustica:</strong> Erkunden Sie die unzähligen, oft nur
+                vom Meer aus zugänglichen Buchten wie die Plava Špilja (Blaue Grotte),
+                die zum Schwimmen und Schnorcheln einladen.{" "}
+                <span className="inline-block mt-2 text-amber-800 text-sm bg-amber-50 border border-amber-200 rounded px-3 py-2">
+                  <strong>Hinweis 2026:</strong> Die Plava Špilja darf seit 2026 nicht mehr mit
+                  motorisierten Booten befahren werden – nur Kajaks und Ruderboote sind
+                  erlaubt.{" "}
+                  <a
+                    href="/news/montenegro-plava-spilja-motorbootverbot-2026"
+                    className="underline text-amber-700 hover:text-amber-900"
+                  >
+                    Details im Törn-Hinweis →
+                  </a>
+                </span>
+              </li>
               <li><strong>Budva Riviera:</strong>
                 <ul className="ml-6 mt-2 space-y-2">
                   <li><strong>Budva:</strong> Eine lebhafte Küstenstadt mit einer wunderschönen, von Mauern umgebenen Altstadt und langen Sandstränden.</li>
