@@ -94,7 +94,7 @@ const content = (
         loading="lazy"
       />
       <figcaption className="mt-2 text-center text-sm text-gray-500">
-        Rettungswesten müssen auf Charteryachten für alle Personen erreichbar sein. Auf schnellen offenen Motorbooten gilt Tragepflicht.{" "}
+        An Bord einer Charteryacht in der kroatischen Adria.{" "}
         <span className="text-gray-400">© Shutterstock</span>
       </figcaption>
     </figure>
@@ -176,7 +176,7 @@ const content = (
         loading="lazy"
       />
       <figcaption className="mt-2 text-center text-sm text-gray-500">
-        Luftaufnahme einer kroatischen Bucht: Die Mindestabstände zur Küste beim Fahren richten sich nach der Bootslänge.{" "}
+        Schnelle offene Motorboote und RIBs unterliegen in Kroatien besonderen Sicherheitsregeln.{" "}
         <span className="text-gray-400">© Aerial-motion / Shutterstock</span>
       </figcaption>
     </figure>
