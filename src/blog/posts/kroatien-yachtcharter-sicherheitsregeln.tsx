@@ -85,6 +85,20 @@ const content = (
       bei Kontrollen prüfen, ob die Westen zugänglich und gebrauchstauglich sind.
     </p>
 
+    <figure className="not-prose my-8">
+      <img
+        src="/images/blog/kroatien-sicherheit/kroatien-rettungswesten-pflicht.jpg"
+        alt="Frau am Steuer einer Segelyacht in kroatischen Gewässern – Sicherheitsausrüstung und Rettungswesten an Bord"
+        className="w-full rounded-xl object-cover"
+        style={{ maxHeight: "480px" }}
+        loading="lazy"
+      />
+      <figcaption className="mt-2 text-center text-sm text-gray-500">
+        Rettungswesten müssen auf Charteryachten für alle Personen erreichbar sein. Auf schnellen offenen Motorbooten gilt Tragepflicht.{" "}
+        <span className="text-gray-400">© Shutterstock</span>
+      </figcaption>
+    </figure>
+
     <h2 id="quickstop">Quickstop – die einfachste Sicherheitsleine an Bord</h2>
     <p>
       Schnelle offene Motorboote und RIBs müssen mit einem Quickstop-System ausgerüstet
@@ -153,6 +167,20 @@ const content = (
       . Beide Regeln gelten gleichzeitig und ergänzen sich.
     </p>
 
+    <figure className="not-prose my-8">
+      <img
+        src="/images/blog/kroatien-sicherheit/kroatien-kuestenabstand-bucht.jpg"
+        alt="Luftaufnahme einer kroatischen Bucht mit Booten – Mindestküstenabstände für Charteryachten in der Adria"
+        className="w-full rounded-xl object-cover"
+        style={{ maxHeight: "480px" }}
+        loading="lazy"
+      />
+      <figcaption className="mt-2 text-center text-sm text-gray-500">
+        Luftaufnahme einer kroatischen Bucht: Die Mindestabstände zur Küste beim Fahren richten sich nach der Bootslänge.{" "}
+        <span className="text-gray-400">© Aerial-motion / Shutterstock</span>
+      </figcaption>
+    </figure>
+
     <h2 id="tender">Tender und Beiboot – was das Dinghy wirklich darf</h2>
     <p>
       Für das Beiboot einer Charteryacht gilt eine klare Einschränkung: Ein Tender, der
@@ -173,6 +201,20 @@ const content = (
       kroatische Vignette und Zulassung für das Tender. Die meisten Charterfirmen
       stellen Tender ohne eigenständige Zulassung – hier gilt die 500-Meter-Regel.
     </p>
+
+    <figure className="not-prose my-8">
+      <img
+        src="/images/blog/kroatien-sicherheit/kroatien-tender-beiboot-yacht.jpg"
+        alt="Aufblasbares Beiboot (Dinghy) auf türkisblauem Wasser – Tenderregeln in Kroatien"
+        className="w-full rounded-xl object-cover"
+        style={{ maxHeight: "480px" }}
+        loading="lazy"
+      />
+      <figcaption className="mt-2 text-center text-sm text-gray-500">
+        Das Beiboot darf sich ohne eigene Zulassung maximal 500 Meter vom Mutterschiff entfernen – Fahrten zur nächstgelegenen Anlegestelle sind ausgenommen.{" "}
+        <span className="text-gray-400">© Shutterstock</span>
+      </figcaption>
+    </figure>
 
     <h2 id="sup-kajak">SUP, Kajak und elektrische Sportgeräte</h2>
     <p>
