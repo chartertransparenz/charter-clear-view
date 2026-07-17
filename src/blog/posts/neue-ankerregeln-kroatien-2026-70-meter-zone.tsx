@@ -116,7 +116,11 @@ const content = (
       Wer die allgemeinen Grundlagen des Ankerns – Platzwahl, Kettenlänge, Haltetest,
       Snubber und Landleine – vertiefen möchte, findet im{" "}
       <a href="/blog/richtig-ankern-yachtcharter">Praxis-Guide zum Richtig ankern beim Yachtcharter</a>
-      {" "}einen ausführlichen Überblick für Chartercrews im Mittelmeer.
+      {" "}einen ausführlichen Überblick für Chartercrews im Mittelmeer. Weitere
+      Sicherheitsregeln für Kroatien – Küstenabstände, Tender-Nutzung, Quickstop und
+      Rettungswesten – sind im{" "}
+      <a href="/blog/kroatien-yachtcharter-sicherheitsregeln">Ratgeber zu den kroatischen Sicherheitsvorschriften</a>
+      {" "}zusammengefasst.
     </p>
 
     <div className="not-prose my-8 p-5 bg-ocean-light/20 rounded-lg border border-ocean-light/40">

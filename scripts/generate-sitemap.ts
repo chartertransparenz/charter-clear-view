@@ -27,6 +27,7 @@ const URLS: SitemapUrl[] = [
   // ── Blog ─────────────────────────────────────────────────────────────────
   { loc: '/blog', lastmod: BUILD_TIME },
   // Blog posts – use publication date for accurate lastmod
+  { loc: '/blog/kroatien-yachtcharter-sicherheitsregeln',        lastmod: '2026-07-17' },
   { loc: '/blog/egadi-inseln-yachtcharter-permit-bojen-ankern',  lastmod: '2026-06-09' },
   { loc: '/blog/cabrera-yachtcharter-permit-bojen',              lastmod: '2026-06-03' },
   { loc: '/blog/digitale-maut-kroatien-2027',                   lastmod: '2026-05-21' },
