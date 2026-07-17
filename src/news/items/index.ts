@@ -30,9 +30,12 @@ import { kroatienPrivlakaKanalLosinjBrueckeGesperrt2026 } from "./kroatien-privl
 import { sardinienLaMaddalenaSperrzoneKampfmittelfund2026 } from "./sardinien-la-maddalena-sperrzone-kampfmittelfund-2026";
 // Import: 2026-07-10
 import { kroatienPeljesacBrueckeSanierungDubrovnik2026 } from "./kroatien-peljesac-bruecke-sanierung-dubrovnik-2026";
+// Import: 2026-07-17
+import { mykonosYachtLiegeplatzOnlineReservierung2026 } from "./mykonos-yacht-liegeplatz-online-reservierung-2026";
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  mykonosYachtLiegeplatzOnlineReservierung2026,
   kroatienPeljesacBrueckeSanierungDubrovnik2026,
   sardinienLaMaddalenaSperrzoneKampfmittelfund2026,
   kroatienPrivlakaKanalLosinjBrueckeGesperrt2026,

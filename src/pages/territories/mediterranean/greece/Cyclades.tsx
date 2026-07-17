@@ -275,6 +275,34 @@ const Cyclades = () => {
             <p className="mb-6">
               Mykonos-Stadt ist ein Erlebnis – maritim, mondän, lebhaft. Segler sollten die Böenlinien ernst nehmen: Reffbereitschaft und vorausschauende Ankerdisziplin sind die halbe Miete.
             </p>
+
+            {/* ── Revierupdate: Mykonos Online-Reservierung ──────────────────────── */}
+            <div className="border border-amber-200 bg-amber-50 rounded-lg p-5 mb-6">
+              <h5 className="font-semibold text-amber-900 mb-2">
+                Revierupdate: Online-Voranmeldung für Charteryachten in Mykonos (2026)
+              </h5>
+              <p className="text-gray-800 text-sm mb-2">
+                Ab 2026 ist für alle Charteryachten eine Online-Reservierung über den{" "}
+                <a href="https://booking.mykonosports.gr/home" rel="nofollow" className="underline">
+                  Mykonos Port Fund
+                </a>{" "}
+                zwingend erforderlich. Das System öffnet frühestens 30 Tage vor dem
+                geplanten Ankunftsdatum. Segelyachten können nur im Neuen Hafen Tourlos
+                liegen (max. 25 m ÜWL); der Alte Hafen Chora ist ausschließlich
+                Motoryachten über 25 m vorbehalten. Einlaufen ist nur von 12:00 Uhr bis
+                Sonnenuntergang erlaubt.
+              </p>
+              <p className="text-gray-700 text-sm">
+                Alle Details zu Buchungsprozess, Einlaufzeiten, Gebühren und
+                Stornobedingungen:{" "}
+                <a
+                  href="/news/mykonos-yacht-liegeplatz-online-reservierung-2026"
+                  className="text-amber-800 underline hover:text-amber-900 font-medium"
+                >
+                  Mykonos 2026: Online-Reservierung für Charteryachten
+                </a>
+              </p>
+            </div>
             
             <div className="my-8">
               <img src="/lovable-uploads/72d6a75d-c97b-4b2e-b4e6-d0f739d31830.webp" alt="Sonnenuntergang über Mykonos mit Windmühlen" className="w-full rounded-lg shadow-lg" />
