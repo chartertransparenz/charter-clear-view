@@ -149,7 +149,7 @@ export const zakynthosNavagioBeachSperrung2026: NewsItem = {
   imageAlt:
     "Blick von oben auf die Schiffbruchbucht Navagio auf Zakynthos – türkisblaues Wasser, das gestrandete Schiffswrack und die markanten weißen Kalksteinklippen",
   imageCaption:
-    "Navagio Beach (Schiffbruchbucht), Zakynthos – bis 31. Oktober 2026 für Yachten nicht anlaufbar. Symbolbild, KI-generiert.",
+    "Navagio Beach (Schiffbruchbucht), Zakynthos – bis 31. Oktober 2026 für Yachten nicht anlaufbar. © Neirfy / Shutterstock",
   region_links: [
     {
       label: "Yachtcharter Ionische Inseln",

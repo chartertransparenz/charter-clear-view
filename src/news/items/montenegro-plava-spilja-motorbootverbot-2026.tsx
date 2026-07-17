@@ -147,7 +147,7 @@ export const montenegroPlavaSpilja2026: NewsItem = {
   imageAlt:
     "Blaues Leuchten in der Plava Špilja (Blaue Grotte) an der Halbinsel Luštica in Montenegro – das Naturschutzgebiet darf ab 2026 nur noch mit Kajaks befahren werden",
   imageCaption:
-    "Plava Špilja (Blaue Grotte), Halbinsel Luštica, Montenegro – seit 2026 nur noch für nicht-motorisierte Boote zugänglich. Symbolbild, KI-generiert.",
+    "Plava Špilja (Blaue Grotte), Halbinsel Luštica, Montenegro – seit 2026 nur noch für nicht-motorisierte Boote zugänglich. © Tatiana Diuvbanova / Shutterstock",
   region_links: [
     {
       label: "Yachtcharter Montenegro",
