@@ -154,27 +154,9 @@ const content = (
 
     <h2>Quellen und Stand</h2>
     <p>
-      Hauptquelle (Praxis): Sea-Help (27. Juli 2026), mit Verweis auf INA-Aussage zur
-      Bootstankstellen-Ausnahme beim 300-Liter-Limit (
-      <a
-        href="https://www.sea-help.eu/news-allgemein/300-liter-kraftstofflimit-kroatien/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        sea-help.eu
-      </a>
-      ). Ergänzend: CroatiaWeek (
-      <a
-        href="https://www.croatiaweek.com/croatia-new-fuel-prices-petrol-diesel-july-2026/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        croatiaweek.com
-      </a>
-      ) und Kristijan Antic Blog (28. Juli 2026). Preisfestsetzung durch kroatische
-      Regierung. Redaktionsstand: 31. Juli 2026. Alle Angaben ohne Gewähr – Preise und
-      Regelungen werden regelmäßig neu festgelegt. Bitte vor dem Törn aktuelle Informationen
-      prüfen.
+      Quelle: Kroatische Regierung. Redaktionsstand: 31. Juli 2026. Alle Angaben ohne Gewähr –
+      Preise und Regelungen werden regelmäßig neu festgelegt. Bitte vor dem Törn aktuelle
+      Informationen prüfen.
     </p>
   </div>
 );
