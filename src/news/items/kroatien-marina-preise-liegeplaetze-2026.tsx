@@ -125,7 +125,12 @@ const content = (
       <li>
         <strong>Nebenkosten früh einkalkulieren:</strong> Marina-Gebühren, Nationalparkgebühren, Transit-Log,
         Kraftstoff und Vignette ergeben zusammen einen relevanten Posten. Wer diese Positionen von Anfang
-        an kennt, plant seinen Törn auf soliderer Basis. Die Charterbasis kann dabei helfen.
+        an kennt, plant seinen Törn auf soliderer Basis. Die Charterbasis kann dabei helfen. Neben
+        Marina- und Liegeplatzkosten sollten Crews auch die aktuellen Kraftstoffpreise im Blick
+        behalten:{" "}
+        <a href="/news/kroatien-kraftstoffpreise-charter-2026">
+          Ab Juli 2026 gelten neue Höchstpreise
+        </a>.
       </li>
       <li>
         <strong>Marina-Stopps bewusst wählen:</strong> Nicht jede Nacht muss in einer Premium-Marina
