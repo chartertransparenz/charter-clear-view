@@ -1,4 +1,6 @@
 import type { NewsItem } from "../types";
+// Import: 2026-08-07
+import { kroatienVinisceAnkergebuehren2026 } from "./kroatien-vinisce-ankergebuehren-2026";
 import { porosAnkernFestmachenHafenbereich2026 } from "./poros-ankern-festmachen-hafenbereich-2026";
 import { balearenPosidoniaBojenfelderBuchungsstart2026 } from "./balearen-posidonia-bojenfelder-buchungsstart-2026";
 import { kroatienKraftstoffpreiseCharter2026 } from "./kroatien-kraftstoffpreise-charter-2026";
@@ -37,6 +39,7 @@ import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootve
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienVinisceAnkergebuehren2026,
   zakynthosNavagioBeachSperrung2026,
   montenegroPlavaSpilja2026,
   mykonosYachtLiegeplatzOnlineReservierung2026,

@@ -123,6 +123,21 @@ const content = (
       {" "}zusammengefasst.
     </p>
 
+    <div className="not-prose my-6 p-4 bg-amber-50 rounded-lg border border-amber-200">
+      <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">
+        Update August 2026
+      </p>
+      <p className="text-gray-700 text-sm leading-relaxed">
+        In der Bucht <strong>Vinišće</strong> westlich von Trogir werden inzwischen Ankergebühren
+        erhoben. Das ändert nichts an den allgemeinen Regeln rund um Ankern, Landleinen und
+        Küstenabstände – zeigt aber, dass in beliebten kroatischen Buchten zusätzlich lokale
+        Gebührenmodelle entstehen können. Mehr dazu im{" "}
+        <a href="/news/kroatien-vinisce-ankergebuehren-2026" className="text-ocean-dark underline">
+          Törn-Hinweis zu Vinišće
+        </a>.
+      </p>
+    </div>
+
     <div className="not-prose my-8 p-5 bg-ocean-light/20 rounded-lg border border-ocean-light/40">
       <p className="text-sm font-medium text-ocean-dark mb-1">Ihr nächster Kroatien-Törn</p>
       <p className="text-gray-700 leading-relaxed">

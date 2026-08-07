@@ -154,7 +154,13 @@ const content = (
         sich im Beitrag zu den{" "}
         <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone">
           neuen Ankerregeln in Kroatien 2026
-        </a>.
+        </a>.{" "}
+        Neben Marina- und Bojenkosten sollten Crews künftig auch lokale Ankergebühren im Blick behalten:
+        In{" "}
+        <a href="/news/kroatien-vinisce-ankergebuehren-2026">
+          Vinišće westlich von Trogir
+        </a>{" "}
+        werden seit Sommer 2026 entsprechende Gebühren erhoben.
       </li>
       <li>
         <strong>Sinnvolle Marina-Stopps trotzdem einplanen:</strong> Wasser auffüllen, Strom laden,

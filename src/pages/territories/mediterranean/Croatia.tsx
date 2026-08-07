@@ -515,6 +515,10 @@ const Croatia = () => {
                 <li><strong>Umweltauflagen:</strong> Strikte Regeln zur Müllentsorgung (kein Müll über Bord), Abwasserentsorgung (keine Einleitung von Fäkalien in Küstennähe oder in Naturschutzgebieten) und zum Schutz mariner Lebensräume.</li>
                 <li><strong>Neue Ankerregeln 2025:</strong> Das Ankern ist in einem Umkreis von 150 m von natürlichen Badegebieten verboten. In engen Buchten kann das zu Einschränkungen führen. Detaillierte Infos finden Sie im <a href="/blog/neue-ankerregeln-kroatien-2026-70-meter-zone" className="text-ocean-dark underline">Beitrag zu den Ankerregeln in Kroatien</a>.</li>
                 <li><strong>Sicherheitsvorschriften (SSVO NN 52/2025):</strong> Seit März 2025 gelten präzise Küstenabstände je nach Bootslänge (50–300 m), eine 500-Meter-Regel für das Beiboot sowie Vorgaben zu Rettungswesten und Quickstop auf schnellen Booten. Alle Details im <a href="/blog/kroatien-yachtcharter-sicherheitsregeln" className="text-ocean-dark underline">Ratgeber zu den kroatischen Sicherheitsvorschriften</a>.</li>
+                <li><strong>Ankergebühren in Buchten:</strong> In beliebten Ankerbuchten können neben Marina- und Bojenkosten auch lokale Ankergebühren entstehen. Ein aktuelles Beispiel ist{" "}
+                  <a href="/news/kroatien-vinisce-ankergebuehren-2026" className="text-ocean-dark underline">Vinišće westlich von Trogir</a>,{" "}
+                  wo seit Sommer 2026 entsprechende Gebühren erhoben werden. Beim Kassieren immer eine offizielle Quittung verlangen.
+                </li>
                 <li><strong>Hafenformalitäten:</strong> Bei der Ankunft in einer Marina melden Sie sich beim Hafenmeister an und entrichten die Liegegebühren.</li>
               </ul>
             </div>
