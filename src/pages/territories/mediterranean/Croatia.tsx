@@ -429,6 +429,14 @@ const Croatia = () => {
                 <Link to="/news/kroatien-marina-preise-liegeplaetze-2026" className="text-blue-600 hover:text-blue-800 hover:underline">
                   Törnhinweis zu Marina-Preisen und Tagesliegerkosten 2026
                 </Link>.
+                {" "}Neben Marina- und Liegeplatzkosten gehören auch aktuelle Kraftstoffpreise und die
+                Tankstellenplanung zur realistischen Törnkostenplanung in Kroatien. Seit 11. August 2026
+                gelten niedrigere staatliche Kraftstoff-Höchstpreise; bei größeren Tankstopps in der
+                Hochsaison empfiehlt sich ein kurzer Vorabkontakt zur Bootstankstelle. Weitere Hinweise
+                im{" "}
+                <Link to="/news/kroatien-kraftstoffpreise-charter-2026" className="text-blue-600 hover:text-blue-800 hover:underline">
+                  Törnhinweis zu Kraftstoffpreisen und Bootstankstellen
+                </Link>.
               </p>
               
               <h5 className="font-semibold mb-2">Vielfalt der Charterbasen:</h5>

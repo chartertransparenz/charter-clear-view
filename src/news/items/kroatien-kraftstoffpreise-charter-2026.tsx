@@ -2,79 +2,98 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
-    <h2>Was ist neu?</h2>
+    <div className="not-prose mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+      <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-1">
+        Update – 14. August 2026
+      </p>
+      <p className="text-sm text-amber-900 leading-relaxed">
+        Die kroatische Regierung hat zum 11. August 2026 neue staatliche Kraftstoff-Höchstpreise
+        festgelegt. Die Preise sind gegenüber dem Stand vom 28. Juli 2026 gesunken. Dieser
+        Artikel wurde entsprechend aktualisiert.
+      </p>
+    </div>
+
+    <h2>Was gilt seit 11. August 2026?</h2>
     <p>
-      Die kroatische Regierung hat zum 28. Juli 2026 neue staatliche Kraftstoff-Höchstpreise
-      festgelegt. Die Preise steigen spürbar gegenüber dem vorangegangenen Preisfenster.
-      Gleichzeitig kursieren in sozialen Netzwerken Meldungen über ein 300-Liter-Mengenlimit
-      an kroatischen Tankstellen – für Chartercrews mit Bootstankstellen ist dabei eine wichtige
-      Einschränkung zu beachten.
+      Kroatien reguliert die Kraftstoffpreise staatlich. Die Höchstpreise werden in der Regel
+      wöchentlich neu festgelegt. Seit dem 11. August 2026 gelten niedrigere Werte als zuvor –
+      nach dem Anstieg im Juli entwickeln sich die Preise damit wieder etwas günstiger für
+      Charterkunden, die in dieser Saison noch einen Kroatien-Törn planen.
     </p>
 
     <div className="not-prose my-6 p-5 bg-blue-50 rounded-lg border border-blue-100">
       <p className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-3">
-        Schneller Überblick
+        Schneller Überblick – Stand 11. August 2026
       </p>
       <ul className="text-gray-700 leading-relaxed space-y-1 text-sm list-none p-0 m-0">
-        <li>• Kroatien hat ab 28. Juli 2026 neue Kraftstoff-Höchstpreise festgelegt.</li>
-        <li>• Diesel ist für Chartercrews der wichtigste Kostenpunkt.</li>
-        <li>• Die Preise gelten zunächst für ca. 14 Tage, danach erfolgt eine Neufestsetzung.</li>
+        <li>• Diesel: 1,71 EUR/l (vorher 1,75 EUR/l, minus 0,04 EUR/l)</li>
+        <li>• Eurosuper 95: 1,56 EUR/l (vorher 1,62 EUR/l, minus 0,06 EUR/l)</li>
         <li>
-          • Das 300-Liter-Limit an Straßentankstellen gilt nach vorliegenden Informationen nicht
-          für Bootstankstellen.
+          • Plavi dizel: 1,18 EUR/l – eigene regulierte Preiskategorie, keine allgemeine
+          Charterkunden-Option
         </li>
-        <li>• Es gibt keinen bestätigten Versorgungsengpass.</li>
+        <li>• Regulierte Höchstpreise gelten nicht an Autobahntankstellen.</li>
+        <li>• Gültig bis voraussichtlich 18. August 2026, danach erneute Festsetzung.</li>
         <li>
-          • Vor der Rückgabe immer aktuelle Tankstellenpreise und Vorgaben der Charterbasis prüfen.
+          • Hochsaison-Empfehlung: Bei größerem Tankbedarf Bootstankstelle vorab telefonisch
+          kontaktieren.
         </li>
       </ul>
     </div>
 
-    <h2>Welche Preise gelten ab 28. Juli 2026?</h2>
+    <h2>Welche Preise gelten seit 11. August 2026?</h2>
     <p>
-      Die neuen staatlichen Höchstpreise liegen bei:
+      Die aktuellen staatlichen Höchstpreise liegen bei:
     </p>
     <ul>
       <li>
-        <strong>Benzin:</strong> 1,62 EUR/l (vorher 1,54 EUR/l, Anstieg um 0,08 EUR/l)
+        <strong>Diesel:</strong> 1,71 EUR/l (vorher 1,75 EUR/l, Rückgang um 0,04 EUR/l)
       </li>
       <li>
-        <strong>Diesel:</strong> 1,75 EUR/l (vorher 1,59 EUR/l, Anstieg um 0,16 EUR/l)
+        <strong>Eurosuper 95:</strong> 1,56 EUR/l (vorher 1,62 EUR/l, Rückgang um 0,06 EUR/l)
       </li>
       <li>
-        <strong>Blauer Diesel:</strong> 1,21 EUR/l (vorher 1,02 EUR/l, Anstieg um 0,19 EUR/l)
+        <strong>Plavi dizel:</strong> 1,18 EUR/l (vorher 1,21 EUR/l, Rückgang um 0,03 EUR/l)
       </li>
     </ul>
     <p>
-      Die Preisfestsetzung gilt zunächst für ca. 14 Tage und wird danach von der kroatischen
-      Regierung neu bewertet. Die konkreten Werte können sich beim nächsten Preisfenster erneut
-      ändern.
+      Die Preisfestsetzung gilt jeweils für sieben Tage und wird wöchentlich dienstags von der
+      kroatischen Regierung neu bewertet. Für den laufenden Zeitraum sind die Preise bis
+      voraussichtlich 18. August 2026 gültig.
     </p>
     <p>
-      Hinweis zu Blauem Diesel: Dieser ist eine eigene regulierte Preiskategorie für bestimmte
-      Fahrzeug- und Fahrzeugnutzungstypen. Ob eine Charteryacht mit blauem Diesel betankt werden
-      darf und kann, hängt von der konkreten Yacht, der Zulassung und den Vorgaben der
-      Charterbasis ab. Chartercrews sollten das nicht eigenständig entscheiden, sondern mit der
-      Charterbasis oder der jeweiligen Bootstankstelle klären.
+      Die regulierten Höchstpreise gelten nicht an Tankstellen auf kroatischen Autobahnen.
+      Dort können höhere Preise anfallen.
+    </p>
+    <p>
+      Hinweis zu Plavi dizel: Dieser ist eine eigene regulierte Preiskategorie, die für
+      bestimmte Fahrzeugtypen – vor allem in Landwirtschaft und Fischerei – vorgesehen ist.
+      Ob eine Charteryacht damit betankt werden darf und kann, hängt von Yacht, Zulassung und
+      den Vorgaben der Charterbasis ab. Das sollten Chartercrews nicht eigenständig entscheiden,
+      sondern vorab mit der Charterbasis klären.
     </p>
 
-    <h2>Was bedeutet das 300-Liter-Limit?</h2>
+    <h2>Was bedeutet das für Chartercrews?</h2>
     <p>
-      INA und Petrol, die größten kroatischen Kraftstoffanbieter, haben im Umfeld der
-      Preiserhöhung vorübergehend ein Mengenlimit von 300 Litern pro Tankvorgang an
-      Straßentankstellen eingeführt. Hintergrund war, Hamsterkäufe vor Inkrafttreten der
-      neuen Preise zu verhindern.
+      Für Chartercrews mit einem Kroatien-Törn in der zweiten August-Hälfte oder im September
+      sind die gesunkenen Dieselpreise eine spürbare Entlastung gegenüber dem Juli-Stand.
+      Diesel bleibt der wichtigste Kostenpunkt, da die meisten Charteryachten Dieselmotoren
+      haben.
     </p>
-    <p>
-      Laut Aussage von INA gilt dieses Mengenlimit <strong>ausdrücklich nicht</strong> für das
-      Betanken von Wasserfahrzeugen. Bootstankstellen sind nach vorliegenden Informationen
-      von dieser Regelung ausgenommen. Einen bestätigten Versorgungsengpass gibt es nicht.
-    </p>
-    <p>
-      Quelle dieser Einschätzung ist eine INA-Aussage, die über Sea-Help und weitere kroatische
-      Medien berichtet wurde. Wenn sich die Lage ändert, empfiehlt sich eine Rückfrage bei der
-      Charterbasis oder der jeweiligen Marina.
-    </p>
+    <ul>
+      <li>
+        Beim Törnbudget für Kroatien weiterhin einen realistischen Puffer für Kraftstoff
+        einplanen – die Preise können sich wöchentlich ändern.
+      </li>
+      <li>
+        Motorintensive Abschnitte, Generatornutzung und Windverhältnisse beeinflussen den
+        tatsächlichen Verbrauch deutlich.
+      </li>
+      <li>
+        Bei Unsicherheit, welcher Kraftstofftyp für die gebuchte Yacht gilt, Charterbasis
+        vorab ansprechen.
+      </li>
+    </ul>
 
     {/* ── Mid-article CTA ──────────────────────────────────────────────────── */}
     <div
@@ -110,32 +129,37 @@ const content = (
       </a>
     </div>
 
-    <h2>Was bedeutet das praktisch für Chartercrews?</h2>
+    <h2>Hochsaison-Hinweis: Bootstankstellen vor größeren Tankstopps kontaktieren</h2>
     <p>
-      Die Kraftstoffkosten steigen in Kroatien spürbar – besonders beim Diesel. Für
-      Chartercrews, die motorintensivere Abschnitte planen, empfiehlt sich ein etwas höherer
-      Puffer im Törnbudget.
+      In der Hochsaison kann die Verfügbarkeit an kroatischen Bootstankstellen kurzfristig
+      schwanken. Das bedeutet keinen allgemeinen Versorgungsengpass – aber es empfiehlt sich
+      in der belebten Sommerzeit, nicht bis zur letzten Minute zu warten.
     </p>
+    <p>
+      Für Chartercrews ist der Rückgabe-Tankstopp besonders relevant: Die meisten Charterverträge
+      sehen vor, dass die Yacht vollgetankt zurückgegeben wird. Wer diesen Stopp zu knapp plant,
+      riskiert Wartezeiten, Umwege oder Zeitdruck kurz vor der Übergabe.
+    </p>
+
+    <h2>Was Crews vor der Rückgabe beachten sollten</h2>
     <ul>
       <li>
-        Beim Törnbudget für Kroatien etwas mehr für Kraftstoff einplanen, besonders bei
-        Dieselmotoren und intensiverer Generatornutzung.
+        Rückgabe-Tankstopp spätestens am Vortag planen, nicht auf dem letzten Weg zur Basis.
       </li>
       <li>
-        Faktoren wie Motoranteil, Windverhältnisse, geplante Umwege und
-        Rückgabevorgaben der Charterbasis können den Kraftstoffbedarf deutlich beeinflussen.
+        Bei größerem Tankbedarf Bootstankstelle telefonisch vorab kontaktieren: ungefähre
+        Literzahl nennen und Öffnungszeiten bestätigen lassen.
       </li>
       <li>
-        Kein Anlass für unnötige Panik-Tankstopps: Das 300-Liter-Limit an Straßentankstellen
-        gilt nach aktueller Quellenlage nicht für Bootstankstellen.
+        Ausreichend Zeitpuffer für Tanken, Marina-Manöver und Crew-Transfer einplanen.
       </li>
       <li>
-        Vor dem Törn und vor der Rückgabe aktuelle Preise und Tankstelleninformationen prüfen.
-        Die Charterbasis oder Marina können aktuelle Hinweise geben.
+        INA veröffentlicht Öffnungszeiten und Kontaktdaten für Bootstankstellen auf der eigenen
+        Website.
       </li>
       <li>
-        Bei Unsicherheit, welcher Kraftstofftyp für die gebuchte Yacht gilt, Charterbasis direkt
-        ansprechen.
+        Die Charterbasis oder Marina kann aktuelle Hinweise zur nächstgelegenen Bootstankstelle
+        geben.
       </li>
     </ul>
 
@@ -144,19 +168,20 @@ const content = (
         Kurz gesagt
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Ab 28. Juli 2026 gelten in Kroatien neue staatliche Kraftstoff-Höchstpreise: Diesel
-        1,75 EUR/l, Benzin 1,62 EUR/l. Die Preise werden ca. alle 14 Tage neu festgelegt. Das
-        300-Liter-Mengenlimit an Straßentankstellen gilt nach Informationen von INA nicht für
-        Bootstankstellen. Für Chartercrews bedeutet das: etwas mehr Kraftstoffkosten einplanen
-        und bei Fragen zur Charterbasis oder Marina gehen – aber kein Anlass zur Panik.
+        Ab 11. August 2026 gelten in Kroatien niedrigere staatliche Kraftstoff-Höchstpreise:
+        Diesel 1,71 EUR/l, Eurosuper 95 1,56 EUR/l. Die Preise werden wöchentlich neu
+        festgelegt. Für Chartercrews bleibt wichtig: Rückgabe-Tankstopp nicht zu knapp planen.
+        Bei größerem Tankbedarf Bootstankstelle vorab telefonisch kontaktieren und Öffnungszeiten
+        prüfen.
       </p>
     </div>
 
     <h2>Quellen und Stand</h2>
     <p>
-      Quelle: Kroatische Regierung. Redaktionsstand: 31. Juli 2026. Alle Angaben ohne Gewähr –
-      Preise und Regelungen werden regelmäßig neu festgelegt. Bitte vor dem Törn aktuelle
-      Informationen prüfen.
+      Quellen: Kroatische Regierung (Vlada RH), nafta.hr (Datenquelle Vlada RH, Stand 14. August
+      2026), Sea-Help. Redaktionsstand: 14. August 2026. Alle Angaben ohne Gewähr – Preise und
+      Regelungen werden wöchentlich neu festgelegt. Bitte vor dem Törn aktuelle Informationen
+      prüfen.
     </p>
   </div>
 );
@@ -164,24 +189,24 @@ const content = (
 export const kroatienKraftstoffpreiseCharter2026: NewsItem = {
   content,
   slug: "kroatien-kraftstoffpreise-charter-2026",
-  title: "Kroatien: Neue Kraftstoff-Höchstpreise ab 28. Juli 2026 – 300-Liter-Limit gilt nicht für Bootstankstellen",
+  title: "Kroatien: Kraftstoffpreise gesunken ab 11. August 2026 – Diesel 1,71 EUR/l, Bootstankstellen in Hochsaison vorab kontaktieren",
   excerpt:
-    "Ab 28. Juli 2026 gelten in Kroatien neue staatliche Kraftstoffpreise: Diesel 1,75 EUR/l, Benzin 1,62 EUR/l. Das vieldiskutierte 300-Liter-Mengenlimit an Straßentankstellen gilt nach INA-Angaben nicht für Bootstankstellen. Für Chartercrews: etwas mehr Kraftstoffkosten einplanen, kein Versorgungsengpass.",
+    "Ab 11. August 2026 gelten in Kroatien niedrigere staatliche Kraftstoff-Höchstpreise: Diesel 1,71 EUR/l (−0,04), Eurosuper 95 1,56 EUR/l (−0,06). Für Chartercrews: Rückgabe-Tankstopp rechtzeitig planen, bei größerem Tankbedarf Bootstankstelle vorab telefonisch kontaktieren.",
   content_type: "kurzmeldung",
   region: "Kroatien",
   country_or_area: "Kroatien",
   status: "in_kraft",
-  effective_from: "2026-07-28",
+  effective_from: "2026-08-11",
   published_at: "2026-05-15",
-  updated_at: "2026-07-31",
+  updated_at: "2026-08-14",
   priority: "hoch",
   category: "Gebühren & Permit-Kosten",
-  source_name: "Sea-Help / Kroatische Regierung",
-  source_url: "https://www.sea-help.eu/news-allgemein/300-liter-kraftstofflimit-kroatien/",
+  source_name: "Vlada RH / nafta.hr / Sea-Help",
+  source_url: "https://nafta.hr/de/",
   customer_impact:
-    "Kraftstoffkosten in Kroatien steigen ab 28. Juli 2026 spürbar (Diesel +0,16 EUR/l auf 1,75 EUR/l). Das 300-Liter-Limit an Straßentankstellen gilt laut INA nicht für Bootstankstellen. Törnbudget entsprechend anpassen.",
+    "Kraftstoffpreise in Kroatien sinken ab 11. August 2026: Diesel 1,71 EUR/l (−0,04), Eurosuper 95 1,56 EUR/l (−0,06). Gültig bis ca. 18. August, danach erneute staatliche Festsetzung. Für Chartercrews: Rückgabe-Tankstopp planen, Bootstankstelle in Hochsaison vorab kontaktieren.",
   action_advice:
-    "Beim Törnbudget etwas mehr für Kraftstoff einplanen. Keine Panik-Tankstopps nötig. Vor Rückgabe aktuelle Preise und Vorgaben der Charterbasis prüfen. Bei Unsicherheit Charterbasis oder Marina direkt fragen.",
+    "Törnbudget mit realistischem Kraftstoffpuffer planen. Rückgabe-Tankstopp spätestens am Vortag vorsehen. Bei größerem Tankbedarf Bootstankstelle telefonisch vorab kontaktieren. INA-Website für Öffnungszeiten und Kontaktdaten nutzen.",
   show_on_blog: true,
   show_on_region_page: true,
   linked_region_slug: "kroatien",
@@ -189,9 +214,9 @@ export const kroatienKraftstoffpreiseCharter2026: NewsItem = {
   region_links: [
     { label: "Kroatien", href: "/reviere/mittelmeer/kroatien" },
   ],
-  seo_title: "Kroatien Kraftstoffpreise Juli 2026: Diesel 1,75 EUR/l – Was Charterkunden wissen müssen",
+  seo_title: "Kroatien Kraftstoffpreise 2026: Diesel günstiger, Bootstankstellen planen",
   meta_description:
-    "Ab 28.7.2026: Diesel in Kroatien 1,75 EUR/l, Benzin 1,62 EUR/l. 300-Liter-Limit gilt laut INA nicht für Bootstankstellen. Praktische Hinweise für Chartercrews.",
+    "Kroatien senkt ab 11. August 2026 die Kraftstoff-Höchstpreise. Was Chartercrews zu Diesel, Bootstankstellen und Rückgabe-Tankstopps wissen sollten.",
   is_featured: false,
   cta_text:
     "Wenn Sie einen Kroatien-Törn 2026 planen, helfen wir Ihnen, Revier, Yacht und Kosten realistisch einzuordnen.",
