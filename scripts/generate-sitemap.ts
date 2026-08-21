@@ -27,6 +27,7 @@ const URLS: SitemapUrl[] = [
   // ── Blog ─────────────────────────────────────────────────────────────────
   { loc: '/blog', lastmod: BUILD_TIME },
   // Blog posts – use publication date for accurate lastmod
+  { loc: '/blog/autopilot-yachtcharter-ausguckpflicht-kvr-5',    lastmod: '2026-08-21' },
   { loc: '/blog/kroatien-yachtcharter-sicherheitsregeln',        lastmod: '2026-07-17' },
   { loc: '/blog/egadi-inseln-yachtcharter-permit-bojen-ankern',  lastmod: '2026-06-09' },
   { loc: '/blog/cabrera-yachtcharter-permit-bojen',              lastmod: '2026-06-03' },
@@ -41,6 +42,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026', lastmod: '2026-08-21' },
   { loc: '/news/kroatien-vinisce-ankergebuehren-2026',                 lastmod: '2026-08-07' },
   { loc: '/news/zakynthos-navagio-beach-sperrung-2026',               lastmod: '2026-07-17' },
   { loc: '/news/montenegro-plava-spilja-motorbootverbot-2026',        lastmod: '2026-07-17' },

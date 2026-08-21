@@ -400,9 +400,9 @@ export const kroatienYachtcharterSicherheitsregeln: BlogPost = {
     "Segelyacht segelt in der kroatischen Adria zwischen Inseln – Charterreviere Dalmatien",
   readingTime: 7,
   relatedSlugs: [
+    "autopilot-yachtcharter-ausguckpflicht-kvr-5",
     "neue-ankerregeln-kroatien-2026-70-meter-zone",
     "kroatien-einsteiger",
-    "richtig-ankern-yachtcharter",
   ],
   content,
   faq: [

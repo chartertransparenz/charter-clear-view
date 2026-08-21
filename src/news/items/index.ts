@@ -1,4 +1,6 @@
 import type { NewsItem } from "../types";
+// Import: 2026-08-21
+import { kroatienWaldbraendeLoeschflugzeugeChartercrews2026 } from "./kroatien-waldbraende-loeschflugzeuge-chartercrews-2026";
 // Import: 2026-08-07
 import { kroatienVinisceAnkergebuehren2026 } from "./kroatien-vinisce-ankergebuehren-2026";
 import { porosAnkernFestmachenHafenbereich2026 } from "./poros-ankern-festmachen-hafenbereich-2026";
@@ -39,6 +41,7 @@ import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootve
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienWaldbraendeLoeschflugzeugeChartercrews2026,
   kroatienVinisceAnkergebuehren2026,
   zakynthosNavagioBeachSperrung2026,
   montenegroPlavaSpilja2026,

@@ -1,4 +1,5 @@
 import type { BlogPost } from "../types";
+import { autopilotYachtcharterAusguckpflichtKvr5 } from "./autopilot-yachtcharter-ausguckpflicht-kvr-5";
 import { kroatienYachtcharterSicherheitsregeln } from "./kroatien-yachtcharter-sicherheitsregeln";
 import { egadiInselnYachtcharterPermitBojenAnkern } from "./egadi-inseln-yachtcharter-permit-bojen-ankern";
 import { cabreraYachtcharterPermitBojen } from "./cabrera-yachtcharter-permit-bojen";
@@ -12,6 +13,7 @@ import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  autopilotYachtcharterAusguckpflichtKvr5,
   kroatienYachtcharterSicherheitsregeln,
   egadiInselnYachtcharterPermitBojenAnkern,
   cabreraYachtcharterPermitBojen,
