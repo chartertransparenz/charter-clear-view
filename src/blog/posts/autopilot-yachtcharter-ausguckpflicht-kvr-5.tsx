@@ -380,16 +380,14 @@ export const autopilotYachtcharterAusguckpflichtKvr5: BlogPost = {
     "Autopilot Yachtcharter: KVR 5 Ausguckpflicht einfach erklärt",
   metaDescription:
     "Autopilot auf Charteryachten ist erlaubt – die Ausguckpflicht nach KVR 5 (COLREG Rule 5) gilt trotzdem jederzeit. Was das bedeutet, welche Situationen problematisch sind und wie man richtig reagiert.",
-  ogImage:
-    "/images/blog/kroatien-sicherheit/kroatien-segelyacht-adria-hero.jpg",
+  ogImage: "/images/blog/autopilot/autopilot-navigation.jpg",
   category: "Segelpraxis & Sicherheit",
   date: "2026-08-21",
   teaser:
     "Der Autopilot übernimmt das Steuern – aber nicht den Ausguck. KVR 5 gilt auf Charteryachten weltweit und ohne Ausnahme. Was Chartercrews wissen sollten, bevor sie die Brücke verlassen.",
-  heroImage:
-    "/images/blog/kroatien-sicherheit/kroatien-segelyacht-adria-hero.jpg",
+  heroImage: "/images/blog/autopilot/autopilot-navigation.jpg",
   heroImageAlt:
-    "Segelyacht auf der dalmatinischen Adria – Ausguck und Autopilot an Bord",
+    "Navigationsdisplay und Autopilot an Bord einer Charteryacht",
   readingTime: 7,
   relatedSlugs: [
     "kroatien-yachtcharter-sicherheitsregeln",
