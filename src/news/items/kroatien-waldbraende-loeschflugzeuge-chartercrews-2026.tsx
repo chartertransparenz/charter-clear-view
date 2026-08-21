@@ -17,11 +17,11 @@ const content = (
     <p>
       Der Brand bei Lokva Rogoznica, wenige Kilometer südöstlich von Omiš, brach in
       der Nacht vom 13. auf den 14. August 2026 aus. Innerhalb weniger Stunden griff
-      er auf einen rund zehn Kilometer langen Küstenstreifen über. Rund 1.000 Hektar
-      Wald- und Buschvegetation wurden zerstört, mehrere Häuser, Fahrzeuge und
-      Boote brannten. Mehr als 1.000 Personen wurden vorübergehend evakuiert,
-      darunter Teile der Evakuierung per Schiff über die Adria. 36 Menschen wurden
-      verletzt, sieben davon zwischenzeitlich auf der Intensivstation. Noch während
+      er auf einen rund zehn Kilometer langen Küstenstreifen über. Medienberichte
+      sprechen von rund 1.000 Hektar zerstörter Wald- und Buschvegetation. Mehrere
+      Häuser, Fahrzeuge und Boote brannten. Über 1.000 Personen wurden
+      vorübergehend evakuiert, teils per Schiff über die Adria. Es gab
+      zahlreiche Verletzte, mehrere davon schwer. Noch während
       der Einsatz bei Omiš lief, entstand auf der Halbinsel Pelješac ein zweiter
       Brand, der Teile der Löschflugzeug-Staffel abzog.
     </p>
@@ -49,13 +49,12 @@ const content = (
       dieses Signal erkennen, müssen sofort und großräumig ausweichen.
     </p>
     <p>
-      Kroatische Piloten nennen als Richtwert einen Mindestfreiraum von rund
-      1.300 Metern auf der gesamten Schöpfstrecke. Technisch gilt eine ideale
-      Schöpfachse als 2.000 Meter lang, 100 Meter breit und mindestens 2 Meter tief.
-      In der Praxis bedeutet das: Wer ein Canadair-Flugzeug im Tiefflug erkennt,
-      sollte nicht erst auf eine Aufforderung warten, sondern sofort ausweichen
-      und einen deutlichen Bogen aus dem betroffenen Seegebiet fahren – lieber
-      zu weit als zu knapp.
+      Fachliche Hinweise zu Canadair-Schöpfmanövern nennen als Orientierung
+      eine sehr große freie Wasserfläche. Für eine ideale Schöpfachse werden
+      etwa 2.000 Meter Länge, 100 Meter Breite und mindestens 2 Meter Tiefe
+      genannt. Für Chartercrews heißt das: nicht knapp ausweichen, sondern den
+      gesamten erkennbaren Anflug-, Schöpf- und Startbereich großzügig
+      freimachen – lieber zu weit als zu knapp.
     </p>
     <p>
       Boote, Jet-Skis, SUPs oder Schwimmer im Schöpfbereich gefährden nicht nur
@@ -64,7 +63,80 @@ const content = (
       appelliert, den Canadairs auf der Adria konsequent auszuweichen.
     </p>
 
-    {/* ── Mid-article CTA ──────────────────────────────────────────────────── */}
+    <h2>Richtiges Verhalten für Chartercrews</h2>
+    <ul>
+      <li>
+        <strong>Tiefüberflug ernst nehmen:</strong> Fliegt ein Canadair in geringer
+        Höhe über die Wasseroberfläche, ist das ein klares Signal – nicht beobachten
+        oder filmen, sondern sofort ausweichen. Anweisungen von Polizei, Küstenwache,
+        Feuerwehr oder Hafenbehörde haben absoluten Vorrang.
+      </li>
+      <li>
+        <strong>Schöpfbereich großräumig meiden:</strong> Löschflugzeuge kehren für
+        weitere Wasseraufnahmen auf dieselbe Schöpfstrecke zurück. Das Seegebiet
+        sollte für die gesamte Dauer des Einsatzes freibleiben – nicht nur während
+        des ersten Durchgangs.
+      </li>
+      <li>
+        <strong>Ankerbucht rechtzeitig verlassen:</strong> Liegt die Crew in einer
+        Bucht und entwickelt sich in der Nähe ein Brand, sollte früh reagiert
+        werden. Windrichtung beobachten, Motor startklar halten, Crew an Bord
+        versammeln. Eine geordnete frühe Ausfahrt ist sicherer als eine hastige
+        Reaktion unter Rauch und laufendem Feuerwehrbetrieb auf dem Wasser.
+      </li>
+      <li>
+        <strong>Nicht in aktive Einsatzgebiete hineinfahren:</strong> Seegebiete,
+        in denen Löschflugzeuge anfliegen, Wasser aufnehmen oder wieder starten,
+        müssen für den übrigen Bootsverkehr freigehalten werden. Kein Annähern
+        aus Neugier.
+      </li>
+    </ul>
+
+    <h2>Brand von der Yacht aus melden</h2>
+    <p>
+      Wer von Bord Rauch oder Feuer an der Küste bemerkt, sollte nicht davon
+      ausgehen, dass andere es bereits gemeldet haben. Im Zweifel sofort melden:
+    </p>
+    <ul>
+      <li>
+        Europäischer Notruf: <strong>112</strong>
+      </li>
+      <li>
+        Kroatische Feuerwehr: <strong>193</strong>
+      </li>
+      <li>
+        Seenotrettung Kroatien: <strong>195</strong>
+      </li>
+    </ul>
+    <p>
+      Hilfreich: exakte GPS-Position, kurze Beschreibung von Größe und Richtung
+      des Brandes sowie aktuelle Windangabe.
+    </p>
+
+    <h2>Brandrisiken vermeiden: an Bord und beim Landgang</h2>
+    <p>
+      Die kroatischen Behörden appellieren in dieser Saison ausdrücklich daran,
+      keine glimmenden Zigarettenstummel in der Natur oder über Bord zu werfen und
+      kein Feuer im Freien zu entfachen. Für Chartercrews bedeutet das konkret:
+      kein offenes Grillen an trockenen Steilküsten, Vorsicht beim Landgang in
+      trockenem Busch- und Waldgebiet und ausreichend Abstand beim Ankern in der
+      Nähe von Vegetationszonen.
+    </p>
+
+    <div className="not-prose my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
+      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">
+        Kurz gesagt
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Waldbrände an der dalmatinischen Küste können Löschflugzeuge auf die Adria
+        bringen. Wer einen Canadair im Tiefflug über dem Wasser sieht, muss sofort
+        ausweichen und den Schöpfbereich großräumig meiden – ohne auf eine
+        ausdrückliche Aufforderung zu warten. Bei Feuerentwicklung in der Nähe der
+        Bucht gilt: früh reagieren, Motor bereit, Notruf 112 oder 193.
+      </p>
+    </div>
+
+    {/* ── CTA ──────────────────────────────────────────────────────────────── */}
     <div
       className="not-prose"
       style={{
@@ -98,109 +170,10 @@ const content = (
       </a>
     </div>
 
-    <h2>Richtiges Verhalten für Chartercrews</h2>
-    <ul>
-      <li>
-        <strong>Tiefüberflug ernst nehmen:</strong> Fliegt ein Canadair in geringer
-        Höhe über die Wasseroberfläche, ist das ein klares Signal – nicht beobachten
-        oder filmen, sondern sofort ausweichen. Anweisungen von Polizei, Küstenwache,
-        Feuerwehr oder Hafenbehörde haben absoluten Vorrang.
-      </li>
-      <li>
-        <strong>Schöpfbereich großräumig meiden:</strong> Löschflugzeuge kehren für
-        weitere Wasseraufnahmen auf dieselbe Schöpfstrecke zurück. Das Seegebiet
-        sollte für die gesamte Dauer des Einsatzes freibleiben – nicht nur während
-        des ersten Durchgangs.
-      </li>
-      <li>
-        <strong>Ankerbucht rechtzeitig verlassen:</strong> Liegt die Crew in einer
-        Bucht und entwickelt sich in der Nähe ein Brand, sollte früh reagiert
-        werden. Windrichtung beobachten, Motor startklar halten, Crew an Bord
-        versammeln. Eine geordnete frühe Ausfahrt ist sicherer als eine hastige
-        Reaktion unter Rauch und laufendem Feuerwehrbetrieb auf dem Wasser.
-      </li>
-      <li>
-        <strong>Nicht in aktive Einsatzgebiete hineinfahren:</strong> Gebiete, in
-        denen Löschflugzeuge operieren, sind für den übrigen Bootsverkehr
-        unpassierbar. Kein Annähern aus Neugier.
-      </li>
-    </ul>
-
-    <h2>Brand von der Yacht aus melden</h2>
-    <p>
-      Wer von Bord Rauch oder Feuer an der Küste bemerkt, sollte nicht davon
-      ausgehen, dass andere es bereits gemeldet haben. Im Zweifel sofort melden:
-    </p>
-    <ul>
-      <li>
-        Europäischer Notruf: <strong>112</strong>
-      </li>
-      <li>
-        Kroatische Feuerwehr: <strong>193</strong>
-      </li>
-      <li>
-        Seenotrettung Kroatien: <strong>195</strong>
-      </li>
-    </ul>
-    <p>
-      Hilfreich: exakte GPS-Position, kurze Beschreibung von Größe und Richtung
-      des Brandes sowie aktuelle Windangabe.
-    </p>
-
-    <h2>Feuer beginnt mit kleinen Dingen an Bord</h2>
-    <p>
-      Die kroatischen Behörden appellieren in dieser Saison ausdrücklich daran,
-      keine glimmenden Zigarettenstummel in der Natur oder über Bord zu werfen und
-      kein Feuer im Freien zu entfachen. Für Chartercrews bedeutet das konkret:
-      kein offenes Grillen an trockenen Steilküsten, Vorsicht beim Landgang in
-      trockenem Busch- und Waldgebiet und ausreichend Abstand beim Ankern in der
-      Nähe von Vegetationszonen.
-    </p>
-
-    <div className="not-prose my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
-      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">
-        Kurz gesagt
-      </p>
-      <p className="text-gray-700 leading-relaxed">
-        Waldbrände an der dalmatinischen Küste können Löschflugzeuge auf die Adria
-        bringen. Wer einen Canadair im Tiefflug über dem Wasser sieht, muss sofort
-        ausweichen und den Schöpfbereich großräumig meiden – ohne auf eine
-        ausdrückliche Aufforderung zu warten. Bei Feuerentwicklung in der Nähe der
-        Bucht gilt: früh reagieren, Motor bereit, Notruf 112 oder 193.
-      </p>
-    </div>
-
-    <h2>Quellen und Stand</h2>
-    <p>
-      Quellen:{" "}
-      <a
-        href="https://www.sea-help.eu/en/news-general/fire-wildfire-croatia-omis/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Sea-Help (14.08.2026)
-      </a>
-      ;{" "}
-      <a
-        href="https://www.euronews.com/my-europe/2026/08/14/at-least-people-in-10-in-intensive-care-and-thousands-flee-intense-wildfire-in-croatia"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Euronews (14.08.2026)
-      </a>
-      ;{" "}
-      <a
-        href="https://www.boatnews.com/story/37542/canadairs-understanding-and-anticipating-their-manoeuvres-on-the-water"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        BoatNews – Canadair-Schöpfmanöver
-      </a>
-      . Offizielle Stellen: Ravnateljstvo civilne zaštite (Kroatischer
-      Zivilschutz), Hrvatska vatrogasna zajednica (Kroatische Feuerwehr).
-      Redaktionsstand: 21. August 2026. Lagebeschreibungen zu Waldbränden
-      können sich kurzfristig ändern – bitte vor dem Törn aktuelle Hinweise
-      der Charterbasis und lokaler Behörden einholen.
+    <p className="text-sm text-gray-500" style={{ marginTop: "2rem" }}>
+      Redaktionsstand: 21. August 2026. Lagen bei Waldbränden können sich
+      kurzfristig ändern. Prüfen Sie vor dem Törn aktuelle Hinweise Ihrer
+      Charterbasis, lokaler Behörden und offizieller Notfallkanäle.
     </p>
   </div>
 );
@@ -211,7 +184,7 @@ export const kroatienWaldbraendeLoeschflugzeugeChartercrews2026: NewsItem = {
   title:
     "Waldbrände in Dalmatien: Was Chartercrews bei Löschflugzeugen auf der Adria wissen sollten",
   excerpt:
-    "Mitte August 2026 brannte es bei Omiš und auf Pelješac. Canadair-Löschflugzeuge schöpfen ihr Wasser direkt aus der Adria. Was Chartercrews wissen müssen: Tiefüberflug bedeutet sofort ausweichen, Schöpfbereich großräumig meiden, Notruf 112 oder 193.",
+    "Mitte August 2026 brannte es bei Omiš und auf Pelješac. Canadair-Löschflugzeuge schöpfen ihr Wasser direkt aus der Adria. Was Chartercrews wissen müssen: Tiefüberflug bedeutet sofort ausweichen, Schöpfbereich großräumig meiden. Notruf 112, Feuerwehr 193 oder maritime Rettung 195.",
   content_type: "basis_hinweis",
   region: "Kroatien / Dalmatien",
   country_or_area: "Kroatien",
@@ -221,11 +194,10 @@ export const kroatienWaldbraendeLoeschflugzeugeChartercrews2026: NewsItem = {
   updated_at: "2026-08-21",
   priority: "hoch",
   category: "Revier & Sicherheit",
-  source_name: "Sea-Help; Euronews; BoatNews",
-  source_url:
-    "https://www.sea-help.eu/en/news-general/fire-wildfire-croatia-omis/",
+  source_name: "",
+  source_url: "",
   customer_impact:
-    "Bei aktiven Waldbränden an der dalmatinischen Küste können Canadair-Löschflugzeuge die Adria als Schöpfgebiet nutzen. Boote im Schöpfbereich müssen sofort ausweichen. Betroffene Seegebiete sind für die Dauer des Einsatzes unpassierbar.",
+    "Bei aktiven Waldbränden an der dalmatinischen Küste können Canadair-Löschflugzeuge die Adria als Schöpfgebiet nutzen. Boote im Schöpfbereich müssen sofort ausweichen. Betroffene Seegebiete müssen für die Dauer des Einsatzes freigehalten werden.",
   action_advice:
     "Canadair-Tiefüberflug als Signal verstehen: sofort großräumig ausweichen. Schöpfbereich für gesamten Einsatz meiden. Bei Brandrauch in der Bucht: Motor bereit, Crew an Bord, rechtzeitig verlegen. Notruf: 112 (allgemein), 193 (Feuerwehr), 195 (Seenotrettung).",
   show_on_blog: false,

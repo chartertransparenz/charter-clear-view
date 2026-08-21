@@ -29,7 +29,7 @@ const content = (
               Autopilot erlaubt?
             </td>
             <td className="py-2 text-gray-600">
-              Ja – grundsätzlich überall und jederzeit
+              Grundsätzlich ja – soweit keine lokalen Sonderregeln entgegenstehen
             </td>
           </tr>
           <tr className="border-b border-gray-200">
@@ -61,7 +61,7 @@ const content = (
               Haftung bei Kollision mit Autopilot?
             </td>
             <td className="py-2 text-gray-600">
-              Skipper haftet – Autopilot ist kein Freifahrtschein
+              Skipper bleibt verantwortlich – Autopilot ändert daran nichts
             </td>
           </tr>
         </tbody>
@@ -94,11 +94,13 @@ const content = (
       Pflicht gilt rund um die Uhr und in jedem Seegebiet.
     </p>
     <p>
-      <strong>„Blick und Gehör"</strong> bedeutet: physische Präsenz auf Deck
-      ist gefordert. Wer unter Deck ist, hört möglicherweise keine Nebelhörner,
-      Motorengeräusche kreuzender Fischerboote oder Zurufe. Kopfhörer –
-      auch harmlos wirkende Noise-Cancelling-Modelle – heben das Gehör als
-      Sicherheitsinstrument effektiv auf.
+      <strong>„Blick und Gehör"</strong> bedeutet in der Praxis: Der Ausguck
+      muss so organisiert sein, dass Verkehr, Geräusche, Signale und
+      Veränderungen der Lage tatsächlich wahrgenommen werden können. In
+      befahrenen Revieren, nachts oder bei eingeschränkter Sicht spricht
+      das regelmäßig für eine aktive Wache an Deck. Kopfhörer – auch harmlos
+      wirkende Noise-Cancelling-Modelle – können das Gehör als
+      Sicherheitsinstrument stark einschränken.
     </p>
     <p>
       <strong>„Alle verfügbaren Mittel"</strong> heißt: AIS, Radar und
@@ -121,11 +123,12 @@ const content = (
     </p>
     <ul>
       <li>
-        <strong>Allein nachts, 10–15 Minuten unter Deck:</strong> rechtlich
-        problematisch bis klare Verletzung von KVR 5. Kurze Abwesenheiten
-        mögen in ruhigem Fahrwasser unter bestimmten Bedingungen toleriert
-        werden – aber „nachts" ist für die Ausguckpflicht besonders kritisch,
-        und „kurz" lässt sich schwer belegen.
+        <strong>Allein nachts, 10–15 Minuten unter Deck:</strong> besonders
+        riskant und kann bei einem Unfall schnell als Verletzung der
+        Ausguckpflicht bewertet werden. Kurze Abwesenheiten mögen in ruhigem
+        Fahrwasser unter bestimmten Bedingungen toleriert werden – aber
+        „nachts" ist für die Ausguckpflicht besonders kritisch, und „kurz"
+        lässt sich schwer belegen.
       </li>
       <li>
         <strong>Ausschließlich auf AIS-Alarm verlassen:</strong> Verletzung von
@@ -134,20 +137,22 @@ const content = (
       </li>
       <li>
         <strong>Gute Sicht, offene See, ganze Crew beim Essen unter Deck:</strong>{" "}
-        rechtlich riskant. Auch hier kann sich die Situation schnell ändern. Bei
-        einem Unfall wird Mitverschulden wegen KVR-5-Verletzung geprüft.
+        rechtlich und praktisch riskant, wenn niemand aktiv Verkehrslage und
+        Umgebung beobachtet. Auch bei guter Sicht kann sich die Situation
+        schnell ändern.
       </li>
       <li>
         <strong>Noise-Cancelling-Kopfhörer am Steuer, Autopilot ein:</strong>{" "}
-        klare Verletzung. KVR 5 fordert ausdrücklich auch das Gehör als
-        Ausguckmittel.
+        können problematisch sein, wenn sie Motorengeräusche, Nebelsignale,
+        Zurufe oder Warnsignale überdecken. Bei einer Unfalluntersuchung wäre
+        das ein belastender Umstand.
       </li>
     </ul>
     <p>
       Allgemein gilt: Wer den Autopiloten nutzt und trotzdem einen effektiven
       Ausguck sicherstellt, handelt korrekt. Wer die technische Steuerung
-      nutzt, um die Brücke vollständig zu verlassen, riskiert bei einem Unfall
-      eine klare Mitverschuldensfeststellung.
+      nutzt, um die Brücke vollständig zu verlassen, riskiert bei einem Unfall,
+      dass dies als Verstoß gegen die Ausguckpflicht bewertet wird.
     </p>
 
     {/* ── Mid-article CTA ──────────────────────────────────────────────────── */}
@@ -209,34 +214,28 @@ const content = (
       Grundpflicht zum Ausguck ist überall identisch.
     </p>
     <p>
-      Eine regionale Ausnahme ist der Nord-Ostsee-Kanal (NOK) in Deutschland:
-      Dort sind Selbststeuereinrichtungen für Sportboote ausdrücklich nicht
-      zugelassen.
+      Auf einzelnen Wasserstraßen oder in besonderen Revieren können lokale
+      Sonderregeln gelten. Für Chartercrews sind deshalb neben KVR 5 immer
+      auch die jeweiligen Revier-, Hafen- und Verkehrsvorschriften maßgeblich.
     </p>
 
-    <h2 id="maib-beispiel">Reales Beispiel: Kollision im Solent</h2>
+    <h2 id="maib-beispiel">Reales Beispiel: Kollision vor Felixstowe</h2>
     <p>
       Im Juni 2014 kollidierte die Segelyacht <em>Orca</em> mit dem Bagger{" "}
-      <em>Shoreway</em> im Solent vor der Südküste Englands – ein verkehrsreiches
-      Revier mit engen Fahrwassern. Die britische Unfalluntersuchungsbehörde
-      MAIB (Marine Accident Investigation Branch) untersuchte den Fall im Anschluss.
+      <em>Shoreway</em> rund sieben Seemeilen vor Felixstowe an der englischen
+      Ostküste. Die Yacht sank infolge der Kollision; eine Person kam ums Leben.
+      Die britische Unfalluntersuchungsbehörde MAIB (Marine Accident Investigation
+      Branch) untersuchte den Fall.
     </p>
     <p>
-      Der Bagger arbeitete im markierten Fahrwasser und war durch Größe,
-      Positionslaternen und Signale klar erkennbar. Dennoch lief die Segelyacht
-      in seinen Bugbereich. Die Yacht erlitt erheblichen Sachschaden; die Situation
-      wurde als potenziell lebensgefährlich eingestuft.
+      Die MAIB bewertete unter anderem den mangelhaften Ausguck als wesentlichen
+      Faktor: Der Skipper der Yacht befand sich zum Zeitpunkt der Kollision
+      unter Deck. Auch auf der Brücke des Baggers war der Ausguck nicht
+      durchgehend wirksam. Die Untersuchung verwies auf Verstöße gegen KVR 5
+      (Ausguck), KVR 6 (sichere Fahrt) und KVR 8 (Kollisionsverhütung).
     </p>
     <p>
-      Die MAIB stellte als Hauptursache fest: mangelhafter Ausguck auf der
-      Segelyacht, die zeitweise unter Autopilot gesegelt war. Der Ausguck war
-      nicht durchgehend wirksam – ein direkter Verstoß gegen KVR 5. Zusätzlich
-      wurden KVR 6 (sichere Fahrt), KVR 8 (Kollisionsverhütung) und KVR 18
-      (Rücksicht gegenüber manövrierbeschränkten Fahrzeugen) als nicht eingehalten
-      bewertet.
-    </p>
-    <p>
-      Die Schlussfolgerungen des Berichts sind eindeutig: Ein Autopilot ersetzt
+      Die Schlussfolgerungen des Berichts sind klar: Ein Autopilot ersetzt
       keinen Ausguck. Technische Mittel ergänzen die visuelle und akustische
       Beobachtung – sie ersetzen sie nicht. In belebten Gewässern ist eine
       frühzeitige und deutliche Kursänderung die sicherste Reaktion.
@@ -343,30 +342,11 @@ const content = (
       </a>
     </div>
 
-    <h2 id="quellen">Quellen</h2>
-    <p>
-      Rechtsgrundlage: Übereinkommen über die Internationalen Regeln zur
-      Verhütung von Zusammenstößen auf See, 1972 (COLREGs), Regel 5 (Ausguck),
-      verabschiedet von der{" "}
-      <a
-        href="https://www.imo.org/en/about/conventions/pages/colreg.aspx"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Internationalen Seeschifffahrtsorganisation (IMO)
-      </a>
-      . Unfallbericht: Marine Accident Investigation Branch (MAIB), Kollision
-      Segelyacht <em>Orca</em> und Bagger <em>Shoreway</em>, Solent, Juni 2014.
-      Weitere Einordnung:{" "}
-      <a
-        href="https://www.sea-help.eu/en/news-general/colreg-5-autopilot-sailing-yacht/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Sea-Help (15.08.2026)
-      </a>
-      . Dieser Artikel dient der allgemeinen Information und ersetzt keine
-      rechtliche Beratung. Redaktionsstand: 21. August 2026.
+    <p className="text-sm text-gray-500" style={{ marginTop: "2rem" }}>
+      Redaktionsstand: 21. August 2026. Dieser Artikel dient der allgemeinen
+      Information und ersetzt keine rechtliche Beratung. Maßgeblich sind die
+      jeweils geltenden Kollisionsverhütungsregeln und lokale Vorschriften
+      im Revier.
     </p>
   </div>
 );
