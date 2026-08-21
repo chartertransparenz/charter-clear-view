@@ -236,6 +236,8 @@ export const kroatienWaldbraendeLoeschflugzeugeChartercrews2026: NewsItem = {
     "Waldbrände Kroatien 2026: Löschflugzeuge auf der Adria – Hinweise für Chartercrews",
   meta_description:
     "Waldbrände bei Omiš und Pelješac (August 2026): Canadair-Löschflugzeuge schöpfen Wasser aus der Adria. Was Chartercrews beachten müssen und wie man sich bei einem Feuereinsatz richtig verhält.",
+  image: "/images/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026.jpg",
+  image_alt: "Küstenlandschaft in Dalmatien mit Waldbrand und Rauch über der Adria",
   is_featured: true,
   cta_text:
     "Wir helfen Ihnen, Revier und Saison für Ihren Kroatien-Charter realistisch einzuplanen.",
