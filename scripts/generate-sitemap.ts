@@ -42,6 +42,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/spanien-fuehrerscheinpflicht-mietboote-2026',           lastmod: '2026-08-28' },
   { loc: '/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026', lastmod: '2026-08-21' },
   { loc: '/news/kroatien-vinisce-ankergebuehren-2026',                 lastmod: '2026-08-07' },
   { loc: '/news/zakynthos-navagio-beach-sperrung-2026',               lastmod: '2026-07-17' },
@@ -61,7 +62,7 @@ const URLS: SitemapUrl[] = [
   { loc: '/news/kroatien-marina-preise-liegeplaetze-2026',             lastmod: '2026-06-12' },
   { loc: '/news/poros-ankern-festmachen-hafenbereich-2026',            lastmod: '2026-06-03' },
   { loc: '/news/balearen-posidonia-bojenfelder-buchungsstart-2026',   lastmod: '2026-06-12' },
-  { loc: '/news/kroatien-kraftstoffpreise-charter-2026',              lastmod: '2026-05-15' },
+  { loc: '/news/kroatien-kraftstoffpreise-charter-2026',              lastmod: '2026-08-28' },
   { loc: '/news/griechenland-anreise-ryanair-kerosin-2026',           lastmod: '2026-06-19' },
   { loc: '/news/treibstoffkrise-sommerfluege-2026-yachtcharter',     lastmod: '2026-05-15' },
   { loc: '/news/ees-update-griechenland-italien-portugal-2026',      lastmod: '2026-05-08' },
