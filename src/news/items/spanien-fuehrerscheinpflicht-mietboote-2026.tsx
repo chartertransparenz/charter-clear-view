@@ -177,4 +177,7 @@ export const spanienFuehrerscheinpflichtMietboote2026: NewsItem = {
   is_featured: false,
   cta_text:
     "Wir helfen Ihnen, Spanien- und Balearen-Törns mit allen relevanten Formalitäten realistisch zu planen.",
+  image: "/images/news/spanien-fuehrerscheinpflicht-mietboot-lizenz.jpg",
+  imageAlt: "Urlauber zeigt Bootsführerschein beim Mietboot-Verleih auf Mallorca",
+  imageCaption: "Symbolbild, KI-generiert. Ab Oktober 2026 ist in Spanien ein Führerschein für die Miete kleiner Motorboote erforderlich.",
 };
