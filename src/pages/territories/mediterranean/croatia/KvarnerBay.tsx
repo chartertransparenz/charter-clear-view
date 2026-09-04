@@ -268,6 +268,13 @@ export default function KvarnerBay() {
               <a href="/news/kroatien-privlaka-kanal-losinj-bruecke-gesperrt-2026" className="text-primary hover:underline">
                 Privlaka-Kanal – aktuelle Meldung
               </a>.</p>
+              <p className="text-black mt-3"><strong>Befeuerungshinweis (August 2026):</strong> In Bakarac (Bucht
+              von Bakar, südöstlich von Rijeka) ist das Hafenfeuer LL 203 / E2862 am Molenkopf der Stara lučica
+              derzeit ausgefallen. Das Feuer erscheint auf Seekarten als vorhanden, leuchtet aber aktuell nicht.
+              Beim Einlaufen keine veralteten Befeuerungsangaben zugrunde legen.{" "}
+              <a href="/news/kroatien-hafenfeuer-kastela-bakarac-2026" className="text-primary hover:underline">
+                Details – HHI Warnung 313/2026
+              </a>.</p>
             </div>
 
             {/* Additional Landscape Image */}

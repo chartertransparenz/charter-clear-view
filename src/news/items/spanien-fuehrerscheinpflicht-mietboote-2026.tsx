@@ -2,6 +2,30 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
+    {/* ── Update September 2026 ─────────────────────────────────────────── */}
+    <div className="not-prose mb-8 p-5 bg-amber-50 rounded-lg border border-amber-200">
+      <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">
+        Update September 2026
+      </p>
+      <p className="text-gray-800 font-semibold mb-1">
+        Weniger als vier Wochen bis zum Inkrafttreten – 1. Oktober 2026
+      </p>
+      <p className="text-gray-700 text-sm leading-relaxed mb-3">
+        Das spanische Real Decreto 1188/2025 tritt am <strong>1. Oktober 2026</strong>{" "}
+        in Kraft. Ab diesem Datum ist für die Miete kleiner Motorboote (bis 5 m / 15 PS)
+        bei kommerziellen Verleihstationen in Spanien und auf den Balearen ein gültiger
+        Bootsführerschein erforderlich. Crews, die während ihres Törns ein Mietboot
+        nutzen möchten, sollten jetzt prüfen, ob die entsprechende Berechtigung vorliegt.
+        Verleihstationen werden ab Oktober verpflichtet sein, den Nachweis zu verlangen.
+      </p>
+      <a
+        href="/charter-anfrage"
+        className="text-amber-700 hover:text-amber-900 text-sm font-medium underline"
+      >
+        Balearen-Törn persönlich planen lassen →
+      </a>
+    </div>
+
     <h2>Was ändert sich ab Oktober 2026?</h2>
     <p>
       Wer in Spanien – einschließlich der Balearen – ein kleines Motorboot mietet, braucht dafür
@@ -154,7 +178,7 @@ export const spanienFuehrerscheinpflichtMietboote2026: NewsItem = {
   status: "angekuendigt",
   effective_from: "2026-10-01",
   published_at: "2026-08-28",
-  updated_at: "2026-08-28",
+  updated_at: "2026-09-04",
   priority: "mittel",
   category: "Vorschriften & Formalitäten",
   source_name: "BOE / Real Decreto 1188/2025 / Sea-Help",

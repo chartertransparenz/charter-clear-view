@@ -42,7 +42,8 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
-  { loc: '/news/spanien-fuehrerscheinpflicht-mietboote-2026',           lastmod: '2026-08-28' },
+  { loc: '/news/kroatien-hafenfeuer-kastela-bakarac-2026',               lastmod: '2026-09-04' },
+  { loc: '/news/spanien-fuehrerscheinpflicht-mietboote-2026',            lastmod: '2026-09-04' },
   { loc: '/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026', lastmod: '2026-08-21' },
   { loc: '/news/kroatien-vinisce-ankergebuehren-2026',                 lastmod: '2026-08-07' },
   { loc: '/news/zakynthos-navagio-beach-sperrung-2026',               lastmod: '2026-07-17' },

@@ -1,4 +1,6 @@
 import type { NewsItem } from "../types";
+// Import: 2026-09-04
+import { kroatienHafenfeuerKastelaBakarac2026 } from "./kroatien-hafenfeuer-kastela-bakarac-2026";
 // Import: 2026-08-28
 import { spanienFuehrerscheinpflichtMietboote2026 } from "./spanien-fuehrerscheinpflicht-mietboote-2026";
 // Import: 2026-08-21
@@ -43,6 +45,7 @@ import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootve
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienHafenfeuerKastelaBakarac2026,
   spanienFuehrerscheinpflichtMietboote2026,
   kroatienWaldbraendeLoeschflugzeugeChartercrews2026,
   kroatienVinisceAnkergebuehren2026,
