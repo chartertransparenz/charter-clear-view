@@ -220,7 +220,7 @@ export const kroatienHafenfeuerKastelaBakarac2026: NewsItem = {
   cta_text:
     "Wir beraten Sie zu Kroatien-Törns im Kvarner und Dalmatien – persönlich, unabhängig und mit langjähriger Erfahrung.",
   image: "/images/news/kroatien-hafenfeuer-kastela-kvarner-2026.jpg",
-  imageAlt: "Hafeneinfahrt in Kroatien bei Abenddämmerung mit rotem Feuer am Wellenbrecher",
+  imageAlt: "Luftaufnahme der Marina Kaštela in Kroatien – Segelboote liegen in Reihe an den Stegen, im Hintergrund die Berge der dalmatinischen Küste",
   imageCaption:
-    "Symbolbild, KI-generiert. Aktuelle Befeuerungsänderungen in Kroatien – HHI Warnungen August 2026.",
+    "Marina Kaštela, Kroatien. Luftaufnahme. © Shutterstock / Lizenzfoto.",
 };
