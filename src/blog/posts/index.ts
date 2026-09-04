@@ -1,4 +1,5 @@
 import type { BlogPost } from "../types";
+import { yachtcharterChalkidikiThessalonikiNikitiKeramoti } from "./yachtcharter-chalkidiki-thessaloniki-nikiti-keramoti";
 import { autopilotYachtcharterAusguckpflichtKvr5 } from "./autopilot-yachtcharter-ausguckpflicht-kvr-5";
 import { kroatienYachtcharterSicherheitsregeln } from "./kroatien-yachtcharter-sicherheitsregeln";
 import { egadiInselnYachtcharterPermitBojenAnkern } from "./egadi-inseln-yachtcharter-permit-bojen-ankern";
@@ -13,6 +14,7 @@ import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  yachtcharterChalkidikiThessalonikiNikitiKeramoti,
   autopilotYachtcharterAusguckpflichtKvr5,
   kroatienYachtcharterSicherheitsregeln,
   egadiInselnYachtcharterPermitBojenAnkern,

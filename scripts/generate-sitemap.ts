@@ -27,6 +27,7 @@ const URLS: SitemapUrl[] = [
   // ── Blog ─────────────────────────────────────────────────────────────────
   { loc: '/blog', lastmod: BUILD_TIME },
   // Blog posts – use publication date for accurate lastmod
+  { loc: '/blog/yachtcharter-chalkidiki-thessaloniki-nikiti-keramoti', lastmod: '2026-09-04' },
   { loc: '/blog/autopilot-yachtcharter-ausguckpflicht-kvr-5',    lastmod: '2026-08-21' },
   { loc: '/blog/kroatien-yachtcharter-sicherheitsregeln',        lastmod: '2026-07-17' },
   { loc: '/blog/egadi-inseln-yachtcharter-permit-bojen-ankern',  lastmod: '2026-06-09' },

@@ -134,7 +134,7 @@ const Nordgriechenland = () => {
             
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Warum dieses Revier?</h3>
             <p className="text-gray-600 mb-6">
-              Nordgriechenland mit der Halbinsel Chalkidiki zählt zu den vielseitigsten Revieren der Ägäis – ein nautisches Mosaik aus kristallklarem Wasser, kiefernbewachsenen Küsten, versteckten Ankerbuchten, charmanten Fischerdörfern und modernen Marinas. Für Segler, Motorbootfahrer und Wassersportbegeisterte eröffnet sich hier ein Revier mit entspannten Distanzen, zuverlässigen Winden und einer Infrastruktur, die vom Bareboat-Charter über Katamaran-Flotten bis zur exklusiven Superyacht alles abdeckt. Ideale Ausgangspunkte für Ihren Yachtcharter in Nordgriechenland sind Thessaloniki, Nikiti, Neos Marmaras, Sarti sowie die Hafenstadt Kavala – perfekt gelegen, um die drei „Finger" von Chalkidiki (Kassandra, Sithonia, Athos) und die Inselwelt der Nordägäis (Thassos, Limnos, Samothraki, Ammouliani) auf einem abwechslungsreichen Törn zu verbinden. Moderne Marinas wie Thessaloniki/Aretsou, Miraggio (Kassandra) oder Porto Carras (Sithonia) bieten professionelle Services und komfortable Liegeplätze – optimal für den Start in Ihr Inselhopping in der Nordägäis.
+              Nordgriechenland mit der Halbinsel Chalkidiki zählt zu den vielseitigsten Revieren der Ägäis – ein nautisches Mosaik aus kristallklarem Wasser, kiefernbewachsenen Küsten, versteckten Ankerbuchten, charmanten Fischerdörfern und modernen Marinas. Für Segler, Motorbootfahrer und Wassersportbegeisterte eröffnet sich hier ein Revier mit entspannten Distanzen, zuverlässigen Winden und einer Infrastruktur, die vom Bareboat-Charter über Katamaran-Flotten bis zur exklusiven Superyacht alles abdeckt. Thessaloniki und Kavala sind dabei die beiden wichtigen Anreiseflughäfen; die eigentlichen Charterbasen liegen mit Nikiti (Sithonia) und Keramoti/Kavala meist auf der Halbinsel beziehungsweise direkt an der Küste – perfekt gelegen, um die drei „Finger" von Chalkidiki (Kassandra, Sithonia, Athos) und die Inselwelt der Nordägäis (Thassos, Limnos, Samothraki, Ammouliani) auf einem abwechslungsreichen Törn zu verbinden. Moderne Marinas wie Porto Carras (Sithonia) oder Miraggio (Kassandra) sowie die Marina Kavala bieten professionelle Services und komfortable Liegeplätze – optimal für den Start in Ihr Inselhopping in der Nordägäis.
             </p>
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Die Regionen im Überblick</h3>
@@ -161,13 +161,35 @@ const Nordgriechenland = () => {
               </ul>
             </div>
 
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 mt-8">Marinas & Ausgangshäfen: Starker Service für jede Yacht</h3>
-            <div className="text-gray-600 mb-6 space-y-3">
-              <p><strong>Thessaloniki/Aretsou (Kalamaria)</strong> – 242 Liegeplätze für Yachten bis 30 m, Strom/Wasser an jedem Platz, stadtnahe Lage. Tipp für Charter ab „Metropole des Nordens" mit urbanem Vorprogramm.</p>
-              <p><strong>Miraggio Marina (Kassandra, Paliouri)</strong> – preisgekrönte Boutique-Marina mit rund 80 Plätzen (bis 40 m), 24/7-Service und gehobenem Resort-Anschluss. Exzellente Basis für Wochen-Törns Richtung Sithonia, Ammouliani oder Sporaden.</p>
-              <p><strong>Porto Carras Marina (Sithonia)</strong> – groß dimensionierte, bestens geschützte Marina bei Neos Marmaras; bis ~60 m LOA, ~5,5 m Tiefe, umfangreiche Services, Wintertauglichkeit. Perfekt für Katamarane und Segelyachten, die Komfort schätzen.</p>
-              <p><strong>Ormos Panagias (Sithonia, Ostküste)</strong> – touristischer Hafen und Charter-Drehscheibe, ca. 170 Plätze, ideal für Abfahrten zu den Diaporos-Buchten.</p>
-              <p><strong>Kavala Marina</strong> – moderne, schwimmende Marina im Altstadthafen mit rund 200 Liegeplätzen; perfekter Ausgangspunkt für Thassos, Limnos und Samothraki.</p>
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4 mt-8">Anreise, Charterbasen und Marinas: Wer bietet was?</h3>
+            <p className="text-gray-600 mb-4">
+              In Nordgriechenland lohnt es sich, klar zwischen Anreiseflughäfen, tatsächlichen Charterbasen und reinen Marinas beziehungsweise Revierorten zu unterscheiden – die Auswahl an Yachten ist hier kleiner als in Athen, Lefkas oder auf Korfu, und nicht jeder Ort mit Marina ist automatisch auch ein Wochencharter-Stützpunkt.
+            </p>
+            <div className="text-gray-600 mb-6 space-y-4">
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">Anreiseflughäfen</h4>
+                <p><strong>Thessaloniki (SKG)</strong> – größter Flughafen Nordgriechenlands, wichtigster Anreisepunkt für Chalkidiki, Nikiti und Sithonia; Transfer zu den Yachtbasen dauert je nach Ziel rund 60–120 Minuten. <strong>Kavala (KVA)</strong> – ideal für Törns ab Keramoti, Kavala oder Thassos, mit kurzer Anbindung an die Marina.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">Typische Charterbasen</h4>
+                <p><strong>Nikiti (Sithonia)</strong> – für klassische Chalkidiki-Routen die naheliegende Basis, mit kurzen Wegen zu Sithonia, Diaporos und dem Athos-Blick. <strong>Keramoti / Kavala Marina</strong> – moderne, schwimmende Marina im Altstadthafen mit rund 200 Liegeplätzen; Ausgangspunkt für Törns Richtung Thassos, Athos und Sithonia. Je nach Anbieter und Saison sind ergänzend auch Nea Peramos oder Avdira (Xanthi) als kleinere Charterbasen im Angebot – Flottengröße und Verfügbarkeit dort bitte individuell mit dem Anbieter klären.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">Marinas, Revierorte und Stopps</h4>
+                <p><strong>Porto Carras Marina (Sithonia, Neos Marmaras)</strong> – groß dimensionierte, bestens geschützte Marina; bis ~60 m LOA, ~5,5 m Tiefe, umfangreiche Services. <strong>Miraggio Marina (Kassandra, Paliouri)</strong> – preisgekrönte Boutique-Marina mit rund 80 Plätzen (bis 40 m), 24/7-Service und gehobenem Resort-Anschluss. <strong>Ormos Panagias (Sithonia, Ostküste)</strong> – touristischer Hafen, ca. 170 Plätze, guter Zwischenstopp Richtung Diaporos. <strong>Sani und Sarti</strong> sowie <strong>Ouranoupoli</strong> – beliebte Revierorte und Tagesstopps, jedoch keine klassischen Wochencharter-Stützpunkte. <strong>Thessaloniki/Aretsou (Kalamaria)</strong> – 242 Liegeplätze für Yachten bis 30 m, stadtnahe Lage; eher für Crewed-Charter mit urbanem Vorprogramm als für den klassischen Bareboat-Start in Chalkidiki.</p>
+              </div>
+            </div>
+
+            {/* Blog Link Box: Chalkidiki Routenguide */}
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Törnideen für Chalkidiki</h4>
+              <p className="text-gray-700 mb-4">
+                Sie möchten wissen, welche Route ab Nikiti, Keramoti oder Kavala zu Ihrer Crew passt? Unser Routenguide zeigt Varianten für 7 bis 14 Tage – mit Sithonia, Athos-Blick, Thasos, Porto Koufo und Diaporos.
+              </p>
+              <Link to="/blog/yachtcharter-chalkidiki-thessaloniki-nikiti-keramoti" className="inline-flex items-center text-primary font-semibold hover:underline">
+                Zum Routenguide Chalkidiki
+                <ChevronRight className="w-4 h-4 ml-1" />
+              </Link>
             </div>
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Beliebte Törnziele & nautische Highlights</h3>
