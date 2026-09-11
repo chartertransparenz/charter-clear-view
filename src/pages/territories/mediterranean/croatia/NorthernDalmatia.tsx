@@ -312,9 +312,16 @@ export default function NorthernDalmatia() {
             </ul>
 
             <div className="border border-gray-300 p-4 rounded-lg mb-8">
-              <p className="text-black"><strong>Nautische Besonderheiten der Region Šibenik:</strong> Die Mündung des 
-              Flusses Krka bietet eine einzigartige Flussfahrt. Die Kanäle sind hier oft tiefer. Die Region ist ebenfalls 
+              <p className="text-black"><strong>Nautische Besonderheiten der Region Šibenik:</strong> Die Mündung des
+              Flusses Krka bietet eine einzigartige Flussfahrt. Die Kanäle sind hier oft tiefer. Die Region ist ebenfalls
               gut geschützt, bietet aber auch offene Seeabschnitte.</p>
+              <p className="text-black mt-3"><strong>Aktueller Hinweis (September 2026):</strong> Bei der Insel Žirje
+              wurden in der Uvala Stupica Mala und der Uvala Kabal drei rot-gelbe ADCP-Messbojen ausgebracht. An den
+              Bojen darf nicht festgemacht werden, im Umkreis von 50 m ist Ankern untersagt. Details und aktuelle
+              Informationen:{" "}
+              <a href="/news/kroatien-sperrzone-sprengkoerper-messbojen-zirje-2026" className="text-primary hover:underline">
+                Messbojen bei Žirje – aktuelle Meldung
+              </a>.</p>
             </div>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Erreichbarkeit: Ihr schneller Weg an Bord</h3>

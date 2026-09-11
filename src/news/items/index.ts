@@ -1,4 +1,6 @@
 import type { NewsItem } from "../types";
+// Import: 2026-09-11
+import { kroatienSperrzoneSprengkoerperMessbojenZirje2026 } from "./kroatien-sperrzone-sprengkoerper-messbojen-zirje-2026";
 // Import: 2026-09-04
 import { kroatienHafenfeuerKastelaBakarac2026 } from "./kroatien-hafenfeuer-kastela-bakarac-2026";
 // Import: 2026-08-28
@@ -45,6 +47,7 @@ import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootve
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienSperrzoneSprengkoerperMessbojenZirje2026,
   kroatienHafenfeuerKastelaBakarac2026,
   spanienFuehrerscheinpflichtMietboote2026,
   kroatienWaldbraendeLoeschflugzeugeChartercrews2026,

@@ -225,6 +225,15 @@ export default function Istria() {
               <li><strong>Marina Funtana & Vrsar:</strong> Weiter nördlich an der Küste gelegen, sind diese Marinas ideale Ausgangspunkte für Törns, die sich auf die nördliche Küste Istriens mit Zielen wie Poreč und Novigrad konzentrieren. Sie sind kleiner, charmanter und bieten einen sehr direkten Zugang zu den malerischen Städtchen der Region.</li>
             </ul>
 
+            <div className="border border-gray-300 p-4 rounded-lg mb-6">
+              <p className="text-black"><strong>Aktuelle Navigationshinweise prüfen:</strong> In Kroatien können kurzfristig
+              Sperrzonen, Messbojen, geänderte Hafenfeuer oder lokale Warnungen relevant werden. Vor dem Törn sollten Crews
+              HHI-Warnungen, Plotterdaten und Hinweise der Charterbasis prüfen.{" "}
+              <a href="/news/kroatien-sperrzone-sprengkoerper-messbojen-zirje-2026" className="text-primary hover:underline">
+                Aktuelle Meldung: Sperrzone bei Luka Dajla
+              </a>.</p>
+            </div>
+
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Die unschlagbare Erreichbarkeit Istriens</h2>
             
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
