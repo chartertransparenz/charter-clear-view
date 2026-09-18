@@ -235,6 +235,31 @@ const content = (
       heraus. Innerhalb dieser Grenzen ist der Einsatz problemlos.
     </p>
 
+    <h2 id="waldbraende-loeschflugzeuge">Waldbrände und Löschflugzeuge in Kroatien</h2>
+    <p>
+      In den trockenen Sommer- und Spätsommermonaten können Waldbrände in Kroatien
+      kurzfristig auch Küstenbereiche erreichen. Für Chartercrews ist das vor allem
+      wegen Rauchentwicklung, möglichen Evakuierungen, zeitweise gesperrten oder
+      belasteten Buchten sowie Canadair-Löschflugzeugen und Behördenbooten im
+      Einsatzgebiet relevant.
+    </p>
+    <p>
+      Wichtig ist vor allem, früh zu reagieren statt abzuwarten: Windrichtung
+      beobachten, Motor startklar halten, die Crew an Bord holen und eine Bucht bei
+      aufziehender Rauchentwicklung rechtzeitig verlassen. Schöpfbereiche von
+      Canadair-Löschflugzeugen sollten großräumig freigehalten werden. Wer sich
+      unsicher ist, prüft die Lage über lokale Hinweise, VHF, die Charterbasis oder
+      die zuständige Hafenbehörde.
+    </p>
+    <p>
+      Was das konkret bedeutet und welche aktuellen Ereignisse es zu beachten gilt,
+      zeigen die{" "}
+      <a href="/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026">
+        aktuellen Hinweise zu Waldbränden und Löschflugzeugen in Kroatien
+      </a>
+      .
+    </p>
+
     <div
       className="not-prose"
       style={{
@@ -252,15 +277,14 @@ const content = (
           fontSize: "1rem",
         }}
       >
-        Kroatien-Törn planen – mit persönlicher Beratung
+        Welche Kroatien-Route passt zu Ihrer Crew?
       </p>
       <p
         style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}
       >
-        Welche Yacht passt zur Crewgröße? Welches Revier ist für Einsteiger oder
-        erfahrene Familien besonders geeignet? Wir helfen Ihnen, Revier, Route
-        und Yacht realistisch einzuordnen – und aktuelle Vorschriften vorab
-        einzuplanen.
+        Wir helfen Ihnen, passende Yacht, Ausgangsbasis und Törnroute nach
+        Erfahrung, Saison und gewünschtem Revier auszuwählen – und aktuelle
+        Vorschriften und Hinweise vorab einzuplanen.
       </p>
       <a
         href="/charter-anfrage"

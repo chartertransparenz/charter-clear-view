@@ -2,6 +2,31 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
+    {/* ── Update 18. September 2026 ─────────────────────────────────────── */}
+    <div className="not-prose mb-8 p-5 bg-amber-50 rounded-lg border border-amber-200">
+      <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">
+        Update 18. September 2026
+      </p>
+      <p className="text-gray-800 font-semibold mb-1">
+        Großbrand auf Brač bei Milna
+      </p>
+      <p className="text-gray-700 text-sm leading-relaxed mb-3">
+        Seit dem 10. September 2026 brannte es im Westen der Insel Brač, betroffen waren
+        Bereiche zwischen Bobovišće und Ložišće sowie die Küstenbuchten Duboka und Osibova.
+        In der Nacht zum 13. September erreichte das Feuer bei starkem Wind Küstennähe.
+        Rund 700 Menschen wurden vorsorglich über See in Sicherheit gebracht. Seit Mitte
+        September 2026 gilt der Brand als unter Kontrolle, Nachlöscharbeiten laufen noch.
+        Wichtig für die Planung: Der Hafen von Milna selbst ist nach aktuellem Stand nicht
+        betroffen.
+      </p>
+      <a
+        href="/blog/kroatien-yachtcharter-sicherheitsregeln"
+        className="text-amber-700 hover:text-amber-900 text-sm font-medium underline"
+      >
+        Weitere Sicherheitsregeln für Chartercrews in Kroatien →
+      </a>
+    </div>
+
     <h2>Einordnung</h2>
     <p>
       Waldbrände gehören zur Realität an der dalmatinischen Küste. Bei anhaltender
@@ -26,10 +51,34 @@ const content = (
       Brand, der Teile der Löschflugzeug-Staffel abzog.
     </p>
     <p>
-      Die direkten Brände aus diesem Ereignis sind abgeklungen. Die Bedingungen für
-      weitere Waldbrände – Trockenheit, Hitze, Wind – bleiben in der dalmatinischen
-      Hochsommersaison jedoch regelmäßig bestehen.
+      Die Brände bei Omiš und Pelješac vom August sind abgeklungen. Der erneute
+      Großbrand auf Brač im September zeigt jedoch, dass Waldbrände in der trockenen
+      Hoch- und Spätsommersaison auch für Crews auf dem Wasser kurzfristig relevant
+      werden können.
     </p>
+
+    <h2>Was Chartercrews rund um Brač aktuell beachten sollten</h2>
+    <p>
+      Wer aktuell im Raum Brač oder allgemein in{" "}
+      <a href="/reviere/mittelmeer/kroatien">Kroatien</a> chartert, sollte die
+      folgenden Punkte im Blick behalten:
+    </p>
+    <ul>
+      <li>Westküste von Brač mit besonderer Aufmerksamkeit befahren.</li>
+      <li>
+        Bereiche um Duboka und Osibova nur anlaufen, wenn die aktuelle Lage dies
+        zulässt.
+      </li>
+      <li>
+        Einsatzboote von Feuerwehr, Polizei, Küstenwache und Rettung nicht behindern.
+      </li>
+      <li>Bei sichtbarer Rauchentwicklung ausreichend Abstand halten.</li>
+      <li>Canadair-Wasseraufnahme großräumig freihalten.</li>
+      <li>
+        Vor Anlaufen von Milna oder westlichen Buchten aktuelle Lage über
+        Charterbasis, Hafenbehörde und VHF prüfen.
+      </li>
+    </ul>
 
     <h2>Wenn Canadair-Löschflugzeuge auf der Adria arbeiten</h2>
     <p>
@@ -147,11 +196,12 @@ const content = (
       }}
     >
       <p style={{ color: "#ffffff", fontWeight: 700, marginBottom: "8px", fontSize: "1rem" }}>
-        Sicherheit im Dalmatien-Törn realistisch planen
+        Kroatien-Törn gut vorbereitet planen
       </p>
       <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
-        Wir helfen Ihnen, Revier, Saison und mögliche Einschränkungen für Ihren
-        Kroatien-Charter einzuordnen – persönlich und unverbindlich.
+        Ob Dalmatien, Kornaten, Kvarner oder Istrien: Wir helfen Ihnen, Yacht,
+        Charterbasis, Route und Reisedauer so zu wählen, dass sie zu Ihrer Crew und
+        Erfahrung passen.
       </p>
       <a
         href="/charter-anfrage"
@@ -166,12 +216,12 @@ const content = (
           fontSize: "0.9rem",
         }}
       >
-        Törn persönlich anfragen
+        Kroatien-Charter anfragen
       </a>
     </div>
 
     <p className="text-sm text-gray-500" style={{ marginTop: "2rem" }}>
-      Redaktionsstand: 21. August 2026. Lagen bei Waldbränden können sich
+      Redaktionsstand: 18. September 2026. Lagen bei Waldbränden können sich
       kurzfristig ändern. Prüfen Sie vor dem Törn aktuelle Hinweise Ihrer
       Charterbasis, lokaler Behörden und offizieller Notfallkanäle.
     </p>
@@ -184,14 +234,14 @@ export const kroatienWaldbraendeLoeschflugzeugeChartercrews2026: NewsItem = {
   title:
     "Waldbrände in Dalmatien: Was Chartercrews bei Löschflugzeugen auf der Adria wissen sollten",
   excerpt:
-    "Mitte August 2026 brannte es bei Omiš und auf Pelješac. Canadair-Löschflugzeuge schöpfen ihr Wasser direkt aus der Adria. Was Chartercrews wissen müssen: Tiefüberflug bedeutet sofort ausweichen, Schöpfbereich großräumig meiden. Notruf 112, Feuerwehr 193 oder maritime Rettung 195.",
+    "Mitte August 2026 brannte es bei Omiš und auf Pelješac, im September folgte ein Großbrand auf Brač bei Milna. Canadair-Löschflugzeuge schöpfen ihr Wasser direkt aus der Adria. Was Chartercrews wissen müssen: Tiefüberflug bedeutet sofort ausweichen, Schöpfbereich großräumig meiden. Notruf 112, Feuerwehr 193 oder maritime Rettung 195.",
   content_type: "basis_hinweis",
   region: "Kroatien / Dalmatien",
   country_or_area: "Kroatien",
   status: "in_kraft",
   effective_from: "2026-08-14",
   published_at: "2026-08-21",
-  updated_at: "2026-08-21",
+  updated_at: "2026-09-18",
   priority: "hoch",
   category: "Revier & Sicherheit",
   source_name: "",
@@ -207,7 +257,7 @@ export const kroatienWaldbraendeLoeschflugzeugeChartercrews2026: NewsItem = {
   seo_title:
     "Waldbrände Kroatien 2026: Löschflugzeuge auf der Adria – Hinweise für Chartercrews",
   meta_description:
-    "Waldbrände bei Omiš und Pelješac (August 2026): Canadair-Löschflugzeuge schöpfen Wasser aus der Adria. Was Chartercrews beachten müssen und wie man sich bei einem Feuereinsatz richtig verhält.",
+    "Waldbrände in Dalmatien 2026: Omiš, Pelješac und zuletzt ein Großbrand auf Brač bei Milna. Canadair-Löschflugzeuge schöpfen Wasser aus der Adria. Was Chartercrews beachten müssen und wie man sich bei einem Feuereinsatz richtig verhält.",
   image: "/images/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026.jpg",
   image_alt: "Küstenlandschaft in Dalmatien mit Waldbrand und Rauch über der Adria",
   is_featured: true,
