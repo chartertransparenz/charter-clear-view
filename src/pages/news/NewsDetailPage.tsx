@@ -73,6 +73,22 @@ export default function NewsDetailPage() {
     mainEntityOfPage: canonical,
   };
 
+  const faqSchema =
+    item.faq && item.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: item.faq.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: f.answer,
+            },
+          })),
+        }
+      : null;
+
   const related = allNewsItems
     .filter(
       (n) =>
@@ -91,6 +107,7 @@ export default function NewsDetailPage() {
         ogType="article"
       />
       <JsonLd json={articleSchema} />
+      {faqSchema && <JsonLd json={faqSchema} />}
 
       <div className="min-h-screen bg-white">
         <Navigation />

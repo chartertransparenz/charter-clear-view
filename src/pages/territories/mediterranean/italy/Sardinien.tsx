@@ -155,22 +155,23 @@ const Sardinien = () => {
         <div className="max-w-4xl mx-auto mb-10">
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="text-xs font-semibold text-blue-500 uppercase tracking-wide mb-2">
-              Revierupdate Juni 2026
+              Revierupdate La Maddalena 2026
             </p>
             <p className="text-gray-800 font-semibold mb-1">
-              La Maddalena: Neue Parkregeln ab 1. Juni 2026 – probeweise Geltung
+              La Maddalena: Nachtankern, Ankerplätze und Bojen
             </p>
             <p className="text-gray-700 text-sm leading-relaxed mb-3">
-              Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena tritt am{" "}
-              <strong>1. Juni 2026</strong> in Kraft – probeweise für die Saison 2026. Kein
-              pauschales Nachtankerverbot, aber Zonenkarten und Nationalparkregeln bleiben
-              maßgeblich. Permit bleibt Pflicht, Rettungskorridore freihalten.
+              Die Ordinanza 33/2026 der Capitaneria di Porto di La Maddalena gilt seit dem{" "}
+              <strong>1. Juni 2026</strong> – probeweise für die Saisons 2026 und 2027. Ein
+              pauschales Nachtankerverbot gibt es nicht mehr, doch geankert wird nur auf Sand
+              oder Schlick und außerhalb der Schutz- und Sperrzonen. An offiziellen Parkbojen
+              darf übernachtet werden, Permit bleibt Pflicht.
             </p>
             <Link
               to="/news/sardinien-la-maddalena-nachtankerverbot-2026"
               className="text-blue-600 hover:text-blue-800 text-sm font-medium"
             >
-              Alle Details zur Ordinanza 33/2026 →
+              Ankern, Bojen &amp; Permit: der La-Maddalena-Ratgeber →
             </Link>
             <p className="text-gray-700 text-sm leading-relaxed mt-3 mb-2">
               Zusätzlich gilt zwischen Isola Santa Maria und Isola Budelli eine begrenzte
