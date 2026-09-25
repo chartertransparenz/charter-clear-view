@@ -260,6 +260,13 @@ export default function CentralDalmatia() {
               hier meist gut geschützt durch die vielen Inseln. Es gibt zahlreiche Kanäle und Passagen, die eine 
               abwechslungsreiche Navigation ermöglichen. Die Wassertiefen sind meist ausreichend, aber Aufmerksamkeit 
               für Untiefen und Riffe ist immer geboten.</p>
+              <p className="text-black mt-3"><strong>Aktuelle Navigationshinweise prüfen:</strong> In Kroatien
+              können Änderungen an Hafenfeuern oder lokale Warnungen kurzfristig relevant werden – etwa bei
+              Nachtansteuerungen großer Charterstützpunkte wie Marina Kaštela. Vor dem Törn sollten Seekarten und
+              Plotterdaten aktualisiert werden.{" "}
+              <Link to="/news/kroatien-hafenfeuer-kastela-bakarac-2026" className="text-primary hover:underline">
+                Neues Hafenfeuer in Marina Kaštela
+              </Link>.</p>
             </div>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Erreichbarkeit: Ihr schneller Weg an Bord</h3>

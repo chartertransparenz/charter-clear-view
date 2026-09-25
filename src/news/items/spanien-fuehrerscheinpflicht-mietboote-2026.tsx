@@ -2,20 +2,19 @@ import type { NewsItem } from "../types";
 
 const content = (
   <div>
-    {/* ── Update 18. September 2026 ─────────────────────────────────────── */}
+    {/* ── Update September 2026 ──────────────────────────────────────────── */}
     <div className="not-prose mb-8 p-5 bg-amber-50 rounded-lg border border-amber-200">
       <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">
-        Update 18. September 2026
+        Update September 2026
       </p>
       <p className="text-gray-800 font-semibold mb-1">
-        Neue Führerscheinpflicht tritt am 1. Oktober in Kraft
+        Die neue Führerscheinpflicht tritt am 1. Oktober 2026 in Kraft
       </p>
       <p className="text-gray-700 text-sm leading-relaxed mb-3">
-        In weniger als zwei Wochen tritt die neue Führerscheinpflicht für bestimmte
-        gewerblich gemietete Kleinboote auf den Balearen in Kraft. Wer im Herbst auf
-        Mallorca, Ibiza oder Menorca ein entsprechendes Mietboot nutzen möchte, sollte
-        jetzt prüfen, ob ein anerkannter Bootsführerschein vorliegt und welche
-        Anforderungen der jeweilige Vermieter stellt.
+        Wer im Herbst auf Mallorca, Ibiza oder Menorca ein kleines Motorboot gewerblich
+        mieten möchte, sollte jetzt prüfen, ob ein anerkannter Bootsführerschein vorliegt
+        und welche Anforderungen der jeweilige Vermieter stellt. Das gilt auch, wenn
+        während eines Yachtcharters ein Tagesboot oder ein Motorboot-Ausflug geplant ist.
       </p>
       <a
         href="/charter-anfrage"
@@ -92,8 +91,9 @@ const content = (
       zu verlangen.
     </p>
     <p>
-      Wer ohnehin einen Yachtcharter auf Mallorca, Ibiza oder Menorca plant, sollte die
-      Führerscheinfrage nicht isoliert betrachten. Je nach Crew, Erfahrung und
+      Wer ohnehin einen{" "}
+      <a href="/reviere/mittelmeer/spanien/balearen">Yachtcharter auf den Balearen</a> plant,
+      sollte die Führerscheinfrage nicht isoliert betrachten. Je nach Crew, Erfahrung und
       gewünschtem Boot kann{" "}
       <a href="/blog/bareboat-oder-skipper">Bareboat, Skippercharter</a> oder eine
       andere Bootskategorie sinnvoller sein.
@@ -113,8 +113,8 @@ const content = (
         Balearen-Törn ohne Überraschungen planen
       </p>
       <p style={{ color: "#e8edf2", marginBottom: "20px", lineHeight: 1.6 }}>
-        Ob Bareboat, Katamaran, kleine Motoryacht oder Törn mit Skipper: Wir helfen
-        Ihnen, Boot, Basis und Voraussetzungen passend zu Ihrer Crew zu wählen.
+        Ob Yachtcharter, Tagesboot oder Törn mit Skipper: Wir helfen Ihnen, Revier,
+        Bootstyp und Voraussetzungen realistisch einzuordnen – bevor Sie buchen.
       </p>
       <a
         href="/charter-anfrage"
@@ -145,10 +145,12 @@ const content = (
     <h2>Welcher Führerschein ist erforderlich?</h2>
     <p>
       Die spanische Licencia de Navegación (Titulín) ist der in Spanien anerkannte Führerschein
-      für Kleinmotorboote. Ob und in welchem Umfang vergleichbare EU-Bootsführerscheine aus
-      anderen Mitgliedsländern anerkannt werden, sollte direkt bei der jeweiligen Verleihstation
-      erfragt werden. Generell empfiehlt sich bei einem Bootstrip in Spanien das Mitführen
-      aller relevanten Dokumente.
+      für Kleinmotorboote. Das spanische Recht sieht außerdem vor, dass Bürgerinnen und Bürger
+      aus dem Europäischen Wirtschaftsraum mit einem Bootsführerschein ihres Heimat- oder
+      Wohnsitzstaates spanisch beflaggte Sportboote führen können – im Rahmen der Befugnisse,
+      die ihr Führerschein gewährt. Welche Nachweise ein Vermieter im Einzelfall akzeptiert,
+      sollte vor der Buchung geklärt werden. Generell empfiehlt sich bei einem Bootstrip in
+      Spanien das Mitführen aller relevanten Dokumente im Original.
     </p>
 
     <div className="not-prose my-8 p-5 bg-gray-50 rounded-lg border border-gray-200">
@@ -164,7 +166,7 @@ const content = (
     </div>
 
     <p className="text-sm text-gray-500" style={{ marginTop: "2rem" }}>
-      Redaktionsstand: 18. September 2026. Die Angaben zum Real Decreto 1188/2025
+      Redaktionsstand: 25. September 2026. Die Angaben zum Real Decreto 1188/2025
       basieren auf der offiziellen Veröffentlichung im spanischen Staatsanzeiger (BOE).
       Details zu Ausnahmen, Übergangsregelungen und der Anerkennung ausländischer
       Führerscheine erfragen Sie am besten direkt bei der Verleihstation oder der
@@ -185,11 +187,11 @@ export const spanienFuehrerscheinpflichtMietboote2026: NewsItem = {
   status: "angekuendigt",
   effective_from: "2026-10-01",
   published_at: "2026-08-28",
-  updated_at: "2026-09-18",
+  updated_at: "2026-09-25",
   priority: "mittel",
   category: "Vorschriften & Formalitäten",
-  source_name: "BOE – Real Decreto 1188/2025",
-  source_url: "https://www.boe.es/eli/es/rd/2025/12/26/1188",
+  source_name: "",
+  source_url: "",
   customer_impact:
     "Ab 1. Oktober 2026 ist in Spanien und auf den Balearen für die Miete kleiner Motorboote bis 5 m / 15 PS ein Führerschein erforderlich. Crewmitglieder ohne Führerschein können keine kleinen Mietboote mehr ausleihen. Für klassische Bareboat-/Skippered-Charter ändert sich nichts.",
   action_advice:
@@ -200,7 +202,7 @@ export const spanienFuehrerscheinpflichtMietboote2026: NewsItem = {
   canonical_topic_key: "spanien_fuehrerscheinpflicht_mietboote_2026",
   region_links: [
     { label: "Spanien / Balearen", href: "/reviere/mittelmeer/spanien/balearen" },
-    { label: "Mallorca", href: "/reviere/mittelmeer/spanien/mallorca" },
+    { label: "Mallorca", href: "/reviere/mittelmeer/spanien/balearen/mallorca" },
   ],
   seo_title: "Spanien 2026: Führerscheinpflicht für Mietboote ab Oktober – Balearen betroffen",
   meta_description:
