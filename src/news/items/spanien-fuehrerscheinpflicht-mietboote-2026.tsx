@@ -49,7 +49,7 @@ const content = (
         <li>• In Kraft seit: 1. Oktober 2026</li>
         <li>• Betrifft: gemietete Motorboote bis 5 m Länge und 15 PS</li>
         <li>• Erforderlich: ein passender Befähigungsnachweis, etwa die spanische Licencia de Navegación</li>
-        <li>• Private Nutzung bleibt unter den bisherigen Bedingungen führerscheinfrei</li>
+        <li>• Private Nutzung solcher Motorboote bleibt führerscheinfrei</li>
         <li>• Größere Charteryachten waren schon vorher führerscheinpflichtig</li>
       </ul>
     </div>
@@ -163,7 +163,8 @@ const content = (
       <p className="text-gray-700 leading-relaxed">
         Seit dem 1. Oktober 2026 dürfen gemietete Motorboote bis 5 m und 15 PS in Spanien –
         auch auf den Balearen und Kanaren – nur noch mit passendem Befähigungsnachweis geführt
-        werden. Führerscheinfrei bleibt nur die private Nutzung. Für klassische Charteryachten
+        werden. Bei kleinen Motorbooten bleibt die Führerscheinausnahme auf die private Nutzung
+        beschränkt. Für klassische Charteryachten
         ändert sich nichts; dort war ein Schein schon immer Voraussetzung.
       </p>
     </div>
@@ -181,7 +182,7 @@ export const spanienFuehrerscheinpflichtMietboote2026: NewsItem = {
   slug: "spanien-fuehrerscheinpflicht-mietboote-2026",
   title: "Spanien und Balearen: Seit 1. Oktober 2026 Führerscheinpflicht für kleine Mietboote",
   excerpt:
-    "Seit dem 1. Oktober 2026 dürfen gemietete Motorboote bis 5 m und 15 PS in Spanien – einschließlich Mallorca, Ibiza und Menorca – nur noch mit passendem Befähigungsnachweis geführt werden. Das Real Decreto 1188/2025 beschränkt die führerscheinfreie Nutzung auf private Boote. Für klassische Charteryachten ändert sich nichts.",
+    "Seit dem 1. Oktober 2026 dürfen gemietete Motorboote bis 5 m und 15 PS in Spanien – einschließlich Mallorca, Ibiza und Menorca – nur noch mit passendem Befähigungsnachweis geführt werden. Das Real Decreto 1188/2025 beschränkt die Führerscheinausnahme für kleine Motorboote auf die private Nutzung. Für klassische Charteryachten ändert sich nichts.",
   content_type: "basis_hinweis",
   region: "Spanien / Balearen",
   country_or_area: "Spanien",
@@ -221,9 +222,9 @@ export const spanienFuehrerscheinpflichtMietboote2026: NewsItem = {
         "Seit dem 1. Oktober 2026. Grundlage ist das Real Decreto 1188/2025, das Artikel 10 des Real Decreto 875/2014 geändert hat.",
     },
     {
-      question: "Darf man in Spanien noch ohne Führerschein Boot fahren?",
+      question: "Darf man in Spanien kleine Motorboote noch ohne Führerschein fahren?",
       answer:
-        "Ja, aber nur bei privater Nutzung von Motorbooten bis 5 m Länge und 15 PS – höchstens 2 Seemeilen vom Ausgangspunkt, tagsüber und ab 18 Jahren. Wer ein solches Boot mietet, braucht seit dem 1. Oktober 2026 einen passenden Befähigungsnachweis.",
+        "Bei kleinen Motorbooten bleibt die Führerscheinausnahme seit 1. Oktober 2026 auf die private Nutzung bis 5 m Länge und 15 CV beschränkt – höchstens 2 Seemeilen vom Ausgangspunkt, tagsüber und ab 18 Jahren. Für die Vermietung solcher Boote verlangt das Real Decreto einen entsprechenden Befähigungsnachweis.",
     },
     {
       question: "Ändert sich etwas für Yachtcharter auf den Balearen?",
