@@ -43,6 +43,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/kroatien-aci-marinas-konzessionen-2058',                 lastmod: '2026-10-02' },
   { loc: '/news/kroatien-sperrzone-sprengkoerper-messbojen-zirje-2026',  lastmod: '2026-09-11' },
   { loc: '/news/kroatien-hafenfeuer-kastela-bakarac-2026',               lastmod: '2026-09-25' },
   { loc: '/news/spanien-fuehrerscheinpflicht-mietboote-2026',            lastmod: '2026-09-25' },
