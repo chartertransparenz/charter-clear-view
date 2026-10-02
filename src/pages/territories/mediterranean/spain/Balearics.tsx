@@ -203,17 +203,17 @@ const Balearics = () => {
         <div className="max-w-4xl mx-auto mb-10">
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">
-              Revierupdate September 2026
+              Revierupdate Oktober 2026
             </p>
             <p className="text-gray-800 font-semibold mb-1">
-              Ab 1. Oktober 2026: Führerscheinpflicht für Mietboote auf den Balearen
+              Seit 1. Oktober 2026: Führerscheinpflicht für kleine Mietboote auf den Balearen
             </p>
             <p className="text-gray-700 text-sm leading-relaxed mb-3">
-              Das spanische Real Decreto 1188/2025 tritt am 1. Oktober 2026 in Kraft.
-              Für die Miete kleiner Motorboote (bis 5 m / 15 PS) bei kommerziellen
-              Verleihstationen auf Mallorca, Ibiza, Menorca und Formentera ist dann ein
-              gültiger Bootsführerschein erforderlich. Für klassische Charteryachten
-              (Bareboat, Skippered) ändert sich nichts.
+              Das spanische Real Decreto 1188/2025 ist seit dem 1. Oktober 2026 in Kraft.
+              Wer auf Mallorca, Ibiza, Menorca oder Formentera ein kleines Motorboot
+              (bis 5 m / 15 PS) mietet, braucht seitdem einen passenden
+              Befähigungsnachweis. Für klassische Charteryachten (Bareboat, Skippered)
+              ändert sich nichts.
             </p>
             <Link
               to="/news/spanien-fuehrerscheinpflicht-mietboote-2026"

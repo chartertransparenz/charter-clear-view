@@ -15,8 +15,8 @@ const content = (
     <p>
       Viele der Regeln galten bereits zuvor. Neu ist vor allem die Klarheit:
       Küstenabstände sind jetzt präzise nach Bootslänge gestaffelt, die Tender-Regel
-      ist eindeutig definiert, und die Behörden kontrollieren spürbar häufiger als
-      früher. Wer die Adria kennt, wird wenig überrascht sein – wer zum ersten Mal
+      ist eindeutig definiert, und die Behörden kontrollieren in der Saison
+      regelmäßig. Wer die Adria kennt, wird wenig überrascht sein – wer zum ersten Mal
       in Kroatien chartern möchte, findet hier einen kompakten Überblick.
     </p>
 
@@ -303,25 +303,97 @@ const content = (
       </a>
     </div>
 
-    <h2 id="bussgelder-kontrollen">Bußgelder und Kontrollen – realistisch einschätzen</h2>
+    <h2 id="bussgelder-kontrollen">Kontrollen in Kroatien: Darauf achten die Hafenämter</h2>
     <p>
-      Die kroatischen Behörden kontrollieren regelmäßig, vor allem in der
-      Hauptsaison: Lučka kapetanija (Hafenkapitänäter), Küstenwache und Polizei
-      sind auf der Adria präsent. Kontrolliert werden kroatische und ausländische
-      Boote gleichermaßen.
+      Zuständig für die Sicherheit der Schifffahrt sind in Kroatien die
+      Hafenämter (Lučke kapetanije) mit ihren Außenstellen. Sie kontrollieren vor
+      allem in der Hauptsaison, und zwar kroatische und ausländische Boote
+      gleichermaßen.
+    </p>
+    <p>
+      Eine koordinierte Kontrollaktion der kroatischen Hafenämter im Juli 2026
+      zeigt, welche Punkte bei Kontrollen auf der Adria regelmäßig relevant sind.
+      Für Chartercrews ist weniger die Zahl der verhängten Bußgelder interessant
+      als die Frage, welche Unterlagen und Sicherheitsanforderungen an Bord
+      tatsächlich geprüft werden.
+    </p>
+    <p>
+      Bei der Aktion „Sigurna plovidba 2026“ („Sichere Schifffahrt 2026“) waren am
+      29. Juli 2026 alle acht Hafenämter zwischen 10 und 18 Uhr mit 115
+      Mitarbeitenden und 35 Booten im Einsatz. Nach Angaben des kroatischen
+      Ministeriums für Meer, Verkehr und Infrastruktur gab es 382 Kontrollen, bei
+      denen 182 Verstöße festgestellt wurden. Die Kontrollen betrafen allerdings
+      den gesamten Seeverkehr – also auch Ausflugsschiffe, Mietboote, Schwimmer
+      und Taucher – und nicht nur Charteryachten.
+    </p>
+    <p>Geprüft wurden laut Ministerium unter anderem:</p>
+    <ul>
+      <li>gültige Schiffspapiere und Dokumente</li>
+      <li>die vorgeschriebene Besatzung und die Befähigungsnachweise</li>
+      <li>die Überladung von Ausflugsschiffen</li>
+      <li>vorgeschriebene Meldungen über CIMIS, das maritime Informationssystem der kroatischen Behörden</li>
+      <li>das Ablassen von Schwarz- und Grauwasser ins Meer</li>
+      <li>die Vermietung von Booten</li>
+    </ul>
+    <p>
+      Die Aktion zeigt, welche Punkte die kroatischen Hafenämter bei Kontrollen
+      besonders im Blick haben. Bei einem Chartertörn übernimmt die Charterbasis
+      die Meldungen in der Regel. Wichtig ist, dass die Angaben, etwa die
+      Crewliste, mit der tatsächlichen Besatzung an Bord übereinstimmen. Davon
+      unabhängig gelten eigene Regeln für das Ablassen von Schwarz- und
+      Grauwasser. Wie die Yacht ausgestattet ist und wo die Tanks abgepumpt
+      werden können, sollte bei der Übergabe geklärt werden.
+    </p>
+
+    <h3>Was sollte eine Chartercrew bei einer Kontrolle griffbereit haben?</h3>
+    <ul>
+      <li>
+        <strong>Bordpapiere der Yacht:</strong> Schiffspapiere und die
+        Unterlagen, die der Vercharterer bei der Übergabe mitgibt
+      </li>
+      <li>
+        <strong>Chartervertrag und Crewliste:</strong> Die Crewliste sollte zur
+        tatsächlichen Besatzung passen.
+      </li>
+      <li>
+        <strong>Befähigungsnachweise:</strong> Bootsführerschein des Skippers
+        und, falls für die Yacht erforderlich, das Funkzeugnis
+      </li>
+      <li>
+        <strong>Ausweisdokumente:</strong> Reisepässe oder Personalausweise der
+        Crew
+      </li>
+      <li>
+        <strong>Sicherheitsausrüstung:</strong> Rettungswesten für alle Personen
+        an Bord, Feuerlöscher und Rettungsmittel – vollständig und erreichbar
+      </li>
+      <li>
+        <strong>Zugelassene Personenzahl:</strong> Mehr Personen als zugelassen
+        dürfen nicht an Bord sein, auch nicht für einen Tagesausflug.
+      </li>
+    </ul>
+    <p>
+      Viele Probleme lassen sich schon bei einer guten Yachtübernahme vermeiden.
+      Vor dem Ablegen sollte die Crew wissen, wo die Bordpapiere liegen, welche
+      Sicherheitsausrüstung an Bord ist und wo Feuerlöscher und Rettungsmittel
+      verstaut sind. Ebenso wichtig: Wie viele Personen sind zugelassen, welche
+      Einweisungen hat der Vercharterer gegeben, und welche Dokumente braucht der
+      Skipper bei einer Kontrolle? Wer das bei der Übergabe kurz durchgeht, hat
+      bei einer Kontrolle in wenigen Minuten alles zur Hand.
     </p>
     <p>
       Bußgelder richten sich nach Art und Schwere des Verstoßes und können von
       mehreren hundert Euro bis in den vierstelligen Bereich gehen. In schweren
-      Fällen kann die Weiterfahrt untersagt werden. Wer ohne Rettungsweste auf
-      einem schnellen RIB unterwegs ist, den Tender weit außerhalb des erlaubten
-      Bereichs nutzt oder einen Küstenabstand deutlich unterschreitet, muss damit
-      rechnen, dass es teuer wird.
+      Fällen kann die Weiterfahrt untersagt werden. Für die meisten Chartercrews
+      gilt aber: Wer die Grundregeln kennt und die Unterlagen beisammen hat, sieht
+      einer Kontrolle gelassen entgegen.
     </p>
     <p>
-      Für die meisten Chartercrews gilt: Wer die Grundregeln kennt und einhält,
-      hat nichts zu befürchten. Die kroatische Adria bleibt eines der
-      entspanntesten Reviere Europas – solange man sich gut vorbereitet.
+      Ein zuverlässiger Vercharterer und eine saubere Übergabe sind mindestens so
+      wichtig wie das Yachtmodell. Bei unserer Auswahl berücksichtigen wir deshalb
+      nicht nur Preis und Ausstattung, sondern auch unsere Erfahrung mit den
+      jeweiligen Partnern und Basen in{" "}
+      <a href="/reviere/mittelmeer/kroatien">Kroatien</a>.
     </p>
 
     <h2 id="checkliste">Was Chartercrews vor dem Törn prüfen sollten</h2>
@@ -357,7 +429,11 @@ const content = (
       <li>
         <strong>Charterbasis fragen:</strong> Die Basis kennt aktuelle Revierhinweise,
         eventuelle Kontrollschwerpunkte und besondere Regelungen auf der geplanten
-        Route.
+        Route – etwa zeitweise Sperrgebiete wie die{" "}
+        <a href="/news/kroatien-sperrzone-sprengkoerper-messbojen-zirje-2026">
+          Sperrzone bei Dajla und die Messbojen vor Žirje
+        </a>
+        .
       </li>
     </ul>
 
@@ -370,8 +446,8 @@ const content = (
       Beiboot nicht weit weg schicken.
     </p>
     <p>
-      Was sich verändert hat, ist die Kontrolldichte. Und das ist kein Grund zur
-      Sorge – sondern ein Grund, gut vorbereitet zu sein. Kroatien ist und bleibt
+      Kontrollen durch die Hafenämter gehören in der Saison dazu. Das ist kein
+      Grund zur Sorge – sondern ein Grund, gut vorbereitet zu sein. Kroatien ist und bleibt
       eines der schönsten Charterreviere der Welt. Wer die Regeln kennt, genießt
       die Adria so unbeschwert wie eh und je.
     </p>
@@ -386,18 +462,18 @@ const content = (
 
     <div className="not-prose my-8 p-5 bg-ocean-light/20 rounded-lg border border-ocean-light/40">
       <p className="text-sm font-medium text-ocean-dark mb-1">
-        Kroatien-Törn planen lassen
+        Kroatien-Törn gut vorbereitet planen
       </p>
       <p className="text-gray-700 leading-relaxed">
-        Sie planen Ihren ersten oder nächsten Kroatien-Törn und möchten Revier,
-        Yacht und Route realistisch einschätzen? Wir beraten persönlich – und
-        helfen Ihnen, die passende{" "}
-        <a href="/reviere/mittelmeer/kroatien">Charterbasis in Kroatien</a> zu
-        finden.
+        Wir helfen Ihnen, eine passende Yacht und einen zuverlässigen Vercharterer
+        für Ihre Crew zu finden. Dabei berücksichtigen wir neben Revier und
+        Ausstattung auch unsere Erfahrungen mit den{" "}
+        <a href="/reviere/mittelmeer/kroatien">Charterbasen in Kroatien</a> und
+        unseren Partnern.
       </p>
       <p className="mt-3">
         <a href="/charter-anfrage" className="text-ocean-dark font-medium hover:underline">
-          Jetzt unverbindlich anfragen →
+          Kroatien-Charter anfragen →
         </a>
       </p>
     </div>
@@ -422,7 +498,7 @@ export const kroatienYachtcharterSicherheitsregeln: BlogPost = {
     "/images/blog/kroatien-sicherheit/kroatien-segelyacht-adria-hero.jpg",
   heroImageAlt:
     "Segelyacht segelt in der kroatischen Adria zwischen Inseln – Charterreviere Dalmatien",
-  readingTime: 7,
+  readingTime: 9,
   relatedSlugs: [
     "autopilot-yachtcharter-ausguckpflicht-kvr-5",
     "neue-ankerregeln-kroatien-2026-70-meter-zone",
@@ -454,7 +530,12 @@ export const kroatienYachtcharterSicherheitsregeln: BlogPost = {
     {
       question: "Wie hoch sind die Bußgelder bei Verstößen in kroatischen Gewässern?",
       answer:
-        "Das hängt von Art und Schwere des Verstoßes ab. Bußgelder können von mehreren hundert Euro bis in den vierstelligen Bereich gehen. Bei schwerwiegenden Verstößen kann auch die Weiterfahrt untersagt werden. Die Kontrolldichte auf der Adria hat in den letzten Jahren spürbar zugenommen.",
+        "Das hängt von Art und Schwere des Verstoßes ab. Bußgelder können von mehreren hundert Euro bis in den vierstelligen Bereich gehen. Bei schwerwiegenden Verstößen kann auch die Weiterfahrt untersagt werden. Kontrolliert wird vor allem durch die Hafenämter (Lučke kapetanije), die in der Saison regelmäßig auf dem Wasser präsent sind.",
+    },
+    {
+      question: "Was prüfen die kroatischen Hafenämter bei einer Kontrolle?",
+      answer:
+        "Typische Prüfpunkte sind gültige Schiffspapiere, die Crewliste, Befähigungsnachweise wie der Bootsführerschein, die Sicherheitsausrüstung und die zugelassene Personenzahl. Bei einer koordinierten Kontrollaktion im Juli 2026 standen außerdem vorgeschriebene Meldungen über das Informationssystem CIMIS, die Regeln zu Schwarz- und Grauwasser sowie die Bootsvermietung im Fokus. Bei Chartertörns erledigt die Charterbasis die Meldungen in der Regel; die Crew sollte wissen, wo die Bordpapiere liegen.",
     },
   ],
 };
