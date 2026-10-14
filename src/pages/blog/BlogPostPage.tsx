@@ -139,6 +139,13 @@ export default function BlogPostPage() {
         {/* Article */}
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-3xl mx-auto">
+            {/* Hero credit (optional) */}
+            {post.heroImageCredit && (
+              <p className="text-xs text-gray-500 italic -mt-6 mb-6">
+                {post.heroImageCredit}
+              </p>
+            )}
+
             {/* Meta info */}
             <div className="flex items-center gap-4 text-sm text-gray-500 mb-8 pb-8 border-b border-gray-200">
               <time dateTime={post.date}>{formatDate(post.date)}</time>

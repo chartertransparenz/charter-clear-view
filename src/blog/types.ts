@@ -28,6 +28,7 @@ export interface BlogPostMeta {
   teaser: string;
   heroImage: string;
   heroImageAlt: string;
+  heroImageCredit?: string; // sichtbare Bildunterschrift/Credit unter dem Hero (optional)
   readingTime: number; // minutes
   relatedSlugs: string[];
 }

@@ -1,4 +1,5 @@
 import type { BlogPost } from "../types";
+import { vierKabinenSegelyachtenCharterVergleich } from "./4-kabinen-segelyachten-charter-vergleich";
 import { yachtcharterChalkidikiThessalonikiNikitiKeramoti } from "./yachtcharter-chalkidiki-thessaloniki-nikiti-keramoti";
 import { autopilotYachtcharterAusguckpflichtKvr5 } from "./autopilot-yachtcharter-ausguckpflicht-kvr-5";
 import { kroatienYachtcharterSicherheitsregeln } from "./kroatien-yachtcharter-sicherheitsregeln";
@@ -14,6 +15,7 @@ import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
 export const allPosts: BlogPost[] = [
+  vierKabinenSegelyachtenCharterVergleich,
   yachtcharterChalkidikiThessalonikiNikitiKeramoti,
   autopilotYachtcharterAusguckpflichtKvr5,
   kroatienYachtcharterSicherheitsregeln,
