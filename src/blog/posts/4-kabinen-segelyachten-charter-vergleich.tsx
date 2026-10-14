@@ -370,12 +370,29 @@ const content = (
       geduscht, das Dinghy bestiegen und abends gesessen. Mit gut 4,35 Metern Breite ist die
       Cruiser 46 geräumig, ohne in engen Häfen unhandlich zu wirken.
     </p>
+
+    <PartnerImage
+      src={`${IMG}/bavaria-cruiser-46-hafen-seitenansicht-freewave.jpg`}
+      alt="Bavaria Cruiser 46 in Seitenansicht beim Verlassen des Hafens, mit Schriftzug „cruiser 46“ am Rumpf, Rumpffenstern und einer Person am Heck"
+      width={1600}
+      height={1068}
+      caption="Bavaria Cruiser 46 beim Verlassen des Hafens: Die Seitenansicht zeigt die gestreckte Rumpflinie mit langem, flachem Aufbau und Rumpffenstern für Licht in Salon und Kabinen."
+      credit="FreeWave"
+    />
+
+    <p>
+      Die Seitenansicht macht gut sichtbar, wie die Cruiser 46 ihr Volumen unterbringt: Der Rumpf
+      ist mit rund 13,60 Metern gestreckt, der Aufbau bleibt flach und zieht sich weit nach
+      achtern. Für die Crew heißt das viel Platz unter Deck, ohne dass der Aufbau wuchtig wirkt.
+      Beim Ab- und Anlegen kommt ihr zugute, dass sie im Test gut auf Manöver reagierte und sauber
+      anlief – gerade an der Mooring in vollen Häfen erleichtert das den Alltag.
+    </p>
     <p>
       <strong>Mögliche Nachteile:</strong> Die 4-Kabinen-Version entsteht, indem die große
       Eignerkabine im Vorschiff durch eine Trennwand in zwei Kabinen geteilt wird. Diese beiden
       Bugkabinen sind entsprechend kleiner als die Achterkabinen. Fachtests haben zudem die
       Belüftung der Nasszellen und die etwas weniger bequemen Cockpitsitze kritisiert. Beim
-      Segeln ist sie gutmütig und manövriert sauber, wirkt aber eher komfort- als sportorientiert.
+      Segeln ist sie gutmütig, wirkt aber eher komfort- als sportorientiert.
     </p>
     <p>
       <strong>Für welche Crew?</strong> Für Crews, die ein bewährtes, verlässliches Schiff suchen,
