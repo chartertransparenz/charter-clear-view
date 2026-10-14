@@ -66,7 +66,7 @@ const Footer = () => {
               {/* WhatsApp Button */}
               <div className="mt-4">
                 <a
-                  href="https://wa.me/4975434990080"
+                  href="https://wa.me/497543499080"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
