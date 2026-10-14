@@ -4,32 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { postApi, formErrorMessage } from "@/lib/api";
+import Honeypot from "@/components/Honeypot";
 import CharterRequestForm from "./CharterRequestForm";
-
-// Helper function to call Supabase Edge Functions
-const callEdgeFunction = async (functionName: string, data: any) => {
-  try {
-    const { data: result, error } = await supabase.functions.invoke(functionName, {
-      body: data,
-    });
-
-    if (error) {
-      console.error(`Supabase Edge Function error:`, error);
-      throw error;
-    }
-
-    return { success: true, data: result };
-  } catch (error: any) {
-    console.error(`Error calling ${functionName}:`, error);
-    return { 
-      success: false, 
-      error: error.message || 'Ein Fehler ist aufgetreten. Bitte nutzen Sie alternativ unsere Telefonnummer oder E-Mail-Adresse für direkten Kontakt.' 
-    };
-  }
-};
 
 const Contact = () => {
   const { toast } = useToast();
@@ -41,14 +20,18 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const honeypotRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const result = await callEdgeFunction('send-contact-message', formData);
-      
+      const result = await postApi('/api/send-contact-message', {
+        ...formData,
+        website: honeypotRef.current?.value ?? "",
+      });
+
       if (result.success) {
         toast({
           title: "Nachricht gesendet!",
@@ -56,15 +39,14 @@ const Contact = () => {
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        throw new Error(result.error || 'Fehler beim Senden der Nachricht');
+        // Eingaben bleiben erhalten, Kunde bekommt direkte Alternativen
+        toast({
+          title: "Nachricht konnte nicht gesendet werden",
+          description: formErrorMessage(result.status),
+          variant: "destructive",
+          duration: 20000,
+        });
       }
-    } catch (error: any) {
-      console.error('Contact form error:', error);
-      toast({
-        title: "Fehler beim Senden",
-        description: error.message || "Bitte versuchen Sie es später erneut oder rufen Sie uns direkt an.",
-        variant: "destructive",
-      });
     } finally {
       setIsSubmitting(false);
     }
@@ -276,7 +258,8 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="relative space-y-6">
+                  <Honeypot id="contact-website" ref={honeypotRef} />
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="name" className="text-sm font-medium mb-2 block">

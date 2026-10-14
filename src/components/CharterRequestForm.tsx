@@ -8,7 +8,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Send, Anchor, CheckCircle, CalendarIcon, Loader2 } from "lucide-react";
 import React, { useState, useEffect, useRef, useCallback, useLayoutEffect, memo } from "react";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
+import { postApi, formErrorMessage } from "@/lib/api";
+import { generateEventId } from "@/lib/facebook-tracking";
+import Honeypot from "@/components/Honeypot";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useNavigate } from "react-router-dom";
 import { Calendar } from "@/components/ui/calendar";
@@ -16,34 +18,6 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { format, addDays } from "date-fns";
 import { cn } from "@/lib/utils";
 import { z } from "zod";
-
-// -----------------------------
-// Supabase Edge Function Helper
-// -----------------------------
-const callEdgeFunction = async (functionName: string, data: any) => {
-  try {
-    const {
-      data: result,
-      error
-    } = await supabase.functions.invoke(functionName, {
-      body: data
-    });
-    if (error) {
-      console.error(`Supabase Edge Function error:`, error);
-      throw error;
-    }
-    return {
-      success: true,
-      data: result
-    };
-  } catch (error: any) {
-    console.error(`Error calling ${functionName}:`, error);
-    return {
-      success: false,
-      error: error.message || 'Ein Fehler ist aufgetreten. Bitte nutzen Sie alternativ unsere Telefonnummer oder E-Mail-Adresse für direkten Kontakt.'
-    };
-  }
-};
 
 // -----------------------------
 // Form State Typen / Defaults
@@ -84,6 +58,7 @@ type FormContentProps = {
   onClose: () => void;
   isSubmitting: boolean;
   privacyError: boolean;
+  honeypotRef: React.RefObject<HTMLInputElement>;
 };
 const FormContent = memo(function FormContent({
   formData,
@@ -93,6 +68,7 @@ const FormContent = memo(function FormContent({
   onClose,
   isSubmitting,
   privacyError,
+  honeypotRef,
 }: FormContentProps) {
   return (
     <div className="relative">
@@ -131,7 +107,8 @@ const FormContent = memo(function FormContent({
           </CardHeader>
 
           <CardContent>
-            <form onSubmit={onSubmit} noValidate className="space-y-6">
+            <form onSubmit={onSubmit} noValidate className="relative space-y-6">
+              <Honeypot id="charter-request-website" ref={honeypotRef} />
               {/* Personal Information */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -453,6 +430,7 @@ const CharterRequestForm = ({
   // ---------------------------------
   const [formData, setFormData] = useState<FormState>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const honeypotRef = useRef<HTMLInputElement>(null);
   const [privacyError, setPrivacyError] = useState(false);
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     try {
@@ -542,59 +520,43 @@ const CharterRequestForm = ({
     }
 
     setIsSubmitting(true);
-    console.log('Starting Edge Function call...');
-    
+
+    // Gemeinsame Event-ID für Conversions API (Server) und Pixel (Bestätigungsseite)
+    const leadEventId = generateEventId('Lead');
+
     try {
       const submissionData = {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
         phone: formData.phone,
-        startDate: format(formData.startDate, 'yyyy-MM-dd'),
-        endDate: format(formData.endDate, 'yyyy-MM-dd'),
+        startDate: format(formData.startDate!, 'yyyy-MM-dd'),
+        endDate: format(formData.endDate!, 'yyyy-MM-dd'),
         boatSize: formData.boatSize,
         cabins: formData.cabins,
-        message: formData.message
+        message: formData.message,
+        eventId: leadEventId,
+        website: honeypotRef.current?.value ?? '',
       };
-      
-      console.log('Submission Data:', submissionData);
-      
-      const result = await callEdgeFunction('send-charter-request', submissionData);
-      
-      console.log('Edge Function Result:', result);
-      
+
+      const result = await postApi<{ success?: boolean; referenceId?: string }>(
+        '/api/send-charter-request',
+        submissionData
+      );
+
       if (result.success && result.data?.success) {
-        console.log('Success! Request received, referenceId:', result.data?.referenceId);
-        
         // Reset form and close dialog
         setFormData(initialFormData);
         handleClose();
-        
+
         // Navigate to thank you page
-        navigate('/charter-confirmation');
+        navigate('/charter-confirmation', { state: { leadEventId } });
       } else {
-        throw new Error(result.error || 'Failed to send request');
+        // Eingaben bleiben erhalten, Kunde bekommt direkte Alternativen
+        toast.error(formErrorMessage(result.success ? 500 : result.status), { duration: 20000 });
       }
-    } catch (error: any) {
-      console.error('=== Charter Request Form Error ===');
-      console.error('Error:', error);
-      console.error('Error message:', error.message);
-      
-      // Provide more specific error messages
-      let errorDescription = "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.";
-      
-      if (error.message?.includes('email') || error.message?.includes('E-Mail')) {
-        errorDescription = "Die E-Mail konnte nicht gesendet werden. Bitte kontaktieren Sie uns direkt unter info@chartertransparenz.de oder +49 123 456789.";
-      } else if (error.message?.includes('network') || error.message?.includes('fetch')) {
-        errorDescription = "Netzwerkfehler. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.";
-      } else if (error.message?.includes('timeout')) {
-        errorDescription = "Die Anfrage hat zu lange gedauert. Bitte versuchen Sie es erneut.";
-      }
-      
-      toast.error("Fehler beim Senden: " + errorDescription);
     } finally {
       setIsSubmitting(false);
-      console.log('=== Charter Request Form Submit Finished ===');
     }
   }, [formData, handleClose]);
 
@@ -655,7 +617,7 @@ const CharterRequestForm = ({
   // ---------------------------------
   // Render
   // ---------------------------------
-  const content = <FormContent formData={formData} onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSubmit={handleSubmit} onClose={handleClose} isSubmitting={isSubmitting} privacyError={privacyError} />;
+  const content = <FormContent formData={formData} onInputChange={handleInputChange} onSelectChange={handleSelectChange} onSubmit={handleSubmit} onClose={handleClose} isSubmitting={isSubmitting} privacyError={privacyError} honeypotRef={honeypotRef} />;
   if (children) {
     return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>{children}</DialogTrigger>

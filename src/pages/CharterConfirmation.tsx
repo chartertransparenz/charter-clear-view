@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Home } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
-import { trackFacebookConversion } from "@/lib/facebook-tracking";
 
 declare global {
   interface Window {
@@ -14,53 +13,37 @@ declare global {
 }
 
 const CharterConfirmation = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const leadEventId = (location.state as { leadEventId?: string } | null)?.leadEventId;
+
   useEffect(() => {
-    const trackConversion = async () => {
-      try {
-        // Track via Facebook Conversion API (server-side)
-        const result = await trackFacebookConversion("Lead", {
-          contentName: "Charter Anfrage",
-          contentCategory: "Yacht Charter",
-        });
+    // Conversion-Tracking ausschließlich nach erfolgreich gesendetem
+    // Anfrageformular: Der Server hat das Lead-Event mit dieser Event-ID
+    // bereits an die Conversions API gesendet; hier feuert nur der Pixel mit
+    // derselben ID (Deduplizierung). Direkte Aufrufe, Bookmarks oder Bots
+    // ohne Event-ID lösen kein Lead-Event aus.
+    if (!leadEventId || !/^lead_\d+_[a-z0-9]+$/.test(leadEventId)) {
+      console.debug("CharterConfirmation: no lead event id, conversion tracking skipped");
+      return;
+    }
 
-        if (result.success && result.eventId) {
-          console.log("📊 Server-side conversion tracked, event_id:", result.eventId);
-
-          // Track client-side with SAME event_id for deduplication
-          if (typeof window !== 'undefined' && window.fbq) {
-            window.fbq('track', 'Lead', {}, { eventID: result.eventId });
-            console.log("📊 Client-side pixel fired with matching event_id");
-          }
-
-          // Push to dataLayer with same event_id
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            event: 'lead',
-            event_id: result.eventId,
-            ecommerce: {
-              content_name: 'Charter Anfrage',
-              content_category: 'Yacht Charter',
-            }
-          });
-          console.log("📊 DataLayer push with event_id:", result.eventId);
-        } else {
-          // Fallback: Fire pixel without server tracking
-          console.warn("Server-side tracking failed, firing pixel only");
-          if (typeof window !== 'undefined' && window.fbq) {
-            window.fbq('track', 'Lead');
-          }
-        }
-      } catch (error) {
-        console.error("Conversion tracking error:", error);
-        // Fallback to client-side only
-        if (typeof window !== 'undefined' && window.fbq) {
-          window.fbq('track', 'Lead');
-        }
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Lead', {}, { eventID: leadEventId });
+    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'lead',
+      event_id: leadEventId,
+      ecommerce: {
+        content_name: 'Charter Anfrage',
+        content_category: 'Yacht Charter',
       }
-    };
+    });
 
-    trackConversion();
-  }, []);
+    // State entfernen, damit ein Reload kein weiteres Lead-Event auslöst
+    navigate(location.pathname, { replace: true, state: null });
+  }, [leadEventId, location.pathname, navigate]);
 
   return (
     <>

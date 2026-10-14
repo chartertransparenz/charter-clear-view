@@ -1,32 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Meta } from "@/seo/Meta";
-import { supabase } from "@/integrations/supabase/client";
+import { postApi, formErrorMessage } from "@/lib/api";
+import Honeypot from "@/components/Honeypot";
 import { MapPin, Sailboat, DollarSign, Route, CheckCircle, Send, Loader2, Shield, Award, Eye, Users } from "lucide-react";
 
 const BASE_URL = "https://chartertransparenz.de";
-
-// ─── Edge Function helper ──────────────────────────────────────────────────
-async function callEdgeFunction(functionName: string, data: unknown) {
-  try {
-    const { data: result, error } = await supabase.functions.invoke(functionName, { body: data });
-    if (error) {
-      const ctx = (error as Record<string, unknown>).context;
-      console.error(
-        `[callEdgeFunction] ${functionName} returned an error:`,
-        error.message,
-        ctx ?? ""
-      );
-      throw error;
-    }
-    console.log(`[callEdgeFunction] ${functionName} success:`, result);
-    return { success: true, data: result };
-  } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : "Unbekannter Fehler";
-    console.error(`[callEdgeFunction] ${functionName} exception:`, message);
-    return { success: false, error: message };
-  }
-}
 
 // ─── Service items ─────────────────────────────────────────────────────────
 const SERVICES = [
@@ -136,6 +115,8 @@ function AnfrageForm() {
   const [values, setValues] = useState<FormValues>(EMPTY);
   const [errors, setErrors] = useState<Partial<Record<keyof FormValues, string>>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+  const honeypotRef = useRef<HTMLInputElement>(null);
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -155,7 +136,7 @@ function AnfrageForm() {
       return;
     }
     setStatus("submitting");
-    const result = await callEdgeFunction("send-charter-anfrage", {
+    const result = await postApi("/api/send-charter-anfrage", {
       name: values.name.trim(),
       email: values.email.trim(),
       phone: values.phone.trim() || undefined,
@@ -165,9 +146,11 @@ function AnfrageForm() {
       experienceLevel: values.experienceLevel || undefined,
       consultationPreference: values.consultationPreference || undefined,
       message: values.message.trim(),
+      website: honeypotRef.current?.value ?? "",
     });
     if (!result.success) {
       console.error("[CharterAnfrage] Form submission failed:", result.error);
+      setErrorMessage(formErrorMessage(result.status));
     }
     setStatus(result.success ? "success" : "error");
   }
@@ -198,7 +181,8 @@ function AnfrageForm() {
     }`;
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit} noValidate className="relative space-y-5">
+      <Honeypot id="charter-anfrage-website" ref={honeypotRef} />
       {/* Name + E-Mail */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
@@ -362,14 +346,18 @@ function AnfrageForm() {
 
       {/* Error banner */}
       {status === "error" && (
-        <p className="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          Ihre Anfrage konnte leider nicht gesendet werden. Bitte versuchen Sie es später
-          erneut oder schreiben Sie uns direkt an{" "}
-          <a href="mailto:info@chartertransparenz.de" className="underline">
-            info@chartertransparenz.de
-          </a>
-          .
-        </p>
+        <div role="alert" className="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <p>{errorMessage || formErrorMessage(0)}</p>
+          <p className="mt-2">
+            <a href="mailto:info@chartertransparenz.de" className="underline">
+              info@chartertransparenz.de
+            </a>
+            {" · "}
+            <a href="tel:+497543499080" className="underline">
+              +49 7543 499 080
+            </a>
+          </p>
+        </div>
       )}
 
       <button
