@@ -227,7 +227,9 @@ export async function handleCharterRequest(req: Request, context?: FunctionConte
   // erfolgreichen Mailversand und blockiert die Antwort an den Kunden nicht.
   // context.waitUntil() hält die Function bis zum Abschluss am Leben;
   // Fehler werden nur protokolliert.
-  if (facebookConfigured()) {
+  // Temporarily disabled until consent management is restored.
+  const CAPI_ENABLED = false;
+  if (CAPI_ENABLED && facebookConfigured()) {
     const capi = sendCapiEvent(req, {
       eventName: "Lead",
       eventId: d.eventId,
