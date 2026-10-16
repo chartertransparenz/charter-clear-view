@@ -1,4 +1,6 @@
 import type { NewsItem } from "../types";
+// Import: 2026-10-16
+import { kroatienMarinaTribunjBootstankstelleEroeffnet2026 } from "./kroatien-marina-tribunj-bootstankstelle-eroeffnet-2026";
 // Import: 2026-10-02
 import { kroatienAciMarinasKonzessionen2058 } from "./kroatien-aci-marinas-konzessionen-2058";
 // Import: 2026-09-11
@@ -49,6 +51,7 @@ import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootve
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  kroatienMarinaTribunjBootstankstelleEroeffnet2026,
   kroatienAciMarinasKonzessionen2058,
   kroatienSperrzoneSprengkoerperMessbojenZirje2026,
   kroatienHafenfeuerKastelaBakarac2026,
