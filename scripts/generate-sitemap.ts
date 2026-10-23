@@ -44,6 +44,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/goiot-notausstiegsluken-lagoon-rueckruf-charter-2026',   lastmod: '2026-10-23' },
   { loc: '/news/kroatien-marina-tribunj-bootstankstelle-eroeffnet-2026', lastmod: '2026-10-16' },
   { loc: '/news/kroatien-aci-marinas-konzessionen-2058',                 lastmod: '2026-10-02' },
   { loc: '/news/kroatien-sperrzone-sprengkoerper-messbojen-zirje-2026',  lastmod: '2026-09-11' },
@@ -68,7 +69,7 @@ const URLS: SitemapUrl[] = [
   { loc: '/news/kroatien-marina-preise-liegeplaetze-2026',             lastmod: '2026-06-12' },
   { loc: '/news/poros-ankern-festmachen-hafenbereich-2026',            lastmod: '2026-06-03' },
   { loc: '/news/balearen-posidonia-bojenfelder-buchungsstart-2026',   lastmod: '2026-06-12' },
-  { loc: '/news/kroatien-kraftstoffpreise-charter-2026',              lastmod: '2026-08-28' },
+  { loc: '/news/kroatien-kraftstoffpreise-charter-2026',              lastmod: '2026-10-23' },
   { loc: '/news/griechenland-anreise-ryanair-kerosin-2026',           lastmod: '2026-06-19' },
   { loc: '/news/treibstoffkrise-sommerfluege-2026-yachtcharter',     lastmod: '2026-05-15' },
   { loc: '/news/ees-update-griechenland-italien-portugal-2026',      lastmod: '2026-05-08' },
