@@ -47,6 +47,9 @@ const initialFormData: FormState = {
   privacyAccepted: false
 };
 
+// Kalender: Monats-/Jahresauswahl bis drei Jahre im Voraus
+const calendarToYear = new Date().getFullYear() + 3;
+
 // --------------------------------------
 // FormContent – stabil am Modul-Top-Level
 // --------------------------------------
@@ -71,22 +74,37 @@ const FormContent = memo(function FormContent({
   honeypotRef,
 }: FormContentProps) {
   return (
-    <div className="relative">
+    <div className="relative min-w-0">
+      {/* Close-Button: sticky im Scrollbereich des Dialogs, bleibt beim Scrollen erreichbar */}
+      <div className="sticky top-0 z-30 flex h-0 justify-end">
+        <button
+          type="button"
+          onClick={onClose}
+          className="mt-3 mr-3 w-11 h-11 md:w-12 md:h-12 shrink-0 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200"
+          aria-label="Formular schließen"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
       {/* Hero Section */}
-      <div className="relative h-32 md:h-40 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
+      <div className="relative min-h-32 md:min-h-40 bg-gradient-to-r from-ocean-dark to-ocean-light overflow-hidden">
         <img
           src="/lovable-uploads/cf269f7b-ff3e-46a1-8751-c1cf37175336.webp"
           alt="Segelboot Charter Anfrage"
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/80 to-transparent"></div>
-        <div className="relative z-10 h-full flex items-center justify-center text-center">
-          <div>
-            <Anchor className="w-12 h-12 text-white mx-auto mb-4" />
-            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
+        {/* px-14: Abstand zum Close-Button, damit die Überschrift nicht überdeckt wird */}
+        <div className="relative z-10 min-h-32 md:min-h-40 flex items-center justify-center text-center px-14 py-4 md:py-0">
+          <div className="min-w-0">
+            <Anchor className="w-8 h-8 md:w-12 md:h-12 text-white mx-auto mb-2 md:mb-4" />
+            <h1 className="text-xl sm:text-2xl md:text-4xl font-bold leading-tight text-white mb-2">
               Unverbindliche Charter-Anfrage
             </h1>
-            <p className="text-white/90 text-lg">
+            <p className="text-white/90 text-sm sm:text-base md:text-lg">
               Ihr Traumurlaub auf dem Wasser wartet auf Sie
             </p>
           </div>
@@ -96,9 +114,9 @@ const FormContent = memo(function FormContent({
       {/* Form Section */}
       <div className="py-6 md:py-8 bg-gradient-to-br from-slate-50 to-white">
         <Card className="shadow-xl border-0">
-          <CardHeader className="text-center pb-6">
-            <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
-              <CheckCircle className="w-6 h-6 text-green-600" />
+          <CardHeader className="text-center pb-6 px-4 sm:px-6">
+            <CardTitle className="text-xl sm:text-2xl text-gray-900 flex items-center justify-center gap-2">
+              <CheckCircle className="w-6 h-6 shrink-0 text-green-600" />
               Charter-Anfrage stellen
             </CardTitle>
             <CardDescription className="text-gray-600 text-base">
@@ -106,7 +124,7 @@ const FormContent = memo(function FormContent({
             </CardDescription>
           </CardHeader>
 
-          <CardContent>
+          <CardContent className="px-4 sm:px-6">
             <form onSubmit={onSubmit} noValidate className="relative space-y-6">
               <Honeypot id="charter-request-website" ref={honeypotRef} />
               {/* Personal Information */}
@@ -177,12 +195,12 @@ const FormContent = memo(function FormContent({
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Startdatum *
                     </label>
-                    <Popover>
+                    <Popover modal>
                       <PopoverTrigger asChild>
                         <Button type="button"
                           variant="outline"
                           className={cn(
-                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
+                            "w-full h-10 justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
                             !formData.startDate && "text-muted-foreground"
                           )}
                         >
@@ -190,12 +208,20 @@ const FormContent = memo(function FormContent({
                           {formData.startDate ? format(formData.startDate, "dd.MM.yyyy") : <span>Datum wählen</span>}
                         </Button>
                       </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
+                      <PopoverContent
+                        className="w-auto max-w-[calc(100vw-1rem)] max-h-[var(--radix-popover-content-available-height)] overflow-y-auto overscroll-contain p-0"
+                        align="start"
+                        collisionPadding={8}
+                      >
                         <Calendar
                           mode="single"
                           selected={formData.startDate}
                           onSelect={(date) => onSelectChange('startDate', date as any)}
                           disabled={(date) => date < new Date()}
+                          captionLayout="dropdown-buttons"
+                          fromDate={new Date()}
+                          toYear={calendarToYear}
+                          defaultMonth={formData.startDate}
                           initialFocus
                         />
                       </PopoverContent>
@@ -206,12 +232,12 @@ const FormContent = memo(function FormContent({
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Enddatum *
                     </label>
-                    <Popover>
+                    <Popover modal>
                       <PopoverTrigger asChild>
                         <Button type="button"
                           variant="outline"
                           className={cn(
-                            "w-full justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
+                            "w-full h-10 justify-start text-left font-normal border-gray-200 focus:border-ocean-dark focus:ring-ocean-dark",
                             !formData.endDate && "text-muted-foreground"
                           )}
                         >
@@ -219,12 +245,20 @@ const FormContent = memo(function FormContent({
                           {formData.endDate ? format(formData.endDate, "dd.MM.yyyy") : <span>Datum wählen</span>}
                         </Button>
                       </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
+                      <PopoverContent
+                        className="w-auto max-w-[calc(100vw-1rem)] max-h-[var(--radix-popover-content-available-height)] overflow-y-auto overscroll-contain p-0"
+                        align="start"
+                        collisionPadding={8}
+                      >
                         <Calendar
                           mode="single"
                           selected={formData.endDate}
                           onSelect={(date) => onSelectChange('endDate', date as any)}
                           disabled={(date) => date < new Date() || (formData.startDate && date <= formData.startDate)}
+                          captionLayout="dropdown-buttons"
+                          fromDate={new Date()}
+                          toYear={calendarToYear}
+                          defaultMonth={formData.endDate ?? formData.startDate}
                           initialFocus
                         />
                       </PopoverContent>
@@ -295,7 +329,7 @@ const FormContent = memo(function FormContent({
                     id="privacy"
                     checked={formData.privacyAccepted}
                     onCheckedChange={(checked) => onSelectChange('privacyAccepted', (checked === true) as any)}
-                    className="border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark mt-0.5"
+                    className="h-5 w-5 border-gray-300 data-[state=checked]:bg-ocean-dark data-[state=checked]:border-ocean-dark mt-0.5"
                   />
                   <div className="flex-1">
                     <label htmlFor="privacy" className="text-sm text-gray-600 leading-relaxed">
@@ -320,7 +354,7 @@ const FormContent = memo(function FormContent({
                   type="submit"
                   size="lg"
                   disabled={isSubmitting}
-                  className="w-full bg-ocean-dark text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full h-auto min-h-12 whitespace-normal bg-ocean-dark text-white font-semibold py-3 px-4 sm:px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <Loader2 className="w-5 h-5 animate-spin" />
@@ -334,17 +368,6 @@ const FormContent = memo(function FormContent({
           </CardContent>
         </Card>
       </div>
-
-      {/* Close-Button */}
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center text-gray-700 hover:text-gray-900 hover:bg-white transition-all duration-200 shadow-lg border border-gray-200"
-        aria-label="Formular schließen"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
     </div>
   );
 });
@@ -395,6 +418,8 @@ const CharterRequestForm = ({
     if (dialogOpen) handleClose();
   };
   handleKeyDownRef.current = (e: KeyboardEvent) => {
+    // Escape im Kalender-Popover schließt nur den Kalender (Radix), nicht das ganze Formular
+    if ((e.target as HTMLElement | null)?.closest?.('[data-radix-popper-content-wrapper]')) return;
     if (e.key === 'Escape' && dialogOpen) handleClose();
   };
   useEffect(() => {
@@ -621,7 +646,7 @@ const CharterRequestForm = ({
   if (children) {
     return <Dialog open={dialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>{children}</DialogTrigger>
-        <DialogContent ref={dialogContentRef} className="max-w-4xl max-h-[80vh] overflow-y-auto p-0" style={{
+        <DialogContent ref={dialogContentRef} hideCloseButton className="max-w-4xl max-h-[80vh] overflow-y-auto overscroll-contain p-0" style={{
         scrollBehavior: 'auto'
       }}>
           <DialogTitle className="sr-only">Charter-Anfrage Formular</DialogTitle>

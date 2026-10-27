@@ -5,13 +5,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Send, Star, Shield, Users, CheckCircle, Award, Clock3 } from "lucide-react";
 import { useRef, useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 import { postApi, formErrorMessage } from "@/lib/api";
 import Honeypot from "@/components/Honeypot";
 import CharterRequestForm from "./CharterRequestForm";
 
 const Contact = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,17 +32,14 @@ const Contact = () => {
       });
 
       if (result.success) {
-        toast({
-          title: "Nachricht gesendet!",
+        toast.success("Nachricht gesendet!", {
           description: "Wir melden uns schnellstmöglich bei Ihnen zurück.",
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
         // Eingaben bleiben erhalten, Kunde bekommt direkte Alternativen
-        toast({
-          title: "Nachricht konnte nicht gesendet werden",
+        toast.error("Nachricht konnte nicht gesendet werden", {
           description: formErrorMessage(result.status),
-          variant: "destructive",
           duration: 20000,
         });
       }

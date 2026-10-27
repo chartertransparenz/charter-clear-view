@@ -171,12 +171,12 @@ function AnfrageForm() {
   }
 
   const inputClass = (field: keyof FormValues) =>
-    `w-full rounded-md border px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-ocean-dark/30 transition ${
+    `w-full rounded-md border px-3 py-2.5 text-base md:py-2 md:text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-ocean-dark/30 transition ${
       errors[field] ? "border-red-400 bg-red-50" : "border-gray-200 bg-white"
     }`;
 
   const selectClass = (field: keyof FormValues) =>
-    `w-full rounded-md border px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-ocean-dark/30 transition bg-white ${
+    `w-full rounded-md border px-3 py-2.5 text-base md:py-2 md:text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-ocean-dark/30 transition bg-white ${
       errors[field] ? "border-red-400 bg-red-50" : "border-gray-200"
     }`;
 

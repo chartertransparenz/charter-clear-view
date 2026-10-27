@@ -86,7 +86,7 @@ export default function NorthernDalmatia() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Zurück zu Kroatien
             </Link>
-            <h1 className="text-5xl font-bold mb-4">Norddalmatien</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Norddalmatien</h1>
             <p className="text-xl text-white/90">Kornati Nationalpark und unberührte Naturschönheiten für erfahrene Segler</p>
           </div>
         </div>
@@ -658,13 +658,13 @@ export default function NorthernDalmatia() {
               <h4 className="text-xl font-bold">Sind Sie bereit, die Segel zu setzen und Kroatien zu entdecken?</h4>
             </div>
 
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg text-center">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 sm:p-8 rounded-lg text-center">
               <h4 className="text-xl font-bold mb-4">Fordern Sie jetzt Ihr unverbindliches Angebot an!</h4>
               <p className="mb-6">
                 Kontaktieren Sie uns noch heute. Wir beraten Sie persönlich und finden die ideale Yacht im perfekten Revier für Sie.
               </p>
               <CharterRequestForm>
-                <Button size="lg" className="bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
+                <Button size="lg" className="h-auto min-h-10 whitespace-normal py-2 bg-[hsl(212_95%_25%)] hover:bg-[hsl(212_95%_20%)] text-white border-0 shadow-elegant transition-smooth">
                   Jetzt unverbindliches Angebot einholen
                 </Button>
               </CharterRequestForm>
