@@ -118,7 +118,7 @@ export const META: Record<RegionKey, {
     title: "Alle Charter Destinationen | Weltweite Yachtcharter Reviere",
     description: "Komplette Übersicht aller Yachtcharter Destinationen weltweit: Mittelmeer, Karibik, Atlantik, Indischer Ozean & mehr. Jetzt entdecken!",
     ogImage: "/og/all-territories.jpg",
-    canonical: () => "https://chartertransparenz.de/reviere"
+    canonical: () => "https://chartertransparenz.de/reviere/alle-reviere"
   },
   italien: {
     title: "Yachtcharter Italien – Sardinien, Elba & Sizilien",
@@ -262,7 +262,7 @@ export const META: Record<RegionKey, {
     title: "Yachtcharter Göcek & Fethiye – Buchtenparadies",
     description: "Göcek & Fethiye: Kurze Etappen, geschützte Buchten, Top-Infrastruktur. Perfekt für Familien & Einsteiger.",
     ogImage: "https://chartertransparenz.de/og/gocek-fethiye.jpg",
-    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/gocek-fethiye"
+    canonical: () => "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye"
   },
   kaskalkan: {
     title: "Yachtcharter Kaş & Kalkan | Lykische Küste, Kekova – Antike Türkei",

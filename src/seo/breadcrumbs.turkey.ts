@@ -111,7 +111,7 @@ export const BREADCRUMB_TURKEY = {
         "position": 4, 
         "item": {
           "@type": "WebPage",
-          "@id": "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/gocek-fethiye",
+          "@id": "https://chartertransparenz.de/reviere/mittelmeer/tuerkei/goecek-fethiye",
           "name": "Göcek & Fethiye"
         }
       }

@@ -175,9 +175,9 @@ const FAQ = () => {
           <Badge variant="outline" className="mb-4 border-ocean-blue text-ocean-blue">
             Häufige Fragen
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-ocean-dark">
             FAQ – Ihre Fragen, unsere Antworten zum Yachtcharter
-          </h2>
+          </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Wir haben die häufigsten Fragen unserer Kunden gesammelt und beantwortet, 
             um Ihnen die Planung Ihres Yachtcharters so einfach wie möglich zu machen.
