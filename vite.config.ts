@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode, isSsrBuild }) => {
   return {
     server: {
       host: "::",
@@ -21,9 +21,16 @@ export default defineConfig(({ mode }) => {
         "@": path.resolve(__dirname, "./src"),
       },
     },
+    ssr: {
+      // CommonJS packages without proper ESM named exports in Node
+      noExternal: ["react-helmet-async"],
+    },
     build: {
+      copyPublicDir: !isSsrBuild,
       rollupOptions: {
-        output: {
+        // Vendor chunks only for the browser build; the SSR prerender bundle
+        // (scripts/prerender.ts) keeps react etc. external.
+        output: isSsrBuild ? {} : {
           manualChunks: {
             // React core — loaded once, cached long-term
             'vendor-react': ['react', 'react-dom', 'react-router-dom'],

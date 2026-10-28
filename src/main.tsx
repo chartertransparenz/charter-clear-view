@@ -1,4 +1,4 @@
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
@@ -20,11 +20,20 @@ if (typeof window !== "undefined") {
   });
 }
 
-createRoot(document.getElementById("root")!).render(
+const app = (
   <ErrorBoundary>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </ErrorBoundary>
 );
+
+// Prerendered pages (scripts/prerender.ts) ship their HTML in #root:
+// hydrate it instead of replacing it. The SPA fallback has an empty #root.
+const container = document.getElementById("root")!;
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app);
+} else {
+  createRoot(container).render(app);
+}
 
