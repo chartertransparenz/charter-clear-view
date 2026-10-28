@@ -28,7 +28,7 @@ function escapeHtml(s: string): string {
 function inject(html: string, r: typeof ROUTE): string {
   // Remove existing SEO tags
   let cleaned = html
-    .replace(/<title>.*?<\/title>/i, '')
+    .replace(/<title[^>]*>.*?<\/title>/i, '')
     .replace(/<meta\s+name="description"[^>]*>/i, '')
     .replace(/<link\s+rel="canonical"[^>]*>/i, '')
     .replace(/<meta\s+property="og:title"[^>]*>/i, '')
@@ -56,18 +56,18 @@ function inject(html: string, r: typeof ROUTE): string {
 
   // Build new head tags
   const newTags = `
-    <title>${escapeHtml(r.title)}</title>
-    <meta name="description" content="${escapeHtml(r.desc)}">
-    <link rel="canonical" href="${r.canon}">
-    <meta property="og:title" content="${escapeHtml(r.title)}">
-    <meta property="og:description" content="${escapeHtml(r.desc)}">
-    <meta property="og:url" content="${r.canon}">
-    <meta property="og:image" content="${r.ogImage}">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="${escapeHtml(r.title)}">
-    <meta name="twitter:description" content="${escapeHtml(r.desc)}">
-    <meta name="twitter:image" content="${r.ogImage}">
+    <title data-rh="true">${escapeHtml(r.title)}</title>
+    <meta data-rh="true" name="description" content="${escapeHtml(r.desc)}">
+    <link data-rh="true" rel="canonical" href="${r.canon}">
+    <meta data-rh="true" property="og:title" content="${escapeHtml(r.title)}">
+    <meta data-rh="true" property="og:description" content="${escapeHtml(r.desc)}">
+    <meta data-rh="true" property="og:url" content="${r.canon}">
+    <meta data-rh="true" property="og:image" content="${r.ogImage}">
+    <meta data-rh="true" property="og:type" content="website">
+    <meta data-rh="true" name="twitter:card" content="summary_large_image">
+    <meta data-rh="true" name="twitter:title" content="${escapeHtml(r.title)}">
+    <meta data-rh="true" name="twitter:description" content="${escapeHtml(r.desc)}">
+    <meta data-rh="true" name="twitter:image" content="${r.ogImage}">
     <script type="application/ld+json">${JSON.stringify(breadcrumbJsonLd)}</script>
   `;
 

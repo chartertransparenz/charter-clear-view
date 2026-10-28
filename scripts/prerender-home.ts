@@ -19,7 +19,7 @@ const inject = (html: string) => {
   // Remove ALL existing head tags to prevent duplicates
   let h = html
     // Remove existing title
-    .replace(/<title>[\s\S]*?<\/title>/gi, "")
+    .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
     // Remove all meta description tags
     .replace(/<meta[^>]+name=["']description["'][^>]*>/gi, "")
     // Remove all canonical links
@@ -31,18 +31,18 @@ const inject = (html: string) => {
 
   // Build new head content
   const head = [
-    `<title>${escapeHtml(HOMEPAGE.title)}</title>`,
-    `<meta name="description" content="${escapeHtml(HOMEPAGE.desc)}">`,
-    `<link rel="canonical" href="${escapeHtml(HOMEPAGE.canon)}">`,
-    `<meta property="og:title" content="${escapeHtml(HOMEPAGE.title)}">`,
-    `<meta property="og:description" content="${escapeHtml(HOMEPAGE.desc)}">`,
-    `<meta property="og:url" content="${escapeHtml(HOMEPAGE.canon)}">`,
-    `<meta property="og:type" content="website">`,
-    `<meta property="og:image" content="https://chartertransparenz.de/lovable-uploads/hero-sailing.jpg">`,
-    `<meta name="twitter:card" content="summary_large_image">`,
-    `<meta name="twitter:title" content="${escapeHtml(HOMEPAGE.title)}">`,
-    `<meta name="twitter:description" content="${escapeHtml(HOMEPAGE.desc)}">`,
-    `<meta name="twitter:image" content="https://chartertransparenz.de/lovable-uploads/hero-sailing.jpg">`
+    `<title data-rh="true">${escapeHtml(HOMEPAGE.title)}</title>`,
+    `<meta data-rh="true" name="description" content="${escapeHtml(HOMEPAGE.desc)}">`,
+    `<link data-rh="true" rel="canonical" href="${escapeHtml(HOMEPAGE.canon)}">`,
+    `<meta data-rh="true" property="og:title" content="${escapeHtml(HOMEPAGE.title)}">`,
+    `<meta data-rh="true" property="og:description" content="${escapeHtml(HOMEPAGE.desc)}">`,
+    `<meta data-rh="true" property="og:url" content="${escapeHtml(HOMEPAGE.canon)}">`,
+    `<meta data-rh="true" property="og:type" content="website">`,
+    `<meta data-rh="true" property="og:image" content="https://chartertransparenz.de/lovable-uploads/hero-sailing.jpg">`,
+    `<meta data-rh="true" name="twitter:card" content="summary_large_image">`,
+    `<meta data-rh="true" name="twitter:title" content="${escapeHtml(HOMEPAGE.title)}">`,
+    `<meta data-rh="true" name="twitter:description" content="${escapeHtml(HOMEPAGE.desc)}">`,
+    `<meta data-rh="true" name="twitter:image" content="https://chartertransparenz.de/lovable-uploads/hero-sailing.jpg">`
   ].join("\n    ");
 
   // Inject new head content before </head>
@@ -54,6 +54,14 @@ console.log("\n🚀 Starting Homepage SSG prerender...\n");
 
 try {
   const tpl = readFileSync("dist/index.html", "utf8");
+
+  // Neutral SPA fallback for routes without their own HTML (see _redirects).
+  // Must not carry homepage title/description/canonical, otherwise every
+  // non-prerendered page inherits them.
+  const fallback = tpl.replace("</head>", `    <title>CharterTransparenz</title>\n  </head>`);
+  writeFileSync("dist/spa-fallback.html", fallback, "utf8");
+  console.log("✓ Wrote: dist/spa-fallback.html");
+
   const finalHtml = inject(tpl);
   writeFileSync("dist/index.html", finalHtml, "utf8");
   

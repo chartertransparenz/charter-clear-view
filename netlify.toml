@@ -449,7 +449,7 @@
 # SPA fallback - LAST PRIORITY (catch-all for non-prerendered routes)
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/spa-fallback.html"
   status = 200
 
 # Cache-Bust 2025-10-13T19:45:00Z

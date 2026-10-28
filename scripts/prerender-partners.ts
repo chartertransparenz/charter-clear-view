@@ -282,7 +282,7 @@ const inject = (html: string, r: Route) => {
   // Remove ALL existing head tags to prevent duplicates
   let h = html
     // Remove existing title
-    .replace(/<title>[\s\S]*?<\/title>/gi, "")
+    .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
     // Remove all meta description tags
     .replace(/<meta[^>]+name=["']description["'][^>]*>/gi, "")
     // Remove all canonical links
@@ -294,18 +294,18 @@ const inject = (html: string, r: Route) => {
 
   // Build new head content
   const head = [
-    `<title>${escapeHtml(r.title)}</title>`,
-    `<meta name="description" content="${escapeHtml(r.desc)}">`,
-    `<link rel="canonical" href="${escapeHtml(r.canon)}">`,
-    `<meta property="og:title" content="${escapeHtml(r.title)}">`,
-    `<meta property="og:description" content="${escapeHtml(r.desc)}">`,
-    `<meta property="og:url" content="${escapeHtml(r.canon)}">`,
-    `<meta property="og:type" content="website">`,
-    `<meta property="og:image" content="${escapeHtml(r.image)}">`,
-    `<meta name="twitter:card" content="summary_large_image">`,
-    `<meta name="twitter:title" content="${escapeHtml(r.title)}">`,
-    `<meta name="twitter:description" content="${escapeHtml(r.desc)}">`,
-    `<meta name="twitter:image" content="${escapeHtml(r.image)}">`
+    `<title data-rh="true">${escapeHtml(r.title)}</title>`,
+    `<meta data-rh="true" name="description" content="${escapeHtml(r.desc)}">`,
+    `<link data-rh="true" rel="canonical" href="${escapeHtml(r.canon)}">`,
+    `<meta data-rh="true" property="og:title" content="${escapeHtml(r.title)}">`,
+    `<meta data-rh="true" property="og:description" content="${escapeHtml(r.desc)}">`,
+    `<meta data-rh="true" property="og:url" content="${escapeHtml(r.canon)}">`,
+    `<meta data-rh="true" property="og:type" content="website">`,
+    `<meta data-rh="true" property="og:image" content="${escapeHtml(r.image)}">`,
+    `<meta data-rh="true" name="twitter:card" content="summary_large_image">`,
+    `<meta data-rh="true" name="twitter:title" content="${escapeHtml(r.title)}">`,
+    `<meta data-rh="true" name="twitter:description" content="${escapeHtml(r.desc)}">`,
+    `<meta data-rh="true" name="twitter:image" content="${escapeHtml(r.image)}">`
   ].join("\n    ");
 
   // Inject new head content before </head>

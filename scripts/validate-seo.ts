@@ -46,13 +46,10 @@ function validatePage(filePath: string) {
     throw new Error(`❌ ${relativePath}: Found ${titleCount} title tags (expected 1)`);
   }
   
-  // 4. Check for Helmet-managed SEO tags (data-rh="true")
-  const helmetSeoRegex = /<(title|link[^>]+rel=["']canonical["']|meta[^>]+name=["']description["'])[^>]*data-rh=["']true["'][^>]*>/gi;
-  const helmetSeoMatches = html.match(helmetSeoRegex);
-  if (helmetSeoMatches && helmetSeoMatches.length > 0) {
-    throw new Error(`❌ ${relativePath}: Found ${helmetSeoMatches.length} Helmet-managed SEO tags (forbidden)`);
-  }
-  
+  // 4. Static SEO tags carry data-rh="true" on purpose: pages that also set
+  //    their tags via react-helmet-async then replace them at runtime instead
+  //    of adding duplicates. Uniqueness is enforced by checks 1–3.
+
   // 5. Check H1 exists (WARNING for SPA routes, not blocking)
   const h1Match = html.match(/<h1[^>]*>[\s\S]*?<\/h1>/i);
   if (!h1Match || !h1Match[0].replace(/<[^>]+>/g, '').trim()) {
