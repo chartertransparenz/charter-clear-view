@@ -148,6 +148,7 @@ const FAQ = () => {
       title: "Telefon-Hotline",
       description: "Mo-Fr 8:00-18:00 Uhr",
       action: "+49 7543 499 080",
+      href: "tel:+497543499080",
       color: "bg-green-500"
     },
     {
@@ -246,6 +247,15 @@ const FAQ = () => {
                   </div>
                   <h4 className="font-semibold text-ocean-dark mb-2">{option.title}</h4>
                   <p className="text-sm text-muted-foreground mb-4">{option.description}</p>
+                  {option.href ? (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full min-h-11 border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white"
+                    >
+                      <a href={option.href}>{option.action}</a>
+                    </Button>
+                  ) : (
                   <Button 
                     variant="outline" 
                     className="w-full border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white"
@@ -259,6 +269,7 @@ const FAQ = () => {
                   >
                     {option.action}
                   </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}

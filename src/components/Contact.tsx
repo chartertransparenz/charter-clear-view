@@ -70,7 +70,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefon",
-      content: "+49 7543 499 080"
+      content: "+49 7543 499 080",
+      href: "tel:+497543499080"
     },
     {
       icon: Mail,
@@ -193,7 +194,13 @@ const Contact = () => {
                     <div>
                       <div className="font-semibold text-ocean-dark mb-1">{info.title}</div>
                       <div className="text-sm text-muted-foreground whitespace-pre-line">
-                        {info.content}
+                        {info.href ? (
+                          <a href={info.href} className="inline-flex items-center min-h-11 hover:text-ocean-blue transition-smooth">
+                            {info.content}
+                          </a>
+                        ) : (
+                          info.content
+                        )}
                       </div>
                     </div>
                   </div>

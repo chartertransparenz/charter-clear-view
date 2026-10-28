@@ -5,9 +5,8 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: "Yacht Charter", href: "#flotte" },
-      { name: "Gruppenevents", href: "#leistungen" },
-      { name: "Beratung", href: "#kontakt" }
+      { name: "Yacht Charter", href: "/reviere/alle-reviere" },
+      { name: "Beratung", href: "/charter-anfrage" }
     ],
     destinations: [
       { name: "Mittelmeer", href: "/reviere/mittelmeer" },
@@ -23,7 +22,7 @@ const Footer = () => {
       { name: "Über uns", href: "/ueber-uns" },
       { name: "Blog", href: "/blog" },
       { name: "FAQ", href: "/faq" },
-      { name: "Kontakt", href: "#kontakt" },
+      { name: "Kontakt", href: "/charter-anfrage" },
       { name: "Impressum", href: "/impressum" },
       { name: "Datenschutz", href: "/datenschutz" }
     ]
@@ -56,7 +55,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-sunset" />
-                <span className="text-white/80">+49 7543 499 080</span>
+                <a href="tel:+497543499080" className="inline-flex items-center min-h-11 text-white/80 hover:text-sunset transition-smooth">+49 7543 499 080</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-sunset" />
@@ -179,9 +178,6 @@ const Footer = () => {
               © {currentYear} CharterTransparenz. Alle Rechte vorbehalten.
             </div>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-sunset transition-smooth">
-                AGB
-              </a>
               <a href="/impressum" className="hover:text-sunset transition-smooth">
                 Impressum
               </a>

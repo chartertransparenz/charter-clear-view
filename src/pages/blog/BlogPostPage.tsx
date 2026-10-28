@@ -12,6 +12,7 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
+import { Phone, Send } from "lucide-react";
 import { getPostBySlug, getRelatedPosts } from "@/blog/posts/index";
 import { type BlogCategory } from "@/blog/types";
 
@@ -201,16 +202,34 @@ export default function BlogPostPage() {
                 Wir beraten Sie unabhängig und ohne Verkaufsdruck – auf Basis von über 30 Jahren
                 Charter-Erfahrung. Gerne besprechen wir Revier, Boot und Budget mit Ihnen persönlich.
               </p>
-              <Suspense fallback={<Button size="lg" disabled>Anfrage stellen</Button>}>
-                <CharterRequestForm>
-                  <Button
-                    size="lg"
-                    className="bg-ocean-dark hover:bg-ocean-blue text-white border-0 shadow-sm transition-smooth"
-                  >
-                    Unverbindlich anfragen
-                  </Button>
-                </CharterRequestForm>
-              </Suspense>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <Suspense fallback={<Button size="lg" disabled>Anfrage stellen</Button>}>
+                  <CharterRequestForm>
+                    <Button
+                      size="lg"
+                      className="bg-ocean-dark hover:bg-ocean-blue text-white border-0 shadow-sm transition-smooth"
+                    >
+                      Unverbindlich anfragen
+                    </Button>
+                  </CharterRequestForm>
+                </Suspense>
+                <a
+                  href="tel:+497543499080"
+                  className="inline-flex items-center gap-2 min-h-11 px-4 font-semibold text-ocean-dark hover:text-ocean-blue transition-smooth"
+                >
+                  <Phone className="w-4 h-4" />
+                  +49 7543 499 080
+                </a>
+                <a
+                  href="https://wa.me/497543499080"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 min-h-11 px-4 font-semibold text-ocean-dark hover:text-ocean-blue transition-smooth"
+                >
+                  <Send className="w-4 h-4" />
+                  WhatsApp senden
+                </a>
+              </div>
             </div>
           </div>
         </div>
