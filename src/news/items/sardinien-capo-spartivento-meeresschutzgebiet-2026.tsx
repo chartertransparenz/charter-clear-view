@@ -96,7 +96,7 @@ export const sardinienCapoSpartiventoMeeresschutzgebiet2026: NewsItem = {
   canonical_topic_key: "sardinien_capo_spartivento_meeresschutzgebiet_2026",
   cta_text:
     "Wenn Sie einen Sardinien-Törn ab Cagliari oder entlang der Südküste planen, prüfen wir gerne mit Ihnen, welche Etappen und Ankerplätze sinnvoll sind.",
-  image: "/yachtcharter-costa-smeralda.jpg",
+  image: "/lovable-uploads/9ed7e340-fa6c-4e80-a817-0f19eda7e395.webp",
   imageAlt: "Yachtcharter an der Küste Sardiniens mit türkisblauem Wasser",
   imageCaption:
     "Sardiniens Südwestküste rund um Chia und Capo Spartivento: ein reizvolles Revier, in dem Schutzbereiche und Ankerregeln zur Saison 2026 wichtiger werden.",
