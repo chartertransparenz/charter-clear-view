@@ -119,9 +119,11 @@ export default function BlogListPage() {
           </div>
         </div>
 
+        {/* Mobil: Artikel vor den Törn-Hinweisen (CSS order), ab md DOM-Reihenfolge */}
+        <div className="flex flex-col">
         {/* Aktuelle Törn-Hinweise */}
         {newsItems.length > 0 && (
-          <div className="bg-gray-50 border-b border-gray-100 py-10">
+          <div className="order-2 md:order-none bg-gray-50 border-b border-gray-100 py-10">
             <div className="container mx-auto px-4">
               <div className="flex items-end justify-between mb-5">
                 <div>
@@ -171,7 +173,7 @@ export default function BlogListPage() {
         )}
 
         {/* Article Grid */}
-        <div className="container mx-auto px-4 py-12">
+        <div className="order-1 md:order-none container mx-auto px-4 py-12">
           {filtered.length === 0 ? (
             <p className="text-gray-500 text-center py-16">
               Keine Artikel in dieser Kategorie gefunden.
@@ -234,6 +236,7 @@ export default function BlogListPage() {
               ))}
             </div>
           )}
+        </div>
         </div>
       </div>
     </>
