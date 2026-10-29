@@ -13,6 +13,9 @@
 //   2. tags already written for this route by a legacy prerender-*.ts script
 //   3. entry in src/seo/meta.config.ts whose canonical matches the URL
 //   4. derived from the rendered page (H1, first paragraph) – reported as warning
+//
+// Social preview image (og:image*, twitter:image): scripts/og-images.ts (FIX-8),
+// result per URL in dist/og/manifest.json.
 
 process.env.NODE_ENV = process.env.NODE_ENV || "production";
 
@@ -20,6 +23,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join } from "path";
 import { pathToFileURL } from "url";
 import { META } from "../src/seo/meta.config";
+import { applyOgImage, writeDefaultImage, type OgResult } from "./og-images";
 
 const SITE = "https://chartertransparenz.de";
 const DIST = "dist";
@@ -153,6 +157,7 @@ async function main() {
   const { render } = (await import(pathToFileURL(SSR_ENTRY).href)) as { render: Render };
 
   let warned = 0;
+  const ogManifest: Record<string, OgResult> = {};
   for (const url of urls) {
     const out = url === "/" ? join(DIST, "index.html") : join(DIST, url, "index.html");
     // Head from the route's existing HTML (legacy script output) if present,
@@ -165,18 +170,26 @@ async function main() {
     const warnings: string[] = [];
     if (!/<h1[\s>]/i.test(html)) warnings.push("page has no <h1>");
     const legacyHead = dedupeJsonLd(`${templateHead}</head>`, html, helmet.script);
-    const head = completeHead(applyHelmet(legacyHead, helmet), url, html, warnings);
+    const metaHead = completeHead(applyHelmet(legacyHead, helmet), url, html, warnings);
+    const legacyOgHead = template === fallback ? "" : templateHead;
+    const { head, result: og } = await applyOgImage(metaHead, url, html, helmet.priority + helmet.meta, legacyOgHead);
+    ogManifest[url] = og;
     const body = fallbackBody.replace('<div id="root"></div>', `<div id="root">${html}</div>`);
 
     mkdirSync(join(out, ".."), { recursive: true });
     writeFileSync(out, head + body, "utf8");
 
     const words = textOf(html).split(" ").length;
-    console.log(`✓ ${url} (${words} words)${warnings.length ? "  ⚠️  " + warnings.join("; ") : ""}`);
+    console.log(`✓ ${url} (${words} words, og: ${og.source})${warnings.length ? "  ⚠️  " + warnings.join("; ") : ""}`);
     if (warnings.length) warned++;
   }
 
-  console.log(`\n✅ Prerendered ${urls.length} URLs (${warned} with derived meta)\n`);
+  await writeDefaultImage();
+  writeFileSync(join(DIST, "og", "manifest.json"), JSON.stringify(ogManifest, null, 2), "utf8");
+  const bySource = Object.values(ogManifest).reduce<Record<string, number>>((n, o) => ({ ...n, [o.source]: (n[o.source] || 0) + 1 }), {});
+
+  console.log(`\n✅ Prerendered ${urls.length} URLs (${warned} with derived meta)`);
+  console.log(`🖼️  Preview images: ${JSON.stringify(bySource)}\n`);
 }
 
 main().catch((error) => {
