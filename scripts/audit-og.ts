@@ -50,6 +50,7 @@ function checkImage(src: string) {
 async function main() {
   const sitemap = await (await fetch(`${base}/sitemap.xml`)).text();
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
+  if (!urls.length) throw new Error(`no URLs in ${base}/sitemap.xml`);
   const manifest: Record<string, { source: string }> =
     await fetch(`${base}/og/manifest.json`).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
 
