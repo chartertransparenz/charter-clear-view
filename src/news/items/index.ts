@@ -1,4 +1,6 @@
 import type { NewsItem } from "../types";
+// Import: 2026-10-30
+import { friedrichshafenZadarRyanairYachtcharter2027 } from "./friedrichshafen-zadar-ryanair-yachtcharter-2027";
 // Import: 2026-10-23
 import { goiotNotausstiegslukeLagoonRueckrufCharter2026 } from "./goiot-notausstiegsluken-lagoon-rueckruf-charter-2026";
 // Import: 2026-10-16
@@ -53,6 +55,7 @@ import { montenegroPlavaSpilja2026 } from "./montenegro-plava-spilja-motorbootve
 
 // Registry: alle News-Items in umgekehrt chronologischer Reihenfolge
 export const allNewsItems: NewsItem[] = [
+  friedrichshafenZadarRyanairYachtcharter2027,
   goiotNotausstiegslukeLagoonRueckrufCharter2026,
   kroatienMarinaTribunjBootstankstelleEroeffnet2026,
   kroatienAciMarinasKonzessionen2058,

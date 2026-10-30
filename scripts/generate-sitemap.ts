@@ -44,6 +44,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/friedrichshafen-zadar-ryanair-yachtcharter-2027',        lastmod: '2026-10-30' },
   { loc: '/news/goiot-notausstiegsluken-lagoon-rueckruf-charter-2026',   lastmod: '2026-10-23' },
   { loc: '/news/kroatien-marina-tribunj-bootstankstelle-eroeffnet-2026', lastmod: '2026-10-16' },
   { loc: '/news/kroatien-aci-marinas-konzessionen-2058',                 lastmod: '2026-10-02' },
