@@ -5,6 +5,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
+import { useAnalytics } from "@/hooks/use-analytics";
 import Index from "./pages/Index";
 
 // Lazy-load all non-home pages so the initial bundle stays small
@@ -189,6 +190,9 @@ function App() {
   useEffect(() => {
     document.documentElement.lang = 'de';
   }, []);
+
+  // GA4 nur nach Statistik-Einwilligung, inkl. SPA-Pageviews.
+  useAnalytics();
 
   return (
     <QueryClientProvider client={queryClient}>
