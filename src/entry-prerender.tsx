@@ -1,3 +1,4 @@
+/// <reference types="node" />
 // Build-time prerender entry (FIX-3). Bundled with `vite build --ssr` and used
 // by scripts/prerender.ts to turn every sitemap route into static HTML.
 // Not loaded in the browser.
