@@ -1,4 +1,5 @@
 import { Anchor, MapPin, Phone, Mail, Facebook, Instagram, Send } from "lucide-react";
+import { openConsentSettings } from "@/lib/consent";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -177,13 +178,22 @@ const Footer = () => {
             <div>
               © {currentYear} CharterTransparenz. Alle Rechte vorbehalten.
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <a href="/impressum" className="hover:text-sunset transition-smooth">
                 Impressum
               </a>
               <a href="/datenschutz" className="hover:text-sunset transition-smooth">
                 Datenschutz
               </a>
+              {/* Oeffnet den Cookiebot-Dialog, damit die Einwilligung jederzeit
+                  geaendert oder widerrufen werden kann. */}
+              <button
+                type="button"
+                onClick={openConsentSettings}
+                className="hover:text-sunset transition-smooth underline-offset-2 hover:underline"
+              >
+                Cookie-Einstellungen
+              </button>
             </div>
           </div>
         </div>

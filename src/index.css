@@ -1,3 +1,6 @@
+/* Lokal gehostete Inter-Webfonts (ersetzt die externe Google-Fonts-Einbindung) */
+@import "./styles/fonts.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
