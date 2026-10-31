@@ -1,58 +1,47 @@
+# Cookiebot – was genau eingebaut war
 
+Hinweis: Das ist eine Übersicht, kein Umbau. Es wird nichts geändert.
 
-## Problembehebung: NauSYS Widget lädt ohne Kroatien-Preset
+## 1. Erster Einbau (22.08.2025)
+Dieser Code stand im Kopfbereich jeder Seite:
 
-### Ursache des Problems
-
-Die Cleanup-Logik in `NausysWidget.tsx` entfernt das globale jQuery (aus `index.html`), was zu Timing-Problemen führt. jQuery ist bereits global verfügbar und sollte **nicht** entfernt oder neu geladen werden.
-
-### Lösung
-
-Die `NausysWidget.tsx` so anpassen, dass:
-1. **jQuery nicht entfernt wird** - nur NauSYS-Scripts werden entfernt
-2. **Kein erneutes Laden von jQuery** - wir nutzen das bereits global geladene jQuery
-3. **Direktes Laden des NauSYS-Widgets** - da jQuery bereits verfügbar ist
-
-### Änderungen in `src/components/NausysWidget.tsx`
-
-**Vorher (problematisch):**
-```javascript
-// Entfernt auch jQuery - FALSCH!
-const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"], script[src*="jquery"]');
-oldScripts.forEach(s => s.remove());
-
-// Lädt jQuery neu - UNNÖTIG!
-const jqueryScript = document.createElement('script');
-jqueryScript.src = 'https://code.jquery.com/jquery-3.5.1.min.js';
-jqueryScript.onload = () => {
-  // Dann NauSYS laden
-};
+```html
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
+  data-cbid="90f2041c-07f6-43b5-9855-e31d5276fe87"
+  data-blockingmode="auto" type="text/javascript"></script>
 ```
 
-**Nachher (korrekt):**
-```javascript
-// Nur NauSYS-Scripts entfernen, jQuery beibehalten
-const oldScripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
-oldScripts.forEach(s => s.remove());
+- Cookiebot-ID: 90f2041c-07f6-43b5-9855-e31d5276fe87
+- Blockiermodus "auto": Cookiebot hat Cookies und Tracking selbstständig blockiert, bis ein Besucher zugestimmt hat.
 
-// Direkt NauSYS laden (jQuery ist bereits global vorhanden)
-const script = document.createElement('script');
-script.src = 'https://widget.nausys.com/NauSYS-widgets/nausys-widget-loader.js';
-script.setAttribute('data-nausys-widget-token', profile.token);
-script.setAttribute('data-nausys-widget-settings', profile.settings);
-script.setAttribute('data-nausys-widget-language', 'GERMAN');
+## 2. Umbau (September 2025)
+In der Vorschau hat das Banner Probleme gemacht. Deshalb wurde es so geändert, dass es nur auf chartertransparenz.de lädt:
 
-if (profile.profile) {
-  script.setAttribute('data-nausys-widget-profile', profile.profile);
-}
-
-document.body.appendChild(script);
+```html
+<script type="module">
+  if (location.hostname.includes("chartertransparenz.de")) {
+    const s = document.createElement("script");
+    s.id = "Cookiebot";
+    s.src = "https://consent.cookiebot.com/uc.js";
+    s.dataset.cbid = "90f2041c-07f6-43b5-9855-e31d5276fe87";
+    s.dataset.blockingmode = "auto";
+    s.type = "text/javascript";
+    document.head.appendChild(s);
+  }
+</script>
 ```
 
-### Warum das funktionieren wird
+## 3. Meta Pixel (November 2025)
+- Das Meta Pixel (ID 732254976580940) kam direkt hinter Cookiebot.
+- Dabei fiel auf: Das Pixel lud ohne Zustimmung, war also nicht DSGVO-konform.
 
-- jQuery ist bereits in `index.html` (Zeile 39) global geladen
-- Das NauSYS-Widget kann sofort starten, da jQuery verfügbar ist
-- Kein Timing-Problem mehr zwischen jQuery und NauSYS
-- Das Kroatien-Profil (`ff1d9618-0655-4fd7-ba65-e08f5d5124a2u`) wird korrekt angewendet
+## 4. Entfernt (23.11.2025)
+- Auf Ihren Wunsch wurde der Cookiebot-Code komplett gelöscht.
+- Danach wurde auch das Meta Pixel im Browser abgeschaltet.
 
+## Was heute noch übrig ist
+- Die Sicherheitseinstellungen der Seite erlauben Cookiebot weiterhin. Das ist nur eine Freigabe und hat keine Wirkung.
+- Ein Hinweis im Code: Das Meta Pixel soll erst wieder aktiviert werden, wenn Cookiebot zurück ist.
+- Ein Cookie-Banner wird zurzeit nicht angezeigt.
+- Das Lead-Tracking über den Server (Conversion API) läuft unabhängig davon weiter.
+- Andere Cookiebot-Einstellungen gab es nicht, etwa eine eigene Banner-Gestaltung oder Regeln je Cookie-Art.
