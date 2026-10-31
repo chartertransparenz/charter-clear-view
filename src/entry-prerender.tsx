@@ -32,7 +32,7 @@ export function render(url: string): Promise<PrerenderResult> {
           stream.on("end", () => {
             const h = helmetServerContext.helmet;
             resolve({
-              html: Buffer.concat(chunks).toString("utf8"),
+              html: chunks.map((c) => c.toString("utf8")).join(""),
               head: {
                 title: h?.title.toString() ?? "",
                 priority: h?.priority.toString() ?? "",
