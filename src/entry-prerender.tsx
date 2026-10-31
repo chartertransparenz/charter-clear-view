@@ -1,3 +1,4 @@
+/// <reference types="node" />
 // Build-time prerender entry (FIX-3). Bundled with `vite build --ssr` and used
 // by scripts/prerender.ts to turn every sitemap route into static HTML.
 // Not loaded in the browser.
@@ -31,7 +32,7 @@ export function render(url: string): Promise<PrerenderResult> {
           stream.on("end", () => {
             const h = helmetServerContext.helmet;
             resolve({
-              html: Buffer.concat(chunks).toString("utf8"),
+              html: Buffer.concat(chunks as unknown as Uint8Array[]).toString("utf8"),
               head: {
                 title: h?.title.toString() ?? "",
                 priority: h?.priority.toString() ?? "",

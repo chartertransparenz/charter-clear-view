@@ -259,7 +259,7 @@ export const kroatienWaldbraendeLoeschflugzeugeChartercrews2026: NewsItem = {
   meta_description:
     "Waldbrände in Dalmatien 2026: Omiš, Pelješac und zuletzt ein Großbrand auf Brač bei Milna. Canadair-Löschflugzeuge schöpfen Wasser aus der Adria. Was Chartercrews beachten müssen und wie man sich bei einem Feuereinsatz richtig verhält.",
   image: "/images/news/kroatien-waldbraende-loeschflugzeuge-chartercrews-2026.jpg",
-  image_alt: "Küstenlandschaft in Dalmatien mit Waldbrand und Rauch über der Adria",
+  imageAlt: "Küstenlandschaft in Dalmatien mit Waldbrand und Rauch über der Adria",
   is_featured: true,
   cta_text:
     "Wir helfen Ihnen, Revier und Saison für Ihren Kroatien-Charter realistisch einzuplanen.",
