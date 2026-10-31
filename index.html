@@ -27,12 +27,12 @@
     <!-- Theme Color for Mobile -->
     <meta name="theme-color" content="#1e40af" />
 
-    <!-- Inter wird lokal aus /fonts/inter/ ausgeliefert (siehe src/styles/fonts.css).
-         Keine Verbindung zu fonts.googleapis.com / fonts.gstatic.com mehr. -->
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="/fonts/inter/inter-latin-400-normal.woff2" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="/fonts/inter/inter-latin-700-normal.woff2" />
+    <!-- Inter wird lokal aus /fonts/inter/ ausgeliefert: @font-face-Regeln mit
+         font-display: swap in src/styles/fonts.css. Keine Verbindung zu
+         fonts.googleapis.com / fonts.gstatic.com mehr.
+         Bewusst ohne Font-Preload-Links: die Schriften werden erst nach der
+         Hydration angewandt, wodurch Chrome einen ungenutzten Preload meldet.
+         Das Laden uebernimmt die CSS-Regel. -->
 
     <!-- Preconnect for Nausys widget CDN -->
     <link rel="preconnect" href="https://widget.nausys.com" />
