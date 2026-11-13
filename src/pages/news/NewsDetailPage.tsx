@@ -14,6 +14,7 @@ const STATUS_LABEL: Record<NewsStatus, string> = {
   angekuendigt: "Angekündigt",
   update: "Update",
   unklar: "Unklar",
+  entwurf: "Entwurf",
 };
 
 const STATUS_CLASS: Record<NewsStatus, string> = {
@@ -21,6 +22,7 @@ const STATUS_CLASS: Record<NewsStatus, string> = {
   angekuendigt: "bg-amber-50 text-amber-700 border-amber-200",
   update: "bg-sky-50 text-sky-700 border-sky-200",
   unklar: "bg-gray-50 text-gray-500 border-gray-200",
+  entwurf: "bg-violet-50 text-violet-700 border-violet-200",
 };
 
 const TYPE_LABEL: Record<NewsContentType, string> = {
@@ -175,7 +177,7 @@ export default function NewsDetailPage() {
             </span>
             <span>
               <span className="text-gray-500">Wirksam ab:</span>{" "}
-              {formatDate(item.effective_from)}
+              {item.effective_from ? formatDate(item.effective_from) : "noch offen"}
             </span>
             <span>
               <span className="text-gray-500">Stand:</span>{" "}

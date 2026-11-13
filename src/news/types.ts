@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export type NewsContentType = "basis_hinweis" | "update" | "kurzmeldung";
 
-export type NewsStatus = "in_kraft" | "angekuendigt" | "update" | "unklar";
+export type NewsStatus = "in_kraft" | "angekuendigt" | "update" | "unklar" | "entwurf";
 
 export type NewsPriority = "hoch" | "mittel" | "niedrig";
 
@@ -35,7 +35,7 @@ export interface NewsItemMeta {
   region: string;
   country_or_area: string;
   status: NewsStatus;
-  effective_from: string;   // ISO date: "2026-01-01"
+  effective_from: string;   // ISO date: "2026-01-01"; "" = Inkrafttreten noch offen (z. B. Gesetzentwurf)
   published_at: string;     // ISO date
   updated_at: string;       // ISO date
   priority: NewsPriority;

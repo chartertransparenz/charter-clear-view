@@ -44,6 +44,7 @@ const URLS: SitemapUrl[] = [
   // ── News ─────────────────────────────────────────────────────────────────
   { loc: '/news', lastmod: BUILD_TIME },
   // News detail pages
+  { loc: '/news/montenegro-neues-yachtgesetz-charter-vignette-2026',     lastmod: '2026-11-13' },
   { loc: '/news/friedrichshafen-zadar-ryanair-yachtcharter-2027',        lastmod: '2026-10-30' },
   { loc: '/news/goiot-notausstiegsluken-lagoon-rueckruf-charter-2026',   lastmod: '2026-10-23' },
   { loc: '/news/kroatien-marina-tribunj-bootstankstelle-eroeffnet-2026', lastmod: '2026-10-16' },

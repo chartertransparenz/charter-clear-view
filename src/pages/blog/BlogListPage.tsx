@@ -23,6 +23,7 @@ const NEWS_STATUS_LABEL: Record<NewsStatus, string> = {
   angekuendigt: "Angekündigt",
   update: "Update",
   unklar: "Unklar",
+  entwurf: "Entwurf",
 };
 
 const NEWS_STATUS_CLASS: Record<NewsStatus, string> = {
@@ -30,6 +31,7 @@ const NEWS_STATUS_CLASS: Record<NewsStatus, string> = {
   angekuendigt: "bg-amber-50 text-amber-700 border-amber-200",
   update: "bg-blue-50 text-blue-700 border-blue-200",
   unklar: "bg-gray-50 text-gray-600 border-gray-200",
+  entwurf: "bg-violet-50 text-violet-700 border-violet-200",
 };
 
 const CATEGORY_COLORS: Record<BlogCategory, string> = {
@@ -162,7 +164,9 @@ export default function BlogListPage() {
                     <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
                       <span className="text-xs text-gray-400">{item.region}</span>
                       <span className="text-xs text-gray-400">
-                        {formatNewsDate(item.effective_from)}
+                        {item.effective_from
+                          ? formatNewsDate(item.effective_from)
+                          : "Inkrafttreten offen"}
                       </span>
                     </div>
                   </Link>

@@ -8,6 +8,7 @@ const STATUS_LABEL: Record<NewsStatus, string> = {
   angekuendigt: "Angekündigt",
   update: "Update",
   unklar: "Unklar",
+  entwurf: "Entwurf",
 };
 
 const STATUS_CLASS: Record<NewsStatus, string> = {
@@ -15,6 +16,7 @@ const STATUS_CLASS: Record<NewsStatus, string> = {
   angekuendigt: "bg-amber-50 text-amber-700 border-amber-200",
   update: "bg-blue-50 text-blue-700 border-blue-200",
   unklar: "bg-gray-50 text-gray-600 border-gray-200",
+  entwurf: "bg-violet-50 text-violet-700 border-violet-200",
 };
 
 const TYPE_LABEL: Record<NewsContentType, string> = {
@@ -74,7 +76,9 @@ export default function NewsRegionTeaser({ regionSlug, regionLabel }: Props) {
                 </span>
                 <span className="text-xs text-gray-400 hidden sm:inline">·</span>
                 <span className="text-xs text-gray-400">
-                  ab {formatDate(item.effective_from)}
+                  {item.effective_from
+                    ? `ab ${formatDate(item.effective_from)}`
+                    : "Inkrafttreten offen"}
                 </span>
               </div>
               <p className="text-sm font-medium text-gray-900 group-hover:text-ocean-blue transition-colors leading-snug">
