@@ -212,15 +212,26 @@ export default function BlogListPage() {
                       </span>
                     </div>
 
+                    {/* Update-Hinweis (nur bei inhaltlich aktualisierten Posts) */}
+                    {post.updatedAt && (
+                      <span
+                        className={`self-start inline-block text-xs font-medium px-2.5 py-0.5 rounded-full border mb-3 ${NEWS_STATUS_CLASS.update}`}
+                      >
+                        Aktualisiert am {formatDate(post.updatedAt)}
+                      </span>
+                    )}
+
                     {/* Title */}
                     <h2 className="text-lg font-semibold text-gray-900 mb-2 leading-snug group-hover:text-ocean-blue transition-colors">
                       {post.title}
                     </h2>
 
-                    {/* Teaser */}
-                    <p className="text-sm text-gray-600 leading-relaxed line-clamp-3 flex-1">
-                      {post.teaser}
-                    </p>
+                    {/* Teaser – Wrapper dehnt sich, damit line-clamp bei höheren Rasterreihen greift */}
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+                        {post.teaser}
+                      </p>
+                    </div>
 
                     {/* Footer */}
                     <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100">

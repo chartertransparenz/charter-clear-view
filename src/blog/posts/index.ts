@@ -14,14 +14,16 @@ import { kroatienEinsteiger } from "./kroatien-einsteiger";
 import { bareboatOderSkipper } from "./bareboat-oder-skipper";
 
 // Registry: alle Blog-Posts in umgekehrt chronologischer Reihenfolge
+// (Reihenfolge = Anzeige auf /blog; substanziell aktualisierte Posts mit
+// updatedAt stehen nach dem Datum ihrer Aktualisierung)
 export const allPosts: BlogPost[] = [
+  digitaleMautKroatien2027, // aktualisiert 2026-11-13
   vierKabinenSegelyachtenCharterVergleich,
   yachtcharterChalkidikiThessalonikiNikitiKeramoti,
   autopilotYachtcharterAusguckpflichtKvr5,
   kroatienYachtcharterSicherheitsregeln,
   egadiInselnYachtcharterPermitBojenAnkern,
   cabreraYachtcharterPermitBojen,
-  digitaleMautKroatien2027,
   richtigAnkernYachtcharter,
   yachtcharterGriechenlandWelchesRevierPasst,
   neueAnkerregelnKroatien202670MeterZone,
