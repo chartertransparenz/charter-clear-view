@@ -33,7 +33,7 @@ const URLS: SitemapUrl[] = [
   { loc: '/blog/kroatien-yachtcharter-sicherheitsregeln',        lastmod: '2026-10-02' },
   { loc: '/blog/egadi-inseln-yachtcharter-permit-bojen-ankern',  lastmod: '2026-06-09' },
   { loc: '/blog/cabrera-yachtcharter-permit-bojen',              lastmod: '2026-06-03' },
-  { loc: '/blog/digitale-maut-kroatien-2027',                   lastmod: '2026-05-21' },
+  { loc: '/blog/digitale-maut-kroatien-2027',                   lastmod: '2026-11-13' },
   { loc: '/blog/richtig-ankern-yachtcharter',                   lastmod: '2026-05-05' },
   { loc: '/blog/yachtcharter-griechenland-welches-revier-passt', lastmod: '2026-04-28' },
   { loc: '/blog/neue-ankerregeln-kroatien-2026-70-meter-zone', lastmod: '2026-04-27' },

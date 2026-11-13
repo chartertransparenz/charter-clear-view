@@ -25,6 +25,7 @@ export interface BlogPostMeta {
   ogImage: string;
   category: BlogCategory;
   date: string;        // ISO: "2025-04-15"
+  updatedAt?: string;  // ISO, optional: inhaltliche Aktualisierung (JSON-LD dateModified)
   teaser: string;
   heroImage: string;
   heroImageAlt: string;

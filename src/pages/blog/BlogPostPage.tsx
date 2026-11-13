@@ -58,6 +58,7 @@ export default function BlogPostPage() {
     description: post.metaDescription,
     image: `${BASE_URL}${post.ogImage}`,
     datePublished: post.date,
+    ...(post.updatedAt && { dateModified: post.updatedAt }),
     author: {
       "@type": "Organization",
       name: "CharterTransparenz",
