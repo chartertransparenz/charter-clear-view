@@ -251,10 +251,34 @@ export function Datenschutz() {
                     <p>Kontaktformular / E-Mail / Telefon / Fax</p>
                     <ul className="list-disc pl-6 space-y-1">
                       <li>Speicherung und Verarbeitung Ihrer Angaben zur Bearbeitung der Anfrage</li>
-                      <li>Keine Weitergabe ohne Ihre Einwilligung</li>
+                      <li>Keine Weitergabe an Dritte ohne Ihre Einwilligung; ausgenommen sind die technischen Dienstleister, die in unserem Auftrag tätig sind (Netlify, Resend)</li>
                     </ul>
                     <p>Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (Vertrag), Art. 6 Abs. 1 lit. f DSGVO (Interesse), ggf. Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</p>
                   </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-medium text-ocean-dark mb-3">
+                    E-Mail-Versand der Formulare (Resend)
+                  </h3>
+                  <p>Wenn Sie eines unserer Kontakt- oder Anfrageformulare absenden, werden Ihre Angaben (z. B. Name, E-Mail-Adresse, Telefonnummer, Reisewunsch und Nachricht) über Netlify an den E-Mail-Dienst Resend übergeben. Resend stellt die Nachricht an unser Postfach zu. Bei Charteranfragen erhalten Sie außerdem eine Bestätigung an die angegebene E-Mail-Adresse.</p>
+                  <div className="bg-gray-50 p-4 rounded-lg mt-2">
+                    <p className="font-medium">Plus Five Five, Inc. (Resend)</p>
+                    <p>2261 Market Street #5039, San Francisco, CA 94114, USA</p>
+                  </div>
+                  <p className="mt-2">Resend verarbeitet und speichert die Daten in den USA. E-Mail- und Protokolldaten werden nach Angaben von Resend nach 30 Tagen gelöscht. Mit Resend besteht ein Vertrag über Auftragsverarbeitung, der die EU-Standardvertragsklauseln enthält. Resend ist nach eigenen Angaben außerdem nach dem EU-US Data Privacy Framework zertifiziert.</p>
+                  <p className="mt-2">
+                    Datenschutzerklärung von Resend:{" "}
+                    <a
+                      href="https://resend.com/legal/privacy-policy"
+                      className="text-ocean-dark hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://resend.com/legal/privacy-policy
+                    </a>
+                  </p>
+                  <p className="mt-2">Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage auf einen Vertrag zielt, im Übrigen Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der zuverlässigen Zustellung und Bearbeitung Ihrer Anfrage.</p>
                 </div>
               </div>
             </section>
