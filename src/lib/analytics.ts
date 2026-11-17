@@ -54,7 +54,7 @@ function isGaCookieName(name: string): boolean {
  * Entfernt die First-Party-GA-Cookies nach einem Widerruf.
  *
  * Bewusst eng begrenzt: ausschliesslich "_ga" und "_ga_*" (z. B.
- * _ga_47004PY1TM). CookieConsent, weitere Cookiebot-Cookies, NauSYS- und
+ * _ga_47004PY1TM). Das CookieConsent-Cookie (ct_consent) sowie NauSYS- und
  * Formularcookies bleiben unberuehrt.
  *
  * GA setzt das Cookie auf der registrierbaren Domain, nicht auf dem Host.

@@ -185,7 +185,7 @@ const Footer = () => {
               <a href="/datenschutz" className="hover:text-sunset transition-smooth">
                 Datenschutz
               </a>
-              {/* Oeffnet den Cookiebot-Dialog, damit die Einwilligung jederzeit
+              {/* Oeffnet die CookieConsent-Einstellungen, damit die Einwilligung jederzeit
                   geaendert oder widerrufen werden kann. */}
               <button
                 type="button"

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import GoogleMapEmbed from "@/components/GoogleMapEmbed";
 
 interface TerritoryMapProps {
   region: string;
@@ -45,7 +46,7 @@ const TerritoryMap: React.FC<TerritoryMapProps> = ({
     <Card className={`shadow-lg ${className}`}>
       <CardContent className="p-0">
         <div className="relative w-full h-96 rounded-b-lg overflow-hidden bg-gray-200">
-          <iframe 
+          <GoogleMapEmbed 
             src={createMapUrl()} 
             width="100%" 
             height="100%" 

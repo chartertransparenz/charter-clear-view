@@ -7,14 +7,12 @@
  * dem Repository heraus geladen (src/lib/analytics.ts) - nie wieder ueber
  * Netlify Snippet Injection.
  *
- * Cookiebot
- * ---------
- * Die Cookiebot-Domain-Group-ID steht bewusst NICHT in dieser Datei, sondern
- * an genau einer Stelle: im <script id="Cookiebot" data-cbid="..."> im <head>
- * von index.html. Cookiebot muss als erstes Script im Dokument stehen, damit
- * der Banner frueh erscheint und der Consent-Status bereits vor dem Mounten
- * von React verfuegbar ist. Die ID hier zusaetzlich zu fuehren waere eine
- * Duplizierung - geaendert wird sie deshalb nur in index.html.
+ * Consent-Manager: CookieConsent (vanilla-cookieconsent, MIT)
+ * -----------------------------------------------------------
+ * Selbst gehostet ueber das npm-Paket, kein externer Dienst und kein Abo.
+ * Konfiguration und deutsche Texte stehen in src/lib/consent.ts. Die
+ * Auswahl liegt im First-Party-Cookie CONSENT_COOKIE_NAME im Browser des
+ * Besuchers.
  *
  * Betriebsmodus: Google Basic Consent Mode.
  * Vor einer Statistik-Einwilligung wird kein Google-Script geladen und kein
@@ -23,8 +21,19 @@
 
 export const GA_MEASUREMENT_ID = "G-47004PY1TM";
 
-/** Cookiebot-Kategorien. */
-export type ConsentCategory = "necessary" | "preferences" | "statistics" | "marketing";
+/**
+ * Consent-Kategorien.
+ * - necessary: technisch notwendig (Speicherung der Auswahl selbst)
+ * - statistics: Google Analytics 4
+ * - maps: eingebettete Google-Maps-Karten
+ */
+export type ConsentCategory = "necessary" | "statistics" | "maps";
+
+/** Cookie, in dem CookieConsent die Auswahl speichert. */
+export const CONSENT_COOKIE_NAME = "ct_consent";
+
+/** Gueltigkeit der gespeicherten Auswahl in Tagen. */
+export const CONSENT_COOKIE_DAYS = 182;
 
 /**
  * Consent-Mode-v2-Signale, die bis zu einer Einwilligung gelten.
