@@ -6,6 +6,7 @@ import { useEffect, Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
 import { HelmetProviderContext } from "@/contexts/HelmetContext";
 import { useAnalytics } from "@/hooks/use-analytics";
+import { initConsent } from "@/lib/consent";
 import Index from "./pages/Index";
 
 // Lazy-load all non-home pages so the initial bundle stays small
@@ -189,6 +190,13 @@ const queryClient = new QueryClient();
 function App() {
   useEffect(() => {
     document.documentElement.lang = 'de';
+  }, []);
+
+  // Consent-Banner (CookieConsent) erst nach der Hydration starten: er
+  // veraendert <html> und <body> und darf die vorgerenderte Seite nicht
+  // stoeren. Analytics und Karten reagieren auf die Consent-Events.
+  useEffect(() => {
+    void initConsent();
   }, []);
 
   // GA4 nur nach Statistik-Einwilligung, inkl. SPA-Pageviews.

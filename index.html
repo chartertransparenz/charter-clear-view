@@ -2,22 +2,14 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' https://widget.nausys.com https://*.nausys.com https://code.jquery.com https://cdn.gpteng.co https://*.lovable.dev https://consent.cookiebot.com https://consentcdn.cookiebot.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://connect.facebook.net 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://widget.nausys.com https://*.nausys.com https://code.jquery.com https://lovable-api.com https://api.lovable.dev https://cdn.gpteng.co https://*.lovable.dev https://consent.cookiebot.com https://consentcdn.cookiebot.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://www.gstatic.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://bqckduaygatcopxyuyyv.supabase.co wss://bqckduaygatcopxyuyyv.supabase.co; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:; frame-src https://consentcdn.cookiebot.com https://widget.nausys.com https://*.nausys.com https://*.lovable.dev https://www.google.com https://www.gstatic.com; child-src https://widget.nausys.com https://*.nausys.com https://*.lovable.dev https://www.google.com https://www.gstatic.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' https://widget.nausys.com https://*.nausys.com https://code.jquery.com https://cdn.gpteng.co https://*.lovable.dev https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://connect.facebook.net 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://widget.nausys.com https://*.nausys.com https://code.jquery.com https://lovable-api.com https://api.lovable.dev https://cdn.gpteng.co https://*.lovable.dev https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://www.gstatic.com https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://bqckduaygatcopxyuyyv.supabase.co wss://bqckduaygatcopxyuyyv.supabase.co; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https://widget.nausys.com https://*.nausys.com https://code.jquery.com; font-src 'self' data: https://widget.nausys.com https://*.nausys.com https://code.jquery.com; frame-src https://widget.nausys.com https://*.nausys.com https://*.lovable.dev https://www.google.com https://www.gstatic.com; child-src https://widget.nausys.com https://*.nausys.com https://*.lovable.dev https://www.google.com https://www.gstatic.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Cookiebot (Consent-Manager). Muss das erste Script im Dokument bleiben.
-         data-blockingmode="manual": Cookiebot stellt nur Banner, Speicherung und
-         Kategorien bereit. Welches Script wann laedt, entscheidet unser Code
-         (src/lib/consent.ts, src/lib/analytics.ts). Auto-Blocking wird bewusst
-         nicht verwendet (frueher Probleme mit React / jQuery / NauSYS).
-         Die Domain-Group-ID steht NUR hier - siehe src/config/consent.ts. -->
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="f2bebeaf-9996-42db-9236-2b211c6bc7c6"
-      data-blockingmode="manual"
-      data-culture="DE"
-      type="text/javascript"></script>
+    <!-- Consent-Manager: CookieConsent (selbst gehostet, src/lib/consent.ts),
+         gestartet in src/App.tsx. Kein externes Consent-Script mehr.
+         CSP: style-src/font-src bewusst ohne pauschales https:. Der NauSYS-Loader
+         haengt sonst ein Google-Fonts-Stylesheet in den <head> und baut ohne
+         Einwilligung eine Verbindung zu fonts.googleapis.com auf. -->
 
     <meta name="robots" content="index, follow" />
 
@@ -58,7 +50,7 @@
 
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- Meta Pixel temporarily disabled until consent management (Cookiebot) is restored.
+    <!-- Meta Pixel temporarily disabled: CookieConsent (src/lib/consent.ts) has no marketing category yet.
          Pixel ID 732254976580940 – restore the original "Meta Pixel Code" block
          (fbevents.js, fbq('init'), PageView, noscript) from git history. -->
   </body>

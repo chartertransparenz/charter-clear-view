@@ -1,0 +1,24 @@
+/* CookieConsent (vanilla-cookieconsent) an die Seitenfarben anpassen.
+   Geladen von src/lib/consent.ts direkt nach dem Standard-Stylesheet. */
+#cc-main {
+  --cc-font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cc-modal-border-radius: 0.75rem;
+  --cc-btn-border-radius: 0.5rem;
+  --cc-link-color: hsl(212 95% 25%);
+
+  --cc-btn-primary-bg: hsl(212 95% 25%);
+  --cc-btn-primary-border-color: hsl(212 95% 25%);
+  --cc-btn-primary-hover-bg: hsl(212 83% 40%);
+  --cc-btn-primary-hover-border-color: hsl(212 83% 40%);
+
+  /* Gleichwertige Buttons: "Nur notwendige" ist genauso auffaellig wie
+     "Alle akzeptieren" (equalWeightButtons in src/lib/consent.ts). */
+  --cc-btn-secondary-bg: hsl(212 95% 25%);
+  --cc-btn-secondary-color: #fff;
+  --cc-btn-secondary-border-color: hsl(212 95% 25%);
+  --cc-btn-secondary-hover-bg: hsl(212 83% 40%);
+  --cc-btn-secondary-hover-color: #fff;
+  --cc-btn-secondary-hover-border-color: hsl(212 83% 40%);
+
+  --cc-toggle-on-bg: hsl(212 95% 25%);
+}

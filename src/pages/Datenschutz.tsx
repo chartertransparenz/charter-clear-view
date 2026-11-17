@@ -113,28 +113,40 @@ export function Datenschutz() {
               <div className="space-y-4">
                 <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="font-medium">IONOS SE</p>
-                  <p>Elgendorfer Str. 57, 56410 Montabaur</p>
+                  <p className="font-medium">Netlify, Inc.</p>
+                  <p>101 2nd Street, San Francisco, CA 94105, USA</p>
                 </div>
-                <p>IONOS erfasst beim Besuch der Website verschiedene Logfiles (inkl. IP-Adressen).</p>
+                <p>Beim Aufruf der Website verarbeitet Netlify technisch notwendige Verbindungsdaten wie Ihre IP-Adresse, Datum und Uhrzeit, die aufgerufene Seite und Angaben zu Ihrem Browser. Ohne diese Daten kann die Website nicht ausgeliefert werden. Über Netlify laufen auch unsere Kontakt- und Anfrageformulare.</p>
+                <p className="mt-2">Eine Übermittlung in die USA ist möglich. Netlify, Inc. ist nach eigenen Angaben nach dem EU-US Data Privacy Framework zertifiziert.</p>
                 <p>
-                  Datenschutzerklärung von IONOS:{" "}
-                  <a 
-                    href="https://www.ionos.de/terms-gtc/terms-privacy" 
+                  Datenschutzerklärung von Netlify:{" "}
+                  <a
+                    href="https://www.netlify.com/privacy/"
                     className="text-ocean-dark hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://www.ionos.de/terms-gtc/terms-privacy
+                    https://www.netlify.com/privacy/
                   </a>
                 </p>
-                <p>Die Verwendung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Sofern eine Einwilligung abgefragt wurde, zusätzlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG.</p>
-                
+                <p>Die Verwendung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in einer sicheren und zuverlässigen Bereitstellung der Website.</p>
+
                 <div>
                   <h3 className="text-xl font-medium text-ocean-dark mb-2">
-                    Auftragsverarbeitung
+                    Domain und E-Mail (IONOS)
                   </h3>
-                  <p>Wir haben mit IONOS einen Vertrag über Auftragsverarbeitung (AVV) abgeschlossen.</p>
+                  <p>Unsere Domain und unsere E-Mail-Postfächer werden von der IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, bereitgestellt. Wenn Sie uns per E-Mail schreiben, wird Ihre Nachricht auf Servern von IONOS gespeichert. Wir haben mit IONOS einen Vertrag über Auftragsverarbeitung (AVV) abgeschlossen.</p>
+                  <p>
+                    Datenschutzerklärung von IONOS:{" "}
+                    <a
+                      href="https://www.ionos.de/terms-gtc/terms-privacy"
+                      className="text-ocean-dark hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://www.ionos.de/terms-gtc/terms-privacy
+                    </a>
+                  </p>
                 </div>
               </div>
             </section>
@@ -218,22 +230,17 @@ export function Datenschutz() {
                   <h3 className="text-xl font-medium text-ocean-dark mb-3">
                     Cookies
                   </h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Session-Cookies: automatisch gelöscht nach Besuch</li>
-                    <li>Permanente Cookies: bleiben gespeichert, bis Sie diese löschen</li>
-                    <li>First-Party & Third-Party Cookies: letztere ermöglichen z. B. Zahlungsabwicklungen</li>
-                  </ul>
-                  
-                  <div className="mt-4">
-                    <p className="font-medium mb-2">Cookies sind erforderlich für:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>technische Funktionen (z. B. Warenkorb)</li>
-                      <li>Optimierung der Website</li>
-                      <li>Analyse des Nutzerverhaltens</li>
-                    </ul>
-                  </div>
-                  
-                  <p className="mt-4">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse) oder bei Einwilligung Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 TDDDG.</p>
+                  <p>Cookies sind kleine Textdateien, die Ihr Browser speichert. Diese Website setzt ohne Ihre Einwilligung nur ein technisch notwendiges Cookie: „ct_consent“ speichert Ihre Auswahl im Cookie-Banner für 6 Monate.</p>
+                  <p className="mt-2">Alle weiteren Cookies und Zugriffe auf Ihr Endgerät, etwa durch Google Analytics oder Google Maps, erfolgen nur nach Ihrer Einwilligung.</p>
+                  <p className="mt-4">Rechtsgrundlage: für das technisch notwendige Cookie § 25 Abs. 2 Nr. 2 TDDDG und Art. 6 Abs. 1 lit. c und f DSGVO (Nachweis Ihrer Einwilligung); im Übrigen Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-medium text-ocean-dark mb-3">
+                    Einwilligungsverwaltung (CookieConsent)
+                  </h3>
+                  <p>Für die Abfrage und Speicherung Ihrer Einwilligung nutzen wir die Open-Source-Software CookieConsent. Sie wird direkt von unserem Server ausgeliefert; dabei werden keine Daten an Dritte übertragen. Ihre Auswahl wird ausschließlich in Ihrem Browser im Cookie „ct_consent“ gespeichert.</p>
+                  <p className="mt-2">Sie können getrennt in Statistik (Google Analytics) und Karten (Google Maps) einwilligen. Ihre Auswahl können Sie jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß ändern oder mit Wirkung für die Zukunft widerrufen.</p>
                 </div>
 
                 <div>
@@ -260,41 +267,28 @@ export function Datenschutz() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-medium text-ocean-dark mb-3">
-                    YouTube
+                    Schriftarten
                   </h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    <li>Betreiber: Google Ireland Limited, Dublin, Irland</li>
-                    <li>Speicherung von Cookies / Fingerprinting möglich</li>
-                    <li>Verknüpfung mit YouTube-Account möglich</li>
-                  </ul>
-                  <p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, ggf. Art. 6 Abs. 1 lit. a DSGVO + § 25 TDDDG</p>
-                  <p>
-                    Datenschutzerklärung:{" "}
-                    <a 
-                      href="https://policies.google.com/privacy?hl=de" 
-                      className="text-ocean-dark hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      https://policies.google.com/privacy?hl=de
-                    </a>
-                  </p>
+                  <p>Die Schriftarten dieser Website liegen auf unserem eigenen Server. Beim Seitenaufruf wird keine Verbindung zu Google Fonts aufgebaut.</p>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-medium text-ocean-dark mb-3">
-                    Google Fonts
+                    Google Analytics
                   </h3>
                   <ul className="list-disc pl-6 space-y-1">
-                    <li>Einheitliche Darstellung von Schriftarten</li>
-                    <li>Verbindung zu Google-Servern notwendig</li>
+                    <li>Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland</li>
+                    <li>Wird nur geladen, wenn Sie unter „Statistik“ einwilligen; vorher findet keine Verbindung zu Google statt</li>
+                    <li>Erfasst u. a. aufgerufene Seiten, Verweildauer, Gerät, Browser und ungefähren Standort; IP-Adressen werden von Google gekürzt</li>
+                    <li>Setzt die Cookies „_ga“ und „_ga_…“ mit einer Speicherdauer von bis zu 2 Jahren</li>
+                    <li>Werbe- und Remarketing-Funktionen sind deaktiviert</li>
+                    <li>Eine Übermittlung in die USA ist möglich; Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert</li>
                   </ul>
-                  <p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, ggf. Art. 6 Abs. 1 lit. a DSGVO + § 25 TDDDG</p>
-                  <p>Infos: https://developers.google.com/fonts/faq</p>
+                  <p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG. Nach einem Widerruf werden die Google-Analytics-Cookies gelöscht und keine weiteren Daten gesendet.</p>
                   <p>
                     Datenschutzerklärung:{" "}
-                    <a 
-                      href="https://policies.google.com/privacy?hl=de" 
+                    <a
+                      href="https://policies.google.com/privacy?hl=de"
                       className="text-ocean-dark hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -309,11 +303,12 @@ export function Datenschutz() {
                     Google Maps
                   </h3>
                   <ul className="list-disc pl-6 space-y-1">
-                    <li>Kartendienst von Google Ireland Limited</li>
-                    <li>Speicherung Ihrer IP-Adresse</li>
-                    <li>Einheitliche Darstellung inkl. Google Fonts</li>
+                    <li>Kartendienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland</li>
+                    <li>Karten werden erst geladen, wenn Sie im Platzhalter auf „Google Maps laden“ klicken oder unter „Karten“ einwilligen; vorher findet keine Verbindung zu Google statt</li>
+                    <li>Beim Laden werden u. a. Ihre IP-Adresse und die aufgerufene Seite an Google übertragen; Google kann Cookies setzen</li>
+                    <li>Eine Übermittlung in die USA ist möglich; Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert</li>
                   </ul>
-                  <p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, ggf. Art. 6 Abs. 1 lit. a DSGVO + § 25 TDDDG</p>
+                  <p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG</p>
                   <p>
                     Datenschutzerklärung:{" "}
                     <a 
@@ -325,6 +320,19 @@ export function Datenschutz() {
                       https://policies.google.com/privacy?hl=de
                     </a>
                   </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-medium text-ocean-dark mb-3">
+                    Yachtsuche (NauSYS)
+                  </h3>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Die Yachtsuche ist ein Widget der Buchungsplattform NauSYS (widget.nausys.com)</li>
+                    <li>Das Widget lädt seine Programmteile von widget.nausys.com sowie die Bibliothek jQuery von code.jquery.com; Ihre Suchanfrage wird an NauSYS übermittelt</li>
+                    <li>Dabei werden technisch bedingt Ihre IP-Adresse und Browserdaten an diese Server übertragen</li>
+                    <li>Es werden keine Cookies gesetzt und keine Daten in Ihrem Browser gespeichert</li>
+                  </ul>
+                  <p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt darin, Ihnen eine aktuelle Suche nach verfügbaren Charteryachten anzubieten.</p>
                 </div>
               </div>
             </section>

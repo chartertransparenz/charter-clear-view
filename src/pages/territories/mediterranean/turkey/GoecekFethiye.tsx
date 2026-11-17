@@ -14,6 +14,7 @@ import { META } from "@/seo/meta.config";
 import { BREADCRUMB_TURKEY } from "@/seo/breadcrumbs.turkey";
 import NewsRegionTeaser from "@/components/NewsRegionTeaser";
 import { NewsRegionHint } from "@/components/NewsRegionHint";
+import GoogleMapEmbed from "@/components/GoogleMapEmbed";
 
 const GoecekFethiye = () => {
   useEffect(() => {
@@ -140,7 +141,7 @@ const GoecekFethiye = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-4xl font-bold mb-6 text-center">Göcek & der Golf von Fethiye</h2>
             <div className="relative w-full h-96 rounded-lg overflow-hidden bg-gray-200">
-              <iframe 
+              <GoogleMapEmbed 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51200!2d29.0560841!3d36.7164744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM!5e1!3m2!1sde!2sde!4v1625097600000!5m2!1sde!2sde" 
                 width="100%" 
                 height="100%" 

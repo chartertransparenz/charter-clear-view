@@ -38,9 +38,37 @@ export default function NausysWidget({
       script.setAttribute('data-nausys-widget-profile', profile.profile);
     }
 
+    // Der NauSYS-Loader startet erst in window.addEventListener("load", ...).
+    // Ist das load-Event schon vorbei (schnelle Seite, SPA-Navigation), wuerde
+    // die Suche nie aufgebaut. Bis der Loader ausgefuehrt ist, werden
+    // load-Listener deshalb direkt ausgefuehrt, falls die Seite dann schon
+    // fertig geladen ist - sonst ganz normal registriert.
+    const originalAddEventListener = window.addEventListener;
+    const restoreAddEventListener = () => {
+      window.addEventListener = originalAddEventListener;
+    };
+    window.addEventListener = function (
+      this: Window,
+      type: string,
+      listener: EventListenerOrEventListenerObject | null,
+      options?: boolean | AddEventListenerOptions,
+    ) {
+      if (type !== 'load' || !listener || document.readyState !== 'complete') {
+        return originalAddEventListener.call(this, type, listener, options);
+      }
+      setTimeout(() => {
+        const event = new Event('load');
+        if (typeof listener === 'function') listener.call(window, event);
+        else listener.handleEvent(event);
+      }, 0);
+    } as typeof window.addEventListener;
+    script.onload = restoreAddEventListener;
+    script.onerror = restoreAddEventListener;
+
     document.body.appendChild(script);
 
     return () => {
+      restoreAddEventListener();
       const scripts = document.querySelectorAll('script[src*="nausys-widget-loader"]');
       scripts.forEach(s => s.remove());
     };
